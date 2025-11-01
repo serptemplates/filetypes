@@ -1,8 +1,43 @@
 {
   "slug": "mdf",
   "extension": "mdf",
-  "name": ".MDF File Extension",
+  "name": "Media Disc Image File",
   "summary": "Learn about .MDF files and view a list of programs that open them.",
+  "developer": "Alcohol Software",
+  "category": "database",
+  "category_slug": "database",
+  "mime": [
+    "application/octet-stream"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "A MDF file has the following data structure.\n\nPage 0: HeaderPage 1: First PFSPage 2: First GAMPage 3: First SGAMPage 4: UnusedPage 5: UnusedPage 6: First DCMPage 7: First BCM\n\nFile Header\n\nThe page number 0 of all the files contains a header that stores metadata about the file.\n\nPage Free Space (PFS)\n\nPFS identifies the allocation status and determines the amount of free space.\n\nBit 1: Indicates whether the page is allocated or not.Bit 2: Indicates if the page is from a mixed extent.Bit 3: Indicates that this page is an IAM page.Bit 4: Indicates that this page contains ghost recordsBits 5 to 7: A combined three-bit value, which indicate the page fullness as follows:0: The page is empty1: The page is 1–50% full2: The page is 51–80% full3: The page is 81–95% full4: The page is 96–100% full",
+      "MDF files may also be accompanied by .MDS files, which contain metadata about the MDF files. they include information, such as where the disc layers begin and end and copyright information."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -83,18 +118,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.451Z"
+      "url": "https://docs.fileformat.com/database/mdf/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.277Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mdf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.451Z"
+      "url": "https://fileinfo.com/extension/mdf",
+      "retrieved_at": "2025-11-01T22:32:42.277Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.451Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.277Z"
 }

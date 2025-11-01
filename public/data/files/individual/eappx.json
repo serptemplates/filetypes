@@ -1,8 +1,26 @@
 {
   "slug": "eappx",
   "extension": "eappx",
-  "name": ".EAPPX File Extension",
+  "name": "Encrypted Windows App Package",
   "summary": "Learn about .EAPPX files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Before submitting Windows applications to the Microsoft Store, developers package all the files and information needed to install the app in an APPX or .MSIX file. Optionally, developers can choose to encrypt APPX packages they create, using a custom key file that contains a hexadecimal encryption key. For example, video game developers often encrypt their APPX packages, so players cannot access the packages' contents or easily install pirated versions of games.",
+      "Encrypted APPX packages are saved as EAPPX files. Unlike APPX files, users cannot install the app an EAPPX file contains by double-clicking the file. Instead, users must use Windows PowerShell to install the app an EAPPX file contains."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To install the app an EAPPX file contains, run Microsoft Windows PowerShell as an administrator, navigate to the directory that contains your EAPPX file, and enter the following command:",
+      "add-appxpackage YourFileName.eappx",
+      "If you have access to the encryption key used to create your EAPPX file, you can decrypt the file and convert it to a normal .APPX file. To decrypt an EAPPX file, install Microsoft Visual Studio if you do not have it already. Then, open a Command Prompt window and enter the following command:",
+      "MakeAppx.exe decrypt /p YourFileName.appx /ep YourFileName.eappx /kf YourEncryptionKey.txt"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,13 +65,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/eappx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.584Z"
+      "url": "https://fileinfo.com/extension/eappx",
+      "retrieved_at": "2025-11-01T22:32:42.437Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.584Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.437Z"
 }

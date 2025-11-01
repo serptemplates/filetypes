@@ -1,8 +1,34 @@
 {
   "slug": "kicad_pcb",
   "extension": "kicad_pcb",
-  "name": ".KICAD_PCB File Extension",
+  "name": "KiCad PCB Design File",
   "summary": "Learn about .KICAD_PCB files and view a list of programs that open them.",
+  "developer": "KiCad",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "KiCad uses KICAD_PCB files as the main working file for the PCB layout stage of a project. Users typically create these files after designing a schematic in KiCad's schematic editor and generating a netlist. Designers then open the KICAD_PCB file in the PCB Editor to place components, route connections, and verify the design using KiCad's built-in design rule checks. Once finalized, users can export the file to standard manufacturing formats, such as Gerber and drill files, for fabrication.",
+      "KiCad introduced the KICAD_PCB format in version 4.0, replacing the older .BRD format used in previous versions of the software. KICAD_PCB files are saved in a human-readable, text-based format that uses S-expressions, which makes it easier for version control systems to track changes and for users to edit the file manually if necessary."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open KICAD_PCB files with KiCad. The PCB Editor included with KiCad allows you to view and modify the file, and then export it to another format."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "KiCad can convert KICAD_PCB files to various file types, including the following formats:",
+      ".DSN - OrCAD Design File",
+      ".STEP - STEP 3D Model",
+      ".GLB - Binary GL Transmission Format File",
+      ".PLY - Polygon Model",
+      ".STL - Stereolithography File",
+      ".WRL - VRML World"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -48,13 +74,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/kicad_pcb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.703Z"
+      "url": "https://fileinfo.com/extension/kicad_pcb",
+      "retrieved_at": "2025-11-01T22:32:42.575Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.703Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.575Z"
 }

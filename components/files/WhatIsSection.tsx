@@ -1,5 +1,6 @@
 import React from 'react';
 import { Info } from 'lucide-react';
+import Markdown from '@/components/common/Markdown';
 
 interface WhatIsSectionProps {
   extension: string;
@@ -13,13 +14,7 @@ export default function WhatIsSection({ extension, whatIs }: WhatIsSectionProps)
         <Info className="w-5 h-5 mr-2 text-blue-600" />
         What is a .{extension} file?
       </h3>
-      <div className="prose prose-gray max-w-none">
-        {whatIs.split('\n\n').map((paragraph, idx) => (
-          <p key={idx} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
-            {paragraph}
-          </p>
-        ))}
-      </div>
+      <Markdown content={whatIs} />
     </section>
   );
 }

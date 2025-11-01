@@ -1,8 +1,50 @@
 {
   "slug": "ma",
   "extension": "ma",
-  "name": "What are MA files and how to open them",
+  "name": "Maya ASCII Scene",
   "summary": "Learn about .MA files and view a list of programs that open them.",
+  "developer": "Autodesk",
+  "category": "3d",
+  "category_slug": "3d",
+  "mime": [
+    "application/mathematica"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Autodesk Maya is a program that animators use to create 3D scenes for movies and video games. These scenes are saved as MA or MB files. MA files are saved in Maya's mayaAscii format, which is a plain text format. As a result, you can open an MA file in any text editor (in addition to being able to open it in Maya). This can be useful if your MA file has become corrupted, and you want to manually review or edit the text your file contains.",
+      "One drawback to saving scenes as MA files is that, because they typically contain incredibly long lists of settings and commands, the files can become quite large. For example, a \"simple\" MA scene may contain over a million lines of text and have a file size of 91 MB. This is why Autodesk created the MB file format, which allows users to save their scenes as smaller, binary files. The tradeoff is that users cannot manually edit MB files' data in a text editor.",
+      "NOTE: Maya was originally developed by Alias Wavefront. Autodesk acquired Alias Wavefront in 2006."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an MA file in Autodesk Maya (cross-platform). To do so, select File → Open scene... from Maya's toolbar. Then, navigate to and open your MA file.",
+      "If you want to view the ASCII text your MA file contains, you can open it in any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac). However, because MA files often contain many lines of text, they may load slowly in text editors."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -65,69 +107,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFA0lEQVR42tVXa1CUVRh+lpXddZddLrIIAoo0KiIWXhE0LUPARCc1UxIzlUTLy2CW90bz8sOsH4JWapClUmlQ3hKULMYLlo4X5FaUKBsXBVb2zi672zlnhXZZEGJtdnpmvpn9zvd95zznfZ/3Oe9y/vCEGU4E539NgBcyBDCboS8rdg4Bv+xzhIAJ1TNi/iMCHI7lMpnsHonip6P3F1nsd+1rM6A+mW3/vYsLixC7ukOA4+qKgMvFUOxPhfJQOkxqlWWcL0DglRL06BvE7pvvVaAyYjDMTTrLum5iiOcugGTxCsjGkHGDofsp6FdWC67UByalAsovD6BxXyrEryTCc/1Wm/fkOzZB+c0huC9eDvG8JLiIJTA+uI+7g3o7kAKCgPwb4IU988+A0UjSbmLRsQbdJYfLtYT9EfS3b0I2PtwxAr5Hf4DwhTiLDqwmfywevavJO4OaWZMdIyDdfQDixEVounENdauSIXk9GaLps1mIbdZ8KIfq2BEoD6dDmprOoqY89BkerEjqHgFOTyH4w0bC8+0N6Pl8DJrv3sG9YcHghQ6F4c9yCCe9SMYnwazVQPtzHrTnc+E6IAT64kL0K60G18eXjck/3M7ImzXqzgm4zZoLwZhx4I+IAH/I0wDNacsOGx+ior8ngu7IYfi9FMrMg9DknASHx4Mwbir5NpFVxd0BUvSvaWLj1rqhxHRXC6C7chEqItZ2CUiS3oL3zrT206poREWQB/rerEDD5jUQxkyBcMpLpAaboT6VTfKdA6+1m1EZFYbgOmOHIa9b/SYU6R93nAKvTTvgkbLOngDJcUWwFwILilE7/2UIxk6A5uxpJjZh9GS2M5+9ByF7bniHBB5+tAMN2zZ0ogHifNK0DIgT5tsM6369jKrYKPQrqWLW65d9luWZoll2j7mhz/5MVI4aiIALt5hWrEFT9mDZAjtXbFeENH++mSeY+ChojVfFRjKRea57H9XxExB4rZw4It8SHWJSlaND4J/3C+rXLIdR3oA+x8+3lq32xxzUvDoNZr3+8SK0IXDkOHpOjGX39RtSoDlzAn1yC1AzJx6eqzdCGBtv84369PdoTNuF3geP4a/oCCZor43bLQRINdQkTO0igTYpUH2bSep/CfrkXIK+8Abq33sHvMFhEE2byTyBQpHxCdQnsqAvuY1eW3ex51WTx0G6JwOiqTP/XQooa49V69lvQ3kZsdJh4PbyhtvMBAiixjPxGX4rQf3alezAMWm10JAq8NryAVwHhkB34SfoLuVDlfUVjA31xMqvw/WpgV0ToWThUnjv2mvzAj1QqMK1+XnQ5J6C8X4t3JeshPvSFFTFRRGv6AF/Eh35zi1QfP4pevgHsqoQPDsRgoix4HpLbeare3cZFAf2tE/AbfY8CEZHQTByjEXFVkbUAprP2kVzWKSoHVO9UGekk/qkf80WtQMxoqaiW2i6dsViREcPt6aiYysWisAPH9FqxdagDkhJBF4sJBWih2zCcPh9dw6CUZF2ZJkVX7/KLLvddbp6GLVFXUoyq38z2R1/aDjRwE67dxw6jFrQehy3gUmlJN1OKEtBwOUi1iW1xRM5ju0aEnLW013ThoT2gdSM6MnIGhJqPFa6eSINiVNbMtaUFpRAsW83aTQyWNjZeGdNqciN6GYhJG8shywy1IGm1NlteWfwy8olM7igenp0d6dw8K/ZoFAWIX1pkXMIPAk4ncDfZDp039f2z2EAAAAASUVORK5CYII=",
-      "alt": "Mathematica"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MysticThumbs"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAxUlEQVR42u2Xiw3DIAxE7clgM2AzmMwtaSyR4jSFQn7lpIiPIt/ThYBAyEVzi437KHgtJ621ZIwB59w0bt1/1s888d0cEYHoBd+qz+b8pL7nA+ihEAJorQsApOVCUK0yAPxQqRJiF4BoopSaWlYc/08CNwJYzP5uXgfQWMUA6UpOxav6/gkcDrD2CUpVtxGNBEYCV01AC5sU797dE9g6v64HUHoWjAQOT2ANYre/YEtfATBEfLG1Yk3vPcy15cupkFwPZX4PVMaXMFaTCNcAAAAASUVORK5CYII=",
-      "alt": "Sakura Editor (Japanese)"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "3D Photo Browser"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABK0lEQVR42u2X0RaDIAiG5c18s7U3c0/m5poJDFRcWRfjqjr8P19IeQR3csAf4KoAcQfQLg/QRDEWPQA0jUb1IAmTABsQQTHDRpEX5Zrsy2tvAPFz0wKQ3qond/MtRdsAuYbmX+9U0Q4DcDMOY80bBmi/WV+ndgHgxjwk3SEzoEFK2t1noNWhb70BIITgvPfNb1ot7tafAs67BMDmawGQZsACkK7ykg0BSDOQsqZ1wLoEeGM5DABDSNsibn82HgIgppXvXXq+VqW9MQHwwECVfR7F8kq8EYgQHn0APDhQhqF/TCC53n80DOI9wDUAKbAew+CuyM8XESJNjgjgjJHXVJoZshRKJziANSRgxWuJCsRPAMbQISaeCySI++yDCYeYDsAhTgFAEO4CZ8MnMXpkLDNY6fIAAAAASUVORK5CYII=",
-      "alt": "RESPONSA PROJECT shoot"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGZ0lEQVR42r1XS2hcVRj+z33feSZNOqZp2pDatNZA4kIoInTVRUEQFz4W1W0t4kY3BSm6KC4UxYWKtC5diGgtBpSiblwIKoKPQIoUiVQbbZrHJPO+jzN+/7n3TmamM8nYhZMc7r3n8f/f/33/+c+9Ip/PS9d1SQhBg/yazeZdzenuk1JSvV4nMT09LWdmZkjX9Z4Luhf2eu6e237tHk9ao9GgxcVFEseOHZNzc3NkGEZfQ/1ADeKovY+jbgewsLBA4ujRo3J2drbFQC/nOzneyWF3SwDw1fM8unbtGokjR450SDCo437OEn27r91AGMD169dJHD58WEIGBaBf9N2O+t33a/0ALC0tkTh06JAECz0B7OY4iXBQAO1AfN+nGzdukJicnJRggTRN+0/Od3O6GwNBENDy8jKJAwcOyKmpqY46MIjTQSNvzwG+hmGoGgNYW1sjsX//fgkQioFeTokX3gUAdsaNqeaCw9uO79lxMsbzxNjYmBwfH+8AwPvhHk3QHu7DXzGU9HcA1E1JBfQZyjv/I5lkkzYQURVXgfVjIFKw01qVahU0ON/C+C0/oKCrOnLeiUKhINFaADgTTtgWnXIsSkMWATdlOLtab9BPtQadyaYATlMIGG8DoJZgfL5UoZvlCp2zddrjN1SkCYkbCOCzSo2uYn3YDWBkZESOjo6qHGAA7PTptEMHMTiPBczEo45Nf8iQPihV6WwmReO6RrcQ1RoMT2B+2vfo27V1urS6Tq8OZ9Wa3wCK26xl0hSq7KLn0ysbJVqJ86IFYHh4WKK1AHAqMogsmoOHk2DjYRj5Hvv2SqVOL+ZStI/BVWv0cbFEJ2RAp3VBdQB6c6tMz+UyNAKGLmP8SrVOT6ZdegwB/AwAFzZLtC6bnQD4NMzlci0A7VvwiZSjpGDNP2n49AMMnsu6NI65H21s0sWVVZpBtOfzGcrD6TtbFTqdcWkv7quQqMaMIiQf95fA3he9JMhmszKdTiNzBCWiMQus8kFDp/sMjR5HBDocXSwjIlOnfV6DPixu0vsw+gDYOZ9LUw5O30YePAOJ9mDuAuhfRJuGjTkTEvghvQGG/gy7JIBz9T6gAABpCteHEPW4btA3XkAV6PsyEm8Cur+HCE81AzoIGj8HpZ8iopO2SU8B4BbAvwWJXkD+5GHjcsOj+bpPD1oGnXVt5fBCuUbf+cxHtIs0TvJUDCApRAzg+ZRNxxH5r5hUxPY7Do3/QTTvAsCzpkZTiLCIuSWMF2K2vgaoK15Irzs6DcHGCsZuo38UrQDTy3h+zZP0eyIzFyWAEelMBgBSJDShyGccY7h/xNJpWo/2/E3oPw/9/wJ9Z2yDJrQILJsqw+AvgaQvwyaFuH/JMVQCJ1J6mLSK/q8QyI9gP8kBVY5RnCBBRjopV9FB8TIXuhXQl8P2Qd2kIiau1OpUAwv3IstdyCNiAHXUgU3IsVqrqeS9fyhPpipg0S9AXwU2VlFHithJrYOMDyQGwBI4jhNJwJqg7cVzGolTwoQ6jOeQaLx7bsPJCMZsAAwlRyzJgDMuV2XkygZ0n8ikSYcNH+NcOU2hqTkNrobVKjUQuYgZ8AFIuKmUtG1n+zDCxUZ2aowcExjpCJKMo9oCmBRYYYOVwKcSntOmSVkFsEmbADBk28QKbUHfChhjNocsW42vIyCv7YAKGIDjutIyrWgXiO3TkE8sdmQjD1x+X2S9YTRtmKq/GvAO8cnCfQ7FigMoA1AGzPF9IKOcMICG5WUGyn7QIYECgOilgShEkjXEskcomWqWgrtrMMBGshYKk4gqXxUGTQDMmpbCzw54PosSxKeoEScsj3nhdhliIAHvAsuypKYbsQQ4YPhUwz3riANTUc+0s8EaMpkdJJoyCAcgHUiGTaBYSRjguR7ODxdjFpqHoCpJDUhYZgCmaUqh6VEpjvVh3Th6P5RqgaUcRABSqISGOjmjXRAHCEBSOWSGuIsBJQzwH4/x+nYAEoCFwQBU8EKd/apEooMTUY8XMwyOgFngLahpnV9RAb9kquwWAGhQazTWlXcMM8Z2RDsAXoMPEhk53jaa5INo62u2xrZ3S9cy6lgh+k6KetWbUwxANmWHs04kd3aKnuNih2XijsdkNwicSNsAdvg+jd6Nmp1AdwPYC0dTtAConc8AQiTIoF/HYmeUA/4iaTRUSbULZNtr0v/54/eBfwGlgTFd4HuIIAAAAABJRU5ErkJggg==",
-      "alt": "3DBrowser"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAjElEQVR42u2XwQrAIAxD2y+3fnm3Ch7cFMdQ20MCeqii8UkQmYhURMir8d0pOakYqAS81BD4YkRViZl/nXZIwBbNOW83kFJqarZnDAJ18LQBUyFgaDyuwNaJQWA2aZcBpAApQAqQAqTglYLnhJWyAw4JzDCtItCrIQUxUnCKAN6CXi0WgdOK8zf0/J5fk8V8ECp06WsAAAAASUVORK5CYII=",
-      "alt": "Cadwork"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ma_1715.png",
+      "alt": "Screenshot of a .ma file in Autodesk Maya 2022",
+      "caption": "MA file open in Autodesk Maya 2022"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.338Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.338Z"
+      "url": "https://docs.fileformat.com/3d/ma/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ma",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.338Z"
+      "url": "https://fileinfo.com/extension/ma",
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.338Z"
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.338Z",
-  "mime": [
-    "application/mathematica"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.175Z"
 }

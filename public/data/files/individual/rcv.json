@@ -1,8 +1,24 @@
 {
   "slug": "rcv",
   "extension": "rcv",
-  "name": ".RCV File Extension",
+  "name": "BIOS Recovery File",
   "summary": "Learn about .RCV files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "BIOS is a pre-installed program on Windows-based computers that the computer uses to start up. The CPU accesses the BIOS before the operating system is loaded and the BIOS checks all of the hardware connections and locates all of the devices. If everything is ready, the BIOS loads the operating system into the computer's memory and finishes the boot-up process.",
+      "In some situations, the BIOS may become corrupt, whether it be a failed BIOS upgrade, power outage or surge, or a malicious attack from a virus. A corrupt BIOS results in a failed boot up process and the BIOS will not load the Windows operating system. If this occurs, you will receive a notification on the startup screen when the operating system is being loaded. In cases like this, the BIOS recovery RCV file is used as a backup to boot up the operating system.",
+      "On some Dell computers, there are two files (BIOS_PRE.rcv and BIOS_CUR.rcv) that can be found in the EFI system partition. In this case, the files are located in the dell\\​bios\\​recovery\\​ EFI partition directory.",
+      "The BIOS recovery may require the insertion of a USB storage device with a BIOS RCV file to complete the boot-up process. If this is the case, you should consult the support webpage provided by your computer's manufacturer for instructions regarding your specific hardware. The solution typically includes the following steps to boot up the computer with the RCV file:",
+      "Access a separate computer and download a BIOS recovery RCV file from the correct (Dell, HP, etc.) support webpage.",
+      "Place the RCV file on a FAT32-formatted USB device and insert it in your shut down computer.",
+      "Boot up the computer and if prompted, select the BIOS recovery RCV file on your USB device.",
+      "NOTE: If your computer does not boot up from the BIOS recovery file, the computer may not support the recovery function or there may be an issue with the hard drive on your computer."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/rcv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.864Z"
+      "url": "https://fileinfo.com/extension/rcv",
+      "retrieved_at": "2025-11-01T22:32:42.730Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.864Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.730Z"
 }

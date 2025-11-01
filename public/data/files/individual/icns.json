@@ -1,8 +1,63 @@
 {
   "slug": "icns",
   "extension": "icns",
-  "name": ".ICNS File Extension",
+  "name": "macOS Icon Resource",
   "summary": "Learn about .ICNS files and view a list of programs that open them.",
+  "developer": "Apple",
+  "category": "image",
+  "category_slug": "image",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Most macOS applications include an identifying icon that allows you to quickly recognize the program in your Applications list and Launchpad. Apps also use file type icons that allow you to identify files that will open in that app. These icons are saved as ICNS files, stored in the .APP package's Contents/​Resources directory.",
+      "ICNS files are created from one or more .PNG files. These files may have dimensions of 16x16, 32x32, 48x48, 128x128, 256x256, 512x512, or 1024x1024 pixels. Storing multiple resoultions in an ICNS file allows macOS to show the icon correctly at different sizes. To create an ICNS file, developers:",
+      "Create a folder that uses the .ICONSET extension.",
+      "Place their PNG images, using filenames in the format icon_16x16.png, in the folder.",
+      "Use the Terminal command iconutil -c icns path/to/iconset/folder to create the ICNS file.",
+      "An application's .PLIST file (Info.plist) references its ICNS files, using the CFBundleIconFile property.",
+      "NOTE: ICNS files are similar to .ICO (Windows Icon) files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an ICNS file in Apple Preview (macOS), XnViewMP (multiplatform), or Inkscape (multiplatform). Apple Preview will show you all the images your ICNS file contains; the other programs will not."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use Apple Preview or Snap Converter to convert ICNS files to other formats. For example, Apple Preview can convert the images an ICNS file contains to the following formats:",
+      ".HEIC - High-Efficiency Image Compression",
+      ".JPEG - JPEG Image",
+      ".JPX - JPEG 2000 Image",
+      ".EXR - OpenEXR Image",
+      ".PDF - Portable Document Format",
+      ".PNG - Portable Network Graphic",
+      ".TIFF - Tagged Image File Format",
+      "In Apple Preview, you must convert the images an ICNS file contains individually. In Snap Converter, you can extract and convert all the images an ICNS file contains at once."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -60,18 +115,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.448Z"
+      "url": "https://docs.fileformat.com/image/icns/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.273Z"
     },
     {
-      "url": "https://fileinfo.com/extension/icns",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.448Z"
+      "url": "https://fileinfo.com/extension/icns",
+      "retrieved_at": "2025-11-01T22:32:42.273Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.448Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.273Z"
 }

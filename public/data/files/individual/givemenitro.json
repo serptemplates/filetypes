@@ -1,8 +1,26 @@
 {
   "slug": "givemenitro",
   "extension": "givemenitro",
-  "name": ".GIVEMENITRO File Extension",
+  "name": "Nitro Ransomware",
   "summary": "Learn about .GIVEMENITRO files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In April 2021, users began reporting the existence of Nitro ransomware. This ransomware is contained within a program that purports to offer Discord users free Nitro subscription gift codes. Instead, when executed, the program encrypts and renames a user's files, replaces their desktop background with an \"angry\" Discord logo, and launches a pop-up ransom message.",
+      "The ransom message asks users to purchase and enter a Nitro gift code URL to decrypt their files. It also tells users their files will be deleted if they do not provide a gift code within three hours. However, users' files are not actually deleted after three hours, and the program used to install Nitro ransomware contains the key needed to decrypt a user's files. So, users should not enter a gift code to decrypt their files.",
+      "In addition to encrypting a user's files, Nitro ransomware also steals a user's Discord tokens, which may allow the ransomware's creator to access the user's Discord account. For this reason, it is recommended that anyone infected by Nitro ransomware change their Discord password. The ransomware also attempts to access users' web browser data, so you may want to change additional web account passwords.",
+      "If you downloaded and executed a program that claimed to offer free Discord Nitro subscription gift codes, that program likely infected your computer with Nitro ransomware."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "GIVEMENITRO files are encrypted files, so they cannot be opened normally. To restore your files to their normal state, you must first retrieve the decryption key needed to decrypt your files. Then, you must enter the key in your ransom message's Decrypt files field.",
+      "The executable (likely an .EXE file) that infected your computer with Nitro ransomware contains your decryption key. If you are not a skilled programmer, you can post a link to the program that infected your computer (as well as an explanation of how you encountered it) on a reputable anti-malware forum, such as the forum found at BleepingComputer.com. There, a helpful programmer may help you extract your decryption key."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +57,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/givemenitro",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.636Z"
+      "url": "https://fileinfo.com/extension/givemenitro",
+      "retrieved_at": "2025-11-01T22:32:42.500Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.636Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.500Z"
 }

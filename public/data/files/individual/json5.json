@@ -1,8 +1,31 @@
 {
   "slug": "json5",
   "extension": "json5",
-  "name": "What are JSON5 files and how to open them",
+  "name": "JSON5 Data File",
   "summary": "Learn about .JSON5 files and view a list of programs that open them.",
+  "developer": "Aseem Kishore and Jordan Tucker",
+  "category": "other",
+  "mime": [
+    "application/json5"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "JSON is a text-based data interchange format used primarily by web developers. While .JSON files are human-readable, the developers of JSON5 felt the JSON format could be modified to make manually writing, reading, and maintaining JSON data easier.",
+      "To do this, the JSON5 team added several features of ECMAScript 5.1 to the standard JSON format. Some of these features include:",
+      "Objects and arrays may have a single trailing comma",
+      "Strings may be single-quoted, span multiple lines, and include character escapes",
+      "Numbers may be hexadecimal, have a leading or trailing decimal point, and begin with an explicit plus sign",
+      "Single-line comments, multi-line comments, and white space characters are allowed",
+      "Because JSON5 is a superset of JSON, all JSON files are valid JSON5 files. Additionally, because JSON5 is a subset of ECMAScript 5.1, most JSON5 files are valid ECMAScript 5.1 files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit a JSON5 file with Microsoft Visual Studio Code, Brackets, Notepad++, or any other text or source code editor."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -37,10 +60,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEl0lEQVR42u2XbUhbVxjH/yeJq05dE02HHbbIajfHcFOY4IdYDDrUIvhB2NwQ3EC7sa4jG2M61EXRoohsOCe4F9gXZQgyZcYqq2JKHemHwWSTEdpbalk7UrxtguSlqzf37pwTY2JyV69dYF/2wM0598nJ+f/Oc57zEoJOxQKdYgdQCC2m23n0CkB26kSJ+gXqP4/305ya+mI/RZf8C/0sOZC4TonVSVw9+p0eVpzTBkHQLSspFecl2QDRF+Ms8acG4EDikefMM99i6MVP9vajYJ22sxnNd5a1AzyCOH+n+eE49SosZlcShPFJT7E2gH8hzurHM2/BZX0ZmYbAnm6NRzxkf4A+nabU0Gq+zbwDADDt3v8KIBpKe2oBbntOIFMf2Acgfh679dy1sLAAh8OBsbExGI1GzMzMYHZ2FiMjI0hPT+ffj4+PY35+HqOjo7BYLPD5fBgeHsbU1NRu12dcX2Ko0P4QgMSk6owArKyswGAwoKKiAg0NDVx8bW0NpaWlKC8vh8vlgtVqRUtLC+rr69HR0cH9ra2tvA1ry206BEfJa7AcvqICoJbRH0cA7HY77zQ7Oxt9fX1oampCQUEBTCYTFx0cHOR1BiKKIurq6jgwg3C73fB4PBGl70M4nnELP5Wc/v3Y0WvPxwDsUYCEpdZh4A2qqqqwtLSEsrIyHmIWga6uLjQ3N3OYvLw8HoH29nYOwwRXV1f5lDmdzlgSzIZ43y9kry/8ai07HQPoZQAq6/yjCEBWVha8Xi8X7enp4WIsEuvr6zzkExMT6O3t5W3Z/Dc2NnI/ixJry2C4/RCKDZIQK+oynBGAvrCiusl8aNiFZ+E1m83Iz8/n4WajZXPM3mtra7G8vIzOzk5eMkGWnKFQCP39/eju7o504gjGb1gbSMsohpX4Cc7vACTucB/EAAYGBngesJCyUdXU1GBxcRGSJHEgv9/Pk7WwsJCLFhUVwWazobq6mkNxuxBMjPIXqMo8RzBAAdS2V1vaLkBlZSVPxunpaT63bFrm5uYgCALa2tp4G5YLDJQlH0tGtjQnJydjObAYTI4yZCvBoKSo7u3vxQBSYj8GE6LM606CIUl9Gb6bYoCLgeRBEsgEw9ImfTEnnWrvpBhgOZAozo3gU6mFOr+hTsMewrcfSy3ASiBJHLvVz5V8EOksvcu10kZm7n0rxQCX/EniSHy98edzNsftms++uvEGfnsldk9VlH++sxBCoMku+5PEkwDomU1TFRmsTg+M1EZgVf1+mgiwO9T/AeLtbtgEMZxLyxxs0ufnrVJc9FbiavAEZJ1O5bKqqCbcIwMElQwuLkq5FCRn58nFxl/HcGXrJVwLPY0HJO3A4tQeaAJgvcULi1JcnZZ3to/Aff8k/th+CvdxSKs4W15fawQAAsrjSRGIgkSmJjJFDOaebEJIPpQ4hi36p+QmrWzQQ+gmZEzjVPalvQBiXhiRkyHJZOqOCjHheNG4iPhoKVC/cC98WIBC3HQ+rmNbEmB9Qtw3B7ybR2lI5DepW6/W2C9nQZRztqjgVTFsFkTJJNyVTG5RNl8X9Wbhu2dfVxV5mP0NUDc6FXgDWKgAAAAASUVORK5CYII=",
-      "alt": "WebStorm"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -72,26 +91,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.328Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.168Z"
     },
     {
-      "url": "https://fileinfo.com/extension/json5",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.328Z"
+      "url": "https://fileinfo.com/extension/json5",
+      "retrieved_at": "2025-11-01T22:32:42.168Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.328Z"
+      "retrieved_at": "2025-11-01T22:32:42.168Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.329Z",
-  "mime": [
-    "application/json5"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.168Z"
 }

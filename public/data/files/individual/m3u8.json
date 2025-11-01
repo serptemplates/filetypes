@@ -1,8 +1,58 @@
 {
   "slug": "m3u8",
   "extension": "m3u8",
-  "name": "What are M3U8 files and how to open them",
+  "name": "UTF-8 M3U Playlist",
   "summary": "Learn about .M3U8 files and view a list of programs that open them.",
+  "developer": "Apple",
+  "category": "audio",
+  "category_slug": "audio",
+  "mime": [
+    "application/vnd.apple.mpegurl"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "M3U8 files are plain text files that contain a list of media files or streaming segments. Each entry in the M3U8 file refers to a specific media file (or segment) in the playlist. The file typically follows the following structure:\n\nHeader:The file starts with the #EXTM3U tag, which indicates that the file is an M3U or M3U8 playlist.In HLS streaming, the #EXT-X-VERSION tag specifies the version of the protocol being used.Metadata Tags:The M3U8 file contains metadata tags that provide additional information about the media. Common tags include:#EXT-X-TARGETDURATION: Specifies the maximum length (in seconds) of each media segment.#EXT-X-MEDIA-SEQUENCE: Indicates the sequence number of the first media segment.#EXT-X-KEY: Contains encryption information for the media segments.#EXT-X-STREAM-INF: Describes the media stream’s properties, such as bandwidth and resolution, for adaptive bitrate streaming.Media Segments:The file lists the individual media segments (such as .ts files) that make up the entire video or audio stream. Each segment contains a reference to a media file, such as:segment1.tssegment2.tsThese segments are typically small chunks of video or audio data, allowing the player to download and buffer only a small portion of the stream at a time for smoother playback.",
+      "In addition to file paths and URLs, M3U8 files contain metadata that media players use to play the referenced media files correctly. For example, M3U8 files used to stream videos that are hosted online may contain information about the referenced videos' resolution, codec, and maximum needed bandwidth. This information is specified using the #EXT-X-STREAM-INF: setting.",
+      "In contrast, M3U8 files used to play audio and video located on your computer are often much simpler. These files may contain only a couple pieces of metadata, such as the playlist title (specified using the #PLAYLIST setting) and track information (specified using the #EXTINF setting).",
+      "NOTE: M3U8 files are similar to .M3U files, except the text they contain is always encoded using UTF-8 character encoding. On rare occasions, M3U8 files may be saved with the .M3UP extension."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Text Editors:Since M3U8 files are plain text, they can be opened and viewed with any text editor, such as Notepad or TextEdit. However, viewing the contents will only show the playlist references and metadata, not the actual media.Media Players:To play the media referenced by an M3U8 file, you will need a media player that supports HLS streaming. Popular players include:VLC Media Player: Can open M3U8 files directly and stream the content.QuickTime Player: Apple’s player can also handle M3U8 playlists for HLS.Web Browsers: Many modern web browsers (like Chrome, Safari, and Firefox) can stream M3U8 files through embedded video players (HTML5-based video players).Streaming Platforms:If the M3U8 file is from a streaming platform (such as a live stream), you can usually play it directly within the service’s interface or app (like YouTube Live or other HLS-based platforms).",
+      "You can open an M3U8 file and play the playlist it contains in many media players, including Microsoft Windows Media Player (Windows) and VideoLAN VLC media player (multiplatform). If you open an M3U8 file and the playlist it describes does not begin playing, it may be because you do not have access to the files included in the playlist.",
+      "You can also open your M3U8 file in any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac), to view the text it contains."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "M3U8 files are not video or audio files, so you cannot convert them to .MP4, .MP3, or other media formats. To convert the media files an M3U8 playlist references to other formats, you must locate or download the files. Then, you must convert them using an applicable program.",
+      "For example, if your M3U8 file references a series of .TS files, you must locate or download the TS files. Then, you can use VideoLAN VLC media player to convert them to other video formats."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -93,69 +143,60 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "Philips Songbird"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIR0lEQVR42q1XCVRU1xn+3qwMOxYGJWyxgkgNi4KIpRpQFI2kdSFmMYjUKtXUlhw1SqJUz4nlmIo2BqMJmmDcMERNLQUkuMWIqIgiuIEyLOIOAZxhNub1vjfvvXmDaNqevHP+d/f7f/9676Xw/39Uvzb9c2zyvE9CSCYiCUfMZ+HILCLLzwWAYaJ8x99/cNKLvtN9nRzGeitUQc5yhZ+SUnhYKCm0FnR2m+jW+0ZzQ4tWe/ZoU+O/8ltu3iPrDD8FhPqJMXl2cPDQxIAhC4Jc3BK9RkWHYfhw0IGBgM8LoN3drTM7u2C5+xAWTSvMN5txp6a+tqGnu/xY06383JuVt8kM07NMRD2HucPhuLi5o9wHzfOdGP9rOmYsLFGj2QGa4rfjKkJBKhQNY/UNGM5dxa3j53648uOjgvnHC3aTGfqBQAwEgFG5Q/mEqSuiR4YudJmSMMQy8WVidRnsuFPcUlq0C00Lc2izGboTtbhfcfHuufr6z94uy9vAgbA8DwBr77IJySvHRUX92eF3U9zo6AjrRMKQpkWMeYas1CIggozWDl1NE+6XVHf9UFX9j/Sy3Jz+fkH1AyM/EJucFh8eudb1zeTBGPMSN8EmJg+CaJpVBtNrfqJF7+1maJta0dNISNMOU68ZMfnr2Ek9l5qhOVR172Rtdfa7pZu/FPuEGIB0VXBsUOrQyJ2BC1NiJUljB5aM1PVNGuiu1EHf2ATt7Vb0PuwELXGATK6CXKqCTOFE6s7w37JE4PDw1E2c33ui8nDdifSC6oMNpKtPDIAplcXj09e//MqUTGnGNKvNn5FbGuYtgsJogaOCMJMxDFWgpI4wSRQwEjKzJEfA39OENZY+C259cxnflR7blFn4QRZnCpoHIJ3vHxfwXmjCt34rZ4+URP3y2a5KMF2fswghHt6wEJAmSiEwZknKtOVsX8j610Qb0Hh0/RG+LzhZt+fE/t8WXyluZrRA8bb/akzG4lcSEzepViWRqTSxMcWWomBjw4wp61/PRIjnEMJEBqNMTpgSUjqC8lVD4usFiYcrWipuIGpN8lM6PF9Uh5KSksycA9lbGV+gOM9Xlf1mzc7oBdNec5gxkmVHC+wooc2DqXnjA4SER4AO8gHlT5j6eUKhdgMlYSKFYgPlm7VFmJmdYlWa4EM0rp9rR/GhigPZeRnppKOXGZIScq5KyDsekj0pUhbhI6iaZU/ZVM+romruBowpWAZKJmE7rYFBWddYC+St2YMl694SljJ/Zsqdlh4c3He2JuvDGfGk8wmrfkKuV6buuRqwOUEt8Xay93yKsqHhvlOp2zB+1x+tzPv5CQ/go78dxPJVM+3Uz/R39xixe+/lB1kr4kOZJg/Ao37av1v9v4hVQC7BwCetLWBK5u3G1IK5AnOasi+Zb3VuKda9myTSgPXrs9DYcqDBuC5jtB9pdjJLFAyA2mkVLQE7RykoAQDdL81SQr1o/hHM+iJZkFYYZk1gXZu59SRyF0+wF4EMmftobPy22bghPczfDsDppGO1IRvD1HJvuV3S4UHQIjAFfziJ1M8nWB2TcKX7KYzpX5Rfhe0LYsgYbUPHcNT1YWNZ84Pt6ZFhPADWBP9MKDk66v2IcOcwRzbdWnM/hIXiaPg04wIyto8WmPEnItEu2h7rUdvajcKadhSkR9j7B6lcf2zCtorrl/dlxE0WA3DdOq7ws4Tfx81UT3fimNrnX96Tme4N79zAsk+G20CRok6jQ/7xdnToSZpXKUG5OuPLmd6ihG/doazNhP3lZw+WLHt1Ie+EbBhmRW7JSJ48Iyc408nGmLJ5OaOVh2Rx47VelJV0IntzgBUYp+I/7WgiuzlC6ekDi0IKiYrG9niTcHjxSe2TRjPKDxetPJ+zeBsfhmwiivCKH/aXsNx9Y5f7jfCMkIg8l0bzFQNKCjrRoe2DxdEBfS4uWL1WKUjHqH7BjjZQnkGgiRNbZDSGqc3IijTYCXGxG9hc3Xatdv2yNx5eOtrIJyLeDO6rYvavTZw+OSM0jYZEZvPebcvvQmd0hIO7Hwwqkn6JklYs7bCLgNMNOuzReMNISRDsaUJaiAFeqj5BDBOZ/PldKYrLyj+9/F7KX0nXj+BSMTgzOEX7pPxq1oj3Px6fHhg1NN7MqZ6gXnYXDs4hJN/LoFcCXkPNSJvVxfnG0ycmrxn+JGHmlHbKsO2S5kLT1g+Xdp76up4MaMEdRrybMOHolhqWlzouetbyUbNVar8wEztSf6EXlSe88YSccl6BJiRN0sLDzSycD4KXCzcm2nZ4kWZljwxfteke1JUe+kiTs2QXGWLQG/vlLlYLDoQGvR2zPzM2NmlB+FSJy4sjDf0ko0WS2eCLnZUS2b3yiRxf37P0VH9/NF+T9fom0tUB693Q7kLC1xnLOzIgUsYVLo2InPRm+ASF+qUYPaRS2o6Z+D5FC6nOBoSxeWmXCkfa9Q+uVh7b27Z6zscccx2sD5enrmSA7fXDgPCYHLN1jq//xNlR4wNGBxFNhAQZBJvb7Mxexq23TC7eK7uUONOjRHFDS7WuuqLofu7iQs7ptOj3anrWtZwBoSLkGhDw6rCQ0LS3BvmOjhsROXj4C34mDPHqg9rdBDfi5YwROwwy3NFLcEsnR71ehjPND25oNRdPPy7ZsddQeYS5/3UzIYcBnmzPe5jIOMdkMpOL+5BxPkERqZOc1KGRMrVvINx+MdjspnIzKxiD9nbpDR33entaNPo712oeH9/1nf7amXayroeT2ihW+38DgB/jtaHkHFTFlQrYHqiA7WFq5ByslysNIqn/p6fZQECYKJHD9jqWitYzm/fB9jI2ce1nMua//wBdyHR6YFDcpQAAAABJRU5ErkJggg==",
-      "alt": "iTunes"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "VLC Media Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Winamp"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MediaMonkey"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "GOM Audio"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACqklEQVR42r2W30sUURTHvxtEkBFIb9V70EP/QdB7r1EvRRAW/YAK6SGCzIiCHopKwcBUMNsoNtgowiCqh+wHidXmUhpGamot65Ytmmm2fb/MDjNX3ZrZ3bsHvtzZc2fmfObsveeeyIaO3HIAZ6lt1DhVR91JbI9MowIWIUAzx5p5/nfULkI8rwRAhmP1InNz1AXqOEF+2gTIuT+qlgJLIkB2xrinP5+NLqsAq6uA2GbHef4VcOsDkPPu+0M1UMcIMmUFYOMaoHGTN9GdAk5yBQxljfsHqBpCPLYOIJv+TV8CuPaeKfDSoasm6ihBssFDFQHgWiINnGA2Pk4Y7k/UbkI8sA4gm+EqaH4LtCS5PcxsXKGOEOSHVQDX+r5xXz5zRp8NU3sI0WkdQKYMKBPKiDLjszaqliDfrQK4pjWhtaE14rMRai8h7loHkGl3aJc0vAF+zRlTHdQhgmSsArimeqG6ofrhs6/UFkI8sQ4g04uizMbF10Y2Rqn1hJhY7JmyArjWxZD7HxmunQRorxiAFuWO+4ZrHwEuVwSgc5DdTTeQ8doZHV7rCPDZKkCaHcPpl8DDYcOt6qj0xws9VxaAOM/Icz2MZvYR+hNUHYf+9WxJAKOTwKkXwNMxw63VXku1MXjuf+8oCkDF5yYblkvcbpOzxtS9/FePBP2I0ACD/Ffr+dU9ZsHR0XS40FYrC4AOoHb2yk2JBSX3NpxtNoYiLBBAP8+2epbZ5Ljh1q+DDBwtJnAggFk1Ib1Aa9K59lmMOsDgqYBxwgP08vvq2HgMmBU8lQ8cKzXwAoC1K7y2vJFHa7TPaERl1+GkPB02SCAAWfUyOiJGGZV9gbPI4mFfHhRASV5ZYP4qnO2VCfHO0AA3OG6d5w/VVpUKsIpjK6UVoGycoVrCNJal2F81J2MwjTEnbgAAAABJRU5ErkJggg==",
-      "alt": "PotPlayer"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/m3u8_5882-2.png",
+      "alt": "Screenshot of a .m3u8 file in Microsoft Visual Studio Code",
+      "caption": "M3U8 file open in Microsoft Visual Studio Code"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/m3u8_5882-3.png",
+      "alt": "The same M3U8 file open in VideoLAN VLC media player",
+      "caption": "The same M3U8 file open in VideoLAN VLC media player"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.337Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.337Z"
+      "url": "https://docs.fileformat.com/audio/m3u8/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "https://fileinfo.com/extension/m3u8",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.337Z"
+      "url": "https://fileinfo.com/extension/m3u8",
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.337Z"
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.337Z",
-  "mime": [
-    "application/vnd.apple.mpegurl"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.175Z"
 }

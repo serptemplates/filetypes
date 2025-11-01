@@ -1,8 +1,26 @@
 {
   "slug": "nch",
   "extension": "nch",
-  "name": ".NCH File Extension",
+  "name": "Outlook Express Folder File",
   "summary": "Learn about .NCH files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Outlook Express references NCH files to interpret how a user's folders are laid out and linked together within the application. Examples of folder structure metadata NCH files include:",
+      "Hierarchy information for mail folders (e.g., the parent-child relationship between folders like Inbox, Sent, and custom folders).",
+      "Folder organization settings, such as the order and nesting of folders.",
+      "References to corresponding DBX files, which hold the actual email messages.",
+      "Because the NCH file is essential to maintaining folder integrity, corrupting or modifying it can result in broken folder views or missing mail folder listings within the program. You can typically find NCH files in the Mail directory within the Outlook Express data folder. One common example is Folders.nch, which stores information about the user's folder hierarchy."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "NCH files are not meant to be opened. Instead, Microsoft Outlook Express references them as needed while loading the email interface. Moving, renaming, or deleting NCH files can lead to errors or loss of folder organization within Outlook Express."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +61,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/nch",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.770Z"
+      "url": "https://fileinfo.com/extension/nch",
+      "retrieved_at": "2025-11-01T22:32:42.638Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.770Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.638Z"
 }

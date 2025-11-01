@@ -1,8 +1,28 @@
 {
   "slug": "xcfilelist",
   "extension": "xcfilelist",
-  "name": ".XCFILELIST File Extension",
+  "name": "Xcode Build Phase File List",
   "summary": "Learn about .XCFILELIST files and view a list of programs that open them.",
+  "developer": "Apple",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Apple introduced the XCFILELIST format in Xcode 9 (2017) as part of its efforts to optimize build performance in large projects. Xcode developers building iOS, macOS, watchOS, and tvOS apps are the most likely to encounter XCFILELIST files.",
+      "In Xcode, build scripts and custom build rules are tools that let developers customize and extend the build process of their app or framework projects. For example, build scripts are shell scripts (usually written in Bash, Zsh, or another scripting language) that run at specific points in the Xcode build process to automate tasks, such as generating code or assets before compilation or validating files or configurations.",
+      "Developers often add build scripts to a target’s build phases in Xcode using a Run Script phase (Build Phases → Run Script). When they add a Run Script build phase to a target, they can specify input file lists and output file lists (saved as XCFILELIST files). Xcode then references the XCFILELIST files to understand the files a script depends on or produces, which helps it avoid unnecessary rebuilds by tracking file changes more precisely.",
+      "Each line in an XCFILELIST file represents a path to a file or directory.",
+      "Paths can be absolute (full path) or relative (relative to the project directory).",
+      "Developers can add comments using the # symbol."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open XCFILELIST files with Apple Xcode in macOS. If an XCFILELIST file is in your project, you can navigate to the file in your project's directory via the Project Navigator. You can also open an XCFILELIST file by selecting File → Open.",
+      "Since XCFILELIST files store plain text, you can also open them with any text or source code editor. Some options include Apple TextEdit (bundled with macOS), Microsoft Notepad (bundled with Windows), and Microsoft Visual Studio Code (multiplatform)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -60,13 +80,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/xcfilelist",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:50.004Z"
+      "url": "https://fileinfo.com/extension/xcfilelist",
+      "retrieved_at": "2025-11-01T22:32:42.888Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:50.004Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.888Z"
 }

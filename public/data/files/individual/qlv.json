@@ -1,8 +1,26 @@
 {
   "slug": "qlv",
   "extension": "qlv",
-  "name": ".QLV File Extension",
+  "name": "QGIS layerVersion Save File",
   "summary": "Learn about .QLV files and view a list of programs that open them.",
+  "developer": "Enrico Ferreguti",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "QGIS is used by various amateur and professional users to create, edit, visualize, and publish geospatial information. The \"layerVersion\" plugin was developed by Enrico Ferreguti to provide a way to take \"snapshots\" of edits made to layers in QGIS.",
+      "The plugin features a minimal user interface. When installed in QGIS, it adds an item under the Vector menu and adds two buttons to the QGIS interface (\"Save layer versions\" and \"Load layer versions\").",
+      "When you save your edits for the first time, the plugin creates a QLV file to store the data. When you save them again, the plugin writes over the QLV file.",
+      "After saving the QLV file, you can share it with other users that are utilizing the same geospatial database to apply edits to the layers in their QGIS .QGS Project files. Keep in mind that they need to have the \"layerVersion\" plugin installed."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open QLV files with QGIS as long as the \"layerVersion\" plugin is installed. When you load the QLV file the edits stored in the file are replicated on your layers as long as the connected database is consistent.",
+      "Since QLV files are saved in XML format, you can also open a QLV file with an XML or text editor to view the contents. Keep in mind that the contents will not appear the same as if they were being viewed with QGIS."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +61,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/qlv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.853Z"
+      "url": "https://fileinfo.com/extension/qlv",
+      "retrieved_at": "2025-11-01T22:32:42.720Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.853Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.720Z"
 }

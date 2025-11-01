@@ -1,8 +1,27 @@
 {
   "slug": "dtb",
   "extension": "dtb",
-  "name": "What are DTB files and how to open them",
+  "name": "Device Tree Blob File",
   "summary": "Learn about .DTB files and view a list of programs that open them.",
+  "developer": "DeviceTree",
+  "category": "other",
+  "mime": [
+    "application/x-dtbook+xml"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "When booting a computer that uses the Linux operating system, the computer's boot loader passes a device tree to the operating system's kernel. The device tree describes the hardware components the computer includes, allowing the kernel to access and manage those components. Some of the components a device tree describes are the computer's CPU, memory, buses, and peripherals (such as the computer's keyboard).",
+      "Device trees make it easier for Linux operating systems to manage different computers that contain different hardware. Without device trees, operating systems would have to contain many separate files that allow them to recognize and manage different hardware configurations. Instead, the device tree simply passes the operating system's kernel a description of the system it is installed upon.",
+      "Each driver or module described in a device tree is listed as a node, which contains several properties and, often, child nodes. These properties and nodes are first specified in a text-based .DTS (Device Tree Source) file, before being compiled into the binary DTB file that a kernel actually uses as a device tree."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "DTB files are not meant to be opened. Instead, they are meant to be passed to the Linux kernel for use as a device tree. Linux users can use the devicetree command to load a DTB file as their device tree."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -19,10 +38,6 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA8klEQVR42u2WUQ6EIAxE7c3w5Hgzdl3BkAq0nRL52f6YGGZ4NDBA6VvbwqITgOi4f6QU/gCrAPZXJ74Wm1YBxAwQZgBEozbm7847UNoS1FYWXRnLx8EAtcai5SAQQGtydAGEJKEXoO4CBOCpc/Ia8jWA3p75ARxEW1h0J90ApawgXvgHgBXCA98FsBi2tBaQIYDGzAOvApAMJa0EkpNQBphd5fSbcgBt92ifQEGEnprWiYGTcFZ2uKN4FESaW3YIwPPb81boeTQBRgYSiKTl+geAxqAHodXW+mU5cEG8+CjtetQAiAl/4cAA8ApmAMDqCfUBrEAecrp1vKoAAAAASUVORK5CYII=",
-      "alt": "DTBeamDemo"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -51,26 +66,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.301Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.143Z"
     },
     {
-      "url": "https://fileinfo.com/extension/dtb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.301Z"
+      "url": "https://fileinfo.com/extension/dtb",
+      "retrieved_at": "2025-11-01T22:32:42.143Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.301Z"
+      "retrieved_at": "2025-11-01T22:32:42.143Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.301Z",
-  "mime": [
-    "application/x-dtbook+xml"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.143Z"
 }

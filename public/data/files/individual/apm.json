@@ -1,8 +1,59 @@
 {
   "slug": "apm",
   "extension": "apm",
-  "name": ".APM File Extension",
+  "name": "Aldus Placeable Metafile Image",
   "summary": "Learn about .APM files and view a list of programs that open them.",
+  "developer": "Aldus Corporation",
+  "category": "image",
+  "category_slug": "image",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "WMF files use an 18-byte header that contains metadata about the file. APM files instead use a 22-byte header. Because APM files use a non-standard header, Windows API metafile functions, such as GetMetaFile(), CopyMetaFile(), and PlayMetaFile, cannot read the files correctly. To use APM files with these functions, developers must first strip the files' headers using the program wmapmf.exe."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an APM file with GIMP (multiplatform) or XnViewMP (multiplatform)."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use GIMP or XnViewMP to convert APM files to other image formats. For example, XnViewMP can convert AMP files to the following formats (and many others):",
+      ".JPG - JPEG Image",
+      ".GIF - Graphical Interchange Format",
+      ".PNG - Portable Network Graphic",
+      ".TIFF - Tagged Image File Format",
+      ".BMP - Bitmap Image",
+      ".PCX - Paintbrush Bitmap Image",
+      ".TGA - Targa Graphic",
+      ".JP2 - JPEG 2000 Core Image",
+      ".JXR - JPEG XR Image",
+      ".WEBP - WebP Image"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,18 +98,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.433Z"
+      "url": "https://docs.fileformat.com/image/apm/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     },
     {
-      "url": "https://fileinfo.com/extension/apm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.433Z"
+      "url": "https://fileinfo.com/extension/apm",
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.433Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.251Z"
 }

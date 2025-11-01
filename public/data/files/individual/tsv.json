@@ -1,8 +1,48 @@
 {
   "slug": "tsv",
   "extension": "tsv",
-  "name": "What are TSV files and how to open them",
+  "name": "Tab-Separated Values File",
   "summary": "Learn about .TSV files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "document",
+  "mime": [
+    "text/tab-separated-values"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "TSV is a standard, widely-supported format used primarily for transferring data between applications and databases. For example, a researcher whose results are saved in a proprietary database format may export those results as a TSV file. They can then share this TSV file with others, who will be able to open it in any spreadsheet application.",
+      "Each TSV file contains one or more data tables. These tables are structured using tabs, which delineate columns, and line breaks, which delineate rows. Typically, each table begins with a header row, which describes the data that follows.",
+      "TSV files are similar to and used in much the same way as .CSV (Comma-Separated Values) files. (The primary difference between the two formats is that CSV files use commas, rather than tabs, to separate columns.) Most applications that support the TSV format also support the CSV format, and vice-versa.",
+      "NOTE: On occasion, TSV files may be saved with the .TAB extension.",
+      "Most spreadsheet and database applications that allow you to export datasets allow you to export in the TSV format. For example, Google Sheets and the desktop versions of Microsoft Excel and Apple Numbers allow you to export spreadsheets as TSV files.",
+      "If necessary, you can also manually create a TSV file using Microsoft Notepad, Apple TextEdit, or any other text editor (though doing so may take a lot of work if your dataset includes a lot of data)."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Usually, it's best to open TSV files with Microsoft Excel, Apple Numbers, Google Sheets, or another spreadsheet application. These applications show the data a TSV file contains in a structured, easy-to-parse format. They also allow you to easily edit and manipulate the data your TSV file contains, or convert the file to another spreadsheet format if necessary.",
+      "However, you can also open TSV files with Microsoft Notepad, Apple TextEdit, or any other text editor. These programs will show you the data table(s) your TSV file contains, but will not format them as nicely as spreadsheet applications do."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Spreadsheet applications like Microsoft Excel, Apple Numbers, and Google Sheets can convert TSV files to several other formats, including various spreadsheet and document formats. For example, the Windows and Mac versions of Microsoft Excel can convert TSV files to the following formats:",
+      ".XLSX - Microsoft Excel Spreadsheet",
+      ".XLS - Microsoft Excel Spreadsheet (Legacy)",
+      ".XLSB - Microsoft Excel Binary Spreadsheet",
+      ".ODS - OpenDocument Spreadsheet",
+      ".DIF - Data Interchange Format",
+      ".PDF - Portable Document Format",
+      ".RTF - Rich Text Format",
+      ".TXT - Plain Text",
+      ".HTM, .HTML - HTML Webpage",
+      ".XML - Extensible Markup Language",
+      ".MHT, .MHTML - MIME HTML Archive",
+      ".XPS - XML Paper Specification (Windows only)"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -77,64 +117,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAByElEQVR42mNkGGDAOOgdoLg47TyQMiDWQCFFaVLsv0CMA/6TYiKJDiAqBEYdMLAOkJsUQ9ABjMxMDEx8HOQ5QKDGkaRUjqL5138Glk+MDJxa0gzMglxkO4CkIEYHP08/YWDVEGVg4mUH8wXVVYewA/g5eBiWRDWD2duuH2GYfnwtmK0rqcLQ5pkNZldtn8pw+fkd2oVAm1c2Q6ZlMMPHH18Y9HujwPTmpH4GG0V9hiP3LzL4ziukbRSAQuFi8TIw3bl/IdjSzUl9YDmQgx59eEFbB4BAlKE7w9SgcrDvLz+/C/Y9yDEd+xZiGECzRAgLdhAA+Rrke2yAZg4AJUZvTWswG1vcw8C/nfcYOOSEGJg42cD8HwpclDvARtEAHO+gKAABUHrIXtfJsOz8Tto7AGTZoexZDHICEuB4B4Fyx3iUXEFTB2DLhqBcAXIQKARAIUEzB8CCHgSQgxyWK0DAd14RME1coF0IkAqGhQPIro7/f/zJ8P/EUxQHkAoINki4tSRxhhAjEyMDMzc7A7uMAO0cIOSkTjCKWIS5GZjYWWnjAGEvHbwOADXHWPg5ybKcKAdIxJhTlEiHhQPIziVEAMJdM1qDAXcAAJ3o41sl1m91AAAAAElFTkSuQmCC",
-      "alt": "Microsoft Excel"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "OpenOffice.org Calc"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEcklEQVR42rXXa0xbZRgH8IcZ/eQH5xiW+1XuajQaNdYYb3srWeYlRrMsM0Yubdd141Ioc1tdCOrAjotNV5jDGM2yzLsL2c5BCOEmg82iGdDRUiD6BdpSSgmfnEz7Pu1hp/DWw8Dnyznv/7zneX4caE+IgrCSfXnXLdhgzb7zd5TUPuF7RQvZFxsfLmr+7mrzSL1u3ycCPPA53mQlf0geevPWX6AbUUKvu5Ou597D5qFe61Voz1rAWbzpGpkBmUwmCbC8vAwLfi9U/qaCPlcXDigKIs6ujwhdXws4gzcMkymIjY2V/BRCCJ1VCQPubhxSEkR8thYxV8wCtODmK2QS4uLiJANCiHmfByqtKhj09OAgVRDRKkbMKRmAmNNBgMIB8fHxGwIEamlpiSKqRtQw6O6lmesADouxrCJcahbAjJt+IROQkJCwYUAI4V5wgd56AIY8/Tjw4NqP6foAEwL6ie2OAbcjqkc0MOwZQIR2fYQY0IyAXjIGiYmJdwwIlN/vR4RVA9fmBxFxeC1CFOxsREAPuQ5JSUmbAoQQc/Oz/yIOgtU7BO6y/wKcQkA3+R2Sk5M3DQjU4uIiuLxzcCSAmB8Gd0WEr+KdnyCgi4xASkoKzdJbt28K4FQugM/no0+ioPNpmrkrGZ+C6DoEdJJfBUBG6w4w7K0RNa05b5CcOVVeej4zMwMvco/Rc4+eBfgYAR3kKqSmptLswZZoMOwLa3zOIDlzqDwC4GXucQQcYQE+3EYBvGIVkGmJ3tSvwK5GwPT0NBDuCQQcXWEAahFwmQwJgGxLDHBl/aKmika55OyG2iUAXuGeRMBxBmBHDQIukUEBkNMiA75c3JickgNfIS2zqWcFQAGHf4TzH7AAJxDQTgYgLS2NZrmWyG9FLRgiXler1fQ4NTUFu/lnEHCCBTAg4CLpEwD5lnjgq8J+snq5kLUbO0Cv1687vK6uDpRKpQDYwz+LgBoW4BgCfiQ9kJ6eTrOHTicAXx0GOCkXsgBAp9MJ125+fRT+7LsAqaZJMBqNUFJSQnOn0wmv8c8hoJYBuP99BPxAuiEjIwMB5sjvhEP3GKC8vFxYr3x7nAKSm+3Q0NAAxcXFNJ+cnITX+efpufcjFqAaAd+RLsjMzESAKRE6jomfwK5auZAFnkBpaSlUXF0BfsoPo3c3UkBi4w1oamoSAA6HA97gXkDASRagCgHfkJ8hKyuLZg9/mgQdhjBAjVzIAgCtVgtV1igRIM44BiaTCYqKiug+u90Ob3IvIaCeBdAh4ALhITs7m2aPNEd+KR261wAajQYe/X6Zri9feYoeZfXXwWw2Q2FhIV1PTEzAW9wuBBgZgO3lQYCCg5ycHJBSbW1tEa+HADabDd7mFPR8oYEFKEPAeXIJcnNzJQGk1vj4OOzlChDQxAIcRsA50g55eXlbChgbG4N9/G4ENLMAWgR8RS5Cfn7+lgJGR0dhP78HASYG4D5NEKD4aUuHh2o/9yo9+swsgHrbpv45lVo+CwNAEar/F+FrWRHN/AentBk/pod66wAAAABJRU5ErkJggg==",
-      "alt": "LibreOffice Calc"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "UltraEdit"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Notepad++"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "progeCAD Professional"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/tsv_310-4.png",
+      "alt": "Screenshot of a .tsv file in Google Sheets",
+      "caption": "TSV file open in Google Sheets"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/tsv_310-3.png",
+      "alt": "TSV file open in Apple TextEdit",
+      "caption": "TSV file open in Apple TextEdit"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.400Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     },
     {
-      "url": "https://fileinfo.com/extension/tsv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.400Z"
+      "url": "https://fileinfo.com/extension/tsv",
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.400Z"
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.400Z",
-  "mime": [
-    "text/tab-separated-values"
-  ],
-  "category": "document",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.223Z"
 }

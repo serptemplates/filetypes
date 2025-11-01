@@ -1,8 +1,43 @@
 {
   "slug": "whl",
   "extension": "whl",
-  "name": ".WHL File Extension",
+  "name": "Python Wheel Package",
   "summary": "Learn about .WHL files and view a list of programs that open them.",
+  "developer": "Python",
+  "category": "compression",
+  "category_slug": "compression",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The Wheel format was introduced in PEP 427, which is a Python Enhancement Proposal authored by Daniel Holth and accepted in 2012. It was developed as a quicker and more reliable method of installing Python software than re-building from source code every time. WHL files only have to be moved to the correct location on the target system to be installed, whereas a source distribution requires a build step before installation.",
+      "There are three types of WHL files:",
+      "Universal Wheel - It only contains Python files, no compiled extensions, and natively supports Python 2 and 3.",
+      "Pure Python Wheel - It only contains Python files and no compiled extensions, but does not natively support Python 2 and 3.",
+      "Platform Wheel - It contains Python files and compiled extensions but does not natively support Python 2 and 3. This type of wheel is specific to a platform, such as Windows or macOS, because it contains compiled extensions."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,18 +78,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.462Z"
+      "url": "https://docs.fileformat.com/compression/whl/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.292Z"
     },
     {
-      "url": "https://fileinfo.com/extension/whl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.462Z"
+      "url": "https://fileinfo.com/extension/whl",
+      "retrieved_at": "2025-11-01T22:32:42.292Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.462Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.292Z"
 }

@@ -1,8 +1,67 @@
 {
   "slug": "srt",
   "extension": "srt",
-  "name": "What are SRT files and how to open them",
+  "name": "SubRip Subtitle File",
   "summary": "Learn about .SRT files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "video",
+  "category_slug": "video",
+  "mime": [
+    "application/x-subrip"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Each subtitle has four parts in the SRT file.\n\nA numeric counter indicating the number or position of the subtitle.Start and end time of the subtitle separated by –> charactersSubtitle text in one or more lines.A blank line indicating the end of the subtitle.",
+      "Subtitle text and timing information saved in the SubRip format appear similar to the following:",
+      "1 00:00:03,400 → 00:00:06,177 In this lesson, we're going to be talking about finance. And",
+      "2 00:00:06,177 → 00:00:10,009 one of the most important aspects of finance is interest.",
+      "Media players load each segment of an SRT file in order, showing each segment's text during the time that text is associated with. Timecodes in SRT files are written in the HH:MM:SS,MIL format. Thus, the first line of text shown above would appear on-screen at 3.004 seconds and disappear at 6.00177 seconds.",
+      "Display coordinates may appear after each segment's end timecode. If a segment contains no display coordinates, its text will appear in the bottom center of your display.",
+      "You can validate that the subtitles in an SRT file are formatted correctly by uploading the SRT file to Subtitle Validator online. To upload it, select the \"Choose File\" button and select the SRT file."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open SRT files in several ways. The most common way is adding subtitles to videos in media players via SRT files. Examples of media players that support SRT files include:",
+      "VideoLAN VLC media player (multiplatform)",
+      "MPlayer (multiplatform)",
+      "CyberLink PowerDVD (Windows)",
+      "For example, to use an SRT file as a subtitle track in VLC media player:",
+      "Open VLC media player and begin playing the video you want to use your SRT file with.",
+      "From the VLC Media Player menu bar, select Subtitles → Add Subtitle File.",
+      "Navigate to and open your SRT file.",
+      "You can also open SRT files with a subtitle or text editor. For example, you can open and edit an SRT file with Aegisub or any text editor (including Microsoft Notepad or Apple TextEdit).",
+      "You can validate that the subtitles in an SRT file are formatted correctly by uploading the SRT file to Subtitle Validator online. To upload it, select the \"Choose File\" button and select the SRT file."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "While the SRT format is one of the most common subtitle formats, you can also convert SRT subtitles to other formats. For example, MConverter allows you to convert SRT subtitles to the .SMI and .SUB formats."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -93,69 +152,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEy0lEQVR42q1XW2xUVRRd57adaTtQ+qYhDWiUoq2xApoi8UECxsTAh038648miJoYSPxR0dSUIIqhGgKoUYJiaakBPxSDhCbaDyxBoBGxjUCixD5EW6jtdNqZuTPbfebcYe57pshJ9r3nnrtfZ+29z0Ms7CZwK2ZqYXqRqZ4pAKMRrI1sH/b/vjKEGD8H+PtDfncwRUR1NxVx502mLUxFt9GY3/8Zpg+IsE1UddMm/tjFFLqdhjxlMoPT3H1FVB6m8/yx3EvIRdA/LDnwm8b6RcVhisKIeY7wqb4HUllRsA7ERHkXUTb4ZD9JivIEEMwDCjWgQFP/4zw+m1CkJwHBPFqOIRGlXUQOJtNIgpShu+YDTZXAA+XAnfOA8iA7wY6wLUTZ6HXG8fcwcG4c+PEf4MqkktWEfzKLBZ1Ebh6SAdf9ZcDGOuDJRcDCQqXQr0mURjjHjw0BH18CBiecMhYHSjqdIZADEsZnlgCtjcDiUA7BdmmXGYWt/cDXQ+7xSIVg3iFnCOQsmtn47ocU1P+nXZvl1e008M2fViTSRkXIcCA9II3fwTE+8jjQUOozuyngaljlQF0JMM458PMNoLFM5Ym5XeDx5h+AP8IKWbMHorjDGgKZOJvvBXau9DauM89zp4CjV1VFyOSURiZ1oOtRYH2tU+ZVXm12XnSiIAo7rEkoM76TlWyo9XZgKAI8cRK4NKkUNixQs17KSGxh50P5TpnvRhQKslQFMtUmgtIBwwWuJpQWAMfXASsrvB04PswJ2ss7Cc/4bjb61RrgPp9wySbLcx07PREzDUoHAl9kckDSfPb+2FpgdZW3sjc4s7f/ovovLAP2NalZ+bXea8BTPYRI3GRdOpBvOGAuzr2s8Pk6d0VhnvX6HlY4yuFiZw89pso1W9szSHi5j2Bf50XeQWsOyCqQi86XXAUlBU5FozMqof7mdyUvTDtWALXF/sYl7M09CXw/TEYCZGYrtINkqUP5CnIitvMa8NIypzLJrKe9Z8rX/I1L1vYLSbx2JoF40rbLsTKBz+0hULGp4aPJ3lXA00tE1vh6Gmc9nVeS2HxKx/is2XimL3DAcMu8GhgbQTU78XqjwLNLNZQE5mKaNygut/2DCbSe0TE2Y0Bv3okMewL7dRMC5Nj0Ayy4ZpHAxnu01LuiMDsif0UIb5/T8emvOmZ028RsNgQ+4d2cfJiMk4dc8erLBB6pEXiwWkNdqcCKKg0BzSraN5rE1r4YeoeTsKyxZIt/ugzxUZQcTG4C6SNQav0kPFyj4dsNQZQFFR7TPI8DAzreORvH8FTSutyRm371ENg3S1ZYzALWhLn5j6m1qQBvrVKJ8duNJNpOx3D0chxRHdZSc9VrKkPsiViT0E/ASM6akMCJ5mLUl2s4wkbb+qIYHEt6Jpp7/NMh2B0me+J55oJsbKeloQBtq4NoPxvFZxdjCEcpsxY7UHMmnhWB96fIk8EDjbWL8zEVI/w0otsOmnY9bs5Y+QR2/Rvlj4BfnLwqw3XWfjN38sYE3ps4zwqX3wp8vsfd3JzqF3j3+iYe4KsZheYK35x5rU5NQ17NsGO8iMf4ckrqcpo7fD4oefHd5E1dTvmAuE1g+5gc5Q2VWvhH5np+a7PKxssbMw0gdT0Xqev5fxiLi7ZuHgXBAAAAAElFTkSuQmCC",
-      "alt": "RealPlayer"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACqklEQVR42r2W30sUURTHvxtEkBFIb9V70EP/QdB7r1EvRRAW/YAK6SGCzIiCHopKwcBUMNsoNtgowiCqh+wHidXmUhpGamot65Ytmmm2fb/MDjNX3ZrZ3bsHvtzZc2fmfObsveeeyIaO3HIAZ6lt1DhVR91JbI9MowIWIUAzx5p5/nfULkI8rwRAhmP1InNz1AXqOEF+2gTIuT+qlgJLIkB2xrinP5+NLqsAq6uA2GbHef4VcOsDkPPu+0M1UMcIMmUFYOMaoHGTN9GdAk5yBQxljfsHqBpCPLYOIJv+TV8CuPaeKfDSoasm6ihBssFDFQHgWiINnGA2Pk4Y7k/UbkI8sA4gm+EqaH4LtCS5PcxsXKGOEOSHVQDX+r5xXz5zRp8NU3sI0WkdQKYMKBPKiDLjszaqliDfrQK4pjWhtaE14rMRai8h7loHkGl3aJc0vAF+zRlTHdQhgmSsArimeqG6ofrhs6/UFkI8sQ4g04uizMbF10Y2Rqn1hJhY7JmyArjWxZD7HxmunQRorxiAFuWO+4ZrHwEuVwSgc5DdTTeQ8doZHV7rCPDZKkCaHcPpl8DDYcOt6qj0xws9VxaAOM/Icz2MZvYR+hNUHYf+9WxJAKOTwKkXwNMxw63VXku1MXjuf+8oCkDF5yYblkvcbpOzxtS9/FePBP2I0ACD/Ffr+dU9ZsHR0XS40FYrC4AOoHb2yk2JBSX3NpxtNoYiLBBAP8+2epbZ5Ljh1q+DDBwtJnAggFk1Ib1Aa9K59lmMOsDgqYBxwgP08vvq2HgMmBU8lQ8cKzXwAoC1K7y2vJFHa7TPaERl1+GkPB02SCAAWfUyOiJGGZV9gbPI4mFfHhRASV5ZYP4qnO2VCfHO0AA3OG6d5w/VVpUKsIpjK6UVoGycoVrCNJal2F81J2MwjTEnbgAAAABJRU5ErkJggg==",
-      "alt": "PotPlayer"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEpElEQVR42r2Xe1BUVRzHv3efrO6D3dCy1zRkYzSGpaRC5IxFVDM2lakUZH/lYM0402MayhqZCNeZdMAhRYhsAkNYBiGKAYasHCPxgaSljVHiTGmgJLg8du9yd/f2O3dxYVl2726Q35nf3Mc59/w+53fP+Z1zOEzQP2kLFXTJIHuRbDnZHMyM+siOklWR2eIOnvFeL+AmOI+nSw3ZkhlyGkonydYRRLcfYMx5O9nc/9n5dV0hS2YQ3FjYj5ElyX2lujcR6kVJcF/ognC8bSyGCqjuS4Q4aIfnrwvRQHSQLWMAmXRTKVdb+9gq6HO2Sg6ZnPs/gaN8N4zWEqiXJAOiiJGS7eDr9kUDkcUAmunmycklXIwO8Hohjrqk59iyeijvmu8vF4VRDOVsgLGg3P/O29+HgYxHoYpfAM5sgdBJgRW94QBaGAAboXF+xyYz9G/nQ7M0FfB44DrYiJFdVpiKbVDeGT/+qVvAtY1rJTBwvrHMfoHj810wvL9DeudqrsNwQW44gB4GIE58Y7Tugfqh1IBafH0l/fffoX8j1+/MWVsOR+kOxKxeD13mBogDVzG8Mw8xq9ZCm/a0L0r2AfSvWREOwBMAwOmNsNS1+Z34Q0sNDVBD6sQkqBcvh/uPcxCOHYbiltugMN8k/X9P70V4+y5DsyI9IAJ8Yw04rRbCL51TEgQCzNbDUv+jf6BN/resUU3KSurlOqgfWErTQh1Y7/LfcH3XBOH0CdZ/iLwTpsIK6buhvDcx+sM34QGYDLmF0KSmBVRyVu8F/7WNZoFVioKcRKcDjrICeHouwritRHrHxgKLiCwAN0uP2Zs2Q/NIOkAjnW8+gNFDLTDk7/aFW+oqjWyFQhaE/6oa7l9Pg9PpwDcd8H0nBzBZCsscmEproYi1wNXaAMe+PfD2XoJi7jzMevk1aJ94NiyEk+o7KopDlssCGLYUUDQeh+v7Jgxbc4LK9e9sk5JUSFGv7Zsy4e46Gz0AS72moi+kQWSnOe8+fy6oDssNsXsbwkZBONGGwc2vRg/AEpI2/Rnpvv+5FIjDQ8EN0BSzNHaEBWDTdCArnaZpb3QA5qpvoYjzLZD219fDffZUcJTuSaAsWQM5RTwL/AUsJ3zZPh7GzqMYfDc7cCTTTDBuLYY66WFZAL62AiOl2yMHYKPcXNka8E44dRzOylJ4Lv0J5bzboXtpI9QPLpN1LgE01WKk8IMoAGjOm2sORdR4JHLaPoPj08LIAZgs9UdofTDMCABbUfmGqugADHlF0CSvnBEAe/YauLt/iw6ArQlsbZiuPN1duJb9/JRl4TMhJSDTx/uhWrBwWgChVkJ5AJJqfgKMOyso4cT8J+ejh1sx9OFbIYMTtCWbStKveO+joPVfTmwTMkS5Q3Txoar0hNyUTpb6/sXQbymUVsVI5Gqpx0hRvrR5DaOWiLflTGxK6l54BTFPrQZnjA2uQDlf+LkDzqoyCCfbI2kyK6qDiV9KJVQJi6C89Y7xPSFtx9xnfoL36pVIW/EdTNgdQdxNlyO4sUezFDqanZ94OGUQNtyYw2kGc84eAvbfk47nDORmMuU0HXrGesxCXs1s4vH8X4IL22JFsdJFAAAAAElFTkSuQmCC",
-      "alt": "GOM Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "PowerDVD"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "KMPlayer"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKqklEQVR42o1XCXRU1Rn+75s3S2ZJZjKZmawQkYRdDaBiCbEg+7FyWAposS5wLCAoFGUTFUGpRa0eVDyK1lBrgRa3qlAsIoVigQMoaZAkSCTJTLbJTGbNzLw3b26/FybHKCC95/znbff9y/evl9FPLA1jpAUVmc1s6y23UI5eTzyVohSIc9597b5PX3soIEm0srqazkejXMD/MvZeaTH66aV+t4IKRcaYqtD/sxQITPJuqc0gP4j/lIBLVl+zmdzRKMvUao0hWR5s0WrfHp+f7zBqNIynrVGvPUS97lWKKwo/5POFA7K8IksU9weTya58vZ63JBKUupoCq4cOpWcBH4QbIHyNhuiwQjT7s4kT7/1ZTg4LJBKMeuBXlB9Ar5IBKNWEQnzy0aOHwO4tUP8Mxp6LcR7fMXAgv7Om5soKlFosVBcO0xinUzjc3j55mNVaeT4U2t+VSlWOzc19a8+4cXm+ri6mQswvpwDeZwsCv//rr6N7vN4NRsZuzNPrx52Px++73mTaezoaTbm0WmqT5csrYNPpaKjVyk52dDiTjP2letq08uXHj0c+dbsX4XP5rvLyRZNyc4XOePz7wIMS6r0CgqVUFQzy6adOHYQyH06x2zc8XFhonnL69GEgM+/ajIxWdzzOA6nUpQo8PmQIbTxzhu4sLhZ3XLiwfM2wYU89fcMN2oMtLey2/fs/w8YXRthsb+yrqOgbkiSWVFFIJn9gvRXW31tVFdnv8z2NgJ20Y9CgcTeYTHxTQ4NU2d7+5M8zM186GArJc6xW2hUIXIrAkgED2Cu1tdcPzMzcfWDixGJwZkYwXXD8eGx3Y+MybLl2a1nZI7/Mz9f4gAKlLVcJcNOpQIDPrqr6HPsOz7LbV68vLs4IA24pleJ31dZ+55HlOdNstq8+6uzkP0Bg7eDBtKWujuUZDKZzkcjLuyoq5k1wuYQw8lmH7/XhMB/3xRf/kTh/YoDFsvUfo0aVxi8y7oaf4IZMUaR7qqqCh4LBzRZBmPHXgQNHZMPfCezTg8eBYFBZ4/G8W6DVPtQhy5HpFgvfiXhjI202OtHZSY8NGSI8c+bMjBlFRdveHDXKAuFMZSyDwJCvq66WtzU0rAUv46bS0ieXFhd3o4CUIx3gPwwe95w9uw/fv3nA5Vqy2OXSBiGcpRGCIXyl2x06Eov9ZlZm5vu7QyGlWKO5iAACix1obS3IEMVdB8ePv9mp0zEJ/lUh1gFak8DobDBIt315pC6WoqMug3721ByHwQ4LSwxaGm400cN13wa/DIdfLBC1v9peWlKiV4sRlFN5JEEaPHskic/3eI4Bs7nDdDr3V3hWFWBTXC5xb1vbmqeGDl27uH9/MYRch+9JxMeTHV56r9VN//J3UmPKzhUBsR53wx6ZBFFLWkMe2ShMwYQvGJRSNQ9mO0YucTg0AQiPwwg57abuLEGVqgwG5e3h8LMjdLrfnZQkmS3o1094s77+puuysnZ9Ul5egMLDVJ8dam+nl+vOUaNZR52pPhTX3wRj4JLmSs4ViTEoyLhCgsFFusL5RLHzlK2rIWOinQpDUZpiMlEZ0loPwVFYL6dTVkGVXOr3e5pSqblTdLpjrECvz2qTpNc/GT16ZkV2tnDU56Pn6uqo1mCgmXNm0egxE2j2impKmcooWbOAKNFwSenWuGaTkruUBjtraNu6vvThx/+kQwe/ILmhgSrwvQLKWtV4giLdqEqSsjIcft9AtEh1wcLrLJbN6wYNMh4LhdhHiMzJM2bQLNDggSVUdS5I4+ccIdFup2T1zMt3FH0RsaGfkoWfofp94ykSjVCzp5lOnTxJnx84QE0o7WXg2ycWoy4ELpzIKyUpWs/5GlWBB3SiWOFyOicVFhRkP7pqFRUWFZGgEcluz6Kz9WGaevcJEnPyKFl1+xUUuIbYkE8ok/2Xqj4YRbFoF4XCXbiGKRyJ0IULF+jkiRP0DQpdR3u75Pf7qwKRyDcoBnWqAmNBRQardXymzTZ93K23GudOn075ubkkakWSk4xGzztOSeN1RN8uIYqcukS+UPRbSlnvorJrvqO/PVdKbb4IxWNxktD9YrC4Eyl6Du44cfo0eTweHo1Gq5vr699OJhLfqgo8fq3R+MiEnBx9RFFEvd3OanNyaMzYsVQxciTlOqy07tV6+vSAgbRZWpLrlhPFz39fy+2/IM01T1LS66GnljKaMMoM6yVYHqbG1laqgfXu+nrKamoiU0sLtXV0kC6RSB1DNHmItqsKFFlFcfvHZWVjULmEGIpHPV5+gCIRKCykm0cOp3xnH9r4lkRNXicJGUbi0Wriko+YsT9RRimeA3TrCD89OJ3I3e6nC80eana7iXk8VAShxV4vWeEKAm9BnZhQmh8lqooRLWMzkbPveb233263v/lSSYmtI93v1WZzBkoctpgpnJdHJlsBnaxxUpMvj6dYJuNMi5FNIpH5qZ+rjcaUdnC/38e1Pq/gaGmlQqSxDYGnQTlX0m1brQdm1ILn4UggsN6GeYHZRZHpGTM1y/Lzr5eW3j/abNaoM13P3KfmbyNmwTpLJtVlWXlYzE6kuEknMUUwUJxsSpT0QS+dSSZrvN62tnva2ipu4pyF1P97CVavGUD2K3SOzUR7tETLUREbukvxVKtV2BMIDC01GHa+W1JSKikKk3sNGyoiImh+c0ubdfiId9obG+auyDAWWmU0KwSZGE/QskjI3czYM4MUZe0mg6Eoiiqo9BpgBTVYwWk1vIRB8SEX0d42OIVNQjPahygtN5u1/45EFi1yODYtzMkxeGWZqY1ErecW/Iz6kPq93/9nsKmemqHbuMxs0WPW67bOAAF7Ewn+WiLxGrZKywRhaTnqUyg9eKi9Nwu0E4G3m+g1M9EmRIS/CJ+6EbDB104MnPWS5ETzebuyb98JTkEQYhAgXBy/+H2trY3NivK4iejBV2y2m9VRWUor0D0XQNFVkoTQozVg/NgmooFoRaSSWtrbsWu1WgSJFucQfR3Es9wzD2RBgSAY3GGxCH8PhydUGI2Vmx0Ohz+ZZBZ0w3eCweQb4fDr2NoyS69/4n6DQRuCm3qfB9Sa/3kymcKmbdjnuRvpPY1IhCCWCUuhUBD+fwzCt3egcxixqav3RLQekb4e41cfjSajUVGe2WC3L77NYNC0IiDnd3TUBjjfABhXbTGbr89Qs+QyBxKgxddBySakl53oEQi90QHeB2HtFqL3MROsxGOTEwq5rzSWj9br2ZFEYkChRrNzh90+eGs4nNwRi72oovlrnW7VTK1WE+ltveqGtJ9VqL/E7atEf1QDHmVh8zy8Xoho92LiQ+AdUAPvimP5cKTbKZTPUo1GrFOUeyfr9S+cSCRqAdlmB2Mb/2AwlAgQrvpVFayO56znoJLmgW7H18Pl36HTwfqFgzBN44DwEjrfC5gig4W9rL8sAgMw29XC98hTG2aiLdhwGmGWs0IUl01EYEbT1nefgnr9l0ozgyB+HPQ00Z8wW3wGZefh/RrsPYvoT0V+JO8SBfQX8xUlhlQl+iFqi3F9ZbYgFKvDCoSzHx+vejNLuyP1IZEXQbYAiDTDkHP4N6HOAomrKdCbUVqXPqA7QEa6+mG2Z/E0KIdBx9PZeEWlr7YYNNfl4nQsXoT9av9wVRqCTY02GN9NV1z/Axeqv0TZ8TtTAAAAAElFTkSuQmCC",
-      "alt": "Aegisub"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "KaraFun"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/srt_682.png",
+      "alt": "Screenshot of a .srt file in GitHub Atom",
+      "caption": "SRT file open in GitHub Atom"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.391Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.391Z"
+      "url": "https://docs.fileformat.com/video/srt/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     },
     {
-      "url": "https://fileinfo.com/extension/srt",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.391Z"
+      "url": "https://fileinfo.com/extension/srt",
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.391Z"
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.391Z",
-  "mime": [
-    "application/x-subrip"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.215Z"
 }

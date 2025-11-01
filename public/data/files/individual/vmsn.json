@@ -1,8 +1,24 @@
 {
   "slug": "vmsn",
   "extension": "vmsn",
-  "name": ".VMSN File Extension",
+  "name": "VMware Snapshot State File",
   "summary": "Learn about .VMSN files and view a list of programs that open them.",
+  "developer": "VMware",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "VMware Fusion and VMware Workstation are virtualization applications that can run multiple VMs on a single machine. VM snapshots save a VM state you can revert to in case something happens to the VM. For example, you can save a fresh installation of a guest operating system (OS) as a snapshot and revert to the clean OS install even after installing applications.",
+      "When taking a snapshot of a VM, VMware virtualization software creates a VMSN file in the VM file. For example, you can take a snapshot in Fusion by selecting Virtual Machine → Snapshots... → Take Snapshot, then Fusion creates the VMSN file in the .VMWAREVM file, which you can find in the following location (Fusion saves it here by default):",
+      "Macintosh HD/​Users/​[username]/​Virtual Machines"
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You should not attempt to open a VMSN file manually. Instead, you can open a VMSN file from within the VMware Fusion or VMware Workstation user interface. For example, to open a VMSN file in Fusion, select Virtual Machine → Snapshots... → Snapshots..., then double-click the snapshot to load it."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -52,13 +68,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vmsn",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.972Z"
+      "url": "https://fileinfo.com/extension/vmsn",
+      "retrieved_at": "2025-11-01T22:32:42.850Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.972Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.850Z"
 }

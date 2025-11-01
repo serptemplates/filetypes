@@ -1,8 +1,32 @@
 {
   "slug": "code-workspace",
   "extension": "code-workspace",
-  "name": ".CODE-WORKSPACE File Extension",
+  "name": "Microsoft Visual Studio Code Multi-root Workspace",
   "summary": "Learn about .CODE-WORKSPACE files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Microsoft Visual Studio Code (VS Code) is an open source, cross-platform code editor that developers can use to develop and debug applications. When developers want to work on multiple, related projects in VS Code at the same time, they can group those projects into a multi-root workspace. Doing so allows developers to open and switch between related projects using VS Code's EXPLORER sidebar, rather than opening each project in a separate instance of VS Code.",
+      "For example, a developer who wants to simultaneously open and edit an app's source code and its documentation can add both projects to a multi-root workspace. Then, as the developer updates the app's source code, they can update the app's documentation to reflect those code changes.",
+      "When a user saves a multi-root workspace (by selecting File → Save Workspace As... from VS Code's menu bar), the workspace is saved as a CODE-WORKSPACE file. This file is a JSON file that contains a list of the root directories the workspace includes. When a user loads a workspace, VS Code uses these references to determine which folders to show in the EXPLORER sidebar.",
+      "To add a folder to a Visual Studio Code workspace:",
+      "Select File > Add Folder to Workspace... from Visual Studio Code's menu bar.",
+      "In the window that appears, navigate to the folder you want to add and select Add.",
+      "The folder will then be added to your Visual Studio Code workspace."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use a CODE-WORKSPACE file to open a multi-root workspace in Microsoft Visual Studio Code (cross-platform). To do so:",
+      "Select File → Open Workspace... from VS Code's menu bar.",
+      "Select and Open your CODE-WORKSPACE file.",
+      "The folders your CODE-WORKSPACE file references will then appear in VS Code's EXPLORER sidebar.",
+      "If you want to view the JSON-formatted text a CODE-WORKSPACE file contains, you can open the file in any text editor. You may want to do this, for example, if VS Code fails to open your CODE-WORKSPACE file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -48,13 +72,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/code-workspace",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.546Z"
+      "url": "https://fileinfo.com/extension/code-workspace",
+      "retrieved_at": "2025-11-01T22:32:42.391Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.546Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.391Z"
 }

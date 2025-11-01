@@ -1,8 +1,25 @@
 {
   "slug": "db-shm",
   "extension": "db-shm",
-  "name": ".DB-SHM File Extension",
+  "name": "SQLite Database Shared Memory File",
   "summary": "Learn about .DB-SHM files and view a list of programs that open them.",
+  "developer": "SQLite",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "SQLite's Write-Ahead Logging (WAL) mode is a journaling mode designed to improve database writing performance while maintaining data integrity. Typically, any changes made to a database are written directly to the main database file.",
+      "However, in WAL mode, the SQLite database engine automatically generates a .DB-WAL file to store data writes, allowing the main database to remain unaltered during the write process. The engine also generates a DB-SHM file to store data for tracking reader-writer states, checkpoint statuses, and transaction control, allowing multiple connections to the main database to synchronize. For example, if you have a primary database file named mydb.db, the SQLite engine may automatically generate mydb.db-shm and mydb.db-wal files while the database is in use.",
+      "By generating DB-WAL and DB-SHM files in WAL mode, the SQLite engine keeps the database accessible for reading by other processes while writes are pending, significantly improving performance in applications with high read-write demands. Additionally, DB-SHM and DB-WAL files may appear in an application's data storage directories, particularly in apps that utilize SQLite databases for handling large amounts of data or complex data operations across different processes.",
+      "NOTE: SQLite introduced WAL mode in 3.7.0 in July 2010."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You should not attempt to open DB-SHM files since they serve as supplemental, non-essential files for the primary database. When the application or database connection is closed, you can safely delete these temporary files if they persist."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +60,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/db-shm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.561Z"
+      "url": "https://fileinfo.com/extension/db-shm",
+      "retrieved_at": "2025-11-01T22:32:42.409Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.561Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.409Z"
 }

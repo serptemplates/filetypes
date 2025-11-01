@@ -1,8 +1,31 @@
 {
   "slug": "onc",
   "extension": "onc",
-  "name": ".ONC File Extension",
+  "name": "Open Network Configuration",
   "summary": "Learn about .ONC files and view a list of programs that open them.",
+  "developer": "Google",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Google developed the Open Network Configuration, or ONC, file format as a way for network administrators to provide network connection credentials to users. Theoretically, users using multiple types of operating systems and devices can load the settings an ONC file contains to connect to one or more networks. However, as of 2022, only Chrome OS devices use ONC files to connect to a network.",
+      "Each ONC file contains a list of one or more network specifications. These specifications include the network's name, type, connection credentials, and other settings. For example, an ONC file that contains information about a Wi-Fi network would specify that network's name, the type of security the network uses, and the password used to join the network.",
+      "Typically, ONC files are saved in a plain text JSON format. However, ONC files can also be encrypted and password-protected, so users cannot use them if they do not know the file's password."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To use an ONC file to connect to a network:",
+      "On your Chrome OS device, open Google Chrome.",
+      "Navigate to chrome:/​/​network.",
+      "Select the General tab.",
+      "In the Import ONC File section, select Choose File.",
+      "Navigate to and import your ONC file.",
+      "In some cases, you may still need to manually enter user-specific credentials (such as your user-specific username and password) to finalize your connection to a network. To do so, select the network from your Wi-Fi settings and enter your user-specific credentials.",
+      "If your ONC file is not encrypted, you can open it, view the settings it contains, and edit it in Google Chrome Text or any other text editor."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -56,13 +79,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/onc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.802Z"
+      "url": "https://fileinfo.com/extension/onc",
+      "retrieved_at": "2025-11-01T22:32:42.667Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.802Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.667Z"
 }

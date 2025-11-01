@@ -1,8 +1,31 @@
 {
   "slug": "3gx",
   "extension": "3gx",
-  "name": ".3GX File Extension",
+  "name": "Luma3DS 3GX Plug-in",
   "summary": "Learn about .3GX files and view a list of programs that open them.",
+  "developer": "Nanquitas",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "You will most likely only encounter a 3GX file if you are a Nintendo 3DS gamer looking to modify your games. The Luma3DS 3GX plug-in format is developed by Nanquitas and evolved from the NTR PLG plug-in format. The primary advancement is the ability to load C/C++/asm code into a Nintendo 3DS game at runtime, which is then executed.",
+      "You may create your own 3GX plug-in or download a plug-in and install it on your Nintendo 3DS console (Boot9Strap must be installed) via an SD card. Luma3DS, which is a custom firmware program, must also be installed on your device.",
+      "In order to install the 3GX plug-in, follow these instructions:",
+      "Download the boot.firm file from here and place it in your SD card root to overwrite the current one.",
+      "Create a \"plugins\" folder in the \"luma\" folder in your SD card.",
+      "Make a folder with the name of the game's titleid and place it in the \"plugins\" folder.",
+      "Place the 3GX file in the folder with your game titleid.",
+      "Insert the SD card in your 3DS device and boot it up (select \"Show NAND or user string in System Settings\" if you are greeted with a luma config screen, then press start).",
+      "Open the rosalina menu in the home menu and enable the plug-in loader, then press B to exit rosalina.",
+      "Open the game (the screen should flash green or blue when starting)."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "3GX files are not meant to be opened on your computer. Instead, you can load 3GX files with Luma3DS on a Nintendo 3DS gaming console that has Boot9Strap installed."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +62,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/3gx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.469Z"
+      "url": "https://fileinfo.com/extension/3gx",
+      "retrieved_at": "2025-11-01T22:32:42.301Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.469Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.301Z"
 }

@@ -1,8 +1,53 @@
 {
   "slug": "oxps",
   "extension": "oxps",
-  "name": "What are OXPS files and how to open them",
+  "name": "OpenXPS File",
   "summary": "Learn about .OXPS files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "page-description-language",
+  "category_slug": "page-description-language",
+  "mime": [
+    "application/oxps"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The OpenXPS format is based on the XML Paper Specification (XPS) format, which Microsoft developed to replace the Enhanced Metafile (.EMF) format. However, OpenXPS is an open format standardized in June 2009 by Ecma International, a standards organization for communication and information systems.",
+      "NOTE: While the OpenXPS format is based on the XPS format, the two formats are not interchangeable. You cannot simply change the .oxps extension of an OXPS file to .xps in order to make it an .XPS file."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an OXPS file with several applications, including Microsoft XPS Viewer (Windows) and NiXPS View (multiplatform)."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Microsoft XPS Viewer can convert OXPS files to the .PDF format. To do this, select [m}File → Print...[/m] in Microsoft XPS Viewer, then choose the Microsoft Print to PDF option."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -45,22 +90,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "SumatraPDF"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABsElEQVR42mNkwAIOSUnWA6kSIOZhoBS8f89g9/0HIy5pDAmg5fuAlCPFFpPjAKDltUCqiWqWQx1g++17OSMjYxcxDvgEpHhp4AAQSxDoiA+EHPCfqpajOmAZ0AHRA+kAhg+HD2sJ2tldHzAHfLt2leGsnR2D3dt3cHvp6gAQOMzLw2D35esAOoCLEyVbjjpg1AGjDsDpANunz1DM+Xb7NsNZB3sM8bc7djBcS07CquewtBTlDgAZYnzgIAOXqiqYjWzJv1+/GJjY2Bg+nT3LcNHPl74OABuOpg5djipRQMgBxvsPMHCpqWGEDtVCAFcawBcCVI8CZIBsyf/fvxkYWVkZPl84z3DB25t2UYDLASCALRdQxQFUA0PXAd++MTD8/Em5A77/YLD9jzCWKAdIJyQyKLa2MjASbQvxgKADeID53QCY70EShxmp4wSSQkChoIBBtrSMBn4nzgH/5LKyGOWraxAaqBwKhBzQzyEhUWB09hwD80CEANQRz/hNTCRVJ0xk4FRUpL4DxMUY7F69xusAkOd7GP7/z2T8/Jn9/9+/1LOdB9jbBxbdds+ew+0FAOQcgTAKQ4wNAAAAAElFTkSuQmCC",
-      "alt": "Hamster PDF Reader"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACIElEQVR42u2Xy2sTURTGv5k8rFZ0IoUYoXHqLjuDZKNIh9ZFpZvaB1TdtMvuunDXhSn9AwShlO6qmxbcZCWCUOKiGwVHxaaLQpOumoI2M04e80jm9k6DScdMUkgxtjgHBubMd+45v3u43OEw+MfGnF0AMccf8yREA5JNXyJ1vYvq04xdHxE5KnA1PxHJnAzwLTdFP72gb9yfgayuSR7ZTBjp6wJ1+YZMZR0o/vyCzwUJhnnbKcfRRhjzEdYiSWeAr7k4GOa5E6lHU8HSPRq7QeeOWQCFA5ojD2hm856b5jTeRFZcgJYA8WAXQt6qtFcmiO+rNoDHtwAhVF/27COglOoAoUss4mPXavrqhoLkVukcdcAFcAFcgHMBMHzDwBPewFUfqT5+ArlUwf35H+0BEEHg4L2QpgAc2jR1YhzeVArezVSrsAzz/l1fI8DQEI8K0u0Wt0wX+lHhb+LiyuuWcRSgVvfUANmxUVx+MABd06D5fLjyfRPdS8udA7CK+gMciEmgxe4AwWBnO2CDGX4ItlCEL/mhDQB6CBdig+L63UHeaRFr6GAVgvJ+9Td7j/fjaY+EcDepxaR7wph7uYNfWaVp8ZHs28zsxmLjITyyU9wDYb8KWZYhf1L+k4vIBfg7AC0GEwvAU9Rf6du9/Wg2mOTpYCLmJZSJ0KT8CYPJbxNzXANENJCx+cdHM8tmGLs+uWXXVVVCImof33Cmh9MO2SGrOP4w31lOvAAAAABJRU5ErkJggg==",
-      "alt": "Unzip One"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -79,35 +108,37 @@
     {
       "url": "https://fileinfo.com/svg/close.svg",
       "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/oxps_7960.png",
+      "alt": "Screenshot of a .oxps file in Microsoft XPS Viewer",
+      "caption": "OXPS file open in Microsoft XPS Viewer"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.360Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.193Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.360Z"
+      "url": "https://docs.fileformat.com/page-description-language/oxps/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.193Z"
     },
     {
-      "url": "https://fileinfo.com/extension/oxps",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.360Z"
+      "url": "https://fileinfo.com/extension/oxps",
+      "retrieved_at": "2025-11-01T22:32:42.193Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.360Z"
+      "retrieved_at": "2025-11-01T22:32:42.193Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.360Z",
-  "mime": [
-    "application/oxps"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.193Z"
 }

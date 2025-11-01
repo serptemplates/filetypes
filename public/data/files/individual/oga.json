@@ -1,8 +1,27 @@
 {
   "slug": "oga",
   "extension": "oga",
-  "name": "What are OGA files and how to open them",
+  "name": "Ogg Vorbis Audio File",
   "summary": "Learn about .OGA files and view a list of programs that open them.",
+  "developer": "Xiph.Org",
+  "category": "audio",
+  "mime": [
+    "audio/ogg"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Ogg is an open-source audio container format developed and maintained by the Xiph.Org Foundation. Before 2007, all Ogg audio files used the .OGG extension. In 2007, Xiph.Org began recommending that the .ogg extension be used only for Ogg Vorbis audio files (which are audio files encoded using Vorbis and saved in an Ogg container). At the same time, Xiph.org recommended that most other audio-only Ogg files be saved using the .oga extension.",
+      "Because OGA files are a subset of Ogg audio files, their file type icons may include the OGG extension instead of the OGA extension. For example, the file type icon shown on this page is VideoLAN VLC media player's default icon for OGA files.",
+      "NOTE: Xiph.Org has released a DirectShow codec pack that allows developers to include OGA support in open-source and commercial Windows applications."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an OGA file with several popular media players, including Microsoft Media Player (bundled with Windows), VideoLAN VLC media player (multiplatform), and MPlayer (multiplatform)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -89,64 +108,50 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,",
-      "alt": "Switch Sound File Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "VLC Media Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "KMPlayer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Winamp"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "K-Lite Mega Codec Pack"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Opera"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/oga_3634.png",
+      "alt": "Screenshot of a .oga file in VideoLAN VLC media player",
+      "caption": "OGA file open in VideoLAN VLC media player"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.356Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.190Z"
     },
     {
-      "url": "https://fileinfo.com/extension/oga",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.356Z"
+      "url": "https://fileinfo.com/extension/oga",
+      "retrieved_at": "2025-11-01T22:32:42.190Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.356Z"
+      "retrieved_at": "2025-11-01T22:32:42.190Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.356Z",
-  "mime": [
-    "audio/ogg"
-  ],
-  "category": "audio",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.190Z"
 }

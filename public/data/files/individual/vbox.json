@@ -1,8 +1,21 @@
 {
   "slug": "vbox",
   "extension": "vbox",
-  "name": "What are VBOX files and how to open them",
+  "name": "Oracle VM VirtualBox Settings File",
   "summary": "Learn about .VBOX files and view a list of programs that open them.",
+  "developer": "Oracle",
+  "category": "other",
+  "mime": [
+    "application/x-virtualbox-vbox"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "By default, VBOX files are saved in a directory with the disk images they reference (.VDI files). The filename prefix of both the VDI and VBOX files is the VM name set by the user when the VM was created (e.g., Windows 7.vbox and Windows 7.vdi).",
+      "NOTE: The VBOX extension was introduced with Oracle VM VirtualBox version 4.0. Older versions of the software saved settings in a file called VirtualBox.xml."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -23,14 +36,6 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Oracle VM VirtualBox"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEMklEQVR42sVXe4iOWRw+34xxXTPNEMUsm9uGSFpSVmIJrV2KzdCWCdFqym0NpUS7hSF2iXULs5bIbdklix3+kEhKsnbzh1u5rXYwYly/b5/nPc/7vafP935eMxO/evrO5XfO+5zfOb/LFzPvWWJmdlk2fhMR9RNJ3aWlr01W/Zhv97QI3yMeTyRy6pu8knsegQ0YzItAIgu4ACwBnqcS0McpI4CvgXjIPk+BM8Ae4C4JHEVjUEQLXAcGAldCCNQDtgJFESx5GCghgVk6VXYEAi+AsR77GKxcNjuVQBvgT6BDxAP9TAK90PgNaKnBV0Clfik5QL6ugLISmOa1HCuIwJfALqC+hh8Bj50PxrSXP3+fBJqisR8YoMEHQDHwlxYUkql+KWeBIVzsE3DufxkwyznItzpcPZmdh1kN9JdOnATY+B6Y59zPRGCz+g10qi/UfwgMBU6nEMjTvfaR3i3gM+Cf3Gn3fR0S2Ad87n/LJzBUEw01UQ5MMMFLLtU78WUmsMK/Bm3eWwR8cxwCRgFPoxBoDVQAnTRxSezvqP8pcBDIVZ+bjAFeVBUu8klNT5Kychz41Xk7CV0FD9YllUC27nmcJp4Y68/H1G8GHAF6qn/NWHe8KgJ8VDuBkebtJEmAMgVY60wuBBZ4rWo4RaOCNWh9ozm6I319rwi0kwXbvj0BiiXRA2BQaq7JY7LCE/WLZKVsmZXmnllZuAR2jY9Ge5tMXGMCdEfecz9N8v75Di4519BfH+G6m8Cpa61+iBdkVXdGu7uJnlOS4hKgLAbmqE0P4IMp93ppkk9dSJC1LAm6B5NEA41ugsYknCvxrgh8aGws76jRi8YmqruvEfD0uTzBANSorgjwgf1igmzGOM74XpGegBe4fjL23bysJYGlRm9oqrHx2pf5wHdeyyVhCXwsi7WuvQWCTRlsGHSaaZRtBpjqJIGALAuPLSZaKo9MgOGWcbyvRm8b645/BwS8+8faxHo0JkmPV8CK6VGG7zF+dAUKMhGgsOFXG3THYsNKh9plpb5eC2ODVTfpXQGGQecGjJOV5uM0GUP2DmOTXxoCAQmm3t0mKBw2QnNy0h2tDnPBAaCJdJiyx3mWSOeypd6aHOzgZsNQAiytGNvba5SmHQz862jycS50+iWGj9e3Ui0JMNxuB77SKN1xOHBC/cbGVlF+MfufsVXSudCAFZ1A8oXzRKucGSafcq35CFhn7DugnNSmVepzPNU1/ZJsubH1hTeW/g+EtcInwB8meLHPDF3RCt3uA+cArJbmBt+Jsc/UnRqcqN9ERCiVmQjQzEyxbyoy+EeDpdch9fNFvNcb1pHppkwEKKwRWKT0NuF/ty4b6xE31e8rMrkmXFgx8w3NCP8PF5BggmJh0tUxnS/09/PAGsfczAvjM3yc18jS/ncTegU1leABW4mQwuuWQA3kfxldMZbOsDBIAAAAAElFTkSuQmCC",
-      "alt": "Oracle VirtualBox"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -59,26 +64,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.405Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.228Z"
     },
     {
-      "url": "https://fileinfo.com/extension/vbox",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.405Z"
+      "url": "https://fileinfo.com/extension/vbox",
+      "retrieved_at": "2025-11-01T22:32:42.228Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.405Z"
+      "retrieved_at": "2025-11-01T22:32:42.228Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.405Z",
-  "mime": [
-    "application/x-virtualbox-vbox"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.228Z"
 }

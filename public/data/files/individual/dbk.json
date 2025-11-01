@@ -1,8 +1,21 @@
 {
   "slug": "dbk",
   "extension": "dbk",
-  "name": "What are DBK files and how to open them",
+  "name": "Sony Ericsson Mobile Phone Backup File",
   "summary": "Learn about .DBK files and view a list of programs that open them.",
+  "developer": "Sony Ericsson",
+  "category": "other",
+  "mime": [
+    "application/docbook+xml"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "DBK files can be opened with various programs, such as Sony Ericsson PC Suite, FJ Software Development MyPhoneExplorer, and Amrak Software phoneMiner. The files can also be decompressed with a Zip-decompression utility, such as Microsoft File Explorer, Corel WinZip, and Apple Archive Utility.",
+      "To decompress a DBK file, rename the .dbk file extension to .zip and then decompress and extract the contents with the ZIP-decompression program. The contents, which may include a .VCF contacts file named contacts.vcf can then be opened with a program that supports the file type. After extracting the contents, compress the files as a .ZIP file, then rename the .zip file extension to .dbk."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -61,64 +74,45 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "dBASE"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABCUlEQVR42u2WWxLDIAhFZWWysyQ7w5XZksZWrQ9qjWY65cdEHThcMQHUZIMrANiZye8ARJTcobVWxpgu0TSiMkccvD+v6/pS4JIAvMlaqwBA8Tq/l8Y4WMqGAfRRQODUGWUybgJA54w3LEs9+rY99jJIAbpNASFArMBXNfATCuQAnMGe32AFguRmKCAGaFGgK8BfgUCBkh0O9vGUIqx8+9HLuhQYUSdmoS9ACYQBiMybb1E/UJNxGAA3Jmx+c4KZwot9dQPg4H6HhIXKD29VRwD/GStXj54/HgEAdz418+VnCO6Uhh9B7GQ6ACsXH0cTwKdHkIJzEMMUkK6LAKrpn2A+gJuYAjId4Aad1ZST3AXLgQAAAABJRU5ErkJggg==",
-      "alt": "OrCAD Capture"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "DocMaster"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR42s3XAQ6DIAwFUL0ZNxNu5s26bImz0l+gLc41WUKc0gdWhXV5ONbg9ZRzXlJK75+rrwiAjkYE4QVQfcCL8ABI+8ODsALO5Jln9iMsgOvIFYAVMQqQ094AWBAjgLPaWaaNzvZaMGYE0QNcRm4FjCBaAPmoOQA9hAaA1U7b0o3CMDnzNkYggFrtEYCGqAHNao8CEIIDYLXz4PedX1nw6VVijDi6Uav9DgBH/M0MCMQMjLUGIGImYOQpEIhZAMt7AM4EPAACdeh5E8KcHkDkWyDyWgEzvoZqbup0MnM9ABEtwB0rIpFXA9y5JoQz4R15BAARv9wXCMQTO6Mv4sm94Sf2fSdv8imAaLwAkt22YBv94RYAAAAASUVORK5CYII=",
-      "alt": "Dynacom Accounting"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFZUlEQVR42u2WXWxURRTHz+7t/b67O7v9sC1BtmliUElciImgL5aHJn48LPHBqIlu3xqDUoL1AyG0D2g0xoIJmmh0q9GAD4SCEkLU7BqNRoywKWl5QO1CgX7T3bt7v+/ueuZSCJB+bDXIC5Ocmc3dO/f/m3POnBkf3ObmuwPwv6i0d8ax70OLzj3JbWDubvn12PbcrQdo70xgn7z+EQ81sI5pBgTw3VIA9sktCcexk1Cp3PC8mW+AVa6QRYCWWwaw8tmdiYJtJTXLBse24CqEn2FhTXA1yGq+FwF65gVA8h6R43YFBSFDRCEtc1zvbx9156oVX//ie4miZSVV0wLVMqGIo+vYHkRD/WpovazTby2cA8GnurtQtI8IAgRFEQI8nymN2x2p/dsyS4lv2v4JrtpKUFHVNCFnmJDHUUOTgs1wT4UAr852oHg/fX9egOZndjwqc2yKoHgITRF5YCzIXRqebsOJ80J07ztMdNNOFg0zTsULKKwaFMCAWd0AHVhYIbdCeOxCP36j4+q8eQFan++JKTx/KoziQWnOZAFGhybT33y2ue3m998/kI5php3UTStWMFBcR3EUpUYBLjt+EHyNQC6NplH8hvkLJiHGcZZIIgnJEhAFPSFJAE4Zfjo+fM19tB34PhPXTE+cFHV0u2ZAHoXzRRTXdBizBbCKLAQvnqdzttK4VwWwccveZEASE0SRIBxA80AkOH3yXHZocHTt27ufhlK5nLSdUty0XaArV6loUfdsFu1MngXtggrS9MQNbq8K4PHuD6OSwI9EAjJEKEQQx6AC/jKAoZrphx5sibE1DHFLZSgaNopirAvoblWDiZwGqfMVKJ8dAU4r0FXvWUhn0TrwXO/nyZAiJihELYrXEgXqEKQuRIEkEHkWbMdFcROm85pnJ7Iq/DA4A+L5bJaxzU0LJW1VAIndX0YVURiJeKKKZ/VEhobwlZEgRFGzYCpXhHOTBfj69zHInDhLXT6A0ztujveyAWjbsudgX1AWu6h4rQche+K16AW6PQ3bgeOnJ2Hft8PA/v1XjrEtKjyw1HerDQHBEPQRWUpEvByYswBuS0UAnq2BU6MqvPPxj3TVNM691ay6KoCNXR/EiSwmMfNJGHMgPLcbQjjSmiALLLAMQ3cCDA5dyB7Y/8va5YrPC9D0zJuECGIyLIlxb+vJV0QRBkcsyxKKo+sFjgXG74My1ncLE3FkZCpz7PDJtv/kAeaJl2OKICSxAsYiKEwrYUi+WglRXBS8uIs8BxzLgN/vx/OlAg4CGJYDQ6dHB754N7Hp3wG0d8bA508JAk9CgggRFKVngSLJYPN1oNsscCUH6mtFuLeeAZljwIfXCQrglkpgYTHSMSH/HLzYf/TTlzqWB9DeSbBPocX8NSyuUgAKEQg14QthEKamc1xR3Yv/96Pl5IdjiVWy20fYMlSAApS9ekB3hKaZMD480/HzwGv9ywHowX7XlSc+YDkOGlY8AHVaxSujME8NX7/zaKxFKKR4cImLiei46AXHAZNCzBg5d9ymSZmtFmAWe+oF78bS3PIINI5P5FhD23r9wXNzW/f64dhdvpkUU7KIg2GwEcJACN22gZ0sp/84sqOtWgDvvsSJBJoa7oPGsfGcv+S2LVVGaVvzysGYYo2lyq5BLNcFE0OhI0SNXoFGU6TfSFcFEFKaYBVbR+9qVHRZ26l125EEXD7TZ1tFYlIID8SG+91IOnNs16Je8AD4+BvxdVbgEP7cg8JbqxW+vq3c/FXMLEwcKuTHorZtQBlDEvWhR32BtYt58to23PDYW9Fqkmax1vLqdwTPgi5DHX+hplSKKmU/BKenvNvvkgC3q90B+Ac2OZs/oD4F6QAAAABJRU5ErkJggg==",
-      "alt": "XMLmind XML Editor"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "DataCAD"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.293Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.139Z"
     },
     {
-      "url": "https://fileinfo.com/extension/dbk",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.293Z"
+      "url": "https://fileinfo.com/extension/dbk",
+      "retrieved_at": "2025-11-01T22:32:42.139Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.293Z"
+      "retrieved_at": "2025-11-01T22:32:42.139Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.293Z",
-  "mime": [
-    "application/docbook+xml"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.139Z"
 }

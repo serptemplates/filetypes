@@ -1,9 +1,65 @@
 {
   "slug": "3ds",
   "extension": "3ds",
-  "name": "3DS File",
+  "name": "3D Studio Scene",
   "summary": "Learn about .3DS files and view a list of programs that open them.",
   "developer": "Autodesk",
+  "category": "3d",
+  "category_slug": "3d",
+  "mime": [
+    "image/x-3ds"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The hierarchical structure of a simple chunk is as shown below:\n\nA Chunk\n\nstartendsizename012Chunk ID254Next Chunk\n\nChunks have a hierarchy imposed on them that is identified by its ID. A 3ds file has the Primary chunk ID 4D4Dh. This is always the first chunk of the file. With in the primary chunk are the main chunks.\n\nMain Chunks\n\nidDescription3D3DStart of object mesh data.B000Start of keyframer data.\n\nThe Next Chunk pointer after the ID block points to the next Main chunk. Directly after a Main chunk is another chunk. This could be any other type of chunk allowable within its main chunks scope. For the Mesh description (3D3D) they could be any multiples of.\n\nSubchunks of 3D3D - Mesh Block\n\nidDescription1100unknown1200Background Colour.1201unknown1300unknown1400unknown1420unknown1450unknown1500unknown2100Ambient Colour Block2200fog?2201fog?2210fog?2300unknown3000unknown4000Object Block7001unknownAFFFunknown\n\nSubchunks of 4000 - Object Description Block The first item of Subchunk 4000 is an ASCIIZ string of the objects name. Remember an object can be a mesh, a light or a camera.\n\nidDescription4010unknown4012shadow?4100Triangular Polygon Object4600Light4700Camera",
+      "Autodesk initially developed the 3DS format in 1990 as the native format for Autodesk 3D Studio. As the software grew in popularity, so did the format.",
+      "However, Autodesk eventually replaced 3D Studio with 3ds Max, and newer software versions saved 3D models in the .MAX format, by default. Even though Autodesk replaced the 3DS format with the MAX format, many 3D applications still support the format.",
+      "The 3DS format consists of data blocks called \"chunks\" containing an ID and length description. Chunks store the shapes, lighting, and viewing information that together represent the three-dimensional scene."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open 3DS files with Autodesk 3ds Max in Windows. To open the 3DS file with 3ds Max, select File → Open.",
+      "Other third-party applications also support 3DS files. Some options include Trimble SketchUp, Maxon Cinema 4D, and Adobe Photoshop."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Various applications, such as Autodesk 3ds Max and Maxon Cinema 4D, can convert 3DS files to other formats.",
+      "For example, 3ds Mac can convert 3DS files to various formats, including the following file types:",
+      ".MAX - 3ds Max Scene File",
+      ".FBX - Autodesk FBX Interchange File",
+      ".AI - Adobe Illustrator Artwork",
+      ".DWG - AutoCAD Drawing",
+      ".DXF - Drawing Exchange Format",
+      ".IGS - IGES Drawing",
+      ".SAT - ACIS SAT 3D Model",
+      ".STL - Stereolithography File"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -88,58 +144,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open 3DS files with Autodesk 3ds Max in Windows. To open the 3DS file with 3ds Max, select File → Open.",
-      "Other third-party applications also support 3DS files. Some options include Trimble SketchUp, Maxon Cinema 4D, and Adobe Photoshop."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Various applications, such as Autodesk 3ds Max and Maxon Cinema 4D, can convert 3DS files to other formats.",
-      "For example, 3ds Mac can convert 3DS files to various formats, including the following file types:",
-      ".MAX - 3ds Max Scene File",
-      ".FBX - Autodesk FBX Interchange File",
-      ".AI - Adobe Illustrator Artwork",
-      ".DWG - AutoCAD Drawing",
-      ".DXF - Drawing Exchange Format",
-      ".IGS - IGES Drawing",
-      ".SAT - ACIS SAT 3D Model",
-      ".STL - Stereolithography File"
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "PowerDraft"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACwElEQVR42sVXPW8TQRCd0KMrIvpTCpBygiaip6JBKSjWUhrkPkpNYylb0FAjessNEi4oIhqq9FGaRI5ECuQeUfgPEPbt3N5+by6+kxjJjr2ezLx9M/N2b0ec3t3Rf7QdAPgqtw9wecl/f+0S7f0huv270d9/riq6WROt1OdGvfZrIjn1/3ciRwAQmpwTJ167q0v93tSC3FyjAkDi5TknEq8EPWuYiW/fKwUG60IDAYj3h0QHByMCQCBOQjQ7fk1HL6sMOAsCOUcB8OViQx8+/+h2HtY5Bskg4ItSDQbQ6IS8+8WJ0NSWgVoWYIMAhEFXc9HTtwVfjwygPwPUsTAqgFIPhL7MwEAAOsjUNBbvKjUFsMlcNWE7CaAeOjG4BDqwdLubkkwsVTIp2Wd2vKGnjyp698kpAZyMZALZ4oSyteySGn8srKml1YLAZ4DYe0wqGe/27ZuNZseUwwKoDT1spVpC+4He9T18zkliEJ2XmhD7zcg1TAMAsnBGc2UJVc3tfFcR3XFjoPYwgh8OJ0+IQqXKjVTTMbNMHi46BkQmAsLrosYGSDPiSXGfkfJ8VKBFe6i4cmymAGv+QWTLYnyis6AJErp1C+lHU50q/6vfcfJ8ycjbXAQgrG8Y0KUfv714Uun5Bt39+4YnInka2g6PyxCWCAAsxZQVIL8/7Aayp2EoLKYM7oUDzTTTk1N1Ae8D0Ps0TO0UgV36/dnvByBkt3gcW31nx1AnUqDkVOhZL5kbt3ghifRdNY2RW7fZXOEpqWeOWfRQEkDq8pCi+iH3gfDSmhxDn650oLw2kHfjTW+IIgazALyuby1HMyeoyCiduZZ3DyeZMhUBoGvPrv01dH6O4kkbA4eMLtY56d6B9gNM8pIiR3o0+3iWfvS6z5JKCCtdRlza0cXbJC4ygMConXm0Cs3UFYlLJXkQgO1DDLd/tOBBf1auMagAAAAASUVORK5CYII=",
-      "alt": "MicroStation"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MeshLab"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "WinDS PRO"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ACD/3D Viewer FREEWARE"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFDElEQVR42rVWWUxUZxg9wzYgAkIRCglEploKLlSkEDWVRU0okLZEqBAQoqSNWlPxBXwQtIQHk0bim/RB3DXRB0ytQVFDYmJal8Y2Qo1UihooFsomizPMAD3fvXfGgWKdS+kXztzLf//l/N9u+AaYnITr4ubuDlNWFtbs34+FK1YABgP/DI7v5r4+/FhdjeYTJ7Dp6lW8vWqV8r31wgV8X1CACZsNGfwWu2WLMt+gl4BdDCQSQgKL0tOxJDtbOQhORIY6OvD87l1EZWTAw2jE+NgYmvbswc9HjiB4+XIU378Pg5vb7AlMl8i0NGysrUVAVJS6sRMZZzmdlKQQK2ltReDixXNHQMTDxwcm3jhu+3ZEpqYqRKbL71euoJ4mzDp3DtG5uXNLwFliCwuRdvgwjIGBU7XB0xqKi+FvMmHtgQP/HwERUXHi3r1YWlQENw8Px/jYixeKLySWl6sErBz8k+ggBolxwocIIcK0dy+im/Aj5hEGHUTe37kT6w4ehJevr8NRBx4/xgK7D4xy4A8NbWInwqwtFt4LiSiCfo4fiEgiSScJU2YmMk6ehDdNolpiUjGNQwM2DROEhfiVuKdpxi6exBqNxFLiU007rkpwXBw2X7sGn+Bgx5hhHQn08GWIGNVubtWITGpPZzHYb072Jt5iM18DdJCIyc/HR9SEJDRlG9p20jbDQW+S0tJS2JjVGo8eRd7Ll5ivY23mmTOIyctTs2g4CXRr6tcj8fHxqKqqwvOuLtTt3o1PRkdd9gkvf39sffAAfhERypoZo1C83ld7empjVg1mDaK15ORk9Pb24r3mZnwA1x0z/dgxLGM++AcBGUiE6vHirxJy9nw2rh0svjJAPCGaCfEhahKfa/NdMsPZs4oZphCQxZuIZTpuIoufEj8RKcRbLqyRQlby8KGaB5wJ5Gi3n43YndjNhbmSGdPr6tSiZScQSnyFV/Z+PX0D3D09lfI6GwmKjkbB7dsw0hGV7ewEthIxLmwgFS+1pgZ9LKfNx4/D0t/v8uG+4eHIrq9HaEKCo0ApBIz8qYLrdl9dWal0RFaG3rPr19F2+TL6Wlow0tMDy8AArCMjmJyYUGwtN/UNC8OiDRuQtG8fjH5+UxUqBLz587UOArJpVlMTvrt5E4Usu0FBQbCRjIVVTg4ft1iY3WwwsAKKxiT/GwMCZuwPHCbIIj7UQSJy/XrwdFQfOoRcNhYVFRUum0JkwmpV2jYHAUk44oQhLm4g6o3bsQPB27ahrKwMjY2NugiIiWzU1JQwZI8LZmh46Nho5a5dWMuULOnVOjzs8G67SLRMCGgSm9mMsaEhmOkno93dGGxvn0pA/okjPtNBQjQRkZKCj8+fx5OGBviEhioNqt3LzYyStkuX0HLqFHrpqKJ6ISW3F2Iz1oLVRAZh1KEJiW/RRAt7fqn30Tk5Sv2fzwiQdkxU3vfoEZ7duIHOW7fQdefOKw2I3budbwU1t0tu8NdBwt3LS4n14c5OJWF5sgXzpUaCY2Mxj08hYhkcRD9zSA+Ll5hMISDdjXQ296ZtKMQ2Qk1QXjqI6BGFgDSeXxI1RN+0CRK57xL50Nd+6SIgt6uEWtHqXzNRDhffWKlpRk9D+kYC8lJExBLfEu3/skCiIwGqk3rPJYF3iC+gNqe1xF/aBDGPRMNTTA0Xo0ZY/GMJ1O7pPxGQHrUcahf0C3FamyDmKSGk6bxI/DbDJrJW2jEmZyzQSeBvM6On76DFgksAAAAASUVORK5CYII=",
-      "alt": "WinDS PRO Apps"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -148,29 +156,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/3ds_809.jpg",
+      "alt": "Screenshot of a .3ds file in Maxon Cinema 4D 2023",
+      "caption": "3DS file open in Maxon Cinema 4D 2023"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.756Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.120Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.756Z"
+      "url": "https://docs.fileformat.com/3d/3ds/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.120Z"
     },
     {
-      "url": "https://fileinfo.com/extension/3ds",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.756Z"
+      "url": "https://fileinfo.com/extension/3ds",
+      "retrieved_at": "2025-11-01T22:32:42.120Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.756Z"
+      "retrieved_at": "2025-11-01T22:32:42.120Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.756Z"
+  "last_updated": "2025-11-01T22:32:42.120Z"
 }

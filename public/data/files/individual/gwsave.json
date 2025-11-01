@@ -1,8 +1,28 @@
 {
   "slug": "gwsave",
   "extension": "gwsave",
-  "name": ".GWSAVE File Extension",
+  "name": "Inscryption Saved Game",
   "summary": "Learn about .GWSAVE files and view a list of programs that open them.",
+  "developer": "Daniel Mullins Games",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In Inscryption, players take on the role of Luke Carder, a vlogger who has been sucked into a complex and malevolent deck-building video game. As the player progresses through the game, they add new cards to their deck, acquire items, and experience numerous surprises.",
+      "Inscryption records a player's current deck, acquired items, map location, and other progress and achievements in a GWSAVE file, named SaveFile.gwsave. (It also backs up a player's prior saved game in SaveFile-Backup.gwsave.) This file is a plain text file, which consists of various sections associated with specific aspects of gameplay.",
+      "For example, the playerDeck section describes the contents of a player's current deck (including how cards in the deck have been modified in-game), while the playerLives section records the number of lives a player has left. For more complete information on the data a GWSAVE file contains and how to modify that data, click here."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a GWSAVE file and edit the saved game data it contains with Microsoft Visual Studio Code, Microsoft Notepad, Apple TextEdit, or any other text editor. Alternatively, you can use the online Inscryption Save Editor to edit the data your GWSAVE file contains.",
+      "To use a GWSAVE file with Inscryption, place it one of the following locations (and delete your existing GWSAVE file):",
+      "Windows: ~/​Steam/​steamapps/​common/​Inscryption",
+      "Mac: ~/​Users/​YourUserName/​Applications/​Inscryption.app",
+      "To place a GWSAVE file in Inscryption.app, right-click the file and select Show Package Contents. Then, move your GWSAVE file into the Contents directory that appears."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -56,13 +76,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/gwsave",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.648Z"
+      "url": "https://fileinfo.com/extension/gwsave",
+      "retrieved_at": "2025-11-01T22:32:42.514Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.648Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.514Z"
 }

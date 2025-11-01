@@ -1,8 +1,22 @@
 {
   "slug": "hiv",
   "extension": "hiv",
-  "name": ".HIV File Extension",
+  "name": "Windows Registry Hive File",
   "summary": "Learn about .HIV files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "You can save registry hives using reg.exe by typing the following at the command prompt (taken directly from the reg.exe command line help):",
+      "REG SAVE HKLM\\Software\\MyCo\\MyApp AppBkUp.hiv",
+      "You can load registry hives using this command (again taken directly from the reg.exe command line help):",
+      "REG LOAD HKLM\\TempHive TempHive.hiv",
+      "Type REG /? at the Windows command prompt for further help with reg.exe commands. The program is located in the C:\\​Windows\\​System32\\​ directory, but it can be run from any directory in the Windows command prompt.",
+      "NOTE: Be careful when saving and loading registry information, since corruption of the Windows registry can cause applications or the whole system to malfunction. The file setupreg.hiv included on Windows installation discs should not be edited manually, since it is used by the Windows installer."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +53,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/hiv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.656Z"
+      "url": "https://fileinfo.com/extension/hiv",
+      "retrieved_at": "2025-11-01T22:32:42.525Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.656Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.525Z"
 }

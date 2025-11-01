@@ -1,8 +1,25 @@
 {
   "slug": "redditvault",
   "extension": "redditvault",
-  "name": ".REDDITVAULT File Extension",
+  "name": "Vault Recovery Phrase Backup",
   "summary": "Learn about .REDDITVAULT files and view a list of programs that open them.",
+  "developer": "Reddit",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Reddit Vault is a digital wallet available primarily in the iOS and Android versions of Reddit. It stores a record of a user's Community Points, Collectible Avatars, and other blockchain-based Reddit assets.",
+      "When a user creates their Reddit Vault wallet, the app generates a 12 word Recovery Phrase unique to that wallet. If a user loses access to their wallet, they can use their Recovery Phrase to regain access to it. For example, if a user is forced to uninstall and reinstall the Reddit app, they can use their Recovery Phrase to regain access to their wallet.",
+      "During the wallet creation process, Reddit Vault prompts users to both write down their Recovery Phrase and create a cloud backup of the phrase (typically stored in Google Drive or iCloud). Recovery Phrase backups are stored as encrypted plain text, saved within REDDITVAULT files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To use a REDDITVAULT file to regain access to your Reddit Vault wallet, open Reddit Vault in the Android or iOS Reddit apps and begin creating a wallet. When you do, you'll see an option to use your Recovery Phrase to recover your wallet. Use that option to load the phrase saved in your REDDITVAULT file.",
+      "If necessary, you can use Microsoft Notepad, Apple TextEdit, or any other text editor to view the text your REDDITVAULT file contains. However, as the Recovery Phrase that a REDDITVAULT file contains is encrypted, opening it in a text editor is not especially useful."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -56,13 +73,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/redditvault",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.866Z"
+      "url": "https://fileinfo.com/extension/redditvault",
+      "retrieved_at": "2025-11-01T22:32:42.732Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.866Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.732Z"
 }

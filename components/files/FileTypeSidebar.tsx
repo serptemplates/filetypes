@@ -43,10 +43,13 @@ export default function FileTypeSidebar({
               <div key={idx}>
                 <h4 className="text-sm font-medium text-gray-600 mb-2">{category.category}</h4>
                 <div className="space-y-2">
-                  {category.tools.map((tool, toolIdx) => (
+                  {category.tools.map((tool, toolIdx) => {
+                    const route = typeof tool.href === 'string' ? tool.href : '';
+                    const href = route.startsWith('/') ? `/tools${route}` : `/tools/${route}`;
+                    return (
                     <a
                       key={toolIdx}
-                      href={`/tools/${tool.href}`}
+                      href={href}
                       className="block bg-blue-50 hover:bg-blue-100 rounded-lg p-3 transition-colors group"
                     >
                       <div className="flex items-center justify-between">
@@ -61,7 +64,7 @@ export default function FileTypeSidebar({
                         <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600" />
                       </div>
                     </a>
-                  ))}
+                  );})}
                 </div>
               </div>
             ))}

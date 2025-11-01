@@ -1,8 +1,26 @@
 {
   "slug": "rcrypted",
   "extension": "rcrypted",
-  "name": ".RCRYPTED File Extension",
+  "name": "Ryuk Ransomware Encrypted File",
   "summary": "Learn about .RCRYPTED files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The existence of Ryuk ransomware was first reported in 2018. It is not like typical ransomware, which encrypts all of the user's files. Instead, it targets larger companies, such as health organizations, and encrypts essential files storing critical data. The larger companies also have more network entry points and money to pay the ransom.",
+      "Ryuk is typically distributed via phishing emails that come with Microsoft-related files, such as a .DOCX or .XLSX file, attached. The messages trick recipients into downloading attached files that store the ransomware. Then, when you open the file and unknowingly execute the ransomware, it infects the computer.",
+      "However, a self-propagating variant of Ryuk ransomware was discovered in early 2021. This variant can infect computers connected within a network, which means you may not have downloaded anything suspicious, but your computer may still be compromised.",
+      "After Ryuk infects a computer, it encrypts critical files and appends their extensions with the .rycrypted (or .ryk) extension. For example, an example.xls file becomes example.xls.rcrypted or example.xls.ryk.",
+      "After encrypting files, the ransomware then attempts to delete or disable any backup files and system restore points it can find, to ensure users must pay the ransom to decrypt their files. At that point, the criminals behind Ryuk reach out to the infected user or organization, asking for a ransom paid in Bitcoin. (FileInfo recommends you never pay a ransom to decrypt your files.)"
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Since RCRYPTED files are encrypted and cannot be decrypted, you cannot open them. Typically, the best option for restoring ransomware-encrypted files to their previous state is to perform a System Restore. However, Ryuk often disables this option, which will not allow you to restore your system to a previous state. At this time, there is no solution for removing the Ryuk ransomware and restoring files encrypted as RCRYPTED files."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +57,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/rcrypted",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.863Z"
+      "url": "https://fileinfo.com/extension/rcrypted",
+      "retrieved_at": "2025-11-01T22:32:42.730Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.863Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.730Z"
 }

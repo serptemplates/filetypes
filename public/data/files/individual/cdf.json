@@ -1,8 +1,59 @@
 {
   "slug": "cdf",
   "extension": "cdf",
-  "name": "What are CDF files and how to open them",
+  "name": "Computable Document Format File (Legacy)",
   "summary": "Learn about .CDF files and view a list of programs that open them.",
+  "developer": "Wolfram Research",
+  "category": "web",
+  "category_slug": "web",
+  "mime": [
+    "application/x-netcdf"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Various types of Wolfram software users, such as teachers, scientists, and publishers, may save documents as CDF files. Typically, they open the files with Wolfram Research Player or Mathematica when displaying business presentations, reading journal articles, or interacting with e-learning materials such as textbooks and tutorials. The format also allows users to load visualization data on-demand from within the CDF file."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open CDF files with Wolfram Research Player and Wolfram Research Mathematica in Windows, macOS, and Linux. To open a CDF file with either application, select File → Open."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Wolfram Research Mathematica can convert CDF files to various file types, including the following formats:",
+      ".NB - Mathematica Notebook",
+      ".TXT - Plain Text File",
+      ".TEX - LaTeX Source Document",
+      ".PS - PostScript File",
+      ".RTF - Rich Text Format File",
+      ".M - Wolfram Language Package",
+      ".PDF - Portable Document Format"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -89,69 +140,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "Corel Digital Studio"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFA0lEQVR42tVXa1CUVRh+lpXddZddLrIIAoo0KiIWXhE0LUPARCc1UxIzlUTLy2CW90bz8sOsH4JWapClUmlQ3hKULMYLlo4X5FaUKBsXBVb2zi672zlnhXZZEGJtdnpmvpn9zvd95zznfZ/3Oe9y/vCEGU4E539NgBcyBDCboS8rdg4Bv+xzhIAJ1TNi/iMCHI7lMpnsHonip6P3F1nsd+1rM6A+mW3/vYsLixC7ukOA4+qKgMvFUOxPhfJQOkxqlWWcL0DglRL06BvE7pvvVaAyYjDMTTrLum5iiOcugGTxCsjGkHGDofsp6FdWC67UByalAsovD6BxXyrEryTCc/1Wm/fkOzZB+c0huC9eDvG8JLiIJTA+uI+7g3o7kAKCgPwb4IU988+A0UjSbmLRsQbdJYfLtYT9EfS3b0I2PtwxAr5Hf4DwhTiLDqwmfywevavJO4OaWZMdIyDdfQDixEVounENdauSIXk9GaLps1mIbdZ8KIfq2BEoD6dDmprOoqY89BkerEjqHgFOTyH4w0bC8+0N6Pl8DJrv3sG9YcHghQ6F4c9yCCe9SMYnwazVQPtzHrTnc+E6IAT64kL0K60G18eXjck/3M7ImzXqzgm4zZoLwZhx4I+IAH/I0wDNacsOGx+ior8ngu7IYfi9FMrMg9DknASHx4Mwbir5NpFVxd0BUvSvaWLj1rqhxHRXC6C7chEqItZ2CUiS3oL3zrT206poREWQB/rerEDD5jUQxkyBcMpLpAaboT6VTfKdA6+1m1EZFYbgOmOHIa9b/SYU6R93nAKvTTvgkbLOngDJcUWwFwILilE7/2UIxk6A5uxpJjZh9GS2M5+9ByF7bniHBB5+tAMN2zZ0ogHifNK0DIgT5tsM6369jKrYKPQrqWLW65d9luWZoll2j7mhz/5MVI4aiIALt5hWrEFT9mDZAjtXbFeENH++mSeY+ChojVfFRjKRea57H9XxExB4rZw4It8SHWJSlaND4J/3C+rXLIdR3oA+x8+3lq32xxzUvDoNZr3+8SK0IXDkOHpOjGX39RtSoDlzAn1yC1AzJx6eqzdCGBtv84369PdoTNuF3geP4a/oCCZor43bLQRINdQkTO0igTYpUH2bSep/CfrkXIK+8Abq33sHvMFhEE2byTyBQpHxCdQnsqAvuY1eW3ex51WTx0G6JwOiqTP/XQooa49V69lvQ3kZsdJh4PbyhtvMBAiixjPxGX4rQf3alezAMWm10JAq8NryAVwHhkB34SfoLuVDlfUVjA31xMqvw/WpgV0ToWThUnjv2mvzAj1QqMK1+XnQ5J6C8X4t3JeshPvSFFTFRRGv6AF/Eh35zi1QfP4pevgHsqoQPDsRgoix4HpLbeare3cZFAf2tE/AbfY8CEZHQTByjEXFVkbUAprP2kVzWKSoHVO9UGekk/qkf80WtQMxoqaiW2i6dsViREcPt6aiYysWisAPH9FqxdagDkhJBF4sJBWih2zCcPh9dw6CUZF2ZJkVX7/KLLvddbp6GLVFXUoyq38z2R1/aDjRwE67dxw6jFrQehy3gUmlJN1OKEtBwOUi1iW1xRM5ju0aEnLW013ThoT2gdSM6MnIGhJqPFa6eSINiVNbMtaUFpRAsW83aTQyWNjZeGdNqciN6GYhJG8shywy1IGm1NlteWfwy8olM7igenp0d6dw8K/ZoFAWIX1pkXMIPAk4ncDfZDp039f2z2EAAAAASUVORK5CYII=",
-      "alt": "Mathematica"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Wolfram CDF Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Corel MovieWriter"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB6UlEQVR42u2WMWvCQBTHn5AM3Tq00MnNtRlEyJIu/QROBaFQMphB/AIODg7OheJghmx+gX6EdslyQ4ybdHJslU6tkMJ573rRRFtzsbEi5EF4JIH3fvd/995dQVEUOKQVcoAc4CgBgsClqqoXDgIQuD2KXtUbBwLoaRTKZQbg/A/A6/CJnj43AZNyI4S7d+MBzi+vNiBQoTTqSCmwhKjXAWw7/nNNjaBnCoXkIKRLELgssFi9yMxUuOMqcMAPHz8JwDLIQsgDYO0jRmwCuqesVu5+r5z9YE/IWE+EkALgOx8Ds4AiO3/VPS8WPAYpIFTH+zsAShzdcPj+ct8EPRI83CdYJS4E83pC8lQlkFGJWNayLK6p0cwBgs83ShrXsZWZpkkdZ/eZsBUAZUUfyo8tRpi2UYBisUgNw4DBYLATxFaAyWRILx5vRVHxC9mobafToe12Gz0wnxoisQS8A7C/MXM4B7AbtBtQT86WCUulEh2Px3sAYCcf2NZqa0csHMeoQrfbhVarlVqFZAAcrbBKzNus34f14xgVmE6nMJvNsgPgrYWjlWXFpHwA/dLfu6qQrg3ZuCUW2ZiAoVUqFer7Pszn8/0AoLnaF42eAT+pUKvVQHY2ZH4nrFardDQagWxHHOelNAfIAbK0BWed+aH7sdUTAAAAAElFTkSuQmCC",
-      "alt": "Xilinx ISE"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABbElEQVR42s2XCY4EIQhF9eTiyR3Lpcf6AmItM01iUk1EHqBoeyJK7p8khOD8AZDHpQUOu7u2KkBPjbcCpGwRoxRuXshPts8BpDZbAyiL+RcBvDTTTXO+H+DQtKS52H7/GcDovAtCFJs2yvcTAJxjlFit6/ilcQS7fBsgMY4C943OEWIlK4AxBtSR5HyE6OVgnN46BUvnWiZ6bxjKtHcKwHnIkcS2UIBoi/5YfFRCE1oCrJx/HAEMW46e+h2AcRIXuZSBCUS5rE4AWj2ltHNRs3pl32xlAGvNRTwBWDNAC0qMQsrGCeBzJB17magAGGyMpO4F3Jj1KEJQU2UEAKmlb/UBbh5kYhvABKE90SwAlgtNhOhpl+yfAqjPPoBYbLgtAIvUbkvn90B3ohpuZMBwoTGv4sEJXqVPZ0AEuJOBEQL3Aqdn/5hwkYNzFaB/4rqcnixn/kontMorJbgFcMFWv45flgKQsvhV93lRfgBgheENLJjY/gAAAABJRU5ErkJggg==",
-      "alt": "TransCAD"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA80lEQVR42t2X4RKDMAiD1/d/aLxtp9YWAqG23uY/rU0+OMVYXrlDwFphhKibD2MB/uWQDGkzAPIxfhvUAKWS0K9DjyjAab4baSBaZ757TJ8IgJgVmzsaEADhqQmo6toNzXgJQKQDAAIpiVPRQwCWOXo1l3RgAgDXhaUd2AU90+kAg9UjAElU1yh0w4sEiFaHIHyf5EPIAQx9jH4IQIdwv1x/BFDPBSIVxfJAd8WYjsFXjwXIdeURgDayBTzuAdCNpwDgfIhTcyqSxauvIVSnXB7QzTOpaCoAN64vm7kfk15sOJT4k9BcIYyHADJGSzowgFGfbJdxkCGNTfMbAAAAAElFTkSuQmCC",
-      "alt": "Maptitude"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/cdf_6685.png",
+      "alt": "Screenshot of a .cdf file in Wolfram Research Mathematica 14",
+      "caption": "CDF file open in Wolfram Research Mathematica 14"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.286Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.132Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.286Z"
+      "url": "https://docs.fileformat.com/web/cdf/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.132Z"
     },
     {
-      "url": "https://fileinfo.com/extension/cdf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.286Z"
+      "url": "https://fileinfo.com/extension/cdf",
+      "retrieved_at": "2025-11-01T22:32:42.132Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.286Z"
+      "retrieved_at": "2025-11-01T22:32:42.132Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.286Z",
-  "mime": [
-    "application/x-netcdf"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.132Z"
 }

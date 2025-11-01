@@ -1,8 +1,32 @@
 {
   "slug": "msu",
   "extension": "msu",
-  "name": ".MSU File Extension",
+  "name": "Windows Vista Update Package",
   "summary": "Learn about .MSU files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Each MSU file contains four elements:",
+      "Windows Update metadata, which describes the update package",
+      "One or more .CAB files that store the update data for the package",
+      "An .XML file which describes the contents of the MSU file",
+      "A properties file that is read by Wusa.exe",
+      "NOTE: Earlier versions of the Windows operating system used .MSI files for updates."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can manually extract the contents of an MSU file at the Windows command prompt by typing:",
+      "expand -f:* \"example.msu\" output_directory",
+      "You can then manually install the update package by typing the following command:",
+      "pkgmgr.exe /n:output_directory\\example.xml",
+      "(example.msu and example.xml have the same filename prefix).",
+      "If necessary, you can also extract and view the contents of an MSU file using 7-Zip (Windows)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/msu",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.760Z"
+      "url": "https://fileinfo.com/extension/msu",
+      "retrieved_at": "2025-11-01T22:32:42.630Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.760Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.630Z"
 }

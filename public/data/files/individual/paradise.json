@@ -1,8 +1,26 @@
 {
   "slug": "paradise",
   "extension": "paradise",
-  "name": ".PARADISE File Extension",
+  "name": "Paradise Ransomware Encrypted File",
   "summary": "Learn about .PARADISE files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In September 2017, BleepingComputer.com user gschuck reported that their client's computer had been infected by a new form of ransomware called Paradise. This ransomware uses RSA encryption to encrypt users' files, appends the .paradise extension to each affected file, and generates a file named #DECRYPTMYFILES#.txt or ---==$$$OPEN_ME_UP$$$==---.txt in each folder containing an affected file. The TXT files contain instructions a user is supposed to follow to pay a ransom and receive a key they can use to decrypt their files. (You should never pay a ransom to decrypt your files.)",
+      "However, users do not need to pay a ransom to decrypt most files encrypted by Paradise ransomware. In October 2019, anti-malware company Emsisoft developed a Paradise decryption tool any Windows user can use to decrypt Paradise-infected files for free. In addition to being able to decrypt files appended with the .paradise extension, Emsisoft Decryptor for Paradise can decrypt PARADISE files appended with the .2k19sys, .p3rf0rm4, .exploit, .immortal, .FC, and other extensions.",
+      "Typically, Paradise is distributed via phishing emails that contain malicious .ZIP, .IQY, or other attachments. Opening these attachments executes a PowerShell command that installs Paradise on your computer.",
+      "While Paradise is now an old form of ransomware, it is still used regularly. For example, in early 2020, users reported a new spam campaign that used emails pretending to be free offers, order receipts, and software keys to distribute Paradise using IQY attachments."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because PARADISE files are encrypted with ransomware, they cannot be opened. However, you can decrypt PARADISE files to restore them to their original state.",
+      "To decrypt PARADISE files, download the free Emsisoft Decryptor for Paradise utility. Then, open the decryptor, select the directory you want to decrypt, and decrypt your files. Repeat this process until you have decrypted all your files."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +57,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/paradise",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.814Z"
+      "url": "https://fileinfo.com/extension/paradise",
+      "retrieved_at": "2025-11-01T22:32:42.679Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.814Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.679Z"
 }

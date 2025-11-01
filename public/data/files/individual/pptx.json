@@ -1,8 +1,47 @@
 {
   "slug": "pptx",
   "extension": "pptx",
-  "name": "What are PPTX files and how to open them",
+  "name": "Microsoft PowerPoint Presentation",
   "summary": "Learn about .PPTX files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "mime": [
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Microsoft introduced the PowerPoint Open XML Presentation format with the release of Microsoft PowerPoint 2007. Since the introduction of the format, PPTX files have become one of the most common file types for saving presentations.",
+      "PPTX files have replaced .PPT files as the standard file format for saving presentations in PowerPoint. Unlike PPT files, which store presentation data in a single binary file, PPTX files are saved in the Open XML format, which stores data as separate files and folders in a compressed Zip package. The archive includes various types of files, such as an .XML file that stores presentation properties, one or more .TXT files that contain slide notes, and images and other media files that are included in the presentation.",
+      "NOTE: You can explore the contents of a PPTX file by renaming the .pptx extension to .zip and decompressing the file with any Zip utility."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open PPTX files with Microsoft PowerPoint in Windows and macOS. PowerPoint is the best program for opening PPTX files because it fully supports the formatting of the presentations, which includes the placement of text, slide transitions and effects, images, and shapes. The app is also available for Android and iOS devices.",
+      "There are a large number of other presentation programs that can open and edit PPTX files but they may not fully support the formatting of the presentation files. Alternative programs include Corel Presentations (Windows), Apple Keynote (Mac), and Apache OpenOffice Impress (multiplatform).",
+      "You can also open PPTX files with various web programs. Google Slides is a free option that allows you to upload a PPTX file and view, edit, save, and convert the presentation."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Various presentation applications, including Microsoft PowerPoint, Apple Keynote, and OpenOffice Impress, can convert PPTX files to other formats.",
+      "For example, in the Windows and Mac versions of Microsoft PowerPoint, select File → Save As to convert PPTX files to one of the following formats:",
+      ".PPT - Microsoft PowerPoint Presentation (Legacy)",
+      ".PDF - Portable Document Format",
+      ".ODP - OpenDocument Presentation",
+      ".XPS - XML Paper Specification (Windows only)",
+      ".RTF - Rich Text Format",
+      ".MP4 - MPEG-4 Video",
+      ".WMV - Windows Media Video",
+      ".JPEG - JPEG Image",
+      ".PNG - Portable Network Graphic",
+      ".GIF - Graphical Interchange Format (Animated)",
+      ".TIF - Tagged Image File Format",
+      ".SVG - Scalable Vector Graphics"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -93,64 +132,50 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACdElEQVR42mNkoBK44KwsYbD37gtS9TGSquGiqwonkNJl+M9gAKL//weyGf5rAdmiQAeQbB5eDZfd1XTBloAs+A+2VAvIVgFL/oeo+f8fwSHbAVe81OXAFjAwAH3yH+oroA9hloAY/yH2/EcIUtUBcHPBVvyHM4eWA5iYmYi19ykQT9fbdbuVqg7Q33OHKNt/v33JcCPK9inQATID4gAQACZwBqADGGnqAKAvGbh0jBkk0ysZWIXFae8ArZVHGZ7PbGf4duUsg8ayw2BLQICZl59BecIqBnYZReIdoDx5HQMjCysDh4IaXNPPR3cYXq+Zx/Bux2qsDmAVEGT4+/kjmK278xbcASDAb+vOIFczmXgH6Gy/iTP+nk1vYXizbiGGA5BzAboDmLl5GbTWnSXdAS8X9DN8PLKDgVvXjEEqt4GBkYmZ4dezhww34l0IOoCiRAhzwJPOYob3+zeD7VDqXsLArWfG8P/Pb4bLnlp4HYAMmDi5GLQ3XKDcASpT1jNwqmoz/P36meFqgBHRDuCzcmWQr59KngNAUfD57CEGXlMHBvG4fLDYu+2rGJ70VeNNhPC4B+WAvuUM7HIq5DkAHfx+9YzhTkEYw+/XLzEcAM6GwAT69QoksXGDyoDMGowygCQH/HrxBEyDfPbl/DGG16vnMPz5+I72JSG2NEDXopgcBxCqDZGz5uAPAdWZW8Epd8AcgGIJlRokJEUBOQ4Y8BAYMg4AFeXXgow/Ah0gMFCNUlB5DWqUVg6aZjmsYwLuZtG9Y4ILABMKqP8H6o7pInXNFOnmAGwA2DnlATkK2jk1QOqcCtHFAbgAsHsuDXTAU1L1AQBjo68/OYAQkAAAAABJRU5ErkJggg==",
-      "alt": "Microsoft PowerPoint"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE6ElEQVR42sXWe0xTVxwH8O9teZWXpTzUQWkLiNlGnNsyl4xsf+wPF51bnNn+YDqGio4pyyKIQAGHCqIiIm8E5K1zybIt2x/bH3tE/tlctpjMLIuZpUUwIUOEFii0tD373csw3HtbVyPEk9zcwwm5388593fOLYfH3LjFjqMvnjEPddwA89Aw9Rn1hbt0XPL3wth/fbZwsYX7BBjXT/c69WmL6YGAuZ54Fpw5snxT87gARQBmOrM8rptXnYQwqqsttb4BnQTYPYK5du1yzBycSoPAtC1QvVUpPN9a/pydTU8MRNVYtngFzHYksJC9w5ht1T5yOC37/TEogxDyegmC0zMJsWme2cYuR9VasuSANgLsI0CzdvnCl4yr3ixD8Ct7YDVucHjsUxmaOsuXIoC9JYGpcoZhb9Que/jipT5nxux35zH3bb1ZU29OEgOaCHCAAHVa3+GKYASk7UDgulehWJ0KhTpBKDS+sakxeKyj8IyZ4DL/BsfPl0Th/KV44klE5F7BZOFGaBrMnAgw05DAQnOHMVOb6DVcmfACQnY0QBG59n83AJu1wVr2jJfV4BBVN4iJj5KgaZQCzhPgYwLUJMrCFZpkhGZ/Ay4ozL8deG8EtsqXZeF8P6qeALkEaJIAps9pWdih25iuTpS985C3WxD41Fa/jwD+FUw3vCMLFwANBDhIgGYp4CwB8glwKlFWcBHGP2Wzd/7+OZwD7XD/Qwec2y0EcUGh4EI1QpBnfEQWLgAaB3HvQBKiWySAqTNaFl5wG1MndbJqjzxukc3SakwRgr1Vu7eZ3wc0EeBDArRKAVUEKCJAhU621cJyvoYyfoMI4PihEXN0sXmH3+H8uKaZADkEuCAB2CoTWYRxCFPHdbJ9HvD0VoRmNMur3eWA69YvcJuuCXeX5foDw/m7psUX4AQBSodgK9d7PWSCNu2CalsZaYJ9V//kKBxXu+AY6AVzOuDtQNK0EuADArRJAccIcJQAR/U+TzguPBbBL+5E4LPboYjR+d4FJtoFzVlgc3ZxfWABML4/GTHtg2KA9RMdiyy3wFam9+t4VcYmI2BdOn3xNiMgNV2GmPu+HfYvqkThwgpcIMA+AnRIAWUEoGq3ler9PtsXxwLTXkN4dqvsdUwWvyQKZ/S86DYTxrMJcFEKKCXACQusJfqHCuf/j6O6UNf8JVsFvtiWhvP36HYC7CVApxRQQoAKAhj1snBlSjqUq9fDPXqTPjZDYFb68Ajbj4NyTSpCNh9E0PNviHeI3YaJvI2icAHQQYA9BOiSACaNOraqkgDFBtksVduPCT8oHqY5r32F6c48UbgAuEiA3QTolgKKCXCSAEUG2bKH7+/3Wmi+Gj97a8U2uO/ekb226E4T7mYlI7ZHCijSs1VVZlgLDbJ3Hln+KxQRsX6Fu4ZuYKa7AK47f8vCBUAXAd4nQK8UUEiAUwQ4YpAVHL/d+Eu5dj2Uccng1GvABS4cSPy3n//wuAavw3njJ8z/8aNs2ZeuaEw3ATIJ0CcFHCHAaTMmCww+q93X8SrdavC5YwjQQ4D3CNAvBRQQ4AwBDhtWLFwA9BJgVwpiL5nEgInDeqauJkC+YcXCBUAfAXYS4LIUkE+AswTIM6xYOP+8mP5bGHs3BXGfSgF5BKgx+73VHqWNZRDgihRwSM9WcubS8bjPJIDH1f4FjXblTtdTGVkAAAAASUVORK5CYII=",
-      "alt": "Corel Presentations"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Doxillion"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Kingsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE+ElEQVR42sWXe1DUVRTHv2d3FS0QbGxAbAqhRv6ppCYbs4esokjyWF4F8ZoNGiapGU0pncjM/ihLG5WxJCPkYfF+SIQEi9NMNEzTY6wma1LEgqg/iNBwgGVv5/e7P1iWhYVpZD0zd/b32/s4n3PuuefcH2GKiMzQxXSi/RrcJDRFeRD/7Od2H7c7uHlMHfM/RHAb5naZ29fc8tjAC04A4unQZH47wI8r5tnoHkZ6kT5oL5sAEFkbgiFsFn5cPs/Kx+UP6PRGKmg9Pw5QwQAJblIuRaerpIK2RAmQGarsSaBbAYCLHAtB4wBKkCx0M8AIA3hIAHOomPibdIzCLOQi+MfGgNERx/8MC7gZZp4jWMUIzxE2u6rCdqnFlmG0/xu8Gsh92/XRKz4KdDQLjAxri+sJ6TkC6yNdz3trp8BP30286oosOgmQtsEOYIwE0p6f7ewLhiC0Nwr1mIey4lQGcOU1xQMl+YClwQ5Q3KYBpGy0A/jfDuS8DNwW4Brhty7glWypcW++QMBdrsf/3g3kc47rvWwHKG3VAJLC7AB6PRCTDMSmyPdrQ4A51m7a+5UCnl4yDjIjCFtThDpemTd1bGGNwOKb5HPdKaCmVM4bB/joMw3giU02B1pvH+DgCeBmT+m6uo+BipNKD8GUJBDHcP9elf8lmeU4Gy/RUAGUF8k1EtPZkCdlMCtjM+MJMi3bAcpbNICEzY4AiqQ9A0TEyAUGB4Dt/H71CuDnDzyXC/T1yKg2hsvxlziVHOFM3sMuVjz0TgGwxEca0FwPFB13UqGrPKMBxIU7AwTeCezYDfhq2bm0kC2slguufURanfgUsPQW2V/AJ6O1WT5HxQEpZvn8Vx+wzexkvQpQ3awBmLY4dULPZzolAxQdK4P4wq/AoTc5i7PlCz1AO18C7l8jPdR1EWLPLq55XMWXcy3bkQsKkkEpGtn6Yoa3jjp7oPZTLQ9ERzgDKOLrBzpyjIsyV2WrFaKE97e+Frh3NejV/TJpDQ1BlHIsdF8CfvwBiDaBUjNkUuItEommGQ+Grr5JA4h8fHoApVhuywGFhSnFA6KP3bk3D8h+FhQSIi3s7GSv9AIBK4F3GXbfayA/P3WrhKUNOHx4Ou9LgNOfSICxiK0zAGgYJz8ELVsmFZ47B1q1SnqFj5R4j4MrJlrtFz//Arrnbjmuvx8iNd3VstA3NWoA4ZEzA3BdoOws0JbN8l0JQmUaHzthOcs1rQtkTpcuH+9ThrW0QhxjuOHhmQGaT2sAm6JcegAGG3QNdTLZaCL6/oR446AaG7R7F2jFpLsMw9nC4tR5Lj3Q0qABbIx2DcDDaM8LoMfW2S0sKYcoq1T3l+JjQJmpEx4SHZ0Q+w44VL5pAVrrNQBjjGsARRaxpWVlIJ8lQP/fsGVtBwb+kX1enqDjh0C+t0IMXoEwpc26nApgqdMA1pvmALAIlMw5YU0IRG0TcKbdsd/4MCghCvj2ez6WVXw8Z7/Z68/WSgDro7FKpCyYdQYHGnl7QQwMOhQVVfiY0lJv1QMYtc7FAaOGz2vkjci6Lk65E66ck9+un3QZvqiWd0LrQ/F8K0a8W9UTqgwdVfJWbF0bHwwbKd8Ffm5S3wedMBq+rDo/cXmwPpiQzBDKl5H/PCvvZeW5hs7KU9IRk8T6QGIgBL3O2zH52/B6iBLk3aztG5DIM3xV4fxteKPkhgP8B+GgwzCNpmq2AAAAAElFTkSuQmCC",
-      "alt": "WPS Office"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE60lEQVR42sXWe0xTVxwH8O9tKaW8LOWhDkpbQM0249yWuWRk+2N/uMzh4sz2h9M5fM4pyyKIQhWHD0RFROQpICiic8myLdsf2x97RP/ZXLaYzCyLmaVFMCFDhBYobWl79ru303jPbV2NEE9ycw8n5H4/59zfObcCHnMT7na85zIZC1InALAgDVOfUV+68+Pc36Gx//osdLHQfQRM6KF7vf6Iw/ZAgOdsJtOuHZi+qQX9gCoGE52FQf/1Sz5CWPU1jrrIgE4CrBuAp904HTOHoDNAs/B16N6qkp7vrHzOzcZHLqfUOgpCT+EAkx1ZLG5DPyZbjY8cTst+bwzqWMS9sRva/LWEWDLFXEMXUuochUpAGwE2EaDZOH3h943r3qyA9pX1cFoXeYPusVWGeseXMoC7JYvptvTD3Wic9vC7l/64HZPfnYDn25N2w0l7jhzQRICtBKg3Rg5XaRGzcCU0816FavZ8qPRZUqGJjY0NIegcRHDIBr/9N3h/Pi8LFy/VE08iqegiRncthqHBLsgAEw1ZLL6oHxN12WHD1VkvIG5lA1TJc/93A7BJF5wVz4RZDQEp9b0Y+SgHhkYecIIAHxOgNlsRrjLkIn7jNxBiE6LbgXcG4Kp6WREu9lNOEqCIAE0cYPy4kSVsv4nxmmzFO497uwWap5ZFfQSIr2C84R1FuARoIMA2AjTzgGMEKCHA4WxFwSVZ/1TM3vf75/BdbkfgHzrgAgEpSIiNhxBvkIKCwwOKcAnQ2Is7W3OQ2sIBxo4aWWLpTYwdMimqPXm/QzFLpzVPCg5X7eFmfg/QRIAPCdDKA6oJUEaAgybFVkvY8jXUmYtkAO8PjfDQxaa8UYeL44ZmAmwhwCkO4KrKZknWPoztNyn2eczTyxC/qllZ7X4v/Dd+QcB2Rbr7HVcfGC7eDS2RAAcIsKcPrkpz2EMmdska6AoqSKONXP2jg/Be6oL3cjeYz4twB5KhlQAfEKCNB+wjwF4C7DVHPOGExHRoX1wNzbMroEozRd4FNtoFzYVgHre8PhACDG/ORVp7rxzg/MTEkisdcFWYozpe1em5iJmXT1+8pYiZn69AeL5vh/uLalm4tAKnCLCJAB08oIIAVO2uPeaoz/a7Y5qFryFxY6vidYyWvyQLZ/S81DYbhjcS4DQP2EOAAw44d5sfKlz8P4HqQl/7l2IVxGK7P1y8p7YTYAMBOnnAbgIcJIDVrAhX5+VDPXsBAoPX6WPTB+akD4+0/QSo58xH3NJtiH1+uXyHuF0YKV4sC5cAHQRYT4AuDjBqNbFZVQQotyhmqVuxT/pB8TDNd+UrjHcWy8IlwGkCrCPAGR5QToBDBCizKJY9cXNP2EKL1MTZOw8WIHD7luK1pXbacLswF+lneUCZmc2qtsO5y6J458mVv0KVlB5VuL/vGibOlMJ/629FuAToIsD7BOjmAbsIcJgAOy2KghO3m3ip5y6AOiMXgn4OBE3oQBK//eKHx997Fb5rP2Hqjx8Vy37/iqadIcBaApzjATsJcMSO0VJLxGqPdLzyWw0RdwwBzhLgPQL08IBSAhwlwA7LjIVLgG4CrMlD+nmbHDCyw8z0NQQoscxYuAQ4R4DVBLjAA0oIcIwAxZYZCxefl9ZzA0Pv5iHjUx5QTIBae9Rb7VHa0CoCXOQB281sJmfOj2d8xgEeV/sXs1TmTjCvrWQAAAAASUVORK5CYII=",
-      "alt": "SoftMaker Presentations"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/pptx_1566.png",
+      "alt": "Screenshot of a .pptx file in Microsoft PowerPoint 365",
+      "caption": "PPTX file open in Microsoft PowerPoint 365"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.371Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.201Z"
     },
     {
-      "url": "https://fileinfo.com/extension/pptx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.371Z"
+      "url": "https://fileinfo.com/extension/pptx",
+      "retrieved_at": "2025-11-01T22:32:42.201Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.371Z"
+      "retrieved_at": "2025-11-01T22:32:42.201Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.371Z",
-  "mime": [
-    "application/vnd.openxmlformats-officedocument.presentationml.presentation"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.201Z"
 }

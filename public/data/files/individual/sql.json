@@ -1,8 +1,50 @@
 {
   "slug": "sql",
   "extension": "sql",
-  "name": "What are SQL files and how to open them",
+  "name": "Structured Query Language Data File",
   "summary": "Learn about .SQL files and view a list of programs that open them.",
+  "developer": "ISO/IEC",
+  "category": "database",
+  "category_slug": "database",
+  "mime": [
+    "application/sql",
+    "application/x-sql"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "You will most likely only encounter SQL files if you develop or manage web databases. The SQL language first appeared in the 1970s at IBM and was adopted by the ANSI and ISO standard groups in 1986 as the standard language for relational database management systems (RDBMS). Since its adoption, it has gone through multiple revisions to support a wider set of features and has spawned several database language variations, which include Mini SQL (mSQL) and MySQL.",
+      "NOTE: SQL may be pronounced as \"S-Q-L\" or \"Sequel.\""
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "SQL files can be read by any SQL-compatible database program, such as MySQL and Richardson RazorSQL. You can also open and edit SQL files in various source code editors, such as gVim, Bare Bones BBEdit, and MacroMates TextMate.",
+      "If you do not have access to a SQL database program or a source code editor, you can open a SQL file in a plain text editor, such as Microsoft Notepad and Apple TextEdit. Note, however, that these plain text editors will not show the helpful styling and syntax that source code editors provide to help users make sense of SQL files."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -85,70 +127,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "EditPlus"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MySQL"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Microsoft SQL Server"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEg0lEQVR42rXWD0yUZRwH8O97XbBUJlyZUVoJyIzhGCv54wytnKMtpltZjDRNbGEhc0CoV1EwIBKSRSpncQ1tYColDUlizSHnCBiFh8LByT/jz8Ed9we4A+4O7ul9L484X+Beju633e659573+X3e5/d7370U7kf1pQTizjODENgFRQF9aoLd74souCAoW/J1gcHWA8tXroCnYKV1rBrSwDI1bR2LM7KRWnTbDrGvNJoYlHqUfnCV4jKeF3BNvJfseHvvgtLMuCQW4I0zr5FB6SBunm2kuIwXBIQHmeG2Ohg8j3Xgu3vCMm3E1GADJlRyjPW14nwFWID/rQQMYNPa2+AJ/MH38gMxj9PJ/8R4mwSTRtAfCldaA50CcCpBheh1EurTCb5gA3hePmyAmcKPTQHILG5ZNIBTCS59tZO8srEflMCP3oH/AJPtEoxPLg3AqQRFaS+TqPBRPEQDHtwBI70DEzTgXN0G5JbKXFOC/MRQEhNpnLMHjPd7oEDij9Pl7a4pwUIAWw+IbjgH4FQCVwI4l2DXVjNWePuA/6g/C6DR83G+ztd1JWCaMPDxOzB5+OLJ9aHwWG6BWdGEweZ69A9PgVgoXGv1c10JbAhZh8XuTzdTD0xuz0KvU7gkuR2Aa6TlXySPLFsGHo8Hg16PzxLesq6Rkv09eXDuiWMHHK7v9FX9XNVA1KOTGBhQzCBskZhRSJ7yXoUhldohhDOAufLZiRqau8gtWQ8UQyoWwIbIFR5AVW0nrt+UzIvgDDhRWE5SDkbNzGd2QCa/B7VuBCc/OchaJ7+onERHReAxLw9U1OkgqSmbE2E94OheZeLrc5UkPNjfOlaoNODx3VHfKMWwWgtR1mHWeQxw4/q18H1mNbRjU6ht0c+JsP5wdK/aSsB8G01m+l3BApPZhC0hAfB5+glU17fjyL5X7c79rrSGBPmvoQFroB6dhkpnRvmvZejtV6A4/yhlB1hMH4zqNNDo9NCOjEE/PoGq4i/RLO9hIdJzC0lY2CYMKJl5RhgMY9DqRtEm70CZON0ewKUEc0VSegGRyrpYiNzUBOIleBh8Tw80dHnTABNGtBp69yaxfVsY6v9qhVKpQvXlkxTnEiy0K5I/Gu0Qe7yP49ZdPq52bYfA2w+pyf82afapElJ5oxGZqZ9jWClHnqjE+efA7HgvKYt0D2jtEBNNX8DTNwaHDsfZ5di2O5HsiHgBLXd7sfn559glcPb12oYoL8pCe3fvnI05GxG5NQTH4qPZJXDm9Zqp+f4tNTj+25tgEBdFmehV9C2IsGvCpYQteVvnFE7/YoFX0LuQ/62EKCcder3CIWJJAFvylm4LRJdHELD5Q3yankLFxGcQpXqEE8JpwOzkH+WpEP1OPBKFH8+sl5B2lrS2dThEOAWwJZfK1BAWGLA/TohDR5JZa2V9U0Ku1zahgEYY5kEsGnCl+Fvy4qoz1isXnlIi5KU9yMvPnXed2OQccq9fiaNJQjRLa5AUu3NpgDvNUlJZKsYPF35CeEQkRGKxwzV2xaYS5rH9+4Uc1tx/ALGRTzvprGwhAAAAAElFTkSuQmCC",
-      "alt": "Microsoft SQL Server Management Studio Express"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Microsoft Web Platform Extensions"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADoUlEQVR42rVXC5bbIAwUJzM3M9wMn8zVb4QgTjbb13o3cRI+Go1GEi70y6u1dm8/UFvHqdYqr/LNfl9NGmOoUdmYTajBRqcN8kgrXQ3jT/+/BFJ+Mswv3Ux3ZaNjXFSPg25eecnnevC4ABAwDKp3GmJY1vk+n4A8/ig0y6IRm5hnxgCp0QykMAByXloYtDlwQO5PIB4BmOeyCS86GMg1dIMZBp4jY6PGGpkLEOThUZDuxDsQLwDEe1BHJ1N+macytXXwQSY+F+DdTmUB3oMljgdmmy7oVRcLAMQ84uaGRWkKJHkD0RkCH0docPe9ADpk2tozAHUGaeXeKxgG0nqxkDDtugmPy2/yWRgQQR5suHBWyDr5bCKtytZwh1rvYLosAJDfEN/OgM7pxfw4Re3FNh51ilFSkg2cEhL+vAj0vCOMllVUdgbMe14s4JqnuQjQWKgBBOEwMU7ABwMphUL9Fu+hKQpdWQgijKXk2CN9mgvKaKtTA54RchdPxNOuNeDUNTt7s1YYCGP6zOlpAFT5KqbTaStKGTJgNX7MUDhI8fySuDsDrEn9nkXZHGj+riEI5fNudRgDbEE3VuplTGKes0FYKUYlWINRgAAjuSLmvoFMUgCTug3xQzZQ8l7epSCpUTIBQgvkAtR5Z3P9uKA9exYA4kKu75QKS9DvTM14ynaWguKAaEL2LxCqpqBXzRRK6g2ViUGm9Nvz2ATSlQXEPYpU7gdk9KuwzjMcwfcnDYHBYgL0Or11ubF3O++GOc5QdmjAnaBia9pDQUMAlYGcgnOx5TJqeqMeMUOt30p4FB8UIqQfeWdB+iKUECMK0R3/zgCMg2bJ2Kzgd635GjN1o52nMOiVNRBl2NMQVKG07sUkTj1+AUjWz2s2uUHVUo+1mgV7H9g7WtQC0J16hElgFiSsAZgMXnoGGMkpvPSC2YqPRQMDXe2mUPJSJXnd+IEJc9RFixdKsQspCtKk91gby9Idy9IXJDzojGPJBlrPCEtfSAA+hULjyNUsd8Y9p7UiJup349NGT7Wklv1AsoQi0jCV5en5PKZFk0FIqhenZHyGNDrmy3lgAbGm2uzps0UjnbwjeuUcWxFTIvDsQK8H07fHcnSrOAU7K3oaIjsd4WDxlD3quYcBtCPu2dZPT0bplIQwtKWa7cZRzMDGXz0XPINoOI8T3mF8N5oPHJ+MfwsgUhQbBiBaj1gYz/cn2n8NIAOZz4rrBVDpueLfPR3/z+sPeCl/BPyUsTgAAAAASUVORK5CYII=",
-      "alt": "Paradox"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "pgAdmin III"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/sql_101.png",
+      "alt": "Screenshot of a .sql file in Microsoft Visual Studio Code 1.33",
+      "caption": "SQL file open in Microsoft Visual Studio Code 1.33"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.390Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.390Z"
+      "url": "https://docs.fileformat.com/database/sql/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     },
     {
-      "url": "https://fileinfo.com/extension/sql",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.390Z"
+      "url": "https://fileinfo.com/extension/sql",
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.390Z"
+      "retrieved_at": "2025-11-01T22:32:42.215Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.390Z",
-  "mime": [
-    "application/sql",
-    "application/x-sql"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.215Z"
 }

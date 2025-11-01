@@ -1,8 +1,20 @@
 {
   "slug": "mailhost",
   "extension": "mailhost",
-  "name": ".MAILHOST File Extension",
+  "name": "MSN Mailhost Settings File",
   "summary": "Learn about .MAILHOST files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "If the Mailhost file is corrupt or missing, the MSN software may display a \"Mailhost File\" error. To recover the Mailhost file, first select \"Run...\" from the Windows Start menu. Then type the following in the text box:",
+      "regsvr32 c:\\progra~1\\msn\\msncorefiles\\mailui.dll",
+      "This should restore the Mailhost file and allow MSN to communicate with the mail server again.",
+      "Also see the related .DOWNLOADHOST entry."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +51,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/mailhost",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.734Z"
+      "url": "https://fileinfo.com/extension/mailhost",
+      "retrieved_at": "2025-11-01T22:32:42.604Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.734Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.604Z"
 }

@@ -1,8 +1,23 @@
 {
   "slug": "bfe",
   "extension": "bfe",
-  "name": ".BFE File Extension",
+  "name": "Bcrypt Encrypted File",
   "summary": "Learn about .BFE files and view a list of programs that open them.",
+  "developer": "Johnny Shelley",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Bcrypt is a cross-platform file encryption utility that is most popularly used by Linux users. After installing bcrypt, users can enter bcrypt [-orc] [-sn] and a filename in a terminal window to encrypt that file. As part of encrypting the file, users must enter a passphrase. Bcrypt then produces an encrypted copy of the file, saved with the .bfe extension. By default, bcrypt also deletes the original file, though users can disable this feature.",
+      "BFE files are encrypted using a variation of the Blowfish cipher, which is a symmetric-key block cipher created in 1993. As such, the key used to encrypt a BFE file is also the key used to decrypt it. Each BFE file contains the key used to decrypt it, hashed to a 448-bit value."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because BFE files are encrypted, you cannot open them as you would a normal file. To decrypt a BFE file, you must use bcrypt (cross-platform) and the passphrase used to encrypt the file. After you've decrypted the file, you should be able to open it normally."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +54,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/bfe",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.512Z"
+      "url": "https://fileinfo.com/extension/bfe",
+      "retrieved_at": "2025-11-01T22:32:42.350Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.512Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.350Z"
 }

@@ -1,8 +1,19 @@
 {
   "slug": "blf",
   "extension": "blf",
-  "name": ".BLF File Extension",
+  "name": "CLFS Base Log File",
   "summary": "Learn about .BLF files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "BLF files are commonly seen in the Windows user directory (C:\\​Users\\​[user]\\​). This is because the Windows component that writes user-level registry information to the NTUSER.DAT file in that directory uses CLFS logging. There may also be .REGTRANS-MS log container files in this directory, which store the log data. Another common location for BLF files is the following directory:C:\\​Windows\\​System32\\​SMI\\​Store\\​Machine\\​",
+      "Base log files are system files that are hidden by default in Windows. In general, you should not modify or delete them, since they can contain important user and system-level information, such as user passwords, account settings, and application settings.",
+      "NOTE: Because CLFS logs are used with transactions, they can potentially be left in an inconsistent state. This has been known to cause issues with Windows updates where BLF files are left in an inconsistent state. Consult the Windows support documentation to resolve this issue."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,13 +58,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/blf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.516Z"
+      "url": "https://fileinfo.com/extension/blf",
+      "retrieved_at": "2025-11-01T22:32:42.355Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.516Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.355Z"
 }

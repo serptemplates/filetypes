@@ -1,8 +1,31 @@
 {
   "slug": "xml-prev",
   "extension": "xml-prev",
-  "name": ".XML-PREV File Extension",
+  "name": "VM VirtualBox Settings Backup",
   "summary": "Learn about .XML-PREV files and view a list of programs that open them.",
+  "developer": "Oracle",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "VM VirtualBox is a virtualization app that allows users to create and run virtual machines. For example, a Linux user might use VM VirtualBox to run a Windows virtual machine within Linux.",
+      "At startup, VM VirtualBox loads application-wide settings from an .XML file named VirtualBox.xml. If VM VirtualBox cannot find or load settings from VirtualBox.xml, it will not launch.",
+      "For this reason, VM VirtualBox maintains a backup copy of your most-recent application settings in a file named VirtualBox.xml-prev. This file is stored alongside VirtualBox.xml, in the VirtualBox directory.",
+      "If your copy of VirtualBox.xml goes missing or becomes corrupted, you can replace the file with your copy of VirtualBox.xml-prev, to attempt to restore your VM VirtualBox settings. To do so:",
+      "Go to the VirtualBox directory.",
+      "If you still possess VirtualBox.xml, rename it to VirtualBox.xml-bad (or any other new filename).",
+      "Rename your copy of VirtualBox.xml-prev to VirtualBox.xml.",
+      "Attempt to open VM VirtualBox as you would normally.",
+      "If your new VirtualBox.xml file contains valid settings, VM VirtualBox should run as normal.",
+      "NOTE: XML-PREV files are similar to the .VBOX-PREV files VM VirtualBox uses to back up individual virtual machine settings."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "If necessary, you can open an XML-PREV file with Microsoft Visual Studio Code or any other text editor, to view the settings it contains. For instructions on how to use XML-PREV files with Oracle VM VirtualBox, see the How to replace VirtualBox.xml with VirtualBox.xml-prev section above."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,13 +70,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/xml-prev",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:50.011Z"
+      "url": "https://fileinfo.com/extension/xml-prev",
+      "retrieved_at": "2025-11-01T22:32:42.898Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:50.011Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.898Z"
 }

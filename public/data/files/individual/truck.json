@@ -1,8 +1,37 @@
 {
   "slug": "truck",
   "extension": "truck",
-  "name": ".TRUCK File Extension",
+  "name": "Rigs of Rods Vehicle Definition File",
   "summary": "Learn about .TRUCK files and view a list of programs that open them.",
+  "developer": "Rigs of Rods Team",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Rigs of Rods is a vehicle simulator that implements soft-body physics to simulate vehicle motion and collisions. You can create custom vehicles with Rigs of Rods, then save them as TRUCK files. After saving a TRUCK file, you can share it with other Rigs of Rods users, who can then import the vehicle into their simulator installations.",
+      "Each TRUCK file must contain the following sections:",
+      "Title: Sets the vehicle's name",
+      "Globals: Sets the vehicle's mass and material",
+      "Nodes/Nodes2: Sets the vehicle's structural definition",
+      "Beams: Connects the vehicle's nodes",
+      "Cameras: Positions the vehicle in space; used to measure the vehicle's pitch and role and orient its cameras",
+      "Cinecam: Sets the position of the in-vehicle camera",
+      "End: Tells Rigs of Rods to stop processing the TRUCK file",
+      "Additionally, each TRUCK file contains specific subsections you can use to determine what type of vehicle the file defines. For example, a TRUCK file that defines:",
+      "A Rigs of Rods truck contains an engine section",
+      "A Rigs of Rods airplane contains a turboprops, turbojets, or pistonprops section",
+      "A Rigs of Rods boat contains a screwprops section",
+      "TRUCK files also usually contain additional metadata sections, which specify a vehicle's author, ID, category, file format version, and other information."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a TRUCK file, view its contents, and edit its contents in any text or source code editor, such as Microsoft Visual Studio Code (cross-platform) or GitHub Atom (cross-platform).",
+      "You can also open a TRUCK file in some 3D modeling applications, such as Blender with the Rigs of Rods N/B Import/Export plug-in installed (cross-platform). This allows you to view and edit the TRUCK file's nodes and beams visually, instead of as text.",
+      "Finally, you can import a TRUCK file into Rigs of Rods (Windows, Linux) for use as a Rigs of Rods vehicle. Typically, finished TRUCK files are packed within .ZIP archives, which Rigs of Rods users place in the game's mods directory. Users can then select the vehicles the ZIP file contains from within Rigs of Rods."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -64,13 +93,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/truck",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.941Z"
+      "url": "https://fileinfo.com/extension/truck",
+      "retrieved_at": "2025-11-01T22:32:42.818Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.941Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.818Z"
 }

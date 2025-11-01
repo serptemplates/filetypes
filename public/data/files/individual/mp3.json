@@ -1,8 +1,72 @@
 {
   "slug": "mp3",
   "extension": "mp3",
-  "name": "What are MP3 files and how to open them",
+  "name": "MP3 Audio",
   "summary": "Learn about .MP3 files and view a list of programs that open them.",
+  "developer": "Moving Picture Experts Group",
+  "category": "audio",
+  "category_slug": "audio",
+  "mime": [
+    "audio/mp3",
+    "audio/mpeg"
+  ],
+  "containers": [
+    "mp3"
+  ],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The MP3 format was developed in the early 1990s and released in 1993 by MPEG. The format soon became the standard for storing music since it could compress audio to a fraction of the size of other common audio file formats at the time (roughly 1/10 the size of an uncompressed .WAV or .AIF file). This was especially important due to the limited storage space computer hard drives provided at the time.",
+      "While the format compressed audio to much smaller file sizes than competing formats, it still provided near-CD quality sound (stereo, 16-bit). The quality of an MP3 file depended (and still does) largely on the bit rate used for compression. Common bit rates are 128, 160, 192, and 256 kbps. Higher bit rates result in higher-quality files that also require more disk space.",
+      "MP3 technology helped usher in a new era of music distribution in the 1990s and 2000s by allowing users to more easily and quickly download music online. This led to a rise in music piracy through sites like Napster and online music stores, such as Apple iTunes and Rhapsody.",
+      "Users would then play back MP3 files with audio software on their computer or burn the audio to CDs that could be played back in a CD player. As technology progressed users began downloading and transferring MP3 files to portable music players, such as Apple iPods and Microsoft Zune devices.",
+      "MP3 files are still used today for distributing audio online, such as songs or narrations. However, other more efficient audio compression formats, particularly .M4A, have since been released and adopted by online music stores and audio players."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "On Windows:\n\nUse Windows Media Player (pre-installed).Open with VLC Media Player, Winamp, or Foobar2000.\n\nOn macOS:\n\nPlay with Apple Music (formerly iTunes).Use QuickTime Player or VLC Media Player.\n\nOn Android & iOS:\n\nUse the default Music app.Download third-party apps like VLC, Poweramp, or Spotify.\n\nOn Web Browsers:\n\nDrag and drop the MP3 file into Google Chrome, Firefox, or Edge to play it.",
+      "You can open an MP3 file with most audio players. In Windows, you can use Microsoft Media Player, which is bundled with the operating system. In macOS, you can use Apple Music, which is bundled with that operating system.",
+      "A variety of other free and commercial audio players provide different playback features and conversion capabilities. Some of these audio players include VideoLAN VLC media player (multiplatform), Nullsoft Winamp (Windows), Eltima Elmedia Player (macOS), and olimsoft OPlayer (Android)."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Many audio editors and media players, including Audacity, VideoLAN VLC media player, and Adobe Audition, can convert MP3 files to other formats.",
+      "For example, Audacity can convert MP3 files to the following audio formats:",
+      ".AIFF - Audio Interchange File Format",
+      ".WAV - WAVE Audio",
+      ".OGG - Ogg Vorbis Audio",
+      ".FLAC - Free Lossless Audio Codec",
+      ".MP2 - MP2 Audio",
+      ".M4A - MPEG-4 Audio",
+      ".AC3 - Audio Codec 3",
+      ".AMR - Adaptive Multi-rate Codec",
+      ".OPUS - Opus Audio",
+      ".WMA - Windows Media Audio"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -81,72 +145,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGSUlEQVR42sWWCWwUVRjH/zOzO9s9Z4+2lEK3tSBUaC0RTakXghw1grFIAmKIARTwiqAlgaJRI55cglAFBAMqKgqiBOQQkQZEkBaQHtJCLV22W9rtbrfbPbud8ZtODWqqEtPCJC/vzcyb7/u9733v/w2D63wx//fDwzPMBSl8yxyGZ5i6Vu2GkZuDb10zgI+np5oztY4LgxNFq1oHlFUxraVt8ekzv2xqvjYA+ZYJuXbvrj7kXEXNVQ8cqbfkT//au/OaAOx8KK5ohD38hIHGaiPQ1gIUX9Suy/86NLfXAZYuX8YPtqIyW1edromEwDBBBFR9cNQpVDglS/bCBQtivQqw9Ysd9+hMtoM3Z2Wy/lAERq0GLncLwn6PdKq0ZHjBM3NP9SrAstVFL4wZfc+rHKeCwaBHWyAIXq1GWeU5RMPBZQ9Pzl/QqwDffLvvF1t8fFZyUhJa/QGYjHo0NXvBSBKO/HiseP5Ts0f2GsCWz7YPEVmuJHf4sLhINApjVwQ0PI9ahxPRaDRytrxi0KJ5T9b1CsC6x++YOWxa4UbWlgabLQG+UDsEnRZubwt4tKPi8C6EKg/MmvXuvk29AvDpOHZ7Zho3yTxwAFh9fzAqAayGjIg+xBrq4DpzAeWN0rZHD4lTehzgg6lpxsSA49zg5I6+FhPAR0iERIAlMWDigCjdX6LAlzVwDT5bcsbsbQ5fjwKsfyBx9ECu8aA9GZR45DwMcCw1UkKGohCLApedwDmCcGpseXN3N+/rUYAPx+uXZlgCBYk2UPIRQIicq7oAeKCjA2h2ATWXgN9ixnce2++f32MAq5+ZyCVU7y/NsEZuNlsBPTnlCEClpi3QKgCiBPgaAYcDqPLzFb7MsdnPrtn9n6p4VQBvrNmUlYHa0zdUvM9apUboeAWAo9CztP8sr8xr9QK1gUSU2MaJptunjpw+ecKRHgH46NPPX4tIXOGwG1PAOI/D6K+GyusET3WApW3oiNMjxPeBhx8EJ5MMlcGGX06fWvTiwoI3ewTgpTdWHBh9Z86YUExE/xQ72sIxCAYd2oKhzr7ZF4Bey8NZ74JRw6G8vAw6vbF0+pRJw/8XgOPYFhV3ougRKRyKP+/u0DXkLinkOC4uPS0VoXCURMgCr88Pq1mAr9VPp8KAJncz5UYcLl50QE9JcvxkaSitfP3SpPaGVpXW0OxNu/WTSS/ubL8qgJpND421nN2+P+AGSmJ21IxagpzsDARIdvv1S+50ahYE+OleoDPpISU0ktN6V0OnPFefv4A4gwB30VxkR2oRT4n724Cce/PePv79VQG4Vmav1dSeeZIWhdMONdiJ88Bm3oe0/v0QDAZgFUxo8flgtZqp90OgCDS6PZ3Vsc7VBBNtS83uDRB/+Ax23o9UCxCwp6+6bVXNvP8EqN2zmDeUvHcWbs8gZxNQXgv0T6AjN/RuiJkTIWTcBV87C6PZhgDVAgOF3edvg0HNwFtfDSHmQeuhjQifOYpLdCqSBcBOjUswVV4ekpc9at629n8FcO6YlaMr3XhMDIM5R84vNgBpfUh8KNu18j8g6XAHnwRJZwOjM4CR1VAMgIu4oQ66EGv2w01b19hGueQB+pqBFGo0VQzm5OcMnfPVyX8FaNp896v8+eIXROJsIkPVNYCFVmAi9dPSmecJhE4fqFOESL6nnqFeJGthqgleWvllct5CEIPSAcpZ6MgGc8v9L5se3P3KPwI0FL/J6ipW/cx6XLeIpGEMqZuH9N1DIJxaiUAnAMGpOEWKWU6BkCgSIslxO9UE2hGEqVZYEoH4FDIszyV4KSH1RDSrcISQNUfqFsBz6Pkhul9XnkFUVMkALBkFrShGdS1MRqOkfvJzSEohksMvAzCqP/VqxZlKfqenubJjuWrKZdvARSOZS7IMwxZVdQvQtnfSfK1zxwqRPkCHQi7RikSPEgGZR+pQIP5oDNflVKNURRmO/s4Qk6ulVSnV8jMZTn7fbp/2tCZ369puAWJ7b9rLBSrHQwaQG6vMEOk4in4aMsqq5ed/Tx4JV5zLY/k/gY3v8sB02ZK3Smf/iR1Zl9v9FhSxLebsPKHTgnQFoHMc64rKH97+ScRZJXJQ/3UO0wURc+yBOv/Km7+YWTfW+lymzbMcvXhVuYXFM77zvd4twPW4fgcaUGM/ITk8eAAAAABJRU5ErkJggg==",
-      "alt": "VLC Media Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Winamp"
-    },
-    {
-      "url": "data:image/png;base64,",
-      "alt": "Switch Sound File Converter"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEy0lEQVR42q1XW2xUVRRd57adaTtQ+qYhDWiUoq2xApoi8UECxsTAh038648miJoYSPxR0dSUIIqhGgKoUYJiaakBPxSDhCbaDyxBoBGxjUCixD5EW6jtdNqZuTPbfebcYe57pshJ9r3nnrtfZ+29z0Ms7CZwK2ZqYXqRqZ4pAKMRrI1sH/b/vjKEGD8H+PtDfncwRUR1NxVx502mLUxFt9GY3/8Zpg+IsE1UddMm/tjFFLqdhjxlMoPT3H1FVB6m8/yx3EvIRdA/LDnwm8b6RcVhisKIeY7wqb4HUllRsA7ERHkXUTb4ZD9JivIEEMwDCjWgQFP/4zw+m1CkJwHBPFqOIRGlXUQOJtNIgpShu+YDTZXAA+XAnfOA8iA7wY6wLUTZ6HXG8fcwcG4c+PEf4MqkktWEfzKLBZ1Ebh6SAdf9ZcDGOuDJRcDCQqXQr0mURjjHjw0BH18CBiecMhYHSjqdIZADEsZnlgCtjcDiUA7BdmmXGYWt/cDXQ+7xSIVg3iFnCOQsmtn47ocU1P+nXZvl1e008M2fViTSRkXIcCA9II3fwTE+8jjQUOozuyngaljlQF0JMM458PMNoLFM5Ym5XeDx5h+AP8IKWbMHorjDGgKZOJvvBXau9DauM89zp4CjV1VFyOSURiZ1oOtRYH2tU+ZVXm12XnSiIAo7rEkoM76TlWyo9XZgKAI8cRK4NKkUNixQs17KSGxh50P5TpnvRhQKslQFMtUmgtIBwwWuJpQWAMfXASsrvB04PswJ2ss7Cc/4bjb61RrgPp9wySbLcx07PREzDUoHAl9kckDSfPb+2FpgdZW3sjc4s7f/ovovLAP2NalZ+bXea8BTPYRI3GRdOpBvOGAuzr2s8Pk6d0VhnvX6HlY4yuFiZw89pso1W9szSHi5j2Bf50XeQWsOyCqQi86XXAUlBU5FozMqof7mdyUvTDtWALXF/sYl7M09CXw/TEYCZGYrtINkqUP5CnIitvMa8NIypzLJrKe9Z8rX/I1L1vYLSbx2JoF40rbLsTKBz+0hULGp4aPJ3lXA00tE1vh6Gmc9nVeS2HxKx/is2XimL3DAcMu8GhgbQTU78XqjwLNLNZQE5mKaNygut/2DCbSe0TE2Y0Bv3okMewL7dRMC5Nj0Ayy4ZpHAxnu01LuiMDsif0UIb5/T8emvOmZ028RsNgQ+4d2cfJiMk4dc8erLBB6pEXiwWkNdqcCKKg0BzSraN5rE1r4YeoeTsKyxZIt/ugzxUZQcTG4C6SNQav0kPFyj4dsNQZQFFR7TPI8DAzreORvH8FTSutyRm371ENg3S1ZYzALWhLn5j6m1qQBvrVKJ8duNJNpOx3D0chxRHdZSc9VrKkPsiViT0E/ASM6akMCJ5mLUl2s4wkbb+qIYHEt6Jpp7/NMh2B0me+J55oJsbKeloQBtq4NoPxvFZxdjCEcpsxY7UHMmnhWB96fIk8EDjbWL8zEVI/w0otsOmnY9bs5Y+QR2/Rvlj4BfnLwqw3XWfjN38sYE3ps4zwqX3wp8vsfd3JzqF3j3+iYe4KsZheYK35x5rU5NQ17NsGO8iMf4ckrqcpo7fD4oefHd5E1dTvmAuE1g+5gc5Q2VWvhH5np+a7PKxssbMw0gdT0Xqev5fxiLi7ZuHgXBAAAAAElFTkSuQmCC",
-      "alt": "RealPlayer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "iTunes"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MediaMonkey"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/mp3_58.png",
+      "alt": "Screenshot of a .mp3 file in VideoLAN VLC media player",
+      "caption": "MP3 file open in VideoLAN VLC media player"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.346Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.181Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.346Z"
+      "url": "https://docs.fileformat.com/audio/mp3/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.181Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mp3",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.346Z"
+      "url": "https://fileinfo.com/extension/mp3",
+      "retrieved_at": "2025-11-01T22:32:42.181Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.346Z"
+      "retrieved_at": "2025-11-01T22:32:42.181Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.346Z",
-  "mime": [
-    "audio/mp3",
-    "audio/mpeg"
-  ],
-  "category": "audio",
-  "related": [],
-  "containers": [
-    "mp3"
-  ]
+  "last_updated": "2025-11-01T22:32:42.181Z"
 }

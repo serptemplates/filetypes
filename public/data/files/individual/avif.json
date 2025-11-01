@@ -1,8 +1,65 @@
 {
   "slug": "avif",
   "extension": "avif",
-  "name": "What are AVIF files and how to open them",
+  "name": "AVIF Image",
   "summary": "Learn about .AVIF files and view a list of programs that open them.",
+  "developer": "Alliance for Open Media",
+  "category": "image",
+  "category_slug": "image",
+  "mime": [
+    "image/avif"
+  ],
+  "containers": [
+    "heif"
+  ],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "In 2015, several high-profile tech companies, including Amazon, Cisco, Google, Intel, Microsoft, Mozilla, and Netflix, formed the Alliance for Open Media. This non-profit workgroup began developing several open-source media technologies and standards, including the AV1 video codec.",
+      "Eventually, the workgroup realized that the AV1 codec could be applied to images saved in the .HEIF file format. This allowed the workgroup to create the AV1 Image File Format, which can be used to save high-quality, compressed images within files that are the same size as lower-quality JPEGs. Notably, AVIF files contain less blocking, blurriness, and other visual distortions than similarly-sized JPEGs.",
+      "AVIF supports HDR and monochrome images and color depths of 8, 10, and 12 bits. The format also supports both lossless and lossy compression.",
+      "In the early 2020s, many companies began using AVIF files and adding support for the AVIF format. Notably, Netflix has begun using AVIF files internally, and Google has added AVIF support to Android 12 and the Chrome web browser. Microsoft has also provided users with a codec that can be used to view AVIF images in programs like Microsoft Paint."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an AVIF file with Google Chrome, Apple Preview, Adobe Photoshop, qView, and several other image viewers. Windows users can open AVIF files with Microsoft Paint or Microsoft Photos, but must first install the AV1 Video Extension.",
+      "Advanced users can use the open-source libavif library to encode and decode AVIF images."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "With the AV1 Video Extension installed, Windows users can use Microsoft Paint to convert AVIF images to the following formats:",
+      ".BMP - Bitmap Image",
+      ".JPG - JPEG Image",
+      ".GIF - Graphical Interchange Format",
+      ".TIFF - Tagged Image File Format",
+      ".PNG - Portable Network Graphic",
+      ".HEIC - High Efficiency Image Format",
+      "Mac users can use Apple Preview to quickly convert AVIF images to the JPG, PNG, TIFF, HEIC, PDF, .EXR, and .JP2 formats."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -93,74 +150,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Pixillion Image Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "GIMP"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Paint.NET"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Krita"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGi0lEQVR42u2XCUwUZxTH/7Ozu0BZQLGKgCKVRsEYpUKiQkXqhVibuiXetjYFabWpWu/WJvVoWk2qxrMoWjUeeGC9LXhQtKJWqsULUQFXLYpFdsVd9p6dvtmZdccNWps0aUyc5OWb7/v2fe/3vXnvfd8y+J8f5iXAiwqgkHQFYWVj7ic1NdW9bnFxMe+jJ/RdcnleAIUkbHR0dCdqE0k6ulyuKBfPh1utXKjdzgc5nfC3O1xMYIADMVFOtIlw8C2bc+bQYJf19Sg8YhUwRoYpqhduSvqK9BsJ0PIsAGFO0bt3bw3P8x/Z7Xat0Wh8U6lUMhzngsXqgtksbMKBt5KNSEowI7GLDV062hHQioadJJyslclbWan96a2cAOqeBqBIT08PCwkJWdSiRYuRdXV10Ol0cDicaDTzZJyDNv0BRmUY0D3FIhpxkNhFg7zHGCRHe9458SNoZyRPazCqDhHAzaYAlFqtNjMhISHHZDLh2rVrqKmpgc1GPqMdj8+sweef3APzCv2SbPN2HwO+RpsAmLIsfmnZ1WZbqHfVF4DNyMiY3a9fv7lVVVWorKxEbW0tjEYWCW/osXpZBfyDaYVGWsf5FAPPAfDd5riNR0rC1lHvkhxAkZaWph08eHC+4G7BeH19PfR6FhOyq/HppDuAWXLvsww8B8Ca/TG7th1qm0O9MjmAauLEiXq1Wq0RjOv1ejx8qMSs6Vcxcsw9wCotxosLeTzAQDYuJZcHkmG8Y4/1SPKKogpyd7ZfTiPnPACK5OTkD1JSUtZXVFSQ4YcwW1ho372FmbNuwKwHDHrRmLBAgD8Q2gZuj9y744UR2vDWtJgf2TQBd+9JxYEX9QIpbpppgH2nI44v2dBhCc2UegCUFPU7goKCtAaDAU4njyCNBXv3lbgns7MnUQCK5YAyEHr6NA7zFuT9GIEJXw6DkPd2pxKsgsMfZZcwbWwRVEGDcPBEB6jVxGlRgCGqu5W5OLX7AQqPtz69YG3sYlrwjAdATbu/oNFoYjmOg8GgQO6ak+jS1eieHDfuY4ERavYoknpG4pdfY3Ht+i1oB5aivHoo9IaH0PY/gYqbKTCYWqCw4CfM/6IDjp2JxW3dFaz6+hYaG1UI8dfhtUgHis61Kp2/utMiWvS0B8CPymdVYGBgpM3GoWVLI7ZuLQFPuc2ogLSB6eBdKrSPOoglC5UYMKQ/1QQj+iaXofRyCmrvG5DzzUlc13XA5r0dUV11CVOyg7C3KBq66jLcuEjfySClLX2m4outzs37wQ1wygMQ0KtXr/Lg4OBoo5HH5EkXoX3vz8cAkW2iCIBBuza30b+vEqvWhpOXbFi3VI/pcyOoItpwbEctDp8IwYr1zWC16DFhrBIb8oNhNddj4UwTAikuxmQQgPUxgBADJR4A/6SkpKLmzZv3rK9nUPBzAUKCne7AEQCYJsrVge2AhoIq9R2xX1oIbM0HluSK/czhwLrt3t+3iwR0pQTQABw9H3b229y4pXIP+PXo0WNFaOirWU6nHYWFh927d6eZDGDUMGDLNm/KHdoNvD3MC5C3C1i8RsyWzJHA2jzaGQWhhbIBJnH3gt7B38JLFm3ouEIOoIqPjx8eEdFuU3T0faxceebpANvFXTBKAjjkBbhyAti0E1iwXOxnSQBq0rfVko7eW4h2HG9blLMtJkeeBSwFYSjHsX/16WPAnDnnmwQYqiVl2iX/SAQ4eAAYPEKcS+wK3LgJNNDckDTK+QCC3SPVhwckhicq4X6qhOupd9YDwBCApqHBmj9ihGXAjBkXngBI7Ab3YZT1ITBpMq1BNYGhClNCZWLcRDIWSIchRbeLDAzqS16g+J5O4wXFQEw7YM9G0jF5ARZsidt2+GTYZur9Lg8vv86d47WjRyvyZs3yesBdUv2kd+GotXjru+AF+PuUYjod+UZJR5h3iB6TnwWfLe6Wc+VG8C7fs0ApfIa4ON2FVat0reUA/+qw+ad5AugzPnUevR0hufzEaUgAVA/Ks6ZONcxsaFBxNpuCclxpdTgYp8OhcFrNrJ1zMnQTY1w052BoNUZYkpc8IHmBVfCskuFZluXZADXnp2ZdSqH1Zzk/Feti3p/d/XsJoMo3w1WCF6iNIYmVHMyLjnziYiW/XD7tcV/pJBE+Biu1gk4dyXm6Ed33BRB+LJRlOrMQKAOQH6oeo88yLoeQgygkPYoSmAnA1NSVzPNDj6L84X1a33df4021nk242xf2j8lLgP/s+RvaTgu9cPsebwAAAABJRU5ErkJggg==",
-      "alt": "SumatraPDF"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ImageGlass"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/avif_11650-2.png",
+      "alt": "Screenshot of a .avif file in Microsoft Photos",
+      "caption": "AVIF file open in Microsoft Photos"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.279Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.127Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.279Z"
+      "url": "https://docs.fileformat.com/image/avif/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.127Z"
     },
     {
-      "url": "https://fileinfo.com/extension/avif",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.279Z"
+      "url": "https://fileinfo.com/extension/avif",
+      "retrieved_at": "2025-11-01T22:32:42.127Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.279Z"
+      "retrieved_at": "2025-11-01T22:32:42.127Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.279Z",
-  "mime": [
-    "image/avif"
-  ],
-  "category": "image_raster",
-  "related": [
-    "heic",
-    "heif"
-  ],
-  "containers": [
-    "heif"
-  ]
+  "last_updated": "2025-11-01T22:32:42.127Z"
 }

@@ -1,8 +1,27 @@
 {
   "slug": "ecsv",
   "extension": "ecsv",
-  "name": ".ECSV File Extension",
+  "name": "Enhanced Character-Separated Values",
   "summary": "Learn about .ECSV files and view a list of programs that open them.",
+  "developer": "Tom Aldcroft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Astronomer Tom Aldcroft developed the ECSV format to overcome limitations in the CSV format. For example, CSV datasets cannot contain metadata besides column names. ECSV files, on the other hand, can include metadata such as:",
+      "Numerical data type",
+      "Units",
+      "Text descriptions of column content",
+      "ECSV files store this metadata in YAML-formatted data structures, located at the beginning of the file. Each line in the YAML data structure's datatype section contains metadata for a corresponding CSV data column."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an ECSV file with Microsoft Visual Studio Code (multiplatform), GitHub Atom (multiplatform), or any other text or source code editor to view the data it contains.",
+      "Many ECSV files are meant to be used with astropy, a Python library used by astronomers and astrophysicists."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -52,13 +71,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ecsv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.586Z"
+      "url": "https://fileinfo.com/extension/ecsv",
+      "retrieved_at": "2025-11-01T22:32:42.440Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.586Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.440Z"
 }

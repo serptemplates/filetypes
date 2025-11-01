@@ -1,8 +1,24 @@
 {
   "slug": "genh",
   "extension": "genh",
-  "name": ".GENH File Extension",
+  "name": "Generic Binary Header Music File",
   "summary": "Learn about .GENH files and view a list of programs that open them.",
+  "developer": "vgmstream",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Vgmstream is a library that allows gamers to play music retrieved from video games. By default, vgmstream supports hundreds of video game music formats. Users can add support for additional formats using VGMToolBox's GENH creator. This utility allows users to convert unsupported music files into GENH files, which vgmstream can play.",
+      "To convert an unsupported file into a GENH file, users use GENH creator to add a binary file header that specifies how vgmstream should read the file. They then save the updated file as a GENH file.",
+      "When the user opens their GENH file with vgmstream, the program uses the information specified in the file's header to correctly read and play the audio the file contains."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a GENH file and play the audio it contains with various implementations of vgmstream (multiplatform). For example, vgmstream is available as a plug-in for Nullsoft Winamp, XMPlay, and Foobar2000."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,13 +63,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/genh",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.633Z"
+      "url": "https://fileinfo.com/extension/genh",
+      "retrieved_at": "2025-11-01T22:32:42.498Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.633Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.498Z"
 }

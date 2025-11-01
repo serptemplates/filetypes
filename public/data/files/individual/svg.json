@@ -1,8 +1,74 @@
 {
   "slug": "svg",
   "extension": "svg",
-  "name": "What are SVG files and how to open them",
+  "name": "Scalable Vector Graphic",
   "summary": "Learn about .SVG files and view a list of programs that open them.",
+  "developer": "W3C",
+  "category": "page-description-language",
+  "category_slug": "page-description-language",
+  "mime": [
+    "image/svg+xml"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The SVG Document Object Model (DOM) lays the foundations for all the specifications and interfaces that correspond to the particular sections of the specifications. SVG viewers must implement the SVG DOM interfaces as defined throughout the W3C specifications. Its DOM exposes several interfaces for different data types and elements.",
+      "The World Wide Web Consortium (W3C) developed the SVG format and released its initial version in 2001. Since then, W3C has released several updates to the SVG format, including SVG 1.1, SVG Tiny 1.2, and SVG 2.0.",
+      "Unlike .JPG, .PNG, and other raster image files, SVG images are not comprised of pixels. Instead, SVG images are defined using XML-like text that describes how the image should appear. For example, when opened in a text editor, an SVG file might look like this:",
+      "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 93 107\"> <path d='M74,74a42,42 0,1,0-57,0l28,29a42,41 0,0,0 0-57' fill='#00a3dc' fill-rule='evenodd'/> </svg>",
+      "Because the image an SVG file describes is defined using text-based paths, rather than pixels, it can be scaled up or down without losing any quality. This is why digital illustrators save logos and icons, which need to be shown or printed at a variety of sizes, as SVG files.",
+      "Web developers also often publish SVG files on webpages, since the graphics they contain will look good at any resolution, and search engines can read the text the files contain (which may help with search engine page ranking). These developers can also modify SVG images using CSS and scripting languages (such as JavaScript) if needed.",
+      "Various vector graphics editors allow you to save graphics as SVG files. Some popular vector graphics editors that can create SVG files include:",
+      "Adobe Illustrator",
+      "Inkscape",
+      "CorelDRAW",
+      "NOTE: If you need to reduce an SVG's file size (for example, to make it easier to share online), you can export it as an .SVGZ file. This compresses the image with gzip compression, reducing its file size by 50 to 80 percent."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an SVG file and edit the image it contains with Adobe Illustrator, CorelDRAW, Inkscape, and several other vector graphics editors.",
+      "If you just want to view the image your SVG file contains, you can open it by dragging it into your web browser (or selecting File → Open...). Google Chrome, Microsoft Edge, Apple Safari, and Mozilla Firefox can all display SVG images.",
+      "Advanced users may want to open their SVG file in a text editor, such as Microsoft Notepad or Apple TextEdit, to view or edit the XML-style text the file contains. However, most users are better off opening an SVG file in a vector graphics editor or web browser."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Adobe Illustrator, CorelDRAW, and Inkscape can all convert SVG files to other graphic formats (including raster graphic formats). For example, Adobe Illustrator can convert SVG files to the following formats (and several others):",
+      ".JPG - JPEG Image",
+      ".PNG - Portable Network Graphic",
+      ".TIFF - Tagged Image File Format",
+      ".DWG - AutoCAD Drawing",
+      ".EMF - Enhanced Windows Metafile",
+      ".EPS - Encapsulated PostScript",
+      ".BMP - Bitmap Image",
+      ".PDF - Portable Document Format",
+      ".AI - Adobe Illustrator Artwork",
+      ".PSD - Adobe Photoshop Document"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -81,69 +147,60 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Inkscape"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAG1UlEQVR42p1Xe4xU1Rn/fXdm9gGz7BBN67DbOqtSlsbVIVj7iJEZ+MNtobq0iRqlsth3tGFpSJMmNUBCQlvSsk01FlCHzSIktQ/6h0mbEHZ91QbNdq0WEJPOrN2HKGEWV2Bf93797rn3nDnz2Ii9yT0z59zvfr/f9zrfuYSrvPKZdGKx43QBkTUyTRNxikEJZhmBSRmGwVxgwuBl1/1L2+Dw5NXopY8TmOhMp2gu1uMwb2YgIS+wx0ykXhV0f6ylh3GI4e5KDg4X/i8CgcXRHaK8B76ZXJJWgGrFH0jI+ETI5+b7g5REKCj3zuSLQ7s+EYGJjFhNkQH5mwp0cYhAoWouN1a7wB/EPazcIwMzh5IjNMvZ5D+qvVFF4Fx21a0e0zEFXuVW7fLAakWKNX6FFzQ0abdxwZlDFYkyAr7lgDMgKlLBI8vSMAg6Fso6CrUzW2Ilt5B5EoRFJoWoOyMkzhSqCPgxr2f6p8hdr2NrhDhwq7YxjK1aM0TYShITstA7JldVaArzMVqlq8SAjN6Z3ieTHmY713yLLRIWQrikggFDQjvKplIdRxH5zWdffXObkUsf7Up9/+Vi/u43JgMQX6nnhdpLaD5Iffo2NN6ZRcMdWUSTywKVl88Cl87CGzsAzI6bVzS1kBEHP8ppiLDXRl8eLqiHq49+I7do2u0+ePhdLJ52KzJK/SOKN6H54R8ifu+DQb5MMs6em1cqlzU7WH6dE5B576gQ2Q+e/xBWggRB8kBhARM56I18cXgbpXNdCaeOir7o1/91Ed9+6bwmrBzsj05TEz71+DOoW74CQ4V5HBicwdDIfCnjBCkpJLZ1NiDTHhOPvA3v1HcAdwommXWKsNlFLkYanDZKP9vVLZOczq3e34+i7YMZrVeJL936EzTdt0kBHxyctiujqpC/l2nAdzP14InD8Eb2WnXBKK8scYjLD1O6/56czLpVUoufbh69QruPjZvUjSRbqeVPf8XgmTlsP3ppAVwq1anc+7fEsToVFS90M198XZVurR1P4A7Rrf33DMjzjO3P3cfG0DF+RVG49rHdiK/vwoZ9H2K86FViltdFuH6bgB8QEvxeP7v5PVQOziZBwfQG3dJ3t8SfE/bjT0/No/e5UT8hednhP1I+vhz3PzlVwwZG7Yvw/I+XYFnjBNyhtZW7lKksh7hIHbkN2j8lT8l4/8kiHnjtAqdOnqKB03PYduSjBbCovNjDae+DcWQlId2/fw5hy7Z2MZ1dEvabn1kfbnq63/gbBZFfjgeffRcdL72FE6dn0XPkUg07q1NLr+97II61K4XAKzch0BkUoyGjZYVAUZ42W+aYell75iP8uucIvd+QxF2/uqrzhbmee6QZK5ZIOQ5vCE3Te7U2Vk0n6fNPf21I5qsM9/B5sLMy77+xm+5Ycy+2PD2F1/JzNUuv8mpJRPC37c3w3v8D+J3tHDYiMvGVnh020kFqf6ozR0zddmL54EFbB30heQv61v9CgXc/NWW5vMSkPBSM325qwrqVdXBf/wr4ymios0YqgA9R+4FOHzznFz7pDOVSufj/fvqlH+Chji48ceIyHj9+pTroVvAfXbsIj6xrxMXRHC/OP1ZqUVboDWExnFK5TKJxtj4vFZ6o0CWMAipNdXH0r/8ltV97I46fmsWe5y9jrOiWYd9+Q0zAG9XvWPEsFv17I5q8ouVVsIls0Msp6k0vVaxW/O6uXlncymXgsDcwXlIfx6OrN9Hmjo1q4fS4i7HJgMTKZBQtS4Nm1Pfmn+EV9uKh5rxpzUanbt9+DjD6opkPtiiA9ic7Ux7cPFB7c9NT/63WpuvoR6u/hZXiDf/2r9Gpczief0XuVzF6/iSO33S63NcwJ0qTB1Geb6PsZMHEZfkT63pFaKuFFvhL17Dd1ri0X1SmwZ7WEe5qvkAl9PDgBHNEI4ewM7Lmwi5YxiK1L5OI1EfUkUwfGowBVjjCnaJmf7k9PsX9qXeChLMS1ZzNAmNGotnJNjs0sEikInWONCdKQcdM50OYS+Fb4hg/icvXT6x4C62xmdK2Z4ibvXokAifru74mAU3CidCAvJ9SUddHKcvi0hFHx4awcel5/LwlX9Ybwt1PZbz8KcRoTsCnCzZezT3NJyGBUh8mfg7Y1uqDsP1ma2yWDt/wNlpiM+bLoAKkMEdutrECfEECFpGdIrFjYYngePWz5H9p8zUTMJ8Jqsz05yN6o079LnF7zWbysR+nvjc88A4R7FZ1FByWKfwqZIk5DbYPlwipRi9fy57TNz/HvY1frbb6ExGwiCRcz+0S0Izc14ub07Kc2PuZ/+Cb15wrkkcjgjzskvtCzFl8bCGLK6//Ad8uj3naANvMAAAAAElFTkSuQmCC",
-      "alt": "Google Chrome"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIGElEQVR42q2Xe4xUVx3Hv+fc5zx2dmZ32WF5bgsibEmEiEhiwOKDlqbII9EqSXWXhgT6B51GrY3WVjT1FVs2RkuMhkU0JhVCsVqD+IeNxJYKDYu0W9um7i7PLMPuDMPOnde99/g7597ZnQXdNoG7+eXce+fe+/2c7/n9zjnLcBsPUfhcBkI8RXEHXeY/yDtM5O+/Xfp94LybxAFf9NL1ox8MIHcbAHw/A8b2QONkg7qmVmymsyPvDzB6362JV91OcDaoxHVtEsAXeWqX09XQ9AAj99waQKUWWC/FTU1+sg4g2354Yi2myQcmLn725rsv/6sblvkVOls7ca99XvKmD80QnSQ8qMRlWAZ9kQAgAgBPgfTTjeX/H+DCZ6beOXymGzHR51t6ga6a5S2uLcj4CZVU8xsf5bOrsud9StygiFgBQMgQukCB/dDju+m+7ET/VIBLGyev9p3cBNN9AVF6KRb8juziPnqtuxIRr9D1JxpfthaO7yHxzARAzIbKBQXR4ITPUC6xrxnx2C6N+xsbIWgINgRnP30jCcsdpJAtEPWAWrIfldQy2FLAVFYe6TuQ5DTmnPFPppeevttMFJJmKoeO5a8hMec8uASvA3AW5IQgKI+hUDWPJZqwCEwlZz4cgvUBwJ53+6j33Uq8HtIJm1625djGcPKvj+6+ePa+RwyuJ3XG6ftMOe0JHzXPRWLJAFZu34toyyg9T+9xCk2Xg0UucBoNXmA2SzA2OU8wce5e4OnzSRLPTQibDRARMQFRQwp/P/gcnKtLYAgGnexlNPH49FcTHlVkFXrrBazJPIPErCzp6mFoAZDHIWRfdD9PLqjZkolhSsLdIxmY3p4pwqYXglBrkxMRrrJcQrz1+sMY7N8KjQBkcEo0LXIdK598Gr7rwsnamHXnG0HP6wAKQlaLIAiXeEQPPbCfiaFPA98ee4HENinBCEVHWZYYAfAg5OFUALdGMLoCccrzMHBqJ869eT9ByEz34FcrWP7QXnSuPh4kX14moBZAaFoQUQLgnkyR/fTVHibeo3ngm7kciSdVr5uqwIocCdNLhhG06lwLEqteWqk4qrwVv3/iMA2FD0Y9FwSg8SzWf+dbiLddleUHjNI3oAe5ICuk2YfQVGqqpGbibZoJHydUK7RcQswqAovIhYgWiocAsrUkkIGLlz+GV47uQv7CndA9D7xG7lRK8EtFLPjoX7DmoX2Bc9dNYDwS9F6Wa7pCiatRXzSVg+xS9KvLOj716umJMZet4QVDMZPcWChd0ZBzOvDyqW68QxNXzW+Dzg1KRE09qlHvtWoVrFwCitcRjQziwe9/PQBwSehySwhA8AvyEKUo5YAxAXB3x+p//k19qS4uQYzwfKWDMaMNz/72JygbabBoDMy0qTMmDOqJ6XJYxKmXa+BlRwH449eQ+VlPuC6Q6HA6EG+hB+cU4ReaSDkEOJjc2b5x8dCI0Tw+KVoHkfGRcbw0eA9eOvUFiKY4zXYEYBGALgF0AtBgUX5aJQ96qawABAE89sw2Eif7PYrhmRBUymzRmCpr/0ordYIHAJHODTxrRb3YrCuToo3RXsY/mpbgV8d6IOJRiBjZZ0WgGQGA1QBgFsmFYhHz0q/jwR6aazxaG3wL/vkOMLKetZVURXgjM1DT2QAB3MVKhzZhZEf61fmL31tF2RQK+0Err3U6X51F5sUnccWZARGhhLItcAVgkFkabHLWcgjAoVwolrFl7T4su+u0ckCUybU4VUnaUYnsVyMQ15JwdfYnAtjAyr/ZjKGdc38wd86lx6Ot+UDQCIXrAJSQwys4vvfHDJxqDIKqQFYEo9IyPZkDjBzwYZZcfDj5Drav+wXN/2YQzfSNZjeYTwwON5eiko0iW8PDBLCXXe7dguO725euZjg7c+EQZWvoQF28HnYNw4ssPHuyG9lC68SCw2lKtmocJlXhisRb2Np1GBEjFEyFU7kViAsCrl1Og1Mp/+4/7mwCuMR+vWMzdhx19bNX7zje0jK2KpkepZ7J2moQ1yZbZ46LUxe7cMpZDMe31Yo7kxewJn4Gi6xzJESfjdHNJi8QlmEyBVQj60U5gWsMh+Y/X3pA7hhkEqpy/UNu7sYlPj+SmJlFnCqCcy9wQ4mLoJ0SdI/7weaDiaCV97lQEx9sFgIErefaqGRnQI/oeHGstoyeOKPK4OAXP68AvnyibJ8Y7fx5irnbEukxxBMlWm7dwA3eIFoXqbf1YGISRLYGC8UZKD1RyrZDM02McNHb9VpBzlKuAqg7II9MsXX+9lLizxqvdMXbCkg0l2nGcpUbjHmTvZ4QbjifcCI8l4chVUyMX2mHblmo2uzEnLdH1zfuLacAyPXzS6XmDz3hpA5rrNalRR20UO0aavkMIBijklLCof3/y4Fgp4FiLo5yPqV67kX4wHfdwib65d0pe8JdSx+Ysif95bgTQBRbD+u81uXyCux4GU2JKm2UvRDEb4ib7XeKFpxcEzwnRqaRuMEHnoqMbTkgrktxfwrADQ5MOLGVIB5xUo/RMrLNYzXazNBio9dg2i50micicpMiAagMJES5TCVWoShHwDxaJXwKodOY+70fTw79mL45cqP4dAAItjNoPpCfvW65a2VsiFU+5YNPwyA3YTKC7TeD/OO0MjIKrkJHgYlDz9vXen8Yz76J6f4xmQagftgS5BvjMxbeW4mtaxPaOppbVkmrBcIhJwgfvEAz8kCWeceOWuPHftR05d/0y7V6tt8KQP2Q1R2liIRQNx7SXmIArThw3k+4fvwXiEJr/1dZz3wAAAAASUVORK5CYII=",
-      "alt": "Mozilla Firefox"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Safari"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Pixillion Image Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MeshLab"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/svg_399.png",
+      "alt": "Screenshot of a .svg file in Adobe Illustrator",
+      "caption": "SVG file open in Adobe Illustrator"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/svg_399-2.png",
+      "alt": "SVG file open in Google Chrome",
+      "caption": "SVG file open in Google Chrome"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.394Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.218Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.394Z"
+      "url": "https://docs.fileformat.com/page-description-language/svg/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.218Z"
     },
     {
-      "url": "https://fileinfo.com/extension/svg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.394Z"
+      "url": "https://fileinfo.com/extension/svg",
+      "retrieved_at": "2025-11-01T22:32:42.218Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.394Z"
+      "retrieved_at": "2025-11-01T22:32:42.218Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.394Z",
-  "mime": [
-    "image/svg+xml"
-  ],
-  "category": "image_raster",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.218Z"
 }

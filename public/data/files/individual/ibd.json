@@ -1,8 +1,23 @@
 {
   "slug": "ibd",
   "extension": "ibd",
-  "name": ".IBD File Extension",
+  "name": "MySQL InnoDB Table",
   "summary": "Learn about .IBD files and view a list of programs that open them.",
+  "developer": "Oracle",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "MySQL is a popular open-source database management system. InnoDB is the default database engine that MySQL uses to create, update, and otherwise manage table-based data. In most instances of MySQL, InnoDB saves users' tables in individual files, which are saved with the .ibd extension.",
+      "IBD files are often encrypted, meaning their data can be accessed only using the keys generated when a user created the database that created the IBD file. However, MySQL users can use IBD files to import even encrypted tables into other MySQL databases. When using an IBD file to import a table, you must also import the table's associated .CFG metadata file and, if the table is encrypted, CFP file, which InnoDB creates when you use the FLUSH TABLES FOR EXPORT command."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an IBD file in MySQL (cross-platform) if you are using the InnoDB database engine. For example, you can use a backup IBD file to restore the table it contains if your current copy of the table has become corrupted or been deleted. For more information on how to use a backup IBD file to restore a MySQL table, refer to MySQL's official documentation."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +58,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ibd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.666Z"
+      "url": "https://fileinfo.com/extension/ibd",
+      "retrieved_at": "2025-11-01T22:32:42.536Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.666Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.536Z"
 }

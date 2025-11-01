@@ -1,8 +1,25 @@
 {
   "slug": "pvm",
   "extension": "pvm",
-  "name": ".PVM File Extension",
+  "name": "Parallels Virtual Machine",
   "summary": "Learn about .PVM files and view a list of programs that open them.",
+  "developer": "Parallels",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "When you create a new VM in Parallels Desktop, the program generates a PVM file to store its contents. You can create one by selecting File → New... or by clicking the + button in the Control Center. Each PVM file is self-contained, meaning it includes the virtual hard drive, configuration data, and other resources the VM needs to function. This makes it easy to back up or transfer a VM by simply copying the PVM file.",
+      "Inside the package, Parallels stores several essential files. The .HDD file acts as the VM’s virtual hard drive, containing the operating system, applications, and user files. The .PVS file stores the VM’s configuration settings, such as allocated memory and hardware preferences. Together, these files allow Parallels Desktop to run the VM as if it were a separate computer within macOS."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a PVM file with Parallels Desktop for Mac on your Mac. To open a PVM file, place your file in the folder you set as the default location for storing virtual machines (Parallels default location is Macintosh HD/​Users/​[username]/​Documents/​Parallels/​), select File → Open in Parallels Desktop for Mac, and choose your PVM file.",
+      "In macOS, you can right-click a PVM file and select Show Package Contents to view the package's directories and files with Apple Finder. Files you may find stored within a PVM file include PVS, HDD, .LOG, .ISO, and .DAT files.",
+      "NOTE: Modifying the contents in a PVM file may corrupt the virtual machine."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -61,13 +78,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/pvm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.843Z"
+      "url": "https://fileinfo.com/extension/pvm",
+      "retrieved_at": "2025-11-01T22:32:42.710Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.843Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.710Z"
 }

@@ -1,8 +1,24 @@
 {
   "slug": "vhdpmem",
   "extension": "vhdpmem",
-  "name": ".VHDPMEM File Extension",
+  "name": "Hyper-V Virtual Machine Persistent Memory Device",
   "summary": "Learn about .VHDPMEM files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Hyper-V allows users to run multiple operating systems as virtual machines in Windows. It also allows users to create and manage virtualized software and hardware components. A VHDPMEM file is a virtualized hardware component.",
+      "Specifically, a VHDPMEM file contains a virtual persistent memory (aka storage class memory or NVDIMM) device. Hyper-V users create VHDPMEM files using the New-VHD cmdlet. During the creation process, the user can specify the device's size.",
+      "NOTE: The Windows Server 2016 and higher and Windows 10 and higher versions of Hyper-V support VHDPMEM files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "VHDPEM files are not meant to be opened. To attach a VHDPEM file to a Hyper-V virtual machine, use the Add=VMHardDiskDrive cmdlet."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vhdpmem",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.967Z"
+      "url": "https://fileinfo.com/extension/vhdpmem",
+      "retrieved_at": "2025-11-01T22:32:42.846Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.967Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.846Z"
 }

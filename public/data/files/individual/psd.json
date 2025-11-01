@@ -1,8 +1,74 @@
 {
   "slug": "psd",
   "extension": "psd",
-  "name": "What are PSD files and how to open them",
+  "name": "Adobe Photoshop Document",
   "summary": "Learn about .PSD files and view a list of programs that open them.",
+  "developer": "Adobe",
+  "category": "image",
+  "category_slug": "image",
+  "mime": [
+    "image/vnd.adobe.photoshop"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Data in a PSD file is stored in big endian byte order. This implies swapping the short and long integers when reading or writing on Windows platform. The Photoshop file format is divided into five major parts. It has many length markers that can be used to move from one section to the next. The length markers are usually padded with bytes to round to the nearest 2 or 4 byte interval. The five major parts are:\n\nFile HeaderColor Mode DataImage ResourcesLayer and Mask InformationImage Data\n\nFor conformance, data should be written to all these fields in the section, as Photoshop may try to read the entire section. It also implies that zeroes be written to skipped fields while writing to a file. The length field in the length-delimited sections should be used to decide when to stop reading. In most cases, the length field indicates the number of bytes, not records, following. The following points need to be remembered while reading a file.\n\nThe values in “Length” column in all tables are in bytes.All values defined as Unicode string consist of:A 4-byte length field, representing the number of characters in the string (not bytes).The string of Unicode values, two bytes per character.",
+      "The PSD format is a fully editable, uncompressed format, ideal for editing raster images. You can modify individual elements within a PSD file, such as images, shapes, text, and effects. New versions of Photoshop (2024 and later) allow you to create and insert AI-generated graphics.",
+      "PSD files support RGB, CMYK, grayscale, monochrome, duotone, indexed color, Lab color, and multichannel color modes. You can change the color mode by selecting the Image → Mode in Photoshop.",
+      "The Photoshop file format is comprised of five sections:",
+      "File Header - Stores image properties like dimensions, bit depth, color mode, and channel count",
+      "Color Mode Data – Includes additional data if the file uses indexed or duotone colors",
+      "Image Resources – Contains non-image elements such as guides, text styles, or paths",
+      "Layer and Mask Information – Stores data about layers, masks, blending modes, and effects",
+      "Image Data – Contains the actual image data (pixel data) and the compression method used to reduce the overall file size (e.g., raw, RLE, ZIP)",
+      "NOTE: Photoshop supports PSD files up to 30,000 x 30,000 pixels or 2 GB in size. Images larger than these limits must be saved in the .PSB (Photoshop Big) Large Document format."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open PSD files with Adobe Photoshop in Windows and macOS. To open a PSD file in Photoshop, select File → Open.",
+      "While PSD files are saved in a proprietary format, you can also open them with other multi-platform applications, such as Adobe Illustrator, Corel Painter, GIMP, and Photopea (in a web browser).",
+      "In Windows, you can open PSD files with the built-in Microsoft Photos app. In macOS, you can view them with Apple Preview, which is bundled with the operating system."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Several applications, including Adobe Photoshop, Corel PaintShop Pro, and Apple Preview, can convert PSD files to other formats.",
+      "For example, Adobe Photoshop can export PSD files to:",
+      ".JPG - JPEG Image",
+      ".PNG - Portable Network Graphic",
+      ".TIF - Tagged Image File Format",
+      ".GIF - Graphical Interchange Format",
+      ".WEBP - WebP Image",
+      ".BMP - Bitmap Image",
+      ".DCM - DICOM Image",
+      ".EPS - Encapsulated PostScript",
+      ".AI - Adobe Illustrator Artwork",
+      ".PDF - Portable Document Format"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -93,69 +159,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "IrfanView"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ACDSee"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFZUlEQVR42r1XeVBTdxD+XkhiECjIZQFRoChyCd7YYiJUQUAcxKZY6Yh2GGyRotZrpII6lfGiUnVaB9G21uroeFVAOsjltByKw01FpykegChiiIQQCEle33sMGVICoyF2/0h+md23++3ut/t+IVQqFQk9pKioEE2P2zDZYRLs7Gzg7e05oq2oqRU8LguTJtkN0xFvCkChVEPVr8B36Tsxd+4VNNQr4OSSiYiIcC0bLpuFlpY2VFTkoa7+EsZx7bBs2Wa4ubszukG7NwZAS339XziVmYLIyDqIREDTw1Ckph4dZicWS5C0cwV276lHTTUHBYVR2H/wCKMbBKEXgEHZsWMrlXk0fH3dYcThapwOlUOH9sLc/DGqqx5iV/L5YW3QAJDLVTA2NnrtNugKRpe8q6sdHh4+Ghu5vJfyy4P4ZTeMx7OZ89DnGQCvuvuwdVMkQkKFYLNMsDxCOGJwUiUDYWSiE9DJ7w/A0nYyPhKuHjWBoT6IlpZ2MiUlHolfVqHjZTMKCtYz/dSVJc1mVxcHnU7pCh47HISPPz0GZxfPEW3+W2Wiu1tGlpeXorg4Fi5TpqG5dRZSdu/XMiorK8OjRzUoKszE6ug0quezYWlpoWVzp/w67t5JR1xCkc72DHDmC/j4eIPLsUDgh6GMDw0HsrLysWRJIEUmQmtM6POpn35FjzQe6+MmIj6egzUxpyEQLNDo6e9LFwSYMiEW/mExIJUvwVJ2gOS5afx8e/gwHB0z4e//CgcOuCI9vYSpxmtNQeMDEU5nboS9vQwq5UJs2/6Nlr66qhBVVZ8jeOkfAyx/lg7iRSbU7n+CYFsxPS+/U4v8m9vwnqsCtbWu2LjxCGOrATASswd610t9cqBQEOiUtMBpymStvuZkhcLUzJMi8cCM0xUgSOoZjjZfbt68BVsbR3h4OzO/6Xhj2gO0VN7NQ2NjLPz8b49I0NESHBMAenxzflsMGxs+goJT9fKhF4DBbEpLzuP+/d0IDbtNvZCs/j8AtNB7/tplPqZO3ww+f52+RdQfQO71FIg7S7AyKv+1V7jBANy7V4tbv4djUUg2s/d1ree3BoAm3rUTfNjPWKw38UYFMHS7DY7N0Awvn0hAT899COPzxlR6vSpQcuMMqnNTELKlbNSZ1xsAzeyfz54Ft08C9MpgzOXA3MwEciWBXmU3zFovYpowA7MWBBgkuBYAet2uEq5AKK8N4XOmwsbMGC+kcuzLroGcugMGeCsgEtsiOOksPpg7Y9TV/UYAsrKukGFhEcjOL8bVr9fiTNIqkBIZalrFiDqei8QgXzyTdkKtHofkpV7YV6dA8vFfDBKcAQAsIKM/oe504wn4y+ogmOWGtJxKND7tRNT8qUiInI+GygfYkV2HG9uXY8OPxdhyOpt5IRmiCgSLSCDV5BPqmIvK5HDMdHoXHVIJrE1MGYOWh4+xK+8eulRGmODsgZmCIHwWG8fc7QxSATY7llQq2xHhW4urG4LQ368Gh8NC+9M2FNSIcKj0CWIEXoj2ssWmBh7OXbhokMBDWrCSdLKqQUXyPFibWaC/TwGpRILOjhdIyv8bftMd0WUzHbbmpnDhr8SiQL7B+s8AsLdwJHO+eh++DpYQP29HT7cUBMX6htZ2JOY3I2LRPMTs/QHubq4GzVwD4EJcABm10AvPRU0oqPuHKkk/ZEolMqpfIW7PUQiFQpibjmOMx7LzRwRwco2AXDdjIrIrarH2ejO6+ujr0juw9nHDs7vHDB5wGID1fi5k4hxrhJ+rQlNnIFjENBBmVlBxn+BaRvCof1IMAiDQeQJpZcrDpXonKvhsqEkp2Ka2UPI6sHWtBQ4eTDPY1tMl/wIkFX/zXIFK1QAAAABJRU5ErkJggg==",
-      "alt": "ImageMagick"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "GIMP"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Pixillion Image Converter"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/psd_83.jpg",
+      "alt": "Screenshot of a .psd file in Adobe Photoshop 2025",
+      "caption": "PSD file open in Adobe Photoshop 2025"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.372Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.202Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.372Z"
+      "url": "https://docs.fileformat.com/image/psd/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.202Z"
     },
     {
-      "url": "https://fileinfo.com/extension/psd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.372Z"
+      "url": "https://fileinfo.com/extension/psd",
+      "retrieved_at": "2025-11-01T22:32:42.202Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.372Z"
+      "retrieved_at": "2025-11-01T22:32:42.202Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.372Z",
-  "mime": [
-    "image/vnd.adobe.photoshop"
-  ],
-  "category": "image_raster",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.202Z"
 }

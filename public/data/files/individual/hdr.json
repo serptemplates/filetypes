@@ -1,8 +1,46 @@
 {
   "slug": "hdr",
   "extension": "hdr",
-  "name": ".HDR File Extension",
+  "name": "High Dynamic Range Image File",
   "summary": "Learn about .HDR files and view a list of programs that open them.",
+  "developer": "HDRsoft",
+  "category": "image",
+  "category_slug": "image",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "An HDR image file consists of the following three sections:\n\nHeader: An HDR file is identified by the first bytes in the image file i.e. “#?RADIANCE”.Resolution String: The Header is followed by a single resolution line that consists of 4 values; an X and Y label each followed by a numerical integer value. The order of the X and Y indicate rotation. The combination of X and Y with positive and negative values cover all the possible iamge orientation and rotations.Pixel Data: The pixel data of an HDR file is either uncompressed or compressed using a standard run length encoding.",
+      "HDR software can composite multiple photos with different exposures to create a single image with a full and evenly distributed range of colors.",
+      "NOTE: HDR files are also known as Radiance HDR or HDRI files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "imageinfo - Cross platform super fast single header C++ library to get image size and format without loading/decoding.imgaeinfo-rs - Rust library to get image size and format without loading/decoding. Supports .avif, .bmp, .cur, .dds, .gif, hdr (pic), heic (heif), .icns, .ico, .jp2, jpeg (jpg), jpx, ktx, png, psd, qoi, tga, tiff (tif), and webp.HdrHistogram - Java implementation of HdrHistogram."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -63,18 +101,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.448Z"
+      "url": "https://docs.fileformat.com/image/hdr/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     },
     {
-      "url": "https://fileinfo.com/extension/hdr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.448Z"
+      "url": "https://fileinfo.com/extension/hdr",
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.448Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.272Z"
 }

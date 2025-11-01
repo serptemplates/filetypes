@@ -1,5 +1,6 @@
 import React from 'react';
 import { HelpCircle, Monitor, Smartphone, Cloud } from 'lucide-react';
+import Markdown from '@/components/common/Markdown';
 
 interface Program {
   name: string;
@@ -44,9 +45,7 @@ export default function HowToOpenSection({ extension, howToOpen, programsThatOpe
         <HelpCircle className="w-5 h-5 mr-2 text-blue-600" />
         How to open .{extension} files
       </h3>
-      <div className="prose prose-gray max-w-none">
-        <p className="text-gray-700 leading-relaxed">{howToOpen}</p>
-      </div>
+      <Markdown content={howToOpen} />
 
       {/* Programs by Platform */}
       {Object.keys(programsThatOpen).length > 0 && (

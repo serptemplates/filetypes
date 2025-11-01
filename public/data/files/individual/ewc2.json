@@ -1,8 +1,23 @@
 {
   "slug": "ewc2",
   "extension": "ewc2",
-  "name": ".EWC2 File Extension",
+  "name": "EDIUS Waveform Cache",
   "summary": "Learn about .EWC2 files and view a list of programs that open them.",
+  "developer": "Grass Valley",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "When an editor adds an audio clip to an EDIUS video project, EDIUS creates an EWC2 file to represent that clip visually within the video editing timeline. Editors use this visual representation to make edits to the clip, such as trimming the clip or adjusting its volume. These edits are then saved within EDIUS.",
+      "Because generating EWC2 files can be performance-intensive, some video editors prefer to stop EDIUS from generating EWC2 files automatically when they add an audio clip. To stop EDIUS from automatically creating EWC2 files, you can open the program's User Settings menu, select Application → Other, and clear the Create Waveform cache when registering clip checkbox. EDIUS will then create an EWC2 file only when you expand an audio track for editing within the program."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You cannot open an EWC2 file by itself in EDIUS. Instead, you should open the audio file associated with your EWC2 file. When you import the audio file into an EDIUS project, your EWC2 file will appear in EDIUS's video editing timeline."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +54,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ewc2",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.600Z"
+      "url": "https://fileinfo.com/extension/ewc2",
+      "retrieved_at": "2025-11-01T22:32:42.457Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.600Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.457Z"
 }

@@ -1,8 +1,30 @@
 {
   "slug": "abex",
   "extension": "abex",
-  "name": ".ABEX File Extension",
+  "name": "Enhanced Android Backup",
   "summary": "Learn about .ABEX files and view a list of programs that open them.",
+  "developer": "Camalot",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Droid Explorer allows Windows users to manage, explore, and back up a connected Android device's files. In addition to being able to produce normal Android backup files, Droid Explorer can produce ABEX, or enhanced Android backup, files. These files contain a unique header that links the backup they contain to a specific Android device, so the backup can be restored on only that device.",
+      "An example ABEX file header looks like:",
+      "ENHANCED ANDROID BACKUP\\n [DEVICE ID]\\n [Droid Explorer Version]\\n [ABEX Version]\\n $$$ ENHANCED ANDROID BACKUP $$$\\n",
+      "The backup the file contains begins beneath this header."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Droid Explorer (Windows) to restore an ABEX backup to the Android device that created the file. To do so:",
+      "Install Droid Explorer.",
+      "Connect the Android device from which your ABEX file was created to your computer.",
+      "Right-click your ABEX file and select Restore Backup to Device.",
+      "Droid Explorer will then walk you through how to use your ABEX file to restore the backup it contains.",
+      "You can also use Camalot's modified version of Android Backup Extractor (cross-platform) to extract the files an ABEX file contains."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +61,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/abex",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.480Z"
+      "url": "https://fileinfo.com/extension/abex",
+      "retrieved_at": "2025-11-01T22:32:42.311Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.480Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.311Z"
 }

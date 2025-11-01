@@ -1,8 +1,29 @@
 {
   "slug": "ged",
   "extension": "ged",
-  "name": "What are GED files and how to open them",
+  "name": "GEDCOM Genealogy Data File",
   "summary": "Learn about .GED files and view a list of programs that open them.",
+  "developer": "The LDS Church",
+  "category": "document",
+  "mime": [
+    "text/vnd.familysearch.gedcom"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The GEDCOM format was developed by The Church of Jesus Christ of Latter-day Saints (The LDS Church) and initially released in the 1980s. The purpose of GEDCOM is to be a uniform format that genealogical researchers could utilize to save and exchange data.",
+      "Since its initial release, the format has undergone several revisions, the most notable being 5.5.1. This version of the format was released in 1999 and is the most widely-used version. In 2021, FamilySearch, a software company affiliated with The LDS Church, released version 7.0 of GEDCOM, which included support for .GDZ files.",
+      "The GEDCOM format may be used by both casual and professional users that document genealogical data. Casual users typically document their own family data, while professional users often document data for academic purposes.",
+      "NOTE: GED files may also be saved as .GEDCOM files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open GED files with a variety of genealogy applications, including RootsMagic (Windows, Mac), Ancestral Author (Windows, Mac), MyHeritage Family Tree Builder (Windows, Mac), and GeneWeb (cross-platform). You can also upload GEDCOM files to Ancestry.com and FamilySearch.org (Web).",
+      "Since GED files are saved in a text format, you can also open the files with a plain text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (macOS), and edit them. Keep in mind that opening GED files with a text editor will not display the information in the same structure as if they were displayed in a genealogical application."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -73,64 +94,50 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "MyHeritage Family Tree Builder"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Heredis"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIQ0lEQVR42sWXeXBV9RXHz+/e+/aXhawvG4lhyxMMaUMkgZAgGBZZxIIiFFnTWmwLKFRqYWAIbbE4YqUUKyh0WjNmSgG7UCoYVEKACFmAl4Xsy0veS96Wt979/voLMzLaGYYYqD1/3Dfz7n33fH7nnO/393sI/s+BRvKjeZvejrNcszitV44q/30vd8E6et6P9hRXXrZVn9839fpDB1i+/1x+/NTCz2rL/b+rKIl5+cvv1+z+Y1KrQxeWmJmdaRidXNZ+LdB3cXdM8ux1JbF2u8DWn/1l4KEAmJf97ZnItNxTzja+bMtmeLe8S0mwVzedKlozu7vOwkd2XvJt1+qpA84OvmXWwogfpuUaPr5+U/DUHPtwcteF4oEHBohImI0iTE8s1SfEVWQXv2DpsQSj+xtD2UmPGr5wdXG053b9DFXoXBKIA5a01b8vjohBL/c1BLGtuu7ZrvK5Jx8Y4OvVaC0VguyEwZ6K/PhYeqUsU8n25rK9Xns5Hro/Zs757+kTMv8adLFs/nT96pynwksqWxTRcrp2haV0euMDA9wvEpPSGX10XpFKp3c9UfLm/hClLXB08shWG/io5nDCM/9zgK/Gk7/xtqrVaMxARwjcHfz19n+k5nyrAJOWtb4hMYatEgvIP+DY2X8l81f3BEib/lo0UIZwIejq7at5S3gYAI9OnqvRmeZs1cU9Mk42phzr+eJ4pbX6sPI1gIJXrixZMDdjV3SyIeuyA4Gnk2etdeJJZ9P5X3T8+znrg0IcrQq9LsZoXr3Wq0DnxeDZ+hN7F90FeP5g/97962N2UAxC77RhCEkAWMbgccnQXu5zONraippO5N4YafJxi95KXLTnp90up0K7egXwWzno/Lxm3h2AWdvqlr6787ETHoTgnzaMvCzGIb8MYRoKAiEFuW0K7rqsdPTVvZ/Ze2lTcCQASTMP5+VuWFfJ+0XktvI40MfCQHPzSyj9O8vRkzuO3J6VbxxrcQFwrIJ4CWGOEwEkCnyDMvI5Rextl8Fro39W/+eIN0cCEDluW8QjM1+xqjXIGPIp2Nsvgt9Wm4OyFh97PHPrmqtRRgyp4QharCIKBhGOjkXQdpsHjZpCnl4W+0jZfD1SdeOJ0TkjbUNawdlVyDD5iCRilRKw7Ou9OncXyllZ+WLGhrw/hKskSI2igFUwtLYJoIliwNnLgyEMgbOTh4HGEHg7/YKz4YDB1/m+NBKAVSWnZmqio1a1NrNWd9ONA7c+/rkPjV9Qvj3zhfx98dHkCYxBZQRk6yKIpBpOqwKURkGBThF72nkIOjlwNOyP8Hce8X/T5CUnHRsLCqMOlTYrlCwC7qhga5vPHs8nLTi9NjKv8FjyeB0wDEB4BEIDnRKmRhElhCgIeWUUsonYZw1ByIlFwVcV1/3ps95vkrxwyWv6Ka/usfkBhQVcMvK7ZOzv48BeF9iEzDN+nYFSVzWkThkFeh0NJjONWiuD2DCaARlTAE4Zfb+AxqJJBxd6MDgbOba7KnDIenn/TseNA+JwAKYsOJCdvuEn1xhFBrddIE4oYs7BgasjUHpHhmPnWy4bR0fnyTIL4QlaUBtUxCNpYEQM722KhFs8QNltDDoaAybdH7RK0HZRKq19J2zVcAAKFu9Nl8wbW8OjtYjzceAdkMHXzwLr0x28A/BYUdnUAD2tgtZTDKOiUdQEI8bEE5bOQaAyaVGTG2ORA3APCKBCFAoMElm2yNDbZJ/XcTrj3HAgsle0fxbEUIAwjSSBxiFPUBEGb+XedcKJ8y4t9+Gs44jR6fTxgLVGEXLWqoAWMGL9MibFgUGXCIoAiHNzONBPZNkrl6VP8vxpyuPpaxvcVJzNwtYO3Dz/25Yzz/cMvXPqDz5Im71g4UvNAVXKQG2wu++WbT6nJE8EwcrphE+3t1zdcuguwISMTMYYnb3Ei6ftFvWZY8NSUtWTlkWjcC2QFcs44CH26cEgBgUkB0Xsd/AwPUcv7SqOZd5rxWANYFB4DF2X/IPuxpai8DhBPLhj2ufnHBDZ4FKwTJbfdqa1xnPjL08HOz4IKYoQ7O7uFu4CJCUlUbGxsQkURUUihDSSaePqpIUrNms1CEJBsnJegaBHBIEYseAnBqVl4I2SOPiXHcBBwPykOjRG5FOC/mrlduHTjEubrJlmdyngcRDdkRZ6unhw1PNb6ktNb3+Z957ngfipHy5OzZv9UWSsDjEUhQVWgICXBy5AExkN4rSCWBibbyQ0GPndRFYeCYbaFHKyaLBLwBlLTBBhVMBFpj7oVjDvFSDYz4G7zfdJy9/Nc+4LoE/ZoE/I2tmtj6Gih7ZFRP4ByGRvUCQ1Cvl4PKYoHlLMDJkJBXmdZHMhVSAbDYheAfnsPE7JjYWwCOKsAQkFnAIZOgl4N/H/AaGq6/zYvPsC3KnCtKpibUTyEZWWyBJIcoUCmfcjRcA4NoOBBHMkKEQvWFCw38UTWWEQCEDAyeEw4hsxKUYiWwIwyGPWS4OfAIgh+qjtYuKLwwIYijEzTm3jVPl7Ea3XYmIkMu8Gmr/xiXqUyZ2YNeE5FWGTOAHY4NB8qMHn9IIkmrAa2U/SRmYZzdCAFRVIvAysx8UFHNXZ/ub1DcMCSE9PZ0wmU56EwzJDePwYBWsYDfTYtVTPlUFqvocftbJKpVPUCDEYKzRIZKb5QIhc2EsMf6GQNk56nWeyNmPMqIBrdtBs9frumh+f+WqOBzqUJs6oXk0bzEcoWqMmnQCJ7SUHCluzVqiY0169tdtsNkdRjG60jA06Bga9LBtqb2tr4x4aQIZ5otoQaV4ZhO8+JWGDVo277GGU5VDVlXM3h/uOb+1Yfq/4D55GVqpDGQMvAAAAAElFTkSuQmCC",
-      "alt": "My Family Tree"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEjUlEQVR42sWXf0yTRxzGn7ZAsQqbq7RjCBo3xjAiIMkc4HDaMJiE1QyNwtwAYQtkMFZ1gIzOsYCKSoQBEwTccBmLOogEMCAwwmqRUdiWmIUKGQWdlLrKjxZKKS3d+76JxI4yFcp43n/u3ve+733u7rnvey/tSNqXRiyT7sj6QCMBTmcJlwVgX0T08gEUlVxES0vL0gAYjUZUV1ejsLAQXV1d8PX1RW1tLWg02tIDVFZWori4GEwmE05OThgeHoZKpUJ9fb3lZmBiSgXttGa2TqPRYZiegSDhCBQKBSoqKuDg4EA9a2xsxODgICIjIy0HcLw2DlVdxVSZZWMHD3YAbpwbICCM6OzshK2t7WxbrVZrUrcogDXDBq5cT8irVkHU0obrrdcQsHXnE71jUQAn6uJx9ddSsFdy8YouGGePlmHvu+8g43Qa3B19lh7ggug4JLJmPEdzQdEn1YTRRvDV5Qzs9AuGm6M3NFPjmDZM4VnWGjDoVpYD0Gg0lMFEkmYMyO6i948+wmBysFgs8EICwGASSZVhhJWdEUonCTQ6NVzYL0MQlAO/l96y3Axc/CkXCuUQSoRV6O3pRVrWIdA445jUaWCYmcYYXY6eEQl0ei2MxEUndsnh4FzsezXRMgB5jZ9iaFCBk1HfgcPlICpvO27da4Oe6HzGOENtUbJzsvxQL3I24VL8LcsA5DcdRXejHOdOlSM67gBGNrbj3kgf/F13YZtrCGXSf2sd2w2VCVLLAJSLs3Hyg28h7ZYivexDiP++ApV2BMK3S8H3joF/FgtT+kmTGKfVG1D98Z+WAfj6UjY+2p+KLT7e8Iizwe2h3wjX65Cxuxwhnu8j4IQdYcBxkxiuvTPqBHcsA3AgKgLfl/+AQ1/Eodu+Fkr1ILXeWWEVCNoUjh3Zq6HWjprEsFc9j4bD8sUDqNVq6iOj1+uRcD4U7XevEe6foNyevfcKeBv3gHdqDcYmH5jEPbOCjeZk5eIBCgoKkJiYiN17QmG9ow8DD24TW09PPcvZfxXb3fh48wwXwxP3TeJWMu3Rmjq2eAB3d3dIpVKk5cejY/JHjGqU1OhJ5UXUUTshOOcFKMflJnFMqxUQf6ZZHEBTUxMCAwMRHBIELn8UPYrfoSNS7kMVvncdWzcEYtdZZ9xX/WUSS6bkX4TTiwPg8/nUDPiEuRC5IJVY+/HZ0ZMqjmyBz/o3EJq7HvKxgTnxnceMCwfo7+9HWFgYJBIJchoEuNyRb9I5qfNRrdiyLsAsAI24JMdmFg4QHh6O2NhY8Hg8KtNVdhbNaVMS/TO8XV43C0B+Dzo+NywMgHR+Q0MDampqqPqjJ6JHVRotgpfLtnkAGASA/ukByNOsQCCAWCwGh8P5T4Cygzfg6exvFuCJTZicnAyDwQA6nU6NWiaTQSQiRublNdtmPoALB8XY7OxnFsCKbo12oe7xAEKhEJmZmVQ5KSkJKSkpcHR0NHnZvAAxbdi81tcsAHl+vJk+9XgAUuTRmhSXyzW7LPMBfBNzEx5rXzMLYMNgoi1d+/QeWCrNASBv/N+aBSB/k5dL/wCB19v/Wr3GqQAAAABJRU5ErkJggg==",
-      "alt": "Family Historian"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIOElEQVR42rWXe1BU1x3Hv/exu3dfvHZVBETE+CBGJSI1SWtIfISOBhOaUGMaO9XUaKYTMz6mTTom4h9NbcaqRBryUGhsmilQJ4NWxaLCmFitGhRC4hMIiLzZFfYB+7qnv3uvohQQ22l/f+zZPXvO+X5+v/M7v3Mvh/+zfVb2BHNeqYDPB4wbB2Rlgbv7f+6/WTT9T/VsqP4jyydw39QmMEdLE0LMjJqvQ6i75obfnwJRrKMRIsISYjA2vBmvrujg/mMA6/YbqrDLHIPRYj06AglgnLZErHQT556KRHMLj7KjRrQ2CwgGJyE396sBGuvXg0VOfxbNZ2Tk5e3n7gtAv9vFEiNPQRRS8dCoa4jQXcUE25do7L4Em96GjfHFFGIO604+gtLuMHT1HobF24InytfgwIEDgzQKCjhWXW3Gjh3uEQA+ZEzxVIAZP5xeiiR7B8INAfqD4XLn41g3qQRxxnwSd6KmNgIrr6Shoek5dHfOAwx6jLO0IrnszUEQewr0rKZaf2+Acbu+Y4ZoJx4e+1u4fL/BvHFVaO17BpPtHsylcE8OFyDyTsjIwS8qa8hrN9rcLpxvWg9X+0uAzw/Q7yiRw/e/3TAAIr+AZ1UX7MjJaR8aQBEfH1eFTtkIq+jBRHscZo1qwHjdTNhG25AmeUn8JpSE+PDqFlS5GtEb9OGfTRZc7jgB5nKTuFsFQCCAMQkmfK/89X6I3QVGVlNlxM6djsEASqI9Mv1JGIg8LiwCAmdGfPhUREpxyBoVj3BdK2XuUyRehvOhNTjTeghVbdsoAuNR1foY3P4v0Xwjn4QpAj094OUeyMZkhNs/xeN/Lxy0HUMCPPzgowgzGFUAxRIjZsFmGIUVsddpQoDEk+Hwn0S9UAyHL4TCmo3oc7+HM44LFJnXcKnukAbQ1UULLgCcCdS2IqNq6r0BFHFXnwGzp8+ASSdijMUKu9GCtybFItp6kgYHITMLdtWmod0fQuaUT1SAI7U86ttFnGgmzV5aqMcFQdiPUGgL0E2/fdTyq2Fn+/DoxV0DIAYAhL1Tx3q6AjDH70VSYgHGEsADxji8k1xBA0MQ9Ykoa5qL8p4udfz8CfvQ0qLHF21AXQ9Q3XELwF0L6GYD7YVA7zGqP3kEQfkg7MDkFjuufLZ8aABsuKxVOBLmDOTRsrWYYimGZJDhl6ORXTuVYuBV8yIm7A3IvfPhZDLO3xDRSutfdKI/+4XwRQi5zhAAtCgo1qd8VAIfzBoGYE0lg15PobDCZLuEy0uzIOl6EGSRyK2KR1MYRzVhLlyBNlj0i8EHfgoHCVxyUHWk8nDDxcD8AXBd18FCFAUhXVu3WxPnQxKYvBVPtx/r34Z+gKmbqtmlNroxBAELkq7gdwt/TZlfB8nIY9mpUfDoBDUvFLvZ26C2Dq82t4lOHMeYdvyURflVJESetv0AnHMmdOyg2s+LFyAHk5HeIQ0PwFFpObgmGwmmIxR6huqGaPyy00e9cZThYZSEz6PL+7o6x0te9wZviZPn6pWnZH/fcuo8rIW8by5QvxKcbENkzAZIoZlIafcNDXC5sQPx0cDnLyxQy+0HFZkobF4F39RMEv85PO6JEOUUGMKK4O1ZBZlP0ibfFvZ+Rd8pQU0vauLUzXYMeXFqkVLsboAr11qR8/JxzAnfCkHksXjvp2iXUsEMHJjuj5QbuVRYKiAHEgeupIgryecj1UAJZf26W2AawJYtW4YEyM7OvgOQtOkC25y2kq7VSugNPMobl+HNI2vBBB1gNmuDjEattcRrrW4R0JGrllvF2LbJQwqNeSUZFm40bJiCbvccTHEVDd6ClE2H2Na0xZAkRidnLF7a/Rba9akDhXUEw1OYbS/eWb1zBeDfoAHkTAP3yjlwQaqWvRQNbwNYyc/ubwuKShOYlX1HTy7Ay7lrcZ1fSKEnz+lUcgIdH1F3Z2ZMqrrHbOvg/eWWlas5wVFUOI8XoeNL7w/g4GEd46GF8vl3c+DVxYCZLXSvG/ohbhsb/ZjWEgC3jgPn2gkWmAH2yZPgflRKwh4CoLLt9YCdXjlyDnyUb2QWqVeNdL1nGtbveI0SSQfepO09M5u0VqdFwWBfDZ/QCJZHAMszAc9q1WP5QMaQQlmrC8GzMag4/RfMSWgefBfk54NJEkeFQsTec5k4dGy+9q+yHwYJPBUnphQhpUoqk8b+GLLQpwLw6fu0PsXjUEg7CcGg2hdlMaOr4icjb8GefIEpBejQ0Qj09UXj2OJvIX1xGs6vqwfOELVKqIR12EVnf6QKR5gsiLJacbZw3sgAf3hfYEYphNJS5UQlkQMP4Oiz+2Hc+2d1oMPtGTAxMeWv6G59EJ0lO1XB26YIK2a3hsMk6RAbEYW/fZw6cg5sy5GYpPPjRIWMoiJtWzIyMtj5F/bDW30V0RevIijLCFKIg3IQ8bGVaLwxCw2lz2HiohJ6WlaeD3l8U7JoWE+HjYLy8W6OlYnMg1MnRRQX+/sHKxCnZm5GRLcB0Q4H+gLa3lqN7XB6InG+OB2pS4/TjSnSvWFA2Z45eObVC/D6faisvYZw73HUndkz8ha8vW0Ms8htOHuWJwB5EO2sXxWxoD4C1d7xEHu9eFrQcuHz9x4atKhxxnYsTKhQvyvZzshGBPh9no2FXF04dw79W3C3bcpLY/SchIPl06iUxsLjscNpDVMLjZL5ppADOrkTN/+RjSVLlgw4ZgrAfd0Fb7xtYlEWLxReg0HpZrh17FFbS5cRM9GLhOeeLzLDeTtiDty2DRs5pj7sax+gvIMydfv2+3+HJK8GQGzevHnYsdy9yP6X9u9Qd/Vz/wKuZ51OWDp67gAAAABJRU5ErkJggg==",
-      "alt": "Ancestry Family Tree"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Family Tree Maker"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Heritage Family Tree Deluxe"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ged_580.png",
+      "alt": "Screenshot of a .ged file in MyHeritage Family Tree Builder 8",
+      "caption": "GED file open in MyHeritage Family Tree Builder 8"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.312Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ged",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.312Z"
+      "url": "https://fileinfo.com/extension/ged",
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.312Z"
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.313Z",
-  "mime": [
-    "text/vnd.familysearch.gedcom"
-  ],
-  "category": "document",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.153Z"
 }

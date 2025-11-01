@@ -1,8 +1,58 @@
 {
   "slug": "ply",
   "extension": "ply",
-  "name": ".PLY File Extension",
+  "name": "Polygon Model",
   "summary": "Learn about .PLY files and view a list of programs that open them.",
+  "developer": "Stanford University",
+  "category": "3d",
+  "category_slug": "3d",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The file structure of a PLY file format is as follow:\n\nFieldFile HeaderVertex ListFace ListList of other elements\n\nExample Structure\n\nWe will use the following example below in our subsequent discussion for various parts of a PLY file format.\n\nply format ascii 1.0 { ascii/binary, format version number } comment made by Greg Turk { comments keyword specified, like all lines } comment this file is a cube element vertex 8 { define \"vertex\" element, 8 of them in file } property float x { vertex contains float \"x\" coordinate } property float y { y coordinate is also a vertex property } property float z { z coordinate, too } element face 6 { there are 6 \"face\" elements in the file } property list uchar int vertex_index { \"vertex_indices\" is a list of ints } end_header { delimits the end of the header } 0 0 0 { start of vertex list } 0 0 1 0 1 1 0 1 0 1 0 0 1 0 1 1 1 1 1 1 0 4 0 1 2 3 { start of face list } 4 7 6 5 4 4 0 4 5 1 4 1 5 6 2 4 2 6 7 3 4 3 7 4 0\n\nFile Header\n\nPLY file format header consists of ASCII text for both the ASCII as well as the binary format. The start and end of header section is identified by ply and end-header keywords. The start of header has the magic word ply which is used for recognition of PLY file format by readers. The next line shows the version number for this file. Comments in a PLY file format start with comment keyword at the start of each comment line.\n\nElement Keyword\n\nThe element keyword then tells what’s inside the file. It is followed by properties for that specific element type where each property has its property type and order specified as shown below:\n\nelement vertex 8 { define \"vertex\" element, 8 of them in file } property float x { vertex contains float \"x\" coordinate } property float y { y coordinate is also a vertex property } property float z { z coordinate, too }\n\nIn this particular example, the specific vertex element has 3 properties of type float with their order specified.\n\nTypes of Data Types\n\nThere are two type of data types that a property may have.\n\nScalar: The scalar data types are as shown below:\n\n|#Name|#Type|#Number of Bytes |char|character|1 |uchar|unsigned character|1 |short|short integer|2 |ushort|unsigned short integer|2 |int|Integer|4 |uint|unsigned Integer|4 |float|single-precision float|4 |double|double precision float|8\n\nList: There is a special form of property definitions that uses the list data type. An example of this is from the cube file above:\n\nproperty list uchar int vertex_index\n\nThis means that the property “vertex_index” contains first an unsigned char telling how many indices the property contains, followed by a list containing that many integers. Each integer in this variable-length list is an index to a vertex.",
+      "PLY files are used by many different 3D programs. They may be saved in either a binary or plain text format.",
+      "Often, PLY files contain 3D models, which users view or edit in 3D modeling programs such as Blender or Microsoft 3D Builder.",
+      "NOTE: Since the PLY file format was developed at Stanford University, it is also known as the Stanford Triangle Format."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a PLY file with Microsoft 3D Builder (Windows), Apple Preview (Mac), Blender (multiplatform), or Prisma3D (Android).",
+      "You can also open plain text PLY files with any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac), to view the data they contain."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Many CAD applications, including Blender and Microsoft 3D Builder, can convert PLY files to other formats. For example, Microsoft 3D Builder can convert PLY files to the following formats:",
+      ".3MF - 3D Manufacturing File",
+      ".STL - Stereolithography File",
+      ".OBJ - Wavefront 3D Object File",
+      ".GLTF - GL Transmission Format",
+      ".GLB - Binary GL Transmission Format"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -77,18 +127,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.454Z"
+      "url": "https://docs.fileformat.com/3d/ply/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.282Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ply",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.454Z"
+      "url": "https://fileinfo.com/extension/ply",
+      "retrieved_at": "2025-11-01T22:32:42.282Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.454Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.282Z"
 }

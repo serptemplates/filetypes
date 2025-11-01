@@ -1,8 +1,31 @@
 {
   "slug": "unityweb",
   "extension": "unityweb",
-  "name": "What are UNITYWEB files and how to open them",
+  "name": "Unity WebGL Game Data",
   "summary": "Learn about .UNITYWEB files and view a list of programs that open them.",
+  "developer": "Unity Technologies",
+  "category": "other",
+  "mime": [
+    "application/vnd.unity"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Unity is a cross-platform 3D video game development application. One of the platforms for which Unity developers can create games is WebGL. WebGL uses a JavaScript API to render 2D and 3D graphics in a web browser, allowing players to play Unity-developed games in a web browser.",
+      "When a developer builds their game for WebGL, Unity produces a folder with a variety of files related to that game. Some of these files are UNITYWEB files. UNITYWEB files are located in a game's Build directory, and they are named:",
+      "MyProject.wasm.framework.unityweb: Contains the game's JavaScript runtime and plug-ins",
+      "MyProject.wasm.code.unityweb: Contains the game's WebAssembly binary",
+      "MyProject.wasm.memory.unityweb: Contains a binary image used to initialize the heap memory for the game's player; generated only for multi-threaded builds",
+      "MyProject.data.unityweb: Contains the game's assets and scenes",
+      "NOTE: Some Unity WebGL games may include additional UNITYWEB files in their Build directory, depending on which version of Unity was used to build the game."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "UNITYWEB files are not meant to be opened manually. However, modders and other developers who wish to extract assets from asset-related UNITYWEB files can do so using AssetStudio (Windows), the Unity Assets Bundle Extractor (Windows), and other Unity asset extraction tools."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,26 +70,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.402Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     },
     {
-      "url": "https://fileinfo.com/extension/unityweb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.402Z"
+      "url": "https://fileinfo.com/extension/unityweb",
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.402Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.402Z",
-  "mime": [
-    "application/vnd.unity"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.225Z"
 }

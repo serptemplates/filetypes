@@ -1,8 +1,33 @@
 {
   "slug": "ddi",
   "extension": "ddi",
-  "name": ".DDI File Extension",
+  "name": "DiskDupe Disk Image",
   "summary": "Learn about .DDI files and view a list of programs that open them.",
+  "developer": "Micro System Designs",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "DiskDupe was an MS-DOS and Windows program that allowed users to create backup copies of their floppy disks' contents. When saved to a file, these disk images were saved as DDI files.",
+      "To create a DDI file, DiskDupe users:",
+      "Inserted a floppy disk.",
+      "Set the program's Source to the floppy disk drive.",
+      "Set Destination to File.",
+      "The user could then copy this DDI file to other floppy disks, by selecting the DDI file as their data source when using DiskDupe's duplication feature.",
+      "Different versions of DiskDupe saved DDI files with different file headers. For example, version 5 saved DDI files with a variable, 1280 byte header, while version 7 saved DDI files with a fixed, 9216 byte header."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a DDI file with Micro System Designs DiskDupe. Note, however, that DiskDupe will not run on modern versions of Windows. Thus, you will likely have to run DiskDupe in an MS-DOS emulator, such as DOSBox."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use the ddi2raw Python script (linked below) to convert a DDI file to an .IMG (Floppy Disk Image) file. You can then open the converted file as you would any IMG file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +64,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ddi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.564Z"
+      "url": "https://fileinfo.com/extension/ddi",
+      "retrieved_at": "2025-11-01T22:32:42.413Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.564Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.413Z"
 }

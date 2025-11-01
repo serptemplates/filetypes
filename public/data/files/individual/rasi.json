@@ -1,8 +1,25 @@
 {
   "slug": "rasi",
   "extension": "rasi",
-  "name": ".RASI File Extension",
+  "name": "Rofi Configuration File",
   "summary": "Learn about .RASI files and view a list of programs that open them.",
+  "developer": "Davatorium",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Rofi is a window switcher, run dialog, menu system, and SSH launcher available for Linux operating systems. Rofi users can configure a number of program-level settings, including which features the program shows, which theme the program uses, and which font the program uses, by specifying them in config.rasi.",
+      "The themes that users specify within config.rasi are also saved in RASI files, which are named themename.rasi. RASI theme files contain many color, window, and other UI-related settings, while RASI configuration files contain only a handful of program-level settings (including the modi, theme, font, and combi-modi settings), making the two types of RASI files easy to tell apart. RASI configuration and theme files are both saved in the ~/​.config/​rofi directory."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because RASI files are plain text files, you can open and edit them in any text editor.",
+      "To use a RASI configuration file as your Rofi configuration, you must save it with the filename config.rasi and store it in the ~/​.config/​rofi directory. Make sure to store only one config.rasi file in the ~/​.config/​rofi directory",
+      "To specify a RASI theme file as your Rofi theme, save it in the ~/​.config/​rofi directory and then specify its name (minus the .rasi extension) in the theme setting of your config.rasi file. For example, if you wanted to use blue.rasi as your Rofi theme, you would add the setting theme: \"blue\" to config.rasi."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -56,13 +73,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/rasi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.860Z"
+      "url": "https://fileinfo.com/extension/rasi",
+      "retrieved_at": "2025-11-01T22:32:42.727Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.860Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.727Z"
 }

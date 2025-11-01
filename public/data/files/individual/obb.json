@@ -1,8 +1,25 @@
 {
   "slug": "obb",
   "extension": "obb",
-  "name": "What are OBB files and how to open them",
+  "name": "Android Opaque Binary Blob File",
   "summary": "Learn about .OBB files and view a list of programs that open them.",
+  "developer": "Google",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Before moving to the AAB format, Google Play allowed APK files to be only 100MB or smaller in file size, which led to app developers using expansion files to store additional app assets. Developers could create expansion files using any format they chose, such as .ZIP or .MP4. They could also use the JOBB tool provided with the Android SDK to bundle and encrypt assets together within an OBB file (maximum size of 2GB).",
+      "Developers then uploaded these expansion files alongside their application's APK file using the Google Play Developer Console. Users who downloaded the app received the app's APK and related expansion files.",
+      "NOTE: Any additional asset provided beyond an app's APK file is called an APK Expansion File. Developers can include up to two APK Expansion Files within their Android apps."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Typically, users should not open OBB files since they often store data in an encrypted format meant to be referenced by the app for which they store data.",
+      "However, you may be able to extract the contents of an OBB archive with the ZDevs ZArchiver app for Android devices. You should not modify OBB files unless you know the correct changes since altering them may make an app unusable."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,23 +60,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.354Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.188Z"
     },
     {
-      "url": "https://fileinfo.com/extension/obb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.354Z"
+      "url": "https://fileinfo.com/extension/obb",
+      "retrieved_at": "2025-11-01T22:32:42.188Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.354Z"
+      "retrieved_at": "2025-11-01T22:32:42.188Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.354Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.188Z"
 }

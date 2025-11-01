@@ -1,8 +1,21 @@
 {
   "slug": "natvis",
   "extension": "natvis",
-  "name": ".NATVIS File Extension",
+  "name": "Natvis VC++ Debugger Visualization File",
   "summary": "Learn about .NATVIS files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "You can find NATVIS files for common types that come with Visual Studio in the following path:",
+      "%VSINSTALLDIR%\\​Common7\\​Packages\\​Debugger\\​Visualizers",
+      "You can open and edit NATVIS files in Visual Studio. After changing the file and saving it, the modifications will be reflected in the \"Watch,\" \"Locals,\" etc. debugger windows. You can also open and modify NATVIS files with a different program than Visual Studio but the modifications will not be automatically reflected. You need to use the .natvisreload command in the \"Watch\" window or restart the debugging session. NATVIS files may be defined per-project, -user, or -system or embedded in .PDB files.",
+      "You can add a NATVIS file to a C++ project by selecting the project node in the \"Solution Explorer\" then clicking Add → New item → Visual C++ → Utility → Debugger visualization file (.natvis).",
+      "NOTE: The NATVIS file was introduced to replace the autoexp.dat file, which was previously used by earlier versions of Visual Studio."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +56,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/natvis",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.768Z"
+      "url": "https://fileinfo.com/extension/natvis",
+      "retrieved_at": "2025-11-01T22:32:42.636Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.768Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.636Z"
 }

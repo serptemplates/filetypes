@@ -1,8 +1,15 @@
 {
   "slug": "sm",
   "extension": "sm",
-  "name": "What are SM files and how to open them",
+  "name": "SMath Studio Document",
   "summary": "Learn about .SM files and view a list of programs that open them.",
+  "developer": "SMath",
+  "category": "other",
+  "mime": [
+    "application/vnd.stepmania.stepchart"
+  ],
+  "containers": [],
+  "related": [],
   "programs": {
     "windows": [
       {
@@ -45,22 +52,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE3UlEQVR42tVXWSimbRi+X3tm7MsBGcYulJJiJuVI4sSZaOZECXGibNn3rXBkYiJRcqKEQooyIUqRNctMGGMZ+25s7/9dt//VN/g209/f3PVG7/I813Pd133d9yfQ/xzCXwUgPT1dPDo6oq9fv9LGxgbt7+/T+fk5XVxckIWFBenr6/P/W1tbaq+r1ouNjY3i3NwcDQ8P0/r6Oh0fH9Ph4aHSb/T09MjQ0BDvKd1D6cOmpibRyMiIlpaWqLm5mWZnZzWi19vbm2JjYykxMVHhPgoftLa2iubm5rxpW1sbjYyM8P3IyEi+sLgUoijS2toaTU9PM0s9PT2EVPn5+VF2djZ9//6dEhISBLUAVFRUiPb29mRnZ8d57urqAhP8rLi4mKKiopSeGmCQnu7ubpqamqLU1FRoglZWVmhvb49yc3MFpQBaWlpEBwcHMjU1pd7eXl6ov7+fT11SUqIW9QCBuLu7o5ubGzo7O6MfP36weJOSkhQDqK+vF52dncnS0pLRAsDAwACNjY1RWloaxcXFaaQBAAGI6+trFu7q6iotLy9TRkaG8ARAZWWl6O7uTra2tqxeUCZjg3OKj14CQB7Er1+/aHd3lxYWFlgThYWFwgMAWV5ER0dHcnV1Zep1dXVJS0uLYmJiaHR0lCnUJAWPAeC6vb2l09NT3nx+fp51UlZWJjCA8vJy0dPTk4WH02tra5Mge/ThwwdmQIrOzs7f1P9SFlBZ8BPZge4B1NTUMABra2s2EJweAGprawHuYSETExNOQ2hoKL1580YjEJIgoYXFxUVORUFBgSBkZWWJTk5O5OHhQWZmZqSjo8MAEKjljx8/cn0/DjDx/v17BiL9VcUC0oB0Ql9Y8+TkhIScnBzRzc2NIEC4HuiXAKgCIR9gB8yEhYUxIEVpQK+ADuAR6CVCXl4eqx8ClAAIwlPTQjpwAZCqABsQrDwQCcDl5SV7wuTkJJe6gAoAALDw+vVrTsFzAKSAMQ0NDbE4Yb/KAiBQPY8BQIAAwAzIvFp0cXHhFIBGeQ2oCrAxMzPD6QGw59IkEzinRgKA9i1pAN8LMldi70cVoKdLHqCMBUUBVlA18kBwKJwWm0teAGODFwAM71JVVSV6eXmRjY0NGRgYvBiAxMpj0aKJRUREsCUfHBzw5t++fcP9+11k9cg6QDnKC/GlIJCOlJQUPiEC3pGcnMwVgA4LI9rZ2aHS0tL7HTIzM0X0AHgBzAij1Z+wgIiPj+cmhhOjGhoaGth+0RGRAojxAQCiqKiIO+Hbt2/J2Nj4j7Twb1ppcHCQ6/3du3csxs3NTXZAnB42jPd+W726uppBgI1Xr149mJKmIK6urjBH8iCDTf39/XFaPjk8QOY9T9sxIj8/X7SysiJ0RqQCL0O9EKi6mkC5wenQyj9//sz3MBeCBdQ/hKgQgJQKlCOmIvg25kEACQkJeTCV54BIUxA2mZiYoLq6OsIkjZDNGrwxLpnvKB/JpPj06ZMIAbW3t9P4+DjfQ01DUGDEx8eHOyeMC3rBu1A4TObLly9sUAiYUFBQEGZD9YZS+QgODhb7+vpU0g6dYJYAMwAgha+vL4WHhz85tdoApAgMDBTRw7e3t9V5nfUTEBBAHR0dKtfXuMaio6P559nPnz/ZViWPx6ZgQsaYRmv+XT9O/4v4B0246Ij5dHQ+AAAAAElFTkSuQmCC",
-      "alt": "SMath Studio Desktop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB/ElEQVR42q1WC5aFIAilldXOxJ3VyhyxNFRQbB5nztTzA/dCXN1g0RAx0NMhljEf3+P4Ztnj6TdAWatu0hw55+C6LjjPszgs84K/uC7s+x5nNh7wG4AQjYLvx/GyrxF2mSAAFdhmjRkAsT9i4Bzca+uYzxn7ZQC57m1wx8ZaACP2/wKQA8VnkABY2C8BCOmvD6SNW9j/BEDODB+3sv8EoCuBAsDCPgHIrUUbEB2b0r7zkWHyY2WfJkp7xU3e60FrcNwYd0i1Byv7B1kI9zo/CaSZr4K37PHpHE264z98ausEx/bUa+xn0s0AcBB1WkdB+XugZDL29Hsm3U9tpiCEGvI99zpKN2dvke5NdtiCSPMTEFj6NNfeIt2b7tAKQla95MEg3RNWcxCa6lmlW+nPtjPaJL4gNNWzSvdAikPzkfVZGGm+Vbqn97hXmPquGGk+B1CAPLpAgLN8qR9Vfj+OHQRdmJ54+ADg8naRUsa25N7ESyQ989lwZ8BXwWfsSwZzNwiFxHsNbLbgfeotJx4KZajyWDwsBM/s2B0/MdFOPJ4JfMf4YVQHJ+0W6q58rCHQKcrKtHTNT475faAPDjBSvzdb47VTAPRCIO7gALJ687T6csw22VoHUKeRW3bqymWF2wvYUqoJgDag3Xp9+AAAw+qm3n4GAFf3C/7W7A+Or8Qm/zC3YgAAAABJRU5ErkJggg==",
-      "alt": "SEERStat"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "SMath Solver Desktop"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -79,30 +70,27 @@
     {
       "url": "https://fileinfo.com/svg/close.svg",
       "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.388Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.213Z"
     },
     {
-      "url": "https://fileinfo.com/extension/sm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.388Z"
+      "url": "https://fileinfo.com/extension/sm",
+      "retrieved_at": "2025-11-01T22:32:42.213Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.388Z"
+      "retrieved_at": "2025-11-01T22:32:42.213Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.388Z",
-  "mime": [
-    "application/vnd.stepmania.stepchart"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.213Z"
 }

@@ -1,8 +1,27 @@
 {
   "slug": "smb",
   "extension": "smb",
-  "name": ".SMB File Extension",
+  "name": "Autodesk Shape Manager Binary File",
   "summary": "Learn about .SMB files and view a list of programs that open them.",
+  "developer": "Autodesk",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The ASM format comes from Autodesk ShapeManager, which is a 3D geometric modeling component of Autodesk Inventor and various other Autodesk applications that was developed in the early-2000s. The format allows you to maintain the integrity of a CAD model when utilizing different CAD applications in complex workflows. For example, you can design your model in AutoCAD, export it as an SMB file, then import it into Moldflow in order to simulate the wear and tear the plastic part will experience over time.",
+      "ASM consists of two different variations and extensions:",
+      "Autodesk Shape Manager Text (.SMT file extension) - This variation is saved in ASCII text format and provides more interoperability between other 3D applications but results in large file sizes.",
+      "Autodesk Shape Manager Binary (.smb file extension) - This variation is saved in binary format, which results in smaller file sizes than SMT files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an SMB file with various Autodesk applications, such as AutoCAD, Fusion 360, FeatureCAM, and Moldflow Adviser.",
+      "To open an SMB file in Autodesk FeatureCAM, select File → Import, select the SMB file, and click Open.",
+      "To open an SMB file in Autodesk Moldflow Adviser, click the Home tab → Import panel → Import, select the \"Files of type\" dropdown list, choose \"All Models,\" navigate to the SMB file, then click Open."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,13 +66,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/smb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.904Z"
+      "url": "https://fileinfo.com/extension/smb",
+      "retrieved_at": "2025-11-01T22:32:42.776Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.904Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.776Z"
 }

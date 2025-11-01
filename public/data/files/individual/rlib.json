@@ -1,8 +1,24 @@
 {
   "slug": "rlib",
   "extension": "rlib",
-  "name": ".RLIB File Extension",
+  "name": "Static Rust Library",
   "summary": "Learn about .RLIB files and view a list of programs that open them.",
+  "developer": "The Rust Team",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Rust is a popular programming language used primarily to create system software and large-scale, high-performance applications. Developers creating Rust programs might compile and package a group of common or related functions into an RLIB archive file. Each RLIB file contains multiple .O files, metadata saved in a lib.rmeta file, and a symbol table.",
+      "To use the functions an RLIB file contains, developers reference the functions in their program and then link the RLIB file to their program during the compilation process. Developers can reference and link RLIB files to multiple programs, making it easy to reuse (and maintain) the functions they contain.",
+      "NOTE: RLIB files created by one version of rustc may not be compatible with other versions of rustc."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "In Linux, you can use the objdump -d command or the Unix archiver (ar) to view an RLIB file's contents. In Windows, macOS, and Linux, you can use rustc (included with Rust) to link an RLIB file to a program while compiling that program."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/rlib",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.872Z"
+      "url": "https://fileinfo.com/extension/rlib",
+      "retrieved_at": "2025-11-01T22:32:42.738Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.872Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.738Z"
 }

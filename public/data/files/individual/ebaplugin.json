@@ -1,8 +1,25 @@
 {
   "slug": "ebaplugin",
   "extension": "ebaplugin",
-  "name": ".EBAPLUGIN File Extension",
+  "name": "EBA Command Center Plug-in",
   "summary": "Learn about .EBAPLUGIN files and view a list of programs that open them.",
+  "developer": "EBA Software",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "EBA Command Center is a Windows application that allows users to create command-based shortcuts to files and websites, as well as execute simple system commands. If a user wants to automatically execute a command or set of commands upon opening, closing, or completing an operation in EBA Command Center, they can do so by creating and installing an EBA Command Center plug-in. These plug-ins are saved in EBAPLUGIN files.",
+      "EBAPLUGIN files are Zip archives that contain a meta.xml file, which describes a plug-in's metadata, a Script.vbs folder, which contains one or more sub-folders, and a Commands folder, which contains XML-based commands. The Script.vbs folder may contain a Startup, Shutdown, and/or OperationComplete sub-folder. These sub-folders contain VBS scripts that EBA Command Center will execute at start-up, shutdown, or after completing an operation, after you install your EBAPLUGIN file.",
+      "As of EBA Command Center 9.2, users can also create EBAPLUGIN files that allow them to change EBA Command Center's language. After installing a language-related plug-in, users can enter the language command in EBA Command Center to change the program's language.",
+      "NOTE: EBA Command Center is discontinued and no longer available."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To use an EBAPLUGIN file with EBA Command Center, open the program, enter the import command, and follow the prompts that appear on-screen. If you want to examine the files an EBAPLUGIN file contains outside EBA Command Center, you can do so by changing the file's extension to .zip and opening it with any Zip decompression utility."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -51,13 +68,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ebaplugin",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.585Z"
+      "url": "https://fileinfo.com/extension/ebaplugin",
+      "retrieved_at": "2025-11-01T22:32:42.438Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.585Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.438Z"
 }

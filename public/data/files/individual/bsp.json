@@ -1,8 +1,29 @@
 {
   "slug": "bsp",
   "extension": "bsp",
-  "name": "What are BSP files and how to open them",
+  "name": "Quake or Source Engine Game Map",
   "summary": "Learn about .BSP files and view a list of programs that open them.",
+  "developer": "id Software",
+  "category": "other",
+  "mime": [
+    "model/vnd.valve.source.compiled-map"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "BSP stands for Binary Space Partitioning, which is a technique a game engine can use to break intricate polygons into convex sets. This allows the engine to render 3D maps more quickly. Every BSP file is made up of \"lumps,\" which are chunks of data defined in the file's header. These lumps include Entities, Nodes, Vertices, Planes, Leaves, Visibility, Faces, and Textures.",
+      "BSP maps are compiled binary files. Developers can compile BSP files from .MAP files using tools such as Q3Map2 and Irrlicht. Developers can also create BSP files using id Software programs such as GtkRadiant and DarkRadiant.",
+      "Quake game engines that use BSP files include id Tech 1 (Doom Engine), Quake Engine (the original Quake engine), id Tech 2 (Quake II Engine), id Tech 3 (used originally for Quake III Arena), and id Tech 4 (originally used for Doom 3).",
+      "Since Valve's Source game engine (used to develop games such as Half-Life 2, Left 4 Dead, and Team Fortress 2) originated from the Quake engine, it also uses maps saved as BSP files. However, the Source engine's BSP file format differs slightly from the Quake engine's. As such, programs that can decompile Quake BSP files may not be able to decompile Source BSP files, and vice-versa.",
+      "Source engine games' BSP files are stored in the games' .GCF archives. Notably, Source engine BSP files do not include the map's description text or the AI navigation file that non-player characters (NPCs) use to navigate the map."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "BSP files are not meant to be opened. While some BSP map decompilers exist, which allow modders to view BSP files' contents and convert the files to editable formats, these tools often do not decompile BSP files correctly. Example BSP decompilers include Q3Map2, EntSpy, Vmex, and BSP2MAP."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -65,64 +86,45 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "Crafty"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABeklEQVR42q2UWwKFIAhEbWcujaW5s25WFOig2MUvs8ecA+mWAgcR7ZTovkib5x3XQ55RStl5nkt2Q4QAsHnJ5Q1/bo4z/gbozOlc0yADiL8AOnNSYC/UAOIzAOr5CZLvKvD8CjchPgEgcy57XTuhODw1LWkglgFQz40gvEYaYglg1HMEwc/J1rwfu7LdACPznjTp3WBXaXMBoH2ufjIQ3gWK9ec/OdanAK25+aeD8BZCtoTHEACecDKA9NabtUWa13kFMwGMsx2XnN8ZtUWU/vxmzlsVhACTs70rrQIHbUHmRwYGgOaonM12K8ec2dpth8wrQL1WAJY5PFbFvRqeGwgZjMw7AMsc9pVweAbgljmPzW0O2mBVwGP+ACyZTyDkPzAzVxWoEMvhAqAtuccctmAl3NqCXvMeoD5IaUdms/Av5gqgKesQIsrcBhhARJqPAQBEtPkcQECUHG/uA5CVCDb3AzSViDJfA7ghIs3XAQREhPk3AOYICObxA/175Ws6UbqwAAAAAElFTkSuQmCC",
-      "alt": "BASIC Stamp Editor"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Left 4 Dead"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Left4Dead2"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Left4dead"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Counter-Strike Source"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACwklEQVR42r1Xh27TUBR1vyBhD9HWadVFV4zYUEi+oDFTDIEjhlilzRdgfwGUssRQA2KIGfcLMBRooYi6iy61cVvEHuEL4F6SqBn2e35x6JGuruTn43vee/fdd13A5YjfzVskcI2u1udirt9AFLAHbnCDi4D5wBRXa6c8ZwJipxt8ieAoIgbmcZ/vjM2JgF9NmyVw7SmP1HltLxwtv20BP5s2ZQZHGAlL4hmYPr/tpZpXAT9ObQxw8WW3CxSlLLjwKuxYwPeTG7zgnnLxPWeFDiYuvNhlkF4iCvh2Yn0vOG8OwZPABPUvutStMwv4enydDO6Mg+CpIoTFl1+broSpgC/H1vLgonkInoS25Mobv20Bn4+uwYyX8igAEVx6tSdMFfDpyGq7s8d97QBzgeFJ4WnvL7v2VqAK+Hh4VQu4s4QP4Z6Ky6+/0xh5CAF4aQmZJeDDISGSmJEV/Ctu9GpmA8CVOXLihoB7jihgJuiNEpZTLWzXLcsvcLFeIN+qbijAl4kCpqW6P4QZKEXhfpkwjnwsXD6LYQ34aachS8DUwVqigOKbA0QBwCcKAD5ZQPRADWkLNM+tQb/FGHKpWwD8tAlkCZjcX01NwpLbQ5rZAHDxFLQQuCHgkpNwYl+VnWMYLL0zrGbwcGa00u0BnkEUML63kufsFyJcCXdixWg3pl52d4ReiBBjeyr+SykuvzcatiVgdHc5LZlYoVXcH7N/GSFGdpWxdkIkCJUPxk17AmJDMryzVOKye0FWKFUPJ2SrQWpP+H5HiY+bbcVZoa98NCmQXrDVFQ9t92BwPJ7NDEIMMKH6cZT438D8ZzS4jcfcwD5xa8pjb4awf71gzRNDp32PWYAZBkQ+9f7AoMHaCD14XgT0B4olbjZRNTCxTp2y/bvmWEBfoCjZuiv16rTMynckoK+xkOfi90aovmPGyOUbfwGb3tkhScuikAAAAABJRU5ErkJggg==",
-      "alt": "Titanfall"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.283Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.129Z"
     },
     {
-      "url": "https://fileinfo.com/extension/bsp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.283Z"
+      "url": "https://fileinfo.com/extension/bsp",
+      "retrieved_at": "2025-11-01T22:32:42.129Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.283Z"
+      "retrieved_at": "2025-11-01T22:32:42.129Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.283Z",
-  "mime": [
-    "model/vnd.valve.source.compiled-map"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.129Z"
 }

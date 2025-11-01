@@ -1,8 +1,21 @@
 {
   "slug": "aab",
   "extension": "aab",
-  "name": "What are AAB files and how to open them",
+  "name": "Android App Bundle",
   "summary": "Learn about .AAB files and view a list of programs that open them.",
+  "developer": "Google",
+  "category": "other",
+  "mime": [
+    "application/x-authorware-bin"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Traditionally, developers have directly uploaded APK files to Google Play for distribution. However, with the release of the new Android App Bundle format, Google encourages developers to switch to the new format using Android Studio 3.2 or later. Once an AAB file has been uploaded to Google Play, Dynamic Delivery automatically creates and code signs optimized APK files.",
+      "NOTE: App bundles cannot be installed as Android apps on user devices. Instead, they are meant to be used for generating APK files for specific device configurations. If you'd like to generate APK files from an AAB file, you can use a tool called bundletool. Google provides this utility so that developers can perform local device testing before submitting app bundles to Google Play."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -41,22 +54,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA7UlEQVR42uWWWw6EIAxF7c7c2XR2xs46Q4JE0lIepfjhTRQfIMejoHCsDY02gOUA+F+jUgPLbTcAIi4DAI4MiM4A91sl+pQArzNwWXibgUq2GOiNqwFpiRVSCfiQgccBirgADGY1gAQEyn7eGSbvuBkSzokAFEIw936ep9RRreQA6QJTubWXLDQfQQaQps9W4vS6FADgyzq5PqdbAIwG2OkGUJ8BzUTDALuEt4HqcFtiQDIhANQ632KgWV06oBrQRsCEAZFo5zugA8xmYBTUAayxAMR4fA2nG43AmP8n2FSJiN2NU10ThPYTscXCDxHw0hTX960HAAAAAElFTkSuQmCC",
-      "alt": "Alphaedit"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACwklEQVR42mNkGGDAOOoAbIJv3779T4xmHh4ehn///oHx379/4WwY/////3AsJSWF1S4MwY/f//83TZzMcP/pWyAP6I7/ULf8/4fEBxn6D84G0zB5OB/KhmhmODIri8HCSJsRrwNAPrfMWQax/D9CM4oFhBwAF/uHpJ+BQVqMj+HYnBwGaWlpRrwOkAiaimQIA5KvUC0EO4DhH8K3KA74hxYKELNurSllUFJSIsIBYHuRfAeLAiTD/8Mt/IfkgH+oIQDXCxG7ubqUQVlZmZADpiHFOZ4o+PcXtwOwpQkgfWNVKYOKigqRDoBqVJISZLDRk4Ubsv7gVYbPX38wmGlKM6griKIE9e/ffxhevfvE8OzVB4br955ihOT1VSUMqqqqBBwQPB0l7mPc9BjmVfnD1WhHTWS4/egVw8QiX4bMIAsGfODfv/8M0ZVzGNbsOQt2wNUVxQzq6uqEHDADJdiwO+A10AE+KA6YtvoIAw8nG4OZjjyDhoI4XPzdx68Msm7lDL9+/2a4sryIQUNDgxQHMAAdoEuUA1jNC8F6mJgYGebXRzFEeZrC5UwjWxku3HwIdEAxsQ5AxF2MO9ABlcQ7AJQQzbXlGY7ML4bLJdUvYFi8+RjD5WVFDJqamrR1AAsLI8O8umiGSA8TuJyGfy3D3ccvaeuAVbvPM/BwsTMYqsswSIrwwcWv3n3GYBjWBC43aOoAbOD9p28Mbhn9DBduPAKbRVcHdC3YxdC7aBcwF3yBm0WCA8jPBYjS8R9S6QlS8Y+UXEB6OYDdAahFMZHlAHklIV4HQB1BXEkYNB1JEzAK3NEcEDmB4fZjYAgUAkMg2BKHA0D4LwMDWm16bWUJg5qa2qCvDQe8PTDQLaLAKahBj5SNUB3wl4g2Iaon7qwtZ1BQUMDtABAY0FYxckgwEAB8fHwY/QCq9AvoDUYdMOAOAAA9RlROmjpW1AAAAABJRU5ErkJggg==",
-      "alt": "IPWEBS"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABY0lEQVR42sWWCRKDIAxF4WR6M/BmejJKFNoYtgTT9s/Y4gL/EWLQmj/LKo4VZjxmAKpG+76bZVlKA1u1sEWDa94yAh3HUVzrQH1+JDMHAIng+XVdDe7rvWcDBNrIHdIgUxoBFKa38KUB4MDRgDaFgvM8e24EAtxy8djSfw2ADp7NQ7iQIRfyPfpcD2Bo3ooABqBZLwYwDyKAE04KEOCicw7ekekI1CQCMGkQaQRaENIknM4BapBFl+NrOcCVWgQUVOwF7yTcYhKOIFgKnzIGdQFm76KH7QFAEqqYTwBcEKmhHQGq1m7IygGuNnKeX9EQl7kLoBeBBGJ5AOxKKAXIECwATiX8FsAF8dAcr7tDS4BLtHoOYNO3ka/09JteBLDpClsw3gN8p2eEGCZhqxLeXqs007wXqAHQSlgzxcatz/OR2DlgyP4u3f2w+KX4wef2SCOAEyIIBpzRCOCE+A1DG+CnegH9yS0w+73laAAAAABJRU5ErkJggg==",
-      "alt": "ALBUM MASTER Ver.2"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "InsurancePro"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -75,30 +72,27 @@
     {
       "url": "https://fileinfo.com/svg/close.svg",
       "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.273Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.121Z"
     },
     {
-      "url": "https://fileinfo.com/extension/aab",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.273Z"
+      "url": "https://fileinfo.com/extension/aab",
+      "retrieved_at": "2025-11-01T22:32:42.121Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.273Z"
+      "retrieved_at": "2025-11-01T22:32:42.121Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.273Z",
-  "mime": [
-    "application/x-authorware-bin"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.121Z"
 }

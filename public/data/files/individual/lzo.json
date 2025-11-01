@@ -1,8 +1,44 @@
 {
   "slug": "lzo",
   "extension": "lzo",
-  "name": ".LZO File Extension",
+  "name": "LZO Compressed File",
   "summary": "Learn about .LZO files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "compression",
+  "category_slug": "compression",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Markus Franz Xaver Johannes Oberhumer developed the original “lzop” algorithm, based on earlier algorithms by Abraham Lempel and Jacob Ziv, in 1996. This library implements a variety of algorithms with the following characteristics:\n\nFaster compression than DEFLATERapid decompressionAdditional buffers that are needed during compression (of 8KB or 64KB size, depending on compression level)The source and destination buffers are all the memory required for decompressionProvides control over both compression ratio and compression speed\n\nAs a block compression algorithm, LZO performs overlapping compression as well as in-place decompression. To achieve overlapping compression, the block size of both compression and decompression must match. The LZO compression algorithm splits the input data into matches (a sliding dictionary) and literals that don’t match, giving good results with highly redundant data and acceptable results with non-compressible data, only increasing incompressible data by 1/64 of the original size."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Following are the few problems that may cause poor working of LZO file format:\n\nThe file may be corrupt. To solve this issue, download the file again or ask the sender to resend the file againThe second reason is infected file in this case scan the file properlyImproper links to the LZO fileRemoval of the description of the LZONot enough hardware resourcesOutdated drivers of the equipment"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,18 +79,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.450Z"
+      "url": "https://docs.fileformat.com/compression/lzo/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.276Z"
     },
     {
-      "url": "https://fileinfo.com/extension/lzo",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.450Z"
+      "url": "https://fileinfo.com/extension/lzo",
+      "retrieved_at": "2025-11-01T22:32:42.276Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.450Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.276Z"
 }

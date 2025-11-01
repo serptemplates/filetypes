@@ -1,8 +1,33 @@
 {
   "slug": "orw",
   "extension": "orw",
-  "name": ".ORW File Extension",
+  "name": "OpenRAW File",
   "summary": "Learn about .ORW files and view a list of programs that open them.",
+  "developer": "OpenRAW Committee",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The OpenRAW committee developed the ORW format to store image, video, or audio data in a human-readable format, optimized for fast machine reading, and small in size while being secure and compatible. Typically, you will likely encounter ORW files that store camera raw image data. In these cases, the format contains uncompressed image data exactly how the camera's sensor captured it.",
+      "The OpenRAW format consists of several sections, including Magic, Parent labels, Main data, Thumbnail data, and Child labels. For example, the OpenRAW format storing image data may appear as follows:",
+      "Magic - Contains a short sequence of bytes that identifies the file type (Image in this case) to determine how it should be processed.",
+      "Parent labels - Contains information that organizes and points to Child labels that store image metadata.",
+      "Main data - Contains the image data.",
+      "Thumbnail data - Contains thumbnail icon data.",
+      "Child labels - Contains metadata, such as image dimensions, image thumbnail dimensions, camera shutter speed, and the date the image was captured."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an ORW file with Panaluxe IDT maker in Windows, macOS, and Linux."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "If the ORW file stores image data, you can convert it to the common Digital Negative (.DNG) image format with Panaluxe OpenRAW to DNG converter in Windows, macOS, and Linux."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +64,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/orw",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.805Z"
+      "url": "https://fileinfo.com/extension/orw",
+      "retrieved_at": "2025-11-01T22:32:42.671Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.805Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.671Z"
 }

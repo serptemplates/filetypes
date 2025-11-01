@@ -1,8 +1,24 @@
 {
   "slug": "xexp",
   "extension": "xexp",
-  "name": ".XEXP File Extension",
+  "name": "Xbox 360 Title Update",
   "summary": "Learn about .XEXP files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Xbox Live users can download Title Updates for their Xbox 360 games and other apps. These updates are intended to fix issues and errors with the games and apps. Xbox Live delivers Title Updates in the form of XEXP files. A user's Xbox 360 automatically applies any downloaded XEXP files before opening the corresponding app.",
+      "Gamers who are modifying an app's XEX file may want to manually apply the patch a XEXP file contains to that app. For example, modders who use XeXTool to modify XEX files can also use XeXTool to apply the patch a XEXP file contains."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use XeXTool (Windows) to apply the patch a XEXP file contains to an associated XEX file. To do so, enter the following command after having decrypted and decompressed the XEX file:",
+      "xextool -p FileName.xexp FileName.xex"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/xexp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:50.007Z"
+      "url": "https://fileinfo.com/extension/xexp",
+      "retrieved_at": "2025-11-01T22:32:42.892Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:50.007Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.892Z"
 }

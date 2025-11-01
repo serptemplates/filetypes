@@ -1,16 +1,44 @@
 {
   "slug": "rf64",
   "extension": "rf64",
-  "name": "RF64 File",
+  "name": "an RF64 file",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "A new ‘ds64’ chunk is immediately inserted (before the FMT chunk), after the 32-bit chunk size field at offset 4 is set to -1 (0xFFFFFFFF) in RF64 simplest form. By using a simple sequential table mechanism, the DS64 chunk will contain the data chunk(s), pointing to additional DATA chunks. The first 4 bytes of the file are then being changed from ‘RIFF’ to ‘BW64’.\n\nAdditional chunks defined by RF64 files include:\n\nBW64 : Replacing “RIFF”ds64 : 64-bit data size, first chunk under BW64axml : Replaced by BW64bxml : Similar to “axml” in BWF (ITU-R BS.1352-3), but it is compressedsxml : XML data related to soundchna : Info of the channelJUNK : ds64 placeholder"
+    ]
+  },
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.456Z"
+      "url": "https://docs.fileformat.com/audio/rf64/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.284Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.456Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.284Z"
 }

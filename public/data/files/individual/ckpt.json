@@ -1,8 +1,24 @@
 {
   "slug": "ckpt",
   "extension": "ckpt",
-  "name": ".CKPT File Extension",
+  "name": "PyTorch Lightning Checkpoint",
   "summary": "Learn about .CKPT files and view a list of programs that open them.",
+  "developer": "Lightning.AI",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "PyTorch Lightning is a Python library that acts as an interface for PyTorch, a popular machine learning framework developed by Meta. It allows developers to run deep learning experiments and create scalable deep learning models.",
+      "While creating a model, developers can save that model's current state as a CKPT, or checkpoint, file. Doing so allows the developer to revert to and use that version of the model in the future. Each CKPT file contains everything needed to load that version of the model, including its current epoch, global step, and LightningModule's state_dict."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "CKPT files are not meant to be opened. They are meant to be loaded and used as PyTorch Lightning (multiplatform) models. For example, to use PyTorch Lightning to load the model a CKPT file contains, use the following command:",
+      "model = MyLightningModule.load_from_checkpoint(\"/Path/To/YourFile.ckpt\")"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ckpt",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.541Z"
+      "url": "https://fileinfo.com/extension/ckpt",
+      "retrieved_at": "2025-11-01T22:32:42.385Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.541Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.385Z"
 }

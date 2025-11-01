@@ -21,8 +21,14 @@ export function transformFileTypeData(raw: FileTypeRawData): FileTypeTemplateDat
     raw.technical_info?.content?.join('\n\n') || '';
 
   // Build howToOpen section
-  const howToOpen = raw.how_to_open?.instructions?.join('\n\n') ||
-    `To open a .${raw.extension} file, you need compatible software that supports this file format.`;
+  const howToOpen = (() => {
+    const steps = raw.how_to_open?.instructions;
+    if (Array.isArray(steps) && steps.length > 0) {
+      if (steps.length === 1) return steps[0];
+      return steps.map(s => `- ${s}`).join('\n');
+    }
+    return `To open a .${raw.extension} file, you need compatible software that supports this file format.`;
+  })();
 
   // Build additional sections
   const additionalSections: Array<{ title: string; content: string }> = [];
@@ -39,7 +45,9 @@ export function transformFileTypeData(raw: FileTypeRawData): FileTypeTemplateDat
   if (raw.how_to_convert?.instructions) {
     additionalSections.push({
       title: 'How to Convert',
-      content: raw.how_to_convert.instructions.join('\n\n')
+      content: raw.how_to_convert.instructions.length > 1
+        ? raw.how_to_convert.instructions.map(s => `- ${s}`).join('\n')
+        : raw.how_to_convert.instructions[0]
     });
   }
 
@@ -60,7 +68,7 @@ export function transformFileTypeData(raw: FileTypeRawData): FileTypeTemplateDat
 
   const converterTools = availableConverters.map(tool => ({
     title: `${fromExtension.toUpperCase()} to ${tool.to.toUpperCase()}`,
-    href: tool.route,
+    href: String(tool.route || '').replace(/^\/+/, ''),
     description: `Convert ${fromExtension.toUpperCase()} files to ${tool.to.toUpperCase()} format`
   }));
 
@@ -71,7 +79,7 @@ export function transformFileTypeData(raw: FileTypeRawData): FileTypeTemplateDat
 
   const toConverterTools = toConverters.slice(0, 3).map(tool => ({
     title: `${tool.from.toUpperCase()} to ${fromExtension.toUpperCase()}`,
-    href: tool.route,
+    href: String(tool.route || '').replace(/^\/+/, ''),
     description: `Convert ${tool.from.toUpperCase()} files to ${fromExtension.toUpperCase()} format`
   }));
 

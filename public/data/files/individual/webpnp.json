@@ -1,8 +1,23 @@
 {
   "slug": "webpnp",
   "extension": "webpnp",
-  "name": ".WEBPNP File Extension",
+  "name": "Web Point and Print File",
   "summary": "Learn about .WEBPNP files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "WEBPNP files are often distributed using the Web Point-and-Print Protocol ([MS-WPRN]), which defines a method for downloading print drivers when a user clicks on a webpage link (an HTTP request) or a client program requests a driver. The website locates the appropriate driver and then returns a WEBPNP file to the requester. Once downloaded, the file can be opened to install the printer drivers.",
+      "WEBPNP files may contain the following contents:",
+      "Printer driver and installation files",
+      "An .INF setup file for the installation",
+      "A .BIN file specifying parameters needed to access printer configuration data",
+      "A .DAT file that includes any other printer setup data",
+      "WEBPNP files are executed by the Windows program wpnpinst.exe which is located in the ~/​Windows/​System32 directory."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +58,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/webpnp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.988Z"
+      "url": "https://fileinfo.com/extension/webpnp",
+      "retrieved_at": "2025-11-01T22:32:42.866Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.988Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.866Z"
 }

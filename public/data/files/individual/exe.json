@@ -1,8 +1,35 @@
 {
   "slug": "exe",
   "extension": "exe",
-  "name": "What are EXE files and how to open them",
+  "name": "Windows Executable File",
   "summary": "Learn about .EXE files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "mime": [
+    "application/octet-stream",
+    "application/x-msdos-program",
+    "application/x-msdownload"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "EXE is the primary format software developers use to package and deliver Windows programs. Each EXE file contains data that Windows uses to recognize, read, and run the program the file contains. This data is saved in a compiled, binary format, sometimes called machine code. EXE files also often contain additional program resources, such as the program's icon and its GUI graphics assets.",
+      "When you double-click an EXE file in Windows, Windows runs the program the file contains. If the file includes an application installer, the installer will open and start the installation process. If the file stores an application, the application will open. Additionally, if the file contains a different kind of program (e.g., malware), that program will run.",
+      "Developers typically name EXE files such that you can tell whether they contain an installer or an application. For example, EXE files that store an installer are often named setup.exe, while EXE files that launch an app usually include the app's name (e.g. msedge.exe for Microsoft Edge).",
+      "Developers may save Windows application installers as .MSI files instead of EXE files. MSI files are similar to EXE files, except they always contain application installers. They never store Windows applications or other programs. Windows always uses Windows Installer (a utility included with Windows) to open MSI files and install the programs they contain."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "In Windows, you can run the program an EXE file contains by double-clicking the file. However, do not double-click the file unless you can verify its legitimacy.",
+      "Advanced users can also extract an EXE file's contents without running the program it contains, using archive expansion tools like 7-Zip or RARLAB WinRAR.",
+      "The EXE file format is designed specifically for use with Windows. Non-Windows operating systems (OS), such as macOS and Linux, cannot natively run programs saved as EXE files. However, macOS, Linux, and other non-Windows users can run Windows programs on their PCs by creating a Windows virtual machine.",
+      "In macOS, you can use a Windows virtual machine created by Parallels Desktop or VMware Fusion to run the program an EXE file contains. You can also install Windows on a Mac with the Boot Camp utility bundled with the OS.",
+      "In Linux, you can use a Windows virtual machine created by Oracle VM VirtualBox to run the program an EXE file contains. You can also use Wine, an application designed specifically to allow users to run Windows applications without installing Windows.",
+      "In Android, you can use the Android version of Wine to run Windows applications. However, Wine for Android is limited by Android devices' architecture, and it can run only some Windows programs. In iOS, you can use the iOS version of Turing Software UTM to run Windows applications."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -84,28 +111,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.305Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.147Z"
     },
     {
-      "url": "https://fileinfo.com/extension/exe",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.305Z"
+      "url": "https://fileinfo.com/extension/exe",
+      "retrieved_at": "2025-11-01T22:32:42.147Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.305Z"
+      "retrieved_at": "2025-11-01T22:32:42.147Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.305Z",
-  "mime": [
-    "application/octet-stream",
-    "application/x-msdos-program",
-    "application/x-msdownload"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.147Z"
 }

@@ -1,8 +1,24 @@
 {
   "slug": "run",
   "extension": "run",
-  "name": "What are RUN files and how to open them",
+  "name": "Linux Executable File",
   "summary": "Learn about .RUN files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "other",
+  "mime": [
+    "application/x-makeself"
+  ],
+  "containers": [],
+  "related": [],
+  "how_to_open": {
+    "instructions": [
+      "To execute a RUN file on Linux:",
+      "Open the Ubuntu terminal and move to the folder in which you've saved your RUN file.",
+      "Use the command chmod +x yourfilename.run to make your RUN file executable.",
+      "Use the command ./yourfilename.run to execute your RUN file.",
+      "If you receive a \"permission denied\" error after performing steps 2 or 3, you can try adding sudo to the beginning of the commands referenced in those steps (e.g. sudo ./yourfilename.run). Adding sudo should give you permission to perform those commands."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -61,64 +77,45 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABGUlEQVR42s2WWw6EIAxFYWW6M3RnuDImNakhpE/sMNMfjKI997YgOaXU0g8jSwCt0Y+u67rHWutz7ziOdQDWAFCAlOCmAM7zfK73fb/HbdvYueEAOWfTXC25CgD2UcpGgNnkKgB8oJQiArxJPg0ACaD2lDue5CoAp1ALS/e/AoAScP3hBXIDjBbDNVcOCtwNMPaBVmPOGe49FWB0wdJknpWxDICyfxkANCFu2VMAfR9oANTeIb2zBICzfwmAZL8ZAALrqgFo+8ZyAMl+FwBa6wHQ7A8HGOuvqXcBoLq/Buj/AyEnIgpAqmtff4t6NwAqopR59oppAM0dr/qvAISfCS3R2+9RHwaA6r3JQwBQ/UzyEABY+9YjOBUfaSU0EJlE+/QAAAAASUVORK5CYII=",
-      "alt": "Rune"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEqElEQVR42uWXeVCUZRzHv3twysqlgoLALobKKlde0eFRkU5T0aCljNXYMaxazuSoo01NU3RNx4ymlgeRjmlZkzpOeJSOSIQiuAMjsCxrBEIQRyDLtSC79Hue9d12l92FWcT+6PvX7ns8z+f53a/Ic+a2QfyHEo0lwO5UHeSBBsv/mwYp0r+dORTg/CulWBChx2ltEFYcVmLQCik5Uo9w/z7o+yQorpOhtcdjRJsviW7H6RevDbk+b1cSShv9bAG0m64gikjza/zxaFY8TAQQ4D2Ad1NqkDG/wfKwptkXGcdiUFg3flgAYU17fZY3FW+cldsCVGwsQnRwrwXAQ2JC9nItls9uQaPeE+oGGeRBvYid1IMKgli0NwEdZE5nemluI74g8wvadkaBD5dW89817d6Y/uk81wCLFGbz/U3mTsmKQ1nTOITI+pGvKkFEgAGL9yWgoNa5FaxPn1U0GR9fnIoquubIDQ4Bdj2lM5/iUhhe/yna8uI3KzVYQVbZlBONnQVhDjff+GC95bRMMXTaWjp14Xo1EqZ0WaDWn7jHMcAL389A4atqjPca4Ka++qfMspiK4mHHk9eRUxlMwRoLo0lkszmLm0o6aaDPAP/f3iuF+vb7bH3BKux66HvJjgF25Ifjh9XlfGMG0G/8d5MZE3s4nJ78n/T5vWjp9nB5eldi6fhj2cShAEdLJ2EnuSC7OBRrj8fYvCTzMnJTKigg47bPRVWrz4hOLygprNNyn23OIIYANHV6Io38/PYvUfgoN8JmAYl4EHkZJZgT3oml2XG48HuA5R4rOi9T3AhaRz7+inxtLftnQjKTzQC6zVd4dLcRdRARsor1wJeJ0FmdUNCBZyqxKr4Zb/4sxycU3UyR5FvrKLdPNUFps1pwZJXGBpID1G69jFBKM0HvnIvCBxci4EjCIixGHtkfj55bYpxacw0PT2t3eXpBfe/nWX6XNPiZATTkAgW5gCm3OgDLyLwmJx2C+broNTW32EIK0ss3hq+KrmQTA01d5P9DShTVy1y+dDS9AqnKVqgoSL+mYL1jANa9wJXWLmjA9ieu881VdplyVwDkQQaoNxSj7qY35u9OQi/FwUjkT+5jxai7X4LqNh++j1sAYqpNORR4i6lnpB6ahTPUxocTq6Lr7mtAzIQeKm5iXknPVgW5B8C0klLxIKXkOV0gHj8w2+WzqxObsD9Ny8HrO7ygbfHFllMK3uTcBvCWmpBLRSlhchcyKA4OXnUcjPdHduDY8+U8ezLPR2Jv4RReb4Q+4jYA05o5f2HP01V8Snrsdtu2lpQqpzBtsbqw4eQ0DNg1sFEBjPM04jC16GXT2/h8kP5dLB9gBGWm/IEtC+t4z3hoTyLvD/YaFQATywhWCVmDYhvlaIKhbfXlrlFRurK1nj2ixMmKYIfvjxqAKZEGDeYKYeAQxMa2zRRszuLjjgEwsSaWHNUBZUg3Qv1uUUOT4ET5BJsJeEwB3JUNwK8EkPK/BLhB8wAbu1maXKJ0MgyIIRKNfnFnYkXst1p/PtBwgOa3CnijuJtiAEv2xZsBjj9Xxr//jIMiXqlYsxhL+UiNuEiDz1b6YhrTr+OR6B+mNaC0NFroswAAAABJRU5ErkJggg==",
-      "alt": "Race Technology data analysis package"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABtklEQVR42s2XW7aDIAxF48h0ZsSZ4ci4HDSYYgAft8vmo3UhcHYeRB2IKDC9Y9Ad4k9wIbwCMA/DDwEsy0LTNKWwfNOwv/eexnE8Ang/kXNf8HTmTXr7Y4467rsAq+gqxlYk4jjuPQIQEef4MIZ0IsxD9NKyEDVvRSB7VniTPEowTs2d83g5/3IK5oFy7o5Qc/ZYW837S0UIYS4WWgAlWM370wAItd4AV1a/wDqYBoM4rIyKQHUBtNdl3rSAVHjI6/1aDxXYdR1HsA6AlTpsLgIfYAKio1WpFdQEpjUBsOVBhLmaT8tCJVU+poT6AMmhj7xLmz5jvfCvtdEAyOJFzq3QWzHhfYPDfXCBowtQHjdMZCO3GqysATs1HYD0NDQKyDrnAlY2J4G1bC3kqQ2gC0iOlqu0Rwus1v1OAaBKpYAkvLUjVYOrAcjxawPEDREFXfHc6P/Vs74p6qfkvo7aAFYPsDrgpApV1sIs0VMArYeHjCMyOuxXhG8DiIDf3hcxZwc5J3oKoCweKUA+9Hl69NrWBdACmJxe3dKNZ8JNAMqe/o/ILYAtwO8A/MSHyRv2GwD08uf5H+u+KR9KXwNsAAAAAElFTkSuQmCC",
-      "alt": "Virtual RC Racing"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEhElEQVR42sWXbUxTVxjH//deuO1qSwW00IEjOCgugHTaOJ0JLjNEjYtNp5WMYIwajYYETPSLxrgtMfE98YUYPxiCL9sXozHywUSNiX5SPpDiNNlgE6TFsCrlpbSlb7d7OCAz3e2FdS0jObm95dz7/53/85znOeXsdrsmFov9KEmSkeM4zPUfZ7PZvm9oaPjBZDLNuTgDsFqtPzU3N9cJgoDu7m6Mjo7OOcDPBPCd0+lEa2vr/+IAA3A4HGhra8OtWwJGRmZ8LG7wCve84vx/ALS0CLDZlqOszAC3ewwejw9+f4hGGIFAmF39/sjU5wgboZAk83J+BlA+McDevV+houJjvHkzguHhAOXFOI0gORNk14nh8Ux8H0IwGE1KWBFg82YLSkoMJPheePLqdvswMDDGQCKR2Czs5meYw8sBiKipKUdx8YJp8VevhtDbOwyfL5zUKpU+ywBosHp1KQoK9BgcDKC93YWhofGUCys4oMOyZUXIyZmHp09dlAPjaRFWcCAbS5YY4fWG8fr1cFJxnd2WTJiEC2A05qC/3wtJQtqEFQDywHEiwmEphcL/KgQFtMX4tAsrOFAUB5C8vbOpDzIAiwlASLuwQghMHwD8N3uT3AWfJXAgtcIKIaiMcyB5e5Wf5RMBmKcAeOh0Itaty0N+vho9PQE8ePCOWu/ftSE3V4WqKh11RKCjY4xa9GSDqqzUUtOK4O3bSBzEhyOhAxYGsGpVLs6ercDDh+/gdAZRXq6lFq1DbW0n9YgotmzJw6lTpVCrJ14GXLkygKNH+9iLGxqMiMU4XLrkpppCIpxARU0OQhbgC2Rna+hkZEF9fSeV5CgEgaeuKMFuz4fFkoXjx/vw7NlydHUFSOwPjI1J5IZI7sSojGvgckVw8GA+Pd9HLmbg3r1iXLjgoXf6EI3O6MCX2L+/lCwMM9tPnjRRWQ7CZNJgxYoOPHpUhdOn+3H5cgkJdNP96PTLdu820LMGLF3aTV20hOb30Mp5OmHp0dg4HyoVcPGiFzdvBqnSJgSoxo0bn+PAgd/JwjIKg4tZ3NhYSLb/iidPKkncjTNnirB+/W94/jw4bafBIFIfEdHZGcLVq0acPz9KuRGaFKIwbNyowbFjWXjxIkLw3kQAX5NVZuzY0YXHj6uwZs0vqKszQK/PYKvdvt2A69cHaRWf4sSJP5m1crHds0cPUeTR3Oxj99XVKjQ1aeismUkOBgkwnAighpLLhLt3h7BvXz7LgUWLVMyFjAweO3c6WYzv31+M0lIRt297WX64XBIdXGLYtk0Lq9VDCSvi8GEdLcRLc7JQWCiQc2FcuxahkxWnlIQbKOP1BPEJdu3qxcKFIl6+DMJsngetViAXAtN2HzmSi5UrVaxtt7T46RAr0XnyIyY6kf3t7fOxdq0PW7eqKKwRjI/Pahd8Q9tQxKZN2Th0KA8OR4Dtc7NZjTt3/Dh3biRuXwsy+3yyjjQ1qSicUXKHSzhXBuBbAshk/1SrBcpoDTIzeUqc8NQPFj6lQwagljkQX7Her0p+tVwqAerjANI7/gJk0Nbn8xpywQAAAABJRU5ErkJggg==",
-      "alt": "TeraByte OS Deployment Tool"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Bio-Rad iQ5"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABAUlEQVR42u2XUQ6EIAxE6clXT96FCEvBglNF2Q8nMRACzuuQxkjs5bzIy4EKZyz7e6IzL5wOMFJnATidnQHgzRe3PdchTgKU558EENWPSYGMbRgBkgYATE/AAFBVPyaFF+AFQNuwYX4dAk3ADIC2tgEgBLX656OM9ASALQFURgCt+rUFAH2yEYCq+to8rRXXwMK/CwECyC9wnYBcE/7tZEoAoA1FAq3q17hx8W71VfVTMFyBdv9uN+cIS2AKRwAm8zwPBylC/GxUCACAnU0ZhKMnOTngAB3zduXavi0NHUID4DygRsdQAqIAkV0g3W+VBPmfP6MZ5lUa7STuXJ8Su9QXMN77HVU+6hYAAAAASUVORK5CYII=",
-      "alt": "Chrom Data Review"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABo0lEQVR42tWXAY6EIAxF7cn0ZsLN9GTsduVrqUWKo5NsEzOK0P8opYw0dFgIIfX0N8aTbqOOwWmaplvC4zgOMUb2cdJ0AbD4PM+3Z87i2U8/AMTXdb0NsCzL5wCYRY8B/DGA7MBl3PclgNQYlvK4+B4AnGsjou8DEMXKuNdyoATgdisaaO8GYEHZsZUDSLZHACC2reUBcIacxf1DEZAFJ5dcsirg8Z6d1atjVxJKce7MAnxZ4RWAzbrgArDEYYA4zy7sTvmguTINIP3x6Ug45bQ4BnGbFMn5sTvynJDsS4pDj58JSYZGbRBgiE085KvPtDjaikyvVbcjOhAOzfW3TE9yBwBEvbwOatb+HJCmT9QC4Pcx2dsKYS+GduUATC+xE0BTl9nsXQoW/xhgWSYzo7FdsWOsrWetP4fXDcDimImOQC0KtXeyILkAIK4B+Ep/+wcHVPkb47V4cVPbBZy5ukDd2YLCrg+jDgD3N4WL5l8AeMQ9n29mErYAvOKbj3NC4jfvu74k1NQ18dppehU9qjmQju6Ie/6M6IartWt/ibTN9PED4ar3KrIb9WoAAAAASUVORK5CYII=",
-      "alt": "Rune - Halls of Valhalla"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.380Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.208Z"
     },
     {
-      "url": "https://fileinfo.com/extension/run",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.380Z"
+      "url": "https://fileinfo.com/extension/run",
+      "retrieved_at": "2025-11-01T22:32:42.208Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.380Z"
+      "retrieved_at": "2025-11-01T22:32:42.208Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.380Z",
-  "mime": [
-    "application/x-makeself"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.208Z"
 }

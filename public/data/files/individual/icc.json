@@ -1,8 +1,21 @@
 {
   "slug": "icc",
   "extension": "icc",
-  "name": "What are ICC files and how to open them",
+  "name": "ICC Profile",
   "summary": "Learn about .ICC files and view a list of programs that open them.",
+  "developer": "International Color Consortium",
+  "category": "other",
+  "mime": [
+    "application/vnd.iccprofile"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The International Color Consortium was created in 1993 with the purpose of establishing and maintaining an open color management system for seamless colors across devices, operating systems, and documents. The ICC color profile format was developed to help users match the colors on a computer screen to the colors in printed and scanned documents.",
+      "ICC files can be imported by various image-editing programs, such as Adobe Photoshop and CorelDRAW. They can also be opened by Microsoft Color Control Panel in Windows and Apple ColorSync Utility in macOS."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -61,64 +74,50 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABi0lEQVR42sVXAZLDIAjEn+VnZ3/mvczWpBpAQNTcHDOZdEjNLqsrJgBAhr+NMHqYM6MQuiG5/nXlPiZwQiASdMgWuE8BApf/SQE99hSIMZZLJdHWgM3TBkkpnVeMPy2f0u83F8k0fHL5mw+EgDz/fvASFwFolV+5m0AFx/lHXHCD2Qp8fmdOasEFgCSPHYkSx3E0VSogVUog0OAGLqiV0YqBELCCT8m0CyQgXrGHRH3PsgtifI2qHOYIgZZQ5C8VlkotJdjKdz1zuaBfQHQtcFm98jcCZ52GCyy5Z8ClcLugkCirnpPZARcJ9GG74BECMy6g+4AOjvMWwaELKlh1gWfhsVyoW7CLACeBHSABeQjgJiQSOEV29gIu7Q6BoujSiQhvKtb8XhsXqAqKBPrQ+7+HhEWuvMftAr7zPU6ghiT/aNudJYHd5OoF0olHa0gz4ABLJ6I1cG1BLrnA2hu8wCqBPsYuwHdP4DHTvQB3Q6kxOcHbKXnju+B+PmpQkkrkw8StnUNSJad+F7wB+vXM22vDvPIAAAAASUVORK5CYII=",
-      "alt": "CodeWarrior"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJiUlEQVR42t1WeXBV1Rn/3eXd5e152bdHQoQEB7QRUahsUiwt6rQ6QG0BteOSgq3acSljnbGUtqKirWMXW4pdpmDRolgpKErdoBgFEhMgqCRkIWR7+373fvfxQnEG2tp/nOlJfnPfOffc8/2+5Xzfx+AzHsz/FYGt5Y4FlsSs4kWumRe4EothBB2GnEqb6axijliqueGOMf1X/zWBHReIQtbCOofMrzDBulVFlwzdTCJnHpVV85esieftfTkn+yPJ61gdqA54i+rr4Q7Wgff4YWg6MtEIwidPYrh3EKPDYWjx3AFWMxfcGTGS/5bAC/Xi3PK6wK7AlAudcn0jTBNIn+pHorcb2ZFhKGkFatwIyX7O6StxOT1V1fA2ToG7sRlicDJYlx+mYUCLhpHo78bI4U70dnRguOcksvFMhMnqlfclTfWcBP4yrUysLBfHambP9fhnLQJfWgkzEYY6eAKZ451IHWuDEh4FS6wcLiecpLGz4ULITTMgNDSDK64GHBJgkAPScWSHTiD8wQH07t+LE+0fIDwaBZfWdt4T1q5mvvIIc6Mg4c/P32WpZ0w/1bchOLX2nrJZC+CeNhOsQ4AZH4YRJYROQR3uhxYLwTaLw18EKXgBhJoLwNVMAVfVBMZbCsYhwtI1mMkosoPHEWl/DwOte9HXcRhjY1Gkkqoh5Qwns+xnbLJU8R39xfeil9vCle0/ZN9Y+/ixyqB/kj9YC2dlDTiPD6xlwDIUMKSVZUPXwZD9OLcPXIAEunxgnAEwvnKwNgHZC4sI6mS5bN9xhDoPYLCzA6d6+hAKpxFLqXBr5mpm9U+LYpenpnicXfzKpVve3kIEuDfXbkiVloiSp8gN2euCw+MBK8lgRZGsIYERJbA8R2YWaI3mvIOiiYVl2Yx4eu+GJbhoblLQxZAeHkKoh+KAAnFkmIIylkE8rcOlW5uY9jXf2FM8oWrBW6/ujaayubpvrro++fpDj+rFPoH1+QU4PU443C5wsgu6YJFMPxHyniZDvmM4Dpb9R9oqqWw+8iWnRMItmKoKJZlAMhRDhPw+RhgNpRFNqEgoBty69RzzTsu1rRcvnn3Zwd3/wMHuj3rvfaWr/vlGSSnxOYRiIuDyihCJAO90I9eUhkAWUfpSkIUJEMSKvOaaaUAPOCCWWdi3bT+aq+rh5HnouSxyiSQSkRRCoUTe9KG4SubXkFZN+Cw8wrzUMv9wzTWNU9ocPeyWJ/fpUVUruetj5khpEV9dSgS8XgGybQWXG8okDtULrgDraaAApDhgOTBCGfm7DFAToDuH7T9+AleU11KsaNAyWaTjScSjGYzmheeQUDnEVAuZWAqlwEzmto3lfU3TJgS9vgCeWreHAtv4/l1vcI1eP39juZ9HwLaCW4bgdkIrkVGz7BIKthryuxvDrTux/+0YrnnoMQh8liI4gi33rsXCuhoYikK5IoNELI0IERiLKQgnNEjTp6O6ugyd2/aE7zsZK2FaNlVsFVzc0mkXX8g8u3EvzCHhxFppxre697yzo8zPO0qIgIfcIDtlQJbgv24CvMFGCrQyZKyJ6HztVVy6ZAl4Iw6V7vzWbz+I+Q1BqNksMskcovEswnENkaSCfpZcOSGIBTOaoI6G31q46ZX5zHeerZqtZqx3Jl9ci32vd2GNuAKSLphdr/w9aQ4c9xV7BPh9PBEQKbeIUGtENC29iK7dBBi+K7Hvt+sxc/lKiI4M+g8dRNfvdqOObk02nUUipSBGPo+Sz2MU9R9DQN0lU7F8+TKcPNb+2qx1f/xiPhPe/lid8iXPXKHMLEJP50cQMrqlpjXoBw9YPplh/R4HPDIHQaZr53DAuziAqkspQdWtwuvrb8GcFdfDwSSw7eHNaEiYMDUDKRIetwWndKSyOtKahe6cgUlzpmP5yq+j98ih1jk/+dPMPIEX1i1Jz5j4eefena/iQzmJ1tHjuNnbDG1sLGx+1OXzux28W+YhihwcDo7yvAMTW6ZD5Sfh0K7dmHfDHJw40IFDm9tQRzkgm1GRzGhIkhIJEpoj4TnDQkgzreC8GYkbln/N19154PD89Vum5QlsapnX5UxJTbMXL0JXTxt+8OZ2fHfivFh6NFKm739/jcstrHXJHCMKNgGWcg0L081j2p2z4K0KIvRhG7ZteBdNghdqzkQmp+W1TmUNZHXKDyRctexcYW0uXnjF1UuWXOfvP9pGdKyv5gm8+9jNV3MxbUfvUAIzv3AlrvrDA5juKR/YvK0vmCdYITztcvK3CwLHODgWPIHlGBgiUPFlD/ZvH0at4YJBFVNRSahCZVixNTepcltEwIQL2DV1+bXvubyehxouakas/xjSmdzBM9XwyQeuzEyOeuXixqlY8/LT6JUiAz1/s4Lj75+pFLaKMr9MoMzHUhGwP2TomSEBnHW6rmu2pqSxLVixn8ZpAk7LeunSlqW3TP7cZaFkaAiekkqkRk4gm1PNMwTufnjSzyvaPKujUoJprx7Ah+2ULYBLendZ7eN7NlUJuwVRuIqzCZC2drql/3wqtrXXSZiW19hCllKzSr8lw9x8f8JYcXh9y019/WO/1w06dO5sRAZ7MDgw8q+G5M6tVW4zwsaFSpNNRHN488WoSQXvid6d1n1n9wrPVMvP8bKwhHIgY5KmdtNhkkDDOi2caiQUuwoyrOXQ9WfuiWq32t8deaTF19nR00YFqy5vOhrFpZ4jn2hIbttY0S/5rFpR4vHWX4cRHjJH6KxqsgLpB5bAE4SnKqRHvW6phc7Jk7BI/dMEKCPTBtU2jKI+fn9EfZCmOsH+3vpPTSl7228qNope3Owvkdn2fUM40qpoqVOoH2u3xug91Vw4CRRP8DxQLLQ0BFyr6EawNj37dLIuBaChH4mk7v51Qt9B07S9hNO89HORYM56MlfdEWiedJn4vlzEMrFQFq0vxwYOv2guonejhT1uQoBQQqic5eRmraz23uR0SZKtYiySzjw5mHiwz8BRmtqkYwS7+cycj8QnLGALWLjac6uuWbd2tyrWQIe2hdaeKxxEHQi8BQLU9KGeQGURFfeWu+aYpqk/MZZ9mea9hB7CIIH6NsQJKbt5ti9KwR3nJMAUIBXMzRYYa4V1uUDARygrkKgt/JYKGoYJpwrCbatFCYmCK5Sz4uGcBM43mIL2n4iBAhlPYc6Ph0DB5MmC1uMxoJylvfVpCYzvO3MLCGIBQmGNLRxuFAQpZwnVCuvm+Q7+NGPcTWzBKmwB42Ncw3GB571+/yuB851hnfX81B9/puOfk2iCTHqaBzEAAAAASUVORK5CYII=",
-      "alt": "IconLover"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Sib Icon Editor"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACn0lEQVR42r2XvY7UMBSFnR6omXYEghYmfUJHAa+RaXgFNJkHoGOLuKGHFsQiIZEIygR4gilZOiS01OZcO544Hv9k2YS7Oooma9/z3WvnL1mv1+JwOLAF4j50Af0ODUog0Vabf8jfQf556Zb+zx5BX0MQ1wAIB+cd45IhDLEogDxGICSAfbKYiWfT59lyPwQB3IUeQ3f636RnVRE3KCqm+DGjqRuWZRlrmoblecZq/K7rWo5b/Si9EGR2A7rdH/W5FfQuBFFwoXqXYLgQ6ogTiVApyn3JdrudHLvf770QiSf/TegB1LggTPMGVWZ5LiF09cRDpgSgzuVM57EhfAAUt6CH0CcTYmh7b4626yaQGQW1XldvAxgQOUGEAKSTfYVsinZsjj+h2sE6vmGX914cAbS5mWODnZmkkuA59DqJmXddJyfJyfLmIlhXpQDp+ktISIiWqzFvL56eVK8BKM8W5feX5hn0KomZ64nSXKj2dzw9Dky3LQyG3wQg+wtj25xzzihlDGBkThtOViwB1NrTTqeKU3RBV67NtbEOyqXNKWIAJ+a8SHDEREpktl1uPLXuJkBZll7zGIBljoHFsHGOe0CM19wM2oC6epd5CGBkboauntrdX/yM1sBc92E/DPNFW5yYBwFowpzhMo8CuDrgqnLK09OX61oA5iaLQSwKQAxPVv8ZwDSnGx2eNUGIxQAo6EAKLcOsAPYNZgpECODjrzXDm/jLKwNo0ynL4MplVH8OfYbeRAFca2+CULi6YOcyzD8w9TLyHvo2GcBsux0xAJ85dDl5E5q32ZCxDRAyp5NXvhNODcoVMx8BtJWinTP6dz+v+RFgiQ9U5KRLTZueu8zNDtgfJ3MEPbvp6/gL9N1lbgLYHydzAZDpT+iPb9Bf5wkjOUcgV6QAAAAASUVORK5CYII=",
-      "alt": "ArtIcons Pro"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEUklEQVR42rWWT0gbWRzHf4OJ2VXRqL3ktLIiweBeTHoJbexBvGwQRKQg7al0cmkPJZdYiqGy1LRsqFDEJrUg2F0oWgRJEcRDVRQxjdAiStHTJpjaVuN/alKZnd+z72X+PNMunf3C5L1572W+n9/v/ZkRTCYTGChJURc4bVoJgoEAUk9PD3R1dYHZbKYApO0sdXd3g1EAzBxFAeQ2ibZpNT09Dc3NzYYAqMzpg1HK9v8LQGc+Pz8PbrebPNwwAL/fL4XDYYHTJeVyOZ05FYXgCecf9U0ANA+FOiAQGAEOBMkAmqL5WcL+pqYmdo9r5MuXO2Ay/VEYoK6uTlpZGSZ1BEDxIGRIqKioKJhuFEJQcxQXAE1pfW1tDXK5BVW/MhOYHSxphkKhEBcATaempsiUUHMVgNaUSmn+/n0J/JTZAXf7NdZGs0PBCgGglOZKAO5JlUy+JYafK62kpGq/cQcePLgMtSW/kXtrfbEK4v59PYTJZNaZM4BIJCKJoqijpfr4doaUb4qzUJoplc/OJXj0aB4sFguIolMF4nBcJfXV1RWN1V2d+b17xacnIQLY7XbWoV2tVVVVUFZWBpWVlRCJnIIiwM2bbtUDE4l8va+vTwOiBnj16hLZNQygra0NTk4+kc537z5wYVwuF1np1dXVBAavjo5fuRCYUYfDwQVAc5QKoLX1oi5FRUXn5EW2woXx+XxQU1MDLS3VsLh4Io8tYsYotXkegJp/F4BWvMz09vaq9n4gEIBMJgOzs7M6AKX5NwFSqUM4//I8qb+o7wO3p4X17ewIsLm5yUDQlArNj4+P5awsqrKHoA0NDey+vLw8D4DnwPO//pTQJDh+FaLpBKR9p3+2RRzgtDlBdIry/EbhlucZe8jQ0JAuSwiA1/LyMgPY29uD/v5+FQAKxzAAeYCUgCgxR1EAJQTqmQxweHhI6iMjIzpzbfRojm2Dg4Nk8VospWz8xsY/agCcBjSjWr28SsorM1cg8RXstfc1KSVJgtHR0YLRU3O8hoeHwWq1ssW6tbVF34aCDkC0iXKqb7EHz8w8BF86Cs4NJzy+/pi1KwFo9MlkEtLpNCwsLDDzg4MDGBsbU8FSc/JDATweD9Q/r2eR01TTiJXCvomJCW70WnMcOzk5yTXnAtA0n2WM0pqj2fb2Nqyvr5NX7/7+PmSzWTIeIei3gtacAaBwJ/xSewFcMRfEf4+zAU+WnkCnvZPU/X/7IdwZ5kafSqXkLboDAwMDut1Bt5zWXAWAWWhsbFR1xuNxeFr0FML2MAMIeoMwNzfHnXvlq5wjgdvIA8Coo/LCQ4nyFqzZaofb2dvy3gEY946rAJTRywAC/EcxAPyGV35Qoi5pjk/cIV6blwAoo9/d3YWjo6MfA6AQ9toSMP+cf8u1LrWSgyhoC5J7I6PXAVAILJUgsfRdOfI8gFHRcwEKgSgBlNGjDAc4CyQWi7Ez/0eMvxtAC4LnuhHGVP8C3ljxrV76hpQAAAAASUVORK5CYII=",
-      "alt": "Icon Craft"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ICL-Icon Extractor"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Sib Icon Extractor"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/icc_1314.png",
+      "alt": "Screenshot of a .icc file in Apple ColorSync Utility",
+      "caption": "ICC file open in Apple ColorSync Utility"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.321Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.160Z"
     },
     {
-      "url": "https://fileinfo.com/extension/icc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.321Z"
+      "url": "https://fileinfo.com/extension/icc",
+      "retrieved_at": "2025-11-01T22:32:42.160Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.321Z"
+      "retrieved_at": "2025-11-01T22:32:42.160Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.321Z",
-  "mime": [
-    "application/vnd.iccprofile"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.160Z"
 }

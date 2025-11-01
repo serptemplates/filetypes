@@ -1,8 +1,24 @@
 {
   "slug": "pdz",
   "extension": "pdz",
-  "name": ".PDZ File Extension",
+  "name": "Playdate Compiled Code",
   "summary": "Learn about .PDZ files and view a list of programs that open them.",
+  "developer": "Panic",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "PDZ files are the final code output of a Playdate development project. After writing code and creating assets in the development environment, developers use the SDK's pdc (Playdate compiler) command-line tool to package all scripts into one binary PDZ file that is placed in a .PDX file with the game's assets.",
+      "Playdate developers typically use PDZ files to share or sideload custom games and tools onto the Playdate. For example, developers can transfer a compiled PDZ file to a Playdate console for testing or distribution. They may also test PDZ files using the Playdate Simulator, a desktop tool included with the SDK."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "PDZ files are not meant to be opened. Instead, users load PDZ files onto the Playdate handheld console. Once transferred to the device (usually via USB or sideloading through the Playdate account system), the console reads and runs the PDZ file as a complete game.",
+      "Developers may also run PDZ in the Playdate Simulator, a desktop application included with the SDK, which emulates the Playdate console on Windows, macOS, and Linux. They can run PDZ files with playdate.file.load() and playdate.file.run() in the SDK."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +59,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/pdz",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.819Z"
+      "url": "https://fileinfo.com/extension/pdz",
+      "retrieved_at": "2025-11-01T22:32:42.685Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.819Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.685Z"
 }

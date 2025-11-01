@@ -1,8 +1,23 @@
 {
   "slug": "pjl",
   "extension": "pjl",
-  "name": ".PJL File Extension",
+  "name": "Printer Job Language File",
   "summary": "Learn about .PJL files and view a list of programs that open them.",
+  "developer": "Hewlett-Packard",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Printer job language is a method HP printers use to communicate with the computers they are connected to. In addition to allowing the computer to monitor the printer's status and show control panel messages, printer job language is used at the job level to specify how a document should be printed. For example, printer job language commands tell a printer what environment a document is being printed from, how many copies to print, how to process the document (e.g. whether to staple the document or print it double-sided), and what page description language (such as PostScript) to use when printing the document.",
+      "PJL files typically contain a number of printer job language commands, which begin with the text @PJL. If a PJL file is a misnamed PRN file, it will also contain a description of a document to be printed. This description is written in the page description language specified in the @PJL ENTER LANGUAGE= command."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a PJL file in any text editor, such as Microsoft Notepad, Apple TextEdit, or GitHub Atom to view the printer job language commands it contains. If your PJL file contains only PJL commands, it is meant to be sent to a printer as a .TXT file to alter the printer's settings. If your PJL file contains a description of a document to be printed, you can use the instructions in the .PRN entry to send your file to your printer."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -64,13 +79,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/pjl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.824Z"
+      "url": "https://fileinfo.com/extension/pjl",
+      "retrieved_at": "2025-11-01T22:32:42.691Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.824Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.691Z"
 }

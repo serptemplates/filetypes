@@ -1,8 +1,19 @@
 {
   "slug": "gitattributes",
   "extension": "gitattributes",
-  "name": ".GITATTRIBUTES File Extension",
+  "name": "Git Attributes File",
   "summary": "Learn about .GITATTRIBUTES files and view a list of programs that open them.",
+  "developer": "Git",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The GITATTRIBUTES file enables you to perform a variety of functions such as commanding Git how it should diff (show changes between an index and a tree, changes between two trees, etc.) non-text files or having Git filter content before checking it into or out of Git.",
+      "A helpful attribute that will tell Git to treat a specific file extension as binary data: *.extension -crlf -diff or *.extension binary",
+      "Here is an example of a GITATTRIBUTES file: # Auto detect text files and perform LF normalization * text=auto # Custom for Visual Studio *.cs diff=csharp *.sln merge=union *.csproj merge=union *.vbproj merge=union *.fsproj merge=union *.dbproj merge=union # Standard to msysgit *.docx diff=astextplain *.DOCX diff=astextplain *.dot diff=astextplain *.DOT diff=astextplain *.pdf diff=astextplain *.PDF diff=astextplain *.rtf diff=astextplain *.RTF diff=astextplain"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +50,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/gitattributes",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.635Z"
+      "url": "https://fileinfo.com/extension/gitattributes",
+      "retrieved_at": "2025-11-01T22:32:42.500Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.635Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.500Z"
 }

@@ -1,8 +1,26 @@
 {
   "slug": "003",
   "extension": "003",
-  "name": ".003 File Extension",
+  "name": "Split Archive Part 3",
   "summary": "Learn about .003 files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Several archiving and file-splitting utilities allow users to split large archives (and other files) into smaller pieces. Each piece contains a portion of the archive's data. For example, a user who wants to email a large archive to a colleague may use 7-Zip to split that archive into multiple files. The user can then individually email each piece of the archive to their colleague, who can reconstitute the archive after receiving and downloading all the pieces.",
+      "Each piece of a split archive uses the same base filename followed by the .001, .002, .003, etc. extensions. These ascending numeric extensions denote that a file is just one part of a split archive, and that a user cannot access its contents unless they have all pieces of that archive. Some utilities, such as 7-Zip, append compound extensions (e.g. .7Z.001) to the pieces of split archives, to denote both the file's format and the fact that it is part of a split archive."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Several common archive utilities allow you to extract files from split archives. For example, in 7-Zip (Windows), you can right-click a split archive's 001 file and select 7-Zip → Extract Here to extract the archive's contents. Before doing so, make sure:",
+      "You have all the split archive's pieces.",
+      "You've stored all the pieces in the same directory.",
+      "Note, however, that because several programs can create split archives, some split archives are formatted differently than others. If you're having trouble opening a split archive, it might be because the program you're using does not support that split archive format. (Alternatively, it might be because you do not have all the split archive's pieces)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -59,13 +77,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/003",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.465Z"
+      "url": "https://fileinfo.com/extension/003",
+      "retrieved_at": "2025-11-01T22:32:42.295Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.465Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.295Z"
 }

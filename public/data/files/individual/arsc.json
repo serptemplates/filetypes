@@ -1,8 +1,28 @@
 {
   "slug": "arsc",
   "extension": "arsc",
-  "name": ".ARSC File Extension",
+  "name": "Android Package Resource Table",
   "summary": "Learn about .ARSC files and view a list of programs that open them.",
+  "developer": "Google",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "When a developer compiles an Android program (using Android Studio or another development tool), the compiler transforms all the programs' resources, including images, layouts, styles, and strings, into binary files. It also assigns each resource a unique ID. The compiler then creates an ARSC file (typically named resources.arsc) that lists all the program's compiled resources and their IDs.",
+      "At runtime, the program uses its ARSC file to quickly locate and access resources. In this way, Android programs can standardly access resources, no matter the resource's type or where it is stored or referenced in the program's source code."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "For the most part, ARSC files are not meant to be opened. However, you can use Android Studio's APK Analyzer to examine an ARSC file's contents. To do so, you must:",
+      "Locate the APK file your ARSC file is included in.",
+      "Drag the APK file to Android Studio's Editor window.",
+      "Switch to the Project perspective.",
+      "Double-click your APK file in the default build/​output/​apks directory.",
+      "Select Build → Analyze from APK Studio's menu bar and then select your APK file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +63,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/arsc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.496Z"
+      "url": "https://fileinfo.com/extension/arsc",
+      "retrieved_at": "2025-11-01T22:32:42.331Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.496Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.331Z"
 }

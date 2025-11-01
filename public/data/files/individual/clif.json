@@ -1,8 +1,25 @@
 {
   "slug": "clif",
   "extension": "clif",
-  "name": ".CLIF File Extension",
+  "name": "Cranelift IR Format File",
   "summary": "Learn about .CLIF files and view a list of programs that open them.",
+  "developer": "Bytecode Alliance",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Cranelift is a code generation tool that translates a target-independent IR into platform-specific executable machine code. It is most commonly used to execute WebAssembly programs as part of the Wasmtime WebAssembly runtime.",
+      "When creating an IR, Cranelift can either store the IR as an in-memory data structure or as a text file. Text-based Cranelift IRs are saved as CLIF files. Each CLIF file consists of a sequence of independent function definitions. Each definition contains the function's name, signature, preamble, and body.",
+      "Primarily, developers use CLIF files to test that Cranelift is creating IRs correctly. If Cranelift is creating IRs correctly, the code contained in the CLIF file should function identically to the source code from which it was created. Developers can perform a series of tests using Cranelift test commands to verify the code their CLIF file contains behaves correctly."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a CLIF file and view the intermediate representation it contains in Microsoft Visual Studio Code (multiplatform), GitHub Atom (multiplatform), or any other text editor.",
+      "You can use Cranelift (multiplatform) to process and test the IR a CLIF file contains."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -52,13 +69,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/clif",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.543Z"
+      "url": "https://fileinfo.com/extension/clif",
+      "retrieved_at": "2025-11-01T22:32:42.387Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.543Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.387Z"
 }

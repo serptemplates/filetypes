@@ -1,8 +1,25 @@
 {
   "slug": "swp",
   "extension": "swp",
-  "name": ".SWP File Extension",
+  "name": "Vi Swap File",
   "summary": "Learn about .SWP files and view a list of programs that open them.",
+  "developer": "Bill Joy",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "SWP files are created immediately when a Vi text editing session is started. They are saved to the same directory as their original file. For example, a text file with the name example.txt would have a swap file named .example.txt.swp.",
+      "If a Vi session terminates due to a program kill or crash, the SWP file remains. This allows users to recover the data using the (R)ecover option when opening the original file. However, if you do not need to recover data, you can manually delete the SWP file so the warning message stops appearing.",
+      "When trying to open a file that has a swap file, Vi provides the following message: \"Swap file .example.txt.swp already exists!\" (where example.txt is the file being opened). From this dialog, you can choose these options: 1) (O)pen Read-Only, 2) (E)dit, 3) (R)ecover, 4) (Q)uit, or 4) (A)bort.",
+      "NOTE: If Vi or its variants have already created an SWP file for a file, and they attempt to create another swap file, they'll append that swap file with the .swo extension. If an .swo file exists, they'll append the file with the .swn extension, and so on."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "SWP files are not meant to be manually opened. In Vi and its variants, if you attempt to open a file for which an SWP file exists, the programs will ask whether you want to recover the data stored in your SWP file instead."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -59,13 +76,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/swp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.918Z"
+      "url": "https://fileinfo.com/extension/swp",
+      "retrieved_at": "2025-11-01T22:32:42.792Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.918Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.792Z"
 }

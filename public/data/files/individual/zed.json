@@ -1,8 +1,25 @@
 {
   "slug": "zed",
   "extension": "zed",
-  "name": ".ZED File Extension",
+  "name": "Zipped GEDCOM Genealogy File",
   "summary": "Learn about .ZED files and view a list of programs that open them.",
+  "developer": "MyHeritage",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "ZED files are primarily used by versions 1 - 6 of MyHeritage Family Tree Builder. The files were eventually replaced by .UZED files with the release of version 7 of the software.",
+      "UZED files are also Zip-compressed and store GEDCOM files, but the GEDCOM files store UTF-8-encoded text instead of ANSI-encoded text. Also, UZED files include a metadata.xml file that stores metadata about the family tree.",
+      "ZED and UZED files are often referred to as being saved in the ZEDCOM (Zipped-GEDCOM) format. The files were replaced by .FTB SQLite database files with the release of version 8 of MyHeritage Family Tree Builder."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "While ZED files have been replaced by UZED files and subsequent FTB files, you can still open them with MyHeritage Family Tree Builder. To open a ZED file with Family Tree Builder, select File → Open Project....",
+      "Since ZED files are compressed with Zip compression, you can also rename the .zed file extension to .zip, decompress the archive with a Zip utility, such as Microsoft File Explorer (Windows), Corel WinZip (Windows), or Apple Archive Utility (macOS), then open the GEDCOM file with a genealogy program."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,13 +64,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/zed",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:50.027Z"
+      "url": "https://fileinfo.com/extension/zed",
+      "retrieved_at": "2025-11-01T22:32:42.915Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:50.027Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.915Z"
 }

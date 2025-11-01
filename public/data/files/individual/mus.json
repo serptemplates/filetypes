@@ -1,8 +1,61 @@
 {
   "slug": "mus",
   "extension": "mus",
-  "name": "What are MUS files and how to open them",
+  "name": "Finale Notation File (Legacy)",
   "summary": "Learn about .MUS files and view a list of programs that open them.",
+  "developer": "MakeMusic",
+  "category": "audio",
+  "category_slug": "audio",
+  "mime": [
+    "application/vnd.musician"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "MakeMusic Finale is a scorewriting program that composers use to create, edit, and listen to musical scores. For example, a composer might create an original composition, add lyrics to the song, and then play the song back via their computer's speakers to hear how it sounds.",
+      "Finale 2012 and earlier versions save composers' scores as MUS files. In addition to the score and data used to play it back, MUS files typically contain title, composer, and copyright information.",
+      "NOTE: Finale 2014 and later versions save scores as .MUSX files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To open a .mus file (Finale Notation File), follow these steps:\n\nUse Finale Software:Download and install the latest version of Finale by MakeMusic if you don’t have it.Open Finale and go to File > Open, then select your .mus file.Upgrade to .musx Format:If you encounter compatibility issues with newer versions of Finale, convert the .mus file to the newer .musx format within the program.Convert to MusicXML:If you want to open the file in other music notation software, you can export the .mus file as MusicXML.",
+      "You can open a MUS file with MakeMusic Finale (Windows, Mac). To do so, select File → Open... from the program's menu bar. Then, navigate to and open your MUS file."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use MakeMusic Finale to export the score a MUS file contains in a variety of formats, including:",
+      ".MUSX - Finale Notation",
+      ".AIFF - Audio Interchange File Format",
+      ".WAV - WAVE Audio",
+      ".EPUB - Open eBook",
+      ".MIDI - MIDI Music Data",
+      ".MXL - Compressed MusicXML"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -77,69 +130,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "Finale"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEgUlEQVR42r2Xf2hbVRTHvy9NmqStbWNd0rRsSR2DdKxLC9NOrOhwZag4f7A/pkydcz9EStVOGE4YWDsc1Ok6UAZqcX+UTQd22DpY17mJFixR3GAWf7ZJCjVJZ/PS5OW9l5fk2XO3ZMb+2tJkB0J49937zuede773nMcNTgyqWk6LuBqHGBcRS8aQT0uoCQRjQUxKk3BH3OD6vH2qUWtkzsWECCWpZP3wi5+N4KHtqxecE4lH0s79f/vB9fzVo+o0OuY4pIQQjUezBuh+bBg7vm5ccI6UkOATfRgPjGPq1ylwXSNdKt2oHqlecngP7P0cz+9+AMvtFexar9fPmiPLMoLBIHo1vQiNhsB1XO5gAI4/HLDb7SgvL88aYPPDb+KRzffimRc2wGAwsN+sCEgSxsbGcHD4ICK+yA0Ap9eJhoYGWK3WrAHq7t6K4pJCHDn2Kmw1VSgrK0NRUVHGnGg0Co/Hg50nd+YHgGyF3YyOwy+yiJpMptsPQLZ6jQ2Hul6GxWLJiMK8ABElgqvyVfASnzXAyA4O2vIk4ryGXRvrZFRtV6E33UjGhJRAZCKCsCecH4Dlb0+DdykQhu5AMliIkkYZ1m0cdMW6hQEqXZVZO07Z+++cxbO7nPD7/QiHo/jFJUGIxND8+CqsclQxVZAKeJ5Hv9SfCZArGR79dA8DIK2T5k8dv4wKczHean8OpaWlbF5eZfjV+XcRCATYNSXc8NBv6Om+iPc+2o21zloWBbfbjZbTLfkBGBj6AD6fL30IhYJR7NrWibb9T2P9/XVsnLYgrwDkgLYyteev7TmCR5+8B2sbVqbHZgHkSgUrD0uQghIMJgO0Ri0KDAUYnXFR0hSFzhqDRqdBUklCmBBuH8DvbwDWV6JI4lqpJwCSouATci/Dl1rXQxRFGI1GVg2VGIfeEz/iia1r2DgZqWNAHcgEyJUMPznxOst+On5JdhfOXoEoCWjaUMvGyShHOi91ZgLkIwmpGj61aR+OnzoAdablo+QjI5m2nWnLvwp+dv0J96hvpj/YyJynAHIiwwuDP+HY0S8wcsXDeoDG+5z45pwrAyA8LWOZuSztNHU20DmxJBlOdHPgv5/7nv2QACWiZKhADsoZc0glWVdD/0kO/wzMf9+6b4r9UwnWl+oZgCIoSMaS0BRq2P+cADcrQ5LafHaXRQ9no4mFurKykskwFXba/5xUQ5LaXKYrLMCDm1bM9IIWlv30LIL4f2O65KZ0/94P0df7XcYYJWHTRhsqlhWxF7DZbKitrZ3VjpEtuSf0+SbRf/pbnDvjgigLsFQZUW0rZuGm0y/19g6H4+a64vZL7Sp9Da1zr0N9ff2iW0AhJBlRTacH0X6ypLsOQGGvqamB2Wye89uA1nu9XrR+2YpoIAqu5YcWlY/xEMICKxCUoYuZGlfZMapEFcihaxLTGXUsyw3lM07vNIDTcvOulaYk5lzmZXBbzm9R6SI8HoYYECHxiwOQlBTxemWTk+lxjV6TBllsbWod1/xxszrtmUbYG2ZEt2IUgf+arkh3S+vJ/gWtNjrvOYKkJAAAAABJRU5ErkJggg==",
-      "alt": "Finale NotePad"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Finale PrintMusic"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Finale SongWriter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Harmony Assistant - Win32"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MIROKU JYOHO SERVICE Accounting"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABoUlEQVR42sWWC7aDIAxEYWXPnTnsjJ31qSUShoCKteUcaxEyuRnw42OML/fD5leAOMUfpccZANDB1x8FsJJ8InEXwKr4KZAhB6zxUZgCAIboUeK7juwAkxK5mgiN2MsOcIIRF4YBJodVa+5M9WWVeIHGqa/Hw9JfEuhr7/nKgXVCD4AhGMB5qQm1Vhpz8swNuRbbAV9qSyC2SlKSHkBjbAdQ+l0AcLVCrueG9F9EZSzUegyAywBXkgQ1BxQDC0C/E0M6z3RNnFVim/ZcAqwbrOnaKQBuFARdpYD6XH0BQK6tGxlZTt0FKWDfaOnQDbIwWpyXg92jpckA798NYIqTsf75t4DQt5hPoGqptuplTuEcjLMA/E1ZoQKAVlmSNdZWuVett+qjsJUcQMA+AZxcQnq3ZOuBQ31dXLkJi+oNB6zFqYfyRiU9VArm25CTonEoKYhzR/FM3QRoBVplu8Yc14nP4/RBclS9ZeidVjhwxr5PgzQBWtVbCT8CEA1RdPqcfBRi+KsYxnkEogtwRnQ08WkHziSB69+yjzpwt1UPou+3f67Ud9DD92W8AAAAAElFTkSuQmCC",
-      "alt": "PrintMusic"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/mus_1515.png",
+      "alt": "Screenshot of a .mus file in MakeMusic Finale",
+      "caption": "MUS file open in MakeMusic Finale"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.350Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.350Z"
+      "url": "https://docs.fileformat.com/audio/mus/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mus",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.350Z"
+      "url": "https://fileinfo.com/extension/mus",
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.350Z"
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.350Z",
-  "mime": [
-    "application/vnd.musician"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.185Z"
 }

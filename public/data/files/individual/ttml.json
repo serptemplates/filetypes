@@ -1,8 +1,31 @@
 {
   "slug": "ttml",
   "extension": "ttml",
-  "name": "What are TTML files and how to open them",
+  "name": "Timed Text Markup Language Subtitles File",
   "summary": "Learn about .TTML files and view a list of programs that open them.",
+  "developer": "W3C",
+  "category": "other",
+  "mime": [
+    "application/ttml+xml"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The World Wide Web Consortium (W3C) created the TTML format to serve as a uniform standard for XML-based subtitles. Each TTML file contains a fixed set of header and body elements used to play subtitles and specify metadata about those subtitles. For example, each TTML file includes a <styling> element that specifies its subtitles' text style and a <language> element that specifics its subtitles' language.",
+      "The actual subtitles a TTML file contains are found in its <body> section. Each line of the file's subtitles is written as a separate paragraph (<p></p>), with an accompanying start and end time written in HH:MM:SS:SSS format.",
+      "Because TTML is a widely-accepted format, many video players, platforms, and streaming services include support for TTML-based subtitles. For example, YouTube users can upload TTML subtitles alongside their videos."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a TTML file and edit the subtitles it contains in GitHub Atom (multiplatform), Microsoft Visual Studio Code (multiplatform), or any other text or source code editor. Source code editors, like Atom and Visual Studio Code, include syntax highlighting and other features that make editing TTML files easier.",
+      "You can use a TTML file to add subtitles to a video in VideoLAN VLC media player (multiplatform). To do so:",
+      "Begin playing the video with which you want to use your TTML file.",
+      "Select Subtitle → Add Subtitle File....",
+      "Navigate to and open your TTML file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -37,10 +60,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACqklEQVR42r2W30sUURTHvxtEkBFIb9V70EP/QdB7r1EvRRAW/YAK6SGCzIiCHopKwcBUMNsoNtgowiCqh+wHidXmUhpGamot65Ytmmm2fb/MDjNX3ZrZ3bsHvtzZc2fmfObsveeeyIaO3HIAZ6lt1DhVR91JbI9MowIWIUAzx5p5/nfULkI8rwRAhmP1InNz1AXqOEF+2gTIuT+qlgJLIkB2xrinP5+NLqsAq6uA2GbHef4VcOsDkPPu+0M1UMcIMmUFYOMaoHGTN9GdAk5yBQxljfsHqBpCPLYOIJv+TV8CuPaeKfDSoasm6ihBssFDFQHgWiINnGA2Pk4Y7k/UbkI8sA4gm+EqaH4LtCS5PcxsXKGOEOSHVQDX+r5xXz5zRp8NU3sI0WkdQKYMKBPKiDLjszaqliDfrQK4pjWhtaE14rMRai8h7loHkGl3aJc0vAF+zRlTHdQhgmSsArimeqG6ofrhs6/UFkI8sQ4g04uizMbF10Y2Rqn1hJhY7JmyArjWxZD7HxmunQRorxiAFuWO+4ZrHwEuVwSgc5DdTTeQ8doZHV7rCPDZKkCaHcPpl8DDYcOt6qj0xws9VxaAOM/Icz2MZvYR+hNUHYf+9WxJAKOTwKkXwNMxw63VXku1MXjuf+8oCkDF5yYblkvcbpOzxtS9/FePBP2I0ACD/Ffr+dU9ZsHR0XS40FYrC4AOoHb2yk2JBSX3NpxtNoYiLBBAP8+2epbZ5Ljh1q+DDBwtJnAggFk1Ib1Aa9K59lmMOsDgqYBxwgP08vvq2HgMmBU8lQ8cKzXwAoC1K7y2vJFHa7TPaERl1+GkPB02SCAAWfUyOiJGGZV9gbPI4mFfHhRASV5ZYP4qnO2VCfHO0AA3OG6d5w/VVpUKsIpjK6UVoGycoVrCNJal2F81J2MwjTEnbgAAAABJRU5ErkJggg==",
-      "alt": "PotPlayer"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -72,26 +91,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.400Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ttml",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.400Z"
+      "url": "https://fileinfo.com/extension/ttml",
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.400Z"
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.400Z",
-  "mime": [
-    "application/ttml+xml"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.223Z"
 }

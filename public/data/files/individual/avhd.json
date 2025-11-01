@@ -1,8 +1,23 @@
 {
   "slug": "avhd",
   "extension": "avhd",
-  "name": ".AVHD File Extension",
+  "name": "Hyper-V SnapShot File",
   "summary": "Learn about .AVHD files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "AVHD files are supplements to .VHD files, which represent a virtual hard disk's original image. An AVHD file stores differencing information that represents changes from the base VHD disk. This allows users to access either the updated version (AVHD) or the original version (VHD) of a virtual hard disk image as needed. VHD and AVHD files are saved to the same directory.",
+      "NOTE: AVHD files are called Snapshot Differencing Disk files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "In most cases, you will not need to open an AVHD file. The changes tracked within an AVHD file will be merged into its parent VHD file when you shut down your virtual machine, and the AVHD file itself will be deleted."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +54,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/avhd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.501Z"
+      "url": "https://fileinfo.com/extension/avhd",
+      "retrieved_at": "2025-11-01T22:32:42.338Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.501Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.338Z"
 }

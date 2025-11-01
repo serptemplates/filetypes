@@ -196,3 +196,23 @@ pnpm build                      # build the Next app
 ```
 
 You can drop HTML anywhere under `scraper/raw/` (subfolders ok). The parser auto-detects source per page and normalizes it.
+
+---
+
+## Validation & Coverage (Data Engineering)
+
+Run validators to ensure normalization and field hygiene across the dataset:
+
+```bash
+# Validate category URLs (hyphen-only) and ISO date strings
+pnpm run validate:categories
+pnpm run validate:dates
+
+# Validate normalized filetype JSONs (URLs, slugs, required structures)
+pnpm run validate:filetypes
+
+# Summarize field coverage ratios
+pnpm run report:coverage
+```
+
+Optional: Enable strict Zod schema during normalization (already enabled via `schemas/filetype.runtime.js`).

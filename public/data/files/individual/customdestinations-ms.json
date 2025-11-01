@@ -1,8 +1,25 @@
 {
   "slug": "customdestinations-ms",
   "extension": "customdestinations-ms",
-  "name": ".CUSTOMDESTINATIONS-MS File Extension",
+  "name": "Windows Jump List File",
   "summary": "Learn about .CUSTOMDESTINATIONS-MS files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In Windows 7, Microsoft introduced the Jump List feature. The Jump List allows you to right-click an application icon pinned to your taskbar and quickly access recent, pinned, or frequently-accessed files. For example, if you have pinned Microsoft Word to your taskbar, and you recently used Word to edit some .DOCX files, those files will appear in the Recent section of Word's Jump List when you right-click its taskbar icon.",
+      "Windows creates a CUSTOMDESTINATIONS-MS file whenever you pin a recently- or frequently-accessed file to a program's Jump List. The CUSTOMDESTINATIONS-MS file contains a timestamp, application ID, and file path that Windows uses to open the pinned file when you select it from the Jump List. For example, if you were to pin a recently-opened DOCX file to your Microsoft Word Jump List, Windows would create a CUSTOMDESTINATIONS-MS file specific to that now-pinned file.",
+      "Because CUSTOMDESTINATIONS-MS files are stored in a hidden folder and not meant to be opened, most Windows users will never encounter them. However, if you want to view your system's CUSTOMDESTINATIONS-MS files, you can find them in the following directory (by updating the file path below to include your Windows username and entering the path in File Explorer's address bar):",
+      "Users\\​%USERNAME%\\​AppData\\​Roaming\\​Microsoft\\​Windows\\​Recent\\​CustomDestinations"
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "CUSTOMDESTINATIONS-MS files are not meant to be opened. If you want to access a file that you pinned to a program's Jump List, you should instead right-click the program's taskbar icon and select the file from the Jump List."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +60,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/customdestinations-ms",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.556Z"
+      "url": "https://fileinfo.com/extension/customdestinations-ms",
+      "retrieved_at": "2025-11-01T22:32:42.403Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.556Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.403Z"
 }

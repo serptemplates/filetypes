@@ -1,8 +1,66 @@
 {
   "slug": "mpeg",
   "extension": "mpeg",
-  "name": "What are MPEG files and how to open them",
+  "name": "MPEG Video",
   "summary": "Learn about .MPEG files and view a list of programs that open them.",
+  "developer": "Moving Picture Experts Group",
+  "category": "video",
+  "category_slug": "video",
+  "mime": [
+    "video/mpeg"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The internal structure of MPEG files consists of different components and data structures that organize and store video, audio, and other related information. Here is an overview of the key elements in the internal structure of MPEG files:\n\nSystems Layer:The Systems layer defines the overall structure of the MPEG file. It includes headers, program streams, and other system-related data necessary for decoding and playback. The Systems layer is responsible for managing synchronization and multiplexing of elementary streams.Elementary Streams:MPEG files contain separate elementary streams for video, audio, and other data types. Each elementary stream carries compressed data specific to its type. For example, the video elementary stream contains compressed video frames, and the audio elementary stream contains compressed audio samples.Video Compression:MPEG video compression techniques, such as intra-frame and inter-frame compression, are used to reduce file size while maintaining video quality. The compressed video frames are organized into groups of pictures (GOPs), which consist of intra-coded (I), predicted (P), and bidirectional (B) frames.Audio Compression:MPEG files support various audio compression codecs, such as MP3, AAC, or MPEG-1 Audio Layer II. The audio samples are compressed using these codecs, allowing efficient storage and transmission of audio data.Synchronization and Timing:MPEG files use timestamps and synchronization information to ensure proper alignment between video and audio streams during playback. These timestamps help maintain synchronization and provide accurate timing for decoding and rendering of audio and video frames.Metadata:MPEG files can include metadata that provides additional information about the video and audio content. This metadata may include details such as title, author, creation date, and other descriptive information.Packets and Pack Headers:MPEG files organize data into packets. Each packet contains a pack header that provides information about the packet’s contents, such as the stream type, packet size, and timing information.Program Specific Information (PSI):PSI is a section in MPEG files that carries additional information about the program streams, such as program and stream identifiers, stream type, and descriptors. PSI helps in decoding and demultiplexing the elementary streams within the file.Transport Stream:In MPEG-2, there is a specific transport stream format used for broadcasting and transmitting video content. The transport stream multiplexes multiple programs into a single stream, allowing efficient transmission and synchronization of audio, video, and other data over networks.",
+      "MPEG is an international workgroup that sets standards for media compression and encoding. In 1993, MPEG created MPEG-1, the initial version of MPEG video and audio compression. Then, in 1995, MPEG released MPEG-1's successor, MPEG-2. Both MPEG-1 and MPEG-2 compression standards have been utilized in encoding video for over-the-air digital television broadcasts, DVDs, and home movies.",
+      "NOTE: MPEG files may also use the .MPG file extension and are now more commonly saved as .MP4 files, which utilize MPEG-4 compression."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "There are numerous software applications available that can open and play MPEG files. Here are some popular options:\n\nVLC Media PlayerWindows Media PlayerQuickTime PlayerMPC-HCGOM PlayerMPlayerPotPlayerKodi",
+      "The internal structure of MPEG files consists of different components and data structures that organize and store video, audio, and other related information. Here is an overview of the key elements in the internal structure of MPEG files:\n\nSystems Layer:The Systems layer defines the overall structure of the MPEG file. It includes headers, program streams, and other system-related data necessary for decoding and playback. The Systems layer is responsible for managing synchronization and multiplexing of elementary streams.Elementary Streams:MPEG files contain separate elementary streams for video, audio, and other data types. Each elementary stream carries compressed data specific to its type. For example, the video elementary stream contains compressed video frames, and the audio elementary stream contains compressed audio samples.Video Compression:MPEG video compression techniques, such as intra-frame and inter-frame compression, are used to reduce file size while maintaining video quality. The compressed video frames are organized into groups of pictures (GOPs), which consist of intra-coded (I), predicted (P), and bidirectional (B) frames.Audio Compression:MPEG files support various audio compression codecs, such as MP3, AAC, or MPEG-1 Audio Layer II. The audio samples are compressed using these codecs, allowing efficient storage and transmission of audio data.Synchronization and Timing:MPEG files use timestamps and synchronization information to ensure proper alignment between video and audio streams during playback. These timestamps help maintain synchronization and provide accurate timing for decoding and rendering of audio and video frames.Metadata:MPEG files can include metadata that provides additional information about the video and audio content. This metadata may include details such as title, author, creation date, and other descriptive information.Packets and Pack Headers:MPEG files organize data into packets. Each packet contains a pack header that provides information about the packet’s contents, such as the stream type, packet size, and timing information.Program Specific Information (PSI):PSI is a section in MPEG files that carries additional information about the program streams, such as program and stream identifiers, stream type, and descriptors. PSI helps in decoding and demultiplexing the elementary streams within the file.Transport Stream:In MPEG-2, there is a specific transport stream format used for broadcasting and transmitting video content. The transport stream multiplexes multiple programs into a single stream, allowing efficient transmission and synchronization of audio, video, and other data over networks.",
+      "Because MPEG compression is widely-supported, you can open an MPEG file with most media players, including:",
+      "Microsoft Movies & TV (Windows)",
+      "Microsoft Windows Media Player (Windows)",
+      "Apple QuickTime Player (macOS)",
+      "VideoLAN VLC Media Player (multiplatform)"
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "There are number of video applications including VideoLAN VLC media player, HandBrake, and Apple QuickTime Player, can convert MPEG files to other formats. For example, VLC can convert MPEG files into these formats\n\nMP4AVIMKVMOVWMVFLV",
+      "Various video applications, including VideoLAN VLC media player, HandBrake, CyberLink PowerDirector, and Apple QuickTime Player, can convert MPEG files to other formats.",
+      "For example, VLC media player can convert MPEG files to the following video formats:",
+      ".MP4 - MPEG-4 Video",
+      ".WEBM - WebM Video",
+      ".TS - Video Transport Stream",
+      ".ASF - Advanced Systems Format"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -93,69 +151,55 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Any Video Converter Professional"
-    },
-    {
-      "url": "data:image/png;base64,",
-      "alt": "Switch Sound File Converter"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGVUlEQVR42s2XC1DVVR7HP/de7pP3M0AMVFAoX0mou6VDrqsrxtpuM6YukjmLtiuEjLWSoouubJa7SolCmbtuVis2pqUwhi0oxZoKJWpw5WUKqMjj8uZyX/89VwbbSgaoad3vf74z93H+5/c553eeMvrkL7xN+OfC7sISP45kwgbhE8IvCF+3/+AnrBd2+ZGCDqR24VA7wDvCS/7Hwfv1rh3glrD3PQJotAOYhR2G9ZrcAacRwXTW6m9/VfqHYr6u/z4AFjuAyV7HYCW9Rk2htfE6ls6bRK77G0+seYbVIaNR6DS8dLmM/cmbuLgzFfeQSaI5SgzlxUMBMA8RQMGeSxaOFlbx4e9D0ESvwy8xjStxU8HZhbC3PubKxgSMH2aQVGNGLXpoa5DshwFodT5Mj/ojBYf/ANYugmI/oD7kl1jSw5CcXGHTZ5D6MLL7JyDFiRn8/E9g3HT8XtqPw7vp1O5KQuMZwIzYVeTv2ozV1DM8gAfC15CY/BeSX7+M4V9hYmWQI5u3D6kyG6qOwZoi+OcKCBgPM2Lgr9HIUvKQdG6wTvSMUsf0fdWsivRl88LHqSzKGX4KHO57DQITkEkfYT73C1HKidGTZlJTnAuTRdBrAmLEA2IlEYAXj8OvUpG9vwGpQY/DmmLkflPwPZnCtaNpQ0vBrIhFeLqFc+jjNGxSax+E21xsPk8j6zyC9fpB6mqvcaqwkGdXJdLR2gy+ogesYiKFzkXW045UvA959G7knhOwFWzAdvVkXyilO48/tZ6Ki/lUlObeHeDQy2fx9Z7M3/f3cvbmAS5feYVeYyUyBzfkrhFYm09QWVlJcHAwNpuN5ORktm3b1lfVyEfgRgmyh0SPKRyxlWZATxNy3Qgcg9bi4p9Ahlh8T31ykvQtj90dQK10JuL+aIL85qPzmEdVWxeXqjNpbT6Cqafs9hv9AP2qr69n+fLl5OXliRkxSrR8KravspFpR6Lymo/GcTbOulCs3WVIpqM0XD2IZO0dyhiQc5/XDNH6ACxiu2hp+gc2S+N3APqVn5/PsmVPU1tbh9IjGqU2VNRch7W3ht6OMwNtb0NdB77WQAD9Sk/fwdp1r4geuzmU6syyiKCRprPZryobT3/ArVoD9T2uXGmRU1pro7LZQmO3ibauLuoMRVhsHYMC2NXV1Uli4mr27t3bNzxclzDGeQGu8nGo1GMYO9GJyF/D4oQxZlmgp5vp8M4XlQb9+7TcbKW13ZOGDjfKb5goazDQLtJlsWipazuHVeqloqKCkJCQQZuWm5vL0qVLaWlpwUc3nQB1FF5OU1FJagJG6vjpkyOIT314+CkoLy8nNDR0wP+rqqqIjY3l9OnTQ0vBQAC+Gi8e8gxGJ/niYPXnePMh2iwNAwKYTCaSkpLYvXv3N36Xi6rdVUE0myoHB5gcNJ6FDz5IpJeGQK0D+mrY+nkZp1rOY5J6BuwBe67j4+MxGo3fiRCgDmet8h0cVYGc93uPnLYdVNd9cXeA8n3HGTVaS+me18k4c4G3K/Ri9lhwlDvjofCg1nz1GwAlJSXExMSg1+vFfqnCTelHsyjzbYVoZrJCkcXiHWFcaKwgav24uwOEB03A19WFnNKiOy9HuY8nWjWJN9q+5Avj+ds59vb2ZsWKOLKzD94p56wQu6diHkW2HLotTTjJvZmoiuTfxvfulJk5diG3ur9CX3d28DGgVCjZ+9RKoi40kVHfQaohRxxpFayOT2THru1oJBeM4lw5VhmOh8yfz8Qqt0CbQI+sh7zuN4nQzGeX+hh5wdmklCwa/iB8dtaTZKYkc2DrWyzO2ylCy1mmWkSB6Rw1VPJnbSZv9G7HWxXMLPkTvNy9ktnaZ1gkS2CDaQk3LHr2zMsn5rePsXhTHEcuvDk8AHvAhVPmcODzj8Q4kHh7QSaP1kxj4qXZjFaM46iykKjeaXhrwtgoZbHSPBuD1MixSdWc0Z0g4dM5qFVaVj76IpkFaZil3uEB/Le0Mi3tB25Q8EkJczJ+RvLkLaTMXc8j26fhoFKT81whqYf/RJZ+I8VpjQT6eOEd9wOPZN9WgEsATZ3NGG09bJ77Ks//5jlG/S4AtVrNl69V80LWBrI+3YKPoz9alRNXDRVDBhj+sVzIFWfa6Lj92VE8XeL5HrL8X1xM7vnV7J5fTu26Z9fz/wB2rY97ZJALcgAAAABJRU5ErkJggg==",
-      "alt": "PowerDVD"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Any Video Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "KMPlayer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "IrfanView"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/mpeg_62.png",
+      "alt": "Screenshot of a .mpeg file in VideoLAN VLC media player 3",
+      "caption": "MPEG file open in VideoLAN VLC media player 3"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.347Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.182Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T18:24:49.347Z"
+      "url": "https://docs.fileformat.com/video/mpeg/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.182Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mpeg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.347Z"
+      "url": "https://fileinfo.com/extension/mpeg",
+      "retrieved_at": "2025-11-01T22:32:42.182Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.347Z"
+      "retrieved_at": "2025-11-01T22:32:42.182Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.347Z",
-  "mime": [
-    "video/mpeg"
-  ],
-  "category": "video",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.182Z"
 }

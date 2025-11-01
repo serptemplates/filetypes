@@ -1,8 +1,23 @@
 {
   "slug": "ter",
   "extension": "ter",
-  "name": ".TER File Extension",
+  "name": "Terragen Terrain File",
   "summary": "Learn about .TER files and view a list of programs that open them.",
+  "developer": "Planetside Software",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The TER file consists of 2 8-byte identifying strings and \"chunks\" of data. The structure will look similar to the following:",
+      "8-byte \"TERRAGEN\" string identifying the program.",
+      "8-byte \"TERRAIN\" string identifying the terrain.",
+      "\"SIZE\" chunk that appears before altitude data identifying the size of the terrain.",
+      "\"XPTS\" and \"YPTS\" chunks are required if the terrain is not square.",
+      "\"EOF\" string at the end of the file if it's an older version Terragen.",
+      "To import a TER file, select the Terrain tab, click Add Terrain, select Heightfield (load file), navigate to the TER file, and click Open."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +54,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ter",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.929Z"
+      "url": "https://fileinfo.com/extension/ter",
+      "retrieved_at": "2025-11-01T22:32:42.803Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.929Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.803Z"
 }

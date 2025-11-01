@@ -1,8 +1,25 @@
 {
   "slug": "tbc",
   "extension": "tbc",
-  "name": ".TBC File Extension",
+  "name": "Time-base Corrected Video",
   "summary": "Learn about .TBC files and view a list of programs that open them.",
+  "developer": "Chad Page",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "As part of their work to preserve data gathered during the BBC Domesday Project, Domesday enthusiasts Simon Inns and Ian Smallshire created the Domesday86 project and the Domesday Duplicator. The Duplicator allowed Inns and Smallshire to capture the radio frequency produced as a laser read a Domesday LaserDisc and store that data in an LDS file. In theory, the pair could then use this data to produce an exact copy of a Domesday LaserDisc.",
+      "Developer Chad Page expanded on Inns and Smallshire's work by producing a suite of tools known as ld-decode. Ld-decode includes a number of utilities designed to let users interact with LDS files. One such tool is ld-decode.py, a Linux application that allows users to input an LDS file and produce a Phase Alternating Line (PAL) or National Television System Committee (NTSC) encoded video. The video is saved as a TBC file.",
+      "LaserDisc enthusiasts can use various other utilities included in ld-decode to interact with a TBC file. For example, they can use ld-chroma-decoder to produce a raw RGB bitstream from a TBC file, and they can use ld-analyze to watch and analyze the grayscale video a TBC file contains. With a lot of work, users can even use their TBC file to produce an MP4 replica of the video contained on a LaserDisc.",
+      "NOTE: The related project vhs-decode also produces TBC files. Unlike ld-decode, vhs-decode produces two TBC files when it decodes video from a VHS tape or other source: one that contains luminance data and one that contains chrominance data. Vhs-decode users can combine these files to produce an .MKV video."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Ld-decode users can open a TBC file and watch the video it contains in ld-analyze (Linux). In ld-analyze, select File → Open TBC file... to open your TBC file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +56,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/tbc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.925Z"
+      "url": "https://fileinfo.com/extension/tbc",
+      "retrieved_at": "2025-11-01T22:32:42.799Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.925Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.799Z"
 }

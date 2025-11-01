@@ -1,8 +1,25 @@
 {
   "slug": "sn2",
   "extension": "sn2",
-  "name": ".SN2 File Extension",
+  "name": "Drive Snapshot Backup Continuation 2",
   "summary": "Learn about .SN2 files and view a list of programs that open them.",
+  "developer": "Tom Ehlert",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Using Drive Snapshot, Windows users can create backup copies of their drives. They can then use Drive Snapshot to retrieve or restore these backups' contents if needed.",
+      "If a drive's contents are large enough, Drive Snapshot will split those contents across multiple backup files: a primary SNA file and one or more backup continuation files. The continuation files use the same base filename as their associated SNA file, but the .sn1, .sn2, and so on extensions.",
+      "Users cannot view or restore data from continuation files alone. Instead, they must gather a backup's SNA file and all its continuation files and place them in the same directory, before attempting to view or restore data from their backup."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Drive Snapshot (Windows) to view and restore the files an SN2 file contains. To do so, you will need the SN2 file's accompanying SNA and SN1 files, as well as any other continuation files included in the backup (such as an SN3, SN4, etc. file).",
+      "After you've placed all the files associated with your Drive Snapshot backup in the same directory, open Drive Snapshot and select either Restore Disk from File, to restore your backup's contents, or View contents of saved Disk Image, to view your backup's contents. Then, browse to your SNA file and restore or view your backup's contents."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +56,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/sn2",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.905Z"
+      "url": "https://fileinfo.com/extension/sn2",
+      "retrieved_at": "2025-11-01T22:32:42.778Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.905Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.778Z"
 }

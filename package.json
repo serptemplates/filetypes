@@ -8,9 +8,13 @@
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "validate:categories": "node scripts/validate-category-urls.mjs",
     "validate:dates": "node scripts/validate-dates.mjs",
-    "validate": "pnpm run validate:categories && pnpm run validate:dates",
+    "validate:filetypes": "node scripts/validate-filetypes.mjs",
+    "report:coverage": "node scripts/report-field-coverage.mjs",
+    "validate": "pnpm run validate:categories && pnpm run validate:dates && pnpm run validate:filetypes",
     "fix:dates": "node scripts/fix-dates.mjs",
     "fix:dates:write": "node scripts/fix-dates.mjs --write"
   },
@@ -22,12 +26,17 @@
     "mime-db": "^1.54.0",
     "next": "^15.5.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.19.9",
     "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
-    "typescript": "^5.9.2"
+    "@vitest/coverage-v8": "^4.0.6",
+    "typescript": "^5.9.2",
+    "vitest": "^4.0.6",
+    "zod": "^3.25.76"
   }
 }

@@ -1,8 +1,35 @@
 {
   "slug": "jsonlz4",
   "extension": "jsonlz4",
-  "name": ".JSONLZ4 File Extension",
+  "name": "Compressed Firefox User Profile Data File",
   "summary": "Learn about .JSONLZ4 files and view a list of programs that open them.",
+  "developer": "Mozilla",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "You will most likely encounter JSONLZ4 files only if you use Firefox to browse the Internet and are exploring the Profile folder where Firefox stores information about your user profile. The reason your user information is saved in a separate place from the Firefox application is to protect your user profile from being deleted if you need to uninstall and reinstall Firefox on your computer.",
+      "JSONLZ4 files are stored in subdirectories of Firefox's Profiles directory, including the bookmarkbackups and datareporting/​archived directories. Firefox's Profiles directory is stored in different locations on different operating systems.",
+      "In Windows - You can navigate to the location of your profile information by clicking the Menu icon (appears as three horizontal lines) and selecting Help → Troubleshooting Information in Firefox. Then, click the Open Folder button next to \"Profile Folder\" in the \"Application Basics\" section to open a window that displays your profile folder. The directory is most likely the following path:",
+      "C:\\​Users\\​[username]\\​AppData\\​Roaming\\​Mozilla\\​Firefox\\​Profiles\\​",
+      "In macOS - You can navigate to the location of your profile information by selecting Help → Troubleshooting Information in Firefox. Then, click the Show in Finder button next to \"Profile Folder\" in the \"Application Basics\" section to open a window that displays your profile folder. The directory is most likely the following path:",
+      "/​Users/​[username]/​Library/​Application Support/​Firefox/​Profiles/​",
+      "JSONLZ4 files that store bookmarks are created by Firefox to back up bookmark information that can be restored in the web browser to recover bookmarks. Bookmarks may be lost for various reasons, such as a system crash or browser version update.",
+      "You can find JSONLZ4 files in the bookmarkbackups folder, which is located in the Firefox user profile directory. The name of the file indicates the day it was created. For example, a JSONLZ4 created on January 13, 2021 will be named similar to the bookmarks-2021-01-13_17_1T-HiRwoo9NtkjBaXWII-A==.jsonlz4 filename.",
+      "NOTE: You can delete JSONLZ4 files if they become too numerous and large, but you will lose information regarding your user profile."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "JSONLZ4 files are not meant to be manually opened. Instead, they are referenced by Firefox to load user profile settings. However, you can restore JSONLZ4 bookmark backup files in Firefox by following these directions:",
+      "Click the Library icon (appears as books) in the toolbar (you can also select Bookmarks → Show All Bookmarks from the Firefox menu in macOS then skip to step 3).",
+      "Select Bookmarks → Show All Bookmarks.",
+      "Click the Import and Backup icon (appears as up and down arrows), then select Restore → Choose File....",
+      "Navigate to the JSONLZ4 file you want to restore then click Open.",
+      "NOTE: If you need to edit a JSONLZ4 file, you can use Firefox with the \"mozlz4-edit\" add-on installed. You can also open and convert JSONLZ4 files with the Firefox Bookmark Backup Reader/Decompressor online program."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +70,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/jsonlz4",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.696Z"
+      "url": "https://fileinfo.com/extension/jsonlz4",
+      "retrieved_at": "2025-11-01T22:32:42.569Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.696Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.569Z"
 }

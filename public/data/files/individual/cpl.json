@@ -1,8 +1,28 @@
 {
   "slug": "cpl",
   "extension": "cpl",
-  "name": "What are CPL files and how to open them",
+  "name": "Windows Control Panel Item",
   "summary": "Learn about .CPL files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "mime": [
+    "application/cpl+xml"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The Windows Control Panel, which is included in every Windows installation, is a program that allows users to adjust many of their Windows settings. For example, users can use Control Panel to configure system and security settings, add devices and printers, uninstall programs, and change their computer's date and time formats.",
+      "When a user accesses a Control Panel feature, Windows loads the corresponding CPL file in Control Panel. For example, when a user clicks Uninstall a program in Control Panel, Windows loads the Programs and Features item from AppWiz.cpl.",
+      "NOTE: CPL files are stored in the C:/​Windows/​System32 directory. Some CPL files may open settings screens outside Control Panel itself."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "For the most part, you should never need to directly open a CPL file. Instead, open Windows Control Panel and navigate to the feature you want to access.",
+      "However, double-clicking a CPL file will open the Control Panel feature that file contains. (Many CPL files are not named intuitively, so this is not the best method of accessing Control Panel features). Advanced users can also execute CPL files directly from the Windows command line."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -23,10 +43,6 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "IconDeveloper"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -65,26 +81,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T18:24:49.290Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.136Z"
     },
     {
-      "url": "https://fileinfo.com/extension/cpl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.290Z"
+      "url": "https://fileinfo.com/extension/cpl",
+      "retrieved_at": "2025-11-01T22:32:42.136Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T18:24:49.290Z"
+      "retrieved_at": "2025-11-01T22:32:42.136Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.290Z",
-  "mime": [
-    "application/cpl+xml"
-  ],
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.136Z"
 }

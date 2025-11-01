@@ -1,8 +1,20 @@
 {
   "slug": "ld",
   "extension": "ld",
-  "name": ".LD File Extension",
+  "name": "Linker Script",
   "summary": "Learn about .LD files and view a list of programs that open them.",
+  "developer": "The GNU Project",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "You will most likely only encounter LD scripts if you are compiling code into a program or library output file in GNU. The files are utilized by ld, which is a GNU linker command-line tool used to combine input files into an output file. Linking is part of the compilation process when building source code files into an output executable file. The ld command is often used as the last part of the compilation process to build the final executable.",
+      "While LD files may store multiple types of commands, they most often store the SECTIONS command, which specifies how the sections in multiple input files should be mapped to a single output file. This helps control the memory layout of the single output file. Only one SECTIONS command can be stored in an LD file but it may include multiple statements that can define an entry point, assign value to a symbol, or describe the placement of an output section and the input sections that go into it.",
+      "LD files are saved in plain text. You can use various text editors, such as Microsoft Notepad, Apple TextEdit, and gedit to view and edit them.",
+      "NOTE: The ld GNU linker is part of the GNU Binary Utilities (binutils)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -63,13 +75,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ld",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.713Z"
+      "url": "https://fileinfo.com/extension/ld",
+      "retrieved_at": "2025-11-01T22:32:42.585Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.713Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.585Z"
 }

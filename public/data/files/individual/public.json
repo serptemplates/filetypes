@@ -1,8 +1,26 @@
 {
   "slug": "public",
   "extension": "public",
-  "name": ".PUBLIC File Extension",
+  "name": "OpenSSL Public Key",
   "summary": "Learn about .PUBLIC files and view a list of programs that open them.",
+  "developer": "The OpenSSL Project",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "OpenSSL is a is a software library that server, web, and network administrators use to secure network communications. Among other things, administrators can use OpenSSL to generate public and private keys for use with their web server. These keys are used to encrypt and decrypt information sent from a user's web browser to the web server.",
+      "Public and private key pairs are linked together. To create the public key stored in an RSA.PUBLIC file, administrators input an existing RSA.PRIVATE file into the OpenSSL command-line utility, like so:",
+      "openssl rsa -in rsa.private -out rsa.public -pubout -outform PEM",
+      "NOTE: OpenSSL public keys may also be stored in .PEM files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because RSA.PUBLIC is a plain text file, you can open it in any text editor, such as Microsoft Notepad (Windows), Apple TextEdit (Mac), or GitHub Atom (cross-platform). However, you should not edit the text RSA.PRIVATE contains. Editing your RSA.PUBLIC file will cause your web server or website to function incorrectly.",
+      "For instructions on how to use your RSA.PUBLIC file with a web server as part of an SSL certificate, refer to your web server or certificate's documentation."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -59,13 +77,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/public",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.842Z"
+      "url": "https://fileinfo.com/extension/public",
+      "retrieved_at": "2025-11-01T22:32:42.709Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.842Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.709Z"
 }

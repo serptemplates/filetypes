@@ -1,8 +1,23 @@
 {
   "slug": "kk",
   "extension": "kk",
-  "name": ".KK File Extension",
+  "name": "SyncCrypt Ransomware Encrypted File",
   "summary": "Learn about .KK files and view a list of programs that open them.",
+  "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In 2017, some users began reporting that their computers had been infected by SyncCrypt ransomware. SyncCrypt encrypts many of a user's files and renames them to use the .kk extension. It then opens a ransom note named readme.html in the user's default web browser. It also creates a folder named README on the user's desktop, which contains the ransom note and a .TXT file named AMMOUNT.txt, which specifies the ransom amount.",
+      "SyncCrypt ransomware is spread using emails that contain .WSF (Windows Script File) attachments. Typically, these WSF files are disguised as court orders, using filenames such as CourtOrder_356798287.wsf. If a user opens one of these WSF files, it will execute a process that downloads a .JPEG image from the Internet. This image contains embedded files that the ransomware uses to install itself."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because KK files are encrypted, you cannot open them. At this time, there is no way to decrypt KK files. The best way to restore files encrypted by KK ransomware is to retrieve them from a recent backup or perform a System Restore."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +54,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/kk",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.703Z"
+      "url": "https://fileinfo.com/extension/kk",
+      "retrieved_at": "2025-11-01T22:32:42.576Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.703Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.576Z"
 }

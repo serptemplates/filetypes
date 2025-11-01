@@ -1,8 +1,25 @@
 {
   "slug": "gpg",
   "extension": "gpg",
-  "name": ".GPG File Extension",
+  "name": "GNU Privacy Guard Encrypted File",
   "summary": "Learn about .GPG files and view a list of programs that open them.",
+  "developer": "Free Software Foundation",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "GNU Privacy Guard is an encryption program that uses the OpenPGP encryption standard defined by RFC4880. It allows you to encrypt and digitally sign files and email communications, using private cryptographic keys, and decrypt those files and communications using accompanying public keys.",
+      "Typically, files encrypted using GnuPG are saved with the .gpg extension. This denotes they were encrypted and can be decrypted with GnuPG. However, to decrypt a GPG file, you must possess the necessary GnuPG key (typically another user's public key).",
+      "NOTE: On occasion, some GPG files may instead contain a GnuPG key."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use GNU Privacy Guard to decrypt a GPG file, provided you have access to the necessary security key. After importing the necessary key, use the following command to decrypt your GPG file:",
+      "gpg -d YourFilename.gpg"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -39,13 +56,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/gpg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.640Z"
+      "url": "https://fileinfo.com/extension/gpg",
+      "retrieved_at": "2025-11-01T22:32:42.506Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.640Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.506Z"
 }

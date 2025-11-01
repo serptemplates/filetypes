@@ -1,8 +1,25 @@
 {
   "slug": "jigdo",
   "extension": "jigdo",
-  "name": ".JIGDO File Extension",
+  "name": "Jigdo Download Specification",
   "summary": "Learn about .JIGDO files and view a list of programs that open them.",
+  "developer": "Richard Atterer and Steve McIntyre",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Jigdo is a file-downloading utility developed by Richard Atterer and Steve McIntyre. It can be used to download and piece together constituent portions of any sort of large file. Most commonly, however, Jigdo is used to download operating system installation images, saved in various disk image formats.",
+      "To target, download, and piece together the constituent parts of a disk image, Jigdo uses JIGDO and .TEMPLATE files. The JIGDO file is used to retrieve the TEMPLATE file, which specifies the constituent files Jigdo needs to locate and combine.",
+      "Optionally, Jigdo users can combine local portions of a disk image with pieces they download, to create a composite image and speed up the image creation process. After a Jigdo user stops specifying local files, Jigdo downloads the remaining pieces and creates a resulting disk image.",
+      "Jigdo users use the jigdo-file utility to create JIGDO and TEMPLATE files. For complete instructions, refer to Jigdo's documentation."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Jigdo to load and begin the file creation process specified in a JIGDO file. To do so, run the jigdo-lite script and then specify the path to your JIGDO file. For complete instructions, refer to Jigdo's documentation."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -43,13 +60,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/jigdo",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.691Z"
+      "url": "https://fileinfo.com/extension/jigdo",
+      "retrieved_at": "2025-11-01T22:32:42.563Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.691Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.563Z"
 }

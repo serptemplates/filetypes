@@ -1,8 +1,28 @@
 {
   "slug": "wbf1",
   "extension": "wbf1",
-  "name": ".WBF1 File Extension",
+  "name": "Wii Backup File System File",
   "summary": "Learn about .WBF1 files and view a list of programs that open them.",
+  "developer": "Waninkoko",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Certain Wii game disk image management tools, such as Wiimms WBFS Tool and Wii Backup Manager, allow gamers to save Wii games as WBFS files. Gamers can use these files to play games on their Nintendo Wii, using the homebrew program USB Loader GX, or in a Wii emulator, such as Dolphin.",
+      "However, due to limitations in previous versions of USB Loader, WBFS files can be no larger than 4GB. So, when a WBFS creation tool is used to save a game that is larger than 4GB, the tool creates both a WBFS file and a WBF1 file. The WBF1 file contains any game data that did not fit into the WBFS file. To play a game created this way, a player must have access to the game's WBFS and WBF1 file."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "These days, most Wii USB Loaders and emulators can process files larger than 4GB. So, in order to play a game that is saved across both a WBFS and WBF1 file, you should:",
+      "Move both files to a single folder.",
+      "Rename your WBFS file to use the wbfs.001 extension. Then, rename your WBF1 file to use the wbfs.002 extension.",
+      "Use a Zip-compresion program like 7-Zip to extract the files from the folder, merging them into one WBFS file.",
+      "Load and play the WBFS file on your Nintendo Wii or Wii emulator.",
+      "If your Wii USB Loader cannot process files larger than 4GB, do not perform the steps above. Instead, make sure your WBFS and WBF1 files are stored in the same folder on your USB drive or PC, before opening and playing your WBFS file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -47,13 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/wbf1",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.984Z"
+      "url": "https://fileinfo.com/extension/wbf1",
+      "retrieved_at": "2025-11-01T22:32:42.864Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.984Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.864Z"
 }

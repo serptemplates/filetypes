@@ -1,8 +1,33 @@
 {
   "slug": "wsb",
   "extension": "wsb",
-  "name": ".WSB File Extension",
+  "name": "Windows Sandbox Configuration",
   "summary": "Learn about .WSB files and view a list of programs that open them.",
+  "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Windows Sandbox is a virtualization feature included with certain editions of Windows, such as Windows Pro, Enterprise, and Education. It allows users to run an isolated (or \"sandboxed\") instance of Windows within their current Windows instance. This allows the user to, for example, install and run a program in Windows Sandbox without affecting their host machine.",
+      "Optionally, users can create and use WSB files to control certain aspects of how their Windows Sandbox instances function. Each WSB file begins with the text <Configuration> and ends with the text </Configuration>. Between those tags, users can specify settings that control whether:",
+      "A sandbox instance uses virtualized GPU (vGPU) or Windows Advanced Rasterization Platform (WARP)",
+      "The sandbox instance has network access",
+      "Any folders should be shared with the host instance (in a read or write capacity)",
+      "Any commands are issued at sandbox startup",
+      "The host machine's microphone and webcam input is shared with the sandbox",
+      "Increased security settings are placed on the RDP session",
+      "The host machine's printers and clipboard are shared with the sandbox",
+      "Additionally, users can specify the sandbox's memory capacity (in MB).",
+      "For complete instructions on how to specify and change these settings, refer to Microsoft's official documentation."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit a WSB file with Microsoft Notepad, Microsoft Visual Studio Code, or any other text editor (just as you would any other XML file).",
+      "To use a WSB file with Windows Sandbox, first check that Windows Sandbox is available and enabled on your Windows machine. If it is, double-click the WSB file to launch a sandbox instance that uses that WSB file's settings."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -52,13 +77,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/wsb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T18:24:49.998Z"
+      "url": "https://fileinfo.com/extension/wsb",
+      "retrieved_at": "2025-11-01T22:32:42.877Z"
     }
   ],
-  "last_updated": "2025-11-01T18:24:49.998Z",
-  "category": "other",
-  "related": [],
-  "containers": []
+  "last_updated": "2025-11-01T22:32:42.877Z"
 }
