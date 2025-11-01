@@ -4,8 +4,19 @@
   "slug": "fgrom",
   "extension": "fgrom",
   "name": ".FGROM File Extension",
+  "type_name": "FragRoom Shader File",
   "summary": "Learn about .FGROM files and view a list of programs that open them.",
   "developer": "siljamdev",
+  "more_information": {
+    "description": [
+      "An FGROM file is a fragment shader file used by siljamdev FragRoom, an application for running fragment shaders offline on a desktop computer. It contains two main sections comprised of plain text: special FragRoom configuration options and OpenGL Shading Language (GLSL) code. The configuration options control aspects of the FragRoom window, such as its title, maximum frames per second (FPS), and other runtime settings, while the GLSL section contains the shader program itself, which is processed and rendered by the application."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "GLSL is a C-like programming language used to write shaders, which are small programs that run on a computer’s graphics processing unit (GPU). Any user can create or edit an FGROM file using a standard text editor, making the format accessible to both shader developers and hobbyists who want to experiment with visual effects outside of a web browser or online shader platform."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open FGROM files with FragRoom in Windows. While other shader tools could open the GLSL portion of an FGROM file, the added configuration options are specific to FragRoom and may cause errors in programs that do not recognize them.",

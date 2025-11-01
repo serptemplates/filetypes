@@ -1,9 +1,25 @@
 {
   "slug": "rel",
   "extension": "rel",
-  "name": ".REL",
+  "name": "Relocatable Module File",
   "summary": "Learn about .REL files and view a list of programs that open them.",
   "developer": "Nintendo",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Mario Kart Wii holds only one REL file, named StaticR.rel. This file contains gameplay logic and other data, and it is located in the /​rel directory.",
+      "Super Smash Bros. Brawl's REL files are located in the game's Modules folder. Each REL stage file has an identifying string of code that looks as follows: 38 A5 00 00 38 80 00 ID. The ID is actually two digits that signify the specific stage."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit Nintendo REL files with BrawlBox (Windows), a free program that allows gamers to edit Nintendo game resource files.",
+      "Those who want to replace Super Smash Bros. stages with other stages (including custom stages) can use Stage Switcher (Windows) to overwrite a stage's REL file. Then, the new stage will appear instead of the overwritten stage.",
+      "Those who want to edit data in Mario Kart Wii's StaticR.rel file can do so using the wstrt utility included in Wiimms SZS Tools (Windows) or StaticR.rel Tool (Windows)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,13 +30,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=9208&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open and edit Nintendo REL files with BrawlBox (Windows), a free program that allows gamers to edit Nintendo game resource files.",
-      "Those who want to replace Super Smash Bros. stages with other stages (including custom stages) can use Stage Switcher (Windows) to overwrite a stage's REL file. Then, the new stage will appear instead of the overwritten stage.",
-      "Those who want to edit data in Mario Kart Wii's StaticR.rel file can do so using the wstrt utility included in Wiimms SZS Tools (Windows) or StaticR.rel Tool (Windows)."
     ]
   },
   "images": [
@@ -51,10 +60,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/rel",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.274Z"
+      "url": "https://fileinfo.com/extension/rel",
+      "retrieved_at": "2025-11-01T22:32:42.733Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.274Z"
+  "last_updated": "2025-11-01T22:32:42.733Z"
 }

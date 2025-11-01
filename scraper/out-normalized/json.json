@@ -1,9 +1,55 @@
 {
   "slug": "json",
   "extension": "json",
-  "name": "JSON File",
+  "name": "JavaScript Object Notation File",
   "summary": "Learn about .JSON files and view a list of programs that open them.",
   "developer": "Douglas Crockford",
+  "category": "web",
+  "category_slug": "web",
+  "mime": [
+    "application/json"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "JSON data is written in key/value pairs. The key and value are separated by a colon(:) in the middle with the key on the left and the value on the right. Different key/value pairs are separated by a comma(,). The key is a string surrounded by double quotation marks for example “name”. The values can be of the following types.\n\nNumberString: Sequence of Unicode characters surrounded by double quotation marks.Boolean: True or False.Array: A list of values surrounded by square brackets, for example[ \"Apple\", \"Banana\", \"Orange\" ] Object: A collection of key/value pairs surrounded by curly braces, for example{\"name\": \"Jack\", \"age\": 30, \"favoriteSport\" : \"Football\"}\n\nJSON objects can also be nested to represent the structure of the data. Given below is an example of a JSON object.",
+      "The JSON format was originally based on a subset of JavaScript but is considered a language-independent format, being supported by many different programming APIs. JSON is commonly used in Ajax Web application programming. It is becoming increasingly popular as an alternative to XML.",
+      "While many applications use JSON for data interchange, they may not actually save .json files on the hard drive since the data interchange occurs between Internet-connected computers. However, some applications do enable users to save .json files. One example is Google+, which uses JSON files for saving Profile data. After logging in, you can choose the \"Data liberation\" page and select \"Download your Profile data.\"",
+      "Mozilla Firefox saves bookmark backups using JSON files. The files are saved to the Firefox user profile directory within a folder called bookmarkbackups. You can also make manual backups of Firefox bookmarks and import them into a different copy of Firefox. To import, open the bookmark Library, click the import/export button in the top bar, choose Restore → Choose File..., and then select your JSON backup file."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because JSON files are plain text files, you can open them in any text editor, including:",
+      "Microsoft Visual Studio Code (multiplatform)",
+      "Microsoft Notepad (Windows)",
+      "Apple TextEdit (Mac)",
+      "Vim (Linux)",
+      "You can also open a JSON file in the Google Chrome and Mozilla Firefox web browsers by dragging and dropping the file into your browser window."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -72,48 +118,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "Because JSON files are plain text files, you can open them in any text editor, including:",
-      "Microsoft Visual Studio Code (multiplatform)",
-      "Microsoft Notepad (Windows)",
-      "Apple TextEdit (Mac)",
-      "Vim (Linux)",
-      "You can also open a JSON file in the Google Chrome and Mozilla Firefox web browsers by dragging and dropping the file into your browser window."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADwklEQVR42u2XX2wSSRzHZ6FC+Y80NbW6LFtatbEmRh6sfx70fDAmF/Q0OS/QxD+JT2p98OKr8cl3/yU+e6WalNpocqfm4uKj8dqzqXW3YP3TaqUUKUsXCvTYcWaBdoW1QW8vlxg32QR2Zufz+f52ZhYI8D8fxHeBb1LgcB/bSoiFNTd/7nj0uT4/BYZtNr0urrqA/3bYPf4mHHKTrb/2HNpwS6nPgZ5hazLDP9jpat6oqgCGj8WjzEudjtxntv+iJLD/t6dWPjt3f0hv6OxusmdVE/D1j7nDiWmGa2wmdakE2Ge0VgkU4cL9QYOxk57jwcE2J1RFAMFbwolYiFvVTAKCALpkvErAi+ApDDeaOsUVOuD+EANeN/nvK+BH8DEMb1pLShcgrBKQ4Dnh3qDBtE3U6aU+qghIyWdjDNdEOnFyIIpVAj/e+Nsi5NMouXmbuEKPDdUR8PVzCB5nuNVrEVwjDVopwKczvwsL8/eGTObtBVR2zFZFQCp7cgbBySV4hcBeg+VElE8cGzRbSnCojoAvyLVE+DjDrqGc0j5WhssEtBkBdAip5IjFZl+CqyDgC7J0JJUISXCcvASsFMCniE5C+iyqI4DgLgR/xJIulFxTBaz8DhevqyDgD3KuyBxKTtIUlGb7p0BYTvtfCCzCqRYKJ4d4QJkAkc+BTTPRmRcGU2PGYlNXoARnWFerq/zM5QJEPgs2Tb8fcTsazzFC6o+kvUFRQI+23ZzRDIov3xoFJLgwy7B0GQ4/EZCSR6dGKHvDHn2dxvlniv+rWkAEjtQs3KGrv/sgLXhzNkdtAv5+Cf6QpdtoQGiLZZQJEDkMf/fMZWvYEzi4Pnb0TsSjJODgE9AjiicdjoapgZnYQE0CXUGOCmeSjATXaEvlXhIAOPnU5DMKwXsRHN+jJLASwwuFUwNHO68dvxPZX5MAWmrUeIZnWPd6GsqTL5Y9CzreToyi5D8ESnAlAZx8yz8YvvUabq9JwNfHOsfn+RDbuoGGlclhcbZ3TL55Tlkdu3tl8EqBlfwH6FkonEbwq+X2ZQQEScCP4C+yCN7Wjp55nWymy5JPvGZdVseuQAVcLkBoCOjJL3Sjsl+Rty8r4O0Zdmry6dBLm5WG2rriWi0vIVBcu7aMwJJG6+7eQ+3TSpMWCwxNvnrSYrKeQfDLle1HBsLep9F3t0V9/eKYONwBanWa8JwPaHJ5UbvcfoD6F0Yvdomfaz8c5DyFXHZHn2/zJaX2dWevo5WsVVpx6vwk23q+R/P4gl/8mnu/zT8m3wW+5PgI4KU0N4X2aZQAAAAASUVORK5CYII=",
-      "alt": "MAME"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3klEQVR42mNkGGDAOOqAUQdgE8xv+v//zgNUsa3zGOFq/zeU/Gc4fxq7gRsPMnon/f+PLKaiwMAwsY4Rq10Ygtgsp9QB+ByBIYCuGdliYh1AilmD2wG4go1YB6BHJ8kOwKaBFAcQY96oAwaXA5ATDb7CgxQHEDKTpCxDjgMImT14HDDgUYDNtSMvFwwdB6RH/md48WxgHEBJDqC4Nvzvb4/R0MDnAIprQ3RN+BxAav7H6QBCTTJcjsDXEMEWmjgdgMsR+EICX8LDZzlOBxADYI7AFvSkgMHZLxh1AD0BAD5SRDC7kDZaAAAAAElFTkSuQmCC",
-      "alt": "JSONBuddy"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEXElEQVR42u2XXWgcVRTHz507u5tsdjeb2qIWPx4qlsRUX/TBB6nUTxALwa9gtWoQpFiyyfYjQQJSrbbpmtZC1YJQQRC0WJAGFK0tFds+2Ifar1ipYIuRVCLWWrNmd3bm+j93ZnY32clm00j64iVn753Zmzm/87/n3Lkr6Co38T9A/1vb+8bH/3l9Lp1KQ77W98q6NzAsiE39GaftiRUil8vhWv2njt77cJBWrXy0ov9sz256ta/3Wkz5U2zesjW7dOk99bNxZAhBAuYvqFJsyhtXBvXVvv0McAuGF8TGNzPZVGp1fcQUgZOnb0Irp6b4ZsI1IAskKZMZYIDFuDUCgC3Z9JruWSkw01YB0LM+XW/Zig59c5QM2VDTQxxnjJbde6ceH/v+eOCc25e06v6+9Ce637/1KbKFWQnQC4A8AI4cGqKdB89CKkXC8Exyj3U2HXwo3fP9lS130G3NC2heUyPpCVXajAA+OnpOOyBAGNIH4N4pXcPabmrxABJ04tQPV67Aho2bVV/vWsp5AHuHhnWk7NSQmGJ4jo0SjAGY++ffqgGuAYASUqchakEnsq6ISQo0XD9Ge9d1BAOsSafwUFMDfH3uAhmsgOEqkLXyZJNFeYctB2cAMhW133iXC5BspOOnh6oqsDyzi6Lzs/TxC6uDAbq7OskMhTTAkd9GyVY2/XrxIo3+fZlycMrr7srv6OjZXl78oAcABSCVLmGO3CvlchXaP9hB0cQY7XqsZ3qAL86fpx9HRshShYmOTdexvwSrFj3sAcShwJmqCnTs6adE0x/09rL+YIA0AKQHkDl8mITv2PQj9iCQD74KL938SDEHHDxUOTa+D66GrgM9up8aoBsApgsw8N23ZRGXZBdGSX4GefGG5W4VYAlOnK5eBTUApADgJuG2YwcnOtYOlefcLqrQcV2bC9CYgFJmzdv4tADbTx4oRsplZxjlIHbx+rkFj9e8D8wIYMeZfcVEK1/zcuc8fmZeexEANYvyFDWdbqYFePfsl2VOK53rXMD1040rNEAyyQDu63jyBsTL4sAKBRvvDoe3KQrVx6oD7Pz580nO2aldume4EO2xZzVAE8rw5BRluKS1FQDYxqwCAJQGCEfjAQDYCaW3E77/y2BJeqMsesOP3u2fjD7vAcQggFkRva+AjcgLlkUF29H7VF1DohJgbboLDiV9unuQFi5cVFM2Dw//RA89cDclUQWnhoKTsKW5GZFDASyBfkfgXl0sAKArlaJQ2KQwkm909PeaAPyWiMf08rEC7MSPmtfeQdQMwPJz46NbIEBnZ4ri0RBJwetlUSgSRrra+HP0Ucs08Vo0wuQeWtkc3StENm4p/WBXcvybwv8AwE/A8oXheTISDQaIRMwZRT6bNulAktmQt/LrpZR1V/Iw3v+lZJOQGtrYBShnVz3g/3Xp0jsDmU3biE/F+GBtk7A4TM6RCDbsMvHvAg4CxvqHvPFcNE4ii/iX0Rw5nLJddYB/AX5Rsnb8pzteAAAAAElFTkSuQmCC",
-      "alt": "Brackets"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABI0lEQVR42u1XCw6DIAwtJ5ObwdH0ZB0VGPVDh4BTl5EQEpL2PV5fBRVcPNSfQEMs9shXSwDdCOF+VaouZw2BAM6SOHRrYZ5fIgAwTSMMg55XrbUDt/M8mruKwDgmcFpJ/qgAkTtSju4KeBVscTm6K+CB3+VoJoC7m2UeKMKRCASzp3Yjt6/3Ygvu7ccYCUvlwbetlgOngxuzFaukPbMEeJ1JYgmcam6MXZQleUP2g6AAMPD86QicptZL8OSNRgXoFGvXc+PlwFsViHoHOSCT3CsguP8jTsl3ACUFIviZdwHmFKBB5FZkTrmMdj9I3Cd3ug3PJyDdBZcpUJuv+knWK1frqxhbczyaAC9DdZ77EXC9jCWBrOex4C6IMRu8R/+a/QaBF1abBjCYEOisAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Visual Studio"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "UltraEdit"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Notepad++"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -122,29 +130,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/json_3098.png",
+      "alt": "Screenshot of a .json file in GitHub Atom",
+      "caption": "JSON file open in GitHub Atom"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.814Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.167Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.814Z"
+      "url": "https://docs.fileformat.com/web/json/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.167Z"
     },
     {
-      "url": "https://fileinfo.com/extension/json",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.814Z"
+      "url": "https://fileinfo.com/extension/json",
+      "retrieved_at": "2025-11-01T22:32:42.167Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.814Z"
+      "retrieved_at": "2025-11-01T22:32:42.167Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.814Z"
+  "last_updated": "2025-11-01T22:32:42.167Z"
 }

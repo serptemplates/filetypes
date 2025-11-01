@@ -4,8 +4,22 @@
   "slug": "itl",
   "extension": "itl",
   "name": ".ITL File Extension",
+  "type_name": "iTunes Library File",
   "summary": "Learn about .ITL files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "Database used by iTunes to organize files in the iTunes music library; contains a list of songs in the library, playlists created by the user, song ratings, and comments."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In Windows, the iTunes library file is saved in the following location: \\Documents and Settings\\username\\My Documents\\My Music\\iTunes\\iTunes Library.itl",
+      "On the Mac, the iTunes library file is saved in: /Users/username/Music/iTunes/iTunes Library",
+      "Notice that the Mac version of the iTunes library file does not include the \".itl\" file extension. However, both the Mac and Windows versions of iTunes save a related file called \"iTunes Music Library.xml\" in the same directory. This file makes the music and playlists available to other applications (such as iPhoto and iMovie on the Mac).",
+      "If the iTunes library file is deleted, iTunes can recreate it by searching for songs in the Music folder. However, all playlists, song ratings, and comments will be lost."
+    ]
+  },
   "programs": {
     "windows": [
       {

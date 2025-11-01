@@ -1,9 +1,26 @@
 {
   "slug": "vhd",
   "extension": "vhd",
-  "name": "VHD File",
+  "name": "Virtual PC Virtual Hard Disk",
   "summary": "Learn about .VHD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "mime": [
+    "application/x-virtualbox-vhd"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The VHD Image Format Specification has been available as a royalty-free license since June, 2005. The VHDX format was introduced in 2012 as an extension of the VHD format. Virtual hard disks saved in the VHDX format are stored in .VHDX files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can mount VHD files with various virtualization programs and launch the virtual machine they contain, including Microsoft File Explorer (bundled with Windows), VMWare Workstation (Windows, Linux), VMWare Fusion (Mac), and QEMU (cross-platform). For example, to mount a VHD file with Windows File Explorer, right-click the VHD file and select Mount.",
+      "You can also use 7-Zip (Windows) to examine a VHD file's contents without mounting it."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -48,36 +65,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can mount VHD files with various virtualization programs and launch the virtual machine they contain, including Microsoft File Explorer (bundled with Windows), VMWare Workstation (Windows, Linux), VMWare Fusion (Mac), and QEMU (cross-platform). For example, to mount a VHD file with Windows File Explorer, right-click the VHD file and select Mount.",
-      "You can also use 7-Zip (Windows) to examine a VHD file's contents without mounting it."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Windows Virtual PC"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEcUlEQVR42rWXf0hbVxTH78vLj3b5ocmi7RLTOIU1rqt0XXWT0bXIWDbaKENcQUV06B8TJlGQ7Y9CFdkf858WVgoiDDq64Qo6fzCwrN3cELLN/cjMSCN1szNtrRpTZ1Lzy/fevs/asdi854vNDhxu3n3n3vu555x77gtFBKSzs1OJRka2Fw62MQl2KYUSWLwRTR+UljjPBxhzOiMAmOgdNOcl7v6/8iH0V6GXmPdzSQDdXad/YDj5PomLKqBPSjEEQEpvU79/evBttA7+gWFlJMEqCMtJ23yMUc655ssMa+vquscBOCuTq520Kkviph8Iu75GEtEVty9oO+INHhhAV+WOAQz7a505OUbCsdKTORzXkTs/9bifq/U8v3liRqGv8Y6BcikAdosC6BPXEIOwZIA1fT2Zd1/YAHjY19vbq15dXX1vamrqXYPBEMvPz5/My8sLVFdXNwrNkxKA0hwgtP6lZJdH/iJs4KoowMjISAmaaxRFaTe7OJZlv6ysrHSkBUA/9RZRFDiTDJnl70jC9/52AC8Hg8GW6enpV5aWlszhcHi6v7+/SMyTqUMg2wWKJ5It2XhSiFIB8NLa2mqfnZ0d02g0UavV+k1xcfFXNTU1Z9MD2GEODA8PPxOJRC4pFIoSpVL5sNvjcDiKRQF0lledems5v03JAPeXb5DA9YtJAKOjo/Z4PN7j9/sNi4uLfAhu2my2Qy0tLauiAGidklZ9VJIABgYG6ImJieMzMzNXZTJZ3GKxXCktLb1UX19/WdwD++xOg/V4Wh4IL/9BAt6Pt4bAsrKycoHjuJPZ2dkcTdN88bmOEDwrCpCpHOBDgGP3WSAQiCwsLJgQgtsFBQXlTU1NN9IDwAmg5Lokw40qmbgnCjA4OKhxuVyHfT7fOB4Zk8k0UlZW1tfQ0DCWFsBO68DQ0NBe7P4cvHAKlXBdpVLJ0e1DCIrSAqA0NiLLOpLsgaifsMvfigIgCe04fkPIgxWcgj2hUOiu2Wx2NDc3//y/5wAum0Nqtfr1aDS6G8ewBolIUJIXjEZjH18T8P6iKEDOHtODaidRQlEVuT3Z4z5Yt3EbvoCur6E6IXvR65iidzlphVry4rywTIzEYxH3j3dL6u7cN4+jyyhmLwZgRbuXf/g7piX+kOUEvopwGRBmO4g4o2RuhfMaOSIzbWcrCPCo4RkkDHU4LXds8kDXRAD0EgE6eY8gI0lhGosvIuGOovRm6fX6T/D73xcMw/xZVVV1Qmig0P8C3qVdULmExfnPr/MY8wtK8THcAeNJLznOV1FRIVwH0vGxmHR1dVG5ubml8MC5LR6YQ1mua2trS2QUgD/3aL6AxvDb1t7evl+n0/lS2QJirLu7+42Ojo6TqBUfoesWxhx9XIAX0XwPjXo8nsuYmMbFU5vKFh8pE7gf5PDQPCrjm+i6ifFPZwzA7XZParXaRGFhYbkAgMvr9RYB4Dck6jEeAGqHBjICwH/zSwzBKXiqfxPgDHQuY0kICP6ftFA1jOP9vS32FJT7B2zpZZFlSVv3AAAAAElFTkSuQmCC",
-      "alt": "WinZip"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD4klEQVR42u2XSSi1bRjH/8bMIbNjlvKaMlOGsjBkTEgsKFIkElEsTImdDJmVhSILIbIwLyzYkbwLkXhLsTL0Sabv/O+3IwfnnIdXvYvvu+p06p6e3/W/hud+tPCXTet/AG1t7VMPDw+Zubk5tLS+xvP8/AwLCwsYGhr+nJ2d/fFZBZ7NzMxgYmLyR574+fnB1dX1cnBw0PzTAH8m4m8LCAhAYGDg5djY2NcBTE1N4e3t/akHHx8f4/z8/HsAgoKCsLS0JOIpJR8Y+5KSEoyMjHwPQHR0NEZHRyFPSsiTUxJAdXU1Ojs74evri5CQkH/m5+dLpT7cwMDgTAkgKSlJHKYKQKGK4p8ATU1NaGlpAauor68PKSkpkr2XJ+yjEkB2djZqampgbW2tBMAH0VgtfBDnOHZ/f4/CwkJMTEyI+Y6ODtTW1r4DVux/a729vcohcHFxQVRU1Ifxj4yMRHJyMmQyGXR0dMSh9Li8vPxlTXt7O+rq6jAwMIDJyUk4ODi8nEVo7rO1tUVcXBwSEhLeA6gyer62tgZPT09RKTx0Z2dHQN3e3r4DaGxsRFtb24e9hVVG6Pz8fOkAra2tKC4uho2NjfDk8fERsbGx2NzcVFqnAOB/Q0PDh2d5eXmhsrISpaWl0gAo+cbGBuzt7Zm1Ymxqagq5ubnv1ioA9vf3sb29LXLk4eEBKysrmJ6eFsrZ2dmhq6sLWVlZ0gDofVFRkYgdvb+7u0NYWBh2d3dVAry26+tr9gccHR3B2NgYiYmJwgHCaATghvX1dRE3IyMjMTY3N4eMjIwP1ysAXmd/c3Oz+Onq6sLNzQ3Ly8twdnYW8z09PeoB4uPj0d/fL6qDGczYp6enY2FhQRLAwcEBgoODcXNzA0tLS3EWpec84TQqUF9fLxKGfYGbDg8PhZyUVRPA09OT6CuMPdUrKCgQHtMRhTpqARjv8fFxpKamilDQWN9lZWUq8+V1DlAl7qX0Pj4+WF1dFSq8NrUhYL0vLi4iNDQUenp6YiwzMxMzMzMaAa6uruDv74/T01ORvOyULNu3DU4tgKOjo0hAd3f3l9p3cnLC2dmZRoCqqipRapS+oqICeXl5oiQpO89iSRNMbQjoOeNHEJJfXFyIRqTOFADskFtbWyLeTGCGgf2Axj7ALklF1AJQbnphZWUlDtrb2xP3BSkAERERohGpCu3w8DBycnLUA/DFw1ervr6+yAHGU1V7fQvQ3d2Nk5MTletiYmKQlpYm/V0g1d52Qk23Ko2N6KsAUq9z364Ab0a8okkx5tXQ0NDvDxN515J9BwAzOzw8XNJa5pX8Rv3r73+a/ecB/gW1b7YU1/rHbQAAAABJRU5ErkJggg==",
-      "alt": "7-Zip"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Citrix XenCenter"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -94,24 +85,31 @@
     {
       "url": "https://fileinfo.com/svg/menu.svg",
       "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.888Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.229Z"
     },
     {
-      "url": "https://fileinfo.com/extension/vhd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.888Z"
+      "url": "https://fileinfo.com/extension/vhd",
+      "retrieved_at": "2025-11-01T22:32:42.229Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.888Z"
+      "retrieved_at": "2025-11-01T22:32:42.229Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.889Z"
+  "last_updated": "2025-11-01T22:32:42.229Z"
 }

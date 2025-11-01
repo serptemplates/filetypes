@@ -1,9 +1,33 @@
 {
   "slug": "crd",
   "extension": "crd",
-  "name": "CRD File",
+  "name": "Guitar chord File",
   "summary": "Learn about .CRD files and view a list of programs that open them.",
   "developer": "Martin Leclerc and Mario Dorion",
+  "category": "other",
+  "mime": [
+    "application/x-mscardfile"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Martin Leclerc and Mario Dorion developed the crd format in conjunction with the \"chord\" tool in 1992. The tool could write lead sheets, which are songs with lyrics and chords, and it would save the lead sheets as CRD files.",
+      "Leclerc and Dorion eventually stopped developing the chord tool, and Johan Vromans replaced it with ChordPro in 2016. With the new app, the ChordPro format and .cho file replaced the chord format and .crd file. However, ChordPro still supports the chord format, but it is now considered a legacy format.",
+      "NOTE: While the crd format typically uses CRD files, it may also use the .chord, .chopro, and .pro file extensions."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a CRD file with wxchordpro (Windows) and ChordPro (macOS). To open a CRD file with ChordPro, select File → Open. When you open a CRD file with ChordPro, the app automatically converts it to the ChordPro (cho) format.",
+      "You can also open a CRD file with a text editor, such as Microsoft Notepad (Windows), Microsoft WordPad (Windows), or Apple TextEdit (macOS). To open a CRD file with Notepad, select File → Open...."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "ChordPro can convert CRD files to several formats. When you open a CRD file with ChordPro, the software automatically converts it to the ChordPro (cho) format. You can also convert a CRD file to the Portable Document Format (.PDF) with ChordPro."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -72,49 +96,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open a CRD file with wxchordpro (Windows) and ChordPro (macOS). To open a CRD file with ChordPro, select File → Open. When you open a CRD file with ChordPro, the app automatically converts it to the ChordPro (cho) format.",
-      "You can also open a CRD file with a text editor, such as Microsoft Notepad (Windows), Microsoft WordPad (Windows), or Apple TextEdit (macOS). To open a CRD file with Notepad, select File → Open...."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "ChordPro can convert CRD files to several formats. When you open a CRD file with ChordPro, the software automatically converts it to the ChordPro (cho) format. You can also convert a CRD file to the Portable Document Format (.PDF) with ChordPro."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ChemDoodle"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABjklEQVR42sWWAZLDIAhFzcnizdSb6cmyYsQQKwaydtdOg5My/Pchtd3MP69NmX+s1tcAHOZYpH/KXhcNgA/BWGuHCXbfTUzpdi/GWPIhwvLOvQKYiu+7NTid1AEgxEj8FUBxSiCoOJRLKbIdeAvAip8AOytOIUbiagB0Mu7AGGDWfgnAXLzuU+Sdz8RVANh+ChFzdAwAM/sP3RkAKw7Red/c0/t9RPGafnbk2m9iAJ9f0RKx6j7kapw4bX8P4PMlv1mAJu5dzg4nAHYCZ9+L22gbJCeuAigTggYUqxcEVMDZU/E+78k99wzcW187AMV98G32gVQtglUc8yTuZQCkeNlX9wBA4T4inA0P7kcAZ+vDNi46i3S5Q+SeB+hmr4ZwMvc9wOXejIpOHN8+l7vnAZ5EZkvhngIs/bcjdX8HWLik7ilAg+jpV8BIASDp8JVgBciT+AcAQtTYisChBueSNr4C4EDKF2Sx+BRgBiJZ8DO3BOANiFRcBaAB+SrAE4hG/FcAHAju/wygB6l7cd0fQmq1MDNB2dcAAAAASUVORK5CYII=",
-      "alt": "GCC32 Application"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "CASIO REPORT HOLDER"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "My Photo Calendars & cards"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmUlEQVR42uWXW7bDIAhFdWTNzCQzS0fGDVrQGDDY1/1oVpuuqHA24CON4Z+vODMYAHD/Wn38O+XTNfgoDPmjDDrAeEDIb7waIMJG5IahJ0AcDhDxGWEnxN6FKYWwrqADuMWvstNBkF+qH4tTmRQ6hzhPuLbJAqmTM/TianoC1eYiIukFvoE8M8i2LGHZNrEj0yKeH0U3Hv0b0avC5eKIWhsWFgCKKsFJXMvAMHqOFfgGJaX3+xY2Ft0jv92W4nwtmaBnEifrfnn6AVoQA6AVp4vaBSbq+0Osfv0z3wJISbel/lyO4vu7ACIewhjAlX4HANUdHyAH8W8AsDUDEExv+9EStACn6F8BwEdqvQAj+FEJ1DKc6vksQFmCjn2gkoo4A9CaLuv5OQBFTz8LIDvW3X0coByZ4b0AhrgJkPLBUfb+vgy03U4BGLVXAap4jfKlSXghfgDoxLkdEbsNxQvgEBcAQzwnoJYQ5CweAjRvQJ4342iJcwaa9/02OB3AGXWfAZw0wgHA1J8SKcHk9bsAqDWC3jY1B34b4A8Tseot9wTplwAAAABJRU5ErkJggg==",
-      "alt": "Borland Package Library"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "CardMaker"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Business Card Studio"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -123,24 +108,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/crd_1059.png",
+      "alt": "Screenshot of a .crd file in Apple TextEdit 1",
+      "caption": "CRD file open in Apple TextEdit 1"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.777Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.136Z"
     },
     {
-      "url": "https://fileinfo.com/extension/crd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.777Z"
+      "url": "https://fileinfo.com/extension/crd",
+      "retrieved_at": "2025-11-01T22:32:42.136Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.777Z"
+      "retrieved_at": "2025-11-01T22:32:42.136Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.777Z"
+  "last_updated": "2025-11-01T22:32:42.136Z"
 }

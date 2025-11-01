@@ -1,9 +1,25 @@
 {
   "slug": "kotlin_metadata",
   "extension": "kotlin_metadata",
-  "name": ".KOTLIN_METADATA",
+  "name": "Kotlin App Metadata File",
   "summary": "Learn about .KOTLIN_METADATA files and view a list of programs that open them.",
   "developer": "JetBrains",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Kotlin is a programming language developed by JetBrains. It is the primary programming language that developers use to create Android applications, in IDEs such as Google Android Studio.",
+      "When a developer packages a Kotlin-based app into an APK file, it is possible that the program they use to package their app will create one or more KOTLIN_METADATA files within the APK file. These KOTLIN_METADATA files, which are not necessary to an app's function unless the app uses kotlin-reflect to perform introspection at runtime, often bloat an app's file size. Thus, many developers update their app project's build.gradle file to include the following command, which prevents app packagers from creating KOTLIN_METADATA files (and other files whose extensions include .kotlin_):",
+      "packagingOptions.exclude '**/*.kotlin_*'",
+      "APK files that contain KOTLIN_METADATA files typically store them in the kotlin and kotlinx directories."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "KOTLIN_METADATA files are not meant to be opened."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,11 +30,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13293&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "KOTLIN_METADATA files are not meant to be opened."
     ]
   },
   "images": [
@@ -54,10 +65,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/kotlin_metadata",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.148Z"
+      "url": "https://fileinfo.com/extension/kotlin_metadata",
+      "retrieved_at": "2025-11-01T22:32:42.579Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.148Z"
+  "last_updated": "2025-11-01T22:32:42.579Z"
 }

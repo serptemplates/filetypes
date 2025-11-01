@@ -1,9 +1,11 @@
 {
   "slug": "xip",
   "extension": "xip",
-  "name": "XIP File",
+  "name": "macOS Signed Archive",
   "summary": "Learn about .XIP files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "XIP files are similar to .ZIP and .GZIP files but are digitally signed in order to verify that the contents have not been modified since the creator saved the file. This helps secure the file from any unwanted tampering and disk errors.",
+      "The XIP file is commonly used as a secure solution for delivering Xcode downloads. In the past, Xcode downloads have been tampered with in order to install malicious code into user's applications."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A .xip file is a compressed archive format commonly used on macOS. It stands for “Xcode Archive” and it is primarily associated with Apple’s Xcode development environment.\n\nThe .xip file format is used to distribute software, particularly Xcode applications or updates in a compressed form. It combines the benefits of traditional archive file (such as .zip or .tar) with the added security of digital signature.",
+      "The .xip file format is a compressed archive format specifically designed for macOS. It is a proprietary format developed by Apple and is primarily associated with Xcode, Apple’s integrated development environment (IDE).\n\nThe .xip format is an extension of the standard ZIP file format, with additional features and capabilities specific to Apple’s software distribution requirements. It is similar to a .zip file in that it compresses one or more files or folders into a single file for easy distribution and storage.\n\nHowever, unlike a regular .zip file, the .xip format includes a digital signature that provides integrity and authenticity verification. This signature ensures that the contents of the .xip file have not been tampered with and are from a trusted source.",
+      "An XIP file is a .XAR archive that contains one or more files compressed or \"zipped\" using GNU Zip (gzip) compression that have been digitally signed. It also includes metadata such as certificates and the date and time the archive was created and modified."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To extract the contents of .xip file on macOS, you can follow these steps:\n\nDouble-click .xip file: By double-clicking .xip file, the Archive Utility application built into macOS should automatically open and initiate the extraction process.Wait for extraction: The extraction process may take few moments, depending on the size of .xip file and the performance of your computer. A progress bar or indicator may appear to show the extraction status.Access extracted contents: Once the extraction is complete, you should have access to the contents of .xip file. It may contain one or more files or folders related to the software package or update."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +86,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/xip/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.936Z"
+      "retrieved_at": "2025-11-01T22:32:42.293Z"
     },
     {
       "url": "https://fileinfo.com/extension/xip",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.936Z"
+      "retrieved_at": "2025-11-01T22:32:42.293Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.936Z"
+  "last_updated": "2025-11-01T22:32:42.293Z",
+  "containers": []
 }

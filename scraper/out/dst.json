@@ -1,7 +1,7 @@
 {
   "slug": "dst",
   "extension": "dst",
-  "name": ".DST",
+  "name": "AutoCAD Sheet Set",
   "summary": "Learn about .DST files and view a list of programs that open them.",
   "developer": "Autodesk",
   "programs": {
@@ -34,6 +34,18 @@
         "name": "DeSmuME",
         "url": "https://fileinfo.com/software/desmume/desmume"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Users can create sheet set files using AutoCAD's Sheet Set Manager (SSM) tool, which can be displayed on the interface by selecting the View tab and then Palettes panel → Sheet Set Manager.",
+      "Sheet set files do not contain the actual drawing layouts. Instead, they contain information pointing to the location of the layouts stored in the DWG drawing files. When a DST file is open in AutoCAD, the information is displayed in the SSM's Sheet List tab, with each sheet name acting as a shortcut you can click to view the layout of the DWG drawing file.",
+      "NOTE: DST files are typically stored in the ~/​My Documents/​AutoCAD Sheet Sets directory."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A DST file is a drawing sheet set created by AutoCAD, a CAD design and documentation application. It contains information in XML format about an organized collection of sheets, which are select drawing layouts that have been extracted from multiple .DWG drawing files. DST files are commonly used to deliver drafted or completed designs."
     ]
   },
   "how_to_open": {
@@ -81,8 +93,11 @@
     {
       "url": "https://fileinfo.com/extension/dst",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.037Z"
+      "retrieved_at": "2025-11-01T22:32:42.431Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.037Z"
+  "last_updated": "2025-11-01T22:32:42.431Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

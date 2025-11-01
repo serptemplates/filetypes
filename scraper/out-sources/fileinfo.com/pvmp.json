@@ -4,8 +4,21 @@
   "slug": "pvmp",
   "extension": "pvmp",
   "name": ".PVMP File Extension",
+  "type_name": "Parallels Packed Virtual Machine",
   "summary": "Learn about .PVMP files and view a list of programs that open them.",
   "developer": "Parallels",
+  "more_information": {
+    "description": [
+      "A PVMP file is a Parallels Virtual Machine (.PVM file) a user has \"packed\" with Parallels Desktop emulation software to transfer it to another computer. It contains a virtual machine (VM) saved in the proprietary PVMP format, which utilizes a unique compression algorithm. PVMP files are similar to .PVMZ files, but Parallels Desktop for Mac compresses them with PVMP compression instead of Zip compression."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Parallels Desktop for Mac is virtualization software that allows Mac users to run other operating systems, including Windows, Linux, Android, and additional versions of macOS. When you create a virtual machine (VM) in Parallels Desktop, the program saves it as a PVM file, which is a macOS package that contains the VM's files and settings.",
+      "If you want to move a VM to another computer, you can compress it into a PVMP file. A PVMP file is a packed version of a PVM file that reduces its size, making it easier to transfer. This feature is available only in the Pro and Business Editions of Parallels Desktop for Mac.",
+      "To create a PVMP file, first shut down your VM. Then, in Control Center, right-click the VM and select Prepare for Transfer. Parallels Desktop will compress the VM, and the resulting PVMP file will be saved in the same location as the original PVM file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a PVMP file with Parallels Desktop for Mac in macOS. To open a PVMP file in the folder you set as the default location for storing virtual machines (Parallels default location is Macintosh HD/​Users/​[username]/​Documents/​Parallels/​), select File → Open in Parallels Desktop for Mac, and select the PVMP file.",

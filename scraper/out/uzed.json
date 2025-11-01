@@ -1,7 +1,7 @@
 {
   "slug": "uzed",
   "extension": "uzed",
-  "name": ".UZED",
+  "name": "Zipped Unicode GEDCOM Genealogy File",
   "summary": "Learn about .UZED files and view a list of programs that open them.",
   "developer": "MyHeritage",
   "programs": {
@@ -18,6 +18,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11713&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "UZED files are primarily used by version 7 of MyHeritage Family Tree Builder. They replaced .ZED files, which are used by versions 1 - 6 of the software.",
+      "UZED files are similar to ZED files but instead of storing only a Zip-compressed GEDCOM file, it also includes a metadata.xml file that stores metadata about the family tree. Also, the GEDCOM file compressed in the UZED archive stores Unicode UTF-8-encoded text instead of ANSI-encoded text, which the GEDCOM file in the ZED archive utilizes.",
+      "ZED and UZED files are often referred to as being saved in the ZEDCOM (Zipped-GEDCOM) format. The files were replaced by .FTB SQLite database files with the release of version 8 of MyHeritage Family Tree Builder."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A UZED file is a Zip-compressed archive that contains a .GEDCOM genealogy file and .XML metadata file. It is used by MyHeritage Family Tree Builder, which is a free genealogy application, to store genealogy information, such as a family tree and characteristics about individuals within the family tree."
     ]
   },
   "how_to_open": {
@@ -56,8 +68,11 @@
     {
       "url": "https://fileinfo.com/extension/uzed",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.347Z"
+      "retrieved_at": "2025-11-01T22:32:42.837Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.347Z"
+  "last_updated": "2025-11-01T22:32:42.837Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

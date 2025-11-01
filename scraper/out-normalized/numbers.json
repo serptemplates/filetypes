@@ -1,9 +1,39 @@
 {
   "slug": "numbers",
   "extension": "numbers",
-  "name": "NUMBERS File",
+  "name": "Apple Numbers Spreadsheet",
   "summary": "Learn about .NUMBERS files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "other",
+  "mime": [
+    "application/vnd.apple.numbers",
+    "application/x-iwork-numbers-sffnumbers"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Apple Numbers is part of Apple's iWork suite, which also includes Keynote (for presentations) and Pages (for documents). The application was introduced solely for Macs with Apple's iWork '08 productivity suite, but Apple later released an iOS and iCloud web version.",
+      "Numbers is commonly used to organize numeric data such as business income and expenses, monthly active users for an app or website, or church attendance. You can choose to sort and view data in a variety of ways, such as in a formatted table or chart. You can also add text, shapes, and media (photos, music, and videos) to your NUMBERS file to enhance the presentation of the data.",
+      "The NUMBERS file is the main file type associated with the Numbers program. When you save your spreadsheet in Numbers, the program creates a NUMBERS file to store the spreadsheet information. The file is similar to the .XLSX file, which is used by Microsoft Excel to store spreadsheets."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open NUMBERS files only with Apple Numbers in macOS and iOS. To open a NUMBERS file on a Mac, select File → Open... in Numbers.",
+      "You can also upload NUMBERS files to the iCloud version of Numbers in your web browser (requires an Apple ID). This is helpful for Windows users who don't have access to the Mac or iOS versions of Numbers. In the iCloud application you can view, edit, save, and download NUMBERS files."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Apple Numbers can convert NUMBERS files to several different formats. In the macOS version, select File → Export To, then choose one of the following formats:",
+      ".PDF - Portable Document Format",
+      ".XLSX, .XLS - Microsoft Excel Spreadsheet",
+      ".CSV - Comma-Separated Values",
+      ".TSV - Tab-Separated Values",
+      "Numbers '09 Spreadsheet"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -44,50 +74,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open NUMBERS files only with Apple Numbers in macOS and iOS. To open a NUMBERS file on a Mac, select File → Open... in Numbers.",
-      "You can also upload NUMBERS files to the iCloud version of Numbers in your web browser (requires an Apple ID). This is helpful for Windows users who don't have access to the Mac or iOS versions of Numbers. In the iCloud application you can view, edit, save, and download NUMBERS files."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Apple Numbers can convert NUMBERS files to several different formats. In the macOS version, select File → Export To, then choose one of the following formats:",
-      ".PDF - Portable Document Format",
-      ".XLSX, .XLS - Microsoft Excel Spreadsheet",
-      ".CSV - Comma-Separated Values",
-      ".TSV - Tab-Separated Values",
-      "Numbers '09 Spreadsheet"
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Canva"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB6klEQVR42r2XWU7DMBCGx+kBuA2Fg8ATlEiU914CECAVnuhyAhCUTUisZ6AbB2lPEOzWTibOjBvaUS05dmwp8/kfezJWEHdjAHUFABtgilKQtrhGpo3ybRTZuchW3I8WjU91bSg46E5AGePWMAdBASj/425sEZCulTmEAUjmxtKH1/cAXN9ffSklinM0AFbBFGzcV2NmnFAiHWeAKilAJyFXHtwPASX+44YMgJGfgvBdUUaJoAtqGqBg1D6adRApF6+sEgiAUEEK4Pwl4IJaB21CD6J5JANw9szuCw3Q5jfhpRDA6RO7JwgA1JECOHkM7YE2cQpsRwrguOfFhUwNBOBDEKei0F89SirYbyfY1uzj7v1wR0aBh282StIArpEC6H2xUVIDtJLcqjFEXQjg/pONkhkAspu+SAHcfbD/CwvgSS8NcPuOVp93AwKwRrEK9V0ZgJs39s/pARAQSx9N4o+Z2wfzdxrANZtbMgr8jtlckgBAKkgBjEesEgr2Wl4cQBBVIYDRkI2SGuCaiAPCAMMBm0FZAMgnoa5Ut2UABn02l8wAKBWkAPo/bC6JABgILkqmTcmjWQ6AcQWXsHC5pP+twDWvCECqQI2vABEGWBZiuShpACbgbsbrd8XUAMR6Kruer88V+nquGn/xJG39Y08A3wAAAABJRU5ErkJggg==",
-      "alt": "MobiSystems OfficeSuite"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGKUlEQVR42sWWCWwUVRjH/zN79O6WbYHYaoqRttRiIdRasBiLipVQLQRoUg1KhYiSCgZDiBEPFGqMQpCASjjkbBEpYE2LWHpxpxh60FIM9KQFym4vavea3Rnfe7PTLrC0WwJxsl/e7O6b+f/e9/7ve4/D/3xxrl8Sfz4tPcyXn34/kRuqzyMF8ATCLcCpxc+z73uKmrGnpAUcx7GuSmfWSZLIRyQht6JI7kUHYuJGQ6f3RnO3GU1dpiEhBgXY91cLcgqvEQBehuCc3ZnogLDosJPWQVoHohNHIzDEB80NXWgS7YCKHxTCLcDiiDCo7BxqGntJ/AueV/VnQcmBRIVpBkjrUADsdkRNGUkASAZqDWiqNwLRIYD6/hBuAfxaRWitKvAqEryaBM+y4JoBWVweNRVnECQiE4IREOyFlktGNFXfhMObAx8z6r4QbgF+TB4PXgRKKrpQWtUjAygQEv3II1fSToUdLARExI9gAD0GE7pv9TFIyZcMItjPrScG9cCBknYcPGGUp4BNAy+nn2ZAlIUpABVmAHYBY+ODEKDXujVcWWOHZwA/0QxIPBv9iYu9UKnUTgg5jWz0dwmze+KB0Egf+ASoXVaIJJtWxaG61+IZgK5dDW9BC5VaQ8Q1rOWdEPQSRTsTk0VdIJRwDNzbnfeSvxrq2FDPAJaMC4daVKGuxYrLrTYZhMGomQfkkQt3iNrt9/5GI3ZsECZE6CFpeexs7R6eB34rM+DQqa6BLCgZUEznMkJ3o6fxTkoEMt6IZs9N3XJmmAClBuSe7CTi6n4jyh6g809NeFf6XcXZ7zYCEDl8gMAbKngJcsrp3NOWrQKek5ehNLAE5fXvxgtOAMUrzAMTwjwDCLjOQWtT9wPQ0dNaoBQi5m4K4CzDCsTxjUl4NXEi6q62IGzGtjugpAANNJ4CKFOwv+g6qwX9S5AAFK57Dk+Fh2HM7IPOSkgESFu88UWkvTYZXyyZg0PHzyOvax4TX/B6FBbOinkwD+Qcb2MQrqU4tjsLGWkpqLhUj54+C3LzS2EwdiD1pTgsnJ2EIFL1is5W4pvq6Sz9GanjCMD44QEk8L5Q2zgYugUYegR5N+TlzcinMhPfZabgscgEsh9I6DS2w2Lqhd7fC35a0kcwo7GtHSkrdkL/wjqMHqHFKLI9w1eDWn8fzwC8Gi1QmyWXEsw5MwCU75iJDUuTkTbtGXC6cLLJeINz2Jgw7BZIgglmswmZ6/NwqKwW42ZtZR7gdF7wjnvSM4BN06PJS4HC8hskbrqcB+R+2oql2L8qFVpvMiKfYIDXgBOIuMNKQEwEwoyahhvIO3sVB042YteRc+xcsKy0fnge2J1/FbuPNjgzMHAeOLd9JmpyP0eY3g+wkOrGqeW/aN0nqwEkIxLJhkOwodFow5/VRqzZfgwdt81UY2iAd8NDwNlEVF3pRPWVLmY+1xNRSHMWtn2WTqcVMHfRykTKo51uEuTe2bLvcq3os9qxPq8OGw6cRez64qEBJHKY4HoFp/ud8896c+gsy8SGlelIiidLy3abjNbOxCTJwQRZ0J2QvFqwmlHf1oniylZkl1xBZV0jnt1YOjRAxhN68nIHKv4xoPKy0SUDQFpoPjJmTYUvdbwiKMoQxASsNtAp6bU4UFB2AXuPVaG8thlf7yjDvlsebseKB7Ydvojth2sYwIWc+ZidPBmbVr+HETodedB5NqDpJ8IcMR9bCXRFEFMWnL6ID7OyseL7fCxJT3iwQrQ1t4oFBeg4tRJbvl2GpCkTmLksJhNsVhtMFgs0ZKccGRIMFZ1/62321oOFF7B07W6s+uEoMt+aMjwA898NEMm5fmD9c9C1bsKCuS9DsAlE1IY/jp1An9kGu6RCoJ8Wa5anY+L4KGhowSLZ+PXoOXyUtQu6uE/YxqUJDkTwtEmeAVjq2iCS45PifNrU7V0Ef19vUvdF9tiYOZvp6ZDtjpW/vI3UV+Lx5bI3EfN0FKkhVmT/XoLla3ciJDmL+UKl80fQpCjPAB7kOvPBVEyeOBY5mz/F42Gh2H+kCMu/2oKItfn39H0kAMo1rz0b8+dOR0HReXy8evPwAB7GFaLXSYvSZ+By/TUUFJfDZhMG1fgPYH4jXYDn58IAAAAASUVORK5CYII=",
-      "alt": "Tube Finder - Free FLV Converter"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADjklEQVR42rWWXUgUURTHz36gLmu44YMrhAklFUVJ1MOGkNBT2ku0FETkEoUEaSZE9CFUJCERZFIhS4o9RNRi0INo4GP55keRll+rqa0pq1n74e58de/Mzs6dcXZ2Z9TDzM7dO3Pv/3fPuefMmEBhHH/otjITwCcD48CkCsDpYDAlpzAEsTEAPh+A220IwoSk/Io+B2RnO8Dp1B45NSUHwGYAwsSvuLpan99aWyHpJRLAAIQAUFcH0NOTOcDISGoAnRCSB/Cq9BgJkNrSQhgCcNQO6GJdiTIPwHuoYUMB/jSXZvbs1UEMgJtPEMQ1dYDCQoBAYNMAXpwrgrNevyqEeh2IxbQnvT6sGwCbGkTKQuTxtKPN3Q+hUAtxE92lKMMAahCaAB0dfWC3ZwsQLAuowe96x50JwwBKCE2A7l4/LC0uQZbVBKFfjcID2AP3Z9YFQEJoAgyORgHyd8NQlw/sNjOERm8JkzYtGMkCVUsJUFn5FOaWrQDby2GofxJgvAvsOcgTY7czBuDQPOE4CxTD8WecFopXBPVh29XwTQCoqmr77Hv/1QU5DghHJFq7sxigoBTCURz/QBKi7MIJ6G45rinOInEaiybERQCxrQTgEADsrLgIQ9jtqSwBAWa0Oup5ilUL4hQpjK800U4A7L83rBOAgLDbLPIUzRCAZjn4uyp4+XDjdwMAKhC1b36mH5OwUwe3gtUibL2yph8GAbAtfAGY7UNjXdDW7pHHm5bayj7hv7AJjz0e2xgPsMQn3PiCUMYjid0fJ0LAt2kWbFlm/pmK5vH174EoErrROZtxCFw7cpMAJ59NyAGKjp6GkclV6WkLqgNW2xpxMQvCMUa+0VTSTekBigjBmVa/VAdQ3XcpaQtK9gIUl8PvIC2Jc0wor+ZyLi5EyxGaFwuGaGFiVoo3L87KswGfFvQuYRIhO/9yCjS+py69O+AqdZOVEFgavY28W/JqBzgMML9C8ZM++jgPeFEMEkQHf8WpzuIr7keCbKLvCApBHgofr/BqWhOgHQF4xHeBKI7viADTwRgPEAwzSdfGmbWrpohMMBMeuPJ6RhugYJvTg9+GVCyeFBcB/A/3weI/Om2sZVVQUYrr385qA6AfD956pDgJMLdMEfnOqpbcJJBKKb7ZOZcWwK0UFwEGGvbAUpgmiotKBtAkBCvzFra7HwKaAPnC1RtUA+itL+HbmwiQ2jCAkXFq9h+Tfp+JV6RUlAAAAABJRU5ErkJggg==",
-      "alt": "Solid Converter PDF"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -100,24 +90,40 @@
     {
       "url": "https://fileinfo.com/svg/search-white.svg",
       "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/numbers_2970.png",
+      "alt": "Screenshot of a .numbers file in Apple Numbers 10.1",
+      "caption": "NUMBERS file open in Apple Numbers 10.1"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.838Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.188Z"
     },
     {
-      "url": "https://fileinfo.com/extension/numbers",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.838Z"
+      "url": "https://fileinfo.com/extension/numbers",
+      "retrieved_at": "2025-11-01T22:32:42.188Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.838Z"
+      "retrieved_at": "2025-11-01T22:32:42.188Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.838Z"
+  "last_updated": "2025-11-01T22:32:42.188Z"
 }

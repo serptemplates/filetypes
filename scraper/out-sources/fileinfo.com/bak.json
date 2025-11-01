@@ -7,6 +7,22 @@
   "type_name": "Chromium Bookmarks Backup",
   "summary": "Learn about .BAK files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "A Bookmarks.bak file is a backup of a bookmarks file created by Google Chrome, Microsoft Edge, or another Chromium-based web browser. It contains a plain text list of a user's bookmarks and folders, formatted using JSON. Chromium-based browsers automatically create BAK files named Bookmarks.bak."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Many popular web browsers, including Google Chrome and Microsoft Edge, are based on Google's open-source Chromium browser. Chromium-based browsers save users' bookmarks in a file named Bookmarks. They also save a backup of users' bookmarks in Bookmarks.bak.",
+      "If you use a Chromium-based browser, and your Bookmarks file becomes corrupt or goes missing, you can use your Bookmarks.bak file to restore your bookmarks and folders. To do so, first navigate to the directory that contains your Bookmarks and Bookmarks.bak file:",
+      "Google Chrome for Windows: ~/​Users/​YourUserName/​AppData/​Local/​Google/​Chrome/​User Data/​Default",
+      "Google Chrome for macOS: ~/​Users/​YourUserName/​Library/​Application Support/​Google/​Chrome/​Default",
+      "Microsoft Edge for Windows: ~/​Users/​YourUserName/​AppData/​Local/​Microsoft/​Edge/​User Data/​Default",
+      "Microsoft Edge for macOS: ~/​Users/​YourUserName/​Library/​Application Support/​Microsoft Edge/​Default",
+      "Once you have located the Bookmarks backup file, delete the Bookmarks file (if it appears). Then, rename Bookmarks.bak to Bookmarks (remove the file extension). When you close and reopen your browser, the bookmarks contained in your renamed Bookmarks will appear."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open Bookmarks.bak with Microsoft Visual Studio Code (multiplatform), Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. Doing so will allow you to view the bookmarks and metadata the file contains.",

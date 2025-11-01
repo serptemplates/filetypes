@@ -1,7 +1,7 @@
 {
   "slug": "tlp",
   "extension": "tlp",
-  "name": ".TLP",
+  "name": "Tulip Software Graph Format File",
   "summary": "Learn about .TLP files and view a list of programs that open them.",
   "developer": "David Auber and Patrick Mary",
   "programs": {
@@ -10,6 +10,21 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=8765&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The syntax of the TLP format version: (tip \"1.0\" ; rest of the file ... )",
+      "The syntax of additional file information: (date | author | comments \"a string\")",
+      "The syntax of definition of nodes: (nodes id_node1 id_node2 id_node3 id_node4...)",
+      "The syntax of definition of edges: (edge id id_source id_target)",
+      "The syntax of definition of clusters: (cluster id name (nodes id_node1 id_node2 id_node3 ...) (edges id_edge1 id_edge2 id_edge3 ...) (cluster id name (nodes id_node1 id_node2 id_node3 ...) (edges id_edge1 id_edge2 id_edge3 ...) ) )",
+      "The syntax of definition of properties: (property cluster_id property_type \"property_name\" (default \"default_node_value\" \"default_edge_value\") (node id value) ... (edge id value) ... )"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File created by Tulip, an information visualization and analysis tool; contains graph definitions, such as the version of the format, the date, author name, and definitions of nodes, edges, clusters, and other properties."
     ]
   },
   "images": [
@@ -42,8 +57,11 @@
     {
       "url": "https://fileinfo.com/extension/tlp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.330Z"
+      "retrieved_at": "2025-11-01T22:32:42.810Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.330Z"
+  "last_updated": "2025-11-01T22:32:42.810Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

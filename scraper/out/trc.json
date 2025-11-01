@@ -1,9 +1,11 @@
 {
   "slug": "trc",
   "extension": "trc",
-  "name": "TRC File",
+  "name": "SQL Server Trace File",
   "summary": "Learn about .TRC files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -32,6 +34,41 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "To open a TRC file, select File → Open → Trace File, select your Trace file, and click Open.",
+      "Default TRC files are located in the following directory:",
+      "C:\\​Program Files\\​Microsoft SQL Server\\​MSSQL\\​LOG"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .trc extension contains the trace results of the activity of a Miscrosoft SQL server database. These files are created by a software SQL Server Profiler; usually packaged with Microsoft SQL Server software. The database administrators can analyze a sequence of database statements and can review the trace log if some kind of errors or warnings are suspected. These files are usually located in the typical LOG folder of MSSQL inside the Program Files directory on a Windows operating system.",
+      "File created by SQL Server Profiler, which is included with SQL Server software; contains trace results of the activity of a SQL database; can be used to analyze a sequence of database statements."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -65,15 +102,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/trc/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.289Z"
     },
     {
       "url": "https://fileinfo.com/extension/trc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.289Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.934Z"
+  "last_updated": "2025-11-01T22:32:42.289Z",
+  "containers": []
 }

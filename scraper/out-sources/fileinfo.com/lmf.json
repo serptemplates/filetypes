@@ -4,8 +4,20 @@
   "slug": "lmf",
   "extension": "lmf",
   "name": ".LMF File Extension",
+  "type_name": "Quartus II Library Mapping File",
   "summary": "Learn about .LMF files and view a list of programs that open them.",
   "developer": "Altera",
+  "more_information": {
+    "description": [
+      "An LMF file is a mapping data file used by Quartus II, a program that allows developers to analyze and optimize hardware description language (HDL) designs. It contains the names and I/O ports of Quartus II logic functions and the corresponding cells, components, and modules stored in other Quartus II files that the functions replace when a file is opened or compiled. LMF files enable family-specific macrofunctions in Quartus II."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The LMF file is an ASCII text file that stores the mappings as statements that can be read by any text editor. It can be used to map cells stored in Verilog Quartus Mapping (VQM) files and EDIF Input (EDF) files, modules stored in Verilog Design (V) files, and components stored in VHDL Design (VHD) files to Quartus II logic functions.",
+      "NOTE: Altera was acquired by Intel in 2015."
+    ]
+  },
   "programs": {
     "windows": [
       {

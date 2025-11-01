@@ -4,8 +4,23 @@
   "slug": "dl_",
   "extension": "dl_",
   "name": ".DL_ File Extension",
+  "type_name": "Compressed DLL File",
   "summary": "Learn about .DL_ files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A DL_ file is a compressed .DLL file created by Makecab, a Windows utility used for compressing files and creating .CAB files. It is often used for storing DLL files on Windows installation CDs so that they take up less space on the disc."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "DL_ files can be created using the following Makecab syntax:",
+      "makecab myfile.dll",
+      "DL_ files can be decompressed back to their original DLL file using this command:",
+      "expand myfile.dl_ myfile.dll",
+      "NOTE: Makecab can be used to create a compressed copy of any file. For example, an .EX_ file can be created from an .EXE file."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -4,8 +4,23 @@
   "slug": "madesktop",
   "extension": "madesktop",
   "name": ".MADESKTOP File Extension",
+  "type_name": "macOS Desktop Background Configuration File",
   "summary": "Learn about .MADESKTOP files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An MADESKTOP file is a configuration file used by macOS to store desktop background settings. It contains information about the wallpaper image applied to a user's desktop, including the file path, display scaling, position, and other appearance options in the XML standard. macOS uses MADESKTOP files to store the user's chosen desktop background when they log in or restart their computer."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Apple introduced the MADESKTOP file type in macOS Monterey 12.3, which is part of the Dynamic Desktop feature, enabling users to set wallpapers that change according to the time of day. Before this update, macOS only used .HEIC files for wallpapers.",
+      "They are typically stored within system or user preference directories and are used internally by the operating system's desktop management services. Changing a wallpaper through System Settings → Wallpaper updates the associated MADESKTOP file behind the scenes.",
+      "Most users will never directly interact with a MADESKTOP file. However, those who customize or troubleshoot macOS desktop preferences might encounter one when inspecting configuration data or transferring wallpaper settings between user accounts.",
+      "NOTE: You can find MADESKTOP files in the following location:",
+      "/​System/​Library/​Desktop Pictures"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "MADESKTOP files are not meant to be opened or edited manually. Instead, macOS automatically creates and references MADESKTOP files.",

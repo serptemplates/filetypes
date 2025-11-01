@@ -4,8 +4,25 @@
   "slug": "webpnp",
   "extension": "webpnp",
   "name": ".WEBPNP File Extension",
+  "type_name": "Web Point and Print File",
   "summary": "Learn about .WEBPNP files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A WEBPNP file is a printer driver package file used by Microsoft Windows. It is saved in the .CAB format and contains an install package for a printer driver. WEBPNP files are used for distributing printer drivers provided from websites or client networks."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WEBPNP files are often distributed using the Web Point-and-Print Protocol ([MS-WPRN]), which defines a method for downloading print drivers when a user clicks on a webpage link (an HTTP request) or a client program requests a driver. The website locates the appropriate driver and then returns a WEBPNP file to the requester. Once downloaded, the file can be opened to install the printer drivers.",
+      "WEBPNP files may contain the following contents:",
+      "Printer driver and installation files",
+      "An .INF setup file for the installation",
+      "A .BIN file specifying parameters needed to access printer configuration data",
+      "A .DAT file that includes any other printer setup data",
+      "WEBPNP files are executed by the Windows program wpnpinst.exe which is located in the ~/​Windows/​System32 directory."
+    ]
+  },
   "programs": {
     "windows": [
       {

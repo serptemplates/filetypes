@@ -1,9 +1,11 @@
 {
   "slug": "ldf",
   "extension": "ldf",
-  "name": "LDF File",
+  "name": "SQL Server Transaction Log File",
   "summary": "Learn about .LDF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -24,6 +26,41 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "LDF files are transaction logs. These logs contain a history of activity for both fully committed and partially committed transactions to the database (the .MDF file). After an unexpected shutdown, SQL Server can use the transaction log to restore the database to the exact state before the failure.",
+      "Transaction logs can be truncated once the database creates a checkpoint, which is a stable state of the database and the log file. RDBMS systems can then safely delete all log data up to the point of the checkpoint, reducing the log file size.",
+      "NOTE: LDF files can become very large in size. This is due to the fact that no checkpoint has recently been created. However, it also may be due to open transactions that have not yet been fully committed, or other locks on database records."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .ldf extension is a log file maintained by Microsoft SQL Server which is a relational database management system (RDBMS). All the transactions performed on primary database files (MDF)(such as insertion, update, deletion) are recorded in the LDF file. LDF files are critical components of any database. In case of a system failure, the log file is used to restore the database to a consistent state. Transactions log file can increase in size if transactions are not fully committed. LDF files can be opened with Microsoft SQL Server software application.",
+      "An LDF file is a log file created by SQL Server, a relational database management system (RDBMS) developed by Microsoft. It contains a log of recent actions executed by the database and is used to track events so that the database can recover from hardware failures or other unexpected shutdowns."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -52,15 +89,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/ldf/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.275Z"
     },
     {
       "url": "https://fileinfo.com/extension/ldf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.275Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.926Z"
+  "last_updated": "2025-11-01T22:32:42.275Z",
+  "containers": []
 }

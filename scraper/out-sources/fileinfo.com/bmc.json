@@ -7,6 +7,16 @@
   "type_name": "Bitmap Cache File",
   "summary": "Learn about .BMC files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Cached bitmap file created by the Windows Remote Desktop Client (RDC), which is part of Windows Terminal Services; stores multiple bitmaps that would otherwise be repeatedly sent from the terminal server to the client."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "By caching images in BMC files, the RDC program provides a substantial performance increase for remote clients, especially for low-bandwidth connections. BMC files are commonly found in the [User Profile]\\​Local Settings\\​Application Data\\​Microsoft\\​Terminal Server Client\\​Cache directory."
+    ]
+  },
   "programs": {
     "windows": [
       {

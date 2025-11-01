@@ -7,6 +7,18 @@
   "type_name": "Simple File Verification File",
   "summary": "Learn about .SFV files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An SFV file is a plain text file used to verify other files' integrity. It contains one or more filenames and associated CRC32 checksums, which are unique combinations of letters and numbers produced by a checksum utility. Using an SFV file and a checksum utility, users can determine whether any files referenced in the SFV file have been corrupted or otherwise modified. SFV files most commonly accompany files transferred via CDs, DVDs, or USB drives."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Checksum utilities allow users to quickly compare two files to determine whether they are identical. This can be useful in situations in which a user wants to copy and transfer a file to another user, and needs to know the other user received an exact copy of the file. In this scenario, the user can use a checksum utility to produce a checksum for the original file and its duplicate. If the checksums match, the files are identical.",
+      "Many checksum utilities, including MooSFV, QuickSFV, and Traction SFV Checker, allow users to create checksums for a group of files at the same time. Each file's name and its checksum are then saved in an SFV file. When a user transfers the group of files to a CD, DVD, USB drive, or other storage device, they can also transfer the SFV file to that device. This gives the user who receives the device an easy way to verify that none of the files stored on the device were corrupted during the transfer.",
+      "SFV files may also accompany files downloaded from the Internet. This allows users to verify that the files they downloaded were not corrupted or altered during the download."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use QuickSFV (Windows, Linux), Traction SFV Checker (Windows), and checkSum+ (Mac) to compare the checksums an SFV file contains against a file set's actual checksums. For example, in SFV Checker, you can add your files to the program's file list, open your SFV file, and compare your files' checksums to those listed in the SFV file. This will tell you whether the files you received are identical to the files used to produce the checksums listed in your SFV file.",

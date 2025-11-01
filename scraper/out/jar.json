@@ -1,7 +1,7 @@
 {
   "slug": "jar",
   "extension": "jar",
-  "name": "JAR File",
+  "name": "Java Archive",
   "summary": "Learn about .JAR files and view a list of programs that open them.",
   "developer": "Oracle",
   "programs": {
@@ -60,6 +60,18 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "JAR files contain CLASS files, application resources, and an optional manifest file (META-INF/​MANIFEST.MF). They are compressed using .ZIP compression and may optionally be digitally signed using the jarsigner tool included with the Java SDK. JAR files may be created with the jar tool, and they can be accessed using Java's java.util.jar API.",
+      "JAR files are used for some mobile games supported by Java-enabled mobile devices. They are also used by Mozilla Firefox, Thunderbird, SeaMonkey, and Sunbird to store themes and add-ons.",
+      "NOTE: The Java Runtime Environment is also referred to as the Java Virtual Machine (JVM). Sun Microsystems, the original developers of the JRE/JVM, were acquired by Oracle."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A JAR file is an archive saved in the Java archive (JAR) format, which utilizes Zip-compression. It is typically used as a program library or as a standalone program that runs if Java Runtime Environment (JRE), a framework used for executing Java programs, is installed on the computer or mobile device."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "JAR files are typically used to distribute applications that can be run with the Oracle Java Runtime Environment (multiplatform). If you have JRE installed and set as the default program associated with JAR files, you can simply double-click the JAR file to run it. When you do this on a Mac, Apple Jar Launcher (bundled with macOS) passes the JAR file to JRE, or JVM, which runs the file.",
@@ -77,30 +89,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "Java Platform SE"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEcUlEQVR42rWXf0hbVxTH78vLj3b5ocmi7RLTOIU1rqt0XXWT0bXIWDbaKENcQUV06B8TJlGQ7Y9CFdkf858WVgoiDDq64Qo6fzCwrN3cELLN/cjMSCN1szNtrRpTZ1Lzy/fevs/asdi854vNDhxu3n3n3vu555x77gtFBKSzs1OJRka2Fw62MQl2KYUSWLwRTR+UljjPBxhzOiMAmOgdNOcl7v6/8iH0V6GXmPdzSQDdXad/YDj5PomLKqBPSjEEQEpvU79/evBttA7+gWFlJMEqCMtJ23yMUc655ssMa+vquscBOCuTq520Kkviph8Iu75GEtEVty9oO+INHhhAV+WOAQz7a505OUbCsdKTORzXkTs/9bifq/U8v3liRqGv8Y6BcikAdosC6BPXEIOwZIA1fT2Zd1/YAHjY19vbq15dXX1vamrqXYPBEMvPz5/My8sLVFdXNwrNkxKA0hwgtP6lZJdH/iJs4KoowMjISAmaaxRFaTe7OJZlv6ysrHSkBUA/9RZRFDiTDJnl70jC9/52AC8Hg8GW6enpV5aWlszhcHi6v7+/SMyTqUMg2wWKJ5It2XhSiFIB8NLa2mqfnZ0d02g0UavV+k1xcfFXNTU1Z9MD2GEODA8PPxOJRC4pFIoSpVL5sNvjcDiKRQF0lledems5v03JAPeXb5DA9YtJAKOjo/Z4PN7j9/sNi4uLfAhu2my2Qy0tLauiAGidklZ9VJIABgYG6ImJieMzMzNXZTJZ3GKxXCktLb1UX19/WdwD++xOg/V4Wh4IL/9BAt6Pt4bAsrKycoHjuJPZ2dkcTdN88bmOEDwrCpCpHOBDgGP3WSAQiCwsLJgQgtsFBQXlTU1NN9IDwAmg5Lokw40qmbgnCjA4OKhxuVyHfT7fOB4Zk8k0UlZW1tfQ0DCWFsBO68DQ0NBe7P4cvHAKlXBdpVLJ0e1DCIrSAqA0NiLLOpLsgaifsMvfigIgCe04fkPIgxWcgj2hUOiu2Wx2NDc3//y/5wAum0Nqtfr1aDS6G8ewBolIUJIXjEZjH18T8P6iKEDOHtODaidRQlEVuT3Z4z5Yt3EbvoCur6E6IXvR65iidzlphVry4rywTIzEYxH3j3dL6u7cN4+jyyhmLwZgRbuXf/g7piX+kOUEvopwGRBmO4g4o2RuhfMaOSIzbWcrCPCo4RkkDHU4LXds8kDXRAD0EgE6eY8gI0lhGosvIuGOovRm6fX6T/D73xcMw/xZVVV1Qmig0P8C3qVdULmExfnPr/MY8wtK8THcAeNJLznOV1FRIVwH0vGxmHR1dVG5ubml8MC5LR6YQ1mua2trS2QUgD/3aL6AxvDb1t7evl+n0/lS2QJirLu7+42Ojo6TqBUfoesWxhx9XIAX0XwPjXo8nsuYmMbFU5vKFh8pE7gf5PDQPCrjm+i6ifFPZwzA7XZParXaRGFhYbkAgMvr9RYB4Dck6jEeAGqHBjICwH/zSwzBKXiqfxPgDHQuY0kICP6ftFA1jOP9vS32FJT7B2zpZZFlSVv3AAAAAElFTkSuQmCC",
-      "alt": "WinZip"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "WinRAR"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD4klEQVR42u2XSSi1bRjH/8bMIbNjlvKaMlOGsjBkTEgsKFIkElEsTImdDJmVhSILIbIwLyzYkbwLkXhLsTL0Sabv/O+3IwfnnIdXvYvvu+p06p6e3/W/hud+tPCXTet/AG1t7VMPDw+Zubk5tLS+xvP8/AwLCwsYGhr+nJ2d/fFZBZ7NzMxgYmLyR574+fnB1dX1cnBw0PzTAH8m4m8LCAhAYGDg5djY2NcBTE1N4e3t/akHHx8f4/z8/HsAgoKCsLS0JOIpJR8Y+5KSEoyMjHwPQHR0NEZHRyFPSsiTUxJAdXU1Ojs74evri5CQkH/m5+dLpT7cwMDgTAkgKSlJHKYKQKGK4p8ATU1NaGlpAauor68PKSkpkr2XJ+yjEkB2djZqampgbW2tBMAH0VgtfBDnOHZ/f4/CwkJMTEyI+Y6ODtTW1r4DVux/a729vcohcHFxQVRU1Ifxj4yMRHJyMmQyGXR0dMSh9Li8vPxlTXt7O+rq6jAwMIDJyUk4ODi8nEVo7rO1tUVcXBwSEhLeA6gyer62tgZPT09RKTx0Z2dHQN3e3r4DaGxsRFtb24e9hVVG6Pz8fOkAra2tKC4uho2NjfDk8fERsbGx2NzcVFqnAOB/Q0PDh2d5eXmhsrISpaWl0gAo+cbGBuzt7Zm1Ymxqagq5ubnv1ioA9vf3sb29LXLk4eEBKysrmJ6eFsrZ2dmhq6sLWVlZ0gDofVFRkYgdvb+7u0NYWBh2d3dVAry26+tr9gccHR3B2NgYiYmJwgHCaATghvX1dRE3IyMjMTY3N4eMjIwP1ysAXmd/c3Oz+Onq6sLNzQ3Ly8twdnYW8z09PeoB4uPj0d/fL6qDGczYp6enY2FhQRLAwcEBgoODcXNzA0tLS3EWpec84TQqUF9fLxKGfYGbDg8PhZyUVRPA09OT6CuMPdUrKCgQHtMRhTpqARjv8fFxpKamilDQWN9lZWUq8+V1DlAl7qX0Pj4+WF1dFSq8NrUhYL0vLi4iNDQUenp6YiwzMxMzMzMaAa6uruDv74/T01ORvOyULNu3DU4tgKOjo0hAd3f3l9p3cnLC2dmZRoCqqipRapS+oqICeXl5oiQpO89iSRNMbQjoOeNHEJJfXFyIRqTOFADskFtbWyLeTGCGgf2Axj7ALklF1AJQbnphZWUlDtrb2xP3BSkAERERohGpCu3w8DBycnLUA/DFw1ervr6+yAHGU1V7fQvQ3d2Nk5MTletiYmKQlpYm/V0g1d52Qk23Ko2N6KsAUq9z364Ab0a8okkx5tXQ0NDvDxN515J9BwAzOzw8XNJa5pX8Rv3r73+a/ecB/gW1b7YU1/rHbQAAAABJRU5ErkJggg==",
-      "alt": "7-Zip"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEMklEQVR42rWXS2xUVRjHz30/BjrvaVdGU2B4dQgxMWp4tCmNCTuD2kBKo1GJPExUotGkKgthooC6UIOJuiBxpRlEu4POo1MUF0b7oE4H0eqmZLDtaBHLdOYc/+d2aGgZ6r3T6X9z7z3nzjm/+V73OwJZBp3vSX7MGNun6xppaKi/NXzv6lWNvy98V1gOgN70hSPFYrFd03QaDPoLgmBtsxMAY44BMiPZkCiKUfwj0S5AqUQJY5QIgkgkSSxvwwilNLNubfht2wA/9Q8KWKB7cjK/ky+6VMESyebtW1psAwx9f6Z9/IYZpZTZ3oQx/l8lQolMyqYvj1trXGzb0bJnUYDrPQ98I8kKZkRSIhqhTCH2t59dMkc3P/8Hazumqprp93szMzMz726KNOUqv71Af54NM5cnMI/eqSbomshwaW+3YZhRn8/7ryxLCgLwE1sAuVgjUw0X0V11VQNM0lWRDN37oKq7XgmFgo0YehkAJ20D8KtZ5yOyqlUFME7DkeFix4Bh6KlAwH9ckqSrAPjBEYAgimSFJ2hdq7IA61yr6SsigYDvENx5CgCvOQLgUjSdGCu9jgGsGCh29Gm6rsMFn6KOnADAr44BuIyVHoAYjgF+pp0vmKb5ldfraYcLRgHQVRUA0sFyhShJjgAytKNLUfXH6utDObjgWQB0VwcASYpqBaXd1LxWWh/JlHbHTdM4gTT8RZZlHQCfVw3ApSEtNaTn/+mfqUI6Jz7UPKY9uhsx8CJi4H4MdwHg6JIAuHiBsqrkXZQfny5eG7txpunA8BPnzicYYrAfX8NjiIFLALi0ZABRksliVTI7NDGDun02cnD48Xgi1WkYRtDv972E909XlYaVtFiVzA5OFHD5mgPAAlfRkAQQhF8C4E0AjNQEgMt0o0oqd1bJMsA7AHi9J56MIQ0/Qxo+AheMA+BIzQAEUUJqBu6okqPZ/EeFm/QQABjaslOapj3V0BCaxtQzAPiiZgBcvDjxInW7CjeL7rq2i3/ze7hgCmn4AdIwXU7DWE0BuCpUSbe+rc8CSCR7d8ECzwWDgVY8vgWAN2oOwLPBNb9KzgHAAhRB+BsAjiIG0gC4XHMArgVVcg6gJ546ABcUkYaHMRerWRpWEk9Lnp7o+9zG9gsWAILwiqap9yENzwGANyQDywbANVugRLfZ8l3ZAskkWrL3fT7PZrhgGgBRuwBXbk1RQbU6XFuukFUyZW7b1Nj63nX+nEimn1YUZT8aEg1N6fGmjRtO2wK4Xf3fxnblp12HKbNjFAGwMmGCNG/p2dhgs+06Yz/uaG0+aBtgYHBIglkT+fxfW/lJZ6niB5OtWx62fzDhGslevgct1Ye4td0c8kMIjmHWPX479/HC2GB4zepXHQFUq1Rv30lZVlrxOc4D4EkE4WhFqywXQDzRa6IQxTweT3T9unDqbu/9B3fzlTDtPQQYAAAAAElFTkSuQmCC",
-      "alt": "PowerArchiver"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -111,24 +99,46 @@
     {
       "url": "https://fileinfo.com/svg/search-white.svg",
       "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/jar_42.png",
+      "alt": "Screenshot of a .jar file in 7-Zip 19",
+      "caption": "JAR file open in 7-Zip 19"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.811Z"
+      "retrieved_at": "2025-11-01T22:32:42.165Z"
     },
     {
       "url": "https://fileinfo.com/extension/jar",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.811Z"
+      "retrieved_at": "2025-11-01T22:32:42.165Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.811Z"
+      "retrieved_at": "2025-11-01T22:32:42.165Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.811Z"
+  "last_updated": "2025-11-01T22:32:42.165Z",
+  "mime": [
+    "application/java-archive"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

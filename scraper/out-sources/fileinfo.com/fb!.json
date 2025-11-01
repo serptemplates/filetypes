@@ -4,8 +4,20 @@
   "slug": "fb!",
   "extension": "fb!",
   "name": ".FB! File Extension",
+  "type_name": "FlashGet Incomplete Download File",
   "summary": "Learn about .FB! files and view a list of programs that open them.",
   "developer": "FlashGet",
+  "more_information": {
+    "description": [
+      "Temporary file created by FlashGet, a download manager program for Windows; stores the incomplete contents of a file as it is downloaded; managed automatically by the software and can be used to resume incomplete downloads."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FlashGet automatically appends the \".fb!\" extension to a file that is being downloaded. For example, if you are downloading a .AVI file, the software saves the file with the compound \".avi.fb!\" extension. When the download is complete, FlashGet removes the \".fb!\" extension. This convention is also used in other download manager applications, such as BitTorrent (.!BT files) and BitComet (.BC! files).",
+      "NOTE: Even if a download is incomplete, sometimes you can view the contents of the file manually by removing the \".fb!\" extension and opening the file. However, results will vary because the file does not contain the complete data."
+    ]
+  },
   "programs": {
     "windows": [
       {

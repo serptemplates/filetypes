@@ -4,8 +4,20 @@
   "slug": "isz",
   "extension": "isz",
   "name": ".ISZ File Extension",
+  "type_name": "Zipped ISO Disk Image",
   "summary": "Learn about .ISZ files and view a list of programs that open them.",
   "developer": "EZB Systems",
+  "more_information": {
+    "description": [
+      "An ISZ file is a file compressed in a disk image format (a.k.a. \"ISO Zipped\") developed by ESB Systems. It is similar to a regular .ISO file, but compressed to save disk space and may also be password-protected and encrypted using AES128, AES192, or AES256 encryption."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Large ISZ files can be split into segments defined by the user. The split files are created in the same location and receive the same filename. However, the extension is changed after the first segment, which has the \".isz\" extension. The second segment receives the \".i01\" extension, the third segment receives the \".i02\" segment, and so on. ISZ files can also be spanned across multiple disks, CD-R discs, and DVD-R discs.",
+      "The ISZ format was originally designed to be extensible under certain restrictions, allowing it to be incorporated into products developed by users. A free SDK is available when contacting EZB Systems."
+    ]
+  },
   "programs": {
     "windows": [
       {

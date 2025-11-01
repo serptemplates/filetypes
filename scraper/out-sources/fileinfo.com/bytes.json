@@ -7,6 +7,17 @@
   "type_name": "Binary Text Asset Data File",
   "summary": "Learn about .BYTES files and view a list of programs that open them.",
   "developer": "Unity Technologies",
+  "more_information": {
+    "description": [
+      "File used by Unity, a 3D game development application; contains binary data from the text asset (commonly using but not limited to the .TXT extension) file; loaded as a text asset and accessed through the bytes property; extension must be manually changed to BYTES."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "An example of the BYTES extension in use would be changing a .JPEG extension and putting it in your \"Resources\" folder. Then using the following script:",
+      "//Load texture from disk TextAsset bindata= Resources.Load(\"Texture\") as TextAsset; Texture2D tex = new Texture2D(1,1); tex.LoadImage(bindata.bytes);"
+    ]
+  },
   "programs": {
     "windows": [
       {

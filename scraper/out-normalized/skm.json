@@ -1,9 +1,32 @@
 {
   "slug": "skm",
   "extension": "skm",
-  "name": "SKM File",
+  "name": "SketchUp Material File",
   "summary": "Learn about .SKM files and view a list of programs that open them.",
   "developer": "Trimble",
+  "category": "other",
+  "mime": [
+    "application/vnd.koan"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Trimble SketchUp is utilized in architecture, interior design, film, urban planning, video game design, and mechanical engineering industries. You can save your 3D designs in the SketchUp Document .SKP format and apply materials stored in SKM files, such as asphalt, concrete, wood, and carpet textures, to the designs.",
+      "SKM files come packaged with the software, and you can use them interchangeably in Windows and macOS. You can find SKM materials in the following directory in Windows:",
+      "C:Program Files\\​SketchUp\\​SketchUp [version]\\​Materials",
+      "In macOS, you can navigate to the folder storing the packaged SKM material files by following these steps:",
+      "Navigate to the \"SketchUp\" app in your \"Applications\" folder.",
+      "Right-click \"SketchUp\" and select \"Show Package Contents.",
+      "Navigate to Contents → Resources → Content → Materials."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can only open SKM files with Trimble SketchUp. To add an SKM file to use the material it stores, place the SKM file in the application's \"Materials\" folder. You will then be able to access it in the Materials window in SketchUp.",
+      "Since SKM files are Zip-compressed packages, you can also open them with an archive utility, such as Windows File Explorer or Apple Archive Utility. You may need to rename the .skm file extension to .zip for the compression utility to recognize it. After you extract its contents, you can view the XML, PNG, and JPG files that comprise the material."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -88,44 +111,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can only open SKM files with Trimble SketchUp. To add an SKM file to use the material it stores, place the SKM file in the application's \"Materials\" folder. You will then be able to access it in the Materials window in SketchUp.",
-      "Since SKM files are Zip-compressed packages, you can also open them with an archive utility, such as Windows File Explorer or Apple Archive Utility. You may need to rename the .skm file extension to .zip for the compression utility to recognize it. After you extract its contents, you can view the XML, PNG, and JPG files that comprise the material."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEpElEQVR42r2Xe1BUVRzHv3efrO6D3dCy1zRkYzSGpaRC5IxFVDM2lakUZH/lYM0402MayhqZCNeZdMAhRYhsAkNYBiGKAYasHCPxgaSljVHiTGmgJLg8du9yd/f2O3dxYVl2726Q35nf3Mc59/w+53fP+Z1zOEzQP2kLFXTJIHuRbDnZHMyM+siOklWR2eIOnvFeL+AmOI+nSw3ZkhlyGkonydYRRLcfYMx5O9nc/9n5dV0hS2YQ3FjYj5ElyX2lujcR6kVJcF/ognC8bSyGCqjuS4Q4aIfnrwvRQHSQLWMAmXRTKVdb+9gq6HO2Sg6ZnPs/gaN8N4zWEqiXJAOiiJGS7eDr9kUDkcUAmunmycklXIwO8Hohjrqk59iyeijvmu8vF4VRDOVsgLGg3P/O29+HgYxHoYpfAM5sgdBJgRW94QBaGAAboXF+xyYz9G/nQ7M0FfB44DrYiJFdVpiKbVDeGT/+qVvAtY1rJTBwvrHMfoHj810wvL9DeudqrsNwQW44gB4GIE58Y7Tugfqh1IBafH0l/fffoX8j1+/MWVsOR+kOxKxeD13mBogDVzG8Mw8xq9ZCm/a0L0r2AfSvWREOwBMAwOmNsNS1+Z34Q0sNDVBD6sQkqBcvh/uPcxCOHYbiltugMN8k/X9P70V4+y5DsyI9IAJ8Yw04rRbCL51TEgQCzNbDUv+jf6BN/resUU3KSurlOqgfWErTQh1Y7/LfcH3XBOH0CdZ/iLwTpsIK6buhvDcx+sM34QGYDLmF0KSmBVRyVu8F/7WNZoFVioKcRKcDjrICeHouwritRHrHxgKLiCwAN0uP2Zs2Q/NIOkAjnW8+gNFDLTDk7/aFW+oqjWyFQhaE/6oa7l9Pg9PpwDcd8H0nBzBZCsscmEproYi1wNXaAMe+PfD2XoJi7jzMevk1aJ94NiyEk+o7KopDlssCGLYUUDQeh+v7Jgxbc4LK9e9sk5JUSFGv7Zsy4e46Gz0AS72moi+kQWSnOe8+fy6oDssNsXsbwkZBONGGwc2vRg/AEpI2/Rnpvv+5FIjDQ8EN0BSzNHaEBWDTdCArnaZpb3QA5qpvoYjzLZD219fDffZUcJTuSaAsWQM5RTwL/AUsJ3zZPh7GzqMYfDc7cCTTTDBuLYY66WFZAL62AiOl2yMHYKPcXNka8E44dRzOylJ4Lv0J5bzboXtpI9QPLpN1LgE01WKk8IMoAGjOm2sORdR4JHLaPoPj08LIAZgs9UdofTDMCABbUfmGqugADHlF0CSvnBEAe/YauLt/iw6ArQlsbZiuPN1duJb9/JRl4TMhJSDTx/uhWrBwWgChVkJ5AJJqfgKMOyso4cT8J+ejh1sx9OFbIYMTtCWbStKveO+joPVfTmwTMkS5Q3Txoar0hNyUTpb6/sXQbymUVsVI5Gqpx0hRvrR5DaOWiLflTGxK6l54BTFPrQZnjA2uQDlf+LkDzqoyCCfbI2kyK6qDiV9KJVQJi6C89Y7xPSFtx9xnfoL36pVIW/EdTNgdQdxNlyO4sUezFDqanZ94OGUQNtyYw2kGc84eAvbfk47nDORmMuU0HXrGesxCXs1s4vH8X4IL22JFsdJFAAAAAElFTkSuQmCC",
-      "alt": "GOM Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "KMPlayer"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACqklEQVR42r2W30sUURTHvxtEkBFIb9V70EP/QdB7r1EvRRAW/YAK6SGCzIiCHopKwcBUMNsoNtgowiCqh+wHidXmUhpGamot65Ytmmm2fb/MDjNX3ZrZ3bsHvtzZc2fmfObsveeeyIaO3HIAZ6lt1DhVR91JbI9MowIWIUAzx5p5/nfULkI8rwRAhmP1InNz1AXqOEF+2gTIuT+qlgJLIkB2xrinP5+NLqsAq6uA2GbHef4VcOsDkPPu+0M1UMcIMmUFYOMaoHGTN9GdAk5yBQxljfsHqBpCPLYOIJv+TV8CuPaeKfDSoasm6ihBssFDFQHgWiINnGA2Pk4Y7k/UbkI8sA4gm+EqaH4LtCS5PcxsXKGOEOSHVQDX+r5xXz5zRp8NU3sI0WkdQKYMKBPKiDLjszaqliDfrQK4pjWhtaE14rMRai8h7loHkGl3aJc0vAF+zRlTHdQhgmSsArimeqG6ofrhs6/UFkI8sQ4g04uizMbF10Y2Rqn1hJhY7JmyArjWxZD7HxmunQRorxiAFuWO+4ZrHwEuVwSgc5DdTTeQ8doZHV7rCPDZKkCaHcPpl8DDYcOt6qj0xws9VxaAOM/Icz2MZvYR+hNUHYf+9WxJAKOTwKkXwNMxw63VXku1MXjuf+8oCkDF5yYblkvcbpOzxtS9/FePBP2I0ACD/Ffr+dU9ZsHR0XS40FYrC4AOoHb2yk2JBSX3NpxtNoYiLBBAP8+2epbZ5Ljh1q+DDBwtJnAggFk1Ib1Aa9K59lmMOsDgqYBxwgP08vvq2HgMmBU8lQ8cKzXwAoC1K7y2vJFHa7TPaERl1+GkPB02SCAAWfUyOiJGGZV9gbPI4mFfHhRASV5ZYP4qnO2VCfHO0AA3OG6d5w/VVpUKsIpjK6UVoGycoVrCNJal2F81J2MwjTEnbgAAAABJRU5ErkJggg==",
-      "alt": "PotPlayer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ChocoPlayer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "TOK Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ALPlayer"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -134,24 +123,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/skm_6060.jpg",
+      "alt": "Screenshot of a .skm file in Trimble SketchUp 2022",
+      "caption": "SKM file open in Trimble SketchUp 2022"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.868Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.212Z"
     },
     {
-      "url": "https://fileinfo.com/extension/skm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.868Z"
+      "url": "https://fileinfo.com/extension/skm",
+      "retrieved_at": "2025-11-01T22:32:42.212Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.868Z"
+      "retrieved_at": "2025-11-01T22:32:42.212Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.868Z"
+  "last_updated": "2025-11-01T22:32:42.212Z"
 }

@@ -1,9 +1,24 @@
 {
   "slug": "ir",
   "extension": "ir",
-  "name": ".IR",
+  "name": "Flipper Infrared Control File",
   "summary": "Learn about .IR files and view a list of programs that open them.",
   "developer": "Flipper Devices",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Flipper Zero is a portable multi-tool that, among other things, can be used to analyze signals, clone identification cards, and act as an infrared remote. To act as an infrared remote, Flipper Zero uses a set of IR files. Each file corresponds to a specific device and contains data used to issue commands to that device.",
+      "IR files are plain text files, which specify the device with which they are meant to be used and associated commands. Multiple collections of custom IR files are available online, such as the one available at logickworkshop's Flipper-IRDB GitHub page."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "If you want to examine the plain text data an IR file contains, you can open the file with Microsoft Visual Studio Code, Microsoft Notepad, Apple TextEdit, or any other text editor.",
+      "If you want to use an IR file with the Flipper Zero, place the file in the infrared directory on your Flipper Zero's SD card. Then, you'll be able to use your Flipper Zero's infrared transmitter to control the associated device."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -26,12 +41,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "If you want to examine the plain text data an IR file contains, you can open the file with Microsoft Visual Studio Code, Microsoft Notepad, Apple TextEdit, or any other text editor.",
-      "If you want to use an IR file with the Flipper Zero, place the file in the infrared directory on your Flipper Zero's SD card. Then, you'll be able to use your Flipper Zero's infrared transmitter to control the associated device."
     ]
   },
   "images": [
@@ -67,10 +76,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ir",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.127Z"
+      "url": "https://fileinfo.com/extension/ir",
+      "retrieved_at": "2025-11-01T22:32:42.552Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.127Z"
+  "last_updated": "2025-11-01T22:32:42.552Z"
 }

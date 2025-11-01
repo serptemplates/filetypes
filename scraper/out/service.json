@@ -1,7 +1,7 @@
 {
   "slug": "service",
   "extension": "service",
-  "name": ".SERVICE",
+  "name": "Systemd Service Unit File",
   "summary": "Learn about .SERVICE files and view a list of programs that open them.",
   "developer": "Lennart Poettering and Kay Sievers",
   "programs": {
@@ -10,6 +10,21 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=10516&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "systemd organizes everything it manages into \"units,\" and a SERVICE file is a type of \"unit\" file. The .service extension tells systemd that the file describes a service, and other unit files may use different extensions, such as .socket for sockets or .target for target groups. System administrators and software packages use SERVICE files to control system services consistently across distributions that use systemd.",
+      "By default, system-installed SERVICE files are stored in the following location:",
+      "/​lib/​systemd/​system/​",
+      "Custom or overridden SERVICE files that an administrator creates are stored in the following location:",
+      "/​etc/​systemd/​system/​",
+      "NOTE: Many Linux distributions use systemd as their init system, including Red Hat Enterprise Linux, Fedora, CentOS, Ubuntu, Arch Linux, Mageia, and CoreOS."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A SERVICE file is a configuration file used by systemd, the init system included with many Linux distributions. It contains instructions for starting, stopping, restarting, and reloading the service, as well as information about when the service should start automatically (for example, at boot). SERVICE files define how systemd should manage a specific service or background process."
     ]
   },
   "how_to_open": {
@@ -48,8 +63,11 @@
     {
       "url": "https://fileinfo.com/extension/service",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.297Z"
+      "retrieved_at": "2025-11-01T22:32:42.762Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.297Z"
+  "last_updated": "2025-11-01T22:32:42.762Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

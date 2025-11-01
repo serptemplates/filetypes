@@ -7,6 +7,19 @@
   "type_name": "WhatsApp Encrypted Database",
   "summary": "Learn about .CRYPT files and view a list of programs that open them.",
   "developer": "WhatsApp",
+  "more_information": {
+    "description": [
+      "A CRYPT file is an encrypted backup file created by the Android version of WhatsApp Messenger, a popular messaging application. It contains either an archive of a user's WhatsApp messages or a backup of the user's WhatsApp settings."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WhatsApp regularly creates encrypted backups of users' message history. These backups are saved as some variation of a CRYPT file. To prevent malicious entities from being able to decrypt stolen CRYPT files, WhatsApp periodically updates the encryption used to create the files. When WhatsApp updates CRYPT files' encryption, they also append a new number to the files' extensions. That is why you may have encountered .CRYPT6, .CRYPT8, .CRYPT10, .CRYPT12, and .CRYPT14 files.",
+      "CRYPT files saved using the .CRYPT1 extension do not contain a backup of a user's messages. Instead, these files contain a record of a user's sent and received stickers, chat settings, and contact status rankings.",
+      "You can manually back up your WhatsApp chat history in a CRYPT file by opening WhatsApp and selecting Settings → Chat Settings → [Back up conversations]. Your CRYPT file will be created as msgstore.db.crypt and saved in the following directory: /​sdcard/​WhatsApp/​Databases/​",
+      "NOTE: Since CRYPT files are encrypted, they must be decrypted before being opened or used to restore your message history or settings. Typically, WhatsApp automatically decrypts CRYPT files as you restore your messages or settings (provided you are logged in to the Google account used to create your CRYPT file). Alternatively, WhatsApp may request a \"key file\" saved on your device in order to decrypt your CRYPT file. Key files are stored at the following location: /​data/​data/​com.whatsapp/​files/​key."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "For the most part, CRYPT files are not meant to be opened. To learn how to use CRYPT files to restore your WhatsApp message history or settings, refer to the .CRYPT14 (for message history) and .CRYPT1 (for settings) entries."

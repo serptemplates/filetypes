@@ -4,8 +4,20 @@
   "slug": "evtx",
   "extension": "evtx",
   "name": ".EVTX File Extension",
+  "type_name": "Windows 7 Event Log File",
   "summary": "Learn about .EVTX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Log file created by the Windows 7 Event Viewer; contains a list of events recorded by Windows; saved in a proprietary binary format that can only be viewed within the Event Viewer program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Windows generates event logs for five different categories, including Application, Security, Setup, System, and Forwarded Events. To view one of these logs, first open the Events Viewer application (located in Control Panel\\​Administrative Tools). Then select the category within the \"Windows Logs\" folder on the left side of the Event Viewer window. Finally, choose Action → Save All Events As... to save the data to a log file.",
+      "NOTE: Previous versions of Windows saved Event Viewer log files as .EVT files. In Windows 7, EVT files are called \"Legacy Event Files.\""
+    ]
+  },
   "programs": {
     "windows": [
       {

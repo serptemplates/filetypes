@@ -4,8 +4,21 @@
   "slug": "odoc",
   "extension": "odoc",
   "name": ".ODOC File Extension",
+  "type_name": "Synology Office Document Pointer",
   "summary": "Learn about .ODOC files and view a list of programs that open them.",
   "developer": "Synology",
+  "more_information": {
+    "description": [
+      "An ODOC file is a shortcut used to open a Synology Office document that is stored within Synology Drive. It contains a reference to the document it opens. ODOC files are most often created by Synology File Station."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Synology Drive is a cloud storage application included with Synology DiskStaton Manager, the web-based operating system used by Synology's Network Attached Storage (NAS) devices. DiskStation Manager also includes Synology Office, a productivity application that can be used to create text documents, spreadsheets, and slideshow presentations.",
+      "When a user attempts to download a Synology Office document using Synology File Station (a file management tool) or map a drive to a folder containing Synology Office documents, they will receive or gain access to ODOC files. These files are not actually Synology Office documents. Rather, they are pointer files that users can double-click to open the related Office Document, which is still stored in Synology Drive.",
+      "NOTE: To download a .DOCX version of a Synology Office document, you must open the document in Synology Office and export the document as a DOCX file. Downloading a Synology Office document using File Station will only ever produce an ODOC file, which Microsoft Word and other word processing programs cannot open."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "ODOC files are not meant to be opened. To open the cloud-based Synology Office document associated with an ODOC file, locate the file and double-click it. Provided you have access to the Synology Office document and Synology Drive, the document will open in Synology Office."

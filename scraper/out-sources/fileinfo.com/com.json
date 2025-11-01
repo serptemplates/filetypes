@@ -7,6 +7,18 @@
   "type_name": "DOS Command File",
   "summary": "Learn about .COM files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A COM file is an executable program capable of being run by MS-DOS and Windows. It is saved in a binary format and is similar to an .EXE file, but differs in that it has a maximum size of roughly 64KB and it has no header or metadata. COM files are commonly used for executing a set of instructions whereas EXE files are used for fully developed programs."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Most Windows users will not encounter COM executable files since the files are primarily used in MS-DOS. However, you may acquire an old COM file that stores a program or commands and need to run it in Windows.",
+      "You can run a COM file in the 32-bit version of Windows but you will be prompted to install the NT Virtual DOS Machine (NTVDM) component when you launch the file for the first time. You can also run a COM file in the 64-bit version of Windows with a virtual machine that supports the MS-DOS environment.",
+      "NOTE: If a folder includes both EXE and COM files with the same filename (e.g., run.exe and run.com), the DOS or Windows command prompt will run the COM file if you type the filename without the extension."
+    ]
+  },
   "programs": {
     "windows": [
       {

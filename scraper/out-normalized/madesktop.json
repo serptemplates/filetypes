@@ -1,9 +1,27 @@
 {
   "slug": "madesktop",
   "extension": "madesktop",
-  "name": ".MADESKTOP",
+  "name": "macOS Desktop Background Configuration File",
   "summary": "Learn about .MADESKTOP files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Apple introduced the MADESKTOP file type in macOS Monterey 12.3, which is part of the Dynamic Desktop feature, enabling users to set wallpapers that change according to the time of day. Before this update, macOS only used .HEIC files for wallpapers.",
+      "They are typically stored within system or user preference directories and are used internally by the operating system's desktop management services. Changing a wallpaper through System Settings → Wallpaper updates the associated MADESKTOP file behind the scenes.",
+      "Most users will never directly interact with a MADESKTOP file. However, those who customize or troubleshoot macOS desktop preferences might encounter one when inspecting configuration data or transferring wallpaper settings between user accounts.",
+      "NOTE: You can find MADESKTOP files in the following location:",
+      "/​System/​Library/​Desktop Pictures"
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "MADESKTOP files are not meant to be opened or edited manually. Instead, macOS automatically creates and references MADESKTOP files.",
+      "Since MADESKTOP files are plain-text property lists, advanced users can view their contents with a text editor, but macOS may not recognize manual changes until the operating system reloads the desktop settings."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,12 +32,6 @@
         "name": "Apple macOS",
         "url": "https://fileinfo.com/software/apple/os_x"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "MADESKTOP files are not meant to be opened or edited manually. Instead, macOS automatically creates and references MADESKTOP files.",
-      "Since MADESKTOP files are plain-text property lists, advanced users can view their contents with a text editor, but macOS may not recognize manual changes until the operating system reloads the desktop settings."
     ]
   },
   "images": [
@@ -55,10 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/madesktop",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.169Z"
+      "url": "https://fileinfo.com/extension/madesktop",
+      "retrieved_at": "2025-11-01T22:32:42.604Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.169Z"
+  "last_updated": "2025-11-01T22:32:42.604Z"
 }

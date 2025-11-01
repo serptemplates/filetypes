@@ -4,8 +4,20 @@
   "slug": "vcomps",
   "extension": "vcomps",
   "name": ".VCOMPS File Extension",
+  "type_name": "V-Comp Setup File",
   "summary": "Learn about .VCOMPS files and view a list of programs that open them.",
   "developer": "Verity Software House",
+  "more_information": {
+    "description": [
+      "Setup file used by V-Comp, an automated fluorescence compensation utility; contains settings such as the name of single-color controls, which parameters are compensated, and one or more unstained controls; also includes the crossover matrix created by V-Comp."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The purpose of the V-Comp Setup file is to define a compensation setup for a specific panel run on a specific machine. Since users commonly have more than one panel and one instrument with each having different fluorochromes and instrument settings, it is helpful to have Setup files to contain the unique settings.",
+      "You can create, view, and edit V-Comp Setups with the V-Comp Setup Wizard. Setups are stored in \"Setups\" folders, which you can find using the \"Open Setups Folder\" command in the Tools menu. Since the Setup files are automatically loaded by V-Comp, you will most likely not encounter the actual VCOMPS file."
+    ]
+  },
   "programs": {
     "windows": [
       {

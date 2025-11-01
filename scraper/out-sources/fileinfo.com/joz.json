@@ -4,8 +4,22 @@
   "slug": "joz",
   "extension": "joz",
   "name": ".JOZ File Extension",
+  "type_name": "Java OpenStreetMap Session",
   "summary": "Learn about .JOZ files and view a list of programs that open them.",
   "developer": "OpenStreetMap",
+  "more_information": {
+    "description": [
+      "A JOZ file contains a saved Java OpenStreetMap (JOSM) session. It is a renamed .ZIP file that contains the session's metadata (saved in a .JOS file) and .OSM layer data (saved in individual directories). When opened with JOSM, JOZ files appear as one or more map layers."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Java OpenStreetMap is a free OpenStreetMap map (OSM file) editor available for Windows, macOS, and Linux. It allows users to download or import OSM maps, mark them up with tagged nodes and paths, and submit their edits to the official OpenStreetMap project.",
+      "While editing maps, users can save their current Java OpenStreetMap session as a JOZ file. This allows them to re-open and continue editing that session in the future. JOZ files are ZIP archives that contain:",
+      "A JOS file, which is an XML file that describes a session's layers, viewport settings, and version",
+      "One or more OSM files, stored in sub-directories that correspond to the session's layers"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a JOZ file with Java OpenStreetMap (JOSM), to view and edit the session it contains:",

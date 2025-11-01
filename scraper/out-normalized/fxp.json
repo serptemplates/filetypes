@@ -1,9 +1,39 @@
 {
   "slug": "fxp",
   "extension": "fxp",
-  "name": "FXP File",
+  "name": "FX Preset",
   "summary": "Learn about .FXP files and view a list of programs that open them.",
   "developer": "Steinberg Media Technologies",
+  "category": "other",
+  "mime": [
+    "application/vnd.adobe.fxp"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Virtual Studio Technology is an audio plug-in interface that allows Digital Audio Workstations to install audio effects. While Steinberg developed the VST interface, many DAWs, including Steinberg Cubase, Ableton Live, Image-Line FL Studio, and LMMS, use the interface to allow users to install plug-ins.",
+      "In the past, VST plug-ins loaded effects from FXB and FXP files. FXP files contained an individual instrument, audio effect, or MIDI effect. While many DAWs used FXP files, each FXP file was linked to a specific plug-in. So, the FXP file could be loaded only from within that plug-in.",
+      "With the release of VST 3, Steinberg replaced FXP and FXB files with .VSTPRESET files. However, some DAWs still allow users to load FXP files in their associated plug-ins."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Steinberg Cubase, Ableton Live, Image-Line FL Studio, and LMMS all allow audio editors to import FXP files. Remember that, before you can import an FXP file, you must first install the plug-in with which the file is associated.",
+      "To import an FXP file in Steinberg Cubase:",
+      "Select and load the plug-in your FXP file is associated with from the Earlier VST Plug-ins folder. Then, click the SoundFrame button.",
+      "The Preset Management menu appears. Select Import FXB/FXP....",
+      "Locate your FXP file and click Open."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "To convert a plug-in's FXP files to VSTPRESET files in Steinberg Cubase:",
+      "Open the Preset Management menu.",
+      "Select Convert Program List To VST Presets.",
+      "The converted files will be stored in the VST 3 Preset folder."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -64,55 +94,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "Steinberg Cubase, Ableton Live, Image-Line FL Studio, and LMMS all allow audio editors to import FXP files. Remember that, before you can import an FXP file, you must first install the plug-in with which the file is associated.",
-      "To import an FXP file in Steinberg Cubase:",
-      "Select and load the plug-in your FXP file is associated with from the Earlier VST Plug-ins folder. Then, click the SoundFrame button.",
-      "The Preset Management menu appears. Select Import FXB/FXP....",
-      "Locate your FXP file and click Open."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "To convert a plug-in's FXP files to VSTPRESET files in Steinberg Cubase:",
-      "Open the Preset Management menu.",
-      "Select Convert Program List To VST Presets.",
-      "The converted files will be stored in the VST 3 Preset folder."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADN0lEQVR42r2XIXyjMBSH31xw4FrJOeqo62TPMde6TiKRq7vKww1X3JBXt7pVVp7suc0dsnXgiLw8CIFAyrgbu/dbB4RH/l/eS17gBgojjeNnGG0cc7thP/1pu03uHEc0kqaX9BiFTNFGVdfCMRP3b+++GuwsrQOYD57327IsWDpLAE0803pYDUDrt4RjB8CEnZ1LCASwHlzvFR0syxwmyFdu1G+vN5s8Eghge657wkbLtD4G0CEojEdl7W++YCQaAPUIkFaHfz1whXB5sfZ9TEUsAZjmB1OgFJMbS9iN708FgLta8QhM2s9pfTp/X7BpVwDqESiU395elV1rRPbvlYaa0yZQAKhSsLq/ZyhETAmCYOyPZhlEUdRbsIIvGv0gqABWCwSgMLHaq0AGYGciJQTCx0cpKml6gSTJhLJhGDDWdWXWGgCLPAITxTJcuQXAj/2uPUAuhv8v5zMslss8igbRIaEp/Pp5gtf4TRkVP1QAqFLgum4OsI3C65FmnXoe8yNFnjJe9hDq5XCQUlHWzSAMZQDsRFUJEQBtvd5I7XXf2+ktTGc2nC8XOJ1OkDJhlBkZY4jjGKRyzU0CWDjO1Uroeq4416qZCNsgFCNaew/5+cvxkAtSSrkbUUgXaQgiBYAqBZ7rCdG6hWEBYLBJhhO13qbOk5yGMIr6AZQp2D8/S+1JKnZUARmEARCcB8pBy40SgDN38mWoTAECsD6j8Pqav2crBYURElNANA3eswbAvDMCmMuwYxWwAeTPUjb9o13EJx7AeDSSYbIqG8yvPwBaV9Ub6yOYO/NKjAvFlxiOL0eo6l9l0W5XAcwRgJVWa9LejNwVB9g1AOrlTStGa0+n+aQsDSNxPB6V0DLAbMYj0AbQjaLDNDl35pTkZboo2QiBkxSXI+4ZkvFQRHslwEDvAzUhOWBV426/rwBmHGDSB+DKvpu959AwGcCeFbuhWIa0Q2AYawDYw6egETVav2C2PxwEANtXzAXR9e/WvwJQVdy6U1EHGEGefnNuW/a3XkoDGAMQb8W4zYzZD4ePa84YTEVt+fsLigP/LgAOUYp/5gcqGuW/BPiXUd3IfwIQx5sPdDSI/QEBno2gUgqtaAAAAABJRU5ErkJggg==",
-      "alt": "Adobe Flash Catalyst"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABUUlEQVR42sWXgRKDIAiG9cnHntxpiw4VBIw2b1nXOf+vHyXK6c8t4wUAlHpM938GUFsptXtDg3kcoqB+B9CEX/AoxCEMZH7WgQcgCnY4f9YcCIRYzjs5cGDmMAhWXHUAITKx7Rs3aIcKgjtqFKfz4lyiA5wTCY6f2uDsOPHR0SkPSGG4c6YP1R6ZOjnaWUqwOGc/1Z0BkmPyOvZlGM/FXgSAYHEKca64TpNb0TrEpji3i1gAVxiM5yzo7TmwIS7lEHEN0CR0F2KVScVdgKVBBIRkv+pASmlKp+MfLOEyOzDm8DEMO+JeB6YwaI5Er4ErDFTckuOl9E1eYGaAC8IjLkGstmAHQKviKHFLMdPVA/TCKy5VUloRwwKAUZQrNjzinDVXPcCJ5mH0qoa0lm/sLpAGlyDbNYBVmxy6I74DcDnEfcR4xXcBxg9ZvOcW3waIbB8H9QA/Ak/UrAAAAABJRU5ErkJggg==",
-      "alt": "Microsoft Visual FoxPro"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEh0lEQVR42rWXe0xTdxTHf7eltpShBorOLJk4h875yjIySGQPzdym/uEraMiWhYQ/9sjiVozZMrdlWTLbDVgcAUaZEsQ4MzVojJOHTMEOday0tfQBVIHSAmuhD/qgvbe397d7peCl9ra30J2kSfPrOef7Oef8fr97i4AkWL/BwBMFYYkHgY3ZmzdOJxKLJEN8mdMndfQaxPzMjBvcnNX7s7duYg2xKIB+PSnuIsU1ejGZ6lEuQVZGKycn+0D2FnadWDAAJb7U4Q2Lz88jyMps5a6nIOJ3YkEAM+IeqV2lE5MZouagIOCaZw7kvPJyTIiEASjx9Mkp6aSyN9x2SEsz8x3FUL/WNKTtMT2srrp2+UzSACjxp6wO6YRCI44Wa7JZhxo62n5u0ygv+DF0goAQj5eTNUC/Xs9LG7NLbPeUpZFxEEKi4XZ7zamOtm/8QcyZSFGsACjx1BGb1Nr1zxOVE5AIfXf1QmmLVlUdIohQIuKsAChxweCYZLzz7lzl9KnL5O3Ss93y4zhBEImKxwXo0+l5/IERyWi7vDSar8E2pv6k6ew2NIQz7vSKsjLk6LFjMGEASpyneygxN98qZfI73n7lYJd5sClyXd2j5D7LT9th61YVYS73Kn7G8iFR7pb6zE0vKFgB9Ol0PK56QGK62vpYHM73tvm85uLr59djRMhPj9VpelN4GqN0+HIztV84j5UQfNVreeLNR0qqYgL0aXU8RKE7MXjpj6OxOtRufnCu4n7Xe5Hr4/K/C1XfV/5Oj8X9KAhM2kHAZg/dC7jyazwjiqgAlDi8qz7x4LcrMcXJcwcajfe/vDhqlNCXa2tqkI1aS4v1juItiIdACEVB0DcNCBSb8+nB3GcqPSPFTwDIan5BCpC0H42Nl6KIQ0AEcYAHUID7/OTHBxrclg9uBhx1dK/Tsjru8romvXfYso6J3RD03Sl3DxfgVBWRQu+K1oh3CTIrEGTmyUZeMICqhMBxEPafs4vT1k+v+Scq6WuV5RXIc83dnXa17lUmABXmbqnymHdHBeADDrInVSTeK1xRDuIc0c6A42S9b0wcuX5uw+sf4zZ7NVPcae/oh7dRpyzqHpiF2J0q+myfcEVFLAgT7u/+yW3Kd0F8XmtyUoS8w8Knr+fwhG9GxijI6ms95v1BAAOMAAlAEKe8lg1y1DUQ+UM6whXuFGR+nsdfVpTB4a2cILB/5QHn+T8DjnIMQC/dl7FCNuOYIvD6I86+EqYcZNCSR6kAwMg2oQw+zCYgIXbF7kQICgU7i82KW2CBFvdhFG8cKcJUW/7Jb99Ye3CP4X8BoEGI9zGMg7zrrXllXxUNC5CO7e+8DdnkTAiAMkEYgnFPcDj480V761/86P0fdOOW4YId21k9nhN6JWNzOhAuF1u5LbcrK3erfOna1ca/jIabxV9/MZYUABoE4zjoRt77bb96LYV+SLiTBjALEe+IKklxmcdyKACIqVi5FvzHJNY4yMpbSfHDaBzxRQEwQfSEK2cjvmiAWYjZcZBtv1GbgHhSAGYhXlqSXqjGPK3xZh5p/wECvjs/S3K6ugAAAABJRU5ErkJggg==",
-      "alt": "Cubase"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Cantabile Lite"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABxklEQVR42sWWC7KFIAiGcWW1M21nnpWdKyYeElCzZi4zTQ8Tfj6MdN9k8I/mUMBxHOC9rw/pvn3+1DS/VQAaDdL1m8aDqgK4Mk2pJbInnu4tw/emSjA7rmXZGxMEPp8PxH0HCGFJwF1xagkwONoeI8R0WCXoIbfGTAE1M+fOSXhdRGzb9mjxZarJT04sHTsSTkZ+XRqsAhB/Do4QThBZxKrVwNyIcBEiCaRxH6SIOyR4KVt/lNCQAE3K56KcVM9k3fMzTUBMZkJaIvULArgEB/TuZBJdAnWSIobKYpkanOY12UsCpXYjERYhLTieD6dnLwhUCrPBm6DtucXfZi8I0DroOV0NrmWvEsgU4l5qthZcrBnWC4YEiAJMOB8RgkH2NgGrH6yI6GQ/XAOlfS+L0DrfkMD5Oz6duB/FxwSsLioJUB8PP3pfVg7H3uXP3yPQ9HJehjvBlwnQOoBw/eSscvCO1zavJQKXtQBzzcYKPvoCVAKu7IrCZFBTBFw3M1MEsP6hqOY1HgXVgs9kLwjgPx1fxqm+dc4m8b+lGnwye3MNREWxp7dGmd/IXhAYmxMiVjPvEujZhhm9kPljApftWbNhvbOD/gNztZrj/bF6jwAAAABJRU5ErkJggg==",
-      "alt": "FoxPro"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Abrosoft FantaFace Mixer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Eureqa - Formulize"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -121,24 +106,39 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.796Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.151Z"
     },
     {
-      "url": "https://fileinfo.com/extension/fxp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.796Z"
+      "url": "https://fileinfo.com/extension/fxp",
+      "retrieved_at": "2025-11-01T22:32:42.151Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.796Z"
+      "retrieved_at": "2025-11-01T22:32:42.151Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.796Z"
+  "last_updated": "2025-11-01T22:32:42.151Z"
 }

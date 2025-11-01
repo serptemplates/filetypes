@@ -7,6 +7,16 @@
   "type_name": "Database Text File",
   "summary": "Learn about .DBT files and view a list of programs that open them.",
   "developer": "dBASE",
+  "more_information": {
+    "description": [
+      "A DBT file contains the text for memo fields in database tables (.DBF files) created by various database management applications, such as dBASE and Microsoft Visual FoxPro. Memo fields included in a database point to the locations of DBT files, which store the HTML-formatted text. Pointing to external DBT files reduces the DBF file size and allows memos to store more text."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "If a database contains memo fields, the DBF file includes references to the exact location of the DBT file that stores the text. While memo fields typically store text, they may also store images. In these cases, the DBT files do not contain images; they store references to the locations of the actual JPG or GIF images."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "dBASE and other xBase database programs support DBT files. Typically, you will not open DBT files since the program references the files when opening the DBF database files pointing to the DBT files.",

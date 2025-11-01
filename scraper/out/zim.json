@@ -1,9 +1,11 @@
 {
   "slug": "zim",
   "extension": "zim",
-  "name": "ZIM File",
+  "name": "OpenZIM Wiki Archive",
   "summary": "Learn about .ZIM files and view a list of programs that open them.",
   "developer": "The OpenZIM Project",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -12,7 +14,45 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "ZIM file format was developed on top of Zeno file format and is not backwards compatible. The format specifications of ZIM file format are available online by openZIM for developer’s reference. OpenZIM has provided C++ open source implementation, LibZim, for reading and writing ZIM files.\n\nZIM file format uses LZMA2 compression to make the content compact.",
+      "Developers can use the free ZIMLib C++ library to incorporate OpenZIM content in their applications."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Files with .zim extension are archives created to store Wiki content offline. It is considered as the most suitable open file format for storing Wikipedia on a USB. It stores site contents in a compact format. Its name comes from “Zeno IMproved” which was the earlier Zeno file format. ZIM is maintained by openZIM project which is sponsored by Wikimedia CH, and supported by the Wikimedia Foundation. ZIM files can be opened by applications such as Kiwix and ZIMReader. OpenZIM project has hosted the implementation of ZIM file format on Github for contribution from OpenSource community.",
+      "Archive created in the OpenZIM format, a standard file format for storing Wiki content offline; organizes articles, references, and other Wiki information in a compact format; supported by readers such as Kiwix and ZIMReader."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
+    {
+      "url": "https://docs.fileformat.com/compression/ZIM_File_Format.jpeg",
+      "alt": "ZIM File Format"
+    },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
@@ -45,15 +85,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/zim/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.937Z"
+      "retrieved_at": "2025-11-01T22:32:42.293Z"
     },
     {
       "url": "https://fileinfo.com/extension/zim",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.937Z"
+      "retrieved_at": "2025-11-01T22:32:42.293Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.937Z"
+  "last_updated": "2025-11-01T22:32:42.293Z",
+  "containers": []
 }

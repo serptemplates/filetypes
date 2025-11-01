@@ -4,8 +4,21 @@
   "slug": "vmsd",
   "extension": "vmsd",
   "name": ".VMSD File Extension",
+  "type_name": "VMware Snapshot Metadata File",
   "summary": "Learn about .VMSD files and view a list of programs that open them.",
   "developer": "VMware",
+  "more_information": {
+    "description": [
+      "A VMSD file contains metadata for a snapshot of a virtual machine (VM) created by VMware Workstation or VMware Fusion virtualization software. VMSD files accompany .VMSN files, which store the saved snapshot state, and enable the virtualization software to load the snapshot."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VMware Fusion and VMware Workstation are virtualization applications that allow you to run multiple operating system VMs on a single machine. When you take a snapshot of a VM, the software creates a frozen saved state of the VM and saves it as a VMSN file. The software also creates a VMSD file to store metadata for the VMSN file.",
+      "When taking a snapshot of a VM, VMware virtualization software creates a VMSN file and VMSD file in the VM file. For example, you can take a snapshot in Fusion by selecting Virtual Machine → Snapshots... → Take Snapshot, then Fusion creates the VMSN and VMSD file in the .VMWAREVM file, which you can find in the following location (Fusion saves it here by default):",
+      "Macintosh HD/​Users/​[username]/​Virtual Machines"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "VMSD files are saved by VMware software behind the scenes, and you should not attempt to open them manually. Instead, when you open a snapshot from within the VMware Fusion or VMware Workstation user interface, the software references the metadata in the VMSD file.",

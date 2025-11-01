@@ -1,9 +1,23 @@
 {
   "slug": "mcat",
   "extension": "mcat",
-  "name": ".MCAT",
+  "name": "Adobe Lightroom Catalog",
   "summary": "Learn about .MCAT files and view a list of programs that open them.",
   "developer": "Adobe",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "When you import photos into Lightroom, the program automatically creates a file called Managed Catalog.mcat. This file is a type of SQLite 3 database that stores metadata associated with your images and tracks all your changes, including cropping, exposure adjustments, and filters. Instead of embedding edits directly in the image files, Lightroom saves them in the MCAT file, so your original photos remain untouched. It also records where your photos are stored, so Lightroom can reference them when needed.",
+      "Lightroom also generates a separate MCAT file in its profiles directory, which contains metadata about Lightroom Profiles, presets that can be applied during photo editing to achieve specific looks or effects. Lightroom automatically manages these MCAT files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "MCAT files are not meant to be manually opened. Instead, Adobe Lightroom automatically manages MCAT files to maintain consistency across editing sessions and ensure your photo catalog stays organized and current. Incorrectly modifying these files may break this functionality."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,11 +28,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=10737&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "MCAT files are not meant to be manually opened. Instead, Adobe Lightroom automatically manages MCAT files to maintain consistency across editing sessions and ensure your photo catalog stays organized and current. Incorrectly modifying these files may break this functionality."
     ]
   },
   "images": [
@@ -49,10 +58,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/mcat",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.172Z"
+      "url": "https://fileinfo.com/extension/mcat",
+      "retrieved_at": "2025-11-01T22:32:42.608Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.172Z"
+  "last_updated": "2025-11-01T22:32:42.608Z"
 }

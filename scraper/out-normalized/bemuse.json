@@ -1,20 +1,30 @@
 {
   "slug": "bemuse",
   "extension": "bemuse",
-  "name": ".BEMUSE",
+  "name": "Bemuse Sound Data Chunk",
   "summary": "Learn about .BEMUSE files and view a list of programs that open them.",
   "developer": "Bemusic",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Bemuse is an online rhythm game in which players hit buttons in time to music. While Bemuse allows players to play songs saved in the standard .BMS song format and its variants, players can also optimize their songs for use with Bemuse. To do so, they use Bemuse's associated Custom Song Workshop.",
+      "While optimizing songs, Bemuse Custom Song Workshop typically produces several BEMUSE files. These files are stored in a subdirectory (named bemuse-data) of the original song's directory. They contain all the original song's audio assets, converted to the OGG format and packaged together for easier in-game reference.",
+      "Each BEMUSE file can be only up to 1.4 MB in size. This is why a song's directory typically contains several BEMUSE files (which, between them, contain all the song's OGG assets). The metadata.json file stored alongside a song's BEMUSE files specifies the BEMUSE files that song uses, as well as the OGG files those BEMUSE files contain."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "BEMUSE files are not meant to be opened. For more information about the BEMUSE format and how to use BEMUSE files, refer to Bemuse's official documentation."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13498&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "BEMUSE files are not meant to be opened. For more information about the BEMUSE format and how to use BEMUSE files, refer to Bemuse's official documentation."
     ]
   },
   "images": [
@@ -45,10 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/bemuse",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.979Z"
+      "url": "https://fileinfo.com/extension/bemuse",
+      "retrieved_at": "2025-11-01T22:32:42.349Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.979Z"
+  "last_updated": "2025-11-01T22:32:42.349Z"
 }

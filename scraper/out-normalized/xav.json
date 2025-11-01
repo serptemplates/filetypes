@@ -1,8 +1,14 @@
 {
   "slug": "xav",
   "extension": "xav",
-  "name": "XAV File",
+  "name": "XAV files and how to open them",
   "summary": "Having problems opening a XAV file?",
+  "category": "other",
+  "mime": [
+    "application/xcap-att+xml"
+  ],
+  "containers": [],
+  "related": [],
   "programs": {
     "windows": [
       {
@@ -15,28 +21,22 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Final Draft AV Application"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.899Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.237Z"
     },
     {
-      "url": "fileinfo.com",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.899Z"
+      "retrieved_at": "2025-11-01T22:32:42.237Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.899Z"
+      "retrieved_at": "2025-11-01T22:32:42.237Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.899Z"
+  "last_updated": "2025-11-01T22:32:42.237Z"
 }

@@ -4,8 +4,19 @@
   "slug": "wxi",
   "extension": "wxi",
   "name": ".WXI File Extension",
+  "type_name": "WiX Include File",
   "summary": "Learn about .WXI files and view a list of programs that open them.",
   "developer": "Outercurve Foundation",
+  "more_information": {
+    "description": [
+      "File created by the WiX toolset, a Windows installer developing program; contains a top-level container element called, <Include>, which is the root element of the file; similar to header (.H) files used by C++ code."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "An example of the <Include> root file is below: <Include> <Feature Id='MyFeature' Title='My 1st Feature' Level='1'> <ComponentRef Id='MyComponent' /> </Feature> </Include>"
+    ]
+  },
   "programs": {
     "windows": [
       {

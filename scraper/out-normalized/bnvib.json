@@ -1,20 +1,30 @@
 {
   "slug": "bnvib",
   "extension": "bnvib",
-  "name": ".BNVIB",
+  "name": "Binary NX Vibration File",
   "summary": "Learn about .BNVIB files and view a list of programs that open them.",
   "developer": "Nintendo",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The Nintendo Switch's Joy-Cons and Pro Controllers include a feature called HD Rumble. This feature, developed using haptic technology licensed from Immersion, allows the controllers to produce precise vibrations that simulate various actions. For example, in the Switch game 1-2-Switch, the Joy-Cons use HD Rumble to simulate marbles rolling within a box and the click-click-click sensation of turning a combination lock.",
+      "To produce these vibrations, the Switch console uses BNVIB files, included in each Nintendo Switch game, to trigger controllers' HD Rumble feature. BNVIB files are small audio files that the Switch console broadcasts to controllers. The controllers then play the files to produce vibrations. BNVIB files each have a maximum of 8 bytes of vibration data, 4 bytes of which are used on each side (left or right) of a controller.",
+      "Because BNVIB files are not intended to be opened, modified, or used outside the Nintendo Switch game they're included in, most Nintendo Switch players will never encounter a BNVIB file. However, some Nintendo Switch modders have created homebrew applications that allow them to play existing and create their own BNVIB files on their PCs."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Nintendo Switch modders can open and play BNVIB files using Joy-Con Toolkit, a free program available on GitHub. They can also use the program to broadcast their own custom HD Rumble vibrations."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11838&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Nintendo Switch modders can open and play BNVIB files using Joy-Con Toolkit, a free program available on GitHub. They can also use the program to broadcast their own custom HD Rumble vibrations."
     ]
   },
   "images": [
@@ -45,10 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/bnvib",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.985Z"
+      "url": "https://fileinfo.com/extension/bnvib",
+      "retrieved_at": "2025-11-01T22:32:42.358Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.985Z"
+  "last_updated": "2025-11-01T22:32:42.358Z"
 }

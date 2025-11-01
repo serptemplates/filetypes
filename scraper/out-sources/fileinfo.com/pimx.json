@@ -4,8 +4,20 @@
   "slug": "pimx",
   "extension": "pimx",
   "name": ".PIMX File Extension",
+  "type_name": "Adobe Package Installation Management File",
   "summary": "Learn about .PIMX files and view a list of programs that open them.",
   "developer": "Adobe Systems",
+  "more_information": {
+    "description": [
+      "A PIMX file is a package installation management file used to control the installation of an Adobe Creative Cloud or Adobe Application Manager package. It contains XML that specifies where an Adobe package should be installed, as well as the package's name, type, contents, and size. PIMX files also contain validation information used to verify that you are allowed to install the referenced package."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Adobe Creative Cloud and Adobe Application Manager use PIMX files to install and update Adobe packages. These packages can include Adobe applications, extensions, configuration information, archives, and other files. The PIMX file itself does not contain an Adobe package. Rather, the PIMX file contains metadata used to retrieve a package from Adobe's servers and correctly install that package on your machine.",
+      "If you are missing or possess an invalid PIMX file, you may have trouble installing or updating Adobe applications on your machine. In that case, you may have to uninstall Adobe Creative Cloud, clean your machine of Creative Cloud files, and then reinstall Creative Cloud before attempting to install or update your Adobe application."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because they are plain text files, you can open a PIMX file using any text editor, such as Notepad ++ (Windows), Apple TextEdit (Mac), or Github Atom (multiplatform). However, you should not edit a PIMX file, as doing so could disrupt your access to Adobe applications."

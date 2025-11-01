@@ -1,9 +1,25 @@
 {
   "slug": "bmfc",
   "extension": "bmfc",
-  "name": ".BMFC",
+  "name": "Bitmap Font Configuration",
   "summary": "Learn about .BMFC files and view a list of programs that open them.",
   "developer": "AngelCode",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "BFG allows users to create bitmap fonts from TrueType fonts (.TTF files). While doing so, users can specify many settings, including the font's included characters, padding, spacing, and output file formats.",
+      "Optionally, users can save their font's settings in a BMFC file. This allows them to load and edit those settings at a later time, if they want to create a modified version of their font.",
+      "BMFC files are plain text files that specify each of a font's settings on separate lines. Settings are grouped by category, each of which begins with a #."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "BMFC files are meant to be opened in AngelCode Bitmap Font Generator (Windows). To open a BMFC file in BFG, select Options → Load configuration. Then, navigate to and open your BMFC file.",
+      "You can also open a BMFC file in Microsoft Notepad (Windows) or any other text editor, to view the font configuration it contains."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,12 +38,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "BMFC files are meant to be opened in AngelCode Bitmap Font Generator (Windows). To open a BMFC file in BFG, select Options → Load configuration. Then, navigate to and open your BMFC file.",
-      "You can also open a BMFC file in Microsoft Notepad (Windows) or any other text editor, to view the font configuration it contains."
     ]
   },
   "images": [
@@ -68,10 +78,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/bmfc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.984Z"
+      "url": "https://fileinfo.com/extension/bmfc",
+      "retrieved_at": "2025-11-01T22:32:42.357Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.984Z"
+  "last_updated": "2025-11-01T22:32:42.357Z"
 }

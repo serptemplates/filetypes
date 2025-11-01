@@ -7,6 +7,18 @@
   "type_name": "Portable Gray Map Image",
   "summary": "Learn about .PGM files and view a list of programs that open them.",
   "developer": "Jef Poskanzer",
+  "more_information": {
+    "description": [
+      "A PGM file is a grayscale image file saved in the portable gray map (PGM) format and encoded with one or two bytes (8 or 16 bits) per pixel. It contains header information and a grid of numbers representing different shades of gray, from black (0) to white (up to 65,536). PGM files are typically stored in ASCII text format but also have a binary representation."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PGM files include a header that defines the PGM format type (\"P2\" for text or \"P5\" for binary), image width and height, and the maximum number of shades. While binary PGM files may contain multiple images, ASCII PGM files may only include one image.",
+      "The PGM format is one of several image formats defined by the Netpbm project, which is an open-source package of graphics programs. Other formats include the portable bitmap (.PBM) and portable pixmap (.PPM) formats.",
+      "NOTE: PGM files may also be called \"portable greymap\" files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a PGM file with various image viewers and editors. Some applications that support PGM images include GIMP (multiplatform), Corel PaintShop Pro (Windows), and Apple Preview (bundled with macOS).",

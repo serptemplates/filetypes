@@ -1,9 +1,26 @@
 {
   "slug": "luac",
   "extension": "luac",
-  "name": "LUAC File",
+  "name": "Compiled Lua Script",
   "summary": "Learn about .LUAC files and view a list of programs that open them.",
   "developer": "PUC-Rio",
+  "category": "other",
+  "mime": [
+    "application/x-lua-bytecode"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Lua is a lightweight programming language developers use to add features to existing programs written in C and other languages. Developers write and save Lua programs in LUA files. After they've finished writing a program, developers can use the Lua compiler (luac) to transform their plain text LUA file into a binary LUAC file. This allows other programs to load and execute the Lua program more quickly.",
+      "VideoLAN VLC media player, a popular open-source media player, includes a number of LUAC files. They are found in sub-folders of VLC's lua folder. For example, VLC's lua/​playlist folder contains a number of LUAC files that allow VLC to stream video and audio content from various websites, such as YouTube and Twitch. Third-party VLC add-ons sometimes come packaged in LUAC files, as do fixes for VLC's existing Lua-based features."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "LUAC files are not meant to be opened. To use a LUAC file as a VideoLAN VLC media player extension, put it in the correct sub-folder of VLC media player's lua folder. For example, if you have downloaded a LUAC file meant to allow you to stream content from a website, place that file in VLC media player's lua/​playlist folder."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -20,19 +37,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "LUAC files are not meant to be opened. To use a LUAC file as a VideoLAN VLC media player extension, put it in the correct sub-folder of VLC media player's lua folder. For example, if you have downloaded a LUAC file meant to allow you to stream content from a website, place that file in VLC media player's lua/​playlist folder."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABY0lEQVR42r2XCxKEIAiG82R5s+xmdjI32mFDAh+Yy8zOmCZ+/IJrbvmTxRgTtr33DtvO5q5v4fO3hHD3QfuEuECmA4QQEl2cQpxjcwEgeu9jYdy3bQFEgdTy+O+9zN8wgCZfec4NYgaoTWwxcA5J1p0DlqhLakC2N1fByOJ8AR5p9Rywyo7RrOv66zuOI4sat0OaTzpDWgwGzuniFCIPKOgAVulhzrZt6vi+76REn2VKFLBF3wOgqeBGE68HQFJhCACsPQcUAKv81GmtCtiMMgDK6tzeDSK1/wbQgWoHSGnLEos+84SUcmAqALRx78HAx7MMJwJIPpoAeBmOAMAzyg9VYToHRragpo5yDlxDiQPAZC4r3WesfQ6AJm+B8l9AVdCOV1CEjoFzugifB/3fS0dUoycK5CrMsVC+D7xxD9Ss8ULy7n3w9ilLLwK8DVFbXAT4Svbetbz23tQPkxab+mnWYh9q03/tvJL3zgAAAABJRU5ErkJggg==",
-      "alt": "Lua"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -61,20 +69,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.820Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.173Z"
     },
     {
-      "url": "https://fileinfo.com/extension/luac",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.820Z"
+      "url": "https://fileinfo.com/extension/luac",
+      "retrieved_at": "2025-11-01T22:32:42.173Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.820Z"
+      "retrieved_at": "2025-11-01T22:32:42.173Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.820Z"
+  "last_updated": "2025-11-01T22:32:42.173Z"
 }

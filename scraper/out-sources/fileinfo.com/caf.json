@@ -7,6 +7,21 @@
   "type_name": "Core Audio File",
   "summary": "Learn about .CAF files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "A CAF file is an audio file saved in the Core Audio Format (CAF), a digital audio format based on Apple's Core Audio technology. It stores audio data, text annotations, markers, channel layouts, and other information. CAF files are similar to .AIFF and .WAVE files, but do not have a 4GB size limit and can store any number of audio channels."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "CAF files consist of a file header, which specifies the file's type and CAF version, followed by a series of data chunks. All CAF files include an Audio Data chunk, which contains the file's audio data, and an Audio Description chunk, which specifies the audio data's format. Other, optional types of CAF data chunks include:",
+      "Channel Layout: Required for CAF files with more than one audio channel; describes the role of each channel",
+      "Information: Stores audio metadata, including title and artist",
+      "Edit Comments: Contains time-stamped comments added when the CAF data was edited",
+      "Instrument: Stores descriptive information used when the audio is loaded as a sample or instrument, by a sampler or digital audio workstation",
+      "Apple added support for the CAF format to MacOS X in version 10.4, via the Core Audio API, and to iOS in version 5.0. For more information about the CAF format, refer to Apple's official format documentation."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a CAF file with any of the following audio players and editors, to play the audio it contains:",

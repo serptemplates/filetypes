@@ -1,9 +1,42 @@
 {
   "slug": "epub",
   "extension": "epub",
-  "name": "EPUB File",
+  "name": "EPUB eBook",
   "summary": "Learn about .EPUB files and view a list of programs that open them.",
   "developer": "IDPF",
+  "category": "other",
+  "mime": [
+    "application/epub+zip"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The International Digital Publishing Forum (IDPF) initially released the EPUB format in 2007 as a replacement for the Open eBook (OEB) format. EPUB has undergone several revisions since its release, with its most recent version, 3.3, released in May 2023.",
+      "The EPUB format is Zip-based and stores resources that make up the publication, including .XML, .XHTML, .NCX, .CSS, and .SVG files. These files contain the publication's contents, including its text, chapter links, cover art, and images. Many commercial eBooks also include digital rights management (DRM) protection, which limits viewing to only authorized devices."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an EPUB file and read the eBook it contains with various apps, including Calibre, Apple Books, Adobe Digital Editions, and Google Play Books.",
+      "You can also edit EPUB files with no DRM protection with several apps. One of the most common eBook editors is Calibre.",
+      "Since EPUB files store their contents in a Zip-like container format, you can open them with Zip compression utilities. For example, you can open an EPUB file as a Zip archive with Windows File Explorer by renaming the .epub file extension to .zip. You can then extract its contents to view or modify them. However, remember that editing the contents in an EPUB file may corrupt the eBook."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Calibre can convert EPUB files to various file types, including the following formats:",
+      ".AZW3 - Amazon KF8 eBook",
+      ".MOBI - Mobipocket eBook",
+      ".FB2 - FictionBook 2.0 File",
+      ".LIT - eBook File",
+      ".LRF - Sony Portable Reader File",
+      ".PDF - Portable Document Format",
+      ".DOCX - Microsoft Word Document",
+      ".RTF - Rich Text Format",
+      ".TXT - Plain Text"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -72,59 +105,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open an EPUB file and read the eBook it contains with various apps, including Calibre, Apple Books, Adobe Digital Editions, and Google Play Books.",
-      "You can also edit EPUB files with no DRM protection with several apps. One of the most common eBook editors is Calibre.",
-      "Since EPUB files store their contents in a Zip-like container format, you can open them with Zip compression utilities. For example, you can open an EPUB file as a Zip archive with Windows File Explorer by renaming the .epub file extension to .zip. You can then extract its contents to view or modify them. However, remember that editing the contents in an EPUB file may corrupt the eBook."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Calibre can convert EPUB files to various file types, including the following formats:",
-      ".AZW3 - Amazon KF8 eBook",
-      ".MOBI - Mobipocket eBook",
-      ".FB2 - FictionBook 2.0 File",
-      ".LIT - eBook File",
-      ".LRF - Sony Portable Reader File",
-      ".PDF - Portable Document Format",
-      ".DOCX - Microsoft Word Document",
-      ".RTF - Rich Text Format",
-      ".TXT - Plain Text"
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEiElEQVR42sWXa2wUVRTH/7PS3cTdsm6BVoNSUiyztLxUDMQ3aFBUSAwkGpOiVCwRxBqqH+wHP5hojI8oNVFEDWHXCsU+SA3QCrYxGj/gxpgaTWu2pSst2tY+pmxBt2Wu5869M7s7syD9sHDbszP3MXN+99xzzp2rAHCRXEPiJpkh69ksOskUSYLkgkI/OSQ+/aXlIwoY+D//YYwZV0XnbYy3QJFtTJf3Zp3JcZBjWUq/WTf75LNKeDCPHohzAC9JAata1i0AmWYpZxLIAtDlC5GiQDeGTAPALwEW0AMDHGAmSSGrWtpBV02t6/Bn0/6dawo0AvATwFKqxjhAgKRI37UkwgGCh365UgArqNqTArA4Qh2a+uWvVwBAJ4ChdAD2YqlhAbU+uwBdq/M1coYMAJUlAqDhNwvg3VffwGI1CN1wsOkXRVHw3ckf8HrNO/8PoFcuEkvQ2GkB/Nz6PVauX4N/E4mLKnG7FEzqDJkQPW43PnrzfZTv2p4CMEcD94HP/7ZZ4AVVWKCxywJo3ncQG7Y8gbZHg/AoDB5SxkPKQ095XAyh6Cj6JhJ4pXQWhaEI0VPxSeyJjuHwmXPGO0K7P8bmym2XAbBzoQBo+t0CaPrsCzz2zJPo2lRq1BnFvGLGPl3C0RH0nZtEdUmeFfOrTpzGvttmoyY6jrahf5wA980WALXDtiV4XgAED2cA2FiSzIRSOZ9xqGdMACwKWAkneOwPBHJc2HNLAI+fHL58ALajOALuA81RB8BPG4rhneFKZkFubgLa3z2GfhOAF2ofT0wZIG7qX94+4AS4d5ZGr/C7HADbF4glaO52APz4yM24/Ug0zcE61xch3K3JJQhAPRpLD7f7C6B+Mx2A54oEwFc9DoDIuiLk5iiQjiBzPy3BqXECmEJ10J+e9/kyUWQE25wAnQSg8P3gwIjNByRAMAWgfm8Imyo2I/LQfKxo6U2f4cOFCPWeFRZQ/VBb+9L7V+dDbR/Ep29/gK0v70y235MnfODAqM0C2+YLCxzptQCOhRuwrmwjIg/OQ670AbPwmYZ7pQUIwJy5MUbujGr7EMK796KssiIJcHeeSEQOgIpCAXA05gRYe5MBwCSAudWGYmSB8xdQvTDXWgJTOXdI9dvhDAABYYGDY9MAeGCusABMBaLsj8XRf54sUOxLfiNI5fwumAngrusEQJ1m84Fn54lU3HLaAmitbTQy4aVS8aWKz+tFzWtvobxqRxLgTr+IAjsA23qjsEBLX9pmdOuSZcamklHBtV5k3gVEUeivtqkO733yYTIKCAAZAcrnCoCv+7P7PUAAxgfJoXEnADmZFjx+JrvfA3fM1MDzQP1ZG8CWG4QFjv+ZXYBVuSIM6+M2gKevFwAn/soygE9EQcOEDeCpAloCyoRtA9kFWOkVUeAAKMuPyDFa+iPSy1OyoHlv7AkseZixxpj7hVlPPTOQct6UCiDOBWVzOhy4F1EKu2Kz3w5mJCWkKrcKAVjnAuNkxK1Akk/iy+YSUImTDPLZQ56McqTSgIRxZxmAp9UJklHIs+FVPx1f1fIfDLkaFUwoGcAAAAAASUVORK5CYII=",
-      "alt": "Adobe Digital Editions"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Calibre"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Cool Reader"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABWElEQVR42mM08W7/L6ZoxTBQgHHUAYPeAWoK7AwykqwkG/zx01+Gs1e/U+CA//8ZNBV+MdTkqTLcffCF4fO3P0RbriDDxfDyzV+GpqmvyXQA0PKvn14zBLqLMGip8jE09F0jyfdlmeoMEuI8ZDoAavnvXz8YwnxlGPzcpBgWrXnI8P37X6IsP3zqDfkO+A+0/BvUchAAOSAhTIEk33vFHoE6gBvogDfEOwDdcro6QFTBEsNySh0gLsbN0DyNSAdwC6lgWE5XB7DxyGCVHHUAZQ7gAjrg7agDRrQDOIEOeDeADhAFOmD6ADpADOiAllEHDJQD5IEtIh4+foanrwk35fA6wMdFkiErXplkB3Bw8TNwcPMTpR6vAzg5mBmSIxUZJMU5iHZA86THRFtO0AGkAlJ8TnUHkGM51RxAruVUcQAllsMdwMGvQJZmNg5usAMoAWAHUGQChQAAwK0Cf5jeTJQAAAAASUVORK5CYII=",
-      "alt": "Icecream Ebook Reader"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFI0lEQVR42s3XfWwTZRwH8O9du+vbWK9dxza7dQyYi2GTlwGToGEMNhFZyVQIEcx0brwIwhjLyAiCDHkHB05BmQQ1wWCiMswUIhER31AH42XTDP5AGAFM36Hv6/V8rszFK23ZJAv+kidtrr3+Pr/f89zdU4rneTzIoP43gBPZzyrIy24yniYjaYDymcg4REZVQednHhHg2MOl+0wuR/ltvxdcMDgg2SU0jQRGAZ0q4a2ii4eWiQAf6As8Tq9HPkCVi2KQQuUqu3Y8XgTYrZvAB/5D5QHw4PggJBQNKag+nROkKb7KfIoWARq04/u9GgMkcRfnhipTD+7Pm0iVKPp0HkeBr7H8KgZs14zrF0CovCvggjrLgPy6+fjm5ddgkKjuVEg+E35M6AcdoSscRfErrWGALf0ACAlucB4ohupRsH4plAmD0GJcAi0tgzPYDXPQByZBBbnTDx0tjwhYFQ7YqBnbJ4DwJRtJ4GMVKN5ai/Ts4ZDL5difPxs+nkMwMR5ZxkIYJo3HkbI6GKTxdxdAAKutv4kB9WxenwBuPgAz5cfUTSuQ/Vge0tLSwHEc3swuhouhMG3vOsSzatDkkjtcsgQszdxdBAGstbWKAWvZMfcEcD3zPnJuCZ6omIP09HQkJibC4XBgx7Cp4JUMSpsbQ8eE39039jnIKElEQL3ttBiwug8AofUSw2DM3lMPQ0YGkpOTwTAMrFYrthOARCXH/J8/QVJSEpxOJ7YNLwJD0REBG8IBderRMQFcaOG5Ufz6UuQbi6HX66FUKkFRFCwWC7YMnYI4lQLVF1pCHRCObcwsjArYbD8jBtTeA3CbrG5Kr0XFxzuRQarXaDSheRYilKwHUNv+JbRabejY+hiAbeGAGvWomAAraf+ospkw1ixEamoqZDJZ72dCss2k3bSCwcr2r3oB6zInRwSQtvHb7W1iQPU9AHYCmLV3PfKfLATLsr3VC2E2mbA1Zwb8NI81HUd7AWujAMi08TvCAVXqkVEBwi3XG0dhxcmDyMgcEpr7f8JldeCjyjp0HPseHlaGbWe/7gXUDy2M+HQQAA32s2LA0hgAD7n2hVtu1eEmpKSkQCqVho5f77iEA4vX4EpbB/wPsXhmQw3GFzzeC9g0Yjr8Hm9EwK5wwBL1o1EBXgIYVjQRle9tCq1wYeV3nfsDTXOrYOm6DvWEHBQufwmDU1OQYTDgr/MX8dOBZvx+9CTc9lsRAY32c2LAK2x0gHCLHf38DLyweRXUajUcN01oLF2Am5cuI23yOEx8dR7ieBo3fmjDpRO/wGWxw+/2wOO4HbUD79jCAAtjAPxkDUxeVobS2kVQyBV4e9YiXG5tx5BJeciZMx3Xvm3FlR/PhJL6XG64bLfAx9hbCIA94YAFbG7MRTh99WI8tfhFnP70CJrX7UJyThZSxjyCzubj4Hx++Hoq7ssmVwC8azsvBlRqcmOeady4AhNmTkNDSTm6fd1Q6jRwdN1AkFTqueWMWXEkwF5rGKAiBkDKxMH4RjW8Zju+azqIgL8bPHkCCsmF9/0NAdAUDijX5EQFyJQKTFlejlMffh5a1V6nq99J/x00AbxvvSAGzNOO4OOibCoZhRwJKeQJZ7KG5ro/7Y7cAvD7Le1igFGX7dYG4yLuKiVSCShy6xUScwHu/pKTMNPdrhZzp3hbnqsz7Enj5QtZXgoG9H0liBY+spu0Ud24TvsaLpiuVosA2bo0ofqduPPXTD8gAuAqGV+QUdtpvib+a/ag4oED/gahsIvf70q/oAAAAABJRU5ErkJggg==",
-      "alt": "Sony Reader for PC"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "mekia eBook Reader"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIR0lEQVR42q1XCVRU1xn+3qwMOxYGJWyxgkgNi4KIpRpQFI2kdSFmMYjUKtXUlhw1SqJUz4nlmIo2BqMJmmDcMERNLQUkuMWIqIgiuIEyLOIOAZxhNub1vjfvvXmDaNqevHP+d/f7f/9676Xw/39Uvzb9c2zyvE9CSCYiCUfMZ+HILCLLzwWAYaJ8x99/cNKLvtN9nRzGeitUQc5yhZ+SUnhYKCm0FnR2m+jW+0ZzQ4tWe/ZoU+O/8ltu3iPrDD8FhPqJMXl2cPDQxIAhC4Jc3BK9RkWHYfhw0IGBgM8LoN3drTM7u2C5+xAWTSvMN5txp6a+tqGnu/xY06383JuVt8kM07NMRD2HucPhuLi5o9wHzfOdGP9rOmYsLFGj2QGa4rfjKkJBKhQNY/UNGM5dxa3j53648uOjgvnHC3aTGfqBQAwEgFG5Q/mEqSuiR4YudJmSMMQy8WVidRnsuFPcUlq0C00Lc2izGboTtbhfcfHuufr6z94uy9vAgbA8DwBr77IJySvHRUX92eF3U9zo6AjrRMKQpkWMeYas1CIggozWDl1NE+6XVHf9UFX9j/Sy3Jz+fkH1AyM/EJucFh8eudb1zeTBGPMSN8EmJg+CaJpVBtNrfqJF7+1maJta0dNISNMOU68ZMfnr2Ek9l5qhOVR172Rtdfa7pZu/FPuEGIB0VXBsUOrQyJ2BC1NiJUljB5aM1PVNGuiu1EHf2ATt7Vb0PuwELXGATK6CXKqCTOFE6s7w37JE4PDw1E2c33ui8nDdifSC6oMNpKtPDIAplcXj09e//MqUTGnGNKvNn5FbGuYtgsJogaOCMJMxDFWgpI4wSRQwEjKzJEfA39OENZY+C259cxnflR7blFn4QRZnCpoHIJ3vHxfwXmjCt34rZ4+URP3y2a5KMF2fswghHt6wEJAmSiEwZknKtOVsX8j610Qb0Hh0/RG+LzhZt+fE/t8WXyluZrRA8bb/akzG4lcSEzepViWRqTSxMcWWomBjw4wp61/PRIjnEMJEBqNMTpgSUjqC8lVD4usFiYcrWipuIGpN8lM6PF9Uh5KSksycA9lbGV+gOM9Xlf1mzc7oBdNec5gxkmVHC+wooc2DqXnjA4SER4AO8gHlT5j6eUKhdgMlYSKFYgPlm7VFmJmdYlWa4EM0rp9rR/GhigPZeRnppKOXGZIScq5KyDsekj0pUhbhI6iaZU/ZVM+romruBowpWAZKJmE7rYFBWddYC+St2YMl694SljJ/Zsqdlh4c3He2JuvDGfGk8wmrfkKuV6buuRqwOUEt8Xay93yKsqHhvlOp2zB+1x+tzPv5CQ/go78dxPJVM+3Uz/R39xixe+/lB1kr4kOZJg/Ao37av1v9v4hVQC7BwCetLWBK5u3G1IK5AnOasi+Zb3VuKda9myTSgPXrs9DYcqDBuC5jtB9pdjJLFAyA2mkVLQE7RykoAQDdL81SQr1o/hHM+iJZkFYYZk1gXZu59SRyF0+wF4EMmftobPy22bghPczfDsDppGO1IRvD1HJvuV3S4UHQIjAFfziJ1M8nWB2TcKX7KYzpX5Rfhe0LYsgYbUPHcNT1YWNZ84Pt6ZFhPADWBP9MKDk66v2IcOcwRzbdWnM/hIXiaPg04wIyto8WmPEnItEu2h7rUdvajcKadhSkR9j7B6lcf2zCtorrl/dlxE0WA3DdOq7ws4Tfx81UT3fimNrnX96Tme4N79zAsk+G20CRok6jQ/7xdnToSZpXKUG5OuPLmd6ihG/doazNhP3lZw+WLHt1Ie+EbBhmRW7JSJ48Iyc408nGmLJ5OaOVh2Rx47VelJV0IntzgBUYp+I/7WgiuzlC6ekDi0IKiYrG9niTcHjxSe2TRjPKDxetPJ+zeBsfhmwiivCKH/aXsNx9Y5f7jfCMkIg8l0bzFQNKCjrRoe2DxdEBfS4uWL1WKUjHqH7BjjZQnkGgiRNbZDSGqc3IijTYCXGxG9hc3Xatdv2yNx5eOtrIJyLeDO6rYvavTZw+OSM0jYZEZvPebcvvQmd0hIO7Hwwqkn6JklYs7bCLgNMNOuzReMNISRDsaUJaiAFeqj5BDBOZ/PldKYrLyj+9/F7KX0nXj+BSMTgzOEX7pPxq1oj3Px6fHhg1NN7MqZ6gXnYXDs4hJN/LoFcCXkPNSJvVxfnG0ycmrxn+JGHmlHbKsO2S5kLT1g+Xdp76up4MaMEdRrybMOHolhqWlzouetbyUbNVar8wEztSf6EXlSe88YSccl6BJiRN0sLDzSycD4KXCzcm2nZ4kWZljwxfteke1JUe+kiTs2QXGWLQG/vlLlYLDoQGvR2zPzM2NmlB+FSJy4sjDf0ko0WS2eCLnZUS2b3yiRxf37P0VH9/NF+T9fom0tUB693Q7kLC1xnLOzIgUsYVLo2InPRm+ASF+qUYPaRS2o6Z+D5FC6nOBoSxeWmXCkfa9Q+uVh7b27Z6zscccx2sD5enrmSA7fXDgPCYHLN1jq//xNlR4wNGBxFNhAQZBJvb7Mxexq23TC7eK7uUONOjRHFDS7WuuqLofu7iQs7ptOj3anrWtZwBoSLkGhDw6rCQ0LS3BvmOjhsROXj4C34mDPHqg9rdBDfi5YwROwwy3NFLcEsnR71ehjPND25oNRdPPy7ZsddQeYS5/3UzIYcBnmzPe5jIOMdkMpOL+5BxPkERqZOc1KGRMrVvINx+MdjspnIzKxiD9nbpDR33entaNPo712oeH9/1nf7amXayroeT2ihW+38DgB/jtaHkHFTFlQrYHqiA7WFq5ByslysNIqn/p6fZQECYKJHD9jqWitYzm/fB9jI2ce1nMua//wBdyHR6YFDcpQAAAABJRU5ErkJggg==",
-      "alt": "iTunes"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -133,24 +117,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/epub_3541.png",
+      "alt": "Screenshot of a .epub file in Apple Books 5",
+      "caption": "EPUB file open in Apple Books 5"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/epub_3541-2.png",
+      "alt": "EPUB file renamed as a ZIP file and opened in Windows File Explorer",
+      "caption": "EPUB file renamed as a ZIP file and opened in Windows File Explorer"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.790Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.146Z"
     },
     {
-      "url": "https://fileinfo.com/extension/epub",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.790Z"
+      "url": "https://fileinfo.com/extension/epub",
+      "retrieved_at": "2025-11-01T22:32:42.146Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.790Z"
+      "retrieved_at": "2025-11-01T22:32:42.146Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.790Z"
+  "last_updated": "2025-11-01T22:32:42.146Z"
 }

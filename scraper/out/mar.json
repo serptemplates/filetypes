@@ -1,7 +1,7 @@
 {
   "slug": "mar",
   "extension": "mar",
-  "name": "MAR File",
+  "name": "Mozilla Archive",
   "summary": "Learn about .MAR files and view a list of programs that open them.",
   "developer": "Mozilla",
   "programs": {
@@ -52,34 +52,22 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Mozilla programs automatically download and run MAR files, so the typical user will never manually open a MAR file. However, MAR files can be used to manually update a Mozilla program without opening it, which can be useful for system administrators.",
+      "The Mozilla development team generates nightly builds for their software products that include a MAR update package. Therefore, users can apply software updates with the latest release each day.",
+      "NOTE: MAR files created by the Mozilla team use the filename convention [program]-[version].complete.mar and [program]-[version].parial.mar for complete and partial software updates."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Application update file used by Mozilla programs such as Firefox, Thunderbird, and SeaMonkey; contains files that update the program to a new version; run by the Mozilla update program (update.exe in Windows), which is included with Mozilla software installations; stored in a custom file format, but Mozilla has made the specification publically available."
+    ]
+  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADZElEQVR42s2XfUjTQRjHv05nmCYmuawNwywL0Vr0YoqtIJwlZmp/BZX2R2VBUFj92csfUSEEmllILzq0InpBEXoBy7IlWovMKRkZvWw5mUaWNlLz13PnfmLlNmf7DQ+Ou93t7vncPd/f3T0+8FC6vHRF+HZDo8XdcT7uDtAtXxkgAHEQBDUreR2Iod9hBOD2fE4HVMQnxtmNxdiNMUPzBNYpCGClIP6Zfk8Y4FpCUoRoCPZVUVaLRv4wNlabBwAEcVLYJ3VobDID+Pn6GqgWSjnS3tpPudlevqRcT7lqa2N9jyQA6eU6yOR+CImK4k0Dvb34bjKjn8rulhZYm40w659CGBrKp+6TBPLFowA5zxtcbnnv5w68OFOEjw8eFhHAXq8DcL98+4bryet+EYCf1wH6LJ0wFBSyHQAB+LgESK3QcZ+S33A9JRX9PT1ONSAPCsQ0lYo3DQ0M4Gv7OwzafqDL2Aqr0QjT4zqoNKvwqfaRa4CpCgUyKm+N0NcdPor3d+85+wrGXLVMLqdFzIUiLhZKjQazVixHeXyia4DozAwsO3SAb1tg+ExunEE4cwHzLxOamKZHz4ePTPYP1LgANCeOQ7VmNVrLdIjJ3jYsHu16DJE7/keEzJ0VCUnOAUDUm+5Uw3fKFNxK24is6kpev7cjF51NTRMGGLTZ0FKqQ3NpmXOAGYsXIfl8MaxNr3B/Zy7Vz0KxZAkfbCg+51CELIUuXMBLW3c3bNYu/Pr5E1/a3qCrtRWmuicIX7bUtQgX796FmG1bYbx4CU0lFxCbk83bvra3o2rzFulFuL5cxwdZGp+h12xGoFLJB7J0Mz0DfR0W6UToHxKCLPK/o9RwKh9tN25KJ8IIbTISjx2hi8SEt7cr6WBR8vbw+HgEzZ4F8xM9avbnSSfChKOHMSdFi9dXrsJQWDTib6YDNemAieraWi0GqfS4CJm/Mmn7/YODUZt3kF+fIkAYfRkpJef55DX78mDS66U9Cf++eNjZMH9DGgIUYXxFH2gVkp6EUl3H4zoJpQIYJcJzBLDH40+y8YiQnmoF1H2aAD5K8ShVUx6tRhYtmTH8KGX9N8iwVeycNM9yMTDhYZbXAxNHiUIztT0cE6MlVo/0GsBYiYLTIDsIg1OPCk5DvQLgKFF4riQAs7vjfgNgWapOt0icuQAAAABJRU5ErkJggg==",
-      "alt": "Microsoft Access"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Melodyne"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABUUlEQVR42u2XWxaCMAxE053JyoCVlZ1ViwRDybP2y+P8KGhnLn2GBP0qy7LAPM+QUqrXqcekq9EPA+Rc9s9p8pjFARj/O8DjAbBtYIDs4VUVYDfSIDAYvUUAClElg/gAaDD6NV46AOoOogO0wdTHBJAgrgYygN32ohjAOwkwnAKcEKXw7UIA2lBMkw6Qs6vr4wBM97MA3DB0AVCIq4ENILcNAhyB7Q0DIJTB/XgJLMykSmQi0lVAwThYLjN5AlnyIxC3Yi6cU/u/VLyJAoTwlH6PV+NuAAz+4hnuQxDpyhq8ruv5PdJrFKCVCUQDK0B7TwsEZhJaurnSIARQei+8DD8SNiIDYNBGpGzFJsCQrVg5jFSAIYeRcRyrAEOOY0dBwq0CGFKQOEsyEQA9qrpKMmdRqgJQLwpiAgTKchcAB6KW5cEXE7oVw5AXk5jiAIz+AE/Q3Wmp37lQJQAAAABJRU5ErkJggg==",
-      "alt": "WAY Pro"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEEklEQVR42sWXTUhUURTHz8ikiya/IGKGBKlwIAKj68JdQm6CgnBREC3C5D1IEsJtEEKrYDaCgQ8RF+E2EHFlUJtocyEhIqMiWswwBX5Oi6yczrlfc+/7cMYsOo/He/O+zu/+z8e9k0qn0/A/LXUQgOGp4SoHudnG1DY7Opv6JwDkOCgF0tklciXdyp2LneOBlzh4WW9PkH0D9E71VunD5NjDjZwe2T0l7vU0tYnju91NyHW+gvmNeQQJxDMroyuxEPsC0M49Mepp4bjnRJvzTMfmR2huboadnR1xXDq+BP6En6hEwwCTk5PV219uK+ceOr9mRgzdNefrbSfg8Ne3kMlkzLsaYq77MYyM3Ez9EUDvcG+VQuwx6dxI3u0+RxA0ejIN0dLSAvc+XwSKxsrsyv4B3NFPuzHXAJ/QecdHcUrS20YAn48+gT5UYeHcAgwNDaX2BaDLjTEGA7sPa85t65aj10Yq2GEoHy+DH/iR8mwIgJKPjhH5I8ZRhQ4TgvKhMhz7cUwoQvuV8hVRpXZFNAaA8UffJvlsACo523qa3pvzSnsFVjcykK9UoKurC66uX40HeDn1swqqnSSa7jENWjF7XxxLuRzkEYRs/Om4BJiNANAIvca/vicl+sBYcya/ly1mofV0KyqxCv5itB9YANPw/IOUDEKDDWvD7RPr5nUc6fmTGQcg356HrTdbqERJJCHlUQKABwGX/ZxzngjAw0AqNHS9cMEFoNGvrW3B9zPf8NuBmBvSD9LRPmADcJ4cahY6GVD9gOwZJh9d9hjCBwEEbBrEx8Sz+HsxfmJyAHwFYDsLK4GtwDQi27axKvLtz1GBVQgIACuGWc5ZkUW6YCKAeI/VtOUOAM1+mxEAUuBSsQiXL5cEAFfv62k5bh6oA6DCy2MS0pYnkoSkgI8hYOJlXsJHsnWm42QAJlc7tgTm4CqxLRoTCo83CcAvqWezMqkfnX0EY2Nj9RQAlQPRGmBKEkq8bdUFuQmRXAVRAlKZCQVoMDluACAXr4QD0Eex01mYgz2NZV1AMg9lp10A0HUFR3njeXSdw52Wu04uuAoQADRgKj8Zczu0WKooAA6yEVH9k3Nxl8KDMie2Yp8HYR9JvhO4JAD1gdc40s7OVphYnJD5xGQFCYV5bUoONaLAyTd9jhUN+k4cgL5GzkXiIkC/ivXMzFz15osbwrmGoFAU8gUYHBxMOXOBz33TiBwHrDbCuN8iziZ3mVgJ91vJZlbSWWbe5WpadgACFQLjgMsgOw7qTMu6MmyAJBVu/boVmo51E6iTiWaqik0SmXD9/aNOuYVV0ErXAJj9zwbcBmS3PPMcrngqeRFHaMCWl5erA/MDprxpbihcLySsiCwn4ZEcxPTilqTXXfFAf07/hv13gN9NfjiZnPNh0QAAAABJRU5ErkJggg==",
-      "alt": "PentaZip"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB+0lEQVR42q2XARKDIAwE4WXyM/Fn9WW0kZ4cIVSoZsZRUZLNJdDq3YTFGNPn8DNzrmzGWSIQ9xTIkJNv5i6l5Lz3PH4bRE9O5LiVIKUy8SEQnpQk5ro6t23xc84A2yYB6uCVg5sgePkMLv7EEQA0BMVzzPQviLeC53qX4PWz1SjN/yAHgDiQea/Xy4UQmuDZMZRZz/snQLx0OL9oBUcJBHBZFrfv+3F+AqQqAdecg6MEDCDXYncVaQA4+L7XJWGI/Hw/zrifBakAcjbt5B6EHCtNgCo9RfQqFhBRolqGsNL1+boHobMHhLyLUoWwHPPQN3ksmILZO43LICG0ENicdPY6S+4VHpc+qIT6OEkSBNnhGoEtJYQbGbbZh3PpQgHqgbMJq1J9QU4A/gHqKQHxdLNJcAYCgF4FX+flFw/0LHEBqpVggKLkWPZaATN7AHA5WAnMkWbTJiBsgOLNyHP2WONCqoPjXq9j3heatlaKGEmXZaizZ+cMxCURk+eb7F5Od7rG8PZWzNlrA0jvv4CYBC//HWIHxCz5OVB51yCQ38oSAHk80ljsrnsL4DAowSBc+zZgH4QBrM43AXogV/JrmFySsey7VCMgV7Ufyf7ngyuQu7UfBpgBman9NMAIyGz2fwFcgcxkfwvgF8ho9o8A9EBGfT/6qQ0RZr6M3oTdGL2Zb0fHAAAAAElFTkSuQmCC",
-      "alt": "Gardenware Labeling Program"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -92,24 +80,41 @@
     {
       "url": "https://fileinfo.com/svg/search-white.svg",
       "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "retrieved_at": "2025-11-01T22:32:42.176Z"
     },
     {
       "url": "https://fileinfo.com/extension/mar",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "retrieved_at": "2025-11-01T22:32:42.176Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "retrieved_at": "2025-11-01T22:32:42.176Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.824Z"
+  "last_updated": "2025-11-01T22:32:42.176Z",
+  "mime": [
+    "application/octet-stream"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

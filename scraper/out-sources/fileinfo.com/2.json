@@ -7,6 +7,18 @@
   "type_name": "Unix Section 2 Manual Page",
   "summary": "Learn about .2 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A 2 file contains a Unix manual page (man page) that describes a system call. Each 2 file is named for the system call it describes. 2 files are meant to be opened and viewed using the Unix man utility."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Most Unix-based operating systems include a system manual divided into eight numbered sections. The second section of this manual includes documentation related to Unix system calls. Each call's documentation is stored in a separate 2 file.",
+      "For example, the file link.2 contains documentation related to the link and linkat system calls. It includes a quick synopsis of how to use the call, a detailed description of the call, sections describing the call's return values, possible errors, versions, and bugs, and a list of related manual pages.",
+      "NOTE: Other sections' Unix man pages use the .1, .3, .4, .5, .6, .7, and .8 extensions. Man pages are also commonly compressed into .GZ files (which may use the .gz.# extension)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In Unix-like OSes, you can open a 2 file by calling the man utility using the name of the file. For example, to open link.2, enter man link(2).",

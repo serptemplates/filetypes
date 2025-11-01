@@ -1,32 +1,54 @@
 {
   "slug": "sesx",
   "extension": "sesx",
-  "name": "SESX File",
+  "name": "Audition Session",
   "summary": "Learn about .SESX files and view a list of programs that open them.",
   "developer": "Adobe",
-  "programs": {
-    "windows": [
-      {
-        "name": "Adobe Audition",
-        "url": "https://fileinfo.com/software/adobe/audition"
-      },
-      {
-        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
-        "url": "https://fileinfo.com/software/windows_file_viewer?ref=6815&b=1"
-      },
-      {
-        "name": "Adobe Audition 2023",
-        "url": "https://fileinfo.com/software/adobe/audition"
-      }
+  "category": "audio",
+  "category_slug": "audio",
+  "mime": [
+    "application/xml"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Adobe introduced the SESX format when it released version 3.0 of Audition in November 2007. The format replaced the .SES format, a binary format that was the default audio project file type used by earlier versions of Audition.",
+      "To create an SESX file with Audition, select File → New → Multitrack Session.... You can customize various settings for modifying audio in SESX projects.",
+      "You can also import many different types of audio formats into the projects, such as .AIF, .FLAC, .AAC, .OGG, .WAV, .OMF, and .MP3. To import an audio file in Audition, select File → Import."
     ]
   },
   "how_to_open": {
     "instructions": [
+      "Name: Adobe Audition SessionFile Extension: .sesxMedia Type: application/xmlIdentification Pattern: The file begins with an XML header, typically containing <session> tags that identify it as a SESX file.Description: The .sesx file format is used by Adobe Audition to store audio session data, including the arrangement of tracks, effects, and settings. It is an XML-based format that allows for easy editing and sharing of session information. SESX files enable users to save their audio project configurations, making it easier to manage complex audio editing tasks and collaborate with others while maintaining all session details.",
+      "To open a .sesx file in Adobe Audition, follow these steps:\n\nLaunch Adobe Audition: Open the Adobe Audition application on your computer.Open the SESX File:Go to the File menu in the top left corner of the screen.Select Open… from the dropdown menu.In the file dialog that appears, navigate to the location where your .sesx file is saved.Select the File: Click on the .sesx file you want to open.Open the File: Click the Open button. The session will load, and you’ll see all the tracks, settings, and audio references within Adobe Audition.\n\nApplications that can handle or utilize SESX files include\n\nAdobe Audition 2023 (Free Trial) (Windows, Mac)",
       "You can open SESX files only with Adobe Audition (multiplatform). To open an SESX file in Audition, select File → Open and then navigate to and open your SESX file. Also, if you have Audition installed and associated with the SESX file type, you can simply double-click your SESX file to open it."
     ]
   },
   "how_to_convert": {
     "instructions": [
+      "To convert a .sesx file, you typically need to open it in Adobe Audition. Once the session is loaded, you can export it to various audio formats. To do this, go to File → Export and choose Multitrack Mixdown or Selected Clips. Select your desired audio format (like WAV, MP3, or AAC) and specify the output settings, such as sample rate and bit depth. After configuring the settings, click OK to initiate the conversion. The new audio file will be saved in the specified location, while the original .sesx session remains unchanged.",
       "Adobe Audition can convert SESX files to various formats. To convert a SESX file with Audition, select File → Export. Here are some of the possible formats:",
       ".RMI - RMID MIDI",
       ".MID - MIDI",
@@ -45,6 +67,22 @@
       ".VOX - Dialogic Voice Audio",
       ".SND - Sound File",
       ".SES - Audition Session"
+    ]
+  },
+  "programs": {
+    "windows": [
+      {
+        "name": "Adobe Audition",
+        "url": "https://fileinfo.com/software/adobe/audition"
+      },
+      {
+        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
+        "url": "https://fileinfo.com/software/windows_file_viewer?ref=6815&b=1"
+      },
+      {
+        "name": "Adobe Audition 2023",
+        "url": "https://fileinfo.com/software/adobe/audition"
+      }
     ]
   },
   "images": [
@@ -80,15 +118,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "url": "https://docs.fileformat.com/audio/sesx/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     },
     {
-      "url": "https://fileinfo.com/extension/sesx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "url": "https://fileinfo.com/extension/sesx",
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.933Z"
+  "last_updated": "2025-11-01T22:32:42.286Z"
 }

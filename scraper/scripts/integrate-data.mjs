@@ -49,8 +49,7 @@ for (const file of files) {
     extension: data.extension,
     name: data.name,
     category: data.category || 'other',
-    summary: data.summary,
-    popularity: data.popularity || 0
+    summary: data.summary
   });
 }
 

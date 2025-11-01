@@ -1,9 +1,20 @@
 {
   "slug": "tmo",
   "extension": "tmo",
-  "name": "TMO File",
+  "name": "3DCG Animation and Pose File",
   "summary": "Learn about .TMO files and view a list of programs that open them.",
   "developer": "3D Custom Girl",
+  "category": "other",
+  "mime": [
+    "application/vnd.tmobile-livetv"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "NOTE: TMO files can be converted to MikuMikuDance's VPD format using a program named tmo2vpd."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -24,14 +35,6 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Bio-Rad iQ5"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "SmartViewer for TrueMON"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -60,20 +63,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.881Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.222Z"
     },
     {
-      "url": "https://fileinfo.com/extension/tmo",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.881Z"
+      "url": "https://fileinfo.com/extension/tmo",
+      "retrieved_at": "2025-11-01T22:32:42.222Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.881Z"
+      "retrieved_at": "2025-11-01T22:32:42.222Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.881Z"
+  "last_updated": "2025-11-01T22:32:42.222Z"
 }

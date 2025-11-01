@@ -1,7 +1,7 @@
 {
   "slug": "clif",
   "extension": "clif",
-  "name": ".CLIF",
+  "name": "Cranelift IR Format File",
   "summary": "Learn about .CLIF files and view a list of programs that open them.",
   "developer": "Bytecode Alliance",
   "programs": {
@@ -18,6 +18,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12968&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Cranelift is a code generation tool that translates a target-independent IR into platform-specific executable machine code. It is most commonly used to execute WebAssembly programs as part of the Wasmtime WebAssembly runtime.",
+      "When creating an IR, Cranelift can either store the IR as an in-memory data structure or as a text file. Text-based Cranelift IRs are saved as CLIF files. Each CLIF file consists of a sequence of independent function definitions. Each definition contains the function's name, signature, preamble, and body.",
+      "Primarily, developers use CLIF files to test that Cranelift is creating IRs correctly. If Cranelift is creating IRs correctly, the code contained in the CLIF file should function identically to the source code from which it was created. Developers can perform a series of tests using Cranelift test commands to verify the code their CLIF file contains behaves correctly."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A CLIF file is an intermediate representation (IR) created by the Cranelift compiler. It contains a program that has been compiled from source code to an intermediate executable state, which is ready for further processing. CLIF files are used primarily for testing purposes."
     ]
   },
   "how_to_open": {
@@ -61,8 +73,11 @@
     {
       "url": "https://fileinfo.com/extension/clif",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.005Z"
+      "retrieved_at": "2025-11-01T22:32:42.387Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.005Z"
+  "last_updated": "2025-11-01T22:32:42.387Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

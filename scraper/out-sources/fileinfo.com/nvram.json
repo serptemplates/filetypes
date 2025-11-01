@@ -4,8 +4,21 @@
   "slug": "nvram",
   "extension": "nvram",
   "name": ".NVRAM File Extension",
+  "type_name": "VMware NVRAM File",
   "summary": "Learn about .NVRAM files and view a list of programs that open them.",
   "developer": "VMware",
+  "more_information": {
+    "description": [
+      "An NVRAM file is a virtual machine (VM) data file used by VMware Workstation or VMware Fusion virtualization software. It stores the state of the VM BIOS and is saved as part of the overall set of files that comprise the VM. Users should not attempt to manually open or edit NVRAM files since the virtualization software references the data."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VMware Workstation and VMware Fusion are operating system virtualization applications that enable you to run multiple VMs on a single machine. Each VM created by the software consists of various data files referenced by the software to run the VM. NVRAM is one of the data files required to run the VM properly.",
+      "When creating a VM, the VMware software creates an NVRAM file in the VM file. For example, Fusion saves the NVRAM file in the .VMWAREVM file, which you can find in the following location (Fusion saves it here by default):",
+      "Macintosh HD/​Users/​[username]/​Virtual Machines"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open an NVRAM file manually. Instead, the VMware Fusion or VMware Workstation apps reference the NVRAM file when loading the VM."

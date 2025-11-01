@@ -4,8 +4,20 @@
   "slug": "xva",
   "extension": "xva",
   "name": ".XVA File Extension",
+  "type_name": "Xen Project Virtual Appliance",
   "summary": "Learn about .XVA files and view a list of programs that open them.",
   "developer": "The Xen Project",
+  "more_information": {
+    "description": [
+      "An XVA file is a virtual appliance used by Citrix XenCenter and other applications that use the Xen Project Management API to configure and control virtual machines. It contains a virtual machine that includes a pre-installed operating system and applications. System administrators use XVA files to import and instantiate virtual appliances on target machines."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The Xen Project hypervisor allows system administrators to create, start, stop, reset, and otherwise manage virtual machines. One of the Xen Project's management APIs, XAPI, is the core component for several hypervisor management applications, including Citrix XenCenter and Vates Xen Orchestra.",
+      "System administrators who want to install the same virtual machine, including a pre-installed operating system and applications, on multiple machines can export that machine as an XVA file, better known as a virtual appliance. For example, in XenCenter, administrators can export virtual machines as XVA files by selecting Tools → Virtual Appliance Tools → Export Appliance.... This preserves a copy of the virtual machine, its operating system, and its applications for later use."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can import an XVA file into Citrix XenCenter (Windows), Vates Xen Orchestra (Web), and other hypervisor management programs that use XAPI. For example, to import an XVA file into XenCenter:",

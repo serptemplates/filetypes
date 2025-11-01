@@ -1,7 +1,7 @@
 {
   "slug": "fzb",
   "extension": "fzb",
-  "name": ".FZB",
+  "name": "Fritzing Bin File",
   "summary": "Learn about .FZB files and view a list of programs that open them.",
   "developer": "Fritzing",
   "programs": {
@@ -34,6 +34,19 @@
         "name": "GNU Emacs",
         "url": "https://fileinfo.com/software/gnu/emacs"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Fritzing allows printed circuit board (PCB) enthusiasts to create Arduino and other PCB circuit layouts. These layouts contain a variety of parts, which users store in Fritzing part bins.",
+      "By default, Fritzing includes several parts bins, which are accessed from the Parts window that appears on Fritzing's right-hand side. The program's two primary bins are CORE and MINE. CORE contains Fritzing's standard circuit parts; MINE includes parts a user has created. If a user imports a new part (saved as an .FZPZ file), that part appears in the CONTIB bin. Users can create and import any number of additional bins, allowing them to organize their parts as they see fit.",
+      "Each Fritzing bin is saved as an FZB file. The FZB file contains information about the parts the bin includes, such as the parts' names and module IDs. It also contains a reference to the .PNG image used as the bin's icon.",
+      "Users can export Fritzing bins. When they do, the bins are saved as .FZBZ files. FZBZ files, and not FZB files, are used to import bins into Fritzing."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An FZB file is a parts bin used by Fritzing, an electronic circuit prototyping and design application. It contains XML-formatted information about a selection of Fritzing parts, which are described in .FZP files. FZB files are stored in Fritzing's bins directory."
     ]
   },
   "how_to_open": {
@@ -76,8 +89,11 @@
     {
       "url": "https://fileinfo.com/extension/fzb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.079Z"
+      "retrieved_at": "2025-11-01T22:32:42.488Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.079Z"
+  "last_updated": "2025-11-01T22:32:42.488Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

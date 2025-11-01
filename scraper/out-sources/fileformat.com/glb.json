@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/3d/glb/index.html",
   "slug": "glb",
   "extension": "glb",
-  "name": "GLB File",
-  "source": "fileformat.com"
+  "name": "What is a GLB file?",
+  "summary": "What's on this Page",
+  "category": "3d",
+  "category_slug": "3d",
+  "technical_info": {
+    "content": [
+      "GLB file format is based on little endian and its structure shows that it contains:\n\nA 12-byte preamble, entitled the header.One or more chunks that contains JSON content and binary data.\n\nGLB Header\n\nThe GLB file format header consists of three 4-byte entries:\n\nuint32 magic - magic equals 0x46546C67. It is ASCII string glTF, and can be used to identify data as Binary glTFuint32 version - indicates the version of Binary glTF container formatuin32 length - the total length of the Binary glTF, including Header and all chunks in bytes\n\nChunks\n\nEach chunk in a GLB file has the following structure:\n\nuint32uint32ubyte[]chunkLengthchunkTypechunkData\n\nchunkLength - length of chunkData in byteschunkType - indicates indicates the type of chunkchunkData - binary payload of chunk\n\nwhere the chunk types are:\n\n#Chunk TypeASCIIDescriptionOccurrences1.0x4E4F534AJSONStructured JSON content12.0x004E4942BINBinary buffer0 or 1\n\nThe start and end of each chunk must be aligned to 4-byte boundary and padding should be used for this purpose.\n\nStructured JSON Content\n\nThis should be the very first chunk of Binary glTF asset and enables the implementation to progressively retrieve resources from subsequent chunks. This also provides the capability to read only a selected subset of resources from a Binary glTF asset such as the coarsest LOD of a mesh. In order to meet the alignment requirements, this chunk must be padded with trailing Space chars (0x20).\n\nBinary Buffer\n\nThis chunk contains the binary payload for geometry, animation key frames, skins, and images. It should be the second chunk of the Binary glTF asset and must be padded with trailing zeros (0x00) to satisfy the alignment requirements."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "GLB is the binary file format representation of 3D models saved in the GL Transmission Format (glTF). Information about 3D models such as node hierarchy, cameras, materials, animations and meshes in binary format. This binary format stores the glTF asset (JSON, .bin and images) in a binary blob. It also avoids the issue of increase in file size which happens in case of glTF. GLB file format results in compact file sizes, fast loading, complete 3D scene representation, and extensibility for further development. The format uses model/gltf-binary as MIME type."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

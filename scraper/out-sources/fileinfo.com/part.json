@@ -4,8 +4,20 @@
   "slug": "part",
   "extension": "part",
   "name": ".PART File Extension",
+  "type_name": "Partially Downloaded File",
   "summary": "Learn about .PART files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A PART file is a partially downloaded file from the Internet used for downloads that are in progress or have been stopped. Some PART files can be resumed at a later time using the same program that started the download. PART files are typically used by Mozilla Firefox and several file transfer programs, such as Go!Zilla, eMule, and the discontinued eDonkey program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When downloading a file with Firefox, the web browser creates a PART file in the \"Downloads\" folder on your computer. You may see the PART file if the file is currently downloading or if the download was interrupted before completion. A download interruption could be due to a lost Internet connection, the Firefox browser or computer crashing, or to you pausing the download.",
+      "As Firefox downloads the file, the program creates a PART file to store the data being downloaded. Firefox replaces the name of the file with a string of characters and appends the .part extension to the extension of the file. For example, the file example.mov would have the name ZT5KR1EL.mov.part when it is being downloaded. Once the download is complete, Firefox removes the .part extension and the file is ready to be used."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You may be able to open interrupted Firefox download files even though they are incomplete. Simply delete the .part extension then attempt to open it with the appropriate program. Several audio and video file types, including .MP4, can still be played by a media player if they are not yet fully downloaded. However, these incomplete files will only contain portions of the file.",

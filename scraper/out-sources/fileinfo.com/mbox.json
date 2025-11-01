@@ -7,6 +7,18 @@
   "type_name": "Email Mailbox",
   "summary": "Learn about .MBOX files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An MBOX file is an email mailbox, saved in a mail storage format that lists an entire inbox's messages in a single text file. It saves messages in a concatenated format where each message is listed after another, starting with the From header. MBOX files were originally used only by Unix hosts, but other email applications, including Apple Mail and Mozilla Thunderbird, now also support them."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Version 1.x of Apple Mail used MBOX files and stored them in the /​User/​Library/​Mail/​Mailboxes/​ directory. Mail 2.0 and later versions use the .EMLX format, which separates messages into individual files so they can be searched by Spotlight.",
+      "However, Apple Mail still exports mailboxes as MBOX files. If you right-click a mailbox and select Export Mailbox..., Apple Mail will save that mailbox's contents as an MBOX file.",
+      "NOTE: Opera Mail, which was discontinued in 2016, also stored messages in the MBOX format."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because MBOX files are plain text files, you can open them in any text editor, such as Microsoft Notepad, Apple TextEdit, or GitHub Atom, to view their contents.",

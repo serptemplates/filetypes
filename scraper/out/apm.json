@@ -1,9 +1,11 @@
 {
   "slug": "apm",
   "extension": "apm",
-  "name": "APM File",
+  "name": "Aldus Placeable Metafile Image",
   "summary": "Learn about .APM files and view a list of programs that open them.",
   "developer": "Aldus Corporation",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -18,6 +20,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=4167&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WMF files use an 18-byte header that contains metadata about the file. APM files instead use a 22-byte header. Because APM files use a non-standard header, Windows API metafile functions, such as GetMetaFile(), CopyMetaFile(), and PlayMetaFile, cannot read the files correctly. To use APM files with these functions, developers must first strip the files' headers using the program wmapmf.exe."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An APM file is a vector image file format saved in Aldus Placeable Metafile format. It was developed by Aldus Corporation which is now part of Adobe Systems.\n\nVector graphics are images created using geometric shapes such as points, lines and curves rather than pixels. Vector graphics can be scaled up or down without losing quality and are commonly used in graphic design, illustrations, and other applications where high-resolution images are needed.\n\nAPM files are typically used in older software applications that supported the Aldus Placeable Metafile format such as Aldus FreeHand, Adobe Illustrator, and CorelDRAW. However, many modern software applications no longer support the APM format.\n\nIf you have an APM file that you need to open, you may need to use older version of vector graphics software that supports the format or convert the file to more widely supported format such as SVG or EPS.",
+      "An APM file is a vector image file saved in the Aldus Placeable Metafile format. It contains a list of commands that, when executed by an image viewer or placement program, draw an image. APM files are similar to .WMF files, which use the same format as APM files but a different file header."
     ]
   },
   "how_to_open": {
@@ -40,6 +53,28 @@
       ".WEBP - WebP Image"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -68,15 +103,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/apm/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     },
     {
       "url": "https://fileinfo.com/extension/apm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.912Z"
+  "last_updated": "2025-11-01T22:32:42.251Z",
+  "containers": []
 }

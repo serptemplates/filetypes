@@ -7,6 +7,18 @@
   "type_name": "UTF-8 M3U Playlist",
   "summary": "Learn about .M3U8 files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An M3U8 file is a playlist file used by various audio and video players. It contains plain text that describes where the audio and video files included in the playlist are located. These descriptions may take the form of file paths or URLs. Typically, M3U8 files that contain file paths are used to play media files stored on your PC, and those that contain URLs are used to play media files accessed over the Internet."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In addition to file paths and URLs, M3U8 files contain metadata that media players use to play the referenced media files correctly. For example, M3U8 files used to stream videos that are hosted online may contain information about the referenced videos' resolution, codec, and maximum needed bandwidth. This information is specified using the #EXT-X-STREAM-INF: setting.",
+      "In contrast, M3U8 files used to play audio and video located on your computer are often much simpler. These files may contain only a couple pieces of metadata, such as the playlist title (specified using the #PLAYLIST setting) and track information (specified using the #EXTINF setting).",
+      "NOTE: M3U8 files are similar to .M3U files, except the text they contain is always encoded using UTF-8 character encoding. On rare occasions, M3U8 files may be saved with the .M3UP extension."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an M3U8 file and play the playlist it contains in many media players, including Microsoft Windows Media Player (Windows) and VideoLAN VLC media player (multiplatform). If you open an M3U8 file and the playlist it describes does not begin playing, it may be because you do not have access to the files included in the playlist.",

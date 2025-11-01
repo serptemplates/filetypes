@@ -1,7 +1,7 @@
 {
   "slug": "dbproj",
   "extension": "dbproj",
-  "name": ".DBPROJ",
+  "name": "Visual Studio Database Project File",
   "summary": "Learn about .DBPROJ files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -18,6 +18,23 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When a developer begins developing a new program in Microsoft Visual Studio, they first create a project file. The project file contains the information MSBuild needs to compile the developer's program. Database application projects use the DBPROJ project file type.",
+      "DBPROJ files are XML files that contain elements defined by MSBuild's XML schema. These elements tell MSBuild what items to build and how to build them. Some of the elements DBPROJ files contain include:",
+      "<Project>: Used to identify the project file's XML schema and specify entry points for the build process.",
+      "<PropertyGroup>: Used to define build configuration properties.",
+      "<ItemGroup>: Used to add inputs, such as source code files, into the build system.",
+      "<Target>: Used to specify and execute build operations.",
+      "To build a database application developed in Visual Studio, a developer invokes MSBuild.exe from the Windows command-line interface along with the name of their DBPROJ file. For example, to build a project named MyProject.dbproj, a developer would enter the command MSBuild.exe MyProject.dbproj in the command prompt, along with any other appropriate command-line options.",
+      "NOTE: DBPROJ files have largely been replaced by .SQLPROJ files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A DBPROJ file is a database project created by Microsoft Visual Studio, a software development tool used to create Windows programs and web applications. It contains XML-formatted text that defines the project's content, platform requirements, versioning information, and web server or database server settings. MSBuild (the Microsoft Build Engine) uses DBPROJ files to build developers' database projects, transforming the projects into executable programs."
     ]
   },
   "how_to_open": {
@@ -55,8 +72,11 @@
     {
       "url": "https://fileinfo.com/extension/dbproj",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.023Z"
+      "retrieved_at": "2025-11-01T22:32:42.410Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.023Z"
+  "last_updated": "2025-11-01T22:32:42.410Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

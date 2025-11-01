@@ -4,8 +4,24 @@
   "slug": "msu",
   "extension": "msu",
   "name": ".MSU File Extension",
+  "type_name": "Windows Vista Update Package",
   "summary": "Learn about .MSU files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An MSU file is an update package used by Windows Update, an application included with Windows Vista, Windows 7, and Windows Server. It contains one or more updates for applications and files on the Windows system. MSU files are installed by the Windows Update Stand-alone Installer (Wusa.exe), which is run by Windows Update automatically (the user generally does not need to manually install MSU files)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Each MSU file contains four elements:",
+      "Windows Update metadata, which describes the update package",
+      "One or more .CAB files that store the update data for the package",
+      "An .XML file which describes the contents of the MSU file",
+      "A properties file that is read by Wusa.exe",
+      "NOTE: Earlier versions of the Windows operating system used .MSI files for updates."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can manually extract the contents of an MSU file at the Windows command prompt by typing:",

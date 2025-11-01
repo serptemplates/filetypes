@@ -4,8 +4,23 @@
   "slug": "oml",
   "extension": "oml",
   "name": ".OML File Extension",
+  "type_name": "OutSystems Modeling Language File",
   "summary": "Learn about .OML files and view a list of programs that open them.",
   "developer": "OutSystems",
+  "more_information": {
+    "description": [
+      "An OML file contains source code written in OutSystems Modeling Language (OML), which is used to develop enterprise web and mobile applications. It stores code in a syntax similar to XML for modules that make up the functionality of OutSystems applications."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "OML files are typically created and edited with Service Studio, which is the IDE for the OutSystems Platform that is used to deploy enterprise web and mobile apps. Service Studio is included with Integration Studio in the Development Environment application.",
+      "OML can be used to develop reactive web apps and mobile apps for tablets and phones. A reactive web app includes a responsive interface that runs in a web browser and is adapted to various devices and screen sizes. A mobile app developed with Service Studio consists of OML that is wrapped in a native app shell that utilizes the Apache Cordova mobile application framework. It is optimized to access the mobile device's capabilities and can work offline.",
+      "Service Studio is a \"low-code\" IDE that includes WYSIWYG drag-and-drop components that make app development more accessible for beginners. Modules designed in Service Studio make up the various elements of an application, such as the home screen and customer contact forms. As users create and save a module in Service Studio, the OML file is generated to store the module.",
+      "Once a user is finished developing an app or creating an update for an already existing app, they can publish it by clicking the green \"1-Click Publish\" button in Service Studio. All the app resources are sent to the OutSystems Platform server and the OML source code is compiled by the OutSystems compiler into Microsoft .NET or Java files.",
+      "NOTE: OML files may also be referred to as \"OutSystems Markup Language files\" or as \"espace source files.\""
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use OutSystems Service Studio, which is part of the OutSystems Development Environment, to open and edit OML files. To do so, open Service Studio and select Environment → Open Files...."

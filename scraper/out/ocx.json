@@ -1,7 +1,7 @@
 {
   "slug": "ocx",
   "extension": "ocx",
-  "name": ".OCX",
+  "name": "ActiveX Control",
   "summary": "Learn about .OCX files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,18 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Many OCX files are included with Windows while others are distributed by software installers. In order for a software program to use an ActiveX control, the control must first be registered in Windows with Regsvr32.exe. Therefore, software installers may include ActiveX control registration as a final step in the installation process.",
+      "Software developers create ActiveX controls with tools such as Microsoft Visual Studio using programming languages such as Visual Basic and C++. When packaging a control, developers define properties, methods, and events for the control according to Microsoft's Component Object Model (COM) specification. The resulting definition can be accessed by other software programs as long as the control is first registered in Windows.",
+      "NOTE: ActiveX is not commonly used anymore for developing and distributing software modules, but ActiveX controls are still supported in Windows 10 via Internet Explorer 11 and manual registration."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An OCX file contains a reusable software module, called an ActiveX control, which can be used within Windows software programs. ActiveX controls can be created for various purposes, such as user interface forms, webpage widgets, online games, and multimedia viewers."
     ]
   },
   "images": [
@@ -46,8 +58,11 @@
     {
       "url": "https://fileinfo.com/extension/ocx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.219Z"
+      "retrieved_at": "2025-11-01T22:32:42.660Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.219Z"
+  "last_updated": "2025-11-01T22:32:42.660Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

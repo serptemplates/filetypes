@@ -1,9 +1,11 @@
 {
   "slug": "accdw",
   "extension": "accdw",
-  "name": "ACCDW File",
+  "name": "Microsoft Access Database Link File",
   "summary": "Learn about .ACCDW files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,44 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "After an ACCDW file is opened, the target ACCDB file is automatically downloaded to a local copy on the user's computer."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file wiht .accdw extension is a link file created with Microsoft Access and contains information about the link to download an Access database file i.e. ACCDB from SharePoint server. This lets the users to share database files that are hosted remotely. Opening the ACCDW file downloads the linked ACCDB file as a local copy on the user’s computer. The downloaded file is saved to the default download location and can be accessed by navigating to it. Usually, these files are downloaded and stored with the name “SiteServer.accdb” that refers to the client databases.",
+      "Link file used by Microsoft Access, a relational database program for desktop computers; contains link information for downloading an Access database file (.ACCDB file) from a Microsoft SharePoint server; enables users to share database files that are hosted remotely."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To open ACCDW file, Microsoft Access (2010 or newer) must be installed on your computer. Simply double-click the ACCDW file. If Access is installed and configured, it will use the link within the file to connect to the remote database. Since ACCDW files connect to web-hosted databases, ensure you have a stable internet connection.\n\nOpen Microsoft Access. Go to File > Open, and select the ACCDW file. Access will establish the connection to the linked database."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +84,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/accdw/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.911Z"
+      "retrieved_at": "2025-11-01T22:32:42.249Z"
     },
     {
       "url": "https://fileinfo.com/extension/accdw",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.911Z"
+      "retrieved_at": "2025-11-01T22:32:42.249Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.911Z"
+  "last_updated": "2025-11-01T22:32:42.249Z",
+  "containers": []
 }

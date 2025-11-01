@@ -4,8 +4,20 @@
   "slug": "ecfg",
   "extension": "ecfg",
   "name": ".ECFG File Extension",
+  "type_name": "ArcGIS Component Configuration File",
   "summary": "Learn about .ECFG files and view a list of programs that open them.",
   "developer": "ESRI",
+  "more_information": {
+    "description": [
+      "An ECFG file is a configuration file used by ArcGIS, a mapping program used to create, share, and manage geographic maps, data, and analytical models. It contains category information for a custom component used by ArcGIS. ECFG files are read by ArcGIS at runtime to load related components created by third-party developers."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "ECFG files were introduced with the release of version 10 of ArcGIS, which is when the application no longer used the system registry top load custom components. Instead, ArcGIS read ECFG files created by developers using ESRIResAsm.exe to register components, which included the .DLL file and category information.",
+      "NOTE: ECFG files must be placed in the appropriate product and version configuration folder in order to be loaded in ArcGIS."
+    ]
+  },
   "programs": {
     "windows": [
       {

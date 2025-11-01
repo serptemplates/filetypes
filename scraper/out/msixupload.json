@@ -1,7 +1,7 @@
 {
   "slug": "msixupload",
   "extension": "msixupload",
-  "name": ".MSIXUPLOAD",
+  "name": "Windows 10 App Upload Bundle",
   "summary": "Learn about .MSIXUPLOAD files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,17 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The MSIX upload format is the successor to the AppX upload format, which uses .APPXUPLOAD files for app package uploads. The MSIX format was introduced in Windows 10 and extends AppX to include features such as improved packaging support for older Win32 apps. MSIXUPLOAD files can be created with Microsoft's MSIX SDK, which is included with Visual Studio.",
+      "NOTE: MSIXUPLOAD files are for Microsoft Store submission only. If you would like to make apps available through other distribution channels, you can use the .MSIX format or the .MSIXBUNDLE format."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MSIXUPLOAD file is an app package that is used for uploading Windows 10 apps to the Microsoft Store. The package contains one or more versions of the app, each of which is built for a specific computer architecture (x86, x64, or ARM). In addition, the package can contain a symbol file that allows developers to analyze app performance after the app is installed on user computers."
     ]
   },
   "images": [
@@ -46,8 +57,11 @@
     {
       "url": "https://fileinfo.com/extension/msixupload",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.190Z"
+      "retrieved_at": "2025-11-01T22:32:42.629Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.190Z"
+  "last_updated": "2025-11-01T22:32:42.629Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

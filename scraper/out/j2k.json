@@ -1,9 +1,11 @@
 {
   "slug": "j2k",
   "extension": "j2k",
-  "name": "J2K File",
+  "name": "JPEG 2000 Image",
   "summary": "Learn about .J2K files and view a list of programs that open them.",
   "developer": "Joint Photographic Experts Group",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -48,6 +50,19 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The Joint Photographic Experts Group (JPEG) committee created the JPEG 2000 format in 2000 to replace the JPEG format. However, few applications and platforms adopted the format, and the JPEG format is still overwhelmingly favored.",
+      "There are several differences between J2K files and JPG files. For example, J2K files use wavelet compression instead of the Discrete Cosine Transform (DCT) compression used by standard .JPEG images. Also, J2K files store metadata that describes the image in the XML standard instead of the Exchangeable Image File Format (EXIF).",
+      "NOTE: JPEG 2000 images may be saved with file extensions other than .j2k. Other common extensions include .jp2 (.JP2 files) and .jpx (.JPX files)."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A J2K file is an image that is compressed using the wavelet compression instead of DCT compression. This file format is used by the Joint Photographic Experts Group (JPEG) 2000 files. J2K files store metadata information about the image file in XML unlike .jpeg or .jpg that use the EXIF format for this purpose. J2K files support 15-bit color, alpha transparency, and lossless compression. Several commercial APIs exist to decode JPEG 2000 imags such as J2K-Codec. A J2K file can be opened on Windows OS using the standard image viewers.",
+      "A J2K file is a compressed bitmap image saved in the JPEG 2000 format. It supports 16-bit color and alpha transparency and may incorporate lossy or lossless compression. J2K files typically store digital photos."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a J2K file with various image viewing and editing applications, including:",
@@ -73,7 +88,39 @@
       ".PDF - Portable Document Format"
     ]
   },
+  "mime": [
+    "image/jp2",
+    "image/jpx",
+    "image/jpm",
+    "video/mj2"
+  ],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
+    {
+      "url": "https://docs.fileformat.com/image/JPEG2000_Codestream.png",
+      "alt": "JPEG2000 File Format"
+    },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
@@ -106,15 +153,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/j2k/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.274Z"
     },
     {
       "url": "https://fileinfo.com/extension/j2k",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.274Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.926Z"
+  "last_updated": "2025-11-01T22:32:42.274Z",
+  "containers": []
 }

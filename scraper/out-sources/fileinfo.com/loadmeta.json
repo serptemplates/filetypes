@@ -4,8 +4,21 @@
   "slug": "loadmeta",
   "extension": "loadmeta",
   "name": ".LOADMETA File Extension",
+  "type_name": "Kerbal Space Program Save Metadata File",
   "summary": "Learn about .LOADMETA files and view a list of programs that open them.",
   "developer": "Squad",
+  "more_information": {
+    "description": [
+      "A LOADMETA file is a metadata file that accompanies a saved game (.SFS) file for Squad Kerbal Space Program, a video game where players build and launch rockets. It stores cached information, including a hash, for an SFS file the game references to quickly load saved game information. Users can find LOADMETA files alongside SFS files with the same name (e.g., example.sfs and example.loadmeta)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Squad Kerbal Space Program is a popular rocket construction and space flight simulation game. The game allows you to save your progress as SFS files, which you can open to load your saved game.",
+      "When you load your saved progress from an SFS file by accessing the Load Game dialog in Kerbal Space Program, the game compares the hash in the LOADMETA file to the hash in the SVS file. After verifying it accompanies the SFS file, the game loads the cached information in the LOADMETA file instead of parsing all of the data in the SVS file.",
+      "NOTE: Squad introduced LOADMETA files when it released version 1.2.2 of Kerbal Space Program."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open LOADMETA files. Instead, Squad Kerbal Space Program references the files to load saved game progress more quickly.",

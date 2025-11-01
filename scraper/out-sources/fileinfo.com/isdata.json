@@ -4,8 +4,22 @@
   "slug": "isdata",
   "extension": "isdata",
   "name": ".ISDATA File Extension",
+  "type_name": "Icon Services Data",
   "summary": "Learn about .ISDATA files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An ISDATA file is a cache file created and used by macOS icon services. It contains cached icon data, which macOS uses to load icons more quickly. ISDATA files' filenames always consist of a UUID (such as 1AEDA0FE-C8DB-52F8-3A88-57A134262EB1) followed by the .isdata extension."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MacOS stores ISDATA files in the following directory:",
+      "Macintosh HD/​Library/​Caches/​com.apple.iconservices.store",
+      "Typically, users cannot access this directory (to prevent them from accidentally moving, modifying, or deleting system files). If you do access the com.apple.iconservices.store directory, you will likely find thousands of ISDATA files.",
+      "ISDATA files stored in the com.apple.iconservices.store directory are not malware. They are legitimate system files that macOS uses to load icons more quickly."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "ISDATA files are not meant to be opened. MacOS loads and uses data from ISDATA files as needed."

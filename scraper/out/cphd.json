@@ -1,9 +1,11 @@
 {
   "slug": "cphd",
   "extension": "cphd",
-  "name": "CPHD File",
+  "name": "CloudChan Pre-processed Hypertext Document",
   "summary": "Learn about .CPHD files and view a list of programs that open them.",
   "developer": "CloudChan",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -12,6 +14,40 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "A CPHD file is similar to a .PHP file. However, the CloudChan code is encapsulated within <$ … $> tags instead of the instead of <? … ?> tags used by PHP. When a server running CloudChan processes a CPHD web page, it returns an HTML document with a 200 status code.",
+      "NOTE: The CPHD format is not limited to the web as it is designed to work for any XML document."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A CPHD file is a Hypertext document used by the CloudChan pre-processor engine. It contains HTML and scripts to create dynamic web pages and documents. Scripts inside a CPHD file resembles the syntax used by Java. The CPHD web page returns an HTML document when executed on a CloudChan processes. CPHD format can work with any XML document.",
+      "Hypertext document created for the CloudChan pre-processor engine; contains HTML and scripts that use syntax similar to Java; can be used to create dynamic web pages and documents."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -40,15 +76,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/cphd/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     },
     {
       "url": "https://fileinfo.com/extension/cphd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.259Z",
+  "containers": []
 }

@@ -1,9 +1,23 @@
 {
   "slug": "lockb",
   "extension": "lockb",
-  "name": ".LOCKB",
+  "name": "Bun Install Lock File",
   "summary": "Learn about .LOCKB files and view a list of programs that open them.",
   "developer": "Oven",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Oven develops Bun as an all-in-one toolkit for TypeScript and JavaScript apps that speeds up development workflows. It offers a fast JavaScript runtime known as \"Bun runtime,\" meant to be a replacement for Node.js, offering significantly reduced memory usage and startup times.",
+      "When a Bun user runs bun install, Bun creates a LOCKB file (bun.lockb). The file stores binary data that, along with packages and their dependencies, may also include an integrity hash and the target to which each package is resolved."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Oven Bun references the LOCKB file. However, you can view LOCKB files with Microsoft Visual Studio Code with the \"bun.lockb\" extension by Jackson Kearl installed (you must also have Bun installed). You can also execute single LOCKB files to create a yarn-lock-like description of the file's contents."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,11 +32,6 @@
         "name": "Microsoft Visual Studio Code with the \"bun.lockb\" extension",
         "url": "https://fileinfo.com/software/microsoft/visual_studio_code"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Oven Bun references the LOCKB file. However, you can view LOCKB files with Microsoft Visual Studio Code with the \"bun.lockb\" extension by Jackson Kearl installed (you must also have Bun installed). You can also execute single LOCKB files to create a yarn-lock-like description of the file's contents."
     ]
   },
   "images": [
@@ -53,10 +62,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/lockb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.160Z"
+      "url": "https://fileinfo.com/extension/lockb",
+      "retrieved_at": "2025-11-01T22:32:42.593Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.160Z"
+  "last_updated": "2025-11-01T22:32:42.593Z"
 }

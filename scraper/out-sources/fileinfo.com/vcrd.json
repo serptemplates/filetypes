@@ -4,8 +4,21 @@
   "slug": "vcrd",
   "extension": "vcrd",
   "name": ".VCRD File Extension",
+  "type_name": "Windows Vault Credentials File",
   "summary": "Learn about .VCRD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "File created by Windows Vault, a security program introduced with Windows 7 that can store user names and passwords for Windows users; contains the users credentials (passwords, etc.) in an encrypted format; requires an associated schema file (.VSCH) and policy file (.VPOL) in order for user credentials to be verified."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VCRD files, as well as VPOL and VSCH files, are saved to the following directory:",
+      "C:\\​ProgramData\\​Microsoft\\​Vault\\​",
+      "NOTE: Windows Vault can be accessed through the Credential Manager in Windows. Open the Windows Control Panel, choose User Accounts and Family Safety, and then select Credential Manager."
+    ]
+  },
   "programs": {
     "windows": [
       {

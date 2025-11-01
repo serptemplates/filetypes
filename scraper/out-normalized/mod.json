@@ -1,9 +1,55 @@
 {
   "slug": "mod",
   "extension": "mod",
-  "name": "MOD File",
+  "name": "Music Module File",
   "summary": "Learn about .MOD files and view a list of programs that open them.",
   "developer": "Karsten Obarski",
+  "category": "audio",
+  "category_slug": "audio",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "A MOD file pattern is actually designed in a sequencer user interface as a table with one column per channel, So this table has four columns (one for each Amiga hardware channel. Each column has 64 rows).\n\nA cell in the table can cause one of the following actions to happen on its column’s channel when its row’s time is reached:\n\nStart an instrument playing a new note in this channel at a given volume, possibly with a special effect applied on itChange the volume or special effect being applied to the current noteChange pattern flow; jump to a specific song or pattern position or loop inside a patternDo nothing; any existing note playing in this channel will continue to play\n\nAn instrument is a single sample along with an optional specification of which portion of the sample can be repeated to hold a solid note.",
+      "Karsten Obarski initially developed the Amiga module format and released it with the Ultimate Soundtracker software for the Commodore Amiga system in 1987. As music trackers began supporting the format, especially on PCs in the 1990s, other developers released variations of the MOD format.",
+      "Initially, the MOD format only supported four audio channels and sixteen instruments. However, recent MOD variations have increased the number of supported channels to 32 and supported instruments to 31.",
+      "The sound samples within a module are assigned to different tracks and are played back according to the notes in the score. A MOD module also includes a list that tells the application playing the module the order the patterns are to be played.",
+      "NOTE: MOD files may be created by various MOD trackers, including FastTracker, StarTrekker, Noise Tracker, MilkyTracker, and Cog."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a MOD file with various audio players, such as Nullsoft Winamp (Windows), VideoLAN VLC media player (multiplatform), Schism Tracker (multiplatform), and MikMod (multiplatform). Unfortunately, some audio players that support MOD files may no longer be developed and not work on modern operating systems.",
+      "On an Android device, you can play MOD files with Smarper Amiga Mod Player for Android, and on iOS devices, you can use PureModPlay or VividTracker to play MOD files."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Several audio players, such as MilkyTracker (Windows) and Cog (macOS), can convert MOD music module files to other formats.",
+      "For example, MilkyTracker can convert MOD files to the WAVE Audio (.WAV) and Fasttracker 2 Extended Module (.XM) formats."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -30,18 +76,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=410&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a MOD file with various audio players, such as Nullsoft Winamp (Windows), VideoLAN VLC media player (multiplatform), Schism Tracker (multiplatform), and MikMod (multiplatform). Unfortunately, some audio players that support MOD files may no longer be developed and not work on modern operating systems.",
-      "On an Android device, you can play MOD files with Smarper Amiga Mod Player for Android, and on iOS devices, you can use PureModPlay or VividTracker to play MOD files."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Several audio players, such as MilkyTracker (Windows) and Cog (macOS), can convert MOD music module files to other formats.",
-      "For example, MilkyTracker can convert MOD files to the WAVE Audio (.WAV) and Fasttracker 2 Extended Module (.XM) formats."
     ]
   },
   "images": [
@@ -82,15 +116,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.928Z"
+      "url": "https://docs.fileformat.com/audio/mod/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.277Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mod",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.928Z"
+      "url": "https://fileinfo.com/extension/mod",
+      "retrieved_at": "2025-11-01T22:32:42.277Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.928Z"
+  "last_updated": "2025-11-01T22:32:42.277Z"
 }

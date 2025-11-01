@@ -1,7 +1,7 @@
 {
   "slug": "jpg_medium",
   "extension": "jpg_medium",
-  "name": ".JPG_MEDIUM",
+  "name": "Twitter Medium JPEG Image",
   "summary": "Learn about .JPG_MEDIUM files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -18,6 +18,21 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12485&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Twitter is a social media service where users can post tweets that contain text, images, and videos. The service re-sizes images uploaded by users and hosted on its media server with a JSON entity size specification based on how users view the image in a web browser.",
+      "For example, if a user is viewing an image in its medium size, Twitter appends the medium specification to the image's URL when opening it, creating a URL that ends in .jpg:medium. In some cases, when a Google Chrome user accesses a medium-sized image stored on Twitter's media server in a new tab, Chrome accesses the image at a URL that looks like this:",
+      "https:/​/​pbs.twimg.com/​media/​FHtahgTXEAkr9EM.jpg:medium",
+      "If the user downloads the image from this page, Chrome saves the image with the .jpg_medium file extension instead of .jpg:medium because colons cannot be present in filenames.",
+      "Twitter may display images in sizes other than medium, including thumbnail, small, and large. In these cases, Chrome users downloading images in these sizes may encounter .JPG_THUMB, .JPG_SMALL, and .JPG_LARGE files.",
+      "NOTE: To prevent the creation of JPG_MEDIUM files, Twitter now uses the following URL structure: https:/​/​pbs.twimg.com/​media/​FIggzS3VkAEmqzW?format=jpg&name=medium"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A JPG_MEDIUM file is an image created when a Google Chrome user downloads a medium-sized image from Twitter. It is saved in the same JPEG format as a normal .JPG file, but with the .jpg_medium extension."
     ]
   },
   "how_to_open": {
@@ -61,8 +76,11 @@
     {
       "url": "https://fileinfo.com/extension/jpg_medium",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.139Z"
+      "retrieved_at": "2025-11-01T22:32:42.567Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.139Z"
+  "last_updated": "2025-11-01T22:32:42.567Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

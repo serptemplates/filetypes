@@ -1,9 +1,29 @@
 {
   "slug": "dbproj",
   "extension": "dbproj",
-  "name": ".DBPROJ",
+  "name": "Visual Studio Database Project File",
   "summary": "Learn about .DBPROJ files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "When a developer begins developing a new program in Microsoft Visual Studio, they first create a project file. The project file contains the information MSBuild needs to compile the developer's program. Database application projects use the DBPROJ project file type.",
+      "DBPROJ files are XML files that contain elements defined by MSBuild's XML schema. These elements tell MSBuild what items to build and how to build them. Some of the elements DBPROJ files contain include:",
+      "<Project>: Used to identify the project file's XML schema and specify entry points for the build process.",
+      "<PropertyGroup>: Used to define build configuration properties.",
+      "<ItemGroup>: Used to add inputs, such as source code files, into the build system.",
+      "<Target>: Used to specify and execute build operations.",
+      "To build a database application developed in Visual Studio, a developer invokes MSBuild.exe from the Windows command-line interface along with the name of their DBPROJ file. For example, to build a project named MyProject.dbproj, a developer would enter the command MSBuild.exe MyProject.dbproj in the command prompt, along with any other appropriate command-line options.",
+      "NOTE: DBPROJ files have largely been replaced by .SQLPROJ files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "DBPROJ files are meant to be opened and edited in Microsoft Visual Studio (Windows, Mac) as part of Visual Studio projects. However, because DBPROJ files are XML files, you can open and edit them in any text or source code editor."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,11 +38,6 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "DBPROJ files are meant to be opened and edited in Microsoft Visual Studio (Windows, Mac) as part of Visual Studio projects. However, because DBPROJ files are XML files, you can open and edit them in any text or source code editor."
     ]
   },
   "images": [
@@ -53,10 +68,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/dbproj",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.023Z"
+      "url": "https://fileinfo.com/extension/dbproj",
+      "retrieved_at": "2025-11-01T22:32:42.410Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.023Z"
+  "last_updated": "2025-11-01T22:32:42.410Z"
 }

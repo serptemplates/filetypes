@@ -4,8 +4,21 @@
   "slug": "fzpz",
   "extension": "fzpz",
   "name": ".FZPZ File Extension",
+  "type_name": "Fritzing Part File",
   "summary": "Learn about .FZPZ files and view a list of programs that open them.",
   "developer": "Fritzing",
+  "more_information": {
+    "description": [
+      "An FZPZ file is a part used in an electronic circuit design created by Fritzing, a circuit prototyping and design application. It is a compressed archive that contains an .FZP file and four .SVG images, which are used to show the part in Fritzing. Fritzing users often share FZPZ files with each other, allowing them to import and use others' parts in their own circuits."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Fritzing is a printed circuit board (PCB) design application that allows Arduino and PCB enthusiasts to create PCB layouts. The circuits these layouts describe contain a variety or parts, which are represented by images in Fritzing.",
+      "However, Fritzing parts, or FZPZ files, are actually archives made up of five constituent files. They contain four SVG images, which serve as the part's breadboard, schematic, PCB, and icon images, and an FZP file, which is an XML file that describes the part's properties, connectors, and buses. While Fritzing parts are saved using the .fzpz file extension, they are standard Zip archives, meaning you can decompress them with any Zip decompression utility if needed. You may have to change the file's extension to .zip before you can decompress it.",
+      "To export a Fritzing part as an FZPZ file, right-click the part in your Fritzing parts bin and select Export Part."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open FZPZ files and use them as parts in Fritzing (cross-platform). To do so, select File → Open from Fritzing's menu bar, and then navigate to and open your FZPZ file. The part your FZPZ file describes will then appear in your My Parts bin."

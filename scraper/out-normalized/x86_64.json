@@ -1,9 +1,25 @@
 {
   "slug": "x86_64",
   "extension": "x86_64",
-  "name": ".X86_64",
+  "name": "64-bit Linux Executable File",
   "summary": "Learn about .X86_64 files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "X86_64 files are typically packaged and distributed with applications. You will most likely encounter the file when downloading a game for Linux. The file is executable and can be opened by double-clicking it. If you receive an error when double-clicking the file, you may need to mark it as \"executable.\"",
+      "To enable execution of the X86_64 file, follow these steps:",
+      "Right-click the X86_64 file",
+      "Select Properties",
+      "Click the \"Permissions\" tab",
+      "Check the \"Allow executing file as program\" checkbox next to \"Execute\"",
+      "Then type the following from the command-line to execute the file:",
+      "./[filename].x86_64 (insert the name of the file in [filename])",
+      "NOTE: If Linux still fails to run the X86_64 file, it's most likely dynamically linked to libraries, so you will need to install the missing libraries before the X86_64 file can be run."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,10 +56,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/x86_64",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.383Z"
+      "url": "https://fileinfo.com/extension/x86_64",
+      "retrieved_at": "2025-11-01T22:32:42.881Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.383Z"
+  "last_updated": "2025-11-01T22:32:42.881Z"
 }

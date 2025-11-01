@@ -1,9 +1,11 @@
 {
   "slug": "ptx",
   "extension": "ptx",
-  "name": "PTX File",
+  "name": "Pro Tools Session File",
   "summary": "Learn about .PTX files and view a list of programs that open them.",
   "developer": "Avid Technology",
+  "category": "audio",
+  "category_slug": "audio",
   "programs": {
     "windows": [
       {
@@ -36,6 +38,45 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "NOTE: Pro Tools 7-9 use the .PTF format and cannot open PTX files. But, you can convert PTX files to the PTF format with Pro Tools 10 and later in the Save Session Copy dialog. Note that some newer Pro Tools 10 features will be lost if you save to the older format, such as clip gain settings."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The .ptx file format is specifically designed for Pro Tools, a popular digital audio workstation (DAW) software developed by Avid Technology. This file format is used for saving session information, including audio tracks, MIDI data, mixer settings, edits, and effects used in a recording project.\n\nHere are key features about PTX file.\n\nSession Data: .ptx files store all data related to a Pro Tools session, like track settings, audio clip arrangement, timeline edits, and mixing configurations. However, they do not include the actual audio files. Instead, .ptx files reference the audio files saved in separate directories.Advanced Editing & Mixing: The format supports advanced editing features unique to Pro Tools, like elastic audio adjustments, automation, and integration with plugins for mixing and mastering.Compatibility: .ptx files are compatible only with Pro Tools 10 and later versions. Earlier versions of Pro Tools used .ptf and .pts file extensions, which are not compatible with newer versions.Session Backup and Transfer: Users can save a .ptx file and transfer it across different systems running Pro Tools, making it easy to collaborate or move between workstations.",
+      "Pro Tools is a digital audio workstation (DAW) software developed by Avid Technology, widely used in professional music production, audio editing, and sound engineering. It provides a robust platform for recording, editing, mixing, and mastering audio with tools for both MIDI and multitrack audio work. Known for its powerful audio processing capabilities, Pro Tools is a favorite in studios for music, film, and television. It supports a range of plugins and integrates with both hardware and virtual instruments, making it versatile for creative and technical audio tasks. Pro Tools is used by industry professionals worldwide for high-quality audio production.",
+      "Session file format introduced with Pro Tools 10 digital audio workstation (DAW) software; supports audio, MIDI, and software instrument tracks, as well as effects, mixing settings, and other edits; stores references to audio files but not the audio files themselves."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To open a .ptx file, you need Pro Tools 10 or later. Simply:\n\nLaunch Pro Tools and go to File > Open.Navigate to the .ptx file and open it, ensuring all referenced audio files are available in the appropriate directory."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -64,15 +105,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/audio/ptx/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.931Z"
+      "retrieved_at": "2025-11-01T22:32:42.283Z"
     },
     {
       "url": "https://fileinfo.com/extension/ptx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.931Z"
+      "retrieved_at": "2025-11-01T22:32:42.283Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.931Z"
+  "last_updated": "2025-11-01T22:32:42.283Z",
+  "containers": []
 }

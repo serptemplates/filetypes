@@ -4,8 +4,21 @@
   "slug": "shs",
   "extension": "shs",
   "name": ".SHS File Extension",
+  "type_name": "Microsoft Scrap File",
   "summary": "Learn about .SHS files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An SHS file is a file created by Microsoft Word and Excel when a user drags and drops selected document text onto the desktop. It contains a copy of the highlighted contents in its native document format. SHS files are used to save copied portions of a document for insertion into another document."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "SHS files are special OLE object files and cannot be opened directly. They can only be dragged into another open document. When SHS files are created, an associated icon is placed on the desktop. If this icon is deleted, the scrap file is also deleted.",
+      "Support for scrap files was discontinued with Windows Vista. Earlier versions of Windows included the Windows Shell Scrap Object Handler, which is stored in the file shscrap.dll. This file handled the drag and drop operations to and from Word and Excel documents to create SHS files. However, SHS files cannot be opened in Windows Vista, Windows 7, or Windows 8, since these Windows versions do not include the handler.",
+      "NOTE: SHS files typically have a hidden .shs file extension. Be careful when opening them since they are executable and have been known to contain viruses."
+    ]
+  },
   "programs": {
     "windows": [
       {

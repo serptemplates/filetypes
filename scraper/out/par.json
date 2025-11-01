@@ -1,9 +1,11 @@
 {
   "slug": "par",
   "extension": "par",
-  "name": "PAR File",
+  "name": "FMS Aircraft Parameters File",
   "summary": "Learn about .PAR files and view a list of programs that open them.",
   "developer": "FMS",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -12,6 +14,44 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "PAR files are one of several files that comprise the total aircraft data for the game. For example, there may be other 3D model files, texture bitmaps, and sounds."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Within Parchive (PAR) archives, a .par file refers to an index file that contains a group of parity volumes or parity blocks. This index file is used for error detection and recovery purposes when one or more files in the archive are lost or damaged.\n\nA Parchive archive typically consists of both the original data files and the corresponding parity volumes. Parity volumes are created using Reed-Solomon error correction algorithms. These parity volumes contain redundant information that can be used to recover the original data files.\n\nThe .par file, also known as a parity volume set, contains information about the structure and location of the parity volumes within the archive. It serves as an index or map for the recovery process. By using the .par file, specialized PAR software can determine which parity volumes are needed and how they should be used to reconstruct the missing or damaged files.\n\nWhen one or more files within the Parchive archive become inaccessible or corrupt, the .par file can be utilized in conjunction with the available parity volumes to recover the lost data. The PAR software reads the .par file, identifies the missing or damaged files, and uses the parity volumes to reconstruct them.",
+      "A PAR file is an aircraft parameters file used by FMS (Flying-Model-Simulator), a flight simulation game for Windows. It saves the airplane geometry and physics properties such as mass, center of gravity, and inertia moments. PAR files are used for creating custom aircraft to fly in the game."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To open and use .par files, you will need specialized PAR software. Here are a few popular software options that can handle .par files:\n\nQuickPar: QuickPar is a widely used PAR software for Windows. It allows you to create, verify, and repair PAR files. You can open a .par file in QuickPar to verify its integrity or use it to repair damaged or missing files in a Parchive archive.MultiPar: MultiPar is another popular PAR software available for Windows. It supports both PAR and PAR2 file formats and provides advanced features for creating, verifying, and repairing archives. MultiPar can open .par files and perform error detection and recovery operations based on the provided parity volumes.MacPAR deLuxe: MacPAR deLuxe is a PAR software designed specifically for macOS. It supports PAR and PAR2 file formats and provides similar functionality as QuickPar and MultiPar. MacPAR deLuxe can open .par files and assist in verifying archives and recovering damaged or missing files."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -40,15 +80,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/par/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.930Z"
+      "retrieved_at": "2025-11-01T22:32:42.281Z"
     },
     {
       "url": "https://fileinfo.com/extension/par",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.930Z"
+      "retrieved_at": "2025-11-01T22:32:42.281Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.930Z"
+  "last_updated": "2025-11-01T22:32:42.281Z",
+  "containers": []
 }

@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/mkv/index.html",
   "slug": "mkv",
   "extension": "mkv",
-  "name": "MKV File",
-  "source": "fileformat.com"
+  "name": "What is an MKV File?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "A Matroska document must be composed of at least one EBML Document using the Matroska Document Type. Each EBML Document must start with an EBML Header followed by the EBML Root Element that is defined as a Segment. Matroska defines several Top-Level Elements that may occur within the Segment.\n\nEBML uses a system of Elements to compose an EBML Document, The following is the list of Top-Level elements in the Matroska file:\n\nEBML Document: Wrapper for the whole file.EBML Header: It contains the header information for the file like DocType.Segment: The top element that contains all other top-level elements.SeekHead: It contains the position of Segments of other Top-Level Elements.Info: It contains general information about the Segment.Tracks: A Top-Level Element of information with many tracks described.Chapters: It is used to define basic menus and partition data.Cluster: The Top-Level Element containing the Block structure.Cues: A Top-Level Element that contains all entries local to the Segment which speed seeking access.Attachments: This contains attached files.Tags: This element contains metadata describing Tracks, Editions, Chapters, Attachments, or the Segment as a whole.\n\nThe following table shows the structure of the Matroska document with most of the elements displayed in a hierarchy:\n\nEBML HeaderSegmentSeekHeadSeekSeekIDSeekPositionInfoSegmentUIDSegmentFilenamePrevUIDPrevFilenameNextUIDNextFilenameSegmentFamilyChapterTranslateTimestampScaleDurationDateUTCTitleMuxingAppWritingAppTracksTrackEntryTrackNumberTrackUIDTrackTypeNameLanguageCodecIDCodecPrivateCodecNameVideoFlagInterlacedFieldOrderStereoModeAlphaModePixelWidthPixelHeightDisplayWidthDisplayHeightAspectRatioTypeColorAudioSamplingFrequencyChannelsBitDepthChaptersEditionEntryEditionUIDEditionFlagHiddenEditionFlagDefaultEditionFlagOrderedChapterAtomChapterUIDChapterStringUIDChapterTimeStartChapterTimeEndChapterFlagHiddenChapterDisplayChapStringChapLanguageClusterTimestampSilentTracksPositionPrevSizeSimpleBlockBlockGroupEncryptedBlockCuesCuePointCueTimeCueTrackPositionsAttachmentsAttachedFileFileDescriptionFileNameFileMimeTypeFileUIDFileReferralFileUsedStartTimeFileUsedEndTimeTagsTagTargetsTargetTypeValueTargetTypeTagTrackUIDTagEditionUIDTagChapterUIDTagAttachmentUIDSimpleTagTagNameTagLanguageTagDefaultTagStringTagBinarySimpleTag"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "MKV (Matroska Video) is a multimedia container similar to MOV and AVI format but it supports more than one audio and subtitle track in the same file. An MKV file is the Matroska multimedia container format used for video. MKV is based on Extensible Binary Meta Language and it supports several video and audio compression formats. The major difference between MKV and other video formats is that MKV is a container and not a codec. MKV files are saved with the .mkv file extension. MKV can incorporate audio, video, and subtitles in a single file even if those elements use different types of encoding. For example, you could have an MKV file that contains H.264 video and MP3 or AAC for audio. MKV also supports descriptions, ratings, cover art, and even chapter points. There are several key features that MKV is future-proof. These features include:\n\nSupport for Fast seeking.Ability to select different audio and video streams.Support for subtitles(hard-coded and soft-coded).Support for metadata, chapters, and menus.Capability to stream online.Ability to recover erroneous files that provide the capability to play corrupted files."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

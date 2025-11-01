@@ -1,9 +1,11 @@
 {
   "slug": "sav",
   "extension": "sav",
-  "name": "SAV File",
+  "name": "Nintendo DS Save File",
   "summary": "Learn about .SAV files and view a list of programs that open them.",
   "developer": "Nintendo",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -36,12 +38,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Typically, SAV files are either saved in a raw format if transferred from a Nintendo DS device or are saved in the NO$GBA format if saved by the NO$GBA emulator (or exported by the DeSmuME emulator). Additionally, you will likely find SAV files with .NDS Nintendo DS ROM files, which are sometimes required for the ROM to run properly.",
+      "When transferring SAV files to a new Nintendo DS flash card, you must ensure the file format is compatible, or the saved game may not load. Additionally, you may need to modify the binary data in the SAV file with a hexadecimal (hex) editor (e.g., HxD) to load it."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "SAV file is a data file created by the Statistical Package for the Social Sciences(SPSS), which is an application widely used by market researchers, health researchers, survey companies, government, education researchers, marketing organizations, data miners for statistical analysis. The SAV saved in a proprietary binary format and consists of a dataset as well as a dictionary that represent the dataset, saves data in rows and columns.",
+      "A SAV file is a saved game used by Nintendo DS portable game system emulators such as DeSmuME and NO$GBA. It stores the state of the current game progress and includes game information such as the character name, experience points, completed levels, and in-game resources. Users may transfer SAV files from Nintendo DS devices or create them with emulators to preserve saved game progress."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a SAV file with various Nintendo DS emulators in Windows, macOS, and Linux, including NO$GBA, iDeaS Emulator, and DeSmuME. For example, to open a SAV file with the macOS version of DeSmuME, place the file in the same location as the NDS ROM file, open the NDS ROM file with the emulator, and click File → Import ROM Save File (emulators may not support raw SAV files transferred from Nintendo DS devices).",
       "Additionally, you can open and modify SAV files with a hex editor, such as HxD. Remember that opening the SAV file with a hex editor displays binary data, not the emulated game."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -75,15 +111,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/sav/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.932Z"
+      "retrieved_at": "2025-11-01T22:32:42.285Z"
     },
     {
       "url": "https://fileinfo.com/extension/sav",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.932Z"
+      "retrieved_at": "2025-11-01T22:32:42.285Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.932Z"
+  "last_updated": "2025-11-01T22:32:42.285Z",
+  "containers": []
 }

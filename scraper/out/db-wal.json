@@ -1,9 +1,11 @@
 {
   "slug": "db-wal",
   "extension": "db-wal",
-  "name": "DB-WAL File",
+  "name": "SQLite Database Write-Ahead Log File",
   "summary": "Learn about .DB-WAL files and view a list of programs that open them.",
   "developer": "SQLite",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,40 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Since SQLite is a popular embedded database technology, you may see DB-WAL, .DB-SHM, and other temporary database files with applications that use SQLite.",
+      "NOTE: In an SQLite write-ahead logging scheme, all database modifications are written to the DB-WAL file before being committed to the database. WAL was introduced as an alternative scheme to SQLite's default \"rollback journal\" policy."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The file extension .db-wal is associated with SQLite, a popular open-source relational database management system. The WAL file format (short for Write-Ahead Log) is an alternative to the traditional rollback journal used by SQLite. It provides more concurrency control, allowing multiple processes to read the database at the same time, while still providing crash-recovery capabilities. The .db-wal file is used to store changes made to the database that have not yet been committed to the main database file (with .db extension).",
+      "Temporary database file created by SQLite 3.7.0 or later, a compact database program commonly embedded into mobile and desktop applications; saves write-ahead log (WAL) information for the database; automatically created and managed by the database."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +80,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/db-wal/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.918Z"
+      "retrieved_at": "2025-11-01T22:32:42.261Z"
     },
     {
       "url": "https://fileinfo.com/extension/db-wal",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.918Z"
+      "retrieved_at": "2025-11-01T22:32:42.261Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.918Z"
+  "last_updated": "2025-11-01T22:32:42.261Z",
+  "containers": []
 }

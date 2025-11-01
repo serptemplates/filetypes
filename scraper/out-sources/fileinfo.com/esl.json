@@ -4,8 +4,24 @@
   "slug": "esl",
   "extension": "esl",
   "name": ".ESL File Extension",
+  "type_name": "Elder Scrolls Light Master File",
   "summary": "Learn about .ESL files and view a list of programs that open them.",
   "developer": "Bethesda Softworks",
+  "more_information": {
+    "description": [
+      "An ESL file is a game data file for select Bethesda Softworks video games, such as Fallout 4, Skyrim Special Edition (SE), and The Elder Scrolls V: Skyrim VR. It stores a \"small mod\" plugin that modifies an element in the game, such as re-texturing an object or altering weapons or armor stats. ESL files are primarily utilized to distribute mod content via the Creation Club digital marketplace."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The ESL file type is one of several mod plugin types supported by select Bethesda Softworks games and entries in the Elder Scrolls series. The three main file types are:",
+      "Elder Scrolls Master File (.esm file) - It is the primary database that contains the game files, which plugins may modify, a to, or reference. They are sometimes modified to create plugins.",
+      "Elder Scrolls Plugin File (.esp file) - Similar to ESM files in structure but ESP files interact with ESM (Master) files and override default behaviors and data.",
+      "Elder Scrolls Light Master File (.esl file) - Optimized \"lighter\" version of the ESM format that was introduced with the Fallout 4 patch 1.10 in August 2017. ESL files do not count against the 255 slot plugin limit for games.",
+      "ESL files are similar to .ESM Master files but they store fewer records. A record structure includes a record header, signature, data size, flags, and version control information. ESL files are limited to 4096 records.",
+      "Since the ESL file type stores fewer records than the ESM type, it is optimal for smaller, simpler mods. Larger mods that require more records should be distributed in the ESM or ESP formats."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can load ESL files in various Bethesda Softworks games, including Fallout 4, The Elder Scrolls 5: Skyrim, and The Elder Scrolls 4: Oblivion.",

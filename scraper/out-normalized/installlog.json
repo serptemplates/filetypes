@@ -1,9 +1,26 @@
 {
   "slug": "installlog",
   "extension": "installlog",
-  "name": ".INSTALLLOG",
+  "name": ".NET Assembly Installation Log",
   "summary": "Learn about .INSTALLLOG files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "By default, .NET Framework software uses installutil.exe to install assemblies included within the software. When installutil.exe is run against an assembly, it typically creates the following three files:",
+      "installutil.installlog, which contains a description of the assembly's install process",
+      "YourAssemblyName.installlog, which contains information specific to the install process's commit phase",
+      "YourAssemblyName.installstate, which contains data used to uninstall the assembly",
+      "A YourAssemblyName.installlog file is created only if a developer omits the /LogFile option from installutil.exe, or the developer includes the option along with a custom file name for the INSTALLLOG file (e.g. /LogFile=MyInstallLogFile.installlog). If a developer includes the /LogFile option without specifying a filename, a YourAssemblyName.installlog file is not created."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "INSTALLLOG files are text files, so you can open them in any text or source code editor, such as Microsoft Visual Studio Code (cross-platform) or Microsoft Visual Studio (Windows)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -30,11 +47,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "INSTALLLOG files are text files, so you can open them in any text or source code editor, such as Microsoft Visual Studio Code (cross-platform) or Microsoft Visual Studio (Windows)."
     ]
   },
   "images": [
@@ -65,10 +77,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/installlog",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.125Z"
+      "url": "https://fileinfo.com/extension/installlog",
+      "retrieved_at": "2025-11-01T22:32:42.549Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.125Z"
+  "last_updated": "2025-11-01T22:32:42.549Z"
 }

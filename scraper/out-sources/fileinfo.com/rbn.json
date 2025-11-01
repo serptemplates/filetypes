@@ -4,8 +4,37 @@
   "slug": "rbn",
   "extension": "rbn",
   "name": ".RBN File Extension",
+  "type_name": "Richard's Bridge Notation",
   "summary": "Learn about .RBN files and view a list of programs that open them.",
   "developer": "Richard Pavlicek",
+  "more_information": {
+    "description": [
+      "An RBN file is a Bridge record saved in the Richard's Bridge Notation format. It contains plain text that describes one or more Bridge deals. Each deal description consists of 16 lines of text; each line of text contains a specific piece of information about a Bridge deal."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Frustrated with other Bridge notation formats, Richard Pavlicek created the Richard's Bridge Notation, or RBN, format. According to Pavlicek, the RBN format fixes issues with both the Portable Bridge Notation (.PBN) and Bridge Base (.LIN) formats. Most notably, RBN files order information about a Bridge deal \"more logically\" and can contain information about many deals.",
+      "In an RBN file, each deal's description consists of 16 lines of information, labeled and ordered as follows:",
+      "D: Date and Time",
+      "T: Title and Author",
+      "L: Location",
+      "E: Event or Main Heading",
+      "F: Form of Scoring",
+      "S: Session, Stage, or Subheading",
+      "K: Team Names and Carryovers",
+      "N: Names of Players and Room or Table",
+      "B: Board Number",
+      "H: Hands",
+      "A: Auction",
+      "C: Contract and Declarer",
+      "P: Play Sequence",
+      "R: Result and Score",
+      "M: Makes at Double-Dummy",
+      "I: Item List",
+      "RBN files can also include comments and other text, enclosed within { }. For example, after an RBN file's N line, it might include a description of the players involved, enclosed in { }."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an RBN file with Microsoft Notepad, Apple TextEdit, or any other text editor, to view the Bridge record it contains."

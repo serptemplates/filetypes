@@ -1,9 +1,18 @@
 {
   "slug": "vsv",
   "extension": "vsv",
-  "name": ".VSV",
+  "name": "Virtual Machine Saved State File",
   "summary": "Learn about .VSV files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "VSV files are not opened directly by the user. They are referenced by .VMC files, which include a reference to the latest saved state file.",
+      "NOTE: Since VSV files save the current state of the RAM for the VM, their file size is exactly the same size as the amount of RAM allocated to the VM. For example, if you allocate 512MB of RAM to a VM, the VSV file size will be 512MB."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,10 +49,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vsv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.364Z"
+      "url": "https://fileinfo.com/extension/vsv",
+      "retrieved_at": "2025-11-01T22:32:42.858Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.364Z"
+  "last_updated": "2025-11-01T22:32:42.858Z"
 }

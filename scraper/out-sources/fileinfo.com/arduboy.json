@@ -7,6 +7,17 @@
   "type_name": "Arduboy Game Package",
   "summary": "Learn about .ARDUBOY files and view a list of programs that open them.",
   "developer": "Arduboy",
+  "more_information": {
+    "description": [
+      "An ARDUBOY file is a Zip-compressed game package used by Arduboy, an open-source 8-bit handheld gaming system. It stores a .HEX file that contains the compiled game code, a banner image (700 × 192 pixels), and one or more preview screenshots (128 × 64 pixels). ARDUBOY files also contain a required .JSON file (info.json) file, which includes metadata such as the game's title, version, author, and input configuration details."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Game developers and Arduboy enthusiasts primarily use the ARDUBOY format to simplify sharing, organizing, and installing games in a single file. The packages are .ZIP archives, but are saved with an .arduboy extension instead of .zip. Game managers and loaders, such as Team A.R.G. Game Loader, read these files to display game details, show preview images, and upload the game to the device.",
+      "NOTE: You can create an ARDUBOY file by placing the required files into a folder, compressing it as a ZIP archive, and renaming the extension to .arduboy."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open ARDUBOY files with Arduboy Manager and Team A.R.G. Game Loader. The programs can display the game information and images, and upload the game to the Arduboy device over USB, streamlining the process for users who want to browse and install multiple games efficiently.",

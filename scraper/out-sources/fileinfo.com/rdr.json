@@ -4,8 +4,21 @@
   "slug": "rdr",
   "extension": "rdr",
   "name": ".RDR File Extension",
+  "type_name": "Remote Desktop Manager Report Settings File",
   "summary": "Learn about .RDR files and view a list of programs that open them.",
   "developer": "Devolutions",
+  "more_information": {
+    "description": [
+      "An RDR file is a report created by Remote Desktop Manager, software used to centralize remote connections, credentials, and passwords. It contains settings for creating reports regarding a user's entries, logs, credentials, and security information."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "An RDR file is created by Remote Desktop Manager when report settings are exported. To create the RDR file, select your report in Administrations - Report then click Export Settings.",
+      "You can generate a report using settings from an RDR file by entering the following command line in the Windows Command Prompt:",
+      "C:***/DataSource:***/report:***/reportoutput:\"***\"/reportsettings:\"***.rdr\"/ closeapp"
+    ]
+  },
   "programs": {
     "windows": [
       {

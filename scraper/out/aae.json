@@ -1,9 +1,11 @@
 {
   "slug": "aae",
   "extension": "aae",
-  "name": "AAE File",
+  "name": "Sidecar Image Edit File",
   "summary": "Learn about .AAE files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -24,11 +26,47 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "AAE files are created by the Photos app in iOS 8 and later and macOS 10.10 and later. The files save edits made in Photos, so users' original images are not overwritten when edited.",
+      "When you open an edited .JPG file in Photos, the app references the JPG's associated AAE file and applies any edits it contains. The AAE file's data is saved in the XML format, which means the files can be opened and viewed with a text editor, such as Apple TextEdit or Microsoft Notepad.",
+      "If you import pictures edited using the Photos app to Windows or an older version of macOS, you will most likely notice AAE files accompanying your images. In Windows, the .aae extension may be hidden by default, but the AAE files bear the same name as the JPG files whose edits they contain. After you import your pictures into Windows, you can delete the pictures' AAE files without erasing the associated pictures."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "AAE is a file type found on iOS 8 and newer, macOS 10.10 or later systems. It stores information about any edits made to .jpg photos in the Photos app. AAE files are in addition to original files and let users revert photos to their original state if required. When images are imported from macOS to Windows, the accompanying AAE files also get transferred.",
+      "JPG is a widely used image format for photos, known for its efficient compression. Apple’s AAE files, created by Apple, are XML-based records that store editing instructions applied to JPG images within the Photos app. This system enables non-destructive editing, preserving the original JPG while the AAE file maintains a record of the edits.\n\nIt’s important to note that AAE files are specifically designed for Apple devices and the Photos app. If you transfer edited photos to a non-Apple device or use a different photo editing application, the edits may not be visible. To preserve the changes, you might need to ’export’ the edited photo as a new JPG file.",
+      "An AAE file is a record of the edits a user has made to an image in the iOS version of Apple Photos. It is used to non-destructively transfer edits from iOS to macOS, so a user can revert their image to its original form if needed. AAE files are stored alongside the images whose edits they contain."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "AAE files are not meant to be opened. While you can open an AAE file in any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac), doing so will only show you the XML data the file contains."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -62,15 +100,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/aae/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.910Z"
+      "retrieved_at": "2025-11-01T22:32:42.248Z"
     },
     {
       "url": "https://fileinfo.com/extension/aae",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.910Z"
+      "retrieved_at": "2025-11-01T22:32:42.248Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.910Z"
+  "last_updated": "2025-11-01T22:32:42.248Z",
+  "containers": []
 }

@@ -4,8 +4,20 @@
   "slug": "so.0",
   "extension": "so.0",
   "name": ".SO.0 File Extension",
+  "type_name": "Unix Shared Library File",
   "summary": "Learn about .SO.0 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "Library or library link file used by Linux operating systems; appends the .0 extension to the name of the original library file, which has the .SO extension; either contains a library or a reference link to another library on the system."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "If the SO.0 file is a library link file, it references a particular library version which can have extensions such as \"so.0.0.0\" or \".so.0.0.1,\" depending on the version of the library. This convention allows multiple versions of library files to exist while only one of them is referenced and used by the operating system's dynamic library loader. This helps avoid situations where many implementations of the same library are used at the same time.",
+      "NOTE: Shared library files may also use extensions such as \".so.1,\" \".so.2,\" and \".so.3.\""
+    ]
+  },
   "programs": {
     "windows": [
       {

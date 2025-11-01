@@ -4,8 +4,25 @@
   "slug": "pri",
   "extension": "pri",
   "name": ".PRI File Extension",
+  "type_name": "Package Resource Index File",
   "summary": "Learn about .PRI files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A PRI file is a package resource index file created by Microsoft Visual Studio during the build time of a Universal Windows Platform (UWP) application. It contains strings that are used for localizing the application user interface for different languages and contexts, as well as an index of file paths to resources included in the application package. PRI files are saved in a compiled binary format."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PRI files were first introduced by Microsoft for the development of Windows 8 applications but are also used by subsequent versions, including 8.1 and 10. A PRI file is compiled from a .RESW source file, which is included as part of the development project. The file is created at build time to store an index of resources that are packaged with the developer's app. Typically, there is one PRI for every language in the application package. When the app is run, the system references the index in the PRI file to load the necessary resources.",
+      "PRI files can be written back to plain text using the makepri dump command. The MakePRI.exe program is included with Microsoft software development kits. For the Windows 8 Developer Preview, it is located in the following directories:",
+      "C:\\​Program Files (x86)\\​Windows Kits\\​8.0\\​bin\\​x64\\​",
+      "C:\\​Program Files (x86)\\​Windows Kits\\​8.0\\​bin\\​x86\\​",
+      "PRI files are also generated for Windows 10 applications. PRI files can typically be found in the following directories in Windows 10:",
+      "C:\\​Program Files (x86)\\​Windows Kits\\​10\\​bin\\​[version]\\​x64\\​",
+      "C:\\​Program Files (x86)\\​Windows Kits\\​10\\​bin\\​[version]\\​x86\\​"
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,9 +1,29 @@
 {
   "slug": "kksrc",
   "extension": "kksrc",
-  "name": ".KKSRC",
+  "name": "KDE Plasma Keyboard Shortcut Settings",
   "summary": "Learn about .KKSRC files and view a list of programs that open them.",
   "developer": "KDE",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "KDE Plasma is a graphical workspace environment available for various platforms. Most often, KDE Plasma is used as a desktop GUI for Linux systems.",
+      "Plasma stores Global and Custom Keyboard Shortcut settings in KKSRC files. These files specify key combinations you can press to perform various functions. For example, a KKSRC file might contain the setting Walk Through Windows=Alt+Tab. This means that, if that KKSRC file is a user's currently applied shortcut file, they can press Alt + Tab to switch between application windows.",
+      "By default, Plasma stores Global Shortcuts in the following directory:",
+      "~/​.config/​kglobalshortcutsrc",
+      "And it stores Custom Shortcuts in the following directory:",
+      "~/​.config/​khotkeysrc"
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit a KKSRC file with Kate Editor (multiplatform), Microsoft Visual Studio Code (multiplatform), or any other text editor. Doing so allows you to customize the keyboard shortcuts the file contains.",
+      "To use a KKSRC file with KDE Plasma, either import the file in the Global Shortcuts section of System Settings or use the following command to change your current keyboard shortcut scheme:",
+      "kcmshell keys"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,13 +42,6 @@
         "name": "Apple TextEdit",
         "url": "https://fileinfo.com/software/apple/textedit"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open and edit a KKSRC file with Kate Editor (multiplatform), Microsoft Visual Studio Code (multiplatform), or any other text editor. Doing so allows you to customize the keyboard shortcuts the file contains.",
-      "To use a KKSRC file with KDE Plasma, either import the file in the Global Shortcuts section of System Settings or use the following command to change your current keyboard shortcut scheme:",
-      "kcmshell keys"
     ]
   },
   "images": [
@@ -64,10 +77,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/kksrc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.146Z"
+      "url": "https://fileinfo.com/extension/kksrc",
+      "retrieved_at": "2025-11-01T22:32:42.576Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.146Z"
+  "last_updated": "2025-11-01T22:32:42.576Z"
 }

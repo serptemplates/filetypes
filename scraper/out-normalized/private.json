@@ -1,9 +1,25 @@
 {
   "slug": "private",
   "extension": "private",
-  "name": ".PRIVATE",
+  "name": "OpenSSL Private Key",
   "summary": "Learn about .PRIVATE files and view a list of programs that open them.",
   "developer": "The OpenSSL Project",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "OpenSSL is a software library that server, web, and network administrators use to secure network communications. Among other things, administrators can use OpenSSL to generate public and private keys for use with their web server. These keys are used to encrypt and decrypt information sent from a user's web browser to the web server.",
+      "Information sent from a web browser is encrypted using a public key (sometimes saved in a .PUBLIC file). That information is decrypted using a private key, which is sometimes saved in a file named RSA.PRIVATE. More often, however, OpenSSL private keys are saved in the .KEY or .PEM file formats.",
+      "NOTE: RSA.PRIVATE files can be 512, 758, 1024, 1536, or 2048 bits in size."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because RSA.PRIVATE is a plain text file, you can open it in any text editor, such as Microsoft Notepad (Windows), Apple TextEdit (Mac), or GitHub Atom (cross-platform). However, you should not edit the text RSA.PRIVATE contains. Editing your RSA.PRIVATE file will cause your web server or website to function incorrectly.",
+      "For instructions on how to use your RSA.PRIVATE file with a web server as part of an SSL certificate, refer to your web server or certificate's documentation."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -30,12 +46,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Because RSA.PRIVATE is a plain text file, you can open it in any text editor, such as Microsoft Notepad (Windows), Apple TextEdit (Mac), or GitHub Atom (cross-platform). However, you should not edit the text RSA.PRIVATE contains. Editing your RSA.PRIVATE file will cause your web server or website to function incorrectly.",
-      "For instructions on how to use your RSA.PRIVATE file with a web server as part of an SSL certificate, refer to your web server or certificate's documentation."
     ]
   },
   "images": [
@@ -66,10 +76,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/private",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.249Z"
+      "url": "https://fileinfo.com/extension/private",
+      "retrieved_at": "2025-11-01T22:32:42.702Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.249Z"
+  "last_updated": "2025-11-01T22:32:42.702Z"
 }

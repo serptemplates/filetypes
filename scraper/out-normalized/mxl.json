@@ -1,9 +1,44 @@
 {
   "slug": "mxl",
   "extension": "mxl",
-  "name": "MXL File",
+  "name": "Compressed MusicXML File",
   "summary": "Learn about .MXL files and view a list of programs that open them.",
   "developer": "The MuseScore Team",
+  "category": "audio",
+  "category_slug": "audio",
+  "mime": [
+    "application/vnd.recordare.musicxml.",
+    "application/vnd.recordare.musicxml+xml"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Each MXL file has a ZIP-based XML format that must have a META-INF/container.xml file which describes the starting point of the MusicXML version of the file. There is no corresponding .xsd file defined for the MXL file format.\n\nA simple container.xml file has contents as follow. This example is taken from Dichterliebe01.mxl file available on the MakeMusic web site.\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"> <container> <rootfiles> <rootfile full-path=\"Dichterliebe01.musicxml\" media-type=\"application/vnd.recordare.musicxml+xml\"/> </rootfiles> </container>\n\nIn this example, the element is the document element. The element can contain one or more elements, with the first element describing the MusicXML root. A MusicXML file used as a may have , , or as its document element.",
+      "MXL files are not as common as the standard MusicXML scores, which are saved as .XML files. However, since MXL files are compressed, they used less storage space and are useful for sending over email and backing up on external media devices."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -54,30 +89,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "Finale"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Finale PrintMusic"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIu0lEQVR42tVXCWwU5xX+5tjZ2+tjfeITA8Y2EMDYxOZIDW2pw2EUiqAJaVNViFYJpAWpVRQqh3AENW2VlrZqS6AhDQKnSTjiBCqMDRQC5jCHMbbB+Da+1uv1XrPXzPTtrim4AUKVVlV+aTWz88//3veu771h8H9ezFcKgCy75ygKt4Bu8wF2HMsyMbIclKFYafc2y+IiXSsZRlv5XwUgy45VDKP+sV3k8xoGGHTYAKsL8PhJNe1rVEC0DkiJBLLMCiK10g2G8e1gWf0fvxQAURTTBYHdZfcK8440AZc6gT4nECCtbBAYwleM3HMkzUxApiUDJVnBe++FQCCwWq02XP2PAfhFRzErCBWfdQi6vbXAAFms5QEfaRJIq0kD6IQRoOQJmwfwBgA1R56ha6QWWP4E8M3xEhSv+9usJuLDxwbgc9vnqLTqU/uuCNhP2A1CWOiYCAo+WZcTryDRqEAvhAW4fEAveaZxgMUF8lI7hUhLYbETqMXZwOqZfgS8rmUqTdRHXwjA4XDE63To3n/FwO25TLElS3wSUJqtYHGujCit8siYurwMPm1k8bc6BpSUIc8snQj8sEgk2e6ciAhzwyMBSJK15vRtY8GmKh6xenIrKd8wR8LssVJ4P8BAHsHABPNfuSco+J/jww+udHPYWsWBpWd9FL4NRTIW5traOC4m46EAPPa+Z+yS7sO1FQb4SZ+TXPtykYSnc33wkWUCTyZxgfuOKveJUMI/hYfXq0CtUXD2tgqbqnlEqMP58ZuFbqQZnOtYffyOBwKQfD3NO2vMme9cI+u14ZJ6c5EHsqQgILNkvR+7ahg4vRzijRKM6mCyKegeZijuHCWpjDWFMrSUrQy5iacc2XxMizMddIYStZQScsMsi43VxEczDKOMAmAb6Mh3BnTnN1TGwEUvW9zASwV+PJcvwu3ioNNLeOs4j3ev6/DiTA8ONwiI1lBJKDL6RBW+M8WLHec0WJgpoqzEDxed0RskfFynwbZTAhKMwfACb863IUVnL9XHph0eBUCy3t7+SVvsz7adNSKFXm6lTF6X78LzT/rgdHIwqCWs3G/CBLOM10ts2P1ZBKpamFCMi9IoyWYP441jJpzr4nFw5TBEiYXOIOPQZR5bzxiQbiKZw8BP8p1YObF/DxeZ+cIoAB5LU9XvalOK9zZokU7ldofKan6yA1sXiHAFBCo5AlAeBSNdd67sw9YjZtwcJFczMtKjFLz29ABe/iAWrXY1ARgkAOQBjR+/qBRQfsuEVJLZ6QAWjvXipwXd9Ya4zEmjAPS1N3Zsv5CRcrKb3EVs5iF38QERf1o8hNQ4ekCKKho02HJKh5nxLtxxqZFELuY5BU1WFZJ1Hhxt16Nsrhs/IM/5AjwcThFrDpvQF9AjgnjBSiU5KSaAsqIOe0p6pmkUgJbmJueWmgz9ZYsKsZrwTpNFweaiXjw/W4DoVVN2e7HvMocMs4SKRj16XcEMlxBF78/N8EFFZ4rHisSMLKJNMj6+5Mf66gRkxHChArFTVaVSWF4vbHZnT8zSjwLQ3Fjv3HR+/D0AtHpE4nXjEN5eZodaG4H2QQk/r9RRL5DRNKTHprk27Kw1Is0k4fcreqnWDFS6KtLFQq8MYu0hHT7tjcVYY5gvhim5U/UyNj95yz150sTRAFpvXOzcfDE3+WSPBom6e0XaPBDAzgUdWJRnhF0UcHMAON3GYWq8D4UpLlS36hBJXshOZMBw6pAik1bG6esWfO+TFMRHqcGPsMQghWBytB9l+fWO3CnTIkYB6Go4feKta5Oe2nPThExj+ESQ2VopGeeZ+7FruQg/HwkN1bqKIWIia5wBFYwq4nmqRo+iCVVEcJmUfrx4QIe9HWOQG4V/MWc7yVqc5sKreVcb0nJm5YwC0Fl3/FcH2yes31ibjHGGMOIQvxH5NfQHUF7SiiUzImGlmmcf0kOD1keqXKi6bsOKinFIMquhGhEUbNuNVAWvTO7D97Pq9yblzl81CsDVmuNzB3zRJ9eenQqRLDJwYQ8ED7YSKeVp+vHRsxZwhgSiaSa0N0p58Cf5YZB68dz70ThsSUaOKTjMhPe9dBWJjncU1mO8qWdlbt43yj9HxS2Xj3RvqS1M2n3bFD58t9EQmIYeBdsKGvFKCQ+LP5q8MBqBn+IQr7bi7VMerD6RgwkJPNgR5UGP3SDrn0l2Y3v+GdGuRJtmzJjh/xyAq2crXuhyJ/zl2VN54Mj0GPKfMvKKjXjBYXPg+LIGFGSbMeSLCLXb4JIJqZ5zorOrH/P3j8OwJgZJQnhKYkiCizzWTwn43pw6TI3q2Jg9c9HWBzajUDleONT4zs1pWVsupSCVGI6nnhH0hIrmrVvUdKaq23Hsu3egMiRChI5AMOBlEYKvB0vejUb10HiMj1Hgl5WRsY1Bm5XBS5P6sT73rCWjoDTubiN6IIDqo0fHJUUFbr16vhAfNEcjKSqY9TIlGPE+teO2PgYLE66hfJUTii4REpmplyix9gl4r2UaUhOYcNdhwt7rtHKYl+rAb4vOYMjjK5xTXHrufn0PzOdz1YeXGjWqAxvPz8CBm2boaPwyq/3kahpGeBXu9AVQklCH7QtsECg/Xqs0oLztCcTFCxAUfyjm9gAHm41Fcdowfj3rPGS/uCbva6V//nddDx1Ka05ULI/UMu/vrM/GL+toiKGUMRL3m/gAZE7AHauCOKUFKlZCt5yJhBgeKtkLh58UE0UH/b8mpwvrptTD4/P8KO+ppQ8c0R85lv+jqiJvjMG3+5JlzJS/Nmbg790x8IpsuDYF3COLoBRfKOBgaRL6eqIVq7LaMCuxq6XXzqyeNb+06mE6HuvD5Nrpg+vVKm7tVUts+oX+GOoDRvS4NTTlcCHy0askom8vJkQ6MT12ENPjBvpk2f8Hj5D8xt1y+1IAgqusrIxdUjx9qVEnf8vrE/KGAnyax8eHvgw0KsVvUns7dZy31uHjKz2ceKCoaIX4OHK/Wh+n/4v1T4jnnk7h5EYwAAAAAElFTkSuQmCC",
-      "alt": "Arobas Music Guitar Pro"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "1C:Enterprise - File Workshop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAALG0lEQVR42nVXCXRU1Rn+Zsvsk2SYJIRg2ERAiSWHCAhaZVEhIgKSxoocOAPIIWwVUGvRslki0sOi7amcOhWhgitgE2JFTGKBkgYkkphkgJAEskxmMpOZyezbe/3vmwmLwXfOf+5b7/fd/37/8kTof4huO1fs2lmcyvNRNcdLDQrtILVMJjPIZAotF3YPlUiU6cFgr3fNmpe2b9iwQZGXl/e43++31dbWtjU3N3eUlJT4aQ4+YXc9BLC9e/c+yovEUyCWZkg06VmiJI1eIpVrZWKJSiJT6uSKFBUBa+VSlVwiEiFJIoNCpoJcKoOz+yo355mx83fv3jO7sPCFZRwXRne3zdbVZbW73e7O6upq086dO08QjI+M60fgow//scsF7dM/DHxuzFA1MFAJJBEtCXGTiQEp7mJ8fJSRRQJu3rR/9Znly9ePGT8+16BQAGJxfHLyAlauXLnn5MmTH9HlFbJAPwKlJSVfT3zk8ZnnnWo0OgB3UIRMmkQmkIiDSO5Cgj1nzxCLotX8TezhSU9JdDop5HJApaJFJAHvv/9+z9q1a/8ZiUQ+ozcv3pXA1q1bl60qWrlfr1OLbbRj7/2kIEAxMpUJcFECTJQAZ14hR4oiHFkEiEaQkcxBq9aBdgfMAxoNEAy6sGzZiz+Vlp74lD5jBK4xuv0IjB49Om3fvn0NEyY8ZBDFIjjUrEWNU4khKg4GGQcJA/H7wQcCbFbEAn6IojQPRyw4njaKx6yZ2cjI0Av+oleEo7y8LFJYOOfzWCx2nC6/I+v5JRFKi4uL/1pY+PxLClpmQ1cMX37bBmXED2koADEBSWhTxWJSBS1RJBJDIpGQyZCcrIBaI8fkyWkYMEAt3I9EoohGOZw9eya0Y8eOEzU1NbsIo4Ys9EsERJs2bVpuNBr3S6VSBHweHDrwA+w9Yai0SnKpnPZTBq1WgfR0LQFpoNcr6FpO+y0WBCclVUbJKzHSA8/FIGJGEWLpsuKLL774uLKycjuFZgvT7M9DUghD0oFxxYoVpoyMDNjt3Th3oRWSmAT6AVqkpWmh0zHAJAGE4xhQjIA4Wm0EHAONsS1hwFF4IzyuB0iB3m4+7LaGm1uuuysqKg8ePXrsXYKykEX7Edi2bZuxoKDApFarkZluwCmrHKRJTB5AYBEGQN+QPtjKApGYANIb4uALx9DhF+OqX4HmgAzXHFF0eWII8yLk1n/gOXnoL9W27vZ6gqgjqyJrIgve1QNz58412Ww26JM1aNWOw58b5DA9GkSmPIaWXh5NHqDNC7T7xHCGxbjuk6I7LAVJEsm+HmjariJHGUCWgocqGkSYhNDW1u5sbW280NV145MLF776hqDsiW24k8CWLVuM8+fPN7kdXdBpk2FJfhC76xWwhnmkynjhNYo6Ck4RxPSFmuJRSaYQ8+Brq/AAb8eTk+9D5j1ZkCSpEY2JwIKmtzcKm82F8+fPhy5dOvNZRcWHbzidlr5t4G95YPMbxtyZi03XPHLkDwmgQzoYh6+phJjn6TUW3yy5iRNVgjwMLhpGpKoCs8ZoMW/eRIQiErjdJHXSeiJiSTNAOBy/rq2tQ1XV0YslJbsX+f29LCeEE1ORBjZvMmb+epFpeakMv39Egnl5afiyRSWk4n4HUz1pzlH5HWaP1+KppycItxlgV1d8ZCRY+mDnlEKEkV1fuVKP06f3n/r66/fWsEzNSMQ98ObrxsEzjKallSkwjgpgzcOp+LZTcweBPn+R12E/U4fRA+xYuHjqrec8y/2Ah7RCukUoGF85M0aCjSx3NTWd5I4f377dbD7zdxYVcQ384TVjdv4Kk7HqHhjv7cG6XAXO2nSUgGiyBIkkWrUs5kXE7EBXSy3Wb3wCarXiDudYrEBLi5Cd4aXaFwnd8gLzgFLJRieOHfuTuaxsTxHHcdUCgddefcW4YJHRtLdrBFSxIFaPiuG8K4XOPRjiLEdypB0kTSjaG/Dvbz3QL3kH+fm5/XYnSFHiNsfrh4MI112n616KYDrvK1IKBYfvv/80aDKt/6PL1XVYILBx40bjMuMSU2ZmJqzeMDwRBer8KRjcW4fptQUke6ouai3CzVbsufIMpizdgaGDKFHp48VHKL+szHTTCm3kCXcEg4fJYKNVl1XGxUspRnhXpyNiddV4++0lBzo6GncLBNavX29csoQRGEj5JgRLSIOrwRRoY40Y01OELDdFBKnPVmfDx4EVmDzHKGhBlJh4gAFIpzEaiOLQiR9RV2/BqOwHsPjF4aihNNRCntBq4gRSUpgOrqK4uKi8ru7UFoHAyy+/LBAYOHAgIuEQ7BE12iN6BJRNuJ75OrQBFUa39CDjuAvfqTdj4tQZNzM6c6+WVjVmKHC0tBGcqBqyUc/h9JEKvPRCPlQ6EX5qiFGJjgo9glpDmfNKE97YtOb7+vqKnQKBdevW3SJA8nVxGth4A9wSM6pUa6GQJqO2oxmef/VgUcbneGhiHkLhuKqZyBiBsSOAXe+ewxNPNqHXUIDyg2V4dXW+0FQ4nJ6+lIMkuQw1F1pIdxtO19eX7xLuUtdiXLx4sUAgTEHshQa9kjRY+XocjxqhkqTAbL2B0/+x4z39cTw2cQr8wTg4Czs5ufbxh4CSUgfONZwhL4jw5KThmDF9LEJ8lN6NUPHiBacplUkoO3ERq4pe+Mpmu7ZfILB69eqbBELkgZBEh5A8Ha2hWux3/IZSbwpu9FhRf8mJ34X+hoLpv4UveCu+fTTmPQAMp/299GMIEnkU435FoiDPQBXfKi7GxdtjShi7dn0ZKS5e9ZnHY48TWLVqlUCAlWOmgbCU2it1Bsy+GmxrzodGlgpbrwuX2y0oaNuEddPegi96Z6Kh+THxPmAEAYqoifSR6NJG9k+k3d29WLLkTUtZ2bsf0+WhmwQWLFgghKGY3MfJUyDXpeOS6wJW1T4GnTQVPvLMDacDY1unYkP2h0jPGkLFJk6AJRkW5zIyNRFQ0paoiMCEvHhzevtx4EAFv23bK2dbWn5gfeIxgUBRUZFx3rx5JvqpoDZLh6x7H4Q2WY+q7nOYWzGZWi3WlFI7FtHBwA3F861bMT5nNgJBiVBs+pIMy3RJfQmHxiFDyAtpt8AvX+6kkH/HWla2j/WJR8nOCQSod186Z86cD9j+aDRqZA2/H6l6Ay7Ya7Cpei2mZ81Ajn4cen3DSFDZ8JnbEW32YsjQSaDOSwBmMc4snu3ilpwMZGXF8wVz/ebNB/wHD2455fM5TxJsKVm7QGDp0qWLFy5ceIA1lcwL94/LgzbVQGHGlMtDTUUhibzQQam2vJX2m85bys9C5dHivlEPCqCyBJE+6yNDukZbm52E90ng8OF3zjocbacJkv0psU4pKBCYNm1adk5OzpFnn312cnp6OlINGTBkGNBXDJnAWMz3OHpQUdOMpmtN6Gyq83ZcsfhycwvScnMniQcNShWAWWZkW8II+P0eVFc34MiRo/bKykPnXS7L/xBv0S+ReW/2A4j/gwybPXv23sLCwlkzZ+VTbMths1rR3tGJmosXg40N9f7m5msuS6fF2tbe3un1erupmjlGjJiQkZMzddqwYaMzRo4cqUxJ0YrCYR+uXr0Samy87GtoONNsNp+uS/SF/yWjcgXPHR1RYiTeyJ4yZcoGsgUWiyVgNpvt1Cc66CfT5nK5Oui5I15yQK0HqPjClfj2HoMhe5JGox9FOtKSiT0eh9fp7GDtF7PLZA2J7wK4rTW//Ve8zxOZZOPIWBSzBpLqm9BMMnBquoS/XDZJMPGc7RQ5H5SGwH6PWPqRJuojW6kzQZR9F/0ZHv4PDToOdKvYhUsAAAAASUVORK5CYII=",
-      "alt": "MSynth"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -88,29 +99,40 @@
     {
       "url": "https://fileinfo.com/svg/search-white.svg",
       "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.835Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.835Z"
+      "url": "https://docs.fileformat.com/audio/mxl/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mxl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.835Z"
+      "url": "https://fileinfo.com/extension/mxl",
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.835Z"
+      "retrieved_at": "2025-11-01T22:32:42.185Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.835Z"
+  "last_updated": "2025-11-01T22:32:42.185Z"
 }

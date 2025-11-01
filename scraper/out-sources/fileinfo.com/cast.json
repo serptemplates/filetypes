@@ -7,6 +7,17 @@
   "type_name": "Asciicast Terminal Recording",
   "summary": "Learn about .CAST files and view a list of programs that open them.",
   "developer": "asciinema",
+  "more_information": {
+    "description": [
+      "A CAST file is a record of a terminal session recorded using asciinema, an open source terminal recording program. It contains a JSON-formatted header and a timestamped record of the text typed and printed during a terminal session. CAST files can be played using asciinema or uploaded and shared via asciinema.org."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "After installing asciinema, developers can record their terminal sessions by entering the command asciinema rec in their terminal. When a developer finishes recording a session, asciinema saves a record of that session in a CAST file. Developers can use the CAST file to playback and review their session in their own terminal or share their session with others. By default, asciinema uploads developers' CAST files to asciinema.org and prints a hyperlink developers can use to watch and share their recorded session online.",
+      "While playing a CAST file is similar to watching a screen recording, CAST files are not video files. Rather, they are timestamped, formatted records of the text typed within or printed by a terminal. When a developer uses asciinema to play a CAST file, asciinema actually creates a terminal emulator that reads and \"plays\" the text recorded in the CAST file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "While you can open a CAST file in any text editor, they are meant to be played using asciinema (Mac, Linux). After installing asciinema, you can play a CAST file by opening your terminal, navigating to the directory that contains your CAST file, and entering the command asciinema play yourcastfilename.cast."

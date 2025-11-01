@@ -1,7 +1,7 @@
 {
   "slug": "bo4data",
   "extension": "bo4data",
-  "name": ".BO4DATA",
+  "name": "OpenTerrainGenerator Binary Custom Structure",
   "summary": "Learn about .BO4DATA files and view a list of programs that open them.",
   "developer": "PG85",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12409&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Minecraft Java Edition players can install the OpenTerrainGenerator plug-in and use it to create and load custom Minecraft worlds. Each OpenTerrainGenerator world is generated using one or more biome configuration (.BC) files. In turn, each biome configuration file references a set of BO4 files, which contain information about custom structures that appear in the biome.",
+      "To make their custom worlds load more quickly, OpenTerrainGenerator users can convert their plain text BO4 files into binary BO4DATA files. OpenTerrainGenerator loads BO4DATA files more quickly than BO4 files, which speeds up worlds' load times.",
+      "To convert BO4 files to BO4DATA files, users enter the /otg exportbo4data command in-game. This transforms any BO4 files stored in the current world's WorldObjects directory into BO4DATA files. After converting a world's BO4 files to BO4DATA files, the user should remove the world's BO4 files from the WorldObjects directory."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A BO4DATA file is a custom structure created by OpenTerrainGenerator, a Minecraft modding application used to create custom worlds. It is the binary version of a .BO4 file. BO4DATA files are stored in a custom world's WorldObjects directory."
     ]
   },
   "how_to_open": {
@@ -47,8 +59,11 @@
     {
       "url": "https://fileinfo.com/extension/bo4data",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.985Z"
+      "retrieved_at": "2025-11-01T22:32:42.359Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.985Z"
+  "last_updated": "2025-11-01T22:32:42.359Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

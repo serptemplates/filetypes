@@ -1,9 +1,23 @@
 {
   "slug": "sf",
   "extension": "sf",
-  "name": ".SF",
+  "name": "Minecraft JAR Signature File",
   "summary": "Learn about .SF files and view a list of programs that open them.",
   "developer": "Mojang",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The CODESIGN.SF file works with a companion .RSA file (named CODESIGN.RSA), which contains the actual cryptographic signature. Together, these files ensure that the archive's contents haven't been changed or corrupted.",
+      "If either SF or RSA file is modified or removed, Minecraft may fail to launch or run correctly. Earlier versions of Minecraft used the name MOJANG_C.SF for this file, but it was later renamed to CODESIGN.SF in newer builds."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "SF files are not meant to be opened. Instead, Mojang Minecraft references the SF file to verify that the JAR files it loads have not been tampered."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,11 +36,6 @@
         "name": "File Viewer Plus",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=759"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "SF files are not meant to be opened. Instead, Mojang Minecraft references the SF file to verify that the JAR files it loads have not been tampered."
     ]
   },
   "images": [
@@ -57,10 +66,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/sf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.297Z"
+      "url": "https://fileinfo.com/extension/sf",
+      "retrieved_at": "2025-11-01T22:32:42.762Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.297Z"
+  "last_updated": "2025-11-01T22:32:42.763Z"
 }

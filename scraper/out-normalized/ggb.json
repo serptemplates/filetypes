@@ -1,9 +1,28 @@
 {
   "slug": "ggb",
   "extension": "ggb",
-  "name": "GGB File",
+  "name": "GeoGebra Worksheet",
   "summary": "Learn about .GGB files and view a list of programs that open them.",
   "developer": "Internatonal GeoGebra Institute",
+  "category": "other",
+  "mime": [
+    "application/vnd.geogebra.file"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "GeoGebra is a math education software suite used to teach math to students of all levels. The suite's programs, including GeoGebra Classic, GeoGebra Graphing Calculator, and other graphing applications, allow teachers and students to graph and analyze various mathematical data.",
+      "When a teacher or student saves a GeoGebra graph, that graph is saved as a GeoGebra worksheet, or GGB file. Teachers often create GGB files and send them to students, so the students can solve problems the teacher has included on the worksheet. The student then saves their own copy of the GGB file, which contains their answers.",
+      "NOTE: A GGB file may also be part of a dynamic GeoGebra worksheet. In this case, the file must be stored alongside an accompanying .HTML and .JAR file, which are also used to open the worksheet."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a GGB file in GeoGebra Classic (cross-platform), GeoGebra Graphing Calculator (cross-platform), and other GeoGebra apps. For example, to open a GGB file in the online version of GeoGebra Classic, open the program's menu, select the Open button, and then select the Folder icon. Then, navigate to and open your GGB file.",
+      "Advanced GeoGebra users who want to modify the XML that a GGB file uses to display a worksheet can do so by unzipping the GGB file and then opening and editing the archive's XML file in any text or source code editor. GeoGebra recommends that you create a backup of your GGB file before editing its component XML."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -28,28 +47,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open a GGB file in GeoGebra Classic (cross-platform), GeoGebra Graphing Calculator (cross-platform), and other GeoGebra apps. For example, to open a GGB file in the online version of GeoGebra Classic, open the program's menu, select the Open button, and then select the Folder icon. Then, navigate to and open your GGB file.",
-      "Advanced GeoGebra users who want to modify the XML that a GGB file uses to display a worksheet can do so by unzipping the GGB file and then opening and editing the archive's XML file in any text or source code editor. GeoGebra recommends that you create a backup of your GGB file before editing its component XML."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFC0lEQVR42sWXeUxVRxTGP/YtbCmBAKGAKIEWERNkKYgxkBAQBB62EPhDQltq2QwVtQhJee1jCa8hKBYhyBKCDZEAGkgNKcgu+2Jl0VRW2QRi1ApSoNAzt+1LnizCw+JJJtw3w73zuzPnfN9cqbW1NW0A56l9SU0dexMvqd2gFi9FABl08fUeTfxm/MgAXtCF2nsCeMEA1iS5c35+HjU1NXB0dISGhobEBBIBXLr0HXJz87Bvny0eP24Gj+eDzMz0vQHo6enBqVPBiIysg6KiKpaWFpCe7oLTpz3g7e0NIyMjKCsr/38APJ4fVFSccfRoiKivs7OYtuN7HD/+CfdbW1sbZmZmHJCKisq7ARgcHERpaSlKSsqgpmZHq5AqGrtzJwGvXzfD2toKs7Ozon5NTU0EBwfD1NRUcoDl5WXk5eXRW3Zyv1dXVwmkHJ6eiTh0yBu9vb+gvPxbtLc3wdDQEAsLCxgaGkJxcTGmp6chJSUFDw8Pru0YYGVlBRkZGejr64O0tDQcHBy4B42PjyMt7SeauBwuLi44ezYUNjY2YvcuLS2hqKgITU1N3LWlpSX8/f2hq6u7PQD2pllZWVzSycvLIyIiYsul3CxOnuShrq4e5uYuGBtrg62tNa3Oz5CVld0YgC3f9et5VF6/Q0FBDurq6ggLC6MHmO948t7eXpw48RkuXOiEnJwSvdRfyM/3Q1TUp/Dz81sPIBSm4sqVTNjZfUF7+Rz37uWAz4+lkovc8eQsIiO/wdOnBnB2jhL1PXpUg7Y2ARoaqsUBWLIZGR0gulbKch1u8MmTHlRUfIXu7laJAHJyclFQUI/AwHxR3927adDSGsHVq2niAI2NjQgPj0doaJXYQ/j8/URcB319/R0DLC4uwtj4ACVvOI4cCUR/fyUqK/lobq6jfmNxAJaphob7ce5cu9gK3Lr1OR486JRoBViMjo5CIEji9MPExATZ2RmwsrISjYvlQHKykMrrGo4diyCgP4g0h5YqlUTHV2IAFi0tLZyWGBgYIC4uTmxsXRWkpKRQ/RbDwsKCgBKgp6e3q8lZJCUlYWRkBF5eXnB3d98aoLCwkDK0gdNxNze3XU/OJmYArO6Tk5Ohqqq6NQBTL+bzrq6uZDy8XQNkZmZSFXXD3t4eQUFB68bXAfy3X4xUIBCQ5SruaMLa2lqy5ywoKSni4EEzTtiYH8TGxnI58FYAJsF8Pp8zEqb7np6enJ4zn39bKcbExKGsrJps+Tz5yJ/kkj/QfVpITBTAyclpw3s29IKuri7OB6ampnH/fj/Z6oeYmxvD4cOWtDpZJCRa6x7Eap4J2cWLPXQG+IDre/ZsDJcvO5J5DUNGRmb7ACyEQiFtQQrJ6a+0dFZYW1vF7dsxZMFylFSCdf/f3t5OiheO6Ghx1UxM/JhyqkIkPNsGKCkpQUJCPs6cKRf1vXo1R1Af0dmglTOpqakprk1OTmJgYIBMrIDUtIos9x/jGh5uRXV1NClpw6bbtilAR0cH+XcIOVmXqG98/DfKajf4+Gx8uJiZmUF9fTMpnTfl0hIePqyiss4jM3LeOQALa2t7SjxXSqBQyoFhSrBoygMD6Ohoc9Kto6PDHTCYWLEEZeLF+m/eLCYrV4CvL4/7u1VsCTAxMUEllUGOVkh5YEiHkhAEBARwZcVuY6ek3YbEHybvKhjAc+zdR+mb8ZIBCOki+j0BXJP69/M8nlog9u4jlX0QZ1MT/g3IAl3z0ZezXAAAAABJRU5ErkJggg==",
-      "alt": "GeoGebra"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHDklEQVR42r2XD1RUVR7Hv3fe/HszDAwCiiCZiS5Gtmws4spaM0kWpm5/tiQNXXXtsNufJVfLyhbMyk4eWUo56+YaCkcTXcukMP/sDhay4C4cV9JtCzOcBFn+zR+Y9978u3vfAytzlKFj3XPue++cd+/v97m/P/f+LsFg217dYGGv21i3DPbvo9UM9qOLZmXKbxD5UfZ+vSWKV9tGmHjEx5iQEGsGx3FQqVTXRGswGEQgEEBblwMXut3ocQtwCn7r4run1pCtVXWWKIPGNj5hBCYkjYJOp1MUXyvl34SQuyRJ+MzegTNtPXB6fFbyxr7awvHxkUVTUseB5/nvrDjQdRYqcwKIWjckiCAIOH7qLM5ccBWRzW8ftf08NcmSPDYBGo3mOymnUj+kj/dDd2MOCG8ecrzP50NLaxtqT9lrSOkeG51nnQyTyaT4ffhL98HTsB0QnOCn/wZEaxh6CosHt9uNSlszyOu7jtD52WmIjIwEIWSYyiV4av8M8V9VMN23Bppx0wYs4hdBOOaKK8ijlMLlcmHnkRMgxTsO0ryZtwwbgAq98NSUQqjfA4NlMQzWAgTOn4C/8wzUo34EbtQkQMVdFaDiUBPI+vJquvDO9GEBBHtb0V/9EnyfNYC3LmO+vwti41ug7i6ox9wMTUo2VNFjrww/CFB+sBFkXVkVXZyTETZAoLMFnndWwW8/DeO9heDGZcKzZwWTGoTe+ltoJmYPbb1BgLID/wR58S/76NK7M8MCoKIDnnefgXTiEIyzn4ZuysNwv7mAZYEA40ObwMUlh+e+QYCt7zeAFG3+K31k7rSwAPyf16Jv+yPgRk+AadleeJvfQd+upxDxwDpo03PDUv5NgDf214GsLq2k+b/ICgsgYG9EPwPQ3mSB/p4NkD7cCPHAH6GbNg/6nDWAWjssgM3vHgNZ9dpO+uh908OLAb8XQtUzCLY2gV+4DdT5JTzbloIG/OBzi6G5ae6wAErf/ghkRXE5ffz+28IOQuJsg/BWPsiELOisKyC99xy8dTvA3ZABQ14ZwEeFDbBx71GQglfLaMGD1iEBKOtBNpFjY5ytzYi1vQIpawlUiWkQSueAGMzQL60E9CZlvDxWnsOFkHkRoGS3DeSxdVvo8nkzQgLIAvz+ADySF/YL3ewgoUiMj0OMSQ96rgl+V5uS95Rlhv+ni6BNnakolnx+/PeLdnzR3oWkkdFInzQuJEBx5d9A8tf+ia6cP1MB+HZzeUQcrGtGi/0CRsdGY3LyGCQwgUZeB0o4yPuc3l4PpyjBm5TFls3OBfatYguR5zY0t+D05+dR8vsFl8tmAOt3HgL5deEmuirvrpAAHd1OVByoQ3uXEyNMBiRfF48AHSguRMLDABFRYgfsXgN6AgaMMgLJiSNxS8p1iDTyiowXt+7H6qVzQwK8UvEByK9Wl9BnF84KCRBgpvJ6/XD1C/iktR0S+06IMysmZA/2nyCoUsOkVSPKqAWv10LHvrVqtTL/bFsXNlUexoYnHwoJ8HJ5NcjDqzbQ5xfPDglwsXW7+rCtqlYx/fS0idBrtTDwAznvEST0M7P3sjJLz5RPHp8Ig17Hqp7/YffhBlZjqPFUXk5IgLVl74HkrnyVFi6Zc1UAh9uDw8dPK0EliF6lqpEDVPa1SkXg9QWUcWNHx2D29DT0Mf83fXIOWg0Ha3oKoiL4kABr3qwC+eWTL9MXlt1zVYCLaXWy5UslE7RqDm62cjlpoowGRZGZKYkyDRQjbZ0OcAwsMS76ivJkgD9s2Qdy7xNr6Uv59w8J8Om5DpRX12HMSDkbkgZcEARErw9dDjcEyYf0lLEYPyYO4TQZ4LnNe0HmPFpE1z+eGxKgy9HHqtdO6FityDP/Hjt5hgVWJ1PqhSj5mQvY9s+swbFC1mwyIjP1BszISLlEhkf0sZjQhARYuXEXyKz852lxwYLLAD5oOIWPW84jLtqE7IxJiDNHKDWjo09Ar6ufZYaouECn1cDEgtNk0LMs0DBY9Vcyapo+ZfcAJ3LvyAgJsLxkB8jMZc/S15bnwWw2X1KSF27Zj85eF6IjI5DM7gsywOiYSCWqLzY5EMngW37YO3qUjajX5VEgOWadW38yEZk3Xn9pPLEgdjgc+F1xBciMJU/bHnvgDsvUtFRmzq+Ft3e7cL6zF63tPcoqBGZ2N1u1z+9nKx8AlS1A6deC5eA0RxoQazbh+vhYBh7HviMuOw/8TEb9iVPYtOdwDbEsWll459TJRXlzboder7/mN6JvN3n1oiiiourvOFjfXERuzVtuiWb3wgdzLMielg4t22TkQ2nYJfoQTd49qbKzenGkrhG7D9Sgl90PFS1Z8wssMRFaWwq7HU358SRkpd/8vQAcazyJ4//+D9vW29Dd57Ue21lS85WWn+U+YcEPeD3/x67X5Tf+D5hbMzfPvhrgAAAAAElFTkSuQmCC",
-      "alt": "Java Platform SE"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "InstallAnywhere"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -74,24 +75,28 @@
     {
       "url": "https://fileinfo.com/svg/settings.svg",
       "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ggb_3339.png",
+      "alt": "Screenshot of a .ggb file in GeoGebra Classic 6",
+      "caption": "GGB file open in GeoGebra Classic 6"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.798Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ggb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.798Z"
+      "url": "https://fileinfo.com/extension/ggb",
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.798Z"
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.798Z"
+  "last_updated": "2025-11-01T22:32:42.153Z"
 }

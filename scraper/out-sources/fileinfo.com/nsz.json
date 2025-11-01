@@ -4,8 +4,20 @@
   "slug": "nsz",
   "extension": "nsz",
   "name": ".NSZ File Extension",
+  "type_name": "Compressed Nintendo Submission Package",
   "summary": "Learn about .NSZ files and view a list of programs that open them.",
   "developer": "nicoboss",
+  "more_information": {
+    "description": [
+      "An NSZ file is an archive used to store a compressed Nintendo Switch game package. It contains a compressed .NSP file, which itself stores multiple game files. NSZ files are used to install and play Nintendo Switch games using custom console firmware and emulators."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Custom Nintendo Switch operating systems, such as SX OS and Atmosphere, and Nintendo Switch emulators, such as yuzu and Ryujinx, allow players to play games saved as NSP files. However, NSP files can be quite large, so players sometimes have difficulty sharing them with one another.",
+      "To solve this issue, nicoboss and other members of the Nintendo Switch community developed the NSZ file format. Using the nsz compression program, Switch players can compress large NSP files into smaller NSZ archives. They can then share these archives with other players, who can decompress the archives using nsz and open or install the resulting NSP file. Some custom Switch firmware, such as Awoo-Installer and GoldBricks, allow players to install NSZ files without decompressing them first."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use nsz to decompress an NSZ archive into an NSP file. Then, you can install or open the resulting NSP file using the custom Nintendo Switch firmware or emulator of your choice. You can also install NSZ files directly using Awoo-Installer or GoldBricks."

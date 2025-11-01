@@ -4,8 +4,20 @@
   "slug": "pxi",
   "extension": "pxi",
   "name": ".PXI File Extension",
+  "type_name": "Pyrex Include File",
   "summary": "Learn about .PXI files and view a list of programs that open them.",
   "developer": "Greg Ewing",
+  "more_information": {
+    "description": [
+      "A PXI file is a source code file written in Pyrex, a programming language designed to help developers write Python modules that include C-level performance code. Developers primarily use PXI files to store chunks of code to be inserted into a .PYX file, allowing them to reuse code or break large modules into smaller, more manageable parts."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PXI files are similar to how the #include directive works in the C programming language. Additionally, PXI files are different from .PXD files, which are definition files that declare classes, functions, or variables for use in other Pyrex (or Cython) modules. While PXD files serve a similar purpose to .C header files, PXI files are more like inline text includes that are copied directly into a file at compile time.",
+      "NOTE: Pyrex is less commonly used today (not actively developed) but served as the basis for Cython, a more modern and widely adopted tool for writing Python-compatible C extensions."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open PXI files with any source code or text editor. Some options include Microsoft Notepad (Windows), Apple TextEdit, and Microsoft Visual Studio Code (cross-platform)."

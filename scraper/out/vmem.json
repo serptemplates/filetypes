@@ -1,7 +1,7 @@
 {
   "slug": "vmem",
   "extension": "vmem",
-  "name": ".VMEM",
+  "name": "VMware Virtual Machine Memory File",
   "summary": "Learn about .VMEM files and view a list of programs that open them.",
   "developer": "VMware",
   "programs": {
@@ -18,6 +18,19 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13074&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VMware Workstation and VMware Fusion are high-end virtualization applications that allow you to run guest operating systems, such as Windows or Linux, on your computer. When you install an operating system (OS) with Workstation or Fusion, the software creates a VM to store the OS. Then, when running the VM, the software automatically creates a VMEM file to store a backup of the memory allocated to the VM (its file size is the same as the memory allocated to the VM).",
+      "You can find the VMEM file in the VM file while the VM is running. For example, if you are a Fusion user running a VM, you can find the VMEM file in the .VMWAREVM file of the running VM. Fusion saves the VMWAREVM file in the following location by default:",
+      "Macintosh HD/​Users/​[username]/​Virtual Machines",
+      "You may also encounter the VMEM file when the VM is not running if the VM has previously crashed. Unless you want to examine the VMEM file, you can delete it."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A VMEM file stores backup memory for a virtual machine (VM) created by VMware Workstation or VMware Fusion while the VM is running. It is only present when the VM is running or if the VM crashes and is not meant to be opened by a user."
     ]
   },
   "how_to_open": {
@@ -55,8 +68,11 @@
     {
       "url": "https://fileinfo.com/extension/vmem",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.356Z"
+      "retrieved_at": "2025-11-01T22:32:42.849Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.356Z"
+  "last_updated": "2025-11-01T22:32:42.849Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,7 +1,7 @@
 {
   "slug": "mca",
   "extension": "mca",
-  "name": ".MCA",
+  "name": "Minecraft Anvil Region",
   "summary": "Learn about .MCA files and view a list of programs that open them.",
   "developer": "Mojang",
   "programs": {
@@ -18,6 +18,19 @@
         "name": "NBTExplorer",
         "url": "https://fileinfo.com/software/nbtexplorer/nbtexplorer"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Minecraft is a popular open-world exploration and construction game. The game's Java Edition allows players to examine, modify, and replace game files, including MCA files.",
+      "MCA files are stored in a world's region directories. Typically, each world contains three region directories: one each for the world's Nether, End, and Overworld. Each region directory uses its own set of MCA files, whose filenames include the coordinates at which the region is placed (e.g. r.8.20.mca).",
+      "Just as in the MCR format, regions are divided into chunks. In the MCA format, these chunks consist of 16x16x16 groups of terrain blocks. The MCA format improved on the MCR format by including increased build height (256 or 384 blocks depending on version, compared to MCR's 128), support for more block types, and more efficient file compression. The MCA format also includes more features Minecraft modders can use to modify regions.",
+      "NOTE: Players often refer to the MCA format as the Anvil region format. Minecraft's developers arbitrarily assigned this name to the format."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MCA file is a region of a Minecraft world. It contains a portion of the world's terrain chunks, which must be combined with other MCA files to comprise a world. The MCA format replaced Minecraft's previous .MCR region format."
     ]
   },
   "how_to_open": {
@@ -56,8 +69,11 @@
     {
       "url": "https://fileinfo.com/extension/mca",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.172Z"
+      "retrieved_at": "2025-11-01T22:32:42.608Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.172Z"
+  "last_updated": "2025-11-01T22:32:42.608Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

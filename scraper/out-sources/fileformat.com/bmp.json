@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/image/bmp/index.html",
   "slug": "bmp",
   "extension": "bmp",
-  "name": "BMP File",
-  "source": "fileformat.com"
+  "name": "What is a BMP file?",
+  "summary": "What's on this Page",
+  "category": "image",
+  "category_slug": "image",
+  "technical_info": {
+    "content": [
+      "Device Independent Bitmaps act as an aid to exchanging bitmaps between devices and applications. Due to the continuous evolution of this file format, the information contained in the headers can be different as per the version of Bitmap. A single bitmap file consists of fixed as well as variable-size structures in a specific sequence.\n\nStructures in a Bitmap file are arranged in the following order:\n\nStructureOptionalSizePurposeFile HeaderNo14To store general information about the bitmap image fileDIB HeaderNoFixed-SizeTo store detailed information about the bitmap image and define the pixel formatExtra Bit MasksYes12 or 16 bytesTo define the pixel formatColour PaletteSemi-optionalVariable-sizeTo define colours used by the bitmap image dataGap1YesVariable-sizeStructure alignmentPixel ArrayNoVariable-sizePixel format is defined by the DIB header or Extra bit masks.Gap2YesVariable-sizeStructure alignmentICC Color profileYesVariable-sizeTo define the colour profile for colour management\n\nWhen a bitmap image is loaded into memory, it becomes a DIB structure, used by Windows via its GDI API. The File header is not part of this data structure. The color can also consist of 16-bit entries that constitute indexes to the curently referenced palette instead of explicit RGB color definitions. Lets have a look at some of these in detail, especially the headers."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Files having extension .BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format. This independency serves the purpose of opening the file on multiple platforms such as Microsoft Windows and Mac. The BMP file format can store data as two-dimensional digital images in both monochrome as well as color format with various colour depths."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

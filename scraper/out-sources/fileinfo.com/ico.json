@@ -7,6 +7,17 @@
   "type_name": "Icon File",
   "summary": "Learn about .ICO files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An ICO file contains an icon, which is typically used to represent a Windows program, file, or folder. It stores one or more images in various sizes so they can be appropriately scaled depending on their use. ICO files are similar to .CUR files, which are also used in Windows, and .ICNS files, which are used in macOS."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "All icons for executable files in Windows are saved in the ICO format. Windows ICO files typically store images ranging from 16x16 to 256x256 pixels. Older ICO files only include images up to 48x48 (the dimensions Windows previously recommended). However, most newer icons store images up to 256x256 to accommodate screens with higher DPI.",
+      "Each image in an ICO file with less than 32 bits of color depth stores two bitmaps: 1) the AND bitmap - the image mask (which determines what part of the icon is transparent) and 2) the XOR bitmap - contains the icon which is mapped onto the image mask. Images with 32 bits of color are 24-bit images with 8-bit channels for alpha compositing purposes."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open ICO files with various applications in Windows, macOS, Linux, Android, and iOS.",

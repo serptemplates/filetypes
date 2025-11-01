@@ -1,7 +1,7 @@
 {
   "slug": "xmp",
   "extension": "xmp",
-  "name": ".XMP",
+  "name": "Extensible Metadata Platform File",
   "summary": "Learn about .XMP files and view a list of programs that open them.",
   "developer": "Adobe Systems",
   "programs": {
@@ -26,6 +26,19 @@
         "name": "XMind",
         "url": "https://fileinfo.com/software/xmind/xmind"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "XMP (Extensible Metadata Platform) files are saved in a standard plain text format that can be searched by XMP-compatible applications. The format was developed by Adobe as a means to standardize metadata across multiple file types, such as images, databases, and web documents. While XMP data is supported by several third-party applications, it is primarily used by Adobe software to store metadata for camera raw files.",
+      "In Photoshop, the XMP file is automatically generated when you open a camera raw file, choose the settings in the intermediary camera raw processing screen, and click OK. If you do not want the hassle of an extra file for each of your raw files you can save them in the .DNG format. This format embeds the XMP metadata in the file itself, eliminating the need for an accompanying XMP file.",
+      "If you come across an XMP file on your computer, there is most likely a corresponding camera raw file, such as an NEF or CR2 file, located in the same location. XMP files are not intended to be opened manually. Instead, they are referenced by the application used to open the corresponding camera raw file. However, you can open an XMP file in a text editor to view the metadata.",
+      "NOTE: If you delete the XMP file, you will lose all edits to the corresponding camera raw file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An XMP file is a metadata file used by Adobe programs such as Photoshop and Bridge. It contains the edits made to a camera raw file, such as a .CR2 or .NEF file, and is automatically generated and saved in the same directory as the corresponding camera raw file. XMP files include various properties of an image file, such as a description, title, keywords, author, copyright, brightness, exposure, contrast, crop angle, shadow, saturation, sharpness, tint, and temperature."
     ]
   },
   "images": [
@@ -63,8 +76,11 @@
     {
       "url": "https://fileinfo.com/extension/xmp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.390Z"
+      "retrieved_at": "2025-11-01T22:32:42.899Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.390Z"
+  "last_updated": "2025-11-01T22:32:42.899Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -4,8 +4,21 @@
   "slug": "f4f",
   "extension": "f4f",
   "name": ".F4F File Extension",
+  "type_name": "Flash Video Fragment",
   "summary": "Learn about .F4F files and view a list of programs that open them.",
   "developer": "Adobe Systems",
+  "more_information": {
+    "description": [
+      "An F4F file is a portion of a Flash Video (.FLV) file, created by Adobe Media Server. Adobe Media Server breaks FLV files into sets of F4F files before sending them to client devices. This allows users to stream video content more efficiently."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Adobe Media Server is a platform that content publishers can use to host and distribute streaming video. These videos are stored on Media Server in the FLV format, but often delivered to end users in the form of several F4F files.",
+      "Sending videos as a set of smaller F4F files, rather than one large FLV file, allows client devices to download, process, and play those videos more quickly. Users' streaming media players (typically Adobe Flash Player) automatically stitch F4F files together into a single, seamless video during the playback process.",
+      "NOTE: The PHP script AdobeHDS can be used to join F4F fragments into FLV files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use K-S-V Scripts AdobeHDS, a PHP script, to join a set of F4F files together into a single FLV file. Then, you can play the resulting FLV file in VideoLAN VLC media player or another media player that supports the FLV format."

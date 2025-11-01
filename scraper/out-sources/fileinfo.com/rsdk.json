@@ -4,8 +4,21 @@
   "slug": "rsdk",
   "extension": "rsdk",
   "name": ".RSDK File Extension",
+  "type_name": "Retro SDK Archive",
   "summary": "Learn about .RSDK files and view a list of programs that open them.",
   "developer": "SEGA",
+  "more_information": {
+    "description": [
+      "An RSDK file is a game asset archive used by titles developed with the Retro Engine, such as Sonic CD, Sonic Mania, and Penny’s Big Breakaway. It contains most of a game’s resources, including sprites, audio, 3D models, configuration data, level layouts, and scenario files (often stored as .BIN files). The Retro SDK (RSDK) format allows developers to bundle large amounts of data into a single, structured archive, simplifying asset management and game deployment."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Christian Whitehead initially created the Retro Engine, and SEGA later acquired it to use it in official remakes of classic Sonic the Hedgehog titles. Whitehead designed the engine to replicate the appearance of 2D retro games while supporting modern features and hardware. Additionally, Whitehead also developed the RSDK format to be flexible and efficient in handling complex game data across different platforms and game versions.",
+      "RSDK files are typically ZIP-compressed, with the structure and contents varying depending on the version of the Retro Engine the game uses. For example, Sonic CD uses an early version of the format (RSDKv1), while Sonic Mania uses RSDKv5, and newer games like Penny’s Big Breakaway use RSDKv6.",
+      "Most players never interact with RSDK files directly. However, modders may extract and modify content from RSDK archives to create new levels, reskin characters, or change game music and sound effects, extending the life of Retro Engine games within the fan community."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "RSDK files are not meant to be opened. Instead, the game packaged with the RSDK file automatically references it to load the game content it stores for gameplay purposes.",

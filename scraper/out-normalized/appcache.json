@@ -1,9 +1,48 @@
 {
   "slug": "appcache",
   "extension": "appcache",
-  "name": "APPCACHE File",
+  "name": "HTML5 Cache Manifest File",
   "summary": "Learn about .APPCACHE files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
+  "mime": [
+    "text/cache-manifest"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "A simple APPCACHE manifest file looks as follow.\n\nCACHE MANIFEST index.html stylesheet.css images/logo.png scripts/main.js http://cdn.example.com/scripts/main.js\n\nThis is a simplest example and there can be more complex structures present as well.",
+      "APPCACHE files are created to allow web applications to run without an Internet connection, reduce the server load, and hasten webpage load time.",
+      "The APPCACHE file consists of four optional sections:",
+      "CACHE - Lists all resources that need to be downloaded and locally stored.",
+      "NETWORK - Lists all URLs that are loaded via Internet and won't be cached.",
+      "FALLBACK - Lists replacements for network URLs that are used if the web browser is offline.",
+      "SETTINGS - Determines settings for application cache behavior."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -44,25 +83,24 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "url": "https://docs.fileformat.com/web/appcache/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     },
     {
-      "url": "https://fileinfo.com/extension/appcache",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "url": "https://fileinfo.com/extension/appcache",
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.763Z"
+  "last_updated": "2025-11-01T22:32:42.125Z"
 }

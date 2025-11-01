@@ -4,8 +4,21 @@
   "slug": "pkgundef",
   "extension": "pkgundef",
   "name": ".PKGUNDEF File Extension",
+  "type_name": "Visual Studio Shell File",
   "summary": "Learn about .PKGUNDEF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "File created by Microsoft Visual Studio, a Windows system SDK; contains metadata, much like the .PKGDEF file, but is used to exclude certain registry entries from an isolated shell application; can list multiple registries to exclude."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When the isolated shell application is run a registry key is created for the application. The registry's appearances and behavior can be modified by PKGDEF files. The PKGUNDEF files are used to remove Visual Studio shell components from the application by removing specified keys and entries.",
+      "To remove a command function in the isolated shell application, you would uncomment the line (example) [$RootKey$Packages{8D8529D3-625D-4496-8354-3DAD630ECC1B}] in the PKGUNDEF file.",
+      "The location of PKGUNDEF files in, say Visual Studio 11.0, is C:\\​Program Files (x86)\\​Microsoft Visual Studio\\​11.0\\​Common7\\​IDE\\​. It will have the same name as the corresponding PKGDEF file."
+    ]
+  },
   "programs": {
     "windows": [
       {

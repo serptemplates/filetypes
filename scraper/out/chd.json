@@ -1,7 +1,7 @@
 {
   "slug": "chd",
   "extension": "chd",
-  "name": ".CHD",
+  "name": "Compressed Hunks of Data File",
   "summary": "Learn about .CHD files and view a list of programs that open them.",
   "developer": "The MAME Team",
   "programs": {
@@ -18,6 +18,19 @@
         "name": "MAME OS X",
         "url": "https://fileinfo.com/software/dave_dribin/mame_os_x"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Gamers commonly use CHD files in retro gaming and emulation communities. By compressing data dumped from physical storage devices, such as arcade machines, game cartridges, and CD-ROMs, CHD files enable easier storage and sharing of games while maintaining full compatibility with emulation software.",
+      "The MAME Team initially developed the CHD format to store arcade game disk images for use with the Multiple Arcade Machine Emulator (MAME) software. These CHD files are used alongside their corresponding .ROM files to load and play arcade games. Some arcade CHD files are large because they contain the entire contents of a hard disk, so even compressed files may require significant storage space.",
+      "The CHD format was also used to store the contents of CD-ROM games for consoles such as the Sega Dreamcast and 3DO. In these cases, CHD files compress the data from .CUE and .BIN files dumped from the original discs.",
+      "NOTE: Users can create CHD files from dumped CUE and BIN files using CHDMAN, a command-line program developed by The MAME Team. This allows users to compress and manage game data efficiently while preserving compatibility with emulators."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A CHD file contains game data compressed using lossless Compressed Hunks of Data (CHD) compression and is supported by various emulators, including MAME and RetroArch. It stores a compressed version of an arcade machine's hard disk or game data dumped from a physical cartridge or CD-ROM."
     ]
   },
   "how_to_open": {
@@ -60,8 +73,11 @@
     {
       "url": "https://fileinfo.com/extension/chd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.002Z"
+      "retrieved_at": "2025-11-01T22:32:42.382Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.002Z"
+  "last_updated": "2025-11-01T22:32:42.382Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

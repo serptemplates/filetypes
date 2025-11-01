@@ -1,7 +1,7 @@
 {
   "slug": "gx",
   "extension": "gx",
-  "name": ".GX",
+  "name": "FlashForge 3D Printing File",
   "summary": "Learn about .GX files and view a list of programs that open them.",
   "developer": "FlashForge",
   "programs": {
@@ -22,6 +22,21 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "G-Code is a standard printing language that many 3D printers recognize and can use to print 3D models. However, GX files differ from typical .GCODE files in the following ways:",
+      "Each of a GX file's printing commands is numbered, using N#",
+      "GX files contain comments that start with ;",
+      "GX files contain a binary file header that describes a BMP preview image and model metadata",
+      "For this reason, non-FlashForge printers may not be able to print the model a GX file describes.",
+      "NOTE: GX files are similar to .G files. Both GX and G files are primarily created by FlashForge FlashPrint, the company's proprietary slicer program."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A GX file contains commands a FlashForge 3D printer uses to print a 3D model. These commands are written in plain text, using a variant of G-Code formatting. GX files also contain a preview image of the model they describe, saved in the .BMP format."
     ]
   },
   "how_to_open": {
@@ -60,8 +75,11 @@
     {
       "url": "https://fileinfo.com/extension/gx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.098Z"
+      "retrieved_at": "2025-11-01T22:32:42.514Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.098Z"
+  "last_updated": "2025-11-01T22:32:42.514Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

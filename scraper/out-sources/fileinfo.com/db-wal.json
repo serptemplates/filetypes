@@ -7,6 +7,17 @@
   "type_name": "SQLite Database Write-Ahead Log File",
   "summary": "Learn about .DB-WAL files and view a list of programs that open them.",
   "developer": "SQLite",
+  "more_information": {
+    "description": [
+      "Temporary database file created by SQLite 3.7.0 or later, a compact database program commonly embedded into mobile and desktop applications; saves write-ahead log (WAL) information for the database; automatically created and managed by the database."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Since SQLite is a popular embedded database technology, you may see DB-WAL, .DB-SHM, and other temporary database files with applications that use SQLite.",
+      "NOTE: In an SQLite write-ahead logging scheme, all database modifications are written to the DB-WAL file before being committed to the database. WAL was introduced as an alternative scheme to SQLite's default \"rollback journal\" policy."
+    ]
+  },
   "programs": {
     "windows": [
       {

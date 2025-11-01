@@ -7,6 +7,18 @@
   "type_name": "Mozilla Archive",
   "summary": "Learn about .MAR files and view a list of programs that open them.",
   "developer": "Mozilla",
+  "more_information": {
+    "description": [
+      "Application update file used by Mozilla programs such as Firefox, Thunderbird, and SeaMonkey; contains files that update the program to a new version; run by the Mozilla update program (update.exe in Windows), which is included with Mozilla software installations; stored in a custom file format, but Mozilla has made the specification publically available."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Mozilla programs automatically download and run MAR files, so the typical user will never manually open a MAR file. However, MAR files can be used to manually update a Mozilla program without opening it, which can be useful for system administrators.",
+      "The Mozilla development team generates nightly builds for their software products that include a MAR update package. Therefore, users can apply software updates with the latest release each day.",
+      "NOTE: MAR files created by the Mozilla team use the filename convention [program]-[version].complete.mar and [program]-[version].parial.mar for complete and partial software updates."
+    ]
+  },
   "programs": {
     "windows": [
       {

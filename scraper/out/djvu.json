@@ -1,9 +1,11 @@
 {
   "slug": "djvu",
   "extension": "djvu",
-  "name": "DJVU File",
+  "name": "DjVu Image",
   "summary": "Learn about .DJVU files and view a list of programs that open them.",
   "developer": "AT&T Labs",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -72,6 +74,18 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "DJVU (pronounced \"deja vu\") files are very similar to .PDF files. Using DJVU creators, users can scan high-resolution color pages of books, magazines, comics, catalogs, and other documents and publish them on the web. Many DJVU files contain ebooks, archived and published by book digitization projects.",
+      "AT&T Labs published the initial version of the DJVU format in 1998. The format was most recently revised in 2005. Before Adobe standardized the PDF format in 2008, DJVU was considered the superior document format. Notably, DJVU is open source, and it can compress documents to smaller sizes than .JPEG, .GIF, and .TIFF compression."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "DjVu, pronounced as “déjà vu”, is a graphics file format intended for scanned documents and books especially those which contain the combination of text, drawings, images and photographs. It was developed by AT&T Labs. It uses multiple techniques like image layer separation of text and background images, progressive loading, arithmetic coding and lossy compression for bitonal images. Since DJVU file can contain compressed yet high-quality colour images, photographs, text, and drawings and can be saved in less space therefore, it’s used on web as eBooks, manuals, newspapers, ancient documents, etc.\n\nDjVu can be graded superior alternative to PDF. File extensions associated to DjVu are .DJVU or .DJV. DjVu can achieve compression ratios about 5 – 10 better than existing methods such as JPEG & GIF for colour documents and 3 – 8 times better than TIFF in black and white documents. Scanned documents at 300 DPI with full colour upto 25 MB can be compressed down to 30 to 100 KB. Similarly Black and white documents can be compressed upto 5 to 30 KB. Average HTML page can be up to 50 KB, therefore, these documents can be uploaded on net without any problem.",
+      "A DJVU file is a scanned document saved in the DjVu image format. It may contain text, images, and/or drawings. The DjVu format was developed by AT&T and marketed by LizardTech."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a DJVU file in many document viewing applications. Some, like WinDjView, MacDJview, and DjVuLibre DjView, are designed specifically to open DJVU files. Others, like Calibre, Sumatra PDF, and KDE Okular, can open many types of documents."
@@ -92,38 +106,32 @@
       ".RTF - Rich Text Format"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ACDSee"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "IrfanView"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACcElEQVR42sXWT2jTUBwH8G9wl8HqToNkiLCt3WkHUzzooSIyBrKT4JbDhI0FBAW7gx7E+8YuImtre5DV4m1zBy/CGCLawigiyUA9mDTorYWB4OpVY97b0rUhf00Tf5emL+17n/f7vV9aRlEUPZVKQZZliOk64g6GR1HfUqbxvxAUQC6cEJJ+J1JYB+CEiDo7PQC7BYcwgU1ljI41m00Io5/wC1p0ACfE66PLaDQa9H4/M2EL8MpEP8vhCIgL4QrwQpAzMTv6KlqAE4KciUQiEToTDHkSCpNvOgNOfR9VORjdCFVVYSLc+j4KBCNJks7zPAhCnPxGezxOBD0Dm9IlEASJNFOKNROdQ2gi4i5HTxe8P7pFT3Y/EN1z+AaQCTakkdCZqOoz9F4+n8fz7AA441w1jXFPgBlhy7FSOYvFxQX6/UKhgNmhHB6uFf0DwiBqtRoqVz5jqTqFTEuE1lLp/bWDZcjli/4BQREk9avVQWQyGQiCADG5jQn2dC5y/WD+Pt5aSuH5KA6C2CC7dgFoLWAuWwwG8IPYSR+CzX3FvRvXAPYchIXbtgASpV3gWbkYDOCFaLfbSAz+AQaGgZ0nEF7WHQEkC6XsaSl8A+wQ141Jbhpty7IsuN8/gPoeVmrf6am3W9yM7lIEAlgR6wZCPhnnlz9CYMu2C1rfk9g7AG3NwAArYn//A5SlEbSMh43w6K6vxUmIu8dt+U8AEmb9e+LnF2gvplwBoc5Ad5C+FyuHGB8/j2QyCY7j6F80bmsV2pmntju3dkAogFusG6WYueC868gB5Mcnl3tMs2C368gBJFLz7+irun3V9XORAfzGXwWgJf8cdmxSAAAAAElFTkSuQmCC",
-      "alt": "WinDjView"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Pixillion Image Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "STDU Viewer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "DjVuLibre DjView"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Calibre"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -132,29 +140,53 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/djvu_1081.png",
+      "alt": "Screenshot of a .djvu file in WinDjView 2.1",
+      "caption": "DJVU file open in WinDjView 2.1"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.783Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/djvu/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.783Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
       "url": "https://fileinfo.com/extension/djvu",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.783Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.783Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.783Z"
+  "last_updated": "2025-11-01T22:32:42.141Z",
+  "mime": [
+    "image/vnd.djvu"
+  ],
+  "containers": []
 }

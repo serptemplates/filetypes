@@ -7,6 +7,17 @@
   "type_name": "Android Interface Definition Language File",
   "summary": "Learn about .AIDL files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "An AIDL file is used by Android app developers to enable communication between different apps. It contains Java source code that defines an interface, or contract, for how apps can communicate with each other."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "AIDL is an implementation of the Interprocess Communication (IPC) protocol provided by Android. It allows one application to communicate with another application running in a different process. The AIDL implementation was developed to alleviate the time burden on developers who would otherwise have to create code for marshaling objects across process boundaries.",
+      "After creating the AIDL file, you should save your AIDL file in the src/​ directory of your project. When you build your application, an \"IBinder\" interface file with a \".java\" extension will be generated in your project's gen/​ directory. The .JAVA file will bear the same filename as the AIDL file from which it was created."
+    ]
+  },
   "programs": {
     "windows": [
       {

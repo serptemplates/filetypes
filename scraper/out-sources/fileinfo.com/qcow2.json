@@ -4,8 +4,21 @@
   "slug": "qcow2",
   "extension": "qcow2",
   "name": ".QCOW2 File Extension",
+  "type_name": "QEMU Copy On Write Version 2 Disk Image",
   "summary": "Learn about .QCOW2 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A QCOW2 file is a disk image saved in the second version of the QEMU Copy On Write (QCOW2) format, which is used by QEMU virtualization software. It stores the hard drive contents of a QEMU virtual machine. QCOW2 files are similar to .QCOW files, which they replaced."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "QEMU is an open-source machine emulator and virtualizer that allows users to create and run virtual machines on Windows, Mac, and Linux. For example, a Windows user could use QEMU to create and run a Linux virtual machine.",
+      "When creating a virtual machine, users must mount a disk image that acts as the machine's virtual hard drive. QCOW2 files are disk images saved in the second version of QEMU's Copy on Write disk image format. The Copy on Write format allows for smaller file sizes because it delays storage allocation until disk space is actually needed. This differs from other formats, which often allocate fixed amounts of space.",
+      "NOTE: While the QCOW2 format replaced the original QCOW format, QEMU can still mount both QCOW2 and QCOW disk images."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can mount a QCOW2 disk image and use it to create a virtual machine in QEMU (cross-platform) and some other virtualization programs. 7-Zip and Smart Projects IsoBuster can also open and extract data from QCOW2 files in Windows.",

@@ -1,7 +1,7 @@
 {
   "slug": "msproj",
   "extension": "msproj",
-  "name": ".MSPROJ",
+  "name": "Message Studio Project",
   "summary": "Learn about .MSPROJ files and view a list of programs that open them.",
   "developer": "Nintendo",
   "programs": {
@@ -22,6 +22,17 @@
         "name": "Microsoft XML Notepad",
         "url": "https://fileinfo.com/software/microsoft/xml_notepad"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Nintendo's internal development team uses a program called Message Studio to generate in-game dialog and other text for Nintendo video games. As part of creating a game's text, developers assign each piece of text color, tags, attributes, and styles, so different pieces of text appear differently in the game. This text styling information is saved within an MSPROJ file, which contains styling information for every region's version of a game.",
+      "After Nintendo's translation team finishes translating a game for each region it will be released in, they create .MSBT files that include only a specific region's in-game text. At the same time, the team uses the game's MSPROJ file to create MSBP files, which contain only a specific region's text styling. The game then uses both its MSBT file and MSBP file to show the styled in-game text to users. MSPROJ files themselves are not actually included in Nintendo video games."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MSPROJ file is a Nintendo Message Studio project. It contains text styling information used alongside an .MSTXT file, as well as a reference to that file. MSPROJ files are used to create Message Studio MSBP files."
     ]
   },
   "how_to_open": {
@@ -59,8 +70,11 @@
     {
       "url": "https://fileinfo.com/extension/msproj",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.190Z"
+      "retrieved_at": "2025-11-01T22:32:42.629Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.190Z"
+  "last_updated": "2025-11-01T22:32:42.629Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

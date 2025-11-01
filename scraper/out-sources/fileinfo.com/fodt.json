@@ -4,8 +4,20 @@
   "slug": "fodt",
   "extension": "fodt",
   "name": ".FODT File Extension",
+  "type_name": "OpenDocument Flat XML Document",
   "summary": "Learn about .FODT files and view a list of programs that open them.",
   "developer": "Oracle",
+  "more_information": {
+    "description": [
+      "Text document saved in the OpenDocument format, but stored as a flat XML file instead of the .ZIP container used by .ODT files; allows the document information to be more human readable; also provides an easier alternative than the ODT format for generating documents automatically without needing a document editor."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "NOTE: You can manually generate an FODT file from an ODT file using the oowriter command line utility:",
+      "oowriter --convert-to fodt myDoc.odt"
+    ]
+  },
   "programs": {
     "windows": [
       {

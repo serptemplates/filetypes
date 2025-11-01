@@ -4,8 +4,21 @@
   "slug": "ovpn",
   "extension": "ovpn",
   "name": ".OVPN File Extension",
+  "type_name": "OpenVPN Configuration File",
   "summary": "Learn about .OVPN files and view a list of programs that open them.",
   "developer": "OpenVPN Technologies",
+  "more_information": {
+    "description": [
+      "An OVPN file is a configuration file used by the Windows version of OpenVPN Technologies OpenVPN, a virtual private network (VPN) application. It contains settings used to create a VPN connection with a remote computer. You can open an OVPN file using OpenVPN to start a VPN session."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "OpenVPN contains a set of sample configuration files, stored in its sample-config-files directory. In Windows, you can also access these sample configurations by opening the Windows Start menu and then selecting OpenVPN → OpenVPN Sample Configuration Files. The sample configuration files are named server.ovpn and client.ovpn.",
+      "You should store any custom OVPN files that you create in the Program Files/​OpenVPN/​config directory.",
+      "NOTE: On Unix systems, OVPN files use the .conf extension instead of the .ovpn extension."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "OVPN files are meant to be used to start VPN connections in OpenVPN. To use an OVPN file to start a VPN connection, right-click the file and select Start OpenVPN on this configuration file. That will create the VPN connection specified in your OVPN file.",

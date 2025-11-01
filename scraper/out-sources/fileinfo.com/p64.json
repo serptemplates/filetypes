@@ -4,8 +4,20 @@
   "slug": "p64",
   "extension": "p64",
   "name": ".P64 File Extension",
+  "type_name": "64-bit Windows IDA Plugin Module",
   "summary": "Learn about .P64 files and view a list of programs that open them.",
   "developer": "Hex-Rays",
+  "more_information": {
+    "description": [
+      "64-bit Windows plugin module used by IDA (The Interactive Disassembler), a utility used to disassemble executable files into low-level assembly language code; contains data written in C++ that extends the functionality of the IDA tool."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The P64 files are loadable libraries, similar to .DLL, that extends IDA's disassembling capabilities, such as the improvement of the analysis of Microsoft binaries with public debugging symbols. The P64 plugin should be placed in the /​plugin/​p64/​ directory.",
+      "NOTE: Each IDA plugin uses a different extension depending on its operating system type. The .PLW extension is used for Windows 32-bit, the .PLX extension is used by Linux 32-bit, and the .PLX64 extension is used by Linux 64-bit plugins."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,20 +1,55 @@
 {
   "slug": "tvdb",
   "extension": "tvdb",
-  "name": "TVDB File",
+  "name": "Apple TV Database",
   "summary": "Learn about .TVDB files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "database",
+  "category_slug": "database",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "You are most likely to encounter a TVDB file after right-clicking TV Library and selecting Show Package Contents. Each TV Library file contains the following three TVDB files:",
+      "Application.tvbd: Stores Apple TV preferences and settings",
+      "Library Preferences.tvdb: Stores library preferences and settings",
+      "Library.tvdb: Stores information about each video in your Apple TV library",
+      "By default, TV Library is stored at Macintosh HD/​Users/​YourUserName/​Movies/​TV on Macs."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "TVDB files are not meant to be opened directly, they are used by Apple TV and are in propriety format. It may affect Apple TV to load and display your library if you edit a TVDB file.\n\nPrograms that open TVDB file include\n\nApple TV included with OS (MAC, iOS)",
+      "TVDB files are not meant to be opened or edited. Editing a TVDB file may affect Apple TV's ability to load and show your library."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12357&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "TVDB files are not meant to be opened or edited. Editing a TVDB file may affect Apple TV's ability to load and show your library."
     ]
   },
   "images": [
@@ -45,15 +80,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "url": "https://docs.fileformat.com/database/tvdb/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.289Z"
     },
     {
-      "url": "https://fileinfo.com/extension/tvdb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "url": "https://fileinfo.com/extension/tvdb",
+      "retrieved_at": "2025-11-01T22:32:42.289Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.934Z"
+  "last_updated": "2025-11-01T22:32:42.289Z"
 }

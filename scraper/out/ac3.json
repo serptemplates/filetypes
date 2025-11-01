@@ -1,9 +1,11 @@
 {
   "slug": "ac3",
   "extension": "ac3",
-  "name": "AC3 File",
+  "name": "Audio Codec 3 File",
   "summary": "Learn about .AC3 files and view a list of programs that open them.",
   "developer": "Dolby Laboratories",
+  "category": "audio",
+  "category_slug": "audio",
   "programs": {
     "windows": [
       {
@@ -44,6 +46,19 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The Dolby Digital technology uses a very efficient way to compress the size of multichannel audio files without impairing the sound quality. This compression leads to smaller file size which makes it easy to distribute the sound files. Using Dolby Digital, it is possible to include a full 5.1-channel audio mix on a film print or a DVD.\n\nSpecifications\n\nThe Dolby Digital specifications are as follow.\n\nFieldSpecificationChannels1.0 to 5.1, discreteDVD data rate, 5.1-channel audio384 or 448 kbpsBlu-ray Disc data rate, 5.1-channel audio640 kbpsSupports Dolby metadataYesConnectionsS/PDIF, HDMI®, IEEE 1394Mixing/streaming capabilitiesYes\n\nMetaData Parameters\n\nMetadata ParamterInformationalControlDialogue levelYesChannel modeYesLFE channelYesBitstream modeYesYesLine mode compressionYesRF mode compressionYesRF overmodulation protectionYesCenter downmix levelYesSurround downmix levelYesDolby Surround modeYesAudio production informationYesMix levelYesRoom typeYesCopyright bitYesOriginal bitstreamYesPreferred stereo downmixYesLt/Rt Center downmix levelYesLt/Rt Surround downmix levelYesLo/Ro Center downmix levelYesLo/Ro Surround downmix levelYesDolby Digital Surround EX™ modeYesA/D converter typeYesDC filterYesLowpass filterYesLFE lowpass filterYesSurround 3 dB attenuationYesSurround phase shiftYes",
+      "Dolby created the Dolby Digital format for use in cinemas and home theaters with surround sound capabilities. Each of an AC3 file's primary audio channels is meant to be played on a different surround sound speaker (left, center, right, left surround, right surround). The sixth channel, known as the low-frequency effects (LFE) channel, contains intense low-frequency sounds meant to be played on a subwoofer.",
+      "However, televisions, PCs, and other devices can also play the audio an AC3 file contains. To do so, these devices downmix the AC3 file's audio, playing multiple channels worth of audio out the same output device. For example, a computer with only left and right speakers will play an AC3 file's center channel out both speakers, to approximate surround sound playback as best it can."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The .ac3 file extension signifies an Audio Codec 3 file, a proprietary audio format developed and introduced by Dolby Laboratories. Functioning as the technical container for Dolby Digital audio, this format is engineered to hold up to six discrete channels of audio, enabling rich 5.1 channel surround sound output. While originally developed for cinematic audio, the AC3 format has become a ubiquitous industry standard for a wide array of digital media applications. Today, its primary uses include encoding audio for HDTV broadcasts, DVD-Video, Blu-ray discs, and modern video game consoles. Due to its widespread adoption, numerous popular media players provide support for the format, including Apple QuickTime Player, Microsoft Windows Media Player, Winamp, and MPlayer, ensuring broad compatibility across different platforms.",
+      "An AC3 file is an audio file saved in the AC-3 (Dolby Digital) audio format. It can include up to six channels of audio (DD 5.1 surround sound with subwoofer output). Cinema movies, DVDs, Blu-rays, and video games often use audio saved as AC3 files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an AC3 file with many media players, including VideoLAN VLC media player (multiplatform), Microsoft Media Player (Windows), and Apple QuickTime Player (Mac)."
@@ -57,6 +72,28 @@
       ".FLAC - Free Lossless Audio Codec"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -90,15 +127,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/audio/ac3/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.911Z"
+      "retrieved_at": "2025-11-01T22:32:42.249Z"
     },
     {
       "url": "https://fileinfo.com/extension/ac3",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.911Z"
+      "retrieved_at": "2025-11-01T22:32:42.249Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.911Z"
+  "last_updated": "2025-11-01T22:32:42.249Z",
+  "containers": []
 }

@@ -7,6 +7,18 @@
   "type_name": "dBASE Multiple Index Backup File",
   "summary": "Learn about .MBK files and view a list of programs that open them.",
   "developer": "dBASE",
+  "more_information": {
+    "description": [
+      "An MBK file is a backup of a Multiple Index (.MDX file) automatically created by dBase, a database management program. Users can restore the indexes associated with the .DBF Database file with dBASE if the MDX file becomes corrupt."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "dBASE is a Windows program that provides various features for managing databases, building programs, and compiling them. The purpose of an MDX file is to store one or more indexes that dBASE references to load data stored in DBF databases more quickly. This is especially helpful when you are searching data stored in large databases.",
+      "If you modify the structure of a DBF database for which the MDX file stores indexes, dBASE creates the MBK file to preserve the indexes. For example, when you issue the MODIFY STRUCTURE command, dBASE automatically creates a backup of the MDX file that stores indexes for the DBF file you are modifying.",
+      "NOTE: dBASE stands for \"dataBased Intelligence.\""
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open MBK files. Instead, dBASE (Windows) automatically loads and references them."

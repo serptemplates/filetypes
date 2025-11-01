@@ -1,9 +1,48 @@
 {
   "slug": "ace",
   "extension": "ace",
-  "name": "ACE File",
+  "name": "WinAce Compressed Archive",
   "summary": "Learn about .ACE files and view a list of programs that open them.",
   "developer": "E-merge",
+  "category": "compression",
+  "category_slug": "compression",
+  "mime": [
+    "application/x-ace-compressed"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "WinAce was an archiving and encryption utility available for Windows. Primarily, it allowed users to package one or more files within compressed archives. By default, WinAce saved these archives in its proprietary ACE format.",
+      "E-merge discontinued WinAce in the 2000s. The last version of the program is WinAce 2.69, which was released in 2007."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "While E-merge WinAce is discontinued, it is still available online. Thus, you can still open ACE files (and extract the files they contain) with WinAce. Those who cannot or do not want to install WinAce can instead use PeaZip or The Unarchiver to open ACE files."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -36,23 +75,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "While E-merge WinAce is discontinued, it is still available online. Thus, you can still open ACE files (and extract the files they contain) with WinAce. Those who cannot or do not want to install WinAce can instead use PeaZip or The Unarchiver to open ACE files."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJy0lEQVR42sVXe3BU1Rn/nfva193NbjYPFgJJCIHwKBgEh0RbEZRSqVRqlaIzddqkWh91kGpVOmJb2yI+Ck6FljZpx9FhijCDHccHCoLgtgoUkTG8EwkkmwTy3N3s3d376ndPKOSF/3pn7uye+517vt/5fb/vO99l+JovZm/YXoesVdOV0b5yomlaEBa8CiV3ImDrzhMwJsJI98O2s4BFj00TeqIX599ZhrHBXLhEieawUdcLuzyAItQz+7ltUa31QnWvlkJo9S5u7PnDwv/jo9vm/wzLwvi/tAHxBqRSGlqOJZEhAFkCFrAEFBQpyMmRAHcp3n8gjLJgPjwSAYAwKoCQ1wf32Pwos1/aGetuPBXR0mmEf/UmN3b9/vZBU68AEJbsQMt7zWh3S5j5gwqEy4q5vePUaTS93Qy9KYmZ3xyPY/tvxKScAnglhQAMZ2BgPY/bg9yyyTFmP/BS4tSZM6ph6Chau4cbW566adD0ARZM20L+0kM40tSLW168AxJRj84LAwt6ZJh5Xry1ahcqFC8+3zcDZb4cuAQJwlVCIBE7UyaVJZl984/tj75sohhamL7+KDcef3Tm5YnWZQA2wlWNKH3+JgSSCaS1JH8nnUhDsnSoY0NIqAoaVx7Bp/8uRLHLCxeFaPQA0CUIuLF0ItjFqqWJ/3zZrDJyMmdtI9/QodVlI+ZbzMa4uTFc+8IC9HW0wjQM0iGD1pcGdJMEJyBvcgEOrTmA3R/nooyYcEMapKIR+kdVaXGSHZ49P3as+VzEtmx868k2btr3XGTESyY9uXdrACxDck/T7aa9ZS1HHAMTvDROGbDzFDyxtAPjRTcClAVXY4AJDBXFE9rYtsrro7Gms9WGaWBRbQ83vl8XHIJ0IBTAqmdU9HRm+DhrOKhsaLpFu2fwKQIcFv1BCTXP9iIiifCRezcTRhEiIBO4yMSSKNtRtaDu3JnGmh4tg4V3d3Hj7i3hkSGge9YiHeE549DV0wOZdpBNGtym2ALicR0l4QA6TlzEa3ttREQZfnIukt3FhvNAQD1ujJ9UVs8+WPCdmjMNx+sa4334qssB8OBjIYy5dhw6WjogUMiSrcQGAbGICdUnIOAOoDvWjfs2dWEsZUAOOXZUIBMB4jAWygM5KJ8+tZZVVT9eZ+i9NVk9OQjf8ADQM8qC7XcfRkFZCPHuHuhJCT3nU/CSEFP0RjBkI8cXRJLSc94mN7y+MOV6DgRR4RWTFyR2JRiK4oMkh+pZ7U93RyXFqDZ0DU/d+Tg3rt32whC8BlW7TFrDb2f/GsHCHCQIgC2ruHl1A0e7Z9UUdPXGMbkwF+2ZJJZuvQaFY6YhHJ4Ij8cLUSAAlHaCwC5nhUwA9KwYZfc/9EXM0DsilmViQ8393OHK+s1D6NK0LIpCR5ExNKypfBvJZB9yI/nYcyAGZgLzxocQa+lCruzDuvhSuOQQDh+ntMwvJxbcBIACQULlRenSzgRiRZTzYuxHNccT/YnTqvOw7sEBALUbNw+JQao/hRX3FNIZ0I/asWvRSeEK+lW4cihbsjq05k709GiIuFzYnFkDjz+ETRujCOeWQJRcEEWR38MPJp+/PMnuWtFgx/sanMTElpX3ccM9L/91KAOpFJ5/ZT4yehqlry7BhUQSF+ImEgmnGAEqpaCblFYgu9G9eg+8VOd/sqIOwWAxlVyFqHcACIMAUMLaJgLB6WC3LzucSCRPqI5x66MP8QgtX79pWAj6seOde+lXQ2PtFPTG0zjXb+GWTTtxLtaJg2vupuMVCLoVVG9vQq7fj6q5TxCAEsgESnDOBEcHvFIMRMGisyXgr0iyhYveiWUzbRHHsGPlKu7w+xv+OARAOp3EgU8e4f+33jEWF3vTiGVF/OKtJpw824a/1c5DiWxCo90+t/8inzel4mHKhHGkdpWHgQuQiUOLkSvSxq6b9/eoZaWqqaDjjYee5vDu2vg7J+8uscUoA+I4euRpPqxbMga6nkWrpeDR7ac5gH/8rAqqrkPxurDuEoCSiT+Ez0shkD1EP2UCb04GAWASidMbZbPnvFhH6qwxjAT+fO+L3PbAq48NQZrN9qHhiwFWdtZcj5Yzx9BINejJXa04396FZ747DQWKjRkVU/HgGwf5vHFFt0JVi7hzQfCQFuQhACTJT2Fg9WzmzGdqZDmnTku3XbUKGqT6Tz9dRzH18xhmutux/6O9mH/bndDSGUTf3IJFi2+F5fFB9tF50ZNAxdTb4aMQiCIVHJEEIsiUetLlNT3uCDHZV8tyq4rriO4aW7euCsCmQvTw4uX45Z3L4aF0sgUbHx/8L/Z99hkZLcy/bi6ur6yk/1QVqWA9+9o/8cq/tkDx0a4lqoAkQEF0fgdFQOaVsZ5Vrv1e1FuaW21pBrZO/IwblzfOdtrVKwCo7ieaOnHjrk/Q2K7xg8Gwr5RsqjFwE7vO0VQe8eB1O4DgnCJ4xwSIESpElB0iHU6CfAWB4JGQ+rI7ymZtXhYTFZk3AO+Vf86Ni0/NGoUFG+sPHsQZaskc1/2axdPKWdIksIpE/+meOS2E206KUMvz4BqjQiJhCi55BADnRVPXY2zSxoUJJA3VpjQ5eM1Jbpt7ZMpIAMTC6+da0X62m3oQG2miIEvNiUhZYhMAl+QUI2DyjDzccECDK6JCLvBBpDCItFsSAgEULpdiRmtAlZIssm6ObdJZ7hga5p7lxukHSoZ6H6gc2GOm0X6iizTASQBJgU4/kx/VfoVRZ2aj+Bt5uHZvL8QCDwS/AjlAzr3kXKYYDWaA3hUDpJHIb65JGHFDdZwcm3ee26Z9Mn5UIX4oGIid6oROYCRizEW7p42hN2UhR+YlA/kV+Zi9pwtSngOAct1DFZCaVcFpCoYBkALEQP7Pp8aooYg4bx+7oWUAwP4ijOiiyOmHkoG2pm5qBQkAKd7ZVJz6wlxaWHN6Q1q/dGoeKj/oghgm8fkp7rR7p20XiSH6EsLlWkyFThBZGwvcQX2ZxKodWe+Yc4H7WnaoYJRctLG7kKH5dK/TUZNzasnoIJKJYT1D3RENAhTjSTNCqHyrE1KQlK+S0UX0K1QFPQMNyRURMkfYUeabX1gniGKNlTGGOcRQFmj8Lh3ae5sTUGghkcZZejjVJeAUidFF47jTWZcGsOhkPyQfOXV2z5uRS7k66BLo68oyzXr+VJqlyFaXOR0ZFFPzliLH5ggCRGYuFFzv3qAKnqNEu0EFKEOzCghAn2nxuhCm1TJZIb3NznybGbaEkZezMtVm9LGweNhsyCY5ANcjqkhSdjvfmhjoP0eQkXk5aU5Y7vVNOGRMyDrNrjBsHn3DKRlb6KyQWk/s1LqVlaooXOWLhFoB56PRzPwpmfkf04jKT/zJueYAAAAASUVORK5CYII=",
-      "alt": "WinRAR"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEMklEQVR42rWXS2xUVRjHz30/BjrvaVdGU2B4dQgxMWp4tCmNCTuD2kBKo1GJPExUotGkKgthooC6UIOJuiBxpRlEu4POo1MUF0b7oE4H0eqmZLDtaBHLdOYc/+d2aGgZ6r3T6X9z7z3nzjm/+V73OwJZBp3vSX7MGNun6xppaKi/NXzv6lWNvy98V1gOgN70hSPFYrFd03QaDPoLgmBtsxMAY44BMiPZkCiKUfwj0S5AqUQJY5QIgkgkSSxvwwilNLNubfht2wA/9Q8KWKB7cjK/ky+6VMESyebtW1psAwx9f6Z9/IYZpZTZ3oQx/l8lQolMyqYvj1trXGzb0bJnUYDrPQ98I8kKZkRSIhqhTCH2t59dMkc3P/8Hazumqprp93szMzMz726KNOUqv71Af54NM5cnMI/eqSbomshwaW+3YZhRn8/7ryxLCgLwE1sAuVgjUw0X0V11VQNM0lWRDN37oKq7XgmFgo0YehkAJ20D8KtZ5yOyqlUFME7DkeFix4Bh6KlAwH9ckqSrAPjBEYAgimSFJ2hdq7IA61yr6SsigYDvENx5CgCvOQLgUjSdGCu9jgGsGCh29Gm6rsMFn6KOnADAr44BuIyVHoAYjgF+pp0vmKb5ldfraYcLRgHQVRUA0sFyhShJjgAytKNLUfXH6utDObjgWQB0VwcASYpqBaXd1LxWWh/JlHbHTdM4gTT8RZZlHQCfVw3ApSEtNaTn/+mfqUI6Jz7UPKY9uhsx8CJi4H4MdwHg6JIAuHiBsqrkXZQfny5eG7txpunA8BPnzicYYrAfX8NjiIFLALi0ZABRksliVTI7NDGDun02cnD48Xgi1WkYRtDv972E909XlYaVtFiVzA5OFHD5mgPAAlfRkAQQhF8C4E0AjNQEgMt0o0oqd1bJMsA7AHi9J56MIQ0/Qxo+AheMA+BIzQAEUUJqBu6okqPZ/EeFm/QQABjaslOapj3V0BCaxtQzAPiiZgBcvDjxInW7CjeL7rq2i3/ze7hgCmn4AdIwXU7DWE0BuCpUSbe+rc8CSCR7d8ECzwWDgVY8vgWAN2oOwLPBNb9KzgHAAhRB+BsAjiIG0gC4XHMArgVVcg6gJ546ABcUkYaHMRerWRpWEk9Lnp7o+9zG9gsWAILwiqap9yENzwGANyQDywbANVugRLfZ8l3ZAskkWrL3fT7PZrhgGgBRuwBXbk1RQbU6XFuukFUyZW7b1Nj63nX+nEimn1YUZT8aEg1N6fGmjRtO2wK4Xf3fxnblp12HKbNjFAGwMmGCNG/p2dhgs+06Yz/uaG0+aBtgYHBIglkT+fxfW/lJZ6niB5OtWx62fzDhGslevgct1Ye4td0c8kMIjmHWPX479/HC2GB4zepXHQFUq1Rv30lZVlrxOc4D4EkE4WhFqywXQDzRa6IQxTweT3T9unDqbu/9B3fzlTDtPQQYAAAAAElFTkSuQmCC",
-      "alt": "PowerArchiver"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -86,25 +112,24 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.760Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.122Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.760Z"
+      "url": "https://docs.fileformat.com/compression/ace/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.122Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ace",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.760Z"
+      "url": "https://fileinfo.com/extension/ace",
+      "retrieved_at": "2025-11-01T22:32:42.122Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.760Z"
+      "retrieved_at": "2025-11-01T22:32:42.122Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.760Z"
+  "last_updated": "2025-11-01T22:32:42.122Z"
 }

@@ -1,9 +1,23 @@
 {
   "slug": "mrm",
   "extension": "mrm",
-  "name": ".MRM",
+  "name": "MIUI Theme Metadata",
   "summary": "Learn about .MRM files and view a list of programs that open them.",
   "developer": "Xiaomi",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "MIUI is an Android variant used by Xiamoi smartphones. It allows users to install custom themes packaged as MTZ files. To install a theme, users often download that theme's MTZ file and then apply the theme via the MIUI Theme App (also known as Xiaomi Themes).",
+      "Each MTZ file is a .ZIP package that contains a collection of theme assets and other files, including one or more MRM files. The MRM file(s) are JSON files that describe the theme's contents, where those contents will be unpacked, and other information. Most notably, each MRM file contains a hash used as a checksum. Checking this hash against the MTZ file's hash allows MIUI to verify that the theme contains the correct contents."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an MRM file and view its contents with Microsoft Visual Studio Code or any other text editor. However, you should not edit an MRM file's contents, as doing so may cause MIUI to be unable to install or load the theme associated with your MRM file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,11 +28,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13454&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open an MRM file and view its contents with Microsoft Visual Studio Code or any other text editor. However, you should not edit an MRM file's contents, as doing so may cause MIUI to be unable to install or load the theme associated with your MRM file."
     ]
   },
   "images": [
@@ -54,10 +63,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/mrm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.188Z"
+      "url": "https://fileinfo.com/extension/mrm",
+      "retrieved_at": "2025-11-01T22:32:42.627Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.188Z"
+  "last_updated": "2025-11-01T22:32:42.627Z"
 }

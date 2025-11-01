@@ -4,8 +4,23 @@
   "slug": "ecsv",
   "extension": "ecsv",
   "name": ".ECSV File Extension",
+  "type_name": "Enhanced Character-Separated Values",
   "summary": "Learn about .ECSV files and view a list of programs that open them.",
   "developer": "Tom Aldcroft",
+  "more_information": {
+    "description": [
+      "An ECSV file is an enhanced character-separated values file. It contains the typical plain text dataset you would expect to find in a .CSV file, prepended by YAML (YAML Ain't Markup Language) formatting. The YAML formatting allows ECSV files to contain metadata that typical CSV files cannot."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Astronomer Tom Aldcroft developed the ECSV format to overcome limitations in the CSV format. For example, CSV datasets cannot contain metadata besides column names. ECSV files, on the other hand, can include metadata such as:",
+      "Numerical data type",
+      "Units",
+      "Text descriptions of column content",
+      "ECSV files store this metadata in YAML-formatted data structures, located at the beginning of the file. Each line in the YAML data structure's datatype section contains metadata for a corresponding CSV data column."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an ECSV file with Microsoft Visual Studio Code (multiplatform), GitHub Atom (multiplatform), or any other text or source code editor to view the data it contains.",

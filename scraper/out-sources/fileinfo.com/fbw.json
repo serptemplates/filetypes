@@ -4,8 +4,20 @@
   "slug": "fbw",
   "extension": "fbw",
   "name": ".FBW File Extension",
+  "type_name": "HP Recovery Manager Backup File",
   "summary": "Learn about .FBW files and view a list of programs that open them.",
   "developer": "Hewlett Packard",
+  "more_information": {
+    "description": [
+      "Backup file created by HP Recovery Manager, a program used to backup and restore files; contains an archive of compressed files; commonly used for backing up and restoring personal files to and from external media."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FBW files use the naming convention backupXXX.fbw, where XXX is an incremental counter (e.g., 001, 002, etc.). They are accompanied with an executable file typically named backup.001.exe that restores the backup files when opened.",
+      "NOTE: FBW files have been reported as having incorrect naming conventions for backup files numbered 10 and above in the backup sequence. Add an extra leading \"0\" in the sequence number to fix this problem (e.g., rename backup.010.fbw to backup.0010.fbw)."
+    ]
+  },
   "programs": {
     "windows": [
       {

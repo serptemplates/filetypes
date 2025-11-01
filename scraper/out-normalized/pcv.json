@@ -1,9 +1,27 @@
 {
   "slug": "pcv",
   "extension": "pcv",
-  "name": ".PCV",
+  "name": "Picocrypt Encrypted File",
   "summary": "Learn about .PCV files and view a list of programs that open them.",
   "developer": "Evan Su",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Picocrypt is a multiplatform encryption tool used to secure files. To encrypt a file or folder, users drag and drop it into Picocrypt, enter the password they want to use to encrypt it, and select Encrypt. Picocrypt then encrypts the file or folder using XChaCha20 encryption and saves the result in a PCV file.",
+      "If a user drags a folder into Picocrypt, all that folder's files will be compressed, encrypted, and saved in a .zip.pcv file. When the user decrypts this file, Picocrypt will produce a .ZIP archive, which much be decompressed to view the original files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Picocrypt (multiplatform) to decrypt a PCV file. To do so:",
+      "Open Picocrypt and drag your PCV file to the application.",
+      "In the Password: field, enter the password used to encrypt the file.",
+      "Click Decrypt.",
+      "Picocrypt will then create a decrypted copy of your PCV file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,15 +32,6 @@
         "name": "Corel WinZip",
         "url": "https://fileinfo.com/software/corel/winzip"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can use Picocrypt (multiplatform) to decrypt a PCV file. To do so:",
-      "Open Picocrypt and drag your PCV file to the application.",
-      "In the Password: field, enter the password used to encrypt the file.",
-      "Click Decrypt.",
-      "Picocrypt will then create a decrypted copy of your PCV file."
     ]
   },
   "images": [
@@ -58,10 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/pcv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.235Z"
+      "url": "https://fileinfo.com/extension/pcv",
+      "retrieved_at": "2025-11-01T22:32:42.683Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.235Z"
+  "last_updated": "2025-11-01T22:32:42.683Z"
 }

@@ -7,6 +7,17 @@
   "type_name": "S/MIME Email Message",
   "summary": "Learn about .P7M files and view a list of programs that open them.",
   "developer": "RSA Data Security",
+  "more_information": {
+    "description": [
+      "A P7M file is an S/MIME encrypted or signed email message. Most commonly, P7M files appear in web-based email clients, when they attempt to show an S/MIME encrypted message. Instead of showing the encrypted message, these programs show an empty message with a P7M attachment."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Secure/Multipurpose Internet Mail Extensions (S/MIME) is an email encryption and digital signature standard. It is used to encrypt sensitive messages and verify senders' identities. For example, businesses might use S/MIME encryption to protect confidential medical or financial information sent via email.",
+      "To use S/MIME, you must install an S/MIME certificate and link it with your email client, such as Microsoft Outlook or Apple Mail. If your email client is not linked to a valid S/MIME certificate, messages encrypted or signed using S/MIME will contain a P7M file. Most often, this file is named smime.p7m."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open P7M files in Cryptigo p7mViewer (Windows). If your P7M file contains an email that was only signed using S/MIME, you can open the file without a private key. If your P7M file contains an email encrypted using S/MIME, you need the private key used to encrypt the file."

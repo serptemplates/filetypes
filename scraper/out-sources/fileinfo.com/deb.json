@@ -7,6 +7,17 @@
   "type_name": "Debian Software Package",
   "summary": "Learn about .DEB files and view a list of programs that open them.",
   "developer": "Debian Project",
+  "more_information": {
+    "description": [
+      "A DEB file is a software package used by the Debian Linux distribution and its variants, such as Ubuntu. DEB files are used primarily to install or update Unix applications. Each DEB file is a standard Unix archive that contains two .TAR archives: one for installer control information and another for installable data."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Debian, Ubuntu, and other supported Linux distribution users install and manage DEB files using either the Debian package management system (dpkg) or APT package management software. Users can also decompress DEB files to view their contents before installation. The TAR archives that DEB files contain are commonly compressed using bzip or gzip compression.",
+      "Some Debian packages are available as .UDEB files, which are also known as udebs or \"micro debs.\" UDEB files are structured similarly to DEB files, but they contain only the essential files a program needs to function."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can install the software stored in a DEB file in a supported Linux distribution, such as Debian or Ubuntu, using the dpkg command. For example, to install an example.deb file, enter dpkg -i /path/to/example.deb on the Linux command line.",

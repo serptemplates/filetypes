@@ -4,8 +4,19 @@
   "slug": "pyc",
   "extension": "pyc",
   "name": ".PYC File Extension",
+  "type_name": "Python Compiled File",
   "summary": "Learn about .PYC files and view a list of programs that open them.",
   "developer": "Python Software Foundation",
+  "more_information": {
+    "description": [
+      "A PYC file is a compiled version of a Python script (.PY file). When Python code is executed, the interpreter compiles the script into bytecode and then saves it as a PYC file. PYC files allow Python to run the program more efficiently since the code doesn’t need to be recompiled each time it is executed."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Python typically automatically generates a PYC file when you run a Python script, then stores it in a __pycache__ folder. The PYC file allows the Python interpreter to skip the compilation process on subsequent runs, improving performance, especially for larger applications."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open or modify PYC files. Instead, Python references the files internally to decrease program execution time."

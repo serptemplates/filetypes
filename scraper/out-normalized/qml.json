@@ -1,9 +1,18 @@
 {
   "slug": "qml",
   "extension": "qml",
-  "name": ".QML",
+  "name": "Qt Modeling Language File",
   "summary": "Learn about .QML files and view a list of programs that open them.",
   "developer": "Qt Group",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "QML files start with an import statement since they must import at least one imported library. Below is an example QML source code snippet:",
+      "Rectangle { width: 120; height: 160; resources: [ Component { id: contactDelegate Text { text: modelData.firstName + \" \" + modelData.lastName } } ] ListView { anchors.fill: parent model: contactModel delegate: contactDelegate } }"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -44,10 +53,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/qml",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.264Z"
+      "url": "https://fileinfo.com/extension/qml",
+      "retrieved_at": "2025-11-01T22:32:42.720Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.264Z"
+  "last_updated": "2025-11-01T22:32:42.720Z"
 }

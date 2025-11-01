@@ -4,8 +4,25 @@
   "slug": "vbproj",
   "extension": "vbproj",
   "name": ".VBPROJ File Extension",
+  "type_name": "Visual Studio Visual Basic.NET Project",
   "summary": "Learn about .VBPROJ files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A VBPROJ file is a Visual Basic.NET project created in Microsoft Visual Studio. It is an XML file that defines the project's content, platform requirements, versioning information, and web server or database server settings. Developers compile VBPROJ files using MSBuild (the Microsoft Build Engine)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When a developer begins developing a new program in Microsoft Visual Studio, they first create a project file. The project file contains all the information MSBuild needs to compile the developer's program. Visual Studio allows developers to create many different types of projects, each of which is saved in its own type of project file. Visual Basic.NET projects are saved as VBPROJ files.",
+      "VBPROJ files are XML-formatted files that contain elements defined by MSBuild's XML schema. These elements tell MSBuild what items to build and how to build them. Some of the elements VBPROJ files contain include:",
+      "<Project>: Used to identify the project file's XML schema and specify entry points for the build process.",
+      "<PropertyGroup>: Used to define build configuration properties.",
+      "<ItemGroup>: Used to add inputs, such as source code files, into the build system.",
+      "<Target>: Used to specify and execute build operations.",
+      "To build a Visual Basic.NET application developed in Visual Studio, a developer invokes MSBuild.exe from the Windows command-line interface along with the name of their VBPROJ file. For example, to build a project named MyProject.vbproj, a developer would enter the command MSBuild.exe MyProject.vbproj in the command prompt, along with any other appropriate command-line options."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "VBPROJ files are meant to be opened and edited in Microsoft Visual Studio (Windows, Mac) as part of Visual Studio projects. However, because VBPROJ files are XML files, you can open and edit them in any text or source code editor."

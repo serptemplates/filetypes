@@ -4,8 +4,19 @@
   "slug": "ftpquota",
   "extension": "ftpquota",
   "name": ".FTPQUOTA File Extension",
+  "type_name": "Ftpquota File",
   "summary": "Learn about .FTPQUOTA files and view a list of programs that open them.",
   "developer": "ProFTPD",
+  "more_information": {
+    "description": [
+      "Configuration file used by ftpquota, a ProFTPD (Professional FTP Daemon) add-on that moderates the number of active FTP file transfers for a user account on a remote server; saved in a plain text format and stores the number of allowed file transfers; used by the server add-on (or module) called mod_quotatab, which is not installed by default with ProFTPD."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FTPQUOTA files are often created by cPanel open source Web hosting software, which includes ProFTPD and the mod_quotatab add-on. When creating a user account, cPanel generates a ~/​public_ftp/​ directory that contains the file .ftpquota. This configuration file is used by the FTP software to moderate uploads and downloads."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,7 +1,7 @@
 {
   "slug": "gdi",
   "extension": "gdi",
-  "name": ".GDI",
+  "name": "Dreamcast Gigabyte Disc Image",
   "summary": "Learn about .GDI files and view a list of programs that open them.",
   "developer": "Sega",
   "programs": {
@@ -10,6 +10,19 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=9041&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Gamers and preservationists may use GDI files to play or archive Dreamcast titles. When a Dreamcast emulator loads a GDI file, it reads the file's track list and then loads the corresponding BIN and RAW files to run the game. This format is generally preferred for emulation because it preserves the disc's original layout and data structure.",
+      "An example GDI file might look like this:",
+      "3 1 0 4 2352 track01.bin 0 2 45000 0 2352 track02.raw 0 3 45150 4 2352 track03.bin 0",
+      "This example shows a three-track disc where each line tells the emulator which file to load, what track type it is, and where it begins on the disc."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A GDI file is a plain-text descriptor file used by Sega Dreamcast emulators, such as Redream and Flycast. It lists the contents and layout of a Dreamcast GD-ROM disc, including the order of tracks and the location of the data stored in accompanying .BIN and .RAW files. Together, the GDI file and its referenced files form a complete copy of the original game disc."
     ]
   },
   "how_to_open": {
@@ -47,8 +60,11 @@
     {
       "url": "https://fileinfo.com/extension/gdi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.084Z"
+      "retrieved_at": "2025-11-01T22:32:42.496Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.084Z"
+  "last_updated": "2025-11-01T22:32:42.496Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

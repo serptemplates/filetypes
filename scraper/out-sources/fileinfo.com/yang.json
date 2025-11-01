@@ -7,6 +7,17 @@
   "type_name": "YANG Module",
   "summary": "Learn about .YANG files and view a list of programs that open them.",
   "developer": "Internet Engineering Task Force",
+  "more_information": {
+    "description": [
+      "A YANG file is a data model written in the Yet Another Next Generation (YANG) data modeling language. It contains network element configuration data or state data structured using an XML tree format. YANG files are used to define how data is sent over network management protocols, such as Network Configuration Protocol (NETCONF) and RESTCONF."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "NETCONF is a network management protocol that was developed by the Internet Engineering Task Force (IETF). The IETF published NETCONF's initial specifications in 2006. After developing NETCONF, the IETF determined it needed a data modeling language that could be used to define data models manipulated by NETCONF. Thus, the IETF created the YANG data modeling language.",
+      "Data models written using YANG are saved as YANG files. Each YANG data model declares a namespace and a prefix before importing the YANG library module (ietf-yang-types). It then defines the data types, containers, lists, and leafs (items) that the data model includes."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a YANG file in any text or source code editor, such as Microsoft Visual Studio Code (cross-platform). However, it is best to open YANG files in dedicated YANG module editors, such as MG-SOFT Visual YANG Designer (cross-platform). YANG module editors include helpful features that make editing YANG files easier."

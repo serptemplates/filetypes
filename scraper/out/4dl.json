@@ -1,9 +1,11 @@
 {
   "slug": "4dl",
   "extension": "4dl",
-  "name": "4DL File",
+  "name": "4th Dimension Database Log File",
   "summary": "Learn about .4DL files and view a list of programs that open them.",
   "developer": "4D",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -12,6 +14,39 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Multiple 4DL files are often saved along with a 4DD file. For example, a database named \"db1.4dd\" may generate an initial log file named \"db1[0001-0000].4dl.\" If the database has bee saved 5 times, the program will generate a log file named \"db1[0005-0000].\" If the log file itself is then saved 3 times, it will be named \"db1[0005-0003].4dl.\""
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A 4DL log file is utilized to record modifications made to a 4D database (.4DD) file. This file is stored alongside the database file and shares a similar filename. Its purpose is to accurately track and maintain a comprehensive record of the updates implemented within the database. A 4DD file, as compared to the 4DL file, is mainly associated with the 4th Dimensions by the 4D Inc.",
+      "Log file that stores a record of changes to a 4D database (.4DD) file; saved along with the database file and uses a similar filename; designed to keep track the updates made to the database."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -40,15 +75,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/4dl/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.910Z"
+      "retrieved_at": "2025-11-01T22:32:42.248Z"
     },
     {
       "url": "https://fileinfo.com/extension/4dl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.910Z"
+      "retrieved_at": "2025-11-01T22:32:42.248Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.910Z"
+  "last_updated": "2025-11-01T22:32:42.248Z",
+  "containers": []
 }

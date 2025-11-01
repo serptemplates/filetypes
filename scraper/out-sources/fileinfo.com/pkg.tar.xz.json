@@ -4,8 +4,21 @@
   "slug": "pkg.tar.xz",
   "extension": "pkg.tar.xz",
   "name": ".PKG.TAR.XZ File Extension",
+  "type_name": "Arch Linux Software Package",
   "summary": "Learn about .PKG.TAR.XZ files and view a list of programs that open them.",
   "developer": "Arch Linux Team",
+  "more_information": {
+    "description": [
+      "A PKG.TAR.XZ file is a package file used by pacman, a package manager included with Arch Linux. It contains a software program and installation instructions pacman uses to install that program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Arch Linux is a Linux variant that was released in 2002. It includes a default package manager, named pacman, that users can use to create, install, and otherwise manage software packages. Prior to late December 2019, these packages were saved as PKG.TAR.XZ files. (They are now saved as PKG.TAR.ZST files.)",
+      "Each PKG.TAR.XZ file consists of a software package stored in a .TAR archive that has been compressed using .XZ compression. Compressing the package makes it easier to distribute via the Internet and other file-sharing methods.",
+      "After receiving a PKG.TAR.XZ file, Arch Linux users can use pacman to install the software package the file contains."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use pacman, Arch Linux's package manager, to install the program a PKG.TAR.XZ file contains. To do so, enter the following command in the Arch Linux shell:",

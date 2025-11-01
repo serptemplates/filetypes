@@ -1,9 +1,38 @@
 {
   "slug": "dsv",
   "extension": "dsv",
-  "name": ".DSV",
+  "name": "DeSmuME Saved Game",
   "summary": "Learn about .DSV files and view a list of programs that open them.",
   "developer": "DeSmuME",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "DeSmuMe is an open-source Nintendo DS emulator available for Windows, macOS, and Linux. It allows players to play DS games on their PCs.",
+      "In most cases, DeSmuME players save their game progress in .DST files. Players can conveniently create these save state files from DeSmuME's own menu at any point during gameplay. This allows players to save their progress at any time, not just at in-game save points.",
+      "However, DeSmuME players can also save their game progress in DSV files. Unlike DST files, DSV files store a player's progress only up to their last in-game save. Primarily, players save their progress as DSV files to make it easier to transfer that progress to another Nintendo DS emulator. The DSV format is nearly identical to the SAV format, which many other emulators use.",
+      "To save your game progress as a DSV file in DeSmuME, select File → Export ROM Save File.... Remember, your DSV file will contain only your progress up to your last in-game save."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a DSV file with DeSmuME. To do so:",
+      "Load the game ROM (likely an .NDS file) from which your DSV file was created.",
+      "From DeSmuME's menu, select File → Import ROM Save File....",
+      "Navigate to and open your DSV file."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use the online DeSmuME Save Converter to convert DSV files to the .SAV format, for use with other Nintendo DS emulators.",
+      "If you don't want to use the online DeSmuME Save Converter, you can manually convert a DSV file to a SAV file by:",
+      "Opening the DSV file in a text editor.",
+      "Deleting the file's DeSmuME-specific footer (using the instructions specified at the end of the file).",
+      "Renaming the file to use the .sav extension.",
+      "Then, you can use your new SAV file with any Nintendo DS emulator that supports the SAV format."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -38,24 +67,6 @@
         "name": "LibreOffice Calc",
         "url": "https://fileinfo.com/software/libreoffice/libreoffice"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a DSV file with DeSmuME. To do so:",
-      "Load the game ROM (likely an .NDS file) from which your DSV file was created.",
-      "From DeSmuME's menu, select File → Import ROM Save File....",
-      "Navigate to and open your DSV file."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "You can use the online DeSmuME Save Converter to convert DSV files to the .SAV format, for use with other Nintendo DS emulators.",
-      "If you don't want to use the online DeSmuME Save Converter, you can manually convert a DSV file to a SAV file by:",
-      "Opening the DSV file in a text editor.",
-      "Deleting the file's DeSmuME-specific footer (using the instructions specified at the end of the file).",
-      "Renaming the file to use the .sav extension.",
-      "Then, you can use your new SAV file with any Nintendo DS emulator that supports the SAV format."
     ]
   },
   "images": [
@@ -96,10 +107,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/dsv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.037Z"
+      "url": "https://fileinfo.com/extension/dsv",
+      "retrieved_at": "2025-11-01T22:32:42.431Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.037Z"
+  "last_updated": "2025-11-01T22:32:42.431Z"
 }

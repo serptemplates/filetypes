@@ -4,8 +4,19 @@
   "slug": "drpm",
   "extension": "drpm",
   "name": ".DRPM File Extension",
+  "type_name": "Delta RPM File",
   "summary": "Learn about .DRPM files and view a list of programs that open them.",
   "developer": "The Fedora Project",
+  "more_information": {
+    "description": [
+      "File used by Linux operating systems for installing software; similar to an .RPM file, but is significantly smaller in file size because it only includes the files required since a prior RPM package was installed."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Delta RPMs are used by software managers such as Fedora's Presto plugin for yum. When this plugin downloads a DRPM file, it uses existing RPM package information on the system as well as the DRPM file to reconstruct a full RPM. By using this method, files already on the local system do not have to be redownloaded."
+    ]
+  },
   "programs": {
     "windows": [
       {

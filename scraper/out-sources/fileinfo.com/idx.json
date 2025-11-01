@@ -4,8 +4,20 @@
   "slug": "idx",
   "extension": "idx",
   "name": ".IDX File Extension",
+  "type_name": "VobSub Subtitles Index File",
   "summary": "Learn about .IDX files and view a list of programs that open them.",
   "developer": "The VobSub Team",
+  "more_information": {
+    "description": [
+      "An IDX file is a subtitles index file created and used by VobSub, a program that allows users to extract subtitles from DVDs. It contains a list of plain text settings and timestamps used to show the subtitles that a .SUB (VobSub Subtitles) file contains. IDX files are always paired with accompanying SUB files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VobSub is a free program that allows users to extract and play the subtitles stored on DVDs. When VobSub extracts subtitles from a DVD, it creates two subtitles files: a SUB file and an IDX file. The SUB file contains images that are shown as subtitle text. The IDX file contains metadata that tells a media player what color the subtitle text should appear in, where the subtitles should appear on-screen, and when and in what order to show the images the SUB file contains. Subtitle settings typically appear at the beginning of an IDX file, on lines that begin with #, and timestamps and image references appear later in the file, on lines that begin with timestamp:.",
+      "Using VobSub's DirectVobSub component or a media player that supports the SUB / IDX subtitle format, users can play back DVD-format subtitles alongside the movie they were meant to be used with. This can be useful if, for example, you acquire an .MP4 copy of a movie and want to watch the movie with subtitles. If you can locate a SUB and IDX file for the movie, you can load and play them as subtitles. SUB and IDX files can also be used to embed subtitles in .MKV files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "When paired with its accompanying SUB file, an IDX file can be used to play subtitles alongside a movie using DirectVobSub (Windows) or VideoLAN VLC media player (multiplatform).",

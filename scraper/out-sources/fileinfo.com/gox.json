@@ -4,8 +4,20 @@
   "slug": "gox",
   "extension": "gox",
   "name": ".GOX File Extension",
+  "type_name": "Go Export Data",
   "summary": "Learn about .GOX files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "A GOX file is an export data file created by gccgo, a compiler for the Go programming language. It contains a description of functions exported from a compiled .O file. Developers produce GOX files using the objcopy -j .go_export command."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Gccgo is part of the GNU Compiler Collection (GCC). Developers use gccgo to compile and build Go programs.",
+      "When a developer uses gccgo to compile a file that exports functions, they can choose to store a description of those exported functions in a GOX file. This file functions similarly to a C or C++ .H file. When a developer uses gccgo to compile a file that imports the exported functions, gccgo searches for an accompanying GOX file (or SO, A, or O file, if a GOX file isn't found) and uses it to import the functions correctly."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "GOX files are not meant to be opened. You can use GOX files to import functions while compiling programs with gccgo (multiplatform)."

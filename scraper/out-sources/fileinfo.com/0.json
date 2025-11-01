@@ -7,6 +7,17 @@
   "type_name": "Shared Library Link File",
   "summary": "Learn about .0 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A 0 file is a link file used by Linux operating systems. It contains a reference to a particular version of the library, which may have an extension such as \".0.0.0\" or \".0.0.1,\" depending on the library version. 0 files allow multiple versions of library files to exist while only one of them is referenced and used by the operating system's dynamic library loader."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The library linking convention helps users and the operating system avoid situations where many implementations of the same library interface are loaded at the same time.",
+      "NOTE: The \".0\" extension may also refer to an actual shared library and not a link file. Both shared libraries and shared library link files may also use extensions such as \".1,\" \".2,\" and \".3.\" For example, the following are valid extensions: .SO.0, \".so.1,\" \".so.2,\" and \".so.3.\""
+    ]
+  },
   "programs": {
     "windows": [
       {

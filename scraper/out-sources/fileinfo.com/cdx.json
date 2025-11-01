@@ -7,6 +7,19 @@
   "type_name": "Compound Index File",
   "summary": "Learn about .CDX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A CDX file contains an index of files or other data stored in a database. It is similar to a compact index (.IDX) file, but the leaf nodes at the lowest level of a compound index point to one of the tags in the index. CDX files were introduced in version 2 of Microsoft Visual FoxPro, which is a database management program for Windows."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The compound index is the native database index format used by Visual FoxPro. There are two types of CDX files:",
+      "Structural CDX file - Automatically opened and maintained by Visual FoxPro when the table is accessed and requires exclusive use of the table.",
+      "Non-structural CDX file - Not opened or maintained automatically by Visual FoxPro when the table is accessed and new records are added but does not require exclusive use of the table.",
+      "NOTE: Visual FoxPro was discontinued in 2007."
+    ]
+  },
   "programs": {
     "windows": [
       {

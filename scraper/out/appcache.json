@@ -1,9 +1,11 @@
 {
   "slug": "appcache",
   "extension": "appcache",
-  "name": "APPCACHE File",
+  "name": "HTML5 Cache Manifest File",
   "summary": "Learn about .APPCACHE files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -12,6 +14,45 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "A simple APPCACHE manifest file looks as follow.\n\nCACHE MANIFEST index.html stylesheet.css images/logo.png scripts/main.js http://cdn.example.com/scripts/main.js\n\nThis is a simplest example and there can be more complex structures present as well.",
+      "APPCACHE files are created to allow web applications to run without an Internet connection, reduce the server load, and hasten webpage load time.",
+      "The APPCACHE file consists of four optional sections:",
+      "CACHE - Lists all resources that need to be downloaded and locally stored.",
+      "NETWORK - Lists all URLs that are loaded via Internet and won't be cached.",
+      "FALLBACK - Lists replacements for network URLs that are used if the web browser is offline.",
+      "SETTINGS - Determines settings for application cache behavior."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An APPCACHE file is a text file that contains the list of resources to be cached by browsers for offline access to the web applications. This is useful when there is no internet connection. In such situation, the browser uses the offline cache resources to provide access to the web contents. APPCACHE file contains web resources such as images (for example PNG, WEBP, etc.), stylesheets ([CSS])(/web/css/), and script files (such as Javascript JS files).\n\nApplications that can open APPCACHE files include web browsers such as Google Chrome, Safari, and Firefox.",
+      "An APPCACHE file is a file used by web browsers to enable accessibility of web applications when there is no network connection. It contains copies of resources that make up web applications, such as images (.PNG, .GIF, etc.) and .CSS, and .JS files, and are identified by URLs."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
@@ -46,23 +87,26 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/appcache/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     },
     {
       "url": "https://fileinfo.com/extension/appcache",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.763Z"
+      "retrieved_at": "2025-11-01T22:32:42.125Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.763Z"
+  "last_updated": "2025-11-01T22:32:42.125Z",
+  "mime": [
+    "text/cache-manifest"
+  ],
+  "containers": []
 }

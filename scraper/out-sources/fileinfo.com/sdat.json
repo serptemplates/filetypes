@@ -4,8 +4,21 @@
   "slug": "sdat",
   "extension": "sdat",
   "name": ".SDAT File Extension",
+  "type_name": "Nintendo DS Sound Data File",
   "summary": "Learn about .SDAT files and view a list of programs that open them.",
   "developer": "Nintendo",
+  "more_information": {
+    "description": [
+      "Audio data file used by the Nintendo DS, a portable game system; contains sound files for the game, such as .SSEQ and .STRM audio files; used to store music and sounds that are played back during gameplay."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "SDAT files can be found within .NDS ROM files. Once the ROM file has been extracted, users can unpack the SDAT file to access the SSEQ files by running the following Sdattool command: sdattool -x sound_data.sdat.",
+      "SDAT files commonly use the filename Sound_Data.sdat.",
+      "NOTE: The Sdattool program is no longer available for download."
+    ]
+  },
   "programs": {
     "windows": [
       {

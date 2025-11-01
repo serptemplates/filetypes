@@ -1,7 +1,7 @@
 {
   "slug": "localized",
   "extension": "localized",
-  "name": ".LOCALIZED",
+  "name": "macOS Directory Localization File",
   "summary": "Learn about .LOCALIZED files and view a list of programs that open them.",
   "developer": "Apple",
   "programs": {
@@ -14,6 +14,18 @@
         "name": "Apple macOS",
         "url": "https://fileinfo.com/software/apple/os_x"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Localization is the process of translating text and audio content for use across multiple languages. Software programs, including the macOS operating system, use a variety of localization schemes to show content to users in their preferred language.",
+      "Part of macOS's system-level localization scheme depends on LOCALIZED files. These files are hidden, blank files that macOS references when showing a directory's name to users. If a directory contains a blank LOCALIZED file, macOS can translate that directory's name into any of its system languages.",
+      "Because LOCALIZED files are hidden files that do not appear even after a user chooses to show hidden files (using the Cmd + Shift + . shortcut) on their Mac, most users will never encounter a LOCALIZED file. The most likely way a user would encounter a LOCALIZED file is by viewing the file within a different operating system installed on their Mac. For example, Parallels Desktop users who have chosen to show hidden files in Windows may see a LOCALIZED file on their Windows desktop."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A LOCALIZED file is a localization file used by some macOS system directories. It contains no data. The presence of an empty LOCALIZED file allows macOS to show a system directory's name in a user's preferred language. Do not delete LOCALIZED files stored in macOS system directories."
     ]
   },
   "how_to_open": {
@@ -51,8 +63,11 @@
     {
       "url": "https://fileinfo.com/extension/localized",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.160Z"
+      "retrieved_at": "2025-11-01T22:32:42.592Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.160Z"
+  "last_updated": "2025-11-01T22:32:42.592Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

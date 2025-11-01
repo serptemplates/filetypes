@@ -7,6 +7,20 @@
   "type_name": "APT List File",
   "summary": "Learn about .LIST files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "FIle created by APT, an Advanced Package Tool used to manage applications; holds a list of package sources that software can be downloaded from; contains information detailing the archive type indicating whether it contains binary or source packages."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The LIST file typically follows this format: deb http://host/debian distribution section1 section2 section3 deb-src http://host/debian distribution section1 section2 section3",
+      "The first word of each line notifies the archive type:",
+      "deb means that it holds a binary package.",
+      "deb-src means that it holds a source package.",
+      "NOTE: The APT tool is found within the Debian operating system."
+    ]
+  },
   "programs": {
     "windows": [
       {

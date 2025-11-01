@@ -7,6 +7,17 @@
   "type_name": "MSIX Installer Package",
   "summary": "Learn about .MSIX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An MSIX file is a Zip-compressed package used to distribute and install an application in Windows 10 version 1809 and later. It contains the application's data files and .XML configuration files, which are required for installation. The MSIX file format is based on the .MSI, .APPX, ClickOnce, and App-V installation technologies."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MSIX is a universal package format that developers can use to distribute their programs to users through the Microsoft Store. Microsoft introduced the MSIX format in 2018, with the release of Windows 10 version 1809. The format supports classic Win32 apps and is designed to eventually replace AppX, MSI, and other Windows installer formats. MSIX offers enhanced security, streamlined app updates through Windows, and cleaner app uninstallation.",
+      "Several programs, including Microsoft Visual Studio, MSIX Packaging Tool, and Caphyon Advanced Installer, can create MSIX packages. If you have an existing app that you want to save in the MSIX format, you can use the MSIX Packaging Tool to quickly repackage your app."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "To open an MSIX file and begin installing the packaged app in Windows 10 or higher, double-click the file. App Installer opens the MSIX file and shows information about the app, such as its name, publisher, version, and requested capabilities. Follow the prompts in App Installer to complete the installation. MSIX packages are extracted to the ProgramFiles\\​WindowApps directory.",

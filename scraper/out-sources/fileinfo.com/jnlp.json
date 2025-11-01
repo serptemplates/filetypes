@@ -7,6 +7,17 @@
   "type_name": "Java Web Start File",
   "summary": "Learn about .JNLP files and view a list of programs that open them.",
   "developer": "Oracle",
+  "more_information": {
+    "description": [
+      "A JNLP file is a Java Web Start (JWS) file, saved in the Java Network Launching Protocol (JNLP) format. It contains XML information used to launch and manage a Java program (.JAR file) over a network. This information includes the remote address from which to download the program and the initial class to run."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "With previous versions of the Java Runtime Environment (JRE) installed, you could double-click a JNLP file to run the program to which it pointed. These versions of JRE included JWS technology.",
+      "However, with the release of Java Platform Standard Edition (JSE) 9, Oracle deprecated JWS. In JSE 11, Oracle removed JWS support altogether. Therefore, current versions of JRE do not support JNLP files. If you want to continue using JNLP files to launch and manage Java applications, you can do so using OpenWebStart, an open-source implementation of JWS, which can be used alongside current versions of Java."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open and edit a JNLP file in any text or source code editor, such as Microsoft Visual Studio Code or GitHub Atom. Source code editors contain syntax highlighting tools that make reading and editing JNLP files easier.",

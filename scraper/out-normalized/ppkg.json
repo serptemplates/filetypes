@@ -1,9 +1,31 @@
 {
   "slug": "ppkg",
   "extension": "ppkg",
-  "name": ".PPKG",
+  "name": "Windows Provisioning Package",
   "summary": "Learn about .PPKG files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Windows 10 and Windows 11 include the Windows Configuration Designer, a program that can be used to (among other things) create Windows provisioning packages. These packages contain configuration settings that can be applied to a Windows device during initial setup or from Windows Settings.",
+      "For example, a provisioning package may contain settings used to:",
+      "Assign a device name",
+      "Connect the device to a Wi-Fi network",
+      "Install applications",
+      "Customize a user's Start menu",
+      "Provisioning packages are saved as PPKG files. Typically, IT administrators create and distribute PPKG files. For example, your IT administrator may host a PPKG file online, which you can download and apply to your device, or they may provide you with a USB drive from which you can retrieve and apply the file."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can apply the settings a PPKG file contains by either:",
+      "Double-clicking the file",
+      "Opening Windows Settings and selecting Accounts → Access work or school → Add or remove a provisioning package → Add a package, then adding your PPKG file",
+      "Windows will then ask you to confirm you want to add the provisioning package your PPKG file contains. Note that you must have administrator-level privileges to use a PPKG file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,14 +36,6 @@
         "name": "Microsoft Windows",
         "url": "https://fileinfo.com/software/microsoft/windows"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can apply the settings a PPKG file contains by either:",
-      "Double-clicking the file",
-      "Opening Windows Settings and selecting Accounts → Access work or school → Add or remove a provisioning package → Add a package, then adding your PPKG file",
-      "Windows will then ask you to confirm you want to add the provisioning package your PPKG file contains. Note that you must have administrator-level privileges to use a PPKG file."
     ]
   },
   "images": [
@@ -52,10 +66,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ppkg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.248Z"
+      "url": "https://fileinfo.com/extension/ppkg",
+      "retrieved_at": "2025-11-01T22:32:42.699Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.248Z"
+  "last_updated": "2025-11-01T22:32:42.699Z"
 }

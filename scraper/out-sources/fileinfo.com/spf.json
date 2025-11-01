@@ -7,6 +7,17 @@
   "type_name": "ShadowProtect Full Backup File",
   "summary": "Learn about .SPF files and view a list of programs that open them.",
   "developer": "StorageCraft Technology",
+  "more_information": {
+    "description": [
+      "An SPF file is a full backup file created by StorageCraft ShadowProtect, a backup and disaster recovery program available for Windows. It contains a disk image that can be used to restore a system's data to a previous state. SPF files are often combined with .SPI files, which contain incremental ShadowProtect backups."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "StorageCraft ShadowProtect is a program system administrators can use to back up the current state and contents of a computer's hard drive, or hard disk. The first time an administrator backs up a drive's contents, ShadowProtect saves the backup in an SPF file.",
+      "By itself, an SPF file can be used to restore a system to its state at the time the SPF file was created. Administrators can also combine SPF files with SPI files, which contain further, incremental backup data, to restore a system to its state at a time after the SPF file was created. For example, if an administrator uses ShadowProtect to back up a drive on three separate occasions, ShadowProtect will create an SPF file and two SPI files. To restore the system to the state saved in the second SPI file, the administrator must mount their SPF file and both SPI files in ShadowProtect."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use the Explore Backup Wizard included in StorageCraft ShadowProtect (Windows) to mount the backup disk image an SPF file contains. For more information, including instructions on how to use SPI incremental backups alongside an SPF file, refer to StorageCraft's official support documentation."

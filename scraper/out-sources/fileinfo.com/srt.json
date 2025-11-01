@@ -7,6 +7,21 @@
   "type_name": "SubRip Subtitle File",
   "summary": "Learn about .SRT files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An SRT file contains subtitle text and timing information in the SubRip file format, one of the most common formats for providing subtitles for videos, including those online. Many media players, including VideoLAN VLC media player and MPlayer, and online video-streaming sites, such as YouTube, support SRT subtitles. Users can also open and edit SRT files with subtitle and text editors since they store plain text."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Subtitle text and timing information saved in the SubRip format appear similar to the following:",
+      "1 00:00:03,400 → 00:00:06,177 In this lesson, we're going to be talking about finance. And",
+      "2 00:00:06,177 → 00:00:10,009 one of the most important aspects of finance is interest.",
+      "Media players load each segment of an SRT file in order, showing each segment's text during the time that text is associated with. Timecodes in SRT files are written in the HH:MM:SS,MIL format. Thus, the first line of text shown above would appear on-screen at 3.004 seconds and disappear at 6.00177 seconds.",
+      "Display coordinates may appear after each segment's end timecode. If a segment contains no display coordinates, its text will appear in the bottom center of your display.",
+      "You can validate that the subtitles in an SRT file are formatted correctly by uploading the SRT file to Subtitle Validator online. To upload it, select the \"Choose File\" button and select the SRT file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open SRT files in several ways. The most common way is adding subtitles to videos in media players via SRT files. Examples of media players that support SRT files include:",

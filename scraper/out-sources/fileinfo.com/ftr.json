@@ -4,8 +4,24 @@
   "slug": "ftr",
   "extension": "ftr",
   "name": ".FTR File Extension",
+  "type_name": "IRIX File Type Rules File",
   "summary": "Learn about .FTR files and view a list of programs that open them.",
   "developer": "Silicon Graphics",
+  "more_information": {
+    "description": [
+      "An FTR file is a file type rules file used by the Silicon Graphics IRIX operating system. It contains a list of rules that describe how IRIX shows different file types, as well as what functions users can perform on those files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "IRIX is a discontinued operating system that was used on Silicon Graphics workstations and servers. Silicon Graphics released the first version of IRIX in 1988 and the last in 2006.",
+      "IRIX uses several types of system files, including FTR files, to determine how it handles different file types. Each FTR file can contain one or more file type rules, which:",
+      "Name a file type (the TYPE declaration)",
+      "Describe how IRIX should identify files of that type (the MATCH declaration)",
+      "Define what options users are given when interacting with a file of that type (e.g. the CMD OPEN declaration, which determines what happens when a user double-clicks a matching file)",
+      "Additional FTR settings allow users to describe the named file type (LEGEND) and specify what icon(s) it uses (ICON)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because FTR files are plain text files, you can open and edit them in any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac)."

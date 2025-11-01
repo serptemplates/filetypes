@@ -1,7 +1,7 @@
 {
   "slug": "vmss",
   "extension": "vmss",
-  "name": ".VMSS",
+  "name": "VMware Suspended State File",
   "summary": "Learn about .VMSS files and view a list of programs that open them.",
   "developer": "VMware",
   "programs": {
@@ -18,6 +18,20 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=6970&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VMware Fusion and VMware Workstation are operating system virtualization applications that enable you to run multiple VMs on a single machine. Suspending a VM allows you to stop a VM and deallocate it from using system resources. This is helpful because it allows you to switch between multiple VMs without overloading your system.",
+      "VMware virtualization software automatically creates and saves the VMSS file in the VM file when pausing the VM. For example, Fusion saves the VMSS file in the .VMWAREVM file, which you can find in the following location (Fusion saves it here by default):",
+      "Macintosh HD/​Users/​[username]/​Virtual Machines",
+      "When you resume a VM, the virtualization software deletes the VMSS file. Therefore, the VMSS file only exists while the VM is suspended.",
+      "NOTE: The suspended state of a VM differs from a snapshot (saved in .VMSN and .VMSD files). Snapshots saved as VMSN or VMSD files are explicit saves of a VM at a particular point in time."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A VMSS file saves the state of a virtual machine (VM) when it is in a suspended state, meaning that it has been stopped temporarily. VMware virtualization software creates a VMSS file automatically when a user suspends a VM, allowing them to stop and resume a VM."
     ]
   },
   "how_to_open": {
@@ -60,8 +74,11 @@
     {
       "url": "https://fileinfo.com/extension/vmss",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.358Z"
+      "retrieved_at": "2025-11-01T22:32:42.850Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.358Z"
+  "last_updated": "2025-11-01T22:32:42.850Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

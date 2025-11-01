@@ -1,9 +1,27 @@
 {
   "slug": "msix",
   "extension": "msix",
-  "name": "MSIX File",
+  "name": "MSIX Installer Package",
   "summary": "Learn about .MSIX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "mime": [
+    "application/msix"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "MSIX is a universal package format that developers can use to distribute their programs to users through the Microsoft Store. Microsoft introduced the MSIX format in 2018, with the release of Windows 10 version 1809. The format supports classic Win32 apps and is designed to eventually replace AppX, MSI, and other Windows installer formats. MSIX offers enhanced security, streamlined app updates through Windows, and cleaner app uninstallation.",
+      "Several programs, including Microsoft Visual Studio, MSIX Packaging Tool, and Caphyon Advanced Installer, can create MSIX packages. If you have an existing app that you want to save in the MSIX format, you can use the MSIX Packaging Tool to quickly repackage your app."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To open an MSIX file and begin installing the packaged app in Windows 10 or higher, double-click the file. App Installer opens the MSIX file and shows information about the app, such as its name, publisher, version, and requested capabilities. Follow the prompts in App Installer to complete the installation. MSIX packages are extracted to the ProgramFiles\\​WindowApps directory.",
+      "If you want to examine an MSIX file's contents instead of installing the packaged app, you can extract the contents using a Zip decompression utility, such as Corel WinZip or RARLAB WinRAR. To extract the contents, change the .msix file extension to .zip, then extract the files using the Zip decompression program. Make sure to change the .zip file extension back to .msix before installing the app."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,12 +36,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11205&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "To open an MSIX file and begin installing the packaged app in Windows 10 or higher, double-click the file. App Installer opens the MSIX file and shows information about the app, such as its name, publisher, version, and requested capabilities. Follow the prompts in App Installer to complete the installation. MSIX packages are extracted to the ProgramFiles\\​WindowApps directory.",
-      "If you want to examine an MSIX file's contents instead of installing the packaged app, you can extract the contents using a Zip decompression utility, such as Corel WinZip or RARLAB WinRAR. To extract the contents, change the .msix file extension to .zip, then extract the files using the Zip decompression program. Make sure to change the .zip file extension back to .msix before installing the app."
     ]
   },
   "images": [
@@ -68,20 +80,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.834Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.184Z"
     },
     {
-      "url": "https://fileinfo.com/extension/msix",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.834Z"
+      "url": "https://fileinfo.com/extension/msix",
+      "retrieved_at": "2025-11-01T22:32:42.184Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.834Z"
+      "retrieved_at": "2025-11-01T22:32:42.184Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.834Z"
+  "last_updated": "2025-11-01T22:32:42.184Z"
 }

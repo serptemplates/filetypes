@@ -4,8 +4,20 @@
   "slug": "lrcat-data",
   "extension": "lrcat-data",
   "name": ".LRCAT-DATA File Extension",
+  "type_name": "Adobe Lightroom Classic Catalog Data",
   "summary": "Learn about .LRCAT-DATA files and view a list of programs that open them.",
   "developer": "Adobe Systems",
+  "more_information": {
+    "description": [
+      "An LRCAT-DATA file is an ancillary data file created by Adobe Lightroom Classic, the desktop-only version of Adobe Lightroom. It contains information linked to a corresponding Adobe Lightroom Classic Catalog (.LRCAT file). Lightroom Classic began creating LRCAT-DATA files in version 11."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "LRCAT-DATA files always use the same filename as their corresponding LRCAT file. So, an LRCAT file named LightroomCatalog.lrcat would be linked with an LRCAT-DATA file named LightroomCatalog.lrcat-data.",
+      "When you transfer or back up an LRCAT file that is linked to an LRCAT-DATA file, you must also transfer or back up the LRCAT-DATA file. Otherwise, Adobe Lightroom Classic will not be able to load your Lightroom Classic Catalog."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "LRCAT-DATA files are not meant to be opened by users. Lightroom Classic automatically loads the data from an LRCAT file's corresponding LRCAT-DATA file when a user opens the LRCAT file."

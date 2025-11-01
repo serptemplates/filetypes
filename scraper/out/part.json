@@ -1,9 +1,11 @@
 {
   "slug": "part",
   "extension": "part",
-  "name": "PART File",
+  "name": "Partially Downloaded File",
   "summary": "Learn about .PART files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -24,12 +26,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "When downloading a file with Firefox, the web browser creates a PART file in the \"Downloads\" folder on your computer. You may see the PART file if the file is currently downloading or if the download was interrupted before completion. A download interruption could be due to a lost Internet connection, the Firefox browser or computer crashing, or to you pausing the download.",
+      "As Firefox downloads the file, the program creates a PART file to store the data being downloaded. Firefox replaces the name of the file with a string of characters and appends the .part extension to the extension of the file. For example, the file example.mov would have the name ZT5KR1EL.mov.part when it is being downloaded. Once the download is complete, Firefox removes the .part extension and the file is ready to be used."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A part file or .part extension is a partially downloaded file. It is used when downloads are in progress or have been interrupted due to any issue, giving the download manager an opportunity to resume the download whenever possible. This means that the browser, such as Firefox or file transfer programs like eMule, eMule plus, FlashGet, etc. stores a portion of the file, called Part file, while the downloading is occurring on your device. This part file will show you if the download is in progress or has been interrupted before completion. Not only this but the PART file stores all the data till the download is completed which is why some of them can later be resumed if you want to start the download again.",
+      "A PART file is a partially downloaded file from the Internet used for downloads that are in progress or have been stopped. Some PART files can be resumed at a later time using the same program that started the download. PART files are typically used by Mozilla Firefox and several file transfer programs, such as Go!Zilla, eMule, and the discontinued eDonkey program."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You may be able to open interrupted Firefox download files even though they are incomplete. Simply delete the .part extension then attempt to open it with the appropriate program. Several audio and video file types, including .MP4, can still be played by a media player if they are not yet fully downloaded. However, these incomplete files will only contain portions of the file.",
       "If you are unable to open the file, go to the \"Downloads\" section in Firefox, select \"Show All Downloads,\" and click the \"Reload\" arrow icon next to the incomplete file to resume the download. If this option is unavailable for your download, you can delete the PART file and download the file again. If you cannot resume the download, delete the PART file and re-download the file again."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -63,15 +99,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/part/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.930Z"
+      "retrieved_at": "2025-11-01T22:32:42.281Z"
     },
     {
       "url": "https://fileinfo.com/extension/part",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.930Z"
+      "retrieved_at": "2025-11-01T22:32:42.281Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.930Z"
+  "last_updated": "2025-11-01T22:32:42.281Z",
+  "containers": []
 }

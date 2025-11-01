@@ -7,6 +7,19 @@
   "type_name": "Configuration File",
   "summary": "Learn about .CFG files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A CFG file is a generic preference file that stores settings and configuration information. It is used by various programs, which means different CFG files may store data in different formats. CFG files typically should not be opened manually but may be saved in a text format that can be viewed in a text editor."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Generic configuration files are often named \"config.cfg\". Text-based CFG files often contain one variable and value per line in the following format:",
+      "var1=low var2=med var3=high",
+      "To test if a program automatically generates a default CFG file, move the configuration file out of the default directory when the program is not running. Then open the program and check the directory to see if a new CFG file has been created. Also, a CFG file can sometimes be moved or deleted to revert to a program's default settings.",
+      "NOTE: Linux configuration files typically use the .CONF extension rather than CFG."
+    ]
+  },
   "programs": {
     "windows": [
       {

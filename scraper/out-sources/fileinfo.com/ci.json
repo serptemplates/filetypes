@@ -7,6 +7,17 @@
   "type_name": "Windows Content Indexer Catalog File",
   "summary": "Learn about .CI files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Operating system search file used by Windows 2000 and later; saves an index of search information that Windows uses to display results for file system searches; may be large in file size due to the amount of search information."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "CI files commonly be found in user or system directories within a folder called \\​catalog.wci\\​. They shouldn't be manually opened or edited, since they are system level files.",
+      "CI files are created by the Windows Search service (formerly Indexing Service), which is the program C:\\​Windows\\​System32\\​cisvc.exe. This service can be turned off using the Windows Features window, which can be located by typing \"Windows Search\" in the Windows Start menu search box. However, once turned off, Windows Search is no longer available in the Windows Explorer or from the Start menu."
+    ]
+  },
   "programs": {
     "windows": [
       {

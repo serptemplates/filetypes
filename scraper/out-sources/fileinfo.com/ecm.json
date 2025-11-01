@@ -4,8 +4,20 @@
   "slug": "ecm",
   "extension": "ecm",
   "name": ".ECM File Extension",
+  "type_name": "ECM Disc Image",
   "summary": "Learn about .ECM files and view a list of programs that open them.",
   "developer": "Neill Corlett",
+  "more_information": {
+    "description": [
+      "Disc image created in the Error Code Modeler (ECM) format; stores the disc image by removing redundant error correction codes and checksums; allows the CD image to be reduced in size for transmission over the Internet; often used for compressing game console disc images."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "ECM files are created from disc images such as .BIN, .CDI, .NRG, and .CCD files. Once encoded to the ECM format, the ECM file can then be compressed using .RAR compression or another compression algorithm. The resulting compressed size can be 15-20% smaller than the equivalent full disc compressed image.",
+      "To restore the original CD image from a compressed ECM file (e.g., image.nrg.ecm.rar), first decompress the file to a raw ECM file, and then restore the original CD image from the ECM file using the ECM software, which contains a decompression program called unecm.exe."
+    ]
+  },
   "programs": {
     "windows": [
       {

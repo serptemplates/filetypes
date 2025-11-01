@@ -4,8 +4,21 @@
   "slug": "rpkg",
   "extension": "rpkg",
   "name": ".RPKG File Extension",
+  "type_name": "Glacier 2 Engine Resource Package",
   "summary": "Learn about .RPKG files and view a list of programs that open them.",
   "developer": "IO Interactive",
+  "more_information": {
+    "description": [
+      "An RPKG file is a game archive used by various video games using IO Interactive’s Glacier 2 Engine, most notably the Hitman series. It contains assets, such as textures, 3-D models, sounds, maps, scripts, and dialogue, that the game loads while you play. The Resource Package (RPKG) format helps the engine organize content and speeds up loading times."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In the Hitman series (Hitman: Absolution, Hitman 2016, Hitman 2 2018, and Hitman 3), RPKG files also serve as patch files. When the game receives an update through Steam or another launcher, new or modified assets arrive in additional RPKG archives.",
+      "During startup, the engine merges these patch archives with the existing game data, so players see updated levels, textures, or voice lines without the need to overwrite the original files. For this reason, you should not move or delete any RPKG files in the game’s directory.",
+      "NOTE: Other Glacier-based titles, such as Kane & Lynch 2: Dog Days and the Freedom Fighters remaster, use the same RPKG format (or slight variations of it) to store their game content."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "RPKG files are not meant to be opened. Instead, the game the file is packaged with references the archive to load its content. However, modders may unpack RPKG archives with community tools, like the Glacier Modding RPKG Tool, to examine or change game assets."

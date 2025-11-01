@@ -7,6 +7,21 @@
   "type_name": "WhatsApp Encrypted Database File",
   "summary": "Learn about .CRYPT14 files and view a list of programs that open them.",
   "developer": "WhatsApp",
+  "more_information": {
+    "description": [
+      "A CRYPT14 file is an encrypted backup file created by the Android version of WhatsApp Messenger. It contains a record of the messages a user has sent and received through WhatsApp, encrypted using 256-bit AES encryption."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Periodically, WhatsApp backs up a user's messages in CRYPT14 files. These files are .DB database files that are encrypted and appended with the .crypt14 extension to create a .db.crypt14 file. Throughout WhatsApp's existence, the app has used different algorithms to encrypt users' messages and has appended backups with the .CRYPT12, .CRYPT10, .CRYPT8, and .CRYPT7 extensions, among others.",
+      "If you want to decrypt a CRYPT14 database and view the message history it contains, you must first locate your WhatsApp key file, which stores your CRYPT14 file's encryption key. Your key file is stored in the following location: /data/data/com.whatsapp/files/key.",
+      "Then, you must locate your CRYPT14 file. WhatsApp stores CRYPT14 files in the following directory: /sdcard/WhatsApp/Databases.",
+      "You may find multiple CRYPT14 database files in your Databases folder, with YYYY-MM-DD dates included in their filenames. WhatsApp creates new backup files periodically; the dates in these files' filenames represent when they were created.",
+      "If you need to free up space on your SD card, you can delete most of your dated CRYPT14 files without affecting WhatsApp or your message history. However, you should always keep the most recent one or two CRYPT14 files, in case you need to restore your message history.",
+      "NOTE: WhatsApp began saving message history backups as CRYPT14 files in version 2.21.8.17, which released in May 2021."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "After you retrieve both your WhatsApp encryption key and your CRYPT14 file, you can decrypt, view, and save your WhatsApp message history using WhatsApp Viewer (Windows), a free WhatsApp database decryption tool.",

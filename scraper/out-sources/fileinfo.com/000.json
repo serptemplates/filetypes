@@ -7,6 +7,20 @@
   "type_name": "Indexing Service Data File",
   "summary": "Learn about .000 files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An 000 file is a data file created by Indexing Service, a software component of the Windows operating system that creates a searchable file system index from files on the hard drive. The data stored in a 000 file helps Windows perform quick searches."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "000 files are saved with several other types of files that make up the search index. Other types may include .BK1, .BK2, .FID, .HSH, .PS1, and .PS2 files.",
+      "The Indexing Service search index is typically created in the following directory:",
+      "C:\\​System Volume Information\\​catalog.wci",
+      "The index may also be generated for external volumes connected to a Windows computer, such as USB flash drives.",
+      "If you have a slow CPU, you should consider disabling indexing or selectively disabling indexing on your computer. To do this, click Start or the search bar in Windows and type \"indexing\" in the search field. Then, click Indexing Options and remove locations in Windows that you no longer want to be indexed. This will increase the amount of time it takes Windows to search these locations but will also improve the performance of the CPU."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -4,8 +4,24 @@
   "slug": "odlgz",
   "extension": "odlgz",
   "name": ".ODLGZ File Extension",
+  "type_name": "Gzipped OneDrive Event Log",
   "summary": "Learn about .ODLGZ files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An ODLGZ file is a OneDrive event log (.ODL file) that has been compressed using GNU zip (gzip) compression. It contains a list of events that occurred while a user was using the desktop version of OneDrive. Microsoft can use the log an OLDGZ file contains to troubleshoot any synchronization issues that occur as a result of a user editing a file offline."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Individuals, organizations, and businesses use Microsoft OneDrive to host and share files. Primarily, users access OneDrive online in their web browser. However, users can also install a desktop version of OneDrive. In the desktop version of OneDrive, users can access and edit files offline.",
+      "The desktop versions of OneDrive store a record of users' actions in an ODL file. If the desktop version of OneDrive fails to sync an action to a user's OneDrive account, Microsoft can review the associated ODL file to help them troubleshoot the error.",
+      "When OneDrive creates a new ODL file, it compresses the previous ODL file into an ODLGZ file. This prevents ODL files from taking up too much space on a user's computer.",
+      "OneDrive stores ODLGZ files are stored in the following locations by default:",
+      "Windows: C:/​Users/​[USER]/​AppData/​Local/​Microsoft/​OneDrive/​logs",
+      "Mac: ~/​Users/​[USER]/​Library/​Logs/​OneDrive"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "While ODLGZ files are not meant to be opened, you can view the contents of your ODLGZ files using GitHub user ydkhatri's OneDrive Log ODL Reader (multiplatform)."

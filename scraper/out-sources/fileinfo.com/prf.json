@@ -7,6 +7,16 @@
   "type_name": "Outlook Profile File",
   "summary": "Learn about .PRF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A PRF file is a profile settings file used by Microsoft Outlook to configure a user's email environment. It contains information, such as mail account settings, signatures, references to mail folders, and other personal or system preferences. When Outlook imports a PRF file, it automatically applies the settings to the user's profile, allowing quick setup or reconfiguration of Outlook without requiring manual input."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "IT administrators often use PRF files to simplify the deployment of Outlook across multiple computers. Administrators may use tools from the Microsoft Office Resource Kit to create and customize PRF files that include specific server information, mailbox names, and account details. They can then distribute and install them to apply consistent Outlook configurations throughout an organization."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open PRF files with Microsoft Outlook by double-clicking them. If the file isn't associated with Outlook, you can manually import the PRF profile by using the command line. To do this, find the outlook.exe file, then use the /importprf switch followed by the path to your PRF file, for example, outlook.exe /importprf C:\\path\\to\\your.prf."

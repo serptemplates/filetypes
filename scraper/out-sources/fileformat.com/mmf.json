@@ -1,6 +1,47 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/mmf/index.html",
   "slug": "mmf",
   "extension": "mmf",
-  "name": "MMF File",
-  "source": "fileformat.com"
+  "name": "What is an MMF file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "MMF files are categorized into data sections. A prefixed structure around an 8-byte is used to describe each segment. The 4-byte label includes CNTI, OPDA, MSTR, MTR, and ATR. Data size plus 8 bytes is the chunk size; the whole file size is calculated by summing all chunk sizes. If a file has not been damaged, the summed file size should be the same as a primary header size."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The MMF file format, identified by the .mmf extension, is a versatile multimedia container historically used in mobile devices. Developed by Yamaha, MMF stands for Mobile Music File and is the file-level component of the broader SMAF (Synthetic-music Mobile Application Format) standard. These files were engineered to store a variety of content, including system ringtones, alert sounds, and could even package basic graphics and text for a synchronized display. A key technical feature is its support for three distinct instrument parameter types: FM synthesis for classic electronic sounds, PCM for sampled audio, and Stream PCM for longer audio clips. Categorized as data files, MMF files maintain broad compatibility; they can be copied to and from various mobile devices and are natively supported on the Windows system platform through applications like Microsoft Mail. This flexibility made them a foundational element in early mobile multimedia.\n\nMoreover, these files are much smaller in size compared to standard MIDI format files. WAV and MID files can be converted to MMF format which can be then shared and distributed as audio content. These files can be received via email directly to phones and PC."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "images": [
+    {
+      "url": "https://docs.fileformat.com/audio/mmf.png"
+    }
+  ]
 }

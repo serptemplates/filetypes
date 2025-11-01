@@ -4,8 +4,21 @@
   "slug": "winmd",
   "extension": "winmd",
   "name": ".WINMD File Extension",
+  "type_name": "Windows Metadata File",
   "summary": "Learn about .WINMD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A WINMD file is a Windows Metadata file. It contains metadata that defines a Windows Runtime (WinRT) API. WINMD files are saved in the Common Language Runtime (CLR) format, but they can contain different combinations of data than traditional CLR assemblies."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WinRT APIs provide access to various Windows Runtime Components. WINMD files are metadata files that accompany WinRT APIs. These files contain API definitions that allow Windows and other programs to access and use associated WinRT APIs correctly.",
+      "Third-party developers creating custom WinRT APIs must create WINMD files to accompany those APIs. In some cases, developers create WINMD files automatically, while building custom Windows Runtime Components with Microsoft Visual Studio. In other cases, developers manually create WINMD files, using the MIDLRT compiler.",
+      "NOTE: You can find several WINMD files in the C:/​Windows/​System32/​WinMetadata directory."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "WINMD files are not meant to be opened. For more information about the WINMD format, refer to Microsoft's official documentation."

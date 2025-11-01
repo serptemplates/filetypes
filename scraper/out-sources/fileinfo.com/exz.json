@@ -4,8 +4,20 @@
   "slug": "exz",
   "extension": "exz",
   "name": ".EXZ File Extension",
+  "type_name": "Zipped Executable File",
   "summary": "Learn about .EXZ files and view a list of programs that open them.",
   "developer": "Enderbyte Programs",
+  "more_information": {
+    "description": [
+      "An EXZ file is a zipped executable file created for use with EXZ, a Windows application launcher. It contains an executable program, such as an .EXE file, the program's assets, and an EXZMANIFEST file. The EXZMANIFEST file tells the EXZ launcher how to execute the program the EXZ file contains."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "To create an EXZ file, a developer must first package an EXE file (or other executable program file) and its assets in a folder. Then, they must create an EXZMANIFEST file in that folder. The EXZMANIFEST file describes, using JSON-formatted directives, how the EXZ launcher should execute the associated program.",
+      "After creating their EXZMANIFEST file, the developer zips the folder and renames the resulting .ZIP file to use the .exz extension. Then, the developer can use their EXZ file with the EXZ launcher."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can run the program an EXZ file contains with the EXZ application launcher (Windows). If you want to extract the constituent files an EXZ file contains, rename the file to use the .zip extension and open it as you would any ZIP file."

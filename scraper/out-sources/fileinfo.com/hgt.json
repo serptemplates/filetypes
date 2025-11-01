@@ -4,8 +4,21 @@
   "slug": "hgt",
   "extension": "hgt",
   "name": ".HGT File Extension",
+  "type_name": "SRTM Elevation Data File",
   "summary": "Learn about .HGT files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "GIS data file stored in the Shuttle Radar Topography Mission (SRTM) format; contains global elevation data captured during NASA space missions; may include up to a one arcsecond resolution; used for analyzing the earth's topography and for generating topographical images."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Some data in the original SRTM dataset is missing due to limits of the space missions. These areas are referred to as \"voids.\" Efforts have been made to fill in the missing gaps using interpolation methods. For example, the National Geospatial-Intelligence Agency (NGA) created the \"Version 2\" and \"Version 2.1\" datasets, which include modified data. Therefore, some downloaded HGT files may include interpolated data.",
+      "HGT files are named with longitude and latitude coordinates. For example, N00W177.hgt contains data for one degree of latitude (00-01 North) and one degree of longitude (177-178 West).",
+      "NOTE: The \"HGT\" extension is an abbreviation for \"height.\""
+    ]
+  },
   "programs": {
     "windows": [
       {

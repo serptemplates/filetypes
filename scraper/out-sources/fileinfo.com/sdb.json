@@ -4,8 +4,21 @@
   "slug": "sdb",
   "extension": "sdb",
   "name": ".SDB File Extension",
+  "type_name": "SAP2000 Model File",
   "summary": "Learn about .SDB files and view a list of programs that open them.",
   "developer": "Computers & Structures",
+  "more_information": {
+    "description": [
+      "An SDB file is a 3D model created with SAP2000, a structural analysis and design program. It contains structural model definitions, material and section properties, static and/or dynamic analysis parameters, and design data."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Computers & Structures, Inc. (CSI) develops SAP2000. Engineers may use SAP2000 to design various structures, including bridges, industrial complexes, public works facilities, transportation stations, and sports arenas.",
+      "SAP2000 saves SDB files in the C:\\​DATA\\​ directory by default. When saving an SDB file, SAP2000 automatically creates SBK binary backup files and $2K text backup files in the same directory as the SDB file. SAP2000 also saves temporary tables, viewpoints, and other related files in the same directory as the SDB file. Do not delete these files, as the SDB file may reference them.",
+      "NOTE: If your SDB file becomes corrupt, you can retrieve your model by importing the SBK binary or $2K backup file in SAP2000."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open SDB files with Computers & Structures SAP2000 in Windows. For example, to open an SDB file, select File → Open."

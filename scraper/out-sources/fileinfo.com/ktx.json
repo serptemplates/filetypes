@@ -7,6 +7,21 @@
   "type_name": "Khronos Texture",
   "summary": "Learn about .KTX files and view a list of programs that open them.",
   "developer": "Khronos Group",
+  "more_information": {
+    "description": [
+      "A KTX file is an image file created by KTX Software, a library that allows OpenGL and Vulkan applications to save multiple textures and images together as one compressed image. Most commonly, KTX files contain screenshots created by iOS devices. iOS devices use KTX files to store snapshots of a user's current screen as the user switches applications."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When an iPhone or iPad user switches from one application to another, or returns to their home screen from an application, their device creates a KTX file. The KTX file is an exact copy of the user's screen at the time they switched applications. When the user switches back to a previously-opened application, their device first loads the KTX file it created as the user switched away. This provides the user with a smooth visual transition as their device finishes re-loading the actual application.",
+      "Most iPhone and iPad users will never encounter a KTX file. However, those who have jailbroken their iOS device can find their device's KTX files in the following directories:",
+      "/​private/​var/​mobile/​Library/​Caches/​Snapshots/​<bundleID>/​<bundleID>/​",
+      "/​private/​var/​mobile/​Containers/​Data/​Application/​<ApplicationUUID> /​Library/​Caches/​Snapshots/​<bundleID>",
+      "KTX files are most commonly used by forensic investigators, who examine users' KTX files for evidence of what a user was doing at specific times. Because KTX users are typically hidden from users and cannot easily be deleted, investigators can jailbreak a user's iOS device and examine the device's KTX files for information about the user's activities.",
+      "NOTE: Khronos Group released the Khronos Texture 2.0 (KTX2) format on April 20, 2021 to improve upon the KTX format. Textures saved in the KTX2 format are saved as .KTX2 files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "On iOS devices, you can use Filza, a file management application, to view the image a KTX file contains. On Macs, you can use Apple Preview to view the image a KTX file contains.",

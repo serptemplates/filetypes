@@ -4,8 +4,19 @@
   "slug": "kdmp",
   "extension": "kdmp",
   "name": ".KDMP File Extension",
+  "type_name": "Windows Crash Dump File",
   "summary": "Learn about .KDMP files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Memory dump saved to a file by Windows; contains a snapshot of the kernel mode portion of a given user mode process; used for debugging applications; may be created on Windows or Windows CE systems."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "KDMP files may be contained within a .CAB file, along with .MDMP, .HDMP, and other files. They can be analyzed using WinDbg, which is part of Microsoft's free \"Debugging Tools for Windows\" suite."
+    ]
+  },
   "programs": {
     "windows": [
       {

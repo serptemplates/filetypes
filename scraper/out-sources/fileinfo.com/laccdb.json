@@ -4,8 +4,20 @@
   "slug": "laccdb",
   "extension": "laccdb",
   "name": ".LACCDB File Extension",
+  "type_name": "Microsoft Access Lock File",
   "summary": "Learn about .LACCDB files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An LACCDB file is a lock file created by Access 2007, a program that allows users to create relational databases, front-end interfaces, and reports. It contains database locks to prevent unexpected overwrites or deletions with multiple concurrent users."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Access 2007 automatically creates LACCDB files when .ACCDB files are opened. LACCDB files have the same name as their corresponding ACCDB file and are located in the same directory. When the ACCDB files are closed, the LACCDB file is automatically deleted.",
+      "NOTE: LACCDB files serve the same purpose as .LDB files from previous versions of Access."
+    ]
+  },
   "programs": {
     "windows": [
       {

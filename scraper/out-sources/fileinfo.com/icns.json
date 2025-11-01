@@ -4,8 +4,25 @@
   "slug": "icns",
   "extension": "icns",
   "name": ".ICNS File Extension",
+  "type_name": "macOS Icon Resource",
   "summary": "Learn about .ICNS files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An ICNS file is an icon used by a macOS application. It contains one or more images of varying sizes, saved in the .TIFF format. ICNS files are primarily used as application icons and file type icons, which appear in the macOS Finder, desktop, and dock."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Most macOS applications include an identifying icon that allows you to quickly recognize the program in your Applications list and Launchpad. Apps also use file type icons that allow you to identify files that will open in that app. These icons are saved as ICNS files, stored in the .APP package's Contents/​Resources directory.",
+      "ICNS files are created from one or more .PNG files. These files may have dimensions of 16x16, 32x32, 48x48, 128x128, 256x256, 512x512, or 1024x1024 pixels. Storing multiple resoultions in an ICNS file allows macOS to show the icon correctly at different sizes. To create an ICNS file, developers:",
+      "Create a folder that uses the .ICONSET extension.",
+      "Place their PNG images, using filenames in the format icon_16x16.png, in the folder.",
+      "Use the Terminal command iconutil -c icns path/to/iconset/folder to create the ICNS file.",
+      "An application's .PLIST file (Info.plist) references its ICNS files, using the CFBundleIconFile property.",
+      "NOTE: ICNS files are similar to .ICO (Windows Icon) files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an ICNS file in Apple Preview (macOS), XnViewMP (multiplatform), or Inkscape (multiplatform). Apple Preview will show you all the images your ICNS file contains; the other programs will not."

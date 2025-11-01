@@ -4,8 +4,20 @@
   "slug": "mpdconf",
   "extension": "mpdconf",
   "name": ".MPDCONF File Extension",
+  "type_name": "Music Player Daemon File",
   "summary": "Learn about .MPDCONF files and view a list of programs that open them.",
   "developer": "The MPD Team",
+  "more_information": {
+    "description": [
+      "File used by Music Player Daemon (MPD), a server-side Unix-based music playback program; contains user-level settings for the player, including the remote host, connection port, music directory, playlist directory, audio stream settings, and user login information."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MPDCONF files are used to connect to a remote MPD server, stream music, and adjust audio playback quality. They are hidden files and have no filename prefix. They are typically stored in the user directory with the name .mpdconf.",
+      "NOTE: While MPDCONF files are used to store user-level settings, the mpd.conf file in the /​etc directory may be used to store global system-wide settings."
+    ]
+  },
   "programs": {
     "windows": [
       {

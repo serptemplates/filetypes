@@ -1,9 +1,11 @@
 {
   "slug": "dicom",
   "extension": "dicom",
-  "name": "DICOM File",
+  "name": "DICOM Image",
   "summary": "Learn about .DICOM files and view a list of programs that open them.",
   "developer": "NEMA",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -32,6 +34,19 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The National Electrical Manufacturers Association (NEMA) developed the DICOM format. They designed the format to exchange and view medical images, such as CT scans, MRIs, and ultrasound images.",
+      "NEMA released the initial DICOM standard in 1983 and has released various revisions throughout the 1990s and 2000s. The association still actively maintains the format.",
+      "NOTE: DICOM images more commonly use the .DCM extension."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "DICOM is the acronym for Digital Imaging and Communications in Medicine and pertains to the field of Medical Informatics. DICOM is used for the integration of medical imaging devices like printers, servers, scanners etc from various vendors and also contains identification data of each patient for uniqueness. DICOM files can be shared between two parties if they are capable of receiving image data in DICOM format. The communication part of DICOM is application layer protocol and uses TCP/IP to communicate between entities. Versions supported by web services are 1.0, 1.1, 2 or later.",
+      "A DICOM file is an image saved in the Digital Imaging and Communications in Medicine (DICOM) format. It contains an image from a medical scan, such as an ultrasound or MRI. DICOM files may also include identification data for patients to link the image to a specific individual."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open DICOM files with various applications, such as MicroDicom viewer (Windows), ezDICOM (Windows), OsiriX (macOS), and MeVisLab (multiplatform). You can also upload DCM files to View My Scans and Jack Imaging in a web browser and view the images."
@@ -57,6 +72,28 @@
       ".PSD - Adobe Photoshop Document"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -90,15 +127,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/dicom/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.918Z"
+      "retrieved_at": "2025-11-01T22:32:42.262Z"
     },
     {
       "url": "https://fileinfo.com/extension/dicom",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.918Z"
+      "retrieved_at": "2025-11-01T22:32:42.262Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.918Z"
+  "last_updated": "2025-11-01T22:32:42.262Z",
+  "containers": []
 }

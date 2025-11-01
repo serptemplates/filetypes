@@ -4,8 +4,20 @@
   "slug": "mx",
   "extension": "mx",
   "name": ".MX File Extension",
+  "type_name": "Mathematica Serialized Package File",
   "summary": "Learn about .MX files and view a list of programs that open them.",
   "developer": "Wolfram Research",
+  "more_information": {
+    "description": [
+      "Binary package created by Mathematica, a desktop application used for computation and visualization; stores Mathematica expressions in a proprietary serialized format, which is optimized for fast loading; used for distributing Mathematica packages."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Mathematica packages can be created using DumpSave and read using Get. They can also be imported using the Import command and exported using the Export command. For example, Import[\"myFile.mx\"] reads the MX file and returns an expression. Similarly, Export[\"myFile.mx\", expr] serializes the \"expr\" expression and saves it to an MX file.",
+      "Since MX files are saved in a binary format, they are non-human readable. Additionally, they cannot be shared between different versions of Mathematica or between installations of Mathematica on different operating systems."
+    ]
+  },
   "programs": {
     "windows": [
       {

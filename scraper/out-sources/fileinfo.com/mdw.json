@@ -4,8 +4,22 @@
   "slug": "mdw",
   "extension": "mdw",
   "name": ".MDW File Extension",
+  "type_name": "Access Workgroup",
   "summary": "Learn about .MDW files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An MDW file is a workgroup information file used alongside a Microsoft Access database (.MDB file). It contains a list of user-level credentials (usernames and passwords) that can be used to access and/or edit the database. Modern Access databases (.ACCDB files) do not use MDW files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Microsoft Access is a relational database management system (RDBMS) available for Windows. It allows users to create, manage, and report on databases, as well as connect those databases to other applications.",
+      "In Microsoft Access 2003 and earlier versions, users could create database workgroups, which specified one or more users who should be able to access or update a database via user-level credentials. These workgroups (and included users' login credentials) were saved as MDW files.",
+      "In Access 2007, Microsoft removed the ability to grant database permissions at the user level. Thus, Access 2007 databases cannot be linked to MDW files.",
+      "NOTE: You may see MDW files referred to as WIFs; WIF stands for workgroup information file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In Microsoft Access 2003 and earlier versions, you can select Tools → Security → Workgroup Administrator to create and update workgroups.",

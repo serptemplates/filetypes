@@ -7,6 +7,19 @@
   "type_name": "Compound Binary File",
   "summary": "Learn about .CFB files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A CFB file is a compound file that contains a structured file system. It is used to store objects, such as directories and multiple files, within a single file. Storage objects are used to represent directories and stream objects are used to represent files. A CFB file may also include metadata about the application that created the file."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Microsoft OLE applications, such as Office and Digital Image programs commonly use CFB files. OLE is a framework developed by Microsoft that enables applications to embed and link to documents and other objects. In other words, it enables a user to add data to a document from another application. An example is an image editor sending an image to a word processor.",
+      "CFB files are saved in the Compound File Binary Format (CFB or CFBF), a general purpose file format used to store data for OLE applications. It stores data in a file structure similar to the FAT file system and is divided into header, FAT, DIFAT, MiniFAT, Directory, Stream, and Range Lock sectors.",
+      "The structure of a CFB file provides efficient access to specific data within the file. For example, a single storage or stream object stored in the file may be accessed without needing to load the entire file. However, CFB files can grow large in size and may cause performance issues if there is not enough storage available.",
+      "NOTE: A CFB file is also known as an Object Linking and Embedding (OLE) Compound File (CF) (OLECF)."
+    ]
+  },
   "programs": {
     "windows": [
       {

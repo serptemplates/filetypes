@@ -4,8 +4,19 @@
   "slug": "j01",
   "extension": "j01",
   "name": ".J01 File Extension",
+  "type_name": "Akeeba Multi-part Backup Archive",
   "summary": "Learn about .J01 files and view a list of programs that open them.",
   "developer": "Akeeba",
+  "more_information": {
+    "description": [
+      "Backup archive format created by Akeeba software, which is used for backing up and securing websites; stores a partial backup of a whole website."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The J01 file format specializes in creating archive large directory trees only using PHP code. The file is always accompanied by a .JPA (the beginning file of the multi-part set) and .JPS file (the last file of the multi-part set) which stores part of the website backup. It may also be accompanied by a J02 file if the backup is very large. In order to recover the backup contained in the J01 archive, all parts must be present. If one file part is deleted, the archive is lost."
+    ]
+  },
   "programs": {
     "windows": [
       {

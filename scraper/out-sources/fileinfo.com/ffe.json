@@ -4,8 +4,20 @@
   "slug": "ffe",
   "extension": "ffe",
   "name": ".FFE File Extension",
+  "type_name": "DirectInput Force Feedback Effect",
   "summary": "Learn about .FFE files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An FFE file is a haptic effect used by Microsoft DirectInput, a DirectX API that controls how users' joysticks and game controllers behave while playing a Windows video game. It contains binary code that makes a joystick or controller vibrate in response to a game action. DirectX downloads FFE files into Device objects and then plays them at appropriate times during a game."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Microsoft DirectX is a collection of APIs that perform tasks related to multimedia, especially video games. DirectInput is one of DirectX's component APIs. DirectInput allows developers to code haptic feedback, such as constant force, increasing force, and vibrations, into their video games. When an associated in-game action occurs, DirectInput translates these effects into actual physical forces output through a player's joystick or controller.",
+      "Files used to store DirectInput force effects are saved using the .ffe extension. Typically, developers reference FFE files as part of DirectInput-related game code. Specifically, developers include FFE files in directives used to load haptic effects onto players' devices, so the effects can be played during a game. The DirectX SDK includes many sample FFE files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open, create, and edit FFE files in DirectX Force Editor, and you can play FFE files using DirectX ReadFFE. These applications were included in previous versions of the DirectX SDK. The DirectX 9 SDK is the last version that included Force Editor and ReadFFE."

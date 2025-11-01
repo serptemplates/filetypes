@@ -4,8 +4,21 @@
   "slug": "zed",
   "extension": "zed",
   "name": ".ZED File Extension",
+  "type_name": "Zipped GEDCOM Genealogy File",
   "summary": "Learn about .ZED files and view a list of programs that open them.",
   "developer": "MyHeritage",
+  "more_information": {
+    "description": [
+      "A ZED file is a zipped .GEDCOM genealogy file used by MyHeritage Family Tree Builder, a free genealogy application. It contains a GEDCOM file that stores ANSI-encoded text about an individual's family tree and relatives within the family tree."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "ZED files are primarily used by versions 1 - 6 of MyHeritage Family Tree Builder. The files were eventually replaced by .UZED files with the release of version 7 of the software.",
+      "UZED files are also Zip-compressed and store GEDCOM files, but the GEDCOM files store UTF-8-encoded text instead of ANSI-encoded text. Also, UZED files include a metadata.xml file that stores metadata about the family tree.",
+      "ZED and UZED files are often referred to as being saved in the ZEDCOM (Zipped-GEDCOM) format. The files were replaced by .FTB SQLite database files with the release of version 8 of MyHeritage Family Tree Builder."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "While ZED files have been replaced by UZED files and subsequent FTB files, you can still open them with MyHeritage Family Tree Builder. To open a ZED file with Family Tree Builder, select File → Open Project....",

@@ -1,9 +1,15 @@
 {
   "slug": "xif",
   "extension": "xif",
-  "name": "XIF File",
+  "name": "ScanSoft Pagis File",
   "summary": "Learn about .XIF files and view a list of programs that open them.",
   "developer": "Nuance Communications",
+  "category": "image_raster",
+  "mime": [
+    "image/vnd.xiff"
+  ],
+  "containers": [],
+  "related": [],
   "programs": {
     "windows": [
       {
@@ -74,58 +80,45 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ACDSee"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABlklEQVR42s2XwXaDIBBFh89KTrtofkt0YfC32kV7zGfZGRwRdIKCkfZtiMTMe1xGTlQAZoA/lKIABjRAi1cNFB11YzhAq8fJwtJgPAKoaiizG51SMoGiAWIE1L07xXioq30EbAC8ma4oa+oIZIC1gnmsGQTYIkA3Z5vTNdYK5pcBTiNgixusp8MQRwmIWCVz+nCnH4QhDhGYzKMhuCjUZPZCAs6cQ/khOpyrgvvY3NYbQ3BD5BFYmePYf9zg+n4Fg/t8489OvPduZPMsAraAZP71SWuz5pe3Czx+HmMIt/cwn/n1cOwpAGGMmtdhAwZCKmkESBFzxUVE85f1QMzcRw5sXOvnIY4QWGJfEYD50Vs1ojdmEZDM/dH2AJnYwHodBvi/Rg6BmHmUgI8/l8DWyknj6jnAdAI+MbdZUwj0grkkdxD5K182oNSEWwQoQIpcL3gr77/7+Xs8wJIJpMoe0bx+31wMsKcHUqUbPW9AG1bQqT0wzaUF8DqgXXwHqefACdpN4Gz93/eCohLfDQu/oDoC5Zc/6xfwPVWfr5egUQAAAABJRU5ErkJggg==",
-      "alt": "Imaging"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADJUlEQVR42uWWCyzVURzHv7ebiRQ1IzWbsVkNQyMS1vJoy6uaNC2XdWUzz8ZG2JjuKK9KTLeIZksaczVMi/VQxJT0mlmkiJKQt+XROXfzn38e49/tWuu3nZ37+56z8/vc3/93HjyssfHmO7oWvvakCyHNWR7B2+uzeQwACR5Augx5/nsGgAQ3Il0Tafy1ArhOOl95Bv8dYFbewf9dAC3NrbAy2wkdbU0oKymif2AYDS9b0fSmHVNT038XwO2gBY4c2gtzE31sUFRg9I7OXjysfY0CyWO8/9AtewCVjUoQRZyEi+MeqT82PikN1tXdBwdbE1iZ75LqA4MjSBVLUFDySLYAF2J84O68j/ETLt9BTsF96W8FhfVIjRPCyc6MGU/JKkHWzQrZANhZG+NaSiBLO+GfjPqmVsbXVFeDJC8GGuqqjHYmNht379X/GYCaqgoSzwrguN+UpfuFZ6D6STNLCz3tiiChC+P39v3AUWECer72cwewtTREYpQA2zS2sHTRpULk3q5iaTraGiglWaD1Mmf0M9DPwRnA57gdooI9wOevY+klFXUIj7+xYL44ORD2NsaM3/bxC1wF8ZiY/MkN4JSnAyKD3MFfxwbo/PwNTl7xGB2bYOlCMj8qxIPxp2dm4B18EXWNLdwAaAGKIr1YxTVnQdFiVFQ3sjR7siXFSQEsLTOvHGlXJdwAaHWfJ1vQ1tJgwdirdx3w9E9ipdfD1ZrUjDdrXn7RA8Sl3OIGQE1w7ABiwzwXHSsur0VSZjH6B4ehp6OF9HN+0NfbwZoTIcpDUdlT7gB0K0pyo6G9XX3R8a6e79KtRgOrblJmjVHdmdTK4NAodwBqTvbmSBf5YbVGsyPOr1xyfFWXET1k6GGzUquqaUZIjHjJLbhqAGq0HkL93Baker7Nzs6isLQGiVeKMDI6vux6nN4D9Ft7HraFjYWB9PTjkSVo0E/kbGgg94Oksh7PnresaC3OLyJ6A5oa6mK3kR42k2wMDY9JHyTNb9uXTbnMAGRl/z1AGgEIWyuAEdJMCEDbWgDQF4o3CV5GHXkC0CPxBWk5JHj7nMjjvp5s7BcE220wcpWWAQAAAABJRU5ErkJggg==",
-      "alt": "OmniPage"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABfElEQVR42s2XC7KDIAxFw8p0Z4Sd4cp8CQ0IGlGw0pcp47e5l0PMqAHAFX4Yhg0gIPBv9EBEMYBiYHDwxDcCFHYdsxrOGJ3AUAM1Asa5V4RXa+8RCAboZj5ir61bYAHKVZynnIWBKwJ8c7c4H1Ou4vzewGsEQvKQvTTxlICKVRPnHfdJn5t4RCCKV01IUmAN90UCSVxM5SYcnbPFfSK+tTop/7WPwEGctn6eYabB/5llP4WsfRoi3kUgJNDEvQ93s/A0TbAsy8dEWvsNACV89hSAsq2K27IAi+CaaCIQTpyLG0miin+tBmriOfLI3eK5iScE9tgPBGB79Gqji4Amnm9DDcRZWjyaSS87HQRq4lUCOf5eAlczB7me3qRiBzwRD15bCHhFXIvUiPKZ7wtQK8IrAj7vcDci1UI2PDWtdJ32mwm0RmjRMv9cXDVwpwZag/OkBdh1Qj5qIoAdFuLbPYLSiaG1D7wQtwm8Hf/3u2BoaASGf5xGAuOnv8Ufz3VVHwcL2KYAAAAASUVORK5CYII=",
-      "alt": "Sharpdesk Imaging"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "PixBuilder Studio"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACiUlEQVR42s1W0XXDIAwUM+GZYCY0U5iJShiBQDhx2zSvfBSbBt3pdMg4+NQopYBzbl12P4n1vwkooBCgIDaMjypAYCGeoZ8SoLW3EuCM5Rl9guIBIsaTxEqgvf+agAZNIQHm3NY9oQZgJQwB9fwjAho0gAdPC+ApXWBwmaE+O8wQMqmQaAuDLkp8iwADBw5LmY6BvDD9Dhk0+P7OSoyXWfWXBFaJM9XUp2R+x6CRiZHevGmdywWYuwPaR0sqx0GCgc893sQRJW4pcAmqgKW+moBzkcqaDLCQciQA141niNF6QIAtqDaTkjliBRQSQkBAtRqceWGPtOfdiagEOviioqOYIQcih03OQPsOQyClsJThdH/RyrMVcjSNaRDwQ+KIspPZB1pBeIRZgdULc11H5toHiQycM04kjAIHtiiUefYOfC5UDSQVbEl2BDjTBJtysBd0Z9Qm1Cpw9rmyR3p91FnCiQoSdDWjLcWqCkWiTumOeE2A/xyRHjz2zdmf7HWXE/OtZtyNWjraK56IcajQCfQOR+4/mqMHcNvITa8RuDoNGlSXQY7jlsCswtzLT1Oeb6m72vfTsPPC2orNyMMLEwFPPT0wAQ8ddAYWUgyCWy/c6YwsbcRjQ4CCh/pl02BDDQbVsvaEFgV0OS4JNRWmvnxVBgHWQVaZn58IFS/Lfj5d+YJAS96yt2TW07AqoDPWCkbM9kIyl2FuPDMZexx3pdDZalA9zMLu2zDkHsBCaNuaud9w220BdsBPCeiesPsirn7Q2TIw9t++vvBsCfA8OuPaVORMtvtfu4Syo+v/oX5Pbl/1Lm9EmoAZjY+A3s32dwTeCHqLAM9ixneDviSgSfwF6G0Cfwks4wuE2Pq9Os/41wAAAABJRU5ErkJggg==",
-      "alt": "Pagis"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.901Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.239Z"
     },
     {
-      "url": "https://fileinfo.com/extension/xif",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.901Z"
+      "url": "https://fileinfo.com/extension/xif",
+      "retrieved_at": "2025-11-01T22:32:42.239Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.901Z"
+      "retrieved_at": "2025-11-01T22:32:42.239Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.901Z"
+  "last_updated": "2025-11-01T22:32:42.239Z"
 }

@@ -4,8 +4,20 @@
   "slug": "flatpakref",
   "extension": "flatpakref",
   "name": ".FLATPAKREF File Extension",
+  "type_name": "Linux Flatpak Application Package Reference File",
   "summary": "Learn about .FLATPAKREF files and view a list of programs that open them.",
   "developer": "Flatpak",
+  "more_information": {
+    "description": [
+      "A FLATPAKREF file is an application package reference file used to distribute and install an app on a Linux-based platform. It contains plain text information about an app that the App Store or Package Manager references to know the package to install and the repository from where to download it. FLATPAKREF files include the application's ID, a base64-encoded version of a GnuPG Key (GPG Key) for securing data transmissions, and metadata to be displayed in the app store it is published on to describe the app to a user."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Flatpak developed the Flatpak (.FLATPAK) format to simplify app distribution for the many variants of the Linux operating system. By providing a consistent distribution format, app developers can better deploy updates to their apps and more easily reproduce bugs reported by their users.",
+      "The Flatpak Ref format is particularly tailored to the distribution of Linux apps on online app stores like Flathub since they contain additional app and installation information. Most users who encounter FLATPAKREF files do so when downloading an application from Flathub. Developers can submit their apps to the Flathub online service, and once their app is approved, users can find the apps and download them as FLATPAKREF files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can install an app packaged in a FLATPAKREF file by double-clicking the file, which opens the Software Center, then gives you the option to install the app. You can also right-click the FLATPAKREF file and select Open With Software Install. Both of these methods require Gnome software and Flatpak to be installed on your system.",

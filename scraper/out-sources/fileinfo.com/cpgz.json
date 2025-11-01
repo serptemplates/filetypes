@@ -7,6 +7,17 @@
   "type_name": "Compressed CPIO Archive",
   "summary": "Learn about .CPGZ files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "Compressed archive that combines the Copy In, Copy Out (.CPIO) archive format and gzip (.GZ) compression; similar to a .TGZ file, which incorporates both an uncompressed .TAR container and gzip compression; most often used on Unix-based systems such as Linux and Mac OS X."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "CPGZ files may be created when you double-click a .ZIP file in Mac OS X. Upon opening the ZIP file, a new file with the same name but with the \".cpgz\" extension is created. Then, when you decompress the CPGZ file, it reverts to the original ZIP file. This loop is caused because the ZIP file is corrupt. It may be corrupt due to an incomplete download or because the original ZIP file was not compressed correctly. To fix this problem, try re-downloading the ZIP file again.",
+      "NOTE: On Linux and Mac OS X systems, you can create and extract CPGZ files using the ditto command line program."
+    ]
+  },
   "programs": {
     "windows": [
       {

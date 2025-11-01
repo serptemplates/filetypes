@@ -7,6 +7,19 @@
   "type_name": "Unix Section 5 Manual Page",
   "summary": "Learn about .5 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A 5 file contains a Unix system-level manual page (man page) that likely documents a file format or convention. It is named for the format or convention it documents. You can access 5 files using the man utility."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Unix-like OSes include a system manual that is divided into eight numbered sections. This manual's fifth section usually describes the file formats the system supports. Each supported format is documented in a separate 5 file.",
+      "For example, the file deb.5 describes the .DEB file format. It also provides a list of additional related entries.",
+      "In some Unix systems, such as System V, 5 files instead contain documentation of miscellaneous system information. These 5 files can still be accessed using the man utility.",
+      "NOTE: Other sections' Unix man pages use the .1, .2, .3, .4, .6, .7, and .8 extensions. Man pages are also commonly compressed into .GZ files (which may use the .gz.# extension)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In Unix-like OSes, you can open a 5 file by calling the man utility using the name of the file. For example, to open deb.5, enter man deb(5).",

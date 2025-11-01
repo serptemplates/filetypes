@@ -7,6 +7,20 @@
   "type_name": "Compressed Microsoft SQL Database",
   "summary": "Learn about .BACPAC files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A BACPAC file is a Zip-compressed archive that contains a Microsoft SQL database's schema and data. Users export BACPAC files from and import BACPAC files into Microsoft SQL database programs, such as Microsoft Azure SQL Database and Microsoft SQL Server. BACPAC files are used to transfer databases between servers."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Database managers can use a variety of Microsoft SQL database management tools to export databases as BACPAC files. For example:",
+      "Azure users can export a database as a BACPAC file from the Azure portal",
+      "SQL Database users can export a database as a BACPAC file using the SqlPackage command-line utility",
+      "SQL Server Management Studio users can export a database as a BACPAC file using a wizard included in that application",
+      "While BACPAC files are similar to .DACPAC files, the files are used for different purposes. BACPAC files are used primarily to back up or move databases from one server to another. DACPAC files are focused on capturing and deploying schema. Sometimes, DACPAC files are applied to existing databases."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can import the database a BACPAC file contains into Microsoft Azure SQL Database or Microsoft SQL Server. To do so, you must use either:",

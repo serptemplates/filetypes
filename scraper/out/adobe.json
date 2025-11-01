@@ -1,7 +1,7 @@
 {
   "slug": "adobe",
   "extension": "adobe",
-  "name": ".ADOBE",
+  "name": "Dharma Ransomware Encrypted File",
   "summary": "Learn about .ADOBE files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -10,6 +10,22 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11197&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Dharma ransomware renames standard files, such as .MP4, .DOCX, and .PDF files with a \".ADOBE\" extension. The files are encrypted with AES and RSA ciphers so it is not possible to open the files by simply changing the file extension.",
+      "The purpose of ransomware is to take your files hostage and force you to pay the perpetrator, often through bitcoin, to unlock your files. It may be introduced to your computer through an executable file disguised as another type of file. This may be an email attachment, a file downloaded from a website, or a file included in a software installer.",
+      "Once the executable file is run, it begins scrambling your files, renaming them with the .adobe extension, and encrypting them. The virus then generates a .TXT ransom note (FILES ENCRYPTED.txt or _openme.txt) informing you of the takeover and what you need to do to recover your files.",
+      "The virus renames your files using the following naming convention:",
+      "[filename].id-[ID].[[email protected]].adobe",
+      "For example, if you have a sample.pdf file it may become sample.pdf.id-HDNFH438.[[email protected]].adobe.",
+      "NOTE: ADOBE files became prevalent in late 2018 and early 2019 and are similar to .LOCKY and .WALLET files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with an .ADOBE extension has been encrypted by Dharma ransomware, a type of malware utilized by cybercriminals. It is not associated with the software company Adobe, Inc."
     ]
   },
   "how_to_open": {
@@ -47,8 +63,11 @@
     {
       "url": "https://fileinfo.com/extension/adobe",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.955Z"
+      "retrieved_at": "2025-11-01T22:32:42.316Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.955Z"
+  "last_updated": "2025-11-01T22:32:42.316Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

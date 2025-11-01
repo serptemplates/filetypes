@@ -7,6 +7,18 @@
   "type_name": "Java Class File",
   "summary": "Learn about .CLASS files and view a list of programs that open them.",
   "developer": "Oracle",
+  "more_information": {
+    "description": [
+      "A CLASS file is a compiled .JAVA file created by the Java compiler. It contains bytecode, which is binary program code that is executable when run by a Java Virtual Machine (JVM). CLASS files are commonly bundled into .JAR files, which are included in the $CLASSPATH environment variable for execution."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "CLASS files can be compiled from JAVA files using the javac command, which is included with a JVM installation. Many Java IDEs, such as Eclipse, can compile CLASS files on the fly as developers write program code.",
+      "Since there are multiple versions of the JVM (e.g., 1.4, 1.5, and 1.6), some CLASS files may not be compatible with certain JVM versions. The Java Runtime Environment (JRE) can execute CLASS files, but it cannot compile them since it does not include the javac binary.",
+      "NOTE: Oracle acquired Sun Microsystems, the original developer of Java. The JRE and JVM are often used synonymously to refer to the platform that runs Java applications."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,7 +1,7 @@
 {
   "slug": "blf",
   "extension": "blf",
-  "name": ".BLF",
+  "name": "CLFS Base Log File",
   "summary": "Learn about .BLF files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -18,6 +18,18 @@
         "name": "Vector Informatik CANalyzer",
         "url": "https://www.vector.com/int/en/products/products-a-z/software/canalyzer/"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "BLF files are commonly seen in the Windows user directory (C:\\​Users\\​[user]\\​). This is because the Windows component that writes user-level registry information to the NTUSER.DAT file in that directory uses CLFS logging. There may also be .REGTRANS-MS log container files in this directory, which store the log data. Another common location for BLF files is the following directory:C:\\​Windows\\​System32\\​SMI\\​Store\\​Machine\\​",
+      "Base log files are system files that are hidden by default in Windows. In general, you should not modify or delete them, since they can contain important user and system-level information, such as user passwords, account settings, and application settings.",
+      "NOTE: Because CLFS logs are used with transactions, they can potentially be left in an inconsistent state. This has been known to cause issues with Windows updates where BLF files are left in an inconsistent state. Consult the Windows support documentation to resolve this issue."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Log file created by the Common Log File System (CLFS), a Microsoft Windows component used for creating transaction logs; contains metadata that is used to manage access to the log data; can be created using the CLFS (API); used with \"containers,\" which are associated files that hold the log data."
     ]
   },
   "images": [
@@ -50,8 +62,11 @@
     {
       "url": "https://fileinfo.com/extension/blf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.983Z"
+      "retrieved_at": "2025-11-01T22:32:42.355Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.983Z"
+  "last_updated": "2025-11-01T22:32:42.355Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

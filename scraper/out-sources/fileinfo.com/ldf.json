@@ -4,8 +4,21 @@
   "slug": "ldf",
   "extension": "ldf",
   "name": ".LDF File Extension",
+  "type_name": "SQL Server Transaction Log File",
   "summary": "Learn about .LDF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An LDF file is a log file created by SQL Server, a relational database management system (RDBMS) developed by Microsoft. It contains a log of recent actions executed by the database and is used to track events so that the database can recover from hardware failures or other unexpected shutdowns."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "LDF files are transaction logs. These logs contain a history of activity for both fully committed and partially committed transactions to the database (the .MDF file). After an unexpected shutdown, SQL Server can use the transaction log to restore the database to the exact state before the failure.",
+      "Transaction logs can be truncated once the database creates a checkpoint, which is a stable state of the database and the log file. RDBMS systems can then safely delete all log data up to the point of the checkpoint, reducing the log file size.",
+      "NOTE: LDF files can become very large in size. This is due to the fact that no checkpoint has recently been created. However, it also may be due to open transactions that have not yet been fully committed, or other locks on database records."
+    ]
+  },
   "programs": {
     "windows": [
       {

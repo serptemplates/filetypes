@@ -4,8 +4,19 @@
   "slug": "timestamp",
   "extension": "timestamp",
   "name": ".TIMESTAMP File Extension",
+  "type_name": "Geodatabase Timestamp File",
   "summary": "Learn about .TIMESTAMP files and view a list of programs that open them.",
   "developer": "ESRI",
+  "more_information": {
+    "description": [
+      "A TIMESTAMP file is a data file created by ESRI mapping software, such as ArcMap or ArcCatalog. It contains information about edits that have been made to a file geodatabase (.GDB file), which stores geographic information. TIMESTAMP files should never be modified or deleted, otherwise the geodatabase it is associated with will become corrupt."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "TIMESTAMP files are not meant to be opened by the user. They are referenced by the GIS application accessing the geodatabase."
+    ]
+  },
   "programs": {
     "windows": [
       {

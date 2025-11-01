@@ -4,8 +4,21 @@
   "slug": "desklink",
   "extension": "desklink",
   "name": ".DESKLINK File Extension",
+  "type_name": "Desktop Shortcut",
   "summary": "Learn about .DESKLINK files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "File that enables Windows users to create shortcuts on the desktop when right-clicking a file or folder and selecting the SendTo → Desktop (create shortcut) option; does not contain any data, but exists as an empty file that notifies Windows to display the menu option."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When selecting the SendTo menu option, Windows searches a specific user folder on the system to get the list of menu items to display. For example, in Windows 7, a DESKLINK file named Desktop (create shortcut).DeskLink is stored for each user in the [user]AppDataRoamingMicrosoftWindowsSendTo directory. This notifies Windows to display a menu option for SendTo → Desktop (create shortcut) for that specific user.",
+      "Other examples of SendTo menu option files include .ZFSENDTOTARGET for creating compressed .ZIP folders and .MAPIMAIL for sending a file or folder via email.",
+      "NOTE: Windows does not show the \".desklink\" extension. DESKLINK files are supported by Windows 95 and later."
+    ]
+  },
   "programs": {
     "windows": [
       {

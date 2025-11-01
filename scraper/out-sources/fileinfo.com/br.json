@@ -7,6 +7,18 @@
   "type_name": "Brotli Compressed File",
   "summary": "Learn about .BR files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "A BR file is a file compressed using Brotli, an open-source data compression algorithm. It likely contains compressed webpage assets, such as .WOFF, .CSS, .JS, or .SVG files. Compressing these assets with Brotli allows web browsers, such as Google Chrome, Safari, Microsoft Edge, and Mozilla Firefox, to load them more quickly."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In 2013, Google developers created the Brotli compression algorithm. This algorithm is an improvement to the zopfli compression algorithm, also developed by Google. Brotli uses a variant of the LZ77 compression algorithm and Huffman coding to compress files roughly 20 percent more efficiently than zopfli.",
+      "Initially, Brotli was meant to be used specifically to compress WOFF web font files. Google later generalized the compression algorithm so it can be used to compress other web assets. As the BR format became more useful and used, various web browsers introduced support for loading assets from BR files.",
+      "NOTE: In the past, Brotli-compressed files were saved with the .bro extension."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can decompress a BR file and extract the asset(s) it contains with Brotli (multiplatform), PeaZip (Windows, Linux), or myl7 Brotli Encode/Decode Tool (Web)."

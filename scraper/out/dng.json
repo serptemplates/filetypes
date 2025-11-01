@@ -1,9 +1,11 @@
 {
   "slug": "dng",
   "extension": "dng",
-  "name": "DNG File",
+  "name": "Digital Negative Image",
   "summary": "Learn about .DNG files and view a list of programs that open them.",
   "developer": "Adobe",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -88,6 +90,19 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "In this section we will describe the DNG format as an extension of TIFF 6.0.\n\nFile Extensions: DNG uses “.DNG” or “.TIF” extensions.SubIFD Trees: DNG does not support SubIFD chains, instead DNG recommends the use of SubIFD trees as mentioned in TIFF-EP specifications. Highest quality and resolution may use NewSubFileType of 0, while the reduced quality thumbnails should use NewSubFileType equal to 1. It is also recommended though not required that the first IFD must have a low quality or resolution thumbnail.Byte Order: Byte order must be supported by DNG readers, also for files from a particular camera model.Masked Pixels: Most of the camera sensors calculate fully masked pixels at the edge of the sensor through black encoding. These pixels can be either included or trimmed before the image is stored in DNG format. If the masked pixels are not trimmed, then the area of these pixels must be mentioned in the ActiveArea tag. The information gathered from these pixels about black encoding level should be used for either before the raw data is stored or may be included in DNG file specifying the level of black.Defective Pixels: Before storing raw data as DNG, defective pixels should be excluded.Metadata: Metadata may be included in DNG in any of the following ways:** By using TIFF-EP or EXIF metadata tags ** Through the IPTC metadata tag (33723) ** Using the XMP metadata tag (700)Proprietary Data: Normally vendors include proprietary data in raw file to be used by their own converters. DNG stores their proprietary data in private tags, private IFDs, and in a private MakerNote. Vendors must use the DNGPrivateData and MakerNoteSafety tags to make sure applications that edit DNG files preserve this proprietary data.\n\nFollowing are some important restrictions and extensions TIFF tags.\n\nBitsPerSample\n\n8 to 32 bits/sample are supported. There must be same depth for each sample when SamplesPerPixel is not equal to 1.But if BitsPerSample is not equal to 8 or 16 or 32, then bits must be packed into bytes using the TIFF default FillOrder of 1 (big-endian).\n\nCompression\n\nTwo Compression tag values are supported:\n\nValue # 1: Uncompressed data.Value # 7: JPEG compressed data, either baseline DCT JPEG, or lossless JPEG compression.\n\nPhotometricInterpretation\n\nThe following values are supported for thumbnail and preview IFDs only:\n\n1 = BlackIsZero. Assumed to be in a gamma 2.2 color space.2 = RGB. Assumed to be in the sRGB color space.6 = YCbCr. Used for JPEG encoded preview images.\n\nThe following values are supported for the raw IFD, and are assumed to be the camera’s native color space:\n\n32803 # CFA (Color Filter Array).34892 # LinearRaw.\n\nOrientation\n\nOrientation tag is used for file browsers so that they can perform lossless rotation of DNG files. DNG readers must support all possible orientations, including mirrored orientations.",
+      "Adobe Systems developed the DNG format to be a universal RAW camera format enabling digital photographers to store, share, and edit RAW images more efficiently. The company released the format in September 2004, making it publicly available for wider adoption among camera manufacturers and image software.",
+      "Since its release, the DNG format has become one of the most common camera RAW formats. Some other well-known formats include Canon Raw Images (.CR2 and .CR3 files), Sony Digital Camera Images (.ARW files), Kodak RAW Images (.DCR files), Nikon RAW Images (.NRW files), and Nikon Electronic Format Images (.NEF files)."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "DNG is a digital camera image format used for the storage of raw files. It has been developed by Adobe in September 2004. It was basically developed for digital photography. DNG is an extension of TIFF/EP standard format and uses metadata significantly. In order to manipulate raw data from digital cameras with the ease of flexibility and artistic control, photographers opt camera raw files. JPEG and TIFF formats store images that are processed by the camera, therefore, not much room for alteration is available in such formats.",
+      "A DNG file is a camera RAW image saved in the Digital Negative (DNG) format developed by Adobe Systems. It stores uncompressed image data captured by various camera models, such as Hasselblad, Pentax, and Leica. Professional photographers commonly use DNG files because they maintain high image quality, and many image editors support them, including Adobe Photoshop, Microsoft Photos, and Apple Preview."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open DNG camera RAW images with various image-editing and -viewing applications. Microsoft Photos (Windows), Apple Photos (macOS and iOS), and Apple Preview (macOS) all support DNG images and are bundled with their respective operating systems.",
@@ -109,38 +124,32 @@
       ".PSD - Adobe Photoshop Document"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA2ElEQVR42u2WWw6FIAxE252xdHbmFaLJOKkg75vo/ChSOgfaqCoim6yTagDYtcBZxXsvH8AHcAWIPUliOIzhdRgbnvEYYtIAucTLAHCcm+MrAf45wF0PTD2BXP1TfdAV4GkJ7kqGICIFALWGuZgiAOvYhwJM1LsB9CjLUoBgHu9XAjjn5v+S4fFPB0DzoGEAar2yD6F5jO0NwLu0dJoPA+BdJuN7AnCDPVrTC8BqsGkAteZNANjp2HAl5kkANNiMT2mr8QXAmqDkqbkqYwQICU0ITM4xrcanfhVrRp42ioehAAAAAElFTkSuQmCC",
-      "alt": "Able RAWer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Pixillion Image Converter"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD5ElEQVR42sWXz0/UQBTHZ9r9gewKQRPgJPIbY1RU7OJNBETvYMKvi3+AN68a/wAv/gEeBJRERb0YF1CvlHgRcIMmIgjyS9EgbKLAdnwzne3OzrQUMMQmb6fdmfb7mffeTF8xQkgD08FCYAF+vZ+HBbYFtgGWwvATBIs+Syz/EEcR5SS7U/mbEKTcv829raeKDkGzTgEiYEUA8Gmn4krXLsWRDVAOzRIFyAMrAYAx2tl+4dwKQpgwV2HmLos/TjTxwJJpMMJumREtc4603qHRCAc4Cc0MHVgAVvY0sfwWMQDjuyS+ewAbwgsgygHqoJnKALznAA3Gsou42IoOxkKrZQFkIHQRAgAO+gEsSQCWtfmHJqqlBcO/PTygirsD6P4AF41FLpxKA/S/GS0lNtzHHQLoAoQuhIIC5PkBLMgAD1+PlvG+SZAR8wBnJ9y2ADoPQT5dNa21xZ4A8xJACgAqWF+jkZASMZ31TIxYVgARiwoF6IyxHiRSGHRvgAkO0Gh8dQGopJLtTcaEOwAJ5ubk5J6oO59TUlEdPlxYHMiNRLU7t26scA9kAAbNfBYCGWCAA3TYACkR4sErAKB9Tca4kJyO6ytqjkdu371X6uxH/KSrpX6eiRMnBHsCSAFAFX1oR3NsPP1fVqzBA32Do9VUdvj5o2RybZUk19fQi4H+X1IO7BFg2KxifTaA7AE7ueLmMTqms/HsLOvDWMOajpUc2BaAzrIppoSgb9hkIehsjsk54Kx3eHANvR/c/llYBbqyCgCA3tymAIwv2R6wAawsgCGTrYLOS7GECwCbZW98pJrHfVoCkD2Q5wcgL0MKUM4BJgUALO4DAFBJc6/7cv2Mug8QJ1Q9AEDvbjvtDbCgeGDQLKOKHQ21X6SdEGuB0AbEG/e8HGGQADCL3LdiGyBusq1YAXjCATqbYosCADNw21FHUnr337x+bW7qQ2ITAEo5wBzy2IY5QNQdYMwBkF9GBNx7BElHuujobolNcw+UsOsrbO27vY7TABE/gG8yALwNA8ijFoA3JK3tNBgT5tdbXuL0f8iBXD8AsSARawEiTj4NgHZRDXGAAz4ABhSn2OIQbgBpCKxAqOJihZReBWG2Cs64ARC62Rg/bQGcEcZKJZQVBi4s1AWKuOMFyIEQ84AC8I57oNlYzcway7WgWzEieMERdhXnAAH6kKsywGMO0NVsrCGlEMVu4gIEkXNBrBOyCpb7cZOGwhtAOYiXrhQT4j9IHCICsO8CABjbqeiOhT3EOYDzXcC+jKgXwArBor7q/3asgy3T2SP+ZRTkogUcJrTPAHTjSoLR1bYuFhX/7ev4vx5/ASFxfAbEY/JbAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop Lightroom"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Adobe DNG Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "HoneyView3"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -149,29 +158,58 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/dng_143.png",
+      "alt": "Screenshot of a .dng file in Microsoft Photos",
+      "caption": "DNG file open in Microsoft Photos"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/dng_12345.png",
+      "alt": "Screenshot of a .dng file in Apple Photos 6",
+      "caption": "DNG file open in Apple Photos 6"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.784Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/dng/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.784Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
       "url": "https://fileinfo.com/extension/dng",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.784Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.784Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.784Z"
+  "last_updated": "2025-11-01T22:32:42.141Z",
+  "mime": [
+    "image/x-adobe-dng"
+  ],
+  "containers": []
 }

@@ -4,8 +4,21 @@
   "slug": "sn2",
   "extension": "sn2",
   "name": ".SN2 File Extension",
+  "type_name": "Drive Snapshot Backup Continuation 2",
   "summary": "Learn about .SN2 files and view a list of programs that open them.",
   "developer": "Tom Ehlert",
+  "more_information": {
+    "description": [
+      "An SN2 file is a backup continuation file created by Drive Snapshot, a Windows backup utility created by Tom Ehlert. It contains the third portion of a backup disk image created by Drive Snapshot. SN2 files are always associated with accompanying .SNA and .SN1 files, and they may be associated with additional SN# continuation files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Using Drive Snapshot, Windows users can create backup copies of their drives. They can then use Drive Snapshot to retrieve or restore these backups' contents if needed.",
+      "If a drive's contents are large enough, Drive Snapshot will split those contents across multiple backup files: a primary SNA file and one or more backup continuation files. The continuation files use the same base filename as their associated SNA file, but the .sn1, .sn2, and so on extensions.",
+      "Users cannot view or restore data from continuation files alone. Instead, they must gather a backup's SNA file and all its continuation files and place them in the same directory, before attempting to view or restore data from their backup."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use Drive Snapshot (Windows) to view and restore the files an SN2 file contains. To do so, you will need the SN2 file's accompanying SNA and SN1 files, as well as any other continuation files included in the backup (such as an SN3, SN4, etc. file).",

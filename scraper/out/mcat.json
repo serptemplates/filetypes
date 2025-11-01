@@ -1,7 +1,7 @@
 {
   "slug": "mcat",
   "extension": "mcat",
-  "name": ".MCAT",
+  "name": "Adobe Lightroom Catalog",
   "summary": "Learn about .MCAT files and view a list of programs that open them.",
   "developer": "Adobe",
   "programs": {
@@ -14,6 +14,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=10737&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When you import photos into Lightroom, the program automatically creates a file called Managed Catalog.mcat. This file is a type of SQLite 3 database that stores metadata associated with your images and tracks all your changes, including cropping, exposure adjustments, and filters. Instead of embedding edits directly in the image files, Lightroom saves them in the MCAT file, so your original photos remain untouched. It also records where your photos are stored, so Lightroom can reference them when needed.",
+      "Lightroom also generates a separate MCAT file in its profiles directory, which contains metadata about Lightroom Profiles, presets that can be applied during photo editing to achieve specific looks or effects. Lightroom automatically manages these MCAT files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MCAT file is a catalog file used by Adobe Lightroom, a photo editing and organizing application. It stores information about the photos a user has imported into Lightroom, such as locations, labels, ratings, albums, and edits. MCAT files allow Lightroom to manage large photo libraries efficiently without modifying the original image files the user imported into the program."
     ]
   },
   "how_to_open": {
@@ -51,8 +62,11 @@
     {
       "url": "https://fileinfo.com/extension/mcat",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.172Z"
+      "retrieved_at": "2025-11-01T22:32:42.608Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.172Z"
+  "last_updated": "2025-11-01T22:32:42.608Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

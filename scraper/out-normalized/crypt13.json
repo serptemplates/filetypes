@@ -1,13 +1,44 @@
 {
   "slug": "crypt13",
   "extension": "crypt13",
-  "name": "CRYPT13 File",
+  "name": "a CRYPT13 File",
+  "summary": "What's on this Page",
+  "category": "database",
+  "category_slug": "database",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "how_to_open": {
+    "instructions": [
+      "Method 1: Restore via WhatsApp (Official Way)\n\nUninstall WhatsApp from your phone.Reinstall WhatsApp and verify your phone number.WhatsApp will detect the backup and prompt you to restore it.Tap Restore, and your messages will be recovered.\n\nMethod 2: Manually Extract & Read the Backup (Requires Decryption Key) If you want to manually access your chat database:\n\nStep 1: Get the Encryption Key (Root Access Required)\n\nRoot your Android device.Use a file manager or ADB command:adb shell su cp /data/data/com.whatsapp/files/key /sdcard/Download/key\n\nStep 2: Decrypt the CRYPT13 File\n\nUse WhatsApp Viewer or a Python decryption script:python decrypt12.py msgstore.db.crypt13 key decrypted.db\n\nStep 3: Open the Decrypted Database\n\nOnce decrypted, the msgstore.db file is in SQLite format.Open it with DB Browser for SQLite to view messages.\n\nMethod 3: Convert CRYPT13 to Another Format Once decrypted, the .db file can be:\n\nOpened in an SQLite viewer.Exported to CSV or JSON using SQLite commands."
+    ]
+  },
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "url": "https://docs.fileformat.com/database/crypt13/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.260Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.260Z"
 }

@@ -4,8 +4,20 @@
   "slug": "grib",
   "extension": "grib",
   "name": ".GRIB File Extension",
+  "type_name": "Gridded Binary File",
   "summary": "Learn about .GRIB files and view a list of programs that open them.",
   "developer": "WMO",
+  "more_information": {
+    "description": [
+      "A GRIB file is a data file that contains meteorological information used by various climate applications, such as Unidata Integrated Data Viewer and GDAL. It stores data in a grid structure, supporting multiple layers of information, such as temperature, wind speed, and pressure, which makes it a common choice for representing large-scale weather patterns. Meteorological agencies and researchers widely use the format for storing and sharing weather forecasts, climate data, and atmospheric models for numerical weather prediction and analysis (using mathematical models to predict future conditions based on current conditions)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The World Meteorological Organization (WMO) maintains and updates the GRIB format to stay relevant for modern meteorology and climate science forecasting needs. There are two main versions of the format: GRIB1 and GRIB2. GRIB2 is the newer version, offering better compression and more detailed metadata, making it the preferred format for many agencies, including National Oceanic and Atmospheric Administration (NOAA) and European Centre for Medium-Range Weather Forecasts (ECMWF).",
+      "NOTE: GRIB files are more commonly saved with the .grb extension (.GRB file)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open GRIB files with various climate data applications, such as QGIS and GDAL. For example, to open a GRIB file with QGIS, select Layer → Add Layer → Add Raster Layer."

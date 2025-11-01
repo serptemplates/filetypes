@@ -4,8 +4,21 @@
   "slug": "qi",
   "extension": "qi",
   "name": ".QI File Extension",
+  "type_name": "Compiled Picat Code File",
   "summary": "Learn about .QI files and view a list of programs that open them.",
   "developer": "Neng-Fa Zhou and Håkan Kjellerstrand",
+  "more_information": {
+    "description": [
+      "A QI file is a compiled file created from a Picat .PI source code file, which is used with the Picat programming language. It contains a machine-optimized version of the original Picat program, allowing the Picat runtime or interpreter to execute the code more efficiently. Unlike PI files, QI files are not meant to be read or edited directly by humans."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Picat is a logic-based, multi-paradigm programming language that combines features of logic, functional, and scripting languages. Developers write programs in PI files with rules, predicates, and functions, then optionally compile them into QI files to improve performance or distribute programs without revealing the source code.",
+      "When the user runs a PI file, Picat automatically generates a corresponding QI file in the same directory to store indexing information about that program. For example, if a user runs a program named schedule.pi, Picat may create a schedule.qi file beside it.",
+      "Most users will only notice QI files when browsing their project folders, especially if they are exploring or cleaning up files. While these files can safely be deleted, Picat will recreate them the next time the related PI file runs."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "QI files are not meant to be opened. Instead the Picat program the QI files is included with loads QI files directly for faster execution."

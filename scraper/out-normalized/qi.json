@@ -1,20 +1,30 @@
 {
   "slug": "qi",
   "extension": "qi",
-  "name": ".QI",
+  "name": "Compiled Picat Code File",
   "summary": "Learn about .QI files and view a list of programs that open them.",
   "developer": "Neng-Fa Zhou and Håkan Kjellerstrand",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Picat is a logic-based, multi-paradigm programming language that combines features of logic, functional, and scripting languages. Developers write programs in PI files with rules, predicates, and functions, then optionally compile them into QI files to improve performance or distribute programs without revealing the source code.",
+      "When the user runs a PI file, Picat automatically generates a corresponding QI file in the same directory to store indexing information about that program. For example, if a user runs a program named schedule.pi, Picat may create a schedule.qi file beside it.",
+      "Most users will only notice QI files when browsing their project folders, especially if they are exploring or cleaning up files. While these files can safely be deleted, Picat will recreate them the next time the related PI file runs."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "QI files are not meant to be opened. Instead the Picat program the QI files is included with loads QI files directly for faster execution."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13893&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "QI files are not meant to be opened. Instead the Picat program the QI files is included with loads QI files directly for faster execution."
     ]
   },
   "images": [
@@ -45,10 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/qi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.263Z"
+      "url": "https://fileinfo.com/extension/qi",
+      "retrieved_at": "2025-11-01T22:32:42.719Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.263Z"
+  "last_updated": "2025-11-01T22:32:42.719Z"
 }

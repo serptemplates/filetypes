@@ -1,9 +1,51 @@
 {
   "slug": "otf",
   "extension": "otf",
-  "name": "OTF File",
+  "name": "OpenType Font",
   "summary": "Learn about .OTF files and view a list of programs that open them.",
   "developer": "Microsoft and Adobe Systems",
+  "category": "font",
+  "category_slug": "font",
+  "mime": [
+    "font/otf"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "OTF specifications are available publicly by Microsoft and can be referred to from developer’s perspective. Like TTF, it uses the same ‘sfnt’ container structure and is compatible with the TrueType specifications. Data inside an OpenType font file is used for different purposes such as calculating the text layout, defining glyphs as TrueType or Compact Font Format (CFF) outlines, providing monochromatic or color bitmaps or SVG documents as alternate glyph descriptions, and meta-data information.",
+      "In the 1990s, Microsoft set out to produce a competitor to Apple's TrueType font format. In collaboration with Adobe, Microsoft produced the OpenType font, or OTF, format. The OpenType format is similar to the TrueType format, except that it includes additional data structures that determine how fonts appear and behave.",
+      "In the early 2000s, the OpenType format became an open font standard. Thus, most computer systems can now recognize and install OTF fonts.",
+      "To use an OTF file as a font, you must first install it on your system. In Windows, you install fonts by placing them in the C:/​Windows/​Fonts directory. In macOS, you install fonts by opening them in Apple Font Book and selecting the Install Font button."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an OTF file in Microsoft Windows Font Viewer (Windows) or Apple Font Book (Mac). Before opening an OTF file in Windows Font Viewer, you must place the file in the C:/​Windows/​Fonts directory. Otherwise, Windows will not recognize the file as a valid font file.",
+      "While it is more difficult to install an OTF font on an Android device than a Windows or Mac PC, you can do so. iFont is one application that allows users to install and use OTF fonts on Android devices."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -52,44 +94,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open an OTF file in Microsoft Windows Font Viewer (Windows) or Apple Font Book (Mac). Before opening an OTF file in Windows Font Viewer, you must place the file in the C:/​Windows/​Fonts directory. Otherwise, Windows will not recognize the file as a valid font file.",
-      "While it is more difficult to install an OTF font on an Android device than a Windows or Mac PC, you can do so. iFont is one application that allows users to install and use OTF fonts on Android devices."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "High-Logic FontCreator"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACoUlEQVR42rXWMXOiQBQH8EfHzVxmtKQknVc4EzqZSZPSdFpaUmIHHc7EQjrpjjIfwXThI5hOu7M7Si0yY7qj494uLrAgsCTkzWQGiez/t49lRYJCrVarGCpqsVhI0HFxA5Jwx3nGI/PKV0NwXaVzRDpYfTgrHxFGpwipGO66Eex2O9A0DRxH/naEVAzfbrdwPp+h3++DruuVCEkKuwdMp1syMzDN5DYoigKbjf6tXbgAklmyDuA5CqnuAF6oyc2j7+eNQA7AEPVrIAv/s6tesL80XwhRAjSKMTzeeXCAv0Lfp5AaRCtAEh5dPvmdIIQBrO0ZQBxRdzty+0A14np4N4jCTli/6AhA1zf4pExbIxoBdYgM4OFecQfD4RCenn62QuQAXG4JcO3ixaaXAmw7pF0gNZmEwgghQK4oZDwe0w/BccwB1msV4GDC87YHhvEhhGgLwE3ISbvhBkoKoBF+iNu1Ci8va/q7IYJoDeDq7necB1CUGyJSHPE1QA5BBohjtYQor4cMkYZjWQ9z8LzPABgimUEJ4fsWHI9HXMj9EkLSLHo0UecwGDjYLRdub5PsdoBJHEPoQx3CNLPNijwtb9EsDVcUEzvl4/cm+DO/p+8U4gASzqoBQTrBFi5tuzKHSOXDyfuHJNmCABYe4X2W1QRQKPXDg7BncefI/SZ1c7OE+/slF64oazidTgK3oDhzVpcOkBqNRhBFEciyDLPZG7y/L9P/kWAVzbZdDm9eA1XhGSC93jCMmLSeztwK4OEHvqz0MHlAzrBr+fB6QItwVmTz2u/39Pj19QD8K76P4f+4cDLGdcAnwkURuPK5yZcH+kJ4M6IJ0BwuBKhG1AE6DK9CPD4OIAgCbpwyoKPwIoI8IeTvsggrAB2HFyr/spOO9x8Tl9Yt8/7QrQAAAABJRU5ErkJggg==",
-      "alt": "desktop"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Windows Viewer"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABNUlEQVR42u2XWRaDIAxFZWW6M3FnujJaxBGSl4DxnH70/XSCvEsGta4T5YO8plXeOck4hHH9tCxLNwzz991oCDB1DIAPu/F75izA3TzKuekwDxUFQfllAErz/PQRQA58guK1N4DS3AIAQxwAtLkVAA+RAUSzq/q+NwOgIVaA0zwZnZrnYX21AighNoBoRI/Z1OW/PQW4Q4gAaVEKiK8BOZQ0rmn9BpC+Kg1qZh7BUHEhAOpgrrl0TccC0Oat8y7FYAE05lx28uZEsUgA3aWTh6D2cxBVAPvi6wlRH3DTAAH2EUP1yk/DZYGLQZerMgNIjzJwBeDqiCBMekC34cUp0FBzwSgYzlwEoE6pKQHKTjUAAtGo4V4gP+3q7m46NQGUm9v1B3gMYKFmAFv9BkDUm3/Bkbz7AOazOxIFhiEWAAAAAElFTkSuQmCC",
-      "alt": "IXOS-eCON"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "3D Photo Browser"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "3DBrowser"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -98,29 +106,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/otf_197.png",
+      "alt": "Screenshot of a .otf file in Microsoft Windows Font Viewer",
+      "caption": "OTF file open in Microsoft Windows Font Viewer"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.843Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.192Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.843Z"
+      "url": "https://docs.fileformat.com/font/otf/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.192Z"
     },
     {
-      "url": "https://fileinfo.com/extension/otf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.843Z"
+      "url": "https://fileinfo.com/extension/otf",
+      "retrieved_at": "2025-11-01T22:32:42.192Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.843Z"
+      "retrieved_at": "2025-11-01T22:32:42.192Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.843Z"
+  "last_updated": "2025-11-01T22:32:42.192Z"
 }

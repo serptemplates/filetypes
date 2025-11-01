@@ -4,8 +4,21 @@
   "slug": "jsa",
   "extension": "jsa",
   "name": ".JSA File Extension",
+  "type_name": "JRun Server Application Event Handler",
   "summary": "Learn about .JSA files and view a list of programs that open them.",
   "developer": "Adobe Systems",
+  "more_information": {
+    "description": [
+      "A JSA file is an event handler created by Adobe JRun, a Java servlet and JavaServer Pages (JSP) engine. It is linked to one or more associated .JSP files. JSA files are typically named global.jsa and stored in an application's public_html directory, along with their associated JSP files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Adobe JRun is a Java Platform Enterprise Edition application server, which developers and IT professionals can use to run Java servlets. These servlets are used to generate dynamic webpages, using Java functions stored in one or more JSP files.",
+      "Each JRun servlet may contain a JSA file, which is used to determine what happens when JRun begins serving an application, when a user session starts, when a user session ends, and when JRun stops serving the application. For example, the JSA file's onApplicationStart() method determines what happens when the associated application starts for the first time.",
+      "NOTE: Java servlets created using Resin Server and Oracle software may also use JSA files. Java servlets developed in other applications do not use JSA files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a JSA file in Adobe JRun (multiplatform) or any text or source code editor, such as Microsoft Visual Studio Code (multiplatform) or GitHub Atom (multiplatform)."

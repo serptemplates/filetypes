@@ -1,9 +1,50 @@
 {
   "slug": "eot",
   "extension": "eot",
-  "name": "EOT File",
+  "name": "Embedded OpenType Font",
   "summary": "Learn about .EOT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "font",
+  "category_slug": "font",
+  "mime": [
+    "application/vnd.ms-fontobject"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The EMBEDDEDFONT structure has underwent three revisions, with addition of additional data at the end of the structure with each revision. The last revision of the EMBEDDEDFONT structure is as depicted below.\n\nData TypeEntry NameDescriptionunsigned longEOTSizeTotal structure length in bytes (including string and font data)unsigned longFontDataSizeLength of the OpenType font (FontData) in bytesunsigned longVersionVersion number of this format - 0x00020002unsigned longFlagsProcessing Flagsbyte[10]FontPANOSEThe PANOSE value for this font - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#panbyteCharsetIn Windows this is derived from TEXTMETRIC.tmCharSet. This value specifies the character set of the font. DEFAULT_CHARSET (0x01) indicates no preference. - See https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-textmetricabyteItalicIf the bit for ITALIC is set in OS/2.fsSelection, the value will be 0x01 - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#fssunsigned longWeightThe weight value for this font - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#wtcunsigned shortfsTypeType flags that provide information about embedding permissions - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#fstunsigned shortMagicNumberMagic number for EOT file - 0x504C. Used to check for data corruption.unsigned longUnicodeRange1os/2.UnicodeRange1 (bits 0-31) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longUnicodeRange2os/2.UnicodeRange2 (bits 32-63) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longUnicodeRange3os/2.UnicodeRange3 (bits 64-95) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longUnicodeRange4os/2.UnicodeRange4 (bits 96-127) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longCodePageRange1CodePageRange1 (bits 0-31) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#cprunsigned longCodePageRange2CodePageRange2 (bits 32-63) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#cprunsigned longCheckSumAdjustmenthead.CheckSumAdjustment - See https://learn.microsoft.com/en-us/typography/opentype/spec/headunsigned longReserved1Reserved - must be 0unsigned longReserved2Reserved - must be 0unsigned longReserved3Reserved - must be 0unsigned longReserved4Reserved - must be 0unsigned shortPadding1Padding to maintain long alignment. Padding value must always be set to 0x0000.unsigned shortFamilyNameSizeNumber of bytes used by the FamilyName arraybyteFamilyName[FamilyNameSize]Array of UTF-16 characters the length of FamilyNameSize bytes. This is the English language Font Family string found in the name table of the font (name ID = 1) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding2Padding value must always be set to 0x0000.unsigned shortStyleNameSizeNumber of bytes used by the StyleNamebyteStyleName[StyleNameSize]Array of UTF-16 characters the length of StyleNameSize bytes. This is the English language Font Subfamily string found in the name table of the font (name ID = 2) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding3Padding value must always be set to 0x0000.unsigned shortVersionNameSizeNumber of bytes used by the VersionNamebytesVersionName[VersionNameSize]Array of UTF-16 characters the length of VersionNameSize bytes. This is the English language version string found in the name table of the font (name ID = 5) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding4Padding value must always be set to 0x0000.unsigned shortFullNameSizeNumber of bytes used by the FullNamebyteFullName[FullNameSize]Array of UTF-16 characters the length of FullNameSize bytes. This is the English language full name string found in the name table of the font (name ID = 4) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding5Padding value must always be set to 0x0000.unsigned shortRootStringSizeNumber of bytes used by the RootString arraybyteRootString[RootStringSize]Array of UTF-16 characters the length of RootStringSize bytes.unsigned longRootStringCheckSumRootString CheckSum value. See algorithm to process RootStringChecksum below.unsigned longEUDCCodePageCodepage value needed for EUDC font support.unsigned shortPadding6Padding value must always be set to 0x0000.unsigned shortSignatureSizeNumber of bytes used by the Signature array. Currently reserved and should be set to 0x0000.byteSignature[SignatureSize]Currently reserved. If the SignatureSize is 0x0000 there is no length to this array.unsigned longEUDCFlagsProcessing flags for the EUDC font. Typical values might be TTEMBED_XORENCRYPTDATA and TTEMBED_TTCOMPRESSED.unsigned longEUDCFontSizeNumber of bytes used by the Signature array.byteEUDCFontData[EUDCFontSize]Number of bytes used for the EUDC font data. If the EUDCFontSize is 0x00000000 there is no length to this array.byteFontData[FontDataSize]The font data for this EOT file. The data may be compressed or XOR encrypted as indicated by the processing flags.",
+      "Microsoft created the EOT file format to allow web developers to embed OpenType fonts in webpages, so text would always appear in the correct font online. Developers could use WEFT to transform an existing OpenType font file into an EOT file, which they would then link with one or more webpages. EOT files were compressed, making them faster to load over the web, and included some copyright-protection features, such as subsetting (including only a webpage's needed characters) and encryption.",
+      "Internet Explorer is the only browser that ever supported EOT files. EOT files have largely been replaced by .WOFF files, which are web-optimized font files. Microsoft stopped offering WEFT for download in 2019.",
+      "NOTE: You can also create EOT files from .TTF files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "EOT files are not meant to be opened. However, you can use eotinfo (cross-platform) to view information about an EOT file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -16,19 +57,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "EOT files are not meant to be opened. However, you can use eotinfo (cross-platform) to view information about an EOT file."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ExamView"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -57,25 +89,24 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.789Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.146Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.789Z"
+      "url": "https://docs.fileformat.com/font/eot/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.146Z"
     },
     {
-      "url": "https://fileinfo.com/extension/eot",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.789Z"
+      "url": "https://fileinfo.com/extension/eot",
+      "retrieved_at": "2025-11-01T22:32:42.146Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.789Z"
+      "retrieved_at": "2025-11-01T22:32:42.146Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.789Z"
+  "last_updated": "2025-11-01T22:32:42.146Z"
 }

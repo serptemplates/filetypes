@@ -7,6 +7,18 @@
   "type_name": "Windows App Bundle",
   "summary": "Learn about .APPXBUNDLE files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An APPXBUNDLE file is an app package that is used for distributing Windows desktop and UWP (Universal Windows Platform) apps. The package contains one or more versions of an app, each of which is compiled for a specific processor architecture (x86, x64, or ARM)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The different architectures in APPXBUNDLE files allow the appropriate version of the app to be deployed to a matching computer's architecture. For example, a 32-bit system may receive the x86 version of the app while a 64-bit system receives the x64 version. By including multiple architectures into an APPXBUNDLE file, developers can support a wide range of devices with a single installer package.",
+      "AppX bundles are created by Visual Studio, Microsoft's primary Windows development IDE. Developers can upload bundles to the Microsoft Store, or make them available for sideloading, a process that allows users to manually install apps.",
+      "NOTE: Single app packages are saved as .APPX files."
+    ]
+  },
   "programs": {
     "windows": [
       {

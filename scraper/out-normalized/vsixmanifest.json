@@ -1,9 +1,25 @@
 {
   "slug": "vsixmanifest",
   "extension": "vsixmanifest",
-  "name": ".VSIXMANIFEST",
+  "name": "Visual Studio Extension Manifest",
   "summary": "Learn about .VSIXMANIFEST files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Microsoft Visual Studio and Visual Studio Code are IDEs that developers use to create programs. Both IDEs allow developers to install extensions that contain additional features. These extensions are saved as VSIX files. (However, VSIX files intended for use with Visual Studio are not compatible with Visual Studio Code, and vice-versa.)",
+      "Each VSIX file contains a VSIXMANIFEST file that describes that extension's name, function, publisher, assets, and installation information (including any dependencies and prerequisites). Typically, developers installing an extension will never need to view that extension's VSIXMANIFEST file. However, developers can extract a VSIX file's VSIXMANIFEST and open it in Visual Studio, Visual Studio Code, or any other text editor, to view the metadata it contains.",
+      "NOTE: When creating your own Visual Studio or Visual Studio Code extension, you must create a VSIXMANIFEST file and package it with that extension."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a VSIXMANIFEST file with Microsoft Visual Studio (Windows), Microsoft Visual Studio Code (multiplatform), or any other text editor, to view the metadata it contains.",
+      "Note that you likely should not edit a VSIXMANIFEST file, as doing so may prevent you from being able to install the VSIX file that uses that manifest."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,12 +38,6 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a VSIXMANIFEST file with Microsoft Visual Studio (Windows), Microsoft Visual Studio Code (multiplatform), or any other text editor, to view the metadata it contains.",
-      "Note that you likely should not edit a VSIXMANIFEST file, as doing so may prevent you from being able to install the VSIX file that uses that manifest."
     ]
   },
   "images": [
@@ -63,10 +73,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vsixmanifest",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.362Z"
+      "url": "https://fileinfo.com/extension/vsixmanifest",
+      "retrieved_at": "2025-11-01T22:32:42.856Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.362Z"
+  "last_updated": "2025-11-01T22:32:42.856Z"
 }

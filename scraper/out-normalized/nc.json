@@ -1,9 +1,26 @@
 {
   "slug": "nc",
   "extension": "nc",
-  "name": "NC File",
+  "name": "Mastercam Numerical Control File",
   "summary": "Learn about .NC files and view a list of programs that open them.",
   "developer": "CNC Software",
+  "category": "other",
+  "mime": [
+    "application/x-netcdf"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "CNC Mastercam is a widely-used CAD/CAM package for engineers or machinists to design and produce mechanical components. When a user saves a 2D or 3D machine toolpath in the Toolpaths pane in Mastercam, the software creates an NC to store its information.",
+      "Users typically save their NC file(s) to a portable storage device, such as a USB flash drive, then transfer it to a CNC machine tool. They then load the file in the tool to direct it as its cuts a path in a piece of material, such as wood, plastic, or metal."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an NC file with CNC Mastercam in Windows by selecting File → Open. CNC Software offers Mastercam Learning Edition, which is a free trial of Mastercam that limits some capabilities."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -68,43 +85,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open an NC file with CNC Mastercam in Windows by selecting File → Open. CNC Software offers Mastercam Learning Edition, which is a free trial of Mastercam that limits some capabilities."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAClklEQVR42r2XMXLiMBSGn2cM50ixPYU6CqCg3K1zA1LkBDAebBgGTkCzxZ5iqwwFFbMNBZfYLhcAz3j1Cz9FlmVZkLD/TEgiMfq/9/T0LEdxHFOblstl0TQ3n88jzMvf/F011rpoqcgHwMbT6bTxO5vNBobK+Dyb0epjvSCIGoAZLYxh4BPM8yShLMsolf8v5M9fQfTrFAdBaABXtCHmiHx2Pl8B5AoLSbBaxZTkObIRBgBzNm4zdUUfr1bKkAEoI/o+EfTy80inFogKwD3mEKKHaZryqkQdue62l9Pr6QaA0AxwxQNg3e2q4rMBkIi0KLhIGyE0QL/fVwPD4dALYppDnH4XAE7E5XLxQtQAWC4Q21xHj2jxUZ4f1EGaXbcBAoS5lglTOQU2hAnS6XQqaUfl6+hVIVQzoEDKLOx2O9daURCADRKpMq9Gb2fgIQCujOjoAWA3a05y8TFhbMH9ADbIIoocAHVTU06AEIjD4SD3/pr2/WhfATHlO8qm+U0Ao/2oNgYIjDMMANvkAyjQ1xnANmQT39xnAIrBYEDj8ZjMDJhGJkDT3F0AQohCTCZEQqiBp7c3BfGIDHAjqwAQAKS5mABA1ADsffYpBMB+TFe24NvzMz29v9cAfLqlCAFQPiF1FuwbkS7EJgA7G/cAyGuCvie47oQViHV3XTsZpiH6QggAzP/00DkF/T4e+e4YOS+lZj/gCF19gBUKACEDqLaXMgutACyzC7rMAwGiXp4XqHfpj4trMwD/bYLYKbcVAoAPQPyg65PS915QlDAVEJg0tesmALv58PoSxP9i4gP5AgClEIBgkEcDtIL8N4DtVnazV32R0SA2gKv3fwWAgkiSXL2CsRgk1PizAArCMjAvZcGv5/8A3OrK1RrBzxQAAAAASUVORK5CYII=",
-      "alt": "MATLAB"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA7UlEQVR42uWWWw6EIAxF7c7c2XR2xs46Q4JE0lIepfjhTRQfIMejoHCsDY02gOUA+F+jUgPLbTcAIi4DAI4MiM4A91sl+pQArzNwWXibgUq2GOiNqwFpiRVSCfiQgccBirgADGY1gAQEyn7eGSbvuBkSzokAFEIw936ep9RRreQA6QJTubWXLDQfQQaQps9W4vS6FADgyzq5PqdbAIwG2OkGUJ8BzUTDALuEt4HqcFtiQDIhANQ632KgWV06oBrQRsCEAZFo5zugA8xmYBTUAayxAMR4fA2nG43AmP8n2FSJiN2NU10ThPYTscXCDxHw0hTX960HAAAAAElFTkSuQmCC",
-      "alt": "Alphaedit"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGLUlEQVR42sWWe2xTVRzHf7e9r972drctmzwW6R1zbGxj7wU2xtqwZewBbjoJokgLEZAYHWgEE5N1iZEE/wAfCX+2f4jBKBlKDMZAWiVRRHGDYWBjrJ0T5oDBtm4g9HE8t+1u2z1g4Iin6b2n53fu7/f5fc/vnFsC/udGSJeBT7cI+NZkqCDeVHAI94MuQEE8FGxHCLUojZ8NPVGAvz/c2EqoqHpuIQCXjaTA+IvvIQgMIB6ySfOuH9xWTxl8dm3hkBCxuUJzUdCDL72RfgQeeZRpJz0zArj6Vp2JXKB3EgwB+nI8qI5AhB0N4buoXPTFEAawECSy68puAkEGIqDSvLj5ExKIQIV/Y6Bgb6TvQoDaiXGSq+81HCMT+TrV0wi4pWii8xYy9ctxFdwq0WtUpXijgWKDjwedsj8RFJmjAE3VRkUS71ZoKNCtRKBQxz3gIdOOiJF6sSkYX7Nu5WA081gVpuvHqRMa95DZbaIMEILYXWtTJvLNUi2ocqIPEuEHreTio46Bj14RUDDg1mSNCkzyPTlL/xAFI2eGgZmvAAWLxjMEZh6K/o5TBFmpnHZHHMBfb1QKhMB1kDomWVeCgEjAwaPZeMiMb0Iq9O9r3E/y/iZh5R05s+DdAFz7ePSAfwgNgwLKI/Eh6PMbSYE0LnwfpzEqA3io3HOiXIRxEDsrLVgFO2ckgMvBAEQYAIUDWanMbx39H6w1ooDPLazwATUnRmK8ZamcH22x/q6sSXMKDTqTtsCHp8nZt1D5521TAkit793qU5SeXSGpoBDk4KFaoLOPi+GiNdnpeQGLUEbG2kM7hs77KXRunK/JSBeeVl1M2g6gCMg1INlEuqBjaHqA11aalEkaJ5usAE2xNCuueKx0zveOvreLclEg2Jb4nBqUmklr3ELn/2Lracw9KLyQuF2z+AaAT678A3TRhZ1x58BU7c9d5mOklq3TlQAokyB2O7novBNmacSzrcCpWkSahFUUdhStdPzJO9KafKns/tjtOevGWAUaie4GAkSm+A/PwwG2lhiVBpWbeYoAbZkSaxi7vZCZzne6ejYUmLAL5/wdFCgYKXD4dGSKfjVfthQ36Vc9s1+T9jWgu/i5wD/YFnCwq8AaG2daAKm5d5R8QuvZ13XLCVDOJWIldjGFP4RUuFRb4BbKkVFYNgDIjzMNeK2qSnD0765289U9RqWvM9aliG2eGQOc21xk0OkZjypJodGWkxEVIkvhGzIzpR2ujtoCi0J7355i6QitiqoKxEuvLq835KW0agsPQfC27M6FbeaJMR4IILXurYV7WR29R1dCYhUkAXyA7l3F334XV+ULOfwZq5Bc4TEaMgZbuNVg691V2aav8eYq/adjA5lVq8H1yADtm3INeoHsZhdQAl84iAP3YAH8YSMCkasFz3e1Bbagyl9u2nyuof+r4mWazPTjCaWHIXjrvuyGq4G8qfw/FCBUC9YsG6lnmhNSOoBcKDuVFsKhrosvqmu7Kpxcud9E0zjZgDxs5erA8dgAPRvSBULL9KkShjV8kQeAjjOL6rXhwpLWXpcqtvJlJwHdHBi3e7BdnM73jACk1vVy5l5GYPcIqVgFMaoClsGhrg+r0PtOdRtfSOay/DFA0Sk71c/Cgf8McHZdpkHPkTdZYRj45RNUwLVw/XDeei4/ba+m+DeA4SvjltCxq2mAaf/SzRhAat2NS+ykoLIIi7EKKdEU791gTo+dzVzGZGiBz3JB0CubWjTPg+1BPh8JoHNNupHkWTfNjYBg7pFVQD4l3DqRDcLqPlASg7HedXwjPPAP7SMBSO1iffbnDEe/yKdeBDbrjjw+2pkEfD7epmNy6Tv4dfE7ZHYAKtJNVALnVJIjYKjpBmCmdSzy6+OP3VkBCEFULT1F0tSKhOxOrMLoVFOOajdAw0x8PRbAhdJ0C1bBTnGjYKjuAoKZ5NWsfWnysTtrACGIyqV9WIVkXXYXsJneWJMrYePkl86sA5wvz7SRGraZYr2QWBWnQkPCJjj6xAHaStMFJcfcVtAkGJZ0gWpJSAWPYJ3+2J1VAKn9bs6ykxxjoWkvzK3sknaEVdgy9UvniQCcwSrQgtqC34pCUublnAX7RmZU+bHtX5yRo5ftt6qgAAAAAElFTkSuQmCC",
-      "alt": "Freemake Video Converter"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAgUlEQVR42u3XSw6AMAhFUdn/otU2tiHNgzRqwuQy6k84xTjQzjuOwrAGMLO50Dx+vq5l455Q7EW5+zwC7BaNCqo9CR6vYBzw478AUcwOKIA/FLU2a7MCrXledUAl3G33J0DWGV80ez4FVMXzFdQUb1cHAAAAAAAAAAAAAABA+X/BBX0zSbAO6w0IAAAAAElFTkSuQmCC",
-      "alt": "TruTops Convert"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAxUlEQVR42u2Xiw3DIAxE7clgM2AzmMwtaSyR4jSFQn7lpIiPIt/ThYBAyEVzi437KHgtJ621ZIwB59w0bt1/1s888d0cEYHoBd+qz+b8pL7nA+ihEAJorQsApOVCUK0yAPxQqRJiF4BoopSaWlYc/08CNwJYzP5uXgfQWMUA6UpOxav6/gkcDrD2CUpVtxGNBEYCV01AC5sU797dE9g6v64HUHoWjAQOT2ANYre/YEtfATBEfLG1Yk3vPcy15cupkFwPZX4PVMaXMFaTCNcAAAAASUVORK5CYII=",
-      "alt": "Sakura Editor (Japanese)"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADtklEQVR42sVW6WsTQRTP0pbeSdukljRNL5JW6WkrioqU+kEQLSIIgiiiiP+ZoPhBQbyqWKQgCoqFWnukd0h629g2LT2yz327fcvL7Gyy+eSDzUxm3r7fb+ddo7j+syj4o/b0AGhjSlVdoM1UXNNGfX48esbGFP7icmsrmDra/2AkkrYfaWzU93GP20kxu71LS4r+UkojkAncOznpOjo6SgOIt7QAMID66em0/fz8fBgNBGzB8YPPEIGD7m7IBRwlFg4DgaPhppkZiw6SGPH7peA4nl1eNgjsd3VBLuAoUY0AN9w8OyvVQxLfa2os4Pj/3MqKQWAPCQjgOiHNLd7xcanhxVAI+FeF5uakeiOBAMjAcTy/umoQSHZ2ggycjvjExIRpXPxybhD1Ty0sKE7A8bm4tmYQ2OnoAH7sK+FwWvTiUzs1pdCRRhoapOAdsZjpMhn4hfV113BVlWnz0vq6QWCrvR24zxEkHgqZimKq4f5EMJgzONkeqqjQ1/o2NgwCf9vaQAw4VFxsbnbxVOPRjvtjWprlAs5tf/B4XP1EABdk0Y7rc01NljSigMN9HHMB57ZxXRq5oiL3+clo1DT4u75ej532aNQk9K26Ois4F9tNjHbR5wQ+3tAAsgp3Oh7XffzF57OAf/Z6AX3umADlOfd5JnBeXkWXIjjGSr8dAbGx2PmcH3um8soBCJynNM3xfV1ZbCyyItOqFZhs4LzCOQEHIiA2FrsK9ysYhGzgVOHQ7pBGIBO4Si7IVl4pzzM1FgLp29w0gw/135WX24KrdAKUz1xkRQblZ20t2IFTeRXT+HVpqb43sLvrPA0x2sUK1x2L6afwVct1GXh/IqHrf6qqgst//qRVvpfFxa7r29vO05CnEq9wvcdphuvUWPDYUQicCF1JJBSZPUcESGTllVJNLMUcnN65urWVvRLiBTI8P684AecVbtjnA+pqROhNWZkl4AZ2diy2nxUWwu39faMXTGr+dnKZkIFT+pLPkcSrkhJLtN9MJhUOjvt3Dg4MAry8YmPJFVz0OZJ4UVRkueTe2ttTCBz/3z08VNK6ml2RcQIu+hxJPC8stOik2PweteNMFU52mcBx0O1OM3wtmTQzges+LSiQguMH3CcCo3V14AScy8fKSnAS7UjiSV6eBRznD1IpxfYmIzYWUQYrKoBHu6zI8IATwXH+UFUNArmWV5T3Hg84STU7cBwfARgEfvj9YAdOASdeJt663cBT7YZAIBs4Po+1OmTbjEQRY0F8J9u+nc1/0oqBqYNsiEUAAAAASUVORK5CYII=",
-      "alt": "CIMCO Edit"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ESPRIT.NCEdit"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -113,24 +97,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/nc_4423.jpg",
+      "alt": "Screenshot of a .nc file in CNC Software Mastercam Learning Edition 2023",
+      "caption": "NC file open in CNC Software Mastercam Learning Edition 2023"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/nc_11701.png",
+      "alt": "Screenshot of a .nc file in Steel Projects CAD Viewer",
+      "caption": "NC file open in Steel Projects CAD Viewer"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.836Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.186Z"
     },
     {
-      "url": "https://fileinfo.com/extension/nc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.836Z"
+      "url": "https://fileinfo.com/extension/nc",
+      "retrieved_at": "2025-11-01T22:32:42.186Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.836Z"
+      "retrieved_at": "2025-11-01T22:32:42.186Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.836Z"
+  "last_updated": "2025-11-01T22:32:42.186Z"
 }

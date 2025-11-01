@@ -1,7 +1,7 @@
 {
   "slug": "pkgdef",
   "extension": "pkgdef",
-  "name": ".PKGDEF",
+  "name": "Visual Studio Shell File",
   "summary": "Learn about .PKGDEF files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,20 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The Visual Studio isolated shell enables stand-alone applications to run with Visual Studio. The shell is most helpful to use specialized tools from other applications. When these applications that are referenced by Visual Studio are installed, values are created and specified by PKGDEF files.",
+      "PKGDEF files were introduced in Visual Studio 2008 and become more prominent with recent versions. In Visual Studio 2010, functions of the PKGDEF file expanded, making the file load and merge operation a standard part of the initialization sequence for the Shell application and IDE.",
+      "PKGDEF files are made up of sections defined by a key. The keys appear as [$RootKey$] or [$RootKey$\\subkey], $RootKey is the root key of the application. Each section holds name/value pairs in the ValueName=Value format.",
+      "The location of PKGUNDEF files in, say Visual Studio 11.0, is C:\\​Program Files (x86)\\​Microsoft Visual Studio\\​11.0\\​Common7\\​IDE\\​. It will have the same name as the corresponding .PKGUNDEF file.",
+      "NOTE: Any PKGDEF files that aren't declared in the .VSIXMANIFEST file will not be scanned when Visual Studio starts."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File created by Microsoft Visual Studio, a Microsoft SDK; contains application configuration settings used to customize an isolated shell application; looks similar to the .REG file."
     ]
   },
   "images": [
@@ -46,8 +60,11 @@
     {
       "url": "https://fileinfo.com/extension/pkgdef",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.243Z"
+      "retrieved_at": "2025-11-01T22:32:42.692Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.243Z"
+  "last_updated": "2025-11-01T22:32:42.692Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

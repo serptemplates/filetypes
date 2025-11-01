@@ -4,8 +4,21 @@
   "slug": "doc%23",
   "extension": "doc%23",
   "name": ".DOC# File Extension",
+  "type_name": "LibreOffice Document Lock File",
   "summary": "Learn about .DOC# files and view a list of programs that open them.",
   "developer": "LibreOffice",
+  "more_information": {
+    "description": [
+      "Temporary lock file created by LibreOffice, a free office productivity suite based on the OpenOffice.org source code; created when editing a saved document (.DOC file) and deleted when the document is closed in LibreOffice; used for locking the document from concurrent use."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "DOC# files use the filename convention .~lock.MyDocument.doc#, where \"MyDocument\" is the name of the document being edited. The DOC# file is created in the same directory as the DOC file being edited.",
+      "Temporary lock files are also created for other file types being edited in LibreOffice. For example, an \".odt#\" file is created when editing an .ODT document.",
+      "NOTE: DOC# files are saved in a plain text format and include the current user opening the document, a timestamp when the document was last saved, and the location of the LibreOffice lock information directory ([user]\\​AppData\\​Roaming\\​LibreOffice\\​3\\​ in Windows)."
+    ]
+  },
   "programs": {
     "windows": [
       {

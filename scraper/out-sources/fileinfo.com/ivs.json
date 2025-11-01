@@ -4,8 +4,20 @@
   "slug": "ivs",
   "extension": "ivs",
   "name": ".IVS File Extension",
+  "type_name": "Initialization Vector File",
   "summary": "Learn about .IVS files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "File used by Aircrack-ng and other WEP wireless network key cracking applications; contains initialization vectors (\"IVs\"), which are the seeds used for generating encrypted data on the network; processed by a cracking utility to get the WEP key for the network."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "To crack a WEP key with Aircrack-ng, users first perform an ARP (Address Resolution Protocol) Injection on the network, which forces the wireless device to generate packets with new IVs. These IVs that are dumped into an IVS file which Aircrack-ng uses to decipher the WEP key.",
+      "NOTE: Because of the weakness of WEP encryption, it has been replaced by other wireless network encryption protocols."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,9 +1,54 @@
 {
   "slug": "gsm",
   "extension": "gsm",
-  "name": "GSM File",
+  "name": "Global System for Mobile Audio",
   "summary": "Learn about .GSM files and view a list of programs that open them.",
   "developer": "European Telecommunications Standards Institute",
+  "category": "audio",
+  "category_slug": "audio",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "GSM work on a structured network which consists of the following sections:\n\nModulation : It is a process of transforming input data into a format that can easily be transmitted. The transmitted data is demodulated at the receiving endTransmission rate : GSM is a digital system that has an over the bit rate of 270 kbpsUplink Frequency Range : 933-960 MHzDownlink Frequency Range: 890 – 915 MHzChannel Spacing : It means the spacing between adjacent barriers which should be about 200 kHzDuplex Distance : It is the space between uplink and downlink frequencies which should be 80 MHzSpeech Coding : GSM uses Linear Predictive Coding (LPC). LPC compresses the bit rate. When the audio signal passes through a filter and mimics the vocal tract. GSM encode speech at 13kbps\n\nAudio compression formatAlgorithmSample rateBit rate transformLatencyCBRVBRStereoMultichannelGSM-HRVSELP8 kHz5.6 kbit/s25 msYesNoNoNoGSM-FRRPE-LTP8 kHz13 kbit/s20–30 msYesNoNoNoGSM-EFRACELP8 kHz12.2 kbit/s20–30 msYesNoNoNo",
+      "Global System for Mobile (GSM) is an audio format that the European Telecommunications Standards Institute (ETSI) created for use with European cell phones. It is a compressed format that stores audio encoded at a bitrate of 13 Kbps.",
+      "Because the GSM format is primarily used in telephony, most GSM files contain telephone conversations. However, GSM files may also contain music or other audio, saved at the level of quality you'd expect from a telephone conversation."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a GSM file with VideoLAN VLC media player or FFmpeg, to play or convert the audio it contains."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "VideoLAN VLC media player, NCH Switch, SoX, and FFmpeg can all convert GSM files to more common audio formats. For example, VLC can convert GSM files to the following formats:",
+      ".MP3 - MP3 Audio",
+      ".FLAC - Free Lossless Audio Codec",
+      ".OGG - Ogg Vorbis Audio"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -26,19 +71,6 @@
         "name": "File Viewer Plus",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=1726"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a GSM file with VideoLAN VLC media player or FFmpeg, to play or convert the audio it contains."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "VideoLAN VLC media player, NCH Switch, SoX, and FFmpeg can all convert GSM files to more common audio formats. For example, VLC can convert GSM files to the following formats:",
-      ".MP3 - MP3 Audio",
-      ".FLAC - Free Lossless Audio Codec",
-      ".OGG - Ogg Vorbis Audio"
     ]
   },
   "images": [
@@ -74,15 +106,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.924Z"
+      "url": "https://docs.fileformat.com/audio/gsm/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     },
     {
-      "url": "https://fileinfo.com/extension/gsm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.924Z"
+      "url": "https://fileinfo.com/extension/gsm",
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.924Z"
+  "last_updated": "2025-11-01T22:32:42.272Z"
 }

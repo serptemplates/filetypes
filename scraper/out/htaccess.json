@@ -1,9 +1,11 @@
 {
   "slug": "htaccess",
   "extension": "htaccess",
-  "name": "HTACCESS File",
+  "name": "Apache HTACCESS File",
   "summary": "Learn about .HTACCESS files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -24,11 +26,52 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "A website's .htaccess file can be used to perform several important functions, including:",
+      "Defining the index page of a directory (i.e. \"index.html\" or \"index.php\")",
+      "Specifying the 404 (Page Not Found) error page",
+      "Performing 301 or 302 page redirects",
+      "Denying access from specific IP address or other websites",
+      "Restricting access to certain directories and pages",
+      "Executing MOD_REWRITE instructions",
+      "The .htaccess file is always named .htaccess and does not include a filename before the dot. It is placed in the root directory of a website and is processed by the web server each time a webpage is accessed.",
+      "The Apache .htaccess Tutorial includes additional information about how and when to use .htaccess files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An HTACCESS file is an Apache configuration file that provides a mechanism to allow configuration changes for different folders/directories of a website. It includes configuration directives that are applicable to the directory and sub-directories.\n\nAn HTACCESS file performs a number of checks such as defining the index page of a website, listing the 404 (Page Not Found) error page, performing the 301 or 302 page redirects, blocking access from a specific IP address or other websites. The use of .htaccess files, thus, slows down the overall performance of your Apache HTTP server.",
+      "An HTACCESS file is a configuration file used by an Apache web server that provides instructions for different directories of a website. \"Htaccess\" is short for HTTP access, which is the protocol used to transmit webpages."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because .htaccess files are plain text files, you can open and edit them with any text editor. To learn how to use an .htaccess with an Apache web server, refer to the Apache .htaccess Tutorial."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -57,15 +100,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/htaccess/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     },
     {
       "url": "https://fileinfo.com/extension/htaccess",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.925Z"
+  "last_updated": "2025-11-01T22:32:42.272Z",
+  "containers": []
 }

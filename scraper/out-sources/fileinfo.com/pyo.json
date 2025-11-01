@@ -7,6 +7,19 @@
   "type_name": "Python Optimized Code",
   "summary": "Learn about .PYO files and view a list of programs that open them.",
   "developer": "Python Software Foundation",
+  "more_information": {
+    "description": [
+      "A PYO file contains optimized bytecode compiled from a Python code (.PY) file that is executed by the Python interpreter. It is similar to a .PYC file, which is a compiled Python script, but is generated when Python is run with optimization flags (-O or -OO), which remove assert statements and may reduce debugging information to improve performance."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Optimization flags in Python are command-line options used to modify how the Python interpreter compiles and runs code. They primarily affect performance, debugging information, and error handling. The most common optimization flags are:",
+      "-O (Single Optimization): Removes assert statements (a debugging tool used to check if a condition is true) and creates optimized bytecode files (PYC instead of PYO in Python 3.5 and later).",
+      "-OO (Aggressive Optimization): Does everything -O does but also removes docstrings to reduce file size.",
+      "Python used PYO files in versions of Python up to 3.5, but they have since been deprecated. Modern Python versions handle optimization differently, storing all compiled bytecode as PYC files within the __pycache__ directory and applying optimizations based on file naming conventions. If working with an older Python project, you may still encounter PYO files, but newer projects use PYC files for optimized execution."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can run PYO files with older versions of Python (before 3.5). For example, to run a PYO file with an older version of Python in a terminal, execute the following command:",

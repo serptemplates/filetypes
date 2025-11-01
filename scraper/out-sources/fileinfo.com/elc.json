@@ -7,6 +7,19 @@
   "type_name": "Emacs Compiled Lisp File",
   "summary": "Learn about .ELC files and view a list of programs that open them.",
   "developer": "The GNU Project",
+  "more_information": {
+    "description": [
+      "Compiled Lisp file created by Emacs, a customizable text editor; generated from a standard Lisp (.EL) file using the Emacs byte-code compiler; may contain Emacs configuration settings or may provide extra program functionality."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "To compile an EL file, type the following command in Emacs:",
+      "byte-compile-file \"filename.el\"",
+      "Make sure to replace \"filename.el\" with the actual filename Lisp file you want to compile. The compiler will generate a compiled version of the file with the same filename and a \".elc\" extension.",
+      "NOTE: Compiled files can be loaded and run faster than plain text Lisp files. Therefore, most Emacs extensions are saved as compiled ELC files."
+    ]
+  },
   "programs": {
     "windows": [
       {

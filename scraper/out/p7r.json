@@ -1,7 +1,7 @@
 {
   "slug": "p7r",
   "extension": "p7r",
-  "name": "P7R File",
+  "name": "Certificate Request Response File",
   "summary": "Learn about .P7R files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -26,6 +26,16 @@
         "name": "Apple Mail",
         "url": "https://fileinfo.com/software/apple/mail"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When two entities want to verify each other's identity, one entity can issue a certificate request to another entity who then responds with a P7R file. The key inside this file can be used to encrypt data in a manner such that only the owner of the original key can decrypt the data. Therefore, the requester of the P7R file can use the embedded key to encrypt his own key and safely send it back to the issuer."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File used by various programs that include identity authentication mechanisms; stores a response to a digital certificate request that was issued from an authenticating entity; contains a digital signature."
     ]
   },
   "images": [
@@ -62,18 +72,23 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.846Z"
+      "retrieved_at": "2025-11-01T22:32:42.194Z"
     },
     {
       "url": "https://fileinfo.com/extension/p7r",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.846Z"
+      "retrieved_at": "2025-11-01T22:32:42.194Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.846Z"
+      "retrieved_at": "2025-11-01T22:32:42.194Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.846Z"
+  "last_updated": "2025-11-01T22:32:42.194Z",
+  "mime": [
+    "application/x-pkcs7-certreqresp"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

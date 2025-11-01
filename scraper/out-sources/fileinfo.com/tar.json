@@ -7,6 +7,28 @@
   "type_name": "Tape Archive",
   "summary": "Learn about .TAR files and view a list of programs that open them.",
   "developer": "AT&T Labs",
+  "more_information": {
+    "description": [
+      "A TAR file is an archive saved in the Tape Archive format. It contains multiple files that have been packaged together for easier storage and sharing. Notably, unlike .ZIP files and many other types of archives, TAR files are not compressed."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "AT&T Bell Laboratories developed the tar archiving utility and TAR archive format in 1979. Originally, tar was used to write data to tape drives, which are data storage devices that read and write data on magnetic tape. Thus, the archives tar created were referred to as Tape Archives.",
+      "These days, Linux and other Unix-like users are the primary source of TAR files. For example, Linux users often distribute software packages as TAR files, to make those programs easier to download and install. Many of these users refer to TAR files as tarballs, a nickname that references real-life tar balls' sticky, object-gathering nature.",
+      "While TAR files themselves are not compressed, users often compress them using tar or other compression utilities. This reduces a TAR file's file size, making it even easier to store and share. Primarily, users compress TAR files using Gzip compression, turning them into .TGZ or .TAR.GZ files.",
+      "In Windows, you can create a TAR file with 7-Zip. To do so:",
+      "If you haven't already, install 7-Zip.",
+      "From within 7-Zip File Manager, select the files and folders you want to package in your TAR file.",
+      "Right-click one of the selected items and select 7-Zip → Add to archive....",
+      "In the Add to Archive window, set the Archive format: to tar.",
+      "Click OK.",
+      "In macOS and Linux, you can use the tar command-line command to create a TAR file. For example, you can enter the following command to create a TAR file:",
+      "tar -cf YourArchiveName.tar ~/path/to/your/files-or-folder",
+      "If you want to compress the TAR file you create in this process (creating a .TAR.GZ file), instead enter the following command:",
+      "tar -czf YourArchiveName.tar.gz ~/path/to/your/files-or-folder"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a TAR file, and extract the files it contains, with several common archive utilities, including:",

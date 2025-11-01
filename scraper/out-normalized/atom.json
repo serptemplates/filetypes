@@ -1,9 +1,51 @@
 {
   "slug": "atom",
   "extension": "atom",
-  "name": "ATOM File",
+  "name": "Atom Syndication Format File",
   "summary": "Learn about .ATOM files and view a list of programs that open them.",
   "developer": "Internet Engineering Task Froce",
+  "category": "web",
+  "category_slug": "web",
+  "mime": [
+    "application/atom+xml"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Web feeds are files that contain a list of a website's recent updates, typically saved in an XML format. When a user publishes an update to a website that uses a web feed, they (or their website's content management software) also update its feed to include a summary of the new content. Users subscribed to the website's feed are then notified of the new content.",
+      "Atom is a feed format that was created to compete with the more popular .RSS format. Just like RSS feeds, Atom feeds are formatted using XML.",
+      "In most cases, users who subscribe to an Atom feed will never need to view an ATOM file. Instead, they can simply enter the URL of a website's ATOM file into their Atom feed reader, to subscribe to the feed the file describes.",
+      "However, in some cases, users may download the current version of an Atom feed as an ATOM file. For example, a web developer may want to download a website's Atom feed as an ATOM file to inspect the feed's structure or troubleshoot feed issues."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "If you've downloaded an ATOM file, you can open it in any text editor or web browser to view the data it contains.",
+      "To subscribe to a website's Atom feed, you must typically enter the website's Atom feed address into your feed reader."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -28,32 +70,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "If you've downloaded an ATOM file, you can open it in any text editor or web browser to view the data it contains.",
-      "To subscribe to a website's Atom feed, you must typically enter the website's Atom feed address into your feed reader."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEXElEQVR42u2XXWgcVRTHz507u5tsdjeb2qIWPx4qlsRUX/TBB6nUTxALwa9gtWoQpFiyyfYjQQJSrbbpmtZC1YJQQRC0WJAGFK0tFds+2Ifar1ipYIuRVCLWWrNmd3bm+j93ZnY32clm00j64iVn753Zmzm/87/n3Lkr6Co38T9A/1vb+8bH/3l9Lp1KQ77W98q6NzAsiE39GaftiRUil8vhWv2njt77cJBWrXy0ov9sz256ta/3Wkz5U2zesjW7dOk99bNxZAhBAuYvqFJsyhtXBvXVvv0McAuGF8TGNzPZVGp1fcQUgZOnb0Irp6b4ZsI1IAskKZMZYIDFuDUCgC3Z9JruWSkw01YB0LM+XW/Zig59c5QM2VDTQxxnjJbde6ceH/v+eOCc25e06v6+9Ce637/1KbKFWQnQC4A8AI4cGqKdB89CKkXC8Exyj3U2HXwo3fP9lS130G3NC2heUyPpCVXajAA+OnpOOyBAGNIH4N4pXcPabmrxABJ04tQPV67Aho2bVV/vWsp5AHuHhnWk7NSQmGJ4jo0SjAGY++ffqgGuAYASUqchakEnsq6ISQo0XD9Ge9d1BAOsSafwUFMDfH3uAhmsgOEqkLXyZJNFeYctB2cAMhW133iXC5BspOOnh6oqsDyzi6Lzs/TxC6uDAbq7OskMhTTAkd9GyVY2/XrxIo3+fZlycMrr7srv6OjZXl78oAcABSCVLmGO3CvlchXaP9hB0cQY7XqsZ3qAL86fpx9HRshShYmOTdexvwSrFj3sAcShwJmqCnTs6adE0x/09rL+YIA0AKQHkDl8mITv2PQj9iCQD74KL938SDEHHDxUOTa+D66GrgM9up8aoBsApgsw8N23ZRGXZBdGSX4GefGG5W4VYAlOnK5eBTUApADgJuG2YwcnOtYOlefcLqrQcV2bC9CYgFJmzdv4tADbTx4oRsplZxjlIHbx+rkFj9e8D8wIYMeZfcVEK1/zcuc8fmZeexEANYvyFDWdbqYFePfsl2VOK53rXMD1040rNEAyyQDu63jyBsTL4sAKBRvvDoe3KQrVx6oD7Pz580nO2aldume4EO2xZzVAE8rw5BRluKS1FQDYxqwCAJQGCEfjAQDYCaW3E77/y2BJeqMsesOP3u2fjD7vAcQggFkRva+AjcgLlkUF29H7VF1DohJgbboLDiV9unuQFi5cVFM2Dw//RA89cDclUQWnhoKTsKW5GZFDASyBfkfgXl0sAKArlaJQ2KQwkm909PeaAPyWiMf08rEC7MSPmtfeQdQMwPJz46NbIEBnZ4ri0RBJwetlUSgSRrra+HP0Ucs08Vo0wuQeWtkc3StENm4p/WBXcvybwv8AwE/A8oXheTISDQaIRMwZRT6bNulAktmQt/LrpZR1V/Iw3v+lZJOQGtrYBShnVz3g/3Xp0jsDmU3biE/F+GBtk7A4TM6RCDbsMvHvAg4CxvqHvPFcNE4ii/iX0Rw5nLJddYB/AX5Rsnb8pzteAAAAAElFTkSuQmCC",
-      "alt": "Brackets"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "BitLord"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Snarfer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "FeedCAP"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -74,29 +94,37 @@
     {
       "url": "https://fileinfo.com/svg/close.svg",
       "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/atom_1183.png",
+      "alt": "Screenshot of a .atom file in Microsoft Visual Studio Code",
+      "caption": "ATOM file open in Microsoft Visual Studio Code"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.765Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.126Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.765Z"
+      "url": "https://docs.fileformat.com/web/atom/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.126Z"
     },
     {
-      "url": "https://fileinfo.com/extension/atom",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.765Z"
+      "url": "https://fileinfo.com/extension/atom",
+      "retrieved_at": "2025-11-01T22:32:42.126Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.765Z"
+      "retrieved_at": "2025-11-01T22:32:42.126Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.765Z"
+  "last_updated": "2025-11-01T22:32:42.126Z"
 }

@@ -1,9 +1,26 @@
 {
   "slug": "osc",
   "extension": "osc",
-  "name": ".OSC",
+  "name": "OpenStreetMap Change File",
   "summary": "Learn about .OSC files and view a list of programs that open them.",
   "developer": "OpenStreetMap",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "OpenStreetMap is a global collaborative project that maintains a free, up-to-date planetary map. This map is saved in a file named planet.osm, which is hosted at OpenStreetMap.org.",
+      "To make edits to planet.osm, users download a section of the file (saved in the OSM format), edit it using any OSM editor (such as Java OpenStreetMap), and then upload their edits to OpenStreetMap.org. This open editing process can result in users possessing different versions of the same OSM dataset (such as a map describing a region).",
+      "If a user wants to review the differences between two sets of similar OSM data, they can use Osmosis, Osmium, or another OSM diff tool to analyze both OSM files and create an OSC file. The OSC file describes the differences between the two OSM files. Using Osmosis, Osmium, and other tools, users can also use an OSC file to apply the changes the file describes to an applicable set of OSM data.",
+      "OpenStreetMap also publishes new OSC files each day, which describe all changes users made to planet.osm (and region-specific segments of the file) during the previous day. Users can apply these OSC files to their existing OSM files to incorporate the changes they describe."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Osmosis, Osmium, or Java OpenStreetMap to apply the changes an OSC file describes to an applicable OSM dataset. For complete instructions on how to do so, refer to those programs' documentation.",
+      "If you want to view the XML data an OSC file contains, you can open the file with Microsoft Visual Studio Code or any text editor."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,12 +31,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=6263&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can use Osmosis, Osmium, or Java OpenStreetMap to apply the changes an OSC file describes to an applicable OSM dataset. For complete instructions on how to do so, refer to those programs' documentation.",
-      "If you want to view the XML data an OSC file contains, you can open the file with Microsoft Visual Studio Code or any text editor."
     ]
   },
   "images": [
@@ -55,10 +66,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/osc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.227Z"
+      "url": "https://fileinfo.com/extension/osc",
+      "retrieved_at": "2025-11-01T22:32:42.671Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.227Z"
+  "last_updated": "2025-11-01T22:32:42.671Z"
 }

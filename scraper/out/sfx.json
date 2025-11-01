@@ -1,7 +1,7 @@
 {
   "slug": "sfx",
   "extension": "sfx",
-  "name": ".SFX",
+  "name": "Windows Self-extracting Archive",
   "summary": "Learn about .SFX files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -48,6 +48,24 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "When a Windows user wants to send files to another user in a compressed format, but they are not sure the other user has any decompression software, they can package the files in an SFX file. An SFX file combines an archive, containing the user's compressed files, with executable program instructions that allow the Windows operating system to decompress the archive. That way, the user who receives the SFX file can \"open\" it by double-clicking the file, regardless of whether they have any decompression software installed.",
+      "Several compression programs can create SFX files, including:",
+      "RARLAB WinRAR",
+      "Corel WinZip",
+      "7-Zip",
+      "ESTSoft ALZip",
+      "Smart SFX Pro",
+      "These programs can also decompress SFX files.",
+      "NOTE: Windows executable programs, or .EXE files, are another type of self-extracting archive. Most SFX files are saved with the .exe extension, which allows Windows to recognize the files as self-extracting archives. If you are having trouble decompressing an SFX file, you should try renaming it to use the .exe extension."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An SFX file is a compressed archive that has been combined with an executable module, allowing Windows users to extract the archive's files without a decompression program. It is typically saved with the .exe file extension, but may sometimes use the .sfx extension. When double-clicked in Windows, SFX files automatically decompress themselves."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In Windows, you can simply double-click an SFX file to extract the files it contains, provided the file is saved with the .exe file extension. You can also use 7-ZIP, WinRAR, or WinZip to manually decompress an SFX file, if you do not want Windows to execute the program instructions the file contains.",
@@ -84,8 +102,11 @@
     {
       "url": "https://fileinfo.com/extension/sfx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.298Z"
+      "retrieved_at": "2025-11-01T22:32:42.764Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.298Z"
+  "last_updated": "2025-11-01T22:32:42.764Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

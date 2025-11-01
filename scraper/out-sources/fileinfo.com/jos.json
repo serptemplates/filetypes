@@ -4,8 +4,21 @@
   "slug": "jos",
   "extension": "jos",
   "name": ".JOS File Extension",
+  "type_name": "Java OpenStreetMap Session Definition",
   "summary": "Learn about .JOS files and view a list of programs that open them.",
   "developer": "OpenStreetMap",
+  "more_information": {
+    "description": [
+      "A JOS file is a session definition file created by Java OpenStreetMap (JOSM). It contains XML-formatted data that describes a JOSM session. Typically, JOS files are stored inside .JOZ archives, alongside a session's .OSM layers."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Java OpenStreetMap is a free OpenStreetMap map (OSM file) editor available for Windows, macOs, and Linux. It allows users to download or import OSM maps, mark them up with tagged nods and paths, and submit their edits to the official OpenStreetMap project.",
+      "Users often save their in-progress JOSM editing sessions as JOZ files, so they can continue editing those sessions later. JOZ files are .ZIP archives that contain the OSM layers a user has imported into their session and a JOS file.",
+      "The JOS file is an .XML file that describes the session's layers (including OSM layers and image layers), viewport settings at the time of being saved, and version. When a JOSM user opens a JOZ file, the program loads the session's settings from its JOS file and uses those settings to display the session (and its corresponding OSM files) correctly."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "If your JOS file is stored alongside associated Java OpenStreetMap (JOSM) session data (saved in a directory named layers), opening the JOS file with JOSM will open the corresponding JOSM session. If your JOS file is not stored alongside its associated JOSM session data, opening the file with JOSM won't do anything (besides producing an error message).",

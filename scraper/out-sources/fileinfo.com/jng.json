@@ -7,6 +7,18 @@
   "type_name": "JPEG Network Graphic",
   "summary": "Learn about .JNG files and view a list of programs that open them.",
   "developer": "PNG Development Group",
+  "more_information": {
+    "description": [
+      "A JNG file is an image saved in the JPEG Network Graphic (JNG) format. Like .PNG images, JNG images can contain transparent sections. However, like .JPG images, JNG images are compressed using lossy compression."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The PNG Development Group created the JNG format for use alongside the .MNG format. JNG files often contain a still image that is a single frame of an MNG animation.",
+      "Unlike typical PNG files, JNG files are compressed using lossy compression. For this reason, they may be subject to the blurring and other distortions that sometimes affect JPG files, and they also typically have smaller file sizes than similar PNG files.",
+      "The image data a JNG file contains is encoded using JPEG compression and stored in a PNG container. Like PNG files, JNG files can contain an alpha channel that allows them to include transparent sections. However, not all JNG files contain an alpha channel or transparent sections."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a JNG file with ImageMagick (multiplatform), XnViewMP (multiplatform), or IrfanView (Windows)."

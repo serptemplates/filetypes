@@ -7,6 +7,17 @@
   "type_name": "macOS Meta-Package",
   "summary": "Learn about .MPKG files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An MPKG file is a macOS meta-package. It contains multiple macOS packages (.PKG files), which are used to install applications. Bundling related PKG files within an MPKG file makes those packages easier to distribute and install as a group."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "For example, an MPKG file might contain separate installation packages used to install the command-line and GUI versions of a program. Or, an MPKG file might contain several related utilities, which are meant to be used in concert and thus packaged together.",
+      "When you double-click an MPKG file in macOS, Apple Installer will begin installing the packages the MPKG file contains. Sometimes, you may be able to manually specify which of the MPKG file's packages you want to install, as part of the installation process."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use Apple Installer to install the packages an MPKG file contains. To do so, either double-click the MPKG file, or right-click it and select Open With → Installer."

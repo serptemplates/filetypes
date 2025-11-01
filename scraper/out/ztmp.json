@@ -1,7 +1,7 @@
 {
   "slug": "ztmp",
   "extension": "ztmp",
-  "name": ".ZTMP",
+  "name": "Steam Compressed Game Resource File",
   "summary": "Learn about .ZTMP files and view a list of programs that open them.",
   "developer": "Valve",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=4768&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "HLDS creates ZTMP files when clients make requests for game resources. ZTMP files are compressed once and stored on the server for all subsequent requests. After downloading a ZTMP file, the game client automatically decompresses it back to the original file. Users can turn off the compression option in the server configuration file so that no ZTMP files are created.",
+      "When HLDS creates ZTMP files, it appends the \".ztmp\" extension to the existing file. For example, when compressing a .BSP Valve map file, HLDS creates a new file with the \".bsp.ztmp\" compound file extension. ZTMP files are created with a Valve compression algorithm.",
+      "NOTE: HLDS does not recognize updated game files. Therefore, if a game file has been updated, the corresponding ZTMP file should be deleted so that HLDS will recreate a new ZTMP file the next time the game file is requested by a game client."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Game resource stored by Steam's Half-Life Dedicated Server Update Tool (HLDS), a network server application used for hosting game files; contains a compressed file, such as a game map, audio file, or other game data; used by game clients for automatically downloading updates and custom content within hosted multiplayer gaming environments."
     ]
   },
   "images": [
@@ -42,8 +54,11 @@
     {
       "url": "https://fileinfo.com/extension/ztmp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.406Z"
+      "retrieved_at": "2025-11-01T22:32:42.921Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.406Z"
+  "last_updated": "2025-11-01T22:32:42.921Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,7 +1,7 @@
 {
   "slug": "update",
   "extension": "update",
-  "name": ".UPDATE",
+  "name": "ISAPI Update File",
   "summary": "Learn about .UPDATE files and view a list of programs that open them.",
   "developer": "EggCentric",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=4028&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The ISAPI loader requires all updatable DLL files to be renamed with the extension RUN. When discovering a new UPDATE file, it finishes current Web server requests, holds new Web server requests, changes the existing RUN file to use the extension BACKUP, renames the UPDATE file to RUN, reloads the new RUN file, and then resumes Web server operations normally.",
+      "ISAPI, which stands for Internet Server Application Programming Interface, enables two components in IIS, extensions and filters. Extensions are applications that run on IIS, and filters are extensions to the IIS web server functionality."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File used by ISAPI Loader, a program that allows DLLs to be \"hot-swapped\" on a Microsoft IIS web server during execution; contains updated DLL file contents for the Web server; automatically recognized and updated by ISAPI Loader."
     ]
   },
   "images": [
@@ -42,8 +53,11 @@
     {
       "url": "https://fileinfo.com/extension/update",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.344Z"
+      "retrieved_at": "2025-11-01T22:32:42.834Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.344Z"
+  "last_updated": "2025-11-01T22:32:42.834Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

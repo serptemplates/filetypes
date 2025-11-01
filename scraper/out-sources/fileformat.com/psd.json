@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/image/psd/index.html",
   "slug": "psd",
   "extension": "psd",
-  "name": "PSD File",
-  "source": "fileformat.com"
+  "name": "What is a PSD file?",
+  "summary": "What's on this Page",
+  "category": "image",
+  "category_slug": "image",
+  "technical_info": {
+    "content": [
+      "Data in a PSD file is stored in big endian byte order. This implies swapping the short and long integers when reading or writing on Windows platform. The Photoshop file format is divided into five major parts. It has many length markers that can be used to move from one section to the next. The length markers are usually padded with bytes to round to the nearest 2 or 4 byte interval. The five major parts are:\n\nFile HeaderColor Mode DataImage ResourcesLayer and Mask InformationImage Data\n\nFor conformance, data should be written to all these fields in the section, as Photoshop may try to read the entire section. It also implies that zeroes be written to skipped fields while writing to a file. The length field in the length-delimited sections should be used to decide when to stop reading. In most cases, the length field indicates the number of bytes, not records, following. The following points need to be remembered while reading a file.\n\nThe values in “Length” column in all tables are in bytes.All values defined as Unicode string consist of:A 4-byte length field, representing the number of characters in the string (not bytes).The string of Unicode values, two bytes per character."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "PSD, Photoshop Document, represents Adobe Photoshop’s native file format used for graphics designing and development. PSD files may include image layers, adjustment layers, layer masks, annotations, file information, keywords and other Photoshop-specific elements. Photoshop files have default extension as .PSD and has a maximum height and width of 30,000 pixels, and a length limit of two gigabytes."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

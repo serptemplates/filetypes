@@ -1,7 +1,7 @@
 {
   "slug": "wsp",
   "extension": "wsp",
-  "name": ".WSP",
+  "name": "SharePoint Solution Package",
   "summary": "Learn about .WSP files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,17 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WSP files are compressed in a .CAB format and can be created using the Makecab.exe program. The archive can include various site resources and source code files. The WSP file can be added to a SharePoint configuration database using the stsadm -o addsolution file.wsp command. It can be deployed to SharePoint servers using the stsadm -o deploysolution file.wsp command.",
+      "WSP files can be developed using Microsoft Visual Studio with the with the \"Visual Studio extensions for Windows SharePoint Services\" plug-in."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Package used by SharePoint, an enterprise-level document and content management system; saves a Windows SharePoint Services solution, which is a custom component, such as a website, that can be added to a company's SharePoint site."
     ]
   },
   "images": [
@@ -46,8 +57,11 @@
     {
       "url": "https://fileinfo.com/extension/wsp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.380Z"
+      "retrieved_at": "2025-11-01T22:32:42.877Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.380Z"
+  "last_updated": "2025-11-01T22:32:42.877Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

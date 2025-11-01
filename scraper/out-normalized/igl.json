@@ -1,8 +1,14 @@
 {
   "slug": "igl",
   "extension": "igl",
-  "name": "IGL File",
+  "name": "IGL files and how to open them",
   "summary": "Having problems opening an IGL file?",
+  "category": "other",
+  "mime": [
+    "application/vnd.igloader"
+  ],
+  "containers": [],
+  "related": [],
   "programs": {
     "windows": [
       {
@@ -15,28 +21,22 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Grabber"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.808Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.162Z"
     },
     {
-      "url": "fileinfo.com",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.808Z"
+      "retrieved_at": "2025-11-01T22:32:42.162Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.808Z"
+      "retrieved_at": "2025-11-01T22:32:42.162Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.808Z"
+  "last_updated": "2025-11-01T22:32:42.162Z"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "devicemetadata-ms",
   "extension": "devicemetadata-ms",
-  "name": ".DEVICEMETADATA-MS",
+  "name": "Device Metadata Package",
   "summary": "Learn about .DEVICEMETADATA-MS files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,22 @@
         "name": "Microsoft Windows",
         "url": "https://fileinfo.com/software/microsoft/windows"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "DEVICEMETADATA-MS files were introduced in Windows 7. The packages are compressed cabinet files and are named with globally unique identifiers (GUIDs) to distinguish each device.",
+      "You most likely will never come across a DEVICEMETADATA-MS file. However, you most likely have seen the information stored in the file. One prominent place you will see the information is in the Windows Control Panel, which displays the icons and information about devices connected to the computer.",
+      "DEVICEMETADATA-MS files commonly include the following contents:",
+      "PackageInfo.xml",
+      "\"DeviceInformation\" folder - Contains the DeviceInfo.xml file and DeviceIcon.ico file.",
+      "\"WindowsInformation\" folder - Contains the WindowsInfo.xml file.",
+      "\"SoftwareInformation\" folder - Contains the SoftwareInfo.xml file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A DEVICEMETADATA-MS file is a package used by the Windows operating system (OS). It contains .XML files that store metadata about a physical device connected to Windows, such as a printer, mouse, flash drive, or keyboard. DEVICEMETADATA-MS files may also include an .ICO file, which is the icon of the device."
     ]
   },
   "images": [
@@ -46,8 +62,11 @@
     {
       "url": "https://fileinfo.com/extension/devicemetadata-ms",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.026Z"
+      "retrieved_at": "2025-11-01T22:32:42.415Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.026Z"
+  "last_updated": "2025-11-01T22:32:42.415Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

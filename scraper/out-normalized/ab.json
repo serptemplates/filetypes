@@ -1,9 +1,37 @@
 {
   "slug": "ab",
   "extension": "ab",
-  "name": ".AB",
+  "name": "Android Debug Bridge Backup",
   "summary": "Learn about .AB files and view a list of programs that open them.",
   "developer": "Google",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Android Debug Bridge is a command-line tool that allows Android developers to communicate with Android devices from a PC. To use a device with ADB, developers must first enable USB debugging within the device's Developer options. (To access Developer options, select Settings → About phone and tap the phone's build number seven times. Developer options will then appear on the device's Settings screen.) Then, the developer must connect the device to a PC that has Android Studio installed, using either WiFi or a USB cable.",
+      "When working with devices running Android 4.0 (Ice Cream Sandwich) or higher, developers can use ADB to create a snapshot of the device's current state. These snapshots are saved as AB files.",
+      "To use ADB to back up your Android device:",
+      "Make sure USB debugging is enabled on your Android device.",
+      "Connect your device to your PC.",
+      "Open a terminal window and navigate to the directory in which ADB is located (usually android_sdk/​platform-tools).",
+      "Execute the command adb backup -all.",
+      "This will create an AB file that contains your device data and app data. If you want to create an AB file that also includes backups of the .APK files stored on your device, execute the following command instead:",
+      "adb backup -apk -all",
+      "After you execute this command, ADB will ask whether you want to encrypt your backup using a password. Enter a password if you so desire. Then, select Back up my data. After you do, ADB will create a backup.ab file in your current directory."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Android Debug Bridge (cross-platform) to restore an AB file to an Android device. To do so:",
+      "Make sure USB debugging is enabled on your Android device.",
+      "Make sure the backup.ab file you intend to use to restore your device is located in the same directory as ADB (usually android_sdk/​platform-tools).",
+      "Connect your device to your PC.",
+      "Open a terminal window and navigate to the directory in which ADB is located .",
+      "Execute the command adb restore backup.ab.",
+      "You can also use some third-party Android device managers and backup tools to restore the backup an AB file contains. For example, Droid Explorer (Windows) allows users to restore backups saved as AB files."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -26,17 +54,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can use Android Debug Bridge (cross-platform) to restore an AB file to an Android device. To do so:",
-      "Make sure USB debugging is enabled on your Android device.",
-      "Make sure the backup.ab file you intend to use to restore your device is located in the same directory as ADB (usually android_sdk/​platform-tools).",
-      "Connect your device to your PC.",
-      "Open a terminal window and navigate to the directory in which ADB is located .",
-      "Execute the command adb restore backup.ab.",
-      "You can also use some third-party Android device managers and backup tools to restore the backup an AB file contains. For example, Droid Explorer (Windows) allows users to restore backups saved as AB files."
     ]
   },
   "images": [
@@ -67,10 +84,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ab",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.951Z"
+      "url": "https://fileinfo.com/extension/ab",
+      "retrieved_at": "2025-11-01T22:32:42.310Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.951Z"
+  "last_updated": "2025-11-01T22:32:42.310Z"
 }

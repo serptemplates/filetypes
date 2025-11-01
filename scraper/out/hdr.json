@@ -1,9 +1,11 @@
 {
   "slug": "hdr",
   "extension": "hdr",
-  "name": "HDR File",
+  "name": "High Dynamic Range Image File",
   "summary": "Learn about .HDR files and view a list of programs that open them.",
   "developer": "HDRsoft",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -36,6 +38,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "An HDR image file consists of the following three sections:\n\nHeader: An HDR file is identified by the first bytes in the image file i.e. “#?RADIANCE”.Resolution String: The Header is followed by a single resolution line that consists of 4 values; an X and Y label each followed by a numerical integer value. The order of the X and Y indicate rotation. The combination of X and Y with positive and negative values cover all the possible iamge orientation and rotations.Pixel Data: The pixel data of an HDR file is either uncompressed or compressed using a standard run length encoding.",
+      "HDR software can composite multiple photos with different exposures to create a single image with a full and evenly distributed range of colors.",
+      "NOTE: HDR files are also known as Radiance HDR or HDRI files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An HDR file is a High Dynamic Range (HDR) raster image file format for storing digital camera photos. It allows photo editors to enhance the color and brightness of digital images that have limited dynamic range. This modification can improve the brightness around the corners, resulting in a close-to-natural image. HDR files are usually saved as 32-bit raster images. Adobe Photoshop can create and open HDR files.\n\nHDR files are also known as HDRI.",
+      "An HDR file is a raster image or digital photo saved in HDRsoft's High Dynamic Range (HDR) image format. It is used for enhancing the color and brightness range of a digital image. HDR files can also be processed to fix dark shadows or washed-out areas of a picture."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "imageinfo - Cross platform super fast single header C++ library to get image size and format without loading/decoding.imgaeinfo-rs - Rust library to get image size and format without loading/decoding. Supports .avif, .bmp, .cur, .dds, .gif, hdr (pic), heic (heif), .icns, .ico, .jp2, jpeg (jpg), jpx, ktx, png, psd, qoi, tga, tiff (tif), and webp.HdrHistogram - Java implementation of HdrHistogram."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -64,15 +106,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/hdr/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     },
     {
       "url": "https://fileinfo.com/extension/hdr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "retrieved_at": "2025-11-01T22:32:42.272Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.925Z"
+  "last_updated": "2025-11-01T22:32:42.272Z",
+  "containers": []
 }

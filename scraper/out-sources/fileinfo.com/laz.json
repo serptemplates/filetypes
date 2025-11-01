@@ -4,8 +4,20 @@
   "slug": "laz",
   "extension": "laz",
   "name": ".LAZ File Extension",
+  "type_name": "Compressed LIDAR Data Exchange File",
   "summary": "Learn about .LAZ files and view a list of programs that open them.",
   "developer": "rapidlasso",
+  "more_information": {
+    "description": [
+      "A LAZ file is a compressed .LAS (LIDAR Data Exchange) file. It has been compressed so it can more easily be stored and shared with others. LAZ files are typically less than 20 percent the size of the LAS file from which they were created."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "LAS files contain data about the Earth's surface, recorded using Light Detection and Ranging (LIDAR) technology. Because these files contain a large amount of data, scientists often find it useful to compress the files for more efficient storage and to make them easier to share with others.",
+      "LASzip is a tool scientists can use to compress LAS files. It is included in the LAStools LIDAR data processing toolkit. When a scientist uses LASzip to compress a LAS file, LASzip saves the compressed version of the file as a LAZ file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can decompress a LAZ file with LASzip, a tool included in the LAStools toolkit. LAStools is available for Windows and Linux."

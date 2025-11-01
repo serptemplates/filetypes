@@ -4,8 +4,20 @@
   "slug": "mcreator",
   "extension": "mcreator",
   "name": ".MCREATOR File Extension",
+  "type_name": "MCreator Workspace",
   "summary": "Learn about .MCREATOR files and view a list of programs that open them.",
   "developer": "Pylo",
+  "more_information": {
+    "description": [
+      "An MCREATOR file is a project file used by MCreator, a Minecraft mod creation app. It contains JSON data used to open a mod or add-on creation project in MCreator. MCREATOR files are stored in an MCreator project's folder, alongside the project's assets."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MCreator is an open-source, multiplatform application that allows Minecraft modders to create mods for Minecraft Java Edition (.JAR files) and add-ons for Minecraft Bedrock Edition (.MCPACK files). When a modder creates a new MCreator project, the program saves that project in a new directory (typically, within the MCreatorWorkspaces directory). Each project directory contains an MCREATOR file.",
+      "The MCREATOR file describes the project's contents, including mod elements, workspace settings, and the version of MCreator used to create the project. When modders load a project in MCreator, they do so by opening its MCREATOR file. MCreator uses the plain text, JSON data the MCREATOR file contains to find and load the project's assets and dependencies."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an MCREATOR file in MCreator (multiplatform). First, make sure the MCREATOR file is stored in the appropriate MCreator project directory. Then, open MCreator, select File → Open workspace..., and navigate to and open your MCREATOR file. After you do, the project your MCREATOR file describes will open in MCreator.",

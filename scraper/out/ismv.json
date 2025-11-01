@@ -1,7 +1,7 @@
 {
   "slug": "ismv",
   "extension": "ismv",
-  "name": ".ISMV",
+  "name": "IIS Smooth Streaming Video File",
   "summary": "Learn about .ISMV files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=7132&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "ISMV files are saved in the Protected Interoperable File Format (PIFF), which is based off of the MPEG-4 specification and is Microsoft's standard for multimedia content delivery. The format allows for encryption and DRM protection.",
+      "Smooth Streaming enables streaming over the HTTP protocol with negotiation of variable transfer rates. Therefore, IIS servers can host multiple ISMV files, each at a different video quality level. Depending on the current bit rate, Smooth Streaming picks the optimal ISMV file and extracts the video fragment for the particular time to achieve the best video quality.",
+      "NOTE: ISMV files can be encoded using the paid version of Microsoft Expression Encoder."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Video file encoded for Smooth Streaming on a Microsoft IIS Web server; saves an MPEG-4 (.MP4) file in a fragmented format, which stores the video in smaller parts within the overall video container; provides a suitable format for streaming because the video can be requested one fragment at a time."
     ]
   },
   "images": [
@@ -42,8 +54,11 @@
     {
       "url": "https://fileinfo.com/extension/ismv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.128Z"
+      "retrieved_at": "2025-11-01T22:32:42.554Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.128Z"
+  "last_updated": "2025-11-01T22:32:42.554Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

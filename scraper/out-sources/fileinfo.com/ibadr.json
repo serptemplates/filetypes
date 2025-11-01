@@ -4,8 +4,20 @@
   "slug": "ibadr",
   "extension": "ibadr",
   "name": ".IBADR File Extension",
+  "type_name": "IsoBuster Address File",
   "summary": "Learn about .IBADR files and view a list of programs that open them.",
   "developer": "Smart Projects",
+  "more_information": {
+    "description": [
+      "An IBADR file is a data file created by Smart Projects IsoBuster, a program used to recover data from damaged disks and file systems. It contains addresses of data blocks stored in an .IBDAT file. IBADR files are created with IBDAT files by IsoBuster to debug issues encountered by the program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The addresses contained in an IBADR file only reference blocks of data from a problematic large drive that are necessary for debugging the issue with the drive. This allows small disk image files to be created for much larger drives.",
+      "NOTE: IBADR files are extremely rare since they are only used for debugging purposes."
+    ]
+  },
   "programs": {
     "windows": [
       {

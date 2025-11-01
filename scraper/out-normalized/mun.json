@@ -1,9 +1,24 @@
 {
   "slug": "mun",
   "extension": "mun",
-  "name": ".MUN",
+  "name": "Windows System Resource Archive",
   "summary": "Learn about .MUN files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In May 2019, Windows 10 began storing certain system resources in MUN files. Most notably, MUN files contain the icons used by many system-level and pre-installed Windows programs, such as Control Panel and Microsoft Paint.",
+      "Most often, MUN files are associated with corresponding .EXE or .DLL files. For example, mspaint.exe.mun is associated with mspaint.exe, the executable file that launches Microsoft Paint. However, MUN files themselves are not executable files or libraries. Rather, they are compressed archives that contain files referenced by a program or library."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "If you are simply looking to access and save a copy of the icons stored within a MUN file, you can use Nirsoft IconsExtract to extract MUN icons and save them as .ICO files. To do so, open IconsExtract, select File → Search for Icons, and then browse to and search the C:/​Windows/​SystemResources directory.",
+      "If you want to explore all the files contained within a MUN archive, you can open and explore the archive with 7-Zip. Note, however, that you cannot use 7-Zip to automatically extract the files contained within a MUN archive. You can, however, use it to manually copy the files contained within a MUN file to a new folder."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,12 +29,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11798&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "If you are simply looking to access and save a copy of the icons stored within a MUN file, you can use Nirsoft IconsExtract to extract MUN icons and save them as .ICO files. To do so, open IconsExtract, select File → Search for Icons, and then browse to and search the C:/​Windows/​SystemResources directory.",
-      "If you want to explore all the files contained within a MUN archive, you can open and explore the archive with 7-Zip. Note, however, that you cannot use 7-Zip to automatically extract the files contained within a MUN archive. You can, however, use it to manually copy the files contained within a MUN file to a new folder."
     ]
   },
   "images": [
@@ -55,10 +64,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/mun",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.192Z"
+      "url": "https://fileinfo.com/extension/mun",
+      "retrieved_at": "2025-11-01T22:32:42.631Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.192Z"
+  "last_updated": "2025-11-01T22:32:42.631Z"
 }

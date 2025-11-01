@@ -4,8 +4,21 @@
   "slug": "sxml",
   "extension": "sxml",
   "name": ".SXML File Extension",
+  "type_name": "Sealed XML File",
   "summary": "Learn about .SXML files and view a list of programs that open them.",
   "developer": "Oracle",
+  "more_information": {
+    "description": [
+      "An SXML file is a protected .XML file created by Oracle Information Rights Management (IRM) document protection software. It contains an XML file locked in a \"sealed\" format that can only be opened by users with the appropriate IRM credentials."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "SealedMedia was the original creators of the \"sealed\" file type. They developed Unsealer, which would unseal documents. SealedMedia was eventually acquired by Oracle and the Unsealer program is no longer available. SXML files can be viewed with the Oracle IRM Desktop software, which facilitates the authorization rights management for the digital documents.",
+      "Oracle IRM software sometimes integrates with common business applications such as Microsoft Office or Lotus Notes. With this setup, SXML files appear as normal XML files to the end user, but there may be an additional option \"seal\" a file. The integrated IRM software then facilitates the hosting, transfer, and authorization rights management behind the scenes.",
+      "NOTE: Oracle IRM Desktop adds an \"s\" to the beginning of the file extension it is sealing. For example, .XLS files sealed by IRM become .SXLS files."
+    ]
+  },
   "programs": {
     "windows": [
       {

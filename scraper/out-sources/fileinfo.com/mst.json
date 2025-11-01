@@ -4,8 +4,20 @@
   "slug": "mst",
   "extension": "mst",
   "name": ".MST File Extension",
+  "type_name": "Windows Installer Setup Transform File",
   "summary": "Learn about .MST files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An MST file is a settings file used by the Microsoft Windows Installer (msiexec.exe), a component of the Windows operating system that enables software installations. It contains software configuration options and allows custom parameters to be used for the installation. MST files are used in software development and testing for configuring test versions of the software."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MST files are used in conjunction with Microsoft Windows installer packages (.MSI files). Their settings can be included with an installation package at the command line using the following syntax: msiexec installpkg.msi TRANSFORMS=transforms.mst",
+      "NOTE: Both MSI and MST files can be configured using the Microsoft Orca Editor (Orca.exe), a program included with the Windows Software Development Kit (SDK)."
+    ]
+  },
   "programs": {
     "windows": [
       {

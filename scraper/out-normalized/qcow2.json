@@ -1,9 +1,25 @@
 {
   "slug": "qcow2",
   "extension": "qcow2",
-  "name": ".QCOW2",
+  "name": "QEMU Copy On Write Version 2 Disk Image",
   "summary": "Learn about .QCOW2 files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "QEMU is an open-source machine emulator and virtualizer that allows users to create and run virtual machines on Windows, Mac, and Linux. For example, a Windows user could use QEMU to create and run a Linux virtual machine.",
+      "When creating a virtual machine, users must mount a disk image that acts as the machine's virtual hard drive. QCOW2 files are disk images saved in the second version of QEMU's Copy on Write disk image format. The Copy on Write format allows for smaller file sizes because it delays storage allocation until disk space is actually needed. This differs from other formats, which often allocate fixed amounts of space.",
+      "NOTE: While the QCOW2 format replaced the original QCOW format, QEMU can still mount both QCOW2 and QCOW disk images."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can mount a QCOW2 disk image and use it to create a virtual machine in QEMU (cross-platform) and some other virtualization programs. 7-Zip and Smart Projects IsoBuster can also open and extract data from QCOW2 files in Windows.",
+      "QEMU can create and modify QCOW2 files, as well. For more information, refer to QEMU's official documentation."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,12 +34,6 @@
         "name": "Smart Projects IsoBuster",
         "url": "https://fileinfo.com/software/smart_projects/isobuster"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can mount a QCOW2 disk image and use it to create a virtual machine in QEMU (cross-platform) and some other virtualization programs. 7-Zip and Smart Projects IsoBuster can also open and extract data from QCOW2 files in Windows.",
-      "QEMU can create and modify QCOW2 files, as well. For more information, refer to QEMU's official documentation."
     ]
   },
   "images": [
@@ -54,10 +64,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/qcow2",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.262Z"
+      "url": "https://fileinfo.com/extension/qcow2",
+      "retrieved_at": "2025-11-01T22:32:42.718Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.262Z"
+  "last_updated": "2025-11-01T22:32:42.718Z"
 }

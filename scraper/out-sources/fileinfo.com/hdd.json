@@ -7,6 +7,19 @@
   "type_name": "Parallels Desktop Hard Disk",
   "summary": "Learn about .HDD files and view a list of programs that open them.",
   "developer": "Parallels",
+  "more_information": {
+    "description": [
+      "An HDD file is a virtual hard disk created by Parallels Desktop for Mac virtualization software. It stores a virtual machine's hard drive data, including the programs and files on the virtual machine (VM). Parallels Desktop for Mac loads the HDD file when starting up a virtual machine."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Parallels Desktop for Mac is an application that can run Windows, Linux, Android, and additional versions of macOS on Macs. When you create a virtual machine with the software, it creates a .PVM file (or a .MACVM file on Apple silicon Macs), which is a macOS package that stores all of the files required to run the VM.",
+      "One of the files created by Parallels Desktop for Mac and stored in the .PVM file is the HDD file. The HDD file functions similarly to Windows C:\\​ drive.",
+      "To view your HDD file, locate your PVM file, right-click it, and choose Show Package Contents. The HDD file is typically named after the operating system. For example, the HDD file for Windows 11 may be named Windows 11-0.hdd.",
+      "NOTE: HDD files from version 2 of Parallels Desktop can be opened in Oracle VM VirtualBox. Other versions' HDD files cannot be opened in VirtualBox."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Typically, HDD files are \"opened\" as part of initializing a Parallels Desktop virtual machine. However, you can manually open and examine the files contained within a Windows HDD file by mounting the file to your macOS machine using Parallels Mounter, a program included with Parallels Desktop. After you mount your HDD file, you'll be able to explore its contents in Finder.",

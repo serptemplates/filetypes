@@ -7,6 +7,21 @@
   "type_name": "Shared Library",
   "summary": "Learn about .SO files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An SO file is a shared library used by programs installed on the Linux and Android operating systems. It contains common program functions and logic that multiple programs require access to. SO files allow programs to access common functions from one shared place in a computer's system memory, rather than implementing their own versions of the functions. This streamlines the programs' structure as well as their interaction with users' operating systems."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Much like Windows .DLL files, SO files are saved in a specific place in a user's file system and \"dynamically linked\" to programs at runtime, meaning they are loaded only when needed. When a program needs to perform a common function stored in an SO file, it calls that SO file, relying on the fact that the SO file has a specific name and is stored in a specific location. If the function is linked to other SO files, the program also calls the linked SO files.",
+      "SO files often reside in the following Linux directories:",
+      "/​lib",
+      "/​usr/​lib",
+      "/​usr/​local/​lib",
+      "C and C++ programs installed on the Linux and Android operating systems most commonly use SO files. Developers often build SO files using the \"gcc\" C/C++ compiler included in the GNU Compiler Collection (GCC)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "SO files are not meant to be opened. Also, in most cases, you should not move or rename an SO file, as programs require SO files to have specific names and reside in specific locations to call them.",

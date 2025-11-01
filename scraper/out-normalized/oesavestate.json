@@ -1,15 +1,17 @@
 {
   "slug": "oesavestate",
   "extension": "oesavestate",
-  "name": ".OESAVESTATE",
+  "name": "OpenEmu Saved Game",
   "summary": "Learn about .OESAVESTATE files and view a list of programs that open them.",
   "developer": "OpenEmu",
-  "programs": {
-    "windows": [
-      {
-        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
-        "url": "https://fileinfo.com/software/windows_file_viewer?ref=11817&b=1"
-      }
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "OpenEmu is a multi-system video game emulator that allows players to play Atari, Game Boy, Nintendo 64, Sega, and other console-based video games on their Macs. When players save a game in OpenEmu, the emulator saves that game in an OESAVESTATE file.",
+      "Unlike .SAV files and other saved game files used by other video game emulators, OESAVESTATE files are macOS packages. This means they contain multiple files that OpenEmu uses to open a saved game. As such, other emulators cannot correctly load OESAVESTATE files. OpenEmu saves and loads OESAVESTATE files from the Save States folder that is found at Users/​YourUserName/​Library/​Application Support/​OpenEmu/​Save States.",
+      "NOTE: For many games, OpenEmu creates both a battery save file (often a SAV file) and an OESAVESTATE file when you save a game. So, if you want to transfer your saved game to another emulator, you may be able to do so by finding the game's battery save file and using that to resume your game in another emulator."
     ]
   },
   "how_to_open": {
@@ -18,6 +20,14 @@
       "Confirm you have added the game ROM you'll need to open your OESAVESTATE file to OpenEmu and played it at least once. For example, if you have an OESAVESTATE file created using a specific Game Boy Advance ROM, make sure you have added that ROM to OpenEmu and played it.",
       "Confirm that your OESAVESTATE file is located in the correct subdirectory of the Users/​YourUserName/​Library/​Application Support/​OpenEmu/​Save States directory (and move it there if it is not). For example, if you are attempting to open a Game Boy Advance saved game, place your OESAVESTATE file in that game's game-specific subdirectory, located within the Save States directory.",
       "Open OpenEmu and select the Save States button. Your OESAVESTATE file will appear in OpenEmu, where you can select and open it."
+    ]
+  },
+  "programs": {
+    "windows": [
+      {
+        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
+        "url": "https://fileinfo.com/software/windows_file_viewer?ref=11817&b=1"
+      }
     ]
   },
   "images": [
@@ -48,10 +58,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/oesavestate",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.220Z"
+      "url": "https://fileinfo.com/extension/oesavestate",
+      "retrieved_at": "2025-11-01T22:32:42.662Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.220Z"
+  "last_updated": "2025-11-01T22:32:42.662Z"
 }

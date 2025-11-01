@@ -1,8 +1,14 @@
 {
   "slug": "fzs",
   "extension": "fzs",
-  "name": "FZS File",
+  "name": "FZS files and how to open them",
   "summary": "Having problems opening a FZS file?",
+  "category": "other",
+  "mime": [
+    "application/vnd.fuzzysheet"
+  ],
+  "containers": [],
+  "related": [],
   "programs": {
     "windows": [
       {
@@ -15,28 +21,22 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKMElEQVR42p1XCVRTZxb+khAMEPYgm+yrgIACWkURXNo6UrWjrbZSV9Riba3aY4vUwVbcqkWl49FqF1ud0lKqtaPouCBSVDYR2TEEghjCTgIkBLLNfQge7YEOnf+ce/Ly3n3//f67fPc+Fv5k7d27106v13vodDpv+rWkX5ZarW5qb28vPnHiRA2p9A+q6vF/LtZwN1euiPmbiZnVNgdnN19nFzdrO1vBGGtzPvQaLVrbZGhubukXi2vbpNLHVc3NkjMlD0ovLfdTdr8/13Zmd6+GL+lFbW6VTLwtrbGLttP9GUDW84bfGmtkYn7KL3zeAp+AEEAlQ5ukBkp5m5ql1+r0Oj04HEMOn29hYGFhCzbbCHV1NSjMzyyPGS/qnL40fDppQVOUh4r8yvRJe0RbadvmZzw1MoB162JZLM6Ysy+8vuVNc1M+bqf/U1FwN1tcJxJJelUqObleqdFoVKTKMTc3tx4fEBQQ4OPtHuAfzrEUeKOm7i5efFmPSZZkLzsbtXWNXcu+aogvEPeep3eaRvLCUwCrVrwV7j1zWaZnaJRhRsrWzvSfzt7u6emppkdVJI/GjRtnaGtr629v7+Dr6u4d6GWl851oXm+scg9DYSUfLs4z8bAyA3EBubBVNUOl6kfiefGlz66076T3y0fywlMAK2LeWDF9Q8p3jNtPfLi0pLKy4pq/f4DIn5aDg8MUZ2cnJ08fP1trS0vYK0tgN6YemPACYChA1s1MFNyzAc/YGWO7TmGpkwg6HQc3y5ukcw7UbKLtM0lkfwrgvU3vrDb3m/UNS6dBe3VOT3BgoM7Nzc3M1dUVFmRUCwPo5I0wFaXCxNEOGD+HnKoA2vOgNVFi1z4FPLyWQlq6Bx/43AfX1AYypRKLDzw4klml/IJMiAcTcngASUlJJ51dXNZ5ubvRRt6wtraGRqNGe6ecpAsWbbkYqyqDYXA0IJgAtOUD1RcAOy7k5o74/AstXFxfhrT4Y8S5lsPawQ0aPh9f/ZxfGvdd07tkooBEORIA1uHDh7+JjV27is83RWdnJxoaGlAnrkdvpxShhkJ4utKpQ1cBXCOgIpW2Ow3YmKLZ0gnf3+LBzGohmlrqddzqJOUaPyXfzsUHcHDA/aIqxcI9pTsaOjQ/D5eMTwHs3LlzT1xcXLyZmRnu3bs3AECmUMNHU4I5YWOAsI8pjegA2QcA4TXoDAxwr38srjR6w959AbQU8+KsRPV0f656yfwVxmMqzwC2AiioLhM++0/G0WvyBLJTQaIeNgTx8fEb16xZc4xxPQOgqakJMnkXZK1SxIVKYP1yMLm9Azh/DiDjMpUWh4RB8A1/D51tDWgo/RrRc90xY/o8sHL/BXRRyF1c0avRIOVkZtlHP7XGk5lskq5hASQkJLy2aNGiVC8vL05eXh4eP36MXkUP+o0EeM2fvGmWA7bneOD6dUon2tyEhx/FFrjf4QBbw0q8GvMq3FzGAUX/BupFAM8E7SyO7uSvZQ2HL7dltXbrGD64RSJ/NgxPAezYsSNi1qxZGcHBwSZDAJhwFBQUgGfAwebJ9Rg7eyLQ0kbb0D4cDjoM2Lin6sO0JWthYsGn0BQRYzyGTtKIPp0On2cI63f+0pFF2+eQ/D5YCX3DemDLli2eBOBOaGioTVFRESQSCYh8wOVy4eRGVdF0HRa8HBg4e9BWtFcbAaHn+okhYNk50LbdA8bVIhGyb99GmIcH8oQtsgWH6pJVaj3FDUPNa9gkxMaNGy1nzJhRHB4e7lxcXDxQCZ6envD29oZAIEBr4yNw7n8Cq2B7QNoC3L8P2NO1N2U7lS60WqC2FoQcWUTF5lSCni4u2HY87/ypWwqGDRlW1YzIA7TYp0+fLicQvkKhEETDcHd3h4+PD4yNjSGqb4TqwVn42FXAQECGC6mseTwiJD/AyxN9DY/A7ZSBTcDlFRXIITCzo6JwLftB2+JD4vVqLW4Ox4bPAmAdO3bsSmRk5IvNzc1EpTr4+vrC1NQUDCCmLLkcFoKU32PcJFfqca0gNwF+fmhubNLnn7vWM3PFQlMzOjlycpBLobBwc4OVtUC/ef+NH37M6/uUbNT+0QvPAdi0adPsoKCg7zw8PBwUCgVItDdv3mwxMjKymDdvnlFPrxZGkgxEuYnAs6W4y2QQ1jzWJH5TVn6jorfy8tGI+ZPeXGyK3y6ggw5RTgAnkxfS0m5I1p2QxvWp9dmDVTAsAGaZODo6TqZk/KClpcXizp07Dd3d3dL169fPJXD+whoRxNT/TRVCTHRUQ1yZrzzwc3VBYb2G0h+538Zavf76ZwmLjcvLKN+FKKNqsKEcYphnXeL141dKNZ8PVoJ2JABsBgSJC4nbYMZKt27d+lFsbOyS8vJyMOGR9/QiICgEB3fHV+fcyaPCx1WSB+/O5btHhDkc4bHhGTJpvLWxgwsafr8Mz8hIfHnsl7r3T3e8TXp3SbpHAjB0j0tiNAhAtX379n9ER0cntLa2Qi6XQyqVYurUqUhOPiK+ePG3g6TzGwN08D2vF/04rx09uj7BNzSMLfx6L2wCgyDtUmi3fnKVvKBLJp1HQ14Ydib846LEdHVyctpBJfkWlSmP4YmwsDDQYNqQmpq6j1R+xZNGwyzel6tM3p6zan2yMzUrlTAPnU2tsI6IwKHd31YmpsqZzphH0jNqALQMKQnnxsTEpNHJjS9cuAAiLKSnp8tSUlKSaGL+iXQkgx7D/qV8Py5Hv21iiN/yiNU7x7SlEX+EheJBtVC78oPM3RWN+HpIf1QAKCnZERER6UuWLHmV+Z+VlYWQkBBcunSph0b3g1SyZwaTa4jlDKOD2KHb35mfMWP1DnPVlV1Qd/WCPS0ce7YdKdt3rpfJBSZxe0frARZVQiRVSOorr7xiW1JSMsARhYWFus2bNx/UarXMiWqeAcBKfoM9ddpLi7K8QyO4pnoJ1Pl3YRQ5DVez7vS9tDbnvcG8aR4tACxfvtxj8uTJt1avXu149epV2NjYMBWhp/8niS9SSKXyGQD4MJpnrVb3vTFOwNq8Mumip1UrTVAdxagwsdD6zzhNQwW+JRGNGkBiYmISUwkMPWdmZg70B4asNmzYkEaNaz+plOJ5luOQCE69a39u5b6Cadx+plo7kZuVo5v69wwG8Jck1aMGQFwwl4aVxKioqHD6PhjoFXZ2dli2bNnlhw8f7iWVQhLVs2FjQJx536ogePbaYIG9kvpwP1L2p0mS0+Vn6dlA2EYNgJYx8UEqjW0LiB1RX18PmppBIcihmWE3Pb9Novhj7iwM4/jXNmvn21uyZlK1GN8oRRV9PDFkdIWkZdQAaGqODAwMvEZJaMAY7+vrYwhJT6V5kYaXE3gycHQP8ypDaNQ4MJbEHE9mAqYpNTLXfyUEzuTyU1OmTJlFFWDA3Nu1a1fr8ePH0+jyBzwpK9Uwr7IG84ERhimZRO0bype/EgLGqAvxwcYJEybME4vF/dSsqmhwYTrcJZIGDPPh8b/WfwEvT3piQ7ZVpgAAAABJRU5ErkJggg==",
-      "alt": "Acunetix Web Vulnerability Scanner"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.796Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.152Z"
     },
     {
-      "url": "fileinfo.com",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.796Z"
+      "retrieved_at": "2025-11-01T22:32:42.152Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.796Z"
+      "retrieved_at": "2025-11-01T22:32:42.152Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.796Z"
+  "last_updated": "2025-11-01T22:32:42.152Z"
 }

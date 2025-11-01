@@ -7,6 +7,24 @@
   "type_name": "Windows Animated Cursor",
   "summary": "Learn about .ANI files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An ANI file is a cursor animation used by the Windows operating system. It contains a collection of .ICO files that comprise an animated cursor's animation. ANI files are very similar to .CUR (Windows Cursor) files, except they contain multiple distinct images used for animation."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Windows' default animated cursors, such as its wait and hourglass cursors, are stored in ANI files. These files contain all the still ICO images used to animate a cursor. When Windows shows an animated cursor, it is actually showing all an ANI file's included ICO images in sequence.",
+      "Custom Windows desktop themes often include custom animated cursors, stored in custom ANI files. These custom ANI files are structured in the same way as Windows' official ANI files.",
+      "To use an ANI file as a Windows cursor image:",
+      "Open the Windows Control Panel and search for \"mouse.\"",
+      "Select Change how the mouse pointer looks.",
+      "In the Mouse Properties window's Pointers menu, select the cursor image you'd like to modify.",
+      "Click Browse... and then navigate to and select your ANI file.",
+      "Click Apply to apply your changes.",
+      "NOTE: In March 2007, Microsoft reported a vulnerability in the way Windows handles ANI files that could be used to attack users' systems. This issue, which affected Windows 2000 through Windows Vista, was addressed and fixed in Security Bulletin MS07-017."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Windows users can open and edit ANI files, and their included ICO images, with RealWorld Cursor Editor, Axialis CursorWorkshop, and IcoFX. Non-Windows users can open ANI files in Inkscape, but should note that Inkscape will load only the ANI file's first frame."

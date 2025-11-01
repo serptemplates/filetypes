@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/3d/3ds/index.html",
   "slug": "3ds",
   "extension": "3ds",
-  "name": "3DS File",
-  "source": "fileformat.com"
+  "name": "What is 3DS file?",
+  "summary": "What's on this Page",
+  "category": "3d",
+  "category_slug": "3d",
+  "technical_info": {
+    "content": [
+      "The hierarchical structure of a simple chunk is as shown below:\n\nA Chunk\n\nstartendsizename012Chunk ID254Next Chunk\n\nChunks have a hierarchy imposed on them that is identified by its ID. A 3ds file has the Primary chunk ID 4D4Dh. This is always the first chunk of the file. With in the primary chunk are the main chunks.\n\nMain Chunks\n\nidDescription3D3DStart of object mesh data.B000Start of keyframer data.\n\nThe Next Chunk pointer after the ID block points to the next Main chunk. Directly after a Main chunk is another chunk. This could be any other type of chunk allowable within its main chunks scope. For the Mesh description (3D3D) they could be any multiples of.\n\nSubchunks of 3D3D - Mesh Block\n\nidDescription1100unknown1200Background Colour.1201unknown1300unknown1400unknown1420unknown1450unknown1500unknown2100Ambient Colour Block2200fog?2201fog?2210fog?2300unknown3000unknown4000Object Block7001unknownAFFFunknown\n\nSubchunks of 4000 - Object Description Block The first item of Subchunk 4000 is an ASCIIZ string of the objects name. Remember an object can be a mesh, a light or a camera.\n\nidDescription4010unknown4012shadow?4100Triangular Polygon Object4600Light4700Camera"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .3ds extension represents 3D Sudio (DOS) mesh file format used by Autodesk 3D Studio. Autodesk 3D Studio has been in 3D file format market since 1990s and has now evolved to 3D Studio MAX for working with 3D modeling, animation and rendering. A 3DS file contains data for 3D representation of scenes and images and is one of the popular file formats for 3D data import and export. It considers information like camera locations, Mesh data, lighting information, viewport configurations, smoothing group data, bitmap references and attributes to create vertices and polygons for rendering a scene."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

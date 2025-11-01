@@ -1,20 +1,30 @@
 {
   "slug": "conda",
   "extension": "conda",
-  "name": ".CONDA",
+  "name": "Conda Package",
   "summary": "Learn about .CONDA files and view a list of programs that open them.",
   "developer": "Anaconda",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Conda is an open-source package management system available for Windows, macOS, and Linux. While it is primarily meant to be used to install Python software packages, Conda can also be used to install R, Ruby, Lua, Scala, Java, JavaScript, C/C++, and FORTRAN packages.",
+      "Packages used with Conda are saved in one of two formats: .TAR.BZ2 or CONDA. CONDA files consist of two compressed .TAR files saved in a .ZIP container. The TAR files are compressed using Zstandard (zstd) compression. Conda users can search for packages using either Conda itself or the online Anaconda package repository.",
+      "NOTE: Some CONDA files contain only metadata used by other programs. These files are referred to as metapackages."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Conda (multiplatform) to install the package a CONDA file contains. To do so, use the command conda install path/to/yourpackage.conda."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12974&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can use Conda (multiplatform) to install the package a CONDA file contains. To do so, use the command conda install path/to/yourpackage.conda."
     ]
   },
   "images": [
@@ -45,10 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/conda",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.010Z"
+      "url": "https://fileinfo.com/extension/conda",
+      "retrieved_at": "2025-11-01T22:32:42.393Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.010Z"
+  "last_updated": "2025-11-01T22:32:42.393Z"
 }

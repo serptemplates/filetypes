@@ -7,6 +7,17 @@
   "type_name": "Program Database",
   "summary": "Learn about .PDB files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A PDB file is a database file used by various applications, including Pegasus, Quicken, Microsoft Visual Studio, and Palm Pilot software. It stores data in a structured format and is typically installed with the corresponding application."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PDB files used by different programs are usually saved in different proprietary formats, meaning they can be opened only by the program they were installed with. For example, Microsoft Visual Studio will not recognize an Intuit Quicken PDB file.",
+      "Visual Studio uses PDB files to store debugging information about a program, including symbol information, which is too large to be stored in the program itself. The symbol information consists of a list of all symbols in a program module with addresses, the name of the file, and the line the symbol was declared on."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use Microsoft Visual Studio (Windows) to load information from a PDB file created by that program. This allows you to debug the program the file is associated with. You can also use Microsoft's CVDump program (Windows) to read the information a Visual Studio PDB file contains."

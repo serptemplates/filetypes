@@ -1,9 +1,11 @@
 {
   "slug": "gdb",
   "extension": "gdb",
-  "name": "GDB File",
+  "name": "GPS Database File",
   "summary": "Learn about .GDB files and view a list of programs that open them.",
   "developer": "Garmin",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,48 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "File GDB is ESRI proprietary format and its specifications are not available publicly. Due to this reason, the file format details for FIle GDB could not be documented anywhere other than some sources who have done it partially by reverse engineering.",
+      "To create a GDB file in MapSource, simply select File → Save As, choose your save location, name your file, select the GDB format, and click Save.",
+      "To create/export a GDB file in the BaseCamp program:",
+      "Choose a list or device you want to export data from or click My Collection if you want to export all data in the Library.",
+      "Select File → Export, click Export [Name] to export all the items in a list or folder or click Export Selection to export selected items.",
+      "Choose a location you want to save your file, select the the GDB file format, name your file, and click Save.",
+      "To import a GDB file in the BaseCamp program:",
+      "Go to the Library and Devices pane and choose the location from which you'd like to import the GDB file.",
+      "Select File → Import.",
+      "Choose your GDB file and click Open."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "ESRI file Geodatabase (FileGDB) is a collection of files in a folder on disc that hold related geospatial data such as feature datasets, feature classes and associated tables. It requires certain other files to be kept alongside the .gdb file in the same directory for it to work. Queries can be executed on the .gdb file to manage spatial as well as non-spatial data.",
+      "A GDB file is a database file created by MapSource, a GPS route editing and trip-planning application. It contains waypoints, routes, and tracks that can be transferred to a Garmin navigation device. GDB files are similar to the universally transferrable .GPX files."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +88,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/gdb/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.923Z"
+      "retrieved_at": "2025-11-01T22:32:42.270Z"
     },
     {
       "url": "https://fileinfo.com/extension/gdb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.923Z"
+      "retrieved_at": "2025-11-01T22:32:42.270Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.923Z"
+  "last_updated": "2025-11-01T22:32:42.270Z",
+  "containers": []
 }

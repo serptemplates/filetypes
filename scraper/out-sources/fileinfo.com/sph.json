@@ -4,8 +4,20 @@
   "slug": "sph",
   "extension": "sph",
   "name": ".SPH File Extension",
+  "type_name": "NIST SPHERE Audio File",
   "summary": "Learn about .SPH files and view a list of programs that open them.",
   "developer": "NIST",
+  "more_information": {
+    "description": [
+      "An SPH file is a waveform audio file created in the NIST SPHERE format, which is often used in speech recognition research. It usually contains a recording of a person speaking. SPH files can be provided as input to speech recognition systems."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "SPHERE waveforms use 16-bit linear PCM and a 16KHz sample rate. They have a 1024 byte human-readable header that uses ASCII text formatting.",
+      "NOTE: SPH files can be converted to the .WAV format using a utility called sph_convert or SoX."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because SPH files are uncommon, most popular media players cannot play them. However, you can play SPH audio in VLC media player, and you can convert SPH files to a more usable audio format using FFmpeg or SoX."

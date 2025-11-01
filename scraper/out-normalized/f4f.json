@@ -1,9 +1,24 @@
 {
   "slug": "f4f",
   "extension": "f4f",
-  "name": ".F4F",
+  "name": "Flash Video Fragment",
   "summary": "Learn about .F4F files and view a list of programs that open them.",
   "developer": "Adobe Systems",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Adobe Media Server is a platform that content publishers can use to host and distribute streaming video. These videos are stored on Media Server in the FLV format, but often delivered to end users in the form of several F4F files.",
+      "Sending videos as a set of smaller F4F files, rather than one large FLV file, allows client devices to download, process, and play those videos more quickly. Users' streaming media players (typically Adobe Flash Player) automatically stitch F4F files together into a single, seamless video during the playback process.",
+      "NOTE: The PHP script AdobeHDS can be used to join F4F fragments into FLV files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use K-S-V Scripts AdobeHDS, a PHP script, to join a set of F4F files together into a single FLV file. Then, you can play the resulting FLV file in VideoLAN VLC media player or another media player that supports the FLV format."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,11 +29,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=8753&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can use K-S-V Scripts AdobeHDS, a PHP script, to join a set of F4F files together into a single FLV file. Then, you can play the resulting FLV file in VideoLAN VLC media player or another media player that supports the FLV format."
     ]
   },
   "images": [
@@ -49,10 +59,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/f4f",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.059Z"
+      "url": "https://fileinfo.com/extension/f4f",
+      "retrieved_at": "2025-11-01T22:32:42.461Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.059Z"
+  "last_updated": "2025-11-01T22:32:42.461Z"
 }

@@ -4,8 +4,20 @@
   "slug": "resources",
   "extension": "resources",
   "name": ".RESOURCES File Extension",
+  "type_name": "Visual Studio Resource File",
   "summary": "Learn about .RESOURCES files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "File created by Visual Studio, a software development application created by Microsoft; may contain both strings and objects, but objects must be serializable; used for bundling and persisting application assets so they can be accessed in a standard way in Visual Studio programs."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "RESOURCES files can be accessed using the .NET Framework's System.Resource namespace. For example, the ResourceWriter class can be used to write resources into RESOURCES files.",
+      "NOTE: RESOURCES files are similar to .RESX files. However, only resources within RESOURCES files should be embedded into a runtime executable or compiled into a satellite assembly."
+    ]
+  },
   "programs": {
     "windows": [
       {

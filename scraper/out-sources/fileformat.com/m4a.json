@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/m4a/index.html",
   "slug": "m4a",
   "extension": "m4a",
-  "name": "M4A File",
-  "source": "fileformat.com"
+  "name": "What is an M4A file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "The M4A files consist of consecutive chunks. Each chunk has 8 byte header and sub-divided as:\n\n4-byte chunk size (big-endian, high byte first)4-byte chunk type - one of pre-defined signatures: “ftyp”, “mdat”, “moov”, “pnot”, “udta”, “uuid”, “moof”, “free”, “skip”, “jP2 “, “wide”, “load”, “ctab”, “imap”, “matt”, “kmat”, “clip”, “crgn”, “sync”, “chap”, “tmcd”, “scpt”, “ssrc”, “PICT”.\n\nFirst chunk will be of type “ftype” and has a sub-type at offset 8. The M4A defined by sub-type which must be “M4A_”, for M4B sub-type must be “M4B_” and for M4P sub-type must be “M4P_”.\n\nIterating chunks, until chunk of unknown type is detected, It will compose M4A (MPEG-4 Audio) file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The M4A file format, an abbreviation for MPEG 4 Audio, is a versatile audio container known for its high-quality, lossy compression via the Advanced Audio Coding (AAC) codec. Identified by the .m4a file extension, it is the standard for un-protected audio content and can store a diverse range of media, including songs, podcasts, and audiobooks. Technologically, M4A is recognized as a more advanced successor to the MP3 format. A key differentiator is its dedicated design for audio, whereas the MP3 format was originally conceived as a mere audio layer within MPEG 1 or MPEG 2 video files.\n\nM4A format is encrypted by FairPlay Digital Rights Management as were sold via the iTunes Store use the .m4p extension. The Apple iPhones use MPEG-4 audio for their ringtones but those audio files use the .m4r extension."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

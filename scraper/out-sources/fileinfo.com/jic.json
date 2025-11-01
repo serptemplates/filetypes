@@ -4,8 +4,24 @@
   "slug": "jic",
   "extension": "jic",
   "name": ".JIC File Extension",
+  "type_name": "JTAG Indirect Configuration File",
   "summary": "Learn about .JIC files and view a list of programs that open them.",
   "developer": "Intel",
+  "more_information": {
+    "description": [
+      "A JIC file is a configuration file used in electronics development (most notably Intel's Quartus Prime development software) to program devices through the Joint Test Action Group (JTAG) interface. It contains data for programming non-volatile memory devices, such as flash memory, which store configuration information for Intel (formerly Altera) FPGAs. Hardware developers and embedded systems engineers commonly use JIC files when working with Intel programmable logic devices."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The JIC format is primarily associated with Intel's Quartus Prime development software, which engineers use to design logic for FPGAs and other programmable logic devices. When generating a JIC file, engineers typically include the FPGA's programming data along with any necessary bootloaders or supporting logic that must be stored in non-volatile memory.",
+      "A JIC file typically stores the following:",
+      "Raw configuration bitstream – The core programming data for the FPGA, usually converted from a SOF SRAM Object file and formatted for storage in flash memory.",
+      "Header and metadata – Information about memory type, addressing, and device settings, which guides how the data should be written to the target device.",
+      "Optional user data or secondary images – In some cases, the file may include additional content, such as backup configurations or user-defined data blocks.",
+      "NOTE: The JTAG interface is a common method for programming and debugging digital systems, and the JIC format is one of several supported by Intel tools to deliver configuration data to target devices through the interface."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open JIC files with Intel Quartus Prime in Windows and Linux. To open a JIC file with Quartus Prime:",

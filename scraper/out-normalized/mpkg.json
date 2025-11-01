@@ -1,9 +1,48 @@
 {
   "slug": "mpkg",
   "extension": "mpkg",
-  "name": "MPKG File",
+  "name": "macOS Meta-Package",
   "summary": "Learn about .MPKG files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "compression",
+  "category_slug": "compression",
+  "mime": [
+    "application/vnd.apple.installer+xml"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "For example, an MPKG file might contain separate installation packages used to install the command-line and GUI versions of a program. Or, an MPKG file might contain several related utilities, which are meant to be used in concert and thus packaged together.",
+      "When you double-click an MPKG file in macOS, Apple Installer will begin installing the packages the MPKG file contains. Sometimes, you may be able to manually specify which of the MPKG file's packages you want to install, as part of the installation process."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use Apple Installer to install the packages an MPKG file contains. To do so, either double-click the MPKG file, or right-click it and select Open With → Installer."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -12,15 +51,14 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can use Apple Installer to install the packages an MPKG file contains. To do so, either double-click the MPKG file, or right-click it and select Open With → Installer."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
+    },
+    {
+      "url": "https://docs.fileformat.com/compression/mpkg.png",
+      "alt": "MPKG File Format"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -49,25 +87,24 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.832Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.183Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.832Z"
+      "url": "https://docs.fileformat.com/compression/mpkg/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.183Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mpkg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.832Z"
+      "url": "https://fileinfo.com/extension/mpkg",
+      "retrieved_at": "2025-11-01T22:32:42.183Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.832Z"
+      "retrieved_at": "2025-11-01T22:32:42.183Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.832Z"
+  "last_updated": "2025-11-01T22:32:42.183Z"
 }

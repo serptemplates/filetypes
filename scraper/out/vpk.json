@@ -1,9 +1,11 @@
 {
   "slug": "vpk",
   "extension": "vpk",
-  "name": "VPK File",
+  "name": "Valve Pak",
   "summary": "Learn about .VPK files and view a list of programs that open them.",
   "developer": "Valve",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -52,6 +54,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "VPK files are saved as part of a VPK package. Each VPK package has a master VPK directory file named archive_dir.vpk (where \"archive\" is the name of the VPK package) and VPK archive files named archive_0.vpk, archive_1.vpk, etc.",
+      "You can create VPK files using the vpk.exe command line tool located in the game directory. To ensure compatibility, you should use the vpk.exe tool located in the directory of the game you are creating the VPK file for. In Windows, the vpk.exe tool will most likely be located in the following directory: C:\\​Program Files (x86)\\​SteamApps\\​common\\​[game title]\\​bin",
+      "NOTE: The VPK format is the successor to the .GCF format."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .vpk extension is a compressed archive package file that is used to install third-party apps on Sony PlayStation Vita gaming console. These files can be installed only on jailbreak Vita PlayStation by HENkaku that enabled the PS Vita and PSTV to use customized user created content. A VPK archive file contains all the contents that make up the game including images such as PNG files, setting files such as .bin, and any configurations in XML file format.",
+      "A VPK file is a Valve Pak file used by some games developed with the Source Engine, which include Half-Life, Left 4 Dead, DOTA 2, and Portal 2. It may be a master directory file for a collection of VPK files or may be one of the raw VPK data files. VPK files are used for storing maps, models, materials, audio, choreography scenes, and other original game content, but can can be used for making game mods as well."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "VRF VPK Viewer"
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -80,15 +122,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/vpk/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.935Z"
+      "retrieved_at": "2025-11-01T22:32:42.291Z"
     },
     {
       "url": "https://fileinfo.com/extension/vpk",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.935Z"
+      "retrieved_at": "2025-11-01T22:32:42.291Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.935Z"
+  "last_updated": "2025-11-01T22:32:42.291Z",
+  "containers": []
 }

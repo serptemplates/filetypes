@@ -1,9 +1,11 @@
 {
   "slug": "mdf",
   "extension": "mdf",
-  "name": "MDF File",
+  "name": "Media Disc Image File",
   "summary": "Learn about .MDF files and view a list of programs that open them.",
   "developer": "Alcohol Software",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -56,6 +58,43 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "A MDF file has the following data structure.\n\nPage 0: HeaderPage 1: First PFSPage 2: First GAMPage 3: First SGAMPage 4: UnusedPage 5: UnusedPage 6: First DCMPage 7: First BCM\n\nFile Header\n\nThe page number 0 of all the files contains a header that stores metadata about the file.\n\nPage Free Space (PFS)\n\nPFS identifies the allocation status and determines the amount of free space.\n\nBit 1: Indicates whether the page is allocated or not.Bit 2: Indicates if the page is from a mixed extent.Bit 3: Indicates that this page is an IAM page.Bit 4: Indicates that this page contains ghost recordsBits 5 to 7: A combined three-bit value, which indicate the page fullness as follows:0: The page is empty1: The page is 1–50% full2: The page is 51–80% full3: The page is 81–95% full4: The page is 96–100% full",
+      "MDF files may also be accompanied by .MDS files, which contain metadata about the MDF files. they include information, such as where the disc layers begin and end and copyright information."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .mdf extension is a Master Database File used by Microsoft SQL Server to store user data. It is of prime importance as all the data is stored in this file. The MDF file stores users data in relational databases in the form columns, rows, fields, indexes, views, and tables. SQL Server allows to set autogrow and autoshrink settings to have a positive impact on the performance of the database. MDF files can be loaded and attached to a database using Microsoft SQL Server. MDF files have Application/octet-stream mime type.",
+      "An MDF file is a disc image saved by a disc authoring program such as Alcohol 120%. It stores the actual CD or DVD disc data, while the header and track information is stored in a corresponding .MDS file. MDF files are similar to .ISO files, but are saved in a different format."
+    ]
+  },
+  "mime": [
+    "application/octet-stream"
+  ],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -84,15 +123,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/mdf/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.927Z"
+      "retrieved_at": "2025-11-01T22:32:42.277Z"
     },
     {
       "url": "https://fileinfo.com/extension/mdf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.927Z"
+      "retrieved_at": "2025-11-01T22:32:42.277Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.927Z"
+  "last_updated": "2025-11-01T22:32:42.277Z",
+  "containers": []
 }

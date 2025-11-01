@@ -7,6 +7,17 @@
   "type_name": "Android Stale Thumbnails Identifier",
   "summary": "Learn about .DATABASE_UUID files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "DATABASE_UUID is a hidden file stored in some Android devices' .THUMBNAILS folders. It contains a universally unique identifier (UUID) that Android uses to identify stale thumbnail collections. The UUIDs that DATABASE_UUID files contain are 32 characters long and written in the format 90f51180-158b-11eb-adc1-0242ac120003."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "UUIDs are 128-bit numbers used to uniquely identify objects on a computer system. For each .THUMBNAILS folder located on an Android device, Android creates a DATABASE_UUID file. This file contains the last UUID assigned to that .THUMBNAILS folder.",
+      "If Android discovers that the UUID a .THUMBNAILS folder's DATABASE_UUID file contains does not match the folder's current actual UUID (as determined by Android's DatabaseHelper), Android will automatically delete and regenerate all thumbnails the .THUMBNAILS folder manages. It will then create a new DATABASE_UUID file that contains the updated UUID."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because DATABASE_UUID files are plain text files, you can open them in any text editor, such as Rhythm Software QuickEdit (Android). However, you should never edit the UUID a DATABASE_UUID file contains."

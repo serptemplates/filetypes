@@ -54,6 +54,28 @@ export function parse(html) {
     return texts;
   }
 
+  // Generic: map all h3 sections under the first filetype block
+  function extractAllSectionBlocks(sectionRoot) {
+    const out = {};
+    sectionRoot.find('h3').each((_, el) => {
+      const heading = clean($(el).text());
+      if (!heading) return;
+      const blocks = [];
+      let sib = $(el).next();
+      while (sib.length && sib[0].tagName && !/^h3$/i.test(sib[0].tagName)) {
+        sib.find('p, li').each((_, node) => {
+          const t = clean($(node).text());
+          if (t) blocks.push(t);
+        });
+        const direct = clean(sib.text());
+        if (direct && blocks.length === 0) blocks.push(direct);
+        sib = sib.next();
+      }
+      if (blocks.length) out[heading.toLowerCase()] = blocks;
+    });
+    return out;
+  }
+
   const firstType = firstSection.length ? firstSection : $('section.filetype').first();
   const typeName = clean(firstType.find('h2.title').first().text()) || undefined;
   const commonFilenames = [];
@@ -74,6 +96,25 @@ export function parse(html) {
 
   const howOpenTexts = extractSectionText(firstType, /^How to open/i);
   const howConvertTexts = extractSectionText(firstType, /^How to convert/i);
+  const allBlocks = extractAllSectionBlocks(firstType);
+
+  // Derive "what is"/overview content
+  let overview = [];
+  for (const key of Object.keys(allBlocks)) {
+    if (key.startsWith('what is')) { overview = allBlocks[key]; break; }
+  }
+  if (!overview.length) {
+    const metaDesc = clean($('meta[name="description"]').attr('content'));
+    if (metaDesc) overview = [metaDesc];
+  }
+
+  // Derive technical/spec content (format/specification sections)
+  const technicalBlocks = [];
+  for (const [key, blocks] of Object.entries(allBlocks)) {
+    if (/(format|specification|structure|codec|container)/i.test(key)) {
+      technicalBlocks.push(...blocks);
+    }
+  }
 
   // Programs (shallow): detect software links
   const programs = {};
@@ -111,6 +152,8 @@ export function parse(html) {
     type_name: typeName,
     summary,
     developer,
+    more_information: overview.length ? { description: overview } : undefined,
+    technical_info: technicalBlocks.length ? { content: technicalBlocks } : undefined,
     common_filenames: commonFilenames.length ? commonFilenames : undefined,
     how_to_open: howOpenTexts.length ? { instructions: howOpenTexts } : undefined,
     how_to_convert: howConvertTexts.length ? { instructions: howConvertTexts } : undefined,

@@ -1,9 +1,11 @@
 {
   "slug": "jpf",
   "extension": "jpf",
-  "name": "JPF File",
+  "name": "JPEG 2000 Image",
   "summary": "Learn about .JPF files and view a list of programs that open them.",
   "developer": "Joint Photographic Experts Group",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -88,8 +90,23 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "JPF files typically store digital photos. However, they may also store other types of images, such as satellite map imagery or medical scans.",
+      "The JP2 format was created in 2000 by the Joint Photographic Experts Group (JPEG) committee to replace the JPEG format. However, the reception of the format was minimal as the JPEG format is still overwhelmingly favored.",
+      "Most JPEG 2000 images are saved as .JP2 or .JPX files, and may also be saved as .J2K files. However, some applications, like Adobe Photoshop create JPF files when you save an image in the JPEG 2000 format."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .jpf extension is an extension to the JPEG 2000 image coding system ISO/IEC 15444 and is referred to as its Part 2 ISO/IEC 15444-2. It defines and specifies a set of lossless (bit-preserving) and lossy compression methods for coding continuous-tone, bi-level, grey-scale, colour digital still images, or multi-component images. The first part of ISO/IEC 15444-1 is referred to the JP2 that uses the wavelet technology to code lossless content and is the base for JPEG 2000 image file formats. The JPF file format didn’t receive a warm reception due to the extensive usage of JPEG format. JPF files can be opened with popular imaging applications such as Adobe Photoshop 2020, Adobe Illustrator 2020, and CorelDraw Graphics Suite 2020.",
+      "A JPF file is an image saved in the JPEG 2000 format, which is a more advanced version of the traditional JPEG (.jpg) format. JPF stands for JPEG 2000 Image File, and it uses the .jpf extension.\n\nUnlike regular JPEGs, JPF files offer better image quality at smaller file sizes, thanks to improved compression techniques. They also support transparency, lossless compression, and higher color depth, making them valuable for professional photography, digital archiving, and medical imaging.",
+      "A JPF file is an image saved in the JPEG 2000 (JP2) format, which is a successor to the .JPEG image format. It supports image transparency and may incorporate lossy or lossless compression. JPF files may also store metadata that describes the image."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      "To open a JPF (JPEG 2000) file, you typically need software that supports the JPEG 2000 format. Here’s how you can open it:\n\nUsing Image Viewers or Editors:Windows Photo Viewer (on Windows 10/11) supports JPEG 2000 files natively.macOS Preview: macOS can open JPF files with the built-in Preview app.IrfanView: A free image viewer for Windows that can open JPF files if you install the appropriate plugin.XnView: Another free image viewer that supports the JPEG 2000 format.Using Image Editing Software:Adobe Photoshop: If you have the appropriate plugins or use the newer versions of Photoshop, you can open JPF files.GIMP: An open-source image editor that can open JPF files with the correct plugin.Online Viewers and Converters:Online Convert or Convertio can convert JPF files to other formats like JPEG, PNG, or TIFF if you need to use them in more commonly supported formats.Using Specialized Software (for professional use):JPEG 2000 viewers like JPEG 2000 Viewer (specific to the format) can be used for viewing and even editing JPF files.GDAL (Geospatial Data Abstraction Library): This library is useful for professionals working with JPF files in fields like geospatial data and satellite imagery.Using Web Browsers:Some modern web browsers, such as Google Chrome with the appropriate extensions, can open JPF files directly.",
       "You can open a JPF file with various free and commercial image viewing and editing applications, including:",
       "Adobe Photoshop (Windows and macOS)",
       "CorelDRAW Graphics Suite (Windows and macOS)",
@@ -113,38 +130,32 @@
       ".TGA - Targa Graphic"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "XnView"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAH6ElEQVR42sWWCVSU1xXH78zADMvICIMICpFtWAIHi4qsBQng0iSAqEkRm1orUiqLoIBUQ0BA0ZCmIJseAggpRRsaBCIBBawLCLKVdcDIpqwRgQFZnK33sRiSIyeIpr2c/7xv3vfeu7937533oMD/2SjLmaSoqEh1dtntgI/VyReTnvxPAc7HJxob6GkE2GqDa9uwdHViep6Xvp5ujcch9+e/KEBISAh1BUvecudW0wT14Sx9WnMGDdaYQu/boa0Ft7gxBw/sT/zFAOITLrCnp8aOH3IxcJetOcYC3kMAqgSASAggqwKwPhAKHqp+UVJy9/PoT880vVGAwKBgzi4X59D1cmV7GB0pkjDRg85pP0wXIwRNCp5r/JHfKrCrzym48+f7FeX38/Lyxa8NkJaWZr3tnY1ZyrwvVKDnKjqmL5gmXtCShg/A1AKe5qfDpfc6I6Kjo790cXHxVlVV7c3MzPxHTk7OyCsD7Ny508rf5+DfLTXa3qL0XMHR1MWniAUAK9dD8/MPBtMyC2PNzc10tbW1d1GpVH5NTc2VxsbGwHPnzo0sGcDby4sxPjb27sTExG83mlqoeO7V3szkXafD9DDOWjBNLJ6phyl5e0FJw4r2ixdS7/v6eJuxWCytlpYWGB0dBXV1dZCXl2/s7+8/lZ+fn5OSksL/WYC8f2X7rDDafGRKBIo3k2PLxFQq5djh3VaK/GIZ4PNwBHU2/DQGgIINxH5ZW3Hn9t2OkydP2NNoEuz29nbK+Pg4DA8PA4/HI2cHmJiYDLa1tZ0ZGBhI9fb2Hn0pwPGAo/pGJqbHxsz3HEjuxSLHtHuqAQxkxpbfvnW3Ozws0I6zephNfdZNAfoK6Jnm8GITLt8TiQQiX19f66dPn8oQp8T52NgYjIyMzLTYD5OTk+Dg4CCSlpYub21t9U1NTa3/EUDgUb8NHx7ySvxaqGqcMUCXlJQEYEsBKKM+UpwSiCsKH2akplV5e3mY21loaw4Mi8aDTkQVamtpst3d3S1wp3QScuKIOCUQBIBEgPSTFlMKurq6YGZm1tjV1RUzA/D5Z9FyMkzmYe3trn5B38mtapsCkJPG3TNmAdgYhTUoM3kAvZ76gb9Ght80MDRSysvPbX3U3T0YHBxs4+bmZolOJIjDqampFwDzjucjQZ6FQiHg+GlMxxXKUX8/VScnp6AGtsmBuE4ZmU48UKXRqQyKiVJgzAKsxVYJz56NcgBaY494YQH+13KuXm3k8/nlqqpqv9q///fveXp6mg0NDUkTZ8+ePXsBQByTtJBWJBKBo6OjuKio6HpSUlIapbKysqBabuM2z3tUiiQ6lMKd0+mzAPMRUJScA8B+FYRQwzEbBIOjEeHhfvZ29nx9I05Ubva1rorKyi5ShFJSUoodHR0UArEQgEajga2t7djly5dL4+LiKjD4VRQHe/vAwyGRvvH8zWtKB3H3MgiAzmSlZgtwJgUIoMqYBdHH9yay08LYE0E5K1ny9Yd89nny2d3K9Em2oKqo80FiUtJ9L28vcy0tLU5TU9OLFOB5ANbW1gI8oHKys7NbsE4qEeA2qYE9q5VWbbqYkbm7WNFmXcpjSRqDMRt+JokA+ZWRFKA2Yfh1e6p7P4uIvGVhZanm6mFv0itbRheDYKaIWaAG441Kg1GnYootLC3Ut27datzQ0CBFcq6pqfnk9OnThbm5ufU4tBZVghISAAOU/dv6elqhUWcdbmg46mXjz4+JYWbORYCFYXdRQucDTYOf+Ptdc3J01tvhwTHpo1fQBDA5dyCTTxGshHUg02vMO/tx8g06Q0IiKChoxzSal5fXV6WlpZ0CgeAmDiS7n1x4DqiQk5fJZCqfT4x/f8h0t0Fiv4wkA0P+liyAq5JAJPwmvS49PaM2LCp4G8usS7UDinEydUY/3AvkSQgSwAC9CTd+4SVubV5uAbe/v2+srq6uHV+Xz+mlR7EGiYTy6tWcoODjVuJdR8y/GgA4unZC0Hc1vbbomwKuj7/7rylb7qj3QjU6Ei9YhLLg+2wkJEEWtIW/EbVmMRsiwiO/5bZy8TKBBhR/MQBiK1HOKLWwU2F277m5GZ0PDS359vqNB7fKbni0a1ySb4RcoAEdXmYL7saZZz5Mg5X4MEjVWVVHRJ42xeITLuUyUka9w5KTM+RwtOVrauv6sIIf7d27d4tvhJvzXbVIue+hAyFocyH/8ULz30VYmMqgC5vaAobPBCZdwAj8hcvlipcCQAxLD95FceYKphq133j9Bp2ErLMfNOhcYtdR8ynzEDCXAsoL50IwEm0X69b/buBPrgFXuNzmGuy+tFjUFjN5kgpU61zerFGmtja2nJDowO3VmxLW/gcLkYYlBwvqQYh/umAKZlX+vaG+5/LvlN3+DrtLUVWvCvBTI+WuQyKjoqyyKiklfteQXZlGPj2OJsY9z0ZBCFsE+0T6FS6P/7DHM6u3r6cfX+C/UpizhZTLBJiHMETZ6nB0ND4JP2nH+7DKMA+S0fU07nsHmP77YOfHR8Kv1dRVP8BxxajGxZwvB2DeyLnhhPe1cszfYrYrfDRl3E/voGmW2nYc2OfxzydPvu/D91+jHv/cQssFILYOZcdWYHNOhpyw0TXUUT7mHZjf3NLMxf7rqAdLWeR1AIjh7QDvUygULbzpJPCYJTvPRg0udYHXBSDGRtmiFFBFqM5XmfwmAIhJzWnkVSe+KYBl238Bn/Zge80YNEIAAAAASUVORK5CYII=",
-      "alt": "Honeyview"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "IrfanView"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MysticThumbs"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADx0lEQVR42s2XfUyWVRjGf+/78iIfgoKkmIaiQoaZI83Wml9z+LH+QsqhWyvdWuYn2Yb9YS1crmyN+W1/KKiom8bY3CxTGurmbDnwY07RxEmIH6AmoCgKgtfx8MZLRhvued91trPnPOc5O/d17vu+rnM/LvzayxAVCWM0HK0ejbOt/jGcaISyCmjwTbp8g1R4RY+v3DC13bjrOYz8V2tTb2iFAxrknIJyM/fUiI6boA9bZXxiAAw/A0S2jjTBh0LwpzHm0em/0GC5uifAxn2ueKy+8iSscCVDXE/4WcbfCIZxPxCldfCOazgkR8CvAvBSkAFcUUKmuVIgpYcAKP79ndo8WieKCIPbyvXmli4BXK1XwncLQG/FKirCjlvEqdo7CmZr5zUvxsHns+XOvrDnEOwugdY2BwC4FaNFGTClPVMa5L8v8+Bided140fBtx9DaAgcV5ov3QBNjxwAEC2FWr0QXhtq382p1hdBwUFt5nfCwfEi+RzoF6vTywPbftHaVgcAvC665C6AEBG1USTuI6kquwCfbYR7DzrWme8J/RSqcKi8IflrdCAHjPvnp8MH0siKq9LTP2DmJLh7Hz6Vi09XdKxNGii3z4RwbXr0DOT95EAOxETB2sXS6kFQeFiLy+D7+RCpTM/fD5v2doQhNQnWLLIs2P+7tD3/2UTtNoC3RsCqeXKvFi3fLNdfFCAZGZEI5yphyTq4czdAANz6sPQ9yJwMVTWwYDXU/AULZ8D7CsmDh7DsB/jtbIAAxPVStmfBsAGSrlooLrUaYN4nptr8MFzP3WMNOQ5ggni98iMIC6XLdumaNEKeqa1zGIDHY1UtfZw9taGUP+fDBSpSdHvYrOt0C5SccBhAfKx1vxGX0gvWzf7aPlYlTNa74JXq7TsGXxfAyCEOAkhTcZYz14rL2kLYWWzLGl8zur8hy+p+9U0lpsLwQm+HABj3Z2fC9DehTq7P3gTnqzpvYoBlz4JpY+UZhWjVLrghhnwnykZo04NK2G92PCcAQ78h/e3tZ6hmEu3frta+MfJEH9VxYsP121Ydh4ohHre9jq/UdPZat1kQqPb/AfAqDA+1JdmAIAOobjAAhsFA3awHBCAlyADKla/TXbrgwqS2G72q0wn8P8Hf9lUkFdyCT4xBU5q/rYJnu/IgMRjWxcpKuX/OJf2g+E7sVXmeEWZ/zZI06Q7IsW11VqECaoWE9UdNPfJ3uVfl3khJe4asj9GHng4bb5RWlUkmii6riDLGzfw/Y27eQ2KsknqdBCDDLfVPHzTjp03BSrou2xNdoYfmxeBYCAAAAABJRU5ErkJggg==",
-      "alt": "Adobe Illustrator"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -153,29 +164,53 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/jpf_1163.png",
+      "alt": "Screenshot of a .jpf file in Apple Preview 11",
+      "caption": "JPF file open in Apple Preview 11"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.813Z"
+      "retrieved_at": "2025-11-01T22:32:42.166Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/jpf/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.813Z"
+      "retrieved_at": "2025-11-01T22:32:42.166Z"
     },
     {
       "url": "https://fileinfo.com/extension/jpf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.813Z"
+      "retrieved_at": "2025-11-01T22:32:42.166Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.813Z"
+      "retrieved_at": "2025-11-01T22:32:42.166Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.813Z"
+  "last_updated": "2025-11-01T22:32:42.166Z",
+  "mime": [
+    "image/jpx"
+  ],
+  "containers": []
 }

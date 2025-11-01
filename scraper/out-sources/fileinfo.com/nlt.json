@@ -4,8 +4,20 @@
   "slug": "nlt",
   "extension": "nlt",
   "name": ".NLT File Extension",
+  "type_name": "Windows Transliteration File",
   "summary": "Learn about .NLT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An NLT file is a Windows system file used to map one language's writing system to another, in a process called transliteration. It contains text and binary data that associates characters used in one language with characters used in another. NLT files are found in the C:/​Windows/​Globalization/​ELS/​Transliteration directory."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "As part of its Globalization Services, Windows includes Extended Linguistic Services (ELS) that are implemented as a dynamic link library (DLL). When developers create internationalized Windows apps, they can reference Windows' ELS to perform certain functions, including automatically mapping UTF-16 characters used in one language to characters used in another language.",
+      "To map characters between languages, Windows uses NLT files. These files are often named after the languages they link. For example, the first NLT file listed in the C:/​~/​ELS/​Transliteration directory is named bengali-to-latin.nlt."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "NLT files are Windows system files that are not meant to be opened. Windows APIs reference NLT files when Windows' Extended Linguistic Services transliterate a language."

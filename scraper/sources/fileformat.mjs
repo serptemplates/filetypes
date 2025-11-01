@@ -6,23 +6,31 @@ const clean = (t) => (t || '').replace(/\s+/g, ' ').trim();
 export function detect(html) {
   const $ = cheerio.load(html);
   const canon = $('link[rel="canonical"]').attr('href') || '';
-  const host = new URL(canon || 'https://docs.fileformat.com').host;
-  // Prefer docs.fileformat.com explicitly; fall back to fileformat.com markers
-  return host.includes('docs.fileformat.com') || canon.includes('fileformat.com');
+  const og = $('meta[property="og:url"]').attr('content') || '';
+  let host = '';
+  try {
+    host = new URL(canon || og, 'https://docs.fileformat.com').host;
+  } catch {}
+  // Prefer docs.fileformat.com explicitly; fall back to simple markers
+  return (
+    (host && host.includes('docs.fileformat.com')) ||
+    /docs\.fileformat\.com/i.test(canon) ||
+    /docs\.fileformat\.com/i.test(og)
+  );
 }
 
-function readSections($, headingIncludes = []) {
+function readSections($root, headingIncludes = []) {
   const results = [];
-  $('h2, h3').each((_, el) => {
-    const heading = clean($(el).text());
+  $root('h2, h3').each((_, el) => {
+    const heading = clean($root(el).text());
     const low = heading.toLowerCase();
     if (headingIncludes.some(k => low.includes(k))) {
       let blocks = [];
-      let sib = $(el).next();
+      let sib = $root(el).next();
       while (sib.length && !['H2','H3'].includes((sib[0].name || '').toUpperCase())) {
-        const txt = clean(sib.text());
+        const txt = clean($root(sib).text ? $root(sib).text() : sib.text());
         if (txt) blocks.push(txt);
-        sib = sib.next();
+        sib = $root(sib).next();
       }
       if (blocks.length) results.push(blocks.join('\n\n'));
     }
@@ -55,31 +63,46 @@ export function parse(html) {
   } catch {
     segs = [];
   }
-  const ext = (segs[segs.length - 1] || '').toLowerCase();
-  const cat = (segs[segs.length - 2] || '').toLowerCase();
+  // Determine ext/category, treating trailing index.html specially
+  const last = (segs[segs.length - 1] || '').toLowerCase();
+  const prev = (segs[segs.length - 2] || '').toLowerCase();
+  const prev2 = (segs[segs.length - 3] || '').toLowerCase();
+  const ext = last && last !== 'index.html' ? last : prev;
+  const cat = last && last !== 'index.html' ? prev : prev2;
   if (!ext) return null;
 
-  const name = clean($('h1, h2').first().text()) || `${ext.toUpperCase()} File`;
-  const summary = clean($('p').first().text()) || undefined;
+  const scope = $('article');
+  const $scope = (sel) => scope.find(sel);
+  // Choose a reasonable name: prefer first h2 in content; fall back to h1/h2; then ext
+  let headingName = clean($scope('h2').first().text()) || clean($('h2').first().text()) || clean($('h1').first().text());
+  if (!headingName || headingName.toLowerCase() === 'documentation') headingName = `${ext.toUpperCase()} File`;
+  const name = headingName;
+  // Summary: prefer first paragraph under content area
+  const firstPara = clean($scope('p').first().text());
+  const summary = firstPara || undefined;
 
   // Technical/spec sections
-  const technicalBlocks = readSections($, ['technical', 'specification', 'format specification', 'structure']);
+  const technicalBlocks = readSections($scope, ['technical', 'specification', 'format specification', 'structure']);
 
   // How to open / convert
-  const howOpenBlocks = readSections($, ['how to open', 'open', 'view']);
-  const howConvertBlocks = readSections($, ['convert', 'export']);
+  const howOpenBlocks = readSections($scope, ['how to open', 'open', 'view']);
+  const howConvertBlocks = readSections($scope, ['convert', 'export']);
+  const whatIsBlocks = readSections($scope, ['what is']);
 
-  // MIME types: scan code, lists, tables for type/subtype patterns
+  // MIME types: scan code, lists, tables for type/subtype patterns, filter to common prefixes
   const mimeSet = new Set();
-  $('code, pre, li, td, p').each((_, el) => {
+  $scope('code, pre, li, td, p').each((_, el) => {
     const txt = clean($(el).text());
-    (txt.match(/[a-z0-9.+-]+\/[a-z0-9.+-]+/ig) || []).forEach(m => mimeSet.add(m.toLowerCase()));
+    (txt.match(/[a-z0-9.+-]+\/[a-z0-9.+-]+/ig) || [])
+      .map(m => m.toLowerCase())
+      .filter(m => /^(video|audio|image|application)\//.test(m))
+      .forEach(m => mimeSet.add(m));
   });
   const mime = Array.from(mimeSet);
 
   // Related formats: internal links to other docs pages
   const relatedSet = new Set();
-  $('a[href^="/"], a[href*="docs.fileformat.com"]').each((_, a) => {
+  $scope('a[href^="/"], a[href*="docs.fileformat.com"]').each((_, a) => {
     const href = ($(a).attr('href') || '').replace(/^https?:\/\/docs\.fileformat\.com/, '');
     const parts = href.split('/').filter(Boolean);
     const last = parts[parts.length - 1];
@@ -92,7 +115,7 @@ export function parse(html) {
   const images = [];
   const seen = new Set();
   const resolve = (u) => { try { return new URL(u, base).href; } catch { return undefined; } };
-  $('figure img, img').each((_, el) => {
+  $scope('figure img, img').each((_, el) => {
     const src = $(el).attr('src') || $(el).attr('data-src') || '';
     const abs = resolve(src);
     if (!abs || seen.has(abs)) return;
@@ -112,6 +135,7 @@ export function parse(html) {
     category: cat || undefined,
     category_slug: cat || undefined,
     technical_info: technicalBlocks.length ? { content: technicalBlocks } : undefined,
+    more_information: whatIsBlocks.length ? { description: whatIsBlocks } : undefined,
     how_to_open: howOpenBlocks.length ? { instructions: howOpenBlocks } : undefined,
     how_to_convert: howConvertBlocks.length ? { instructions: howConvertBlocks } : undefined,
     mime: mime.length ? mime : undefined,

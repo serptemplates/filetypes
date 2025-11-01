@@ -7,6 +7,18 @@
   "type_name": "Free Lossless Audio Codec File",
   "summary": "Learn about .FLAC files and view a list of programs that open them.",
   "developer": "Xiph.Org Foundation",
+  "more_information": {
+    "description": [
+      "A FLAC file is an audio file compressed in the Free Lossless Audio Codec (FLAC) format, which is an open-source lossless audio compression format. It is similar to an .MP3 file, but is compressed without losing any quality or original audio data."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FLAC reduces the size of digital audio by approximately 60 percent and is widely supported across popular platforms. The format is open-source and developed by the Xiph.Org Foundation.",
+      "A FLAC Fingerprint file, which contains the filename and checksum information for a FLAC file, may be generated along with the FLAC file. This file is typically named ffp.txt and can be created using the following command:",
+      "metaflac --show-md5sum flac_file_names > ffp.txt"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can play FLAC files with various media players, including Microsoft Media Player (Windows), VLC media player (multiplatform), and MPlayer (multiplatform). iOS and Android users can play FLAC files in VLC for iOS and VLC for Android, respectively."

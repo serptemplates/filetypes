@@ -1,6 +1,48 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/qt/index.html",
   "slug": "qt",
   "extension": "qt",
-  "name": "QT File",
-  "source": "fileformat.com"
+  "name": "What is a QT file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "QT/MOV files consist of consecutive chunks. Every chunk has an 8 byte header: 4-byte chunk size (big-endian, high byte first) and 4-byte chunk type - one of pre-defined signatures: “ftyp”, “mdat”, “moov”, “pnot”, “udta”, “uuid”, “moof”, “free”, “skip”, “jP2 “, “wide”, “load”, “ctab”, “imap”, “matt”, “kmat”, “clip”, “crgn”, “sync”, “chap”, “tmcd”, “scpt”, “ssrc”, “PICT”. First chunk is of type “ftype” and has a sub-type at offset 8. MOV defined by sub-type which must be “qt “. To compose MOV file, iterating chunks is needed until unknown type is detected.\n\nHere is a sample example: Inspecting a sample MOV file’s binary data it is evident that it starts with a signature ftyp (hex: 66 74 79 70) at offset 4, which defines QuickTime Container File Type. File sub-type is qt~~ (hex: 71 74 20 20) which points to MOV file type. The first block size is 32 (hex: 00 00 00 20, big-endian, high byte first), size located at offset 0. At offset 32 (hex: 20) is located the second chunk, which has a size of 8 and type mdat (hex: 6D 64 61 74).\n\nThe next chunk is located at offset 32+8#40 (hex: 28) and has a size 3,263,028 (hex: 00 31 CA 34) and type mdat (hex: 6D 64 61 74) at offset 44 (hex: 2C). The next chunk is located at offset 40 + 3,263,028#3,263,068 (hex: 00 31 CA 5C) and has a size 21,189 (hex: 00 00 52 C5) and type moov (hex: 6D 6F 6F 76) at offset 1,836,019,574 (hex: 00 31 CA 60). This is the last chunk, so total file size is 3,263,068+21,189#3,284,257 bytes."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with a .qt extension is a multimedia container file that is used by the QuickTime framework to store multimedia file contents. Developed by Apple Inc. the QuickTime File Format (QTFF) is a multimedia container file that contains audio, video, or text for playback later on. It is the format of choice for the exchange of digital media between devices, applications, and operating systems. QT files are also saved in MOV format that was also developed by Apple Inc. Some of the applications that can open QT files include Apple QuickTime player, VLC media player, and Media Player Classic with K-Lite Codec Pack."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "images": [
+    {
+      "url": "https://docs.fileformat.com/video/QT_Sample_Atom.png",
+      "alt": "alt text"
+    }
+  ]
 }

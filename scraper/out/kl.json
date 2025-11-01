@@ -1,7 +1,7 @@
 {
   "slug": "kl",
   "extension": "kl",
-  "name": ".KL",
+  "name": "Android Key Layout File",
   "summary": "Learn about .KL files and view a list of programs that open them.",
   "developer": "Google",
   "programs": {
@@ -10,6 +10,19 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12597&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Android devices come with KL files pre-installed in the following directories:",
+      "/​system/​usr/​keylayout",
+      "/​data/​usr/​keylayout",
+      "These directories store several KL files, including the Generic.kl file, that Android references for specific input devices. For example, the device keyboard may use one KL file, while a connected joystick uses a separate KL file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A KL file is a key layout map that connects keyboard input on an Android device to actions in Android. It stores key definitions in UTF-8 text, which include the SCANCODE (the key number preceded by key), KEYCODE (the action the key is mapped to), and FLAGS (additional functionality associated with the key, like waking the device). KL files also include comments denoted by the pound character (#)"
     ]
   },
   "how_to_open": {
@@ -53,8 +66,11 @@
     {
       "url": "https://fileinfo.com/extension/kl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.146Z"
+      "retrieved_at": "2025-11-01T22:32:42.576Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.146Z"
+  "last_updated": "2025-11-01T22:32:42.576Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

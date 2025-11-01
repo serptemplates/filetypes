@@ -1,9 +1,11 @@
 {
   "slug": "tgz",
   "extension": "tgz",
-  "name": "TGZ File",
+  "name": "Gzipped Tar File",
   "summary": "Learn about .TGZ files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -52,6 +54,42 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "To decompress a TGZ file and extract the archived files in one step at the Unix command line, type this command:",
+      "tar -xzvf filename.tgz",
+      "This command decompresses the Gzip file and then extracts the files from the TAR archive.",
+      "NOTE: TGZ files are used as install packages for some Linux distributions. Therefore, the \".tar.gz\" extension is sometimes used for archives while the \".tgz\" extension is used for installers."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .tgz extension is a TAR archive file, comprising of multiple files and folders, that has been compressed using the Gnu Zip (gzip) compression software. A TAR file usually combines multiple files into a single file for backup or distribution over the internet. It is uncompress file until it is compressed using the gzip software after which it becomes the TGZ file. TGZ files, being compressed files, take less space on disc and are easily transferrable using internet via email. Some applications that can open TGZ files include WinZip, Apple Archive Utility, 7-Zip, and WinRAR. TGZ files are mostly used in UNIX and Linux system.",
+      "A TGZ file is a Unix .TAR archive compressed with Gnu Zip (.GZIP) compression to reduce the file size. It is commonly used on Unix and Linux systems and was originally created as the shorthand version of the compound extension .TAR.GZ."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -80,15 +118,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/tgz/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.288Z"
     },
     {
       "url": "https://fileinfo.com/extension/tgz",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.288Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.934Z"
+  "last_updated": "2025-11-01T22:32:42.288Z",
+  "containers": []
 }

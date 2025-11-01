@@ -4,8 +4,20 @@
   "slug": "traineddata",
   "extension": "traineddata",
   "name": ".TRAINEDDATA File Extension",
+  "type_name": "Tesseract OCR Model",
   "summary": "Learn about .TRAINEDDATA files and view a list of programs that open them.",
   "developer": "Tesseract OCR Community",
+  "more_information": {
+    "description": [
+      "A TRAINEDDATA file is an optical character recognition (OCR) model created by Tesseract, a multiplatform open-source OCR engine. It contains data used to automatically recognize and record text contained in images. Each TRAINEDDATA file is typically used to recognize text written in only one language and is named for that language (e.g. eng.traineddata is used to recognize English text)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Optical character recognition is the process of converting text found in images to machine-encoded text. Tesseract is an OCR engine that was originally developed by Hewlett-Packard but is now maintained as an open-source project, sponsored by Google. Developers can use Tesseract to create OCR models, which are then used to recognize and convert text found in images. These models are saved as TRAINEDDATA files.",
+      "Each TRAINEDDATA file has been \"trained\" using a series of images that contain relevant text. Tesseract includes many default TRAINEDDATA files, and developers can create their own TRAINEDDATA files. These files are typically stored in the ~/​Tessearct-OCR/​tessdata directory."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "TRAINEDDATA files are not meant to be opened. Developers reference TRAINEDDATA files in code that calls Tesseract and uses it to analyze text included in images."

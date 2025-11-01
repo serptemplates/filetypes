@@ -4,8 +4,19 @@
   "slug": "xnc",
   "extension": "xnc",
   "name": ".XNC File Extension",
+  "type_name": "Exchange NC File",
   "summary": "Learn about .XNC files and view a list of programs that open them.",
   "developer": "Ucamco, KiCad, and Pentalogix",
+  "more_information": {
+    "description": [
+      "An XNC file is a text file saved in the Exchange NC (XNC) format. It contains numerical control instructions (XY coordinates) for directing a machine tool, such as a drill, for the production of Printed Circuit Boards (PCB). XNC files are designed for exchanging information between CAD and CAM programs."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The XNC format is compact and streamlines the CAD to CAM process with no requirement for additional sidecar files. The format stores multiple commands on separate lines, with each line in the file representing a single command. There is no limit of commands that can be stored in an XNC file but commands must be upper case. XNC files also contain metadata that may include the span of the drill holes, whether the drill hole is a mechanical or component hole, or if the drill hole is plated."
+    ]
+  },
   "programs": {
     "windows": [
       {

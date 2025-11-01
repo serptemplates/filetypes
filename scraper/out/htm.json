@@ -1,9 +1,11 @@
 {
   "slug": "htm",
   "extension": "htm",
-  "name": "HTM File",
+  "name": "Hypertext Markup Language File",
   "summary": "Learn about .HTM files and view a list of programs that open them.",
   "developer": "WHATWG",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -80,44 +82,51 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Old versions of Windows limited file extensions to three characters. Thus, while other platforms' web development tools saved HTML webpages with the .html extension, Microsoft's web development software, such as FrontPage, SharePoint Designer, and Expression Web, saved HTML webpages with the .htm extension. Since the three-character limitation no longer exists in Windows, most modern web development tools save HTML webpages as HTML files by default.",
+      "Just like HTML files, HTM files contain webpage content and metadata. These elements are defined using opening and closing HTML tags. For example, the tag pair <body></body> defines where a webpage's body content begins and ends, while the tag pair <img></img> is used to add an image to a webpage.",
+      "Unless you are a web developer, you are unlikely to encounter an HTM file. Web developers attempting to use HTM files with modern web servers and hosting systems may have to rename the files to use the .html extension, as some servers and systems now expect HTML files to use the .html extension by default."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Files with .htm extension represent Hypertext Markup Language for creating web pages for display in web browsers such as Google Chrome, Internet Explorer, Firefox and a number of others. It defines the markups for creating static pages to be published on World Wide Web (WWW) for access by others. These markups tell the browsers how to display a web page’s contents. Such pages can contain plain text, images, hyperlinks to other pages, videos and other media information. When a web page is published, you can have a look at the markup code behind it by viewing its page source. Modern browsers allow to inspect each section of a web page where each sub-division or markup element in the HTM source is elaborated.",
+      "An HTM file is a webpage written using Hypertext Markup Language (HTML). It contains tags and text that define the webpage's layout and content. HTM files are the same as .HTML files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an HTM file with Microsoft Visual Studio Code (multiplatform) or any other text or source code editor, to view the HTML it contains. Opening an HTM file in a source code editor will highlight the file's HTML syntax, which makes reviewing and editing the file easier.",
       "You can also open an HTM file in any web browser, such as Google Chrome (multiplatform), Microsoft Edge (multiplatform), or Apple Safari (Mac, iOS), to preview the webpage it contains."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Google Chrome"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Mozilla Firefox"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Opera"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Microsoft Edge"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEXElEQVR42u2XXWgcVRTHz507u5tsdjeb2qIWPx4qlsRUX/TBB6nUTxALwa9gtWoQpFiyyfYjQQJSrbbpmtZC1YJQQRC0WJAGFK0tFds+2Ifar1ipYIuRVCLWWrNmd3bm+j93ZnY32clm00j64iVn753Zmzm/87/n3Lkr6Co38T9A/1vb+8bH/3l9Lp1KQ77W98q6NzAsiE39GaftiRUil8vhWv2njt77cJBWrXy0ov9sz256ta/3Wkz5U2zesjW7dOk99bNxZAhBAuYvqFJsyhtXBvXVvv0McAuGF8TGNzPZVGp1fcQUgZOnb0Irp6b4ZsI1IAskKZMZYIDFuDUCgC3Z9JruWSkw01YB0LM+XW/Zig59c5QM2VDTQxxnjJbde6ceH/v+eOCc25e06v6+9Ce637/1KbKFWQnQC4A8AI4cGqKdB89CKkXC8Exyj3U2HXwo3fP9lS130G3NC2heUyPpCVXajAA+OnpOOyBAGNIH4N4pXcPabmrxABJ04tQPV67Aho2bVV/vWsp5AHuHhnWk7NSQmGJ4jo0SjAGY++ffqgGuAYASUqchakEnsq6ISQo0XD9Ge9d1BAOsSafwUFMDfH3uAhmsgOEqkLXyZJNFeYctB2cAMhW133iXC5BspOOnh6oqsDyzi6Lzs/TxC6uDAbq7OskMhTTAkd9GyVY2/XrxIo3+fZlycMrr7srv6OjZXl78oAcABSCVLmGO3CvlchXaP9hB0cQY7XqsZ3qAL86fpx9HRshShYmOTdexvwSrFj3sAcShwJmqCnTs6adE0x/09rL+YIA0AKQHkDl8mITv2PQj9iCQD74KL938SDEHHDxUOTa+D66GrgM9up8aoBsApgsw8N23ZRGXZBdGSX4GefGG5W4VYAlOnK5eBTUApADgJuG2YwcnOtYOlefcLqrQcV2bC9CYgFJmzdv4tADbTx4oRsplZxjlIHbx+rkFj9e8D8wIYMeZfcVEK1/zcuc8fmZeexEANYvyFDWdbqYFePfsl2VOK53rXMD1040rNEAyyQDu63jyBsTL4sAKBRvvDoe3KQrVx6oD7Pz580nO2aldume4EO2xZzVAE8rw5BRluKS1FQDYxqwCAJQGCEfjAQDYCaW3E77/y2BJeqMsesOP3u2fjD7vAcQggFkRva+AjcgLlkUF29H7VF1DohJgbboLDiV9unuQFi5cVFM2Dw//RA89cDclUQWnhoKTsKW5GZFDASyBfkfgXl0sAKArlaJQ2KQwkm909PeaAPyWiMf08rEC7MSPmtfeQdQMwPJz46NbIEBnZ4ri0RBJwetlUSgSRrra+HP0Ucs08Vo0wuQeWtkc3StENm4p/WBXcvybwv8AwE/A8oXheTISDQaIRMwZRT6bNulAktmQt/LrpZR1V/Iw3v+lZJOQGtrYBShnVz3g/3Xp0jsDmU3biE/F+GBtk7A4TM6RCDbsMvHvAg4CxvqHvPFcNE4ii/iX0Rw5nLJddYB/AX5Rsnb8pzteAAAAAElFTkSuQmCC",
-      "alt": "Brackets"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "UltraEdit"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -126,29 +135,58 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/htm_35-2.png",
+      "alt": "Screenshot of a .htm file in Microsoft Visual Studio Code",
+      "caption": "HTM file open in Microsoft Visual Studio Code"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/htm_35-3.png",
+      "alt": "HTM file open in Google Chrome",
+      "caption": "HTM file open in Google Chrome"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.805Z"
+      "retrieved_at": "2025-11-01T22:32:42.159Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/htm/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.805Z"
+      "retrieved_at": "2025-11-01T22:32:42.159Z"
     },
     {
       "url": "https://fileinfo.com/extension/htm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.805Z"
+      "retrieved_at": "2025-11-01T22:32:42.159Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.805Z"
+      "retrieved_at": "2025-11-01T22:32:42.159Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.805Z"
+  "last_updated": "2025-11-01T22:32:42.159Z",
+  "mime": [
+    "text/html"
+  ],
+  "containers": []
 }

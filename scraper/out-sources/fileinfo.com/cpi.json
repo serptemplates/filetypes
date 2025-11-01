@@ -7,6 +7,18 @@
   "type_name": "AVCHD Video Clip Information",
   "summary": "Learn about .CPI files and view a list of programs that open them.",
   "developer": "Sony",
+  "more_information": {
+    "description": [
+      "A CPI file is a metadata file that contains information about an .MTS video file. Various Sony and Panasonic high-definition digital video camcorders create CPI files alongside recorded videos. Usually, CPI files are stored in the ~AVCHD/​BDMV/​CLIPINF directory of a camcorder's SD card."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "CPI files do not contain any video data. Instead, they contain data about the video with which they are associated, such as the video's frame rate, resolution, bitrate, and recording date and time.",
+      "Camcorders that create CPI files can load this metadata and use it to organize MTS videos, as well as show information about those videos to users. Various video players and editing programs can also load, use, and show the metadata CPI files contain.",
+      "If your camcorder creates both MTS and CPI files, and you want to transfer your recorded videos to your PC, it's recommended that you always copy the entire contents of your camcorder's SD card to your PC. If you copy only the MTS files to your PC (or otherwise alter your SD card's directory structure), you'll break the association between your MTS files and their related CPI files. This can cause video metadata to not appear in video players and editors."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "CPI files are not meant to be opened directly. Various video players and editors load CPI files when you import a related MTS video (provided the CPI file is still correctly associated with the MTS file)."

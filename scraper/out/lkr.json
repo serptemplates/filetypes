@@ -1,7 +1,7 @@
 {
   "slug": "lkr",
   "extension": "lkr",
-  "name": ".LKR",
+  "name": "MPLAB C18 Linker Script",
   "summary": "Learn about .LKR files and view a list of programs that open them.",
   "developer": "Microchip Technology",
   "programs": {
@@ -14,6 +14,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13150&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Microchip Technology MPLAB is an integrated development environment (IDE) used to create embedded applications on PIC and dsPIC microcontrollers. When compiling programs using MPLAB, developers use different compilers when targeting different microcontrollers. Version 8 of MPLAB includes support for the C18 compiler, used to compile programs for PIC18 microcontrollers.",
+      "When compiling a program using C18, developers previously had to manually specify a linker script used to merge their program's constituent files into a single program file. In the most recent version of C18, however, the compiler automatically selects an appropriate linker script from its ~mcc/​18/​bin/​LKR directory. These scripts are saved as LKR files.",
+      "NOTE: Other MPLAB products may also use linker scripts saved as LKR files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An LKR file is a linker script used by Microchip Technology MPLAB C Compiler for PIC18 MCUs (MPLAB C18). The compiler uses the LKR file to merge multiple files into a single program. MPLAB C18 includes multiple LKR files, used when compiling different kinds of programs."
     ]
   },
   "how_to_open": {
@@ -51,8 +63,11 @@
     {
       "url": "https://fileinfo.com/extension/lkr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.158Z"
+      "retrieved_at": "2025-11-01T22:32:42.590Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.158Z"
+  "last_updated": "2025-11-01T22:32:42.590Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

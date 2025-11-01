@@ -1,9 +1,11 @@
 {
   "slug": "r2",
   "extension": "r2",
-  "name": "R2 File",
+  "name": "WinRAR Multi-Volume Archive Part 2",
   "summary": "Learn about .R2 files and view a list of programs that open them.",
   "developer": "RARLAB",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -20,6 +22,40 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "WinRAR can create a multi-volume archive out of a large file and then build it back into the original file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "R2 file is related to WinRAR multi-volume archive, also known as split archive. It is a compressed file that has been split into multiple parts. This feature allows large archives to be divided into smaller segments, making it easier to transfer or store them on multiple disks or devices.\n\nWhen you create multi-volume archive using WinRAR, the file is divided into separate volumes, each with its own file extension (such as .rar, .r00, .r01, etc.). These volumes are typically numbered sequentially to indicate their order.\n\nTo extract contents of a multi-volume archive in WinRAR, you need to have all the parts of the archive present in the same directory. WinRAR will automatically detect and extract files from the different volumes when you open or extract the first volume (usually the file with the .rar extension).\n\nHere are steps to extract multi-volume archive in WinRAR:\n\nEnsure that you have all parts of the multi-volume archive in the same directory.Right-click on first volume of the archive (usually the .rar file) and select “Extract Here” or “Extract files…” from WinRAR context menu.WinRAR will automatically detect other volumes in same directory and prompt you to provide any required volumes if they are missing.Follow the prompts and provide any additional volumes when prompted by WinRAR.Once all the required volumes have been provided, WinRAR will extract the contents of the multi-volume archive to the specified location.",
+      "The format of a WinRAR multi-volume archive is RAR (Roshal Archive). RAR is a proprietary archive file format developed by Eugene Roshal, and WinRAR is a popular software application used to create and extract RAR archives.\n\nThe RAR format supports compression and archiving of multiple files and folders into a single archive file. When a large archive is split into multiple volumes using WinRAR, each volume is typically assigned a unique file extension, such as .rar, .r00, .r01, and so on. These individual volume files collectively form the multi-volume archive.",
+      "Archive file that is compressed using WinRAR, a program used to create single or multi-volume archives; contains part two of a compressed volume; stores a compressed part or fragment of a larger file; may use the extensions R0 through R99."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -48,15 +84,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/r2/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.931Z"
+      "retrieved_at": "2025-11-01T22:32:42.284Z"
     },
     {
       "url": "https://fileinfo.com/extension/r2",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.931Z"
+      "retrieved_at": "2025-11-01T22:32:42.284Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.931Z"
+  "last_updated": "2025-11-01T22:32:42.284Z",
+  "containers": []
 }

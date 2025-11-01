@@ -1,6 +1,52 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/sesx/index.html",
   "slug": "sesx",
   "extension": "sesx",
-  "name": "SESX File",
-  "source": "fileformat.com"
+  "name": "What is an SESX file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "more_information": {
+    "description": [
+      "An SESX file is a session file created by Adobe Audition, a powerful audio production application. Unlike traditional audio files, .sesx files store a multitrack audio project in an XML format. This includes essential information about mixing, effects settings, and the organization of audio tracks within the session. Importantly, .sesx files do not contain the actual audio data. Instead, they save the pathnames to the audio files used in your project, allowing Audition to access the audio without embedding it in the session file.\n\nThe key features of the SESX file format include…\n\nSession Data: The .sesx file includes comprehensive details about all audio tracks within the project. This encompasses their order, duration, and any effects applied.Reference Paths: The file maintains paths to all audio files associated with the session, enabling Adobe Audition to locate and play these files seamlessly.Mixing Information: Mixing settings such as volume levels, panning adjustments, and effects configurations are stored within the .sesx file, preserving the project’s audio mix.\n\nAdobe introduced the .sesx format in November 2007 with the release of version 3.0 of Audition. This new format replaced the previous .SES format, a binary file type that was the default audio project format in earlier versions. The shift to an XML-based structure made the .sesx files more accessible and easier to edit manually if necessary.",
+      "Adobe Audition is a professional digital audio workstation (DAW) developed by Adobe Systems, designed for audio editing, mixing, and sound design. It offers a range of powerful tools for recording, editing, and restoring audio, making it popular among musicians, sound designers, and podcasters. Users can work with multitrack sessions, apply effects, and utilize advanced features like spectral analysis and noise reduction. Audition supports various audio formats, enabling seamless integration with other Adobe Creative Cloud applications. Its intuitive interface and extensive audio manipulation capabilities make it a go-to choice for audio professionals and enthusiasts alike."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Name: Adobe Audition SessionFile Extension: .sesxMedia Type: application/xmlIdentification Pattern: The file begins with an XML header, typically containing <session> tags that identify it as a SESX file.Description: The .sesx file format is used by Adobe Audition to store audio session data, including the arrangement of tracks, effects, and settings. It is an XML-based format that allows for easy editing and sharing of session information. SESX files enable users to save their audio project configurations, making it easier to manage complex audio editing tasks and collaborate with others while maintaining all session details.",
+      "To open a .sesx file in Adobe Audition, follow these steps:\n\nLaunch Adobe Audition: Open the Adobe Audition application on your computer.Open the SESX File:Go to the File menu in the top left corner of the screen.Select Open… from the dropdown menu.In the file dialog that appears, navigate to the location where your .sesx file is saved.Select the File: Click on the .sesx file you want to open.Open the File: Click the Open button. The session will load, and you’ll see all the tracks, settings, and audio references within Adobe Audition.\n\nApplications that can handle or utilize SESX files include\n\nAdobe Audition 2023 (Free Trial) (Windows, Mac)"
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "To convert a .sesx file, you typically need to open it in Adobe Audition. Once the session is loaded, you can export it to various audio formats. To do this, go to File → Export and choose Multitrack Mixdown or Selected Clips. Select your desired audio format (like WAV, MP3, or AAC) and specify the output settings, such as sample rate and bit depth. After configuring the settings, click OK to initiate the conversion. The new audio file will be saved in the specified location, while the original .sesx session remains unchanged."
+    ]
+  },
+  "mime": [
+    "application/xml"
+  ],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

@@ -7,6 +7,18 @@
   "type_name": "ACPI Machine Language File",
   "summary": "Learn about .AML files and view a list of programs that open them.",
   "developer": "The ACPICA Project",
+  "more_information": {
+    "description": [
+      "System file written in the ACPI (Advanced Configuration and Power Interface) Machine Language (AML), a low-level language used for configuring hardware properties; often used to boot Mac OS X on non-Apple hardware (\"Hackintosh\" systems), such as P55 motherboards; also used for enabling greater hardware compatibility and improving system performance."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "An AML file contains a DSDT (Differentiated System Description Table), which stores instructions that notify the OS about certain hardware settings. For Mac OS X systems, the AML file should be placed in the root directory to be recognized.",
+      "Several premade AML files for Mac OS X are available from tonymacx86. These AML files can be edited with customizations using DSDTSE, which is developed by the EVOSX86 team. AML files are not edited directly, but are first decompiled into \".dsl\" files, edited, and then compiled back into \".aml\" files.",
+      "NOTE: AML files contain instructions at the ACPI level, which is between the BIOS and the operating system."
+    ]
+  },
   "programs": {
     "windows": [
       {

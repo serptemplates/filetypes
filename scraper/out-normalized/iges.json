@@ -1,9 +1,44 @@
 {
   "slug": "iges",
   "extension": "iges",
-  "name": "IGES File",
+  "name": "IGES Drawing",
   "summary": "Learn about .IGES files and view a list of programs that open them.",
   "developer": "ICAM",
+  "category": "other",
+  "mime": [
+    "model/iges"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The IGES standard originates from the United States Air Force (USAF) Integrated Computer-Aided Manufacturing (ICAM) project in the 1970s. The standard was initially utilized for the manufacturing of aerospace-related parts. However, it spread to other industries, such as automotive and machinery, after ICAM released the first official version of IGES in 1980. Data files stored in the IGES standard may be saved as IGES files but are more commonly saved as .IGS files.",
+      "Although the IGES standard is still used today, it has significantly decreased in usage since the late-1990s. This is due to the release of more efficient formats, like .STEP and Parasolid, and lack of development (the last official IGES version was released in 1996)."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open IGES files with various CAD programs in Windows, such as Autodesk Fusion 360 (Windows), ideaMK IGSViewer (Windows), and CADSoftTools ABViewer (Windows). You can also open IGES files in macOS with Nemetschek VectorWorks and CADEX CAD Exchanger. Or, you can upload IGES files to ShareCAD.org or CADEX CAD Exchanger Cloud and view them in a web browser.",
+      "While you will typically open IGES files with CAD software, you can also open them with a text editor since they are saved in text format. However, the contents will appear as text instead of a visual representation of a part. You can use Microsoft Wordpad (bundled with Windows) or Apple TextEdit (bundled with macOS) to view the plain text in IGES files."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Several CAD applications, including Autodesk Fusion 360, CADEX CAD Exchanger, and Dassault Systemes CATIA, can convert IGES files to other formats.",
+      "For example, Fusion 360 can convert IGES files to the following formats:",
+      ".STP, .STEP - STEP 3D Model",
+      ".STL - Stereolithography File",
+      ".F3D - Fusion 360 Archive",
+      ".3MF - 3D Manufacturing File",
+      ".IPT - Inventor Part",
+      ".IAM - Inventor Assembly",
+      ".FBX - Autodesk FBX Interchange File",
+      ".OBJ - Wavefront 3D Object File",
+      ".SKP - SketchUp Document",
+      ".SMT - Autodesk Shape Manager Text File",
+      ".USDZ - Universal Scene Description Zipped Format"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -80,61 +115,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open IGES files with various CAD programs in Windows, such as Autodesk Fusion 360 (Windows), ideaMK IGSViewer (Windows), and CADSoftTools ABViewer (Windows). You can also open IGES files in macOS with Nemetschek VectorWorks and CADEX CAD Exchanger. Or, you can upload IGES files to ShareCAD.org or CADEX CAD Exchanger Cloud and view them in a web browser.",
-      "While you will typically open IGES files with CAD software, you can also open them with a text editor since they are saved in text format. However, the contents will appear as text instead of a visual representation of a part. You can use Microsoft Wordpad (bundled with Windows) or Apple TextEdit (bundled with macOS) to view the plain text in IGES files."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Several CAD applications, including Autodesk Fusion 360, CADEX CAD Exchanger, and Dassault Systemes CATIA, can convert IGES files to other formats.",
-      "For example, Fusion 360 can convert IGES files to the following formats:",
-      ".STP, .STEP - STEP 3D Model",
-      ".STL - Stereolithography File",
-      ".F3D - Fusion 360 Archive",
-      ".3MF - 3D Manufacturing File",
-      ".IPT - Inventor Part",
-      ".IAM - Inventor Assembly",
-      ".FBX - Autodesk FBX Interchange File",
-      ".OBJ - Wavefront 3D Object File",
-      ".SKP - SketchUp Document",
-      ".SMT - Autodesk Shape Manager Text File",
-      ".USDZ - Universal Scene Description Zipped Format"
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "eDrawings RapidFire Lite"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ABViewer"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAgUlEQVR42u3XSw6AMAhFUdn/otU2tiHNgzRqwuQy6k84xTjQzjuOwrAGMLO50Dx+vq5l455Q7EW5+zwC7BaNCqo9CR6vYBzw478AUcwOKIA/FLU2a7MCrXledUAl3G33J0DWGV80ez4FVMXzFdQUb1cHAAAAAAAAAAAAAABA+X/BBX0zSbAO6w0IAAAAAElFTkSuQmCC",
-      "alt": "TruTops Convert"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAH30lEQVR42sWWD2wb1R3Hv3fnv3ESu/njunHaJRkpadSyxG6TrC2UAd1UqFhKJVbo0AYaI4JRxIQKSKj7o27r6KaWFbFpCMoqtjFpXVn/ZkVs7aauo5GbEKjatCRxaOLEcRP/t8/nu3v7PTsJWSBd1Ezak57vnu/u/T6//0/A/3kI/If9pURHhR1Y8rCgnfwBoGsQVj0K9sHvgZJ1ENwVYMPXgFA7hFu+DvS8CxR/AVhUBgyHgIF2KJ6vwRQ8mt+VzTInnmmaBkVRUPjVlJADSL8EXbppoWBc+wT0nh20If3pfRTwvZr/aA73yopvwBQ69h+CJq9cmJIhgUGZlPsESGpDHiBFAIZaF4xrHhcYB+Cj/NvA+AmwZBpC5X1gg3+CoNLrVa10fyj/TuUmYOI+6VgPW/idqc25wJzQAAnVJoTyq/6J7aWnJwCSe8GkpRUwr2kD8+0Ay9LzghYgfAFMWEhvFACZNFhkAIJYAmTps7QMlgjThhZa6xBlBWHaLq6JmiaKmmgUdJkJMYtNUphJzJIaw2abmElLkgyTlJGMYk/9Q8Hn8gB7oBnq3aKp5TGwtwlA4X4S9OGkcEVOszHGENZUBHUd1+wWXJPL7C+6lAhGytyoXZqE4I0I8wrC1F5oUv0S0dT8LUA9DtYfhLiyf9ZNh//sZq6xIbCmBggZsoo3PE+AF6EJDW7R0vwYqd4O1jc8K4DH4zEf+15QdvmHgLULyLNMmLRAU1MTm/7uuXPnrvv/FIB+qEzTK8pFqe4Bip6jYAMh3G/+58f3VbiW8OeUNRTJaaTTaexPWelqykV2IpHIbTJyt3NK0EyhfD3b/RTAH7cvObt5U2EL6rfkM+fKfiy82IfSz0fxXbcdeyjWxCCVgZAGigeoqoRsViMwCU3ucZy+t/RT1rqe0OnrqQ/lXdDMW24TseCuHICtow+1q9L4udeKbe8DXFmusSFuJeEEkaA0E1WUVMhTFvgs4f9tnfvD6/UKDy3zn/jOPZmvSHdvzwEs7uUAwCvVwAvk7m6ywtAYuUIls4mAk9I7HlEQrwoAq6vnB8CH8xBj/ZcFFGy4idJQQ4vch9VrSDg94wX2QJJcE6NJxSVCMTAaU6COmjBuj0Jd55i/CzhA16LnseidXUht3YjW5NvYulzC/fSMlMfHNM+QG0IJDb1JCf6whpGAhLAjiuQEwA0HIR+1f2Vs2J3Gr7JH0MLO4ynTj7BlqQRqPfiI5q9J+yhZoX8sjSECCJMLsiEJcWcCmWkAN5SGfNSdZmx0iZZLNd6tSgx27K5DDuCnV4G/E8BQitoDVclwhioz/S8FNMgLySxfdsyvEPFR8x7T+zK05jtTuS8vBzYWR7HbbseGDuD8WL6XQKb2q1H9T1LLTpvBDFFsvPTqkYahD/31y5YvZbrOPuzr6z175crxuKK0+3w+fU4AfFS/fPpswH1rUyZNcW4giFrgtQbgQWpyiUtREmyiKLTm1Y8mYI1lcMz9N3xp882AuZA6I6VLkvxkNoMXjNf37Gl/5erVx31dXf1zAvB4GiXBYl2rrLjjueCqJ1vUBU6HqQYIHqb9IoCRZKhjH6n21HuG8qF/+E+tWuSq2LbVApsTiJCP2tspX7uhk3ChshJCTQ3e3bnz0rOStMHX2em/LkBDQ0NxJpO5hWJgLc2VmqYus93z43rLchvLXEgx9eIRKIFuJsfCoqZq+vedxeIzR48LqG/Ib+DzAW+8AZw6BS0SgV5aCqm5GSIl2u633jq512p9JDAyMvSZANRgRFVVF8fj8VaamziIruuOiXemH6hyo9xoFPrXrxfx0i/oWOYi0w9SsaAecuYM5eoZZAMBpCiQBYcDhbffjsDBg3ihrm7bgYsX981qgcbGxoJsNltD2jenUql1siyvpHUlY6xg4r1JCOFho1Hcd+edQFsbYLMBly+D+f0586OjA0o0CpmaVUyWYauqQpKADup69GlVdcwKMA2kiDodB2mZAPGSddwEQtEHXRTFxAFRHG6trl6GFSvyVEYjBN4s+vvp8DqMbCaDJKVzggIyI4rIkjXO0bf7vF7jzKyYNX95TJAFagliNcHcRvefkyQpZLFYug8kEhvXCcJyZrHkI95kosOdkOvbfHeNtI9THMRoxmlNpQOUBuwnXq/5vM+XnRMAH7xJUVFykPAqui4wGAyjNAe3B4OHH4hGb80YDKC+BJGuQlERUFgIRjAqWSMWCmGcAPiJgdcPaln6Tq/XQBZgcwaYDpIP9PzHbbW1u37Z3/9smCxg4ACSBENxMSSKB0bukCkGIuPjiBAIAbDFJOc14vhNdfVTZEEfzfc7OzvTcwaYOZobGz3tXV3/yhoMRgqKnPlNJFwk7bm2KfJ/NBZDjE6xlbS+RNpTVxU/KChIm83mC06nc0dPT8+JGwbg48mqqpd3+v1PjCF/1Of5znjAkcZpOlJz9RbnfY+95J4TqkpxzASKo7DL5drW29v75rwAPF6vbfPg4O++GQzeS0USRSUlEMjs0wcX/gerFfsJjuoKeAzZ7fbflpaW/qy7uzswL4AJiIKbY7HnHxwYeKRMUVzUIuiQlg+6QRL6pt2udGhaShLFIPm9s6io6HBhYeHJrq6usck95gUwOb7o8ay5Y3T0GaoZrXxNB3W1vajohyldj5PWAZPJ1EuzjwSHZ377PwH4lGU8nlxyUHBmZ6bdzPFvse4lXRmi+jYAAAAASUVORK5CYII=",
-      "alt": "3D-Tool"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA6klEQVR42s2V2xLDIAhE9f8/uo0P6TDMclmMJbx0qAhHZckcY3xGo80FcFlP8TkDgCtgyLXlZ2ztQbGqjg9wF5cQGsiCBsXQ/nMAXoxYtwHQ1WsY9vQg/0sBrCKZ5NsAuydsB8jmgE3IdLgXW5Zhdshk7JFB9Af7AYRXf45AAHjyi65UriXe3gbQCeR/EWDko/3wBqLf7OnKADqp9QTeujVXgM/1APsEkRSPAmTij6qABugwCFDRtNWgNEBV06wPAXa+hoxPNyGbNBN7PxMNoK0KYKqgqunHAPRJs5qOVKBzin0vnAMtAI32BXs3chAjsWOVAAAAAElFTkSuQmCC",
-      "alt": "MEGACAD"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJdElEQVR42rVXeVCT6Rl/ckASSJAQCGcEAgEUBOSsRetoxcrqrg6u1+6Itd6FrVorVbZrZ6xM3e7YLSiLs62u04r1aosWj9UFF6togN3FqoCIksgdjnAn5OzzJC8u7rS79Q+/md8k+fJ+7/N7n+f3HB/Hbrf7AIAXYgpCiLAjRhFjiAHEOAOfgdYIEC4IHoIDzsuGMCNMbL2Vrfdge3tPem4E0Y/o5iCBmSMjI2GDg4PBVqvV18PDY8jT05OMtyH6GAnTJOO0oRsDF+HKjFmY4VEGCzMmRwShjVCdrttjbGxMyOPxO6dNm9aA9+uJQBzeTCwpKXldrVZHbNmyRS+TeelDQkL1XC5Xw07VihCzUwRM8tY3PUAEhhE9jDiRC7VYLN51dV8GlpdXSGtrq12SklK1u3fvLsH9vyICabgorqurK/XixYuzr1wt9U1MmDX+xhuv96tUEX0ikVsv25gIiCYZdx0fH+dptVo+es3q5+c34QUjc7GFecazubnZs6AgX67T9dozM9/qSUhIqlOpVNX4n5oIhBEBm802y2q1RF26dDnuwsUjAWL3MMt77/1mSC6XW5gXKASCxsZG92PHjrleuXKFi98BwwYcDgdwHSxYsMC+detW8+zZsw2MAF3cO3fuQEHBB4K3317XFR0d3ahUhj/C+7cmQkAxUiCikMT3dbpO1f37DyPd3cWSyMhIN5lMRnGGhw8f8nJzczlXr17lpKUpYNXqaEhLCwalcgoYDGao/FwLh35/B2qqO2Dx4sX248eP2318fEjQFox9H2qgH3/XSiQenXivmoW1nQiQO6UIyoYoxHS8l4CnisXvvuTukydPwubNmyEsTAJFH70Gc+Yo4L9d+BxcKG2CLVsuQVBQBJSXl4NUKqWQtDOjasQDZpyyYIQIcFh6uJNgEDGIDMRMxNSzZ88K1qxZAzk5yXDw/fkgFPLhu67mZj3Mn/9nUIbGQ0VFhZnH47Xg7fuIv5EzEU+ZrixEgMvUTAhBzECsRMS2tLQo4+Li+Dk5cXAgfx7G+jttP78ePOiB5KQ/weHDH1k3bdpE2XQPcR7xBaIFPUy6AiIQxNJFwLRArv8RhQNPHqjV3uZU3swCPp/7/1tnV25uBVy+pCf9dOFPEt5nLBTkEcOEB37ANEBpFshIzDGbzYFYkLwvXFgOP1wQ8q2Gbt9qA/2AEcUX/oKXtNohCFMehkePHg2Eh4e3MuU3MgJUJ/Qcg8Hw646OjoiRkWFvi8Xq6eUlFfv7+0sNBqMnCkg0MroX3Nz+d9xbW4fgcGEtxMbJUYQAa9fGvPB/eNgRKC4+Pb5w4cK+zs6O3v5+/aDJZNKJRKLOqKgoRxp+gFVpnkbz1E8sFrpIpZ7cPXv2Wby8ZO7oAcntqiyIjfV+YdO+PgNUVrbCsmUqKCyogTffnAZBCgns2XMDDh6c93xdT88YKIL+ADdu3DTGxsYOHziwn9PW1mrncPiDERERz3bs2PEXIpD35MmTyO7uLh+bzerm4yMXYRmWCAQC75UrV8q8vDTc4qOLnm9Kp8zJvgrTo+Xg7S2Ef9/TwdqsGWAyWeHUqYfPCdC6rKwLUK022CkEKLr+2trasb6+XiP+h+Ve1p6cnFxHBGaBMwUnQLmfhIi5du2acsmS18RVVRsgMcnXsfHwsAmWLj0HsTN8wEfuBiPDZkhJDYDCwhrIy0uD9PRQx7qjR7+E7J9ehjNnzoytWLFCy+JOqagDZ6/QI7qIgD983WrdmBDjEfMpE5YuXRqkVlfwyi6tgcREvxdC8eGHatB1j8JvD86f5CE7HDqkhl/mfgZ79+415efnUwo+ZgKkItQNzm7paPMc9hB9UuukVhvKUjEdkaDX64MWLVokevDgK4zxbNiwMR78/cUOY/kHbsEYluF8rBHk8rq6bti//yaU/fMxfu635eXlUbWj099B/IulYgc4Zw2qA1byAJ/VAOpy1BdCGAFqUol0b3R01G379u3CEydO8Ox2G6xaFQMlp5ZBNmohMlKGjcgNfvXu5/D0aT8oFAp7cXGxEfsBGaHWXI+oA2cFJE90sRQ0oC4cdcATf8gQFIoIbLFx7e1t0/EzAFutLDk5iSuT+VCh4mFlFOTk5PC7dXUctfonsHrV32E5ZkB9fQ/88eMm2Ldvn2n9+vWDQqGQ2rEVG5DJbDYZsQE94/P5ZFzDiHSwUIxNVMKpiBTENBxK4nW6Lr8zZz6Wi0RC2Lp177PExCQ6DTUrya5duyQNDRc5p/6aCetQ5et+HAdNTX1w7VMb1f1eJjIyND40NBRQVFSI+1v4GRlLWuLjk4gETUI14OwHjpGM3JyAmF5VVZVWUFAQMTDQK4yPjzUsXJjREx4e1hccHMZlldIPTyh1db3P+fmu76HqK2DTxpnQ0NgLpf8wYm2obGUxp64nwVlhyrlzZ1PPnz8SJJdHG9at29Camppaw7KBRKkhAlS6VEVFRW+VlZUlpaenjysUgSachtC4qlUsFpM7eYykIiMjw2/WLCMnOSUAjhZ/ATnvJINWMwjHjvUADh5PmdAqmchI0MrS0vMzP/nkxBRXV5EVi979lJQU+r+WQARIcFFNTU3hOp0uDA1a4uPjB1mcKF9pqKBSSKPbVJxoZubkhAhsNjuUV7TAmtUxjkx4/2DTeH19fRWuaUbcAOdYJgFnWw/GQUaFk5Qcn9dt27btU19fX/KSoxB5s/STsjrAZ+wp7tSxaA5UsswIQIJZqgiJy9CgBYvSOAQHS8BgtMC40WPg8ePHp8E5Td8F50RNngsmcSM8q6urg2pqaniZmZnV2G9IjI5eQNVPOKkY0XQ7MWJb4etBVD537tyNqPD1y5cv5yARRy3AbIG7d+/C9evXR1CgO7Ozs+8xz40w70nZ84FszynYaTUuLi40KbV+64jBhhVXRkKIDaQGB8/A06dPA6YYYIuFgIAAkEgkgKSwIOWXNDQ0/IJVOjM7wMTzAvZ94oAGRy2Al7t+hgYLaAru7OwEbCjg5eUF+F4BbW1tXUh4NRPg5ENM2OAzj/AZAbpveVkCB3CyfRf7uePkRATnCdBoNGSIxKd6yf3gpQiEhISUYUleHBMTA9gjHATI/UQCU9iEKqeudPtVERCgwIbxZcSFXI5qBnzlAkxZnJSF2B9Wwc6dO7fhuqOvzAOYOu/gG9Dv6F0Ccx7IE8PDw4DveOSNdqwlVKx0r4wAuxRIZLPRaJyL35V0ekyr0t7e3nz83fmym/0HsIwkefWA/9UAAAAASUVORK5CYII=",
-      "alt": "Moment of Inspiration"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Teamcenter Visualization"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -143,24 +127,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/iges_395.png",
+      "alt": "Screenshot of a .iges file in CADEX CAD Exchanger 3.7",
+      "caption": "IGES file open in CADEX CAD Exchanger 3.7"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.808Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.161Z"
     },
     {
-      "url": "https://fileinfo.com/extension/iges",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.808Z"
+      "url": "https://fileinfo.com/extension/iges",
+      "retrieved_at": "2025-11-01T22:32:42.161Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.808Z"
+      "retrieved_at": "2025-11-01T22:32:42.161Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.808Z"
+  "last_updated": "2025-11-01T22:32:42.161Z"
 }

@@ -7,6 +7,17 @@
   "type_name": "Steam Game Data Backup File",
   "summary": "Learn about .SID files and view a list of programs that open them.",
   "developer": "Valve",
+  "more_information": {
+    "description": [
+      "Backup file created by Steam, an application used to download and manage Valve video games on desktop computers; contains compressed game data created by the Steam backup feature (steambackup.exe program); used to backup games to DVDs or other external media."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "SID files are created with a .SIS file and a .SIM file, which provide metadata necessary to restore backup game data. SID files use the naming convention {game}_disk{X}_{Y}.sid, where \"game\" is the name of the backup game, \"X\" is the disk number, and \"Y\" is the backup file number on the disk.",
+      "NOTE: Steam backups do not include saved games, custom multiplayer maps, or configuration files. You must backup and restore those files manually."
+    ]
+  },
   "programs": {
     "windows": [
       {

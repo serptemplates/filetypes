@@ -1,9 +1,25 @@
 {
   "slug": "schematic",
   "extension": "schematic",
-  "name": ".SCHEMATIC",
+  "name": "Minecraft Schematic",
   "summary": "Learn about .SCHEMATIC files and view a list of programs that open them.",
   "developer": "MCEdit",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Minecraft Java Edition is the original version of Minecraft. Notably, Minecraft Java Edition allows players to use a variety of unofficial add-ons and mods to enhance their gameplay. Some Minecraft mods allow players to save copies of their Minecraft structures, including homes, natural features, monuments, and even entire worlds, as SCHEMATIC files. Players can use SCHEMATIC files to open and edit their structures in third-party Minecraft modding programs like MCEdit, import their structures to another Minecraft world, and share their structures with other players over the Internet.",
+      "SCHEMATIC files are saved in Minecraft's .NBT (Named Binary Tag) file format and contain a variety of binary data that specifies a structure's size and composition. Each SCHEMATIC file defines a structure's width, height, and length, as well as the materials and types of blocks of which the structure is composed.",
+      "When Mojang released Minecraft Java Edition 1.13, modders discovered that, due to technical changes, they could no longer export and import structures as SCHEMATIC files. As a result, many mod developers chose to migrate from the SCHEMATIC format to the SCHEM format, which was created by the team behind Sponge, an open-source Minecraft modding framework."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit SCHEMATIC files using a variety of Minecraft mod tools. Most notably, you can open SCHEMATIC files in MCEdit (Windows, Linux), which is a Minecraft saved game editor. To open a SCHEMATIC file in MCEdit, select the Import button while editing a level. You can also export a structure as a SCHEMATIC file by selecting Export Schematic after selecting the structure.",
+      "At the moment, there is no easy way to convert a Minecraft SCHEMATIC file to a SCHEM file. You can, however, convert SCHEM files to SCHEMATIC files, so the structures they contain can be used in pre-1.13 versions of Minecraft, using SchemToSchematic (Web) or Mineways (Windows)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,12 +30,6 @@
         "name": "NBTExplorer",
         "url": "https://fileinfo.com/software/nbtexplorer/nbtexplorer"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open and edit SCHEMATIC files using a variety of Minecraft mod tools. Most notably, you can open SCHEMATIC files in MCEdit (Windows, Linux), which is a Minecraft saved game editor. To open a SCHEMATIC file in MCEdit, select the Import button while editing a level. You can also export a structure as a SCHEMATIC file by selecting Export Schematic after selecting the structure.",
-      "At the moment, there is no easy way to convert a Minecraft SCHEMATIC file to a SCHEM file. You can, however, convert SCHEM files to SCHEMATIC files, so the structures they contain can be used in pre-1.13 versions of Minecraft, using SchemToSchematic (Web) or Mineways (Windows)."
     ]
   },
   "images": [
@@ -50,10 +60,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/schematic",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.294Z"
+      "url": "https://fileinfo.com/extension/schematic",
+      "retrieved_at": "2025-11-01T22:32:42.757Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.294Z"
+  "last_updated": "2025-11-01T22:32:42.757Z"
 }

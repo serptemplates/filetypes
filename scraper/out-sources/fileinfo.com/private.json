@@ -4,8 +4,21 @@
   "slug": "private",
   "extension": "private",
   "name": ".PRIVATE File Extension",
+  "type_name": "OpenSSL Private Key",
   "summary": "Learn about .PRIVATE files and view a list of programs that open them.",
   "developer": "The OpenSSL Project",
+  "more_information": {
+    "description": [
+      "RSA.PRIVATE is a private cryptographic key created by the OpenSSL command line utility. It contains a string of text used to decrypt information sent from a web browser to a web server. Server and web administrators typically generate RSA.PRIVATE while installing an SSL certificate on a web server."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "OpenSSL is a software library that server, web, and network administrators use to secure network communications. Among other things, administrators can use OpenSSL to generate public and private keys for use with their web server. These keys are used to encrypt and decrypt information sent from a user's web browser to the web server.",
+      "Information sent from a web browser is encrypted using a public key (sometimes saved in a .PUBLIC file). That information is decrypted using a private key, which is sometimes saved in a file named RSA.PRIVATE. More often, however, OpenSSL private keys are saved in the .KEY or .PEM file formats.",
+      "NOTE: RSA.PRIVATE files can be 512, 758, 1024, 1536, or 2048 bits in size."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because RSA.PRIVATE is a plain text file, you can open it in any text editor, such as Microsoft Notepad (Windows), Apple TextEdit (Mac), or GitHub Atom (cross-platform). However, you should not edit the text RSA.PRIVATE contains. Editing your RSA.PRIVATE file will cause your web server or website to function incorrectly.",

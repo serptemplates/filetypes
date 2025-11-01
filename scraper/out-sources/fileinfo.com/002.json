@@ -7,6 +7,18 @@
   "type_name": "Split Archive Part 2",
   "summary": "Learn about .002 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A 002 file is the second part of a split archive, which was likely created by a file archiving utility such as 7-Zip. It should be accompanied by a .001 file, and it may also be accompanied by a .003, .004, and other .### files. To access the files a 002 file contains, you must possess all pieces of the split archive."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In most cases, compressing and combining files into an archive reduces those files' size to the point where users can easily email them, upload them to the internet, or otherwise share them with others. However, if an archive has a large file size, users may still have difficulty sharing that archive with others. In these cases, users may split their archive into several smaller files, which can then be shared and recombined to access the file(s) they contain.",
+      "For example, a user sharing hundreds of image files online may package those images into an archive and then split that archive into several pieces. Other users who want to access those images can then download each piece of the archive and use an archive utility to extract the images.",
+      "Split archives are often saved in a set of files that use the same base filename and the .001, .002, .003, and so on extensions. These ascending numeric extensions denote that the files are just one part of a multi-part archive. Usually, all pieces of a split archive are stored in the same location, allowing users to easily access and extract files from the split archive."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Several archive utilities allow you to extract files from split archives. For example, in 7-Zip (Windows), you can right-click the 001 file of a split archive and select 7-Zip → Extract Here to extract a split archive's contents. Before doing so, make sure:",

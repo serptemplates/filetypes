@@ -1,9 +1,25 @@
 {
   "slug": "sii",
   "extension": "sii",
-  "name": ".SII",
+  "name": "SCS Software Game Data",
   "summary": "Learn about .SII files and view a list of programs that open them.",
   "developer": "SCS Software",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "SCS Software is a video game developer known primarily for publishing the Truck Simulator series, which includes Euro Truck Simulator, UK Truck Simulator, and American Truck Simulator. All of SCS Software's truck-related video games use SII files, which store various game data.",
+      "Some SII files, such as controls.sii, contain plain text data. Players can open and edit these files in any text editor to customize the related game. Other SII files, such as profile.sii, are saved as binary files by default.",
+      "However, players can choose to save some binary SII files as encrypted plain text files, to make them editable. For example, if a player sets Euro Truck Simulator 2's g_save_format configuration parameter (found in the game's config.cfg file) to 2, the game will begin saving game.sii, which contains a player's saved game data, as an encrypted plain text file instead of a binary file. The player can then use the third-party SII_DECRYPT utility to decrypt game.sii, turning it into a normal plain text file (which can be opened and edited in any text editor)."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "If your SII file contains plain text data, you can open it with Microsoft Notepad, Apple TextEdit, or any other text editor, to view and edit the data it contains. If the plain text data your SII file contains is encrypted, you may first have to decrypt it with SII_DECRYPT.",
+      "If your SII file contains binary data, it is not meant to be opened or edited."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,12 +34,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=5993&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "If your SII file contains plain text data, you can open it with Microsoft Notepad, Apple TextEdit, or any other text editor, to view and edit the data it contains. If the plain text data your SII file contains is encrypted, you may first have to decrypt it with SII_DECRYPT.",
-      "If your SII file contains binary data, it is not meant to be opened or edited."
     ]
   },
   "images": [
@@ -54,10 +64,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/sii",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.301Z"
+      "url": "https://fileinfo.com/extension/sii",
+      "retrieved_at": "2025-11-01T22:32:42.772Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.301Z"
+  "last_updated": "2025-11-01T22:32:42.772Z"
 }

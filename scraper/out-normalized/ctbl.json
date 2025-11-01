@@ -1,9 +1,26 @@
 {
   "slug": "ctbl",
   "extension": "ctbl",
-  "name": ".CTBL",
+  "name": "CTB-Locker Ransomware Encrypted File",
   "summary": "Learn about .CTBL files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "CTB-Locker ransomware is a type of malware similar to the Cryptolocker and Cryptowall (.AAA) virus utilized by cybercriminals. It first surfaced in July 2014, and is a ransomware-as-a-service (RaaS) offering, which cybercriminals can purchase to deploy attacks. It may attack all types of users but primarily targets the web servers of organizations based in the USA, Italy, Germany, and the Netherlands.",
+      "The ransomware is typically distributed via malicious email attachments in the form of Word .DOCX, .DOC, and .DOCM files, or another type of executable file. When you download and open a file attachment the CTB-Locker virus runs on your computer. To prevent attacks like these, never open email messages from unverified senders.",
+      "Once introduced to your computer, the ransomware takes your files hostage by encrypting them and adding the .ctbl extension onto the names of your files. Any type of file may be encrypted, such as spreadsheets, videos, pictures, and documents. For example, a spreadsheet.xlsx file becomes spreadsheet.xlsx.ctbl or spreadsheet.xlsx.CTBL.",
+      "The virus then generates a DecryptAllFiles.txt file in every folder that stores an infected file, an AllFilesAreLocked.bmp image, an .HTML file. These files are ransom notes that provide information explaining the hostile takeover of your files and how you can recover your files by paying a ransom, typically in Bitcoin."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Unfortunately, you cannot open CTBL files without a CTB-Locker decryptor tool. Currently, there is no decryptor available to effectively restore infected files.",
+      "If you have a recent backup of your files, you can perform a System Restore to remove the virus, but any changes made to files after the backup was created will be lost."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,12 +35,6 @@
         "name": "Apple TextEdit",
         "url": "https://fileinfo.com/software/apple/textedit"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Unfortunately, you cannot open CTBL files without a CTB-Locker decryptor tool. Currently, there is no decryptor available to effectively restore infected files.",
-      "If you have a recent backup of your files, you can perform a System Restore to remove the virus, but any changes made to files after the backup was created will be lost."
     ]
   },
   "images": [
@@ -64,10 +75,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ctbl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.015Z"
+      "url": "https://fileinfo.com/extension/ctbl",
+      "retrieved_at": "2025-11-01T22:32:42.400Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.015Z"
+  "last_updated": "2025-11-01T22:32:42.400Z"
 }

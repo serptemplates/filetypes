@@ -7,6 +7,17 @@
   "type_name": "Static Library",
   "summary": "Learn about .A files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An A file contains a library of functions and headers that may be referenced by a C/C++ source file. It may store only a few functions or may include an entire library of functions, such as a 3D modeling engine. A files are typically created by the GNU ar utility."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "A static libraries are more common in Unix-like systems than in Windows systems. In Windows, static libraries typically use the \".lib\" extension instead of the \".a\" extension.",
+      "NOTE: Using static libraries may result in larger program files, but enables faster loading times compared to dynamic libraries."
+    ]
+  },
   "programs": {
     "windows": [
       {

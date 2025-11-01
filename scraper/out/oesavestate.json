@@ -1,7 +1,7 @@
 {
   "slug": "oesavestate",
   "extension": "oesavestate",
-  "name": ".OESAVESTATE",
+  "name": "OpenEmu Saved Game",
   "summary": "Learn about .OESAVESTATE files and view a list of programs that open them.",
   "developer": "OpenEmu",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11817&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "OpenEmu is a multi-system video game emulator that allows players to play Atari, Game Boy, Nintendo 64, Sega, and other console-based video games on their Macs. When players save a game in OpenEmu, the emulator saves that game in an OESAVESTATE file.",
+      "Unlike .SAV files and other saved game files used by other video game emulators, OESAVESTATE files are macOS packages. This means they contain multiple files that OpenEmu uses to open a saved game. As such, other emulators cannot correctly load OESAVESTATE files. OpenEmu saves and loads OESAVESTATE files from the Save States folder that is found at Users/​YourUserName/​Library/​Application Support/​OpenEmu/​Save States.",
+      "NOTE: For many games, OpenEmu creates both a battery save file (often a SAV file) and an OESAVESTATE file when you save a game. So, if you want to transfer your saved game to another emulator, you may be able to do so by finding the game's battery save file and using that to resume your game in another emulator."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An OESAVESTATE file is a saved game created by OpenEmu, a video game console emulator available for macOS. It is a macOS package that contains metadata about a saved game, a screenshot of the game's most recent state, and the save data used to resume the game. OESAVESTATE files can be opened only in OpenEmu and not in other emulators."
     ]
   },
   "how_to_open": {
@@ -50,8 +62,11 @@
     {
       "url": "https://fileinfo.com/extension/oesavestate",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.220Z"
+      "retrieved_at": "2025-11-01T22:32:42.662Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.220Z"
+  "last_updated": "2025-11-01T22:32:42.662Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -7,6 +7,26 @@
   "type_name": "Dynamic Link Library",
   "summary": "Learn about .DLL files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A DLL file is a Dynamic Link Library, which contains compiled functions, drivers, or other data that multiple Windows programs can use. Many Windows programs use DLL files to perform common functions. Multiple programs can even use the same DLL files at the same time."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Windows comes with many default DLL files, which software developers can reference when creating programs that perform standard functions, such as opening dialog windows, communicating with external devices, and reading and writing files. Referencing DLL files saves programmers time (since they don't need to manually code common functions) and reduces their programs' file sizes (since the programs don't need to contain the resources stored in the DLL file).",
+      "When a program needs to use the data stored in a DLL file, it dynamically loads that DLL file into system memory. The program can then access and use the functions (and other data) the DLL file includes as though it were a part of the program.",
+      "Third-party programs may install additional DLL files on your computer. These DLL files function the same way as Windows' default DLL files, but are likely shared among only programs created by that developer.",
+      "If a program requires a DLL file that you do not have, it will likely show a \"missing DLL\" or \"DLL not found\" error message. In these instances, there are several actions you can take to attempt to resolve the DLL error, including:",
+      "Reinstalling the program that is trying to use the DLL file",
+      "Updating any related device drivers",
+      "Checking whether you accidentally deleted the DLL file",
+      "Checking for and applying Windows Updates",
+      "Restarting your computer",
+      "Performing a System Restore",
+      "In most cases, you should not attempt to manually find and download the DLL file you are missing from the internet. DLL files hosted on non-Microsoft DLL download sites may be vehicles for malware."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Most users will never need to and never should open a DLL file. In fact, opening or modifying a DLL file may cause errors within the program(s) that reference that file, and prevent it from functioning correctly.",

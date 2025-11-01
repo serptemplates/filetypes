@@ -1,6 +1,43 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/image/dib/index.html",
   "slug": "dib",
   "extension": "dib",
-  "name": "DIB File",
-  "source": "fileformat.com"
+  "name": "What is a DIB file?",
+  "summary": "What's on this Page",
+  "category": "image",
+  "category_slug": "image",
+  "technical_info": {
+    "content": [
+      "A DIB contains the following color and dimension information:\n\nThe color format of the device on which the rectangular image was created.The resolution of the device on which the rectangular image was created.The palette for the device on which the image was created.An array of bits that maps red, green, blue ( RGB ) triplets to pixels in the rectangular image.A data-compression identifier that indicates the data compression scheme (if any) used to reduce the size of the array of bits.",
+      "Information contained in a DIB are represented by different structures. These include:\n\nBITMAPInfo - Defines the dimension and color information for a DIBs\n\ntypedef struct tagBITMAPINFO { BITMAPINFOHEADER bmiHeader; RGBQUAD bmiColors[1]; } BITMAPINFO, *LPBITMAPINFO, *PBITMAPINFO;\n\nIt consists of a BITMAPINFOHEADER:\n\ntypedef struct tagBITMAPINFOHEADER { DWORD biSize; LONG biWidth; LONG biHeight; WORD biPlanes; WORD biBitCount; DWORD biCompression; DWORD biSizeImage; LONG biXPelsPerMeter; LONG biYPelsPerMeter; DWORD biClrUsed; DWORD biClrImportant; } BITMAPINFOHEADER, *PBITMAPINFOHEADER;\n\nfollowed by two or more RGBQAD structures.\n\ntypedef struct tagRGBQUAD { BYTE rgbBlue; BYTE rgbGreen; BYTE rgbRed; BYTE rgbReserved; } RGBQUAD;"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A Device-Independent bitmap (DIB) is a raster image file that is similar in structure to the standard Bitmap files(BMP/image/bmp/)). It contains a color table that describes the mapping of RGB colors to the pixel values. This enables DIB to represent image on any device. It can be opened with almost all applications that can open a standard BMP file on Windows as well as macOS. DIB are binary files and have a complex file format similar to BMP. DIB images are independent of the output capabilities of rendering devices in terms of color depth and pixel-per-inch."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

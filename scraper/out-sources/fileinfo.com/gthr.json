@@ -4,8 +4,21 @@
   "slug": "gthr",
   "extension": "gthr",
   "name": ".GTHR File Extension",
+  "type_name": "Gather Log File",
   "summary": "Learn about .GTHR files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Text file that contains a log of data collected by a Microsoft logging utility; created by Windows Search, Microsoft Exchange, and SharePoint Portal Server after each file indexing process."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Both Microsoft Exchange and SharePoint Portal Server create GTHR files to identify documents and messages that were not successfully indexed. They can be viewed with the Gthrlog.vbs utility by entering the following command:",
+      "cscript gthrlog.vbs \"[path to GTHR file]\"",
+      "Since GTHR files only contain index data, they may deleted if they grow too large. However, it may take longer for Windows to index files during the next indexing process."
+    ]
+  },
   "programs": {
     "windows": [
       {

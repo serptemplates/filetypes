@@ -4,8 +4,20 @@
   "slug": "vmu",
   "extension": "vmu",
   "name": ".VMU File Extension",
+  "type_name": "NanoZoomer Uncompressed Virtual Microscope Specimen",
   "summary": "Learn about .VMU files and view a list of programs that open them.",
   "developer": "Hamamatsu",
+  "more_information": {
+    "description": [
+      "A VMU file is a whole slide image created by Hamamatsu NanoZoomer, a pathology slide scanning device. It is an archive that contains an index file and two or more .JPEG images. In contrast to .VMS files, VMU files are not compressed, so they are often quite large."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Hamamatsu NanoZoomer is a high-speed, high-resolution digital slide scanner that pathologists use to create and examine digital images of pathology specimens. NanoZoomer saves slide specimen images in either the VMS, VMU, or .NDPI format. These formats are largely the same, except that VMS images are compressed and VMU images are not.",
+      "VMU files are image archives that contain two or more JPEG images. One JPEG contains a high-resolution copy of a scanned slide. The other contains a lower-resolution copy. If the high-resolution image would be larger than 65,535 pixels on one side, NanoZoomer instead saves the image as multiple JPEGs. Slide-viewing software automatically combines these JPEGs into one slide image, using metadata saved in the archive's index file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Windows users can open VMU files in OpenSlide, ImageJ, or NetScope Viewer. Mac and Linux users can open VMU files in OpenSlide or ImageJ."

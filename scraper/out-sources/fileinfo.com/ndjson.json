@@ -4,8 +4,19 @@
   "slug": "ndjson",
   "extension": "ndjson",
   "name": ".NDJSON File Extension",
+  "type_name": "Newline Delimited JSON File",
   "summary": "Learn about .NDJSON files and view a list of programs that open them.",
   "developer": "ndjson",
+  "more_information": {
+    "description": [
+      "An NDJSON file is a JSON file created in the Newline Delimited JSON (NDJSON) format. It contains plain text used to describe structured data. NDJSON files are used primarily to stream structured data that should be processed one record at a time."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "NDJSON is a JSON variant that allows developers to store structured data entries within one line of text, allowing the data to be streamed using protocols like TCP or UNIX Pipes. According to the format's website (ndjson.org), NDJSON works well with UNIX-style text processing tools and shell pipelines, is a great format for log files, and is a flexible format for passing messages between cooperating processes. NDJSON files are similar to .JSONL files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because NDJSON files are plain text files, you can open them in any text editor, including:",

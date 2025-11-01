@@ -1,9 +1,11 @@
 {
   "slug": "icns",
   "extension": "icns",
-  "name": "ICNS File",
+  "name": "macOS Icon Resource",
   "summary": "Learn about .ICNS files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -28,6 +30,23 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Most macOS applications include an identifying icon that allows you to quickly recognize the program in your Applications list and Launchpad. Apps also use file type icons that allow you to identify files that will open in that app. These icons are saved as ICNS files, stored in the .APP package's Contents/​Resources directory.",
+      "ICNS files are created from one or more .PNG files. These files may have dimensions of 16x16, 32x32, 48x48, 128x128, 256x256, 512x512, or 1024x1024 pixels. Storing multiple resoultions in an ICNS file allows macOS to show the icon correctly at different sizes. To create an ICNS file, developers:",
+      "Create a folder that uses the .ICONSET extension.",
+      "Place their PNG images, using filenames in the format icon_16x16.png, in the folder.",
+      "Use the Terminal command iconutil -c icns path/to/iconset/folder to create the ICNS file.",
+      "An application's .PLIST file (Info.plist) references its ICNS files, using the CFBundleIconFile property.",
+      "NOTE: ICNS files are similar to .ICO (Windows Icon) files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An icon format used by macOS programs is called an ICNS file. It allows 1-bit and 8-bit alpha bands and saves one or more pictures, usually made from PNG documents. The program icon in the macOS browser and interface is displayed using ICNS files.\n\nBased on the location, the same style icon can have multiple settings. The ICNS format has undergone numerous alterations and has evolved to the point where it may now be used as the foundation for various compatible formats. Here are some other important points you need to know:\n\nIconFamily Resource, Macintosh Icon, Macintosh OS X Icon, Mac OS Icon, Apple Icon, Mac OS X Icon Resource, and Mac OS icons Resource are some of the other names.For icon information, a source in the resource branch is used.In most cases, a file contains numerous images. 1612 pixels square and 1024, 512, 256, 128, 48, 32, and 16 pixels square are supported picture sizes.",
+      "An ICNS file is an icon used by a macOS application. It contains one or more images of varying sizes, saved in the .TIFF format. ICNS files are primarily used as application icons and file type icons, which appear in the macOS Finder, desktop, and dock."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an ICNS file in Apple Preview (macOS), XnViewMP (multiplatform), or Inkscape (multiplatform). Apple Preview will show you all the images your ICNS file contains; the other programs will not."
@@ -46,6 +65,28 @@
       "In Apple Preview, you must convert the images an ICNS file contains individually. In Snap Converter, you can extract and convert all the images an ICNS file contains at once."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -79,15 +120,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/icns/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "retrieved_at": "2025-11-01T22:32:42.273Z"
     },
     {
       "url": "https://fileinfo.com/extension/icns",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "retrieved_at": "2025-11-01T22:32:42.273Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.925Z"
+  "last_updated": "2025-11-01T22:32:42.273Z",
+  "containers": []
 }

@@ -7,6 +7,18 @@
   "type_name": "Embedded OpenType Font",
   "summary": "Learn about .EOT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An EOT file is an OpenType (.OTF) font meant to be embedded in a document, such as a webpage or PowerPoint presentation. EOT files are typically created and embedded using Microsoft Web Embedding Fonts Tool (WEFT). They are saved along with the associated document and not meant to be opened manually."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Microsoft created the EOT file format to allow web developers to embed OpenType fonts in webpages, so text would always appear in the correct font online. Developers could use WEFT to transform an existing OpenType font file into an EOT file, which they would then link with one or more webpages. EOT files were compressed, making them faster to load over the web, and included some copyright-protection features, such as subsetting (including only a webpage's needed characters) and encryption.",
+      "Internet Explorer is the only browser that ever supported EOT files. EOT files have largely been replaced by .WOFF files, which are web-optimized font files. Microsoft stopped offering WEFT for download in 2019.",
+      "NOTE: You can also create EOT files from .TTF files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "EOT files are not meant to be opened. However, you can use eotinfo (cross-platform) to view information about an EOT file."

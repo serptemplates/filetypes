@@ -4,8 +4,19 @@
   "slug": "vfs",
   "extension": "vfs",
   "name": ".VFS File Extension",
+  "type_name": "Virtual File System Index",
   "summary": "Learn about .VFS files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A VFS file contains an index of directories and files stored on a hard drive or other media device. It is used to create a virtual file system, which can speed up browsing and searching for files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "HP All-in-One printers may create a new VFS file on memory cards inserted into the card slot. This occurs when the \"Faster Browsing\" option is enabled. To prevent VFS files from being added on memory cards, push the \"Setup\" button on the printer, choose \"Preferences,\" then select \"Enable Faster Browsing\" and choose \"OFF.\" The VFS file that the printer creates is often named .HPIMAGE.VFS. This file stores .JPG thumbnail images created by the printer for faster browsing on the printer's LCD display."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Typically, VFS files are not meant to be opened. However, some VFS files, including the .HPIMAGE.VFS file, can be mounted within VFAT file systems using the Linux mount command with the -o loop option."

@@ -4,8 +4,20 @@
   "slug": "plw",
   "extension": "plw",
   "name": ".PLW File Extension",
+  "type_name": "32-bit Windows IDA Plugin Module",
   "summary": "Learn about .PLW files and view a list of programs that open them.",
   "developer": "Hex-Rays",
+  "more_information": {
+    "description": [
+      "32-bit Windows plugin module used by IDA (The Interactive Disassembler), a multi-processor debugger and disassembler; contains data written in C++ that extends the functionality of the IDA tool."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "A PLW file is a loadable library, similar to .DLL, that extends IDA's disassembling capabilities. Examples of additional functions that can be installed include the ability to export disasm information from idb or to enable integrated jump navigation and decompilation support. The plugin should be placed in the plugins directory of the application.",
+      "NOTE: Different file extensions are used for different IDA plugins. The .P64 extension is used for Windows 64-bit, the .PLX extension is used by Linux 32-bit, and the .PLX64 extension is used by Linux 64-bit plugins."
+    ]
+  },
   "programs": {
     "windows": [
       {

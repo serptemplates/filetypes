@@ -1,9 +1,48 @@
 {
   "slug": "ice",
   "extension": "ice",
-  "name": "ICE File",
+  "name": "ICE Compressed Archive",
   "summary": "Learn about .ICE files and view a list of programs that open them.",
   "developer": "Raphaël et Béatrice Mounier",
+  "category": "compression",
+  "category_slug": "compression",
+  "mime": [
+    "x-conference/x-cooltalk"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Interface de Compression Ergonomique pour windOWS, or ICEOWS, is an archive utility that allows users to package files in compressed archives. These archives are saved as .ARJ, .ZIP, or ICE files.",
+      "ICE compression is designed specifically for use with text files. Therefore, ICE archives often contain multiple related text files, which have been packaged together for easier storage and distribution."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an ICE file with ICEOWS (Windows) or ESTsoft ALZip (Windows)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,35 +79,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open an ICE file with ICEOWS (Windows) or ESTsoft ALZip (Windows)."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAZ0lEQVR42mO8wsD3n2EAAeOoA0YdMOqAUQcMGgdo//8IFrjKyE+URph6GCBW3+B1AKmAVAcPfgegG4gexDBASJ5Y9TDxwe8AWvGJjoIh5wBCUTB4HTBQYNQBow4YdcCoA0YdMOAOAAAGeLRBknemEAAAAABJRU5ErkJggg==",
-      "alt": "LsExec"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Vision Executive"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ZipNAll"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA6ElEQVR42tWXgQ6DIAxE6ZeDX+4kykKadnC0ArvEqIjlWY+iFBaLdgQ4Z44rAly6LxKFlFKI15Z1PPusWB2Xdq0f3UG/MWEASRKAphwDAuA3a8oQrcGVGD4AvYIBWLpcNOyBJQCN9MFy9UCv8UwA2jREph4HcKkDGkArKy51ILIBWgB1m8kD5zNYFJ6Qtx8CbG4zecBjZXJZC5AMlP71K5juASkGSwoGwCHQaQgBbFsHCsRIJRz2wEvaHKDnkwyRyQOlEk4FkE4sEOa1QAN47aNUWwuk/4IeMLMHfgFIEBzu7+rAVC0H+AABkwowvUI/AQAAAABJRU5ErkJggg==",
-      "alt": "OpenMPT / ModPlug Tracker"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "download"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -85,29 +99,36 @@
     {
       "url": "https://fileinfo.com/svg/menu.svg",
       "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.807Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.160Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.807Z"
+      "url": "https://docs.fileformat.com/compression/ice/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.160Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ice",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.807Z"
+      "url": "https://fileinfo.com/extension/ice",
+      "retrieved_at": "2025-11-01T22:32:42.160Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.807Z"
+      "retrieved_at": "2025-11-01T22:32:42.160Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.807Z"
+  "last_updated": "2025-11-01T22:32:42.160Z"
 }

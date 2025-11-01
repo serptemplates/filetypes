@@ -4,8 +4,27 @@
   "slug": "gmi",
   "extension": "gmi",
   "name": ".GMI File Extension",
+  "type_name": "Gemtext Document",
   "summary": "Learn about .GMI files and view a list of programs that open them.",
   "developer": "Solderpunk",
+  "more_information": {
+    "description": [
+      "A GMI file is a Gemtext document. It contains text that is meant to be served over the internet and translated into a webpage using the Gemini protocol. The text GMI files contain is written in the Gemtext markup language."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Gemini is an internet communication protocol that is meant to complement HTTPS and Gopher. It was originally developed in 2019 by Solderpunk and has since been iterated upon by a community of users.",
+      "Just as webpages served via HTTPS are written and formatted using HTML, webpages served via Gemini are formatted using Gemtext. These documents are then saved as GMI files.",
+      "Each GMI file can contain:",
+      "Headings",
+      "Text",
+      "Links to other files and webpages",
+      "Unordered lists",
+      "Blockquotes",
+      "Additionally, GMI files can contain lines that begin with ```. Gemini clients always print lines that start with ``` as-is, without applying the rules of Gemtext formatting."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open and edit a GMI file with Microsoft Visual Studio Code (multiplatform) or any other text editor. You can use Geminaut (Windows), Lagrange (multiplatform), and other Gemini clients to view the webpage a GMI file describes."

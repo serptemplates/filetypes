@@ -7,6 +7,17 @@
   "type_name": "Kaspersky File Table",
   "summary": "Learn about .MFT files and view a list of programs that open them.",
   "developer": "Kaspersky Lab",
+  "more_information": {
+    "description": [
+      "XML data file used by Kaspersky Anti-Virus and Internet Security computer protection applications; contains references to files used for scanning and detecting viruses; often contains references to .KDC and .STT files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MFT files begin with a <kdb> tag and include sections with <parms>, <stt>, and <kdc> tags.",
+      "In Mac OS X, the default MFT file is named kavbase.mft and is located in the /​Library/​Application Support/​Kaspersky Lab/​KAV/​Bases/​ directory."
+    ]
+  },
   "programs": {
     "windows": [
       {

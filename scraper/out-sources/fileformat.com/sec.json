@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/sec/index.html",
   "slug": "sec",
   "extension": "sec",
-  "name": "SEC File",
-  "source": "fileformat.com"
+  "name": "What is an SEC file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "more_information": {
+    "description": [
+      "A SEC file is a video file that is created with Samsung DVR surveillance system. Video is captured from surveillance cameras and stored to disc in SEC format. The recorded SEC video can be played back with Samsung’s video software that can manage video feed from multiple cameras."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "SEC file can be converted to the standard AVI file format using FFmpeg.\n\nffmpeg -i 0010600.sec -vcodec copy -vsync drop -fflags genpts -f avi 0010600.avi"
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

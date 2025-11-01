@@ -7,6 +7,18 @@
   "type_name": "AutoCAD Program Parameters File",
   "summary": "Learn about .PGP files and view a list of programs that open them.",
   "developer": "Autodesk",
+  "more_information": {
+    "description": [
+      "File used by AutoCAD, an engineering design and documentation CAD application; contains external command definitions, which allow users to run custom commands in AutoCAD; can be used for running external programs and Windows commands through the AutoCAD interface; also used for defining aliases, or shortcuts, for commands with verbose syntax."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PGP files are stored by default in a file named acad.pgp. They are stored in plain text and contain commands in the following format:",
+      "command,[executable],flags[,[*]prompt[,return_code]]",
+      "Each command specifies the command alias, an executable to run, process flags, display prompt options, and a return code when the command finishes."
+    ]
+  },
   "programs": {
     "windows": [
       {

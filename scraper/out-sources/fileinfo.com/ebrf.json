@@ -4,8 +4,20 @@
   "slug": "ebrf",
   "extension": "ebrf",
   "name": ".EBRF File Extension",
+  "type_name": "Electronic Braille Ready Format",
   "summary": "Learn about .EBRF files and view a list of programs that open them.",
   "developer": "American Printing House for the Blind",
+  "more_information": {
+    "description": [
+      "An EBRF file is a braille document saved in the Electronic Braille Ready Format (eBRF). It is a .ZIP archive that contains one or more .XHTML files, a .CSS file, and an images folder. EBRF files are used to show braille documents, including integrated tactile graphics, on multiline braille displays."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The American Printing House for the Blind, in collaboration with other groups, created the eBRF format to solve problems with existing braille document formats such as .BRF. For example, existing formats could not include intra-document links or embedded tactile graphics. The eBRF format solves these problems by saving documents as a series of XHTML files, rather than .TXT files, which can be styled using CSS and include embedded images. All the files that comprise an eBRF document are zipped together and saved as a single EBRF file.",
+      "At the same time as the American Printing House for the Blind began work on eBRF, the group also began creating a new multiline braille display that could load EBRF files. At the time of this writing, neither eBRF nor its associated reader are finalized."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "At the time of this writing, there is no program or device that can natively load EBRF files. The American Printing House for the Blind hopes to release Beta units of its eBRF reader in 2023. In the meantime, you can extract constituent files from an EBRF file as you would any .ZIP archive. (You may first have to change the file's extension to .zip.)"

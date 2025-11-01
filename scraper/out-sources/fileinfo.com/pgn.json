@@ -7,6 +7,24 @@
   "type_name": "Portable Game Notation File",
   "summary": "Learn about .PGN files and view a list of programs that open them.",
   "developer": "Steven Edwards",
+  "more_information": {
+    "description": [
+      "A PGN file is a Portable Game Notation file. It contains a record of the moves played in a chess game, as well as game metadata (such as the game's players, platform, and date). PGN files are saved in a standard plain text format, which is human-readable and recognized by most chess programs."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In 1993, Steven J. Edwards created the PGN format for recording chess games. The beginning of each PGN file uses tag pairs to specify game metadata, which may include:",
+      "The event at which the game was played",
+      "The specific tournament round in which the game was played",
+      "The platform or program on which the game was played",
+      "The date the game was played",
+      "Players' colors and Elo ratings",
+      "The game's outcome",
+      "The remainder of the file specifies the moves played in the game, using a turn-based list of moves recorded using Standard Algebraic Notation (SAN). For example, the text 2.Nf3 Nc3 notes that on the second turn of the game, the white player moved a knight to space F3, and the black player moved a knight to space C3.",
+      "Chess players and analysts use PGN files to share game recordings with each other, for historical and review purposes. Many chess programs allow players to visually play back the game a PGN file contains, so they can analyze the moves that players made."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a PGN file with any text editor (such as Microsoft Notepad or Apple TextEdit) and most chess programs that can import game records. For example, the ChessBase suite of programs can open PGN files and play back the games they contain."

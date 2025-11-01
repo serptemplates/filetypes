@@ -4,8 +4,22 @@
   "slug": "lilocked",
   "extension": "lilocked",
   "name": ".LILOCKED File Extension",
+  "type_name": "Lilocked Ransomware Encrypted File",
   "summary": "Learn about .LILOCKED files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A file with a .lilocked extension is a file that has been encrypted by Lilocked (also known as Lilu) ransomware, a type of malware utilized by cybercriminals. It is encrypted so it is not possible to open the file by simply changing the file extension."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The purpose of the Lilocked ransomware is to target Linux-based web servers and exploit flaws in software running on the servers, most notably defunct Exim software. After the virus gains root access, it takes files on the servers hostage and forces the server administrators to pay the perpetrator to unlock the files.",
+      "The ransomware takes files on the web server hostage by encrypting them and appending the .lilocked extension onto the extensions of the files. For example, a sample.css file becomes sample.css.lilocked.",
+      "The ransomware typically does not encrypt server system files, only web-related files, such as .HTML, .CSS, .PHP, and .JS files. After encrypting the files, the virus generates a ransom note (#README.lilocked) in each folder on the server to inform the server administrators about the takeover.",
+      "NOTE: LILOCKED files became prevalent in July 2019."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Currently, there is no program available to effectively open or restore LILOCKED files on a server. However, the administrator can restore the server from a previous backup to remove infected files and the Lilocked virus."

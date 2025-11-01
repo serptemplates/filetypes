@@ -7,6 +7,19 @@
   "type_name": "WhatsApp Encrypted Database File",
   "summary": "Learn about .CRYPT1 files and view a list of programs that open them.",
   "developer": "WhatsApp",
+  "more_information": {
+    "description": [
+      "A CRYPT1 file is an encrypted database created by WhatsApp Messenger, an Android messenger application. It contains a 256-bit AES encrypted backup of downloaded sticker packs (stickers.db.crypt1), chat settings (chatsettingsbackup.db.crypt1), or your contacts' status rankings (statusranking.db.crypt1)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The .crypt1 extension is appended to a .DB file to create a .db.crypt1 file, which is used by WhatsApp to back up a user's stickers, chat settings, or contacts' status rankings. These files are similar to .CRYPT7, .CRYPT8, and .CRYPT12 files, which are encrypted database files that back up your WhatsApp message history.",
+      "If you are looking to decrypt a CRYPT1 database to view the settings or stickers it contains, you must first locate your WhatsApp key file, which stores the database's encryption key. The key file is stored in the following location: /data/data/com.whats.app/files/key. Note that, at this time, there is no known program that can decrypt a CRYPT1 database.",
+      "CRYPT1 files are located on the SD cards of Android devices with WhatsApp Messenger installed. You can find them in the following directory: /sdcard/WhatsApp/Backups.",
+      "NOTE: Only the Android version of WhatsApp Messenger creates CRYPT1 files. The iOS and desktop versions of WhatsApp messenger do not create CRYPT1 files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "CRYPT1 files are typically not meant to be opened. If you ever need to migrate or restore your WhatsApp data, you can use your CRYPT1 files to restore your downloaded stickers, chat settings, and contacts' status ranking. To do so, ensure the stickers.db.crypt1, chatsettingsbackup.db.crypt1, and statusranking.db.crypt1 files are present within your Google Drive backup or SD card when you install and log in to WhatsApp."

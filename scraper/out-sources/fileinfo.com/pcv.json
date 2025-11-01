@@ -4,8 +4,20 @@
   "slug": "pcv",
   "extension": "pcv",
   "name": ".PCV File Extension",
+  "type_name": "Picocrypt Encrypted File",
   "summary": "Learn about .PCV files and view a list of programs that open them.",
   "developer": "Evan Su",
+  "more_information": {
+    "description": [
+      "A PCV file is a file that has been encrypted by Picocrypt, a simple encryption tool. Picocrypt appends the .pcv extension to each file it encrypts, producing an extension like .png.pcv. You can decrypt a PCV file in Picocrypt, provided you know the password used to encrypt it."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Picocrypt is a multiplatform encryption tool used to secure files. To encrypt a file or folder, users drag and drop it into Picocrypt, enter the password they want to use to encrypt it, and select Encrypt. Picocrypt then encrypts the file or folder using XChaCha20 encryption and saves the result in a PCV file.",
+      "If a user drags a folder into Picocrypt, all that folder's files will be compressed, encrypted, and saved in a .zip.pcv file. When the user decrypts this file, Picocrypt will produce a .ZIP archive, which much be decompressed to view the original files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use Picocrypt (multiplatform) to decrypt a PCV file. To do so:",

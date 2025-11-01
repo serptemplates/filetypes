@@ -121,6 +121,36 @@ for (const file of htmlFiles) {
   const dir = path.join(OUT_SOURCES, safeSource);
   fs.mkdirSync(dir, { recursive: true });
   const outPath = path.join(dir, `${rec.slug}.json`);
+
+  // Prefer richer records when collisions occur (same slug from multiple files)
+  const score = (r) => {
+    try {
+      let s = 0;
+      const addLen = (v) => {
+        if (!v) return;
+        if (Array.isArray(v)) s += v.join(' ').length; else if (typeof v === 'string') s += v.length;
+      };
+      addLen(r.summary);
+      addLen(r.more_information?.description);
+      addLen(r.technical_info?.content);
+      addLen(r.how_to_open?.instructions);
+      addLen(r.how_to_convert?.instructions);
+      s += (r.programs && Object.keys(r.programs).length) ? 50 : 0;
+      s += (r.images && r.images.length) ? 10 : 0;
+      return s;
+    } catch { return 0; }
+  };
+
+  if (fs.existsSync(outPath)) {
+    try {
+      const prev = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+      if (score(prev) >= score(rec)) {
+        // keep existing richer record
+        continue;
+      }
+    } catch {}
+  }
+
   fs.writeFileSync(outPath, JSON.stringify(rec, null, 2));
   parsed++;
 }

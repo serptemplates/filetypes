@@ -4,8 +4,21 @@
   "slug": "sec",
   "extension": "sec",
   "name": ".SEC File Extension",
+  "type_name": "PGP Secret Key Ring",
   "summary": "Learn about .SEC files and view a list of programs that open them.",
   "developer": "Broadcom",
+  "more_information": {
+    "description": [
+      "An SEC file is a data file that contains private encryption keys used by Pretty Good Privacy (PGP) encryption software, which are necessary for decrypting messages or files encrypted using a corresponding public key. SEC files may also store key metadata, such as creation and expiration dates, and be passphrase-protected."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Phil Zimmermann initially developed Pretty Good Privacy (PGP) encryption software in 1991 to provide strong encryption for securing email communication and file transfers for people concerned with privacy. Ownership of PGP changed over the years, with several companies, including Symantec, continuing to develop the software. However, Broadcom, which acquired it in 2019, now maintains it.",
+      "PGP encryption uses a pair of keys, a private key and a public key, which work together to secure information. The public key is shared with others and used to encrypt messages or files intended for you. The private key stored in the SEC file is kept secret and used to decrypt those messages or files.",
+      "NOTE: SEC files are often called \"secret key rings\" since they can store multiple private keys in one file. Because of their importance, people typically protect SEC files with a passphrase to prevent unauthorized access."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open SEC files with Broadcom Symantec PGP Desktop. You can also open the files with GnuPG, an open-source implementation of the OpenPGP standard."

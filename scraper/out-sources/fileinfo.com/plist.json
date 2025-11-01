@@ -4,8 +4,21 @@
   "slug": "plist",
   "extension": "plist",
   "name": ".PLIST File Extension",
+  "type_name": "Property List",
   "summary": "Learn about .PLIST files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "A PLIST file is a properties list used by a macOS or iOS application. It defines many of the app's default settings and can store user settings. Most commonly, PLIST files are saved as binary files or XML files. In either case, PLIST files are typically not meant to be opened or edited by users."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "While developing a macOS or iOS application, developers create PLIST files that define several key pieces of the app's configuration information and metadata. Typically, these PLIST files are XML files, which store a list of Keys (setting names) and Values (settings).",
+      "As a developer finalizes their application for delivery to end users, they often convert some or all of their PLIST files to a binary format. For example, developers often convert PLIST files that track a user's preferences to binary. Thus, PLIST files packaged with or installed by an app may be plain text files or binary files.",
+      "NOTE: Some Apple applications for Windows, such as iTunes and Safari, also use PLIST files. Additionally, in some rare cases, PLIST files may use JSON formatting."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In most cases, you should not open or edit a PLIST file. Doing so may cause the app that uses that PLIST file to function incorrectly.",

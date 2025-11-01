@@ -4,8 +4,20 @@
   "slug": "vbk",
   "extension": "vbk",
   "name": ".VBK File Extension",
+  "type_name": "Veeam Backup File",
   "summary": "Learn about .VBK files and view a list of programs that open them.",
   "developer": "Veeam Software",
+  "more_information": {
+    "description": [
+      "Backup file created by Veeam virtual machine (VM) backup and recovery software; contains a full recovery backup of the VM and is the largest of the files created for any backup; allows a full restore of the state of the machine when it was last backed up."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VBK files differ from .VRB files, which contain incremental backup changes since the time of the full backup.",
+      "NOTE: VBK files can be very large (many gigabytes in size). For this reason, they are often backed up to low-cost storage devices such as tape backups."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,7 +1,7 @@
 {
   "slug": "bacpac",
   "extension": "bacpac",
-  "name": ".BACPAC",
+  "name": "Compressed Microsoft SQL Database",
   "summary": "Learn about .BACPAC files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,20 @@
         "name": "Microsoft SQL Server 2019",
         "url": "https://fileinfo.com/software/microsoft/sql_server"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Database managers can use a variety of Microsoft SQL database management tools to export databases as BACPAC files. For example:",
+      "Azure users can export a database as a BACPAC file from the Azure portal",
+      "SQL Database users can export a database as a BACPAC file using the SqlPackage command-line utility",
+      "SQL Server Management Studio users can export a database as a BACPAC file using a wizard included in that application",
+      "While BACPAC files are similar to .DACPAC files, the files are used for different purposes. BACPAC files are used primarily to back up or move databases from one server to another. DACPAC files are focused on capturing and deploying schema. Sometimes, DACPAC files are applied to existing databases."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A BACPAC file is a Zip-compressed archive that contains a Microsoft SQL database's schema and data. Users export BACPAC files from and import BACPAC files into Microsoft SQL database programs, such as Microsoft Azure SQL Database and Microsoft SQL Server. BACPAC files are used to transfer databases between servers."
     ]
   },
   "how_to_open": {
@@ -54,8 +68,11 @@
     {
       "url": "https://fileinfo.com/extension/bacpac",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.974Z"
+      "retrieved_at": "2025-11-01T22:32:42.343Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.974Z"
+  "last_updated": "2025-11-01T22:32:42.343Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

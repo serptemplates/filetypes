@@ -1,9 +1,11 @@
 {
   "slug": "mid",
   "extension": "mid",
-  "name": "MID File",
+  "name": "MIDI File",
   "summary": "Learn about .MID files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "audio",
+  "category_slug": "audio",
   "programs": {
     "windows": [
       {
@@ -88,6 +90,20 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Small in size – often as small as 10 KB for a one-minute playbackCan adjust note, tempo, and pitch for desired performanceIt consists of three parts – the physical connector, message format, and storage formatCan be converted into MP3, WAV, WMA, FLAC, OGG, AAC, MPC on Windows via Total Audio Converter.",
+      "MID files store musical instructions that various instruments or synthesizers interpret to play them back. In addition to note information, MID files may include controller data, such as instrument changes, sustain pedal use, and volume adjustments.",
+      "Musicians, producers, and composers use MID files to share and reproduce musical sequences across different programs and devices. Educators and game developers may also create and modify MID files.",
+      "NOTE: MID files also use the .MIDI file extension."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file having .MID or.MIDI file extension is the Musical Instrument Digital (MID) Interface file. It is the difference from ordinary audio files such as WAVs or MP3s in that it doesn’t carry the actual audio content; hence, is quite smaller in size. The content includes the notes played, their timing, duration, and desired loudness for each note.\n\nThe MID file fundamentally consists of information explaining how should the sound be heard when linked with the playback device or loaded into a specific software that interprets audio data. This makes it an ideal tool for sharing musical data between compatible apps and over a low-bandwidth connection. The smaller size enables easy storage for which even floppy disks can be used.",
+      "A MID file is a standard Musical Instrument Digital Interface (MIDI) file used by music authoring software and MIDI-compatible hardware devices. It contains musical performance data, such as the notes that are played, when they are played, how long they are held, and how loud each note sounds. MID files do not store actual audio data."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open MID files with various audio players and editors, including VideoLAN VLC media player, Microsoft Windows Media Player, and Apple QuickTime Player. To open a MID file with VLC media player, select File → Open."
@@ -102,38 +118,32 @@
       ".FLAC - Free Lossless Audio Codec"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,",
-      "alt": "Switch Sound File Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "SONAR"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "PowerDVD"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "VLC Media Player"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEy0lEQVR42q1XW2xUVRRd57adaTtQ+qYhDWiUoq2xApoi8UECxsTAh038648miJoYSPxR0dSUIIqhGgKoUYJiaakBPxSDhCbaDyxBoBGxjUCixD5EW6jtdNqZuTPbfebcYe57pshJ9r3nnrtfZ+29z0Ms7CZwK2ZqYXqRqZ4pAKMRrI1sH/b/vjKEGD8H+PtDfncwRUR1NxVx502mLUxFt9GY3/8Zpg+IsE1UddMm/tjFFLqdhjxlMoPT3H1FVB6m8/yx3EvIRdA/LDnwm8b6RcVhisKIeY7wqb4HUllRsA7ERHkXUTb4ZD9JivIEEMwDCjWgQFP/4zw+m1CkJwHBPFqOIRGlXUQOJtNIgpShu+YDTZXAA+XAnfOA8iA7wY6wLUTZ6HXG8fcwcG4c+PEf4MqkktWEfzKLBZ1Ebh6SAdf9ZcDGOuDJRcDCQqXQr0mURjjHjw0BH18CBiecMhYHSjqdIZADEsZnlgCtjcDiUA7BdmmXGYWt/cDXQ+7xSIVg3iFnCOQsmtn47ocU1P+nXZvl1e008M2fViTSRkXIcCA9II3fwTE+8jjQUOozuyngaljlQF0JMM458PMNoLFM5Ym5XeDx5h+AP8IKWbMHorjDGgKZOJvvBXau9DauM89zp4CjV1VFyOSURiZ1oOtRYH2tU+ZVXm12XnSiIAo7rEkoM76TlWyo9XZgKAI8cRK4NKkUNixQs17KSGxh50P5TpnvRhQKslQFMtUmgtIBwwWuJpQWAMfXASsrvB04PswJ2ss7Cc/4bjb61RrgPp9wySbLcx07PREzDUoHAl9kckDSfPb+2FpgdZW3sjc4s7f/ovovLAP2NalZ+bXea8BTPYRI3GRdOpBvOGAuzr2s8Pk6d0VhnvX6HlY4yuFiZw89pso1W9szSHi5j2Bf50XeQWsOyCqQi86XXAUlBU5FozMqof7mdyUvTDtWALXF/sYl7M09CXw/TEYCZGYrtINkqUP5CnIitvMa8NIypzLJrKe9Z8rX/I1L1vYLSbx2JoF40rbLsTKBz+0hULGp4aPJ3lXA00tE1vh6Gmc9nVeS2HxKx/is2XimL3DAcMu8GhgbQTU78XqjwLNLNZQE5mKaNygut/2DCbSe0TE2Y0Bv3okMewL7dRMC5Nj0Ayy4ZpHAxnu01LuiMDsif0UIb5/T8emvOmZ028RsNgQ+4d2cfJiMk4dc8erLBB6pEXiwWkNdqcCKKg0BzSraN5rE1r4YeoeTsKyxZIt/ugzxUZQcTG4C6SNQav0kPFyj4dsNQZQFFR7TPI8DAzreORvH8FTSutyRm371ENg3S1ZYzALWhLn5j6m1qQBvrVKJ8duNJNpOx3D0chxRHdZSc9VrKkPsiViT0E/ASM6akMCJ5mLUl2s4wkbb+qIYHEt6Jpp7/NMh2B0me+J55oJsbKeloQBtq4NoPxvFZxdjCEcpsxY7UHMmnhWB96fIk8EDjbWL8zEVI/w0otsOmnY9bs5Y+QR2/Rvlj4BfnLwqw3XWfjN38sYE3ps4zwqX3wp8vsfd3JzqF3j3+iYe4KsZheYK35x5rU5NQ17NsGO8iMf4ckrqcpo7fD4oefHd5E1dTvmAuE1g+5gc5Q2VWvhH5np+a7PKxssbMw0gdT0Xqev5fxiLi7ZuHgXBAAAAAElFTkSuQmCC",
-      "alt": "RealPlayer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Winamp"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -142,29 +152,53 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/mid_54.png",
+      "alt": "Screenshot of a .mid file in VideoLAN VLC media player 3",
+      "caption": "MID file open in VideoLAN VLC media player 3"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.827Z"
+      "retrieved_at": "2025-11-01T22:32:42.179Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/audio/mid/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.827Z"
+      "retrieved_at": "2025-11-01T22:32:42.179Z"
     },
     {
       "url": "https://fileinfo.com/extension/mid",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.827Z"
+      "retrieved_at": "2025-11-01T22:32:42.179Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.827Z"
+      "retrieved_at": "2025-11-01T22:32:42.179Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.827Z"
+  "last_updated": "2025-11-01T22:32:42.179Z",
+  "mime": [
+    "audio/midi"
+  ],
+  "containers": []
 }

@@ -1,9 +1,47 @@
 {
   "slug": "pfa",
   "extension": "pfa",
-  "name": "PFA File",
+  "name": "Printer Font ASCII File",
   "summary": "Learn about .PFA files and view a list of programs that open them.",
   "developer": "Adobe Systems",
+  "category": "font",
+  "category_slug": "font",
+  "mime": [
+    "application/x-font-type1"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The PFA format supports high-quality text rendering and control over character shapes, which are vital for printed documents and professional design work. Users can install the font files in the system Fonts folder on Windows or macOS, where programs, such as Adobe Illustrator and Adobe Photoshop, can access them."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open PFA files with FontForge. To open a PFA file with FontForge, select File → Open."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -48,39 +86,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open PFA files with FontForge. To open a PFA file with FontForge, select File → Open."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFZUlEQVR42r1XeVBTdxD+XkhiECjIZQFRoChyCd7YYiJUQUAcxKZY6Yh2GGyRotZrpII6lfGiUnVaB9G21uroeFVAOsjltByKw01FpykegChiiIQQCEle33sMGVICoyF2/0h+md23++3ut/t+IVQqFQk9pKioEE2P2zDZYRLs7Gzg7e05oq2oqRU8LguTJtkN0xFvCkChVEPVr8B36Tsxd+4VNNQr4OSSiYiIcC0bLpuFlpY2VFTkoa7+EsZx7bBs2Wa4ubszukG7NwZAS339XziVmYLIyDqIREDTw1Ckph4dZicWS5C0cwV276lHTTUHBYVR2H/wCKMbBKEXgEHZsWMrlXk0fH3dYcThapwOlUOH9sLc/DGqqx5iV/L5YW3QAJDLVTA2NnrtNugKRpe8q6sdHh4+Ghu5vJfyy4P4ZTeMx7OZ89DnGQCvuvuwdVMkQkKFYLNMsDxCOGJwUiUDYWSiE9DJ7w/A0nYyPhKuHjWBoT6IlpZ2MiUlHolfVqHjZTMKCtYz/dSVJc1mVxcHnU7pCh47HISPPz0GZxfPEW3+W2Wiu1tGlpeXorg4Fi5TpqG5dRZSdu/XMiorK8OjRzUoKszE6ug0quezYWlpoWVzp/w67t5JR1xCkc72DHDmC/j4eIPLsUDgh6GMDw0HsrLysWRJIEUmQmtM6POpn35FjzQe6+MmIj6egzUxpyEQLNDo6e9LFwSYMiEW/mExIJUvwVJ2gOS5afx8e/gwHB0z4e//CgcOuCI9vYSpxmtNQeMDEU5nboS9vQwq5UJs2/6Nlr66qhBVVZ8jeOkfAyx/lg7iRSbU7n+CYFsxPS+/U4v8m9vwnqsCtbWu2LjxCGOrATASswd610t9cqBQEOiUtMBpymStvuZkhcLUzJMi8cCM0xUgSOoZjjZfbt68BVsbR3h4OzO/6Xhj2gO0VN7NQ2NjLPz8b49I0NESHBMAenxzflsMGxs+goJT9fKhF4DBbEpLzuP+/d0IDbtNvZCs/j8AtNB7/tplPqZO3ww+f52+RdQfQO71FIg7S7AyKv+1V7jBANy7V4tbv4djUUg2s/d1ree3BoAm3rUTfNjPWKw38UYFMHS7DY7N0Awvn0hAT899COPzxlR6vSpQcuMMqnNTELKlbNSZ1xsAzeyfz54Ft08C9MpgzOXA3MwEciWBXmU3zFovYpowA7MWBBgkuBYAet2uEq5AKK8N4XOmwsbMGC+kcuzLroGcugMGeCsgEtsiOOksPpg7Y9TV/UYAsrKukGFhEcjOL8bVr9fiTNIqkBIZalrFiDqei8QgXzyTdkKtHofkpV7YV6dA8vFfDBKcAQAsIKM/oe504wn4y+ogmOWGtJxKND7tRNT8qUiInI+GygfYkV2HG9uXY8OPxdhyOpt5IRmiCgSLSCDV5BPqmIvK5HDMdHoXHVIJrE1MGYOWh4+xK+8eulRGmODsgZmCIHwWG8fc7QxSATY7llQq2xHhW4urG4LQ368Gh8NC+9M2FNSIcKj0CWIEXoj2ssWmBh7OXbhokMBDWrCSdLKqQUXyPFibWaC/TwGpRILOjhdIyv8bftMd0WUzHbbmpnDhr8SiQL7B+s8AsLdwJHO+eh++DpYQP29HT7cUBMX6htZ2JOY3I2LRPMTs/QHubq4GzVwD4EJcABm10AvPRU0oqPuHKkk/ZEolMqpfIW7PUQiFQpibjmOMx7LzRwRwco2AXDdjIrIrarH2ejO6+ujr0juw9nHDs7vHDB5wGID1fi5k4hxrhJ+rQlNnIFjENBBmVlBxn+BaRvCof1IMAiDQeQJpZcrDpXonKvhsqEkp2Ka2UPI6sHWtBQ4eTDPY1tMl/wIkFX/zXIFK1QAAAABJRU5ErkJggg==",
-      "alt": "ImageMagick"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "3D Photo Browser"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABNklEQVR42u2WOxKCMBCGQ6eH4ASU0HkfKb2AJRewxPvYYckJ6LyAdBhmgInrvhJwoCAdQ7L/t88kMiuvaAfYAaQNVVV2yaMg/9enq8myPNgR8uAoXB8ak7SxaCgUBD1QlVa8LXxtWVgLkftB/Gx+3+JO6x2VnuOlUUNEnEFXGIK5Itw5NQBlRFuEU8141sK00fVwzKUkHuIxCgCF+vBi4lxUfPKuAsAiAg9jBRsG4LTd6KVrnPNuLsQAkFqA15fYZgA0uZ0DsZEUOEXoAwBHdkgnqNsQdgL0nJoFVIRGWHwQCf1Oiff7zfNuTHomRzgJsNgoHq5vLJUsAJZTN6zchcNNRthN8FvMmTTnpbHsDSCG3BYj91jx7YTF+jvkNcQCaKIxic+9jjULi0joFRwE8K+1A6wO8AFf7FBkq0gBXQAAAABJRU5ErkJggg==",
-      "alt": "PrivateFile"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGZ0lEQVR42r1XS2hcVRj+z33feSZNOqZp2pDatNZA4kIoInTVRUEQFz4W1W0t4kY3BSm6KC4UxYWKtC5diGgtBpSiblwIKoKPQIoUiVQbbZrHJPO+jzN+/7n3TmamM8nYhZMc7r3n8f/f/33/+c+9Ip/PS9d1SQhBg/yazeZdzenuk1JSvV4nMT09LWdmZkjX9Z4Luhf2eu6e237tHk9ao9GgxcVFEseOHZNzc3NkGEZfQ/1ADeKovY+jbgewsLBA4ujRo3J2drbFQC/nOzneyWF3SwDw1fM8unbtGokjR450SDCo437OEn27r91AGMD169dJHD58WEIGBaBf9N2O+t33a/0ALC0tkTh06JAECz0B7OY4iXBQAO1AfN+nGzdukJicnJRggTRN+0/Od3O6GwNBENDy8jKJAwcOyKmpqY46MIjTQSNvzwG+hmGoGgNYW1sjsX//fgkQioFeTokX3gUAdsaNqeaCw9uO79lxMsbzxNjYmBwfH+8AwPvhHk3QHu7DXzGU9HcA1E1JBfQZyjv/I5lkkzYQURVXgfVjIFKw01qVahU0ON/C+C0/oKCrOnLeiUKhINFaADgTTtgWnXIsSkMWATdlOLtab9BPtQadyaYATlMIGG8DoJZgfL5UoZvlCp2zddrjN1SkCYkbCOCzSo2uYn3YDWBkZESOjo6qHGAA7PTptEMHMTiPBczEo45Nf8iQPihV6WwmReO6RrcQ1RoMT2B+2vfo27V1urS6Tq8OZ9Wa3wCK26xl0hSq7KLn0ysbJVqJ86IFYHh4WKK1AHAqMogsmoOHk2DjYRj5Hvv2SqVOL+ZStI/BVWv0cbFEJ2RAp3VBdQB6c6tMz+UyNAKGLmP8SrVOT6ZdegwB/AwAFzZLtC6bnQD4NMzlci0A7VvwiZSjpGDNP2n49AMMnsu6NI65H21s0sWVVZpBtOfzGcrD6TtbFTqdcWkv7quQqMaMIiQf95fA3he9JMhmszKdTiNzBCWiMQus8kFDp/sMjR5HBDocXSwjIlOnfV6DPixu0vsw+gDYOZ9LUw5O30YePAOJ9mDuAuhfRJuGjTkTEvghvQGG/gy7JIBz9T6gAABpCteHEPW4btA3XkAV6PsyEm8Cur+HCE81AzoIGj8HpZ8iopO2SU8B4BbAvwWJXkD+5GHjcsOj+bpPD1oGnXVt5fBCuUbf+cxHtIs0TvJUDCApRAzg+ZRNxxH5r5hUxPY7Do3/QTTvAsCzpkZTiLCIuSWMF2K2vgaoK15Irzs6DcHGCsZuo38UrQDTy3h+zZP0eyIzFyWAEelMBgBSJDShyGccY7h/xNJpWo/2/E3oPw/9/wJ9Z2yDJrQILJsqw+AvgaQvwyaFuH/JMVQCJ1J6mLSK/q8QyI9gP8kBVY5RnCBBRjopV9FB8TIXuhXQl8P2Qd2kIiau1OpUAwv3IstdyCNiAHXUgU3IsVqrqeS9fyhPpipg0S9AXwU2VlFHithJrYOMDyQGwBI4jhNJwJqg7cVzGolTwoQ6jOeQaLx7bsPJCMZsAAwlRyzJgDMuV2XkygZ0n8ikSYcNH+NcOU2hqTkNrobVKjUQuYgZ8AFIuKmUtG1n+zDCxUZ2aowcExjpCJKMo9oCmBRYYYOVwKcSntOmSVkFsEmbADBk28QKbUHfChhjNocsW42vIyCv7YAKGIDjutIyrWgXiO3TkE8sdmQjD1x+X2S9YTRtmKq/GvAO8cnCfQ7FigMoA1AGzPF9IKOcMICG5WUGyn7QIYECgOilgShEkjXEskcomWqWgrtrMMBGshYKk4gqXxUGTQDMmpbCzw54PosSxKeoEScsj3nhdhliIAHvAsuypKYbsQQ4YPhUwz3riANTUc+0s8EaMpkdJJoyCAcgHUiGTaBYSRjguR7ODxdjFpqHoCpJDUhYZgCmaUqh6VEpjvVh3Th6P5RqgaUcRABSqISGOjmjXRAHCEBSOWSGuIsBJQzwH4/x+nYAEoCFwQBU8EKd/apEooMTUY8XMwyOgFngLahpnV9RAb9kquwWAGhQazTWlXcMM8Z2RDsAXoMPEhk53jaa5INo62u2xrZ3S9cy6lgh+k6KetWbUwxANmWHs04kd3aKnuNih2XijsdkNwicSNsAdvg+jd6Nmp1AdwPYC0dTtAConc8AQiTIoF/HYmeUA/4iaTRUSbULZNtr0v/54/eBfwGlgTFd4HuIIAAAAABJRU5ErkJggg==",
-      "alt": "3DBrowser"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABkUlEQVR42u2XAZKDIAxF4WTmZsab4cksUQMhgIBdx9mZptPWiu1//pBArXk57A9g8/EvAdZ13d+naXoegMTAgUH/mOc5fKbgc48CLMuyC5lT8pBFAwA7yDbfz+IAgJSOd239mPMgd1PRBSBF7GL9sQuC7M7dVHQ7ACcAHbMQzQXnXEiPBHsEgMQYRE5MFAkanQ9NAClEASLflJo0xlPRBDhEMAhQbEkpovoGDqXiEiCKY+UKLBwzZF8qqgCx9vM7LJ9LgegIOsqzCCA7XVus5lBfKooAVOtGzOx6XI/3NKgGwJWoBsTiNeyC7CVNgCMFriDQcqUGJF1J09IBUP+xtjv5+AAA7BdTxAkpYWrW14APqE01qWoZsgvcdGLPb7mhgY4nvZY6ZAIQheIP6NaaNqeSGxh6gHSP3aQopiCt/dzOq3S4c6FCleO0mlLn+LrMAS3gAIwOXhXzZqW9S9Mgx8KGRgNIkdaqtojVECt3qPcMvJULLv3Vtlwu26WGIyurWYbfQFCM7Ire/2PypvgPgOID0mhyyEcqFcQAAAAASUVORK5CYII=",
-      "alt": "GraphicsMagick"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -93,29 +102,40 @@
     {
       "url": "https://fileinfo.com/svg/search-white.svg",
       "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.848Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.196Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.848Z"
+      "url": "https://docs.fileformat.com/font/pfa/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.196Z"
     },
     {
-      "url": "https://fileinfo.com/extension/pfa",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.848Z"
+      "url": "https://fileinfo.com/extension/pfa",
+      "retrieved_at": "2025-11-01T22:32:42.196Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.848Z"
+      "retrieved_at": "2025-11-01T22:32:42.196Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.848Z"
+  "last_updated": "2025-11-01T22:32:42.196Z"
 }

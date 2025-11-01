@@ -7,6 +7,17 @@
   "type_name": "Cryptomator Encrypted Data",
   "summary": "Learn about .C9R files and view a list of programs that open them.",
   "developer": "Skymatic",
+  "more_information": {
+    "description": [
+      "A C9R file is a file that has been encrypted by Skymatic Cryptomator, an open-source data encryption tool. It contains a file or directory that a user has placed in their Cryptomator vault. C9R files can be decrypted by unlocking the vault in which they are stored."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Cryptomator is a file encryption app that allows users to store files in a virtual drive and then lock that drive. Locking the drive encrypts the stored files, using AES-256 encryption. Often, users place their Cryptomator drives in cloud storage services, so they can access the drives (and the files they contain) from multiple devices.",
+      "Files encrypted by Cryptomator use the .c9r extension, to denote they've been encrypted. These files also have encrypted filenames produced using AES-SIV encryption. Thus, a file previously named Example.rtf may have a filename like eHwTYFBFYdmnj2cVBF-hgHXjoH7sVD4ZUwpz.c9r after being encrypted by Cryptomator."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can decrypt a C9R file, and access the encrypted data it contains, with Cryptomator (multiplatform). To do so, you must unlock the file vault in which the C9R file is stored. To add a vault to Cryptomator, select Add Vault → Open Existing Vault. Then, follow the prompts to add your vault to Cryptomator and unlock its contents (you will likely have to enter the password used to lock the vault)."

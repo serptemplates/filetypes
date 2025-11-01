@@ -1,9 +1,11 @@
 {
   "slug": "jet",
   "extension": "jet",
-  "name": "JET File",
+  "name": "The Jackbox Party Pack Settings",
   "summary": "Learn about .JET files and view a list of programs that open them.",
   "developer": "Jackbox Games",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -28,11 +30,48 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The Jackbox Party Pack is a series of video games that each include a set of party games. For example, The Jackbox Party Pack 2 includes five party games: Fibbage 2, Earwax, Bidiots, Quiplash XL, and Bomb Corp.",
+      "Each Jackbox party game uses unique game data stored in a game-specific sub-directory. For example, Earwax stores its game data in the following directory:",
+      "~/​Jackbox Games/​The Jackbox Party Pack 2/​games/​Earwax",
+      "Each party game's data includes one or more JET settings files. These files determine, for example, what text and what media files are shown at certain points in the game. All JET files are plain text files, which modders can edit to modify what text, images, and sounds appear in a game."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A JET database file, also known as a Microsoft Access database file, is a file format used by Microsoft Access, a popular database management system (DBMS). JET stands for Joint Engine Technology, which was the original name of the database engine that Microsoft Access used. Later versions of Access have used different database engines, but the term “JET database” is still commonly used to refer to Access databases.\n\nHere are some key points about JET database files:\n\nFile Extension: JET database files typically have a file extension of “.mdb” for older versions of Access (Access 2003 and earlier) and “.accdb” for newer versions (Access 2007 and later). The “.mdb” files use the older JET database engine, while “.accdb” files use the newer ACE (Access Database Engine) technology.Relational Database: JET databases are relational databases, which means they store data in tables with defined relationships between them. Users can create, modify, and query data using SQL (Structured Query Language) or through the Access graphical interface.Data Storage: JET databases can store a wide range of data types, including text, numbers, dates, images, and more. They can also handle complex data structures and relationships between tables.Multi-User Access: JET databases support multi-user access, allowing multiple users to work with the database simultaneously, though there can be limitations in terms of scalability and performance for large-scale applications.Integration: Access databases can be integrated with other Microsoft Office applications like Excel and Outlook, making it convenient for users to exchange data between different programs.",
+      "A JET file is a settings file used by The Jackbox Party Pack series of video games. It contains JSON- or XML-formatted text that defines settings for a specific Party Pack party game. For example, in The Jackbox Party Pack 2, the game Earwax uses a JET file named EarwaxAudio.jet to retrieve and play audio files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      "Programs that open or reference JET files include\n\nMicrosoft Access 365 (Free Trial)",
       "Because JET files are plain text files, you can open and edit them in any text editor, such as Microsoft Notepad or Apple TextEdit. Be careful when editing a JET file, as editing the file incorrectly could cause the associated Jackbox party game to function incorrectly."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -66,15 +105,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/jet/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.275Z"
     },
     {
       "url": "https://fileinfo.com/extension/jet",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.275Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.926Z"
+  "last_updated": "2025-11-01T22:32:42.275Z",
+  "containers": []
 }

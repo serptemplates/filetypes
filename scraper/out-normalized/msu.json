@@ -1,19 +1,20 @@
 {
   "slug": "msu",
   "extension": "msu",
-  "name": ".MSU",
+  "name": "Windows Vista Update Package",
   "summary": "Learn about .MSU files and view a list of programs that open them.",
   "developer": "Microsoft",
-  "programs": {
-    "windows": [
-      {
-        "name": "7-Zip",
-        "url": "https://fileinfo.com/software/igor_pavlov/7-zip"
-      },
-      {
-        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
-        "url": "https://fileinfo.com/software/windows_file_viewer?ref=3134&b=1"
-      }
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Each MSU file contains four elements:",
+      "Windows Update metadata, which describes the update package",
+      "One or more .CAB files that store the update data for the package",
+      "An .XML file which describes the contents of the MSU file",
+      "A properties file that is read by Wusa.exe",
+      "NOTE: Earlier versions of the Windows operating system used .MSI files for updates."
     ]
   },
   "how_to_open": {
@@ -24,6 +25,18 @@
       "pkgmgr.exe /n:output_directory\\example.xml",
       "(example.msu and example.xml have the same filename prefix).",
       "If necessary, you can also extract and view the contents of an MSU file using 7-Zip (Windows)."
+    ]
+  },
+  "programs": {
+    "windows": [
+      {
+        "name": "7-Zip",
+        "url": "https://fileinfo.com/software/igor_pavlov/7-zip"
+      },
+      {
+        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
+        "url": "https://fileinfo.com/software/windows_file_viewer?ref=3134&b=1"
+      }
     ]
   },
   "images": [
@@ -54,10 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/msu",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.190Z"
+      "url": "https://fileinfo.com/extension/msu",
+      "retrieved_at": "2025-11-01T22:32:42.630Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.190Z"
+  "last_updated": "2025-11-01T22:32:42.630Z"
 }

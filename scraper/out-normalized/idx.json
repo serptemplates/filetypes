@@ -1,9 +1,57 @@
 {
   "slug": "idx",
   "extension": "idx",
-  "name": "IDX File",
+  "name": "VobSub Subtitles Index File",
   "summary": "Learn about .IDX files and view a list of programs that open them.",
   "developer": "The VobSub Team",
+  "category": "video",
+  "category_slug": "video",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "VobSub is a free program that allows users to extract and play the subtitles stored on DVDs. When VobSub extracts subtitles from a DVD, it creates two subtitles files: a SUB file and an IDX file. The SUB file contains images that are shown as subtitle text. The IDX file contains metadata that tells a media player what color the subtitle text should appear in, where the subtitles should appear on-screen, and when and in what order to show the images the SUB file contains. Subtitle settings typically appear at the beginning of an IDX file, on lines that begin with #, and timestamps and image references appear later in the file, on lines that begin with timestamp:.",
+      "Using VobSub's DirectVobSub component or a media player that supports the SUB / IDX subtitle format, users can play back DVD-format subtitles alongside the movie they were meant to be used with. This can be useful if, for example, you acquire an .MP4 copy of a movie and want to watch the movie with subtitles. If you can locate a SUB and IDX file for the movie, you can load and play them as subtitles. SUB and IDX files can also be used to embed subtitles in .MKV files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "When paired with its accompanying SUB file, an IDX file can be used to play subtitles alongside a movie using DirectVobSub (Windows) or VideoLAN VLC media player (multiplatform).",
+      "To use an IDX file as a subtitles file in VLC media player:",
+      "Make sure your SUB and IDX file are stored in the same directory.",
+      "Begin playing the movie you want to use your IDX file with.",
+      "From VLC's menu bar, select Subtitles → Add Subtitle File...",
+      "Navigate to and open your IDX file.",
+      "Because they are plain text files, you can also open and edit IDX files in any text editor. However, editing an IDX file may cause the subtitles it is linked with to play incorrectly."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "The SRT (SubRip file format) is a simple subtitle file saved in the SubRip file format. It is more commonly used as compared to the VobSub file format. Thus, if you want to convert SUB/IDX files to SRT file format, there are 3rd party tools available that can be used to acheive this. SUB/IDX to SRT converter, available on SubtitleTools.com is one such tool that takes SUB and IDX files as input and converts these VobSub subtitles to SRT files.",
+      "The .SRT subtitle format is more common than the VobSub format. Therefore, you might want to convert your VobSub subtitles to the SRT format so you can use them more easily. SubtitleTools.com has a SUB / IDX to SRT converter, called Convert Sub/Idx to Srt, that you can use to convert VobSub subtitles to the SRT format. Keep in mind that you must have both a .SUB file and an IDX file to convert VobSub subtitles to the SRT format."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -34,22 +82,6 @@
         "name": "Microsoft Outlook Express",
         "url": "https://fileinfo.com/software/microsoft/outlook_express"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "When paired with its accompanying SUB file, an IDX file can be used to play subtitles alongside a movie using DirectVobSub (Windows) or VideoLAN VLC media player (multiplatform).",
-      "To use an IDX file as a subtitles file in VLC media player:",
-      "Make sure your SUB and IDX file are stored in the same directory.",
-      "Begin playing the movie you want to use your IDX file with.",
-      "From VLC's menu bar, select Subtitles → Add Subtitle File...",
-      "Navigate to and open your IDX file.",
-      "Because they are plain text files, you can also open and edit IDX files in any text editor. However, editing an IDX file may cause the subtitles it is linked with to play incorrectly."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "The .SRT subtitle format is more common than the VobSub format. Therefore, you might want to convert your VobSub subtitles to the SRT format so you can use them more easily. SubtitleTools.com has a SUB / IDX to SRT converter, called Convert Sub/Idx to Srt, that you can use to convert VobSub subtitles to the SRT format. Keep in mind that you must have both a .SUB file and an IDX file to convert VobSub subtitles to the SRT format."
     ]
   },
   "images": [
@@ -85,15 +117,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "url": "https://docs.fileformat.com/video/idx/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.273Z"
     },
     {
-      "url": "https://fileinfo.com/extension/idx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.925Z"
+      "url": "https://fileinfo.com/extension/idx",
+      "retrieved_at": "2025-11-01T22:32:42.273Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.925Z"
+  "last_updated": "2025-11-01T22:32:42.273Z"
 }

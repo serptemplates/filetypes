@@ -1,7 +1,7 @@
 {
   "slug": "sna",
   "extension": "sna",
-  "name": ".SNA",
+  "name": "Drive Snapshot Primary Backup File",
   "summary": "Learn about .SNA files and view a list of programs that open them.",
   "developer": "Tom Ehlert",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=3059&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Drive Snapshot is a simple backup utility developed by Tom Ehlert. It allows users to create backups of their Windows drives, which they can use to restore those drives (if the drive becomes damaged or corrupted) or retrieve previous versions of those drives' contents.",
+      "Primarily, Drive Snapshot saves the backups it creates as SNA files. Users can load SNA files in Drive Snapshot to browse their contents, retrieve files from the backup, and restore the backup's contents.",
+      "However, if a being-backed-up drive's contents are large enough, Drive Snapshot splits the drive's contents among multiple backup files: a primary SNA file and one or more backup continuation files. These continuation files use the same filename as the SNA file, but the .sn1, .sn2, etc. extensions. To retrieve files from or restore a backup that includes continuation files, you must possess the backup's SNA file and all of its continuation files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An SNA file is a backup file created by Drive Snapshot, a Windows utility used to back up a user's drives. It contains either all of or the first portion of a backup disk image. SNA files are often accompanied by additional backup files, which use the .SN1, .SN2, and so on extensions."
     ]
   },
   "how_to_open": {
@@ -53,8 +65,11 @@
     {
       "url": "https://fileinfo.com/extension/sna",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.306Z"
+      "retrieved_at": "2025-11-01T22:32:42.778Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.306Z"
+  "last_updated": "2025-11-01T22:32:42.778Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

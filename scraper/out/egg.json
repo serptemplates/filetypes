@@ -1,7 +1,7 @@
 {
   "slug": "egg",
   "extension": "egg",
-  "name": ".EGG",
+  "name": "Panda3D Model File",
   "summary": "Learn about .EGG files and view a list of programs that open them.",
   "developer": "Carnegie Mellon",
   "programs": {
@@ -42,6 +42,18 @@
         "name": "ESTSoft ALZip",
         "url": "https://fileinfo.com/software/estsoft/alzip"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In Panda 3D, the term \"model\" refers to a static 3D model, while \"actor\" refers to an animatable 3D model. Actors saved within EGG files are animated using animations saved within separate EGG files. While developers can save an actor and its associated animation within the same EGG file, Panda3D recommends that they do not do so, to avoid confusion while coding.",
+      "To convert 3D models and animations created in other applications to EGG files, developers must use one of several separate utilities. Which utility they must use depends on the program they used to create their model or animation.",
+      "NOTE: After a developer imports an EGG file into Panda3D, it is converted to a performance-optimized BAM file for faster access."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An EGG file is a 3D model or animation used by Panda3D, a 3D engine designed primarily for game development. It contains a Panda3D model, actor, animation, or actor and animation pair. EGG files are created by exporting models and animations from other 3D modeling programs, such as Autodesk Maya or Blender, and converting them for use in Panda3D."
     ]
   },
   "how_to_open": {
@@ -93,8 +105,11 @@
     {
       "url": "https://fileinfo.com/extension/egg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.048Z"
+      "retrieved_at": "2025-11-01T22:32:42.444Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.048Z"
+  "last_updated": "2025-11-01T22:32:42.444Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

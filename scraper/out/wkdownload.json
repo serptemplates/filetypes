@@ -1,7 +1,7 @@
 {
   "slug": "wkdownload",
   "extension": "wkdownload",
-  "name": ".WKDOWNLOAD",
+  "name": "Epiphany Partially Downloaded File",
   "summary": "Learn about .WKDOWNLOAD files and view a list of programs that open them.",
   "developer": "The GNOME Project",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13231&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "While Epiphany is in the process of downloading a file, it assigns that file the .wkdownload extension in place of its actual extension. For example, an .MP4 file that is not yet fully downloaded uses the .wkdownload extension in place of .mp4. This denotes that the file is not yet available to open or use.",
+      "After Epiphany finishes downloading a file, it automatically replaces the .wkdownload extension with the file's actual extension. Therefore, if you see a WKDOWNLOAD file in your Downloads folder (or elsewhere), it's likely that you paused an Epiphany download before it finished or the download was otherwise interrupted."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A WKDOWNLOAD file is a placeholder file that represents an in-process or paused download started by the GNOME Epiphany web browser (also known as GNOME Web). It contains the partially-downloaded contents of a file, such as a document, image, or video. With GNOME Epiphany installed, you can double-click a WKDOWNLOAD file to resume the associated download."
     ]
   },
   "how_to_open": {
@@ -48,8 +59,11 @@
     {
       "url": "https://fileinfo.com/extension/wkdownload",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.374Z"
+      "retrieved_at": "2025-11-01T22:32:42.870Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.374Z"
+  "last_updated": "2025-11-01T22:32:42.870Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

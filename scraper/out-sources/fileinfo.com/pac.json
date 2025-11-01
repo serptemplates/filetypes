@@ -7,6 +7,18 @@
   "type_name": "Proxy Auto-Config File",
   "summary": "Learn about .PAC files and view a list of programs that open them.",
   "developer": "Netscape",
+  "more_information": {
+    "description": [
+      "A PAC file is a configuration file used by web browsers to select an appropriate proxy server. It contains one or more JavaScript functions with one of them named FindProxyForURL, which defines rules for choosing a proxy server based on a given URL. PAC files are used for controlling and load-balancing Internet traffic, especially in corporate environments."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PAC files are enabled in web browsers by entering the PAC file URL in the proxy connection settings, or by using the Web Proxy Auto-Discovery (WPAD) protocol. When executed, a PAC file returns a string with one or more proxy server URLs. PAC files are typically hosted on a web server and are named proxy.pac.",
+      "Since PAC files contain the configuration in plain text. You can use a text editor, such as Microsoft Notepad or Apple TextEdit to view or modify the files.",
+      "NOTE: The PAC file format was originally released in 1996 for use by Netscape Navigator 2.0."
+    ]
+  },
   "programs": {
     "windows": [
       {

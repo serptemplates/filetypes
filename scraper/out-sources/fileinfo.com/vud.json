@@ -4,8 +4,19 @@
   "slug": "vud",
   "extension": "vud",
   "name": ".VUD File Extension",
+  "type_name": "Virtual Machine Undo Drive File",
   "summary": "Learn about .VUD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Data file used by Windows Virtual PC, an emulation program used to run Windows virtual machines (VMs); stores the changes made to the virtual machine's virtual disk (.VHD file) since the VHD file was last loaded; tracks the files that were created, deleted, and modified."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VUD files enable you to \"discard undo disks,\" which deletes the changes made to the virtual hard drive and reverts to the last loaded VHD file. You can also \"commit undo disks,\" which permanently commits the changes made to the existing VHD file."
+    ]
+  },
   "programs": {
     "windows": [
       {

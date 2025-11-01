@@ -1,7 +1,7 @@
 {
   "slug": "sc2bank",
   "extension": "sc2bank",
-  "name": ".SC2BANK",
+  "name": "StarCraft 2 Bank File",
   "summary": "Learn about .SC2BANK files and view a list of programs that open them.",
   "developer": "Blizzard Entertainment",
   "programs": {
@@ -14,6 +14,19 @@
         "name": "Blizzard StarCraft 2",
         "url": "https://fileinfo.com/software/blizzard/starcraft_2"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "SC2BANK files use a simple XML structure. They have a top-level <Bank> tag with nested sections (<Section> tags), each of which has one or more keys (<Key> tags). Each section describes a type of progress in the game, such as the mission difficulties completed, mission best times, or the campaign research level for the Zerg and Protoss.",
+      "In Windows, SC2BANK files are located in the following directory: [user]\\​Documents\\​StarCraft II\\​Accounts\\​...\\​Banks\\​",
+      "In Mac OS X, they are saved in the following directory: [user]/​Library/​Application Support/​Blizzard/​StarCraft II/​Accounts/​.../​Bank/​",
+      "Before the 1.1.0 patch in September of 2010, the Mac OS X SC2BANK save location was located in the following directory:[user]/​Documents/​Blizzard/​StarCraft II/​Accounts/​.../​Banks/​"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Cache file saved by StarCraft II: Wings of Liberty, a real-time strategy game; contains XML-formatted information that stores a user's progress in the game, such as in campaign missions; used for storing the location of units, the structures that are built, and other map save information."
     ]
   },
   "images": [
@@ -46,8 +59,11 @@
     {
       "url": "https://fileinfo.com/extension/sc2bank",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.291Z"
+      "retrieved_at": "2025-11-01T22:32:42.755Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.291Z"
+  "last_updated": "2025-11-01T22:32:42.755Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

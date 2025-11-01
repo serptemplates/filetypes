@@ -4,8 +4,25 @@
   "slug": "history",
   "extension": "history",
   "name": ".HISTORY File Extension",
+  "type_name": "Unix C Shell History",
   "summary": "Learn about .HISTORY files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A HISTORY file is a command history created by the Unix C Shell (csh) and its variants. It contains a list of commands the user has entered in the shell. HISTORY files always use the name .history."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Csh and its variants typically create or update a HISTORY file every time a user exits (not closes) the shell. The shell saves a set amount of commands from the user's most recent session, depending on the settings the user has specified in set history and set savehist. Users can also manually save their history at any time by entering history -S in the shell.",
+      "If set savehist has been set to merge the user's current history with previous histories, the shell will add the current history to an existing HISTORY file. (The file's total command list will not exceed the set history setting; old commands are removed if necessary.) If set savehist is not set to merge, the shell overwrites the previous HISTORY file.",
+      "To print the contents of your HISTORY file in csh, enter history. You can specify additional arguments that control how the history is printed, including:",
+      "-h: Print without leading numbers",
+      "-T: Print with timestamps",
+      "-h: Print from most recent to oldest",
+      "[#]: Print only # commands (for example, history 100 to print 100 commands)"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because HISTORY files are plain text files, you can open them and view their contents in any text editor. You can also use the history command to view your HISTORY file's contents in csh and its variants."

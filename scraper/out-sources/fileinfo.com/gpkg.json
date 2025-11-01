@@ -4,8 +4,20 @@
   "slug": "gpkg",
   "extension": "gpkg",
   "name": ".GPKG File Extension",
+  "type_name": "GeoPackage Database",
   "summary": "Learn about .GPKG files and view a list of programs that open them.",
   "developer": "Open Geospatial Consortium",
+  "more_information": {
+    "description": [
+      "A GPKG file is a GeoPackage database file. It contains data tables that specify geospatial data, which may be saved in both raster and vector formats. For example, a GPKG file might contain a set of raster maps of an area depicted at various scales, a set of vector overlays defining features on those maps, and various metadata."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In 2014, the Open Geospatial Consortium (OGC) created the GeoPackage, or GPKG, file format. This format was designed to support both raster and vector data while also being efficiently decodable, for use with lightweight mobile and web software.",
+      "Each GPKG file is a SQLite 3 database comprised of multiple data tables. Tiles tables contain raster maps saved in tile pyramids, used to zoom in on specific geographic areas at higher resolutions. These maps are typically .PNG or .JPEG files. Features tables contain vector data overlaid on those maps, to demarcate specific geographic features. Other types of tables that GPKG files contain include metadata, attributes, and extensions tables."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a GPKG file with a variety of geospatial programs that support the GeoPackage format. For example, you can open a GPKG file with NGA GeoPackage Viewer (Web), QGIS (multiplatform), GDAL (multiplatform), ESRI ArcGIS (Windows), GeoServer (multiplatform), and many more programs."

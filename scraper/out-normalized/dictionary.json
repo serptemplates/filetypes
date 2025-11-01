@@ -1,15 +1,20 @@
 {
   "slug": "dictionary",
   "extension": "dictionary",
-  "name": ".DICTIONARY",
+  "name": "Apple Dictionary",
   "summary": "Learn about .DICTIONARY files and view a list of programs that open them.",
   "developer": "Apple",
-  "programs": {
-    "windows": [
-      {
-        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
-        "url": "https://fileinfo.com/software/windows_file_viewer?ref=12864&b=1"
-      }
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Apple Dictionary is a tool for macOS users to look up definitions for words and phrases quickly. The app comes with multiple dictionaries, such as New Oxford American Dictionary and Wikipedia, that you can enable, disable, or order based on your preference.",
+      "The Dictionary app comes packaged with many dictionaries, each with a DICTIONARY file named after the dictionary. For example, the name of the Apple Dictionary DICTIONARY file is Apple Dictionary.dictionary.",
+      "While the Dictionary app comes bundled with many dictionaries, developers can build custom dictionaries with the Dictionary Development Kit. To create a DICTIONARY file, developers need to create a dictionary source file, prepare a style sheet, edit the property list file (.PLIST), and add any resources required by their dictionary.",
+      "Different Mac operating systems store DICTIONARY files in different locations. For example, macOS Monterrey stores DICTIONARY files in the following location:",
+      "/​System/​Library/​AssetsV2/​com_apple_MobileAsset_DictionaryServices_dictionaryOSX",
+      "However, earlier versions of macOS store DICTIONARY files in the /​System/​Library/​Dictionary location."
     ]
   },
   "how_to_open": {
@@ -17,6 +22,14 @@
       "You should not attempt to open DICTIONARY files manually. Instead, the Apple Dictionary app automatically loads the information in the DICTIONARY file.",
       "In macOS, you can right-click a DICTIONARY file and select Show Package Contents to view the package's directories and files with Apple Finder. For example, each DICTIONARY file contains a binary Body.data file in the Dictionary Contents/​Resources/​ directory that stores the list of words in the dictionary.",
       "NOTE: Modifying the contents in a DICTIONARY file may break the dictionary."
+    ]
+  },
+  "programs": {
+    "windows": [
+      {
+        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
+        "url": "https://fileinfo.com/software/windows_file_viewer?ref=12864&b=1"
+      }
     ]
   },
   "images": [
@@ -57,10 +70,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/dictionary",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.028Z"
+      "url": "https://fileinfo.com/extension/dictionary",
+      "retrieved_at": "2025-11-01T22:32:42.418Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.028Z"
+  "last_updated": "2025-11-01T22:32:42.418Z"
 }

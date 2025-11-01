@@ -1,9 +1,11 @@
 {
   "slug": "sifz",
   "extension": "sifz",
-  "name": "SIFZ File",
+  "name": "Synfig Studio Compressed Project",
   "summary": "Learn about .SIFZ files and view a list of programs that open them.",
   "developer": "Synfig Studio Development Team",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,39 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "SIFZ files are one of three file formats used by Synfig Studio but are also the most common format used. Since they compress their contents they are smaller in size than uncompressed SIF files that often become bloated. Synfig Studio also uses .SFG files for embedding images, audio, etc. into the project which is compressed with Zip compression."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A SIFZ file is a gzip compressed SIF file created by the open source 2d animations creation application Synfig Studio. It contains multiple graphical elements that make up for the animation. The overall animation contents are built using a combination of a canvas that is filled with shapes, brush or pencil strokes, and text. All these are arranged at their own positions, radius, tangent, angle, vertex, and width handles. SIFZ files can be opened with Synfig Studio.",
+      "A SIFZ file is a .SIF project compressed with gzip and created by Synfig Studio, an open source application used to create professional 2D animations. It contains an animation, which consists of a canvas filled with shapes, brush or pencil strokes, text, and position, radius, tangent, angle, vertex, and width handles."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +79,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/sifz/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     },
     {
       "url": "https://fileinfo.com/extension/sifz",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.933Z"
+  "last_updated": "2025-11-01T22:32:42.286Z",
+  "containers": []
 }

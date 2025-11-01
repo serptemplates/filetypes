@@ -1,9 +1,21 @@
 {
   "slug": "gpd",
   "extension": "gpd",
-  "name": ".GPD",
+  "name": "Generic Printer Description File",
   "summary": "Learn about .GPD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "All GPD file entries look like this:",
+      "* EntryName: EntryValue {GPD_FileEntry, GPD_FileEntry, ...}",
+      "EntryName follows the asterisk and is always a predefined keyword that Unidrv's GPD parser recognizes.",
+      "An example of a GPD file looks like this:",
+      "*Feature: Orientation { *Name: \"Orientation\" *DefaultOption: Portrait *Option: Portrait { *Name: \"Portrait\" *Command: CmdSelect { *Order: DOC_SETUP.7 *Cmd: \"<1B>&l0O\" } } }"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -48,10 +60,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/gpd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.092Z"
+      "url": "https://fileinfo.com/extension/gpd",
+      "retrieved_at": "2025-11-01T22:32:42.506Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.092Z"
+  "last_updated": "2025-11-01T22:32:42.506Z"
 }

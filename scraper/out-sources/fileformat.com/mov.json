@@ -1,6 +1,52 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/mov/index.html",
   "slug": "mov",
   "extension": "mov",
-  "name": "MOV File",
-  "source": "fileformat.com"
+  "name": "What is a MOV file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "MOV files consist of consecutive chunks. Every chunk has an 8 byte header: 4-byte chunk size (big-endian, high byte first) and 4-byte chunk type - one of pre-defined signatures: “ftyp”, “mdat”, “moov”, “pnot”, “udta”, “uuid”, “moof”, “free”, “skip”, “jP2 “, “wide”, “load”, “ctab”, “imap”, “matt”, “kmat”, “clip”, “crgn”, “sync”, “chap”, “tmcd”, “scpt”, “ssrc”, “PICT”. First chunk is of type “ftype” and has a sub-type at offset 8. MOV defined by sub-type which must be “qt “. To compose MOV file, iterating chunks is needed until unknown type is detected.\n\nHere is a sample example: Inspecting a sample MOV file’s binary data it is evident that it starts with a signature ftyp (hex: 66 74 79 70) at offset 4, which defines QuickTime Container File Type. File sub-type is qt~~ (hex: 71 74 20 20) which points to MOV file type. The first block size is 32 (hex: 00 00 00 20, big-endian, high byte first), size located at offset 0. At offset 32 (hex: 20) is located the second chunk, which has a size of 8 and type mdat (hex: 6D 64 61 74).\n\nThe next chunk is located at offset 32+8#40 (hex: 28) and has a size 3,263,028 (hex: 00 31 CA 34) and type mdat (hex: 6D 64 61 74) at offset 44 (hex: 2C). The next chunk is located at offset 40 + 3,263,028#3,263,068 (hex: 00 31 CA 5C) and has a size 21,189 (hex: 00 00 52 C5) and type moov (hex: 6D 6F 6F 76) at offset 1,836,019,574 (hex: 00 31 CA 60). This is the last chunk, so total file size is 3,263,068+21,189#3,284,257 bytes."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A MOV file is a video file type, developed by Apple Inc., that contains one or more tracks. Each track stores a movie, audio, movie clips, and subtitles. It is a multimedia container that can store different type of media elements. MOV video format is compatible with both Windows and Macintosh systems. It uses MPEG-4 coded for compression and tracks are maintained in objects called atoms which are placed in a hierarchical data structure."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "React Native API to convert MOV to MP4Python API to repair MOV FilesRuby API to convert MOV to GIF"
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "There are plenty of media players and software video editors available to convert MOV files other popular video file formats. Some of the media players that can convert MOV files to other formats include:\n\nVideoLAN VLC media playerEltima Elmedia Player\n\nSeveral media players and video editors, including VideoLAN VLC media player and Eltima Elmedia Player, can convert MOV files to other formats. These software can convert MOV files to following video formats.\n\nMPEG-4 Video - MP4WebM Video - WEBMVideo Transport Stream - TSAdvanced Systems Format - ASFOgg Vorbis Audio - OGGMP3 Audio - MP3Free Lossless Audio Codec - FLACWAVE Audio - WAV"
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

@@ -4,8 +4,26 @@
   "slug": "lm",
   "extension": "lm",
   "name": ".LM File Extension",
+  "type_name": "Language Model File",
   "summary": "Learn about .LM files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An LM file is a language model file used by Microsoft Windows and Microsoft applications. It contains statistical data used to show predictive text in Windows and Microsoft applications. LM files may also be saved with the .lm1 and .lm2 extensions."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Certain Microsoft applications, such as Microsoft Word, Microsoft Edge, and Microsoft Notepad, can be configured to show predictive text to users as they type within those apps. In order to show predictive text to users, these applications reference LM files that contain language model data. LM files can be found in the following directories:",
+      "C:/​Windows/​Globalization/​ELS/​SpellDictionaries/​Fluency/​en-US",
+      "C:/​Windows/​InputMethod/​CHS",
+      "Language model data is used to determine what the next word (or emoji) in a sequence is likely to be, given the words the sequence already contains. For example, a good language model would predict that the next word in the sentence \"Microsoft develops the Windows operating\" will be \"system.\" By default, Windows includes four LM files, the first three of which are used to show predictive text and emoji suggestions when a user types in U.S. English:",
+      "en_US.lm",
+      "en_US_word_c.lm1",
+      "emoji_bg_c.lm2",
+      "ChsPinyin.lm"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "LM files are Windows system files and are not meant to be opened. If you want to enable predictive text within Windows, open the Start Menu and select Settings → Devices → Typing. Then, toggle the settings that start with Show text suggestions ... and Show text predictions ... to On."

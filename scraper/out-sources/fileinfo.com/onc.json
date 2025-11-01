@@ -4,8 +4,21 @@
   "slug": "onc",
   "extension": "onc",
   "name": ".ONC File Extension",
+  "type_name": "Open Network Configuration",
   "summary": "Learn about .ONC files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "An ONC file is a configuration file used to connect a Chrome OS device, such as a Chromebook, to a network. It contains settings that define the network's type, configuration, and connection credentials. Chrome OS users can use Google Chrome to import an ONC file and connect to the network it describes."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Google developed the Open Network Configuration, or ONC, file format as a way for network administrators to provide network connection credentials to users. Theoretically, users using multiple types of operating systems and devices can load the settings an ONC file contains to connect to one or more networks. However, as of 2022, only Chrome OS devices use ONC files to connect to a network.",
+      "Each ONC file contains a list of one or more network specifications. These specifications include the network's name, type, connection credentials, and other settings. For example, an ONC file that contains information about a Wi-Fi network would specify that network's name, the type of security the network uses, and the password used to join the network.",
+      "Typically, ONC files are saved in a plain text JSON format. However, ONC files can also be encrypted and password-protected, so users cannot use them if they do not know the file's password."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "To use an ONC file to connect to a network:",

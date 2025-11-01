@@ -1,9 +1,26 @@
 {
   "slug": "wxs",
   "extension": "wxs",
-  "name": ".WXS",
+  "name": "WiX Source File",
   "summary": "Learn about .WXS files and view a list of programs that open them.",
   "developer": "Outercurve Foundation",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "WXS files must be written in WiX schema or else they will not compile. The <Wix> element is a top-level container in the WXS file, it can include the following children:",
+      "PatchCreation - Compiles into a .PCP file.",
+      "One of the following elements:",
+      "Bundle - Creates bundle packages.",
+      "Module - Compiles into a .MSM file.",
+      "Patch - Compiles into a .MSP file.",
+      "Product - Compiles into a .MSI file.",
+      "Fragment - Helps build an installer database in WiX.",
+      "There can only be one <PatchCreation>, <Product>, <Module>, or <Patch> section element for each WXS file or else the linking process will be broken. There can be an unlimited amount of Fragments.",
+      "NOTE: WiX Source files are preprocessed and compiled into .WIXOBJ files by the Candle tool in the WiX Toolset."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,10 +57,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/wxs",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.382Z"
+      "url": "https://fileinfo.com/extension/wxs",
+      "retrieved_at": "2025-11-01T22:32:42.880Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.382Z"
+  "last_updated": "2025-11-01T22:32:42.880Z"
 }

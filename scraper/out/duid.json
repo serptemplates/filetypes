@@ -1,7 +1,7 @@
 {
   "slug": "duid",
   "extension": "duid",
-  "name": ".DUID",
+  "name": "DHCPv6 Unique Identifier",
   "summary": "Learn about .DUID files and view a list of programs that open them.",
   "developer": "Internet Engineering Task Force",
   "programs": {
@@ -30,6 +30,17 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In version 6 of DHCP, both clients and servers are assigned DHCP Unique Identifiers (DUIDs). Devices use these IDs to identify themselves when connecting over a network that uses the DHCPv6 protocol. Servers can also use a client's DUID to pass options to only that client or prohibit that client from receiving any parameters.",
+      "NOTE: A device's DUID is sometimes saved in a file whose name ends in duid and does not include a file extension."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A DUID file contains a Universally Unique Identifier (UUID) used by a DHCPv6 network. Clients and servers use DUID files to identify themselves to each other."
     ]
   },
   "how_to_open": {
@@ -67,8 +78,11 @@
     {
       "url": "https://fileinfo.com/extension/duid",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.039Z"
+      "retrieved_at": "2025-11-01T22:32:42.433Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.039Z"
+  "last_updated": "2025-11-01T22:32:42.433Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -4,8 +4,21 @@
   "slug": "html.mem",
   "extension": "html.mem",
   "name": ".HTML.MEM File Extension",
+  "type_name": "Hypertext Markup Language Memory File",
   "summary": "Learn about .HTML.MEM files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An HTML.MEM file is a Hypertext Markup Language Memory file used by a JavaScript web application. It contains data the application needs to run correctly. Developers must upload an app's HTML.MEM file to a web server as part of deploying that app for online use."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When creating HTML5 JavaScript apps, developers may create an output package that includes a .JS file, an .HTML file, and an .HTML.MEM file. The HTML and JS files contain the HTML text and JavaScript code needed to run the app. The HTML.MEM file contains other essential data the app needs to run, saved in a binary format.",
+      "HTML5 JavaScipt output packages created using WebGL (Web Graphics Library) and LiveCode contain HTML.MEM files. When uploading these packages to a web server, administrators typically must add a MIME type mapping for the package's HTML.MEM file. The mapping should read:",
+      "mimeMap file_extension=\".mem\" mimeType=\"application/octet-stream\""
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "HTML.MEM files are not meant to be opened."

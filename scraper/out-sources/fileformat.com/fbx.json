@@ -1,6 +1,43 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/3d/fbx/index.html",
   "slug": "fbx",
   "extension": "fbx",
-  "name": "FBX File",
-  "source": "fileformat.com"
+  "name": "What is an FBX file?",
+  "summary": "What's on this Page",
+  "category": "3d",
+  "category_slug": "3d",
+  "technical_info": {
+    "content": [
+      "The text-based file structure is a tree-structured documented with clearly named identifiers. It consists of a nested list of nodes arranged in hierarchy where each node has:\n\nA NodeType identifier (class name)A tuple of properties associated with it, the tuple elements are the usual primitive data types: ##float, integer, string## etc.A list which contains nodes in the same format (recursively).\n\nThese can be represented logically as follow:\n\nNodeType: SomeProperty0a, SomeProperty0b, ... , { NestedNodeType1 : SomeProperty1a, ... NestedNodeType2 : SomeProperty2a, ... , { ... Sub-scope } ... }\n\nSome of the standard nodes are defined as implicit list where each item consists of a nested list. Any application, that intends to access FBX geometry, has to parse these contents and make useful meaning of it. An example of text-based FBX file is as given below:\n\n; FBX ... ; Copyright (C) 1997-2008 ... ; All rights reserved. ; ---------------------------------------------------- FBXHeaderExtension: { FBXHeaderVersion: 1003 FBXVersion: 6000 CurrentCameraResolution: { CameraName: \"Model::Producer Perspective\" CameraResolutionMode: \"Window Size\" CameraResolutionW: 1 CameraResolutionH: 1 } CreationTimeStamp: { ... } } ;Object definitions ;------------------------------------------------------------------ Definitions: { Count: 2 ObjectType: \"Model\" { Count: 2 } } ...",
+      "As stated earlier, FBX file format specifications are not available publicly for FBX. Since, Blender Foundation implements the FBX file format without using the company provided SDK, some of the details about binary file format are available as part of it implementation.\n\nThe binary files structure follows the following order:\n\nHeaderObject RecordFooter"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "FBX, FilmBox, is a popular 3D file format that was originally developed by Kaydara for MotionBuilder. It was acquired by Autodesk Inc in 2006 and is now one of the main 3D exchange formats as used by many 3D tools. FBX is available in both binary and ASCII file format. The format was established to provided interoperability between digital content creation applications. There are many tools available for conversion from/to FBX file format."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

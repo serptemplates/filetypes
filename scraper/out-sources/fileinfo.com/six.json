@@ -4,8 +4,20 @@
   "slug": "six",
   "extension": "six",
   "name": ".SIX File Extension",
+  "type_name": "Sixel Image",
   "summary": "Learn about .SIX files and view a list of programs that open them.",
   "developer": "Digital Equipment Corporation",
+  "more_information": {
+    "description": [
+      "A SIX file is a raster image saved in the Sixel image format. It contains an image that was meant to be printed by a Digital Equipment Corporation (DEC) dot matrix printer or computer terminal. SIX files are comprised of \"sixels,\" which are sets of six pixel columns."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "DEC created the Sixel format for use on terminals and printers released in the 1980s. For example, the VT200 and VT300 series terminals can display images saved in the Sixel format.",
+      "Each Sixel image, or SIX file, is comprised of binary data encoded into strings of six-bit numbers. Each number is then converted into an ASCII character. Programs that can read the Sixel format convert these ASCII character strings into raster images."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a SIX file with ImageMagick (multiplatform) or SixelViewer (Windows). You can also view the text a SIX file contains in any text editor."

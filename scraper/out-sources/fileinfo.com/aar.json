@@ -7,6 +7,17 @@
   "type_name": "Android Archive",
   "summary": "Learn about .AAR files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "An AAR file contains a software library used for developing Android apps. It is structurally similar to an .APK file (Android Package), but it allows a developer to store a reusable component that can be used across multiple different apps. Examples of reusable Android components include Activities, Services, and user interface layouts."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Android app libraries are commonly available through remote repositories and can be compiled into Android apps using Gradle, the Android Studio tool used for creating Android packages (APK files). AAR files are an alternative to this build process and can be compiled manually into an app by importing them into app modules within Android Studio. Third-party developers often provide a remote Gradle dependency for automatic integration as well as and an AAR file in case developers would like to manually integrate the library.",
+      "NOTE: AAR files are stored in the .ZIP format and can be decompressed with any zip utility. They can store everything that a standard APK file contains, including resources, source code, and a manifest file."
+    ]
+  },
   "programs": {
     "windows": [
       {

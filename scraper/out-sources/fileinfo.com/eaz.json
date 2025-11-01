@@ -4,8 +4,22 @@
   "slug": "eaz",
   "extension": "eaz",
   "name": ".EAZ File Extension",
+  "type_name": "ArcGIS Explorer Add-in File",
   "summary": "Learn about .EAZ files and view a list of programs that open them.",
   "developer": "ESRI",
+  "more_information": {
+    "description": [
+      "Add-in file used by ArcGIS Explorer, a free ESRI application used for exploring, visualizing, and sharing maps; stores a compressed file archive, which includes an XML file, compiled code, and supporting files for the add-in; used for extending the base functionality of the software by storing new buttons, dockable windows, and other extensions."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "EAZ files can be created using the ArcGIS Explorer SDK. They are compressed using Zip compression. The file Addins.xml is located in the archive's root directory and describes the customizations included in the file.",
+      "ArcGIS Explorer add-ins are located in the following directories:",
+      "Windows XP: \\​[user]\\​Application Data\\​ESRI\\​ArcGIS Explorer\\​AddIns\\​",
+      "Windows Vista and 7: \\​[user]\\​AppData\\​Roaming\\​ESRI\\​ArcGIS Explorer\\​AddIns\\​"
+    ]
+  },
   "programs": {
     "windows": [
       {

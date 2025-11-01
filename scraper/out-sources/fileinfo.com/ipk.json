@@ -7,6 +7,25 @@
   "type_name": "Itsy Package",
   "summary": "Learn about .IPK files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An IPK file is a compressed archive primarily used for installing software on handheld devices running Linux-based operating systems, such as WebOS and select embedded systems. It is based on the Debian package (.DEB) format and contains the required files and installation instructions for setting up an application or system update on a compatible device."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "IPK archives typically include:",
+      "Program binaries the application requires to run.",
+      "Configuration files (.CONF or .INI files) that store settings for the application or system.",
+      "Library files (.SO files) required by the application to run.",
+      "Documentation files (.README, .HTML, or .TXT files) that provide instructions for users or developers.",
+      "Images or icons (.PNG and .JPG files) for graphics displayed in applications, such as splash screens or icons.",
+      "Install scripts that automate the installation process.",
+      "Other metadata, such as translations if the software supports multiple languages.",
+      "While the archives are typically used for distributing software and updates to handheld devices, select routers, IoT devices, set-top boxes (e.g., media players and Smart TVs), and development boards (e.g., Raspberry Pi and BeagleBone) may also use them. Non-Linux systems rarely use IPK archives.",
+      "NOTE: The \"Itsy Package\" name originates from the Itsy Package Management System, designed for lightweight and embedded Linux systems."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open IPK files with the dpkg package management tool for the Debian operating system (a Linux distribution). You can also open IPK files with the 7-Zip compression utility in Windows."

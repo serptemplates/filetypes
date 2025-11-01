@@ -4,8 +4,21 @@
   "slug": "ogz",
   "extension": "ogz",
   "name": ".OGZ File Extension",
+  "type_name": "Cube 2 Map File",
   "summary": "Learn about .OGZ files and view a list of programs that open them.",
   "developer": "Wouter van Oortmerssen",
+  "more_information": {
+    "description": [
+      "An OGZ file is a map file used by games developed using the Cube 2 game engine. It contains a game map's geometry, spawn points, teleporters, item locations, and other settings. OGZ files can be used to store single-player or multiplayer maps."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "OGZ files are stored in a compressed Gzip (GNU Zip) format. By convention, they are named map.ogz and stored in a unique map folder within the /​packages/​base directory of a Cube 2 game installation. They are saved with the files map.cfg, map.js, and optionally, entities.json.",
+      "OGZ files are similar to .MPZ and .BGZ files, which are used by different games based on the Cube 2 engine.",
+      "You can use OGZ-Editor, a free, web-based tool, to write your own OGZ files. To learn more, visit OGZ-Editor's website."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an OGZ file in Cube 2: Sauerbraten (cross-platform) using the /map command."

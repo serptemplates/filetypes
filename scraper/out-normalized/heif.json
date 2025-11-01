@@ -1,9 +1,49 @@
 {
   "slug": "heif",
   "extension": "heif",
-  "name": "HEIF File",
+  "name": "High Efficiency Image Format",
   "summary": "Learn about .HEIF files and view a list of programs that open them.",
   "developer": "Moving Picture Experts Group",
+  "category": "image",
+  "category_slug": "image",
+  "mime": [
+    "image/heif"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "HEIF stands for High Efficiency Image Format. It is based on the High Efficiency Video Compression (HEVC), which is also known as H.265. The format was developed by the Moving Picture Experts Group (MPEG) and became popular in 2017 when Apple announced that they were replacing JPEG files with HEIF files in iOS 11. Compared to JPEG images, HEIF images require considerably less storage space without sacrificing image quality. If an iPhone user shares an image with a non-iPhone user or to a social site, the HEIF image is converted to a JPEG image.",
+      "If you do not want iOS to save images in the HEIF format, open your \"Settings\" app, and select Camera → Formats → Most Compatible. Selecting Most Compatible means that iOS will now save images in the JPEG format.",
+      "NOTE: HEIF files are more commonly seen as .HEIC files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open HEIF files in Apple Preview and Apple Photos (macOS High Sierra and later) and iOS Photos (iOS 11 and later). On Windows, HEIF files can be opened by Windows 10 devices with the HEIF Image and HEVC Video Extensions installed from the Microsoft Store. You can also install CopyTrans HEIC for Windows, which allows Windows programs, such as Windows Explorer and Windows Photo Viewer, to open HEIF files. HEIF files can also be opened in Windows using Zoner Photo Studio X."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -76,43 +116,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open HEIF files in Apple Preview and Apple Photos (macOS High Sierra and later) and iOS Photos (iOS 11 and later). On Windows, HEIF files can be opened by Windows 10 devices with the HEIF Image and HEVC Video Extensions installed from the Microsoft Store. You can also install CopyTrans HEIC for Windows, which allows Windows programs, such as Windows Explorer and Windows Photo Viewer, to open HEIF files. HEIF files can also be opened in Windows using Zoner Photo Studio X."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFwUlEQVR42sWX+4tUZRjHv+cyZy5n57Y77uZe3K3W0CwqJPoDCiMJfwghDNTogpVlIayFVljIUrsgFGRZWWlkYWBYUVLQDwWVCRGWeWXX3XVvzn3OnOucS885J8cdndGlxH1h97zznvd9ns/7fp/3eWYYzHFj5hygr6/PmQvHg4ODTBVgYGDgmjrftGnTpQCfHpJhWA7mNbE4PS7hyHAWimYgPTnuLSroqveMsAEIAR4FuYi8piLEB7xxKZu7xJHD896TCwZh6TqiwQCO7llXH2D3z2XwjgmT4aGT4ePDGeSlCiqqhEA4WmPYHZvOFTBZzHqfbcuAWTG8fgAcHMcCBAF8KFJdY1dMhAno8I6H6gNs3HUMcoVBKiZAVXXPuW7bMGQZrckwks0Jz5AYCkDWKl6/OxXAvGQTvj80jD/PnPnXEw/NNKqOdYILcoL/gcYbAmzZO1Q1PjxVQrlQxPz2Niy9qQWm6WA8U/bepxIhtDdHkWjikKANpiVgNKujWJRpXRnTeRowdJRVhTYhQYyKCLACRtLTCLLA4TdX1gd494c0etsTpLuFY2cytAsZd/R2ozPF4OSkidNjOWTyZeRlHUkxiNsWd6GrOYiMZNC4jEJZ9zaZkRRYjgBN02FQDMUSUZydTOOcVPLe/9R/T32Ar//Q0NPKoTnKQVIsVEhGkyQ4m3GQVUxYpOFUVsKp0Twk2tmCBSncuagTbXHBg54o6HTCOhRSpySpmMjJNO5K5d5yBjoFocxwOPjC0sYn0JkScWNbAOEgGVEo8ulvIm+gQLvyJCQpTkzIKBUkJOIiFnZEsbg7SUEHjOV0ejrIFFSCd5DOF6BYQShSmWQ16FQcxMjwnmdvqQ/Qv38MIdJ4UWeMNOZIQxsl1cHfY2VMZPJwKLg6WqMkrw7NsFHUbLTFeNze24IizdNN25eg4F9XF0LVDZxNKxBCQZKDTqhSaQzgBmFBriAhBtCRakJcFCDrFRwdpR0ovtGYyKE9lfT6p6cVmJpCsCJddBaxSBA8z5JTC6qioWwwsGwLeQrOMsEp5DwYCePAhpvrA6x/74RnWFFVchJDC4W4RhpOl0ykc0VwHNAcj3u7JslRVhSUZAtGxcbHz936n2tKFWDNG3+hpy2KkMB6L9zr5kowlpa9XZiWRRKF6PqF/YwYjmO6WCJgBns3dP1/gI27T9DRC3SdDAi027YkD0ljMXIuRwGpUCxbYOk/y5TxwfoVV62KVgFW9d+FUECofWnpYFjT61umn/1MRscnm08xj29bWFNFb+heApYX8PyqfTVwT300WjPvrbVd9WPgvr44IkyTN4kN87BVs7rIcutD6YLdg++MeAAjQ/6cZCKGzrYOiCkOrz76VQ3A2h0nqwBiJNQY4O6nk4gLbb5D1s9qDOdfrYrkx4VNd5lxOHy7c4hZ9sj1DivYqGhUQVsT6LhuPkRKShcDrNs17Fg25/UDwQh2rG6pD3DvhgTCFFicY85cD8eMwg6oNWMHBkaZF99f5ih03dzGUZULCjx4CuCtaw7WAKzc8qATjMRgcQnE4l3Y+cQzjU8gKsZ80tBMEyxYlsW+rUM1hl/bdz/tjE6AkpLD2FTv/fFtj31XM++BvnZHo8pqUioXY63Yv/144xhoiiTA8AYlFIHcBv1jB2UwKqOfvzxVY9g9gYsj2m4dJ5AI1X5/qq37Rz90JAe5aHgl/bPB3+sDLN/chES0xY/0GfX8fLsYoF7b/OUSR8vFUJHd+CH5KGEFKFFuf/iXhmsvXMOBTgJopkXshZcUhAznr3173ZFZAQR4EQ7r5gt/ugvxyvLfrgxwpcYwzKwA3KfFmeAsvjrev+Ios/zJnqpk2UkVv34x5Ukx66/l5zW7XHPcetwAfiaApJbw44dZH2A2zmfbGm3GhXcBWnoowVkMDFPCvpcmrz7A5drq13sdTS97/TJ9q/6mv3xtAerJc00BGskz9z9O5xrgH3wuQ4JJ8hgZAAAAAElFTkSuQmCC",
-      "alt": "Pixillion Image Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "GIMP"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Krita"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHYElEQVR42r2Xa3QU5RnH/3OfvSTZDUmEgJCklihYA0iK9pCjVTkqtUAPEY6KtCAfqC1wTumHXigIrTVKUgiSnnpCWrxUjx4VCJAGAyQYoQZDwgZDbuZKue6ym3U3e5ndmek7s7ekJMBpTZ8vMzvzzjy/97n8n1lKlsMqxsEuXbyMO6feSd1qHaUBlO/9GG63NOYihucgSyH9ONxY0PqRpikoiho/X/X84+jo6MDcuXNvD+CBx9bjX47Bmy9k2Pg5zSRAeCYCwTERX8kii6qPitDe2oKCgvm3BvB4POoThZvQe9U16gLNmSKHxnRMsTwElo5RYoKZxcF3fotzX7bePsDy1dvRRwCCYQVqWIIkK3Enw8/DiAAocpDACCNexLHRCJgMqHn3V2hrb8fZcz1Y9+JK6pYAhau246LLB45O3FBpDrOnW/C1V0Jbz3V4/ZLuJDSsZiekGLFsYT6syQZkZFjQ2tGPj4/Y4gDNtjYs+sECWCwpsFito4JQgy6X+uxPd2PA7tYBNMeaLX14GiZnpkLgKDi9IfQPOFHbfBVyOIxwOITMialY+aP7kZZkgmgwIinZqD9X/9k5LF/6EJpazqG+5jRm3PNdZOdOway8TP3Z/r5e5M2eQ40A+MmGN+Dw+vULAsPoR4uZwsQ0Iyan8TCbRPiDCmx9QTicXuTfk4aJqSI4QYQl2YwksxkMHQlfKBTEg/Py8M8GG86cakLOt+bgg9oe3J2djtXPzEHmpCR9Xf/AAPLy8ijKYXeoqze+SVLgQTTBWrXppyLPQKTVOEwkxzwmpYmgaAE+v5/sSgJDCpFFgECIMJN0LFm0EEdqP8df3qzD9x8swPz8u9DefQ2SJCH/vmkQk2jk3pUOu90BHWD9tnfRfSUAgVbADC+EYcZwLAxMJP+xorcIYYiUN3KfFTAU4hCEAX/6zdP49PMWvF95GtYps/T7KTSPYCgA31AQZiOHzb8owP7KKlBXLl9WX9z2EfqvesCS8PPRtwtiAoSLpmUkEAceComQnwiUKbHWYMDWtY+hpa0T1fUtmPbtfARCAlyuADy+AIY8fqxdkousqUaU7d4dAdhfVY+vfRKMpiRccQZwvtuuv8xqVuHyUpCI4nEEjCFdkMJKcId5sk8ZMtEFLSoCz8aFyEDU8mcrHkJHZyfOt5Pcz3sYHgJgd/hI/fhgIPt6bsEkHDpcBef166AuDFxQd1ZUIeDzwiAISLcmxCYk0+i9rsItqdBGRgzAGeAQ0qBIBAwCA5PRACNNrnAMBIrG2mfmo/rkYRw9fQJb121BakYO+q95cdHuRzbpxnQSsJKSEuws3UnpAL//66dwur1xweFYFprQMSxHio3CUFAZU0hMAk2eSfy2GFisWToPh+sq8cv3ipCdNQWrHlmKFQtWkuKxIOx2oPZELXq6uvHStq0U1dfbq/698jOowQBEYzL6XGH9JbIswWqkyA5poo48+rwKuUaBiRYiw/GQQxJSzKTy6QBZo8Kn0AgpFF5YfD+JQBX+8OGrmJSToa8PKyKKl2/C9Mkz47vXdUADqDhwBt4hH2iyc5VikcTLkIJhknuGPMjpTjWHNBXJs0BSwcTkPxyEiVfjAEMKjzULZ+CTk//AS++9gqx7J4MjHXRHkhWvLduFxqYmfNnSgpf/+HIEoKuzS62u+wIOHwUTI2MqUbgA2ZnH60NQYmBJMcA9FEAKEaNAKLJ7S7IYSVe0YyQyQ6xkBmhDyx8KY/bMHB3glQPFegSSSZSWzX0aj39nEan8MmwvKU4ooQaw70hDovDIXOfohGxrO9edRa9JSmIWaLsW+ES7+oNBUqwcFj11L2pPHkXR/hLcPSsTqWYLtiwuQWfrV2g4dQpFr72aAGjtalU//FspnIMusJSqpyBmWv55wUyq3EzSk6g0llIQVsl0JLIrE+FUVQUUFdMPAY8+uQL1zXUoO16KO6alY/F9S/BUXiEq9lQQ50UjhpIOsHnjz+F02aPyS8GSxCPZSIrLwEd6nIhObNzGTNY8axEiIsVF24CmOL1zHi38tQ6wo3oHsqZPQXHhDly6YEfd8eMjwq8D2Gw2tby8mETASSYfCyMREjYqKrGIaJHQW07kIAq8LjYce6M6ytHoPfDI86i31espWPPDZ/FcwQvYu3dvvPBuAMA42LGGT7Cr+s8oW7uLzBgjDh08GG+9/wvAiTNHcehUDX734004VlOji85o6yhbc9P4ROCLY7jcfw3fy5+P4wTg9bLdowM0NjbeAMARlQnJyq293MTOt51HX08fgqQ1UydkYOPGDbcP8E1Y11fdONt8FoNOB94oLx/zw3RcAfbv24eZM2Zg85bNYwO89fZbqv2aCyHJT/7VRNpNUZT4ecy0a5oFyGcYTXrfZE4Z9YU80QuJKOSQ143GhgZUVh2++Wf5f7O7kpJS1X71EtEImnyOTxw9Ap1tEEVx1Nb7nwH+0/bsqVBzc3Pjv7XCO0DCP1blf+MAMdPSmZ2Vg7Nk5LoGB2+a+3EBiNnrpbvUdRvW39a7/w2SKRW3ybEODwAAAABJRU5ErkJggg==",
-      "alt": "PhotoPad Image Editor"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE3ElEQVR42r2XC1BUVRjH/3cvu8tjYVlgF1ZY5A0zq8EMpqMYk0xPbXpMFjq9NCnGyamMmcIZJ7VpEqeHFQTVRIlT9ppmciJ0TCsMrDQRNXwkPhDReLnykhXZvf0Piw3gsoCz+M385/vO7v3O97vnnHvOvZKiKBhqkiThdNz0aQzrYk8dVhgXMv6A8TF42URtaRSAaIaZLPo54wzG71K3sW2/KQDCWLiE7ksW3c34J8aieDbblycV4Ez8LbEscppFjWz+Rb1O/ULtE1xUDv+vmUyAcLplcA27WAvi7o9QW6lVVABVTm2mqgjT0vpUQoCxrL7Ha1PAu5/OsJj6jtpPiemwUr0ij/IfmiMHOlsi8m0mhk3U39Qu6mvN4vNnbwhAGCFC6DZQT4uBEXWoSMpnZEcqndJmXnUxbGT/1DfUaoLUTxjgmhEkiu4d6iF3xYWpo/rrTMs7rKPc6BUqn3qPIMOKjQnA4qLxNrXS01BqpvYfND7bkQrPtonKIYRjIgAFdK+M0fF4AYSVEiBnXAAsvpDu23F0OhEAYcsJ8aFHABY3MDxOGd31oE6MhxwWir6jx+G81DFRgG4qhRBNngDegOuZH2YqnQ7GojehjWMfnScBw0xc+mgn7JWbXQBaA+TU1XDszRsL4mMC5I62EWnpLlCGkVlhBevgF/MHKrdtwVe14Xj0kYeRlWGFrXBrfVD69gRxjTy7CM4Tn0Fp2+8JoI+KUC9qsrkDuB+uXe86i95XAceOWcgqUCMoIgUr8/JgaliPhCnPtao7n3dNl68RPnNL4diTC+XyBU8QywjwqTuAjXQvusuYemAb+itm4rESNWoaJGi4K+x4LRKhUa/afM4v/X/EJH0y5JlvwXFgraeR+IIAj7sDENtolrsMU8lGaHw3w1a/E9sPq5BmUWC9bx3sLTF29bknfYddzJGQ03mOXe2G82gxlK6TI7s7RIBUdwDixSPZHYAcbkREWTFk5252WA8pPBMqywJcrv7ZqW58QuUuRwpNgyrpGUh+Jiitf0KxHYHS0wg47B0+838Nvg7g3vyi8jZdUNRo46aRZen2FEtgvCkkkmtYE2sMRpJerZibChuU9prflPbaU24T1YGyKvoBi2SYZuToBEmyVpHM8zKvA1CVVVfSZWIcpvORcWbhDKgkOAxatc94coaa28eQAFvoFo+ng5LZ8chNisC/vX19Zn+t1lsA4uRaP1byihQz3p8Vh66rDpztudI5zRCg9xbArXR7R0vSyiqsSbUgn6f0qS479HwWm3v7uqyGgCBvAYjT6B8qYejvviycHROGl1k4PtAXxccuwMncl6yR+L21s3WOSW/yCoA4C6RNVcsZFotFNs+sx4xQHZL1fujmcFe1dKK80Yb00AD8eIcVe9hmSvPccH2ENwHEgjqIUfaDRbFhKM1IxA+NF9HrcMLspzl3d6TB4jWAAb+pSnyQiEdSvvZfUpAf1qRZkBaiw9ras3Awt3ROIhbsqquonp+6wKsAgxADU2HgQsviVET6azgFXahp78adU4KxIT0GS6pO4JCtp0xZMneJ1wEGIV6A6xthwAK4LrI5Bf5clJ+caIadU0CbPIBBiLvg+hAJ92PhXlfRoTa5AIMQYqMRb0kr4Po6urkAQ0B0dA9S91DiPVAcXN8TYOmNAPwHP45V35oA+2MAAAAASUVORK5CYII=",
-      "alt": "Movavi Photo Editor"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1UlEQVR42sWXb0hTURjGn7PtrumalFZrzmofEhcVBUlKTQjxQwiJUYSBkf1RIoKI1KKoOUOCHERfksxRMf0ghOYHs9KibITL/kBhYVCSgS0rTDOdOXc6d6O16dTNdnefL/eeey/n+Z1z3vue9xCILOLfoJQSlJsPguIAa65m7fkRMSFkmF26mJsFZ4trWJtOAaAVFzUYd9Uy00xBR0zIA3CyfHL62GcfgGfkJnOb0OYBEMbiLH4mvACmykLqptXRMPdBSEgRMZZc9QKUVXaw0adFFYAQOykrSf8L8DNSAcd6BjINgDIWaGsHRkanAxhmACoPgNt4gfq/nKBuWN+8xrMvfJzQ2U39tC7DgKKKcs/9XWsdGqtroItbgOMb0iGTSAK+lZhKSVCAqlfPcemFHSnxCYhXxIQFkKjTwXTdAk4uR5XRhEctd/Cy34GKzZnYkawPDeBcRzvsjj7c3LYTCqks/GWIUwHz5MDX73BOuJDTVI8tSStwaqMhNIDznTZ0MgDr1lwoOXn4AH4acY0jv6URqerECAKolEBKMptvNeAcA/ocwNt3LHjcUQBYuwrIzgKJUQQ8po5+oKEZ6P8mIMByLVCwm08iQaeb/hhiEXwNGPstEMDhfSBLFs245tRm9/7/EQeIjQEpPYLZRD/1AZY6AQC0S0EK98wOMPwLMF8WAEDOASePTrv+PoCeXuBGvUAxUJAHols2M8C9h8CTToEAEhYCh/aCcFxwcz4f1NSyDqlAALxYLCA3G2RxQqB5VzfQ3Dpl9xMmE0rZrqbVABq195/nRz4pAQkLEIbmBvDUhrbeHtzK2QWFbA67oZ+cLhfybjcgXZOEM2kZoQE0ve/Gicf3oWf1gELGhWE3VQPOUXwcGkRp6ibsX7M+OMDkksxNKa6wouTD4ACrYqT/BcArVa3B9pV6SMi/HBJQkolflIpelot9MPFAiHk080GIeTgVS38AS1zxMLZJxqsAAAAASUVORK5CYII=",
-      "alt": "Movavi Picverse"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -121,29 +128,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.804Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.158Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.804Z"
+      "url": "https://docs.fileformat.com/image/heif/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.158Z"
     },
     {
-      "url": "https://fileinfo.com/extension/heif",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.804Z"
+      "url": "https://fileinfo.com/extension/heif",
+      "retrieved_at": "2025-11-01T22:32:42.158Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.804Z"
+      "retrieved_at": "2025-11-01T22:32:42.158Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.804Z"
+  "last_updated": "2025-11-01T22:32:42.158Z"
 }

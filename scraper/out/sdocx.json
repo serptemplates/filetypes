@@ -1,9 +1,11 @@
 {
   "slug": "sdocx",
   "extension": "sdocx",
-  "name": "SDOCX File",
+  "name": "Samsung Notes Note",
   "summary": "Learn about .SDOCX files and view a list of programs that open them.",
   "developer": "Samsung",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -20,8 +22,23 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Samsung Notes is a note-taking app installed on some Samsung smartphones, such as the Galaxy A7 and A10, and other devices. In 2020, Samsung Notes began saving users' notes as SDOCX files. The SDOCX format replaced the .SDOC format, which Samsung Notes previously used to save users' notes.",
+      "Contrary to what you might expect, SDOCX files are not text files. Instead, they are Zip-compressed archives that contain an XML file and a Media folder. The XML file contains a note's text and other data, while the Media folder contains any images, videos, or other media saved within the note.",
+      "During the transition from the SDOC to SDOCX format, some users experienced problems opening notes in the updated version of Samsung Notes. For example, users who had locked a note that was saved as an SDOC file could not open that note in the updated version of Samsung Notes, unless they unlocked the note from a device that had not yet updated to the new version of Samsung Notes.",
+      "For most users, however, Samsung Notes automatically converted their SDOC files to SDOCX files as they opened old notes. Users could also manually convert SDOC files to SDOCX files using the Old format notes → Convert option available in Samsung Notes' settings menu."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The SDOCX file format is associated with Samsung Notes which is used for creating and managing notes on Samsung Galaxy devices; SDOCX files are basically document files created within Samsung Notes; they store text, images, drawings, and other note elements; these files allow users to save formatted text, multimedia content (such as images and voice recordings), handwritten notes and sketches.\n\nThese files are only compatible with Samsung Notes and are commonly used on Samsung Galaxy devices and allow users to keep their notes organized; SDOCX files are essentially ZIP-compressed files that contain data files for each note element such as metadata, images and other attachments. The content inside SDOCX file is structured in various folders, these folders represent specific note elements (such as text or images); for this reason, SDOCX file can contain different types of media within single note.\n\nSamsung Notes can export SDOCX files and provides users with the option to convert these files into other formats, such as PDF, Microsoft Word (DOCX), or images. This feature helps users share them easily and view them on other devices.",
+      "An SDOCX file is a note created by Samsung Notes, a note-taking app available for Samsung devices. It is a Zip-compressed archive that contains an .XML file and a Media folder, each of which contains data saved within the note. SDOCX files can be opened with Samsung Notes or decompressed to view their contents."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      "Opening SDOCX file can be tricky as they are mostly used with Samsung Notes so if you do not have a Samsung device, you will find it difficult to open. Here are some ways you can use to open it.\n\nUsing Samsung Notes\n\nThe easiest way to open SDOCX file is by using Samsung Notes app on a Samsung Galaxy device. Just move SDOCX file to your Samsung device and open it with Samsung Notes app.\n\nExporting to Another Format\n\nIf you can’t open SDOCX file directly, you can try export it to format that is supported universally such as PDF or DOCX using Samsung Notes app.\n\nHere is how to do it.\n\nOpen the SDOCX file in Samsung Notes.Use export or share option within the app to save note in different format.Using an Android Emulator\n\nIf you don’t have a Samsung device, you can use Android emulator on your computer like BlueStacks or Nox Player.\n\nFirst, install the emulator then download and install Samsung Notes from Google Play Store inside the emulator; after that, move SDOCX file to emulator and open it there.\n\nExtracting Contents Manually\n\nSince SDOCX files are ZIP-compressed, you can change the file name from .sdocx to .zip; then, you can use any zip file extractor like WinRAR or 7-Zip to open it. This method lets you see different parts of note e.g. images and text, but you will not be able to see or edit the note the way it appears in Samsung Notes.",
       "On Samsung devices, you can open SDOCX files with Samsung Notes. You can also use Notes' Share function to share your SDOCX files with Google Drive, which will allow you to open your notes on other Samsung devices.",
       "If you do not have access to Samsung Notes, you can rename your SDOCX file to a .ZIP file, decompress it, and view its contents as you would any Zip archive. This will allow you to access the text and media contained within your note and manually reconstruct the note if necessary."
     ]
@@ -34,6 +51,28 @@
       "Select the format in which you want to save your note (such as PDF file or Microsoft Word file). Then, specify what location your file should be saved in and select Save."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -62,15 +101,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/sdocx/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     },
     {
       "url": "https://fileinfo.com/extension/sdocx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.933Z"
+  "last_updated": "2025-11-01T22:32:42.286Z",
+  "containers": []
 }

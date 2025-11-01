@@ -4,8 +4,26 @@
   "slug": "vsct",
   "extension": "vsct",
   "name": ".VSCT File Extension",
+  "type_name": "Visual Studio Command Table",
   "summary": "Learn about .VSCT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "File created by Microsoft Visual Studio, a Microsoft SDK; contains metadata about the isolated shell application in Visual Studio; organized by XML tags representing commands, command groups, menus, command placement, and bitmaps."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VSCT files enables you to configure which application groups and individual commands are available in the application. Most commands and groups are included by default, if you want to remove any, uncomment the specific command or group. Commands appear as <Define name=\"No_WindowListCommand\"/>.",
+      "To create a VSCT file:",
+      "In Visual Studio, select File → New → File.",
+      "In the \"Templates\" pane, select XML File → Open.",
+      "Select View → Properties Window to show the properties of the .XML file.",
+      "In the \"Properties\" window, click Browse on the Schemas property.",
+      "Select vsct.xsd from the list of XSD schemas. If it's not in the list, select Add and locate your file, click OK.",
+      "Type <CommandTable, press TAB and then type >. This will create a basic VSCT file."
+    ]
+  },
   "programs": {
     "windows": [
       {

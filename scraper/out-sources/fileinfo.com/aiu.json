@@ -7,6 +7,18 @@
   "type_name": "Advanced Installer Updates Configuration File",
   "summary": "Learn about .AIU files and view a list of programs that open them.",
   "developer": "Caphyon",
+  "more_information": {
+    "description": [
+      "Configuration file that contains information about an update to a program installed with Advanced Installer; typically provided to clients via a software company's website; used to check if users have the latest version of the software installed and provides updates if necessary."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "AIU files are saved in a plain text format and begin with the line:",
+      ";aiu;",
+      "All AIU files contain the name of the program, the URL of the latest installer, the file size, and the path to the installation directory. They may also include a description of the installer, a list of features, bug fixes, the registry key, and the number of the current version."
+    ]
+  },
   "programs": {
     "windows": [
       {

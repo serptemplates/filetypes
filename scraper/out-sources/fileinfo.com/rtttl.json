@@ -4,8 +4,22 @@
   "slug": "rtttl",
   "extension": "rtttl",
   "name": ".RTTTL File Extension",
+  "type_name": "Ring Tone Transfer Language File",
   "summary": "Learn about .RTTTL files and view a list of programs that open them.",
   "developer": "Nokia",
+  "more_information": {
+    "description": [
+      "File written in the Ring Tone Text Transfer Language (RTTTL) format; contains the ringtone name, control settings (such as duration, octave, and beats), and a sequence of letters that represent the notes (only one note at a time can be produced from a range of four octaves)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The RTTTL file consists of a single string that is divided into three sections, which are separated by colons. The first section is the name of the ringtone. The second section defines the control settings (d=duration, o=octave, b=beat). The third section describes the melody.",
+      "An example of the RTTTL file is below:",
+      "mambo:d=3,o=6,b=54:8P,8G5,8G5,8G5,2D#5",
+      "NOTE: Most cell phone manufacturers support the RTTTL format. The RTTTL file can be uploaded using programs, such as LogoManager Classic, to your cell phone."
+    ]
+  },
   "programs": {
     "windows": [
       {

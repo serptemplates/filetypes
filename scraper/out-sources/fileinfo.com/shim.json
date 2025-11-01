@@ -4,8 +4,21 @@
   "slug": "shim",
   "extension": "shim",
   "name": ".SHIM File Extension",
+  "type_name": "Scoop Shim File",
   "summary": "Learn about .SHIM files and view a list of programs that open them.",
   "developer": "Luke Sampson",
+  "more_information": {
+    "description": [
+      "A SHIM file is a plain text file created by Scoop, a command-line program installer for Windows. It contains the path to an installed program and arguments used to run the program. Scoop creates a SHIM file each time a user installs a program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Scoop is a free package manager available for Windows. It allows you to install many common programs, such as VLC media player, 7-Zip, and Blender, from the Windows command line.",
+      "When you use Scoop to install a program, it also produces a SHIM file. The SHIM file lists the path to the installed program, as well as any runtime arguments needed to run the program. When you run the program, Scoop uses the SHIM file to locate the program and launch it correctly.",
+      "NOTE: Programs installed using Scoop, and their associated SHIM files, are typically stored in the C:/​Users/​[USER]/​scoop/​apps directory."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a SHIM file and view its contents with Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. You can use Scoop (Windows) to run the app a SHIM file points to (provided you have the app installed at the location referenced in the SHIM file)."

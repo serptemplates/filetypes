@@ -1,7 +1,7 @@
 {
   "slug": "rpmnew",
   "extension": "rpmnew",
-  "name": ".RPMNEW",
+  "name": "Red Hat Package New Default Configuration",
   "summary": "Learn about .RPMNEW files and view a list of programs that open them.",
   "developer": "Red Hat",
   "programs": {
@@ -30,6 +30,18 @@
         "name": "Apple TextEdit",
         "url": "https://fileinfo.com/software/apple/textedit"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When a Red Hat, Fedora, or other Red Hat variant Linux user installs the updates contained in an RPM file, and the updates include changes to a CONF file the user has previously modified, one of two things typically happens. The package either overwrites the user's current CONF file and produces a similarly-named .RPMSAVE file, which contains a copy of the user's previous configuration, or the package leaves the user's current CONF file in place and produces a similarly-named RPMNEW file, which contains the modified CONF file's new default settings.",
+      "Typically, RPM packages produce RPMNEW files, rather than RPMSAVE files. This ensures users' modified configurations remain in place after the update finishes. If a user wants to apply any of the new default settings listed in an RPMNEW file to the corresponding CONF file, they can do so by examining the RPMNEW file and manually updating their CONF file to match as necessary.",
+      "NOTE: RPMNEW files typically have the .rpmnew extension appended to the name of the CONF file they correspond to. For example, an RPMNEW file that contains a new default configuration for the file httpd.conf would be named httpd.conf.rpmnew."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An RPMNEW file is a configuration file created during the installation of an .RPM (Red Hat Package Manager) file. It contains the new default settings for a Unix configuration (.CONF) file you have previously modified. RPMNEW files are produced so users can compare a package's updated configuration defaults to their modified configuration files. The user can then apply changes made in the RPMNEW file as they see fit."
     ]
   },
   "how_to_open": {
@@ -71,8 +83,11 @@
     {
       "url": "https://fileinfo.com/extension/rpmnew",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.282Z"
+      "retrieved_at": "2025-11-01T22:32:42.742Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.282Z"
+  "last_updated": "2025-11-01T22:32:42.742Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,9 +1,11 @@
 {
   "slug": "p7c",
   "extension": "p7c",
-  "name": "P7C File",
+  "name": "PKCS #7 Certificate File",
   "summary": "Learn about .P7C files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -32,18 +34,43 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Once a P7C file has been imported in a program, the software typically places the verified entity on its trust list."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A P7C file, like other security certificate files, is a digital certificate that is used to authenticate identity over the network. Applications using certificates authenticate identity using the public key included in these certificate files. Public-key cryptography, or asymmetric cryptography, uses pair of keys of which one is the public key and the other is known as private key. The private key is kept secure for effective security, while the public key can be shared with others. Other common certificate file formats include CRT, DER, and PEM.",
+      "Digital certificate file used by various applications to authenticate a Web identity; similar to a .P7B file, both of which contain a public key used to verify an entity using public-key cryptography."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGYUlEQVR42p2Xe0wUVxTGz93Z9/JSQdlFa1UQBbRa3xpBUahSebRo9Y/aEhNrtcViUxPRYKpJo9Y00mitWo3WGG2rthRiW0RMELTW+Ai0kqIoqMhLXgK7C/uafjPuKuLOQD3JyZndvfd8vzlz7ty7jOd5elnbyphWhZjJ810vm4P1FyCDMQXE4pREbyGORgxFHIpIiDWIlYi3EPMRf3+vn1B9AnzMmD+SZiDpCsRXhDt2i8rFDsRT8E0pPF/30gAQn4Vkx5Do1d4iGrhaSOD+rvfvqicpHsM3wPenSAhJAkB8PZJtQyJOSDoAPlCvIJ1aRUqXg5jdSSQUucd04VLxTLynnYWnAMLaLwCIr4Xo10IiIzIOiwhFUhe5rJgP5+EcIDiHkxg4BJCeWZzeC3oOnpjSqzdeAID4coh/r8dvEVFjaGBwILksZrI8qCVbayvpDTry8dOTwt5N1N2NaCPWZcc1IJ4EQgCuVxMqkQSIbq8AEB8O8XItkX56/DzSaTX06O9Saql6SAH+BhoyajgqYKHu+kZytFnIxT97/kJPcHCHG8Au3XefAeArrwBYarkoe+L0+DhytDRT1dXrBBiKSogja3U1tZbfJqt0w4kNqXb3gkO6Ck3wkYDoeA4A4m8g0R8mgw8NHh1Gd27cIDwGGhc3n6oKzokJVTLi1ANC5e4DiV4Q7HMAbHkOYD1jJ5F0cRCuO91JgrQ6snRZn3Z2X+IeU7qrIAPQBg8EhFMEgLgfJjUgodYj0NfLRiWdXATm6fmV4cUmA+CaCJDJWBIS/uppJpWfH3FOJylsNlLa7eQNymO8u+y9I+sBI2HrAJAtAmxmbA2SfiM0UMjy5Y8W7typ72hv5ztbW52djY0Oc20tb66u5qx376rt9+7peYAxpdIF55lCwRPH8ZxKxSv0eofaZLLpAgNt5qIivau42FcpDXAKAEtEAOxqX+DONgp399qBA/VxK1cGy9XOYrGQXq+Xre/1vLzGu0lJg2UALgFglgiwjbEjGPi+ADC7sPDRpNjYIKlZLpeLKioqaOzYsbIAlWVlbdcnTgxQu1xSQ8oBECkC7GSsAOLzlWo1JZSVtY8MD/eTmtXe3k43rpVSzNzZsgB1NTWdxSNH+qjtkq+k+wAYLgJkM1aICsQqDQZKrqgwG0NCDFKzrly5SuXllZSWtkwW4GF1dcfF0FBftVNyMRYDIFoE2MPYj6jAOwqNhuZcvfo4LCrKX6r86z7JpKXLFtPMWVNkAR7cvt12OTw8QCW93X8LgDUiwH7G9qICqznGKCo/v3FyXNxgbzPOn79AX27fRXlnTpFKxckC/FNQ0PBvfPwQmSb8CAB7RYBDjG1FBbKEtRuyb19t7KpVpt6jbVh6KUlLaPy4ybR9Zxb1Zfnp6c2de/YMksGMAcAFEeDoky34qDBYm5ZWn3z48AvLcMaMmXT/fi0dP3YSDShffrvN5jo5ahTT1NQwCQAz3ASAdhHgOGPCAfO2MNhqMvGLbt60+QcEaDyjW1paaNCgQTQmfDwVFhaSKSRQFuBBZeXjS5GR/ipUTeJNmA3xdcLF080oh7FGrNggJ/og/Ny5uvGxsUbP6MzMjbR9+zZKTnyXfvjpEGm1almA4t276xvWrg2WeP7CuhS245reAKcB8Lb4ISGhOTk3dwDHceIN7N/3HX24+gOaNCGG5s5dQAsWRlP0nCloxBe3pLaWFutvUVE6TV0dSZR/F8Q/9XzoCSD04FRApNq12qVhp09zryckhHgGCuOsFhuOZBqSs/M7djS2bNjQ+xV8B37Z7Qd7ngtfOBOCg504ccIYM23aGeOIERPofxhePpaLiYkKk9F463FBQQFUilCFPyHYJDXH66k4KyvLMHXq1EXx8fFHNRqN/APvYdik7Dqdjmtrazt75MiRtJycnKaioiKn3ByvADExMVxiYuLgyMjIFdHR0ZsMBhyF+2kNDQ3NeXl5m61W68/p6ekN1Me5RPKPSUZGhjIsLGyIv7//m/PmzdtiNBplt2ghT2lpaU1JSclBPMVfgoODK1JTU7upD5P9a4Yyck1NTQPUanUkYJZFREQkBwUFBeIsoPKIms1me1VV1aOysrISjM3Fd38NGzbsQX/E+wTwjAGIFttwIJblUGxIw318fEb4+vqG4AXV3NXVVY8c1bjreyh7HawjOzvb0d9H9h8FTcnf8peNwQAAAABJRU5ErkJggg==",
-      "alt": "Kleopatra Certificate Manager"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABGElEQVR42u3WCw6DIAwGYDmZ3IxyMzwZE3yMR4G2mpklYpY96vp/AjNT08NDvYB/B/irva4APABM4YgDZD2lgDw8HUyIBNAOF0C4gDrcrA8rh3AAaLhfD3W0EUCogGZ43mwAARkAn/apBmSQEoGEUwD9DdeAVABISgwAbbcXECw89gFgAejhJQQJN1t4LAFhD+TzyTRwwtuA8OU9eZ86HgQPRzObAKddfOOc40HgWPN9Y6zxcFwQMAHzPJ8fWmvHEGY4CzCECMK7gK3n9sIYU51UQsKz1vpcurPWCe8VfHp1FIgkfFhkQdT3BkANJ51AhSzLEn8xozWXAoaQsBTccAmgCZGEXwHUEEH4HYAU8vO/5beMF/A44ANcXLAh9Jt5jgAAAABJRU5ErkJggg==",
-      "alt": "Entrust Address Book"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -74,23 +101,26 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.845Z"
+      "retrieved_at": "2025-11-01T22:32:42.194Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/p7c/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.845Z"
+      "retrieved_at": "2025-11-01T22:32:42.194Z"
     },
     {
       "url": "https://fileinfo.com/extension/p7c",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.845Z"
+      "retrieved_at": "2025-11-01T22:32:42.194Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.845Z"
+      "retrieved_at": "2025-11-01T22:32:42.194Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.845Z"
+  "last_updated": "2025-11-01T22:32:42.194Z",
+  "mime": [
+    "application/pkcs7-mime"
+  ],
+  "containers": []
 }

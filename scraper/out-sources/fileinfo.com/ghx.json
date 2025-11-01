@@ -4,8 +4,21 @@
   "slug": "ghx",
   "extension": "ghx",
   "name": ".GHX File Extension",
+  "type_name": "Grasshopper XML Definition",
   "summary": "Learn about .GHX files and view a list of programs that open them.",
   "developer": "Robert McNeel & Associates",
+  "more_information": {
+    "description": [
+      "A GHX file is a geometry-generating program created using Grasshopper, a visual programming environment included with McNeel Rhino. It is used to automatically create or shape a Rhino model (.3DM file). GHX files are XML versions of .GH files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "McNeel Rhino is a 3D modeling program that allows users to create, edit, animate, and export 3D models. Grasshopper is a visual programming environment included with Rhino. It allows users to create programs that automatically generate lines, shapes, complex geometry, and even entire 3D models in Rhino.",
+      "To create a Grasshopper program, users open Grasshopper alongside Rhino and then drag and drop visual code elements (which appear as rounded rectangles) on Grasshopper's programming canvas. They then link code elements to objects within a 3DM file. Users can add additional code elements, connect them, and edit them as needed, until they are satisfied with the model their program produces.",
+      "After creating a Grasshopper program, users save that program as a GHX or GH file. These files are most commonly referred to as Grasshopper definitions. The only major difference between GHX and GH files is that GHX files are XML files while GHX files are binary files. Grasshopper can open GHX and GH files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a GHX file in Grasshopper, which is included with McNeel Rhino (Windows, Mac). To open Grasshopper, enter grasshopper in Rhino's Command: field. After Grasshopper opens, select File → Open and open your GHX file. Then, you can edit the program your file contains and link it to the geometry in a 3DM file.",

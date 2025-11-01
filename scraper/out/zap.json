@@ -1,7 +1,7 @@
 {
   "slug": "zap",
   "extension": "zap",
-  "name": ".ZAP",
+  "name": "Zero Administration Package File",
   "summary": "Learn about .ZAP files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -26,6 +26,18 @@
         "name": "ZoneAlarm Pro Firewall",
         "url": "https://www.zonealarm.com/software/firewall"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "ZAP applications are deployed in Windows using a Group Policy Object (GPO), which is an access control object that permits access to certain files and programs. Users for whom the administrator has provided access can use the ZAP published applications locally on their computers. For permitted users, the applications appear in the user's Add/Remove Programs list. Group Policy management is included as part of the Windows Server software.",
+      "You can create and edit ZAP files with any text editor. For example, you can create a plain text (.TXT) file in Microsoft Notepad and change the file extension to \".zap\" when complete.",
+      "NOTE: ZAP files have limitations that traditional MSI installers do not. For example, ZAP files cannot assume elevated privileges for installing an application."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Windows application deployment file often used in business environments to publish non-MSI (.MSI files) programs to users; contains plain text and specifies the name of the program, the program file to run, the version number, the publisher, and other optional information; allows .EXE programs to be published to users when no MSI installer is available; called a \"Zero Administration Package\" (ZAP) because it allows programs to be deployed to users without using administrative privileges on local computers."
     ]
   },
   "images": [
@@ -58,8 +70,11 @@
     {
       "url": "https://fileinfo.com/extension/zap",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.401Z"
+      "retrieved_at": "2025-11-01T22:32:42.912Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.401Z"
+  "last_updated": "2025-11-01T22:32:42.912Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

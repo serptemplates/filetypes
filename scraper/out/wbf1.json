@@ -1,7 +1,7 @@
 {
   "slug": "wbf1",
   "extension": "wbf1",
-  "name": ".WBF1",
+  "name": "Wii Backup File System File",
   "summary": "Learn about .WBF1 files and view a list of programs that open them.",
   "developer": "Waninkoko",
   "programs": {
@@ -18,6 +18,17 @@
         "name": "Dolphin",
         "url": "https://fileinfo.com/software/dolphin/dolphin"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Certain Wii game disk image management tools, such as Wiimms WBFS Tool and Wii Backup Manager, allow gamers to save Wii games as WBFS files. Gamers can use these files to play games on their Nintendo Wii, using the homebrew program USB Loader GX, or in a Wii emulator, such as Dolphin.",
+      "However, due to limitations in previous versions of USB Loader, WBFS files can be no larger than 4GB. So, when a WBFS creation tool is used to save a game that is larger than 4GB, the tool creates both a WBFS file and a WBF1 file. The WBF1 file contains any game data that did not fit into the WBFS file. To play a game created this way, a player must have access to the game's WBFS and WBF1 file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A WBF1 file is the second part of a Wii game disk image created using Wiimms WBFS Tool, Wii Backup Manager, or another Nintendo Wii-related program. It contains a portion of a game that was too large to fit into a single .WBFS file. A WBF1 file must be paired with its corresponding WBFS file to be played on the Nintendo Wii or a Wii emulator."
     ]
   },
   "how_to_open": {
@@ -60,8 +71,11 @@
     {
       "url": "https://fileinfo.com/extension/wbf1",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.368Z"
+      "retrieved_at": "2025-11-01T22:32:42.864Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.368Z"
+  "last_updated": "2025-11-01T22:32:42.864Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

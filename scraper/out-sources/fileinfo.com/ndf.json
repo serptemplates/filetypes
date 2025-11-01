@@ -4,8 +4,19 @@
   "slug": "ndf",
   "extension": "ndf",
   "name": ".NDF File Extension",
+  "type_name": "SQL Server Secondary Database File",
   "summary": "Learn about .NDF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Secondary database file used by Microsoft SQL Server; created when the primary .MDF database becomes too large (such as when there is no disk space left); may also be manually added to the SQL Server File Group to distribute data between the two files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "NDF files are typically stored on a different hard disk or partition than the primary database file. Each NDF file uses the same filename as the corresponding MDF file, such as \"mydb.mdf\" and \"mydb.ndf.\" Also, the NDF file cannot be opened by SQL Server without the MDF file attached."
+    ]
+  },
   "programs": {
     "windows": [
       {

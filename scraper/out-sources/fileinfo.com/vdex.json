@@ -4,8 +4,20 @@
   "slug": "vdex",
   "extension": "vdex",
   "name": ".VDEX File Extension",
+  "type_name": "Validated Dalvik Executable File",
   "summary": "Learn about .VDEX files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "A VDEX file is created by the Android operating system to speed up the load time of an Android app (.APK file). It contains pre-validated .DEX files, which Android does not need to re-extract and re-verify when recompiling an app."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In 2019, Google introduced the VDEX file format. The VDEX format was another iteration in Google's attempts to optimize Android apps' compilation and loading process. When a user installs an Android app, Android automatically optimizes that app and creates a corresponding .OAT and VDEX file. Referencing these files, rather than recompiling apps upon each load or update, allows Android to load apps more quickly, creating a better user experience.",
+      "VDEX files contain optimized versions of previously validated DEX (Dalvik Executable) files, which Android has noted that it does not need to re-extract and re-verify when recompiling an app. VDEX files are typically stored alongside OAT files, in an Android device's /​data/​dalvik-cache directory."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "VDEX files are not meant to be opened. If necessary, Android developers can use vdexExtractor (cross-platform) to extract DEX files from a VDEX file."

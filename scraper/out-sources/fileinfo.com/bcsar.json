@@ -7,6 +7,17 @@
   "type_name": "3DS BCSAR Audio Archive",
   "summary": "Learn about .BCSAR files and view a list of programs that open them.",
   "developer": "Nintendo",
+  "more_information": {
+    "description": [
+      "A BCSAR file is an audio archive used by some Nintendo 3DS video games. It contains sound effects and/or background music that plays during a game. BCSAR files are similar to the .BRSAR files used by Wii video games."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "While the BCSAR format is similar to the BRSAR format, they are not exactly the same. The two formats have slightly different structures, so not all utilities that can open BRSAR files can open BCSAR files, and vice versa.",
+      "BCSAR files are stored in a .CIA file or 3DS cartridge's romfs/​sound directory. They contain audio files saved in the .BCSTM, BCWSD, BCSEQ, and .BCWAV formats."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can extract the audio files a BCSAR file contains with Citric Composer (Windows), caesar (multiplatform), and BCSAR View (multiplatform). Note that these utilities are player-created, so may have limitations or function incorrectly at times."

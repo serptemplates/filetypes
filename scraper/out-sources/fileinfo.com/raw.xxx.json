@@ -4,8 +4,20 @@
   "slug": "raw.xxx",
   "extension": "raw.xxx",
   "name": ".RAW.XXX File Extension",
+  "type_name": "In-Process Dolphin Virtual SD Card",
   "summary": "Learn about .RAW.XXX files and view a list of programs that open them.",
   "developer": "Dolphin Team",
+  "more_information": {
+    "description": [
+      "A RAW.XXX file is a virtual SD card currently being written to by Dolphin, a video game console emulator. You may encounter RAW.XXX cards when Dolphin is saving data (such as a saved game) to your virtual SD card. Typically, RAW.XXX files are named sd.raw.xxx."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Dolphin is a Nintendo GameCube and Wii emulator that gamers use to play GameCube and Wii games on their PCs. Those using Dolphin to play Wii games can use a .RAW file as a virtual SD card. Just as the Nintendo Wii loads data from and saves data to a physical SD card, Dolphin loads data from and saves data to RAW files.",
+      "While Dolphin is writing data to a player's RAW file, it appends the .xxx extension to that file. This signals that a player should not close Dolphin or move or modify their RAW file, since it is currently being written to. After Dolphin finishes writing data to a .raw.xxx file, it removes the .xxx extension from that file's name."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "RAW.XXX files are not meant to be opened. After Dolphin finishes writing data to your virtual SD card, it will automatically remove the .xxx extension, leaving it as a normal .RAW file."

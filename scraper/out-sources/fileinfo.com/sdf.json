@@ -4,8 +4,26 @@
   "slug": "sdf",
   "extension": "sdf",
   "name": ".SDF File Extension",
+  "type_name": "SQL Server Compact Database File",
   "summary": "Learn about .SDF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An SDF file contains a compact relational database saved in the SQL Server Compact (SQL CE) format, which is developed by Microsoft. It is designed for applications that run on mobile devices and desktops and contains the complete database contents, which may be up to 4GB in size."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You will most likely only encounter SQL CE SDF files if you are a database architect or developer. You can open an SDF file with several programs, including Microsoft Visual Studio and LINQPad.",
+      "To open an SDF file with Visual Studio, select View → Server Explorer → Data Connections → Add Connection..., change the data source to \"Microsoft SQL Server Compact,\" click Browse..., and select the SDF file.",
+      "To open an SDF file with LINQPad, follow these steps:",
+      "Click \"Add connection\" in the top-left pane",
+      "Select \"Build data context automatically,\" choose \"LINQ to SQL,\" and click Next >.",
+      "Select \"SQL CE 4.0 (auto-install)\" in the Provider section.",
+      "Click \"Attach database file\" in the Database section, click \"Browse,\" and choose the SDF file.",
+      "NOTE: Previous versions of SQL Server Compact were distributed as SQL Server for Windows CE and SQL Server Mobile Edition."
+    ]
+  },
   "programs": {
     "windows": [
       {

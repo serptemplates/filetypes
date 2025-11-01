@@ -4,8 +4,29 @@
   "slug": "qlgenerator",
   "extension": "qlgenerator",
   "name": ".QLGENERATOR File Extension",
+  "type_name": "Quick Look Generator File",
   "summary": "Learn about .QLGENERATOR files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "A QLGENERATOR file is a plug-in for Apple's Quick Look tool in macOS. It enables various types of files to be viewed directly in the Finder using Quick Look."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Examples of Quick Look plug-ins include:",
+      "Audio.qlgenerator",
+      "Font.qlgenerator",
+      "iWork.qlgenerator",
+      "Mail.qlgenerator",
+      "Movie.qlgenerator",
+      "Office.qlgenerator",
+      "PDF.qlgenerator",
+      "These files and other third-party plug-ins must be stored in the following directory in order to work correctly:",
+      "/​System/​Library/​Frameworks/​QuickLook.framework",
+      "Quick Look is a service included with Mac OS X 10.5 and later that allows you to preview supported file types without opening the associated program. To preview a file in Quick Look, simply select the file and press the spacebar."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "QLGENERATOR files are not meant to be opened directly, but instead are referenced by the Quick Look tool. To use a QLGENERATOR file, move it to the QuickLook.framework folder. You may need to restart your Mac in order for the plug-in to work."

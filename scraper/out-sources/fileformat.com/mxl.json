@@ -1,6 +1,46 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/mxl/index.html",
   "slug": "mxl",
   "extension": "mxl",
-  "name": "MXL File",
-  "source": "fileformat.com"
+  "name": "What is an MXL file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "Each MXL file has a ZIP-based XML format that must have a META-INF/container.xml file which describes the starting point of the MusicXML version of the file. There is no corresponding .xsd file defined for the MXL file format.\n\nA simple container.xml file has contents as follow. This example is taken from Dichterliebe01.mxl file available on the MakeMusic web site.\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"> <container> <rootfiles> <rootfile full-path=\"Dichterliebe01.musicxml\" media-type=\"application/vnd.recordare.musicxml+xml\"/> </rootfiles> </container>\n\nIn this example, the element is the document element. The element can contain one or more elements, with the first element describing the MusicXML root. A MusicXML file used as a may have , , or as its document element."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MXL file is the compressed form of MusicXML file format that is an open standard format for exchange of digital sheet music. Plain text MusicXML files are large in size and the use of such files as a sheet distribution format was affected with the large file size. This issues was treated with MusicXML 2.0 by introducing the MXL file format that compresses the files enough to reduce the file size similar to that of original MIDI files. Recommended media type for MXL files is application/vnd.recordare.musicxml."
+    ]
+  },
+  "mime": [
+    "application/vnd.recordare.musicxml.",
+    "application/vnd.recordare.musicxml+xml"
+  ],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

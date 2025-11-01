@@ -4,8 +4,20 @@
   "slug": "jrc",
   "extension": "jrc",
   "name": ".JRC File Extension",
+  "type_name": "PCjr Cartridge ROM File",
   "summary": "Learn about .JRC files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "File used for emulating games and other software for the older IBM PCjr system, which debuted in 1984; saves a replica of the data on a PCjr cartridge; can be run by DOSBox, but only if configured properly."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "To emulate the PCjr system in DOSBox, you must supply the machine=pcjr argument at the command line when starting DOSBox, or set the argument in the DOSBox.conf file. If DOSBox is configured properly for PCjr, you can boot cartridge files at the DOSBox command prompt by typing:",
+      "BOOT [cart.jrc]"
+    ]
+  },
   "programs": {
     "windows": [
       {

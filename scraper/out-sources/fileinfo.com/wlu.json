@@ -4,8 +4,20 @@
   "slug": "wlu",
   "extension": "wlu",
   "name": ".WLU File Extension",
+  "type_name": "Windows Legacy Update",
   "summary": "Learn about .WLU files and view a list of programs that open them.",
   "developer": "Black Wing Cat",
+  "more_information": {
+    "description": [
+      "A WLU file is an unofficial update file used to update the Windows 2000, Windows XP, or Windows Millennium Edition operating systems. It contains one or more updates for Windows applications and files. WLU files and their installer, WLUpdator, are available for download at Windows Legacy Update's website (win2k.org/wlu/wlu.htm)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Windows Legacy Update is a third-party website that offers unofficial updates to legacy versions of Windows, such as Windows 2000 and Windows XP. These update packages, which are saved within WLU files, allow legacy Windows users to patch old Windows applications and install additional OS-level files (such as font packs and plug-ins).",
+      "WLU files are similar to .CAB, .MSI, and .MSU files. However, because WLU files are packed using the outdated IExpress software packer, Windows typically identifies them as malware. As such, you cannot install a WLU file using the Microsoft System Configuration Utility or Microsoft Windows Update. Instead, you must download and use WLUpdator, a .VBE file created by developer Black Wing Cat, to install WLU files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "To install the unofficial Windows update included in a WLU file, you must first download and decompress WLUpdator. Then, you must drag your WLU file to wlupdate.vbe, which will begin the Windows update process."

@@ -1,9 +1,31 @@
 {
   "slug": "ktx",
   "extension": "ktx",
-  "name": "KTX File",
+  "name": "Khronos Texture",
   "summary": "Learn about .KTX files and view a list of programs that open them.",
   "developer": "Khronos Group",
+  "category": "image_raster",
+  "mime": [
+    "image/ktx"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "When an iPhone or iPad user switches from one application to another, or returns to their home screen from an application, their device creates a KTX file. The KTX file is an exact copy of the user's screen at the time they switched applications. When the user switches back to a previously-opened application, their device first loads the KTX file it created as the user switched away. This provides the user with a smooth visual transition as their device finishes re-loading the actual application.",
+      "Most iPhone and iPad users will never encounter a KTX file. However, those who have jailbroken their iOS device can find their device's KTX files in the following directories:",
+      "/​private/​var/​mobile/​Library/​Caches/​Snapshots/​<bundleID>/​<bundleID>/​",
+      "/​private/​var/​mobile/​Containers/​Data/​Application/​<ApplicationUUID> /​Library/​Caches/​Snapshots/​<bundleID>",
+      "KTX files are most commonly used by forensic investigators, who examine users' KTX files for evidence of what a user was doing at specific times. Because KTX users are typically hidden from users and cannot easily be deleted, investigators can jailbreak a user's iOS device and examine the device's KTX files for information about the user's activities.",
+      "NOTE: Khronos Group released the Khronos Texture 2.0 (KTX2) format on April 20, 2021 to improve upon the KTX format. Textures saved in the KTX2 format are saved as .KTX2 files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "On iOS devices, you can use Filza, a file management application, to view the image a KTX file contains. On Macs, you can use Apple Preview to view the image a KTX file contains.",
+      "Windows users cannot directly open KTX files created by iOS devices. If your KTX file was not created by an iOS device, you can open it in Pixel&Polygon Pico Pixel. If your KTX file was created by an iOS device, you can use the MacForensics IOS_KTX_TO_PNG Python script to convert your KTX file to a .PNG file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -20,20 +42,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "On iOS devices, you can use Filza, a file management application, to view the image a KTX file contains. On Macs, you can use Apple Preview to view the image a KTX file contains.",
-      "Windows users cannot directly open KTX files created by iOS devices. If your KTX file was not created by an iOS device, you can open it in Pixel&Polygon Pico Pixel. If your KTX file was created by an iOS device, you can use the MacForensics IOS_KTX_TO_PNG Python script to convert your KTX file to a .PNG file."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFk0lEQVR42s2XC0zTRxzHv21FKA8ZoijIxGeJ03ZGEGdcmFCiUZG4mQ1wIkqi0U2qER1MDL4YBiYyJhMdoKsaXywzSsSxERe04gNZAfFR0cW3okxo2UZpabvf/fsvTsTRLTZ6yS93/7vf3e9zd7+7+/0FFosFrzIJXgsAgUDwonZfkoMkQ0ha+DoziYnPLXzOkpCkmSSb5Cd7jHO2ewCoWp+2LjguLg6NjY0wmy22nrCtHMuEQiGcXXpDrVZj9ZpUPG56vJmaVvFj9OKBLf8HoLFB0+AzQjLC7iXVtegQHhaO6prq38VOYr3ZYurVYTb9abaYvciWilSi/gtAbtC4IEVU5ExodTqagnUSVnW+D2V/tbXBp19/JCUloY9nH3QYO9Da0gohKZosZpgEJnh7eSNhQQKUe5RrqNcXXQFm0vcKkkEkWn4/W/n9DbN39kMDhkKlUsHP36/b9g3rNmDt+rWZVEzpCpArHS1VlJWVYcDAARCKhLCYej4dAqGA21mjwYjZs2ejpLTkF1ex65iI8Ih+Ynexsaa2prfQIsQ3OXkImxaORQkLUbCr8AB1je0KkBP6bujyilMVUCqVuHnzJtzc3HoEMBgMcHZ25pY+cUki8rbnfUTVxSTpJKkigRA5W3KQuFzB6dfX1kM6VnqRirLnACLC5Mt/PlEOiUSChoYGu53ONlDKyhRkZmdOpc8aoUB4Nzcn12npsqXP6C1etBg7CnawYx3zHICcAMoZQCABXLMfgDmw2WwmgGQCyJpDVXNq1bWRsrGyTp3srGysTF4J3qeGktx2FMBcBqC5fHW6ZFQgTlacxPtRs+Du4YGMTRkoLi7GkZIjG0hnraMAwqnqnoeHh8annw/u371PXp+G5M85p8eF8xcwfsL4s1Sc6EgADYNgM993YD9cxC6duquSVmHzls3fU/FDR25BLM10RtD4oE6d3buUiE+Yz4p6WN+VRkcBMCtz7ty6M8V/sD8u1ddj2tTpaNW1IjnlM5T+eBynVKeWkc7XjgKQs1kOCQg4Pch3EE6frYRiqQK5W3M53apzVQh5J6SSipMcAMDdAwxATfJkQnAIefxR7ma1pcxNmUhZnVIC/kHqHuA/XkTsSTI/vYii6TO6vKz8A/kUeadOg+YaoqNjoK5Vl8J6CbV2Bfhq0sRJy1SVKhja26HX6//thexMrK9IJIKbuzsWzl+IQmVhPFXH3Wi4HjFsxHBoLmkQHz8P56rP27okk2T9s78NINvP12+FIlGBgb4D4eTkBJPJ1Gmoo6PjqVH2+vDvFHuM2Oy1zc0oKizC5atXqqhaUnL4qGfkrJk4tOcQjpUdw9syGYYNG46CogJyxNJtpPNpVwB/+mZrFkDyB2+LHRlGkUHS157teCtwFCrPnIGnl2e37b9WVSMoJJj5yLiuAC8ac8mMadO3paen40lLM7cqAj4QYV16i5y5nDkhGydoQjDcaTu0LVrs3FkEvaGd8xIvrzcgGy1Dfn4+9u7bu5sq4+0FOKLc+V3UvAXxdjvlo4ePEPpeKDTXNPB07cORthvJrwz6+9RcCGs0ZLAXYLFkpCQ/8ZNEtJNzMl/g9GGdtcFs4IJSZsSF4oK7t+9g+7c7rpjMJve6uro3pVIpN8jBAwcRExuzlYqKrk7cEwBL7GiFwhqW28Jwlgt5P7nHl/NIxLCG5AEX6+oCxzwLUEPFoyQjSVhwus1eAHtSeuSMyNSE+QvQ1NQEo9GImI9j0bev1Xd/u34Dh384DG9vb1opF2Rlfwl1jTqZbGe9DAAPCr0aHzx4KO4/oL9dHSpOVGCyfHIF2Z78slbg1v49+wbHzI2FTqvDi373RL1E3ClJS03DxoyNh0gv+mUBBNMYx91c3cSUa2nMbgdkf1C0Pd5t+jYWM8hJ7/Hr8XP6KtPfOPoh7jV9kyIAAAAASUVORK5CYII=",
-      "alt": "PVRTexTool"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -62,20 +74,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.818Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.171Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ktx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.818Z"
+      "url": "https://fileinfo.com/extension/ktx",
+      "retrieved_at": "2025-11-01T22:32:42.171Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.818Z"
+      "retrieved_at": "2025-11-01T22:32:42.171Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.818Z"
+  "last_updated": "2025-11-01T22:32:42.171Z"
 }

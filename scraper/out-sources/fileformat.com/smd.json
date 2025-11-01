@@ -1,6 +1,43 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/3d/smd/index.html",
   "slug": "smd",
   "extension": "smd",
-  "name": "SMD File",
-  "source": "fileformat.com"
+  "name": "What is an SMD file?",
+  "summary": "What's on this Page",
+  "category": "3d",
+  "category_slug": "3d",
+  "more_information": {
+    "description": [
+      "The Valve Studiomdl Data File (.smd) format is primarily used in the development of 3D models for games that run on the Source engine, such as those created by Valve Corporation (e.g., Half-Life 2, Counter-Strike: Source).\n\nKey features of the SMD format include\n\nStructure:Vertices: Each vertex is defined by its position in 3D space (x, y, z coordinates).Normals: Information about the surface normal for lighting calculations.Texture Coordinates: Specifies how textures are mapped onto the surface of the model.Triangles: Defines how vertices connect to form triangles, which make up the model’s mesh.File Format:The .smd file is a plain text file, making it readable and editable in any text editor.It generally includes sections for mesh data and bone data, if applicable.Usage:Exporting Models: Often used as an intermediate format when exporting models from 3D modeling software (like Blender or 3ds Max) to the Source engine.Animation: SMD files can also store skeletal animation data, linking vertex movements to bones in a rig.Compiling:SMD files are typically compiled into a format that the Source engine can use (such as .mdl files) using a tool called Studiomdl. The process often involves a .qc (Quake Compile) file, which specifies how the SMD files should be compiled into a final model.\n\nBasic Example of SMD File Content\n\nHere’s a simplified example of what an SMD file might look like:\n\n// SMD version 1 // { \"mesh\" \"my_model\" { // Vertices \"vertices\" { 0 0.0 0.0 0.0 1 1.0 0.0 0.0 2 0.0 1.0 0.0 3 1.0 1.0 0.0 } // Texture coordinates \"texturecoords\" { 0 0.0 0.0 1 1.0 0.0 2 0.0 1.0 3 1.0 1.0 } // Faces \"triangles\" { 0 0 1 2 1 2 3 1 } } } // Animation data // { \"animation\" \"my_animation\" { \"keyframes\" { 0 0.0 0.0 0.0 1 0.5 0.0 0.0 2 1.0 0.0 0.0 } } // }\n\nHow to work with SMD files\n\nYou can create or modify .smd files using 3D modeling software that supports exporting to this format. Blender has add-ons that enable SMD export.To convert SMD files into usable game assets, you will need to use the Valve SDK, which includes the Studiomdl tool."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Name: Studiomdl Data FileFile Extension: .smdMedia Type: text/plainDescription: A file format used for storing 3D model data, primarily for use in video game development, especially with the Source engine.Magic Number: SMD (indicates the file is a Studiomdl Data file)Usage: Used to define 3D models, including mesh geometry, skin weights, and animations, allowing game engines to render and manipulate the models in real-time.",
+      "Opening a .smd (Valve Studiomdl Data File) file can be done using various tools depending on what you want to do with the file. Here are some common methods:\n\nText Editors\n\nSince SMD files are plain text files, you can open them in any text editor. Here’s how:\n\nWindows: Use Notepad, Notepad++, or any other text editor.Mac: Use TextEdit or any code editor like Visual Studio Code.Linux: Use Gedit, nano, or any preferred text editor.\n\nSimply right-click the .smd file, select “Open with,” and choose your text editor. You can view and edit the raw data, but this won’t give you a visual representation of the model.\n\n3D Modeling Software\n\nFor a more graphical view and editing capabilities, you can use 3D modeling software that supports the SMD format:\n\nBlender:You may need to install an add-on like Blender Source Tools to import and export SMD files.To open the file, go to File > Import > Source Engine (.smd).3ds Max:With the appropriate plugin (like the Source Tools), you can import SMD files directly into your 3D scene.Go to Import and select the SMD file.\n\nSource SDK\n\nIf you are working within the Valve Source development environment:\n\nUse the Source SDK tools. You can compile and view models within the SDK. However, opening and editing the .smd files would still typically involve a text editor or a 3D modeling tool.\n\nViewing Tools\n\nThere are also specific tools designed for viewing SMD files:\n\nSMD Viewer: This is a simple tool specifically designed for viewing SMD files, but it may have limited functionality compared to full 3D modeling software.\n\nPrograms that can open or handle SMD files include\n\nValve Studiomdl (Free) (Windows)NotepadAny Text Editor"
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

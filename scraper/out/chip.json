@@ -1,7 +1,7 @@
 {
   "slug": "chip",
   "extension": "chip",
-  "name": ".CHIP",
+  "name": "Microarray Annotation File",
   "summary": "Learn about .CHIP files and view a list of programs that open them.",
   "developer": "GSEA Team",
   "programs": {
@@ -18,6 +18,22 @@
         "name": "Microsoft Excel 365",
         "url": "https://fileinfo.com/software/microsoft/excel"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "GSEA is a gene analysis program used to determine whether an a priori defined set of genes shows statistically significant, concordant differences between biological states. When performing an analysis, scientists must load several different types of data in GSEA, including a gene expression dataset, corresponding sample annotations, and a collection of gene sets.",
+      "Most often, scientists use GSEA with gene set files from the Molecular Signatures Database (MSigDB). These files consist of HUGO human gene symbols. However, some gene expression files use other types of identifiers. If a scientist encounters one of these gene expressions files, they must use a CHIP file to convert the file's identifiers to the human symbols included in MSigDB's gene set files. Only then can they perform their analysis.",
+      "CHIP files are spreadsheets that typically include three columns of data:",
+      "Probe Set ID: The non-gene symbol identifiers used in a gene expression data file",
+      "Gene Symbol: The corresponding gene symbol identifiers",
+      "Gene Title: The corresponding gene titles",
+      "The file gene_symbol.chip contains an additional column, Aliases. This column includes additional gene symbols if a probe set ID can be mapped to multiple gene symbols."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A CHIP file is a microarray annotation file used by Gene Set Enrichment Analysis (GSEA) software. It contains a spreadsheet that maps microarray features (i.e. probe sets) to gene symbols and titles. CHIP files are used to convert the non-symbol gene identifiers contained in some gene expression data files to symbol identifiers."
     ]
   },
   "how_to_open": {
@@ -56,8 +72,11 @@
     {
       "url": "https://fileinfo.com/extension/chip",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.002Z"
+      "retrieved_at": "2025-11-01T22:32:42.382Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.002Z"
+  "last_updated": "2025-11-01T22:32:42.382Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -7,6 +7,18 @@
   "type_name": "Bitmap Font Configuration",
   "summary": "Learn about .BMFC files and view a list of programs that open them.",
   "developer": "AngelCode",
+  "more_information": {
+    "description": [
+      "A BMFC file contains settings used by AngelCode Bitmap Font Generator (BFG), a bitmap font creation app. Users can load the settings in BFG and use them to create a bitmap font."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "BFG allows users to create bitmap fonts from TrueType fonts (.TTF files). While doing so, users can specify many settings, including the font's included characters, padding, spacing, and output file formats.",
+      "Optionally, users can save their font's settings in a BMFC file. This allows them to load and edit those settings at a later time, if they want to create a modified version of their font.",
+      "BMFC files are plain text files that specify each of a font's settings on separate lines. Settings are grouped by category, each of which begins with a #."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "BMFC files are meant to be opened in AngelCode Bitmap Font Generator (Windows). To open a BMFC file in BFG, select Options → Load configuration. Then, navigate to and open your BMFC file.",

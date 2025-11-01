@@ -1,7 +1,7 @@
 {
   "slug": "for",
   "extension": "for",
-  "name": "FOR File",
+  "name": "Fortran Source Code File",
   "summary": "Learn about .FOR files and view a list of programs that open them.",
   "developer": "ISO/IEC",
   "programs": {
@@ -76,6 +76,19 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "IBM (specifically employee John Backus) initially developed the FORmula TRANslation (Fortran) language and released it in 1957. It is a general-purpose programming language often used for performing scientific and numerical computations. For example, developers may write code in Fortran and then compile it to build a program that computes numerical data to predict weather systems.",
+      "Various versions have been released since 1957, with numbers representing the years they were proposed (e.g., F77 was proposed in 1977). Notably, F77 includes support for structured programming and character-based data, while the original Fortran language did not.",
+      "Most developers save their F77 source code as FOR or .F files, which are easily recognizable as Fortran-based source code files. However, some save their code in .F77 files to denote that the files contain F77 source code specifically and not code written using some other Fortran variant. Later versions of Fortran, such as Fortran 90 or Fortran 2003 (that support free-form Fortran source code), are typically saved as .F90 and .F2K files.",
+      "NOTE: The International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) are currently developing Fortran."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A FOR file contains source code written in Fortran programming languages, such as Fortran 77 (F77), often used for scientific and numerical computations. It typically stores F77 language in a fixed-form layout inherited from 80-column punched cards early computer developers used to store programs. Users can open and edit FOR files with a text editor or IDE that provides syntax highlighting."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open FOR files with any text or source code editor. For example, you can open FOR files with plain text editors like Microsoft Notepad in Windows, Apple TextEdit in macOS, or gedit in Linux.",
@@ -88,58 +101,56 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA6ElEQVR42u3X2w3DIAwFUDxTmImhmCmZyRVugsCFYhNa8oE/+hS+R5RCAmZywfmMHWNKpe4TAW53olHe+hqCwje3N3sc3vYDKghEtxnwx38ADEHh9GYU4Gwuqit8OADbfQzYBViABwIUlQEyRC9AlPpGxly+pRLiVwAeXgIQgh4GA0rhNUBEDC6QfoiSlRwqrGbJGZJs7c0ZEIdrAeEnBfuZmf0LNOE9AApkCPUVUYrsAXBEBEhWM9/pFmABHgGQ1nBAcqaj5NzI+twFpBcUcbwCcQtwvSzNshRRBGhm8Mt33feG02o64AUhlgwwKcTM4QAAAABJRU5ErkJggg==",
-      "alt": "Microsoft Fortran PowerStation"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAmUlEQVR42u2SwQ7AIAhD5cu3fTmLhyXEdMwhqAd6MbFsPCpUyslloSgBJADzMacpXZsDyAJPof8ngAowshNoiGkAbwlOAdCeLxzga3eGAUaXMwHcd+AvkCuAJQ03gOprtdJHNSaAduLqPY3k2fpuCcg71HgJALrXmpkBtInDE+iNPgQAfawl0vro+cwAHkqAboBo7QuwQglwA1UjUBB3O7VZAAAAAElFTkSuQmCC",
-      "alt": "FORCE"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Fortran Builder"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABw0lEQVR42sWXgXHDIAxFYZOMwmh4M0bxJtQ4iHxkCQRtrrrz2RZC/yETIN79s3n2niftM1vujwE5pXQ/hBBcjPF9GZVLHPXp8oz7eAJo4n8JMIN4AJRgulMyF40IBFwBMBfPEeu7CFBM62iBsOQZAsRazmVxgKBrCaA4S3CD2AWQqmEAeEBsVwDEyyXNIw3g9xA1fiQ+A9iDAGG6j35BQ4BYAGpQg5gYCjeBAfi0AjOHZ4BdyaEiWwBUgax09krClUWLA4haktM/Wj0mM5sAgHJ+Mvo+dnnJtgCcQe74SjJAN1kNIPInCOndmoI7hRwv7ivxKTSA5jaAiEuxixUg9sM/EwMpzRDbtu2alABGa4gMkJjSlSCzyXBHYxyOlpICiAYhA6BadT9cYky+Hv1HCEA0CBkAFS/3ULzF5PronyOtn0WCUHfDWwRcwOM6J4z+OI5PUiPEGKAboVKF6wXX/+HEEyB0AGZdQRhN4pO2mgaBhxN1L7gaMpWIxPEnhoYjpz7qzLcCVGeOkFQycdcbTLotAOvWyvo6PNwa/PqJaFWchPjhdhkA5sHq/8JuALhB4V81x44UuyJmCDJJ/JsAN4RF6weRybAw1hgxWQAAAABJRU5ErkJggg==",
-      "alt": "Open Watcom"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAW0lEQVR42u3QOwoAIAxEwXhy9eSKheAvaJPYvK0iBDJuEElFPiYAmAAlOl3NABTAh+wA6xaG3+sNWCGW4zrAMXoDTdubGOfT+7bT5+cGAAAAAAAAAAAAADgGQAUekUQQXgsx0wAAAABJRU5ErkJggg==",
-      "alt": "Plato"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3UlEQVR42t3X2w6EIAwE0OX/P3o3mpAgaaedoazGxie1cLhIavuI8T2va7Tz4oJOQAAFE740djQ2GgGyEPeh10FvMAuIIObNzPSyAA/xV4CFoJegIkYE3CC7ECagd2atUzUEAjyEB1EOnyk//uQQZCsAdYKWrBzgQY68ZcA8EmY2ECA9KBZgzcS7AJnkEVu+BFHy9j2AGmnJkzOK6Ry5jiT6tBCKBRy5UnHxPsAKQt2EPe85ABWhANyK6HaAgmABqaKUQaxWT8tVcRZA/ZgwkAgg/5plISUlGRuVRekPyBCMFWvFuNkAAAAASUVORK5CYII=",
-      "alt": "Simply Fortran"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "QMF for Workstation"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/for_1120.png",
+      "alt": "Screenshot of a .for file in Microsoft Visual Studio Code 1.9",
+      "caption": "FOR file open in Microsoft Visual Studio Code 1.9"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.795Z"
+      "retrieved_at": "2025-11-01T22:32:42.151Z"
     },
     {
       "url": "https://fileinfo.com/extension/for",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.795Z"
+      "retrieved_at": "2025-11-01T22:32:42.151Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.795Z"
+      "retrieved_at": "2025-11-01T22:32:42.151Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.795Z"
+  "last_updated": "2025-11-01T22:32:42.151Z",
+  "mime": [
+    "text/x-fortran"
+  ],
+  "category": "document",
+  "related": [],
+  "containers": []
 }

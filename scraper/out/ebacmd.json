@@ -1,7 +1,7 @@
 {
   "slug": "ebacmd",
   "extension": "ebacmd",
-  "name": ".EBACMD",
+  "name": "EBA Command Center Data File",
   "summary": "Learn about .EBACMD files and view a list of programs that open them.",
   "developer": "EBA Software",
   "programs": {
@@ -26,6 +26,24 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "EBA Command Center is a Windows application that allows users to create command-based shortcuts to files and websites, as well as execute simple system commands. After installing the program, which is contained in a .VBS script, users can create commands by entering config → cmd → new in EBA Command Center's text box.",
+      "An EBA command contains:",
+      "The command's name",
+      "The command's type (typically url for shortcuts and cmd for system commands)",
+      "The command's target (the file or website to be opened or the system command to be performed)",
+      "A check for whether a user must be logged in to EBA Command Center to execute the command",
+      "Commands are saved as EBACMD files. To execute a command, users enter the command's name (as listed in the EBACMD file) in EBA Command Center's text box.",
+      "While most EBACMD files are EBA Command Center commands, they can store other data the program uses. For example, the file isLoggedIn.ebacmd stores information about the user that is logged in to EBA Command Center.",
+      "NOTE: EBA Command Center is discontinued and no longer available."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An EBACMD file is a command or other data file used by EBA Command Center, a Windows shortcut application. It contains XML-formatted or unformatted plain text. EBACMD files are used by EBA Command Center 5 and later versions."
     ]
   },
   "how_to_open": {
@@ -63,8 +81,11 @@
     {
       "url": "https://fileinfo.com/extension/ebacmd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.043Z"
+      "retrieved_at": "2025-11-01T22:32:42.438Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.043Z"
+  "last_updated": "2025-11-01T22:32:42.438Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

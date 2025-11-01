@@ -7,6 +7,18 @@
   "type_name": "Timed Text Markup Language Subtitles File",
   "summary": "Learn about .TTML files and view a list of programs that open them.",
   "developer": "W3C",
+  "more_information": {
+    "description": [
+      "A TTML file is a subtitles file saved in the Timed Text Markup Language (TTML) format, which is an extension of the .XML format. It is meant to be played as a subtitles track alongside an accompanying video. Each TTML file contains plain text information that specifies its subtitles' style, timing, and text."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The World Wide Web Consortium (W3C) created the TTML format to serve as a uniform standard for XML-based subtitles. Each TTML file contains a fixed set of header and body elements used to play subtitles and specify metadata about those subtitles. For example, each TTML file includes a <styling> element that specifies its subtitles' text style and a <language> element that specifics its subtitles' language.",
+      "The actual subtitles a TTML file contains are found in its <body> section. Each line of the file's subtitles is written as a separate paragraph (<p></p>), with an accompanying start and end time written in HH:MM:SS:SSS format.",
+      "Because TTML is a widely-accepted format, many video players, platforms, and streaming services include support for TTML-based subtitles. For example, YouTube users can upload TTML subtitles alongside their videos."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a TTML file and edit the subtitles it contains in GitHub Atom (multiplatform), Microsoft Visual Studio Code (multiplatform), or any other text or source code editor. Source code editors, like Atom and Visual Studio Code, include syntax highlighting and other features that make editing TTML files easier.",

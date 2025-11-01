@@ -4,8 +4,20 @@
   "slug": "e64",
   "extension": "e64",
   "name": ".E64 File Extension",
+  "type_name": "Linux Bootloader Support Module",
   "summary": "Learn about .E64 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An E64 file is a binary data file that contains configuration data that various Linux-based operating systems reference to start up and load essential components. It is part of the bootloader system, which prepares the operating system to run when a computer powers on. In Linux, bootloaders such as SYSLINUX and its derivatives use files like E64 to execute low-level startup instructions."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "System administrators and developers working with custom Linux distributions are the primary users who may encounter E64 files. In most cases, everyday users will not interact with them, since the operating system manages these files automatically. You can find E64 files in the following directory:",
+      "/​slax/​boot/​EFI/​boot/​"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "E64 files are not meant to be opened or edited directly by users. Because these files are in binary format, they are not human-readable and are processed directly by the system firmware or operating system kernel. Modifying or deleting an E64 file can prevent the system from booting properly."

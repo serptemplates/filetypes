@@ -1,7 +1,7 @@
 {
   "slug": "mcr",
   "extension": "mcr",
-  "name": ".MCR",
+  "name": "Minecraft Region File",
   "summary": "Learn about .MCR files and view a list of programs that open them.",
   "developer": "Mojang Specifications",
   "programs": {
@@ -30,6 +30,17 @@
         "name": "Microsoft Notepad",
         "url": "https://fileinfo.com/software/microsoft/notepad"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The \"x\" and \"z\" portions of the region filename can be derived by dividing the chunk coordinates by 32. For example, the (64, 0) region has the filename r.2.0.mcr.",
+      "NOTE: MCR files were introduced with the Beta 1.3 version of Minecraft and were later replaced by the \"Anvil\" format (.MCA files). Prior to the MCR format, .DAT files were used."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Game file used by Minecraft, a sandbox block construction game; contains a 32x32 region of a Minecraft world; named as r.x.z.mcr, where \"x\" and \"z\" specify the region's coordinates; used for saving \"chunks\" of the world."
     ]
   },
   "images": [
@@ -67,8 +78,11 @@
     {
       "url": "https://fileinfo.com/extension/mcr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.173Z"
+      "retrieved_at": "2025-11-01T22:32:42.609Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.173Z"
+  "last_updated": "2025-11-01T22:32:42.609Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

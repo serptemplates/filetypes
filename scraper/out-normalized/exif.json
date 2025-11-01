@@ -1,9 +1,40 @@
 {
   "slug": "exif",
   "extension": "exif",
-  "name": "EXIF File",
+  "name": "Exchangeable Image Information File",
   "summary": "Learn about .EXIF files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "image",
+  "category_slug": "image",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "A Rough structure of EXIF data (APP1) is shown as below. As discussed above, EXIF data starts from ASCII character “EXIF” and 2 bytes of 0x00, then EXIF data follows. EXIF uses TIFF format to store data.\n\nFFE1APP1 MarkerSSSSAPP1 Data45786966 0000Exif Header49492A00 08000000TIFF HeaderXXXX. . . .IFD0 (main image)LLLLLLLLLink to IFD1XXXX. . . .Data area of IFD0XXXX. . . .Exif SubIFD00000000End of LinkXXXX. . . .Data area of Exif SubIFDXXXX. . . .IFD1(thumbnail image)00000000End of LinkXXXX. . . .Data area of IFD1FFD8XXXX. . . XXXXFFD9Thumbnail image\n\nTIFF Header\n\nhe 8-byte TIFF file header contains the following information:\n\nBytes 0-1: The byte order used within the file. Legal values are:“II”(4949.H)“MM” (4D4D.H).\n\nIn the “II” format, byte order is always from the least significant byte to the most significant byte, for both 16-bit and 32-bit integers This is called little-endian byte order. In the “MM” format, byte order is always from most significant to least significant, for both 16-bit and 32-bit integers. This is called big-endian byte order.\n\nBytes 2-3: An arbitrary but carefully chosen number (42) that further identifies the file as a TIFF file.The byte order depends on the value of Bytes 0-1.\n\nBytes 4-7: The offset (in bytes) of the first IFD. The directory may be at any location in the file after the header but must begin on a word boundary. In particular, an Image File Directory may follow the image data it describes. Readers must follow the pointers wherever they may lead.The term byte offset is always used in this document to refer to a location with respect to the beginning of the TIFF file. The first byte of the file has an offset of 0.\n\nImage File Directory\n\nAn IFD contains information about the image as well as pointers to the actual image data.. It consists of a 2-byte count of the number of directory entries (i.e. the number of fields), followed by a sequence of 12-byte field entries, followed by a 4-byte offset of the next IFD (or 0 if none). There must be at least 1 IFD in a TIFF file and each IFD must have at least one entry.\n\nIFD Entry\n\nEach 12-byte IFD Entry is in the following format.\n\nBytesDescription0-1The Tag that identifies the field2-3The field type4-7Count of the indicated type8-11The Value Offset, the file offset (in bytes) of the Value for the field.The Value is expected to begin on a word boundary; the correspond-ing Value Offset will thus be an even number. This file offset maypoint anywhere in the file, even after the image data\n\nA TIFF field is a logical entity consisting of TIFF tag and its value. This logical concept is implemented as an IFD Entry, plus the actual value if it doesn’t fit into the value/offset part, the last 4 bytes of the IFD Entry. The terms TIFF field and IFD entry are interchangeable in most contexts.\n\nThumbnail Image\n\nExif format contains thumbnail of image (except Ricoh RDC-300Z). Usually it is located next to the IFD1. There are 3 formats for thumbnails; JPEG format(JPEG uses YCbCr), RGB TIFF format, YCbCr TIFF format.\n\nJPEG Format Thumbnail\n\nIf the value of Compression(0x0103) Tag in IFD1 is ‘6’, thumbnail image format is JPEG. Most of Exif image uses JPEG format for thumbnail. In that case, you can get offset of thumbnail by JpegIFOffset(0x0201) Tag in IFD1, size of thumbnail by JpegIFByteCount(0x0202) Tag. Data format is ordinary JPEG format, starts from 0xFFD8 and ends by 0xFFD9. It seems that JPEG format and 160x120pixels of size are recommended thumbnail format for Exif2.1 or later.\n\nTIFF Format Thumbnail\n\nIf the value of Compression(0x0103) Tag in IFD1 is ‘1’, thumbnail image format is no compression(called TIFF image). Start point of thumbnail data is StripOffset(0x0111) Tag, size of thumbnail is the sum ofStripByteCounts(0x0117) Tag.",
+      "EXIF data is typically contained within the same file as the image data and can often be viewed in image editing programs by selecting \"Get Info\" when viewing the photo. Therefore, most JPEG images that include EXIF data use the standard .JPG extension. However, EXIF data may also be saved to a separate file with an \".exif\" extension."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -56,15 +87,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.920Z"
+      "url": "https://docs.fileformat.com/image/exif/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.266Z"
     },
     {
-      "url": "https://fileinfo.com/extension/exif",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.920Z"
+      "url": "https://fileinfo.com/extension/exif",
+      "retrieved_at": "2025-11-01T22:32:42.266Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.920Z"
+  "last_updated": "2025-11-01T22:32:42.266Z"
 }

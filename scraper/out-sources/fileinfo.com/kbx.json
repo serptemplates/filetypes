@@ -4,8 +4,20 @@
   "slug": "kbx",
   "extension": "kbx",
   "name": ".KBX File Extension",
+  "type_name": "GnuPG Keybox",
   "summary": "Learn about .KBX files and view a list of programs that open them.",
   "developer": "The GNU Project",
+  "more_information": {
+    "description": [
+      "A KBX file is a keybox created by GNU Privacy Guard (GnuPG). It contains one or more OpenPGP public keys and/or X.509 certificates. It also contains associated metadata."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "GnuPG is a free alternative to Symantec's Pretty Good Privacy (PGP) software. It allows users to encrypt and decrypt emails, texts, directories, and other files. When encrypting and decrypting files, GnPG uses a variety of public and private security keys. A user's public keys are saved in a KBX file.",
+      "Typically, a user's KBX file is named pubring.kbx and stored in their .gnupg directory. Users can import a KBX file into other OpenPGP-compliant software, such as OpePGP.js, to use the public keys and certificates it contains with that software."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "KBX files are not meant to be opened. You can use GnuPG's kbxutil to view information about a KBX file. For more information, refer to GnuPG's kbxutil documentation."

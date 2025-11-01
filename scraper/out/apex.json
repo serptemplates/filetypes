@@ -1,7 +1,7 @@
 {
   "slug": "apex",
   "extension": "apex",
-  "name": ".APEX",
+  "name": "Android Pony Express Package File",
   "summary": "Learn about .APEX files and view a list of programs that open them.",
   "developer": "Google",
   "programs": {
@@ -30,6 +30,22 @@
         "name": "B1 Free Archiver",
         "url": "https://fileinfo.com/software/catalina_group/b1_free_archiver"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The APEX format helps streamline Android security updates deployed to Android devices. For example, instead of waiting to publish a full system upgrade, a device manufacturer can update an individual library to apply a patch or add a system feature. To distribute an APEX file, publishers can use the APEX manager (apexd) or the Android Debug Bridge (ADB) tool.",
+      "The structure of an APEX files is as follows:",
+      "apex_manifest.json - Stores the package name and version for identifying the APEX file. It is similar to the AndroidManifest.xml file but supports APEX functionality.",
+      "AndroidManifest.xml - Specifies the package name (name) and version (versionCode) similarly to the apex_manifest.json file, and may also contain additional targeting information.",
+      "apex_payload.img - Stores an EXT4 image that is mounted at runtime by a loopback device.",
+      "apex_pubkey - Contains a public key used to sign the file system image.",
+      "Since APEX files are saved in a compressed .ZIP format, they can be opened by any Zip decompression tool. Therefore, if you would like to explore the contents of an APEX file, you can rename the file extension to .zip and open the ZIP file with a Zip-decompression utility, such as Microsoft File Explorer, Apple Archive Utility, or Corel WinZip."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An APEX file is a Zip-compressed package that Google and other Android device manufacturers use for distributing updates to low-level system libraries on Android devices. APEX files contain an apex_manifest.json, AndroidManifest.xml, apex_payload.img, and apex_pubkey file used to update one or more components in Android. The files in an APEX archive are packaged using Google’s Android Pony EXpress (APEX) specification, which Google introduced with Android Q (Android 10) in September 2019."
     ]
   },
   "images": [
@@ -62,8 +78,11 @@
     {
       "url": "https://fileinfo.com/extension/apex",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.963Z"
+      "retrieved_at": "2025-11-01T22:32:42.326Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.963Z"
+  "last_updated": "2025-11-01T22:32:42.326Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

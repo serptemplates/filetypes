@@ -4,8 +4,22 @@
   "slug": "ksvlayout",
   "extension": "ksvlayout",
   "name": ".KSVLAYOUT File Extension",
+  "type_name": "Adobe Keyboard Shortcut Specification",
   "summary": "Learn about .KSVLAYOUT files and view a list of programs that open them.",
   "developer": "Adobe",
+  "more_information": {
+    "description": [
+      "A KSVLAYOUT file is a keyboard shortcut specification file used by certain Adobe applications, such as Adobe Bridge and Adobe Lightroom Classic. It defines a language-specific set of keyboard shortcuts. Apps use KSVLAYOUT files to remap keyboard shortcuts based on a user's language and keyboard layout."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Keyboards used to write in different languages often use different keyboard layouts. To account for this, some Adobe apps include a set of KSVLAYOUT files. These files are used to remap an app's default, English-language keyboard shortcuts if the app detects a user is using a non-English keyboard.",
+      "Optionally, users can manually specify their keyboard language in apps that use KSVLAYOUT files, to remap the app's shortcuts themselves. For example, in Adobe Bridge, users can use the Keyboard option available in the Preferences → Advanced menu to specify they are using a different language's keyboard, and thus want to use different keyboard shortcuts.",
+      "KSVLAYOUT files store information in the XML format. In the Windows version of Adobe Bridge, KSVLAYOUT files are stored in the following directory:",
+      "~/​Program Files/​Adobe/​Adobe Bridge ####/​ksvlayout/​xml"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "While you can open and edit a KSVLAYOUT file with Microsoft Visual Studio Code or any other text editor (just as you would any XML file), you likely should not open or edit KSVLAYOUT files. Doing so may cause the corresponding app's keyboard shortcuts to function incorrectly."

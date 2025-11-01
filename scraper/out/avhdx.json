@@ -1,7 +1,7 @@
 {
   "slug": "avhdx",
   "extension": "avhdx",
-  "name": ".AVHDX",
+  "name": "Automatic Virtual Hard Drive File",
   "summary": "Learn about .AVHDX files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=10369&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "AVHDX files are known as referencing disks because they use other disks to create a differencing disk chain. Each AVHDX file contains a point in time, which is used to make up a timeline with the other AVHDX files in the chain. These files enable a virtual machine to revert to a previous state, which allows you to create a specific condition for troubleshooting a problem.",
+      "You may run into an issue where a checkpoint cannot be applied in Windows Server to revert to a save state. This may be due to a broken checkpoint chain or corrupt file. You may manually merge the AVHDX files to fix this issue, although, this should be your last option. One option is to to merge checkpoints by creating a new checkpoint and then delting it, which forces Hyper-V to automatically sort your checkpoints. You may also export your VM and import it back into Hyper-V Manager. Before you attempt to merge your files you should create a backup.",
+      "Microsoft Hyper-V allows you to create and manage a virtualized computing environment using virtualization technology built into Windows Server. Hyper-V comes with management tools and any required components."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An AVHDX file is a disk image checkpoint used by Windows Server and its Microsoft Hyper-V technology, which bootstraps virtual machines (VM) using disk images. It contains the state, data, and hardware configuration of a VM at the time of the file creation. AVHDX files are created to save a specific state of a .VHDX virtual hard drive."
     ]
   },
   "images": [
@@ -42,8 +54,11 @@
     {
       "url": "https://fileinfo.com/extension/avhdx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.971Z"
+      "retrieved_at": "2025-11-01T22:32:42.338Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.971Z"
+  "last_updated": "2025-11-01T22:32:42.338Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

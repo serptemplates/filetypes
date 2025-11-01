@@ -1,7 +1,7 @@
 {
   "slug": "pvd",
   "extension": "pvd",
-  "name": ".PVD",
+  "name": "Polygen3D Vector Descriptor",
   "summary": "Learn about .PVD files and view a list of programs that open them.",
   "developer": "Varden Development",
   "programs": {
@@ -10,6 +10,31 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=8939&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The PVD file is created by selecting the Save project... button in the Polygen3D dialog box. In the next prompt, you can name your file, choose its save location, and then select Save.",
+      "This file is created in the group-able colon separated key-value (GCSKV) format which stores key/value pairs/groups in plain text. Here is a simple example of the format:",
+      "pvdversion:1 generator:Polygen3D dimension:width/353:height/366 surface:{",
+      "Property key names and property names that appear in the file include:",
+      "pvdversion = Property key name that indicates the PVD format version used by the file. The value of this property is a number, ex. 1.",
+      "generator = Property key name indicating the creator of the application. The value is the name of the application that generated the file, ex. Polygen3D.",
+      "dimension = Property key name specifying the height and width of the graphic. The value must be a number, ex. dimension:width/353:height/366",
+      "surface = Property set that defines the features of each surface included in the project, may occur multiple times in a file.",
+      "name = Surface name property displays the name of the surface.",
+      "border = Border property defines the border color of all the polygons included in a surface. It will appear in the #rrggbb color format.",
+      "texture = Texture property gives the location of the texture applied to the surface. It may be an absolute or relative path.",
+      "pos = Position property indicates the position of the surface on the graphic. The value must be a positive number, can include decimals, and will default to 0 for both x and y if no value is given.",
+      "count = Count property gives the amount of polygons on a surface. The value must be a positive number, ex. count:x/3:y/6.",
+      "size = Size property indicates the size of all the polygons on the surface. The value must be a positive number, ex. size:x/12.0:y/13.0.",
+      "shift = Edge shifting property declares how far to the bottom and right each polygon should be shifted relative to the top and left sides. The value can be a positive or negative number, ex. shift:x/0.1:y/0.4.",
+      "NOTE: The Polygen3D program is a .JAR file that requires Java 7 or later to run."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Project file created by Polygen3D, a Java tool used for generating 3D surfaces; contains project data such as graphic, surface data and any other project-specific information;"
     ]
   },
   "images": [
@@ -42,8 +67,11 @@
     {
       "url": "https://fileinfo.com/extension/pvd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.256Z"
+      "retrieved_at": "2025-11-01T22:32:42.710Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.256Z"
+  "last_updated": "2025-11-01T22:32:42.710Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

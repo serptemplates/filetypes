@@ -1,9 +1,24 @@
 {
   "slug": "wbfs",
   "extension": "wbfs",
-  "name": ".WBFS",
+  "name": "Wii Backup File System File",
   "summary": "Learn about .WBFS files and view a list of programs that open them.",
   "developer": "Waninkoko",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "After storing a WBFS file on a USB drive, players can run the file (and play the game it contains) on their Wii using USB Loader GX, an application that loads WBFS disk images. This process is, of course, unofficial and not supported by Nintendo. Players can also use Wii emulators, such as Dolphin, to play the game a WBFS file contains.",
+      "Since WBFS files do not store the padding present in official Wii disk images, WBFS files' size is typically much smaller than the games from which they were created. In the past, WBFS files were sometimes paired with .WBF1 files, to allow USB loaders to process and play large games."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To play a WBFS file on a Nintendo Wii, you must install cIOS and USB Loader GX on your Wii. Then, you can use USB Loader GX to load and play the game your WBFS file contains.",
+      "If you want to play the game a WBFS file contains on your PC, you can do so in the Dolphin Wii emulator (cross-platform). You can also use Wii Backup Manager (Windows), Wiithon (Linux), or WiiJManager (cross-platform) to convert WBFS files to .ISO files."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,12 +29,6 @@
         "name": "Dolphin",
         "url": "https://fileinfo.com/software/dolphin/dolphin"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "To play a WBFS file on a Nintendo Wii, you must install cIOS and USB Loader GX on your Wii. Then, you can use USB Loader GX to load and play the game your WBFS file contains.",
-      "If you want to play the game a WBFS file contains on your PC, you can do so in the Dolphin Wii emulator (cross-platform). You can also use Wii Backup Manager (Windows), Wiithon (Linux), or WiiJManager (cross-platform) to convert WBFS files to .ISO files."
     ]
   },
   "images": [
@@ -50,10 +59,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/wbfs",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.368Z"
+      "url": "https://fileinfo.com/extension/wbfs",
+      "retrieved_at": "2025-11-01T22:32:42.864Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.368Z"
+  "last_updated": "2025-11-01T22:32:42.864Z"
 }

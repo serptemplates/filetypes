@@ -7,6 +7,16 @@
   "type_name": "Aldus Placeable Metafile Image",
   "summary": "Learn about .APM files and view a list of programs that open them.",
   "developer": "Aldus Corporation",
+  "more_information": {
+    "description": [
+      "An APM file is a vector image file saved in the Aldus Placeable Metafile format. It contains a list of commands that, when executed by an image viewer or placement program, draw an image. APM files are similar to .WMF files, which use the same format as APM files but a different file header."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WMF files use an 18-byte header that contains metadata about the file. APM files instead use a 22-byte header. Because APM files use a non-standard header, Windows API metafile functions, such as GetMetaFile(), CopyMetaFile(), and PlayMetaFile, cannot read the files correctly. To use APM files with these functions, developers must first strip the files' headers using the program wmapmf.exe."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an APM file with GIMP (multiplatform) or XnViewMP (multiplatform)."

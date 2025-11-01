@@ -1,9 +1,25 @@
 {
   "slug": "vsix",
   "extension": "vsix",
-  "name": ".VSIX",
+  "name": "Visual Studio Extension",
   "summary": "Learn about .VSIX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Windows developers use Microsoft Visual Studio to create Windows and web applications. While the program includes a robust set of default features, developers can add additional features using VSIX files, better known as Visual Studio extensions.",
+      "Typically, developers use Visual Studio's Manage Extensions window to search for, download, and install extensions. In this case, developers may not actually encounter a VSIX file, as Visual Studio typically automatically installs the associated extension. Developers who download extensions from Visual Studio's Marketplace, however, will receive those extensions in the form of VSIX files, which they must manually install in Visual Studio.",
+      "NOTE: Some VSIX files are instead intended for use with Microsoft Visual Studio Code. Typically, developers download these VSIX files from the Visual Studio Code Marketplace."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To install a VSIX file in Microsoft Visual Studio (Windows), double-click the file on a PC with Visual Studio installed. The VSIX Installer window will appear and walk you through installing the extension your VSIX file contains. (Note that your VSIX file must be compatible with your version of Visual Studio to install correctly.)",
+      "If you want to view a VSIX file's constituent files, rename the file to use the .zip extension and expand it as you would any ZIP archive."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,12 +38,6 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "To install a VSIX file in Microsoft Visual Studio (Windows), double-click the file on a PC with Visual Studio installed. The VSIX Installer window will appear and walk you through installing the extension your VSIX file contains. (Note that your VSIX file must be compatible with your version of Visual Studio to install correctly.)",
-      "If you want to view a VSIX file's constituent files, rename the file to use the .zip extension and expand it as you would any ZIP archive."
     ]
   },
   "images": [
@@ -63,10 +73,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vsix",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.362Z"
+      "url": "https://fileinfo.com/extension/vsix",
+      "retrieved_at": "2025-11-01T22:32:42.856Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.362Z"
+  "last_updated": "2025-11-01T22:32:42.856Z"
 }

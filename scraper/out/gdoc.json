@@ -1,9 +1,11 @@
 {
   "slug": "gdoc",
   "extension": "gdoc",
-  "name": "GDOC File",
+  "name": "Google Docs Shortcut",
   "summary": "Learn about .GDOC files and view a list of programs that open them.",
   "developer": "Google",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -44,36 +46,51 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Google Drive for Desktop is a program that allows Google Drive users to back up and open their Google Drive files on Windows and Mac PCs. While Drive for Desktop stores actual backups of some types of files (such as .JPG and .DOCX files) on users' computers, it does not store copies of files created using Google Docs, Sheets, Slides, and other Google Workspace applications. Instead, Drive for Desktop stores shortcut files that, when double-clicked, open the associated file in the web version of the correct Google Workspace application.",
+      "GDOC files are Drive for Desktop shortcuts that open Google Docs documents. When a Drive for Desktop user double-clicks a GDOC file, the related document opens in Google Docs, provided the user is signed in to a Gmail account allowed to access the document. Each GDOC file is a JSON file that contains a document's URL and document ID, as well as the name of the Gmail account used to create the document.",
+      "NOTE: GDOC files were previously created by Backup and Sync from Google. Google replaced Backup and Sync with Drive for Desktop in October 2021."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A GDOC file is a shortcut file that points to a file located on Google Drive, a cloud-based document storage service. When Google Drive client is installed on a computer and a document is created inside it, the drive creates a document in the online cloud storage and writes the URL of this document in the GDOC file in local Google Drive folder. When this shortcut file is double clicked, the default web browser opens the document from the URL location. If this shortcut file is moved out of this folder, the link to online document is broken.",
+      "A GDOC file is a shortcut used to open a Google Docs document stored within Google Drive. The file contains a reference to the document it opens, as well as the Gmail account used to create the document. GDOC files are created by Google Drive for Desktop."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "If you have Google Drive for Desktop installed on your PC, or you are using a Chrome OS device, you can double-click a GDOC file to open the document it references in Google Docs. You may have to sign in to your Gmail account or request access to the document to open it.",
       "If necessary, you can also open a GDOC file in any text editor to view the URL, document ID, and Gmail account information it contains. You may want to do this, for example, if you are having trouble using your GDOC file to open a document in Google Docs. If double-clicking your GDOC file does not open a document, you can try copying and pasting your file's URL into your web browser to access your document."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Google Drive"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADkElEQVR42tVXaUhUURT+ZnXS2Vwg0yja809JtlCZFK2CltUPy7L6UyKRhQVZ2YbRj6KNsI0QpLLCStPSoMUiKoqysD3btNAst1l0nHFmXuc+09BpnjM2MvXBYd5y59zvnvOd8+4VcRwHwmKybWTDyCToXdjJ3pFlkOWIiEACXZzp5UmdIZEReEUXYV4i8JoRsKL3w+4MNkaA89LkPP4vAk0WDn5ykdP3zJPJysFXJnLVpesE8t+0YPUVHWYP9cGxWA3kks6TNLdyWH6pEY+rLDg+V4tZQ3w8Q+B7kx0pRTqcf2HqeBY5QI68xQEI8hXz91/1NsSdrceTqtY2p8RtRbgv9s1Ww7+PuOcEcspMSCnWoa7Z7vBukL8EBQmBMNHK2eRVBpvDmBCVBJkxGsSNVLhHgD2Jz21A7kuT0z9KaWFpU1QwmO04/LAJdoE4rozwxQlKi1sReFrdigXn6vG50XFl40PlOEo6GNNPxt/f/2JBcqEOZTWtDmNHBEmRT+kaSb9up6CWQr+IInHzo5m/1yrE2D1DhaSxfhB3EbqVsnTwgRE7bxtgtLS5jB2hwOmF/lD7OK+KbkXIHG+8rsc3o41EpUGwUlhUlTobL9rwYBm2T1XxghRCtwSYyFYWNKLGaMcREtSwQKmgw+eUhmQq11F9ZTgUrYZMIsxAkEAF5Z/poLS6Lbc+UhHSIpUkPiUU0s6OWdgz7hiw/76RjxrDZCrXC/EBglFzSqDkk5mvhB9NjiXIosCiMWNwW7MpeNuCNVd1fPi7IlQtwcV4f0zoL3edAHuSVNiIk6XNEErQuol+aDBxyH7W7HQME2vqJCX2zlK7n4LrH8xYRfn/UymOJpGdnKelcHNYRi24vM7qMIaVIBvDOqfbKWgHy+3mG3pkPvrdbOZRZ9swWYklFxp4kWXP12JHiQE3fpUra1LradU7pqkctOI2gXbcrbDw1cDa6jhqRCvyGjrqXUP94dQCLYrLzbhXaUFWnBYRITJX3LpOICqrFkdjtLhMX8X0W3oHbUho1XtmqjGdhJlGfaM4MdCzBNJvGrCPSqzFKjyc7Rc2UZluiVJ5lgDD+3or1hbpUVTe8sf388MUODBHg4Fa17eYPdqSFVLdp17T84QYmNoPRWv4zYq76PGekLVolhK2M2L9QC5xfRvmEQKewj9BwOsHE68fzbx5OF0q+iUBRmIr2XAy8V+57B7tx/NdbOE/ATf2tROGXM3gAAAAAElFTkSuQmCC",
-      "alt": "Dropbox"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Box"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Google Slides"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAmklEQVR42u3W2Q3AIAgA0DKZjuZoOpk9kn4UpWIR26TwozEeL2iCsLwcYAADfBWQZ+HuANy5SoCMDADctUoZUAKRgBjjZcB73wtioUhARgeklJ6AxgFwNEGjM9AKAjQPUGysfQUGMIABOIAQwtHfWhIyBXBGDcKqhnthcs6JATUIt4QW6WihpBnoRmGQ9A2IQdz9P/srNsB/ACuVwGUhUn+6TQAAAABJRU5ErkJggg==",
-      "alt": "Dolphin Guide"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -90,29 +107,45 @@
     {
       "url": "https://fileinfo.com/svg/menu.svg",
       "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/gdoc_7627-2.png",
+      "alt": "Screenshot of a .gdoc file in GitHub Atom",
+      "caption": "GDOC file open in GitHub Atom"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.797Z"
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/gdoc/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.797Z"
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     },
     {
       "url": "https://fileinfo.com/extension/gdoc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.797Z"
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.797Z"
+      "retrieved_at": "2025-11-01T22:32:42.153Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.797Z"
+  "last_updated": "2025-11-01T22:32:42.153Z",
+  "mime": [
+    "application/vnd.google-apps.document"
+  ],
+  "containers": []
 }

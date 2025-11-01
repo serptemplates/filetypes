@@ -4,8 +4,23 @@
   "slug": "installlog",
   "extension": "installlog",
   "name": ".INSTALLLOG File Extension",
+  "type_name": ".NET Assembly Installation Log",
   "summary": "Learn about .INSTALLLOG files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An INSTALLLOG file is a file created during the installation of a .NET Framework service or application. It contains a description of an assembly's installation process. INSTALLLOG files are created by the installutil.exe program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "By default, .NET Framework software uses installutil.exe to install assemblies included within the software. When installutil.exe is run against an assembly, it typically creates the following three files:",
+      "installutil.installlog, which contains a description of the assembly's install process",
+      "YourAssemblyName.installlog, which contains information specific to the install process's commit phase",
+      "YourAssemblyName.installstate, which contains data used to uninstall the assembly",
+      "A YourAssemblyName.installlog file is created only if a developer omits the /LogFile option from installutil.exe, or the developer includes the option along with a custom file name for the INSTALLLOG file (e.g. /LogFile=MyInstallLogFile.installlog). If a developer includes the /LogFile option without specifying a filename, a YourAssemblyName.installlog file is not created."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "INSTALLLOG files are text files, so you can open them in any text or source code editor, such as Microsoft Visual Studio Code (cross-platform) or Microsoft Visual Studio (Windows)."

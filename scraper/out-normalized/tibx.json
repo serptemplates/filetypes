@@ -1,9 +1,31 @@
 {
   "slug": "tibx",
   "extension": "tibx",
-  "name": ".TIBX",
+  "name": "Acronis True Image Backup",
   "summary": "Learn about .TIBX files and view a list of programs that open them.",
   "developer": "Acronis",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Acronis True Image is a backup and cybersecurity application. Primarily, users use True Image to create and save backup copies of the data stored on their computer's hard disk. In True Image 2020 and later versions, these backups are saved as TIBX files.",
+      "TIBX files differ from TIB files in a few key ways. Most importantly, TIBX files may include more than one backup of a user's data. A TIBX file may include:",
+      "One full backup",
+      "One full backup and one or more incremental backups",
+      "One differential backup",
+      "One full backup and one differential backup that immediately follows it",
+      "In contrast, TIB files never contained more than one backup. Thus, users often had to manage several linked TIB files that contained a full backup and its associated differential or incremental backups. Now, True Image users typically have to manage only one TIBX file per full backup.",
+      "The first time you save an incremental backup to an existing TIBX file, the file's name will be appended with 0001. This signals that the file contains one incremental backup. Each time you save an additional incremental backup, the number included in your TIBX file's name will increase by one (so 0002, 0003, and so on).",
+      "If you attempt to delete the first version of a full backup, that backup's TIBX file will instead remain and shrink in size. This is normal behavior. Do not delete the altered TIBX file, as doing so will render all other related backups unusable. True Image requires the first backup file in a chain of full backups to exist in order to load successive backups.",
+      "NOTE: In September 2021, Acronis renamed True Image to Cyber Protect Home Office but then changed it back to True Image in 2024."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Provided you have Acronis True Image (Windows) or Acronis Backup (Windows, Linux) installed on your PC, you can open a TIBX file and view its contents by double-clicking it. If you can't, you may want to try repairing or reinstalling the program."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,11 +40,6 @@
         "name": "Acronis Cyber Backup",
         "url": "https://fileinfo.com/software/acronis/cyber_backup"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Provided you have Acronis True Image (Windows) or Acronis Backup (Windows, Linux) installed on your PC, you can open a TIBX file and view its contents by double-clicking it. If you can't, you may want to try repairing or reinstalling the program."
     ]
   },
   "images": [
@@ -53,10 +70,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/tibx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.328Z"
+      "url": "https://fileinfo.com/extension/tibx",
+      "retrieved_at": "2025-11-01T22:32:42.807Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.328Z"
+  "last_updated": "2025-11-01T22:32:42.807Z"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "bat",
   "extension": "bat",
-  "name": "BAT File",
+  "name": "DOS Batch File",
   "summary": "Learn about .BAT files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -28,18 +28,20 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "BAT files are typically only used by computer-savvy DOS or Windows users looking to make repetitive tasks easier to complete. Users can manually create BAT files with a text editor, such as Notepad or Wordpad, and add multiple commands on separate lines that can be executed by the command-line interpreter. When saving a batch file, save it with a .bat extension or save it as a .TXT file then rename the .txt file extension as .bat."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A BAT file is a DOS batch file used to execute commands with the Windows Command Prompt (cmd.exe). It contains a series of line commands in plain text that are executed to perform various tasks, such as starting programs or running maintenance utilities within Windows."
+    ]
+  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "TCCLE"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -70,18 +72,23 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.767Z"
+      "retrieved_at": "2025-11-01T22:32:42.127Z"
     },
     {
       "url": "https://fileinfo.com/extension/bat",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.767Z"
+      "retrieved_at": "2025-11-01T22:32:42.127Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.767Z"
+      "retrieved_at": "2025-11-01T22:32:42.127Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.767Z"
+  "last_updated": "2025-11-01T22:32:42.127Z",
+  "mime": [
+    "application/x-msdownload"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

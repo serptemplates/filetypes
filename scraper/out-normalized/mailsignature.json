@@ -1,9 +1,29 @@
 {
   "slug": "mailsignature",
   "extension": "mailsignature",
-  "name": ".MAILSIGNATURE",
+  "name": "Apple Mail Email Signature",
   "summary": "Learn about .MAILSIGNATURE files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Apple Mail is an email application bundled with macOS. Like most email apps, Apple Mail allows users to create email signatures for use as default sign-offs and messages. Typically, Apple Mail users create signatures by:",
+      "Selecting Mail → Settings... from Mail's menu bar.",
+      "Going to the Signatures screen.",
+      "Creating one or more signatures.",
+      "Apple Mail saves each email signature that a user creates in a MAILSIGNATURE file. By default, Apple Mail stores MAILSIGNATURE files in the following location:",
+      "Macintosh HD/​Users/​YourUserName/​Library/​Mail/​V10/​MailData/​Signatures",
+      "Each MAILSIGNATURE file's name consists of a 32-character UUID, which Apple Mail uses to identify that signature. In addition to signature text, each MAILSIGNATURE file also includes a header that identifies the signature's text encoding, content type, message ID, and MIME version."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "In most cases, you should not need to open a MAILSIGNATURE file. If you need to edit an Apple Mail email signature, you must do so from within the application (by selecting Mail → Settings... → Signatures). Editing the signature's MAILSIGNATURE file outside Apple Mail will have no effect.",
+      "However, if you want to view a MAILSIGNATURE file's contents outside Apple Mail, you can open it with Apple TextEdit, Microsoft Notepad, or any other text editor."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -26,12 +46,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "In most cases, you should not need to open a MAILSIGNATURE file. If you need to edit an Apple Mail email signature, you must do so from within the application (by selecting Mail → Settings... → Signatures). Editing the signature's MAILSIGNATURE file outside Apple Mail will have no effect.",
-      "However, if you want to view a MAILSIGNATURE file's contents outside Apple Mail, you can open it with Apple TextEdit, Microsoft Notepad, or any other text editor."
     ]
   },
   "images": [
@@ -67,10 +81,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/mailsignature",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.170Z"
+      "url": "https://fileinfo.com/extension/mailsignature",
+      "retrieved_at": "2025-11-01T22:32:42.605Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.170Z"
+  "last_updated": "2025-11-01T22:32:42.605Z"
 }

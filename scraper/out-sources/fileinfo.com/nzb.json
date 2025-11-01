@@ -7,6 +7,18 @@
   "type_name": "NewzBin Usenet Index File",
   "summary": "Learn about .NZB files and view a list of programs that open them.",
   "developer": "NewzBin.com",
+  "more_information": {
+    "description": [
+      "An NZB file is an XML file used to retrieve posts from Usenet servers. It contains summary information about a Usenet post, including the post's ID, poster name, posting groups, file names, and file segments. NZB files are similar to .TORRENT files, in that they are files used to download other files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Usenet is a distributed, worldwide discussion system for reading and posting messages within newsgroups. You can also post binary files to newsgroups to share media and other non-text content with other Usenet users.",
+      "Newzbin.com developed the NZB file format to allow the service to index binary newsgroup posts. NZB files contain a record of the metadata needed to download a post. If a user possesses a post's NZB file, they can import that file into their Usenet client and use it to download the post.",
+      "Posts may be split into several UseNet messages or segments. In those cases, the segments and the order in which they should be assembled post-download are defined in the post's NZB file. Usenet clients automatically assemble downloaded files that are split into multiple segments."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "NZB files are typically not meant to be opened. Instead, they are meant to be imported into a Usenet client and used to download a Usenet post. For example, in the SABnzbd client (cross-platform), you can import an NZB file by clicking the Add button found in the Add File section of the app's Home screen.",

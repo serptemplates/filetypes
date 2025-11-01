@@ -4,8 +4,22 @@
   "slug": "hve",
   "extension": "hve",
   "name": ".HVE File Extension",
+  "type_name": "Windows Registry Hive File",
   "summary": "Learn about .HVE files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An HVE file is a system data file used by the registry component of Microsoft Windows. It contains registry \"hive\" information about the configuration and activity of the operating system and installed programs."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You most likely will not encounter HVE files unless you are navigating system folders in Windows that contain registry-related files. HVE files are referenced by Windows Registry and are not meant to be opened or modified. If a user moves, deletes, or modifies HVE files used by the Windows registry, he may cause applications or the whole system to malfunction.",
+      "The most common HVE file is the Amcache.hve file, which replaced the RecentFileCache.bcf file with the release of Windows 8. The HVE file contains information about programs that were recently run in Windows and accessed external storage devices, and includes the full executable path of the program and the time it was created and modified. The Amcache.hve file is located in the following location:",
+      "C:\\​Windows\\​appcompat\\​Programs",
+      "NOTE: Windows Registry is a database that is used to collect and store configuration information for components, such as programs and hardware, installed in Windows."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,9 +1,11 @@
 {
   "slug": "cba",
   "extension": "cba",
-  "name": "CBA File",
+  "name": "Comic Book ACE Archive",
   "summary": "Learn about .CBA files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -56,38 +58,44 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The CBA format is much less common than the .CBR, .CBZ, and .CB7 formats, which use more popular forms of compression (.RAR, .ZIP, and .7Z)."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A Comic Book Archive (CBA) file, also known as Comic Book Archive or Comic Book Reader file, is a popular format used to store and distribute digital comic books. It typically contains collection of individual comic book pages or images bundled together in single file for easy organization and reading.\n\nOne of the common formats for creating Comic Book Archive files is the TAR (Tape Archive) format. TAR is a file archiving format used in Unix and Linux environments. It combines multiple files into single file often used for backup purposes.",
+      "The Comic Book Archive (CBA) file format created using TAR archiver tool is typically in TAR format. TAR, short for Tape Archive, is a file archiving format commonly used in Unix and Linux systems. It is not specific to comic books but is a general-purpose archiving format.\n\nThe TAR format is straightforward way to bundle multiple files into single archive file. It does not provide compression by itself, so the resulting TAR file may be large in size compared to other compressed formats like ZIP or RAR. However, TAR files can be compressed using additional tools or combined with compression algorithms like gzip or bzip2 to reduce file size.\n\nThe TAR format preserves file structure, file permissions and timestamps of included files. It stores files sequentially within archive, allowing easy extraction of individual files or entire archive.",
+      "Digital comic book compressed with ACE compression (.ACE files); contains a collection of images that represent pages in the comic book; used for distributing comic books and reading them with supporting e-readers."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "GonVisor"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABHklEQVR42u2WWxqEIAhGh5XVzqqd1cqcoS9mgLxgmvYwvJhK/McbCq/OBn8Ai9M8z07VQ366nowfdSDhkKABPAkCgR+LhHNAwOPsfMLUNo7jXg7DIPq3bdvLdV2Fv46hIUA5CHEuqgVThkA+GA0BrOMkPk1T0dSTLcsShAAtjuWVEVtnhOsgBLQQj0EIAOy8S5xD0EYWADXXPGW0J3aAT921Gr1vFr4AzrmCkPkGAA8D6LYE3TfhY44hNTRPRMdHv1RMDl0voxgE2tUZQWEeR4ufAHwQPhg0C1Bs5EEAgtDkFtPJjJJN1pOsBIQD6OMWephWfZZzAD767FfxBRP3iVW8KgAdW/id7GYAIonliNcA8N7hVvFiAJ3CjzIr5htOkSsmtanFJQAAAABJRU5ErkJggg==",
-      "alt": "CDisplay"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEzElEQVR42p1X7U9bZRT/3dv39tKuA5JRjO0iMh0vLrIpblN8+bJkH00MROMW/QeMxqiJJhozTUyMnw0zmcs++G2flkw0UmclK8i2QhzL6LCMFgJ00NIXbm97ez3Pw5gW2ntbTtIUes/znN9zzu/5nXOFUqmk0Qd7MbPZDEEQUCwW974+k8loJpMJVqu1ocUssHJvFlqhANvhbmia1tB6Bpp9hJWVFc3j8TQEgAUrzN5F4swQNKWI9guXYO/u5aAaAZBKpSAsLNzXWlpaYLPZ616sxP5B/M03UE6u8v9FOkD7xZ9ge+rp+vdQFKyurkCIRqNaa2srAbDpLhBFERaLhf+tbqQhR25VPLd198Ds3f/odOVy2TADy8vLEG7f/psyYAyA8cRiMWNmZkbXr7PzEC+REbGLRQVUfgg3b97QmpubiQP6ABhHWBbOD39f04cFPnP2HZ6pApHTKANJKqEQDoeJhO5H6a1lDocDTqerLgCqWkI+n9fdj2UolUpDCIX+0BwOJ91Jk+4Cl0uC3+/H4mJC1+/AgTYkEglkMhu6fqqqcpDCtWu/a1uCIuoukCQJHR0dnCubkxPQ8puVDjYrnMeeR4HYPTc3h40NfQBbPCEdGBsbq0tB2AIGoisQwNzxPmBnjekQgdE/Mbu2jnQ6Xc+W3ITx8XBNEWOZ8Xq9PLDdbuenZ1zR5E0SIKXSmX4XqZSMXOyOy7KMbDaL9fX1mlLNdEu4cWOSwu9GwHgReNyPW8ErkLP66axlVrsLR149jfjiInK5bDUIEKanp7RqKWBXM71wD8Mfvbun4Nv21mffwdd1lKve7gwQABKWqgBcLhf2SQ588fqJhhvN/+2TS79AESxVSckBRKOzVQGwh4HAQcxFxlEsyHsKLhKHOvtOIBaLkTSr1QHQw6ocYOYlbZecItTk1T0BMO1/DXnFggcPkjU8CACJRk0AJpMZra0tkMdPQktfbyi44DoM+/EIye0av+81AbB5oBYAZpLUBEs+jMLEK8y/brMeuQzVc8pAEQkA3VNdAKxOTU1uFKaGUF77ta7govs52J69QjqQMWjLBIDEQpfijKCsExo1q522PXIZmUBtUzO6Zpyt1KvOT31YV/CzPedg1myGQwnfl5wMATBbzEbx1fVBYx7QXh8cu4CDnh7j028DMHIslYt4f/QkVPqG0eBJAFhn/WbgNzgtbmMQVCdDAGwSWs7HkCvW1+XsZgk+1xOGJeAAaCjQBcAIOJ9REV5RULcgk2NfqxUdHhPvjLoASKW0aoVlA6jd7kBGFeH7YQEFtbF+YBYFRN9uh88B3pqr3wgq1/x87OHO/4Fg8x/rhuf+SuPinSyiqVJDIrRtAcmMoUNOfNnvRYrmglwuV5kmFjUSiWg7edXW5uMAjOlZn4kUYD21hkQ8Xnl+lvtgcHRXBiTJhd7eZ/hEpMTvQLk7AXX1Pq0wJtXWVgJMzY/B+uRRWP3dfACdnp7e0ZIfZmBkZETb0uvKNNhoyPT7A/D5fGDvjijK1BXj2Lj8LeTJn6vGtXa9iH2Dn8LU0g7B5uKz4dLSEmLzMcib8q7grNQCvRx8HAwGv04ma7XMrbcit9uN/v4XYA/9iNzV4ap+zpcGUT79HkKhED+t3tsRmzUHBl7+/F+r0UU+KY8dWQAAAABJRU5ErkJggg==",
-      "alt": "ChessBase"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACK0lEQVR42tWVwU4CMRCGpwvxKnBAwFc2Jho9eDBGY4zP4sEYn4WYuLRbO92ZZVq6sFBl4yYboO3ufP3/v4MCAAvisjb4CUop2DZ/MT+FnEv9e4BLB1D1CXC9GIF2Y4dCKBu9cVfBeP6KLCijdUcDuHEAhr4fApENcDsb+U+t7EFWZAPcOQCN6xyAOUCF7BDeL8Zg3JAmFYAgCvfZRY1fAcDrm4ZZCby6WJIN8OAAsIihYWnHUQAezydQUSG2AoQdbEkrQG4In0gBTeskRBclsgGeZ2PQBe06AcFKtEFkA7zMJmBwpzSMdqxEHiREyopsgNc5ZsC9vFivw93KUG7Lg3qbTi0vrKCWCdfYgfvtu1t9niuab+aErP62dZpNYZs5I2oxyAbA++TM6qGFNggNokitiX8xzhnv9ybEqlj7blrsYHgPgBkqhzbYKQdGD/iBtBKBCgQhMxEHU7bsE2en+nAA/kGUroANCD/mHqoCgDWEGUDTB/jGolZBEEzZJ2Qm1CcD4ARZ0QWillVAJ5QohRX83xC3bA/ARTWpICE0Nco2iBXudpCGkEpIFTgTCNEABEGJlEAIHLEJCB2dDC6kRSgryoTMA9cLAJqTECnh074FohIngyGazWyBSAKkLi7kz3nqyOJ4dFqajLB9kT1LWtUJIAjmjtOycWSxcCIjX15F2x1gHwhtw/UmEdTlPgB/YUGpqBP2ZQH+Y2LL7s2Cklp2bwpwt+xNAb5/AKRkPlo5snSsAAAAAElFTkSuQmCC",
-      "alt": "ChessBase Light"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrElEQVR42r2XPVKEQBCFmwADy8ArqIFVpk3kUbzAnmk5gIEHMRpSqwzU0NTAMpAAp1kal6F7/oDt2i2WAbY/3usehqIDsB+ABjyBaE/wniEGXXEBV/ANH+LxT/stGECDwO5wuCmKYMJXm+zWJuMtA1BIED2AsQAYAUAKNFXlBeTEDMNJNYhRAUqMAwA6ILjfQ1PXPYCkhqZQjAoTgPEPQa8HLwBB7naTscfiWvVfBfAlvXl57n+/3d3/W+MA0Z0/dO/jfu2pnRmAdPeaxDHFGeobsQiRWs4YWDM0K2Zt2ENYABQAyrLst23bZoO4dshFOCjgJowBCJ0jAmgW5NxxFsBsHgjUwBIrggoMHkwAcqxIAnAfRhgACCmjBV2fVISpkQ3AFmgKaEpo+1kKSBbEJlwMYAYAtwtSi22VGsCDBFldsNgCtiHUBZsASBPRyWpAU+DkALET0eoWhOaBFACtY/jY5hZkA+SsB9z9SliyH4ex/7mJBSkTVtbDaHOA2BXRGuuCTYtwEcBk/U6rYvs69nX+C5c/Z5MLaIzieJzHYuLJvtB4LWAV1oqYF5M/bXzUELzAlwgAAAAASUVORK5CYII=",
-      "alt": "ChessBase Reader"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "CBR Reader"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ComicBase"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -96,29 +104,48 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.771Z"
+      "retrieved_at": "2025-11-01T22:32:42.131Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/cba/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.771Z"
+      "retrieved_at": "2025-11-01T22:32:42.131Z"
     },
     {
       "url": "https://fileinfo.com/extension/cba",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.771Z"
+      "retrieved_at": "2025-11-01T22:32:42.131Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.771Z"
+      "retrieved_at": "2025-11-01T22:32:42.131Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.771Z"
+  "last_updated": "2025-11-01T22:32:42.131Z",
+  "mime": [
+    "application/x-cbr"
+  ],
+  "containers": []
 }

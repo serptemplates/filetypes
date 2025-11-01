@@ -4,8 +4,22 @@
   "slug": "swp",
   "extension": "swp",
   "name": ".SWP File Extension",
+  "type_name": "Vi Swap File",
   "summary": "Learn about .SWP files and view a list of programs that open them.",
   "developer": "Bill Joy",
+  "more_information": {
+    "description": [
+      "An SWP file is a swap file created by the Vi text editor or one of its variants, such as Vim (Vi iMproved) and gVim. It stores the recovery version of a file being edited in the program. SWP files also serve as lock files, so no other Vi editing session can concurrently write to the currently-open file."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "SWP files are created immediately when a Vi text editing session is started. They are saved to the same directory as their original file. For example, a text file with the name example.txt would have a swap file named .example.txt.swp.",
+      "If a Vi session terminates due to a program kill or crash, the SWP file remains. This allows users to recover the data using the (R)ecover option when opening the original file. However, if you do not need to recover data, you can manually delete the SWP file so the warning message stops appearing.",
+      "When trying to open a file that has a swap file, Vi provides the following message: \"Swap file .example.txt.swp already exists!\" (where example.txt is the file being opened). From this dialog, you can choose these options: 1) (O)pen Read-Only, 2) (E)dit, 3) (R)ecover, 4) (Q)uit, or 4) (A)bort.",
+      "NOTE: If Vi or its variants have already created an SWP file for a file, and they attempt to create another swap file, they'll append that swap file with the .swo extension. If an .swo file exists, they'll append the file with the .swn extension, and so on."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "SWP files are not meant to be manually opened. In Vi and its variants, if you attempt to open a file for which an SWP file exists, the programs will ask whether you want to recover the data stored in your SWP file instead."

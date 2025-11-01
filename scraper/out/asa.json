@@ -1,9 +1,11 @@
 {
   "slug": "asa",
   "extension": "asa",
-  "name": "ASA File",
+  "name": "ASP Configuration File",
   "summary": "Learn about .ASA files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -20,6 +22,39 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "ASA files can be manually created and edited or may be created automatically by a Web development program, such as Microsoft's ASP.NET. The Global.asa file must be stored in the root directory of the ASP application in order for other files to access it."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An ASA file is configuration file, created for ASP/ASP.NET projects. It contains declarations of variables, contains and functions that are meant to be accessible on Global level in the application. All the pages in the project can access these variables and functions, thus avoiding the requirement of rewriting these. One such example is the Global.asa page that is stored in the root directory to be accessible by other ASP website pages. Global.asa files are optional, but if used, each application can have only one Global.asa file.",
+      "Contain object declarations, variables, constants, and functions that can be accessed by .ASP pages; often named Global.asa and accessed by multiple pages with in an ASP-based website; allows several pages to access the same functions and variables so they do not have to be rewritten for each page."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -48,15 +83,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/asa/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.913Z"
+      "retrieved_at": "2025-11-01T22:32:42.252Z"
     },
     {
       "url": "https://fileinfo.com/extension/asa",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.913Z"
+      "retrieved_at": "2025-11-01T22:32:42.252Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.913Z"
+  "last_updated": "2025-11-01T22:32:42.252Z",
+  "containers": []
 }

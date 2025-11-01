@@ -7,6 +7,19 @@
   "type_name": "Enhanced Android Backup",
   "summary": "Learn about .ABEX files and view a list of programs that open them.",
   "developer": "Camalot",
+  "more_information": {
+    "description": [
+      "An ABEX file is an enhanced Android backup (.AB) file created by Droid Explorer, a Windows program used to manage Android devices and files. In addition to typical Android backup data, ABEX files contain a header that ties the backup file to a specific Android device. ABEX files are created using Droid Explorer's Device Backup feature and stored in a folder named Android Backups."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Droid Explorer allows Windows users to manage, explore, and back up a connected Android device's files. In addition to being able to produce normal Android backup files, Droid Explorer can produce ABEX, or enhanced Android backup, files. These files contain a unique header that links the backup they contain to a specific Android device, so the backup can be restored on only that device.",
+      "An example ABEX file header looks like:",
+      "ENHANCED ANDROID BACKUP\\n [DEVICE ID]\\n [Droid Explorer Version]\\n [ABEX Version]\\n $$$ ENHANCED ANDROID BACKUP $$$\\n",
+      "The backup the file contains begins beneath this header."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use Droid Explorer (Windows) to restore an ABEX backup to the Android device that created the file. To do so:",

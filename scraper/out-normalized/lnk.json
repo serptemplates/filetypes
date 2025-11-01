@@ -1,9 +1,34 @@
 {
   "slug": "lnk",
   "extension": "lnk",
-  "name": "LNK File",
+  "name": "Windows Shortcut",
   "summary": "Learn about .LNK files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "mime": [
+    "application/x-ms-shortcut"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "LNK files typically use the same icon as their target file, with a small curled arrow added to indicate the shortcut points to another location. When you double-click an LNK file, Windows opens the file to which that shortcut points, just as it would if you double-clicked the actual file.",
+      "You can edit a Windows shortcut's properties, to add a shortcut key or modify how Windows opens the file to which the shortcut points. To edit a shortcut's properties, right-click the shortcut and select Properties.",
+      "Even if you've configured Windows to show file extensions for known file types, it does not show the .lnk file extension. While not recommended, you can make Windows show the .lnk file extension by deleting the NeverShowExt property within the HKEY_CLASSES_ROOT\\​lnkfile Windows registry entry:",
+      "Open Registry Editor by typing regedit in the taskbar search box and selecting the program.",
+      "In Registry Editor, navigate to Computer\\​HKEY_CLASSES_ROOT\\​lnkfile.",
+      "Create a backup of lnkfile by right-clicking it and selecting Export (you can use this to restore your registry key in case of an error).",
+      "Select the NeverShowExt property and delete it.",
+      "Restart Windows.",
+      "Read more about Windows shortcuts in the FileInfo.com Help Center.",
+      "NOTE: Changes to the LNK file association can cause your Windows desktop icons to unexpectedly change or disappear. You can visit the Help Center for instructions on how to fix your Windows icons."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Opening an LNK file, by double-clicking it or right-clicking it and selecting Open, opens the file, folder, or program to which the LNK file points. Advanced users can edit an LNK file's properties by right-clicking the file and selecting Properties."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,11 +43,6 @@
         "name": "Parallels Desktop for Mac with Windows installed",
         "url": "https://fileinfo.com/software/parallels/desktop_for_mac"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Opening an LNK file, by double-clicking it or right-clicking it and selecting Open, opens the file, folder, or program to which the LNK file points. Advanced users can edit an LNK file's properties by right-clicking the file and selecting Properties."
     ]
   },
   "images": [
@@ -62,20 +82,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.819Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.172Z"
     },
     {
-      "url": "https://fileinfo.com/extension/lnk",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.819Z"
+      "url": "https://fileinfo.com/extension/lnk",
+      "retrieved_at": "2025-11-01T22:32:42.172Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.819Z"
+      "retrieved_at": "2025-11-01T22:32:42.172Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.819Z"
+  "last_updated": "2025-11-01T22:32:42.172Z"
 }

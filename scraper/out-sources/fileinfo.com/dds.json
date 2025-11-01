@@ -7,6 +7,19 @@
   "type_name": "DirectDraw Surface Image",
   "summary": "Learn about .DDS files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A DDS file is a raster image saved in the DirectDraw Surface (DDS) container format. It can store compressed and uncompressed pixel formats. DDS files are often used for texturing video game unit models but may also be used to store digital photos and Windows desktop backgrounds."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Microsoft developed the DDS format to be used with the DirectX SDK to develop real-time rendering applications, mainly 3D games. Users often utilize the format to store model textures, mipmap levels, and cubemaps in 3D video games.",
+      "DDS was introduced in Microsoft DirectX 7.0 in March 2000, and subsequent versions introduced various improvements. Some of these improvements include support for volume textures in DirectX 8.0, arrays of textures in DirectX 10, new Direct3D texture formats in DirectX 11, and variable rate shading (VRS) in DirectX 12.",
+      "Since DDS is a container format, it can store various data types. However, the format typically stores texture data compressed with an S3 Texture Compression (S3TC) algorithm, which may be referred to as a DXTn texture.",
+      "The compression is a lossy compression, which means some quality is lost during the compression. However, the format provides fast load times since most computer video cards natively support the S3TC/DXTn compression method."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open DDS files with various image editors, including XnViewMP, dotPDN paint.net (Windows), and Apple Preview (macOS). You can also view DDS images with GIMP, IrfanView (Windows), and Adobe Photoshop with specific plug-ins."

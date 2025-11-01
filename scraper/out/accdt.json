@@ -1,9 +1,11 @@
 {
   "slug": "accdt",
   "extension": "accdt",
-  "name": "ACCDT File",
+  "name": "Microsoft Access Database Template",
   "summary": "Learn about .ACCDT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,45 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "ACCDT files are packages that contain a collection of related parts. Each part stores information about the contents of a database application using XML, text and binary formats, that includes:\n\nDatabase objectsAssociated metadataStructure of the package\n\nPackage\n\nA Package is a ZIP archive that contains multiple parts and conforms to the Open Packaging Conventions specified in ISO/IEC-29500-2. ACCDT files must contain atleast one Template metadaa part which should be the target of a relationship. This Template Metadata is the starting part of an ACCDT file.\n\nPart\n\nA part is a stream of bytes that has an associated type for specifying the nature and type of content stored in it. Parts enumeration specify valid parts, valid content types, and required relationships between all parts in a package.\n\nRelationship\n\nPackage Relationship - where target is a part and the source is the package as a whole.\n\nPart-to-Part Relationship - where the target is a part and the source is a part in the package.\n\nExplicit Relationship - where a resource is referenced from the contents of a source part by referencing a relationship element by the value of its ID attribute.\n\nImplicit Relationship - a relationship that is not explicit.\n\nInternal relationship - where the target is a part in the package.\n\nExternal relationship - where the target is an external resource not in the package.",
+      "ACCDT files are used for creating multiple .ACCDB databases from the same starting point. They also can be useful for partitioning information between applications that use similarly structured data."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .accdt extension is a Microsoft Access database template file that contains pre-defined database elements. These elements are a collection of structures that define a database applications such as database schemas for storing data, layout description for views of the data, and metadata describing the database. Being template files, ACCDT files can be used to create databases based on the template settings available in these. Resultant database files are saved as ACCDB files and populated with data in tables. Microsoft Access 2007 and onwards can open ACCDT files.",
+      "Template database file created by Microsoft Access, a desktop relational database management system (RDMBS); contains pre-defined tables, data, reports, and other database elements; saved as a hierarchy of XML and text files and compressed with Zip compression."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Since ACCDT file is related Microsoft Access (version 2007 or newer), you must install it on your computer to open it.\n\nOpen Microsoft Access. Click on File > Open, navigate to the AACDT file, and select it. The file will load as a template, allowing you to create a new database based on its structure."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +85,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/accdt/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.911Z"
+      "retrieved_at": "2025-11-01T22:32:42.249Z"
     },
     {
       "url": "https://fileinfo.com/extension/accdt",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.911Z"
+      "retrieved_at": "2025-11-01T22:32:42.249Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.911Z"
+  "last_updated": "2025-11-01T22:32:42.249Z",
+  "containers": []
 }

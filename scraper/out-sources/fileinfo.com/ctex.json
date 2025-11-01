@@ -7,6 +7,22 @@
   "type_name": "Godot Engine 4 Compressed Texture",
   "summary": "Learn about .CTEX files and view a list of programs that open them.",
   "developer": "Godot",
+  "more_information": {
+    "description": [
+      "A CTEX file contains a texture created by version 4 of Godot Engine, a free and open-source game engine used to create 2D and 3D games. It stores an image in the CompressedTexture2D (CTEX) format, which is applied to an object in the game to give it texture and compressed to reduce file size. Godot introduced the CTEX format in version 4 of Godot Engine, whereas version 3 of Godot Engine uses the .STEX format."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "CTEX supports various compression methods:",
+      "Lossy (.WEBP) - Reduces file size but not GPU memory usage.",
+      "Lossless (WEBP or .PNG) - Reduces file size but not GPU memory usage.",
+      "VRAM Uncompressed - Does not reduce GPU memory usage.",
+      "VRAM Compressed - Reduces GPU memory usage and results in faster loading times. However, it may result in noticeable distortion and is intended only for 3D rendering.",
+      "Basis Universal - Reduces GPU memory usage and results in lower file sizes than VRAM Compressed. However, it comes with slower compression times and lower quality than VRAM Compressed.",
+      "You can create CTEX files the same way in Godot Engine 4 as you created STEX files in Godot Engine 3. For example, you can copy your image (likely a PNG image) to the project folder or drag and drop it into the project folder. Godot automatically imports the image files internally, appends the .ctex file extension onto the files, and then places them in a hidden res:/​/​.godot/​imported/​ folder."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open CTEX files. Instead, Godot Engine 4 references the CTEX assets to apply textures to objects in the game."

@@ -1,9 +1,24 @@
 {
   "slug": "vrmanifest",
   "extension": "vrmanifest",
-  "name": ".VRMANIFEST",
+  "name": "SteamVR Manifest",
   "summary": "Learn about .VRMANIFEST files and view a list of programs that open them.",
   "developer": "Valve",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "SteamVR is a virtual reality gaming system that allows users to don a headset and handheld controllers and play interactive video games. Whenever SteamVR installs a game, it creates a VRMANIFEST file for that game. The VRMANIFEST file tells SteamVR how to launch the game, as well as what image to show when a player views the game in a SteamVR menu.",
+      "VRMANIFEST files are plain text files that contain JSON data. Each game's VRMANIFEST file contains the game's app_key, which SteamVR uses to identify the game, launch_type, which SteamVR uses to determine how it should load and launch the game, and name and image_path, which SteamVR uses to determine how the game appears in menus.",
+      "Steamapps.vrmanifest contains data used to keep track of and load each of your SteamVR games, including a reference to those games' action manifest. Action manifests are saved in files named actions.json within a game's installation folder, and they determine how a game's controls are mapped to your controller. If SteamVR tells you it cannot find a game's action manifest, it means the path referenced in your steamapps.vrmanifest file is invalid. Closing SteamVR, deleting steamapps.vrmanifest and the game's VRMANIFEST file, and then reopening SteamVR should fix this issue."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Typically, VRMANIFEST files are not meant to be opened. Editing a VRMANIFEST file may cause SteamVR to not be able to load the associated game(s) correctly. However, if necessary, you can manually open and edit a VRMANIFEST file in any text editor, such as Microsoft Notepad (Windows)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,11 +37,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Typically, VRMANIFEST files are not meant to be opened. Editing a VRMANIFEST file may cause SteamVR to not be able to load the associated game(s) correctly. However, if necessary, you can manually open and edit a VRMANIFEST file in any text editor, such as Microsoft Notepad (Windows)."
     ]
   },
   "images": [
@@ -57,10 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vrmanifest",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.361Z"
+      "url": "https://fileinfo.com/extension/vrmanifest",
+      "retrieved_at": "2025-11-01T22:32:42.855Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.361Z"
+  "last_updated": "2025-11-01T22:32:42.855Z"
 }

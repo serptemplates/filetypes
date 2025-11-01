@@ -4,8 +4,19 @@
   "slug": "rbs",
   "extension": "rbs",
   "name": ".RBS File Extension",
+  "type_name": "Windows Installer Rollback Script",
   "summary": "Learn about .RBS files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Script created during a software installation run by Windows Installer; contains a set of instructions used to restore the pre-installation system state if the installation does not complete; if the installation is successful, the file is deleted automatically."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The rollback script restores files saved in the corresponding rollback .RBF file. Both files are stored in a single archive named \"Config.Msi.\""
+    ]
+  },
   "programs": {
     "windows": [
       {

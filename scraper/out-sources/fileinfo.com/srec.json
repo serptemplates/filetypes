@@ -4,8 +4,20 @@
   "slug": "srec",
   "extension": "srec",
   "name": ".SREC File Extension",
+  "type_name": "S-record File",
   "summary": "Learn about .SREC files and view a list of programs that open them.",
   "developer": "Motorola",
+  "more_information": {
+    "description": [
+      "An SREC file is a data file saved in the Motorola S-record format. It contains ASCII hexadecimal values used to represent binary data. Most often, SREC files contain firmware that is meant to be flashed onto a microcontroller or other erasable programmable read-only memory (EPROM) device."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Motorola developed the S-record format in the 1970s for use with the Motorola 6800 microprocessor. Developers creating executable programs for the 6800 could convert those programs' source code to the S-record format. They could then flash the S-record, or SREC, file to a microprocessor to install the program it contained.",
+      "Each SREC file contains a series of ASCII text records, each of which begins with the letter S (which stands for Start-of-Record). The records also consist of type, byte count, address, data, and checksum information. Each record is listed on its own line, to make SREC files easier to parse (for both humans and machines)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use Peter Miller's SRecord package (multiplatform) to view summary information of and manipulate SREC files. You can also open an SREC file in any text editor, if you want to view the ASCII text records it contains. (You likely should not edit an SREC file in a text editor, as doing so may cause the program the file contains to function incorrectly.)"

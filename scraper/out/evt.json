@@ -1,7 +1,7 @@
 {
   "slug": "evt",
   "extension": "evt",
-  "name": ".EVT",
+  "name": "Windows Event Viewer Log File",
   "summary": "Learn about .EVT files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=4396&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "To view EVT files, a computer needs to have the .DLL files from the program that generated the log events. If the DLLs are not installed, the following error is displayed: \"The description for Event ID (xxx) in Source (service) could not be found.\" While not recommended, EVT files may also be viewed without the DLL files by carefully editing the Windows registry.",
+      "EVT files may be stored within .CAB files if they are saved using the Windows Reporting (Winrep) tool.",
+      "NOTE: Windows 7 now uses .EVTX files instead of the EVT extension. The Windows Event Viewer can open both file types."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File created by Windows Event Viewer, a program that logs system events; contains a series of log messages containing an ID and a number of insertion strings; stored in a proprietary binary format; used to review, analyze, and debug system performance."
     ]
   },
   "images": [
@@ -42,8 +54,11 @@
     {
       "url": "https://fileinfo.com/extension/evt",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.056Z"
+      "retrieved_at": "2025-11-01T22:32:42.457Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.056Z"
+  "last_updated": "2025-11-01T22:32:42.457Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,7 +1,7 @@
 {
   "slug": "qlv",
   "extension": "qlv",
-  "name": ".QLV",
+  "name": "QGIS layerVersion Save File",
   "summary": "Learn about .QLV files and view a list of programs that open them.",
   "developer": "Enrico Ferreguti",
   "programs": {
@@ -14,6 +14,19 @@
         "name": "Microsoft XML Notepad",
         "url": "https://fileinfo.com/software/microsoft/xml_notepad"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "QGIS is used by various amateur and professional users to create, edit, visualize, and publish geospatial information. The \"layerVersion\" plugin was developed by Enrico Ferreguti to provide a way to take \"snapshots\" of edits made to layers in QGIS.",
+      "The plugin features a minimal user interface. When installed in QGIS, it adds an item under the Vector menu and adds two buttons to the QGIS interface (\"Save layer versions\" and \"Load layer versions\").",
+      "When you save your edits for the first time, the plugin creates a QLV file to store the data. When you save them again, the plugin writes over the QLV file.",
+      "After saving the QLV file, you can share it with other users that are utilizing the same geospatial database to apply edits to the layers in their QGIS .QGS Project files. Keep in mind that they need to have the \"layerVersion\" plugin installed."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A QLV file contains information about one or more edits made to layers in QGIS (with the \"layerVersion\" plugin installed), an open-source, cross-platform GIS application. It stores one or more edits that have been made to layers in XML format along with Cyclic Redundancy Code (CRC) checksums for validating the data."
     ]
   },
   "how_to_open": {
@@ -52,8 +65,11 @@
     {
       "url": "https://fileinfo.com/extension/qlv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.264Z"
+      "retrieved_at": "2025-11-01T22:32:42.720Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.264Z"
+  "last_updated": "2025-11-01T22:32:42.720Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

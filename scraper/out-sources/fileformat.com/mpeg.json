@@ -1,6 +1,53 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/mpeg/index.html",
   "slug": "mpeg",
   "extension": "mpeg",
-  "name": "MPEG File",
-  "source": "fileformat.com"
+  "name": "What is an MPEG file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "The internal structure of MPEG files consists of different components and data structures that organize and store video, audio, and other related information. Here is an overview of the key elements in the internal structure of MPEG files:\n\nSystems Layer:The Systems layer defines the overall structure of the MPEG file. It includes headers, program streams, and other system-related data necessary for decoding and playback. The Systems layer is responsible for managing synchronization and multiplexing of elementary streams.Elementary Streams:MPEG files contain separate elementary streams for video, audio, and other data types. Each elementary stream carries compressed data specific to its type. For example, the video elementary stream contains compressed video frames, and the audio elementary stream contains compressed audio samples.Video Compression:MPEG video compression techniques, such as intra-frame and inter-frame compression, are used to reduce file size while maintaining video quality. The compressed video frames are organized into groups of pictures (GOPs), which consist of intra-coded (I), predicted (P), and bidirectional (B) frames.Audio Compression:MPEG files support various audio compression codecs, such as MP3, AAC, or MPEG-1 Audio Layer II. The audio samples are compressed using these codecs, allowing efficient storage and transmission of audio data.Synchronization and Timing:MPEG files use timestamps and synchronization information to ensure proper alignment between video and audio streams during playback. These timestamps help maintain synchronization and provide accurate timing for decoding and rendering of audio and video frames.Metadata:MPEG files can include metadata that provides additional information about the video and audio content. This metadata may include details such as title, author, creation date, and other descriptive information.Packets and Pack Headers:MPEG files organize data into packets. Each packet contains a pack header that provides information about the packet’s contents, such as the stream type, packet size, and timing information.Program Specific Information (PSI):PSI is a section in MPEG files that carries additional information about the program streams, such as program and stream identifiers, stream type, and descriptors. PSI helps in decoding and demultiplexing the elementary streams within the file.Transport Stream:In MPEG-2, there is a specific transport stream format used for broadcasting and transmitting video content. The transport stream multiplexes multiple programs into a single stream, allowing efficient transmission and synchronization of audio, video, and other data over networks."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MPEG file, also known as an MPEG video file, is a digital video file format that uses the Moving Picture Experts Group (MPEG) standards for video compression. MPEG is a widely used format for storing and transmitting video data.\n\nThe MPEG format employs lossy compression, which means that some information is discarded to reduce the file size. This compression technique allows for efficient storage and streaming of video content while maintaining reasonable video quality. There are several versions of the MPEG standard, including MPEG-1, MPEG-2, MPEG-4, and MPEG-7, each with different levels of compression and quality.\n\nMPEG files typically have the file extension “.mpeg” or “.mpg.” They can contain both video and audio data, often combined into a single file. MPEG files are compatible with a wide range of media players and video editing software, making them a popular choice for sharing and distributing video content."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "There are numerous software applications available that can open and play MPEG files. Here are some popular options:\n\nVLC Media PlayerWindows Media PlayerQuickTime PlayerMPC-HCGOM PlayerMPlayerPotPlayerKodi",
+      "The internal structure of MPEG files consists of different components and data structures that organize and store video, audio, and other related information. Here is an overview of the key elements in the internal structure of MPEG files:\n\nSystems Layer:The Systems layer defines the overall structure of the MPEG file. It includes headers, program streams, and other system-related data necessary for decoding and playback. The Systems layer is responsible for managing synchronization and multiplexing of elementary streams.Elementary Streams:MPEG files contain separate elementary streams for video, audio, and other data types. Each elementary stream carries compressed data specific to its type. For example, the video elementary stream contains compressed video frames, and the audio elementary stream contains compressed audio samples.Video Compression:MPEG video compression techniques, such as intra-frame and inter-frame compression, are used to reduce file size while maintaining video quality. The compressed video frames are organized into groups of pictures (GOPs), which consist of intra-coded (I), predicted (P), and bidirectional (B) frames.Audio Compression:MPEG files support various audio compression codecs, such as MP3, AAC, or MPEG-1 Audio Layer II. The audio samples are compressed using these codecs, allowing efficient storage and transmission of audio data.Synchronization and Timing:MPEG files use timestamps and synchronization information to ensure proper alignment between video and audio streams during playback. These timestamps help maintain synchronization and provide accurate timing for decoding and rendering of audio and video frames.Metadata:MPEG files can include metadata that provides additional information about the video and audio content. This metadata may include details such as title, author, creation date, and other descriptive information.Packets and Pack Headers:MPEG files organize data into packets. Each packet contains a pack header that provides information about the packet’s contents, such as the stream type, packet size, and timing information.Program Specific Information (PSI):PSI is a section in MPEG files that carries additional information about the program streams, such as program and stream identifiers, stream type, and descriptors. PSI helps in decoding and demultiplexing the elementary streams within the file.Transport Stream:In MPEG-2, there is a specific transport stream format used for broadcasting and transmitting video content. The transport stream multiplexes multiple programs into a single stream, allowing efficient transmission and synchronization of audio, video, and other data over networks."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "There are number of video applications including VideoLAN VLC media player, HandBrake, and Apple QuickTime Player, can convert MPEG files to other formats. For example, VLC can convert MPEG files into these formats\n\nMP4AVIMKVMOVWMVFLV"
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

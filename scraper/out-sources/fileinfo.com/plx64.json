@@ -4,8 +4,20 @@
   "slug": "plx64",
   "extension": "plx64",
   "name": ".PLX64 File Extension",
+  "type_name": "64-bit Linux IDA Plugin Module",
   "summary": "Learn about .PLX64 files and view a list of programs that open them.",
   "developer": "Hex-Rays",
+  "more_information": {
+    "description": [
+      "64-bit Linux plugin module used by IDA (The Interactive Disassembler), a multi-processor tool used to debug and disassemble executable files into low-level assembly language code; contains a plugin written in C++ that extends the capabilities of the IDA tool."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The PLX64 files are loadable libraries, similar to .DLL, that are installed to add capabilities, such as support for Python, that IDA did not have previously. The PLX64 plugin should be placed in the /​plugin/​plx64/​ directory.",
+      "NOTE: Each IDA plugin uses a different extension depending on its operating system type. The .PLW extension is used for Windows 32-bit, the .P64 is used for Windows 64-bit, and the .PLX extension is used by Linux 32-bit plugins."
+    ]
+  },
   "programs": {
     "windows": [
       {

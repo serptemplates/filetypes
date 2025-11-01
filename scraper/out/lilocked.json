@@ -1,7 +1,7 @@
 {
   "slug": "lilocked",
   "extension": "lilocked",
-  "name": ".LILOCKED",
+  "name": "Lilocked Ransomware Encrypted File",
   "summary": "Learn about .LILOCKED files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -10,6 +10,19 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11361&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The purpose of the Lilocked ransomware is to target Linux-based web servers and exploit flaws in software running on the servers, most notably defunct Exim software. After the virus gains root access, it takes files on the servers hostage and forces the server administrators to pay the perpetrator to unlock the files.",
+      "The ransomware takes files on the web server hostage by encrypting them and appending the .lilocked extension onto the extensions of the files. For example, a sample.css file becomes sample.css.lilocked.",
+      "The ransomware typically does not encrypt server system files, only web-related files, such as .HTML, .CSS, .PHP, and .JS files. After encrypting the files, the virus generates a ransom note (#README.lilocked) in each folder on the server to inform the server administrators about the takeover.",
+      "NOTE: LILOCKED files became prevalent in July 2019."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with a .lilocked extension is a file that has been encrypted by Lilocked (also known as Lilu) ransomware, a type of malware utilized by cybercriminals. It is encrypted so it is not possible to open the file by simply changing the file extension."
     ]
   },
   "how_to_open": {
@@ -47,8 +60,11 @@
     {
       "url": "https://fileinfo.com/extension/lilocked",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.157Z"
+      "retrieved_at": "2025-11-01T22:32:42.589Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.157Z"
+  "last_updated": "2025-11-01T22:32:42.589Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

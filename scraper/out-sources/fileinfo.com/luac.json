@@ -7,6 +7,17 @@
   "type_name": "Compiled Lua Script",
   "summary": "Learn about .LUAC files and view a list of programs that open them.",
   "developer": "PUC-Rio",
+  "more_information": {
+    "description": [
+      "A LUAC file is a compiled version of a Lua program (.LUA file). It contains binary data used to execute a program written in the Lua programming language. Most popularly, LUAC files are used to add additional features to VideoLAN VLC media player."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Lua is a lightweight programming language developers use to add features to existing programs written in C and other languages. Developers write and save Lua programs in LUA files. After they've finished writing a program, developers can use the Lua compiler (luac) to transform their plain text LUA file into a binary LUAC file. This allows other programs to load and execute the Lua program more quickly.",
+      "VideoLAN VLC media player, a popular open-source media player, includes a number of LUAC files. They are found in sub-folders of VLC's lua folder. For example, VLC's lua/​playlist folder contains a number of LUAC files that allow VLC to stream video and audio content from various websites, such as YouTube and Twitch. Third-party VLC add-ons sometimes come packaged in LUAC files, as do fixes for VLC's existing Lua-based features."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "LUAC files are not meant to be opened. To use a LUAC file as a VideoLAN VLC media player extension, put it in the correct sub-folder of VLC media player's lua folder. For example, if you have downloaded a LUAC file meant to allow you to stream content from a website, place that file in VLC media player's lua/​playlist folder."

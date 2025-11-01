@@ -4,8 +4,22 @@
   "slug": "download",
   "extension": "download",
   "name": ".DOWNLOAD File Extension",
+  "type_name": "Partially Downloaded File",
   "summary": "Learn about .DOWNLOAD files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "A DOWNLOAD file is a placeholder file that represents an in-process or paused Internet download. DOWNLOAD files are created by the Apple Safari web browser, which is bundled with the macOS and iOS operating systems. ​You can double-click a DOWNLOAD file to resume a Safari download."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "While Safari is downloading a file, it appends the .download extension to that file's name. For example, as the file example.mp4 is being downloaded, it becomes example.mp4.download. After the download is complete, Safari removes the .download extension and the file is ready to be used. So, you should encounter DOWNLOAD files only while downloading a file using Safari.",
+      "If your download is interrupted, a DOWNLOAD file may remain in your Downloads folder. You can attempt to resume your download (by double-clicking the file) or recover the file (by deleting the .download extension and opening the file with the appropriate program). If you cannot resume your download or recover the downloaded file, you should delete the DOWNLOAD file and try downloading the file again.",
+      "Some P2P file-sharing websites also save active downloads with the .download extension. The appropriate file extension is typically added after the download is complete.",
+      "NOTE: DOWNLOAD files are similar to .CRDOWNLOAD files, which are used by Google Chrome and Microsoft Edge for partial downloads."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use DOWNLOAD files to resume paused Apple Safari downloads. To do so, double-click the file.",

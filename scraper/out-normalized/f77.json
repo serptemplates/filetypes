@@ -1,9 +1,26 @@
 {
   "slug": "f77",
   "extension": "f77",
-  "name": "F77 File",
+  "name": "Fortran 77 Source Code File",
   "summary": "Learn about .F77 files and view a list of programs that open them.",
   "developer": "X3J3",
+  "category": "document",
+  "mime": [
+    "text/x-fortran"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "F77 is a programming language often used for performing scientific and numerical computations. It is a variant of the original Fortran programming language. The original Fortran language was released in 1957; F77 was released in 1977. Notably, F77 includes support for structured programming and character-based data, while the original Fortran language did not.",
+      "While most developers save their F77 source code in .FOR or .F files, so they are easily recognizable as Fortran-based source code files, some save their code in F77 files. This denotes that the files contain F77 source code specifically, and not code written using some other Fortran variant."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit an F77 file in any text or source code editor. Source code editors, such as Microsoft Visual Studio Code (cross-platform) and GitHub Atom (cross-platform), contain helpful tools that make reading and editing F77 files easier."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -28,23 +45,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open and edit an F77 file in any text or source code editor. Source code editors, such as Microsoft Visual Studio Code (cross-platform) and GitHub Atom (cross-platform), contain helpful tools that make reading and editing F77 files easier."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Code::Blocks"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3UlEQVR42t3X2w6EIAwE0OX/P3o3mpAgaaedoazGxie1cLhIavuI8T2va7Tz4oJOQAAFE740djQ2GgGyEPeh10FvMAuIIObNzPSyAA/xV4CFoJegIkYE3CC7ECagd2atUzUEAjyEB1EOnyk//uQQZCsAdYKWrBzgQY68ZcA8EmY2ECA9KBZgzcS7AJnkEVu+BFHy9j2AGmnJkzOK6Ry5jiT6tBCKBRy5UnHxPsAKQt2EPe85ABWhANyK6HaAgmABqaKUQaxWT8tVcRZA/ZgwkAgg/5plISUlGRuVRekPyBCMFWvFuNkAAAAASUVORK5CYII=",
-      "alt": "Simply Fortran"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -73,20 +77,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.792Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.148Z"
     },
     {
-      "url": "https://fileinfo.com/extension/f77",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.792Z"
+      "url": "https://fileinfo.com/extension/f77",
+      "retrieved_at": "2025-11-01T22:32:42.148Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.792Z"
+      "retrieved_at": "2025-11-01T22:32:42.148Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.792Z"
+  "last_updated": "2025-11-01T22:32:42.148Z"
 }

@@ -4,8 +4,20 @@
   "slug": "dsn",
   "extension": "dsn",
   "name": ".DSN File Extension",
+  "type_name": "Database Source Name File",
   "summary": "Learn about .DSN files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A DSN file is a data file used by various database client programs to connect to a database. It describes properties, such as the data source name and directory, the connection driver, the server address, user ID, and password. DSN files are used by ODBC drivers to connect to a specified database, such as a SQL Server or Microsoft Access database."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "DSN files are typically stored in a plain text files. However, some client database programs use entries in the Windows registry instead of DSN files.",
+      "The ODBC Data Source Administrator included in Windows can be used to create DSN files. It can be found within the Windows Control Panel under Administrative Tools, or in the Start Menu by selecting Programs → Administrative Tools → Data Sources (ODBC)."
+    ]
+  },
   "programs": {
     "windows": [
       {

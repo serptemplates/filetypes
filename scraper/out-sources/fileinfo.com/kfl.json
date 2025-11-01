@@ -4,8 +4,23 @@
   "slug": "kfl",
   "extension": "kfl",
   "name": ".KFL File Extension",
+  "type_name": "Outlook Known Feed List",
   "summary": "Learn about .KFL files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A KFL file is a settings file used by Microsoft Outlook (2007 and 2010 versions), an email client and personal information manager for Windows and OS X. It stores information about one or more RSS feeds that are synced between an Outlook mail profile and the Internet Explorer Common Feed List feature."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The KFL file is referenced by Outlook if Internet Explorer (IE) is also running on the computer. The file is used by the Common Feed List (CFL) feature, which synchronizes RSS feeds between IE and Outlook. If the CFL feature is enabled, Outlook checks for the KFL file when the program is opened.",
+      "A KFL file typically appears as an appended .xml.kfl file extension. It is often stored in the Outlook user profile in the following location:",
+      "Windows XP - C:\\​Documents and Settings\\​<username>\\​Local Settings\\​Application Data\\​Microsoft\\​Outlook",
+      "Windows Vista, 7, 8, and 10 - C:\\​Users\\​<username>\\​AppData\\​Local\\​Microsoft\\​Outlook",
+      "NOTE: To disable the CFL feature in Outlook select Tools → Options, click the \"Other\" tab, select \"Advanced Options,\" and remove the \"Sync RSS Feeds to the Common Feed List\" checkbox."
+    ]
+  },
   "programs": {
     "windows": [
       {

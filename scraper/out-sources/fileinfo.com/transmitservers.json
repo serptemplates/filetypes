@@ -4,8 +4,21 @@
   "slug": "transmitservers",
   "extension": "transmitservers",
   "name": ".TRANSMITSERVERS File Extension",
+  "type_name": "Transmit Servers List",
   "summary": "Learn about .TRANSMITSERVERS files and view a list of programs that open them.",
   "developer": "Panic",
+  "more_information": {
+    "description": [
+      "A TRANSMITSERVERS file is an encrypted list of servers and logins created by Panic Transit, a file transfer program for macOS. It is used to transfer a user's server list and login info from one instance of Transmit to another. Users create .transmitServers files by selecting Servers → Export from Transit's menu bar."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Panic Transmit allows users to conveniently log in to, retrieve files from, and transfer files between many different servers. Transmit keeps a record of all the servers a user is logged in to, as well as the user's server login credentials. The user's servers appear in Transmit's Servers menu.",
+      "If a user wants to transfer their server list and login credentials to another instance of Transmit, they can do so by exporting that information as a TRANSMITSERVERS file. Then, when the user opens their new instance of Transmit, they can import the file to connect to their servers.",
+      "NOTE: Panic began using the TRANSMITSERVERS file type in version 5. Previous versions of Transit stored exported server lists in .EXPORTEDFAVORITES or EXPORTEDSERVERS files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a TRANSMITSERVERS file in Panic Transit (Mac), to import the server list the file contains. To do so:",

@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/m4v/index.html",
   "slug": "m4v",
   "extension": "m4v",
-  "name": "M4V File",
-  "source": "fileformat.com"
+  "name": "What is an M4V file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "M4V files have continuous chunks with 8 byte header, 4 byte chunk size and 4 byte chunk type in each chunk. First chunk is “ftype” and has a sub-type at offset 8. M4V defined by sub-type which must be “M4V_”. Further chunks type are predefined signatures: “ftyp”, “mdat”, “moov”, “pnot”, “udta”, “uuid”, “moof”, “free”, “skip”, “jP2 “, “wide”, “load”, “ctab”, “imap”, “matt”, “kmat”, “clip”, “crgn”, “sync”, “chap”, “tmcd”, “scpt”, “ssrc”, “PICT”. Iterating chunks, until unknown type is detected, we compose M4V file.\n\nHere is an examination of a sample: A sample m4v file’s binary data is inspected through Hex Viewer and it can be observed that it starts with a signature ftyp (hex: 66 74 79 70) at offset 4, which defines QuickTime Container File Type. File sub-type is M4V_ (hex: 4D 34 56 20) which points to M4V (MPEG-4) file type. First block size is 32 (hex: 00 00 00 20, big-endian, high byte first), size located at offset 0. At offset 32 (hex: 20) is located the second chunk, which has a size of 30,322 (hex: 00 00 76 72, big-endian, lower-byte first) and type moov (hex: 6D 6F 6F 76). The next chunk is located at offset 32+30,322#30,354 (hex: 00 00 76 92) and has a size 8 (hex: 00 00 00 08) and type free (hex: 66 72 65 65)."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "M4V file format, developed by Apple, is a video container optionally protected with Digital Rights Management (DRM) copy protection to protect privacy or copy. Videos and audio tracks are wrapped around by container files to indexing and organizing playback streams. In addition, containers also provide the feature of chapters similar to those on DVDs. Apple uses M4V to encode videos in its iTunes Store. It protects unauthorized reproduction through Apple’s FairPlay copy protection by allowing M4V files to be played on only authorized computers having the accounts used to purchase the video. However, if DRM-protection is removed from M4V files, these files can be played in other video players by changing the extension from .m4v to .mp4, which is why M4V files are associated with MPEG-4. M4V uses H.264 for video and AAC and Dolby Digital for audio encoding and decoding."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

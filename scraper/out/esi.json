@@ -1,7 +1,7 @@
 {
   "slug": "esi",
   "extension": "esi",
-  "name": ".ESI",
+  "name": "EtherCAT Slave Information",
   "summary": "Learn about .ESI files and view a list of programs that open them.",
   "developer": "EtherCAT Technology Group",
   "programs": {
@@ -30,6 +30,19 @@
         "name": "Apple Xcode",
         "url": "https://fileinfo.com/software/apple/xcode"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "EtherCAT is an industrial Ethernet networking standard developed by Beckhoff Automation, in 2003. The standard is currently maintained by the EtherCAT Technology Group.",
+      "An EtherCAT network contains a controller that sends data as a \"telegram\" through all the network's nodes. The telegram passes through each node sequentially, such that node 1 can extract data from and add data to the telegram before sending it on to node 2. After it has passed through each node, the telegram returns to the controller.",
+      "Each node's ESI file controls how the node, which can be comprised of any number of devices, receives and sends data. The ESI file specifies what devices are contained within the node, how those devices are grouped, and what ports the devices use to send and receive data, among other settings.",
+      "NOTE: ESI files are often saved with the .XML extension."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An ESI file is an EtherCAT Slave Information file. It contains XML used to control how data is shared between a controller and a node in an EtherCAT network. ESI files are also used to name and define nodes, so administrators can identify them within the network."
     ]
   },
   "how_to_open": {
@@ -73,8 +86,11 @@
     {
       "url": "https://fileinfo.com/extension/esi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.054Z"
+      "retrieved_at": "2025-11-01T22:32:42.454Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.054Z"
+  "last_updated": "2025-11-01T22:32:42.454Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

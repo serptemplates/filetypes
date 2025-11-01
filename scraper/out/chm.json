@@ -1,9 +1,11 @@
 {
   "slug": "chm",
   "extension": "chm",
-  "name": "CHM File",
+  "name": "Compiled HTML Help File",
   "summary": "Learn about .CHM files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -64,6 +66,18 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "As help documentation has improved and progressed toward website and browser-based formats, the CHM format has largely been retired. Most programs no longer use CHM-based help documentation, and most programs that previously opened CHM files are either unmaintained or no longer open CHM files.",
+      "NOTE: While CHM files typically contain help documentation, some contain eBooks."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The CHM file format represents Microsoft HTML help file that consists of a collection of HTML pages. It provides an index for quick accessing the topics and navigation to different parts of the help document. The CHM file can be searched for contents via the provided search option. CHM is Microsoft Proprietary online help file format that is often used for software documentation. In addition, it is used in several other applications like training guides, interactive books, and electronic newsletters. Most of the modern Microsoft Development environments support generating CHM documentation from information available in the application.\n\nThe unique ability of CHM file format to implement a combined table of contents and index makes it distinct over other standard HTML pages. The generated CHM file is relatively small in size and, hence, can easily be distributed with software packages. The help authoring tool, HTML Help Workshop, provides an easy-to-use system for creating and managing help projects and their related files. CHM files may include text, images, and hyperlinks; viewable in a Web browser; used by Windows and other programs as an online help solution.",
+      "A CHM file contains help documentation compiled and saved in a compressed HTML format. It may include text, images, and hyperlinks. CHM files are used by Windows programs as an online help solution. They are compressed using LZX compression."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In Windows, you can open a CHM file by double-clicking it. When you do, the CHM file will appear within Microsoft HTML Help Executable.",
@@ -75,38 +89,32 @@
       "You can use G.D.G. Software Chm To Exe (Windows) to extract the .HTM files, images, and other constituent files a CHM file contains. You can also use Chm To Exe to convert a CHM file to the .EXE format. However, to complete the conversion to the EXE format, you must also install G.D.G Software HTML Executable."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Cool Reader"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABgUlEQVR42r2XAbKEIAiG9WR5M+tmdjKf1vBCBYG1XZqaWVeXnw801rtV2/dcHu66991bl5sXPI7d47i/d/3v2gXgiKVbQUQvgIk4heC2bXPHcVwjViKyACbiFNLlGNt5ni6kZCLCC2Airs8Y4+C4Ggi6hQSVCFqAgHuMOjiKjCYtrQAD7hn2egGlaVqKiE5AGzkVMWcUdryeTEtJB0vA4lwiggn6w+sI5JjNzjUifKkLFYFccogn567yrWmB9SYCePIKEWyvEOgLqoqTcv8IWCRAVXMvdiZiiQB2XncJ2F1ct9g6O15r6fQtEcCY+5oAsTAOn/Gh9BMCMI7ntSl4icB0fzf1QZP6eBf0IiDCJrLJSfrzc6AKTkVw/D+IDARWTEXqW+8Cqg8wvwukPoCPOjiuFobvpX4ARFSbCZGOYbYpGQgwIqT+oN+C7MlH9IaTptTeDYsdENGYzttyRkS9AkNE6gEHek5jirRYWnG7AEVaPnFuFyAQkXC/J2BGxPgX/Q/4wAc/yZavIAAAAABJRU5ErkJggg==",
-      "alt": "ChemDraw"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA8UlEQVR42u2XawrEIAyE9WR6M/VmejLXyJYtbKKJ1S5dFPzjY+ZzaALV6sdDPx7Ae5/LxNZhdvWHAQ7jnBviH3XSZwgAzK21yhjbPZtSVHCW8hIDxBireevlWBLlHoB8+Y0kkDHzU9yqsb8GABHnnHkwALF+G4A4ITEAlJnEERpOqzqgFKEKsMZEAjjnusYppdILTHmdJssyhNoRSa/LAK2eAOawj9X/DQC5JqM639klgCqAxs8zZwGEEMjL73jF+lMTOCfBMfy/BKgSpBrPkgSWAuwEOAlI9aclAOM4t6wM2UIbYDYA9rczqjf1wuyxAV6Ie7khj9zQlQAAAABJRU5ErkJggg==",
-      "alt": "HTML Help"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Microsoft SQL Server"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACNklEQVR42sWWC3auIAyEYWWyM8POdGVeEggOL8HWnpue/goC8zEB1Jr/HHbWgIiudJW2x3Fco7bhWW5Xj9GrnwJwx33f5d57L1ctj4LbdcSukdYSwHmeZtu2XM/lUXA7axmWbJq5uYK8tTJeA7cMwPZyOOca2+vgNlU6fudAslXrCpFYJ7/YT+usjoMzx/IUAO5TW64jEU+zTOLFbLt2Q2RHprtgNEAJsDZOb038OcBgC645gCmAOvvSgWYBTtfALUxQl5/J/wxgZQsOO6Jw+/zeCanwtNi6DgwBVJwPu3TwGdTS2HcYM1x89Gro5mgLFgAortAMwcLRbhfFQ/kM5S0dSF77r++owpEGIM6Qj9so+hXAaE3YWrzt2ALgHBDgYdc8O4AAmOvcI2DbyBqPuRoAjuf4MuI6r2AFSHcN1AD4gqnfgmI9AhAZfGNmcbbK032V4QfbcJYCdsB726QAxR1D16INBGXNVwCjNcAA2fZYETrAB0vthDUTAKJmEYwAvL/FC/tljYQbe7UQAleewOU2zOI3SAHAlvOzBICfZ0XuWfzqOCJgpg+AECQI8a8O3QW1A44Bd9PJvYmfEBLpzBwB1BC9QABucxRrwPQhJB1wYjwBQO6v+kzg02snagCc26BRbwtqGhYcmAVn9wYgsBfynGdOyRIVf+HACoCkSrYkQDSr3kPvUvznALkzzrByQfMuTdSNDwDaYA9qm3Xm6EAr/hGAQgyfPWp9BJCjB/Ko8TXA6/gHzwXpr5YUk6EAAAAASUVORK5CYII=",
-      "alt": "TouchEn web"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Calibre"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -115,29 +123,53 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/chm_493.png",
+      "alt": "Screenshot of a .chm file in Microsoft HTML Help Executable",
+      "caption": "CHM file open in Microsoft HTML Help Executable"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.774Z"
+      "retrieved_at": "2025-11-01T22:32:42.134Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/chm/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.774Z"
+      "retrieved_at": "2025-11-01T22:32:42.134Z"
     },
     {
       "url": "https://fileinfo.com/extension/chm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.774Z"
+      "retrieved_at": "2025-11-01T22:32:42.134Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.774Z"
+      "retrieved_at": "2025-11-01T22:32:42.134Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.774Z"
+  "last_updated": "2025-11-01T22:32:42.134Z",
+  "mime": [
+    "application/vnd.ms-htmlhelp"
+  ],
+  "containers": []
 }

@@ -1,7 +1,7 @@
 {
   "slug": "exe",
   "extension": "exe",
-  "name": "EXE File",
+  "name": "Windows Executable File",
   "summary": "Learn about .EXE files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -46,6 +46,19 @@
         "name": "VMware Fusion with Microsoft Windows installed",
         "url": "https://fileinfo.com/software/vmware/fusion"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "EXE is the primary format software developers use to package and deliver Windows programs. Each EXE file contains data that Windows uses to recognize, read, and run the program the file contains. This data is saved in a compiled, binary format, sometimes called machine code. EXE files also often contain additional program resources, such as the program's icon and its GUI graphics assets.",
+      "When you double-click an EXE file in Windows, Windows runs the program the file contains. If the file includes an application installer, the installer will open and start the installation process. If the file stores an application, the application will open. Additionally, if the file contains a different kind of program (e.g., malware), that program will run.",
+      "Developers typically name EXE files such that you can tell whether they contain an installer or an application. For example, EXE files that store an installer are often named setup.exe, while EXE files that launch an app usually include the app's name (e.g. msedge.exe for Microsoft Edge).",
+      "Developers may save Windows application installers as .MSI files instead of EXE files. MSI files are similar to EXE files, except they always contain application installers. They never store Windows applications or other programs. Windows always uses Windows Installer (a utility included with Windows) to open MSI files and install the programs they contain."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An EXE file is an executable program that runs in Microsoft Windows. It contains an application, like notepad.exe or msedge.exe, that opens when you double-click the file. Some EXE files, such as installers downloaded from the internet, will install a program on your Windows computer when opened."
     ]
   },
   "how_to_open": {
@@ -97,18 +110,25 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.791Z"
+      "retrieved_at": "2025-11-01T22:32:42.147Z"
     },
     {
       "url": "https://fileinfo.com/extension/exe",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.791Z"
+      "retrieved_at": "2025-11-01T22:32:42.147Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.791Z"
+      "retrieved_at": "2025-11-01T22:32:42.147Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.791Z"
+  "last_updated": "2025-11-01T22:32:42.147Z",
+  "mime": [
+    "application/octet-stream",
+    "application/x-msdos-program",
+    "application/x-msdownload"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -4,8 +4,21 @@
   "slug": "wbcat",
   "extension": "wbcat",
   "name": ".WBCAT File Extension",
+  "type_name": "Windows Backup Catalog",
   "summary": "Learn about .WBCAT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A WBCAT file is a backup information file created by Windows Backup and Restore. It is stored within a backup and contains a catalog of that backup's files. Backup and Restore uses WBCAT files to restore files to the correct locations during the file restore process."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Windows Backup and Restore is a backup application bundled with Windows. When you use Backup and Restore to back up your files, it creates a Catalogs directory within your backup. This directory contains a single file, GlobalCatalog.wbcat.",
+      "The WBCAT file contains a list of files included in the backup and their locations at the time the backup was created. When you restore your backup, Backup and Restore uses this catalog to place copies of your backed-up files in the correct locations.",
+      "NOTE: Each backup created using Backup and Restore also contains several .ZIP files. These archives contain your backed-up files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "WBCAT files are not meant to be opened. Windows Backup and Restore uses WBCAT files when you restore the backup in which the file is stored."

@@ -1,9 +1,11 @@
 {
   "slug": "m4s",
   "extension": "m4s",
-  "name": "M4S File",
+  "name": "MPEG-DASH Video Segment",
   "summary": "Learn about .M4S files and view a list of programs that open them.",
   "developer": "Moving Picture Experts Group",
+  "category": "video",
+  "category_slug": "video",
   "programs": {
     "windows": [
       {
@@ -20,8 +22,23 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "MPEG-DASH is an adaptive bitrate streaming technique that allows users to stream high-quality video over the Internet using HTTP. Videos streamed using MPEG-DASH are divided into segments, which are made available at a variety of different bit rates. By dividing videos into segments and making those segments available at different bit rates, web clients can stream long videos smoothly without stalling or re-buffering.",
+      "When a user downloads a video streamed using MPEG-DASH, that video is saved as a series of M4S files. Each M4S file contains a specific segment of the streamed video. For example, a user who downloads a streamed YouTube video using youtube-dl may see the video saved as a series of M4S files.",
+      "NOTE: M4S files often do not contain audio data."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An M4S file is a small segment of a video that is streamed over the internet using the MPEG-DASH streaming technique. It contains a video segment in the form of binary data. The receiving application (usually a web browser or media players) plays these segments in the order they are received. The first M4S segment is identified by the initialization data that it contains. In summary, M4S files are small individual media segments of a complete file.",
+      "An M4S file is a segment of a video streamed using the MPEG-DASH video streaming technique. It contains binary data that represents a video segment. M4S files that are the first segment of a video also contain initialization data, which allows media players to recognize and begin playing the video."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      "There are open source APIs available that can be used to read and convert M4S files.\n\nlibdash - .NET API for M4S filesdash.js - Javascript client for M4S fileGo Library for creating Dash Files",
+      "MFourStoMp4",
       "M4S files cannot be opened and played individually. To play the video an M4S file contains, you must:",
       "Combine all the M4S files that comprise a single streamed video into one M4S file.",
       "Convert the combined M4S file into an .MP4 file.",
@@ -32,10 +49,33 @@
   },
   "how_to_convert": {
     "instructions": [
+      "MFourStoMp4",
       "You can use FFmpeg to convert M4S videos to the MP4 format. Before doing so, be sure to combine all the segments of your video into a single video file, using the instructions in the How to open an M4S file section.",
       "To convert your M4S file, open a terminal window, navigate to the directory that contains your M4S file, and enter ffmpeg -i YourFile.m4s YourFile.mp4."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
@@ -70,23 +110,26 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.822Z"
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/video/m4s/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.822Z"
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
       "url": "https://fileinfo.com/extension/m4s",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.822Z"
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.822Z"
+      "retrieved_at": "2025-11-01T22:32:42.175Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.822Z"
+  "last_updated": "2025-11-01T22:32:42.175Z",
+  "mime": [
+    "video/iso.segment"
+  ],
+  "containers": []
 }

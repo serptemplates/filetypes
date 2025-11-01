@@ -1,9 +1,39 @@
 {
   "slug": "pjpg",
   "extension": "pjpg",
-  "name": ".PJPG",
+  "name": "Progressive JPEG Image",
   "summary": "Learn about .PJPG files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The purpose of the PJPEG format is to provide a lower-resolution preview of an image as a web browser loads it through multiple passes, progressively increasing the image quality as it loads the scans (typically 3 to 5). PJPEG differs from the standard Baseline JPEG format, which stores a complete, top-to-bottom scan of the image (the final scan in the PJPEG format).",
+      "For example, when browsing the web with a slow internet connection, you could possibly wait 30 seconds for an image on a webpage saved in the Baseline JPEG format to load line by line in a blank space on the page. However, a web browser loading an image saved in the PJPEG format loads scans of the image that progressively increase in quality with each pass, allowing you to quickly see a low-resolution version of the image (likely blurry and pixelated) that improves (becomes sharper and less pixelated) as the browser loads progressive PJPEG image scans.",
+      "Various image editors allow you to save JPEG images in the Progressive JPEG format. For example, Adobe Photoshop can export images in the Progressive JPEG format and allows you to choose the number of scans (3 to 5). To do this:",
+      "Select File → Save a Copy.",
+      "Coose JPEG from the \"Format\" dropdown menu and click Save.",
+      "Select Progressive under the \"Format Options,\" choose the number of scans, then click OK.",
+      "NOTE: Although Photoshop saves the image in the Progressive JPEG format, it saves it as a JPG file, not a PJPG file.",
+      "Progressive JPEG save dialog in Adobe Photoshop 2023"
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a PJPG file with applications that support the JPEG format, such as Microsoft Photos in Windows or Apple Preview in macOS. The apps may detect the PJPEG format and open the PJPG file automatically. However, some programs may not recognize the format unless you rename the .pjpg extension to .jpg.",
+      "Some programs that support JPEG images may still not open a PJPG file renamed with the .jpg extension. In these cases, you can open it with Microsoft Photos or Apple Preview, then convert it to the Baseline JPEG format to view it with other programs."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Image editors that support JPEG images can convert PJPG files to other formats, such as Baseline JPEG images or .PNG. The image editors may detect the PJPEG format and open the PJPG file automatically. However, you may need to rename the .pjpg extension to .jpg, then open it with the image editor.",
+      "For example, to convert a PJPG file with Apple Preview:",
+      "Rename the .pjpg extension to .jpg.",
+      "Open the renamed file with Preview.",
+      "Select File → Export."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,21 +52,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=6125&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a PJPG file with applications that support the JPEG format, such as Microsoft Photos in Windows or Apple Preview in macOS. The apps may detect the PJPEG format and open the PJPG file automatically. However, some programs may not recognize the format unless you rename the .pjpg extension to .jpg.",
-      "Some programs that support JPEG images may still not open a PJPG file renamed with the .jpg extension. In these cases, you can open it with Microsoft Photos or Apple Preview, then convert it to the Baseline JPEG format to view it with other programs."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Image editors that support JPEG images can convert PJPG files to other formats, such as Baseline JPEG images or .PNG. The image editors may detect the PJPEG format and open the PJPG file automatically. However, you may need to rename the .pjpg extension to .jpg, then open it with the image editor.",
-      "For example, to convert a PJPG file with Apple Preview:",
-      "Rename the .pjpg extension to .jpg.",
-      "Open the renamed file with Preview.",
-      "Select File → Export."
     ]
   },
   "images": [
@@ -77,10 +92,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/pjpg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.242Z"
+      "url": "https://fileinfo.com/extension/pjpg",
+      "retrieved_at": "2025-11-01T22:32:42.691Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.242Z"
+  "last_updated": "2025-11-01T22:32:42.691Z"
 }

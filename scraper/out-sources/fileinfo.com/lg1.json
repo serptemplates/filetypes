@@ -4,8 +4,22 @@
   "slug": "lg1",
   "extension": "lg1",
   "name": ".LG1 File Extension",
+  "type_name": "Message Queuing Message State File",
   "summary": "Learn about .LG1 files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An LG1 file is a log file created by Microsoft Message Queuing (MSMQ), a messaging protocol implemented in Windows for asynchronous communication between applications. It contains information about the state of a Queueing Message log (QMLog) .MQ file that is currently being written to by MSMQ. LG1 files temporarily store message information along with .LG2 files in case the MQ file becomes corrupt during the writing process."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MSMQ allows applications that are running on separate servers and at different times to communicate with each other. The \"Queuing\" aspect allows messages to be stored in a queue in the event that an application receiving a message from a sending application is currently inaccessible. When the application becomes accessible again, the messages waiting in the queue are then sent to the application. An example usage of this protocol is in eCommerce where sales need to be processed by different applications on different networks.",
+      "Messages that are communicated between applications are stored in MQ files. These files may contain messages from a single queue or from multiple queues. MQ files may grow up to 4 MB in size, then another MQ file is generated. Since messages may occur over a long span of time, information is written to LG1 and LG2 files to log the state of the MQ file in case anything happens to it.",
+      "You will most likely only encounter an MSMQ LG1 file if you are a developer of a system that utilizes MSMQ and are exploring the MSMQ\\​Storage folder. This folder also contains one or more MQ files for which the LG1 and LG2 files were created to store logs.",
+      "NOTE: The MSMQ messaging protocol was developed by Microsoft and introduced in Windows NT 4 and Windows 95."
+    ]
+  },
   "programs": {
     "windows": [
       {

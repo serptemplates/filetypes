@@ -1,9 +1,11 @@
 {
   "slug": "dv",
   "extension": "dv",
-  "name": "DV File",
+  "name": "Digital Video File",
   "summary": "Learn about .DV files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "video",
+  "category_slug": "video",
   "programs": {
     "windows": [
       {
@@ -48,14 +50,35 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The HD Digital VCR Association developed the DV format in 1994, and Sony, Panasonic, and JVC spearheaded a consortium of video manufacturers that launched the format a year later. It aimed to transition from analog to digital data, offering higher video resolution and improved audio quality.",
+      "Amateur and professional users widely used the DV videotape format in the 1990s and 2000s. However, with advancements in camera technology favoring memory cards, solid-state drives for video storage, and more advanced video file formats, the use of DV tapes declined rapidly in the 2010s. Additionally, magnetic tape couldn't keep up with increasing video resolutions and bitrates.",
+      "DV cameras record video data compressed with the DV codec and uncompressed audio data (4-track 12-bit 32 kHz or 2-track 16-bit 48 kHz) onto magnetic tape in DV cassettes. When transferring video to a computer from a camera via Firewire, the computer may save the data in various DV file formats. Examples include:",
+      "DV-DIF - The raw form of DV, not wrapped in a container, and stored as DV or .DIF files.",
+      "QuickTime-DV - Wrapped in the QuickTime container, primarily used on Macs.",
+      "DV-AVI - Wrapped in the Audio Video Interleave (.AVI) container, primarily used on Windows computers. There are two types: Type-1 (stores interleaved data as one stream) and Type-2 (splits interleaved data into entirely separate video and audio data streams).",
+      "MXF-DV - Wrapped in the Material Exchange Format (.MXF) container.",
+      "NOTE: If a DV file contains video saved in a program-specific format, programs that support DV files but not the program-specific format will likely not open it."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A .dv file is a video file format commonly used in digital video recording. It stands for Digital Video and was introduced by Sony and Panasonic in 1990s. DV files are typically saved with .dv extension and contain compressed audio and video data.\n\nDV files are commonly used in professional video production and editing workflows. They offer high-quality video and audio, making them suitable for broadcast and professional applications. The format uses intraframe compression, meaning each frame is compressed individually, allowing for accurate editing and frame-by-frame control.\n\nDV format was popular in past, newer video formats like MP4 and MOV have become more common in recent years due to their higher compression efficiency and compatibility with modern devices.",
+      "The DV format is a standardized format for digital video recording. It defines the structure and specifications for storing video and audio data in digital file. The DV format is defined by International Electrotechnical Commission (IEC) and is based on specifications set by Institute of Electrical and Electronics Engineers (IEEE).\n\nThe DV format uses DIF (Digital Interface Format) structure which organizes video and audio data into consecutive digital blocks called DIF blocks. These DIF blocks contain compressed video frames, uncompressed audio samples and associated metadata.\n\nThe video compression in DV format uses DV codec which is a form of lossy compression specifically designed for digital video recording. It employs intraframe and interframe compression techniques to achieve efficient storage and playback of video content.\n\nThe audio in DV format is typically uncompressed and encoded using PCM (Pulse Code Modulation) which provides high-quality audio reproduction. The audio samples are synchronized with corresponding video frames to maintain audio-video alignment.",
+      "A DV file is a video recorded by various digital video (DV) cameras, including those manufactured by Sony, Panasonic, and JVC. It combines lossy-compressed video data using the DV codec with uncompressed audio data in the Digital Video Digital Interface Format (DV-DIF), the raw form of the DV format. During the 1990s and 2000s, many amateur and professional videographers recorded video with their camcorders in the DV format."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      "There are several software options available for playing, editing and converting DV files. Here are some commonly used ones:\n\nVLC Media Player: VLC is popular and versatile media player that supports a wide range of video formats, including DV. It’s free and available for Windows, Mac and Linux.Adobe Premiere Pro: Adobe Premiere Pro is professional video editing software that supports DV files. It offers advanced editing features and is widely used in industry.Final Cut Pro: Final Cut Pro is professional video editing software designed for Mac users. It supports DV files and offers range of powerful editing tools.Sony Vegas Pro: Sony Vegas Pro is another professional video editing software that supports DV files. It provides comprehensive set of editing features and is available for Windows.HandBrake: HandBrake is free and open-source video converter that can convert DV files to other formats. It is available for Windows, Mac and Linux and supports batch conversion.",
       "You can open a DV file with various video players and editors. For example, the free, cross-platform VideoLAN VLC media player allows you to play DV files.",
       "If you are a Mac user, you can play DV files with Apple QuickTime Player or import them into a video project in Apple iMovie and edit them. Both of these programs are bundled with macOS."
     ]
   },
   "how_to_convert": {
     "instructions": [
+      "If you have DV file and want to convert it to different format, you can use video conversion software to convert it to more widely supported format e.g\n\nMP4AVIMOV\n\nSome softwares that can be helpful in this regard are\n\nKdenliveVideoLAN VLC",
       "Various programs, including VideoLAN VLC media player and Kdenlive, can convert DV files to other file types.",
       "For example, VLC media player can convert DV files to the following formats:",
       ".MP4 - MPEG-4 Video",
@@ -66,6 +89,28 @@
       ".MP3 - MP3 Audio"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -99,15 +144,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/video/dv/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.919Z"
+      "retrieved_at": "2025-11-01T22:32:42.264Z"
     },
     {
       "url": "https://fileinfo.com/extension/dv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.919Z"
+      "retrieved_at": "2025-11-01T22:32:42.264Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.919Z"
+  "last_updated": "2025-11-01T22:32:42.264Z",
+  "containers": []
 }

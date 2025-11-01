@@ -1,7 +1,7 @@
 {
   "slug": "tec",
   "extension": "tec",
-  "name": ".TEC",
+  "name": "TECkit Compiled Mapping File",
   "summary": "Learn about .TEC files and view a list of programs that open them.",
   "developer": "SIL International",
   "programs": {
@@ -10,6 +10,19 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=6529&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You most likely will only encounter TEC files if you use TECkit for converting text between 8-bit and Unicode encodings. TEC files are compiled from source .MAP files, which include mappings between a byte encoding and Unicode in plain text.",
+      "TEC files can be compiled from MAP files using the Windows command-line compiler included with TECkit (TECkit_Compile.exe). Here is a sample command that compiles an example.map file:",
+      "C:\\TECkit\\>teckit_compile example.map -o example.tec",
+      "NOTE: TECkit was originally created to convert text from older 8-bit encodings to Unicode."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A TEC file is a file created by TECkit (Text Encoding Conversion toolkit), a program used for conducting text conversions. It contains binary code that describes the mapping between a byte encoding and Unicode and vice versa. TEC files are sometimes used in conjunction with LaTeX technologies to convert characters on the fly when generating LaTeX documents in different languages."
     ]
   },
   "images": [
@@ -42,8 +55,11 @@
     {
       "url": "https://fileinfo.com/extension/tec",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.324Z"
+      "retrieved_at": "2025-11-01T22:32:42.803Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.324Z"
+  "last_updated": "2025-11-01T22:32:42.803Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

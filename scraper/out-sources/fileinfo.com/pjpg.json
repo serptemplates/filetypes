@@ -4,8 +4,29 @@
   "slug": "pjpg",
   "extension": "pjpg",
   "name": ".PJPG File Extension",
+  "type_name": "Progressive JPEG Image",
   "summary": "Learn about .PJPG files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A PJPG file is a raster image saved in the Progressive JPEG (PJPEG) format, which stores multiple layers, or \"scans,\" of an image rendered by a web browser to provide the user a glimpse of the image as it loads. While more common in the late 1990s and early 2000s (due to its use by Microsoft Internet Explorer), PJPG files are rare now, and PJPEG images are typically saved with the .jpg extension (.JPG files). Users can open a PJPG file by renaming the .pjpg extension to .jpg, then opening it with a program that supports JPEG images, such as Microsoft Photos in Windows or Apple Preview in macOS."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The purpose of the PJPEG format is to provide a lower-resolution preview of an image as a web browser loads it through multiple passes, progressively increasing the image quality as it loads the scans (typically 3 to 5). PJPEG differs from the standard Baseline JPEG format, which stores a complete, top-to-bottom scan of the image (the final scan in the PJPEG format).",
+      "For example, when browsing the web with a slow internet connection, you could possibly wait 30 seconds for an image on a webpage saved in the Baseline JPEG format to load line by line in a blank space on the page. However, a web browser loading an image saved in the PJPEG format loads scans of the image that progressively increase in quality with each pass, allowing you to quickly see a low-resolution version of the image (likely blurry and pixelated) that improves (becomes sharper and less pixelated) as the browser loads progressive PJPEG image scans.",
+      "Various image editors allow you to save JPEG images in the Progressive JPEG format. For example, Adobe Photoshop can export images in the Progressive JPEG format and allows you to choose the number of scans (3 to 5). To do this:",
+      "Select File → Save a Copy.",
+      "Coose JPEG from the \"Format\" dropdown menu and click Save.",
+      "Select Progressive under the \"Format Options,\" choose the number of scans, then click OK.",
+      "NOTE: Although Photoshop saves the image in the Progressive JPEG format, it saves it as a JPG file, not a PJPG file.",
+      "Progressive JPEG save dialog in Adobe Photoshop 2023",
+      "Select File → Save a Copy.",
+      "Coose JPEG from the \"Format\" dropdown menu and click Save.",
+      "Select Progressive under the \"Format Options,\" choose the number of scans, then click OK."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a PJPG file with applications that support the JPEG format, such as Microsoft Photos in Windows or Apple Preview in macOS. The apps may detect the PJPEG format and open the PJPG file automatically. However, some programs may not recognize the format unless you rename the .pjpg extension to .jpg.",

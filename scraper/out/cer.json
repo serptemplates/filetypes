@@ -1,9 +1,11 @@
 {
   "slug": "cer",
   "extension": "cer",
-  "name": "CER File",
+  "name": "Internet Security Certificate",
   "summary": "Learn about .CER files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -68,38 +70,43 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "You can view a website's certificate in a web browser by clicking the lock icon when accessing a secure site (secure sites use SSL encryption as seen by the https:// prefix in the URL). In each of the major web browsers, such as Google Chrome, Microsoft Edge, and Mozilla Firefox, the lock icon is located on the left side of the address bar."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with an extension .cer is responsible for storing some information about the owner certificate and the specific public key. This format of files cannot store the private keys and have the capacity to store only one certificate which is x509. The specifically secured certificate authorities are those which belong to HTTPS, a trusted and secured protocol for browsingThe CER is a certificate of your server. It is usually received by the certificate authority for the domain. CER is mostly considered the same as CRT, although both are the same format of SSL certificate but are different filename extensions. These can be used on operating systems by simply opening a browser and checking the security of the browser or website being used.",
+      "A CER file is a security file provided by a third-party Certificate Authority, such as VeriSign or Thawte, that verifies the authenticity of a website. It is installed on a web server to establish the validity of a particular website hosted on the server."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "The Print Shop"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "PrintMaster"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA+ElEQVR42u2WURKDIAxE5WRyM/RmeLKWnbIQUtqZfgSsbX40kEmeYQXcLdm+78sscwTw3g8vHmM8GQAhMKGB9Bh9/ZTzMJlT+10AHdhL2IvpzdPftq3EyvkGAEE6EcZ6472YdwCvunEuDfBLRxpqNgBcq3VdF+fcEL8BSK+FDgHW/vkALqkBWAhhjgZoGB+qgdpRtrqCDNMA0qXOZ6AKYaoBXVgbQbgkJkvwSPwMIYubaqDmagHQIIyHTGaqAXaANz2+6xIm+wC/XhYkELqAE9B0H5D/P4sdx1GOe3MNfOL/xlnwvw98jwam34qnAsjNY6SVJZhSPdsdj6SbnERQUL4AAAAASUVORK5CYII=",
-      "alt": "Scrapbooks"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABnElEQVR42r2XMVbDMAyG5ZWJmQMwM3WNZ47AxBE4QnsTJs6hrkw9BTMsrMF268SxpUhyQ/8MfXFq/d+vp7wkDgp9fH6PD7tTuQQettEr7OEd0NXrjjOmzHHFQAYdLiF/4GV3P4G4c2EcpaKYSgxk6WM4ZJhyr5sBtOnHokBtqOvIvL/sgutJHwHq6xaAsgskgJS+Ld5CbAYgpdcBtLODGOp47xqAtfRbAuz3B3h8foNVgDo9B4DQSgMQOrAEkNJnAElth2iAKBaASq+B8eQ/FQDXpKdNeXMRgErPDZ8sBYCUvt+8A4BK7xSDh+jDVKMdAKrbsCd9NB/CtmPgbCEMAD3pS/OsGYK/i0gAa/o6eTzvBrCm59q+hDAAWNJn81TAIXn9DDECpwUAlZ596AjmXQCgVGlOT7wewgxQm1tEQZgALMlnDWGfkwFQAqiTX8x9NEhzMv/S8DSEDuBK8zWICYB7Ld/KnFI2TwDJq+7CP5qTAIsu3NB8Asjiv5K2bftUN76U1osJ4vcUBge7EmoVzb/unlqAW0Bk8/h9+Adrt0xYR32iHQAAAABJRU5ErkJggg==",
-      "alt": "Print Artist"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "DigitalSign Professional"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Kleopatra Certificate Manager"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "DigitalSign Reader"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -108,29 +115,48 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.773Z"
+      "retrieved_at": "2025-11-01T22:32:42.133Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/cer/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.773Z"
+      "retrieved_at": "2025-11-01T22:32:42.133Z"
     },
     {
       "url": "https://fileinfo.com/extension/cer",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.773Z"
+      "retrieved_at": "2025-11-01T22:32:42.133Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.773Z"
+      "retrieved_at": "2025-11-01T22:32:42.133Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.773Z"
+  "last_updated": "2025-11-01T22:32:42.133Z",
+  "mime": [
+    "application/pkix-cert"
+  ],
+  "containers": []
 }

@@ -4,8 +4,19 @@
   "slug": "edb",
   "extension": "edb",
   "name": ".EDB File Extension",
+  "type_name": "Exchange Information Store Database",
   "summary": "Learn about .EDB files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An EDB file is a database created by Microsoft Exchange Server. It serves as the main repository for the mailbox data saved by Exchange. EDB files store both in-process and stored non-SMTP messages, formatted using a b-tree structure that includes a top-level node and many child nodes."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Priv1.edb and Pub1.edb are the main EDB files used for the Exchange information store. They each have a corresponding .STM file that contains SMTP messages."
+    ]
+  },
   "programs": {
     "windows": [
       {

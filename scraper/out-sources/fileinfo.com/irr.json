@@ -4,8 +4,20 @@
   "slug": "irr",
   "extension": "irr",
   "name": ".IRR File Extension",
+  "type_name": "Irrlicht 3D Scene",
   "summary": "Learn about .IRR files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An IRR file is a 3D file created by Irrlicht, an open-source 3D engine written in C++. It contains a scene graph, which includes particle systems, animators, and materials in XML format that Irrlicht references to create game scenes. Each IRR file may include user data, such as links to .IRRMESH mesh files, for scene nodes contained in the file."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "An example call to load a scene, or IRR file, in Irrlicht is below:",
+      "// load the scene if (argc>1) smgr→loadScene(argv[1]); else smgr→loadScene(\"example directory/sample.irr\");"
+    ]
+  },
   "programs": {
     "windows": [
       {

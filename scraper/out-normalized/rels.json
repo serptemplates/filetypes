@@ -1,9 +1,20 @@
 {
   "slug": "rels",
   "extension": "rels",
-  "name": ".RELS",
+  "name": "Open Office XML Relationships File",
   "summary": "Learn about .RELS files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "RELS files are not meant to be opened manually. Instead, the file is referenced by the Microsoft Office application opening the document that contains the RELS file.",
+      "If you need to view the information in a RELS file, you can use a text editor since the information is saved in XML format. However, you should not edit the contents because it may cause the document that contains the RELS file to become unusable.",
+      "Relationships within RELS files are declared using the XML syntax <Relationship Id=\"someID\" Type=\"relationshipType\" Target=\"targetPart\"/>, where Id is the unique user-defined string, Type is the type of content, and Target is the target file used for the relationship.",
+      "NOTE: OOXML RELS files were first introduced with the release of Microsoft Office 2007."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -52,10 +63,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/rels",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.274Z"
+      "url": "https://fileinfo.com/extension/rels",
+      "retrieved_at": "2025-11-01T22:32:42.733Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.274Z"
+  "last_updated": "2025-11-01T22:32:42.733Z"
 }

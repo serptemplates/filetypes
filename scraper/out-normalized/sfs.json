@@ -1,9 +1,28 @@
 {
   "slug": "sfs",
   "extension": "sfs",
-  "name": "SFS File",
+  "name": "Kerbal Space Program Save File",
   "summary": "Learn about .SFS files and view a list of programs that open them.",
   "developer": "Squad",
+  "category": "other",
+  "mime": [
+    "application/vnd.spotfire.sfs"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Squad Kerbal Space Program is a popular rocket construction and space flight simulation game. It is available for many platforms, including Windows, macOS, and Linux.",
+      "The game stores a player's current game state, including all their in-progress flights, in a file named persistent.sfs. This file is a plain text file, which Kerbal Space Program modders can open and edit to make changes to their in-progress games. For example, a player can edit persistent.sfs to give themself more money.",
+      "Kerbal Space Program also allows players to create \"quicksaves\" of their game to revert back to previous game states. For example, a player might want to revert to a previous state if one of their rockets crashes. These quicksaves are named quicksave.sfs."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit an SFS file in Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. You can also open and edit an SFS file in SFSEd (Windows), a program used to view and edit Kerbal Space Program save files.",
+      "To use an SFS file with Kerbal Space Program (multiplatform), place the file in your installation's saves directory. For example, you should place persistent.sfs files in the ~/​saves/​default directory."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -60,32 +79,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open and edit an SFS file in Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. You can also open and edit an SFS file in SFSEd (Windows), a program used to view and edit Kerbal Space Program save files.",
-      "To use an SFS file with Kerbal Space Program (multiplatform), place the file in your installation's saves directory. For example, you should place persistent.sfs files in the ~/​saves/​default directory."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmklEQVR42u2VaxKDIAyE4WbeTLyZN6NEDV1CwkM7/mo6dcBK9ssGqnfPIqaPi/6ceJpcI770YuihP0ATgC8ZIKd8ByCF8/6bJoTz+64DCWLbfAZ404HsggAYzvsTABaerf4pQLYf94CYd/PfAaiEeXy2YnPrup7Jff84zgIc/ebk19BxwfwbQVAQSM+NUYBctRQvkikgPTd6AIUwin/FdJAGRKHbAohRyS6rt0DQDWyJBNEAqqplT7H32njEDQbxLWEZlCCkw261YMQNFEcHKrv5WPVaoAn0NinFvu9uWZbDgWhVjefcAkCL9bVNENsBy416D9SbbAbkcIDtkNVqiTiZVrm2yTCkc7SfsgMEQTEK0nIMn+PisEiKAK/NwgEEuQMhhWUEeGWmsffpEummdIATjO4NnmMeHKMwix9rCADJZIJeS6yqLXEWzmuvmxEeqHqHzmj/F1bVmE8KFwASghfKPkpHRi23xAsADQSTaI48FVcBNDc0R6xxz/IhgFZbLPGZqocBWiBPqp4G0EBI9G7VtwE0N56IU3wABzeWK+ZGXugAAAAASUVORK5CYII=",
-      "alt": "STARFAX"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaElEQVR42u3WSwqAMAyEYQM9WI4+N1MUCgo1brTj4p9d6WO+XRqS1sWY2AHKPBYpTSk9910APV9BRj1DwNuQ6v0S0A9V+1We7gIAAAAAgP8DbMPINo5tH5IprTeJ1pqzHwAAAAAA+AEb62rRnZ+Gdg4AAAAASUVORK5CYII=",
-      "alt": "Browse3D Pro"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "sfswin Application"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Bitser"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -106,24 +103,27 @@
     {
       "url": "https://fileinfo.com/svg/close.svg",
       "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.865Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.210Z"
     },
     {
-      "url": "https://fileinfo.com/extension/sfs",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.865Z"
+      "url": "https://fileinfo.com/extension/sfs",
+      "retrieved_at": "2025-11-01T22:32:42.210Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.865Z"
+      "retrieved_at": "2025-11-01T22:32:42.210Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.865Z"
+  "last_updated": "2025-11-01T22:32:42.210Z"
 }

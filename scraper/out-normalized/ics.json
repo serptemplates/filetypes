@@ -1,9 +1,42 @@
 {
   "slug": "ics",
   "extension": "ics",
-  "name": "ICS File",
+  "name": "Calendar File",
   "summary": "Learn about .ICS files and view a list of programs that open them.",
   "developer": "Internet Engineering Task Force",
+  "category": "document",
+  "mime": [
+    "text/calendar"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In 1998, the Internet Engineering Task Force created the iCalendar, or ICS, file format. ICS files are plain text files that contain information about a calendar event, including the event's:",
+      "Title",
+      "Summary and description",
+      "Start and end times",
+      "Location",
+      "Alert trigger",
+      "The ICS format is a universal calendar file format that all popular calendar applications, including Microsoft Outlook, Apple Calendar, Google Calendar, and Mozilla Thunderbird Lightning Calendar, create and recognize. Because all popular calendar applications can use ICS files to add event details to a calendar, ICS files are the most common type of files used to exchange calendar information. Most commonly, office workers and other professionals use ICS files to send each other meeting requests. You may also receive ICS reminders for an upcoming birthday, holiday, trip, party, or other events."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an ICS file with various applications. For example, if you have a calendar application, such as Microsoft Outlook, Google Calendar, or Apple Calendar, installed on your device, you can double-click an ICS file to import the event details the file contains into your calendar.",
+      "If necessary, you can also manually import an ICS file into your calendar app. For example, to import an event into the web version of Google Calendar:",
+      "Click the Gear icon that appears in the program's upper right-hand side.",
+      "Select Settings → Import & export.",
+      "Select Import and import your ICS file. The event(s) it contains will be added to your calendar.",
+      "If you are having trouble importing your ICS file into a calendar application, you can open the file in any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac), to view the event information it contains. For example, you can see the event's start and end times (including time zone) listed in the file's DTSTART and DTEND lines. While opening an ICS file with a text editor is not the best way to view an event's details, it does allow you to view the information without a calendar application."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can convert an ICS file to a CSV file with a free online ICS to CSV converter, such as Indigoblue Free ICS to CSV Converter or ProjectWizards ICS to CSV Converter.",
+      "By converting an ICS file to a CSV file, you can import a calendar event into Microsoft Excel or another spreadsheet program."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -80,54 +113,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open an ICS file with various applications. For example, if you have a calendar application, such as Microsoft Outlook, Google Calendar, or Apple Calendar, installed on your device, you can double-click an ICS file to import the event details the file contains into your calendar.",
-      "If necessary, you can also manually import an ICS file into your calendar app. For example, to import an event into the web version of Google Calendar:",
-      "Click the Gear icon that appears in the program's upper right-hand side.",
-      "Select Settings → Import & export.",
-      "Select Import and import your ICS file. The event(s) it contains will be added to your calendar.",
-      "If you are having trouble importing your ICS file into a calendar application, you can open the file in any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac), to view the event information it contains. For example, you can see the event's start and end times (including time zone) listed in the file's DTSTART and DTEND lines. While opening an ICS file with a text editor is not the best way to view an event's details, it does allow you to view the information without a calendar application."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "You can convert an ICS file to a CSV file with a free online ICS to CSV converter, such as Indigoblue Free ICS to CSV Converter or ProjectWizards ICS to CSV Converter.",
-      "By converting an ICS file to a CSV file, you can import a calendar event into Microsoft Excel or another spreadsheet program."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC7klEQVR42tWXTUwTQRTH/9PtfiCFUIECAkkpBRoTpY2JFy4SjNFAjBpMOGqiJ42RC8FEA168SryJJpqYEA7EIPFg4udBPEnogRg9iIggUFBKaz8E2jo7pZQNuy30A9N3mdnZzL7fvPefN7ME/9lIzgBwl16M08aeIb/O0MOTjt0CRDK5cgpAcgsA3ROaADa7SXOazVGqOj7cQHIN4OobTYC6wxXgCotTBOieSF3d/mVg8j2sra3QG8tTBkhPXGMDsJ7ryA7AMUs+a99N+vYOoEjicLetHBeOFCkmPB5zo/P5PNzBkGJcN9qPcOMZwKAuRC2Bfu4wqQOMX6uFvUJifedckLVbn5v7pxQQGQWQV/2ovZL1Lw7NslXHUvH2spn15Sj0jf7KDoDsRHY2/MmLs0+mFRNkMBlQ1kPzg6m0AaZ7bnX6v9zvUwDEwn/79SJ6X7kUE3qPm9DTUsrS4Lj3NRMALKsKgG9d9TAb+awCRNbXsTrzA66BAfBNLeopkHMva2AnKeBG6Ers7cA+9UoYKqmKw64sglv4DqHUBMliARFFJcD1pmK2BWXTEuHW8Z0CEL+HOeYlEVJdHTiDYfP9rrfh1vAzgGc3Acd5dQC51gR80K8FmGO+ZHtRSrsQCUNdiNhOIWyy0Bhz0cFwCDrvMnQBLwRrA0RzDbQs7VJsmn2KNV01/PNehI1l0VwvL4A/UAnx4CEQnkciS/swKlsYQcHRNoTDIn5/dGLV54NQawVnLAbRi/GoJABI+TjmgksoWfnAAGKH0V+PB965eQpEQCQqNr0QBSHqV4+kF5L9p69oRojoeSqsKhgcJ7adhj6XC74lWrI5utXE/A0QfpvLpADVNwaTpkiqaVS9EUVCIRaNgNvNIIiQH4Xg4rpICmC+8zIhgE7Ig1BVn/Ab68EgvD/nsBoIQpdXGE8L1UdSANugK2PXcVmgnplZqg+6cqkgCrKXADHzU238oRph+tgBQCZ/yTZtQx/O3Pk5zZb9A7nIYuerrNZrAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Outlook"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "IBM Lotus Notes/Domino"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "VueMinder"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Imagine"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Mozilla Thunderbird"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB6klEQVR42r2XWU7DMBCGx+kBuA2Fg8ATlEiU914CECAVnuhyAhCUTUisZ6AbB2lPEOzWTibOjBvaUS05dmwp8/kfezJWEHdjAHUFABtgilKQtrhGpo3ybRTZuchW3I8WjU91bSg46E5AGePWMAdBASj/425sEZCulTmEAUjmxtKH1/cAXN9ffSklinM0AFbBFGzcV2NmnFAiHWeAKilAJyFXHtwPASX+44YMgJGfgvBdUUaJoAtqGqBg1D6adRApF6+sEgiAUEEK4Pwl4IJaB21CD6J5JANw9szuCw3Q5jfhpRDA6RO7JwgA1JECOHkM7YE2cQpsRwrguOfFhUwNBOBDEKei0F89SirYbyfY1uzj7v1wR0aBh282StIArpEC6H2xUVIDtJLcqjFEXQjg/pONkhkAspu+SAHcfbD/CwvgSS8NcPuOVp93AwKwRrEK9V0ZgJs39s/pARAQSx9N4o+Z2wfzdxrANZtbMgr8jtlckgBAKkgBjEesEgr2Wl4cQBBVIYDRkI2SGuCaiAPCAMMBm0FZAMgnoa5Ut2UABn02l8wAKBWkAPo/bC6JABgILkqmTcmjWQ6AcQWXsHC5pP+twDWvCECqQI2vABEGWBZiuShpACbgbsbrd8XUAMR6Kruer88V+nquGn/xJG39Y08A3wAAAABJRU5ErkJggg==",
-      "alt": "MobiSystems OfficeSuite"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -136,24 +125,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ics_629.png",
+      "alt": "Screenshot of a .ics file in Apple Calendar",
+      "caption": "ICS file open in Apple Calendar"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ics_3032.png",
+      "alt": "Screenshot of a .ics file in IronCAD 2022",
+      "caption": "ICS file open in IronCAD 2022"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.807Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.161Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ics",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.807Z"
+      "url": "https://fileinfo.com/extension/ics",
+      "retrieved_at": "2025-11-01T22:32:42.161Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.807Z"
+      "retrieved_at": "2025-11-01T22:32:42.161Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.807Z"
+  "last_updated": "2025-11-01T22:32:42.161Z"
 }

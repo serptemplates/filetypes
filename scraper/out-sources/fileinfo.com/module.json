@@ -4,8 +4,20 @@
   "slug": "module",
   "extension": "module",
   "name": ".MODULE File Extension",
+  "type_name": "Drupal Module File",
   "summary": "Learn about .MODULE files and view a list of programs that open them.",
   "developer": "Drupal",
+  "more_information": {
+    "description": [
+      "Module file used by Drupal, a content management system (CMS) for websites; contains source code written in PHP; used for adding functionality to the base Drupal installation, such as new page layouts, calendar popups, login forms, and developer tools."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MODULE files must have a corresponding .INFO file that tells Drupal about the module. The INFO file must have the same filename prefix as the MODULE file and must be located in the same directory. The files should be installed to the /​modules/​ directory, which is typically located at sites/​mysite/​modules/​.",
+      "NOTE: While .PHP files include a closing ?> PHP tag when the source code has ended, MODULE files do not."
+    ]
+  },
   "programs": {
     "windows": [
       {

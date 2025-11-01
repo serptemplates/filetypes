@@ -4,8 +4,20 @@
   "slug": "timer",
   "extension": "timer",
   "name": ".TIMER File Extension",
+  "type_name": "Systemd Unit Configuration File",
   "summary": "Learn about .TIMER files and view a list of programs that open them.",
   "developer": "Lennart Poettering and Kay Sievers",
+  "more_information": {
+    "description": [
+      "A TIMER file is a unit configuration file included with systemd, an init (initialization) system used by various Linux distributions to bootstrap user space and manage processes. It contains information about a timer that is controlled and supervised by systemd, which includes the type of timer and the service that is activated when the timer elapses."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "systemd init system is a suite of programs included in various Linux distributions. The system is used to manage different aspects of a server. A TIMER file contains information about when a service is activated. A service is contained in a .SERVICE file. For each TIMER file, there is a corresponding SERVICE file that describes the unit that is activated when the timer finishes. Also, the files bear the same name. For example, a example.timer file corresponds with the example.service file.",
+      "NOTE: systemd is booted by many Linux distributions, including Red Hat, Arch Linux, Fedora, CentOS, Ubuntu, Mageia, CoreOS, and Alpine Linux."
+    ]
+  },
   "programs": {
     "windows": [
       {

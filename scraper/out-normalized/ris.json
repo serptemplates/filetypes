@@ -1,9 +1,34 @@
 {
   "slug": "ris",
   "extension": "ris",
-  "name": "RIS File",
+  "name": "Research Information Systems Citation File",
   "summary": "Learn about .RIS files and view a list of programs that open them.",
   "developer": "Research Information Systems",
+  "category": "other",
+  "mime": [
+    "application/x-research-info-systems"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "RIS created the RIS format to allow for standardized exchange of citation information between digital libraries. The files are saved in a standard, human-readable plain text format, to make them easy to open, read, edit, and manage.",
+      "An RIS file may contain one or more citations. Each citation must begin with the TY tag, which denotes the type of publication from which the citation was drawn. For example, the text TY - JOUR denotes that the citation references a journal article. Typically, each citation then goes on to include the cited work's author (AU) or A1), title (TI or T1), publication date (often divided into multiple sections for year and month), and other metadata. In multi-citation RIS files, each citation ends with the tag ER."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an RIS file with Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. You can also import an RIS file into many citation management programs, including but not limited to:",
+      "Clarivate EndNote (Multiplatform)",
+      "ProQuest RefWorks (Web)",
+      "BibDesk (Mac)"
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use Online RIS2BIB (Web) to convert RIS files to the .BIB (BibTeX Bibliography Database) format. You can use Clarivate EndNote (Multiplatform) to convert RIS files to many other formats, including .BIB, .ENL, and .XML."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -52,51 +77,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open an RIS file with Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. You can also import an RIS file into many citation management programs, including but not limited to:",
-      "Clarivate EndNote (Multiplatform)",
-      "ProQuest RefWorks (Web)",
-      "BibDesk (Mac)"
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "You can use Online RIS2BIB (Web) to convert RIS files to the .BIB (BibTeX Bibliography Database) format. You can use Clarivate EndNote (Multiplatform) to convert RIS files to many other formats, including .BIB, .ENL, and .XML."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHGUlEQVR42r2XC1BU5xXH/wu7vBcWBK1Dm1xpiI+0DI8UtY3ig06NRBSoaW2GBC3T6gxVaWZwknR4zDikFlONM7Fox1lMMqMmIWgmNiIhYDCgo3QpgqIF9oEgsK+7e9nX3b27PXdBp6AEbDF35vtm7s5+3/mdx/+cXQme1MMkbRF3Wmeh6dRM9zXJEzJenp2woCw5To6TtwahtTpq6NNiAmGfPACTxDDxC1VlOWsVy52jSAyV4kiHFq+33OoggJTvAkBZlh9T8OPntsHrC4at+wY2KWTIq7uCS4OmFILoeHIATNKaNUm2pqYKLYa6glDfmw42LAOCz4ejpy6yaos9ZWo9zDVAU9Pb6jU/jeOh7xdw1yKBV5DjeHc6alqGKsh4+dQjcwfAJBUUZJqVyl0j0HcJMHNSDFt4hPAyLD+5REPGFz3q2NwAUOhj5IKy/VAfM9/phXHQBx3rQww8KLnI4PO+yBwCODu3AOM63ywPD9sCHxSv56hRuonFyE0PDOQ9O+aCwRiBnE8Tmsn42umueTwAJimZ9tcUcnnBupVpisDYZyCVL0Db2TKoDvUjcNgH06gEWrOAeKmA3I8S0akPfajyHx+A8kv7nuzMjOQlqT+DEJuIxh4DLGNuDF/+AEd/1YD8VDtGeuidC4THyeOaOhpFDT8QT08b/pkBmKS9MYqoPXlZG5ilKzLRPORBv9EOwe2Fxy1gbLAPi42H0VShg+mWFywrhc7sRixd+1Ld8/hzaSV2/amUZa3cokd1wekBKL9k+FDhb15m0lb/As0aDn0GO0x2Nxxk+D6A7vy7qN/XClF2oyS7QZJdiODG6Y4FcD1bhJLfvYqLre14raRcnAc5swNgkg5lrn5h75ZtBRhyh2KUo2Ky8TDS4lwCeI+XAEhmd65hY/hxKHeS7LrHZTfEuhDmDsLLX65F1xcfw0cNiOd5vPLHt1DfckWcBYdnA6BuvNDAVF/u97+KHouGx2i5BPLe44NVo4VDdQztVV24LzuN2YtYieCX3avF1chauwq80wHbmBV6kxkZ+UWsdcw2QyekQaJY+LT6naq/onPYhn8OsHAL5IXghZ2zQ0IXbVoSi9G7KjCyIw9kp7dKYbWNy+6gLhe1R/aDdzkhlQUjUBqMMZsNzVeuYcdblQ8NpKkABd9LXa/8UfoavJm7EsW1neBtDkRYzCj6+VJsyliGoUENXtqeN0l2apMHT8m8yCHZvXOgGiueT4MkQErR8sDpdILjOP868PcPcPqLxkkteSpA+fdf+GVZPJOI3PTF0PYNI2/lD7E6LQE2jvWHtOCNSmxN/WiS7IQJ2V2V78LxylJ4vV64KffiGafDDpfbQ2ftMFpseGXfftzTGx/0hodSIIuIVi/LLkKUk0PjgXxYWSN8dKE8KgZ3R0aRtyMbqoNqkp0NZjYQWhOPBZIAZJ39Ca7943OEBstg1t+jmyUICgmHi/f4vbfb7SRTI2obWnDsk/MPovCoIlTGryss2PBUJCoKMzF//nyaaAICAgIorAFIXLUePccyYeiswd3hAb/szpDsJKlv4A/bNlPVOxGpiAMCAmG1WNDX2wOdtg8jw4N+iJqGdmhHLdNEYCIK0vBo9c78Xfj9xmVgGIYKSUoOScCZ9UjL3QFV9XaYqCHdu/0xrEO92HnxabSd/htFKRZBwSEYG+Nwte0SNOpeioCTHKCUuN3Qm61491zbpEKcrhEpq0p2F2RlrERERAQUUZHgLCZExcRh4293w6FrR+y8eeC8YdT3ebxfVY7lqSn+3H9zuRHdXSpQE6B3n78XeL3UP3g3zl+9hSs9A9sJoGYmACZKHqFqPXNCIfF5/WkIJxAPefF2tRKVR0/g11mZyM5Ix4Z16xAWEYkBnRoN9efgoqoXjd5fIpRAKbwzMIJTzf9inbxnUluefhaQIgq3bi4rLSqELCgI82Ji/GHs0w4gPESGoAAfIqPj/LXR+s1XuNklplQ06t+pcEmiVhu+vtGP9jsDrMPlFgfSuamDaaZhpPry5HvJi+IX+qMQHBICw8gQgfAIDY9CcHAwPjt3CvrRYX+eWavDf8wn8aH++m1cv60Tu17Ff4d86jMTQPJzzySoat/7C4KkgYgjCGlgIAwGA3lO/zhqP4TL5QJnc1KFuxAdFY6vOv6Nlht9osfF32Z4dgATqdj64vqyg/v2+AtSJpP5T9V98iF0Oh0snBNR8hCYqWOeblJhyGA5POE1O+PdswIYh6ir2rd7y4urVqC9vR3PJi5C3ae1cDjdiF+oQGu3Bp+1donhFiu8eVZ3PiaAgvamo2UlySmLE3DhwgVwVhMiI0PwPjWW/ntGMdTFs/X68QEmICIjwtUn9r+p8NhM+LrtMs5c6mRNnGNWuf7/AcYhxB+lylXJS5Ov3+zVOHh3zrf94Jx7gIlI0L6X1uH/JeRTn/8A5Au5TkMlx6wAAAAASUVORK5CYII=",
-      "alt": "XULRunner"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFAElEQVR42sVXa0xTZxh+zukFSrECpS1IKRdlm6ioRMLIliVmus0lJJhJMmB2iiNKkCUSdY4hCOJmnJdsgjhHmDBRh+BYzOY22Vj8M802pwVRRFBqS4FS7hR63zndJFZ6OVUXnn/9zve+79P3/hHwAjdFIn+wDLGAJdbK4WQQLPYq+txmMTeRJlMtwGqDxadtkVY7zlQnweRSS3jwCtJilJMCwRp2mHS+IOY5ggyTwioIsH8nR4dhVasw2nHHZlarOq2joxetLG7NkgcDfz4VgbZoUYzNaC7iSMNSRW8mc3lrksFZuBgkf47T+9aJMZhutWLy4gVof7hgNKnU5wguuzi2S9vhNYFWmVDO5vsdlLydIfLPzAZbKvMmWjCrlBivqkDf2VqteUK/fbFSV8OYgEIaVMyPiigMLd4P3srXvDL8OCabf4amaBcm7nWXxKkGizwSUMiCigMWLiyUHK0EN+YF566e0sPcq4HNZAIrSAi2UOSWhLHjNvpy38PwrVslcUpHEg4ErsuE6+fIZDXSr86Au+B5J4YnoaPcOvLdeZj6eqkDK0h/f/CWLocwcwv4CUmuSdxth2pjGsaUSvkype7rGQRaFojnszk+VyOOVwl5r6yaocBmNkG9IxfDDXUgfHkgWKz/PthgNRpA8ngIyS9CUEam63BcbkL3lkyd2WRIXHK3v9OBgEIaWBuetSU9oPBjp8Jjv11C96Z3QPr4OtduscBGEIiorIH/yytdkhguyceDL4+fjlMNZUwTuBExN54XEv571Lc/ctmhYU4F+498gv7PDoH047tUbjMY4LciAZGnGkBwuE7vmDVq3Fv7hnGy90HS0u6Ra3YCinmCo7LsrVvnFuxzqVxbdhB9B/e7JUCHg0bUN43gxcW7vDZS+hGUFWVlcT2jucQNiYTPCuAoYk7XR3PjE10K6f/+A/fT1v7rNJJ0ec86qce80gNULmx0ecd47So60td1WYZNcURriCDBd8miK9GNl0jC3b+jvXDsCLSfH6KqYYriQZOg/jEVd3teEMQ0AXHuNojz8l07Sj+BrpTV1qmWmy8S10X8jaFvrasSV5wEE+j/uoLxy82wjIyALQmBjS7N6ip7/GkSNAFRzvuQbN/tVk9/9gZoGuozCYU0oCl0c86rwQWljAg4g3pnLobq60D6+toJ0OUYnLXVrcxAaQE0X5T/QrRGBtvEeTshyt3xxATo5qTZW0j1Aj/KE1MIP1YJwevJ7sN59FP0Hz6AZ0JgoLIcvfv2UB6gGpSvD+Y3/gRuRDQzAs8iBD35eRg8e4rKSxL8pJcQWX3ObaU4hMDbJHwc1rFRdKashlGlpoaTEdLD5QhISfUoN52E3pShM+iqT0BTspsqAJIaSssQWXveHgp3cChDpo3IGaba23B/fSosQ0MgfLiIPHmGasVJHuUcGhF9wKQVz1Ci6oZy87sw3L5t/x1StBdCeRYjWYdWTB8wGUaPgm7LPbu2YepOu30si7dRVZSTx8i402Fk94KHcUzDOjEOXU0lBk6Uw6IbBCswEJIPChCUvoGx55yOYxqeFhJ641VulmOs+VcQbA78EhMR8uEe+C1PYGzc7UJCw91KZqF2/+5N6VQG6xGYLkfgujQq8XiMjXtcyaZD4WYppdss3WBcLRsujTNdSqdJzOZa/hCz+jB5iKd6mn1/wUi9E+vA5ZQ80dPsUcza4/Rx/B/P838AuV6g1b36P2UAAAAASUVORK5CYII=",
-      "alt": "Citavi"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Zotero"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFhUlEQVR42sVXWWxVVRRd56VtpPQVWlGIoWVoS2kbJgfQymRDDUbrnIiixGhUGgj1A4Xaxg8jAuqHAwi0okLpZGgbpYZomxSwFYE4QKRGo0QBlUSDQlETxLc983Df48sPbtp37rln33XW2WftffZlXaPKCJfwYl2jSonAwPivaMWfHOA9Iv5c9DlFki2/4Q+8W3WR/mFQGLarjMwKmcSxFnIW1skJCHQ1DwH6Tg6C1MQKmWMpUmYymHsNZpjpNxVD0jNrXEkCamEkbDsvL9X8g+UYSOUL9ZbH3Fkyr9V+C5YA/cT4gQJs3nZIAoQA3vev7z/oVdsZyHrH7ou3jXZr5DNy73q4rCO3hMjyh+PJlC4kPrFgbeKXxRjI7oQmQQlt72OZ1etfTYTM6E5OIMmX1iEhGmPMLVB7SOFpO9KwopsIWMCq2XjRKG5nTgkFWrKuMF5QQzFNSHJgMS1QN+7ACQlS8KQFaXWghWcVI7DezZlMwUp8ESmf6cUyxGJMAqp+jJPSKyYnVDGB+gcnkrDutC4n5vQk+u0jJxOzSnWrMTuXO7UE016oxRU3XidHfhs4hMM1z+Lvk78EEZGZdxVKn1uJMbdUOLu6dfj9yNeKkJ0BHilJoJiiQWBsssbnoXJvJ9JHxIOhv078jP4Fi3Bh6Jw0TI/HMbu3DcM4Cf/658wQeufdjXM//qQ9QE79RtztI4rJjyIXfYSr19ahqHoJUl1nj36DLx5dKe9nbH0Z2WXFKe1+aOnCoWW1CDXpwpe1ZhcT81xAOkyE6OZ3b8eVs2fi/1y/9h9EX9XDXBD/IsGYU4MmxFrik8hmVSMMKXugorvpogSGjn6LY680SpAJTz6GeNmk1AS4FvpuXSKnTRAF+UzO1RwvIoYwDlXYMUypXYGy1cuSQC+cHUJ/+Z1ICA1wu7R4FsoHupCWHU+yHVy/EV+t3SAnF1ERlRprziqiII1qCiLpjJ5zPSo+2J4Eenr/Z/j8vmoeljFJNME3eEbbRuTccE2S7cDi5TjR3WND00aDSW47hheSO3MNLdXk3VaJua1v4E+uYgGSMSIbY6sWyLH3Sitw/sxZ+V7GyGzccbRPjouwE89Hz5kl7fYvXY1jzZ0OP3KKsqbhBV4OdA7KmToZ5ZtfxOkjgxLEjKbzSSp375D9I2tfx/k/zuDa9fWyv/f+ahlyQmiCzNy2TbL9ZOkqScxLm27G7ZmF5M55oHzLOhQ8eI816Fm4GKc+PgCT7kWbV1WJea2bAqA9i6pxUrraPcsaNxZ3De6x/e93dGD/E6vseSGbbZkFNgCEy+e3JwMf39Xj8oQg2bA+ICnBmzowwFdqQ5obj729Eje1bY7gLcXx93utN9i2YRMt52l1Nfx/RfDC4TWv4cs1r7oDm7948+4WjJk7K7A7te8APlr4gN1JATr9mdR4hzmeLV7euWyCFWHulDJUHdgVqvjxp/Fd005XXgng+hWSbCqidp94ky880B564ENO8tS+T+0ecAITiYxvJXgNpmvwwQ1v4eBTzyN6CWHNfKkehQ/dK/uCoLBTURFIjNvVoXT5IxE8r2h7m3vA1SEqDTO/6LR1pTvTAbizXovTVFFBPgmK1PC8M322NWOCigK44snWBKYK8s8K71glW6anOFCTK9agOjIFHicwjuBlJsccKYrOFGBAJJFHGXh2LGInvPNmxnhTqSfNb4DkmF+iiY8LckWmX6wCng4JCBIIXPlrShLWyD3A7NEUyVR+Yeo/ZI5qUGoFlbPuM29pHozixsca08d5r6bcTYQe8lfh6SHwevTzI2LnjbLGtHyC3RsWfNOFFLyvh4tJ2h/w8oEbIStAE2GsIT3fpmYvHUTKaPiffk4len+T9Rn9/GFazxS+L+4a0vIv6ef5f9lrz7olMZxvAAAAAElFTkSuQmCC",
-      "alt": "Mendeley Desktop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFeUlEQVR42sXXeWwUVRwH8O/Mnm23C0ulskAPuw1LCuWy5WhpwIYWIyEpBJIiEEkQNEb+QCMq+AeJiiQGjImBxFg1YlqRaAyFBANBinF3KXJJakGg9OLqEWm3tNtuu+Pvzcx2Z99Mqf8UXjI7u/PevN9n3jVvheOfOqShgR48jWSyOiAc/RjSyuJsIPLoyUV2PC+fqo8dUwFL3UBBE12yjFHEsHq2xH77MlB95p4WcJ0yuuPvk0T6EOjQnrVJ+zvC5Q3FrgssT9LkOQng5QG/c8FNalCTekS/a1P0t8QBJA1gSDlkhKaMr4gHnNTcb9EENeshks24BYR+zZOywIMaDJ2FgRjCV8IDqoeDtx5/CWL/HePuTJyGZ4trYLIkDAO62+rQVbsGprDxPZI9Hc8sOQxbklNFEMi3kgccoZJWudLGE69i8GEdmu+F8SgUqyjJDqS7rUh94TQcKV6IQg97RDx80GRuC2xG0+1bCA3El0+bZIbJOR3ppd/CbGGtSQUEBljNAw4xKhWwIhTswp8/v4t/7140fKLx7tmYVboH4ybNlsMNDvRa2279igtHt+nKTsxcgqz8rUjNKqJn61QBfQRYxwEWfUeZDED9G5kAX+UGdLYEMFLKnLsJmfM2IzllWh8bGB0tZ+3+qrW6cm7vSngWbIXLPVMZEzKCxoq/3AhAgyxC32m+jgagFPQW7UxOy12HhOQpwY7mmmR/1So9YDoB5msAbA0Q7xJgIwdYWEHBp8rBITDAegKcexwA3qJdEdfkBX3j3bP6Q8H7ljMVC5P1LVBCLbCNADnKTJBUQEAHOEiAdAVA48BXVU6ASxgt5RTvHXC55/Wabc5IzdcLJ+gBy+HJXw/XlEIlOBsD7KjlZ0H+ETmwfLAWqNrwvwAszVi2r9cxwdN/7scylzHgZQIsigEkOs6X8YBKFUCDUGAt8IoRIDyt8D3888deIP7FEcqav93SUPuZSQ8ohSePAO6sEMRxdjk4G4Tn13KAPAIIyjSE1B3yHX7b3tkSPw17wwlYUv5NW3f7Ncf1s7vZEpc0WutMfK4I3oLXGKAPoiMhBljDj4HtiL21JBqEFehsvh1XmTXRgdzSNTDbElD/21FaAe+MFp9mwUwahIsJMFVzlZbzwBc8YKc6QJTkqzxAgFsGgFW0qMzA/RtX0VBbg64HraMAZhFgKQHS4zMC+3jAhxqAQID9BLhhAChHqmc2LatWGgvH0XT5LK2cDx8DmEuAEgJkcICPeMCeuCbyVX5CgOscIJkAGwgwjwA29Pd2o/HCKTRePIWBvp4RAHkEWM7GAAf4gAfsj/WPDNhNgHoO4CTAJgLMkQEsBTtaCXESjZdOjQBYQIAVBPBo6qdXcuAdfik+QNdZpqQCdtE0rNMDSrYQIG8YIEkRKvc3bvp/QnvjFT3Au4gAZQTIjgEEihF4kwdUKMEJIUkC/FU7qOKrHGAccpe9jtTsfALY1adRUkfzX3TP+wYtsJgWotVwTfYqF0R1w+Lfwr+Ovx/eA7Y3XEHd6c8RbG/g6+uZOmOZI6f4DdgSx8dldDRfJsBbOoAz1UNvzjJkzFmhBlfR/vU84AcCsA2DSHP8IFV4AYMhbmAJIq0BibQX2EGv4UyIJqt8eSgcQlvtblyrb9QBRDNtYLJYN5TLLTjcBT5+ISr4BfLrmJr//slyRII3YJRERzZchV/CYndCFJXVODIURkfNRgx21RveY3J6kVL0lYyXg7Ok35KdiBaXEdr+jc4MpYskrnptOXWTKkR3xHzZIRXAtmQv8oDoqteiVCSZDAIJBkFH+q7dqkc0sClqC3h4QHTdt2HsUj+G/0v40nlAC/R/PMYqsS5I0wCe9J9TlsQkVJ++CeFp/z3/DzYIginWIIOdAAAAAElFTkSuQmCC",
-      "alt": "NoteExpress"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADzUlEQVR42t2XXUgUURTH//Oxn64YEfmVJZoWFWpqn4Rk9NSLD/YSCgkJUhb50Fs95qOgpKTgQ4Lgg0gKEQWBERFYoaFGoCmR9mGIZLof4+7MdO7MSO6uszuuC1EX/rt72Tv3/O695545h0OMdonUBKg5SKzNkVoBri/GGG5jp5R0nOQw+kWk0wSQliDAMukV2Rg3+hLpNWnUDKCedIMMphp9gSRGDtpCU0khkmz0V0j3aLruSIBSQ2dIFfScp7gYtpMnwaWkbMmg8uMHgiMjkKenN/0/QHpBNl8auzC6DtBAumqs3ElyX7mClFu3wO/evSWA4Pg4fC0tkB49Mt2RgLET98l21zrATejOtn727mvX4LlzB8rSEoJv30JZWYlpWMjIgK2sjH4IkJ4+xdrwsPac2U4wX2DO2RYPQKKJfK2tkOfmYgKIZDylqQn2igqoq6sITUzA29YG6eHD+ADsqp3XpdoiAR4/xurdu5A/fYoJYDt1Cp7bt2E7cQLBd+8Q+vAByvy89lxwbCxqJ4KkZ2T7GQMYMc4+DX+8PVEAft8++Ds6NABnTQ3EAwfgbW+H1N8f5Qvsiv5iNr9RX42YMBKAjRCPHAGXFh4RlIUFhCYnIeTlaQDCoUOQhoagfPkCR1UVxMJCBAYHIT15gtD795CnpqLgLQGIhw/D1dAAMT8/fCvpyvk6OzXnYwD2c+egLC5ClSTwu3aBc7m0vvzxI/xdXfD39SUGIOzZA8fFixCys8PGsdUHBgagrq3BWV0NW2lp+OQUR8SDB8E5nfA2N8NLx5MQgLK8DJ6uGpso7Czpeirfv9MEKoT09KgjEjIz4aqvh52C2rYA4jmhWRNyc7V5HBcu/OMAqt+vTca53ZYMqz6fBs2cMCkA7Jo5a2sh7N1rCUD+/Bn+3l4os7NJAigogOvyZW0XLAHQ6v09PVoETM4R0DUTKAZwHo+1I6D3gTwzA85u/0+c8K8DsLyAhVY4HNYsUyhmIZjfuTM5AHxWlvZyEejbSpO/ftVfSvSdFACxqAjuxkYI+/dbA6CXDzMmU4qWFADwPMSSEvA7dlgCUH7+RIgSEyhKfAAaprL4xvLfqITEYkpm1oScHLgpVXNUVoYBsAV7DXF19HGWVLlJSmY1KTVrfGoqbOXlmjNuBGAp2TDZfg6TpNSVYFpueiRUL7B03detlyRxs2IxwcLErKler5Y9aX6xGUAj6foGgO2WZFEACC/RGEA7Td+xbuMY9KJUNAYchV6UWov88dsq9CJ1zOgzGFakvjFbZB30I0lPEsAC9C1/sMl/vwHPq2nddHKKNwAAAABJRU5ErkJggg==",
-      "alt": "WriteNCite Application"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -105,24 +89,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ris_4121.png",
+      "alt": "Screenshot of a .ris file in Microsoft Visual Studio Code",
+      "caption": "RIS file open in Microsoft Visual Studio Code"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ris_4121-2.png",
+      "alt": "RIS file open in BibDesk",
+      "caption": "RIS file open in BibDesk"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.858Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.205Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ris",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.858Z"
+      "url": "https://fileinfo.com/extension/ris",
+      "retrieved_at": "2025-11-01T22:32:42.205Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.858Z"
+      "retrieved_at": "2025-11-01T22:32:42.205Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.858Z"
+  "last_updated": "2025-11-01T22:32:42.205Z"
 }

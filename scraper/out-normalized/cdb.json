@@ -1,9 +1,40 @@
 {
   "slug": "cdb",
   "extension": "cdb",
-  "name": "CDB File",
+  "name": "Symbian Phonebook Database",
   "summary": "Learn about .CDB files and view a list of programs that open them.",
   "developer": "Nokia",
+  "category": "database",
+  "category_slug": "database",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "CDB database consists of an entire dataset in a single computer file. It contains three parts:\n\nA fixed-size headerDataA set of hash tables.\n\nLookups are available for exact keys only. Lookups act using the following algorithm:\n\nHash the key.Determine at which hash table and slot this record should be located.Test the indicated slot in the hash table.\n\nFor lookups of keys with more than one values, additional values may be found by simply resuming the search at the next slot.\n\nFeatures\n\nCDB database structure provides several features:\n\nFast lookups\n\nA successful lookup in a huge database normally takes just two disk accesses and an unsuccessful lookup takes only one.\n\nLow overhead\n\nA database uses 2048 bytes, 24 bytes per record and the space for keys and data.\n\nNo random limits\n\nCDB can manage any database up to 4 gigabytes. Since there are no other restrictions, the records don’t even have to fit into memory. Databases are stored in a machine independent format.\n\nFast atomic database replacement\n\nThe command cdbmake can re-write an entire database into two orders of magnitude, faster than other hashing packages.\n\nFast database dumps\n\ncdbdump can prints the contents of a database in cdbmake-compatible format.",
+      "CDB files are typically found with the name contacts.cdb. They can be converted into vCard .VCF files using Nokisoft Noki."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -44,15 +75,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.915Z"
+      "url": "https://docs.fileformat.com/database/cdb/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.257Z"
     },
     {
-      "url": "https://fileinfo.com/extension/cdb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.915Z"
+      "url": "https://fileinfo.com/extension/cdb",
+      "retrieved_at": "2025-11-01T22:32:42.257Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.915Z"
+  "last_updated": "2025-11-01T22:32:42.257Z"
 }

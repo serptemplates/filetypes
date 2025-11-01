@@ -4,8 +4,22 @@
   "slug": "hxml",
   "extension": "hxml",
   "name": ".HXML File Extension",
+  "type_name": "Haxe Project File",
   "summary": "Learn about .HXML files and view a list of programs that open them.",
   "developer": "Haxe Foundation",
+  "more_information": {
+    "description": [
+      "An HXML file is a configuration file for a Haxe development project. It contains text the Haxe compiler uses to compile a project. HXML files define a project's included classes and output."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Haxe is an open-source, general-purpose programming language used to create video games, web applications, mobile applications, and cross-platform desktop applications. Notably, Haxe is used in the HaxeFlixel game engine, which is an open-source game engine used to develop 2D games.",
+      "When developers create a Haxe project, they create an associated HXML file. The HXML file contains settings Haxe's compiler uses to compile the developer's project (translate it into a different programming language). In all cases, HXML files contain a list of classes to be compiled and output files to produce. HXML files may also contain additional configuration options, such as a specification that each class be compiled in its own output file (using the --each and --next commands), or that the compiler removes any dead code it finds during the compilation process (using the --dce command).",
+      "It is also possible to nest several HXML files for several projects within one overarching HXML file. This type of HXML file includes lines of text referencing other HXML files, instead of Haxe classes. Nesting XHML files makes it easier for developers to compile complex programs that require code from multiple Haxe projects, because the developers can run one HXML file instead of many separate files.",
+      "NOTE: The HXML format replaced the .HXPROJ format."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open and edit an HXML file in any text or source code editor. Source code editors, such as Microsoft Visual Studio Code, provide tools that make editing HXML files easier.",

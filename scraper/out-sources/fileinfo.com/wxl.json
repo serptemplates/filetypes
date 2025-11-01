@@ -4,8 +4,20 @@
   "slug": "wxl",
   "extension": "wxl",
   "name": ".WXL File Extension",
+  "type_name": "WiX Localization File",
   "summary": "Learn about .WXL files and view a list of programs that open them.",
   "developer": "Outercurve Foundation",
+  "more_information": {
+    "description": [
+      "File created by the Windows Installer XML (WiX) toolset, a Windows installer development program; contains a collection of strings for localizing a product for a specific culture; includes translated user interface text for several languages."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You can modify where the culture is set by editing the WixLocalization culture string. A sample of a WXL file and its culture string can be seen below:",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?> <WixLocalization Culture=\"en-us\" xmlns=\"http://schemas.microsoft.com /wix/2006/localization\"> <String Id=\"errormsg\" Overridable=\"yes\"> General Failure</Stringgt; </WixLocalization>"
+    ]
+  },
   "programs": {
     "windows": [
       {

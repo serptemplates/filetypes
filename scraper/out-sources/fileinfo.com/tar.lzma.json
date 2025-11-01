@@ -4,8 +4,20 @@
   "slug": "tar.lzma",
   "extension": "tar.lzma",
   "name": ".TAR.LZMA File Extension",
+  "type_name": "LZMA Compressed Tarball",
   "summary": "Learn about .TAR.LZMA files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "\"Tarball\" (.TAR file) compressed with .LZMA (Lempel-Ziv-Markov chain Algorithm) compression, and thus uses the compound file extension \".tar.lzma;\" often used for distributing linux software packages."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "TAR.LZMA files can be unpacked by first decompressing the file and then extracting files from the resulting tarball. This two-step process is commonly handled in one step by several file decompression utilities. For example, you can extract the file contents with the Unix program tar (assuming lzma is installed) by using this command:",
+      "tar --lzma -xvpf file.tar.lzma"
+    ]
+  },
   "programs": {
     "windows": [
       {

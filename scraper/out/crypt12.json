@@ -1,9 +1,11 @@
 {
   "slug": "crypt12",
   "extension": "crypt12",
-  "name": "CRYPT12 File",
+  "name": "WhatsApp Encrypted Database File",
   "summary": "Learn about .CRYPT12 files and view a list of programs that open them.",
   "developer": "WhatsApp",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -16,11 +18,49 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The .crypt12 extension is appended to a .DB file to create a .DB.CRYPT12 file, which is an encrypted database that WhatsApp uses to back up a user's messages. Throughout WhatsApp's existence, the app has used different algorithms to encrypt users' messages. WhatsApp users may encounter .CRYPT7, .CRYPT8, .CRYPT10, or .crypt12 files, all of which are encrypted message backups.",
+      "If you want to decrypt a CRYPT12 database and view the message history it contains, you must first locate your WhatsApp key file, which stores your CRYPT12 file's encryption key. Your key file is stored in the following location: /​data/​data/​com.whatsapp/​files/​key.",
+      "CRYPT12 database files are located on the SD card of Android devices with WhatsApp Messenger installed. You can find your CRYPT12 file (or other WhatsApp encrypted database file) in the following directory: /​sdcard/​WhatsApp/​Databases.",
+      "You may find multiple CRYPT12 database files in the Databases folder, with YYYY-MM-DD dates included in their filenames. WhatsApp creates new backup files periodically; the dates in these files' filenames represent when they were created.",
+      "Most of these dated backup files can be deleted to free up space on your SD card, without affecting your WhatsApp messages. However, you should always keep the most recently dated one or two CRYPT12 files, in case you need to restore your WhatsApp message history.",
+      "NOTE: Only the Android version of WhatsApp Messenger creates CRYPT12 files. The iOS and desktop versions of WhatsApp messenger do not create CRYPT12 files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A CRYPT12 file is a file format used by WhatsApp Messenger app to store encrypted message data on an Android device. The file is used to store all of the message data, including text, images, videos, and other attachments exchanged between WhatsApp users. The CRYPT12 file format is an encrypted database file that contains all of chat history for individual or group conversation in WhatsApp. The encryption key used to protect contents of CRYPT12 file is tied to specific device where the WhatsApp account is installed.",
+      "A CRYPT12 file is an encrypted database created by WhatsApp Messenger, an Android messenger application. It contains a 256-bit AES encrypted database of messages sent and received through the app."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use a CRYPT12 file to migrate or restore your WhatsApp message history on an Android device. To do so, you must rename your most recent CRYPT12 file to msgstore.db.crypt12 before reinstalling WhatsApp and, when prompted, manually restoring your message history."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -49,15 +89,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/crypt12/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     },
     {
       "url": "https://fileinfo.com/extension/crypt12",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.259Z",
+  "containers": []
 }

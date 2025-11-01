@@ -4,8 +4,31 @@
   "slug": "zwi",
   "extension": "zwi",
   "name": ".ZWI File Extension",
+  "type_name": "Zipped Wiki Article",
   "summary": "Learn about .ZWI files and view a list of programs that open them.",
   "developer": "S.V. Chekanov",
+  "more_information": {
+    "description": [
+      "A ZWI file is a Zip-compressed archive that contains the final version of a wiki article in the Zipped Wiki (ZWI) format. It stores the main wiki article (e.g., a WIKITEXT or DOKUWIKI file), related .HTML, .XHTML, .TEX, and .JSON files, and metadata. Users package wiki articles in the ZWI format to exchange them between wiki software."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "S.V. Chekanov developed and implemented the ZWI format in 2021 in the SandBox portal for the HandWiki encyclopedia. Other programs, including the DokuWiki open-source wiki app and Encycloreader web app, also adopted support for the format to allow users to transfer wiki articles more easily.",
+      "ZWI files consist of various files in a Zip-compressed archive. The files typically include:",
+      "An article.wikitext or article.dokuwiki file - Stores wikitext for the article's final version.",
+      "An article.html file - HTML version of the article (including the headers) for viewing with a web browser.",
+      "An article.xhtml file (optional) - Contains the HTML portion with the article content (without headers, navigation, etc.).",
+      "An article.tex file (optional) - Stores the article in the LaTeX file format.",
+      "Various .JSON files - Includes metadata.json (stores information about the article, such as editors and revisions), media.json (stores a list of linked images from the article, and optional signature.json and plugins.json files.",
+      "ZWI files consist of various files in a Zip-compressed archive. The files typically include:",
+      "An article.wikitext or article.dokuwiki file - Stores wikitext for the article's final version.",
+      "An article.html file - HTML version of the article (including the headers) for viewing with a web browser.",
+      "An article.xhtml file (optional) - Contains the HTML portion with the article content (without headers, navigation, etc.).",
+      "An article.tex file (optional) - Stores the article in the LaTeX file format.",
+      "Various .JSON files - Includes metadata.json (stores information about the article, such as editors and revisions), media.json (stores a list of linked images from the article, and optional signature.json and plugins.json files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open ZWI files with various wiki sites, such as HandWiki and Encyclosphere (developed by the Knowledge Standards Foundation). The open-source app DokuWiki can also open ZWI files.",

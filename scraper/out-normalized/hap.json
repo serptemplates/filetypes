@@ -1,20 +1,31 @@
 {
   "slug": "hap",
   "extension": "hap",
-  "name": ".HAP",
+  "name": "HarmonyOS Ability Package",
   "summary": "Learn about .HAP files and view a list of programs that open them.",
   "developer": "Huawei",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "HarmonyOS is an operating system used by Huawei smartphones, tablets, smartwatches, and smart TVs. Using the Huawei AppGallery, HarmonyOS users can install compatible Android apps, packaged as .APK files, or HarmonyOS-specific apps, packaged as APP files. HarmonyOS-specific apps (many of which are marked with the designation HMOS in Huawei's AppGallery) always contain one or more HAP files.",
+      "Each HarmonyOS app must contain a HAP file named Entry.hap, which is the application's main module. Apps that contain different builds optimized for different device specifications will contain more than one Entry.hap file.",
+      "Most HarmonyOS apps contain additional HAP files, each of which is used to implement a specific app feature. All HAP files may contain library, resource, and configuration files, which the HAP files are dependent upon.",
+      "NOTE: Developers who are creating and testing HarmonyOS apps may use Huawei DevEco Studio to create standalone HAP files, which are not packaged within an APP file."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a HAP file in Huawei DevEco Studio (Windows, Mac), which is Huawei's HarmonyOS IDE. For example, a developer might open and run a HAP file in DevEco Studio's HarmonyOS emulator, to test the feature the HAP file contains."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12498&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a HAP file in Huawei DevEco Studio (Windows, Mac), which is Huawei's HarmonyOS IDE. For example, a developer might open and run a HAP file in DevEco Studio's HarmonyOS emulator, to test the feature the HAP file contains."
     ]
   },
   "images": [
@@ -45,10 +56,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/hap",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.101Z"
+      "url": "https://fileinfo.com/extension/hap",
+      "retrieved_at": "2025-11-01T22:32:42.519Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.101Z"
+  "last_updated": "2025-11-01T22:32:42.519Z"
 }

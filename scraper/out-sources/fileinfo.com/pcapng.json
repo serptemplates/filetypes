@@ -4,8 +4,20 @@
   "slug": "pcapng",
   "extension": "pcapng",
   "name": ".PCAPNG File Extension",
+  "type_name": "Pcap-NG Packet Capture File",
   "summary": "Learn about .PCAPNG files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "Packet capture format that contains a \"dump\" of data packets captured over a network; saved in the PCAP Next Generation file format, a standard format for storing captured data."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Each PCAPNG file contains several blocks or data, which contain different types of information. Examples of blocks include the section header block, interface description block, enhanced packet block, simple packet block, name resolution block, and interface statistics block. These blocks can be used to rebuild captured packets into recognizable data.",
+      "NOTE: Pcap-NG is designed to replace the older Pcap (.PCAP) packet capture format. Wireshark began using the Pcap-NG file format in version 1.8."
+    ]
+  },
   "programs": {
     "windows": [
       {

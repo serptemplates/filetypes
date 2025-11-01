@@ -1,9 +1,20 @@
 {
   "slug": "gdbtable",
   "extension": "gdbtable",
-  "name": ".GDBTABLE",
+  "name": "Geodatabase Table File",
   "summary": "Learn about .GDBTABLE files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "GDBTABLE files are created as part of an ArcGIS geodatabase, which is used to organize and store GIS information. The geodatabases may range in size, depending on how much data they store, and are the main data structure used by ArcGIS to manage and edit GIS data. Geodatabases are stored in folders with .GDB extensions that contain multiple files, which include GDBTABLE, GDBTABLX, GDBINDEXES, ATX, and FREELIST files.",
+      "You can open GDBTABLE files with GDAL (Geospatial Data Abstraction Library), an open source translator library for raster geospatial data formats. You can also open GDBTABLE files using ArcMap (a tool included with ESRI ArcGIS for Desktop) by selecting \"Add data\" and navigating to the GDBTABLE file.",
+      "The GDBTABLE files contain information about geographic entities, such as cities, counties, and states. They store records that appear as rows with columns, also known as fields, that include object ID numbers, shapes, names, areas, and statuses.",
+      "GDBTABLE files are named incrementally. They start as a00000001.gdbtable and typically increase by 1 (a00000002.gdbtable). However, numbers may be skipped."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -48,10 +59,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/gdbtable",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.084Z"
+      "url": "https://fileinfo.com/extension/gdbtable",
+      "retrieved_at": "2025-11-01T22:32:42.496Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.084Z"
+  "last_updated": "2025-11-01T22:32:42.496Z"
 }

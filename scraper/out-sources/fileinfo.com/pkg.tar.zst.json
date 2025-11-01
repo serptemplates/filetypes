@@ -4,8 +4,20 @@
   "slug": "pkg.tar.zst",
   "extension": "pkg.tar.zst",
   "name": ".PKG.TAR.ZST File Extension",
+  "type_name": "Arch Linux Installation Package",
   "summary": "Learn about .PKG.TAR.ZST files and view a list of programs that open them.",
   "developer": "Arch Linux Team",
+  "more_information": {
+    "description": [
+      "A PKG.TAR.ZST file is a software package that can be installed in Arch Linux, a variant of the Linux operating system. It contains a program and installation instructions that Arch Linux's package manager, pacman, uses to install the program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Arch Linux is a lightweight, flexible Linux distribution. It includes a default package manager named pacman, which users can use to create and install software installation packages. In the past, these packages were saved as PKG.TAR.XZ files. As of 2019, these packages are instead saved as PKG.TAR.ZST files.",
+      "Each PKG.TAR.ZST file consists of a software package stored in a .TAR archive that has been compressed using .ZST compression. Compressing packages in this way makes them easier to store and distribute. Arch Linux users may encounter PKG.TAR.ZST files online, when downloading installation packages for new programs. They can install the programs these packages contain using pacman."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use pacman, Arch Linux's package manager, to install the program a PKG.TAR.ZST file contains. To do so, enter the following command in the Arch Linux shell:",

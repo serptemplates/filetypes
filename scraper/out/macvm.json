@@ -1,7 +1,7 @@
 {
   "slug": "macvm",
   "extension": "macvm",
-  "name": ".MACVM",
+  "name": "Parallels Virtual Machine (Virtualization Framework Based)",
   "summary": "Learn about .MACVM files and view a list of programs that open them.",
   "developer": "Parallels",
   "programs": {
@@ -18,6 +18,19 @@
         "name": "Parallels Desktop for Mac 26",
         "url": "https://fileinfo.com/software/parallels/desktop_for_mac"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Parallels Desktop can run other operating systems on a Mac, such as Windows, Linux, Android, and additional versions of macOS. When Parallels released version 18 of Parallels Desktop for Mac in 2022, it introduced the MACVM format to support the saving of VMs on Macs using Apple silicon chips (Apple transitioned from producing Macs with Intel chips to Apple silicon chips in 2020).",
+      "When you create a virtual machine (VM) with Parallels Desktop on a Mac with an Apple silicon chip, the software creates a MACVM file to store its contents. To create a MACVM file, select File → New... or click + in the Control Center.",
+      "Each MACVM file is a macOS package that contains all the support files Parallels Desktop for Mac requires to launch an operating system. Examples of files packaged in a MACVM file include .HDD hard drive files and .PVS configuration files.",
+      "NOTE: Since MACVM files contain all of the information for a VM, you can move a VM to another computer by moving the MACVM file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A MACVM file contains a virtual machine created by Parallels Desktop for Mac, a virtualization application for Macs that can run other operating systems (OSs). It is a macOS package, similar to a .PVM file, but is created by installations of Parallels Desktop on Macs with Apple silicon chips (instead of Intel processors) that support the ARM architecture using Apple's virtualization framework. MACVM files store all of the virtual machine components required by Parallels Desktop for Mac to load and run an OS, such as Windows or macOS."
     ]
   },
   "how_to_open": {
@@ -57,8 +70,11 @@
     {
       "url": "https://fileinfo.com/extension/macvm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.169Z"
+      "retrieved_at": "2025-11-01T22:32:42.604Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.169Z"
+  "last_updated": "2025-11-01T22:32:42.604Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

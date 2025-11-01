@@ -4,8 +4,21 @@
   "slug": "ytdl",
   "extension": "ytdl",
   "name": ".YTDL File Extension",
+  "type_name": "Youtube-dl Download Progress File",
   "summary": "Learn about .YTDL files and view a list of programs that open them.",
   "developer": "Youtube-dl Developers",
+  "more_information": {
+    "description": [
+      "A YTDL file is a JSON file created by youtube-dl (or a fork of that program). It contains data that youtube-dl uses to track which segments of a video it has already downloaded. After youtube-dl finishes a download, it automatically deletes that download's YTDL file."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Youtube-dl is a command-line program that allows users to download videos from YouTube and other online sources. Typically, users use Youtube-dl to download videos and save them as .MP4 or .MKV files, so they can play the videos offline in their favorite video player.",
+      "When downloading a video, youtube-dl creates a YTDL file. This file contains information about the download process. YTDL can use this information to resume the associated download if needed (for example, if the download is paused or interrupted).",
+      "NOTE: Youtube-dl is no longer regularly maintained and has largely been replaced by yt-dlp. Yt-dlp also creates YTDL files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because YTDL files are renamed .JSON files, you can open them with Microsoft Visual Studio Code or any other text editor (just as you would a JSON file). Doing so allows you to view the plain text data the file contains.",

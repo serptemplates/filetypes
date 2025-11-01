@@ -1,9 +1,25 @@
 {
   "slug": "h261",
   "extension": "h261",
-  "name": "H261 File",
+  "name": "H.261 Video",
   "summary": "Learn about .H261 files and view a list of programs that open them.",
   "developer": "International Telegraph Union",
+  "category": "video",
+  "mime": [
+    "video/h261"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The H.261 video compression standard was created and is maintained by the International Telegraph Union (ITU), a division of the United Nations that coordinates the world's response to information and communication technology issues. The standard was created in 1988 and last updated in 1993, and it was the first video compression standard to use discrete cosine transform (DCT) compression. H261 files are the precursors to .H262, .H263, .H264, and .H265 files, which utilize updated iterations of the H.261 compression standard."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because H261 files are so uncommon, most popular media players cannot play them. However, you can play H261 files in VLC media player, and you can convert them to a more usable video format using FFmpeg."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -36,27 +52,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "Because H261 files are so uncommon, most popular media players cannot play them. However, you can play H261 files in VLC media player, and you can convert them to a more usable video format using FFmpeg."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Freemake Video Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Video Convert Premier"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -85,20 +84,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.802Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.157Z"
     },
     {
-      "url": "https://fileinfo.com/extension/h261",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.802Z"
+      "url": "https://fileinfo.com/extension/h261",
+      "retrieved_at": "2025-11-01T22:32:42.157Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.802Z"
+      "retrieved_at": "2025-11-01T22:32:42.157Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.802Z"
+  "last_updated": "2025-11-01T22:32:42.157Z"
 }

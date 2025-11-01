@@ -4,8 +4,20 @@
   "slug": "rz",
   "extension": "rz",
   "name": ".RZ File Extension",
+  "type_name": "Rzip Compressed File",
   "summary": "Learn about .RZ files and view a list of programs that open them.",
   "developer": "Andrew Tridgell",
+  "more_information": {
+    "description": [
+      "An RZ file is a compressed file created by rzip, a file compression program for Unix. To create an RZ file, rzip first encodes any large chunks of duplicate data an input file contains. It then compresses the result using bzip2 compression."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Developer Andrew Tridgell created rzip to help users compress large files that contain multiple, large chunks of duplicate data. For example, a user might use rzip to compress a lengthy document that contains multiple copies of the same large image.",
+      "By default, files compressed using rzip are saved with the .rz extension. Optionally, users can specify a different file extension, using rzip's -S command."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use rzip (Linux) to decompress an RZ file. Then, you can open the decompressed file as you would normally."

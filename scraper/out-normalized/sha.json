@@ -1,9 +1,26 @@
 {
   "slug": "sha",
   "extension": "sha",
-  "name": ".SHA",
+  "name": "GodMode9 SHA SysNAND Crosscheck File",
   "summary": "Learn about .SHA files and view a list of programs that open them.",
   "developer": "d0k3",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "GodMode9 allows users to back up the data stored on their Nintendo 3DS's internal storage system, which is commonly referred to as SysNAND. When a user backs up their data, GodMode9 creates a .BIN file that contains the backed-up data and an SHA file that contains a checksum. Before the user stores their BIN file or uses the file to restore their data, they can use the SHA file to verify the BIN file's integrity.",
+      "For example, a user can:",
+      "Create an SHA file for their SysNAND contents before backing up their data.",
+      "Back up their data and produce a second SHA file.",
+      "Compare the two files' values to ensure their data was backed up correctly."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an SHA file in any text editor, such as Microsoft Notepad (Windows), Apple TextEdit (Mac), or GitHub Atom (cross-platform). Doing so will allow you to view the checksum value your SHA file contains (and likely, compare it to the value stored in another SHA file)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -30,11 +47,6 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open an SHA file in any text editor, such as Microsoft Notepad (Windows), Apple TextEdit (Mac), or GitHub Atom (cross-platform). Doing so will allow you to view the checksum value your SHA file contains (and likely, compare it to the value stored in another SHA file)."
     ]
   },
   "images": [
@@ -65,10 +77,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/sha",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.299Z"
+      "url": "https://fileinfo.com/extension/sha",
+      "retrieved_at": "2025-11-01T22:32:42.765Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.299Z"
+  "last_updated": "2025-11-01T22:32:42.765Z"
 }

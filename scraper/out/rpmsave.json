@@ -1,7 +1,7 @@
 {
   "slug": "rpmsave",
   "extension": "rpmsave",
-  "name": ".RPMSAVE",
+  "name": "Red Hat Package Saved Configuration",
   "summary": "Learn about .RPMSAVE files and view a list of programs that open them.",
   "developer": "Red hat",
   "programs": {
@@ -30,6 +30,18 @@
         "name": "Apple TextEdit",
         "url": "https://fileinfo.com/software/apple/textedit"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When a Red Hat, Fedora, or other Red Hat variant Linux user installs the updates contained in an RPM file, and the updates include changes to a CONF file the user has previously modified, one of two things typically happens. The package either overwrites the user's current CONF file and produces a similarly-named RPMSAVE file, which contains a copy of the user's previous configuration, or the package leaves the user's current CONF file in place and produces a similarly-named .RPMNEW file, which contains the modified CONF file's new default settings.",
+      "Typically, RPM packages produce RPMNEW files, rather than RPMSAVE files. This ensures users' modified configurations remain in place after the update finishes. If a package instead produces an RPMSAVE file, the package likely includes necessary updates to users' configurations.",
+      "NOTE: RPMSAVE files typically have the .rpmsave extension appended to the name of the CONF file they correspond to. For example, an RPMSAVE file that contains a user's previous configuration for the file httpd.conf would be named httpd.conf.rpmsave."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An RPMSAVE file is a configuration file created during the installation of an .RPM (Red Hat Package Manager) file. It contains the previous, modified settings you had stored within a now-updated Unix configuration (.CONF) file. RPMSAVE files are produced so users can compare a package's updated configuration defaults to their previous, modified configurations. The user can then re-apply the modifications contained in their RPMSAVE files as they see fit."
     ]
   },
   "how_to_open": {
@@ -71,8 +83,11 @@
     {
       "url": "https://fileinfo.com/extension/rpmsave",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.282Z"
+      "retrieved_at": "2025-11-01T22:32:42.742Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.282Z"
+  "last_updated": "2025-11-01T22:32:42.742Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

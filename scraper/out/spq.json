@@ -1,7 +1,7 @@
 {
   "slug": "spq",
   "extension": "spq",
-  "name": "SPQ File",
+  "name": "SPSS Database Query File",
   "summary": "Learn about .SPQ files and view a list of programs that open them.",
   "developer": "IBM",
   "programs": {
@@ -32,26 +32,21 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "SPQ files allow SPSS users to save queries so that they can be run repeatedly. This is useful for updating the dataset when the data in the source database changes.",
+      "SPSS query files can be run using the File → Open Database → Run Query... dialog. They can be created in the Database Wizard, which you can access from the File → Open Database → New Query... application menu option."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File created by SPSS data mining and statistical analysis software; saves a query to a database; specifies the ODBC database type (e.g., MS Access, dBASE, Excel file), the data fields to extract, and transformations that write the data to the desired format."
+    ]
+  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Scrapbook Factory"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Scrapbooks Plus"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKEElEQVR42t1XCXCU5Rl+/n/33/tMsklIyEkOgomKCCgeUHDAEbGeXKLBWsaIUFGriEWtwZJyVBDLWbAIgiJacQJEMIDBEAiJSZaQTUKuTXY3997/3v/+2y8UGVKYdjxmOtNv551/dvb/vud5v/d5j6XwP17U/xWBktWvM9JQONNvZe8I2bpn8Enp7d+ZuyvW7z1QfAUr8osT+OSNpWK3zflgcu74acGu3rvY0j3ZUUK7mKEi6L53JS65jPaN+7bnu1l8S153/2wCnyxfKgtznjRGop0qYBRTlVGxU2JikzRqnQ5WXxDW78/AXX4I8obzoBatQmt8Nj4oemZba5fnfbK96ScR+PjVZ7SMUDJDwMgnMYxqikyiHq3UxTM+iQqQKtAlY1DNB8EzNB7haMRK5Gg5sBPtHV3QPfkSPt38bOnXFW1F5KgyYuH/SmDvsnxFmEYGFaamiWjFZGnUiPFRGl28WCQHq1KjW6ZAUC6ESEshKI3A4mPBcoCNk0BrMOLZ5HSIE5LgGuxFnzQeBwoXmHYdPbOCHH2EmOOGBGr3vKVzmAfuYAcC04PSxPuESk26RKYSMUoNIJfDolNDzwXhEcvwQHoYI2Um3Cr3AQxxiCdGU2g3BvDOwSAWJiYhJSUVcrUU7ZFonNi/iV+/qehtpx/7CVT7MAJnVhfM9ff0z+PttvH+S8YRXosLkgmzED9nIXxw4UOdBgwjuEw7TIuwdrQDmfI2QEK4u/2I+DlQYoaQBBa9VoYGOg+vjc1FXlISGBHZx0Shsvo8Nhc+tU9v4TaQY74fRuDob6ZvNUvGF2TYTwHNTeBoBp4eKyIPvIi4qVPwhUqEARW5ek6AN7LDuF1dT7wGDh024GC5E25pLKJiJLhZ6cbfyz3ImD0bT4TCmEhCJSL7QuS8C71e7C56tvar0/qVBPMkMf9VAjUbn7u3pY4tk/c0QBEYhN8vBslhcKPuR8rTv8U5GYUStQqT1BK8nmYgnrIoPtqK+Tv6cfcTjyKklkMnlsDntUNA08jKygSnr0V+3EgotRqIaOKXX4vijwsHtmz72yp/GJ8Q3MGrBCrXLI7pb7A0iHPGxoq+3g4/K0CA9UE8vQDx99yFS1QI/4hPwE1yP1ZmtxLV+7Fk1VkUB8bhwcemwedxQUZH4A3ziJZIYQ2Hwff1IZ94np6YeJlAjzAaJ4v34P21KzaandhCcFuGifD0m88cHjDZZ0abKsCRUtEXiIZi4VtIyYgF53VjZ1QUxGohNmQ1g5L50GiwYbNeB1dqHuwhATxEnPFEB3IhjRAfQJxIhNymFtx9Uy5kEhHsvAAnyvU4uPPlkrI68xoCeYYYd5VAaf59K4zKcatT3HUQNFbDGxLBI0pG3PwlGJGegK+EEXwjUWBdZjtuibYR1QvAkyi2eWXoDavgDUQgY2Q42UejL6hANzlzSq8Fs5JSodCowXMUjrf2o2TzC60HTtT9gfxc8kNVvEyg9r3FOa0mgUHHtoGvr0KAl4O39cCfcCeSlqyAI1qG9REK01Qsnk+4BGWsgKQdsfBQaef/5Qt5ICJEcz+N5QYdsiRaLOBDiE1NIwkTQbk1gqM73uX27vtoJRvCp+TtzmF14OCTjxiY3Ik58sObwJEboDkPnKwIcS9ugiYnFutInFkIEefqwhh/GzIUTtyZrgEJPWLipEQbQkKIkBLz+OgbBz7sSsayODXuzBoNlZRBbS+HQ6eO4NjW3++qt4T/SiDrhhH49tU577We738pXdaDsN2DkM8LRGci7vnVkKooHJWIUc5z0ArE8Ds9sJg6ofK5YRqwIU/LYUqWDAvuUUGsZNBnHMRj+8N4KucmzMgYhShdFPoGWeytaUL5hiXnThm63ySQ5UPpeJVA3YaC6SbfyGOBVj2ia0vg8MoRmDgXuQXPQeruxzlyjZ8RkaVKJCREPGhGhGCQA0+uOcKL0dAziMJbHZiRSkqW14tHd9qQqc5Efl42dPHxUKrV2FJlxukdK3pLDx9528PhcwJru0rg4q7lCcazjfq+bkdMuqcDXifg4qXQ/OpRpD30MOwUh90kDBGBgISeIiEnFg5AIhSBImXYHGKQP8KLxxMvEn1wmLOKFKy86VieEI9ROWMgGrRi48Fi1LEOVGwqXGcOYttQWR7WjCqLFh+u9Y6ZmXisCGIisEjYC48rgtgXNyIqdzQ+F3BoEAihoWgoIk40sTKopQKEiDaSFDT+mNYOpcoKv8WGcSsvYlx+Ae63WjB7zlzoC99Fyb4taH6Z2NZlh6r0nesI5NlhBM69ueBVp1e2VthWg6DRBEokQ8TdA+HMl5F2/6/xBamgFSQdV2c4MUZkQElvFJwRFTI1DMZp7MRzkqISIZa+cQxlvjEYN+chpJg68GTm7WhaNgvqUCv2zN+P/u92GooPlLxFIL8eRuDCn/Nvq7enVAraqoWxprMIkBwPsG5o8t/FiEnj0eDxoD2ZxitZZK6IhEhPIKqnqB9ykDRaP9bs1uODOhkmz58NSiFD9oATY499ipjjH0KtIAPNxMUwBAKBko93LfeG8dl188CR/Ok1nqB4rMqkB+0JwIKRSFu+HilZsbAODGKrMIy7/NWYEOeBeIhAJAKnLwK92YdtJyww+VRYNO8JaFg7RhO9MJ3d6Fy7FEx2FkyT5sE2eSasR0pR92Xhzgtd7MbrCJS/s2hra2hUQfTxv0BCPp4QDU4YBc28ZUi/+2bsI8o/PmCHyNUHqrcXHrsdYW8II4gOJmSnII1oJJ5choCEapAR44LNgb6ENHjGTATNOsEYmyD+ci/0dYdLyhv71l9HoPKd/McHAtqDAacb8lMHQKl0CFtNsCmzkPen7agmk9AR1oVs0mwYixnJHi9GqlQQBYIIUEK4lVp0ypRwj0yFk4xVftsg+I4msBXf2ByNlV39A136LjvbaGX5TpLNjdcRaNz+u8TKCnu9u8OozQvUk6EkBlTQRVJPglFFpJPq5KjT6xEX4iAmo5kNpBlpdaDTsxDQaDHo8MJt6YC1/CQGL9WYO6vLDaYuU6OTRpPdf7kL9hGzEnMR891wJix/ZXapWX7LNFXFfoiMbQiSncGMiUh/ex1cbjvcQim8aaPARycgABqMywFXkx4NpYccxqYaY3+/8WJzU28DKf+kfxMZkY48VHSGAImFbjgTXruq173wSnUDtV5b9xnp50J40yeAnvsSmNvGglNIiPgYuOob0Vt1Bl3605a2mu8MF1s7DU4u0uLm0HyNl0OTnBf/Yd2QQNma53NCJ6qqzVNfkMmWLARF5j2+k4W99jx6qr51Gi/WdbVcONNg6LTVOyKXr/UHL0kxgOffvfzRBIbWwgfvmfDw04t2dwYUOR3Hv+w3VJXVN3eaGwd9fAtBaL4C6rhiHtzgb9fPIjC0kqNl8qDDe1tvGGry1XkF1HollsGfAvijCFyzSLO/XO74XwL02vVPYH50IGO61igAAAAASUVORK5CYII=",
-      "alt": "Scrapbook Factory Deluxe"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE8UlEQVR42sWWfUwbdRjHv9fyMl7aQltWGtQp8AcOnWVu3eIrElmG4BBdiEFn2Jwz4WUQAR0KKBtz/KEDskSGDrdlL9nIgE1wihCROcnUYBk4BgW2QTerK4VheRulPe+utFJ6Pd5cfJLLc7+7+/Xz+b3c9SHwPwcxs5EtFJAL/YF9fxuIhfZhFcgASA+BBwIE45CKAS9P6vAAvAWAhxvg5gq4e7vA6CbCBKiLXkIc+/z6oqAzpW0nORIJuTohAVdOncSjD+gh9gFEIkBIH0LLOeErBST+IMUyKsumsz8IH8m8wGe2HMKF6laIqNFYJWwCe1asILfV1OBSWRl6qk4jYs2ARWAa7ibyAqTTcDGdlzNwWoRwceUEjwwYULSmANqhcYwtl+F+/YCjAL3+W8+eQ3B4OA7HxmK8/SJiI4cgEtKzzWfgoKAkDaUkrJnwEnDCu2paURpfitvgYZCw4NYuc2cXiD9Ujsc2b2baJevWQTzagYSXR8ETi2dAaQk5kwl6Fjii+u0jaDz6E4wiEjx3yzXzXWosRgG7QGxxCZSJiUx7YmQE+1etguI+LaK2yG0jnrkHCDd3VvDYnTEcUO7GkF6PwJUks4GtMaQHBjVOBMIzsxCZk2N7eFirRVGYAkoliY0pj1vgvpa1JwQiVnjHV6048lopQkJIKBVmh/ud3cDlNicCdN57Z9iug7ajA0VKJZ6IDcCLuRuZkTNrT9i//maTGWUv7EfPxU7seJVASCCPVbC20YxLv3k7ClglZgswo6qrw2fR0YjJegaRua+AWOZhd7/7RzW+2FQCgfsk0tJk1MblO90Xp6pG8bvKtDABOhqLi3EmIwMbsqMQkx/HzMCIfgQn3vwSV79tx9NPCRC3yRt8qRxckZOiZv8QzSVAx9msLHy3/1NE578Eb6k3qjIrQEwZ8dZ2MVauf5B5hvTx5xTIff3C4gXoKKdeU3VVFaZcePDx4yM1+2GIfFztwRwSuTEVSxMgSRJFcjnGx3R470AYeBK5A5T0db4MeU+WLE2AjsPUR2r4Vht2HnzeDm4Dc8xAXmj20gWORURgsK8FqUfj2cFcAgFbuQUSjp9AaEwMp8DJqNXQXetHanmcBT4bbNCw9vu5sgVff3DOuQBjKJOR76hUEPqzj4KcqkTlGyX44+oNJB9PtIfPAPO6z9v1a2nSofqTXocChrWa4VoKWqB627u42W5Ecu0uh1FbwZPqZlsfVQuJuu+lyFf3O/CcCmz4KB/Ppqfbga25Jv00+i4HIbmh0AafDe5Xm5jcpQZ+veKHPT0aVpbTeo6WSPqhCQEKhR2cNFXi/K4p3GgJRlL9Pge4FazpMkHzJ4FenQwF1zVOOZwFJS3x4c2DcHGpsQiYLCJ1O43o7Q5FUsV2p3CVisQQT46P+zScjDkrWlpi960JS0NtZFLDXupUG4SkyhRGwAqnwcyazxM+b4H4PAMeec7S5nVSM1BG/QMag5BSGMg6cj3kKNTMDZ+XgFUis8AAuvg1UwL1TY4Ci4HPW8C2FGkGNHdQVQ11TLj7YkfypB18vtO+aIHgh0ahM5oxqqMKy4B/BZqbzOj+S7Zg+IIErBKeUgN6rwFhCotAfa0Jv7T5cb5q/5kAHRmenuTg2BgUlMDa9XfxTYPE6UfmnghYi1c+Vf/xfWWsn9d7KkDH+35S0kyYUXh7cElwOv4B3MhcP5rGIJoAAAAASUVORK5CYII=",
-      "alt": "SpeQ Mathematics"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -72,24 +67,33 @@
     {
       "url": "https://fileinfo.com/svg/close.svg",
       "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.871Z"
+      "retrieved_at": "2025-11-01T22:32:42.214Z"
     },
     {
       "url": "https://fileinfo.com/extension/spq",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.871Z"
+      "retrieved_at": "2025-11-01T22:32:42.214Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.871Z"
+      "retrieved_at": "2025-11-01T22:32:42.214Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.871Z"
+  "last_updated": "2025-11-01T22:32:42.214Z",
+  "mime": [
+    "application/scvp-vp-request"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

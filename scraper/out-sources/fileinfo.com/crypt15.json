@@ -7,6 +7,23 @@
   "type_name": "WhatsApp Encrypted Database File",
   "summary": "Learn about .CRYPT15 files and view a list of programs that open them.",
   "developer": "WhatsApp",
+  "more_information": {
+    "description": [
+      "A CRYPT15 file is an encrypted database backup created by the Android version of WhatsApp Messenger. It contains messages a user has sent and received through WhatsApp and is encrypted with 256-bit AES encryption for security purposes."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WhatsApp is a multiplatform messaging app used by people in many countries to communicate with each other. The app provides encryption options to secure users' messages, including encrypting backups of messages it periodically generates.",
+      "Throughout the years, WhatsApp has utilized various algorithms to encrypt backup databases, with each one signified by the file extension appended onto the database (.DB file). For example, WhatsApp utilizing CRYPT15 encryption creates a .db.crypt15 file.",
+      "Examples of other file extensions include .CRYPT14, .CRYPT12, and .CRYPT10. WhatsApp began saving message history backups as CRYPT15 files in late 2021.",
+      "WhatsApp stores CRYPT15 files in the following directory:",
+      "/​sdcard/​WhatsApp/​Databases",
+      "If your data is not stored on an SD card, you may see \"internal storage\" or \"main storage\" instead of \"sdcard.\"",
+      "Also, you may find multiple CRYPT15 database files in your Databases folder, with YYYY-MM-DD dates included in their filenames. WhatsApp employs this naming convention because it creates new backup files periodically (the dates in these files' filenames represent when the app created them).",
+      "If you need to reclaim storage space on your SD card, you can delete dated CRYPT15 files without affecting WhatsApp or your message history. However, you should always keep the most recent one or two CRYPT15 files in the event you need to restore your message history."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can decrypt a CRYPT15 database with WhatsApp Crypt Tools (Windows), but you must provide the key file or 64-digit key. You can find your WhatsApp key file, which stores your CRYPT15 file's encryption key, in the following location:",

@@ -7,6 +7,17 @@
   "type_name": "Transactionware GM Suspended Transaction",
   "summary": "Learn about .SUS files and view a list of programs that open them.",
   "developer": "SAP",
+  "more_information": {
+    "description": [
+      "A SUS file is a suspended transaction saved by SAP Transactionware General Merchandise. Transactionware GM creates SUS files when a transaction meets its suspension parameters or does not process due to power failure. Users can resume suspended transactions in Transactionware GM."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Transactionware General Merchandise, also known as Transactionware GM, is a transaction-management and point-of-sale program used by specialty retailers, department stores, and other vendors. It includes POS Express, a point-of-sale transaction component that allows retailers to process transactions.",
+      "Optionally, retailers can configure Transactionware GM to suspend transactions if they meet certain parameters. These suspended transactions are saved as SUS files, which use filenames such as 0001.sus. Transactionware GM also saves transactions suspended due to power failure in SUS files. These files use filenames like powfail.sus."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use SAP Transactionware General Merchandise to resume the suspended transaction a SUS file contains."

@@ -4,8 +4,20 @@
   "slug": "sparsebundle",
   "extension": "sparsebundle",
   "name": ".SPARSEBUNDLE File Extension",
+  "type_name": "Mac OS X Sparse Bundle",
   "summary": "Learn about .SPARSEBUNDLE files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "Macintosh disk image format introduced in Mac OS X 10.5 Leopard; based off the .SPARSEIMAGE format, but is made up of \"bands\" instead of individual files; contains mountable directories saved in 8MB chunks."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "To create a new sparse bundle image file, click the \"New Image\" button in Disk Utility. Then select \"sparse bundle disk image\" from the Image Format dropdown menu.",
+      "NOTE: In Mac OS 10.5, both FileVault and Time Machine use the SPARSEBUNDLE format. FileVault uses encrypted sparse bundles to secure the home directory. Time Machine creates sparse bundles and only backs up the 8MB chunks that have changed since the last backup."
+    ]
+  },
   "programs": {
     "windows": [
       {

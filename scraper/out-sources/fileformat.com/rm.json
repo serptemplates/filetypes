@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/rm/index.html",
   "slug": "rm",
   "extension": "rm",
-  "name": "RM File",
-  "source": "fileformat.com"
+  "name": "What is an RM file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "A RealMedia file consists of a series of chunks, each having the following structure:\n\ndword chunk type (FOURCC) dword chunk size, including 8-byte preamble word chunk version byte[] chunk payload\n\nThe following are the types of chunks present in the RealMedia file:\n\nRealMedia file header (.RMF): This must be the first chunk in the RealMedia file. Only one RMF chunk is present in one file. It contains information about the number of headers.File properties header (PROP): This contains information about the general properties of the RealMedia file. There is only one chunk of this type in each RealMedia file.Media properties header (MDPR): This chunk contains information about the stream properties. It contains information about the type of stream and the codec used. There is one MDPR chunk for each stream in the file.Content description header (CONT): This chunk contains text information like the title or author for the content in the RealMedia file. This chunk is for information purposes only.Data header (DATA): This chunk contains a group of data packets.Index header (INDX): This chunk comes after all the DATA chunks and contains index entries. One file can have more than one INDX chunks."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "RealMedia is a proprietary multimedia container format developed by RealNetworks that uses the .rm extension. It is used with the combination of RealAudio (RA) and RealVideo(RV) for streaming over the internet. These streams are of constant bitrate. For variable bitrate, RealNetworks developed the RealMedia Variable Bitrate (RMVB) format. RealMedia is suitable for streaming content over the internet and can be used for streaming live television for example."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

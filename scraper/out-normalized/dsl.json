@@ -1,9 +1,20 @@
 {
   "slug": "dsl",
   "extension": "dsl",
-  "name": ".DSL",
+  "name": "Lingvo Dictionary File",
   "summary": "Learn about .DSL files and view a list of programs that open them.",
   "developer": "ABBYY",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "You can create an LSD file from a DSL file. First create a plain text document, such as a .TXT file, with the correct DSL formatting and then rename the file extension to \".dsl.\" You can then use the DSL Compiler that is included with the Lingvo Dictionary application. This tool will then compile the DSL file into an LSD file.",
+      "The header of the file is in the following format: #NAME \"Dictionary_Name\" #INDEX_LANGUAGE \"Source_Language\" #CONTENTS_LANGUAGE \"Target_Language\" #INCLUDE \"C:\\\\Dictionaries\\\\Dictionary_file.dsl\"",
+      "The #INCLUDE command only needs to be used if you want your dictionary to include other entries. You must put the whole path to the file with \"\\\\\" instead of \"\\\" to indicate the folders.",
+      "NOTE: When compiling the DSL file, you can choose to create a .DDE error log file to document any errors. It will appear with the same name as your DSL file. Also an .ANN annotation file may be created with your DSL file. This file will also bear the same name as your DSL file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,10 +51,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/dsl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.037Z"
+      "url": "https://fileinfo.com/extension/dsl",
+      "retrieved_at": "2025-11-01T22:32:42.430Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.037Z"
+  "last_updated": "2025-11-01T22:32:42.430Z"
 }

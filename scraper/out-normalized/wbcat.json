@@ -1,20 +1,30 @@
 {
   "slug": "wbcat",
   "extension": "wbcat",
-  "name": ".WBCAT",
+  "name": "Windows Backup Catalog",
   "summary": "Learn about .WBCAT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Windows Backup and Restore is a backup application bundled with Windows. When you use Backup and Restore to back up your files, it creates a Catalogs directory within your backup. This directory contains a single file, GlobalCatalog.wbcat.",
+      "The WBCAT file contains a list of files included in the backup and their locations at the time the backup was created. When you restore your backup, Backup and Restore uses this catalog to place copies of your backed-up files in the correct locations.",
+      "NOTE: Each backup created using Backup and Restore also contains several .ZIP files. These archives contain your backed-up files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "WBCAT files are not meant to be opened. Windows Backup and Restore uses WBCAT files when you restore the backup in which the file is stored."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=5621&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "WBCAT files are not meant to be opened. Windows Backup and Restore uses WBCAT files when you restore the backup in which the file is stored."
     ]
   },
   "images": [
@@ -45,10 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/wbcat",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.367Z"
+      "url": "https://fileinfo.com/extension/wbcat",
+      "retrieved_at": "2025-11-01T22:32:42.863Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.367Z"
+  "last_updated": "2025-11-01T22:32:42.863Z"
 }

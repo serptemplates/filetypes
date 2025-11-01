@@ -1,9 +1,49 @@
 {
   "slug": "adp",
   "extension": "adp",
-  "name": "ADP File",
+  "name": "Access Data Project",
   "summary": "Learn about .ADP files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "database",
+  "category_slug": "database",
+  "mime": [
+    "audio/adpcm"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "In Access 2000, Microsoft added the ability for users to create Access Data Projects. Via an ADP, Access users could connect to, open, and edit a Microsoft SQL Server database. This allowed database administrators to more easily create and manage Access applications that use SQL Server databases.",
+      "ADP files do not themselves contain any database data or objects. Instead, they contain data that Access uses to connect to, read data from, and make changes to an associated SQL Server database, using Microsoft's OLE DB architecture.",
+      "With the release of Access 2013, Microsoft discontinued the ADP format. As a result, Access 2013 and later versions cannot open ADP files. For more information about this change, refer to Microsoft's official documentation."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open an ADP file with versions 2000 to 2010 of Microsoft Access (Windows). Access 2013 and later versions do not support the ADP format, so you cannot open ADP files in those versions."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -44,43 +84,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open an ADP file with versions 2000 to 2010 of Microsoft Access (Windows). Access 2013 and later versions do not support the ADP format, so you cannot open ADP files in those versions."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADZElEQVR42s2XfUjTQRjHv05nmCYmuawNwywL0Vr0YoqtIJwlZmp/BZX2R2VBUFj92csfUSEEmllILzq0InpBEXoBy7IlWovMKRkZvWw5mUaWNlLz13PnfmLlNmf7DQ+Ou93t7vncPd/f3T0+8FC6vHRF+HZDo8XdcT7uDtAtXxkgAHEQBDUreR2Iod9hBOD2fE4HVMQnxtmNxdiNMUPzBNYpCGClIP6Zfk8Y4FpCUoRoCPZVUVaLRv4wNlabBwAEcVLYJ3VobDID+Pn6GqgWSjnS3tpPudlevqRcT7lqa2N9jyQA6eU6yOR+CImK4k0Dvb34bjKjn8rulhZYm40w659CGBrKp+6TBPLFowA5zxtcbnnv5w68OFOEjw8eFhHAXq8DcL98+4bryet+EYCf1wH6LJ0wFBSyHQAB+LgESK3QcZ+S33A9JRX9PT1ONSAPCsQ0lYo3DQ0M4Gv7OwzafqDL2Aqr0QjT4zqoNKvwqfaRa4CpCgUyKm+N0NcdPor3d+85+wrGXLVMLqdFzIUiLhZKjQazVixHeXyia4DozAwsO3SAb1tg+ExunEE4cwHzLxOamKZHz4ePTPYP1LgANCeOQ7VmNVrLdIjJ3jYsHu16DJE7/keEzJ0VCUnOAUDUm+5Uw3fKFNxK24is6kpev7cjF51NTRMGGLTZ0FKqQ3NpmXOAGYsXIfl8MaxNr3B/Zy7Vz0KxZAkfbCg+51CELIUuXMBLW3c3bNYu/Pr5E1/a3qCrtRWmuicIX7bUtQgX796FmG1bYbx4CU0lFxCbk83bvra3o2rzFulFuL5cxwdZGp+h12xGoFLJB7J0Mz0DfR0W6UToHxKCLPK/o9RwKh9tN25KJ8IIbTISjx2hi8SEt7cr6WBR8vbw+HgEzZ4F8xM9avbnSSfChKOHMSdFi9dXrsJQWDTib6YDNemAieraWi0GqfS4CJm/Mmn7/YODUZt3kF+fIkAYfRkpJef55DX78mDS66U9Cf++eNjZMH9DGgIUYXxFH2gVkp6EUl3H4zoJpQIYJcJzBLDH40+y8YiQnmoF1H2aAD5K8ShVUx6tRhYtmTH8KGX9N8iwVeycNM9yMTDhYZbXAxNHiUIztT0cE6MlVo/0GsBYiYLTIDsIg1OPCk5DvQLgKFF4riQAs7vjfgNgWapOt0icuQAAAABJRU5ErkJggg==",
-      "alt": "Microsoft Access"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA7UlEQVR42uWWWw6EIAxF7c7c2XR2xs46Q4JE0lIepfjhTRQfIMejoHCsDY02gOUA+F+jUgPLbTcAIi4DAI4MiM4A91sl+pQArzNwWXibgUq2GOiNqwFpiRVSCfiQgccBirgADGY1gAQEyn7eGSbvuBkSzokAFEIw936ep9RRreQA6QJTubWXLDQfQQaQps9W4vS6FADgyzq5PqdbAIwG2OkGUJ8BzUTDALuEt4HqcFtiQDIhANQ632KgWV06oBrQRsCEAZFo5zugA8xmYBTUAayxAMR4fA2nG43AmP8n2FSJiN2NU10ThPYTscXCDxHw0hTX960HAAAAAElFTkSuQmCC",
-      "alt": "Alphaedit"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADl0lEQVR42q2XP08UQRiH5xpsIJBoow3QYCMJhEobobHSALHSBmhogU8AfAKg1AZotDJAsLIBKioCCTbScDTQaCDBRptzngm/y3uzM8uivglh73Z2fs/7d+dqjUbDVbX3tVrlxdONRq3KuloVgJTwo+Fh9+vqyv04OvonkFKAWBjRJzMzrmdszP324tsjI+66Xg/f1zc3XVtXl3s8ORmu+b4KSBYgF+6Onp7whwAReLGxEQCIxO7UlOubmHD9s7Pu0+BgITopiAJASpgN2zo73UMvhF3s7rqDxUXX571FhGgQFcSBeLq05PZuYK7PztzJ2loWIgsgLxEZXl1tWXOwsOBO1tfdm9PT8BmAcw9V39oKcLLnN8/tz821RMNCtABIHNGO7u7g5evDQ3d/YKAAgBj3LMDF3l74LzFSw7N8PjdgFqIJYD1n4y/j4+Gh6USN8P1nX4CkRoKIdY+OBkGexR7463a/3zOfku9+Dc/cCvByZydsxuIUAPk8XlkJolR9v++KEDEvhFEDRE8GECkgHYARLQsRACTOYoU1BkCYlFAXiLGWdrMp4t7H3t5mbbAH18Bu33hPVJSOAsDQ/Lwb8vlVnhGkor96j9XXrAld4b1HgNC+8lGzoac1MVqR9XQIEHzmmr1UJy0ACj+Gd9pQ0WFjhVrFp2FEKgCmY0iJqp9ZwXfHy8vhs4pTUai9c66ZZMKFgDYWZaoVLQTCCGCsw0sihBPUhOCIXLuvD4EUAMi3JprtW5ualFEfPKOWUzepLlSs2kP1VQCYvLxs8dzmPzUPZBQea4jgPS9GXWhCqo7wXqZiLQBo+imUhF49r/mAN9ZUrLk0IcQIj+/5uisCyGJiiRABKl4QePjBC/DfFrA1DR/uy9QRSQAKSG1kjRyTayLBfWD0HcJWIAYgJaQ33isJwMI4zHEkVFRc23TlAOKBBoCsAJALpUytpZEKjPWuDCAWTwKUhdNC2CFFWkgdL6MYXgAaPgCzPjkJZXER5rzSEeyb98y+ZHJGmkgdra71SQA21nyPzYbRDig8CmdBfwL6ac6DGjiasqojrPkywqpCaOhw/63fNFewmAaO6sS2360AKYic9znTECP/pNWGvnAgKYPQK/gu3mO2beODiK4rnYoxO6areI/Zl461UoAyCNltswJQPLfH8ZR4FqAKBBHhJWPPf3QAx/L4V1FOvBSgCkRVK/t9+Nc/Tv+HeGWAu4JU/WmO/QGnqBsyw4sDdAAAAABJRU5ErkJggg==",
-      "alt": "HomeSite"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVR42s2WWxKDIAxFZWWyNJcmK6M4nVRI8xRE81MJkHu4Qadh0SLn3IxDCGS+nuf2UMtd4pKINsdA2ADwqetiWo6aH+KABUA5/RwHlHg5wISQALK5SoeWCMDdQbfytxPXAFJKXeL7vi/btvUBxLiWQicIjOt8nTvF0/0AIERBTXGgtbuFmtYCyokrDmSUawDwKTvuQKODk9iCkW8BaYAbYI2xGacicOSO3x4AsQUYAMTg2QggtoAxYKgDY76E1KkfAcAwtSO3AnijC0C4va64DDBEXdF61z+i0vK/U5cvRaDmIC/NQZ5aCzkVABZzcJY9bgDqBJZnbQ+13g2gtYZzwAVgKeZxgKtpAvC0w9PGX/3l4fgARny2MH6IBDwAAAAASUVORK5CYII=",
-      "alt": "ATPDraw"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABfElEQVR42s2Xa7aDIAyEcWd25bozCqdSYphJ4qMPf7T3lOJMvgyxd0qXryUv5fVR/1Lv5XXydusv5Nj3umjOM7/5tG5muBHPgFiPicprLQY6EWyCGXh/vhThI6KIwFz2vsyMJpCBSVY8nxCWBNp+1g7SmyWfqZiJayLSBDBwT+WobSgTp9IdEWdFtPWEDLTAHSWwryz6rgxU8TEw4+ZKhq3L/Y0gNgczsA8eErHWJTEdQN0WeSQhASSCMiHPuf4cBbCLwwyMBBruyLj1CCBxMwO6h4yAzATb38TRRBwI6IpZG1jQtJglPhBggUKnIBpYC78i0El459iecAm2r5pM1sPIe+rho8TnAGrHhj9LXToJ2c2ty8qC6D03wNrAKvYmocxG6tUny8DOHSKCMEvRRoIEL2QArNlEJG5pTs1+eO/Ij1JKRA8hXbl68Jw24BLR88Ho/SUDLhHj/4JbDYSIkN7fasAhQqu/3QAkknj1HzOA7vkTA4dM/p2Br19PxFKmMHq5+nIAAAAASUVORK5CYII=",
-      "alt": "Accessory Manager"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADBElEQVR42u2WXUgUURTH/2OZgRkW5meGlViS+NCDptn6VBJoD/WUIq6tRWmShkWELrKYWBBqWqSG4Iv7WJL1EPSpoW72ZPRmaZoupdBL6s7Mzu3eHcedbUdzctZeOjDczznnd84993I4/GPh9P5gbX5D5nlgXgBcPIcFgdAPmKMtG8/zBLwICO6V9ThfmOGc/MzpBrC1viY1ZaY1ex4Tv8cL8KqoiLA24n3XxPAsbOZpPFjuxyu1XeSmtdBnTiLMYwJBlFtelD+XIHkiIbAxnXeJ3rXi3FQvQAdQkpGCjgOPgZFc4GxWH4bajmhGp8raSW7Vmn3m3BIgSrJiD4DgNcQAeDUUm/sdoBH4cjQF8WxwMPoJygoy0D/4AY42kx9EZXUHuW2z+AO4F40rxhSIxQiovWd7zqgBqmkEwmkgquLasX0wH7M7Q3G5cxZvHR/9IC5dv08a6875ADDvGYBIj8Dllj1kiegSpSUAnvXpnCaAR4JaSXThcThLgW2xUfhZE4reKA73nnJ4NEKW9pVfu0ua6y94rdPzF4kqAmpPWU54IFgE5L7cUoC8VI1boED0S/h06BRmMqewK3IG521eiLKrd0hLw0XfCDDjkqx4KeEEJSHlRHQpERDkdYsmABMuiQwkbwS3jyo+eQyHM79hergbpXUyREl5Axlx9Kz5GjIZGhrQfgciw0AGsmhA6I2IsSwg5GsxJh12lNf7Hsdykp6eQZjy1UAsu0kLYnzQjoqGP0MYAuADkQfEWlzYNGFGyw07ng9z6FkBwjAANcSGPBYJClEQgtETgNkaPN4/JiQEHECBMNGkbIoC4nrpnRvNx7M+51xO8ct2ulwZcAAmERHhU9/tP2Kw+zSwt5tBzHGJ9vUDYLJ1S/DYu4c5O5ISwoKQ2L2Z47imdQVYlEZVv0JLR0AAmFI9lAEBWK1SPfIfwE+h3qJTKS4NA9BbdCrFpWEAeotOU1qysQB6i07DAfQWnYYD6C06s40G0Ft0ZqftNxZAb9FpOMDfFJ1reaAMf9n0yi+eC7M/KXh4rAAAAABJRU5ErkJggg==",
-      "alt": "INFOConnect"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -89,29 +96,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.761Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.123Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.761Z"
+      "url": "https://docs.fileformat.com/database/adp/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.123Z"
     },
     {
-      "url": "https://fileinfo.com/extension/adp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.761Z"
+      "url": "https://fileinfo.com/extension/adp",
+      "retrieved_at": "2025-11-01T22:32:42.123Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.761Z"
+      "retrieved_at": "2025-11-01T22:32:42.123Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.761Z"
+  "last_updated": "2025-11-01T22:32:42.123Z"
 }

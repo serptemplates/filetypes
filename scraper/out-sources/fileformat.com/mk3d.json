@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/mk3d/index.html",
   "slug": "mk3d",
   "extension": "mk3d",
-  "name": "MK3D File",
-  "source": "fileformat.com"
+  "name": "What is an MK3D file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "The 3D videos can be compressed in the following two ways:\n\nSeparate track for each eye.Combine each eye tracking into a single track.\n\nThe MKV file container supports both of these.\n\nFor the single-track videos which are easier with the 3D material inside them, you have to set the StereoMode field which decides either the planes are assembled in the mono or left right combined track. You can use one of the following StereoMode field values:\n\nValueDescription0mono1side by side (left eye is first)2top-bottom (right eye is first)3top-bottom (left eye is first)4checkboard (right is first)5checkboard (left is first)6row interleaved (right is first)7row interleaved (left is first)8column interleaved (right is first)9column interleaved (left is first)10anaglyph (cyan/red)11side by side (right eye is first)12anaglyph (green/magenta)13both eyes laced in one Block (left eye is first) (field sequential mode)14both eyes laced in one Block (right eye is first) (field sequential mode)\n\nFor the multiple tracks, the MKV container needs to decide the functionality of each track separately. The TrackOperation with TrackCombinePlanes are used to do the job."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The MK3D files belong to the Matroska video formats family. These files are actually stereoscopic 3d videos created using Matroska 3D format. The MKV file Container uses a StereoMode field’s value to define the type of stereoscopic 3D video stuff. A StereoMode value is also available to display the old stereo 3D videos by separating cyan and red colors (AnaGlyph)"
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

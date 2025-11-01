@@ -1,9 +1,26 @@
 {
   "slug": "pyz",
   "extension": "pyz",
-  "name": ".PYZ",
+  "name": "Python Application Zip File",
   "summary": "Learn about .PYZ files and view a list of programs that open them.",
   "developer": "Python Software Foundation",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "You can create a .pyz file using the \"zipapp\" module in Python's standard library. To create a PYZ file, type the following:",
+      "import zipapp",
+      "zipapp.create_archive('filename.pyz', interpreter='path_to_python')",
+      "NOTE: PYZ files run in the Python console window, while PYZW files store a Python Windows (GUI) application."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open PYZ files with the Python interpreter (beginning with version 2.6) on any platform. For example, you can type the following in Python to run a Python application in a PYZ file: python filename.pyz. You can also run a PYZ file in Windows by double-clicking it.",
+      "Since PYZ files are renamed ZIP files, you can open them with a standard compression utility, such as \"Windows File Explorer,\" Apple Archive Utility (macOS), Corel WinZip (Windows), or Corel WinZip Mac (macOS). You may need to rename the file extension from .pyz to .zip."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -26,12 +43,6 @@
         "name": "Python Software Foundation Python",
         "url": "https://fileinfo.com/software/python_software_foundation/python"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open PYZ files with the Python interpreter (beginning with version 2.6) on any platform. For example, you can type the following in Python to run a Python application in a PYZ file: python filename.pyz. You can also run a PYZ file in Windows by double-clicking it.",
-      "Since PYZ files are renamed ZIP files, you can open them with a standard compression utility, such as \"Windows File Explorer,\" Apple Archive Utility (macOS), Corel WinZip (Windows), or Corel WinZip Mac (macOS). You may need to rename the file extension from .pyz to .zip."
     ]
   },
   "images": [
@@ -62,10 +73,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/pyz",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.259Z"
+      "url": "https://fileinfo.com/extension/pyz",
+      "retrieved_at": "2025-11-01T22:32:42.713Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.259Z"
+  "last_updated": "2025-11-01T22:32:42.713Z"
 }

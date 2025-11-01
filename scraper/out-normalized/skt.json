@@ -1,8 +1,14 @@
 {
   "slug": "skt",
   "extension": "skt",
-  "name": "SKT File",
+  "name": "SKT files and how to open them",
   "summary": "Having problems opening a SKT file?",
+  "category": "other",
+  "mime": [
+    "application/vnd.koan"
+  ],
+  "containers": [],
+  "related": [],
   "programs": {
     "windows": [
       {
@@ -19,32 +25,22 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABpUlEQVR42sVXiRWDIAwNk+lmxM1gMkqQIyDlUFrzqlKf8g9CQAGIBl4MgZYAvgSOgcC+70BHGcasMUcIAa4ne9Jawbbt7qqU6hMQ53v3rwTudQTw0L4Q4IrPF01szwR/z3g2WiXwJoGcuUng1NONtjG58i4B7sCTPBAN8DkHbow9+KQrbR92gI//auV9Bx4o9/SHwCmq0/DJ3CfySvXBv9aBR/N+FJyEGhgrRLPRMo8PC00wAs8JbNujinccwhV3aRrgws8SqBDYLIG7cZAkRPvDiwvcdnosJPoyBwjcCncHkQiHlHixPeQY1AgEB1p1PyvNPjA7ISQeJ4myu74DxSJUtvm903oP7lCTCa4d14OkPKwRTQdGCLik84iYueGHoNPHIweCwiQ1Hwa6zVUvdwDRa/bqMfoOTvlIH00HeknI8KP4yIHvCeqdtB1oRZjvSflpu5TyorYVt+sAHkEZGwILyPcBwP639gvTDmit43qBfqxryn7igGLgMRe+KFvuAFdeFqL/OMB2ub294nIHajvj/zkw+TEyGxkB/CnU90An+OXP8w9Y8pIfLdVIZAAAAABJRU5ErkJggg==",
-      "alt": "WinSketch Pro"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Marketing Plan Pro"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.868Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.212Z"
     },
     {
-      "url": "fileinfo.com",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.868Z"
+      "retrieved_at": "2025-11-01T22:32:42.212Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.868Z"
+      "retrieved_at": "2025-11-01T22:32:42.212Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.868Z"
+  "last_updated": "2025-11-01T22:32:42.212Z"
 }

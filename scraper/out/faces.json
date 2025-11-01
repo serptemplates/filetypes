@@ -1,7 +1,7 @@
 {
   "slug": "faces",
   "extension": "faces",
-  "name": ".FACES",
+  "name": "JavaServer FacesServlet Pointer",
   "summary": "Learn about .FACES files and view a list of programs that open them.",
   "developer": "Oracle",
   "programs": {
@@ -10,6 +10,16 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11752&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FacesServlet is a JavaServer Faces servlet that manages a web app's request processing lifecycle. In order to invoke FacesServlet and allow it to render the JavaServer Faces components included in an XHTML file, developers must sometimes specify a file path that ends with the .faces, .jsf, or .xhtml extension. When FacesServlet encounters a file path that ends with .faces, it knows to search for a corresponding XHTML file that includes JavaServer Faces components."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The .faces extension is used by some versions of JavaServer Faces to invoke the FacesServlet servlet. However, FACES files do not actually exist. When developers specify a path to a FACES file (e.g. http://localhost:8080/webapp/page.faces), JavaServer Faces searches for and renders the FacesServlet components included in an app's corresponding WebContent .XHTML file (e.g. Webapp/WebContent/page.xhtml)."
     ]
   },
   "how_to_open": {
@@ -47,8 +57,11 @@
     {
       "url": "https://fileinfo.com/extension/faces",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.060Z"
+      "retrieved_at": "2025-11-01T22:32:42.462Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.060Z"
+  "last_updated": "2025-11-01T22:32:42.462Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

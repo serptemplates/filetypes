@@ -1,9 +1,11 @@
 {
   "slug": "lqr",
   "extension": "lqr",
-  "name": "LQR File",
+  "name": "Squeeze-Compressed LBR File",
   "summary": "Learn about .LQR files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -12,11 +14,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "In the early 1980s, developer Gary P. Novosielski created the LU archiving utility. Developers use this utility to package CP/M and DOS software programs in LBR files, which can be distributed to end users. Notably, however, LBR files are not compressed.",
+      "To share LBR files more efficiently, developers often compress the files using a separate compression utility. LBR files compressed using SQ or another Squeeze compression utility are typically renamed to use the .lqr extension, to denote that they are Squeeze-compressed.",
+      "NOTE: LBR files compressed with Crunch use the .LZR extension."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The LQR file type is mainly related to a compressed archive file that covers one or more files that have been abridged in terms of file size for easy distribution via the Internet or through transferrable media like optical disks such as DVDs and CDs among other exterior data storage devices. Any file stored in LQR File format can be combined with compression provisions executed by a certain compression algorithm. Files in the LQR format are pinned with the .lqr extension. Now, the LQR extension has been substituted by more extensively used compression standards and encoding features, including the RAR and ZIP format.",
+      "An LQR file is an .LBR archive that has been compressed using Squeeze (SQ) compression. It contains a collection of files, such as those that comprise a software program, that have been packaged together for easier distribution. To retrieve the files an LQR file contains, users need both a Squeeze decompression utility and a LU expansion utility."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "To decompress an LQR file, and retrieve the LBR file it contains, use Squeez or another Squeeze decompression utility. For a list of programs that can expand LBR files, refer to the How to Open section of the .LBR entry."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -45,15 +82,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/lqr/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.927Z"
+      "retrieved_at": "2025-11-01T22:32:42.276Z"
     },
     {
       "url": "https://fileinfo.com/extension/lqr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.927Z"
+      "retrieved_at": "2025-11-01T22:32:42.276Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.927Z"
+  "last_updated": "2025-11-01T22:32:42.276Z",
+  "containers": []
 }

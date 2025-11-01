@@ -4,8 +4,20 @@
   "slug": "idt",
   "extension": "idt",
   "name": ".IDT File Extension",
+  "type_name": "Windows Installer Database Text Archive File",
   "summary": "Learn about .IDT files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Text file created by exporting a table from a Windows Installer database; contains the ASCII text representation of the relational data stored in the table; used for reviewing database information in a human-readable format; also used for committing the text version of a table to a source code control system."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "IDT files can be exported using the MsiDatabaseExport function, which is part of the Windows Installer API. IDT files can also be imported into an existing database using the MsiDatabaseImport function.",
+      "A Windows Installer database contains the data required to install a group of applications. The databases can be customized using third-party applications and relational queries, which helps tailor the installation data for specific needs."
+    ]
+  },
   "programs": {
     "windows": [
       {

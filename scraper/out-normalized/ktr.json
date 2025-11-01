@@ -1,9 +1,26 @@
 {
   "slug": "ktr",
   "extension": "ktr",
-  "name": "KTR File",
+  "name": "Keter Source Code File",
   "summary": "Learn about .KTR files and view a list of programs that open them.",
   "developer": "Fivnex",
+  "category": "other",
+  "mime": [
+    "application/vnd.kahootz"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The Keter programming language is a JavaScript and assembly language replacement designed to be used for web applications and other application development. When a developer writes source code for a Keter application, they save that source code in one or more KTR files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open and edit KTR files with various source code editors, such as Microsoft Visual Studio Code (cross-platform) or GitHub Atom (cross-platform).",
+      "Since KTR files are plain text files, you can also open and edit them in any basic text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac). However, source code editors provide helpful code-editing features that basic text editors do not. So, you are better off opening a KTR file in a source code editor if possible."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,24 +57,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open and edit KTR files with various source code editors, such as Microsoft Visual Studio Code (cross-platform) or GitHub Atom (cross-platform).",
-      "Since KTR files are plain text files, you can also open and edit them in any basic text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac). However, source code editors provide helpful code-editing features that basic text editors do not. So, you are better off opening a KTR file in a source code editor if possible."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Silvia"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Director Shockwave Studio"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -86,20 +89,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.817Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.170Z"
     },
     {
-      "url": "https://fileinfo.com/extension/ktr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.817Z"
+      "url": "https://fileinfo.com/extension/ktr",
+      "retrieved_at": "2025-11-01T22:32:42.170Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.817Z"
+      "retrieved_at": "2025-11-01T22:32:42.170Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.817Z"
+  "last_updated": "2025-11-01T22:32:42.170Z"
 }

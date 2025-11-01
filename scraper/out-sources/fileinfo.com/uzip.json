@@ -4,8 +4,20 @@
   "slug": "uzip",
   "extension": "uzip",
   "name": ".UZIP File Extension",
+  "type_name": "FreeBSD Compressed Disk Image",
   "summary": "Learn about .UZIP files and view a list of programs that open them.",
   "developer": "Maxim Sobolev",
+  "more_information": {
+    "description": [
+      "Compressed disk image created by mkuzip, a FreeBSD compression utility; compresses a disk image, such as a .UFS file, so that it can be read during runtime by the FreeBSD geom_uzip utility; used to reduce the disk image file size at the expense of additional CPU time when reading the image."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "UFS files are stored with a small script at the beginning of the image. This allows them to be run like any other shell script.",
+      "UZIP files may be seen with the multiple file extension .UFS.UZIP."
+    ]
+  },
   "programs": {
     "windows": [
       {

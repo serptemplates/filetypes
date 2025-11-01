@@ -1,7 +1,7 @@
 {
   "slug": "mcd",
   "extension": "mcd",
-  "name": "MCD File",
+  "name": "MiniCAD Design File",
   "summary": "Learn about .MCD files and view a list of programs that open them.",
   "developer": "Nemetschek",
   "programs": {
@@ -60,38 +60,21 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "MCD files were used through Vectorworks version 12, but Vectorworks now uses the .VWX extension in versions 2008 and later. Version 2008 was the successor to version 12.",
+      "NOTE: MCD files can be converted to VWX files in Vectorworks 2008 or later. VWX and some MCD files can also be viewed with the free Vectorworks Viewer programs, which are named \"Vectorworks YYYY Viewer,\" where \"YYYY\" is the four-digit calendar release year of the viewer."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Design created by Vectorworks CAD applications, which were previously developed under the MiniCAD brand; contains a design draft such as a technical drawing or a 2D or 3D model; used for storing drafted plans before construction or manufacturing."
+    ]
+  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "VectorWorks"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFnklEQVR42u1Xf0xTVxT+GhTcgHSiLpS5TCkdcbpEiHE4o8sW7Qomy7YESIZxGdsSS6FEYH9QE0WTVbMMFkqwZoHGEJdA3Q+2KJbH4rIwI1sMEMlw2HYTptjNRazA4lD2du69fY/WFgFj4j87yc279/bee77z3e+c96rBIzbN/wDCB1k4Ivepoz+pPRl61swTaKUM6MPGfhQXj8Hlcs26f5Yfjsgz/ZIFsvQ631tQEA+32z3n3pgLtqBT7ib0UFu7uu7WrVvcQXJyMh+Pj49jJCj6zsNAY6MT0EnIy5pCU1MT0tLSNAsGMEMnMz3s9psoLS1VnSrGnDMb+ZfmqVv1PuDxEGCDEzVFyUhJSYHVan0wAAYC4IWZeunESBfaRp+HTqcTEYcc+sMuyv8jUJEvQdz7eazLbUbqM0H81dNyXxD3QddJx2+n56985Hb34rlN+dzpZCDI5wKPa5H6t+i37NNS9ATAIMH+zjKsfbkaeAoYbm+A1TMMdNRq5g3g2LHjcmtrER0ohwCkw2TSYNfBYIRTxQLDWoqeaYXuPu8kVm8/BT1hXzl4gs7wwIUNKMb5mNkQNUHKle+uMiLwAx1a4b8HWA+WvlKkMqBYSxtFXyvu3pafgOCKD/l83G/luLS4Hp4EYiZAv7tK5gZg+USWN28WDt6qpIvtVvLaD1OlEbsKg0ic1mIyLqhG77QBXi85yZNg2f6xWH0l8lwGwjpxCg6HQzMrgN7eXrn5+yxOH6NZjUxJxyygzmbm4mKWmKqF9AWl3h4RvTX3DqZX10c41q8UYFjzjDmjWIgYMPqvaPKBNQKAuFtpBgClpMVixua3hRZwEVHRM4eKKSwoIBoHnMgLnERHR4cmJoC6EzJPLCXCGXUfoF4/NTOrUqizGjlIfxeLnm05Sqn2C1ZtiYxeAcEaA6G9vhcTExNY7PChFgJEBACm/huJRWKwJnQAdxIGgIxpwZhDmm+GyJS8D9S7j8VA+Dht7F1scPWhBH3RAOx2u5yUlIS7urKIjRUOorhbyQg9Z8G00Uj6ENfDor/37u/VgQLg+rlC2N3jtGsCr6JbEwGgpqZGnpqaAgNx9bFqdXPFaSYeRQdG8TTQw0sVUUfM5BphWmqOcKbcO3uyK2WaufxpOXY4+mA0pMHpTSQWXJEAKEVkn8/HAYSDYNb40RvAtXbqVQoWsJtaF5XdNr6W5Xs4ACWVFes5vg/1ly5Rby0fH9q6DDabTROlgdaBopgUDnz1Evr7++lteDjEgp5euYVU+V6Dsic7YS8Hs2pbCR+zqBedacAiaz/Mdeto5mkSTg+qPBdji5CbrVM2/WOMmn72TjkxlEK9TVA+OqxWB3J2HsTZs1o+zoxr4PphlE8NnqS68hPqp6cJ705xiPNzOD1jWO42EfiC2ACYDnrG90cpml/Dl1KoMqZTUToKe/5NLDFUR6xJmfxMOGZ0GykQPa33k2akqzzy5JqNzEfsOsCMioR8aihXVS0DEa5ikfegu38P23bXiYJEdvubQ2D6KXR5YbS8Gdr0O3cuNV6AE5NoR+/c7wJFjB3DZRGK1r8gXsP7i7RU+fy0pgPLc3bh8rdH8ITNB7NpVETLkS5Rz3J6zqApW8PK/Pxfx8xMlbLMAZDjFdIBxMfHIyMjA4ODgxgZGeFreLSmxJCyfxZUM//eDHoxB3hrx7UH/SSbAbF2TzbMlhfRkJmJsqEh1ZFqfJzNu5J3lOj2zel4XgCY0eeUvMPhgPHrc0QxFR5JEg7DQejDPsVpvoq+C2vhfTgAmB7yrKehN/hCjohu/e3Qrxmhp0917vT8wcusH15iYe7z51wgWyxhn56zO/wuO5kXodTU1Hn9H5g/AJNJViiWLjTC350Fv6GPhKbDSLaOC3MhDhcMoNIAmTm7sdWA9evX81ZcXPzQ/lM+8j+n/wGJNGs/e0Av4gAAAABJRU5ErkJggg==",
-      "alt": "VectorWorks Viewer"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEsElEQVR42u2XXUxbZRjH/23pafkYQvkalPEVRphkyIxpWNExl7GFJUzHTIwaJpsx3nht8G43G1ETo25meuFizC5M/JqA63QyYUOBFRA6DGxuaAN0fA20a+np5+t5TzltT09P23HjzZ6bvufN8z7n9/yf533PWwX+Z1M8AngEcOTIUWIwGESTKk0q/G6XZPzN4BRGuj5PCN14vIM47y9gV1UJKnLSY8al1tHxlkLR/mo72V5Ti1xdNrZkpEORogbxefnfaPvUZEbfZ6cTAhgPt5H9jQ3YUVrAP8eK5/F4cbnrYrAEnZ3vkGvX+qHXF8P4bJNs4Lm5OXT9OpFQhacOt5NDjfWo1uvA+jlXhZKjCIh87C4W/T9cFPcABWF0BVCpVLLBL3T1JgXwWutBuH0+WR8f60Lfj5fEAB+eOUfuuwkYjUZ24bB5BN1fnJMFOH3qFOkZnsb+PbvjxvG43TD39ogBznz8Cbm5uA5dagr/7IUSagRCv8Jc/+CIrAo0+6rCLBSWVYbWRpoQZ9Xlg9XcKwUYs65ArU2LpzDGxi1xAerrdgSzhDpunMmBK9ISXL21AK02KB3tVIZRS8aLaw7Z3UABtpWVx1wnKgE3vzg5JAW48scsP1akMJx4hB8HNtzoMx0TnwcLNptEBVp/J2EwMbcGNaOBLxBcn6IMugnP1GiM5elRMcB7H5wl34/MIEWjDc2tr60gLTtXkoFjWQpAs99aVASHNzznc7NQqblkVBx++P3cruT6wzoRH4A62Sy/oajWyG1lcTNRsACXRSQEBcjI0nGdFl6/9KcF+dtrJesDfh+ct82JFZgyXUBZwyGkZupEAWhmrH1VBLD76OuEycwJvYxC3pu4joo9z20eYLrnPEoMTUjN1YuC0OzoeS8A0OzdDjt0pVUhv/nxAbCOf1FhbH44AFozwfrOd/I+e0+8TRBlbqedO9HWeQgKwKRv4dQPfnxYxz+wjfVDm5UHfd3TPHCk+b0euGZ+T6yAxjaBTK6u91R5ovnoZqQAWq5Mgs/60iyyfat44A5AXfqEpAmTLoHD8jNGzDcUO/e1kkh5BfMsz8JvX8a6Mg055dWh8syN/oK7lmGFsamFqItrNt8DAoBxXzOhmcTaDSuT3E4xHODXCVJnpmvRffYkD8CU7JQol3QPOCev8gBCo6XnbJUEc63M800q2Kr1Nsoerw0CbIBHG+E+zw8N8MzzbUSZrUc8o4H/ut6NuuYXQwrQEkRb0k0olICOW948SexOVlKG6JKwd27AYhnn11AFmPJdyZXg3fc/Il1jf8cFWFpckBxKoew3Tr7KOgOfPQ8g0wP0IJMokAiAWk3DAZJb9WRMFSjA2ujlUPbxAOIqINcD1F46/gaxskzowIk0ejAVklV899WXYQCZJozZA8koQM3Q0kbS8rdJsrfdHEJ1/d6Q/JtWIBHAwReOEfdjxZKaWgdNmL07JfKVa0LZHvh6YJIDCF8mPXeGJQAvv3KMzHgzuOM1fHt+sDiPYg0Lk+mSBAAFldIScP8VfPO3xABF5dX8ac3deeD3+/m58qI8DA4Nivzobhj76Vso/V54vcHbB73hGFpPiOSPjEklj7b8rAz8B36T7Tvw4VvBAAAAAElFTkSuQmCC",
-      "alt": "Mathcad"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFb0lEQVR42r2XS2hcVRjHv3PnmaRpEwKJ1kcrLZFWxfgILkQ3YnXVlVKQouDCx6qbtASUol2I1IULreiq4Au0WCToQouvlhpsS7WpBKytxJqkySSTeeQxc5/H//edM5mMzkwCNp7kcs+999zv+33Pe0bR819owti/p58cRRSzR9zhs8JZUQLzhKMxd2SelGuzJoXFCWWuE5ibZ/yelrNZh2uWGSM5s1zW0bFpI2Z1AZQIl8VWYMIqNfOq8GQFIGaeJa3C2vVGTtzKxVJyYuas9n87LQBvfHJWIHgYD1QFJ3mOc8panIoZL6RBmJT7SkDSMW3XGhB+JoaQEoB6Yxlg5aiGwShgELHUCmWFqXhFsYFavh+j5TCYsNgQENVARDo0AIPfZQCgKbQYL9+XpvUeEQUURRbgpe8zWgMg0goQ+n8B4OGGS8SGq4MnOQSKNJQHgBi8J3X9tGRPE40erF4/9I2cQrjfDReMBw6dMiEAA/mhooG+9QfwozKVggVSqAr12umMRF8xQES0764VABOfVecdfURt25pog5hrQwhwYC437iDycnUBylBeCufZZlKHh2fEA1yjXqTpxTtWAJx6pDpvh8C+t9du7a1PE23Ybu4lOohuHyTq7If7AwDMwwNFQsRJvfnTDOeglJGHxHx2R7I+AI87Xxchda0//wLR4uV/A7BXeqE82bns/iUoLwUFtp/UkbMzmmOQRi27qMW9vU0AGnnhn9ZXAG56Ak2gVRRVxlII5X4BAPNyrd47P6sVCFrRKcrwwJPbEo0B6nqhjvUVgC3P1NwKIg+xL9KSnweIzYGjP89KEm5IKsRG0+6tqwCIF96qWlXP+gYAPObcCYQgL4nIpa8+ujCrORk2od+yB3bdEm8OwGPnIaKuBxtb38QDWXccIcjDEwv8NqljvxoPdKTYA0QPb24A4CA3IEBGG5Lr3ndh/Y8rrFd2jdsQgN2fLY8jBAVpRALw+WhWyrAr7WAB0QPdsfoAN+8hGv/UWC1eeJXozw+q1nc/SlQYQY+dbghQ8KZprjwhiegGiyJLfflbFhFQAOD+THR3VwOA3gOQ8AvR9NfmOt4On85b4+G1+48SjQw0BciU/qCce036gPkW4NUTv2fFpO4WB1ToF51OYwDuhmchWAe18b5xN9H2fURnnmoKcHXhIhW9GQDAA1HJAPxwZU4AehggimhrexMP9DxGdOUI0eTx2tzo/xCNpmtVgEuFYVrw5iT+HhqSAAyPzUkn7Gl1pBFtbnOaA3B/P7cXn7RyNTdue87MVwEYyZ6QDsju544oSXjuao6rEAD8LUB1pVRzAB7cXnPnTOb3Dph8WAPAmcxxhHkJekrka1Mt6sJ4BcABlab2xBoAGo1VAE5Ovi+KfXgviHxoRxWMTuYBoK0HFLWsSIHrDfDVX++g+4WA8ChkAC7Dy1M5boioAiX7wphaP4ChscPYdzjSEUPeN/DneCyTkyroTDm03uPYlVdgYBz7z0C2ZRKC8dm8ANTEfp3Gx5cOYIueNrtiHck9NZXNy4awJf4fpdtRxmd2HrVe9Geo4E5RHu236GdQ/zl51hrfJMqxDzcAs3MGIBFbm4IACRTgg+Pj8MISEncJglFaIZ8XUePm4DnfcyOueZRd6OJdlxz8IJPGY/5J5fIFCYFjI8B7tkqcAu3LNScNH1JCUBygjLiT+fbwwrJRUpljXSDPXPuejx8ikKEDkeuomNWO/0KhsPzTjH8u8V8UcZL4UqshW8wgkW8t92q8EGirRCz0lpWa+741wpWsZxkiX0BCevwG7Iq0NvqLxaLmGg0lQ+3BAsi3ZWNAjAKrtAIQVr0TisWeXVMBMHVfkcsAu3rytHPLkPobuk19qAxFlVEAAAAASUVORK5CYII=",
-      "alt": "Mathcad Prime"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABBUlEQVR42u2V2w6EIAxE2y8Xv5xdV1EuU6hI2RcnMcbSMscKyHTJH3cmvXpqEsWF/jcdqyes5/sTLnfk9BGVtCHauVsGt+MYoA6hy+sGWL/XIk5+mYc8EwCCEKl5yDEBcMcVQ8Tm8fjwRRgMKIMgYexuBwoeGWB/72AkxY0B6DRDsUkA+1j+3AJQSteB/jnHAHglAkfd8AI4k34XJADrSlUtSwnAoBt5/BaAc9h8i88EKLbh3wHKzzwfABqhz/VoEd4FiM2kjkwDkGJTAVDcDEArs10wFQCdA6EUWD5eA4UwwFbFoBtp3OxfMBxAIzMAnf3FMRoASbENX4AegFR1AFVu+xz4AL+YPTCen67AAAAAAElFTkSuQmCC",
-      "alt": "Monu-CAD"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "PowerDesigner"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrklEQVR42u2VT6sBURiHfyNRilKyoMiWssBCMZa3WOkW+SCz8BHmk1jwDWbpT9mwUJSVFQtpNm6KMNd7iobGZMbg1p1nM6dpOr/nvOecd7hms6ngTVSrVe72HXcWiMViSKfT4DjO+Mw6TCYTjMdjfYFMJoPBYIBQKIRsNguHw2FpeDweZ+O7ApVKBfP5HP1+H4FAALlcDk6n07LwRCKBVqulL0Asl0v0ej34fD7k83m43W5LwomHBAhZltHtduFyuVAoFODxeJ4ONyRArNdrtNttNiYJr9f7VLhhAWKz2TCJ3W4Hnufh9/tNh5sSILbbLTqdDqsIHcxgMHg3vFgsGtqqhwSI/X7PDuZqtWJXNBwOa65cEITXCBDH45Fd0cViwZoVNa3bspdKpdcJEIqisGY1m82QTCZxOByu9jwajV6+rdfrunOJomhc4MxoNMJ0OmVj9YF7mwBx7u3q0/5WAS1sAbWAESwXkE7N6uv0U9OqhnrlVwJPp59oNBrmKmBFOFEul00txDKBSCTyWYF7FRgOh0ilUpenLWALyN8yaj81SJL0TyvwcQF7C/6cwC/vg24m2dwVhgAAAABJRU5ErkJggg==",
-      "alt": "Mail Command Maker"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -100,24 +83,45 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     },
     {
       "url": "https://fileinfo.com/extension/mcd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.824Z"
+  "last_updated": "2025-11-01T22:32:42.177Z",
+  "mime": [
+    "application/vnd.mcd"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

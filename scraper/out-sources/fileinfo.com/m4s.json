@@ -7,6 +7,18 @@
   "type_name": "MPEG-DASH Video Segment",
   "summary": "Learn about .M4S files and view a list of programs that open them.",
   "developer": "Moving Picture Experts Group",
+  "more_information": {
+    "description": [
+      "An M4S file is a segment of a video streamed using the MPEG-DASH video streaming technique. It contains binary data that represents a video segment. M4S files that are the first segment of a video also contain initialization data, which allows media players to recognize and begin playing the video."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MPEG-DASH is an adaptive bitrate streaming technique that allows users to stream high-quality video over the Internet using HTTP. Videos streamed using MPEG-DASH are divided into segments, which are made available at a variety of different bit rates. By dividing videos into segments and making those segments available at different bit rates, web clients can stream long videos smoothly without stalling or re-buffering.",
+      "When a user downloads a video streamed using MPEG-DASH, that video is saved as a series of M4S files. Each M4S file contains a specific segment of the streamed video. For example, a user who downloads a streamed YouTube video using youtube-dl may see the video saved as a series of M4S files.",
+      "NOTE: M4S files often do not contain audio data."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "M4S files cannot be opened and played individually. To play the video an M4S file contains, you must:",

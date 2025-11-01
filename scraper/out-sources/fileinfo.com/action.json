@@ -7,6 +7,24 @@
   "type_name": "Automator Action",
   "summary": "Learn about .ACTION files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An ACTION file is a file written in Xcode and used by Automator, a program for creating automations in macOS. It contains a specific action that can be combined with other actions to create an automated process (these processes are saved as .WORKFLOW documents)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Actions are used to automate tasks in macOS, typically with Finder or another program. The actions are especially helpful for repetitive tasks, such as batch creating sequential folders, editing images in Photoshop, or deleting files.",
+      "ACTION files may be saved in one of the following folders:",
+      "1. /​System/​Library/​Automator",
+      "The most common location of ACTION files in macOS.",
+      "2. /​Library/​Automator",
+      "The location for ACTION files installed by an administrator but available on all the accounts of the computer.",
+      "3. ~/​Library/​Automator",
+      "The location for ACTION files available for specific users.",
+      "NOTE: In Windows, ACTION files appear as folders that contain a number of component files. ACTION files cannot be opened on Windows PCs."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "ACTION files are meant to be imported and used in Automator. To import an ACTION file into Automator, select File → Import Actions... from the program's menu bar. Your Automator action will then appear in Automator's Actions library."

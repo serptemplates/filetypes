@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/m4p/index.html",
   "slug": "m4p",
   "extension": "m4p",
-  "name": "M4P File",
-  "source": "fileformat.com"
+  "name": "What is an M4P file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "Similar to M4A, the M4P files also consist of consecutive chunks. Each chunk has 8 byte header and sub-divided as:\n\n4-byte chunk size (big-endian, high byte first)4-byte chunk type - one of pre-defined signatures: “mdat”, “moov”, “pnot”, “moof”, “udta”, “uuid”, “free”, “skip”, “ftyp”, “jP2 “, “wide”, “load”, “imap”, “matt”, “chap”, “kmat”, “clip”, “crgn”, “sync”, “tmcd”, “PICT”, “scpt”, “ctab”, “ssrc”.\n\nSimilar to M4A the First chunk in M4P will be of type “ftype” and has a sub-type at offset 8. The M4P defined by sub-type which must be “M4P_”.\n\nIterating chunks, until chunk of unknown type is detected, It will compose M4P (MPEG-4 Audio) file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The M4P file format, identified by its .m4p extension, is a protected audio standard pioneered by Apple for its iTunes Store. In essence, an M4P file is built upon the high-quality AAC audio codec but is secured with a robust Digital Rights Management (DRM) layer, specifically Apple’s FairPlay system. This integral copy protection restricts playback exclusively to authorized devices, creating a controlled ecosystem. Consequently, M4P files are designed for seamless performance within the Apple universe, meaning they are fully compatible with authorized MacBooks, iTunes on Windows, and iOS devices like the iPhone and iPad, but are inherently incompatible with unauthorized software or hardware."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

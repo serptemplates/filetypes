@@ -7,6 +7,18 @@
   "type_name": "Tamino Schema",
   "summary": "Learn about .TSD files and view a list of programs that open them.",
   "developer": "Software AG",
+  "more_information": {
+    "description": [
+      "A TSD file is a schema saved in the Tamino Schema format. It contains a list of elements that a Tamino XML Server document may contain. TSD files may contain standard XML elements and Tamino-specific elements."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Tamino Schema Editor is a GUI-based application that Tamino XML Server users can use to create and edit Tamino Schemas. The schemas users create in the Tamino Schema Editor are saved as TSD files.",
+      "Each TSD file is an XML file that may contain additional, Tamino-specific elements. These Tamino-specific elements begin with the tag tsd:. For example, each TSD file typically includes a tsd:schemaInfo name = \"name\" element, which specifies the schema's name.",
+      "After a user finishes editing their TSD file, they can import it into Tamino X-Plorer to define a Tamino XML Server database."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "TSD files are meant to be opened and edited in Tamino Schema Editor (Windows, Linux). The program contains helpful editing tools that allow users to easily manage and edit Tamino Schemas.",

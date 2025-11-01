@@ -1,9 +1,51 @@
 {
   "slug": "sec",
   "extension": "sec",
-  "name": "SEC File",
+  "name": "PGP Secret Key Ring",
   "summary": "Learn about .SEC files and view a list of programs that open them.",
   "developer": "Broadcom",
+  "category": "video",
+  "category_slug": "video",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Phil Zimmermann initially developed Pretty Good Privacy (PGP) encryption software in 1991 to provide strong encryption for securing email communication and file transfers for people concerned with privacy. Ownership of PGP changed over the years, with several companies, including Symantec, continuing to develop the software. However, Broadcom, which acquired it in 2019, now maintains it.",
+      "PGP encryption uses a pair of keys, a private key and a public key, which work together to secure information. The public key is shared with others and used to encrypt messages or files intended for you. The private key stored in the SEC file is kept secret and used to decrypt those messages or files.",
+      "NOTE: SEC files are often called \"secret key rings\" since they can store multiple private keys in one file. Because of their importance, people typically protect SEC files with a passphrase to prevent unauthorized access."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open SEC files with Broadcom Symantec PGP Desktop. You can also open the files with GnuPG, an open-source implementation of the OpenPGP standard."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "SEC file can be converted to the standard AVI file format using FFmpeg.\n\nffmpeg -i 0010600.sec -vcodec copy -vsync drop -fflags genpts -f avi 0010600.avi"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,11 +60,6 @@
         "name": "Microsoft Windows with USB connection",
         "url": "https://fileinfo.com/software/microsoft/windows"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open SEC files with Broadcom Symantec PGP Desktop. You can also open the files with GnuPG, an open-source implementation of the OpenPGP standard."
     ]
   },
   "images": [
@@ -53,15 +90,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "url": "https://docs.fileformat.com/video/sec/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     },
     {
-      "url": "https://fileinfo.com/extension/sec",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "url": "https://fileinfo.com/extension/sec",
+      "retrieved_at": "2025-11-01T22:32:42.286Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.933Z"
+  "last_updated": "2025-11-01T22:32:42.286Z"
 }

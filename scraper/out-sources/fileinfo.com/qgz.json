@@ -4,8 +4,21 @@
   "slug": "qgz",
   "extension": "qgz",
   "name": ".QGZ File Extension",
+  "type_name": "Zipped QGIS Project",
   "summary": "Learn about .QGZ files and view a list of programs that open them.",
   "developer": "QGIS Development Team",
+  "more_information": {
+    "description": [
+      "A QGZ file is a Zip-compressed archive that contains project files created by QGIS, an open-source GIS application. Each QGZ file contains a .QGS file and a QGD file. You can open QGZ files in QGIS."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "QGIS is a free application that amateur and professional GIS analysts use to visualize, analyze, and publish geospatial information. Typically, QGIS saves users' GIS projects as QGS files, which are XML files that define the project's title, settings, and layers.",
+      "However, users can also save their QGIS projects as QGZ files. This is most convenient when the user's project includes auxiliary data. Saving a project as a QGZ file packages the project's auxiliary data into a single QGD file, which is stored in the QGZ file. Because the QGZ file contains both a project's QGS file and its auxiliary data, a user can use their one QGZ file to share their project and all its auxiliary data with other QGIS users.",
+      "NOTE: If a user's QGIS project does not contain auxiliary data, and the user chooses to save the project as a QGZ file, the QGZ file's included QGD file will be empty."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a QGZ file in QGIS (cross-platform). To do so, select Project → Open... from the program's menu bar. Then, navigate to and open your QGZ file.",

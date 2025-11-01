@@ -4,8 +4,20 @@
   "slug": "nsnake",
   "extension": "nsnake",
   "name": ".NSNAKE File Extension",
+  "type_name": "nSnake Level File",
   "summary": "Learn about .NSNAKE files and view a list of programs that open them.",
   "developer": "alexdantas",
+  "more_information": {
+    "description": [
+      "An NSNAKE file is a level file used by nSnake, a version of the video game Snake that can be played in a Linux terminal. It contains ASCII characters that represent the level's structures, as well as metadata describing the level's name, author, and date created. NSNAKE files are stored in nSnake's ~/​.local/​share/​nsnake/​levels directory."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "nSnake is a version of Snake that Linux users can play in the Linux terminal. The game includes a number of default NSNAKE files that are used as game levels. Users can also create their own custom game levels and save the levels as NSNAKE files, following the instructions laid out on nSnake's GitHub wiki.",
+      "Each NSNAKE file typically includes a few lines of metadata, describing the level's name, author, created on date, and other relevant information. The game level the file describes begins at the file's start line and ends at the file's end line. The #s and blank spaces that appear between those lines comprise the level a player must navigate. The @ symbol represents a player's starting position within the level."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an NSNAKE file in nSnake (Linux) using the game's Level Select feature. To use an NSNAKE file with nSnake, you must place the file in the ~/​.local/​share/​nsnake/​levels directory. By default, nSnake installs NSNAKE files in the usr/​share/​games/​nsnake/​levels directory, so players must manually move the game's NSNAKE files to the ~/​.local/​share/​nsnake/​levels directory before they can begin playing.",

@@ -4,8 +4,20 @@
   "slug": "mkf",
   "extension": "mkf",
   "name": ".MKF File Extension",
+  "type_name": "BlackBerry Encrypted Media Key File",
   "summary": "Learn about .MKF files and view a list of programs that open them.",
   "developer": "Research In Motion",
+  "more_information": {
+    "description": [
+      "Info.mkf is an encryption key stored on an encrypted BlackBerry SD card. It contains an AES-256 key used to encrypt the SD card's files. Info.mkf is a hidden file, so most users will never see it."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "BlackBerry devices allow users to encrypt the files stored on their SD (also known as media) card. When a user chooses to encrypt their files, the device creates a file named info.mkf, which contains the encryption key used to encrypt the files.",
+      "Most BlackBerry users will never encounter or need to use info.mkf. Digital forensics professionals sometimes use info.mkf to recover a BlackBerry device's password (if the associated SD card's encryption was set to either Security Password or Device Password) and the files stored on an SD card."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Info.mkf is not meant to be opened. Elcomsoft Phone Password Breaker allows users to use an info.mkf file to recover a BlackBerry device's password (in the scenarios described above) and decrypt the files stored on its SD card."

@@ -1,7 +1,7 @@
 {
   "slug": "mailsignature",
   "extension": "mailsignature",
-  "name": ".MAILSIGNATURE",
+  "name": "Apple Mail Email Signature",
   "summary": "Learn about .MAILSIGNATURE files and view a list of programs that open them.",
   "developer": "Apple",
   "programs": {
@@ -26,6 +26,22 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Apple Mail is an email application bundled with macOS. Like most email apps, Apple Mail allows users to create email signatures for use as default sign-offs and messages. Typically, Apple Mail users create signatures by:",
+      "Selecting Mail → Settings... from Mail's menu bar.",
+      "Going to the Signatures screen.",
+      "Creating one or more signatures.",
+      "Apple Mail saves each email signature that a user creates in a MAILSIGNATURE file. By default, Apple Mail stores MAILSIGNATURE files in the following location:",
+      "Macintosh HD/​Users/​YourUserName/​Library/​Mail/​V10/​MailData/​Signatures",
+      "Each MAILSIGNATURE file's name consists of a 32-character UUID, which Apple Mail uses to identify that signature. In addition to signature text, each MAILSIGNATURE file also includes a header that identifies the signature's text encoding, content type, message ID, and MIME version."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A MAILSIGNATURE file contains an email signature (and accompanying metadata) used by Apple Mail. The email signature is formatted using HTML. Apple Mail stores and loads each of a user's email signatures from a separate MAILSIGNATURE file."
     ]
   },
   "how_to_open": {
@@ -69,8 +85,11 @@
     {
       "url": "https://fileinfo.com/extension/mailsignature",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.170Z"
+      "retrieved_at": "2025-11-01T22:32:42.605Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.170Z"
+  "last_updated": "2025-11-01T22:32:42.605Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,7 +1,7 @@
 {
   "slug": "eappx",
   "extension": "eappx",
-  "name": ".EAPPX",
+  "name": "Encrypted Windows App Package",
   "summary": "Learn about .EAPPX files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -18,6 +18,17 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Before submitting Windows applications to the Microsoft Store, developers package all the files and information needed to install the app in an APPX or .MSIX file. Optionally, developers can choose to encrypt APPX packages they create, using a custom key file that contains a hexadecimal encryption key. For example, video game developers often encrypt their APPX packages, so players cannot access the packages' contents or easily install pirated versions of games.",
+      "Encrypted APPX packages are saved as EAPPX files. Unlike APPX files, users cannot install the app an EAPPX file contains by double-clicking the file. Instead, users must use Windows PowerShell to install the app an EAPPX file contains."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An EAPPX is an encrypted Windows app package (.APPX file). It contains all the metadata, files, and credentials needed to install a Windows program, stored in an encrypted, Zip-compressed package. EAPPX files are encrypted so users cannot extract and view their contents."
     ]
   },
   "how_to_open": {
@@ -58,8 +69,11 @@
     {
       "url": "https://fileinfo.com/extension/eappx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.042Z"
+      "retrieved_at": "2025-11-01T22:32:42.437Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.042Z"
+  "last_updated": "2025-11-01T22:32:42.437Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

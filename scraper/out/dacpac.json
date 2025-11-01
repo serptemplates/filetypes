@@ -1,9 +1,11 @@
 {
   "slug": "dacpac",
   "extension": "dacpac",
-  "name": "DACPAC File",
+  "name": "SQL Server Data Tier Application Package",
   "summary": "Learn about .DACPAC files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,39 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "DACPAC files use .ZIP formatting and contain a collection of XML files that define the schema and data to be transferred."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .dacpac (stands for Data Tier AppliCation Package) extension is a database file, created with Microsoft SQL Server data tier application, that contains the database model for representation of database objects. As it contains the complete model of the database, it is used to restore a database from the details available in the model. DACPAC files are usually handed over to deployment teams for installation at customer’s premises to restore database. These can be opened with Microsoft SQL Server 2019.",
+      "Data package created by a Microsoft SQL Server data tier application; contains both the schema of data as well as the data records, or objects, themselves; used for providing data between SQL Server databases and vendor applications."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +79,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/dacpac/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.260Z"
     },
     {
       "url": "https://fileinfo.com/extension/dacpac",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.260Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.261Z",
+  "containers": []
 }

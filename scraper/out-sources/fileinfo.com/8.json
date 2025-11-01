@@ -7,6 +7,18 @@
   "type_name": "Unix Section 8 Manual Page",
   "summary": "Learn about .8 files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An 8 file contains a Unix manual page (man page) that describes an admin-level command. Each 8 file is named for the command it documents. 8 files are meant to be opened and viewed using the Unix man utility."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Unix-like OSes typically contain a user manual divided into eight sections. The final section of this manual describes system-administration commands, daemons, and hardware-related commands. Each page of the manual is saved as a separate 8 file, named for the command it describes.",
+      "For example, the file shutdown.8 contains documentation related to the shutdown command. It includes a quick overview of how to use the command, a detailed description of the command, a list of command-level options, and other related information.",
+      "NOTE: Other sections' Unix man pages use the .1, .2, .3, .4, .5, .6, and .7 extensions. Man pages are also commonly compressed into .GZ files (which may use the .gz.# extension)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In Unix-like OSes, you can open an 8 file by calling the man utility using the name of the file. For example, to open shutdown.8, enter man shutdown(8).",

@@ -7,6 +7,17 @@
   "type_name": "FinalCrypt Encrypted Data File",
   "summary": "Learn about .BIT files and view a list of programs that open them.",
   "developer": "Ron de Jong",
+  "more_information": {
+    "description": [
+      "A BIT file is an encrypted data file created by FinalCrypt, a program used to encrypt and decrypt personal files. It contains a file, such as a .JPG image or .WMV video, that has been encrypted for security purposes."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "BIT files are created by FinalCrypt and can only be opened by FinalCrypt using the key file used to encrypt the BIT file. Data in a BIT cannot be recovered without the key file, so it is important that it is stored in a safe location and backed up.",
+      "Although BIT files are encrypted, they still can be identified by the first 70 bytes in the file. This data is the Message Authentication Code (MAC), which is saved in plain text and may be saved in MAC_V1 or MAC_V2 version."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -4,8 +4,22 @@
   "slug": "tbc",
   "extension": "tbc",
   "name": ".TBC File Extension",
+  "type_name": "Time-base Corrected Video",
   "summary": "Learn about .TBC files and view a list of programs that open them.",
   "developer": "Chad Page",
+  "more_information": {
+    "description": [
+      "A TBC file is an .LDS (LaserDisc Sample) file that has been converted into a PAL or NTSC video using the ld-decode application. It contains a stream of 16-bit unsigned values, each of which represents a single grayscale value. With a significant amount of effort, TBC files can be used to create .MP4 replicas of the video contained on a LaserDisc."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "As part of their work to preserve data gathered during the BBC Domesday Project, Domesday enthusiasts Simon Inns and Ian Smallshire created the Domesday86 project and the Domesday Duplicator. The Duplicator allowed Inns and Smallshire to capture the radio frequency produced as a laser read a Domesday LaserDisc and store that data in an LDS file. In theory, the pair could then use this data to produce an exact copy of a Domesday LaserDisc.",
+      "Developer Chad Page expanded on Inns and Smallshire's work by producing a suite of tools known as ld-decode. Ld-decode includes a number of utilities designed to let users interact with LDS files. One such tool is ld-decode.py, a Linux application that allows users to input an LDS file and produce a Phase Alternating Line (PAL) or National Television System Committee (NTSC) encoded video. The video is saved as a TBC file.",
+      "LaserDisc enthusiasts can use various other utilities included in ld-decode to interact with a TBC file. For example, they can use ld-chroma-decoder to produce a raw RGB bitstream from a TBC file, and they can use ld-analyze to watch and analyze the grayscale video a TBC file contains. With a lot of work, users can even use their TBC file to produce an MP4 replica of the video contained on a LaserDisc.",
+      "NOTE: The related project vhs-decode also produces TBC files. Unlike ld-decode, vhs-decode produces two TBC files when it decodes video from a VHS tape or other source: one that contains luminance data and one that contains chrominance data. Vhs-decode users can combine these files to produce an .MKV video."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Ld-decode users can open a TBC file and watch the video it contains in ld-analyze (Linux). In ld-analyze, select File → Open TBC file... to open your TBC file."

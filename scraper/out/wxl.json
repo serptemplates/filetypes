@@ -1,7 +1,7 @@
 {
   "slug": "wxl",
   "extension": "wxl",
-  "name": ".WXL",
+  "name": "WiX Localization File",
   "summary": "Learn about .WXL files and view a list of programs that open them.",
   "developer": "Outercurve Foundation",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=8960&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You can modify where the culture is set by editing the WixLocalization culture string. A sample of a WXL file and its culture string can be seen below:",
+      "<?xml version=\"1.0\" encoding=\"utf-8\"?> <WixLocalization Culture=\"en-us\" xmlns=\"http://schemas.microsoft.com /wix/2006/localization\"> <String Id=\"errormsg\" Overridable=\"yes\"> General Failure</Stringgt; </WixLocalization>"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File created by the Windows Installer XML (WiX) toolset, a Windows installer development program; contains a collection of strings for localizing a product for a specific culture; includes translated user interface text for several languages."
     ]
   },
   "images": [
@@ -42,8 +53,11 @@
     {
       "url": "https://fileinfo.com/extension/wxl",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.382Z"
+      "retrieved_at": "2025-11-01T22:32:42.880Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.382Z"
+  "last_updated": "2025-11-01T22:32:42.880Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

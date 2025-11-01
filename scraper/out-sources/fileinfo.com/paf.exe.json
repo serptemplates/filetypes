@@ -4,8 +4,25 @@
   "slug": "paf.exe",
   "extension": "paf.exe",
   "name": ".PAF.EXE File Extension",
+  "type_name": "PortableApps.com Program File",
   "summary": "Learn about .PAF.EXE files and view a list of programs that open them.",
   "developer": "The PortableApps.com Project",
+  "more_information": {
+    "description": [
+      "A PAF.EXE file is a program file used by the PortableApps.com Platform, a Windows program used to transfer and run programs between computers and portable devices while maintaining program history. It contains all program executable files as well as program history and settings."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PAF.EXE applications contain an AppNamePortable top-level directory and three sub-directories, App, Data, and Other:",
+      "AppNamePortable: Contains the application launcher, typically named AppNamePortable.exe, and an HTML help file.",
+      "App: Includes the application binaries and configuration information; can also contain default data to be copied into the Data directory.",
+      "Data: Contains the program user data.",
+      "Other: Stores files that don't fit into App or Data, such as images for the help HTML file.",
+      "PAF.EXE files can be compiled with any compatible Nullsoft Scriptable Install System (NSIS) compiler, and they can be run standalone or with any compliant NSIS launcher. Most PortableApps.com programs are compatible with Windows 95 or later.",
+      "PortableApps programs leave no history on the computer they are run on. For example, they do not add Windows Start Menu entries or registry keys. Therefore, PAF.EXE files can be easily stored and run from external media such as USB keys, external hard drives, or network storage devices."
+    ]
+  },
   "programs": {
     "windows": [
       {

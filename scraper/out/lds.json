@@ -1,7 +1,7 @@
 {
   "slug": "lds",
   "extension": "lds",
-  "name": ".LDS",
+  "name": "Binutils LD Linker Script",
   "summary": "Learn about .LDS files and view a list of programs that open them.",
   "developer": "The GNU Project",
   "programs": {
@@ -14,6 +14,18 @@
         "name": "GNU Binutils",
         "url": "https://www.gnu.org/software/binutils/"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Linking is part of the compilation process when building source code files into an output executable file. The ld command is often used as the last part of the compilation process to build the final executable.",
+      "An example of a linker script is vmlinux.lds, which is located in the arch/​[processor type]/​kernel/​ directory. This file is used as the linker script during Linux kernel compilation.",
+      "NOTE: The ld program is part of GNU's Binutils."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Script written for ld, a Linux command line utility used for structuring the format of Linux executables (also known as \"object\" files) based on input files; specifies a list of sections of the output file and includes the size and memory location of each section; written in the \"linker command language.\""
     ]
   },
   "images": [
@@ -46,8 +58,11 @@
     {
       "url": "https://fileinfo.com/extension/lds",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.154Z"
+      "retrieved_at": "2025-11-01T22:32:42.586Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.154Z"
+  "last_updated": "2025-11-01T22:32:42.586Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

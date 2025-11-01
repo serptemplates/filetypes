@@ -1,9 +1,31 @@
 {
   "slug": "kmz",
   "extension": "kmz",
-  "name": "KMZ File",
+  "name": "Google Earth Placemark File",
   "summary": "Learn about .KMZ files and view a list of programs that open them.",
   "developer": "Google",
+  "category": "other",
+  "mime": [
+    "application/vnd.google-earth.kmz"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Google designed KMZ files to reduce the space taken up by KML files to make them easier to distribute and share with multiple users. Common uses for KMZ files include sharing placemarks or tours with users via email or when publishing on a webpage.",
+      "Various programs may create KMZ files, but Google Earth Pro primarily creates the files. To create a KMZ file with Google Earth Pro, select File → Save → Save Place As..., then choose \"Kmz\" from the dropdown menu.",
+      "NOTE: 3D models included in KMZ files are accompanied by location data. The application opening the file references this data to place the model on the map at a specific location. This data helps you better understand the appearance of the building in the area."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open KMZ files with various mapping applications for Windows, macOS, Linux, Android, and iOS. The Google Earth Pro desktop application is a common choice for opening KMZ files. To open a KMZ file with Google Earth Pro, select File → Open....",
+      "You can also open a KMZ file in Google Maps by saving the KMZ file to an online location and then typing the URL in the Google Maps search box. For example, if your file is hosted at http://mywebsite.com/myfile.kmz, type the URL in the search box, and Google Maps will display it.",
+      "Alternatively, to display your KMZ file in Google Maps, you can construct the URL yourself by prefixing it with http://maps.google.com/maps?q=. Therefore, using the same URL from above, you would type the following URL in your web browser:",
+      "http://maps.google.com/maps?q=http://mywebsite.com/myfile.kmz",
+      "NOTE: Since KMZ files are Zip-compressed KML files, you can also open them by changing the .kmz file extension to .zip, then decompressing them with a Zip utility. You can then open the resulting KML file with a GIS application, such as Google Earth, Google Earth Pro, Blue Marble Geographics Global Mapper, or ESRI ArcGIS Pro. Or you can open the KML file with a text editor since the file saves information in a plain text format."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -84,47 +106,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open KMZ files with various mapping applications for Windows, macOS, Linux, Android, and iOS. The Google Earth Pro desktop application is a common choice for opening KMZ files. To open a KMZ file with Google Earth Pro, select File → Open....",
-      "You can also open a KMZ file in Google Maps by saving the KMZ file to an online location and then typing the URL in the Google Maps search box. For example, if your file is hosted at http://mywebsite.com/myfile.kmz, type the URL in the search box, and Google Maps will display it.",
-      "Alternatively, to display your KMZ file in Google Maps, you can construct the URL yourself by prefixing it with http://maps.google.com/maps?q=. Therefore, using the same URL from above, you would type the following URL in your web browser:",
-      "http://maps.google.com/maps?q=http://mywebsite.com/myfile.kmz",
-      "NOTE: Since KMZ files are Zip-compressed KML files, you can also open them by changing the .kmz file extension to .zip, then decompressing them with a Zip utility. You can then open the resulting KML file with a GIS application, such as Google Earth, Google Earth Pro, Blue Marble Geographics Global Mapper, or ESRI ArcGIS Pro. Or you can open the KML file with a text editor since the file saves information in a plain text format."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Google Earth"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "WorldWide Telescope"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Google Desktop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKK0lEQVR42p2Xa4xcdRnGn/85s7uzMzud3Z3udku72+32TlupK0qKgGhQkEACCaAiaAIJMQof+ABGCUEuTSD6wQ98IBo0Ug0QVEIMRUBKgdLUVmyBFkppS7v3+1z2zH3m/P2dM1NjMEZgk5OZPfM/7/u8z/u8l2P0Kf8qux9O+b5/s9zWTr9clzUm40v7/bpdSF754+Of1p75JIequ3dcKTnfMNH2m5ToTJn2pJxoTb6XleoV1fOLsvWqal5NVsZWvQqA3JN103JSvn/CBpfsib5vPTD3iQDUXt2xFEtXKBK50cTiV5hEr1GiV2pbIiKXrCstnuRgQdZanmhefl7GB0Qtz/eK/OwsdyOqenlwOKqVXdVq7rxfqnzkVOy7Pbc+esu/AdR271jHxx04vFyx+HqTWCYFV0sCI66MCRxwojQtUxyFFqIvLci29MpG2vmthvMqn1XS0sZBtwHO4SFjQuAmd1Jm7oBMYUKF6W2F+A9+Fze1Nx552sTabzCxbpnkCinaicE2HsZpYKBWlSmP4RD2SrkgIVLn5xAD370T0sKHsp0bZNqSOMNROc39Sdn4oBTrgRjOz78jM7sfZkry3R45lRktTmzMJ3+0s8P4R3dac84mzuGoDnVOJMyMNUQVicl47/EJ9aZFKo5LhY+k+DmkYwAQOKvwTL0opTbLRgmgMgdDnJk/wnlAZt6DJZ5HI6YwGmQGVl154xu85B1PJwDwhNXgZSCthQ5MNcPhApEs4GxW6uiXWrsaOQ4A+uWGclIXADIqUyMV5UnYIS2pi6TxPdLoLil3KgzC7/myjBuDFVj0KJKFM7KIuDS90eu487mEqb/zuNXqr8mUQO4vEhlR1HGSh97pAzjn4aXbQ4HJO4P4xmRzaZnlpCHazf/ca0tI2cNEfVQ2tkLWScjkz2BzhnSS0u7z+X+C505JaYBEjEpz27z43S8C4NCvrYYulckexWCPTGKowUD6GADeJOV1afByfkOQBVIwvlf1YwflrMNo13J+92QXZ2ROP0nECHbw2pDN0F7gNDMm07ONWx4BAIjKcNpjys9t9BI/eS1hqm89Zt2hS2QWDhJtJ9HgSDCQPS3N7UO9KwFwMYJaK1sgqrE9qh95E+eIafMViG11GK3dfxc6ctAHKUshwPwM+R+RnaVqlgDMEkgBhtGATSVVG+vz2u89AIADjwLgYpl5oq2R9wjKrZdkMap5WOgelkltABh0l+dl59+XJt+mEjbKDH1dNkn15gC791aiRKiL9IL+TegpLT+HhqbRVBv6KfuN0kymYNOXP5b02u47kjDl/b+0LUPbw7ybj55sKLuGIMs5WZqH6VortZPHlmRYeiZ7nKgAt+w8mb5tYWpsUHr/vF8+xaBMFsCItkSTKpLKRLfs8ovQwzQCDFiFme64/PGo1/rA6YQp7fuFbR26AOOUSZVDJRRdhao86CsZ+S3L5My/RXm24ggPeVTvBMBIVXIN0QGuSrmdfIrOR6RF0heB7qobntPaS0JtyZtAVydlJ/nscOWmHc95KJswxTcetm1DX8TwiEycCkhCdxXkmUPS2CtEUZTp3kg63sV4FhAV2GgPATmLp+TTtFSCvfwHNMGIzOB22bbehmApOZOHiZXD2FmQSY+rPjmLJly1FEueeVAJU9jzoG1bPSzH+xC6iCg5REQAmDssM/Vqo6SGrpMfH5BThKEZtHL6JfklctraIc2iiSDXkXLY+ewAPcXnt/yo7AzzYgrKe5eFjchmCSALiz1R+lfRS+wAgPfyz2x0zXnQvE8m2gddXBYRpt+XmTgo2/sFmVWoPRGonRqefFP21IuofbnMxuu5j+ILOPnb92QrdFEXsXbRC4KSm5tSfZTI2+lc9TqD08cHzHU5mvNK3ooAwOKL99j2oS0ymQ/kpN+mnXbRkIgmQz/PoYe+L8mcMwyw3kYVzKCHM5Tsyu0y666V37leTo5y28X3PDpZQA8DpNKD+kyaasLWMkqzXCauIiBLMvS2qVrVGwwZeOFuG11F3mt1OdOwMPdWOID8IkKKL0UwXcz+GHmH7gpNZ45uNjMlsxpgQ19BhDBWnpW/96fyIaK+UCTCFnYFbPh1RdYTXOcgjEwBflT18Vm5nVaTjm0AyD1/p431rwmF5yb7oHQ9TekdhIW1sdeo5RLRICiMqYgAc7TkeExOD3lNDci00mTohv7xXapPB0MiaEZM0woVUS3L6SV1qeV0y3kATsifmkeEtIeoGgCyz90OgAG59UWZpag1dV5YhmbyDdnTz6MFVLvlOlISDBNG8uI0IKC8ABAoNS1RjBdVUk4RtOtuYki1k8YsziYQ4gJzYyhoVjn56TRrREUOMpmLnQXw59ts+4oBRSpMwq6toagMsyDM9alXqYpV0ubvMlDOlUN7tiN/lT54Qf4ckQygjdNHwnlR4XlHHXLWcs+n4wG0Pjqq6syiWjoiYWVUin6wtyhCZuc7APBQAOCZW2xsoJ8qeE9OGyKKMmD8Aq2ZdW6ERWI1g2r9VbTQNTKLNJEJSvDdlwDL0Br+PoonusUR1Z+9WfVZUtDSQnqogiytmOgrM6SNVnF2c3Pp1g4pSCeV779fHSb79E22nRQEgyIy+kp4wrJoKptBwZ6cIcqwfytia1bB+GHZ42hkE+1163fQAaxlT8g+c72q44bsVdS6NE7jKatarIUtIVgjAwkFe4QTh7DucK96aNl9utdk/nCDTawEcTCIgumVQXB0L2YrFbBEho3HBMtosBeU8rITTL6pRTnDF8hsuEi2YyWKp0HtfkTVMatqjr04Hpa9fCKORBr7i0PztFA/U9P7fx/RbTfu1N5wK57/zTW2s+V4uInV2XCQNWXIEh0slzWY4DKj6KNIc+I9gJEhl1bqJgmjt19+rEO1YC0/eQhgOA2idBsAgl1UQW9iNnngf/yAnrrnef2Ku7RdzQSvGeboz7+9slqqXsOWdtVAp3d5vJU6jdAuXfbCmoshJ7Tm54ke79ZpJjOTUzUd7Hes20FbZikSHdltayzpgW93STD7pb8c16EfPqM/ZkpiSxH9WZSUmHjE3NzKOSralVZdvbXvwsvWdQ5/vt/ftH2gNBhpzYSrdbDc1moGFaPkci2c2HWvokLahr/Fe4NRHHaBYE6xslEgBeVuf1Y793yog03HI1zzXMWzLxOmCRZtUkMUXfNKNa+um4c7hi8dspu/ui6/ta9LSyJOYzOvFR2VGLm1YH8FWLIVtWcb+4xHJp84rJfvek5/4jQrslgghFCUbzz9329GZz/dRtaECcWazHQ1wXR3RbXixvO19cJBbbpwtbakYpxFJlXMxgihCv2vj+nYTU/ot9B9rOkcZSjbdGw/zbuh0wTU1gQTZLkzANK8UpuXafDqLdr8zXO1Gck4j+3Trt//Q6/z24lmntONBTN8p/rsL6f/cTbSvCgqxZuAzoIK2Ko0qR5rqrwQvPX9P6Of9c/9GEPtzUgDdXsfz/X/+vsX4DUHbFzNRn0AAAAASUVORK5CYII=",
-      "alt": "Microsoft Application Virtualization"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAL0UlEQVR42o1XCYyU5Rl+/vn/f+6dc3f2ZA9AjuVmXQUsIlasigcCGsWknsF64RGrtk1bE01TY2NtTVFjrKbeRavU1BZREJVjgV12l4Vd9mBndnbu+/7nP/sO7CbEKO2XvMlkZ+d7z+d5n4/B+Y+OjCcz2e1298abblpoNRiWszx/QXV1dW00GrVJoqQWS8XUWCAcCIeCA6V86VDANzpEvymSSWTalH3vYc7z94pjM5nDZDJ5Nt95z+pbN2y4xGJg54VC4epcPm/zT04YpLIESZKKwUQhczoUi+Zz2b6U/8SXgYnAfvptkqxwTiD/VwCVrI0Vx7zJ1PSzBx+8bu2aJTeqnK599qwVzAy3A8lUCl2Hj+DIcAiFVBTNDj0iqTQODsVhtdjQ5uGVWHD0oN936u3jfWOf0V0JMoFM/V8BsFNZe+y1sy585vVXtl2zsHlVz7FPoFM4zJ2zEna7B6Kqw+fdA/AOHMNIpIQGq4JGmwlHRmMQZBktnlrkykXEE8Pl4919n8R8/uckCWNT1VB+KIBK5hayhqWr77p6wX3tT9zRcU39gf+8BEFIY9Wy69BU24agaEJGZ0QpEsbk4FGMUZEzoThaHEAgJSIniKgy8DgxEaPPk3BYYigHvL3hoPJYPi10fzcI5hznJrL6RR0brv/Rtqee9hedVasNu5EP70FJycPuasHV12+Db7KIKOOCJ9OPmO8UtSGJ0xEDhGQcTosRkiYiHC9gNJiDUS+g2jMGlxZCMaUNjwwK9wuC3DUVhDYdQMX0lbJ76uav3fLL9174ymd0t9SMYOvy00C1G/2TvUhkGayd0wEXFalnMg6zEAf1At0nTiGqs+NoVxzGskpN1uCPlagVKniNgaXKAB0ThMd0EoWSud97KnIbRHGE/ImVIJipvjuMRuvCTfd+/GJvtmUp7wri/pkfYdkV7RDtPE5GmxEuA/NjYQx5e3FyrAs1rhrUVDfj0JCIZDCBPH2fTLAohEtIZ1UwZh56nYqlLTVIFbJw6bvgV1oQPx15XwgPbZtCiMJMlb5p9qLND7sXP/1AJK9g3cVf4L6FPmT0TZBYF8bHv0CMLyKT0iM4Hodm1tDQZEPGvAK+cQVyxESwyaCrfwyJ8SwYRgfNwFH2DFpcFrASg7a6FALxcVihlE+eCt0bi6V3VLiiEoDbYPF01K94+62LVs/wTKYk3LfyM6y0hDCcA3INOhy3tCI2GYAj1INUJg5Gb0G25l5kpA60Eg/wuSPo2uPFoWNUWTlLNdWBMRpgcTFgSzJm17vhrHGgMLEbq2wRDKWY/f/qjm6swLMSQGv9/Nu3OdY88qjHqiImmLH10qP4ifEIIs1zsHfmbqRNUYjhB3DZcBlh/z8wIM/CAf9d6KwW0dKUwvH+HnzxRhS5XJQmIHdmonQW6j2NtlooU4Ys6pqdsCo+LNafBqsJ8u7B9C0jodKuSgDLZq7a/qpt0cpOjWiibDThygUHcLN1J/iW2XjdMoaCEMDFuBwupQ2H/GHsS9yAwJc0dBIHdzUPOZrA4NG95K2SfYpojK7V0WiViXvkyqUSWLsBKxcAHdYkmHIYX52IvzHiz/yJcTeuumNGx++fN9XYqiUTi7TMY+HiMazX/ozOBg7b1XXoSq0GL+pQ5xyHwGk4OVGPyLtFKDkGDS1myKkEouMHaKZjgCFH5ZehCcS+BRp0RTuLcjOLa9daMRt+oEQckhT6Bvy5l5kV1768vWbumq2+sMiKFg4KrwNXZ8Vax69xg3UAvyn9Dd4RF2SrjiY1illtEXy72434jjRUGi69SYWUIPAVe8mPlxxR1nyGhqdEIzbFNwwHZz1VdgWPBjUIphRAMpcJjcSEncy1d7+/K4SlVwqlIjQqk0q9UxgrGpyvohNv4FvuFahVVjCiF9HEAnhah6CYnPB+yyH+NZU3xpwFsholZB8jTBHH6KkVaWpFib7n9XDXcrC7rbAbEpinPwlFymOikCmGMsoeZv4N+3p4a+0ysDJUE0/GQTXyUOjSRvUlVDv7IJTHMJp4EmnlGhgtCVjqAjBoIyiJWcSHFiO2v4ZWDcFaIaY1UPYsBZAgohJkuFw8dHoNRdofGl8myt4HIZ8HcZYmSjjILLj16z5HXd1is5FDjFAp6xmohGGFoKRkZLo0iVnuZ2GW48jO/jl85U5Ej+chiQLEUQH65UZwOg65f1L/U31UgUkaQkJCMgq9UqSJVyFKClQqFGOxoqrWD32uB2X9TGJI7jCzcPOOr/jqRWt0LEv91Iik9VD0NDQcLfFoHixLVTGbiMmeB5ztGPVeRZsxjDktvfBOtiDJNsK1xAj/XpIPB6gC+WNnkGA0xcFSAIUMIYDuVqhPrMGAtgYTcsUkIhFZBJP+ipm35tG/mi645w5GUxjNQs44agFFzRhZLGm3YK5VIMLhYXbzEHPHYdWboabexdFv3oLeplEwDMZzrZiY+TqykyyKuz6FUQlihrsIfySDMjk28oQEKoGd6NlAuWVyCtKZdBxqcCfTduHtDzgXPf47xmS2qZwIrYJfSkZHQaxbZQbHqZhNWNd0PAajCjZeoGLPnvvQ038Q+XQBk2ERnCZDrnYSRbdCxnroC0TTvmH4iTPA87A5dTByOvp/GRxJnUKeWpyLDkEKvszw5pply7a885apeu6CXKpAA8hCI+MI75xKM0ADxLpYVLEcrl9oxOjgWxBCO+ENBJFKqmeWqoMEiVCWYWHN0BuakLcuR/cREelwFqpcpippUGkgWT0Nt4VKUCZ4Jkd3EHKerzBh44Ubn31m2aatd3bvT0KzsoQEI9QiZaZKZwJJCxrmzrPgxy1ZDH9zP7IE9UgkQqVMo6GhHh1LViOTr6CgjGNH+xGNZjCjqQMK8UAPbfS4z0YQJVIivQA7DVeePif2/xRK6ONKALbauesvW7PtpfeSBd6cFhkSmRVSI6aj7a7SSlUIMwopNZOhhCsdT6Jv5AR0HGWjaVi6vAMTvnFkizncfP2dyAZ96N/XRc5JIUW86M3OQtLfRjNA+9pGvTVTAMn4CaR3XY6zLHJGjNS2b3j1hWvv3rRZKeRxeERFJiyDZCANJcExTxxBW02WjFg6bxDt8u/xzbCX2ks7nypUkkQ4bDZsWb8VZpXDlx9+gL7eHozKjfAnlhMjnm0VnAa6kNqaPPYwSiOvVEQJM60F3Q3zL27d+NqbXH1ro5ArE5crUKhVqkpVkDUoxOtKjoKgNbulcw9WNw5DcszBp3v/Tj3NwUa6sb1lPnhJwOe7u2jlljHArIcUIbEo5IkElIrAB7IT+5A+uIl8pnAGG2cPV1FFszpvvb325hefy5ckVssJZ7KuOFclaoFIFaGIalrtkJNltHpS+MOmIsnzD7Cn7wCEYhgX1dSBV4jeBiaxL+WBN3sd2ESE2kE9tVL2HG2hSNcGiqoiTuVzRen0Q8S98rbXntDmXfFwnjMxGmWt0nSrCgUgUBkJkktnqAjRQkukSnh93Q4MDO5Gb0FCLD+GBoKuflYnjudXobtLh6QvAbYYgaQStA1yDqn+e5Af3zmtB78ry6fnwd1541+eYDvWPyTKjK6YJGhWtg0RlFQqQZF1MBNd1zJh/KLpBRwL+cDbzfCGTtHOr0Jgziv47N9VKI7sIxcRKnQQ1ipdVEyceEyMn/yI7i+f+0r67sNkuhLORVc+vWXhFesec9Q1Nh3uL54R8jqSOLkC0TXp/3r7CH7V8iKiYdKOTAajzvnwWX4LJxbgi4+7kZw4RF6iRFKBo7Wm/FOB4YPfnpv5+Z5m00rZ0rzkqkW3PPDEQ96kZ30kBYtGCwoEy2zZiBnGXbgh90cM2Gow6LkFB76+FIXjRXAmPQnPcer7NyGdeOrNVOjodpSSkamea9/n7IfO9MvYetGNjy+xmFo3w1B/SUHf3OxurLKvaY8xTZkPMTDzLvSHHRh4J6pIailht0yOib7Dnwcmj7xXDu73TWWt/pCT8wVwbiAVlBidznrHquueWhsrN6zUOx2zF19Y5bq4zapORNKhvb3JE/nY6b2H33jkEM4+RKXzOZ4+/wWuvbZ+GiutKwAAAABJRU5ErkJggg==",
-      "alt": "Earth Browser"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -133,24 +118,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/kmz_1297.png",
+      "alt": "Screenshot of a .kmz file in Google Earth Pro 7.3",
+      "caption": "KMZ file open in Google Earth Pro 7.3"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.816Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.170Z"
     },
     {
-      "url": "https://fileinfo.com/extension/kmz",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.816Z"
+      "url": "https://fileinfo.com/extension/kmz",
+      "retrieved_at": "2025-11-01T22:32:42.170Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.816Z"
+      "retrieved_at": "2025-11-01T22:32:42.170Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.816Z"
+  "last_updated": "2025-11-01T22:32:42.170Z"
 }

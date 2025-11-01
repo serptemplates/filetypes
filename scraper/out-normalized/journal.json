@@ -1,20 +1,33 @@
 {
   "slug": "journal",
   "extension": "journal",
-  "name": ".JOURNAL",
+  "name": "Linux Journald Event Log",
   "summary": "Learn about .JOURNAL files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Many versions of Linux use a system management daemon named systemd. Systemd includes an event logging service named journald. This service regularly produces JOURNAL files.",
+      "Each JOURNAL file contains a log of system- and service-level events. This log can include kernel and boot events, syslog events, and service events. It is saved in a binary format.",
+      "Journald typically saves JOURNAL files in one of the following directories:",
+      "/​run/​log/​journal",
+      "/​var/​log/​journal",
+      "Active user-level JOURNAL files are named user-####.journal. Active system-level journal files are named system.journal. Archived JOURNAL files have similar filenames, but their filenames also include an @ and several letters and numbers."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "In a Linux system that uses systemd, you can use the journalctl command to view the entries a JOURNAL file contains. For example, you could use the command journalctl --file /path/to/your/journalfile.journal to view the log journalfile.journal contains."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13209&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "In a Linux system that uses systemd, you can use the journalctl command to view the entries a JOURNAL file contains. For example, you could use the command journalctl --file /path/to/your/journalfile.journal to view the log journalfile.journal contains."
     ]
   },
   "images": [
@@ -45,10 +58,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/journal",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.138Z"
+      "url": "https://fileinfo.com/extension/journal",
+      "retrieved_at": "2025-11-01T22:32:42.566Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.138Z"
+  "last_updated": "2025-11-01T22:32:42.566Z"
 }

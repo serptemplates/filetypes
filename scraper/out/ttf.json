@@ -1,9 +1,11 @@
 {
   "slug": "ttf",
   "extension": "ttf",
-  "name": "TTF File",
+  "name": "TrueType Font",
   "summary": "Learn about .TTF files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "font",
+  "category_slug": "font",
   "programs": {
     "windows": [
       {
@@ -64,43 +66,55 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "A TrueType font file is a binary file that consists of a sequence of concatenated tables. Each table is a sequence of words and has a name known as Tag. Each tag is of uint32 data type and consists of four characters. The first table in the file is font directory that gives access to other tables in the font file. Font data is contained in other tables followed after the font directory table. Since each table is accessible by its tag, the tables can appear in any order in the file.\n\nThe required tables and their tag names are shown in the following table.\n\nTagTable‘cmap’character to glyph mapping‘glyf’glyph data‘head’font header‘hhea’horizontal header‘hmtx’horizontal metrics’loca'index to location‘maxp’maximum profile’name'naming‘post’PostScript",
+      "Apple developed and released the TrueType font format in the 1980s. Since its release, the TrueType format has become one of the most common formats used in both macOS and Windows.",
+      "Most modern fonts that you find on your PC or online are saved in the TTF format. However, you may also encounter fonts saved in the .OTF (OpenType) format.",
+      "To use a TTF file as a font, you must first install it on your system:",
+      "In Windows, you install fonts by placing them in the C:/​Windows/​Fonts directory.",
+      "In macOS, you install fonts by opening them in Apple Font Book and selecting the Install Font button.",
+      "In iOS and Android, you can use third-party apps, such as iFont, to install fonts. (Note that while they share the same name, the iOS and Android versions of iFont are developed by different developers.)"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .ttf extension represents font files based on the TrueType specifications font technology. It was initially designed and launched by Apple Computer, Inc for Mac OS and was later adopted by Microsoft for Windows OS. TrueType fonts provide highest quality display on computer screens and printers without any dependency on resolution. All modern applications using fonts are able to work with TTF files. TTF font files are freely available over the internet and can also be converted to other font file formats such as OTF and WOFF.",
+      "A TrueType font (TTF) is a font format developed by Apple and Microsoft. It uses scalable vector graphics to display text at any size without losing quality. TrueType fonts are widely supported across various operating systems and applications, making them a standard for digital typography.",
+      "A TTF file is a font that can be installed in macOS, Windows, and other platforms. It is saved in the TrueType font format, which was created by Apple. TrueType fonts can be resized to any size without losing quality and look the same when printed as they do on the screen."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a TTF file in Microsoft Windows Font Viewer (Windows), Apple Font Book (Mac), or iFont (iOS, Android). Before opening a TTF file in Windows Font Viewer, you must place the file in the C:/​Windows/​Fonts directory. Otherwise, Windows will not recognize the file as a valid font file."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "FontForge"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "High-Logic FontCreator"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ACDSee"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFZUlEQVR42r1XeVBTdxD+XkhiECjIZQFRoChyCd7YYiJUQUAcxKZY6Yh2GGyRotZrpII6lfGiUnVaB9G21uroeFVAOsjltByKw01FpykegChiiIQQCEle33sMGVICoyF2/0h+md23++3ut/t+IVQqFQk9pKioEE2P2zDZYRLs7Gzg7e05oq2oqRU8LguTJtkN0xFvCkChVEPVr8B36Tsxd+4VNNQr4OSSiYiIcC0bLpuFlpY2VFTkoa7+EsZx7bBs2Wa4ubszukG7NwZAS339XziVmYLIyDqIREDTw1Ckph4dZicWS5C0cwV276lHTTUHBYVR2H/wCKMbBKEXgEHZsWMrlXk0fH3dYcThapwOlUOH9sLc/DGqqx5iV/L5YW3QAJDLVTA2NnrtNugKRpe8q6sdHh4+Ghu5vJfyy4P4ZTeMx7OZ89DnGQCvuvuwdVMkQkKFYLNMsDxCOGJwUiUDYWSiE9DJ7w/A0nYyPhKuHjWBoT6IlpZ2MiUlHolfVqHjZTMKCtYz/dSVJc1mVxcHnU7pCh47HISPPz0GZxfPEW3+W2Wiu1tGlpeXorg4Fi5TpqG5dRZSdu/XMiorK8OjRzUoKszE6ug0quezYWlpoWVzp/w67t5JR1xCkc72DHDmC/j4eIPLsUDgh6GMDw0HsrLysWRJIEUmQmtM6POpn35FjzQe6+MmIj6egzUxpyEQLNDo6e9LFwSYMiEW/mExIJUvwVJ2gOS5afx8e/gwHB0z4e//CgcOuCI9vYSpxmtNQeMDEU5nboS9vQwq5UJs2/6Nlr66qhBVVZ8jeOkfAyx/lg7iRSbU7n+CYFsxPS+/U4v8m9vwnqsCtbWu2LjxCGOrATASswd610t9cqBQEOiUtMBpymStvuZkhcLUzJMi8cCM0xUgSOoZjjZfbt68BVsbR3h4OzO/6Xhj2gO0VN7NQ2NjLPz8b49I0NESHBMAenxzflsMGxs+goJT9fKhF4DBbEpLzuP+/d0IDbtNvZCs/j8AtNB7/tplPqZO3ww+f52+RdQfQO71FIg7S7AyKv+1V7jBANy7V4tbv4djUUg2s/d1ree3BoAm3rUTfNjPWKw38UYFMHS7DY7N0Awvn0hAT899COPzxlR6vSpQcuMMqnNTELKlbNSZ1xsAzeyfz54Ft08C9MpgzOXA3MwEciWBXmU3zFovYpowA7MWBBgkuBYAet2uEq5AKK8N4XOmwsbMGC+kcuzLroGcugMGeCsgEtsiOOksPpg7Y9TV/UYAsrKukGFhEcjOL8bVr9fiTNIqkBIZalrFiDqei8QgXzyTdkKtHofkpV7YV6dA8vFfDBKcAQAsIKM/oe504wn4y+ogmOWGtJxKND7tRNT8qUiInI+GygfYkV2HG9uXY8OPxdhyOpt5IRmiCgSLSCDV5BPqmIvK5HDMdHoXHVIJrE1MGYOWh4+xK+8eulRGmODsgZmCIHwWG8fc7QxSATY7llQq2xHhW4urG4LQ368Gh8NC+9M2FNSIcKj0CWIEXoj2ssWmBh7OXbhokMBDWrCSdLKqQUXyPFibWaC/TwGpRILOjhdIyv8bftMd0WUzHbbmpnDhr8SiQL7B+s8AsLdwJHO+eh++DpYQP29HT7cUBMX6htZ2JOY3I2LRPMTs/QHubq4GzVwD4EJcABm10AvPRU0oqPuHKkk/ZEolMqpfIW7PUQiFQpibjmOMx7LzRwRwco2AXDdjIrIrarH2ejO6+ujr0juw9nHDs7vHDB5wGID1fi5k4hxrhJ+rQlNnIFjENBBmVlBxn+BaRvCof1IMAiDQeQJpZcrDpXonKvhsqEkp2Ka2UPI6sHWtBQ4eTDPY1tMl/wIkFX/zXIFK1QAAAABJRU5ErkJggg==",
-      "alt": "ImageMagick"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "IrfanView"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Corel FONT-MASTER"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -109,29 +123,53 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/ttf_196.png",
+      "alt": "Screenshot of a .ttf file in Apple Font Book",
+      "caption": "TTF file open in Apple Font Book"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.883Z"
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/font/ttf/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.883Z"
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     },
     {
       "url": "https://fileinfo.com/extension/ttf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.883Z"
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.883Z"
+      "retrieved_at": "2025-11-01T22:32:42.223Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.883Z"
+  "last_updated": "2025-11-01T22:32:42.223Z",
+  "mime": [
+    "font/ttf"
+  ],
+  "containers": []
 }

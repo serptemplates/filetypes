@@ -4,8 +4,20 @@
   "slug": "po",
   "extension": "po",
   "name": ".PO File Extension",
+  "type_name": "Portable Object",
   "summary": "Learn about .PO files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A PO file is a text-based object file used in software development. It may be referenced by Java programs, GNU gettext, or other software programs as a properties file. Most often, PO files contain user interface text translations that are referenced by GNU gettext."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "GNU gettext is a toolkit that helps programmers and translators produce user interface translation files. Most of these files are saved as PO files (others are saved as .POT files). Each PO file includes one or more entries, which associate an original, untranslated string(s) with its corresponding translation(s). The original text follows the identifier msgid; the translation follows the identifier msgstr.",
+      "All translations in a single PO file are written in the same translation language. If a program requires multiple languages' worth of translations, it will use multiple PO files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open and edit a PO file in any text or source code editor, such as Microsoft Visual Studio Code (cross-platform) or GitHub Atom (cross-platform)."

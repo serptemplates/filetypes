@@ -1,6 +1,48 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/asf/index.html",
   "slug": "asf",
   "extension": "asf",
-  "name": "ASF File",
-  "source": "fileformat.com"
+  "name": "What is an ASF file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "ASF files logically contain three types of top-level objects:\n\nHeader Object - mandatory and must be placed at the beginning of every ASF fileData Object - mandatory and must follow the header objectIndex Object(s) - optional, but useful in providing time-based random access into ASF files\n\nThe following image shows the top-level file structure of ASF files.\n\nASF Top-Level Header Object\n\nThe Header object provides a well-known byte sequence at the beginning of the ASF files and can optionally contain metadata such as bibliographic information. It contains all the information that is required to interpret the information within the data object properly. The Header Object may include several standard objects including, but not limited to:\n\nFile Properties Object - Contains global file attributes.Stream Properties Object - Defines a digital media stream and its characteristics.Header Extension Object - Allows additional functionality to be added to an ASF file while maintaining backward compatibility.Content Description Object - Contains bibliographic information.Script Command Object - Contains commands that can be executed on the playback timeline.Marker Object - Provides named jump points within a file.\n\nThe Header Object is represented using the following structure:\n\nField nameField typeSize (bits)Object IDGUID128Object SizeQWORD64Number of Header ObjectsDWORD32Reserved1BYTE8Reserved2BYTE8\n\nASF Top-Level Data Object\n\nAll the digital media data for an ASF file is contained in the data object and is stored in the form of ASF data packets. Each data packet is of a fixed length and contains data for one or more digital media streams.\n\nASF Top-Level Index Objects\n\nASF top-level index objects have the following two types:\n\nSimple Index Object - Contains a time-based index of the video data in an ASF file. The time interval between index entries is constant and is stored in the Simple Index Object.Index Object - Refers to the Index Object, the Media Object Index Object, and the Timecode Index Object, whose formats are similar. Like the Simple Index Object, the Index Object indexes by time with a fixed time interval but is not limited to video streams."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .asf extension is a multimedia file format for storing and playing digital media streams over the network. It is a container file format that can have both video and audio content for streaming online. You will rarely find ASF files, and more probably come across the Windows Media Audio (WMA) and Windows Media Video (WMV) files that both specify ASF files having content encoded with respective codecs. Windows media files can be created and read using the Windows Media Format SDK."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "images": [
+    {
+      "url": "https://docs.fileformat.com/video/asf.png",
+      "alt": "ASF File Structure"
+    }
+  ]
 }

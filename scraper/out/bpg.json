@@ -1,9 +1,11 @@
 {
   "slug": "bpg",
   "extension": "bpg",
-  "name": "BPG File",
+  "name": "Better Portable Graphics Image",
   "summary": "Learn about .BPG files and view a list of programs that open them.",
   "developer": "Fabrice Bellard",
+  "category": "image",
+  "category_slug": "image",
   "programs": {
     "windows": [
       {
@@ -18,6 +20,24 @@
         "name": "Embarcadero Delphi",
         "url": "https://fileinfo.com/software/embarcadero/delphi"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The BPG container format is a generic image format rather than the raw bitstream used in HEVC. BPG supports 4:4:4, 4:2:2, and 4:2:0 color formats. Alpha channel is also supported with a separately coded extra channel or the fourth channel of CMYK image. BPG provides metadata support for Exif, ICC profiles, and XMP. BPG supports YCbCr (ITU-R BT.601, BT.709, and BT.2020 (non-constant luminance)), YCgCo, RGB, CMYK, and grayscale color space. BGP also supports animation and lossy and lossless HEVC data compression.",
+      "Developer Fabrice Bellard created the BPG file format in 2014, as a potential replacement for the JPEG format. Bellard based the BPG format's compression method on the High Efficiency Video Coding (HEVC) compression standard, which is more efficient than JPEG compression.",
+      "The BPG format supports:",
+      "The same chroma formats as JPEG",
+      "8 to 14 bits per channel, providing a higher dynamic range than JPEG",
+      "Lossless compression",
+      "Animated images",
+      "Despite its advantages over the JPEG format, the BPG format is not widely used. However, Bellard's work on the BPG format inspired the creation of the .AVIF format, which also uses a video compression standard to create high-quality compressed images."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "BPG (Better Portable Graphics) is a file format created by Fabrice Bellard in 2014 for digital images. He proposed BPG as a replacement for JPEG as BPG was more compression or size efficient. BPG uses the intra-frame encoding of the HEVC (High-Efficiency Video Coding) video compression standard.\n\nBPG is designed as a portable memory-efficient format to work on handheld and IoT devices. Currently, web browsers do not support BPG format, but websites can still deliver BPG images by using a JavaScript library written by Bellard. BPG uses the HEVC’s Main 4:4:4 16 Still Picture profile up to 14 bits per sample.",
+      "A BPG file is a raster image saved in the Better Portable Graphics (BPG) format. It contains an image that is similar in quality to a .JPEG. However, because the BPG format uses more efficient file compression, BPG images typically have smaller file sizes than similar-quality JPEGs."
     ]
   },
   "how_to_open": {
@@ -40,6 +60,28 @@
       ".WEBP - WebP Image"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -73,15 +115,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/image/bpg/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.915Z"
+      "retrieved_at": "2025-11-01T22:32:42.256Z"
     },
     {
       "url": "https://fileinfo.com/extension/bpg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.915Z"
+      "retrieved_at": "2025-11-01T22:32:42.256Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.915Z"
+  "last_updated": "2025-11-01T22:32:42.256Z",
+  "containers": []
 }

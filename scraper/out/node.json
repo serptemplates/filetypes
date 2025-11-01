@@ -1,7 +1,7 @@
 {
   "slug": "node",
   "extension": "node",
-  "name": ".NODE",
+  "name": "Node.js Binary Addon File",
   "summary": "Learn about .NODE files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -10,6 +10,20 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11550&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Web and app developers utilize NODE files to create addons for Node.js applications. These addons allow Node.js applications to link to libraries that provide functionality. A reusable addon project typically consists of a package.json file, a binding.gyp file, and C++ source code, whereas non-reusable modules don't need the package.json file.",
+      "To create NODE files, the developers first install the \"node-gyp\" utility bundled with Node.js using the following command:",
+      "npm install -g node-gyp",
+      "Then, the developers create binding.gyp files that describe the build configuration of the Node.js module. They then use the node-gyp configure command to create the proper build files and utilize the node-gyp build command to create the addon.node file.",
+      "NOTE: To load an addon as a Node.js module, use the require() function."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A NODE file contains an addon, which is a compiled library of functions used by one or more Node.js applications. It stores binary data compiled from a GYP file written in the C++ programming language. NODE files are similar to .MJS modules in that they allow web and application developers to organize code into smaller reusable components."
     ]
   },
   "images": [
@@ -42,8 +56,11 @@
     {
       "url": "https://fileinfo.com/extension/node",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.210Z"
+      "retrieved_at": "2025-11-01T22:32:42.647Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.210Z"
+  "last_updated": "2025-11-01T22:32:42.647Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

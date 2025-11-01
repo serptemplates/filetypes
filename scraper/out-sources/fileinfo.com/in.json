@@ -7,6 +7,17 @@
   "type_name": "Autoconf Input File",
   "summary": "Learn about .IN files and view a list of programs that open them.",
   "developer": "GNU Project",
+  "more_information": {
+    "description": [
+      "An IN file is an input file referenced by GNU Autoconf when building an application. One or more .in or .h.in files may be referenced by an Autoconf script (.AC file) when the configure process is run. IN files define variables, such as an app's version number and release date, which are referenced during program installation. IN files may also be used to check for the presence or absence of features in a specific installation."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Autoconf is part of the GNU build system, which creates custom builds of applications for different platforms. It is one of several GNU build tools, which include Automake, Gnulib, and Libtool.",
+      "NOTE: While the GNU community previously encouraged developers to name their top-level configuration file configure.in, they now recommend developers name their top-level file configure.ac."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an IN file in a text editor, such as Notepad (Windows) or TextEdit (Mac). However, if you want to edit an IN file, it's best to use a source code editor, such as NotePad++ or Atom. These applications provide helpful source code editing tools and highlight the syntax correctly."

@@ -4,8 +4,21 @@
   "slug": "jdl",
   "extension": "jdl",
   "name": ".JDL File Extension",
+  "type_name": "Jammer Dash Level",
   "summary": "Learn about .JDL files and view a list of programs that open them.",
   "developer": "Karlo Ramulic",
+  "more_information": {
+    "description": [
+      "A JDL file contains information about a level for Jammer Dash, a 2D rhythm video game (in beta development). It stores information in the JSON standard that Jammer Dash references to load a level (e.g., the position of objects in the level or metadata, including the creator and level difficulty). Jammer Dash allows players to download and upload JDL level files from and to its server to share levels with others."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Jammer Dash is a rhythm-based video game with an editor that allows you to modify custom levels. After editing a JDL level, you can upload it to the game's servers to share it with other gamers.",
+      "When you download a level within the Jammer Dash interface, the game downloads the appropriate JDL file from its server. When stored on the server, the JSON data in the JDL file is encrypted for security purposes. However, the game decrypts the JSON data when downloading the level.",
+      "Then, Jammer Dash places the JDL file in its installation directory with other game resource files that store background music, graphics, etc. Finally, Jammer Dash reads the files and displays the information in the game. Additionally, when you upload a level to the game's server, the game encrypts the JSON data in the JDL file and then saves it to its server for other players to access when downloading new levels for the game."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open JDL files. Instead, Jammer Dash (in beta development) references JDL files to load their level information."

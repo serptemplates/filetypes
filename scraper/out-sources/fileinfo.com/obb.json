@@ -7,6 +7,18 @@
   "type_name": "Android Opaque Binary Blob File",
   "summary": "Learn about .OBB files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "An OBB file is an expansion file used by some Android apps distributed via the Google Play online store. It contains data not stored in the application's main package (.APK file), such as graphics, media files, and other large program assets, due to size constraints (typically stored in a device's shared storage folder). Google replaced OBB expansion files with the Android App Bundle (.AAB) format in August 2021."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Before moving to the AAB format, Google Play allowed APK files to be only 100MB or smaller in file size, which led to app developers using expansion files to store additional app assets. Developers could create expansion files using any format they chose, such as .ZIP or .MP4. They could also use the JOBB tool provided with the Android SDK to bundle and encrypt assets together within an OBB file (maximum size of 2GB).",
+      "Developers then uploaded these expansion files alongside their application's APK file using the Google Play Developer Console. Users who downloaded the app received the app's APK and related expansion files.",
+      "NOTE: Any additional asset provided beyond an app's APK file is called an APK Expansion File. Developers can include up to two APK Expansion Files within their Android apps."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Typically, users should not open OBB files since they often store data in an encrypted format meant to be referenced by the app for which they store data.",

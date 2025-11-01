@@ -1,7 +1,7 @@
 {
   "slug": "kv",
   "extension": "kv",
-  "name": ".KV",
+  "name": "Kivy Language File",
   "summary": "Learn about .KV files and view a list of programs that open them.",
   "developer": "Kivy Organization",
   "programs": {
@@ -26,6 +26,24 @@
         "name": "Vim",
         "url": "https://fileinfo.com/software/vim/vim"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Kivy is a framework that assists developers in creating cross-platform apps with Python code. It is specifically focused on describing the user interface and interactions in an app.",
+      "The Kivy language features several constructs:",
+      "Root widget - Widgets are the building blocks of GUIs in Kivy and a KV file can contain only one root widget.",
+      "Rules - A Kivy rule applies to a specific widget and is used in a KV file to modify the widget, such as specifying interactive behavior or adding a graphical representation of a widget.",
+      "Dynamic classes - A Kivy dynamic class allows you to quickly create new widgets or rules without any Python declaration.",
+      "Templates - Before being deprecated, Kivy templates were used to save the user time when styling content, like only having to specify the value of a button once for buttons that are used repeatedly. Templates were replaced by dynamic classes in version 1.7.0 of Kivy.",
+      "Below is a simple example of a KV file containing a root widget. A KV file should always start with the Kivy header, with the correct Kivy language version used, and then followed by the content:",
+      "#:kivy 1.11.1",
+      "Button: text: 'Hi there'"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A KV file is a Kivy language file created by Kivy, an open-source Python library used to develop multi-touch enabled, cross-platform applications. It stores source code in the Kivy syntax, which may include rule definitions, a root widget, dynamic class definitions, and templates."
     ]
   },
   "how_to_open": {
@@ -64,8 +82,11 @@
     {
       "url": "https://fileinfo.com/extension/kv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.150Z"
+      "retrieved_at": "2025-11-01T22:32:42.581Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.150Z"
+  "last_updated": "2025-11-01T22:32:42.581Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

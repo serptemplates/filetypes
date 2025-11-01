@@ -1,9 +1,11 @@
 {
   "slug": "crdownload",
   "extension": "crdownload",
-  "name": "CRDOWNLOAD File",
+  "name": "Chrome Partially Downloaded File",
   "summary": "Learn about .CRDOWNLOAD files and view a list of programs that open them.",
   "developer": "Google",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -24,6 +26,22 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "When you download a file with one of the Chrome, Edge, or Chromium web browsers, the browser creates a temporary CRDOWNLOAD file in your computer's \"Downloads\" folder while the file downloads. Typically, you will only see CRDOWNLOAD files while downloading a file via your web browser.",
+      "However, if the download is interrupted before completion (possibly due to a lost Internet connection or because you pause the download), the CRDOWNLOAD file will remain in your \"Downloads\" folder. Though, once you close the browser, it removes the CRDOWNLOAD file from the folder.",
+      "The Chrome, Edge, and Chromium web browsers may name CRDOWNLOAD files either of the following ways:",
+      "Unconfirmed [set of numbers].crdownload - For example, when downloading the myDoc.docx file, the CRDOWNLOAD file appears as Unconfirmed 47128.crdownload during the download but then changes to myDoc.docx once the download is complete.",
+      "filename.ext.crdownload - For example, if you are downloading the myMovie.avi file, the browser appends the .crdownload extension to the file while downloading it, creating myMovie.avi.crdownload. Once the download is complete, the browser removes the .crdownload extension, and the file is ready.",
+      "NOTE: CRDOWNLOAD files are similar to .PART files, which the Mozilla Firefox web browser uses for partial downloads."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A CRDOWNLOAD file is a partially downloaded file that is created when you download a file from internet using Microsoft Edge, Google Chrome, or Chromium browsers. The contents of file being downloaded are stored in this file until the download completes. Once the download completes, the .crdownload extension is removed and is replaced with the original file extension of the file being downloaded.",
+      "A CRDOWNLOAD file is a partially downloaded file created by Google Chrome, Microsoft Edge, and Chromium web browsers that stores the contents of a file while the browser downloads it. The .crdownload extension is temporary, and the web browser removes it once the download is complete. However, if the download is interrupted, the CRDOWNLOAD file remains, and you must resume the download via the web browser to complete it."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "CRDOWNLOAD files are not meant to be opened. Instead, Google Chrome, Microsoft Edge, and Chromium web browsers create the files as placeholders for files while they download.",
@@ -33,6 +51,28 @@
       "Finally, if you cannot resume the download, delete the CRDOWNLOAD file and download the file again via the web browser."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -66,15 +106,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/crdownload/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     },
     {
       "url": "https://fileinfo.com/extension/crdownload",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.259Z",
+  "containers": []
 }

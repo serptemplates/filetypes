@@ -7,6 +7,17 @@
   "type_name": "C++ Module",
   "summary": "Learn about .CPPM files and view a list of programs that open them.",
   "developer": "ISO C++ Standards Committee",
+  "more_information": {
+    "description": [
+      "A CPPM file is a C++ module, which serves as a container for organizing reusable pieces of a program written in the C++ programming language. It stores a module declaration that names the module, exported code, such as functions or classes, shared with other parts of the program, private code used internally within the module, and imports that bring in code from other modules or libraries."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The International Organization for Standardization (ISO), with input from the C++ Standards Committee, introduced modules (and CPPM files) in the C++20 standard published in December 2020. Modules were designed to reduce dependency issues, improve code organization, and enhance compilation speed. They provide a modern alternative to older practices like header files (.H) and implementation files (.CPP), offering a more efficient way to manage code in reusable, self-contained units, though they can also work alongside traditional methods.",
+      "Developers use CPPM files to make their projects more maintainable and scalable, especially in large projects with complex dependencies in fields like system software, game development, and scientific computing. When ready to build, developers can compile CPPM files with C++ compilers that support the C++20 standard, such as GNU Compiler Collection or Clang (included with LLVM)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open and edit CPPM files with various source code editors, including Microsoft Visual Studio Code, Code Blocks, and Apple Xcode. These options provide syntax highlighting, auto-completion, and other helpful tools that assist you in viewing and editing C++ code.",

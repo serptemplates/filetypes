@@ -4,8 +4,20 @@
   "slug": "eappx",
   "extension": "eappx",
   "name": ".EAPPX File Extension",
+  "type_name": "Encrypted Windows App Package",
   "summary": "Learn about .EAPPX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An EAPPX is an encrypted Windows app package (.APPX file). It contains all the metadata, files, and credentials needed to install a Windows program, stored in an encrypted, Zip-compressed package. EAPPX files are encrypted so users cannot extract and view their contents."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Before submitting Windows applications to the Microsoft Store, developers package all the files and information needed to install the app in an APPX or .MSIX file. Optionally, developers can choose to encrypt APPX packages they create, using a custom key file that contains a hexadecimal encryption key. For example, video game developers often encrypt their APPX packages, so players cannot access the packages' contents or easily install pirated versions of games.",
+      "Encrypted APPX packages are saved as EAPPX files. Unlike APPX files, users cannot install the app an EAPPX file contains by double-clicking the file. Instead, users must use Windows PowerShell to install the app an EAPPX file contains."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "To install the app an EAPPX file contains, run Microsoft Windows PowerShell as an administrator, navigate to the directory that contains your EAPPX file, and enter the following command:",

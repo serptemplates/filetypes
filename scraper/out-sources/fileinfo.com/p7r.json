@@ -7,6 +7,16 @@
   "type_name": "Certificate Request Response File",
   "summary": "Learn about .P7R files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "File used by various programs that include identity authentication mechanisms; stores a response to a digital certificate request that was issued from an authenticating entity; contains a digital signature."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When two entities want to verify each other's identity, one entity can issue a certificate request to another entity who then responds with a P7R file. The key inside this file can be used to encrypt data in a manner such that only the owner of the original key can decrypt the data. Therefore, the requester of the P7R file can use the embedded key to encrypt his own key and safely send it back to the issuer."
+    ]
+  },
   "programs": {
     "windows": [
       {

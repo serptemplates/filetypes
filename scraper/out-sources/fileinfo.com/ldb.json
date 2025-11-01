@@ -4,8 +4,20 @@
   "slug": "ldb",
   "extension": "ldb",
   "name": ".LDB File Extension",
+  "type_name": "Microsoft Access Lock File",
   "summary": "Learn about .LDB files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An LDB file is a lock information file that prevents an Access database from being changed by more than one user at a time. It also helps ensure updates will not be unexpectedly overwritten. LDB files are created and deleted automatically by Access when a database is opened and closed."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "LDB files are not meant to be opened by the user, they are only meant for locking information in an .MDB Access database. By locking the information in the database, multiple users are not allowed to overwrite each other's updates.",
+      "NOTE: LDB files have the same name as the opened database (the .MDB file) and is located in the same folder."
+    ]
+  },
   "programs": {
     "windows": [
       {

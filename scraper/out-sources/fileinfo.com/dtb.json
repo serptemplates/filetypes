@@ -7,6 +7,18 @@
   "type_name": "Device Tree Blob File",
   "summary": "Learn about .DTB files and view a list of programs that open them.",
   "developer": "DeviceTree",
+  "more_information": {
+    "description": [
+      "A DTB file is a device tree (or devicetree) blob file used by the Linux kernel. It contains binary data that describes a computer's hardware. DTB files allow operating systems to manage a computer's components by telling the operating system what hardware the computer includes."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When booting a computer that uses the Linux operating system, the computer's boot loader passes a device tree to the operating system's kernel. The device tree describes the hardware components the computer includes, allowing the kernel to access and manage those components. Some of the components a device tree describes are the computer's CPU, memory, buses, and peripherals (such as the computer's keyboard).",
+      "Device trees make it easier for Linux operating systems to manage different computers that contain different hardware. Without device trees, operating systems would have to contain many separate files that allow them to recognize and manage different hardware configurations. Instead, the device tree simply passes the operating system's kernel a description of the system it is installed upon.",
+      "Each driver or module described in a device tree is listed as a node, which contains several properties and, often, child nodes. These properties and nodes are first specified in a text-based .DTS (Device Tree Source) file, before being compiled into the binary DTB file that a kernel actually uses as a device tree."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "DTB files are not meant to be opened. Instead, they are meant to be passed to the Linux kernel for use as a device tree. Linux users can use the devicetree command to load a DTB file as their device tree."

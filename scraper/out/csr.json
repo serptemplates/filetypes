@@ -1,9 +1,11 @@
 {
   "slug": "csr",
   "extension": "csr",
-  "name": "CSR File",
+  "name": "Certificate Signing Request File",
   "summary": "Learn about .CSR files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,39 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "CSR files are generated using a public and private key. The public key is included in the CSR file, and the private key is used to digitally sign the CSR file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A CSR file is a Certificate Signing Request file that is used to request for SSL/TLS certificate. When you need to have your SSL/TLS certificate, you generate the CSR on the same server where it will finally be installed. This CSR file is shared with the Certificate Authority (CA) for creation of the certificate. It contains information such as common name, organization, country, and, more importantly, the public key that is integrated within your certificate file and is signed with the corresponding private key.\n\nApplications that can open CSR files include OpenSSL and Microsoft IIS.",
+      "A CSR file is a file created as a signing request for a digital certificate. It contains an encrypted block of text that identifies the applicant of the certificate and includes encrypted data for country, state, organization, domain, email address, and public key. The file is used by a Certificate Authority to establish proof of identity for Web sites."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +79,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/csr/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.260Z"
     },
     {
       "url": "https://fileinfo.com/extension/csr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.260Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.260Z",
+  "containers": []
 }

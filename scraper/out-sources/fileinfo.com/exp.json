@@ -7,6 +7,17 @@
   "type_name": "Symbols Export File",
   "summary": "Learn about .EXP files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "An EXP file is a symbols export file, produced by an integrated development environment (IDE) or compiler. It contains binary information about exported data and functions. EXP files are used to link the program they were created from with another program."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When a program is linked to another program from which it both imports and exports data, it must be linked using both an import library and an export file. This allows the programs to resolve circular imports.",
+      "In many cases, circular imports are resolved by linking programs using a .LIB file and an EXP file. The LIB file is an import library, and the EXP file is an export file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "EXP files are not meant to be opened."

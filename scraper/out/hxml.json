@@ -1,7 +1,7 @@
 {
   "slug": "hxml",
   "extension": "hxml",
-  "name": ".HXML",
+  "name": "Haxe Project File",
   "summary": "Learn about .HXML files and view a list of programs that open them.",
   "developer": "Haxe Foundation",
   "programs": {
@@ -26,6 +26,19 @@
         "name": "GNU Emacs",
         "url": "https://fileinfo.com/software/gnu/emacs"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Haxe is an open-source, general-purpose programming language used to create video games, web applications, mobile applications, and cross-platform desktop applications. Notably, Haxe is used in the HaxeFlixel game engine, which is an open-source game engine used to develop 2D games.",
+      "When developers create a Haxe project, they create an associated HXML file. The HXML file contains settings Haxe's compiler uses to compile the developer's project (translate it into a different programming language). In all cases, HXML files contain a list of classes to be compiled and output files to produce. HXML files may also contain additional configuration options, such as a specification that each class be compiled in its own output file (using the --each and --next commands), or that the compiler removes any dead code it finds during the compilation process (using the --dce command).",
+      "It is also possible to nest several HXML files for several projects within one overarching HXML file. This type of HXML file includes lines of text referencing other HXML files, instead of Haxe classes. Nesting XHML files makes it easier for developers to compile complex programs that require code from multiple Haxe projects, because the developers can run one HXML file instead of many separate files.",
+      "NOTE: The HXML format replaced the .HXPROJ format."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An HXML file is a configuration file for a Haxe development project. It contains text the Haxe compiler uses to compile a project. HXML files define a project's included classes and output."
     ]
   },
   "how_to_open": {
@@ -69,8 +82,11 @@
     {
       "url": "https://fileinfo.com/extension/hxml",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.112Z"
+      "retrieved_at": "2025-11-01T22:32:42.534Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.112Z"
+  "last_updated": "2025-11-01T22:32:42.534Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

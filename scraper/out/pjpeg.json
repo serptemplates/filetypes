@@ -1,7 +1,7 @@
 {
   "slug": "pjpeg",
   "extension": "pjpeg",
-  "name": ".PJPEG",
+  "name": "Progressive JPEG Image",
   "summary": "Learn about .PJPEG files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -22,6 +22,18 @@
         "name": "Microsoft Internet Explorer",
         "url": "https://fileinfo.com/software/microsoft/internet_explorer"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The progressive JPEG format allows you to preview an image in a web browser as it loads the image instead of waiting for it to load completely, like with images saved in the baseline JPEG format. For example, if your internet connection is slow, you might wait 20 seconds for an image saved in the baseline JPEG format to completely load line by line on a blank space on the page.",
+      "However, a web browser loading a PJPEG image loads scans of the image that progressively increase in quality with each pass. The first scan is a low-resolution version of the image (likely blurry and pixelated) that improves (becomes sharper and less pixelated) as the browser loads the scans (typically 3 to 5).",
+      "NOTE: PJPEG files more often use the .pjpg extension (.PJPG files). However, both files are rare, and most progressive JPEG image files use the .jpg extension (.JPG files)."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A PJPEG file is a bitmap image created in the Progressive JPEG format (PJPEG), which stores multiple \"scans\" of an image a web browser displays progressively at a higher quality to provide the user a preview of the image as it loads. Since PJPEG files are a variation of the baseline JPEG format, you can open them by renaming the .pjpeg extension to .jpg."
     ]
   },
   "how_to_open": {
@@ -74,8 +86,11 @@
     {
       "url": "https://fileinfo.com/extension/pjpeg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.242Z"
+      "retrieved_at": "2025-11-01T22:32:42.691Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.242Z"
+  "last_updated": "2025-11-01T22:32:42.691Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

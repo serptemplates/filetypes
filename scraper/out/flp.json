@@ -1,9 +1,11 @@
 {
   "slug": "flp",
   "extension": "flp",
-  "name": "FLP File",
+  "name": "FL Studio Project",
   "summary": "Learn about .FLP files and view a list of programs that open them.",
   "developer": "Image-Line",
+  "category": "audio",
+  "category_slug": "audio",
   "programs": {
     "windows": [
       {
@@ -40,6 +42,45 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "FLP files do not store the actual audio that appears in the project. Instead, the files contain references to the audio files. Therefore, if you move an FLP file or the files it references, such as a .WAV sample file, or SimSynth or DrumSynth preset file, the project may not play correctly in FL Studio.",
+      "NOTE: FL Studio was formerly known as FruityLoops, which was originally released in 1998. FruityLoops became FL Studio with the release of version 4 in March 2003."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The FLP file extension represents the native project format for FL Studio, the powerful digital audio workstation (DAW) from Image-Line. These FLP files act as comprehensive containers, storing the entire blueprint of a music production project. Within a single FLP file, producers save all their creative work, including musical patterns, sequence arrangements, audio samples, virtual instrument settings, effect chains, and automation data. This makes the format essential for both saving work-in-progress and collaborating with other FL Studio users. To open an FLP file, simply launch FL Studio, navigate to “File” in the menu bar, select “Open,” and choose your desired project. A key strength of this ecosystem is its seamless integration with plugins; all third-party virtual instruments and effects used within a project are meticulously saved and recalled within the FLP file, ensuring your sound remains intact.\n\nIn addition to FL Studio, some other music production software may be able to open FLP files, but the compatibility can vary depending on the version of FL Studio and the features used in the project.",
+      "An FLP file is a project created by FL Studio, an application used to compose arrange, record, and edit music. It contains all of the data associated with a project, including demo plugins and music track settings."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To open an FLP file, you will need to have FL Studio digital audio workstation (DAW) software installed on your computer. Here are the general steps to open an FLP file using FL Studio:\n\nLaunch FL Studio software on your computer.Click on “File” in the menu bar and select “Open” from the drop-down menu.Browse to the location of the FLP file that you want to open and select it.Click on “Open” to import the FLP file into FL Studio.Once the FLP file is imported, you should be able to access the included project data and settings in FL Studio."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -73,15 +114,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/audio/flp/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.922Z"
+      "retrieved_at": "2025-11-01T22:32:42.268Z"
     },
     {
       "url": "https://fileinfo.com/extension/flp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.922Z"
+      "retrieved_at": "2025-11-01T22:32:42.268Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.922Z"
+  "last_updated": "2025-11-01T22:32:42.268Z",
+  "containers": []
 }

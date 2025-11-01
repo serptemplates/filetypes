@@ -4,8 +4,21 @@
   "slug": "esd",
   "extension": "esd",
   "name": ".ESD File Extension",
+  "type_name": "Windows Electronic Software Download",
   "summary": "Learn about .ESD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An ESD file contains an encrypted Windows update or upgrade file. Microsoft's Electronic Software Download (ESD) program creates ESD files when you purchase Windows through the Microsoft Store or update Windows using Microsoft Upgrade Assistant."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "ESD files are encrypted .WIM files. Electronic Software Download creates ESD files used to install, update, or upgrade Windows. For example, Microsoft Upgrade Assistant uses ESD files to upgrade users to new versions of Windows.",
+      "You may find ESD files in the following directory:",
+      "C:/​Users/​YourUserName/​AppData/​Local/​Microsoft/​WebSetup/​Download"
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "ESD files are not meant to be opened. Instead, Windows Upgrade and Update Assistant utilities access ESD files to upgrade Windows to newer versions or updates.",

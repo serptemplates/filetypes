@@ -4,8 +4,20 @@
   "slug": "pdz",
   "extension": "pdz",
   "name": ".PDZ File Extension",
+  "type_name": "Playdate Compiled Code",
   "summary": "Learn about .PDZ files and view a list of programs that open them.",
   "developer": "Panic",
+  "more_information": {
+    "description": [
+      "A PDZ file contains compiled code for an application or game on the Playdate handheld console, a console for playing indie games. It stores all of the code required by an application or game to run, and may include assets, such as images and fonts, and metadata. Developers create PDZ files by compiling source code written in C or Lua using the Playdate SDK."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PDZ files are the final code output of a Playdate development project. After writing code and creating assets in the development environment, developers use the SDK's pdc (Playdate compiler) command-line tool to package all scripts into one binary PDZ file that is placed in a .PDX file with the game's assets.",
+      "Playdate developers typically use PDZ files to share or sideload custom games and tools onto the Playdate. For example, developers can transfer a compiled PDZ file to a Playdate console for testing or distribution. They may also test PDZ files using the Playdate Simulator, a desktop tool included with the SDK."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "PDZ files are not meant to be opened. Instead, users load PDZ files onto the Playdate handheld console. Once transferred to the device (usually via USB or sideloading through the Playdate account system), the console reads and runs the PDZ file as a complete game.",

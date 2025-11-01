@@ -1,9 +1,24 @@
 {
   "slug": "vmdk-converttmp",
   "extension": "vmdk-converttmp",
-  "name": ".VMDK-CONVERTTMP",
+  "name": "VMWare Fusion Temporary File",
   "summary": "Learn about .VMDK-CONVERTTMP files and view a list of programs that open them.",
   "developer": "VMWare",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "VMware Fusion is an application that allows you to run guest operating systems on your Mac, such as Windows or Linux. When you install an operating system (OS) with Fusion, the software creates a VM and saves all its resource files, along with the temporary VMDK-CONVERTTMP file in the VMWAREVM package. You can find VMWAREVM files in the following location (Fusion saves them here by default):",
+      "Macintosh HD/​Users/​[username]/​Virtual Machines",
+      "VMDK-CONVERTTMP files can be very large (hundreds of gigabytes) and, therefore, may consume large amounts of disk space. It is possible to delete these files without corrupting your virtual machine. However, before performing any manual changes, you should either 1) copy the virtual machine before deleting the VMDK-CONVERTTMP file to make sure it doesn't corrupt the VM or 2) consult VMWare Fusion technical support."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You should not attempt to open a VMDK-CONVERTTMP file manually. Instead, VMware Fusion references the file when running a virtual machine."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,11 +29,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=8705&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You should not attempt to open a VMDK-CONVERTTMP file manually. Instead, VMware Fusion references the file when running a virtual machine."
     ]
   },
   "images": [
@@ -49,10 +59,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vmdk-converttmp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.356Z"
+      "url": "https://fileinfo.com/extension/vmdk-converttmp",
+      "retrieved_at": "2025-11-01T22:32:42.849Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.356Z"
+  "last_updated": "2025-11-01T22:32:42.849Z"
 }

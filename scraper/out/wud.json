@@ -1,7 +1,7 @@
 {
   "slug": "wud",
   "extension": "wud",
-  "name": ".WUD",
+  "name": "Wii U Disk Image File",
   "summary": "Learn about .WUD files and view a list of programs that open them.",
   "developer": "Nintendo",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=10855&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WUD files are most often created using Homebrew for Wii U. A user dumps the the game information from the Wii U game to the WUD file. Since the game information is large in size (over 20 GB), multiple WUD files are created to store segments (around 2 GB) of the game. Therefore, the files must be merged into one WUD file before the game can be opened and played by an emulator.",
+      "To open a WUD file in Cemu, select File → Load and choose the WUD file you want to open.",
+      "You can compress a WUD file to save space on your computer using the Wii U image compression tool. Compressed WUD files become .WUX files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A WUD file is a disk image file dumped from a Wii U game disc. It contains information about a Wii U game that can be run by an emulator, such as Cemu, on a computer. WUD files are typically split into segments because of the large amount of information in a Wii U game."
     ]
   },
   "images": [
@@ -42,8 +54,11 @@
     {
       "url": "https://fileinfo.com/extension/wud",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.381Z"
+      "retrieved_at": "2025-11-01T22:32:42.879Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.381Z"
+  "last_updated": "2025-11-01T22:32:42.879Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,9 +1,11 @@
 {
   "slug": "dss",
   "extension": "dss",
-  "name": "DSS File",
+  "name": "DiskStation Backup Configuration File",
   "summary": "Learn about .DSS files and view a list of programs that open them.",
   "developer": "Synology",
+  "category": "audio",
+  "category_slug": "audio",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,41 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "NAS devices allow you to store your digital files, whether they are documents, music, photos, or video, making them accessible at any time.The DSM allows you to manage the files stored on your NAS device. When you back up the configuration settings of an NAS device through DSM, the DSS file is created to store the settings.",
+      "To create a DSS backup configuration file go to Control Panel → Update & Restore and click Back up configuration. The DSS file is then downloaded to your computer.",
+      "To restore a DSS backup configuration file go to Control Panel → Update & Restore and click Restore configuration."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The DSS file, which stands for Digital Speech Standard, is a proprietary digital audio format originally established by the International Voice Association, a joint venture founded by industry leaders Philips, Olympus, and Grundig Business Systems. As an older codec specifically engineered for speech, its primary design goal was efficiency rather than high-fidelity music reproduction. The format compresses voice audio data to enable fundamental recording functions like playback and capture while maintaining a very compact file size. This focus on efficiency inherently results in audio quality that is lower than that of more general-purpose formats like MP3, a deliberate trade-off to achieve its core objective of minimizing storage requirements for extended voice recordings.",
+      "A DSS file is a configuration backup created by DiskStation Manager (DSM), a web-based operating system included with Synology network-attached storage (NAS) devices. It contains settings for a system, which includes users, groups, shared folders, workgroup, domain, passwords, and file sharing methods. DSS files can be used to restore settings to a system's configuration."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +81,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/audio/dss/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.919Z"
+      "retrieved_at": "2025-11-01T22:32:42.264Z"
     },
     {
       "url": "https://fileinfo.com/extension/dss",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.919Z"
+      "retrieved_at": "2025-11-01T22:32:42.264Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.919Z"
+  "last_updated": "2025-11-01T22:32:42.264Z",
+  "containers": []
 }

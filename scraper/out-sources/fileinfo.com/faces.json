@@ -4,8 +4,19 @@
   "slug": "faces",
   "extension": "faces",
   "name": ".FACES File Extension",
+  "type_name": "JavaServer FacesServlet Pointer",
   "summary": "Learn about .FACES files and view a list of programs that open them.",
   "developer": "Oracle",
+  "more_information": {
+    "description": [
+      "The .faces extension is used by some versions of JavaServer Faces to invoke the FacesServlet servlet. However, FACES files do not actually exist. When developers specify a path to a FACES file (e.g. http://localhost:8080/webapp/page.faces), JavaServer Faces searches for and renders the FacesServlet components included in an app's corresponding WebContent .XHTML file (e.g. Webapp/WebContent/page.xhtml)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FacesServlet is a JavaServer Faces servlet that manages a web app's request processing lifecycle. In order to invoke FacesServlet and allow it to render the JavaServer Faces components included in an XHTML file, developers must sometimes specify a file path that ends with the .faces, .jsf, or .xhtml extension. When FacesServlet encounters a file path that ends with .faces, it knows to search for a corresponding XHTML file that includes JavaServer Faces components."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "FACES files do not actually exist, so they cannot be opened."

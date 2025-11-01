@@ -1,9 +1,23 @@
 {
   "slug": "gpkg",
   "extension": "gpkg",
-  "name": ".GPKG",
+  "name": "GeoPackage Database",
   "summary": "Learn about .GPKG files and view a list of programs that open them.",
   "developer": "Open Geospatial Consortium",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In 2014, the Open Geospatial Consortium (OGC) created the GeoPackage, or GPKG, file format. This format was designed to support both raster and vector data while also being efficiently decodable, for use with lightweight mobile and web software.",
+      "Each GPKG file is a SQLite 3 database comprised of multiple data tables. Tiles tables contain raster maps saved in tile pyramids, used to zoom in on specific geographic areas at higher resolutions. These maps are typically .PNG or .JPEG files. Features tables contain vector data overlaid on those maps, to demarcate specific geographic features. Other types of tables that GPKG files contain include metadata, attributes, and extensions tables."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a GPKG file with a variety of geospatial programs that support the GeoPackage format. For example, you can open a GPKG file with NGA GeoPackage Viewer (Web), QGIS (multiplatform), GDAL (multiplatform), ESRI ArcGIS (Windows), GeoServer (multiplatform), and many more programs."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -18,11 +32,6 @@
         "name": "ESRI ArcGIS for Desktop",
         "url": "https://fileinfo.com/software/esri/arcgis_for_desktop"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a GPKG file with a variety of geospatial programs that support the GeoPackage format. For example, you can open a GPKG file with NGA GeoPackage Viewer (Web), QGIS (multiplatform), GDAL (multiplatform), ESRI ArcGIS (Windows), GeoServer (multiplatform), and many more programs."
     ]
   },
   "images": [
@@ -58,10 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/gpkg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.092Z"
+      "url": "https://fileinfo.com/extension/gpkg",
+      "retrieved_at": "2025-11-01T22:32:42.506Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.092Z"
+  "last_updated": "2025-11-01T22:32:42.506Z"
 }

@@ -1,9 +1,18 @@
 {
   "slug": "lock",
   "extension": "lock",
-  "name": ".LOCK",
+  "name": "Lock File",
   "summary": "Learn about .LOCK files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "LOCK files signal to applications that a resource should not be used until the lock is released. This is useful for programs that need to prevent concurrent access to critical resources. For file locking, programs typically create a new file and add the \".lock\" extension for the original filename. For example, a lock file for \"example.file\" would be \"example.file.lock.\"",
+      "LOCK files are commonly seen on Unix-based systems, including Red Hat Linux system file locks. Other examples of LOCK files include Mozilla's parent.lock file, which locks Windows Firefox profiles, and Apache Web Server lock files, which are created using the LockFile directive."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -48,10 +57,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/lock",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.160Z"
+      "url": "https://fileinfo.com/extension/lock",
+      "retrieved_at": "2025-11-01T22:32:42.593Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.160Z"
+  "last_updated": "2025-11-01T22:32:42.593Z"
 }

@@ -1,9 +1,48 @@
 {
   "slug": "dae",
   "extension": "dae",
-  "name": "DAE File",
+  "name": "Digital Asset Exchange File",
   "summary": "Learn about .DAE files and view a list of programs that open them.",
   "developer": "Sony",
+  "category": "3d",
+  "category_slug": "3d",
+  "mime": [
+    "model/vnd.collada+xml"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "The COLLADA format was originally developed by Sony and is now jointly supported by Sony and the Khronos Group. It was designed to provide a standard schema that 3D graphics applications could use to save files, so those files could easily be exchanged among applications."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open DAE files and view their contents in Adobe Photoshop (Windows, Mac) and Apple Preview (Mac). If you want to edit a DAE file, you should open it in an Autodesk application that supports DAE files, such as Autodesk Maya (cross-platform), or Blender (cross-platform).",
+      "You can also import DAE files into many applications for use as 3D assets. For example, the ArcGIS suite (Windows) allows users to import and use DAE format assets."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -88,44 +127,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open DAE files and view their contents in Adobe Photoshop (Windows, Mac) and Apple Preview (Mac). If you want to edit a DAE file, you should open it in an Autodesk application that supports DAE files, such as Autodesk Maya (cross-platform), or Blender (cross-platform).",
-      "You can also import DAE files into many applications for use as 3D assets. For example, the ArcGIS suite (Windows) allows users to import and use DAE format assets."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABnElEQVR42u2Wa5aDIAyFYWW6M8POdGVOo14IJDDY4syf5hyrh4f3My/qnXM7ETm2eZ6dtGma4vO2bWp+hPlegGOx9/8H4H14/dKzADUIFuclPDc6DE2AdZ0PYZ5fluUYC8E7sXw8wGl0iZx3iMdNA3NBAZzPFF0Ok/kQQnA0yA0ZAN/5suKsK2JEUhIAXIx1K8l0X1gLCOpOVuTVASAHpfV4gkHK+XaIUl7xXgXAouuKL6MuEEDwWLtj5uKskwHkLnKZe3vr316nk5rF+YOVB2RCOlydVivnEgribFWA6K7XTyBSHpEibPu+xMS0RCFcghoAUoiiA6z+gDxA3GtnCoQtL2UAvFCXFoBICZSJeLZuqkbNqgyzCmoQ2F/rkAmiFKtDFVVAxwt0LesXtCDOPEgbWnlslGGKM+oa4ZG9oQVxwrtmOBoANoj+OqpC2G36NkDdIyWEBPm9G94GSCDIjxIC/xd4/EGA5A30cglR5sxDADYEegREe+P/JsCFcZ3nJQTmeu1tAAmBnnHz7PocABD1g+oPAD61L8AX4AeC51hNgskVoQAAAABJRU5ErkJggg==",
-      "alt": "Rhinoceros"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFe0lEQVR42rVXXWwUVRQ+d3bWtlta2i6lu+0KLHRbLN3ZbjCiD0ZjlKRvhh8xEIREiBKDAYmiKQTCg/FBBOVNS5UYE6MgMSAsQdsXQ4ql2p0d1koBaSF2KS1b+r+dmXs8s4WlZWfbbqtfMnvPzr1zv2/OuefeMwymgYgkZYuM5TEV8nQRCzji43R7MYCwFJGXA7Ai+p/PALKo7QeGB7t1/XBlODww1dzM7CY+48qK3Mt1gyC4gTG3gGwRB1zMgC2ibjddeSnmQxpPv8gQ4GueYX2zpLl5aFIBN32+kgyAVTrnT9PjxuRuNvZGpuIgKxMtJSVgcRmXC+J2yZgtlhSDfv1v7N25C/RIRCARQQH46iJFuZZSwL2KioIRi/UoIr4cvyOKaHE6IInENUYk5Bek9NwD8GgU+97bjbHGi4aIXhHYxkIleNpUwD4K5LZK6QDZNbZNr/Gcd3Yycv2kBNMC5zhw5AgO1dYxNCAIHzpCwX00MU9aAxGvdz0g+0ZwFGFh4CyAxfKoAOTRu6C3d4DW0UFtO2o32plONt65g3MPHwJrVZVgpmOkvh77avYADgwac57TtNENrtbWngkCbvn9PlHVWww7591dXLDbWZzoRjtoRKp3tAP2D6T0CpuTjQW1X6C4bJmpCBLKe3fsBK3tKoUE2+laU6wolxICsLQ0oyvTNkDxEmfqcSE3F/PralEsLzcVgcPD2Ld/P46cCVA/jlCQt80Phb5KvFXEK7VSFpTPJuxCXh4WHKtDy+IlCREYi6F27RpoV9rouoLDJ35gODTEaCE0FCvyCwkBtyulE+SBVWmzMkp5yvuECLsds9atRXI309rayP03jQWZFD564pgzJG9+KMDrO0Brde8kVCjMs4O1rAwtHg8TPR4QPaUgut1w7/0PMFbfIEAaYIwdKBrLijF0+XzruI7fxjttNhRLl0CcpMyD4n1CcrH5zjk0iHfXbzRcPX0RAmxxyPLRh2tAkiopQ0OGPeft7Tx765a03oiyBqOvrgfe3z+tPYQ2m5VFSsv5xGCsqHjstiAah4fVsnABzjt9amzcBBYN9e5usDgcpiSjFy7w3m1vMTSJ+aOwCLC0UJb/mjAwUimFqXnCsPNrP+cUCqb+2QpaOAzx9mobxU4A+6kfweJ0mpIM1X3J+w8dnsp7qGdY5xgH1UQBXul7SsU1U6nPXPkSn3vwYyExWaQT1JACWiiEo0GZqb//key98ewM7lAGzE8a1ClJ+ylB900jhGjbuAG1m7eYpijAu3vSOjtIQDMJeDJJQJe3ai1H/l06k80EtHGcdCqhVUkCevz+ClXVL//fAgifOhR5R5KAS8uXW10xNUpm9qNP0CaEdOKB1V8FsZ/OghoOz/jI5oztKg4FP0kSYIAy4Tg1qw0747lneUZ1NTOIRSpGHowfbWzk0a1vpLVPjAcKsNYpy8fNBdyvDQzbtu4VnrOnxowI727aDLTaZ+QFFIWnnC0tTaYCelaU5qqDti7DAUJ+HhY21I8vUFC9fh20piYcPnWaqZRyMxHAgDuoTrxtKsBAp1c6Q2dctWHn7K3hoHMYbWpio5eaAaPR2ZZrI0WKbDNq55QCuiql1+m8rp0lkSmItc2pyGUPvWHmAb+/UFD1f2ZTIaUEg18cIfnFSQUYiHh9DVRoPP/fcIKmA/5GZdhZqo5POoPBy+P6zNFZ6dvOAD+bKSl9SXUSYYDq8cAo4+cXhkLRFOLM0SNJLpVjB8S/taYGhUulkRdofECzsICrpSUI9xfaFN5JDTodG2mKFSlJGVDBR28psEBG5uDP9otX+9L11KQCOr3e3QzZR+NuxeiJX4k4oBLxAllW0iVMS0BXVZWH6/wcIgS4AIGoptVP55M7HfwLZuhjP6MgXBcAAAAASUVORK5CYII=",
-      "alt": "SketchUp"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAG+0lEQVR42u1Wa2xT5xl+7ONbbIixnTjOBeLUqXOpSkrUlK2bSlWoSDU1aRmXkqalRZsQFG0CRgYb+ZOm0sqPblIbqZrEqqmrSIZUiDapHQGaQovoLYWwECCENYmJExI7NvY5PsfXve8J7sTGJa2K9qef9Omco/N97/N8z3v7NPg/D833BG71I9/prDIaDL+wWq2BxqcaLy9/bHkok8lAq9XGnE5nIh6PZ2hZVKPRZGhCp9PBZDJFc3Jy0vPmzUNubm6mu7tbeHXv3mJabI5EIscvXLgwM3cC+fm/pdk+f/58efXq1cHa2iURi2Ue/5IJKJFOp5mAyAQMBgOMRiPoKdG/lMVipm8Tent7tR0dHUWKophC4dBrJz8+uW9OBPLy8pxms3nI4/HkOgsKsH7dM1hgWwCbzYZkMoVEIg5BENS1DG6xWEAnZ3WyRMCqXLlyBV2dnTjT34+lS5eO0zrPli1b5DsSsNsdv6uo9P7aoDegvr4eixcvBikBgQBS6TSRSKpgTMJAgCaaer1+9pvA+Z1dQm7CqVOncOzYMTQ2NuDq1amfbtiw4d3bErDb7Pl2h32ooqLCysbWrVsH9ilJC5IdHAepVEoFYxAGy4Jnv7PvTHJ0dAwDA/9EVVUVgsGZv61du6bh9gTs9r11dXU7FUXGI8sexQM1NXRyARotCPw/67Ig/MzO2W8tAQvQ8pM2jYyMIBaL4XqcxIeGhqq2b99++aYErAuszpLikouVlZVWWZZBwQeKhdmfjE5+1dIUdAw4C86+zrrjv7+j0SgpMKqqwurR4TA5Odm6efPm9psSsNlte+tX1u/0+/0gFbBkyRIKuIRqNAvOxrPycowYtSbVLRodcdRmviZAa9LDw8MaSj8Nr2e3UUqTkpqLE/6J53bt2vXpDQQoQl108vPV1dVW/7gfa9auUf3OBPg0bJS/WRGNRhs3G3OuTYQnEieixwq9pd5zbqX8PWvSFiCA8Rk5OEqHuJ/2/l6SJC3vZ5JG2m+nTBJF8Q+UDdtuIEAp10ap0kqMsbCkBFXV1SprnplMGpz2dJKBgoKCDeYc83QsEQv88ZOOFamHYwcTXskfNoTbBiv9b2bt7d69+zQdqiarIO/n+HA4HGlyxc6mpqbXbiDwZEND+aqnn+7p7+93T09Pq8Cc05zjLB1VNlBBSZOxVa2trd28p/SFwpUVjZ73XQUuBLVTGHIOnPGHp3/5k9fXr3jIu3RPUAogRSmbSqXVGGAilGWvkN1Xtm3fFvufGGhpaVlMfvuEFppYbp4MXlxcrL6zjKFQaNKoN933q5YdAdfztsfvf+K+w+XucsSpOMUyIiZNflj9djjPLkJ+2IWkkISkSEiREgaT8Tgd6LGX215O3TINKfK3ktSvc2Xj4OGTU01QKx0T4JQKB8Jvt/ym5fnSjYUralfW9HhKy6EkFcjpGOKpOCJCCMFEEOaLVpRd8kJQ9JDj8rTBoH/wjTc6Ru5YCdc3NXUb9PoGDryysjKUUExQeVZdwiR8Ph98/rFlf588NON9xNPvdVdASSiIpSSIySjCyRAi6WsIW4JwfFqERefuRSwtrfrTW28dnFMveLa5OZ98d6aosKjwHs89qvzUmOByub4usX2f9108Onp4s6lWd6Susk5DJ0Q0EUVIDmImMQNZE4PFR7FzNg/h6Wsdf3nn7a03w7plN3y2qWk5ReuRkoUL1VLMwchqcEPiyBYjIg71HvziqsdXs6L2cZ2kxBCQphAi8IAYgOasHja/E9MzU32JZOIH+/fvT3wjAjw2vrixjapjK1cwo9p0THCXubGQSNmsNhw6ehCnDZ+h4UdPQZJFTEh+DP7rHFJ9WpRqyzARnIhS0NZ2dXUN3QrjtgReemkr9dxMLynwYz3X+etByUp4y714/+R7GDB8iRef+DkuBy6h5/hhzB+2w+uswPjUOPeB5gMHDrxzO4w7Xsl27NhRRu33tE4Qco3XU5NJFLmK8MWlzzCSN4y6Bx7CR//4GEVTi1DuvhfhaAjnz5/f19nZ+bM72Z/TnZCq2kZqTvvU+k9djWeePQ/BaAAfiD3I1znhnCyCPd+BZCrBF5FBWVHq/trVJX4nBHjs2dO6n1r0M2pjomEwzpIQNAJsC2z4yvcVxsbGuE5INH9I0vfPxe6cCbS1tdnSmUyfJIpuLqs8OTMKCwvVBsWZQb2e68UuqqivztXuN7qWt7e3L6NCdJQalsCA3C+4PpS6S9UM4TbusDsebX6u+cO7QuC6K9p0OqGV74XUnKgwCTDlmBEOhzETDMI35vtzz5GeF+4agU2bNmnphnNCkZWHlbhCtx5RikSuDVCQfh6T5ZNiVDw1OHju0l0jwONBGnR7WhONRE/Q5aKPWvj4t7HzrQl8l+N7Av8GEMn+PzSHUY4AAAAASUVORK5CYII=",
-      "alt": "GLC_Player"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "ClockStone FBX Viewer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Autodesk FBX Review"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFfElEQVR42sVXC0xTVxj+ahFoBSmg+Cro1DnrSCoOEBDjBUsiyGuTZUbURSDxlW1hzQbC1BnFLL6yZGG+5iIBiWEYFAqbioBFssEYgw1EViaCgNZJeQhlvMrOPdjb1RYcbnZf8ufc85//nu87/3/uuffyYIAbMQEsg0FiTewFj5gjsavEvCxErscdYoE8oVC4Q6vVnrQwuR7JPJlMllNYWBj5f7AHBQWV8KKiooqzs7MZSxDyeDx4enoiPDycmru7+8sX4OrqipCQEEq8bl0wxOJ53JhOp3s5AqTS5Yh8MxLhYWHw8PCgK38W9+7dQ3l5+X8jgM/ns/VEGCFkUysWi83GVVdXIy0tDSUlJaipqcHo6OiLC5BKpQgODsGGqA14Y8UKs6vs6urClSu5UCpv0pbtG2MSAqysrODvv5qmNnR9KBYtWmg2jl2ZUqlEeno6vZ4Iz82As7MzoqOj4eXljdDQ9RCJRGZXWVpairy8PNo2NzdTv3C+BMIFEtjMHCvHwB+t6PyxECPanucLYNOZkJCIvXs/ATmoTEhZEoUinxIqFHmcX+Qpg71kJRy9ZBzxs3hYcB7301P0XVMBAkKY/U02eXSCjW7Mz8/HrVu3KHFLSwv1Wc+YC+uZ88iqnkCSkvO8KnLoUOag+UwSyYAZAQUFBWRzjZF3d3cjKSmJ+thrFnZLvTB9RSBtBSTNI309qN3lC2la3T8WwKLlbDI0pTnGArbFxODrc+doQG1tLSIiItHT0w2RXzimLfWkxHzhdJPJGve/DZeInXRcj0dXTuLx9QvQkZpPIfeIYw9iukcAN97fcoe9zyDAViBAMzkcXFxcaMDatTIqgsWyr36ecDWNietht5zB7I0fGWp98Sg0hZlcny+0x+LP8mmrR0N8gEEAu9szMjLoQFZWFuLj47nAJacqx6+n4gw1K+c5WJhi2JDa335C64ntRrGz3t0PB98wrt92OsEg4Nix45DLP6QDcXFxuHr1Ghc4/+Bl9Kuq0FdzE/Y+ZLXSNdQ/1PEA9w9vhq6/l4ubSoRwmdm10kjAjKh4iAI3cv0HZ/cYBJSVlcHPz48OLFjwitnVzohOpgL0YAUMtqmg/UWJ3vICOL31ARwC3uHG1WcT6RiLKQI7zE1IMxLY9J6vQUBHhwZOTo5obW3FmjWMEbFEIkF9fT3cPi8dtxQ9JVkY+L0aM2MPc74nN7PQmfMFbBYvh2Pk+7AWv8qN9VV8i8cXDo8JUCgUDPkqogcQeUMhMXEPyIcKvL29yUtGRsnZJ8Jp2yEI3P3HFfEwZSNmJ1/k+rr+J09Xb28Ux5bs0Yk4DHc8GBNQW1fH1N++jYkgkwVBM8cd1gulGKgrw+DdGgj9N8AuaCsX0511BDavr4ItsfHAkneelmOovdFwFGs0GubGjRsmwW1tbaisrERRUREqKirRZyWErlPNjVsv84XDlk+5fq/iFG3tQneYJR6s/57EnMRof99T71MBNra2TAZ5e7Fob29Hbm4uIS1GQ0MDNwHPdhoc5Oeh61JjiEw0RTQLUyW+dHNxGUjdTVuH3akcKRtLrelXjP7ZaySKO4rJrmeOHj1CnezjmJmZabICG2YTbAM2jZvaofofoL14iF6zcWx/5OHdCcvKlcDHx4eRy+XUuX37TlRVVZkET/s4g2TBzuxEQzVFGPiOHOEDfZgMOAExMTGM/gW0ZctWqFQqk2Cegwv4r3mDv8TbUNeWOow0VECnbpoU8d8kjAk4fvwE4+bmSl2rVq1+wclegJ7NwIEDB4r37dvHsA6VqhGxsXEWFEA2Ial3Mfl0pgIuXbqE1NQvLZsB8nOQQ05A+mu2efNWqNXqfzvv5AQMDw9HkO/6y9euXQfZCxYjZ6HTjUb+BSRehuBG/xiGAAAAAElFTkSuQmCC",
-      "alt": "Flare3D"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -134,29 +139,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/dae_2459.png",
+      "alt": "Screenshot of a .dae file in Adobe Photoshop",
+      "caption": "DAE file open in Adobe Photoshop"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.780Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.138Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.780Z"
+      "url": "https://docs.fileformat.com/3d/DAE/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.138Z"
     },
     {
-      "url": "https://fileinfo.com/extension/dae",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.780Z"
+      "url": "https://fileinfo.com/extension/dae",
+      "retrieved_at": "2025-11-01T22:32:42.138Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.780Z"
+      "retrieved_at": "2025-11-01T22:32:42.138Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.780Z"
+  "last_updated": "2025-11-01T22:32:42.138Z"
 }

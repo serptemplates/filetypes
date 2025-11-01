@@ -1,9 +1,11 @@
 {
   "slug": "usdz",
   "extension": "usdz",
-  "name": "USDZ File",
+  "name": "Universal Scene Description Zipped Format",
   "summary": "Learn about .USDZ files and view a list of programs that open them.",
   "developer": "Apple and Pixar Animation Studios",
+  "category": "3d",
+  "category_slug": "3d",
   "programs": {
     "windows": [
       {
@@ -24,6 +26,45 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The USDZ format was introduced in 2018 to address issues with the deliverability of files saved in the Universal Scene Description (USD) format, which is a format developed by Pixar Animation Studios to streamline their 3D graphics pipeline. USD files include different \"layers,\" which consist of various source files that collaborating artists can non-destructively work on individually and combine to make up a single scene. These varying layers in the USD format can be defined, packaged, assembled, and edited by various 3D applications utilized in the Pixar 3D graphics pipeline.",
+      "Due to the various 3D assets that make up the layers in the USD format, it is difficult to view a USD 3D object or scene as one object. Therefore, Pixar worked with Apple to develop the USDZ format as a more distributable version of the USD format.",
+      "USDZ files are packaged as Zip archives but are not compressed or encrypted. The USDZ format simply packages the USD, USDA, or USDC file, which stores information about the 3D object or scene, along with any PNG, JPEG, M4A, MP3, and WAV assets.",
+      "You will most likely encounter a USDZ file if you are a developer creating 3D objects or scenes for a website or an application. However, you may also download a USDZ 3D model online or receive a USDZ file via email. One common usage of the USDZ format is to enable users to view 3D objects in augmented reality (AR). For example, an online furniture store could publish a 3D model of a couch in USDZ format that a user can view in his living room to visualize what it would look like in his space.",
+      "iPhones and iPads running iOS 12 or later support USDZ files utilizing the AR Quick Look tool. Various mobile apps bundled with iOS and iPadOS, such as Safari and Messages, come with the AR Quick Look feature.",
+      "There are several other programs available for macOS, iOS, and iPadOS that also support the USDZ format. Apple Preview, which comes bundled with macOS, can open and view USDZ files. Reality Composer is another app developed by Apple that can view USDZ files, as well as edit, save, and convert them to other formats. It is available for iOS and iPadOS and is bundled with Apple Xcode 11 for macOS.",
+      "Apple also introduced Reality Converter in January 2020. This program enables you to drag-and-drop 3D file types, such as .OBJ, USD, and .GLTF files, into the app to convert and view the files in the USDZ format."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .usdz is an uncompressed and unencrypetd ZIP archive for the USD (Universal Scene Description) file format that contains and proxies for files of other formats (such as textures, and animations) embedded within the archive and runs them directly with the USD run-time without any need of unpacking. USDZ files are packages whose design is based on the new Ar-level abstraction of a package. Usdz was registered with IANA and has media type name of model and a subtype name of vnd.usd+zip and its details can be found as on IANA registration page.",
+      "A USDZ file contains a 3D scene or object saved in the USDZ Universal format, which is developed by Apple and Pixar Animation Studios. It is an uncompressed and unencrypted .ZIP archive that stores a Universal Scene Description (.USD, USDA, or USDC) file, which includes 3D geometry and shading data. USDZ files may also contain .PNG and .JPEG image textures and .M4A, .MP3, or .WAV audio files utilized in the 3D object or scene."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
@@ -63,23 +104,26 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/3d/usdz/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     },
     {
       "url": "https://fileinfo.com/extension/usdz",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.885Z"
+  "last_updated": "2025-11-01T22:32:42.225Z",
+  "mime": [
+    "model/vnd.usdz+zip"
+  ],
+  "containers": []
 }

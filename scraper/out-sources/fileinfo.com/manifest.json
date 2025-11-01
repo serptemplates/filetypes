@@ -7,6 +7,18 @@
   "type_name": "Windows Application Manifest File",
   "summary": "Learn about .MANIFEST files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A MANIFEST file is an XML document that describes the manifest, or package contents, of a Windows software application. It is used by various Windows technologies for configuring and deploying software, including ClickOnce and the Common Language Runtime (CLR). MANIFEST files are often seen with the compound \".exe.manifest\" file extension."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MANIFEST files are typically only used by software developers. However, end users may also see MANIFEST files in temporary directories after opening ClickOnce applications from a link in a Web browser. You generally should not manually edit or delete these files, or the ClickOnce application may stop working.",
+      "You can visit the Manifest File Schema page to view the XML schema for MANIFEST files.",
+      "NOTE: MANIFEST files are often compiled into .CDF-MS files, which allow the underlying software to have faster access to the application parameters. Therefore, you may see CDF-MS files alongside your MANIFEST files."
+    ]
+  },
   "programs": {
     "windows": [
       {

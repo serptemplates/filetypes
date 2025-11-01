@@ -4,8 +4,20 @@
   "slug": "panic",
   "extension": "panic",
   "name": ".PANIC File Extension",
+  "type_name": "Kernel Panic File",
   "summary": "Learn about .PANIC files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "File created by the Unix kernel when it detects a fatal error and cannot recover; contains information about the state of the machine when the panic occurred, such as program and memory dump information; used to report and debug computer crashes in Linux and Mac OS X systems; saved in a plain text format."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Mac OS X creates a PANIC file when a kernel panic occurs. If this happens, the screen will dim and the following message will be displayed (in multiple languages): \"You need to restart your computer. Hold down the Power button for several seconds or press the Reset button.\"",
+      "In Mac OS X, PANIC files may be viewed using the built-in Console application by expanding the DIAGNOSTIC INFORMATION → System Diagnostic Reports location in the Log List."
+    ]
+  },
   "programs": {
     "windows": [
       {

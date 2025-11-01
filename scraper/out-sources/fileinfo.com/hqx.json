@@ -7,6 +7,20 @@
   "type_name": "BinHex 4.0 Encoded File",
   "summary": "Learn about .HQX files and view a list of programs that open them.",
   "developer": "Yves Lempereur",
+  "more_information": {
+    "description": [
+      "An HQX file is an encoded text file created by BinHex, a binary-to-text encoding system available for Classic Mac OS. It contains data that has been compressed and encoded from an 8-bit binary format into a 7-bit text format. The HQX format is useful for transferring binary images, documents, and multimedia as text in email attachments."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Converting a binary file to an HQX file helps to maintain the file's integrity when it is sent (or otherwise transferred) over the Internet. Each HQX file contains its associated binary file's data fork, resource fork, and metadata, converted to plain text and compressed into a single file.",
+      "BinHex 4.0 files take up more disk space than the binary files from which they were created. They always begin with the line:",
+      "(This file must be converted with Binhex 4.0)",
+      "However, you can open HQX files and retrieve the binary files they contain with utilities other than BinHex.",
+      "NOTE: An HQX file may also contain the text of an email in which the HQX file was sent."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an HQX file with Apple Archive Utility (Mac), The Unarchiver (Mac), or Corel WinZip (Windows). Doing so will extract the binary file the HQX file describes."

@@ -1,23 +1,37 @@
 {
   "slug": "apm",
   "extension": "apm",
-  "name": "APM File",
+  "name": "Aldus Placeable Metafile Image",
   "summary": "Learn about .APM files and view a list of programs that open them.",
   "developer": "Aldus Corporation",
-  "programs": {
-    "windows": [
-      {
-        "name": "GIMP",
-        "url": "https://fileinfo.com/software/gimp/gimp"
-      },
-      {
-        "name": "XnViewMP",
-        "url": "https://fileinfo.com/software/xnsoft/xnviewmp"
-      },
-      {
-        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
-        "url": "https://fileinfo.com/software/windows_file_viewer?ref=4167&b=1"
-      }
+  "category": "image",
+  "category_slug": "image",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "WMF files use an 18-byte header that contains metadata about the file. APM files instead use a 22-byte header. Because APM files use a non-standard header, Windows API metafile functions, such as GetMetaFile(), CopyMetaFile(), and PlayMetaFile, cannot read the files correctly. To use APM files with these functions, developers must first strip the files' headers using the program wmapmf.exe."
     ]
   },
   "how_to_open": {
@@ -38,6 +52,22 @@
       ".JP2 - JPEG 2000 Core Image",
       ".JXR - JPEG XR Image",
       ".WEBP - WebP Image"
+    ]
+  },
+  "programs": {
+    "windows": [
+      {
+        "name": "GIMP",
+        "url": "https://fileinfo.com/software/gimp/gimp"
+      },
+      {
+        "name": "XnViewMP",
+        "url": "https://fileinfo.com/software/xnsoft/xnviewmp"
+      },
+      {
+        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
+        "url": "https://fileinfo.com/software/windows_file_viewer?ref=4167&b=1"
+      }
     ]
   },
   "images": [
@@ -68,15 +98,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "url": "https://docs.fileformat.com/image/apm/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     },
     {
-      "url": "https://fileinfo.com/extension/apm",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "url": "https://fileinfo.com/extension/apm",
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.912Z"
+  "last_updated": "2025-11-01T22:32:42.251Z"
 }

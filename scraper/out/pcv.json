@@ -1,7 +1,7 @@
 {
   "slug": "pcv",
   "extension": "pcv",
-  "name": ".PCV",
+  "name": "Picocrypt Encrypted File",
   "summary": "Learn about .PCV files and view a list of programs that open them.",
   "developer": "Evan Su",
   "programs": {
@@ -14,6 +14,17 @@
         "name": "Corel WinZip",
         "url": "https://fileinfo.com/software/corel/winzip"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Picocrypt is a multiplatform encryption tool used to secure files. To encrypt a file or folder, users drag and drop it into Picocrypt, enter the password they want to use to encrypt it, and select Encrypt. Picocrypt then encrypts the file or folder using XChaCha20 encryption and saves the result in a PCV file.",
+      "If a user drags a folder into Picocrypt, all that folder's files will be compressed, encrypted, and saved in a .zip.pcv file. When the user decrypts this file, Picocrypt will produce a .ZIP archive, which much be decompressed to view the original files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A PCV file is a file that has been encrypted by Picocrypt, a simple encryption tool. Picocrypt appends the .pcv extension to each file it encrypts, producing an extension like .png.pcv. You can decrypt a PCV file in Picocrypt, provided you know the password used to encrypt it."
     ]
   },
   "how_to_open": {
@@ -60,8 +71,11 @@
     {
       "url": "https://fileinfo.com/extension/pcv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.235Z"
+      "retrieved_at": "2025-11-01T22:32:42.683Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.235Z"
+  "last_updated": "2025-11-01T22:32:42.683Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

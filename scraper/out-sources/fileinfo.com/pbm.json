@@ -7,6 +7,18 @@
   "type_name": "Portable Bitmap Image",
   "summary": "Learn about .PBM files and view a list of programs that open them.",
   "developer": "Jef Poskanzer",
+  "more_information": {
+    "description": [
+      "A PBM file is a black-and-white image saved in the Portable Bitmap format. It consists of a plain text header and a grid of 0s and 1s that specify the color of each of the image's pixels. 0s represent white pixels; 1s represent black pixels."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Jef Poskanzer developed the PBM format as part of his Netpbm project. PBM is an intermediate format, used primarily when converting images from one format to another. In the middle of a conversion, Netpbm may save an image as a PBM file. It then uses the PBM file to create the converted image. (Netpbm uses the .PGM and .PPM formats in similar fashion.)",
+      "Two variants of the PBM format exist. Files saved in the original PBM format, identified by the magic number P1 in their header, always contain only one image. Files saved in the more recent version of the PBM format, identified by the magic number P4 in their header, can contain more than one image. Also, P1 PBM files can contain whitespace in their raster grid; P4 files cannot.",
+      "NOTE: Each PBM image's width and height is specified in its header. For example, an image that is 50 pixels wide by 65 pixels tall will include the numbers 50 65 in its header."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a PBM file with many image viewers and editors, including XnViewMP (multiplatform), Inkscape (multiplatform), Apple Preview (Mac), or Adobe Photoshop (Windows, Mac).",

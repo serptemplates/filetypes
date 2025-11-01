@@ -7,6 +7,16 @@
   "type_name": "Database Variable Field File",
   "summary": "Learn about .DBV files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A DBV file contains information that defines database fields of variable length, including the size of text and binary (BLOB data type) fields, in .DBF Database files. Users typically do not open DBV files. Instead, when a user opens a DBF file that references the DBV file, the software automatically loads the information in the DBV file to format the database fields."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Various xBase-compatible programs support DBV files, including dBase and multisoft FlagShip. You will likely encounter DBV files in the same location next to the DBF files that bear the same name. For example, a database.dbf file may reference the database.dbv file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open DBV files. Instead, the program (e.g., dBASE or multisoft FlagShip) opening the DBF database automatically loads the information in the DBV file."

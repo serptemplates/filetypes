@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/video/vob/index.html",
   "slug": "vob",
   "extension": "vob",
-  "name": "VOB File",
-  "source": "fileformat.com"
+  "name": "What is a VOB file?",
+  "summary": "What's on this Page",
+  "category": "video",
+  "category_slug": "video",
+  "technical_info": {
+    "content": [
+      "When a DVD is opened on a computer, VIDEO_TS is the top level directory with AUDIO_TS. AUDIO_TS is empty and is not used. Inside the VIDEO_TS directory, there are VOB, BUP, and IFO files. VOB files contain the MPEG content. These are broken into 1 GB or less sized chunks so that these are compatible with all the operating systems. The IFO files contain information regarding the menus and the title structure. The BUK files are backup files of the IFO files with the same name. These files are meant to be kept in a separate area physically so that in case the IFO file is damaged due to physical damage to the DVD, the BUK file can provide the same information."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "VOB files are stored typically in the VIDEO_TS directory on a DVD with a .vob extension. VOB files contain video and audio data as well as other data like menus and subtitles. VOB is based on MPEG-2 program stream format but it has additional limitations and specifications in private streams. VOB files are a strict subset of MPEG program streams so all VOB files are MPEG program streams but all MPEG program streams are not VOB compliant."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

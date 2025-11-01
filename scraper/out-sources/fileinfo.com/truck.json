@@ -4,8 +4,32 @@
   "slug": "truck",
   "extension": "truck",
   "name": ".TRUCK File Extension",
+  "type_name": "Rigs of Rods Vehicle Definition File",
   "summary": "Learn about .TRUCK files and view a list of programs that open them.",
   "developer": "Rigs of Rods Team",
+  "more_information": {
+    "description": [
+      "A TRUCK file is a plain text file that contains data used to simulate a vehicle (or other object) in Rigs of Rods, a free and open-source vehicle simulator. It defines a vehicle's characteristics, including the vehicle's name, type (truck, plane, train, boat), and composition. TRUCK files may also use the .boat, .airplane, .train, .machine, .car, .trailer, .load, or .fixed extensions, depending on the type of vehicle they describe."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Rigs of Rods is a vehicle simulator that implements soft-body physics to simulate vehicle motion and collisions. You can create custom vehicles with Rigs of Rods, then save them as TRUCK files. After saving a TRUCK file, you can share it with other Rigs of Rods users, who can then import the vehicle into their simulator installations.",
+      "Each TRUCK file must contain the following sections:",
+      "Title: Sets the vehicle's name",
+      "Globals: Sets the vehicle's mass and material",
+      "Nodes/Nodes2: Sets the vehicle's structural definition",
+      "Beams: Connects the vehicle's nodes",
+      "Cameras: Positions the vehicle in space; used to measure the vehicle's pitch and role and orient its cameras",
+      "Cinecam: Sets the position of the in-vehicle camera",
+      "End: Tells Rigs of Rods to stop processing the TRUCK file",
+      "Additionally, each TRUCK file contains specific subsections you can use to determine what type of vehicle the file defines. For example, a TRUCK file that defines:",
+      "A Rigs of Rods truck contains an engine section",
+      "A Rigs of Rods airplane contains a turboprops, turbojets, or pistonprops section",
+      "A Rigs of Rods boat contains a screwprops section",
+      "TRUCK files also usually contain additional metadata sections, which specify a vehicle's author, ID, category, file format version, and other information."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a TRUCK file, view its contents, and edit its contents in any text or source code editor, such as Microsoft Visual Studio Code (cross-platform) or GitHub Atom (cross-platform).",

@@ -1,7 +1,7 @@
 {
   "slug": "natvis",
   "extension": "natvis",
-  "name": ".NATVIS",
+  "name": "Natvis VC++ Debugger Visualization File",
   "summary": "Learn about .NATVIS files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,20 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You can find NATVIS files for common types that come with Visual Studio in the following path:",
+      "%VSINSTALLDIR%\\​Common7\\​Packages\\​Debugger\\​Visualizers",
+      "You can open and edit NATVIS files in Visual Studio. After changing the file and saving it, the modifications will be reflected in the \"Watch,\" \"Locals,\" etc. debugger windows. You can also open and modify NATVIS files with a different program than Visual Studio but the modifications will not be automatically reflected. You need to use the .natvisreload command in the \"Watch\" window or restart the debugging session. NATVIS files may be defined per-project, -user, or -system or embedded in .PDB files.",
+      "You can add a NATVIS file to a C++ project by selecting the project node in the \"Solution Explorer\" then clicking Add → New item → Visual C++ → Utility → Debugger visualization file (.natvis).",
+      "NOTE: The NATVIS file was introduced to replace the autoexp.dat file, which was previously used by earlier versions of Visual Studio."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A NATVIS file is a debugger visualization file used by Microsoft Visual Studio, a software development tool used to create Windows programs and web applications. It contains one or more Type elements, or visualization rules, in XML format. NATVIS files are part of the Visual Studio Natvis framework that enables developers to define how native types are displayed in debugger windows, such as \"Locals\" in the Visual Studio debugger."
     ]
   },
   "images": [
@@ -46,8 +60,11 @@
     {
       "url": "https://fileinfo.com/extension/natvis",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.196Z"
+      "retrieved_at": "2025-11-01T22:32:42.636Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.196Z"
+  "last_updated": "2025-11-01T22:32:42.636Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,7 +1,7 @@
 {
   "slug": "wt",
   "extension": "wt",
-  "name": ".WT",
+  "name": "WiredTiger Data File",
   "summary": "Learn about .WT files and view a list of programs that open them.",
   "developer": "MongoDB",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13659&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WiredTiger initially developed the WiredTiger (WT) data format and released it in 2012. MongoDB then acquired WiredTiger in 2014 and made the WiredTiger storage engine its default engine in version 3.2.",
+      "MongoDB creates WT files to store data that makes up its databases. The software may also store other types of data in WT files, including metadata for the complete system and historical data for tracking previous versions of database tables."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A WT file is a data file used by the WiredTiger storage engine included with MongoDB database software. It contains a collection of data blocks in the WiredTiger (WT) format, a proprietary format MongoDB uses as tables to make up a database. The first block in a WT file is a WT_BLOCK_DESC block that includes metadata to verify the legitimacy of the data and prevent corruption, followed by blocks storing data that makes up the table."
     ]
   },
   "how_to_open": {
@@ -48,8 +59,11 @@
     {
       "url": "https://fileinfo.com/extension/wt",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.380Z"
+      "retrieved_at": "2025-11-01T22:32:42.878Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.380Z"
+  "last_updated": "2025-11-01T22:32:42.878Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -4,8 +4,24 @@
   "slug": "service",
   "extension": "service",
   "name": ".SERVICE File Extension",
+  "type_name": "Systemd Service Unit File",
   "summary": "Learn about .SERVICE files and view a list of programs that open them.",
   "developer": "Lennart Poettering and Kay Sievers",
+  "more_information": {
+    "description": [
+      "A SERVICE file is a configuration file used by systemd, the init system included with many Linux distributions. It contains instructions for starting, stopping, restarting, and reloading the service, as well as information about when the service should start automatically (for example, at boot). SERVICE files define how systemd should manage a specific service or background process."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "systemd organizes everything it manages into \"units,\" and a SERVICE file is a type of \"unit\" file. The .service extension tells systemd that the file describes a service, and other unit files may use different extensions, such as .socket for sockets or .target for target groups. System administrators and software packages use SERVICE files to control system services consistently across distributions that use systemd.",
+      "By default, system-installed SERVICE files are stored in the following location:",
+      "/​lib/​systemd/​system/​",
+      "Custom or overridden SERVICE files that an administrator creates are stored in the following location:",
+      "/​etc/​systemd/​system/​",
+      "NOTE: Many Linux distributions use systemd as their init system, including Red Hat Enterprise Linux, Fedora, CentOS, Ubuntu, Arch Linux, Mageia, and CoreOS."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open and view SERVICE files with any text editor since they are plain text, but you should only edit them when necessary. Most users manage services using systemd commands such as systemctl start, systemctl stop, and systemctl status rather than modifying the files directly.",

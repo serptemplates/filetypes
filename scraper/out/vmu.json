@@ -1,7 +1,7 @@
 {
   "slug": "vmu",
   "extension": "vmu",
-  "name": ".VMU",
+  "name": "NanoZoomer Uncompressed Virtual Microscope Specimen",
   "summary": "Learn about .VMU files and view a list of programs that open them.",
   "developer": "Hamamatsu",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12070&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Hamamatsu NanoZoomer is a high-speed, high-resolution digital slide scanner that pathologists use to create and examine digital images of pathology specimens. NanoZoomer saves slide specimen images in either the VMS, VMU, or .NDPI format. These formats are largely the same, except that VMS images are compressed and VMU images are not.",
+      "VMU files are image archives that contain two or more JPEG images. One JPEG contains a high-resolution copy of a scanned slide. The other contains a lower-resolution copy. If the high-resolution image would be larger than 65,535 pixels on one side, NanoZoomer instead saves the image as multiple JPEGs. Slide-viewing software automatically combines these JPEGs into one slide image, using metadata saved in the archive's index file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A VMU file is a whole slide image created by Hamamatsu NanoZoomer, a pathology slide scanning device. It is an archive that contains an index file and two or more .JPEG images. In contrast to .VMS files, VMU files are not compressed, so they are often quite large."
     ]
   },
   "how_to_open": {
@@ -47,8 +58,11 @@
     {
       "url": "https://fileinfo.com/extension/vmu",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.358Z"
+      "retrieved_at": "2025-11-01T22:32:42.851Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.358Z"
+  "last_updated": "2025-11-01T22:32:42.851Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

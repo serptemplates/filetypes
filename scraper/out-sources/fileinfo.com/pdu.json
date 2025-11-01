@@ -4,8 +4,20 @@
   "slug": "pdu",
   "extension": "pdu",
   "name": ".PDU File Extension",
+  "type_name": "LG Backup Extracted MMS Message",
   "summary": "Learn about .PDU files and view a list of programs that open them.",
   "developer": "LG Electronics",
+  "more_information": {
+    "description": [
+      "A PDU file is an MMS message extracted from an LG backup (.LBF) file. PDU files are stored in .ZIP archives. You can extract PDU files from an LBF file using a hex editor, such as HxD. However, there is no known way to open PDU files and view their contents."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "LG smartphone users can use the LG Backup application to back up their phone's applications, calendar entries, contacts, settings, and messages in an LBF file. When they do, their MMS messages are saved in the LBF file, as a series of PDU files. These files are named 0.pdu, 1.pdu, 2.pdu, and so on.",
+      "Using a hex editor and a complicated series of instructions, users can extract PDU files from their LBF file."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "At the moment, there is no known way to open PDU files. If you still want to attempt to view the files' contents, you can open them in a universal file viewer, or you can change the files' extension to .txt and open them in a text editor, such as Microsoft Notepad (Windows), Apple TextEdit (Mac), or GitHub Atom (cross-platform). However, keep in mind that your PDU file's contents will likely not be useful."

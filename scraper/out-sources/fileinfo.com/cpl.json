@@ -7,6 +7,18 @@
   "type_name": "Windows Control Panel Item",
   "summary": "Learn about .CPL files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A CPL file is a Windows Control Panel item. It contains a .DLL or .EXE file that allows a user to adjust a subset of their Windows settings. Windows automatically loads the appropriate CPL file when you open an item in Windows Control Panel."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The Windows Control Panel, which is included in every Windows installation, is a program that allows users to adjust many of their Windows settings. For example, users can use Control Panel to configure system and security settings, add devices and printers, uninstall programs, and change their computer's date and time formats.",
+      "When a user accesses a Control Panel feature, Windows loads the corresponding CPL file in Control Panel. For example, when a user clicks Uninstall a program in Control Panel, Windows loads the Programs and Features item from AppWiz.cpl.",
+      "NOTE: CPL files are stored in the C:/​Windows/​System32 directory. Some CPL files may open settings screens outside Control Panel itself."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "For the most part, you should never need to directly open a CPL file. Instead, open Windows Control Panel and navigate to the feature you want to access.",

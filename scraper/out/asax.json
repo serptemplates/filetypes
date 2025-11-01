@@ -1,9 +1,11 @@
 {
   "slug": "asax",
   "extension": "asax",
-  "name": "ASAX File",
+  "name": "ASP.NET Server Application File",
   "summary": "Learn about .ASAX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,40 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "ASAX files are stored in the root directory of the ASP.NET application and have the name Global.asax. By default, any direct URL requests to ASAX files are rejected. Additionally, external users cannot view or download their source code.",
+      "NOTE: The Global.asax is optional in ASP.NET Web applications."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .asax extension is a file used by ASP.NET applications that resides on the server side. It contains code for responding to application-level and session-level events raised by ASP.NET or by HTTP modules. This also includes handling certain events when the application launches or shuts down. ASAX files are optional and only a single ASAX file is added to web applications to handle the application-level events and errors at the global level. Unlike ASPX pages, ASAX files do not contain any code to implement the functionality of the application.",
+      "File used by ASP.NET Web applications; contains program code that is used to respond to application-level events raised by ASP.NET or HttpModules; parsed and compiled at application runtime; used for handling events during application initialization and shutdown, as well as processing global exceptions and errors."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +80,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/asax/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.913Z"
+      "retrieved_at": "2025-11-01T22:32:42.252Z"
     },
     {
       "url": "https://fileinfo.com/extension/asax",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.913Z"
+      "retrieved_at": "2025-11-01T22:32:42.252Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.913Z"
+  "last_updated": "2025-11-01T22:32:42.252Z",
+  "containers": []
 }

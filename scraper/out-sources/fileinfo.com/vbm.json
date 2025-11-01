@@ -4,8 +4,19 @@
   "slug": "vbm",
   "extension": "vbm",
   "name": ".VBM File Extension",
+  "type_name": "Veeam Backup Metadata File",
   "summary": "Learn about .VBM files and view a list of programs that open them.",
   "developer": "Veeam Software",
+  "more_information": {
+    "description": [
+      "Backup file created by Veeam's virtual machine backup and recovery software; contains metadata describing a backup that was performed and stored in a .VBK full backup file (and also in .VRB incremental backup files)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VBM files may be included with VBK and VRB backup files. While they are not necessary to restore a backup, they provide much faster performance during the backup because they store cached information that the software can use rather than rediscover in the backup files. For this reason, if you have both a VBK and a VBM file, you should choose the VBM file when performing a restore."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,7 +1,7 @@
 {
   "slug": "fdf",
   "extension": "fdf",
-  "name": "FDF File",
+  "name": "Acrobat Forms Data Format",
   "summary": "Learn about .FDF files and view a list of programs that open them.",
   "developer": "Adobe Systems",
   "programs": {
@@ -64,38 +64,20 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "FDF files are commonly processed on Web servers by .CGI scripts."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Text file format used for data exported from .PDF form fields; typically smaller than PDF files, because they only contain form field data, not the entire form; can be created in Acrobat by selecting Advanced→Forms→Export Forms Data from the menu bar."
+    ]
+  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat Reader"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC3UlEQVR42sWXTUhUURTH/zPOp75xIiKhFIyCFlJuJ1u0CHVcFEXmQiQXDVhUmPbhwqKPndWoBYF9uJBso2BFSJJRGMQMTBGkg20qxCBbFDnN5Izz1T0PXozavW+eb5r+8JjLffee83vn3nPuHcOP2tIpAOvZk0J+ZWfPKwMD+MYaa/PsXNFrAphjjZLVzDZX1cKy7zBSXz8j+c6HuO8p0uF5LSb8ugBsnnOw1rcs6Ut+CCLBYJKTfsQDL4D44j8EaGqHtalNOCbuH0ds4CqSn6ZzD2DefQCFZ3pVxyXeTCDS2ZR7ANP2HSi6MqQ6Lh36jlBDZW4ACjZXyOtMMhRKKB6ZVp1DeyJytkE/gP1UNyzVBxF7cBfRW5fkPueTGUZiFM5bHB/GgrddH4DiXBEZJMO0BLQUIsUGexAd7F49wHLnmRCmnXUwu6qFAJHzzUgEnq8OwNrYCtuh00v6qPBQwVH2A/2KFD7m/rNvNAEYS0rhGPCt6E/NzSJ83I2iriFV56R5dxnvlRjA3toFS10j16hBKoa97RrMbBl4omj9bObuETGAdHOM+4XhozVydTM41qB4eJILIEhBdQDn2CzXMBkl42rjMlNWE4Bx4yY4+l9yDUfveRG736saKUo/SkPNAGplNjZyB9Hbl+W2qBZkRkoTgHW/B7aWC1yAdDiEX10n5PwWnYqh+gp5rGYAm6eTnfVHoCYqRgbJ+VfY2MN+RPsuiqbzAbIpsUoRik88hnnXnhXvIh0Noq8XA1ABokIkElU4e7t3xQbM0rkYQJRaimiDJT8GId0YhXFDuVbnfICC8q2Q+p6pzqb8pjw3lm2B1POIVb1ZLc75ANnedDKPWVqudCSkxTkfIJvLJklw18tPBJLv3yJ8cm/uAZQomNklRC0TBEetPgBFBGBy1cBUWSVHho7gvAIsF+W8iV3BTNtcSH2ZwcL1Dt0AC6xh02NFh4IEMMoa6/B//p4HfgPEAoRETlJK7gAAAABJRU5ErkJggg==",
-      "alt": "Nitro PDF Professional"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Foxit PDF Reader"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC4UlEQVR42u2WW0gUURjH/7MzO+66F5ZCSSJZKinygkahZUIPUg+WFT1UFEZlCabQQ9kFIQPJzKAHTcKsSIjqoSjLh9AHYbGU6OYlisokCUMplnVWd3dmdjq7seLmzI4yrhL4h2WWc853vh9nvu9/hpKIMI+iFgD+awBJ8kPocUAXlwh6iZ3sRs0tAP/hJbiL+4P/dYsSwKRkg0neCD356Wzx0QcQBvowWr5ddk63NAkxm3bBsK0o4sloewXjHJxH0yKuMZfdgT4tJzoAATmL10Ny/VKcN5XUgs3Kmz0Aob8b3tYmxBZcAGU0wVWxG+KXt4rrLZVPwdiTZwdA+PoeXHUBpLFRMGs2wHzyFsZunoWv47FijK2xB5TBpB1gcvKQ9GtzQS9bBc+Ta/Kbk06w1XVG3HdaAOLwd1Lt+SS5a2KMzd4J35s2UDFGSM4R2ThmdSYs5fe0A3C1peC7WsLGDPnF0Gfmgas5RACGZePYzXtgKqzSBiDxvr+tJvjCxgPJzaW1EIf64TqVKxtr3HuG+MAxbQDij89wnd46ZZy2p8Ba2RzwYziL0sNqIyTTietg123RBuB73Qr31aKpgUYLbA3vgi7nIvUhDvROWWOtfg6aOKImAM+zBozfvyQ7Z61pA52wXLZGwLCw3egGpWe1AbgbSZ+3P5APJm1mLrsNvrMFnub6sLlQjahJFWC0ch+Ej10KAHGQvONgiR9MNiMq1kocsBl0fKJ2AGdJlmKbGXYchzj4CTzxgwkZzbCQC4hJylBNrgogedxwFqYqBgfMKPZIFbgrhyGQb4OZJlcFiHTfB0SvzIC14iG5lt0YazqPmNwDYFakTzu5KoCPFJe7rlQ52LoYtvpXM0o4IwC+2wHu8sGIGwRbjRx9VAACU96WBngdj+AnjigntfteE8Bk+Ukn8H0vIPR2BJ/S76HguPncXejJt0HUAf45Gog/v8E/MggmNYe4sW6OAWZRCwDzDvAHI1Z+sK/RUs8AAAAASUVORK5CYII=",
-      "alt": "Nitro Reader"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Foxit PDF Editor"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABUElEQVR42mN0cHBgZGBgYAJiEM0MZdMD/AcRjEAHMJ//r7f+568/qoxgy/8zMTMzMsyri//mbaP7n4mREaz695+/DJ75k9nO3XjMwvD/PyOltnOwMT/QZ7ySA3IA64mfWrd//P4rj6xgeWsyQ4SbKYomjZB6hpsPX1LF+9ysjG9N2W9UgBzADnWALD0dwMPG8MmE7eY8kAM4T/7UuvX9918ZOjvgK9ABqwbaAWtJcsCeU9cZ3nz4QrJl+87cZJi9/gjlDiAXrNh1miGyeu6oA4aBAwJKpjPcePACr2WaChIM63syaeMAYrKhurw4w401jaMOGHXAqAOGqQMGvCAiF4w6YGg6IC3QlsHRRI0qDiCrSUZrMOqAweIASMfkEoPOpl+/fmszMvxnZ4T0kGkOuFn/fVRnvLMN5AAOIB/UMbUBYk0g5mOgfRf9HxD/BuKvACDY/8dvyW2yAAAAAElFTkSuQmCC",
-      "alt": "Bluebeam Revu"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABEElEQVR42mNkQAN621+pAalAIJYDYhYG6oM/QPwIiNdf8hS7xYhmuTqQKgBiJhpYjA7+AXEfugMqgZQCHSyHgbuMUIttgVQzEFsz0C7Y3wDxaSB+jizOCLTcBsjYC8RsdPAxKNi3IjsC5IAjUJ/TC7wC4g3IDvgBpNnp6ABQKMxBdsB/OloOA7MGvwMueohSbIv+jtejDiDfATQGow4YAg4Y8EQ46gAag1EHDAEHDHgiHCkO+DPQaeDeQDoA1DidCHLATwb69AlgAGRxNRBvAPYNb4AccBTIsaKjA04BLTaHcRih3bJ9DLTpkqGDv0DsBnTAPrgDQATQEfZAqg2IjRlo00kBRfM5IK4CWn4AWQIAzIWi59NFU6oAAAAASUVORK5CYII=",
-      "alt": "Wondershare PDFelement"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -104,24 +86,46 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.793Z"
+      "retrieved_at": "2025-11-01T22:32:42.148Z"
     },
     {
       "url": "https://fileinfo.com/extension/fdf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.793Z"
+      "retrieved_at": "2025-11-01T22:32:42.148Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.793Z"
+      "retrieved_at": "2025-11-01T22:32:42.148Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.793Z"
+  "last_updated": "2025-11-01T22:32:42.148Z",
+  "mime": [
+    "application/fdf",
+    "application/vnd.fdf"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

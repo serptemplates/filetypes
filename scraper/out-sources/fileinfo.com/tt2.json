@@ -4,8 +4,22 @@
   "slug": "tt2",
   "extension": "tt2",
   "name": ".TT2 File Extension",
+  "type_name": "Microsoft Temporary Font Installation File",
   "summary": "Learn about .TT2 files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A TT2 file is a temporary file created by various versions of the Microsoft Office Installer, which includes Microsoft Office 2013 and 365, and Microsoft OneNote. It contains information about a TrueType Font .TTF file during the Microsoft Office installation process. The file is supposed to be deleted at the end of the installation process, but may be left due to a bug in the Installer utility."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The Microsoft Office Installer is packaged with the Office download and designed to install the software suite. During the installation process, the utility installs the programs included in the Office suite, such as Word, Excel, PowerPoint, and OneNote.",
+      "As the utility installs the programs, it creates temporary files to hold data for files while they are being copied and placed in the correct directory. Once the copying is complete, the utility deletes the temporary files.",
+      "Due to a bug in the Microsoft Office Installer, the TT2 files storing data for TTF files are left, typically in the user's C:\\​ drive. This does not mean that the TTF files were not placed in their correct locations. Instead, it means that the TT2 files are left to be found by a user instead of being deleted.",
+      "NOTE: You can delete the TT2 file since it contains duplicated data from a TTF file. Or you can restart Windows and the TT2 files will be removed."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "TT2 files are not meant to be opened. However, since the TT2 file stores data for a TrueType Font TTF file you can rename the .tt2 file extension to .ttf, then open it with a program that supports TTF files, such as FontForge (multiplatform) or Apple Font Book (Mac). Or you can simply delete the TT2 file since it contains duplicated data from a TTF file."

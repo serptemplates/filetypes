@@ -4,8 +4,20 @@
   "slug": "ffindex",
   "extension": "ffindex",
   "name": ".FFINDEX File Extension",
+  "type_name": "FFmpegSource2 Media Index",
   "summary": "Learn about .FFINDEX files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "Index of keyframe/sample positions created by FFmpegSource2, a wrapper library for FFmpeg; contains data used for seeking media during playback; created when audio or video files are opened if an index does not already exist; may also be created manually with the FFindex function."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FFmpegSource2 creates FFINDEX files by default when media files are indexed. You can disable the default behavior if you don't want these files to be created.",
+      "FFmpegSource2 is also available as a plugin for the program Avisynth and creates FFINDEX files in the same manner."
+    ]
+  },
   "programs": {
     "windows": [
       {

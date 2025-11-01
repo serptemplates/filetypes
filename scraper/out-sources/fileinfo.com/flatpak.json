@@ -4,8 +4,23 @@
   "slug": "flatpak",
   "extension": "flatpak",
   "name": ".FLATPAK File Extension",
+  "type_name": "Linux Flatpak Application Bundle",
   "summary": "Learn about .FLATPAK files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A FLATPAK file is an application bundle used to distribute and install an app on a Linux-based platform. It stores the build of an app in the Flatpak container format, which allows it to be distributed to and installed on various distributions of the Linux operating system."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The Flatpak format is designed to simplify the process of Linux app distribution. It also allows the app developers to more easily reproduce bugs experienced by users and be more in control of updates to keep users current with the latest version of the app.",
+      "FLATPAK files are typically used to distribute single-file bundles for users who are looking to directly download the application or share it via email. In these cases, developers can use the build-bundle or build-import-bundle commands in the Linux terminal (with Flatpak installed) to create the Flatpak bundle file.",
+      "Users can install FLATPAK files on their Linux-based system (with Flatpak installed) by typing the following command in the Linux terminal:",
+      "$ flatpak install [filename].flatpak ([filename] should be replaced by the actual name of the file)",
+      "NOTE: Linux app developers may also distribute their apps as .FLATPAKREF files. This file type is commonly used when developers publish their apps to Flathub, which is an online app store and build service for Linux."
+    ]
+  },
   "programs": {
     "windows": [
       {

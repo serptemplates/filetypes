@@ -1,7 +1,7 @@
 {
   "slug": "mdmp",
   "extension": "mdmp",
-  "name": ".MDMP",
+  "name": "Windows Minidump",
   "summary": "Learn about .MDMP files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,17 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You can analyze an MDMP file in Microsoft Visual Studio by selecting File → Open Project, setting the \"Files of type\" option to \"Dump Files,\" choosing the MDMP file, clicking Open, then running the debugger. A simulated process will be created by the debugger, which will stop at the instruction responsible for the crash.",
+      "NOTE: MDMP files can also be analyzed using WinDbg and WinDmp, a debugging program that is part of the Microsoft Windows SDK."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MDMP file is a compressed data file created by Windows after a program error or crash. It contains data \"dumped\" from the program's memory space, which includes information about the error that can be used for debugging. MDMP files are commonly created along with an uncompressed .HDMP file and can be sent to Microsoft as part of a bug reporting process."
     ]
   },
   "images": [
@@ -51,8 +62,11 @@
     {
       "url": "https://fileinfo.com/extension/mdmp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.175Z"
+      "retrieved_at": "2025-11-01T22:32:42.611Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.175Z"
+  "last_updated": "2025-11-01T22:32:42.611Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

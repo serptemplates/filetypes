@@ -4,8 +4,21 @@
   "slug": "vsmeta",
   "extension": "vsmeta",
   "name": ".VSMETA File Extension",
+  "type_name": "Video Station Metadata File",
   "summary": "Learn about .VSMETA files and view a list of programs that open them.",
   "developer": "Synology",
+  "more_information": {
+    "description": [
+      "A VSMETA file is a metadata file created by Synology Video Station. It is a binary file that contains identifying information, such as a title and description, for a video that can be accessed in Video Station. Video Station creates a VSMETA file when a user manually overwrites a video's Video Station metadata."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Synology Video Station is a video organization and playing application that allows users to watch videos stored on devices other than their current computer. For example, a user might use Video Station to connect their laptop to the Movies directory on their home computer, so they can play movies stored on their home computer while they travel.",
+      "Typically, Video Station automatically retrieves metadata for a user's videos from the Internet. It then stores all that metadata in one local database file. However, if a user manually edits the metadata Video Station has assigned to a video, Video Station will create a VSMETA file that contains the manually-edited metadata. Video Station will then use the VSMETA file to show the edited metadata. VSMETA files also store a copy of their associated video's Video Station thumbnail image.",
+      "NOTE: Video Station saves VSMETA files in the same folder as the file's associated video. So, if you have edited the metadata of videos stored in different locations, you will encounter a VSMETA file in each location."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "VSMETA files are not meant to be opened. If you want to edit the metadata a VSMETA file contains, locate the associated video in Synology Video Station (Web) and edit the video's metadata there."

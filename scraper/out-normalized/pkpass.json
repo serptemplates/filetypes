@@ -1,9 +1,28 @@
 {
   "slug": "pkpass",
   "extension": "pkpass",
-  "name": "PKPASS File",
+  "name": "Apple Wallet Pass",
   "summary": "Learn about .PKPASS files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "other",
+  "mime": [
+    "application/vnd.apple.pkpass"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Apple Wallet is an iOS and watchOS app that iPhone, iPad, and Apple Watch users use to, among other things, store electronic copies of tickets, passes, and coupons on their iDevices. These copies are saved and downloaded as PKPASS files. In Apple Wallet, the information a PKPASS file contains appears as an infocard, which typically includes a QR code that can be scanned to verify a user's pass.",
+      "While PKPASS files are primarily intended to be stored on iDevices and imported into Apple Wallet, you can view the files' contents on other devices. PKPASS files are simply .ZIP files that contain images, pass formatting information, and a digital signature used to authenticate a user's pass. (You can learn more about PKPASS files' contents here.) If you want to view these constituent files, rename your PKPASS file to use the .zip extension and then open it using any Zip decompression program.",
+      "NOTE: Apple Wallet was previously known as Apple Passbook. Apple Passbook also used PKPASS files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a PKPASS file by sending it to an iPhone, iPad, or Apple Watch that has Apple Wallet installed and then tapping the file. Your iDevice will then allow you to add the PKPASS file to your Apple Wallet, where the file will appear as a pass.",
+      "Also, Android users can use Google Wallet or Above Mobile Limited PassWallet to open and manage PKPASS files on their devices."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -16,20 +35,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open a PKPASS file by sending it to an iPhone, iPad, or Apple Watch that has Apple Wallet installed and then tapping the file. Your iDevice will then allow you to add the PKPASS file to your Apple Wallet, where the file will appear as a pass.",
-      "Also, Android users can use Google Wallet or Above Mobile Limited PassWallet to open and manage PKPASS files on their devices."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -58,20 +67,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.850Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.198Z"
     },
     {
-      "url": "https://fileinfo.com/extension/pkpass",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.850Z"
+      "url": "https://fileinfo.com/extension/pkpass",
+      "retrieved_at": "2025-11-01T22:32:42.198Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.850Z"
+      "retrieved_at": "2025-11-01T22:32:42.198Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.850Z"
+  "last_updated": "2025-11-01T22:32:42.198Z"
 }

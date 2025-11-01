@@ -4,8 +4,23 @@
   "slug": "trash",
   "extension": "trash",
   "name": ".TRASH File Extension",
+  "type_name": "ChromeOS Trash Storage",
   "summary": "Learn about .TRASH files and view a list of programs that open them.",
   "developer": "Google",
+  "more_information": {
+    "description": [
+      "On ChromeOS devices, the .Trash folder is a hidden folder that stores trashed files and metadata about those files. This folder is similar to the ~/​Trash folder found on Linux systems. ChromeOS uses the files and metadata stored in the .Trash folder to allow users to restore trashed files from its primary Trash folder."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In December 2022, Google added a Trash folder to ChromeOS's Files app. From the Trash folder, users can restore deleted files (for up to 30 days after deletion).",
+      "To ensure users can restore deleted files, ChromeOS retains a copy of those files in a hidden .Trash folder, located within the Downloads folder. ChromeOS also creates related .TRASHINFO files in this folder, which record:",
+      "The location at which a file was stored before it was deleted",
+      "The time at which the file was deleted",
+      "Trashed files are stored at .Trash/​files. TRASHINFO files are stored at .Trash/​info. Users will not see the .Trash folder or its subfolders unless they've chosen to show hidden files (by selecting Show hidden files from the Files app's three-dot menu)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "After choosing to show hidden files in the ChromeOS Files app, you can open and navigate the .Trash folder as you would any other folder. To restore trashed files, you should use the Files app's primary Trash folder."

@@ -1,9 +1,21 @@
 {
   "slug": "node",
   "extension": "node",
-  "name": ".NODE",
+  "name": "Node.js Binary Addon File",
   "summary": "Learn about .NODE files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Web and app developers utilize NODE files to create addons for Node.js applications. These addons allow Node.js applications to link to libraries that provide functionality. A reusable addon project typically consists of a package.json file, a binding.gyp file, and C++ source code, whereas non-reusable modules don't need the package.json file.",
+      "To create NODE files, the developers first install the \"node-gyp\" utility bundled with Node.js using the following command:",
+      "npm install -g node-gyp",
+      "Then, the developers create binding.gyp files that describe the build configuration of the Node.js module. They then use the node-gyp configure command to create the proper build files and utilize the node-gyp build command to create the addon.node file.",
+      "NOTE: To load an addon as a Node.js module, use the require() function."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,10 +52,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/node",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.210Z"
+      "url": "https://fileinfo.com/extension/node",
+      "retrieved_at": "2025-11-01T22:32:42.647Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.210Z"
+  "last_updated": "2025-11-01T22:32:42.647Z"
 }

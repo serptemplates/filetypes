@@ -4,8 +4,20 @@
   "slug": "uexp",
   "extension": "uexp",
   "name": ".UEXP File Extension",
+  "type_name": "Unreal Editor Asset Export File",
   "summary": "Learn about .UEXP files and view a list of programs that open them.",
   "developer": "Epic Games",
+  "more_information": {
+    "description": [
+      "A UEXP file is an asset export file created by Unreal Editor. It contains asset data associated with a corresponding .UASSET file, which contains the asset's file header. UEXP files are found in .PAK files that contain cooked Unreal Engine assets."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "A developer creating a video game with Unreal Editor can cook assets they're using in the game, which strips out some pre-processing data. When a developer does this, the asset is transformed from a single UASSET file into a set of three files: a UASSET file, a UEXP file, and a UBULK file. These files are often saved in a PAK archive.",
+      "The UEXP file contains the data used to load and show the asset in-game. The UASSET file contains the asset's file header, and the UBULK file contains the asset's bulk data."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "UEXP files are not meant to be opened. To use the asset a UEXP file is associated with, move all of that asset's files, including its UASSET and UBULK files, into your content folder. The asset will then appear in the Unreal Editor Content Browser."

@@ -4,8 +4,21 @@
   "slug": "phar",
   "extension": "phar",
   "name": ".PHAR File Extension",
+  "type_name": "PHP Archive",
   "summary": "Learn about .PHAR files and view a list of programs that open them.",
   "developer": "Greg Beaver",
+  "more_information": {
+    "description": [
+      "File packaged in the PHAR (PHP Archive) format, which can be created using the Phar PHP class; stores a collection of files and supports bzip2 and gzip compression as well as a checksums for the archive; used for distributing and running PHP applications using a single file."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PHAR files are similar to Java's .JAR files and can be run using PHP. An example of a common PHP application that is distributed as a PHAR archive is PEAR (PHP Extension and Application Repository), a package manager for PHP extensions.",
+      "PHP Archive files are compatible with APC (Alternative PHP Cache), an \"opcode cache\" that optimizes application performance by caching the compiled versions of code. phpMyAdmin, a commonly-used front end for MySQL, has been measured with a 6x speedup when run as a PHAR file.",
+      "NOTE: Phar, the PHP component that reads and writes PHAR files, is included with PHP 5.3."
+    ]
+  },
   "programs": {
     "windows": [
       {

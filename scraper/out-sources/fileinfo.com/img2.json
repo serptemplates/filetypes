@@ -4,8 +4,21 @@
   "slug": "img2",
   "extension": "img2",
   "name": ".IMG2 File Extension",
+  "type_name": "iPhone Firmware Image",
   "summary": "Learn about .IMG2 files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An IMG2 file is an encrypted iPhone OS 1.1.x system firmware image for an Apple iPhone device. It stores core system software and data that Apple packages in iPhone software update (.IPSW) files users install on their devices when applying an update. Apple replaced IMG2 files with .IMG3 files to store iPhone 2.0 system firmware."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "For iPhones running OS 1.1.x, Apple used IMG2 files to store system information that users would download to install iPhone OS 1.1.x system updates. When installing the software update, the S5L8900 application processor in the iPhone parses the file and loads its information.",
+      "IMG2 files store various information, including system software, resource files, and images. The files are also encrypted with the 0x837 key to protect their contents.",
+      "NOTE: Since Apple replaced IMG2 files, the format is now obscure, but iPhone users looking to jailbreak iPhones and flash old firmware onto them may still encounter IMG2 files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "IMG2 files are not meant to be opened manually. Instead, they are packaged with iPhone OS 1.1.x system updates that Apple devices unpack and install automatically."

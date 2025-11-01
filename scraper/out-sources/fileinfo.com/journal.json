@@ -4,8 +4,24 @@
   "slug": "journal",
   "extension": "journal",
   "name": ".JOURNAL File Extension",
+  "type_name": "Linux Journald Event Log",
   "summary": "Learn about .JOURNAL files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A JOURNAL file is a system and service log created by Linux. It contains a record of system- and service-level kernel, boot, and component events. Administrators can use JOURNAL files to troubleshoot startup or service issues."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Many versions of Linux use a system management daemon named systemd. Systemd includes an event logging service named journald. This service regularly produces JOURNAL files.",
+      "Each JOURNAL file contains a log of system- and service-level events. This log can include kernel and boot events, syslog events, and service events. It is saved in a binary format.",
+      "Journald typically saves JOURNAL files in one of the following directories:",
+      "/​run/​log/​journal",
+      "/​var/​log/​journal",
+      "Active user-level JOURNAL files are named user-####.journal. Active system-level journal files are named system.journal. Archived JOURNAL files have similar filenames, but their filenames also include an @ and several letters and numbers."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In a Linux system that uses systemd, you can use the journalctl command to view the entries a JOURNAL file contains. For example, you could use the command journalctl --file /path/to/your/journalfile.journal to view the log journalfile.journal contains."

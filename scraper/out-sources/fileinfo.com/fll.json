@@ -4,8 +4,20 @@
   "slug": "fll",
   "extension": "fll",
   "name": ".FLL File Extension",
+  "type_name": "FoxPro Dynamic-Link Library",
   "summary": "Learn about .FLL files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An FLL file contains a dynamically linked library created by Visual FoxPro, a database management program for Windows. It stores a compiled set of procedures, or functions, that can only be called from Visual FoxPro. FLL files are similar to .DLL files, which are commonly used in Windows, but FLL files can only be used with Visual FoxPro."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You most likely will only encounter FLL files if you work with Visual FoxPro database software. To call a function from an FLL file, you must first register the FLL file with a SET LIBRARY command that sets the library to the FLL file location. You can then call the functions in the library.",
+      "To register multiple FLL files, add the ADDITIVE keyword with the SET LIBRARY command and include the locations of the other FLL files. Functions in registered FLL files only remain available during the Visual FoxPro session."
+    ]
+  },
   "programs": {
     "windows": [
       {

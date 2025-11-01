@@ -1,9 +1,24 @@
 {
   "slug": "bup",
   "extension": "bup",
-  "name": ".BUP",
+  "name": "McAfee Quarantined File",
   "summary": "Learn about .BUP files and view a list of programs that open them.",
   "developer": "McAfee",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "BUP files are saved to the following directory in Windows Vista and Windows 7:",
+      "C:\\​ProgramData\\​McAfee\\​VirusScan\\​Quarantine\\​",
+      "The Quarantine directory on the local computer can become very large in size as more quarantined files are added. If you would like to remove the files manually, follow these steps:",
+      "Go to Security Center → Navigation → General Settings and Alerts → Access Protection.",
+      "Uncheck the \"Use Access Protection\" option.",
+      "Delete the files from the Quarantine directory.",
+      "You can restore files from a quarantined file using the Quarantine Manager. However, there may be instances where the file was already deleted by the McAfee product. In this case, you can manually restore the files by following the steps in this McAfee knowledge base article:",
+      "How to restore a quarantined file not listed in the VSE Quarantine Manager"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -60,10 +75,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/bup",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.992Z"
+      "url": "https://fileinfo.com/extension/bup",
+      "retrieved_at": "2025-11-01T22:32:42.368Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.992Z"
+  "last_updated": "2025-11-01T22:32:42.368Z"
 }

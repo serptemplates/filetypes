@@ -1,6 +1,48 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/aiff/index.html",
   "slug": "aiff",
   "extension": "aiff",
-  "name": "AIFF File",
-  "source": "fileformat.com"
+  "name": "What is an AIFF file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "The EA IFF 85 sets out an overall structure for storing data in files. An EA IFF 85 file consists of a number of chunks of data. A chunk is buliding block of AIFF file consists of some header information followed by data:\n\nAn AIFF file is a collection of a number of different types of chunks. There are two general types of chunks which are important to form an AIFF file chunk:\n\nCommon Chunk: Contains important parameters describing the sampled sound, such as it’s length and sample rate.Sound Data Chunk: Contains the actual audio samples. There are many other optional chunks that list instrument parameters, define markers, store applicationspecific information, etc."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Developed by Apple in 1988, the AIFF (Audio Interchange File Format) is a high-fidelity, uncompressed audio standard. Its underlying structure is based on the EA IFF 85 format from Electronic Arts, originally created for Amiga systems. This foundation provides exceptional flexibility, allowing the format to store monaural or multichannel sampled sounds at a wide range of sample rates and bit depths. A key characteristic of AIFF is its uncompressed nature, which results in significantly larger file sizes compared to lossy alternatives like MP3.\n\nA typical AIFF file contains 2 channels of CD-quality stereo audio, with a 16-bit sample size and a 44.1 kHz sample rate. This high quality means that even a brief 5-minute audio clip can consume approximately 50MB of disk space, a file size characteristic it shares with the similar WAV format."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "images": [
+    {
+      "url": "https://docs.fileformat.com/audio/chunk.png",
+      "alt": "AIFF Chunk"
+    }
+  ]
 }

@@ -1,9 +1,11 @@
 {
   "slug": "tgs",
   "extension": "tgs",
-  "name": "TGS File",
+  "name": "Telegram Animated Sticker File",
   "summary": "Learn about .TGS files and view a list of programs that open them.",
   "developer": "Telegram",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -32,6 +34,20 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The TGS file format imposes certain limitations on the TGS animated stickers creation. A TGS animated file:\n\nSticker/canvas size must be 512х512 pixels.Sticker objects must not leave the canvas.Animation length must not exceed 3 seconds.All animations must be looped.Sticker size must not exceed 64 KB after rendering in Bodymovin.All animations must run at 60 Frames Per Second.",
+      "Telegram provides animated stickers to allow you to enhance messages with animations beyond simple static graphics. The service originally only utilized .WEBP images for stickers but introduced the TGS format in July 2019 (version 5.9 of Telegram), which can store sticker animations at higher resolutions and smaller file sizes than the static WEBP stickers.",
+      "The TGS format is based on the Lottie library, which renders JSON-formatted data from Adobe After Effects animations. The format consists of a JSON text file exported from an animation in Adobe After Effects (with the Bodymovin-TG plugin) that is compressed with gzip compression as a .GZIP file. The text file stores information about the animation in JSON format, whereas the gzip compression reduces the size of the file.",
+      "TGS animated stickers cannot be larger than 64 KB or longer than 3 seconds and must be looped. Also, the sticker cannot go off of the canvas and the canvas size must be 512x512 pixels."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .tgs extension is an animated sticker file that was introduced by the cross-platform messaging service, Telegram. Animated stickers are used by messaging apps users to send more enhanced and lively content in messages unlike the static graphics that are still images. Telegram initially used the WEBP file format for still image stickers. The TGS file format can store animation data at higher resolutions and smaller file size as compared to the static WEBP stickers. TGS files can be opened using applications such as Telegram, 7-zip, Apple Archive Utility, and Corel WinZip.",
+      "A TGS file is an animated sticker used by Telegram, a cross-platform messaging service. It is saved in the Telegram Sticker (TGS) format and stores an animation that users can add to their messages."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "TGS files are not meant to be opened with Telegram. Instead, the files are typically only used by Telegram users creating their own animated sticker packs to be added to the messaging service. If you created a TGS animated sticker pack, you must send the /​newanimated command to the @stickers bot, then send the TGS files with a 100x100 pixels icon to successfully upload the pack to Telegram. After completing the upload you can use and share the sticker pack.",
@@ -43,6 +59,28 @@
       "You can use the website Emojibest.com to convert TGS files to the .GIF (Graphical Image Interchange) format. Additionally, PC users can use Ed Asriyan's Lottie Converter to convert TGS files to GIF file."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -71,15 +109,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/tgs/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.288Z"
     },
     {
       "url": "https://fileinfo.com/extension/tgs",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.288Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.934Z"
+  "last_updated": "2025-11-01T22:32:42.288Z",
+  "containers": []
 }

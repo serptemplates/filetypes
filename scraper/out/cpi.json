@@ -1,9 +1,11 @@
 {
   "slug": "cpi",
   "extension": "cpi",
-  "name": "CPI File",
+  "name": "AVCHD Video Clip Information",
   "summary": "Learn about .CPI files and view a list of programs that open them.",
   "developer": "Sony",
+  "category": "video",
+  "category_slug": "video",
   "programs": {
     "windows": [
       {
@@ -40,11 +42,47 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "CPI files do not contain any video data. Instead, they contain data about the video with which they are associated, such as the video's frame rate, resolution, bitrate, and recording date and time.",
+      "Camcorders that create CPI files can load this metadata and use it to organize MTS videos, as well as show information about those videos to users. Various video players and editing programs can also load, use, and show the metadata CPI files contain.",
+      "If your camcorder creates both MTS and CPI files, and you want to transfer your recorded videos to your PC, it's recommended that you always copy the entire contents of your camcorder's SD card to your PC. If you copy only the MTS files to your PC (or otherwise alter your SD card's directory structure), you'll break the association between your MTS files and their related CPI files. This can cause video metadata to not appear in video players and editors."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "CPI stands for “Clip Information” and is used to store metadata about individual video clips within an AVCHD directory structure. These .CPI files contain information about video clips, such as start and end times of each clip, format of video (resolution, frame rate, etc.) and other details.\n\nThe .CPI files are usually stored in subfolder within AVCHD directory structure on camcorder or other recording device. These files are essential for organizing and playing back video clips, as they provide necessary information for software and devices to understand and display video content correctly.",
+      "A CPI file is a metadata file that contains information about an .MTS video file. Various Sony and Panasonic high-definition digital video camcorders create CPI files alongside recorded videos. Usually, CPI files are stored in the ~AVCHD/​BDMV/​CLIPINF directory of a camcorder's SD card."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      ".CPI files are typically not intended to be opened directly by users. Instead, when you use video players or editors to work with AVCHD video content stored in .MTS files, associated .CPI file is automatically loaded if it is correctly linked to MTS file. In other words, these .CPI files serve as important behind-the-scenes data that helps video software understand and manage associated video clips. This linkage ensures that software can interpret things like clip information, video and audio formats and timestamps, making it easier for you to navigate and edit your AVCHD video content.\n\nPrograms that open or reference CPI files include\n\nAdobe Premiere Pro 2023 (Free Trial) for (Windows, Mac)Kdenlive (Free) for (Windows, Mac, Linux)",
       "CPI files are not meant to be opened directly. Various video players and editors load CPI files when you import a related MTS video (provided the CPI file is still correctly associated with the MTS file)."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -73,15 +111,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/video/cpi/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     },
     {
       "url": "https://fileinfo.com/extension/cpi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "retrieved_at": "2025-11-01T22:32:42.259Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.259Z",
+  "containers": []
 }

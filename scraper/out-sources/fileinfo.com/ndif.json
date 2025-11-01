@@ -4,8 +4,20 @@
   "slug": "ndif",
   "extension": "ndif",
   "name": ".NDIF File Extension",
+  "type_name": "Apple New Disk Image Format File",
   "summary": "Learn about .NDIF files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "An NDIF file is a disk image saved in Apple's New Disk Image Format (NDIF), which was introduced with Disk Copy 6.0, an older Mac Classic application. It compresses data in a dual-fork format, which is comprised of metadata in the resource fork and data in the data fork. NDIF files were used as an older format for mounting file systems on Mac computers."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The dual fork content makes NDIF files difficult for use in cross-platform environments. The NDIF format was replaced by Apple's UDIF format, which stores data in a single-fork format. NDIF files are not widely used anymore.",
+      "NOTE: NDIF files can be opened using Disk Utility, a disk image mounting program included with Mac OS X."
+    ]
+  },
   "programs": {
     "windows": [
       {

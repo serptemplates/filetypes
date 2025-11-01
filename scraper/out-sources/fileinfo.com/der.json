@@ -7,6 +7,18 @@
   "type_name": "DER Digital Certificate",
   "summary": "Learn about .DER files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A DER file is a digital certificate saved in the Distinguished Encoding Rules (DER) format. It contains a binary representation of the certificate. DER files are commonly used to store X.509 certificates in public cryptography."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Web servers use digital certificates to establish that a website is authentic and legitimate. When a user visits a certified website in their web browser, the web server passes the site's digital certificate to the browser. After the browser verifies the certificate, it shows the associated website. (If a browser cannot verify a certificate, it may instead show a page that says \"This website's certificate is expired.\")",
+      "Some digital certificates are saved in the DER format. Web admins, responsible for maintaining websites and web servers, are most likely to encounter and use DER files. Web admins can create DER files using OpenSSL, a secure network communication toolkit.",
+      "NOTE: Though most DER files are used as website digital certificates, DER files can also be used for other identification purposes."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use OpenSSL (multiplatform) to view the contents of a DER file. To do so, use the following command:",

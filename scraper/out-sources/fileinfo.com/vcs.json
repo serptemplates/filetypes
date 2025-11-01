@@ -7,6 +7,18 @@
   "type_name": "vCalendar Event",
   "summary": "Learn about .VCS files and view a list of programs that open them.",
   "developer": "Internet Mail Consortium",
+  "more_information": {
+    "description": [
+      "A VCS file is a calendar event saved in the vCalendar format. It is a plain text file that specifies an event's title, date and time, location, and other information. VCS files are similar to and have largely been replaced by .ICS files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The Internet Mail Consortium created the VCS format in 1996. Many calendar programs support or previously supported the VCS format, but it is most notably used by Microsoft Outlook. While most calendar programs have now removed the ability to export events as VCS files, Outlook still allows users to export and import VCS files. Additionally, some previous versions of Outlook could export events as either VCS or ICS files, but import only VCS files.",
+      "VCS and ICS files both begin with the line BEGIN:VCALENDAR. However, VCS files typically contain the line VERSION:1.0, while ICS files typically contain the line VERSION:2.0.",
+      "NOTE: Some VCS files may contain data that is encoded using quoted-printable encoding, and therefore is not human-readable."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a VCS file with Microsoft Outlook (multiplatform), Apple Calendar (Mac, iOS), Google Calendar (multiplatform), and several other calendar applications, to import the event it contains to your calendar.",

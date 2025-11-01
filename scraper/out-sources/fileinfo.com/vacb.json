@@ -4,8 +4,19 @@
   "slug": "vacb",
   "extension": "vacb",
   "name": ".VACB File Extension",
+  "type_name": "Virtual Address Control Block File",
   "summary": "Learn about .VACB files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A VACB file is a virtual address control block file. It typically contains cached information about a file's name and location. Memory dump extraction utilities such as Volatility can extract VACB files from Windows memory dumps."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "A memory dump is a snapshot of the data stored in a device's RAM at a certain point in time. Windows memory dumps sometimes contain VACB files. Each VACB file contains cached information a Windows PC was using to access a file or metadata. In the case of a file, this information includes the file's location and name."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "VACB files are not meant to be opened."

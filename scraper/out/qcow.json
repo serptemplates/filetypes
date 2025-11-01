@@ -1,7 +1,7 @@
 {
   "slug": "qcow",
   "extension": "qcow",
-  "name": ".QCOW",
+  "name": "QEMU Copy On Write Disk Image",
   "summary": "Learn about .QCOW files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=9400&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "QEMU differs from other virtualization policies that allocate fixed amounts of disk space, in which some of the empty space may go unused. QEMU's strategy delays allocation of storage until the disk space is needed, which allows for smaller file sizes.",
+      "NOTE: The QCOW format has been replaced by the QCOW2 format, which uses the .QCOW2 file extension."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Disk image file saved in the QEMU Copy On Write (QCOW) format, a format used by QEMU virtualization software; stores the contents of a virtual machine's hard drive; supports zlib compression and AES encryption of separate, independent clusters."
     ]
   },
   "images": [
@@ -42,8 +53,11 @@
     {
       "url": "https://fileinfo.com/extension/qcow",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.262Z"
+      "retrieved_at": "2025-11-01T22:32:42.718Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.262Z"
+  "last_updated": "2025-11-01T22:32:42.718Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

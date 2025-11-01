@@ -4,8 +4,20 @@
   "slug": "seam",
   "extension": "seam",
   "name": ".SEAM File Extension",
+  "type_name": "Seam Framework Java Servlet File",
   "summary": "Learn about .SEAM files and view a list of programs that open them.",
   "developer": "JBoss",
+  "more_information": {
+    "description": [
+      "File used by Java Web applications supported by the JBoss Seam Framework; stores a reference to a backend servlet, which processes requests to the Web application; used for serving pages to the user through a Web browser; often used with the JavaServer Facelets technology."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "While the \".seam\" extension is seen in Web browser URLs, it generally does not refer to an actual file on the file system. Instead, it usually is a placeholder for mapping URLs to backend servlets. The web.xml file of a Java Web application usually contains this mapping rule:",
+      "<servlet-mapping> <servlet-name>My Servlet</servlet-name> <url-pattern>*.seam</url-pattern> </servlet-mapping>"
+    ]
+  },
   "programs": {
     "windows": [
       {

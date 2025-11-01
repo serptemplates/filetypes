@@ -1,7 +1,7 @@
 {
   "slug": "dtsconfig",
   "extension": "dtsconfig",
-  "name": ".DTSCONFIG",
+  "name": "SSIS Package Configuration File",
   "summary": "Learn about .DTSCONFIG files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -14,6 +14,19 @@
         "name": "Microsoft SQL Server 2019",
         "url": "https://fileinfo.com/software/microsoft/sql_server"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The DTSCONFIG file is used to update the values of package properties and package objects at run time. the file is designed to provide flexibility when working with SSIS packages and are especially helpful when deploying packages to different environments as they allow values, such as server and database names, to be easily changed.",
+      "The DTSCONFIG file is made up of various elements. The DTSConfigurationHeading element stores the attributes and their values that define when and how the file is generated. The DTSCONFIG file also includes a Configuration element for each package configuration, which contains attributes and their values that are necessary to determine which property is being referenced. Each Configuration element has a ConfiguredValue element that features the property's actual value.",
+      "SQL Server is a relational database management system (RDBMS) application. SSIS packages are used to automate extraction, transformation, and loading (ETL) operations to and from a database.",
+      "NOTE: DTSCONFIG files often contain sensitive information, therefore, access to the location of the files should be restricted."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A DTSCONFIG file is an XML configuration file used to apply property values to SQL Server Integration Services (SSIS) packages. The file contains one or more package configurations that consist of metadata such as the server name, database names, and other connection properties to configure SSIS packages."
     ]
   },
   "images": [
@@ -46,8 +59,11 @@
     {
       "url": "https://fileinfo.com/extension/dtsconfig",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.038Z"
+      "retrieved_at": "2025-11-01T22:32:42.433Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.038Z"
+  "last_updated": "2025-11-01T22:32:42.433Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

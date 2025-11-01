@@ -4,8 +4,20 @@
   "slug": "luminar",
   "extension": "luminar",
   "name": ".LUMINAR File Extension",
+  "type_name": "Luminar 4 Catalog Database",
   "summary": "Learn about .LUMINAR files and view a list of programs that open them.",
   "developer": "Skylum Software",
+  "more_information": {
+    "description": [
+      "A LUMINAR file is used to organize images stored in a Luminar 4 image catalog. It contains a SQLite database that associates .TIFF images saved by Luminar with .STATE files that record the edits made to those images. LUMINAR files are stored within the corresponding Luminar catalog folder."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Luminar is a digital photo-editing application that allows photographers to make layer-based edits to their photos. Luminar 4 saves in-progress edits within Luminar catalogs, which are folders comprised of STATE files, TIFF files, and a LUMINAR file, among others.",
+      "The LUMINAR file is a SQLite database that Luminar uses to retrieve the TIFF and STATE files stored within a catalog and associate them with one another, so edited images appear correctly within Luminar. Note that, while you can use a LUMINAR file to open a Luminar catalog (as described below), LUMINAR files are not, themselves, catalogs. For example, if you move a LUMINAR file and then attempt to use it to open a Luminar catalog, Luminar will show an error message that says the catalog you are attempting to open cannot be found."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "LUMINAR files are not meant to be opened. However, you can use a LUMINAR file to open a Luminar 4 catalog, provided the LUMINAR file is stored within that catalog. To do so, double-click the LUMINAR file or select it after selecting File → Open → Catalog... from Luminar 4's menu bar."

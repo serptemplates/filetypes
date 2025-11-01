@@ -1,9 +1,32 @@
 {
   "slug": "vst",
   "extension": "vst",
-  "name": "VST File",
+  "name": "VST Audio Plug-in",
   "summary": "Learn about .VST files and view a list of programs that open them.",
   "developer": "Steinberg",
+  "category": "other",
+  "mime": [
+    "application/vnd.visio"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Steinberg developed the Virtual Studio Technology (VST) plug-in interface to allow Cubase users to create and install custom audio effects. For example, users can install VST plug-ins that emulate various instruments or produce unique reverb effects. Many other DAWs, including Ableton Live, Image-Line FL Studio, and Audacity, also allow users to install effects saved in the VST format.",
+      "Many VST files are packaged with accompanying FXP and FXB files. FXP and FXB files contain effect presets, which can be loaded in their associated plug-in. These presets allow editors to quickly begin using a polished version of the effect a VST file contains.",
+      "NOTE: The VST format was replaced by the .VST3 format."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use VST files to add additional audio effects in many Digital Audio Workstations, including:",
+      "Steinberg Cubase",
+      "Image-Line FL Studio",
+      "Ableton Live",
+      "Audacity",
+      "You can also open VST files with LMMS (Linux MultiMedia Studio) using VeSTige. However, you must change the file's extension to .dll before opening it."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -76,48 +99,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can use VST files to add additional audio effects in many Digital Audio Workstations, including:",
-      "Steinberg Cubase",
-      "Image-Line FL Studio",
-      "Ableton Live",
-      "Audacity",
-      "You can also open VST files with LMMS (Linux MultiMedia Studio) using VeSTige. However, you must change the file's extension to .dll before opening it."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADO0lEQVR42s2Xa0iTURjH/1MzMjErTVmy0jJlpC3K1IaIldOy8j4tsFILQ4QuilQGU8ogu1loVpZkSuWtGVleMrtouPJDaRDGwplkmZUxWUJFezvv3JaCu6rTh/f64Tn/3znPec45DwMTZF5hRY5t1Ql9hvoxDHXwjiyeBYryoAAO/QbITYFN/u0JgMHtaXXw5Zd6KMXYCjGKooWWkjfRJEbRT0p1wWgAbuwtFt2TYSEoe0VxVCJqsRHfEw2gaGK4UeVjLLHpDmBuYaGvbi+5C0SVO7InFOClMF4v9a8DQ9iaVNVLAJymBIA23+gSEADGpAJcq3iDq+WvsZvPQWK0h2kBaPHKuk7s3+WF3OttiAp2HwWhFeBOXigc7Kxw4tIL1DSJ1WIh/i44msLFl28/SQwrNQLQ4uUP3iJPwIPr4rkQd/9ASlYD+JvYagitAKkJqxHBc0XtMwmO5T1XA2Qkr8XmgCWoqnuHnEKR1izITvXHOh+W+r9J1IOMM0/RWhGnGyDA2wnHD/jhc78MkSnVaoCq/HAwF1jjyOkneNT6QeMIFJa1426jGBezeGAxbdDzaRDJggaEbnDFnpgVugFsrGfg/pVImJkxEJ4sRB8Zcof5VqguiIBcTiE4vgxS2S+tc0AFkZ7kg5zLolHiek3CgsxAeLrbI/NCC+pbusHjLkLWPj+0d/YjKaNWryygIYoqO5AQ5TlKXC+AvbEcxIWxUf3wPU6SeKclrkFk0DJcLH2FG8IOvdcBWkgVd4MAPN3sUEBi2P1Rim0H7+Hm2S1wdpqDuLQaiCXfJx+AhB+NxTGYaWmO7UqAQRL34IRyyP/Kte4Fq5Y7khQMHB8A3XjOoQBwVzJR87iLpJ8L6pslEJxv1rkQjRQdF0BEkJtiTRiU/SaZYQlBbjOZkBLTAbiwbFFyKkThQKffRjL8qvTTBaAyHw4T5zLWGwdAfwrzw8iyPBudXQOIT6/Ray/Q1GujAIzZjKYMQJUFmobdZCOgj00pgGzoDwJ33pYSANupOpRKMXwoPTxtjuWqwkRRZpm8MNE4UfilHGU55jGiNHM2GcBYRopTayUIDcfB/+J0nkkANBkpzxcSgF5D/f4BWXqjTolUlQ4AAAAASUVORK5CYII=",
-      "alt": "Microsoft Visio"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADIUlEQVR42sWXX0hTURzHf2dXbc4rm5YrlSyTepHsapAUFoZoQU/RQwqFQiT65FAIenHOXsKHpRBY62FKEBU9DKkeQh+GD1H4pwVGNFxMzKXl/LPZ5tqffufmvWx2rXR32xd+u+fu7N7v5/zOOXf3RyKRCKRSRAqgo6NDYbVaFbR/I+JRhGXZcHV1dbirq+sPsxgAjuMY23zwFKQp9aBgamQdajg0DKGAvrGu4vXAwIBoKgJoNJr0FdV+HaSremQ13qzgeltjLXcXIcIiAD/yWe95yNr9PKHmgvyrZ9sazll7e3sjPAAhRAOF3EtgMk4mBSD0cxS+TNaht5+0t7cTo9FYAkUn7EkxFzTzdi8CLJDm5maFyWQ6hgATSQYo1uv1TgGgHAHGkgxQggCf/wlQ3vNG8vqQ3wvOJ92wMmVNDYAg+/1W8E7vYPa2C+Bz2fkRM5ksaKsaQF16hv/e65gA+71Wvp2Rkw+ZBUdAhfE7Sx5YGH0sD0C0EVVZ9wgwSpZvT96o5I0Pt/SL3wmifbIDMJnZUGYYjjGh5uyhCjFbjDIbM7JPPgB609khI9/Or70eY/bxzhXxd4GlrwjagkcXPyX0KAuAlKJ3QnQGqNzjL8D16kHiAIRF6Zv7xJ9vtQacT2+Be0ziL2a7ADS19EYexzgE3C7JkdG1oa2qh7zT9SIIzdL7zpr4ATbvgs06cLkTFhGQPhMoSOlNS8wuSTjA36aKLtKEA0Q/FwTR9NNrhHWyI4D/FU073QX0KUifgD/Q1Ddnh5DPI32B3ADbVgzAI8sFyD04lDqAlGfAZDoKBWVmfB0vT4p5cH0c5myXEGCG4AcxGAxFwGrrcRpuJwVgyakDz/xDfCd0C2/FdP8ch9ziq8DmXUuo+dp3Eyw6+tVq9Yfl5eUAD9DU1EQGBwe12M1BVl4lqPMv4nRwshoH/e9g1fUMvN9G8GwKffn9KVZGWJwobDbbHmyWYBRiqDDSZLCmBkGMFYwZjGmz2ezFQUdiAKh0Oh3p6+vbhc2cjVBC/MUpLcHWMNyY9lWa9uhOslV5jtWsUB3HLaw7wxaLRdLoF+N/C3IWoB4MAAAAAElFTkSuQmCC",
-      "alt": "Adobe Photoshop"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFZUlEQVR42r1XeVBTdxD+XkhiECjIZQFRoChyCd7YYiJUQUAcxKZY6Yh2GGyRotZrpII6lfGiUnVaB9G21uroeFVAOsjltByKw01FpykegChiiIQQCEle33sMGVICoyF2/0h+md23++3ut/t+IVQqFQk9pKioEE2P2zDZYRLs7Gzg7e05oq2oqRU8LguTJtkN0xFvCkChVEPVr8B36Tsxd+4VNNQr4OSSiYiIcC0bLpuFlpY2VFTkoa7+EsZx7bBs2Wa4ubszukG7NwZAS339XziVmYLIyDqIREDTw1Ckph4dZicWS5C0cwV276lHTTUHBYVR2H/wCKMbBKEXgEHZsWMrlXk0fH3dYcThapwOlUOH9sLc/DGqqx5iV/L5YW3QAJDLVTA2NnrtNugKRpe8q6sdHh4+Ghu5vJfyy4P4ZTeMx7OZ89DnGQCvuvuwdVMkQkKFYLNMsDxCOGJwUiUDYWSiE9DJ7w/A0nYyPhKuHjWBoT6IlpZ2MiUlHolfVqHjZTMKCtYz/dSVJc1mVxcHnU7pCh47HISPPz0GZxfPEW3+W2Wiu1tGlpeXorg4Fi5TpqG5dRZSdu/XMiorK8OjRzUoKszE6ug0quezYWlpoWVzp/w67t5JR1xCkc72DHDmC/j4eIPLsUDgh6GMDw0HsrLysWRJIEUmQmtM6POpn35FjzQe6+MmIj6egzUxpyEQLNDo6e9LFwSYMiEW/mExIJUvwVJ2gOS5afx8e/gwHB0z4e//CgcOuCI9vYSpxmtNQeMDEU5nboS9vQwq5UJs2/6Nlr66qhBVVZ8jeOkfAyx/lg7iRSbU7n+CYFsxPS+/U4v8m9vwnqsCtbWu2LjxCGOrATASswd610t9cqBQEOiUtMBpymStvuZkhcLUzJMi8cCM0xUgSOoZjjZfbt68BVsbR3h4OzO/6Xhj2gO0VN7NQ2NjLPz8b49I0NESHBMAenxzflsMGxs+goJT9fKhF4DBbEpLzuP+/d0IDbtNvZCs/j8AtNB7/tplPqZO3ww+f52+RdQfQO71FIg7S7AyKv+1V7jBANy7V4tbv4djUUg2s/d1ree3BoAm3rUTfNjPWKw38UYFMHS7DY7N0Awvn0hAT899COPzxlR6vSpQcuMMqnNTELKlbNSZ1xsAzeyfz54Ft08C9MpgzOXA3MwEciWBXmU3zFovYpowA7MWBBgkuBYAet2uEq5AKK8N4XOmwsbMGC+kcuzLroGcugMGeCsgEtsiOOksPpg7Y9TV/UYAsrKukGFhEcjOL8bVr9fiTNIqkBIZalrFiDqei8QgXzyTdkKtHofkpV7YV6dA8vFfDBKcAQAsIKM/oe504wn4y+ogmOWGtJxKND7tRNT8qUiInI+GygfYkV2HG9uXY8OPxdhyOpt5IRmiCgSLSCDV5BPqmIvK5HDMdHoXHVIJrE1MGYOWh4+xK+8eulRGmODsgZmCIHwWG8fc7QxSATY7llQq2xHhW4urG4LQ368Gh8NC+9M2FNSIcKj0CWIEXoj2ssWmBh7OXbhokMBDWrCSdLKqQUXyPFibWaC/TwGpRILOjhdIyv8bftMd0WUzHbbmpnDhr8SiQL7B+s8AsLdwJHO+eh++DpYQP29HT7cUBMX6htZ2JOY3I2LRPMTs/QHubq4GzVwD4EJcABm10AvPRU0oqPuHKkk/ZEolMqpfIW7PUQiFQpibjmOMx7LzRwRwco2AXDdjIrIrarH2ejO6+ujr0juw9nHDs7vHDB5wGID1fi5k4hxrhJ+rQlNnIFjENBBmVlBxn+BaRvCof1IMAiDQeQJpZcrDpXonKvhsqEkp2Ka2UPI6sHWtBQ4eTDPY1tMl/wIkFX/zXIFK1QAAAABJRU5ErkJggg==",
-      "alt": "ImageMagick"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "XnView"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACMUlEQVR42u2XvUscQRjG31XPQ4inES1MIBYJggQUUVREBTESJBiTfyKlNkECWmnA2vwJ0TKptdBCPbXwiE38KoxiEjlN/Ljgx936+RtnJcfh7Z26KsgO/HaY2Xn3eXZ2i2cMueNmOPWgkxeSSZcPaxAyhm7BwEmDpP2LyFNT5CXDN1AEy+BPFxn1eWUahSBmDh0zgKiBaC6itZZoPTyClJilEfgJUzCCoUkMLRrDsnslAwhnIFyMcDPDV9bbepMsP4Zt6IP3ef7/O2JrANFURAsQbbTethIeXnbXotogtGDAjGuAn4mL5CBcxaq3jNTMkwu2+HybgzBvbXWVtT5eG1AvYmvgT4200HXCc8iIub0Pv2EWAnzXgM8jc6EDCWb7JUxtL/Ot1zXQQ/chZvo7fPaIfMvyygJV6/zZ5gW1N2bgE0VtkqDdGwMf6Tru0kC36J/QNeAacA24BlwDqoVhBnoo+npbBrro3olOL19gnIKtROJOGqimKxQdrzfUFGyRBXbJAgeEyps1oBpZ0EckKzV1vKqALMvMMiloiXS7QuUvxuvEt81QRHZIRKZjBqKMpGDksamjt8qHNZCrbsGe6KT7F1ZhBcqg3OaRiUOpjZl0zBRS2SQ6mpfCgyTLj2AT+qE96VhuY0Z9ojLMvBZ9KnoGnphlO/ADpqxTUgC1JbLkfvSi6x7N1CkpHyN1oj9RCSzCGKITiM6hsIHocbxnOHk4RfPs0KIOpuFk6xwzcNV2CqanOTCcbdkJAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Office"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Adobe Photoshop Elements"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -126,24 +111,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/vst_1977.jpg",
+      "alt": "Screenshot of a .vst file in The Omni Group OmniGraffle 7",
+      "caption": "VST file open in The Omni Group OmniGraffle 7"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.890Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.231Z"
     },
     {
-      "url": "https://fileinfo.com/extension/vst",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.890Z"
+      "url": "https://fileinfo.com/extension/vst",
+      "retrieved_at": "2025-11-01T22:32:42.231Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.890Z"
+      "retrieved_at": "2025-11-01T22:32:42.231Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.890Z"
+  "last_updated": "2025-11-01T22:32:42.231Z"
 }

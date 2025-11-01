@@ -1,9 +1,11 @@
 {
   "slug": "dtsx",
   "extension": "dtsx",
-  "name": "DTSX File",
+  "name": "DTS Settings File",
   "summary": "Learn about .DTSX files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -16,7 +18,44 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "DTSX files are used by SSIS (SQL Server Integration Services), a component of SQL Server."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .dtsx (Data Transformation Services Package XML) extension is a Data Transformation Services (DTS) file that is used by Microsoft SQL for referring to data migration steps/rules for transfer of data from one database to another. This includes the transformations and any optional processing steps that may be required during the data transfer between the originating and destination points. SQL Server Integration Services (SSIS), a component of Microsoft SQL Server, uses the DTSX files to identify the steps for processing of data between database servers. DTSX files can be opened with Microsoft SQL Server 2019.",
+      "Data Transformation Services (DTS) file used by SQL Server, an RDBMS (relational database management system) application; specifies settings for migrating data between databases; allows the integration of external data sources."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
+    {
+      "url": "https://docs.fileformat.com/database/DataFlowDTSX.png",
+      "alt": "Data Flow DTSX"
+    },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
@@ -44,15 +83,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/dtsx/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.919Z"
+      "retrieved_at": "2025-11-01T22:32:42.264Z"
     },
     {
       "url": "https://fileinfo.com/extension/dtsx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.919Z"
+      "retrieved_at": "2025-11-01T22:32:42.264Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.919Z"
+  "last_updated": "2025-11-01T22:32:42.264Z",
+  "containers": []
 }

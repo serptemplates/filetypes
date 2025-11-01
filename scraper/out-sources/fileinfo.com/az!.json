@@ -7,6 +7,17 @@
   "type_name": "Vuze Partial Download File",
   "summary": "Learn about .AZ! files and view a list of programs that open them.",
   "developer": "Vuze",
+  "more_information": {
+    "description": [
+      "File created by Vuze, a cross-platform BitTorrent client; contains data for a file as it is being downloaded (e.g., \".avi.az!\" for an .AVI file); used for marking the file as a download in progress, and the \".az!\" file extension is removed when the download is complete."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "AZ! files are only supported by some versions of Vuze. For supporting versions, you can turn off the use of the \".az!\" extension by selecting Tools → Options..., choosing \"Files,\" and unchecking the \"Add suffix to incomplete files\" option.",
+      "NOTE: When Vuze initiates a download, it allocates the entire target file size on disk, even though the file has not yet been downloaded."
+    ]
+  },
   "programs": {
     "windows": [
       {

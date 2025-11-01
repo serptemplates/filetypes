@@ -1,9 +1,11 @@
 {
   "slug": "amf",
   "extension": "amf",
-  "name": "AMF File",
+  "name": "Additive Manufacturing File",
   "summary": "Learn about .AMF files and view a list of programs that open them.",
   "developer": "American Society for Testing and Materials",
+  "category": "3d",
+  "category_slug": "3d",
   "programs": {
     "windows": [
       {
@@ -36,6 +38,20 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Since the 1980s, the .STL format has been the industry standard for storing and transferring information between CAD programs and additive manufacturing tools. However, with the rise of 3D printing, more capable formats are needed to store and transfer all the necessary 3D object information for 3D printing. This need has led to the increased popularity of the .3MF and AMF formats.",
+      "The American Society for Testing and Materials (ASTM) developed and released the open AMF format in 2013. ASTM designed AMF to be a unifying solution for storing 3D object information, similar to the .PDF format for storing documents.",
+      "AMF stores information similarly to the XML standard and is simple, scalable, and backward and future compatible. The format uses triangle meshes to describe surfaces, whether curved or non-planar edges, on 3D surfaces. Colors are specified using RGBA (red, green, blue, and alpha channels) values.",
+      "You can export 3D object information to the AMF format using programs such as Dassault Systemes SOLIDWORKS and Autodesk applications. 3D printers that support the format include Materialise and Shapeways."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An AMF file consists of guidelines for objects description in order to be used by Additive Manufacturing processes. It contains an opening XML tag and ends with a element. This is preceded by an XML declaration line specifying the XML version and encoding of the file. The declarations can include measurement units information and, in the absence of such information, millimetres are used as default unit.",
+      "An AMF file is an additive manufacturing file used by CAD programs to describe objects for 3D printing purposes. It contains one or more objects, which include the geometry, color, and material of the volumes that make up the object(s). AMF files also store the constellation (arrangement) of multiple objects and metadata that specifies the author, name, copyright, and special instructions for the object(s)."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can view AMF files with various CAD applications, including Autodesk Fusion 360 (multiplatform), CNC Software Mastercam (Windows), and the free Autodesk Meshmixer (multiplatform) application."
@@ -57,6 +73,28 @@
       ".USDZ - Universal Scene Description Zipped Format"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -95,15 +133,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/3d/amf/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     },
     {
       "url": "https://fileinfo.com/extension/amf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.912Z"
+  "last_updated": "2025-11-01T22:32:42.251Z",
+  "containers": []
 }

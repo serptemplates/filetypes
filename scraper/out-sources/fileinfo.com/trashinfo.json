@@ -4,8 +4,20 @@
   "slug": "trashinfo",
   "extension": "trashinfo",
   "name": ".TRASHINFO File Extension",
+  "type_name": "Linux Trash Metadata File",
   "summary": "Learn about .TRASHINFO files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "A TRASHINFO file is a metadata file used by various Linux operating systems' Trash applications. It contains a record of the location at which a file was stored before being moved to the Trash. It also records the date and time at which the file was trashed. TRASHINFO files are used to restore trashed files to their previous, pre-Trash locations."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When a user trashes a file on various Linux operating systems, such as KDE, GNOME, or Mint, those OS's Trash applications create a TRASHINFO file that records the trashed file's previous location. If the user decides to restore the trashed file, Trash uses the associated TRASHINFO file to determine where the trashed file should be restored to.",
+      "As such, if you delete a trashed file's associated TRASHINFO file, your Trash application will not be able to restore the trashed file. Linux TRASHINFO files are typically stored in the ~/Trash/info directory."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "If you need to open a TRASHINFO file and view the metadata it contains, you can do so using any text editor, such as Vim (Linux), Github Atom (cross-platform), Microsoft Notepad (Windows), and Apple TextEdit (Mac)."

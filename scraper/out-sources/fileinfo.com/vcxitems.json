@@ -4,8 +4,19 @@
   "slug": "vcxitems",
   "extension": "vcxitems",
   "name": ".VCXITEMS File Extension",
+  "type_name": "VC++ Project Items File",
   "summary": "Learn about .VCXITEMS files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A VCXITEMS file is a project used by Microsoft Visual Studio, a software development tool used to develop Windows programs and web applications. It contains one or more source code files, or items, that are referenced by multiple .VCXPROJ C++ projects in Visual Studio."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VCXITEMS files are not actual projects that can be compiled. They are only used to store items shared by actual VCXPROJ projects that can be compiled. You can add a reference to a VCXITEMS file by right-clicking the VCXPROJ project referencing the shared items in Visual Studio Solution Explorer and choosing Add → Reference → Shared Items."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/m4b/index.html",
   "slug": "m4b",
   "extension": "m4b",
-  "name": "M4B File",
-  "source": "fileformat.com"
+  "name": "What is an M4B file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "Similar to M4A, the M4B files also consist of consecutive chunks. Each chunk has 8 byte header and sub-divided as:\n\n4-byte chunk size (big-endian, high byte first)4-byte chunk type - one of pre-defined signatures: “ftyp”, “mdat”, “moov”, “pnot”, “moof”, “udta”, “uuid”, “free”, “ctab”, “skip”, “jP2 “, “wide”, “load”, “imap”, “matt”, “chap”, “kmat”, “clip”, “crgn”, “sync”, “tmcd”, “PICT”, “scpt”, “ssrc”.\n\nSimilar to M4A the First chunk in M4B will be of type “ftype” and has a sub-type at offset 8. The M4B defined by sub-type which must be “M4B_”.\n\nIterating chunks, until chunk of unknown type is detected, It will compose M4B (MPEG-4 Audio) file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Discover the power of the M4B audiobook format, a specialized file type recognized by its .m4b extension and celebrated for its advanced features. While it shares a foundation with the standard M4A format, M4B is distinctly engineered for audiobooks, offering crucial functionalities like chapter breaks and digital bookmarking to enhance your listening experience. At its core, the audio within an M4B file is encoded using high-efficiency AAC compression within an MPEG-4 container, ensuring excellent sound quality. A key characteristic of M4B files is their availability in two distinct types: DRM-protected and DRM-free versions. Encrypted, DRM-enabled M4B files are typically paid audiobooks distributed through platforms like the Apple Books and iTunes Store."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

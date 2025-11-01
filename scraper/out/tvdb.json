@@ -1,9 +1,11 @@
 {
   "slug": "tvdb",
   "extension": "tvdb",
-  "name": "TVDB File",
+  "name": "Apple TV Database",
   "summary": "Learn about .TVDB files and view a list of programs that open them.",
   "developer": "Apple",
+  "category": "database",
+  "category_slug": "database",
   "programs": {
     "windows": [
       {
@@ -12,11 +14,49 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "You are most likely to encounter a TVDB file after right-clicking TV Library and selecting Show Package Contents. Each TV Library file contains the following three TVDB files:",
+      "Application.tvbd: Stores Apple TV preferences and settings",
+      "Library Preferences.tvdb: Stores library preferences and settings",
+      "Library.tvdb: Stores information about each video in your Apple TV library",
+      "By default, TV Library is stored at Macintosh HD/​Users/​YourUserName/​Movies/​TV on Macs."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A TVDB file is a type of database file that is associated with Apple TV. It’s typically stored within your TV Library, which is the file responsible for holding your Apple TV library data. TVDB files serve as repositories of information related to either your Apple TV settings or your Apple TV library contents. These files play a role in maintaining and organizing data relevant to your Apple TV setup and media library.\n\nApple TV devices typically interact with various online databases and services to provide users with access to content, such as movies, TV shows, music, and apps. These databases and services are maintained by Apple and are used to organize and deliver content to Apple TV users. However, the internal structure and file format of these databases are not typically exposed to users, and there’s no standard file format known as “Apple TV Database.”",
+      "A TVDB file is a database file used by Apple TV. It is stored within TV Library, which is the file that contains your Apple TV library. TVDB files contain information about either your Apple TV settings or your Apple TV library."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      "TVDB files are not meant to be opened directly, they are used by Apple TV and are in propriety format. It may affect Apple TV to load and display your library if you edit a TVDB file.\n\nPrograms that open TVDB file include\n\nApple TV included with OS (MAC, iOS)",
       "TVDB files are not meant to be opened or edited. Editing a TVDB file may affect Apple TV's ability to load and show your library."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -45,15 +85,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/database/tvdb/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.289Z"
     },
     {
       "url": "https://fileinfo.com/extension/tvdb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.934Z"
+      "retrieved_at": "2025-11-01T22:32:42.289Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.934Z"
+  "last_updated": "2025-11-01T22:32:42.289Z",
+  "containers": []
 }

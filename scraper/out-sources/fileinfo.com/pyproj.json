@@ -4,8 +4,21 @@
   "slug": "pyproj",
   "extension": "pyproj",
   "name": ".PYPROJ File Extension",
+  "type_name": "Visual Studio Python Project",
   "summary": "Learn about .PYPROJ files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A PYPROJ file is a Python programming project created with Microsoft Visual Studio, a software development tool. It contains references to source files associated used by the project, along with project settings, such as build information and settings for integrating with source-control systems."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You will most likely encounter a PYPROJ file if you are developing a Python application with Visual Studio. The format is designed to help developers better manage the various aspects of a Python application build.",
+      "Visual Studio uses the Microsoft Build Engine (MSBuild) platform to build applications. The various projects created by Visual Studio (.CSPROJ, .VBPROJ, etc.) are all saved in the MSBuild format. These projects contain MSBuild XML code that is compiled into executable code using the MSBuild platform when a developer builds a project into a program.",
+      "To create a PYPROJ file with Visual Studio, select File → New → Project, then follow the prompts in the wizard to complete the creation of the Python project. To open a PYPROJ file with Visual Studio, select File → Open."
+    ]
+  },
   "programs": {
     "windows": [
       {

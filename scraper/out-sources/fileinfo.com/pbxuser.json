@@ -4,8 +4,20 @@
   "slug": "pbxuser",
   "extension": "pbxuser",
   "name": ".PBXUSER File Extension",
+  "type_name": "Xcode Project User Data File",
   "summary": "Learn about .PBXUSER files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "File created by Xcode, a software development application for Mac OS X; saves user settings for the development project, including the currently-opened files, window settings, build preferences, project directories, and many more properties; used for remembering local settings."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Because PBXUSER files contain local user settings, they generally are not checked into source code control systems for collaborative development projects. However, sometimes a file named default.pbxuser is checked into the repository at the outset of the project so that all developers start with the same common preferences instead of having to redefine them each individually.",
+      "NOTE: The PBXUSER file for an Xcode project is stored within the .XCODEPROJ project file. To access this file manually, remove the \".xcodeproj\" extension from the XCODEPROJ file and open the resulting folder."
+    ]
+  },
   "programs": {
     "windows": [
       {

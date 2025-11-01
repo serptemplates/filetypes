@@ -1,7 +1,7 @@
 {
   "slug": "schemas",
   "extension": "schemas",
-  "name": ".SCHEMAS",
+  "name": "GConf Schema Definition File",
   "summary": "Learn about .SCHEMAS files and view a list of programs that open them.",
   "developer": "The GNOME Project",
   "programs": {
@@ -14,6 +14,17 @@
         "name": "gedit",
         "url": "https://fileinfo.com/software/gedit/gedit"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Preferences used in the GConf framework are used for remembering application-specific user settings. For example, an application preference may store the default font for a text editor, or it may remember to suppress a warning popup message after the user checks the \"Do not show this message again\" option.",
+      "NOTE: GConf schemas are generated from SCHEMAS definition files. Therefore, SCHEMAS files do not contain the application preferences themselves."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File used by GConf, a GNOME Desktop configuration tool; contains specifications for how application preference keys are defined, but does not contain actual application preferences; enables application settings to be generated in the GConf framework; saved to the /​etc/​gconf/​schemas/​ directory and often installed with application packages."
     ]
   },
   "images": [
@@ -46,8 +57,11 @@
     {
       "url": "https://fileinfo.com/extension/schemas",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.294Z"
+      "retrieved_at": "2025-11-01T22:32:42.757Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.294Z"
+  "last_updated": "2025-11-01T22:32:42.757Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

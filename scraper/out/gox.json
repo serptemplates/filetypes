@@ -1,7 +1,7 @@
 {
   "slug": "gox",
   "extension": "gox",
-  "name": ".GOX",
+  "name": "Go Export Data",
   "summary": "Learn about .GOX files and view a list of programs that open them.",
   "developer": "Google",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12853&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Gccgo is part of the GNU Compiler Collection (GCC). Developers use gccgo to compile and build Go programs.",
+      "When a developer uses gccgo to compile a file that exports functions, they can choose to store a description of those exported functions in a GOX file. This file functions similarly to a C or C++ .H file. When a developer uses gccgo to compile a file that imports the exported functions, gccgo searches for an accompanying GOX file (or SO, A, or O file, if a GOX file isn't found) and uses it to import the functions correctly."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A GOX file is an export data file created by gccgo, a compiler for the Go programming language. It contains a description of functions exported from a compiled .O file. Developers produce GOX files using the objcopy -j .go_export command."
     ]
   },
   "how_to_open": {
@@ -47,8 +58,11 @@
     {
       "url": "https://fileinfo.com/extension/gox",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.091Z"
+      "retrieved_at": "2025-11-01T22:32:42.505Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.091Z"
+  "last_updated": "2025-11-01T22:32:42.505Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

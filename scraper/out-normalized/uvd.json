@@ -1,8 +1,14 @@
 {
   "slug": "uvd",
   "extension": "uvd",
-  "name": "UVD File",
+  "name": "UVD files and how to open them",
   "summary": "Having problems opening an UVD file?",
+  "category": "other",
+  "mime": [
+    "application/vnd.dece.data"
+  ],
+  "containers": [],
+  "related": [],
   "programs": {
     "windows": [
       {
@@ -19,32 +25,22 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABL0lEQVR42mNkIB78R+MzYhHHJ4YV4JWEgaSkpP/EqMMH5s2bh9Uugg7AZXlCQgKYXrBgAZiNTJPiCKIdICcnx7Bv3z6GQ4cOgcUbGhrAGB0gi9vZ2TE4OTkxPHr0iHIHUANQ7IA7d+7AQwBbKKDzQSGgoqJCPQcMaAiA0gAIIKcDZF9j8z0o/kFgeKSBuZ/nwcWSeZNAhmGEApIehnlVzxH8NknKHWBn58QQvzUG7gBCAKQ+wWYp9RxADUCRA5CDnFQAihKqOKBvNemBURTKSF0HXNmezKDjORdMwwCMD6JBAJlNdQcMmhCA+RQWAug+p5kDBjQEyAVUcQA1AM2KYnDRS4BPsQPQi2JwUZsQA7eAEH/oRwGpQU6TKCAlyEejYDQKRqOAalFArWjA1TsGALewXTBLDKl5AAAAAElFTkSuQmCC",
-      "alt": "KG-UV Commander"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Wave Xtractor"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.226Z"
     },
     {
-      "url": "fileinfo.com",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.226Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.226Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.885Z"
+  "last_updated": "2025-11-01T22:32:42.226Z"
 }

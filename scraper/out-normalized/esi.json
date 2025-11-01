@@ -1,9 +1,26 @@
 {
   "slug": "esi",
   "extension": "esi",
-  "name": ".ESI",
+  "name": "EtherCAT Slave Information",
   "summary": "Learn about .ESI files and view a list of programs that open them.",
   "developer": "EtherCAT Technology Group",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "EtherCAT is an industrial Ethernet networking standard developed by Beckhoff Automation, in 2003. The standard is currently maintained by the EtherCAT Technology Group.",
+      "An EtherCAT network contains a controller that sends data as a \"telegram\" through all the network's nodes. The telegram passes through each node sequentially, such that node 1 can extract data from and add data to the telegram before sending it on to node 2. After it has passed through each node, the telegram returns to the controller.",
+      "Each node's ESI file controls how the node, which can be comprised of any number of devices, receives and sends data. The ESI file specifies what devices are contained within the node, how those devices are grouped, and what ports the devices use to send and receive data, among other settings.",
+      "NOTE: ESI files are often saved with the .XML extension."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because an ESI file is an XML document, you can open and edit it using any text editor. However, if you want to edit an IN file, it's best to use a source code editor, such as Xcode (Mac), NotePad++ (Windows), or Atom (multiplatform). These applications provide helpful source code editing tools and will highlight the ESI file's syntax correctly.",
+      "If you plan to make significant updates to an EtherCAT network or ESI file, you should use an EtherCAT configuration tool, such as Acontis Technologies EC-Engineer or port EtherCAT Design Tool."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -30,12 +47,6 @@
         "name": "Apple Xcode",
         "url": "https://fileinfo.com/software/apple/xcode"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Because an ESI file is an XML document, you can open and edit it using any text editor. However, if you want to edit an IN file, it's best to use a source code editor, such as Xcode (Mac), NotePad++ (Windows), or Atom (multiplatform). These applications provide helpful source code editing tools and will highlight the ESI file's syntax correctly.",
-      "If you plan to make significant updates to an EtherCAT network or ESI file, you should use an EtherCAT configuration tool, such as Acontis Technologies EC-Engineer or port EtherCAT Design Tool."
     ]
   },
   "images": [
@@ -71,10 +82,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/esi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.054Z"
+      "url": "https://fileinfo.com/extension/esi",
+      "retrieved_at": "2025-11-01T22:32:42.454Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.054Z"
+  "last_updated": "2025-11-01T22:32:42.454Z"
 }

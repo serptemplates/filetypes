@@ -7,6 +7,20 @@
   "type_name": "Khronos Texture 2.0",
   "summary": "Learn about .KTX2 files and view a list of programs that open them.",
   "developer": "Khronos Group",
+  "more_information": {
+    "description": [
+      "A KTX2 file stores GPU texture data in the Khronos Texture 2.0 (KTX2) container format. It contains image data for a texture asset compressed with Basis Universal (BasisU) supercompression that can be transcoded to different formats depending on the support provided by the target devices. KTX2 files also include parameters required for loading stored textures into 3D APIs, such as Vulkan and OpenGL."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The purpose of KTX2 is to provide a lightweight format for distributing texture assets to GPUs that are compatible with various platforms and applications. A common usage of the KTX2 format includes 3D gaming applications, but other 2D and 3D applications also utilize the format.",
+      "While KTX2 is version 2 of the Khronos Texture (KTX) format, the structure of KTX2 files is significantly different than .KTX files due to the additional features supported by KTX2. Extended functionality available with KTX2 includes support for universal textures using Basis Universal technology and supercompression and easier loading of Vulkan textures and use by non-OpenGL and non-Vulkan applications.",
+      "Due to BasisU compression, KTX2 files can store any image format supported by GPUs. In addition, the BasisU algorithm supports the ETC1S and UASTC (Universal ASTC) methods.",
+      "ETC1S is the original method that is lower to medium quality and produces a smaller file size. It is optimal for images, photos, map data or textures, such as Specular or Albedo maps.",
+      "UASTC is the high quality method. It can be used on any type of texture."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Khronos Group provides command-line tools for creating, checking, and dumping KTX2 files. The tools are packaged in one downloadable KTX Software package. Tools include:",

@@ -1,9 +1,47 @@
 {
   "slug": "dna",
   "extension": "dna",
-  "name": "DNA File",
+  "name": "SnapGene DNA File",
   "summary": "Learn about .DNA files and view a list of programs that open them.",
   "developer": "GSL Biotech",
+  "category": "other",
+  "mime": [
+    "application/vnd.dna"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "GSL Biotech SnapGene is a molecular biology program that documents, designs, and simulates DNA sequences. When you save a DNA sequence, the software creates a DNA file to store the contents.",
+      "To create a DNA file with SnapGene, follow these steps:",
+      "Select File → New DNA or RNA File...",
+      "Choose the \"DNA\" sequence type",
+      "Create the sequence",
+      "Name the file",
+      "Select OK",
+      "After creating the DNA file, you can save it by selecting File → Save or Save As.... Then, after saving the file, you can close it and re-open it to modify the sequence further."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a DNA file with GSL Biotech SnapGene (multiplatform). To open a DNA file with SnapGene, select File → Open Files....",
+      "You can also open a DNA file with SnapGene Viewer in Windows and macOS. However, it does not provide the same extensive capabilities that SnapGene offers."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "GSL Biotech SnapGene can convert DNA files to various file types, including the following formats:",
+      ".SEQ - DNA Sequence Text File",
+      ".FA - FASTA Sequence File",
+      ".EMBL - EMBL Sequence Data File",
+      ".GBK - GenBank Data File",
+      ".TXT - Plain Text File",
+      ".JPG - JPEG Image",
+      ".PNG - Portable Network Graphic",
+      ".SVG - Scalable Vector Graphics File",
+      ".PDF - Portable Document Format"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,50 +78,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open a DNA file with GSL Biotech SnapGene (multiplatform). To open a DNA file with SnapGene, select File → Open Files....",
-      "You can also open a DNA file with SnapGene Viewer in Windows and macOS. However, it does not provide the same extensive capabilities that SnapGene offers."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "GSL Biotech SnapGene can convert DNA files to various file types, including the following formats:",
-      ".SEQ - DNA Sequence Text File",
-      ".FA - FASTA Sequence File",
-      ".EMBL - EMBL Sequence Data File",
-      ".GBK - GenBank Data File",
-      ".TXT - Plain Text File",
-      ".JPG - JPEG Image",
-      ".PNG - Portable Network Graphic",
-      ".SVG - Scalable Vector Graphics File",
-      ".PDF - Portable Document Format"
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "SnapGene Viewer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "SnapGene"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIsElEQVR42p1XWWxcZxk9d5m5sy/exuM4idNmx2kWJU0VWigqEqhEtA9ILQjUShTKQ0EF8RIJUCpegEcEPPEEqC8IFQFVS6WiFmhCFqeELIodJ5PJ2OPxbJ717vcO578JVhE4jmNrxuM7c//vfN853/m+kfDkyQHW+pEUSL0aDpR+jyOjGpLj44jEY4Aagu95MB0b9dkCqtUK2q4PYzCAL0mA76Ibm0Bp93Pwwilg4K0d4p4A1CQen/sFDm9NYGxyCqos8zAJIobuemBMtB0XpZkZ1BtN9HmcACGJW30HppbB3JETgKc/AABmH1sp4DvZ84iObUUkFII8kOEGNxEHfx0Gq1kOypcuo7y4BIvIOq57532+Tno2bmz5NJpbnyIIa6MANByuv43n94agKglIsgpFwSoAj8+m4xOAjeXZOTRLJYjcHQau2cze96Gy9F48h7nprwJyKIB9fwDEFcnDS7GLOJqT4MsR2Mx2wIdMGhzSYJs2eqShRwp6vS4WPvgHQpoGg4EbHvXguQFFMc/BwrbPoLHlk0Rt3y8AGaNyi+WfwabhESiqBk+S4UOG7Q1gOwzMLC2bIjQsyKqKlRsFNG4VWCUFddLQIwhXiNK10Rg9gNreL7J8xn0C8BUcjRXxSq6IVHoEWiyJeruHc9fmUazUMKDKtUQGIXZEMp5AiF0hqnOTYtR7fXT8O0IUACxWoJJ7DK2dz2wMwOezRby8pYGx4VzQbr966z1syudxcGICiqzhVldHob6CFksdDmvszBBuXpvF8u0SPNIkAEgE4PgedDWG+WMnAad7vyLU8Dn9j9gjVfDd5z4Lg/+fv1FCqbKCn717CscfO4rtyThisQSu1OoE6EGJRLBULKI0e534FdgUYzSZgGta8DtdXD34NVipLf/jCf8fgBfG61N/w87RKGwe1lbSKFVbMNtdfOv0X/HSl7+JNDOdUk1UTQ/1PvucAeWBjw9Pn4Fhu9ixfxoTuTGUy0uYvfAhbm5/Ft2JR1ldex0AQQdE8KrzS+hKDJPJYTQlFV3TxWRUQYla2J4KI5MZg87bu7aFHt+zGFylGBfKiwziByLcPbkZpmUQ1Ae4mn8K3UnRCeb6AELkdOeFE1jeuQcvP7Qf3XoFyxRXKqxiZyaNOEvv8IMuuW7pVtARDntE3KvrOjURwkK1gXBIQW54COdOnUJNzqC47+tBpT7qB2u0YQhPhi/hmHMNVSmBzSNZJHiYzb7XPBmhiMIkKTBHQsU14bLhXTECOB+oO7apHYiw2ukgl0rj7JlzGBh9rOQPorRLtKO+DgBfxfHkLD4VreJsVcfDIykc2JxDj9l51uDuLBig4zjokAKTwIT1egEAAqMP9A2D7amy4gYuXbgYCDNOIzp/6NvwokOrYlxDhCpeHb2Mk59I4515E2cWqnhmeisNSQ1K3unaqFom+n3asGkycz8orQguzMmjHsBraXbB6b+fgqMbEMwnKMDFTU/QGZ9enQ1rAFDwjYkCjg8t0WgyDByjuwG5RBQus6zptNdGhwJ0sdw3VgGI+psE1KI1T43nMHPxEpocUqBHuBRmfMD7codR3vGFVVNaA4CMZ8eX8b1ti1h2ImgYnP+qgtF4CAotuc8hdKPWQqdvUu0cONSAKpMC3trW+2iz74tl7ghsQY2CFAE04QsS50TqYVzf+yJpvmcFJBwZ7uFE/gqaczaiPGQlqSGVSyOrhcm7jWKzTzrMIDMhOJ9PLg2pxW4JcygVCzdRKhQxUFS64QAplQDYKY3kQ7j+sRd4g3MvEQKZ2AA/il1A+zJnvTmAHo5g266tmKYW2oaJEgHo3AX6nIZcU4JO0F2OYb6XTCRw+coVLLP8nszuoSaGWMEIa1QngPl1AQRXZPyAFRi/OYuRkXGk9+ShxqJo9C2W3EGppaNruTDpAZ5oPVLRYtslYrFgIr5/9lywJfmkTAAcZxUjzKwZ38z9gBQIoeJeCwlpeGTEwPtPVND0oqgaMjp0PJ2PPiloib+mgyZFyOZDr9uBpEYgKxxENKg3/vIedFZDIvchPvIEoA1cVIf3obDr+VVHXBuAuOqqePPgDPpymp+UYfmDgB+RrXi/yxlQ7vRhmH0M1DBUWrgr+psB//TWn9G5e3KEgEYJIOqYuMrgndF961Dwnx9bxk+PVPDidgnLtob5WhfVtgGLi1mLgcUmZPGgdDwLKBqazNggLbIi4fU/vE0BSoFAk/SPMZVEuBbOPv6T/1pS7w1A0JA18NtHFxFRLBRrdLWqhTLLbpKGfDqBXHaUFZEDSkorvcAnQiEVP3/jTaFlhBl3nD4wJvuopyjARzgPnP59ArgLAg5PkTlGfRmv7ZjD0xM6RnNbaMEhXFnuwKEKbzXaWGx1gyPFge+cm8EctydRgRifpjUZV3d/Cd2hvXdsmJQKqtYH8FFN0CFf2FTC96d1hBKjaBkebq8YaNket6M2lle6wbouxFdqt/HPuXk0ejq4TGMyk0fx0Ct8pUDuVyDpNWhmYwMAAn+QsD/Zxq8P3EY0nUfXGaDcttGk199qGag02/QGTkKuYS0KtGfqpG0FS80mzYhF5PBKa4HNIBHVMBRPbhzAuKbjNwcXMJmN04bDWGpbaHQMLFIXFS4rYmQLn1jiqtYxdC6z3WBDshxhvTKXFhoSl9jRdBxD9IyNAbjThfjx7gK+skNDy4+g0DRR6+io9Aw0uKjaHM/ldgezpUV0WBlREfGtSth5mntjjJlrBJGNhJGKxTcIIBCljEOpJn53rA5bzeJ6nVl2LWbfx+0my033W2i0UGbZY5wJU0MZLq+RYIgFM4NZhOiUqWgE8Wj0AQCwEz6ebeC1qVuw1Ax732PvO5itNHCVWc9zCka1EPKZLIaTUXLvc1G5s8QIV1Q4nMTrTDSGbCLyYAB2RJr4Yf5fWEYa/R5HMvk9Xyij1e3xm1QmyM6la4oNqcevcGJNi9AQxBcYha5If4KmCRFG8W/Jat1n8aG7TQAAAABJRU5ErkJggg==",
-      "alt": "Virtual Woman Millennium Edition"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA2UlEQVR42sXXWQ6DMAwE0Pr+h06lVkWFNp7FtuCLxWReEhAkHnPbYorizvApAB0+AZDCuwFyuAOwQjoAr+BFxIfYJaZ8McEuBJVZ4QoiKymFjwM+jSMkQEQZgBBJQpRGgOhdeuvPjgMwQbE96EAATMATV8Bb0YL4m5VOwXkoSohtzu5CGmc+G/QIyH0l3xYKcDSlvttEPQTQcz4BWEqDV0R1Cra3Vz9GKBwCqggUTgFcBBNOAxTI17NBfRkkANt5tdgFtPzSu4C29YQDaF1NqYD2taQCGFlJPwHo61IXNnM/dwAAAABJRU5ErkJggg==",
-      "alt": "Satmaster Pro"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "DMM Explorer"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -100,24 +98,36 @@
     {
       "url": "https://fileinfo.com/svg/menu.svg",
       "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/dna_7648.jpg",
+      "alt": "Screenshot of a .dna file in GSL Biotech SnapGene 6",
+      "caption": "DNA file open in GSL Biotech SnapGene 6"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.784Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "https://fileinfo.com/extension/dna",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.784Z"
+      "url": "https://fileinfo.com/extension/dna",
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.784Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.784Z"
+  "last_updated": "2025-11-01T22:32:42.141Z"
 }

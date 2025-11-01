@@ -1,9 +1,24 @@
 {
   "slug": "immodules",
   "extension": "immodules",
-  "name": ".IMMODULES",
+  "name": "GTK+ Module File",
   "summary": "Learn about .IMMODULES files and view a list of programs that open them.",
   "developer": "GNOME Project",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "GTK+ reads the IMMODULES file at runtime to determine which input method modules are available and how to initialize them. Each entry in the file typically includes the module’s path, supported locales, and other metadata required to load and use the module correctly. Without the IMMODULES file, certain language input features will not function correctly in GTK+-built applications.",
+      "GTK+ tools (like gtk-query-immodules) generate IMMODULES files and typically store them in system or application directories. While most end-users won’t encounter IMMODULES files, developers or system administrators who build or package GTK+ applications for multilingual environments may need to work with these files to ensure the correct input methods are available."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "IMMODULES files are not meant to be opened. Instead, applications built with the GTK+ framework reference them internally.",
+      "Since the files contain plain text, you can open them with a text editor, such as Microsoft Notepad (Windows), Apple TextEdit (macOS), and gedit (Linux)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,12 +37,6 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=6754&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "IMMODULES files are not meant to be opened. Instead, applications built with the GTK+ framework reference them internally.",
-      "Since the files contain plain text, you can open them with a text editor, such as Microsoft Notepad (Windows), Apple TextEdit (macOS), and gedit (Linux)."
     ]
   },
   "images": [
@@ -58,10 +67,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/immodules",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.122Z"
+      "url": "https://fileinfo.com/extension/immodules",
+      "retrieved_at": "2025-11-01T22:32:42.545Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.122Z"
+  "last_updated": "2025-11-01T22:32:42.545Z"
 }

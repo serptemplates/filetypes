@@ -1,9 +1,11 @@
 {
   "slug": "xapk",
   "extension": "xapk",
-  "name": "XAPK File",
+  "name": "Compressed Android Package",
   "summary": "Learn about .XAPK files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -24,12 +26,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "A drawback to delivering apps via Google Play is that the size of an app's APK file must be 50MB or smaller, which forces app developers to use other files (such as OBB files) to store additional graphics and media assets. Because of this limitation, some developers make their apps available from sites other than Google Play. The XAPK format was introduced to package the APK file and OBB file together for a seamless delivery and installation process when downloading an Android app from a non-Google Play site.",
+      "In addition to an app's APK and OBB files, each XAPK file contains a manifest.json file. This manifest file lists metadata about the app the XAPK file includes. APKPure and other XAPK installers use this metadata to unpackage and install the XAPK file's components."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .xapk extension is a compressed package file that is used to install Android apps on mobile devices. It is a container file format that incorporates APK and additional associated files required for the installation. The other associated file is an OBB file that stores additional files such as graphics, media files, and app data that are required to keep the application running. XAPK files are not supported by Google Play and are used for distributing on third-party Android app download websites only. These can be installed to an Android device using XAPK Installer.",
+      "An XAPK file is a package used to install Android apps on mobile devices. It is similar to the standard .APK format, but may contain other assets used by the app, such as an .OBB file, which stores graphics, media files, and other app data. XAPK files are used for distributing apps on third-party Android app download websites. They are not supported by Google Play."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because XAPK files are not standard app installer packages, you must install them manually or with an XAPK installer. For example, after downloading an XAPK file, you can install the app (the APK file stored in the package) to an Android device using the TarrySoft XAPK or APKPure installers.",
       "However, if you would like to install the additional files manually, you can unzip the XAPK file (which is a standard .ZIP file) with a Zip utility, such as Microsoft File Explorer (Windows), Apple Archive Utility (macOS), or RARLAB WinRAR (Windows). After extracting the files in the XAPK file, you can place them in the appropriate location on your device."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -58,15 +94,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/xapk/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.936Z"
+      "retrieved_at": "2025-11-01T22:32:42.292Z"
     },
     {
       "url": "https://fileinfo.com/extension/xapk",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.936Z"
+      "retrieved_at": "2025-11-01T22:32:42.292Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.936Z"
+  "last_updated": "2025-11-01T22:32:42.292Z",
+  "containers": []
 }

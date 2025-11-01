@@ -4,8 +4,20 @@
   "slug": "g3fc",
   "extension": "g3fc",
   "name": ".G3FC File Extension",
+  "type_name": "G3FC Archive",
   "summary": "Learn about .G3FC files and view a list of programs that open them.",
   "developer": "G3Pix",
+  "more_information": {
+    "description": [
+      "A G3FC file is an archive that stores one or more files in the Generation 3 File Container (G3FC) format. It is compressed with the open-source Zstandard (Zstd) compression algorithm. The G3FC format also supports Forward Error Correction (FEC) to help recover from data corruption, and optional AES-256-GCM encryption to protect the contents of the archive."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "G3Pix introduced the G3FC format in 2025 to be a secure, high-performance file storage and transfer option. G3FC archives include dedicated footers, which allow programs to quickly list the contents of a G3FC file without scanning the entire archive. This feature improves speed and usability in applications that handle large or complex archives.",
+      "NOTE: You may encounter G3FC files in situations where data security and integrity are important, such as transferring sensitive files, distributing software packages, or archiving data for long-term storage."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open G3FC files and extract their contents with the G3Pix G3FC Archiver. To open a G3FC file with G3FC Archiver, select File → Open."

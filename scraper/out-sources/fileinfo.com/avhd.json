@@ -7,6 +7,17 @@
   "type_name": "Hyper-V SnapShot File",
   "summary": "Learn about .AVHD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "An AVHD file is a file created by Hyper-V, a virtualization program included with Microsoft Windows Server. It saves a snapshot of a virtual machine's instances and allows the virtual machine's state to be restored. AVHD files can be very large in size."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "AVHD files are supplements to .VHD files, which represent a virtual hard disk's original image. An AVHD file stores differencing information that represents changes from the base VHD disk. This allows users to access either the updated version (AVHD) or the original version (VHD) of a virtual hard disk image as needed. VHD and AVHD files are saved to the same directory.",
+      "NOTE: AVHD files are called Snapshot Differencing Disk files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "In most cases, you will not need to open an AVHD file. The changes tracked within an AVHD file will be merged into its parent VHD file when you shut down your virtual machine, and the AVHD file itself will be deleted."

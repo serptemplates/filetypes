@@ -1,7 +1,7 @@
 {
   "slug": "menc",
   "extension": "menc",
-  "name": ".MENC",
+  "name": "Windows Mobile Encrypted File",
   "summary": "Learn about .MENC files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -10,6 +10,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=4164&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MENC files are named with the convention FILENAME.GUID.menc, where FILENAME is the original file name and GUID is a generated key that lets an encryption filter know whether or not it can decrypt the file.",
+      "NOTE: MENC files are designed to be decrypted by the device that created the file. Therefore, MENC files can be transferred to a PC using Windows ActiveSync or Windows Mobile Device Center, but it may not be possible to decrypt the file on the computer. Also, changing the GUID on a MENC file will disable the ability of the decryption program to properly decrypt the file.",
+      "To avoid encrypting files, go to Settings → System or Settings → Security on the Windows Mobile device and uncheck the box that says \"Encrypt files placed on storage cards.\""
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Encrypted file created by Windows mobile devices; typically found on removable media cards; contains an encrypted version of the original file and additional header information; enables secure file storage on external storage cards."
     ]
   },
   "images": [
@@ -42,8 +54,11 @@
     {
       "url": "https://fileinfo.com/extension/menc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.176Z"
+      "retrieved_at": "2025-11-01T22:32:42.613Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.176Z"
+  "last_updated": "2025-11-01T22:32:42.613Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

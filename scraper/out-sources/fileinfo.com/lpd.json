@@ -4,8 +4,20 @@
   "slug": "lpd",
   "extension": "lpd",
   "name": ".LPD File Extension",
+  "type_name": "LPD Daemon Print Permissions File",
   "summary": "Learn about .LPD files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "File used by IBM AIX systems and other UNIX systems; has the filename hosts.lpd and specifies print permissions for individual computers or groups of computers; allows system administrators to create fine-grained access control policies for networked printers."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "LPD files are used by the lpd daemon, a service that processes print requests. When a print request arrives, the lpd daemon creates a process that checks both the hosts.lpd file and the hosts.equiv file in the /​etc/​ directory. Using these files, the daemon determines whether the print request is allowed.",
+      "NOTE: LPD files can be edited with any text editor."
+    ]
+  },
   "programs": {
     "windows": [
       {

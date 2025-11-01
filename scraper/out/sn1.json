@@ -1,7 +1,7 @@
 {
   "slug": "sn1",
   "extension": "sn1",
-  "name": ".SN1",
+  "name": "Drive Snapshot Backup Continuation 1",
   "summary": "Learn about .SN1 files and view a list of programs that open them.",
   "developer": "Tom Ehlert",
   "programs": {
@@ -10,6 +10,17 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=3060&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Drive Snapshot allows Windows users to create backup copies of their drives. They can then use these backups to restore or recover their files if needed.",
+      "If a drive's contents are small enough, Drive Snapshot saves them in a single SNA file. However, if the drive contains a large amount of data, Drive Snapshot creates continuation files that contain the rest of the drive's data. These files use the same base filename as their associated SNA file, but the .SN1, .SN2, and so on extensions. For example, a file named Backup.sn1 is the first continuation file for a backup named Backup.sna."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An SN1 file is a continuation file created by Drive Snapshot, a backup utility for Windows. It contains the second part of a backup disk image, which Drive Snapshot has split into multiple files. An SN1 file must be paired with its accompanying .SNA file to access the data they contain."
     ]
   },
   "how_to_open": {
@@ -48,8 +59,11 @@
     {
       "url": "https://fileinfo.com/extension/sn1",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.305Z"
+      "retrieved_at": "2025-11-01T22:32:42.778Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.305Z"
+  "last_updated": "2025-11-01T22:32:42.778Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

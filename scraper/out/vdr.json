@@ -1,7 +1,7 @@
 {
   "slug": "vdr",
   "extension": "vdr",
-  "name": ".VDR",
+  "name": "VirtualDub Signpost File",
   "summary": "Learn about .VDR files and view a list of programs that open them.",
   "developer": "Avery Lee",
   "programs": {
@@ -14,6 +14,17 @@
         "name": "PEGASYS TMPGEnc",
         "url": "https://www.videohelp.com/software/TMPGEnc"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VirtualDub Frameserver hosts \"dummy\" VDR video files, which are opened in another video editing program and then \"served\" frame by frame. VDR files look and act just like regular video files in Windows, even though they are being hosted and converted in the background by VirtualDub.",
+      "VDR files may also be seen with a \".vdr.avi\" double file extension, which may be used for programs that can only recognize an AVI video file with an ending \".avi\" extension. VirtualDub provides a proxy handler that registers VDR files alongside AVI files in Windows, but it may cause other programs to malfunction."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "File created by VirtualDub, a program primarily used for editing .AVI movie clips in Windows; hosts frame by frame video data that can be converted and served to programs using specific properties set in VirtualDub; used to supply compatible video formats to video editing programs."
     ]
   },
   "images": [
@@ -46,8 +57,11 @@
     {
       "url": "https://fileinfo.com/extension/vdr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.352Z"
+      "retrieved_at": "2025-11-01T22:32:42.844Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.352Z"
+  "last_updated": "2025-11-01T22:32:42.844Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

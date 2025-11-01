@@ -4,8 +4,20 @@
   "slug": "pyenc",
   "extension": "pyenc",
   "name": ".PYENC File Extension",
+  "type_name": "PyFileEncrypt Encrypted File",
   "summary": "Learn about .PYENC files and view a list of programs that open them.",
   "developer": "MCTVR",
+  "more_information": {
+    "description": [
+      "A PYENC file is a file that has been encrypted using PyFileEncrypt. PyFileEncrypt is a set of Python scripts that allow users to encrypt files using the AES-256 encryption algorithm. You can decrypt a PYENC file using PyFileEncrypt and the password used to encrypt the file."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PyFileEncrypt includes two Python scripts, FileEncrypt.py and FileDecrypt.py. FileEncrypt.py is used to encrypt files, such as documents, images, or videos, using the AES-256 encryption algorithm. To encrypt a file, a user runs FileEncrypt.py, enters a filename, and enters a password. The entered file is then encrypted and saved as a PYENC file.",
+      "To decrypt a PYENC file, users run FileDecrypt.py and enter their PYENC file's filename. They then enter the password used to encrypt the file. FileDecrypt.py then decrypts the file, allowing the user to open it as they would normally."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "PYENC files are encrypted files that cannot be opened. To decrypt a PYENC file, run the FileDecrypt.py script included with PyFileEncrypt. Then, enter your PYENC file's filename and the password used to encrypt the file."

@@ -1,7 +1,7 @@
 {
   "slug": "trashes",
   "extension": "trashes",
-  "name": ".TRASHES",
+  "name": "macOS USB Flash Drive Trash Folder",
   "summary": "Learn about .TRASHES files and view a list of programs that open them.",
   "developer": "Apple",
   "programs": {
@@ -10,6 +10,19 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11005&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In macOS, when you move a file from a USB flash drive to Trash, macOS creates a hidden .TRASHES folder and places a copy of the file in that folder. This allows you to restore the file if necessary. When you empty your Trash while the USB flash drive is connected to your computer, macOS automatically deletes all files in the drive's .TRASHES folder.",
+      "In macOS, you can see the .TRASHES folder by pressing CMD + SHIFT + . to show hidden files. You can also see the .TRASHES folder in Windows using File Explorer and ChromeOS using the Files app.",
+      "As long as you are okay with losing the copies of to-be-deleted files stored in the .TRASHES folder, you can delete the folder and files to free up space on your USB flash drive.",
+      "NOTE: iOS devices can also create .TRASHES folders on USB flash drives connected to them."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A folder with the .TRASHES extension is a hidden folder macOS created on a USB flash drive to store files marked for deletion. If you need to free up space on a flash drive that contains a .TRASHES folder, you can delete the folder."
     ]
   },
   "how_to_open": {
@@ -52,8 +65,11 @@
     {
       "url": "https://fileinfo.com/extension/trashes",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.333Z"
+      "retrieved_at": "2025-11-01T22:32:42.815Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.333Z"
+  "last_updated": "2025-11-01T22:32:42.815Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

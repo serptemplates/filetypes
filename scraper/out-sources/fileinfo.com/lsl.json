@@ -4,8 +4,22 @@
   "slug": "lsl",
   "extension": "lsl",
   "name": ".LSL File Extension",
+  "type_name": "LiveSplit Layout",
   "summary": "Learn about .LSL files and view a list of programs that open them.",
   "developer": "LiveSplit",
+  "more_information": {
+    "description": [
+      "An LSL file is a layout file meant to be used with LiveSplit, a timer program used by video game speedrunners. It contains XML data that alters LiveSplit's appearance. LSL files can control LiveSplit's size, text formatting, and background, as well as how the program shows a player's timer and splits."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Speedrunners use LiveSplit to track how quickly they complete video games, sections of video games, and/or specific in-game challenges. They can then compare their times with other speedrunners' times, to see if they've set a new record.",
+      "When a speedrunner first opens LiveSplit, the program appears as a simple black box with a white timer. Typically, speedrunners spruce up LiveSplit's appearance by editing the program's layout. For example, a speedrunner might add a title for their speedrun, show the titles of their splits (which are often loaded from an .LSS file), and change LiveSplit's size and background color.",
+      "To edit LiveSplit's layout, speedrunners right-click in the program and select Edit Layout.... The program's Layout Editor then appears. After a speedrunner has finished editing LiveSplit's layout, they can save their custom layout by right-clicking in the program and selecting Save Layout or Save Layout As.... The layout will then be saved as an LSL file, which a speedrunner can reload the next time they open LiveSplit.",
+      "NOTE: LSL files may contain references to .ASL files, which are LiveSplit Auto Splitter Scripts."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "To open an LSL file in LiveSplit, right-click in the program and select Open Layout → From File.... Then, navigate to and select your LSL file. LiveSplit will then apply the layout settings your LSL file contains.",

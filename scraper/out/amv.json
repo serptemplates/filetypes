@@ -1,9 +1,11 @@
 {
   "slug": "amv",
   "extension": "amv",
-  "name": "AMV File",
+  "name": "Actions Media Video",
   "summary": "Learn about .AMV files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "video",
+  "category_slug": "video",
   "programs": {
     "windows": [
       {
@@ -24,11 +26,45 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "AMV files are a variant of .AVI files that are used by some Chinese media players. Notably, AMV files include the text AMV and amvh in their headers, where AVI files would contain the text AMI and avih. The files' audio is compressed is using the PCM audio codec.",
+      "The AMV format was designed to allow cheaply-made media players that use the Actions semiconductor chip to store and play many low-quality videos. AMV videos are not highly compressed, but their initial file size is so low (due to their low resolution and frame rate) that even inexpensive media players can store and play back a number of AMV videos."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The AMV acronym as Actions Media Video is classified as a video file format produced for Chinese portable MP4 media players and S1 MP3 players with video playback. The AMV video basically has two different formats: The earlier one for the Actions chip and the latest one for ALi’s M5661 chip; the format for ALi one was ALIAVI. The video format is a variant of Motion JPEG, with fixed rather than variable division tables. The audio format is a variant of IMA ADPCM. The first 8 bytes of each frame are origin, index, and several encoded 16-bit samples; usually, the AMV files play sound at 22050 samples/second. The AMV video is a compressed but low resolution (96x96 to 320x240 pixel), which can be played on the desktop using any media player software.",
+      "An AMV file is a video saved in the Actions Media Video file format, which is used by some Chinese portable media players. It contains a compressed, low-resolution (96x96 to 320x240 pixel) video. AMV files can be played using the desktop PC software included with AMV media players, as well as VideoLAN VLC media player."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open and play AMV videos in VideoLAN VLC media player (cross-platform) or Online Media Technologies AVS Media Player (Windows). If you want to convert an AMV video to a more standard video format, such as AVI or .MP4, you can do so using FFmpeg (cross-platform), AnyMP4 Video Converter (Windows, Mac), or Online Media Technologies AVS Video Converter (Windows)."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -62,15 +98,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/video/amv/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     },
     {
       "url": "https://fileinfo.com/extension/amv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.912Z"
+      "retrieved_at": "2025-11-01T22:32:42.251Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.912Z"
+  "last_updated": "2025-11-01T22:32:42.251Z",
+  "containers": []
 }

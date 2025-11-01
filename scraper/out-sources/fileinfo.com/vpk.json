@@ -4,8 +4,21 @@
   "slug": "vpk",
   "extension": "vpk",
   "name": ".VPK File Extension",
+  "type_name": "Valve Pak",
   "summary": "Learn about .VPK files and view a list of programs that open them.",
   "developer": "Valve",
+  "more_information": {
+    "description": [
+      "A VPK file is a Valve Pak file used by some games developed with the Source Engine, which include Half-Life, Left 4 Dead, DOTA 2, and Portal 2. It may be a master directory file for a collection of VPK files or may be one of the raw VPK data files. VPK files are used for storing maps, models, materials, audio, choreography scenes, and other original game content, but can can be used for making game mods as well."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "VPK files are saved as part of a VPK package. Each VPK package has a master VPK directory file named archive_dir.vpk (where \"archive\" is the name of the VPK package) and VPK archive files named archive_0.vpk, archive_1.vpk, etc.",
+      "You can create VPK files using the vpk.exe command line tool located in the game directory. To ensure compatibility, you should use the vpk.exe tool located in the directory of the game you are creating the VPK file for. In Windows, the vpk.exe tool will most likely be located in the following directory: C:\\​Program Files (x86)\\​SteamApps\\​common\\​[game title]\\​bin",
+      "NOTE: The VPK format is the successor to the .GCF format."
+    ]
+  },
   "programs": {
     "windows": [
       {

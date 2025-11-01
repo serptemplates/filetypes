@@ -1,7 +1,7 @@
 {
   "slug": "sli",
   "extension": "sli",
-  "name": ".SLI",
+  "name": "OMSI Spline Configuration File",
   "summary": "Learn about .SLI files and view a list of programs that open them.",
   "developer": "MR Software",
   "programs": {
@@ -10,6 +10,20 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=9065&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The OVH file is made up of lines of data following a keyword (whether it's for height profiles, textures, graphical lanes, or paths). The format looks like this:",
+      "[keyword] 1 2 3",
+      "An example of a Height Profile SLI file looks like this:",
+      "[heightprofile] -8.000 - First X-coordinate (begin) -4.000 - Second X-coordinate (end) 0.500 - Height on First coordinate 0.250 - Height on Second coordinate",
+      "OMSI will only read lines of data that are in this format."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Spline file created by OMSI The Bus Simulator, an omnibus driving simulation program; similar to other OMSI configuration files like .HUM, .SLI, .SCO, and .BUS files; holds configuration data that guides human and Artificial Intelligence (AI) traffic during gameplay, for e.g., the roads; can be customized."
     ]
   },
   "images": [
@@ -42,8 +56,11 @@
     {
       "url": "https://fileinfo.com/extension/sli",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.304Z"
+      "retrieved_at": "2025-11-01T22:32:42.776Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.304Z"
+  "last_updated": "2025-11-01T22:32:42.776Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

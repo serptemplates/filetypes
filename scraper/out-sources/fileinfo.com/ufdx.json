@@ -4,8 +4,20 @@
   "slug": "ufdx",
   "extension": "ufdx",
   "name": ".UFDX File Extension",
+  "type_name": "UFED Multiple Dump File",
   "summary": "Learn about .UFDX files and view a list of programs that open them.",
   "developer": "Cellebrite",
+  "more_information": {
+    "description": [
+      "A UFDX file contains data extracted from multiple devices using Cellebrite Universal Forensic Extraction Device (UFED) or Cellebrite Physical Analyzer. For example, it may contain data extracted from a drone and data extracted from a smartphone. UFDX files are used to build cases and reports in Physical Analyzer."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Cellebrite's digital forensics suite allows investigators to extract data from a variety of devices, including smartphones, drones, and SD cards, analyze that data, and share their findings with other law enforcement professionals. UFED and Physical Analyzer are two of the suite's primary applications.",
+      "Both UFED and Physical Analyzer allow investigators to extract a device's contents and save them as a single .UFD file. However, if investigators are extracting data from multiple related devices, they may instead save all of the devices' contents as a UFDX file. This allows investigators to load all the devices' data as a single file while building a case in Physical Analyzer, and more easily share the data with other investigators if needed."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a UFDX file while opening or editing a case in Cellebrite Physical Analyzer (Windows). For example, while opening a case, select Add → Load extraction on the Load evidence screen to load a UFD file.",

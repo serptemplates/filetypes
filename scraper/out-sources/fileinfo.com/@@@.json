@@ -7,6 +7,17 @@
   "type_name": "MS-DOS 2.0 to 3.2x Backup Control File",
   "summary": "Learn about .@@@ files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "A file with a .@@@ extension is a backup control file created by the BACKUP program included with MS-DOS and FreeDOS. It contains data used to load a DOS backup, including the backup disk's sequence number and the date on which the backup was created."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "MS-DOS 2.0 to 3.2x created backup disks that contained a copy of each backed-up file and a BACKUPID.@@@ file. The file identified the disk as an MS-DOS backup disk.",
+      "FreeDOS, an open-source operating system that emulates MS-DOS on modern PCs and mobile devices, can also create backups that contain BACKUPID.@@@ files. To do so, use the FreeDOS /v (version) switch to choose the 3.2x and earlier backup format."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use FreeDOS's RESTORE program to restore an MS-DOS backup disk that contains a @@@ file."

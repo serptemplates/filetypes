@@ -4,8 +4,25 @@
   "slug": "wu8",
   "extension": "wu8",
   "name": ".WU8 File Extension",
+  "type_name": "Wiimm U8 Mario Kart Wii Archive",
   "summary": "Learn about .WU8 files and view a list of programs that open them.",
   "developer": "Wiimm",
+  "more_information": {
+    "description": [
+      "A WU8 file is an archive saved in the Wiimms U8 (WU8) format and used by Mario Kart Wii, a Mario-themed kart racing game. It contains custom tracks that can be raced on in the game. WU8 files are similar to .U8 files but are used for sharing modified tracks over the Internet with other users without Nintendo licensing issues."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "WU8 was developed by Wiimm for SZS Tools, which is a collection of tools used to modify Nintendo Wii game data files and archives. The format is commonly used in the homebrew and modding communities.",
+      "To create a WU8 file, use one of the following SZS Tools commands:",
+      "wszst normalize --wu8 example.szs",
+      "wszst compress --wu8 example.szs",
+      "The normalize command creates a normalized version of the example.szs track without altering the compression state. The compress command creates a Yaz0-compressed version of the example.szs track file.",
+      "You can use the following command to decompress a WU8 file:",
+      "wszst uncompress --wu8 example.wu8"
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,7 +1,7 @@
 {
   "slug": "vmx",
   "extension": "vmx",
-  "name": ".VMX",
+  "name": "VMware Virtual Machine Configuration File",
   "summary": "Learn about .VMX files and view a list of programs that open them.",
   "developer": "VMware",
   "programs": {
@@ -26,6 +26,20 @@
         "name": "Steinberg Cubase",
         "url": "https://fileinfo.com/software/steinberg/cubase"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Fusion is a high-end virtualization program that allows you to run Windows, Linux, and other operating systems in macOS. When you install an operating system (OS) with Fusion, the software creates a virtual machine (VMs) to store the OS.",
+      "As Fusion creates the VM, it also creates various data files, including VMX and .VMDK files, to configure the VM. VMX files are paired with and used to load the virtual disk saved in a VMDK file.",
+      "You can find the configuration files in a VMWAREVM package by right-clicking the VMWAREVM file and selecting Show Package Contents. The VMX file is named after the name of the VM. For example, if the VM name is Windows 11 x64, the VMX file is named Windows 11 x64.vmx.",
+      "VMX files are saved in a plain text format that stores settings in the form of property = value. For example, the setting for a VM's memory limit may be memsize = \"512\", which means that 512MB of RAM is the maximum memory allowed for that VM.",
+      "NOTE: If you created a VM with an earlier Linux version of VMware Workstation, that machine's configuration file may be a .CFG file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A VMX file is a configuration file created by VMware virtualization software, such as VMware Workstation and VMware Fusion. It stores plain text settings for a virtual machine (.VMWAREVM package), which includes a virtual machine's memory, hard disk, and processor limit settings. VMX files are typically created and saved within the VMWAREVM package for which they store the settings."
     ]
   },
   "how_to_open": {
@@ -69,8 +83,11 @@
     {
       "url": "https://fileinfo.com/extension/vmx",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.358Z"
+      "retrieved_at": "2025-11-01T22:32:42.851Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.358Z"
+  "last_updated": "2025-11-01T22:32:42.851Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

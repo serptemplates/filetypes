@@ -7,6 +7,17 @@
   "type_name": ".NET Security Resolution Cache File",
   "summary": "Learn about .CCH files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "File used by Microsoft's .NET Framework, a platform used for running .NET applications; saves Code Access Security (CAS) cached information and is used for resolving the security demands of a .NET application."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The .NET Framework generates CCH files automatically and uses them to resolve CAS functions more quickly. The files are generally named security.config.cch as well as other derivatives of this name.",
+      "NOTE: CCH files can be safely deleted, but the .NET Framework will regenerate them. If you delete them, the application will likely run slower until the files are regenerated."
+    ]
+  },
   "programs": {
     "windows": [
       {

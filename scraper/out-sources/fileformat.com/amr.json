@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/amr/index.html",
   "slug": "amr",
   "extension": "amr",
-  "name": "AMR File",
-  "source": "fileformat.com"
+  "name": "What is an AMR file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "The AMR( Adaptive Multi-Rate ) is an audio format; widely used in various mobile applications and devices, typically in audio player/recorder or in VoIP kind of applications. AMR can be further classified as:\n\nAMR-NB( NarrowBand )AMR-WB( WideBand )\n\nUsually, AMR refers to AMR-NB. The AMR file format has the following structure:\n\nEach AMR file contains a 6-byte header that recognize the file as an AMR audio. This header is always set to:\n\n0x230x210x410x4D0x520x0A\n\nThis is usually simialr across all AMR-NB files. If the header following a standard, it is likely that the file is corrupted and should not be used. the AMR file consists of a whole number of packed frames of audio. These frames each compose 20ms of audio. Each frame can be encoded using any of the valid AMR-NB modes (0-7, 8 SID in DTX mode). Since, the frames can be encoded at different bit rates, this typical method is called Adaptive Multi-Rate(AMR).\n\nAMR modes\n\nFollowing are the different AMR modes and their corresponding bitrates:\n\nMODEBIT RATES0AMR 4.75 - Encodes at 4.75kbit/s1AMR 5.15 - Encodes at 5.15kbit/s2AMR 5.9 - Encodes at 5.9kbit/s3AMR 6.7 - Encodes at 6.7kbit/s4AMR 7.4 - Encodes at 7.4kbit/s5AMR 7.95 - Encodes at 7.95kbit/s6AMR 10.2 - Encodes at 10.2kbit/s7AMR 12.2 - Encodes at 12.2kbit/s\n\nFrame size of AMR modes in bytes (including the header byte) are given below:\n\nCMRMODEFRAME SIZE( in bytes )0AMR 4.75131AMR 5.15142AMR 5.9163AMR 6.7184AMR 7.4205AMR 7.9521"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file bearing the .amr extension is an audio format based on the Adaptive Multi-Rate (AMR) codec, a standard specifically engineered for efficient speech encoding. This technology utilizes a multi-rate narrowband speech codec that processes audio signals within a constrained frequency range optimal for the human voice. It operates across a spectrum of bit rates, from a low of 4.75 kbit/s up to 12.2 kbit/s, achieving what is recognized as toll quality speech—comparable to a traditional landline call—starting at just 7.4 kbit/s. A key to its efficiency is link adaptation, a smart technology that dynamically selects the most appropriate bit rate from eight possible options based on real-time network conditions. This ensures optimal clarity while conserving bandwidth."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

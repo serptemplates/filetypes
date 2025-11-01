@@ -1,9 +1,51 @@
 {
   "slug": "bak",
   "extension": "bak",
-  "name": "BAK File",
+  "name": "Chromium Bookmarks Backup",
   "summary": "Learn about .BAK files and view a list of programs that open them.",
   "developer": "Google",
+  "category": "database",
+  "category_slug": "database",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Many popular web browsers, including Google Chrome and Microsoft Edge, are based on Google's open-source Chromium browser. Chromium-based browsers save users' bookmarks in a file named Bookmarks. They also save a backup of users' bookmarks in Bookmarks.bak.",
+      "If you use a Chromium-based browser, and your Bookmarks file becomes corrupt or goes missing, you can use your Bookmarks.bak file to restore your bookmarks and folders. To do so, first navigate to the directory that contains your Bookmarks and Bookmarks.bak file:",
+      "Google Chrome for Windows: ~/​Users/​YourUserName/​AppData/​Local/​Google/​Chrome/​User Data/​Default",
+      "Google Chrome for macOS: ~/​Users/​YourUserName/​Library/​Application Support/​Google/​Chrome/​Default",
+      "Microsoft Edge for Windows: ~/​Users/​YourUserName/​AppData/​Local/​Microsoft/​Edge/​User Data/​Default",
+      "Microsoft Edge for macOS: ~/​Users/​YourUserName/​Library/​Application Support/​Microsoft Edge/​Default",
+      "Once you have located the Bookmarks backup file, delete the Bookmarks file (if it appears). Then, rename Bookmarks.bak to Bookmarks (remove the file extension). When you close and reopen your browser, the bookmarks contained in your renamed Bookmarks will appear."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open Bookmarks.bak with Microsoft Visual Studio Code (multiplatform), Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. Doing so will allow you to view the bookmarks and metadata the file contains.",
+      "For instructions on how to use Bookmarks.bak to restore your bookmarks in Google Chrome or Microsoft Edge, see above."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,13 +82,15 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open Bookmarks.bak with Microsoft Visual Studio Code (multiplatform), Microsoft Notepad (Windows), Apple TextEdit (Mac), or any other text editor. Doing so will allow you to view the bookmarks and metadata the file contains.",
-      "For instructions on how to use Bookmarks.bak to restore your bookmarks in Google Chrome or Microsoft Edge, see above."
-    ]
-  },
   "images": [
+    {
+      "url": "https://docs.fileformat.com/database/bak.png",
+      "alt": "Microsoft SQL Backup File Format"
+    },
+    {
+      "url": "https://docs.fileformat.com/database/bak_datastream.png",
+      "alt": "Microsoft SQL Backup File Format"
+    },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
@@ -84,15 +128,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.914Z"
+      "url": "https://docs.fileformat.com/database/bak/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.254Z"
     },
     {
-      "url": "https://fileinfo.com/extension/bak",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.914Z"
+      "url": "https://fileinfo.com/extension/bak",
+      "retrieved_at": "2025-11-01T22:32:42.254Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.914Z"
+  "last_updated": "2025-11-01T22:32:42.254Z"
 }

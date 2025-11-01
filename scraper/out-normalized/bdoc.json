@@ -1,9 +1,28 @@
 {
   "slug": "bdoc",
   "extension": "bdoc",
-  "name": "BDOC File",
+  "name": "Binary DigiDoc Signature File",
   "summary": "Learn about .BDOC files and view a list of programs that open them.",
   "developer": "RIA",
+  "category": "other",
+  "mime": [
+    "application/bdoc",
+    "application/x-bdoc"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "The BDOC format is based on the ETSI ASiC signature container standards. It is developed by Riigi Infosüsteemi Amet (RIA), which is the Information System Authority of Estonia. BDOC is one of three digital signature and cryptographic file formats in the DigiDoc family, along with the .CDOC and .DDOC files.",
+      "Several versions of the BDOC format have been developed since its initial release. 1.0 was published in 2009 and was used until May 2014 when it was replaced by version 2.1. The BDOC format is the second generation of DigiDoc formats and succeeded the first generation DDOC format.",
+      "The BDOC file contains the following contents:",
+      "[document].doc",
+      "mimetype",
+      "META-INF/manifest.xml",
+      "META-INF/signatures1.xml",
+      "NOTE: The qDigiDoc software can be used to digitally sign documents using an employee's ID card or mobile ID and can open, save, and verify documents with digital signatures. The software is open source and can be downloaded for free through the links below."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -34,18 +53,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,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",
-      "alt": "DigiDoc3 Client"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "DigiDoc4 Client"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAk0lEQVR42mNkGGDAiE+Sdf6p/9jEfyeaYdUXePwhVvXrLeVx2jPqgFEHDG4HkOowHw1xrOq33HiJVRzkkVEHjDpgcDvAzj8Aq0UPn73Cqv5Z1gScFuGyY9QBow4Ymg44deQoVvX3XIWxikutuDHqgFEHDHIH4LLo0MYNWDUuy1mLVX3UlGCSK7dRB4w6YHA4YCABAP7w5CG6yTEWAAAAAElFTkSuQmCC",
-      "alt": "eParakstitajs"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -72,20 +79,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.767Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.128Z"
     },
     {
-      "url": "https://fileinfo.com/extension/bdoc",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.767Z"
+      "url": "https://fileinfo.com/extension/bdoc",
+      "retrieved_at": "2025-11-01T22:32:42.128Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.767Z"
+      "retrieved_at": "2025-11-01T22:32:42.128Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.767Z"
+  "last_updated": "2025-11-01T22:32:42.128Z"
 }

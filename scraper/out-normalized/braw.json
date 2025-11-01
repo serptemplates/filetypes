@@ -1,9 +1,43 @@
 {
   "slug": "braw",
   "extension": "braw",
-  "name": ".BRAW",
+  "name": "Blackmagic RAW Video",
   "summary": "Learn about .BRAW files and view a list of programs that open them.",
   "developer": "Blackmagic Design",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Blackmagic Design developed the BRAW format to improve Adobe's CinemaDNG container format (individual .MXF files or a series of .DNG files may utilize this format). Additionally, Blackmagic Design developed the BRAW codec to replace other video codecs by providing higher-quality video at similar file sizes. Blackmagic Design released the BRAW format in 2018.",
+      "One notable feature of the BRAW format is Blackmagic Design developed the format to require less processing power. The increased speed is due to the sensor on the camera recording the video partially de-mosaicing video data instead of leaving it all to the software. By partially de-mosaicing the video data in the camera, the software and computer processor do not have to work as hard to complete the de-mosaic processing (a complex process where data is transformed into a color image).",
+      "A second feature is that the BRAW codec allows you to choose between 2 encoding methods: Constant Quality - Records video at a quality level that is not limited. This option ensures the highest quality (e.g., higher data rates when encoding complex frames) but may result in larger file sizes. Constant Bitrate - Records video at a constant bitrate, resulting in predictable file sizes. The different compression ratio options (for a single unprocessed frame) are 5:1, 8:1, 12:1, and 18:1.",
+      "Constant Quality - Records video at a quality level that is not limited. This option ensures the highest quality (e.g., higher data rates when encoding complex frames) but may result in larger file sizes.",
+      "Constant Bitrate - Records video at a constant bitrate, resulting in predictable file sizes. The different compression ratio options (for a single unprocessed frame) are 5:1, 8:1, 12:1, and 18:1.",
+      "A third feature of the BRAW format is that it stores a lot of metadata. With abundant metadata, the software viewing the BRAW video with the open-source Blackmagic RAW SDK better understands how the camera sensor captured the video subject. This produces video that better represents the lighting and color of the subject it captures. Digital video cameras embed the metadata in the BRAW format. However, when you modify BRAW video with DaVinci Resolve, the application generates a .SIDECAR file to store the changes in JSON format. The SIDECAR storage option allows you to override BRAW metadata without overwriting and erasing the original metadata.",
+      "Digital video cameras embed the metadata in the BRAW format. However, when you modify BRAW video with DaVinci Resolve, the application generates a .SIDECAR file to store the changes in JSON format. The SIDECAR storage option allows you to override BRAW metadata without overwriting and erasing the original metadata."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open BRAW files with Blackmagic RAW Player (multiplatform) and Blackmagic DaVinci Resolve (multiplatform).",
+      "You can also open BRAW files with Adobe Premiere Pro (multiplatform) and Avid Media Composer (multiplatform) with the Blackmagic RAW plugin installed."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Several video editors, such as Blackmagic DaVinci Resolve and Adobe Premiere Pro (with the Blackmagic RAW plugin installed), can convert BRAW files to other file types.",
+      "For example, DaVinci Resolve can convert BRAW files to various formats, including the following file types:",
+      ".MP4 - MPEG-4 Video",
+      ".MOV - Apple QuickTime Movie",
+      ".AVI - Audio Video Interleave",
+      ".MXF - Material Exchange Format",
+      ".DPX - Digital Picture Exchange",
+      ".AAC - Advanced Audio Coding",
+      ".WAV - WAVE Audio",
+      ".EXR - OpenEXR Image"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -34,26 +68,6 @@
         "name": "Avid Media Composer with the Blackmagic RAW plugin installed",
         "url": "https://fileinfo.com/software/avid/media_composer"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open BRAW files with Blackmagic RAW Player (multiplatform) and Blackmagic DaVinci Resolve (multiplatform).",
-      "You can also open BRAW files with Adobe Premiere Pro (multiplatform) and Avid Media Composer (multiplatform) with the Blackmagic RAW plugin installed."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Several video editors, such as Blackmagic DaVinci Resolve and Adobe Premiere Pro (with the Blackmagic RAW plugin installed), can convert BRAW files to other file types.",
-      "For example, DaVinci Resolve can convert BRAW files to various formats, including the following file types:",
-      ".MP4 - MPEG-4 Video",
-      ".MOV - Apple QuickTime Movie",
-      ".AVI - Audio Video Interleave",
-      ".MXF - Material Exchange Format",
-      ".DPX - Digital Picture Exchange",
-      ".AAC - Advanced Audio Coding",
-      ".WAV - WAVE Audio",
-      ".EXR - OpenEXR Image"
     ]
   },
   "images": [
@@ -89,10 +103,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/braw",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.988Z"
+      "url": "https://fileinfo.com/extension/braw",
+      "retrieved_at": "2025-11-01T22:32:42.362Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.988Z"
+  "last_updated": "2025-11-01T22:32:42.362Z"
 }

@@ -4,8 +4,21 @@
   "slug": "iwa",
   "extension": "iwa",
   "name": ".IWA File Extension",
+  "type_name": "iWork Archive File",
   "summary": "Learn about .IWA files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "Archive file format used by the iWork suite; contains serialized components, such as theme style sheets, tables, and metadata, in a Protobuf stream, which is compressed in the Snappy compression format; located inside the Index.zip file in an iWork document bundle."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The IWA format replaces the previous XML-based format by splitting XML documents into small binary files that can be loaded in isolation, which is better for iOS devices that have less RAM and for sharing to iCloud. The data contained in the index XML file is now encoded in the IWA binary files, which are contained in the Index.zip file.",
+      "A Protobuf stream is a way of encoding structured data for more efficient data exchange. The encoded data is compressed with Snappy compression, a format widely used by Google and intended for high compression and decompression speeds. The format compresses around 250 MB/sec and decompresses close to 500 MB/sec.",
+      "NOTE: The IWA format was released with the iWork '13 suite."
+    ]
+  },
   "programs": {
     "windows": [
       {

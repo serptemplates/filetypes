@@ -7,6 +7,18 @@
   "type_name": "Microsoft Machine Learning Server Data File",
   "summary": "Learn about .XDF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "XDF files are used by Microsoft Machine Learning Server, an enterprise machine learning platform used by data scientists and data engineers. They store blocks of binary data formatted in columns and rows. XDF files also contain metadata about the data set, including the names of data variables, descriptions of the variables, and how the data is stored (integer, factor, etc.)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The XDF format is the native file format used by Machine Learning Server to store collected data. Since Machine Learning Server may be implemented by a variety of organizations, XDF files may store various types of data depending on the context in which they are used. For example, an airline may use Machine Learning Server to record and analyze on-time performance data. The corresponding XDF file might include the departure time, arrival time, flight number, origin airport, destination airport, flight distance, and date of each flight.",
+      "XDF files often store large amounts of recorded data in a single file. However, as data sets grow, XDF files may be split into smaller, compressed files to save space. Each block of data stored in an XDF file can be compressed at a custom level.",
+      "NOTE: While XDF files are typically created by Machine Learning Server software, the files may also be created by other programs, such as XDF Output tool."
+    ]
+  },
   "programs": {
     "windows": [
       {

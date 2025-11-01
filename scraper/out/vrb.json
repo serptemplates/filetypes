@@ -1,7 +1,7 @@
 {
   "slug": "vrb",
   "extension": "vrb",
-  "name": ".VRB",
+  "name": "Veeam Incremental Backup File",
   "summary": "Learn about .VRB files and view a list of programs that open them.",
   "developer": "Veeam Software",
   "programs": {
@@ -10,6 +10,16 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=8562&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "An incremental backup policy provides more efficient hard disk usage since the software only stores the changed data since the last backup. This uses less disk space than performing a full backup for each restore point of the virtual machine. If the user wants to restore from any incremental backup point, the software uses the full backup plus each incremental backup file in order to construct the state of the machine at that point."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "Backup file created by Veeam Software's backup and recovery software for virtual machines (VMs); stores incremental backup data since the initial full backup was performed (and stored in a .VBK file); may be saved with several other VRB files, which contain the sequence of incremental backups since the full backup."
     ]
   },
   "images": [
@@ -42,8 +52,11 @@
     {
       "url": "https://fileinfo.com/extension/vrb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.361Z"
+      "retrieved_at": "2025-11-01T22:32:42.854Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.361Z"
+  "last_updated": "2025-11-01T22:32:42.854Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

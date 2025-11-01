@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/audio/rf64/index.html",
   "slug": "rf64",
   "extension": "rf64",
-  "name": "RF64 File",
-  "source": "fileformat.com"
+  "name": "What is an RF64 file?",
+  "summary": "What's on this Page",
+  "category": "audio",
+  "category_slug": "audio",
+  "technical_info": {
+    "content": [
+      "A new ‘ds64’ chunk is immediately inserted (before the FMT chunk), after the 32-bit chunk size field at offset 4 is set to -1 (0xFFFFFFFF) in RF64 simplest form. By using a simple sequential table mechanism, the DS64 chunk will contain the data chunk(s), pointing to additional DATA chunks. The first 4 bytes of the file are then being changed from ‘RIFF’ to ‘BW64’.\n\nAdditional chunks defined by RF64 files include:\n\nBW64 : Replacing “RIFF”ds64 : 64-bit data size, first chunk under BW64axml : Replaced by BW64bxml : Similar to “axml” in BWF (ITU-R BS.1352-3), but it is compressedsxml : XML data related to soundchna : Info of the channelJUNK : ds64 placeholder"
+    ]
+  },
+  "more_information": {
+    "description": [
+      "The RF64 format has a maximum file size of 4 GB and is compatible with BWF. In Winamp, this format is called RIFF64 broadcast wave. Winamp is a multimedia playback software for Microsoft Windows. The RF64 store’s audio data in RIFF64 in broadcast wave format. Being a multichannel audio file format the RF64 is primarily designed to remove size restrictions on other file formats allowing users to store files over 4GB. This file format add metadata to the sound data to enable its exchange between platforms and applications.\n\nMoreover, RF64 is an open format allowing users to broadcast large files, document their activities, and supports timecode to enable synchronization with other recordings. Using the RF64 extension you can easily create Broadcast Wave Files which will contain the “bext” chunk from the BWF specification"
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

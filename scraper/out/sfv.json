@@ -1,7 +1,7 @@
 {
   "slug": "sfv",
   "extension": "sfv",
-  "name": "SFV File",
+  "name": "Simple File Verification File",
   "summary": "Learn about .SFV files and view a list of programs that open them.",
   "developer": "N/A",
   "programs": {
@@ -20,6 +20,18 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Checksum utilities allow users to quickly compare two files to determine whether they are identical. This can be useful in situations in which a user wants to copy and transfer a file to another user, and needs to know the other user received an exact copy of the file. In this scenario, the user can use a checksum utility to produce a checksum for the original file and its duplicate. If the checksums match, the files are identical.",
+      "Many checksum utilities, including MooSFV, QuickSFV, and Traction SFV Checker, allow users to create checksums for a group of files at the same time. Each file's name and its checksum are then saved in an SFV file. When a user transfers the group of files to a CD, DVD, USB drive, or other storage device, they can also transfer the SFV file to that device. This gives the user who receives the device an easy way to verify that none of the files stored on the device were corrupted during the transfer.",
+      "SFV files may also accompany files downloaded from the Internet. This allows users to verify that the files they downloaded were not corrupted or altered during the download."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An SFV file is a plain text file used to verify other files' integrity. It contains one or more filenames and associated CRC32 checksums, which are unique combinations of letters and numbers produced by a checksum utility. Using an SFV file and a checksum utility, users can determine whether any files referenced in the SFV file have been corrupted or otherwise modified. SFV files most commonly accompany files transferred via CDs, DVDs, or USB drives."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use QuickSFV (Windows, Linux), Traction SFV Checker (Windows), and checkSum+ (Mac) to compare the checksums an SFV file contains against a file set's actual checksums. For example, in SFV Checker, you can add your files to the program's file list, open your SFV file, and compare your files' checksums to those listed in the SFV file. This will tell you whether the files you received are identical to the files used to produce the checksums listed in your SFV file.",
@@ -30,14 +42,6 @@
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmElEQVR42tWXC46DMAxE45PBzZrcDE5G67Jh85mxA3RVrVUhNTieF+eDI+HLJvrY3r+jQf5SsNXqAAYgtmCbGB07HQgAII730VGPXRgsXgE4EJsn6sCINcAqXcgxNf8fhmACbci/zG43XwwiB1qXhQJM81yBeOIQQBnQKsvCWSRc8BGgiQEUQfBiToGbNT06LJF+2qVzK8cPIBQggvi5DUIUMVuIaqttKPkAQk5MHWotIVyAdV3hnMrADiJI5wBSSiHGCI8/AUe5J84A6OiX18pWgEAOFCiwB6TvNe68Z1VcgOxophpkhcW8DWBByMii/vcAX52CE4tQPgJQOn9qG2o8tQ5At9s0TWRI/mk4CsEAeBbGj2IXohU/HjQLWLztV+iTRfID0R5sEEDtDUE+x6Z62GsC9O3ItYIF8JsFUlBYBUf5rqygSksv4VIcDsaqC62yrC3HSv8me7wgGSlKWWDkF0Mwt28FQEpn9x5gmfZlU1qV5Uw8B7ljuT/LxMjV7PbF5Ag0cjUTe5ddvpohCDE3O7fLl1NkT9cSKjBmUFTUAAAAAElFTkSuQmCC",
-      "alt": "QuickSFV"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABd0lEQVR42s2XoW6DQBjHj4SXqK5YqukDICYnqjqB4R36ALWYKh4AsSDWBLdMTYAvukwURVJPwIDYuFtIoNwdH8ddu7/gC7Th9wP+R4Km6zrqpq7rH6Qwtm2T6fu+hqfGEsiyTAhQVRX3uOM46gTG4MoEIGBhgc3mc9JdiMnmOjh+Pr+qF2DBW4GyLJHrumoEeHCc0+mFTCUCMQesROB4fO7t35ZttXq/nwCt6XcTYC0/XDZWJglgwHb71fsdl+3SCNDgPDBOURTI8zyYQJqmZL8V6La8XdNQOAa3ERIYW2KQhKEpJrDEd2AmfJ7A8m02HBkLFB6eHiTQwI1mHKYKJElCPR+kbKYZ9uBIlgC06USgA5ciAIXj7Hbfg/8IC/BeqzS4VAF81ev1B1OABucJ5HmOgiCACcQxef1QBQa5ed607PcLMuUKGH8nHYOrEQBctTqBiXC5AgJwYQFWy1nBLR8LWCCKIulwZQJQOEjAsiylX8dt/o3AL5729bAvTnOsAAAAAElFTkSuQmCC",
-      "alt": "hkSFV"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -73,18 +77,23 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.865Z"
+      "retrieved_at": "2025-11-01T22:32:42.210Z"
     },
     {
       "url": "https://fileinfo.com/extension/sfv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.865Z"
+      "retrieved_at": "2025-11-01T22:32:42.210Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.865Z"
+      "retrieved_at": "2025-11-01T22:32:42.210Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.865Z"
+  "last_updated": "2025-11-01T22:32:42.210Z",
+  "mime": [
+    "text/x-sfv"
+  ],
+  "category": "document",
+  "related": [],
+  "containers": []
 }

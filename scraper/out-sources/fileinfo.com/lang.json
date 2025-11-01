@@ -4,8 +4,24 @@
   "slug": "lang",
   "extension": "lang",
   "name": ".LANG File Extension",
+  "type_name": "Minecraft Language Localization File",
   "summary": "Learn about .LANG files and view a list of programs that open them.",
   "developer": "Mojang",
+  "more_information": {
+    "description": [
+      "A LANG file is a game resource file used by Minecraft, an open-ended game that allows players to create and explore 3D worlds. It saves a list of key-value string pairs that map game menus, achievements, and other game objects to names in a given language. LANG files are used for localization."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "When developers create a program intended for use in multiple regions, they often translate the program's text into each of those regions' languages. This process is called localization.",
+      "One way developers localize programs is by creating multiple, language-specific text files that map the programs' text strings to each language's version of that string. The program can then refer to the correct file when showing in-game text, based on the user's language setting. Minecraft uses LANG files to show localized text to users.",
+      "Minecraft Java Edition's LANG files are stored in the minecraft.jar archive, which is located in the following directory:",
+      "[user]/​AppData/​Roaming/​.minecraft/​bin",
+      "In more recent versions of Minecraft Java Edition, LANG files have been replaced by .JSON files.",
+      "Each Minecraft Bedrock Edition resource pack (.MCPACK file) includes one or more LANG files used to show in-game text. These files are stored in a pack's texts directory."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "LANG files are saved in a plain text format, so you can open and edit them with any text editor. However, editing Minecraft Java Edition's LANG files can potentially cause the game to not run properly. Therefore, you should back up minecraft.jar before proceeding.",

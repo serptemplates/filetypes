@@ -1,9 +1,11 @@
 {
   "slug": "fot",
   "extension": "fot",
-  "name": "FOT File",
+  "name": "Font Resource File",
   "summary": "Learn about .FOT files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "font",
+  "category_slug": "font",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,39 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "FOT files are used in the process of installing \"embedded fonts\" in Windows. Embedded fonts allow fonts to be transferred between computers and require a FOT font resource file in addition to the TrueType font. The FOT file contains the information that Windows needs to recognize and install the font. The Windows API includes a function called CreateScalableFontResource that can be used for creating FOT files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An FOT file is a font file used for font outline data files. It contains information about the overall shapes and outlines of the characters in a font. Other information contained in a .fot file includes font’s name, style and its size. FOT files are used by applications that support TrueType (.TTF files). It is more often used by application installers during installation of fonts.",
+      "Font file used by Windows and applications that support TrueType fonts (.TTF files); contains font information and is used to install and configure an associated TrueType font; often used by application installers when installing fonts."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +79,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/font/fot/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.922Z"
+      "retrieved_at": "2025-11-01T22:32:42.269Z"
     },
     {
       "url": "https://fileinfo.com/extension/fot",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.922Z"
+      "retrieved_at": "2025-11-01T22:32:42.269Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.922Z"
+  "last_updated": "2025-11-01T22:32:42.269Z",
+  "containers": []
 }

@@ -1,9 +1,37 @@
 {
   "slug": "dll",
   "extension": "dll",
-  "name": "DLL File",
+  "name": "Dynamic Link Library",
   "summary": "Learn about .DLL files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "mime": [
+    "application/octet-stream",
+    "application/x-msdownload"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Windows comes with many default DLL files, which software developers can reference when creating programs that perform standard functions, such as opening dialog windows, communicating with external devices, and reading and writing files. Referencing DLL files saves programmers time (since they don't need to manually code common functions) and reduces their programs' file sizes (since the programs don't need to contain the resources stored in the DLL file).",
+      "When a program needs to use the data stored in a DLL file, it dynamically loads that DLL file into system memory. The program can then access and use the functions (and other data) the DLL file includes as though it were a part of the program.",
+      "Third-party programs may install additional DLL files on your computer. These DLL files function the same way as Windows' default DLL files, but are likely shared among only programs created by that developer.",
+      "If a program requires a DLL file that you do not have, it will likely show a \"missing DLL\" or \"DLL not found\" error message. In these instances, there are several actions you can take to attempt to resolve the DLL error, including:",
+      "Reinstalling the program that is trying to use the DLL file",
+      "Updating any related device drivers",
+      "Checking whether you accidentally deleted the DLL file",
+      "Checking for and applying Windows Updates",
+      "Restarting your computer",
+      "Performing a System Restore",
+      "In most cases, you should not attempt to manually find and download the DLL file you are missing from the internet. DLL files hosted on non-Microsoft DLL download sites may be vehicles for malware."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Most users will never need to and never should open a DLL file. In fact, opening or modifying a DLL file may cause errors within the program(s) that reference that file, and prevent it from functioning correctly.",
+      "However, Windows developers and other advanced users can decompile DLL files to view and modify their contents. Tools that can decompile DLL files include Microsoft Visual Studio, JetBrains dotPeek, Redgate .NET Reflector, and Resource Hacker."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,12 +50,6 @@
         "name": "Microsoft Visual Studio 2022",
         "url": "https://fileinfo.com/software/microsoft/visual_studio"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Most users will never need to and never should open a DLL file. In fact, opening or modifying a DLL file may cause errors within the program(s) that reference that file, and prevent it from functioning correctly.",
-      "However, Windows developers and other advanced users can decompile DLL files to view and modify their contents. Tools that can decompile DLL files include Microsoft Visual Studio, JetBrains dotPeek, Redgate .NET Reflector, and Resource Hacker."
     ]
   },
   "images": [
@@ -67,20 +89,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.783Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "https://fileinfo.com/extension/dll",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.783Z"
+      "url": "https://fileinfo.com/extension/dll",
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.783Z"
+      "retrieved_at": "2025-11-01T22:32:42.141Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.783Z"
+  "last_updated": "2025-11-01T22:32:42.141Z"
 }

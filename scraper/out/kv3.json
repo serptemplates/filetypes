@@ -1,7 +1,7 @@
 {
   "slug": "kv3",
   "extension": "kv3",
-  "name": ".KV3",
+  "name": "KeyValues3 Game Data File",
   "summary": "Learn about .KV3 files and view a list of programs that open them.",
   "developer": "Valve",
   "programs": {
@@ -26,6 +26,17 @@
         "name": "Apple TextEdit",
         "url": "https://fileinfo.com/software/apple/textedit"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "KV3 stands for KeyValues3, which is a Valve-developed data format that is similar to JSON and XML. However, KV3 files also support binary encodings, versioning, and data annotations. They also include support for some additional text syntax.",
+      "Each KV3 file begins with a line that contains a kv3 encoding header. It then goes on to define how a game object behaves. For example, bt_default.kv3 is a KV3 behavior tree, which defines how CS:GO bots behave in deathmatches. Bt_default.kv3 contains references to other KV3 files, stored in CS:GO's scripts/​ai/​modules directory. Those KV3 files contain scripts that bots execute to perform in-game actions."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A KV3 file is a plain text data file used by a Valve video game, such as Dota 2 or CounterStrike:Global Offensive (CS:GO). It contains text written in a structure similar to JSON. In CS:GO, KV3 files control how the game's bots behave."
     ]
   },
   "how_to_open": {
@@ -68,8 +79,11 @@
     {
       "url": "https://fileinfo.com/extension/kv3",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.150Z"
+      "retrieved_at": "2025-11-01T22:32:42.581Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.150Z"
+  "last_updated": "2025-11-01T22:32:42.581Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

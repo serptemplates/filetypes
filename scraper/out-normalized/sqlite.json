@@ -1,9 +1,47 @@
 {
   "slug": "sqlite",
   "extension": "sqlite",
-  "name": "SQLITE File",
+  "name": "SQLite Database",
   "summary": "Learn about .SQLITE files and view a list of programs that open them.",
   "developer": "SQLite",
+  "category": "database",
+  "category_slug": "database",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "SQLite databases store data in tables, which may contain multiple fields of various data types such as text or integers. Developers can access and modify this data using SQL queries or \"CRUD\" (create, read, update, delete) operations. Since databases are self-contained, updates to the database are fully contained within the SQLITE file. However, SQLite may record transaction information in a second temporary file called a rollback journal.",
+      "The SQLite library is freely available and is supported by all major mobile and desktop platforms including Android, iOS, Windows, and macOS. Additionally, all major programming languages provide support for SQLite.",
+      "NOTE: The file extension \".sqlite\" is not always used for SQLite databases. Developers often use a different file extension such as \".dat\" or \".db\" to conceal the file format."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open a SQLITE file using SQLite (multiplatform) or SQLite Database Browser (multiplatform).",
+      "Note that if your SQLITE file is encrypted, you may have to enter the password used to encrypt the file. If you do not know the password, you likely will not be able to open the file."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,12 +52,6 @@
         "name": "SQLite",
         "url": "https://fileinfo.com/software/sqlite/sqlite"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can open a SQLITE file using SQLite (multiplatform) or SQLite Database Browser (multiplatform).",
-      "Note that if your SQLITE file is encrypted, you may have to enter the password used to encrypt the file. If you do not know the password, you likely will not be able to open the file."
     ]
   },
   "images": [
@@ -50,15 +82,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "url": "https://docs.fileformat.com/database/sqlite/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.287Z"
     },
     {
-      "url": "https://fileinfo.com/extension/sqlite",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.933Z"
+      "url": "https://fileinfo.com/extension/sqlite",
+      "retrieved_at": "2025-11-01T22:32:42.287Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.933Z"
+  "last_updated": "2025-11-01T22:32:42.287Z"
 }

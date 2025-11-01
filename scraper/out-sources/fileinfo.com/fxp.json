@@ -7,6 +7,18 @@
   "type_name": "FX Preset",
   "summary": "Learn about .FXP files and view a list of programs that open them.",
   "developer": "Steinberg Media Technologies",
+  "more_information": {
+    "description": [
+      "An FXP file is a preset used by audio-mixing applications that support Virtual Studio Technology (VST). It contains an individual audio effect that can be added to a Digital Audio Workstation (DAW) via a VST plug-in. FXP files are related to .FXB files, which contain multiple presets."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Virtual Studio Technology is an audio plug-in interface that allows Digital Audio Workstations to install audio effects. While Steinberg developed the VST interface, many DAWs, including Steinberg Cubase, Ableton Live, Image-Line FL Studio, and LMMS, use the interface to allow users to install plug-ins.",
+      "In the past, VST plug-ins loaded effects from FXB and FXP files. FXP files contained an individual instrument, audio effect, or MIDI effect. While many DAWs used FXP files, each FXP file was linked to a specific plug-in. So, the FXP file could be loaded only from within that plug-in.",
+      "With the release of VST 3, Steinberg replaced FXP and FXB files with .VSTPRESET files. However, some DAWs still allow users to load FXP files in their associated plug-ins."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Steinberg Cubase, Ableton Live, Image-Line FL Studio, and LMMS all allow audio editors to import FXP files. Remember that, before you can import an FXP file, you must first install the plug-in with which the file is associated.",

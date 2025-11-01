@@ -1,9 +1,11 @@
 {
   "slug": "axd",
   "extension": "axd",
-  "name": "AXD File",
+  "name": "ASP.NET Web Handler File",
   "summary": "Learn about .AXD files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "web",
+  "category_slug": "web",
   "programs": {
     "windows": [
       {
@@ -16,6 +18,40 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "AXD files typically have the name WebResource.axd and have the object type \"AssemblyResourceLoader\" within ASP.NET program code. WebResource.axd functionality can be enabled in the AssemblyInfo.cs file."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An AXD file is a web settings file that is used for handling and retrievign embedded resource requests in ASP.NET. It comprises of instructions for retreiving embedded resources such as images, JavaScript (.JS) files, and .CSS files. AXD files are used for injecting resources into client-side pages. This allows client pages to access these resources on server in a standard way.",
+      "Most ASP.NET projects save AXD files as WebResource.axd files that allow client-side pages to download resources that are embeddedin an assembly. Your application may face slow performance in case you run it in debug mode as WebResources.axd handler is not cached.",
+      "An AXD file is a file used by ASP.NET applications for handling embedded resource requests. It contains instructions for retrieving embedded resources, such as images, JavaScript (.JS) files, and .CSS files. AXD files are used for injecting resources into the client-side webpage and access them on the server in a standard way."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -44,15 +80,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/web/axd/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.914Z"
+      "retrieved_at": "2025-11-01T22:32:42.254Z"
     },
     {
       "url": "https://fileinfo.com/extension/axd",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.914Z"
+      "retrieved_at": "2025-11-01T22:32:42.254Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.914Z"
+  "last_updated": "2025-11-01T22:32:42.254Z",
+  "containers": []
 }

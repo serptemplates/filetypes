@@ -1,9 +1,29 @@
 {
   "slug": "ipu",
   "extension": "ipu",
-  "name": ".IPU",
+  "name": "PlayStation 2 In-Game Video",
   "summary": "Learn about .IPU files and view a list of programs that open them.",
   "developer": "Sony",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Atlus developed several PlayStation 2 entries in the Megami Tensei RPG franchise. Some of these games include Shin Megami Tensei III: Nocturne, Devil Summoner: Raidou Kuzunoha vs. the Soulless Army, and Shin Megami Tensei: Digital Devil Saga.",
+      "All these games include videos saved as IPU files. These videos do not contain audio. Some IPU files are stored within .IPS files, which combine the video an IPU file contains with audio encoded using the ADPCM codec, producing a video with sound.",
+      "While Atlus RPGs are the most popular games to include IPU files, the IPU format is not unique to Atlus games. Therefore, you may encounter IPU videos in games created by other developers."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can use the PCSX2 emulator (Windows, Linux) or FFmpeg (multiplatform) to play IPU videos."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use IPUDecoder (multiplatform) to convert IPU videos to the .M2V (MPEG-2 Video) format. You can also use FFmpeg (multiplatform) to convert IPU videos to other, more common video formats."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -22,16 +42,6 @@
         "name": "PCSX2",
         "url": "https://fileinfo.com/software/pcsx2/pcsx2"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can use the PCSX2 emulator (Windows, Linux) or FFmpeg (multiplatform) to play IPU videos."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "You can use IPUDecoder (multiplatform) to convert IPU videos to the .M2V (MPEG-2 Video) format. You can also use FFmpeg (multiplatform) to convert IPU videos to other, more common video formats."
     ]
   },
   "images": [
@@ -62,10 +72,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/ipu",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.127Z"
+      "url": "https://fileinfo.com/extension/ipu",
+      "retrieved_at": "2025-11-01T22:32:42.551Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.127Z"
+  "last_updated": "2025-11-01T22:32:42.551Z"
 }

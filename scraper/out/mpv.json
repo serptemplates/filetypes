@@ -1,9 +1,11 @@
 {
   "slug": "mpv",
   "extension": "mpv",
-  "name": "MPV File",
+  "name": "MPEG-2 Elementary Stream Video",
   "summary": "Learn about .MPV files and view a list of programs that open them.",
   "developer": "Moving Picture Experts Group",
+  "category": "video",
+  "category_slug": "video",
   "programs": {
     "windows": [
       {
@@ -20,6 +22,18 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Unlike .MPEG, .AVI, and .MP4 files, MPV files do not use a container format. However, you can still play them in video players that include the MPEG-2 codec. In this way, MPV files are similar to .M2V and .MPV2 files.",
+      "NOTE: MPV files are often paired with associated .MPA files, which contain corresponding audio."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An MPV file is an MPEG elementary stream video file that consists of raw, uncompressed video data. The video contents inside an MPV file comprise of integrated MPEG-2 compression specifications. MPV files do not contain any audio data. The MPV file format is also used as input to video processing applications as the MPEG elementary stream use the MPEG-2 encoding standards primarily. MPV files can be opened and played with software applications that support MPEG-2 video file formats. VideoLAN LVC media player software is one such software that can open and play MPV files.",
+      "An MPV file contains raw video data encoded using the MPEG-2 codec. This \"elementary stream\" was likely output from a digital video recorder. Users can import MPV files into video editing and authoring programs to include them in an edited video."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open an MPV file with VideoLAN VLC media player (multiplatform) or FFmpeg (multiplatform). You may be able to open the file in other common video players by changing its extension from .mpv to .mpeg."
@@ -34,6 +48,28 @@
       ".ASF - Advanced Systems Format"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -62,15 +98,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/video/mpv/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.928Z"
+      "retrieved_at": "2025-11-01T22:32:42.278Z"
     },
     {
       "url": "https://fileinfo.com/extension/mpv",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.928Z"
+      "retrieved_at": "2025-11-01T22:32:42.278Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.928Z"
+  "last_updated": "2025-11-01T22:32:42.278Z",
+  "containers": []
 }

@@ -7,6 +7,18 @@
   "type_name": "Symbian Package File",
   "summary": "Learn about .PKG files and view a list of programs that open them.",
   "developer": "Nokia",
+  "more_information": {
+    "description": [
+      "A PKG file is a configuration file required to build a Symbian OS installer (.SIS file). It contains plain text information that defines how a SIS creation program, such as CreateSIS and Easy SIS Creator, builds a SIS file. For example, PKG files typically define an application's supported languages, vendor name, software dependencies, files to copy, and digital signature details."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Symbian OS is a discontinued operating system used on old mobile devices, such as Palm PDAs and Nokia, Ericsson, and Motorola phones. You will most likely encounter Symbian PKG files only if you have previously or are currently developing a Symbian OS application.",
+      "As part of building a Symbian application installer, Symbian developers must create a PKG file that defines many of the application's properties. When they're ready to build their installer, developers use CreateSIS's makesis command (or another SIS creation program) to load information from their PKG file and create a SIS file.",
+      "NOTE: The Nokia 808 PureView, released in 2012, was the last official Symbian OS device."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Since PKG files are plain text files, you can open and edit them in any text editor, such as Microsoft Notepad (Windows) or Apple TextEdit (Mac). If you cannot open your PKG file in a text editor, you likely have a different type of PKG file. Other file types, such as macOS Installers and PlayStation Store Download Packages, also use the .pkg extension."

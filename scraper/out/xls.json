@@ -1,7 +1,7 @@
 {
   "slug": "xls",
   "extension": "xls",
-  "name": "XLS File",
+  "name": "Microsoft Excel Spreadsheet (Legacy)",
   "summary": "Learn about .XLS files and view a list of programs that open them.",
   "developer": "Microsoft",
   "programs": {
@@ -72,6 +72,18 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Microsoft introduced the Excel Spreadsheet (XLS) binary format in 1987 when it released Excel. The XLS format stores one or more worksheets comprising a spreadsheet and a table with rows and columns of cells. Additionally, the cells in a table may contain manually-entered data or the results computed from the data of other cells.",
+      "After Microsoft introduced XLS files in 1987, the file type became one of the most common types for saving spreadsheets until the release of Excel 2007, when Microsoft released Excel 2007, introducing the Microsoft Excel Open XML Spreadsheet (XLSX) format. Spreadsheet files saved in the XLSX format bear the .xlsx file extension, replacing the .xls file extension.",
+      "While XLS files are no longer as common as they once were, you may still encounter them in home, school, and business environments when organizing, analyzing, manipulating, or visualizing data. For example, a co-worker may send you an XLS spreadsheet storing financial data from the 1990s."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An XLS file is a spreadsheet file created by Microsoft Excel or exported by another spreadsheet program, such as OpenOffice Calc or Apple Numbers. It contains one or more worksheets that store data in a table format and may include mathematical functions, charts, styles, and formatting. Microsoft replaced XLS files with .XLSX files when it released Excel 2007, but Excel and other spreadsheet applications can still open XLS files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open XLS files with Microsoft Excel in Windows and macOS. Excel is the best program for opening XLS files because it fully supports the formatting of Excel spreadsheets, which includes data fields and graphs. Excel is also available for Android and iOS devices.",
@@ -101,26 +113,6 @@
       "alt": "File.org logo"
     },
     {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAByElEQVR42mNkGGDAOOgdoLg47TyQMiDWQCFFaVLsv0CMA/6TYiKJDiAqBEYdMLAOkJsUQ9ABjMxMDEx8HOQ5QKDGkaRUjqL5138Glk+MDJxa0gzMglxkO4CkIEYHP08/YWDVEGVg4mUH8wXVVYewA/g5eBiWRDWD2duuH2GYfnwtmK0rqcLQ5pkNZldtn8pw+fkd2oVAm1c2Q6ZlMMPHH18Y9HujwPTmpH4GG0V9hiP3LzL4ziukbRSAQuFi8TIw3bl/IdjSzUl9YDmQgx59eEFbB4BAlKE7w9SgcrDvLz+/C/Y9yDEd+xZiGECzRAgLdhAA+Rrke2yAZg4AJUZvTWswG1vcw8C/nfcYOOSEGJg42cD8HwpclDvARtEAHO+gKAABUHrIXtfJsOz8Tto7AGTZoexZDHICEuB4B4Fyx3iUXEFTB2DLhqBcAXIQKARAIUEzB8CCHgSQgxyWK0DAd14RME1coF0IkAqGhQPIro7/f/zJ8P/EUxQHkAoINki4tSRxhhAjEyMDMzc7A7uMAO0cIOSkTjCKWIS5GZjYWWnjAGEvHbwOADXHWPg5ybKcKAdIxJhTlEiHhQPIziVEAMJdM1qDAXcAAJ3o41sl1m91AAAAAElFTkSuQmCC",
-      "alt": "Microsoft Excel"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "OpenOffice.org Calc"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEcklEQVR42rXXa0xbZRgH8IcZ/eQH5xiW+1XuajQaNdYYb3srWeYlRrMsM0Yubdd141Ioc1tdCOrAjotNV5jDGM2yzLsL2c5BCOEmg82iGdDRUiD6BdpSSgmfnEz7Pu1hp/DWw8Dnyznv/7zneX4caE+IgrCSfXnXLdhgzb7zd5TUPuF7RQvZFxsfLmr+7mrzSL1u3ycCPPA53mQlf0geevPWX6AbUUKvu5Ou597D5qFe61Voz1rAWbzpGpkBmUwmCbC8vAwLfi9U/qaCPlcXDigKIs6ujwhdXws4gzcMkymIjY2V/BRCCJ1VCQPubhxSEkR8thYxV8wCtODmK2QS4uLiJANCiHmfByqtKhj09OAgVRDRKkbMKRmAmNNBgMIB8fHxGwIEamlpiSKqRtQw6O6lmesADouxrCJcahbAjJt+IROQkJCwYUAI4V5wgd56AIY8/Tjw4NqP6foAEwL6ie2OAbcjqkc0MOwZQIR2fYQY0IyAXjIGiYmJdwwIlN/vR4RVA9fmBxFxeC1CFOxsREAPuQ5JSUmbAoQQc/Oz/yIOgtU7BO6y/wKcQkA3+R2Sk5M3DQjU4uIiuLxzcCSAmB8Gd0WEr+KdnyCgi4xASkoKzdJbt28K4FQugM/no0+ioPNpmrkrGZ+C6DoEdJJfBUBG6w4w7K0RNa05b5CcOVVeej4zMwMvco/Rc4+eBfgYAR3kKqSmptLswZZoMOwLa3zOIDlzqDwC4GXucQQcYQE+3EYBvGIVkGmJ3tSvwK5GwPT0NBDuCQQcXWEAahFwmQwJgGxLDHBl/aKmika55OyG2iUAXuGeRMBxBmBHDQIukUEBkNMiA75c3JickgNfIS2zqWcFQAGHf4TzH7AAJxDQTgYgLS2NZrmWyG9FLRgiXler1fQ4NTUFu/lnEHCCBTAg4CLpEwD5lnjgq8J+snq5kLUbO0Cv1687vK6uDpRKpQDYwz+LgBoW4BgCfiQ9kJ6eTrOHTicAXx0GOCkXsgBAp9MJ125+fRT+7LsAqaZJMBqNUFJSQnOn0wmv8c8hoJYBuP99BPxAuiEjIwMB5sjvhEP3GKC8vFxYr3x7nAKSm+3Q0NAAxcXFNJ+cnITX+efpufcjFqAaAd+RLsjMzESAKRE6jomfwK5auZAFnkBpaSlUXF0BfsoPo3c3UkBi4w1oamoSAA6HA97gXkDASRagCgHfkJ8hKyuLZg9/mgQdhjBAjVzIAgCtVgtV1igRIM44BiaTCYqKiug+u90Ob3IvIaCeBdAh4ALhITs7m2aPNEd+KR261wAajQYe/X6Zri9feYoeZfXXwWw2Q2FhIV1PTEzAW9wuBBgZgO3lQYCCg5ycHJBSbW1tEa+HADabDd7mFPR8oYEFKEPAeXIJcnNzJQGk1vj4OOzlChDQxAIcRsA50g55eXlbChgbG4N9/G4ENLMAWgR8RS5Cfn7+lgJGR0dhP78HASYG4D5NEKD4aUuHh2o/9yo9+swsgHrbpv45lVo+CwNAEar/F+FrWRHN/AentBk/pod66wAAAABJRU5ErkJggg==",
-      "alt": "LibreOffice Calc"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Quattro Pro"
-    },
-    {
       "url": "https://fileinfo.com/svg/logo.svg",
       "alt": "FileInfo.com"
     },
@@ -135,24 +127,42 @@
     {
       "url": "https://fileinfo.com/svg/menu.svg",
       "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/xls_121.png",
+      "alt": "Screenshot of a .xls file in Microsoft Excel 365",
+      "caption": "XLS file open in Microsoft Excel 365"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.902Z"
+      "retrieved_at": "2025-11-01T22:32:42.240Z"
     },
     {
       "url": "https://fileinfo.com/extension/xls",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.902Z"
+      "retrieved_at": "2025-11-01T22:32:42.240Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.902Z"
+      "retrieved_at": "2025-11-01T22:32:42.240Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.902Z"
+  "last_updated": "2025-11-01T22:32:42.240Z",
+  "mime": [
+    "application/vnd.ms-excel"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

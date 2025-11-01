@@ -4,8 +4,19 @@
   "slug": "nupkg",
   "extension": "nupkg",
   "name": ".NUPKG File Extension",
+  "type_name": "NuGet Package",
   "summary": "Learn about .NUPKG files and view a list of programs that open them.",
   "developer": "NuGet",
+  "more_information": {
+    "description": [
+      "A NUPKG file is a code package used by NuGet, a Microsoft Visual Studio component that allows developers to create and share packages for use in .NET projects. It contains packaged source code, as well as instructions for how to use that code. NUPKG files are built from .NUSPEC files, which are themselves built from .DLL assemblies."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Prior to 2012, developers had to manually install NuGet as an extension to Microsoft Visual Studio. But over time, NuGet and the NUPKG format proved so essential that Microsoft began installing NuGet Package Manager with Visual Studio by default. These days, developers share thousands of NUPKG files using NuGet.org and NuGet Package Manager. Popular NuGet packages include Microsoft Entity Framework, jQuery, and JSON libraries."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Generally, developers do not open NUPKG files. Instead, they import the files into Microsoft Visual Studio, so they can include the code contained within NUPKG files in their development projects.",

@@ -7,6 +7,18 @@
   "type_name": "Packet Capture Data",
   "summary": "Learn about .PCAP files and view a list of programs that open them.",
   "developer": "Wireshark",
+  "more_information": {
+    "description": [
+      "A PCAP file is a packet capture created by Wireshark, a free network data analysis program. It contains network packet data that Wireshark intercepted and logged while monitoring a network. Network administrators use PCAP files to diagnose network problems and detect malicious network activity."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PCAP is an API used to capture network data packets. Wireshark saves records of the data it captures via the PCAP API as PCAP files.",
+      "In addition to a record of a packet's contents, each PCAP file also contains metadata about the captured packet. For example, PCAP files specify a packet's source and destination, the protocol used to send the packet, and the time at which the packet was sent.",
+      "NOTE: While Wireshark is the most common program used to create PCAP files, several other packet capture programs also save captures in the PCAP format."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a PCAP file with Wireshark. To do so:",

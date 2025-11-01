@@ -1,9 +1,60 @@
 {
   "slug": "xpi",
   "extension": "xpi",
-  "name": "XPI File",
+  "name": "Cross-platform Installer Package",
   "summary": "Learn about .XPI files and view a list of programs that open them.",
   "developer": "Mozilla",
+  "category": "compression",
+  "category_slug": "compression",
+  "mime": [
+    "application/x-xpinstall"
+  ],
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "XPI files are essentially renamed .ZIP archives that Mozilla applications use to install add-ons. These archives often contain .JS, .CSS, .HTML, and .JSON files that, combined, comprise the code needed to install an add-on. Add-ons that use icons and other images also contain .PNG files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "An XPI file is practically a ZIP archive whose contents can be viewed using the following steps.\n\nChange the extension of file from XPI to ZIPExtract the contents of the file using any standard decompression utility such as WinZip (Windows, Mac), 7-Zip (Windows), or Apple Archive Utility (Mac).",
+      "Some versions of Mozilla Firefox allow you to install an XPI file by dragging and dropping the file onto an open browser window. Firefox then uses a component called XPInstall to install the add-on your XPI file contains.",
+      "If dropping your XPI file onto Firefox does not work, you can manually install the file using the instructions below:",
+      "In Windows, select the Menu (three horizontal line) icon in Firefox's upper-right corner and click Add-ons. (In macOS, select Tools → Add-ons.)",
+      "Select Extensions, Themes, or Plugins (depending on the type of add-on your XPI file contains).",
+      "Click the Gear icon dropdown menu and select Install Add-on From File....",
+      "Navigate to and select your XPI file. Then, click Open.",
+      "On Android devices, you can install the add-on an XPI file contains by locating the file in an Android file manager (such as File Viewer Plus or ES File Explorer), tapping it, and opening it with Firefox.",
+      "The iOS version of Firefox does not allow users to install XPI files.",
+      "To install an XPI file in Mozilla Thunderbird:",
+      "In Windows, select the Menu (three horizontal lines) icon, click Add-ons, and then click Add-ons again. (In macOS, select Tools → Add-ons.)",
+      "Since an XPI file is a Zip-compressed archive, you can manually extract and view its contents by:",
+      "Renaming the file to use the .zip extension.",
+      "Extracting the file's contents with a Zip compression utility, such as Corel WinZip (Windows, Mac), 7-Zip (Windows), or Apple Archive Utility (Mac)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -44,39 +95,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "Some versions of Mozilla Firefox allow you to install an XPI file by dragging and dropping the file onto an open browser window. Firefox then uses a component called XPInstall to install the add-on your XPI file contains.",
-      "If dropping your XPI file onto Firefox does not work, you can manually install the file using the instructions below:",
-      "In Windows, select the Menu (three horizontal line) icon in Firefox's upper-right corner and click Add-ons. (In macOS, select Tools → Add-ons.)",
-      "Select Extensions, Themes, or Plugins (depending on the type of add-on your XPI file contains).",
-      "Click the Gear icon dropdown menu and select Install Add-on From File....",
-      "Navigate to and select your XPI file. Then, click Open.",
-      "On Android devices, you can install the add-on an XPI file contains by locating the file in an Android file manager (such as File Viewer Plus or ES File Explorer), tapping it, and opening it with Firefox.",
-      "The iOS version of Firefox does not allow users to install XPI files.",
-      "To install an XPI file in Mozilla Thunderbird:",
-      "In Windows, select the Menu (three horizontal lines) icon, click Add-ons, and then click Add-ons again. (In macOS, select Tools → Add-ons.)",
-      "Since an XPI file is a Zip-compressed archive, you can manually extract and view its contents by:",
-      "Renaming the file to use the .zip extension.",
-      "Extracting the file's contents with a Zip compression utility, such as Corel WinZip (Windows, Mac), 7-Zip (Windows), or Apple Archive Utility (Mac)."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Mozilla Firefox"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACyElEQVR42mNkwAN03PMNRBWNtzIyMkoyUBn8////198/v+oY8SmyS541i4WNM4XaliM54it+B6TMXsLCyhFFKweAANwBAkr23IxIfBDQdoyby8LKGkKuwcCoYySoTtYuz5BHXHM5UK0aNX3GzMT4X4CXnYGVhRmvIxg1Q6dfAFquR03LYQBo938RAS5CDpjxFxhQBIOKXCAuxPUfX1QwaoXN+Afj5IaZ/FeQ5EdR8Pfff4bepScZXr77SpYjSXJAd67TfyF+TgzF3UtO/L/x4C1ZDtBTER0GDrj16O3/T19/4bTk8ctPDFuO3MFqCVUcQAi8fv/tf8XU/QPqAAagA7DKke2Af8CC+tjFJwxfvv8i6KAv338zbD92l7oOOHbpyf+5my5SXD6Q7QBg3v8vJsTNUBxlRrKly3ZeZVi+6xoj2Q749PXn/+IJexn6Cl0YnE0VSA6FjPbt/49eegLW52amSLoD9p5+8H/z4dsMB2bEMLCxMpPkgLcfv/93zloKKkHJd0D7gmP/9VTFGBrT7Ej2PTD4/wP1w/WR7ID/QLps8j6GOdVeDOY60iQ7IKZu4/+Lt1+R74CTV58xHDz/iGH3lChQnU6SA568+vTfM38l2FyyHTB51RkGe2M5hrJYS5J9P3vD+f+TVp5B0UeSA4qizP73LTvFsLwlgEFHWZQkBwDLLYagsrX/7zx5T74DbPRl/j9++Zlhc18oMc05FHDr4dv/wRXrMDSR5ABglvvvaanEEO2hQ5Ll/yHBz7Dn1AMMi2I8dfA7ANgk+wOUZiLJRhLcBnQAAwEHTD8GlLeghe3C/Jz/vaxV8DdKJYyjlQWVbOYAmYbo/QJmZkYOoONYSbUY6N//gnycDJa60gx83Oz4HYBPsm76niWcnJz06RlhA40z9yxhYx9AB9RP3zWLg5N74DqnEZmN+npmztto1T3/+eNbHQBM5VA4XE4+nAAAAABJRU5ErkJggg==",
-      "alt": "Bitberry File Opener"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEMklEQVR42rWXS2xUVRjHz30/BjrvaVdGU2B4dQgxMWp4tCmNCTuD2kBKo1GJPExUotGkKgthooC6UIOJuiBxpRlEu4POo1MUF0b7oE4H0eqmZLDtaBHLdOYc/+d2aGgZ6r3T6X9z7z3nzjm/+V73OwJZBp3vSX7MGNun6xppaKi/NXzv6lWNvy98V1gOgN70hSPFYrFd03QaDPoLgmBtsxMAY44BMiPZkCiKUfwj0S5AqUQJY5QIgkgkSSxvwwilNLNubfht2wA/9Q8KWKB7cjK/ky+6VMESyebtW1psAwx9f6Z9/IYZpZTZ3oQx/l8lQolMyqYvj1trXGzb0bJnUYDrPQ98I8kKZkRSIhqhTCH2t59dMkc3P/8Hazumqprp93szMzMz726KNOUqv71Af54NM5cnMI/eqSbomshwaW+3YZhRn8/7ryxLCgLwE1sAuVgjUw0X0V11VQNM0lWRDN37oKq7XgmFgo0YehkAJ20D8KtZ5yOyqlUFME7DkeFix4Bh6KlAwH9ckqSrAPjBEYAgimSFJ2hdq7IA61yr6SsigYDvENx5CgCvOQLgUjSdGCu9jgGsGCh29Gm6rsMFn6KOnADAr44BuIyVHoAYjgF+pp0vmKb5ldfraYcLRgHQVRUA0sFyhShJjgAytKNLUfXH6utDObjgWQB0VwcASYpqBaXd1LxWWh/JlHbHTdM4gTT8RZZlHQCfVw3ApSEtNaTn/+mfqUI6Jz7UPKY9uhsx8CJi4H4MdwHg6JIAuHiBsqrkXZQfny5eG7txpunA8BPnzicYYrAfX8NjiIFLALi0ZABRksliVTI7NDGDun02cnD48Xgi1WkYRtDv972E909XlYaVtFiVzA5OFHD5mgPAAlfRkAQQhF8C4E0AjNQEgMt0o0oqd1bJMsA7AHi9J56MIQ0/Qxo+AheMA+BIzQAEUUJqBu6okqPZ/EeFm/QQABjaslOapj3V0BCaxtQzAPiiZgBcvDjxInW7CjeL7rq2i3/ze7hgCmn4AdIwXU7DWE0BuCpUSbe+rc8CSCR7d8ECzwWDgVY8vgWAN2oOwLPBNb9KzgHAAhRB+BsAjiIG0gC4XHMArgVVcg6gJ546ABcUkYaHMRerWRpWEk9Lnp7o+9zG9gsWAILwiqap9yENzwGANyQDywbANVugRLfZ8l3ZAskkWrL3fT7PZrhgGgBRuwBXbk1RQbU6XFuukFUyZW7b1Nj63nX+nEimn1YUZT8aEg1N6fGmjRtO2wK4Xf3fxnblp12HKbNjFAGwMmGCNG/p2dhgs+06Yz/uaG0+aBtgYHBIglkT+fxfW/lJZ6niB5OtWx62fzDhGslevgct1Ye4td0c8kMIjmHWPX479/HC2GB4zepXHQFUq1Rv30lZVlrxOc4D4EkE4WhFqywXQDzRa6IQxTweT3T9unDqbu/9B3fzlTDtPQQYAAAAAElFTkSuQmCC",
-      "alt": "PowerArchiver"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -101,29 +123,33 @@
     {
       "url": "https://fileinfo.com/svg/settings.svg",
       "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/xpi_858.png",
+      "alt": "Screenshot of a .xpi file in Apple Finder",
+      "caption": "XPI file open in Apple Finder"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.904Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.241Z"
     },
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.904Z"
+      "url": "https://docs.fileformat.com/compression/xpi/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.241Z"
     },
     {
-      "url": "https://fileinfo.com/extension/xpi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.904Z"
+      "url": "https://fileinfo.com/extension/xpi",
+      "retrieved_at": "2025-11-01T22:32:42.241Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.904Z"
+      "retrieved_at": "2025-11-01T22:32:42.241Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.904Z"
+  "last_updated": "2025-11-01T22:32:42.241Z"
 }

@@ -1,20 +1,29 @@
 {
   "slug": "vms",
   "extension": "vms",
-  "name": ".VMS",
+  "name": "NanoZoomer Virtual Microscope Specimen",
   "summary": "Learn about .VMS files and view a list of programs that open them.",
   "developer": "Hamamatsu",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Digital slide scanners and virtual microscopes save slide specimen images in a variety of image formats. Hamamatsu NanoZoomer saves slide images in the VMS, .VMU, and .NDPI formats. The VMS format packages a single slide image as at least two JPEGs. One JPEG contains a high-resolution copy of the slide, and the other contains a lower-resolution copy. If the high-resolution image would be larger than 65,535 pixels on one side, NanoZoomer instead saves the high-resolution image as multiple JPEGs, which slide-viewing software automatically combines into one image.",
+      "In addition to JPEG files, VMS files contain plain text index and optimization files. These files contain metadata that slide-viewing applications use to show slide images correctly."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Windows users can open VMS files in Aperio Technologies ImageScope, OpenSlide, ImageJ, or NetScope Viewer. Mac and Linux users can open VMS files in OpenSlide or ImageJ."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12064&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "Windows users can open VMS files in Aperio Technologies ImageScope, OpenSlide, ImageJ, or NetScope Viewer. Mac and Linux users can open VMS files in OpenSlide or ImageJ."
     ]
   },
   "images": [
@@ -45,10 +54,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vms",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.357Z"
+      "url": "https://fileinfo.com/extension/vms",
+      "retrieved_at": "2025-11-01T22:32:42.850Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.357Z"
+  "last_updated": "2025-11-01T22:32:42.850Z"
 }

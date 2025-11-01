@@ -4,8 +4,22 @@
   "slug": "plantuml",
   "extension": "plantuml",
   "name": ".PLANTUML File Extension",
+  "type_name": "PlantUML File",
   "summary": "Learn about .PLANTUML files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "File created by PlantUML, a UML diagram creator used within programs like Sublime Text Editor or programming language like HTML; same as the .PU file; contains code referenced by PlantUML to create diagram images that can be generated as .PNG or .SVG files; creates sequence, use case, class, activity, component, state, and object diagrams."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "An example of the syntax used by the PLANTUML file for an object diagram:",
+      "@startuml object Chair object Table",
+      "Chair --|> Table : furniture @enduml This example would create a diagram of two objects named Chair and Table with a line and arrow pointing from the chair to the table. Also, the word furniture would appear as a label in the middle of the line that connects the two objects. The @startuml line begins the comment and the @enduml line ends the comment.",
+      "NOTE: PlantUML is downloaded as a .JAR file, consult the PlantUML link below for how to run the tool."
+    ]
+  },
   "programs": {
     "windows": [
       {

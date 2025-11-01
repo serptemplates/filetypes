@@ -1,9 +1,26 @@
 {
   "slug": "rpmsg",
   "extension": "rpmsg",
-  "name": "RPMSG File",
+  "name": "Outlook Restricted Permission Message",
   "summary": "Learn about .RPMSG files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Outlook users can use the program's information rights management (IRM) features to protect the emails they send. When a user protects an email this way, Outlook compresses and encrypts the message's contents and any permissions the sender has specified (e.g., restrictions on forwarding or printing the message). It then saves this encrypted version of the message as an RPMSG file.",
+      "The Outlook email client sends the RPMSG file to recipients as an attachment to a standard Outlook message. The message explains that it contains protected content and includes a link to open the RPMSG file. Only specified recipients can open RPMSG files.",
+      "NOTE: Azure Information Protection also creates encrypted email messages saved as RPMSG files."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open RPMSG files with Microsoft Outlook. For example, if you receive a protected email message with the message.rpmsg file attached, you can click the RPMSG file in Outlook to open the file (only while logged in to the email account that initially received the message). You can also select File → Open if you are using the desktop version of Outlook.",
+      "If you use an email client other than Outlook, such as Gmail, you will be redirected to a separate Microsoft Outlook webpage when you click the message.rpmsg file attachment. You are then prompted to sign in to your Gmail account to verify your identity, then must click Allow. After successfully signing in, you can view the protected message via the Microsoft Outlook webpage in the new tab.",
+      "Besides the Outlook email client, you can open RPMSG files with the Microsoft Azure Information Protection app on Android and iOS devices."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -24,25 +41,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open RPMSG files with Microsoft Outlook. For example, if you receive a protected email message with the message.rpmsg file attached, you can click the RPMSG file in Outlook to open the file (only while logged in to the email account that initially received the message). You can also select File → Open if you are using the desktop version of Outlook.",
-      "If you use an email client other than Outlook, such as Gmail, you will be redirected to a separate Microsoft Outlook webpage when you click the message.rpmsg file attachment. You are then prompted to sign in to your Gmail account to verify your identity, then must click Allow. After successfully signing in, you can view the protected message via the Microsoft Outlook webpage in the new tab.",
-      "Besides the Outlook email client, you can open RPMSG files with the Microsoft Azure Information Protection app on Android and iOS devices."
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC7klEQVR42tWXTUwTQRTH/9PtfiCFUIECAkkpBRoTpY2JFy4SjNFAjBpMOGqiJ42RC8FEA168SryJJpqYEA7EIPFg4udBPEnogRg9iIggUFBKaz8E2jo7pZQNuy30A9N3mdnZzL7fvPefN7ME/9lIzgBwl16M08aeIb/O0MOTjt0CRDK5cgpAcgsA3ROaADa7SXOazVGqOj7cQHIN4OobTYC6wxXgCotTBOieSF3d/mVg8j2sra3QG8tTBkhPXGMDsJ7ryA7AMUs+a99N+vYOoEjicLetHBeOFCkmPB5zo/P5PNzBkGJcN9qPcOMZwKAuRC2Bfu4wqQOMX6uFvUJifedckLVbn5v7pxQQGQWQV/2ovZL1Lw7NslXHUvH2spn15Sj0jf7KDoDsRHY2/MmLs0+mFRNkMBlQ1kPzg6m0AaZ7bnX6v9zvUwDEwn/79SJ6X7kUE3qPm9DTUsrS4Lj3NRMALKsKgG9d9TAb+awCRNbXsTrzA66BAfBNLeopkHMva2AnKeBG6Ers7cA+9UoYKqmKw64sglv4DqHUBMliARFFJcD1pmK2BWXTEuHW8Z0CEL+HOeYlEVJdHTiDYfP9rrfh1vAzgGc3Acd5dQC51gR80K8FmGO+ZHtRSrsQCUNdiNhOIWyy0Bhz0cFwCDrvMnQBLwRrA0RzDbQs7VJsmn2KNV01/PNehI1l0VwvL4A/UAnx4CEQnkciS/swKlsYQcHRNoTDIn5/dGLV54NQawVnLAbRi/GoJABI+TjmgksoWfnAAGKH0V+PB965eQpEQCQqNr0QBSHqV4+kF5L9p69oRojoeSqsKhgcJ7adhj6XC74lWrI5utXE/A0QfpvLpADVNwaTpkiqaVS9EUVCIRaNgNvNIIiQH4Xg4rpICmC+8zIhgE7Ig1BVn/Ab68EgvD/nsBoIQpdXGE8L1UdSANugK2PXcVmgnplZqg+6cqkgCrKXADHzU238oRph+tgBQCZ/yTZtQx/O3Pk5zZb9A7nIYuerrNZrAAAAAElFTkSuQmCC",
-      "alt": "Microsoft Outlook"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADOUlEQVR42sWXa0hTYRjHn3fNLB1uklS4LjMhKDEnCZFETewyKMHoglDpIlgXI08KBX3ZhIjyg00Qwn3ZpCCCqJUjKho4DfyghSusMCpdWSZeNvNSbu30PAc3vExoF7c/POM954z3/3uf87znnIfxPA/xFAsGUFVVJbLb7SK6Ph2RiJdIJD6VSuXT6/XzzGYBKJXKJaXdjnw5A10yg8JornSchxeDPOjaj5a1mc3mgGkAQCaTJVydcnMKEdRE03iuBnioaDlSVo8QvgAArbzwg0NdIAbrYpr79fYvFPw8XWE3GAy8AMAYk5mS4Ekag+2xABjhobV0Avai929WWVnJamtrM5uS4WMszP0qGodVCDDAtFqtyGg05iDA61AmWF1UDFk3DNBvtUDXJS4cgAydTtfrB8hFgI5QJjgwxsPQSzus2LELrJLQdyoCZCLAl4gAnslTYV/fSPwAui5fxNtwMz4AO9s6IWm9AsQp0vgAbLyix9AJ47gA0C7Iu/sQvKNueJouiz2AssEMa46VCeOW/FwYfdMZO4AEqUyofhJlYKK3B9rUKvC4XbEB8N//SWcvtJcUQ/7TZhhsaYYOHC86AK2+8H2PUP391kdC6jec54TjuaLsfK43QPc1ffQAZlY/ibLgRohJZw+sPa4Bj8slGA61NgtblRSsSEMGoMkzyjlIyc4Rjmn1ZDSz+Oi5QIC0Q/wZIUDbZkX4AJTyvHsWkG5RCsVGAAtNGor+G4DSSNVNbzwqNlpZONsubAD1dxfYNimELNCbz3HmJHy9Y47IfB7AN5Nx/9ml8DjYH7NqDJBxrkKoaMpCNMxDysBiaS5AdsNyMKWLIDcW5j988Eo7CYcQwMnwh1VXV69Ti6GkPBGuxwLAOAVckwdu4zfhsP+rWILnt15IhBN7xHBqMc1tXjAa/sAtqVT6zuVyTQkAGo2GNTY2rsTryt1i2HY4AQ7KRaCMpnGfDzofeOD+cy/Y8LALfX/R+UBnhM2JyOFwpOEwE0OOkYQhjoI3GXgx3BhOjE8mk2kMF83PAiBxHMfq6uoScZg6Hcsg8uaUWrBxjGFM+yilfeZFtlB7jt2svzuOWNh3+iwWS1Cjf7hw6WM+yjRzAAAAAElFTkSuQmCC",
-      "alt": "Adobe Acrobat"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -71,20 +73,19 @@
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.860Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.207Z"
     },
     {
-      "url": "https://fileinfo.com/extension/rpmsg",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.860Z"
+      "url": "https://fileinfo.com/extension/rpmsg",
+      "retrieved_at": "2025-11-01T22:32:42.207Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.860Z"
+      "retrieved_at": "2025-11-01T22:32:42.207Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.860Z"
+  "last_updated": "2025-11-01T22:32:42.207Z"
 }

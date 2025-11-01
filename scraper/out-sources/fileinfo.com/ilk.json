@@ -4,8 +4,21 @@
   "slug": "ilk",
   "extension": "ilk",
   "name": ".ILK File Extension",
+  "type_name": "Incremental Linking File",
   "summary": "Learn about .ILK files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "File used by Microsoft Visual Studio, an IDE used for developing Windows applications; contains linker data for a compiled executable file (e.g., .EXE or .DLL); enables faster project compilation and linking, especially for larger projects."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Incremental linking files store data in such a way that localized development changes only require updates to the affected parts of a compiled and linked executable. This allows developers to make source code changes and test the results more quickly without the software having to rebuild the entire executables again.",
+      "The use of ILK files may make executables slower in performance and larger in size. Therefore, developers should examine these performance metrics when building and deploying the final deliverables.",
+      "NOTE: Smaller development projects may not benefit from incremental linking. To turn off incremental linking in Visual Studio, go to the Linker options in the project properties window."
+    ]
+  },
   "programs": {
     "windows": [
       {

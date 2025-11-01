@@ -1,20 +1,29 @@
 {
   "slug": "vdex",
   "extension": "vdex",
-  "name": ".VDEX",
+  "name": "Validated Dalvik Executable File",
   "summary": "Learn about .VDEX files and view a list of programs that open them.",
   "developer": "Google",
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "In 2019, Google introduced the VDEX file format. The VDEX format was another iteration in Google's attempts to optimize Android apps' compilation and loading process. When a user installs an Android app, Android automatically optimizes that app and creates a corresponding .OAT and VDEX file. Referencing these files, rather than recompiling apps upon each load or update, allows Android to load apps more quickly, creating a better user experience.",
+      "VDEX files contain optimized versions of previously validated DEX (Dalvik Executable) files, which Android has noted that it does not need to re-extract and re-verify when recompiling an app. VDEX files are typically stored alongside OAT files, in an Android device's /​data/​dalvik-cache directory."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "VDEX files are not meant to be opened. If necessary, Android developers can use vdexExtractor (cross-platform) to extract DEX files from a VDEX file."
+    ]
+  },
   "programs": {
     "windows": [
       {
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=11925&b=1"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "VDEX files are not meant to be opened. If necessary, Android developers can use vdexExtractor (cross-platform) to extract DEX files from a VDEX file."
     ]
   },
   "images": [
@@ -45,10 +54,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/vdex",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.351Z"
+      "url": "https://fileinfo.com/extension/vdex",
+      "retrieved_at": "2025-11-01T22:32:42.843Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.351Z"
+  "last_updated": "2025-11-01T22:32:42.843Z"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "h5p",
   "extension": "h5p",
-  "name": ".H5P",
+  "name": "HTML5 Content Package",
   "summary": "Learn about .H5P files and view a list of programs that open them.",
   "developer": "Joubel",
   "programs": {
@@ -34,6 +34,21 @@
         "name": "B1 Free Archiver",
         "url": "https://fileinfo.com/software/catalina_group/b1_free_archiver"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The H5P web application allows you to create content that enhances your website with HTML5 capabilities. Users can create their content in H5P, download it in the H5P package, share it with others, and upload it to a web platform that supports embedded content.",
+      "H5P content packages are commonly used with learning management systems, such as Brightspace, Blackboard, Canvas, and Moodle. They are also compatible with systems like WordPress and Drupal through plugins.",
+      "H5P files are simply renamed .ZIP files that store files and folders in a tree structure that typically includes the following components:",
+      "h5p.json file - A .JSON file that stores a package definition, which includes metadata and library dependencies for the content package. Some mandatory fields in the JSON file are the title (package title), mainLibrary (main library for the content), language (standard language two-letter code), preloadedDependencies (libraries that need to be preloaded for the content to work), and embedTypes (possible embedding methods).",
+      "content folder - A folder that contains the multimedia files that make up the content, along with the content.json file, which stores the parameters required to start the content.",
+      "One or more code libraries - These are required for the content to run and each library must include a library.json file that specifies the name, dependencies, and any other necessary metadata. If the library is specified as a runnable type of content, it must include a semantics.json file that describes the content structure."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An H5P file is a package created by Joubel H5P, a web tool used to create, share, reuse, and modify HTML5 content for the web. It is a Zip-compressed package that stores various folders and files that make up the HTML5 content. Examples of content include interactive videos, course presentations, games, quizzes, and flashcards."
     ]
   },
   "how_to_open": {
@@ -72,8 +87,11 @@
     {
       "url": "https://fileinfo.com/extension/h5p",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.101Z"
+      "retrieved_at": "2025-11-01T22:32:42.518Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.101Z"
+  "last_updated": "2025-11-01T22:32:42.518Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

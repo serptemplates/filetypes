@@ -4,8 +4,20 @@
   "slug": "entitlements",
   "extension": "entitlements",
   "name": ".ENTITLEMENTS File Extension",
+  "type_name": "Mac App Sandboxing Entitlements File",
   "summary": "Learn about .ENTITLEMENTS files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "Developer file used by Mac OS X applications that implement App Sandboxing, which was required for all Mac App Store apps as of June 1, 2012; saved in the .PLIST format and contains entitlements, or privileges, enabled for the app when it runs."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Example entitlements include file read and write access, as well as access to network resources, printers, music and picture folders, and location services.",
+      "NOTE: When App Sandboxing is enabled in Xcode, the program creates a file called MyProject.entitlements (where MyProject is the project name) in the root directory of the project."
+    ]
+  },
   "programs": {
     "windows": [
       {

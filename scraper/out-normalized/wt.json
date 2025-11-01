@@ -1,21 +1,30 @@
 {
   "slug": "wt",
   "extension": "wt",
-  "name": ".WT",
+  "name": "WiredTiger Data File",
   "summary": "Learn about .WT files and view a list of programs that open them.",
   "developer": "MongoDB",
-  "programs": {
-    "windows": [
-      {
-        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
-        "url": "https://fileinfo.com/software/windows_file_viewer?ref=13659&b=1"
-      }
+  "category": "other",
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "WiredTiger initially developed the WiredTiger (WT) data format and released it in 2012. MongoDB then acquired WiredTiger in 2014 and made the WiredTiger storage engine its default engine in version 3.2.",
+      "MongoDB creates WT files to store data that makes up its databases. The software may also store other types of data in WT files, including metadata for the complete system and historical data for tracking previous versions of database tables."
     ]
   },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open WT files manually. Instead, MongoDB references WT files to load the data they store.",
       "If you want to restore WT files downloaded from an Atlas cloud backup, copy them and paste them into the /​data/​db directory. Then, restart the MongoDB server and start the Mongo shell."
+    ]
+  },
+  "programs": {
+    "windows": [
+      {
+        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
+        "url": "https://fileinfo.com/software/windows_file_viewer?ref=13659&b=1"
+      }
     ]
   },
   "images": [
@@ -46,10 +55,10 @@
   ],
   "sources": [
     {
-      "url": "https://fileinfo.com/extension/wt",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.380Z"
+      "url": "https://fileinfo.com/extension/wt",
+      "retrieved_at": "2025-11-01T22:32:42.878Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.380Z"
+  "last_updated": "2025-11-01T22:32:42.878Z"
 }

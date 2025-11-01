@@ -4,8 +4,22 @@
   "slug": "tpu",
   "extension": "tpu",
   "name": ".TPU File Extension",
+  "type_name": "Turbo Pascal Unit",
   "summary": "Learn about .TPU files and view a list of programs that open them.",
   "developer": "Borland",
+  "more_information": {
+    "description": [
+      "A TPU file is a Turbo Pascal unit. It contains a compiled program module that Turbo Pascal developers can import into a Turbo Pascal program, via the uses keyword. Saving a module as a TPU file allows developers to reuse the functions and procedures that module contains in multiple programs."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Turbo Pascal is a development kit for the Pascal programming language. It includes an IDE and a compiler that allow developers to develop, compile, and run Pascal programs.",
+      "Versions 4 and later of Turbo Pascal allow developers to compile program modules into TPU files. Typically, these modules contain common functions and procedures that a developer wants to include in multiple programs. Storing these functions and procedures in a single TPU file, rather than rewriting them in each program, makes maintaining and troubleshooting them easier.",
+      "Each TPU file is built from a corresponding .PAS file. These PAS files start with the unit keyword; they are typically named similarly to their TPU counterparts.",
+      "NOTE: Different versions of Turbo Pascal use differently-formatted TPU files. Therefore, TPU files created using one version of Turbo Pascal may not function correctly in other versions."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "TPU files are not meant to be opened. To edit the code a TPU file contains, edit and recompile the corresponding PAS file."

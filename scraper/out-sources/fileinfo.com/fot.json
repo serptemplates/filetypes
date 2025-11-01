@@ -4,8 +4,19 @@
   "slug": "fot",
   "extension": "fot",
   "name": ".FOT File Extension",
+  "type_name": "Font Resource File",
   "summary": "Learn about .FOT files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "Font file used by Windows and applications that support TrueType fonts (.TTF files); contains font information and is used to install and configure an associated TrueType font; often used by application installers when installing fonts."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "FOT files are used in the process of installing \"embedded fonts\" in Windows. Embedded fonts allow fonts to be transferred between computers and require a FOT font resource file in addition to the TrueType font. The FOT file contains the information that Windows needs to recognize and install the font. The Windows API includes a function called CreateScalableFontResource that can be used for creating FOT files."
+    ]
+  },
   "programs": {
     "windows": [
       {

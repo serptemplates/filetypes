@@ -1,7 +1,7 @@
 {
   "slug": "apinotes",
   "extension": "apinotes",
-  "name": ".APINOTES",
+  "name": "Swift Objective-C API Note",
   "summary": "Learn about .APINOTES files and view a list of programs that open them.",
   "developer": "Apple",
   "programs": {
@@ -22,6 +22,18 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=12713&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Swift is an Apple-maintained programming language that developers use to create programs for macOS, iOS, tvOS, and watchOS. Developers creating Swift programs may have those programs make API calls to programs written in Objective-C, which is the language Swift replaced.",
+      "If an Objective-C API's header does not contain all the information needed for the Swift program to correctly interpret information it receives from the API, developers can annotate the API using an APINOTES file. This file contains YAML-formatted text that defines how and what information a Swift program can receive from the associated Objective-C API.",
+      "After a developer creates an APINOTES file, they must place it in the same directory as the Objective-C framework to which it corresponds and update CMakeLists.txt. Then, the next time the developer builds their Swift program, the compiler will load the APINOTES file along with the corresponding framework."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An APINOTES file is a metadata file used by a program written in Apple's Swift programming language. It contains annotations for an Objective-C API that the program is accessing. The APINOTES file provides additional semantic information that is not present within the Objective-C API's headers."
     ]
   },
   "how_to_open": {
@@ -59,8 +71,11 @@
     {
       "url": "https://fileinfo.com/extension/apinotes",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.963Z"
+      "retrieved_at": "2025-11-01T22:32:42.327Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.963Z"
+  "last_updated": "2025-11-01T22:32:42.327Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

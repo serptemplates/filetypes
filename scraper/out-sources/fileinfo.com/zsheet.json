@@ -4,8 +4,22 @@
   "slug": "zsheet",
   "extension": "zsheet",
   "name": ".ZSHEET File Extension",
+  "type_name": "Zolo Sheet Shortcut",
   "summary": "Learn about .ZSHEET files and view a list of programs that open them.",
   "developer": "Zolo",
+  "more_information": {
+    "description": [
+      "A ZSHEET file is a shortcut used to open a Zoho Sheet spreadsheet. It was created by Zoho Docs Sync, Zoho WorkDrive Sync, or Zoho WorkDrive True Sync, when a user synced their cloud Zoho files to their PC. ZSHEET files contain only a shortcut to a spreadsheet; they do not contain the spreadsheet itself."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Zoho provides online business and productivity applications that are similar to Google's Google Workspace applications. Zoho Sheet is similar to Google Sheets, and Zoho WorkDrive (formerly Docs) is similar to Google Drive. Users store the documents they contain with Zoho Sheet (and other Zoho Office applications) in Zoho WorkDrive.",
+      "Users who want to access their WorkDrive files outside a web browser can use WorkDrive Sync or TrueSync to sync their WorkDrive files with their PC. However, Sync and TrueSync do not create local copies of users' Zoho Sheet spreadsheets (or other Zoho Office documents). Instead, they create a set of ZSHEET shortcut files. When a user double-clicks a ZSHEET file, Sync and TrueSync use the information that file contains to open the corresponding, cloud-stored spreadsheet in Zoho Sheet.",
+      "Because ZSHEET files do not actually contain a spreadsheet, and the shortcuts they contain are linked to the instance of Sync or TrueSync that created them, sharing a ZSHEET file with another user will not allow them to open the corresponding spreadsheet. If you want to share a Zolo Sheet spreadsheet with another user, open the spreadsheet in Zolo Sheet and select the Share button.",
+      "NOTE: Copying a ZSHEET file to another instance of Sync or TrueSync will also break the shortcut it contains."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "To open the Zoho Sheet spreadsheet to which a ZSHEET file points, double-click the ZSHEET file from within Zoho WorkDrive Sync or WorkDrive TrueSync. If the shortcut the ZSHEET file contains is valid, the associated spreadsheet will open in Zoho Sheet."

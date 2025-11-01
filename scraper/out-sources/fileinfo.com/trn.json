@@ -4,8 +4,19 @@
   "slug": "trn",
   "extension": "trn",
   "name": ".TRN File Extension",
+  "type_name": "SQL Server Transaction Log Backup File",
   "summary": "Learn about .TRN files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Backup file created by Microsoft SQL Server, a relational database management system (RDBMS) application; contains a transaction log backup, which saves a history of committed and uncommitted database changes since the last checkpoint."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "TRN files are used for database restores and may be used with other TRN files to chain roll back to any previous database state. TRN files are often backed up with a .BAK file, which is the backup of the database."
+    ]
+  },
   "programs": {
     "windows": [
       {

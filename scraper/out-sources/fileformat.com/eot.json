@@ -1,6 +1,42 @@
 {
+  "source": "fileformat.com",
+  "url": "https://docs.fileformat.com/font/eot/index.html",
   "slug": "eot",
   "extension": "eot",
-  "name": "EOT File",
-  "source": "fileformat.com"
+  "name": "What is an EOT file?",
+  "summary": "What's on this Page",
+  "category": "font",
+  "category_slug": "font",
+  "technical_info": {
+    "content": [
+      "The EMBEDDEDFONT structure has underwent three revisions, with addition of additional data at the end of the structure with each revision. The last revision of the EMBEDDEDFONT structure is as depicted below.\n\nData TypeEntry NameDescriptionunsigned longEOTSizeTotal structure length in bytes (including string and font data)unsigned longFontDataSizeLength of the OpenType font (FontData) in bytesunsigned longVersionVersion number of this format - 0x00020002unsigned longFlagsProcessing Flagsbyte[10]FontPANOSEThe PANOSE value for this font - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#panbyteCharsetIn Windows this is derived from TEXTMETRIC.tmCharSet. This value specifies the character set of the font. DEFAULT_CHARSET (0x01) indicates no preference. - See https://learn.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-textmetricabyteItalicIf the bit for ITALIC is set in OS/2.fsSelection, the value will be 0x01 - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#fssunsigned longWeightThe weight value for this font - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#wtcunsigned shortfsTypeType flags that provide information about embedding permissions - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#fstunsigned shortMagicNumberMagic number for EOT file - 0x504C. Used to check for data corruption.unsigned longUnicodeRange1os/2.UnicodeRange1 (bits 0-31) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longUnicodeRange2os/2.UnicodeRange2 (bits 32-63) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longUnicodeRange3os/2.UnicodeRange3 (bits 64-95) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longUnicodeRange4os/2.UnicodeRange4 (bits 96-127) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#urunsigned longCodePageRange1CodePageRange1 (bits 0-31) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#cprunsigned longCodePageRange2CodePageRange2 (bits 32-63) - See https://learn.microsoft.com/en-us/typography/opentype/spec/os2#cprunsigned longCheckSumAdjustmenthead.CheckSumAdjustment - See https://learn.microsoft.com/en-us/typography/opentype/spec/headunsigned longReserved1Reserved - must be 0unsigned longReserved2Reserved - must be 0unsigned longReserved3Reserved - must be 0unsigned longReserved4Reserved - must be 0unsigned shortPadding1Padding to maintain long alignment. Padding value must always be set to 0x0000.unsigned shortFamilyNameSizeNumber of bytes used by the FamilyName arraybyteFamilyName[FamilyNameSize]Array of UTF-16 characters the length of FamilyNameSize bytes. This is the English language Font Family string found in the name table of the font (name ID = 1) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding2Padding value must always be set to 0x0000.unsigned shortStyleNameSizeNumber of bytes used by the StyleNamebyteStyleName[StyleNameSize]Array of UTF-16 characters the length of StyleNameSize bytes. This is the English language Font Subfamily string found in the name table of the font (name ID = 2) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding3Padding value must always be set to 0x0000.unsigned shortVersionNameSizeNumber of bytes used by the VersionNamebytesVersionName[VersionNameSize]Array of UTF-16 characters the length of VersionNameSize bytes. This is the English language version string found in the name table of the font (name ID = 5) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding4Padding value must always be set to 0x0000.unsigned shortFullNameSizeNumber of bytes used by the FullNamebyteFullName[FullNameSize]Array of UTF-16 characters the length of FullNameSize bytes. This is the English language full name string found in the name table of the font (name ID = 4) - See https://learn.microsoft.com/en-us/typography/opentype/spec/nameunsigned shortPadding5Padding value must always be set to 0x0000.unsigned shortRootStringSizeNumber of bytes used by the RootString arraybyteRootString[RootStringSize]Array of UTF-16 characters the length of RootStringSize bytes.unsigned longRootStringCheckSumRootString CheckSum value. See algorithm to process RootStringChecksum below.unsigned longEUDCCodePageCodepage value needed for EUDC font support.unsigned shortPadding6Padding value must always be set to 0x0000.unsigned shortSignatureSizeNumber of bytes used by the Signature array. Currently reserved and should be set to 0x0000.byteSignature[SignatureSize]Currently reserved. If the SignatureSize is 0x0000 there is no length to this array.unsigned longEUDCFlagsProcessing flags for the EUDC font. Typical values might be TTEMBED_XORENCRYPTDATA and TTEMBED_TTCOMPRESSED.unsigned longEUDCFontSizeNumber of bytes used by the Signature array.byteEUDCFontData[EUDCFontSize]Number of bytes used for the EUDC font data. If the EUDCFontSize is 0x00000000 there is no length to this array.byteFontData[FontDataSize]The font data for this EOT file. The data may be compressed or XOR encrypted as indicated by the processing flags."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .eot extension is an OpenType font that is embedded in a document. These are mostly used in web files such as a Web page. It was created by Microsoft and is supported by Microsoft Products including PowerPoint presentation .pps file. The file isn’t of primary use and is sort of accompanying document with the main document or web page. Similar to OTF fonts, EOT supports both Postscript and TrueType outlines for the glyphs. EOT files are smaller in size for the reason that they are compressed using LZ compression. EOT uses a Microsoft tool to create a font from existing TTF/OTF fonts."
+    ]
+  },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ]
 }

@@ -4,8 +4,20 @@
   "slug": "qm",
   "extension": "qm",
   "name": ".QM File Extension",
+  "type_name": "Qt Compiled Translation Source File",
   "summary": "Learn about .QM files and view a list of programs that open them.",
   "developer": "Qt Group",
+  "more_information": {
+    "description": [
+      "Compiled language translation file created by Qt Linguist, a program used to create translations for Qt applications; contains source text and translations into another language; stored in a compact binary format."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "QM files are used for performing fast lookups when translating text within a Qt application. They are created from a Qt project file (.PRO file) using the lrelease command from the Qt Linguist toolkit. When the command is run, Qt Linguist produces one QM file for each translation source file (.TS file) in the Qt project.",
+      "NOTE: Qt SDK was previously developed by Nokia and Digia."
+    ]
+  },
   "programs": {
     "windows": [
       {

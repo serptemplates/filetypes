@@ -7,6 +7,18 @@
   "type_name": "DivX Temporary Video File",
   "summary": "Learn about .DDAT files and view a list of programs that open them.",
   "developer": "DivX",
+  "more_information": {
+    "description": [
+      "Video file created by DivX Player, a video player program; contains downloaded video data in .AVI format; used as a temporary file until a whole video download is complete, at which time it is renamed with the \".avi\" extension and saved."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "DDAT files, along with .DMSK and .DINFO files, are used to download and reconstruct a final AVI video file. DDAT files may be renamed with the \".avi\" extension to play a partial video download.",
+      "DDAT, DMSK, and DINFO files use the same file name prefix and are stored in the \"Temporary Downloaded Files\" directory of a DivX Player installation.",
+      "NOTE: DivX player initially reserves the full final DDAT file size on disk upon download and \"fills\" the file over time with the video file contents. For this reason, incomplete or halted downloads may take up excessive amounts of disk space."
+    ]
+  },
   "programs": {
     "windows": [
       {

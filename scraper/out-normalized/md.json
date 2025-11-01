@@ -1,9 +1,38 @@
 {
   "slug": "md",
   "extension": "md",
-  "name": "MD File",
+  "name": "Markdown Documentation File",
   "summary": "Learn about .MD files and view a list of programs that open them.",
   "developer": "John Gruber",
+  "category": "document",
+  "mime": [
+    "text/markdown"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "John Gruber created Markdown in 2004, with the help of Aaron Swartz, to design a simple and readable markup language that could be easily converted to HTML. Gruber released the original Markdown Perl script alongside the specification on his website, Daring Fireball.",
+      "However, Gruber has not actively developed the official Markdown implementation or updated the original specification in many years. Since then, many others have created extended versions and implementations of Markdown, such as CommonMark and GitHub Flavored Markdown (GFM), as well as tools like Pandoc, to add features and improve consistency across platforms.",
+      "Various types of users, including software developers, technical writers, and researchers, use the Markdown language. For example, software developers may use MD files to create project documentation, such as README.md files that explain the purpose, installation, and usage of their software.",
+      "Technical writers often rely on Markdown to produce user guides, internal wikis, and developer documentation that can be easily converted to HTML or other formats using tools like MkDocs or Jekyll. Finally, researchers may use Markdown for writing papers, notes, and reports, often integrating it with platforms like R Markdown or Jupyter Notebooks.",
+      "NOTE: Markdown files may also use the .markdown extension (.MARKDOWN files)."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "You can open MD files with any text editor, including:",
+      "Microsoft Notepad (Windows)",
+      "Apple TextEdit (Mac)",
+      "Vim (Linux, Mac)",
+      "Google Chrome Text (Chrome OS)",
+      "However, if you intend to edit an MD file, you may want to open it with a Markdown editor. Markdown editors provide editing and review tools that will help you apply Markdown syntax correctly. Some Markdown editors include:",
+      "ghostwriter (Windows, Linux)",
+      "MacDown (Mac)",
+      "Caret (cross-platform)",
+      "StackEdit (Web)"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -88,52 +117,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "You can open MD files with any text editor, including:",
-      "Microsoft Notepad (Windows)",
-      "Apple TextEdit (Mac)",
-      "Vim (Linux, Mac)",
-      "Google Chrome Text (Chrome OS)",
-      "However, if you intend to edit an MD file, you may want to open it with a Markdown editor. Markdown editors provide editing and review tools that will help you apply Markdown syntax correctly. Some Markdown editors include:",
-      "ghostwriter (Windows, Linux)",
-      "MacDown (Mac)",
-      "Caret (cross-platform)",
-      "StackEdit (Web)"
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Obsidian"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFgElEQVR42sVXWUitVRTe/3GeJ5wRUXOAjFQirhqIPkgvERE9JGSCPgQJDjhFknalS2FXRQUHJBCiB4WLwgV9UBEHLhmWaA445Xg9zrN5HPvW1n3Y57//udfKaMPG/e+z9trf+tbaay0V9j8PxdwPExMTgZ6enpFYOl9fX9uRrIWFBbu6uhJnFJ1OZ5TH2u7i4sINf50vLy9tFQycW8V6GmfW/Pz8fsbW+SsBHB8fvwfBb6ysrN6QL/g3A0AYgBydnZ09XVxc/DQyMvJME8DBwUGuvb39t7jYCiDulWoCASbY6enpyNra2oPQ0FCDDEDBZrG7u3spLNfd9+VqECcnJ0+cnZ0/FACUlZWVXCcnp+8dHR3ZfdH+MhDn5+fHu7u73j4+PsfK5ORkmK+v76i1tbWNra0t+6+slwfigW1vb3/i7e39o7K0tFTn4uLyGV0OECZIOUUA1NPTw/b39//WJUFBQSwqKorrEboEu7cA8gDgsaLX63+zs7OLcnBwYPTMJD9xYdrPzc1lXV1dHAyeJkOscJnp6WkuExERwf/u7e0x6OPr+Ph41tDQwAwGA0P087PkYgnAVwBQpmxsbDy3sbHxFQC0GMjMzGTj4+MsIyODJScnM8izoaEhlp2dzWVqampYTEwMOzw8ZG1tbay1tZVFR0ezqqoq/juBlWOLvnd2dkpgzENiYAkMBBAAWYhQkiC5JT09nYWEhLCCggIuQ5MYEQDIUrKYziDAWGVlJUNgs9raWv47EhQ3RBhIxm1tbZWCga+V1dXV33H560SPEKADeK98DXCsuLiYpaWlsbCwMGOQagEQykdHR1lnZycrLCzk9NMk0KSLzpNhRgDLy8s9eIKJxIClpSVXQELCBcIN6v3u7m4jgMbGRhYbG6spp3WeACAGbgAsLCz85Orq+rE6Bih45FgQimiQXF9fH8vKyjIyEBcXxy0l5VpAiAGKHSkIbwDMz8+Xu7m55QkX0CESIGXykJUJALILCAC5TW29fF4AMGFgbm4uG8+qUo6BVw1Spo4BAnDXYRKEU1NTH2HRIgMghMIFWoPk+vv7NRnQsl7tAhMGZmZmHnh4eDxDIHIhQaHaBWoAvb29LCcnxwTAy0CTXpFpTQCMjIz4BwQErBAAegVqquSAkvcpPcsMiFdwl/MUY0hENwBKSkp0yHSneAlWcq5WWyMrIQYGBweNAOrr63keODo6MrFYPeilvQCAZJGMlr28vPxFLaDDlNHUFgj/ElMdHR2sqKiIf1PGS0hI4AlMfoYCCK3JODkTGl1AMsgFQ+jZ3hLPUFQwtSKaFBtUhJqamngyopGUlMRSU1N59bvtG00uF0EoLqe5ublZijaAA2Czs7NtgYGB7wshUoDe8AXrSTnyBsvPz2fonEwuIVrLyso4CKqkavZoCheQfgB4BKO/5ACQC2r9/f0/F0qFkFYkC6VU+QgkuQPxw/8Kv8s9gPqs0I0iWIrgv2EAXdEXAPAIDemdOyJzEX6XQWyhBqWjwv7AT46NjX2AIHxCjYZWT/hPLjF3ntZ4YVft7e3eKSkpW3wXweQfHh6+QgDIDWoQagVqy82ttdgi65GGfwXjbxMZxrYcgdiHTPUOnoaxKN2nC0QZRm+539zc/FpeXt42bRtPosV6F6iegh4LYkI0D1qWc8RmWDAnB8uv19fX56urqxMrKipW8ROPchk6peVsxMJjgFDovQt3yEBki7S+b1/ABeYZLjUgoe1C3x8o3w+ROX+BiEFcrgbAv4eHhxNRGb9DbYiBK3TiSRF9mJdQto25iaynR/XTY28V3/RP6DJS8fLAwMBKeXn54e0lNC8Jl2oycwDEnq6lpcUlODj4TeVm/IkmU19XV/ccKfjqVsmVpEy7Bt9h/AWpCrpO9ci/zQAAAABJRU5ErkJggg==",
-      "alt": "Typora"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Markdown Monster"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADZElEQVR42u2VWUhUURzGv1lcRqfRXEuntNSMNCvCCkWiogUy2hcqUFpIE3uJigoifKmQihaplyhSKYqKMCIrkigp0TRcEDO3NBxzdEYdx3G22/8ccTB1TLPSh/leLvdyzj2/8/9/5zsi2YoUi0gEMSZAggCI3FamCNKI1ROxPswVrxwADgAHwCQDcJaKERnoAZmTBB09JlQ2d8JiFYZMlDlLEBGggItUgvZuI6pUnWDDQv3k8Fe4DhotoENvQn2bHrpe88gA02jyg6RlCPF1R5vOiKMPS/G6soUnVr+cJGIciAvGsbXhBCDGy4oWHMoqhtki4PzWSOxZOnMIsN5owacGDdJzv6D4m8b2vyEA0z1ckZMaizDaCVOVqgvJ2SV8MpOYMnvzogCkb4uCt9yZf3tepkLC7UIOcHlnFBJjgvn3ToMJvSYrr5a7sxQ0FZ8btUi8XYQ6dffoABhoQW07DhNErVqHuDBfZOxeiJlebrbdDQfA2pb2rJJXx3eKC06vn4uls7z491NPynHzbe3oAJisVC+2yK339UjbOA/zySMDZQ+AteVhUROv2rktkUhaPpuPv/rmK848reBtGBGAGaZZa+DGstBoDZnNR+7Cf179Q4cwfzmkYtGwAAw6I68GH2raofSSIZkWn+XjDqPZitR7n3G/sPH3Ffiu7cHJx+Vktjm2XfdX40W5Chd3LOAmtOcB9s7GSyUiXgUGnkstSb1XAjUZfFQAG67nQ+nphuvU9xnU9z4/FPOqZO5fYheAeaelw0BGNFOpBf58V62mNtahSdNj/xgOBoi/lo8GtR6byPkJMUE4m1OJEjoRayL8RwRguz3xqAw5pc281waThbd0cKaMCqC2tZv3WiFzgkZv5D9cRwB3BwAkEoDJjgnHlIT2AAYqMlCB4xRC8VHTISEwdqavvalBdsE3XKAg+ucAAZ4yZO2PxuKgqfy9h8p79EEpd/alHeOsgAeV+ciqUPhReGgpv9mZbe3q/WUSS7Tti5W4smsh3CjlWNgczPxEd4cZO6OViA3x5vdC5scGFNVrxgbAxI7MwBAaTgpXJ9zYuwgxtNi+O0XIq2q1wYnQN5+5X8DIGtd1HBvqgxXhvnTBVKGXAuZPNC4AFjCudB0PvmL/G8DfkAPAATB5ACZkdS4BPwGKlW3802xVewAAAABJRU5ErkJggg==",
-      "alt": "MarkdownPad"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "MultiMarkdown"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "UltraEdit"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Notepad++"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -142,24 +129,49 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/md_7082.png",
+      "alt": "Screenshot of a .md file in ghostwriter 2",
+      "caption": "MD file open in ghostwriter 2"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/md_11755.png",
+      "alt": "Screenshot of a .md file in MuseScore",
+      "caption": "MD file open in MuseScore"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.825Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     },
     {
-      "url": "https://fileinfo.com/extension/md",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.825Z"
+      "url": "https://fileinfo.com/extension/md",
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.825Z"
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.825Z"
+  "last_updated": "2025-11-01T22:32:42.177Z"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "oat",
   "extension": "oat",
-  "name": ".OAT",
+  "name": "Android Optimized Application File",
   "summary": "Learn about .OAT files and view a list of programs that open them.",
   "developer": "Google",
   "programs": {
@@ -10,6 +10,20 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=10288&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "OAT files are typically saved to the following directory on the Android device:",
+      "/​data/​dalvik-cache/​",
+      "Android performs these optimizations using a tool called dex2oat. When you install an application on a device running Android 5.0 or later, dex2oat converts the Dalvik code located in the .ODEX file to native code and stores it in an OAT file. Therefore, each app will have a corresponding OAT file. dex2oat is typically located in the following directory on the Android device:",
+      "/​system/​bin/​dex2oat/​",
+      "NOTE: OAT files were introduced with Android 5.0, which is codenamed “Lollipop\" or “L.” Previous versions of Android use .ODEX (Optimized DEX) files instead of OAT files for optimized executables. The new Android 5.0 runtime, called ART (Android Runtime), uses an ahead-of-time (AOT) compilation method, which improves upon its predecessor’s method of just-in-time compilation. ART replaces the previous runtime, which is called Dalvik."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An OAT file is created by the Android operating system in order to speed up the loading time of an Android app (.APK file). When an app is installed, Android automatically optimizes app data and creates a corresponding OAT file. Android uses this file to load the app more quickly, which creates a better experience for the user."
     ]
   },
   "images": [
@@ -42,8 +56,11 @@
     {
       "url": "https://fileinfo.com/extension/oat",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.218Z"
+      "retrieved_at": "2025-11-01T22:32:42.658Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.218Z"
+  "last_updated": "2025-11-01T22:32:42.658Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -1,9 +1,38 @@
 {
   "slug": "mbox",
   "extension": "mbox",
-  "name": "MBOX File",
+  "name": "Email Mailbox",
   "summary": "Learn about .MBOX files and view a list of programs that open them.",
   "developer": "N/A",
+  "category": "other",
+  "mime": [
+    "application/mbox"
+  ],
+  "containers": [],
+  "related": [],
+  "technical_info": {
+    "content": [
+      "Version 1.x of Apple Mail used MBOX files and stored them in the /​User/​Library/​Mail/​Mailboxes/​ directory. Mail 2.0 and later versions use the .EMLX format, which separates messages into individual files so they can be searched by Spotlight.",
+      "However, Apple Mail still exports mailboxes as MBOX files. If you right-click a mailbox and select Export Mailbox..., Apple Mail will save that mailbox's contents as an MBOX file.",
+      "NOTE: Opera Mail, which was discontinued in 2016, also stored messages in the MBOX format."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Because MBOX files are plain text files, you can open them in any text editor, such as Microsoft Notepad, Apple TextEdit, or GitHub Atom, to view their contents.",
+      "You can also import an MBOX file into Apple Mail or Mozilla Thunderbird, to view the messages the file contains in your email client.",
+      "To import an MBOX file into Apple Mail, select File → Import Mailboxes and then follow the prompts to import your MBOX file. The messages your MBOX file contains will appear in the Import mailbox.",
+      "To import an MBOX file into Mozilla Thunderbird, you must first install the ImportExportTools NG add-on. Then, open Thunderbird and select Tools → ImportExportTools → Import MBOX File and follow the prompts to import your MBOX file. The messages your MBOX file contains will appear in the Local Folders inbox."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "Several conversion utilities allow you to convert MBOX mailboxes to the .PST format used by Microsoft Outlook. Some examples include:",
+      "Regain MBOX to PST Converter",
+      "EdbMails",
+      "Aryson MBOX to PST Converter"
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -60,54 +89,10 @@
       }
     ]
   },
-  "how_to_open": {
-    "instructions": [
-      "Because MBOX files are plain text files, you can open them in any text editor, such as Microsoft Notepad, Apple TextEdit, or GitHub Atom, to view their contents.",
-      "You can also import an MBOX file into Apple Mail or Mozilla Thunderbird, to view the messages the file contains in your email client.",
-      "To import an MBOX file into Apple Mail, select File → Import Mailboxes and then follow the prompts to import your MBOX file. The messages your MBOX file contains will appear in the Import mailbox.",
-      "To import an MBOX file into Mozilla Thunderbird, you must first install the ImportExportTools NG add-on. Then, open Thunderbird and select Tools → ImportExportTools → Import MBOX File and follow the prompts to import your MBOX file. The messages your MBOX file contains will appear in the Local Folders inbox."
-    ]
-  },
-  "how_to_convert": {
-    "instructions": [
-      "Several conversion utilities allow you to convert MBOX mailboxes to the .PST format used by Microsoft Outlook. Some examples include:",
-      "Regain MBOX to PST Converter",
-      "EdbMails",
-      "Aryson MBOX to PST Converter"
-    ]
-  },
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Mozilla Thunderbird"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Stellar MBOX to PST Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "SysTools MBOX Converter"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Thunderbird Converter Pro"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "SysTools OST Recovery"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "Kleopatra Certificate Manager"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABbklEQVR42r2WAQ6DIAwA4WX6M/Fn+DJmpxXoSqHAbMJiZHJH1VprngjBvBbWOOdgWDsT7v0hzq/r8iNhR+AIXJal+ZrjOG6RTgGAaoClsFYhMAuqFiiBIY0Q+T3VSYsC9OIWoBTcFosCKXwULG3qR4CCZ0ClTGQCKRwrwz8i59wCIVxeml3TgqPJFmbhEfDeh5YFRt4IUaBWB6RnA+c02VMJxD/LC7YK5MJrvQ5QcHrvEZgL7BWF7VlDFIAzKZwrTACMi/nz1zXdgivcd7ACNKUl+LVbDZTRoALcQ8W/cjn8fJO+AxacIiAXoxwOZWTfdzW8moG42zgXs7Bmi/TAWYFUgkYuNadeD7Rk4w/goMAcieGmdFSkW4BvWjyHKJzbjLor5lrw+jcgfVgRHOeav4YU3AbHW4NZ2Mh8pSnloG3gVIADEwFoSNLTpVZ6fp/4ZMBgV/YSOMKhotrzIPSW0t5A+Dmuzw5IvCmAcDj+AERyW1NiWr70AAAAAElFTkSuQmCC",
-      "alt": "RealNetworks RealJukebox"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -116,24 +101,44 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/mbox_1180.png",
+      "alt": "Screenshot of a .mbox file in Apple Mail",
+      "caption": "MBOX file open in Apple Mail"
     }
   ],
   "sources": [
     {
-      "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "url": "https://file.org",
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     },
     {
-      "url": "https://fileinfo.com/extension/mbox",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "url": "https://fileinfo.com/extension/mbox",
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.824Z"
+      "retrieved_at": "2025-11-01T22:32:42.177Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.824Z"
+  "last_updated": "2025-11-01T22:32:42.177Z"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "zwi",
   "extension": "zwi",
-  "name": ".ZWI",
+  "name": "Zipped Wiki Article",
   "summary": "Learn about .ZWI files and view a list of programs that open them.",
   "developer": "S.V. Chekanov",
   "programs": {
@@ -18,6 +18,22 @@
         "name": "Open over 400 file formats with File Viewer Plus.Free Download",
         "url": "https://fileinfo.com/software/windows_file_viewer?ref=13622&b=1"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "S.V. Chekanov developed and implemented the ZWI format in 2021 in the SandBox portal for the HandWiki encyclopedia. Other programs, including the DokuWiki open-source wiki app and Encycloreader web app, also adopted support for the format to allow users to transfer wiki articles more easily.",
+      "ZWI files consist of various files in a Zip-compressed archive. The files typically include:",
+      "An article.wikitext or article.dokuwiki file - Stores wikitext for the article's final version.",
+      "An article.html file - HTML version of the article (including the headers) for viewing with a web browser.",
+      "An article.xhtml file (optional) - Contains the HTML portion with the article content (without headers, navigation, etc.).",
+      "An article.tex file (optional) - Stores the article in the LaTeX file format.",
+      "Various .JSON files - Includes metadata.json (stores information about the article, such as editors and revisions), media.json (stores a list of linked images from the article, and optional signature.json and plugins.json files."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A ZWI file is a Zip-compressed archive that contains the final version of a wiki article in the Zipped Wiki (ZWI) format. It stores the main wiki article (e.g., a WIKITEXT or DOKUWIKI file), related .HTML, .XHTML, .TEX, and .JSON files, and metadata. Users package wiki articles in the ZWI format to exchange them between wiki software."
     ]
   },
   "how_to_open": {
@@ -56,8 +72,11 @@
     {
       "url": "https://fileinfo.com/extension/zwi",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:15.406Z"
+      "retrieved_at": "2025-11-01T22:32:42.922Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:15.406Z"
+  "last_updated": "2025-11-01T22:32:42.922Z",
+  "category": "other",
+  "related": [],
+  "containers": []
 }

@@ -4,8 +4,21 @@
   "slug": "dfont",
   "extension": "dfont",
   "name": ".DFONT File Extension",
+  "type_name": "Mac OS X Data Fork Font",
   "summary": "Learn about .DFONT files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "A DFONT file is a font used by Mac OS X (now macOS). It is a TrueType font saved in an OS X-specific format. In the past, some OS X system fonts were saved as DFONT files."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Previous Macintosh operating systems allowed files to store data in two entities: the resource fork and the data fork. In Mac OS X, files can store data in only the data entity. To allow TrueType fonts that used the two-entity structure to continue working in OS X, Apple reformatted them to use the one-entity structure. These reformatted fonts are referred to as data fork TrueType fonts, or DFONT files.",
+      "In the past, OS X's Courier, Helvetica, Monaco, Symbol, Times, and ZapfDingbats fonts were all saved as DFONT files. These fonts have all since been deprecated, with some being replaced by typical TrueType font (.TTF) or OpenType font (.OTF) files.",
+      "NOTE: Because DFONT files are saved in a Mac-specific file format, you cannot install them in Windows or Linux."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a DFONT file with Apple Font Book (Mac) or FontForge (multiplatform). To install the font a DFONT file contains, open it in Apple Font Book and select the Install Font button."

@@ -1,7 +1,7 @@
 {
   "slug": "unityweb",
   "extension": "unityweb",
-  "name": "UNITYWEB File",
+  "name": "Unity WebGL Game Data",
   "summary": "Learn about .UNITYWEB files and view a list of programs that open them.",
   "developer": "Unity Technologies",
   "programs": {
@@ -14,6 +14,22 @@
         "name": "Unity Technologies Unity",
         "url": "https://fileinfo.com/software/unity_technologies/unity"
       }
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Unity is a cross-platform 3D video game development application. One of the platforms for which Unity developers can create games is WebGL. WebGL uses a JavaScript API to render 2D and 3D graphics in a web browser, allowing players to play Unity-developed games in a web browser.",
+      "When a developer builds their game for WebGL, Unity produces a folder with a variety of files related to that game. Some of these files are UNITYWEB files. UNITYWEB files are located in a game's Build directory, and they are named:",
+      "MyProject.wasm.framework.unityweb: Contains the game's JavaScript runtime and plug-ins",
+      "MyProject.wasm.code.unityweb: Contains the game's WebAssembly binary",
+      "MyProject.wasm.memory.unityweb: Contains a binary image used to initialize the heap memory for the game's player; generated only for multi-threaded builds",
+      "MyProject.data.unityweb: Contains the game's assets and scenes",
+      "NOTE: Some Unity WebGL games may include additional UNITYWEB files in their Build directory, depending on which version of Unity was used to build the game."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A UNITYWEB file is a binary game data file used by a Unity WebGL video game. It contains either the game's JavaScript runtime and plug-ins, the game's WebAssembly, a binary image used to initialize the heap memory for the game's player, or the game's asset and scene data. UNITYWEB files may be compressed using gzip or Brotli compression, or they may be uncompressed, depending on how the developer who created the files chose to build their game."
     ]
   },
   "how_to_open": {
@@ -55,18 +71,23 @@
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     },
     {
       "url": "https://fileinfo.com/extension/unityweb",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.885Z"
+      "retrieved_at": "2025-11-01T22:32:42.225Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.885Z"
+  "last_updated": "2025-11-01T22:32:42.225Z",
+  "mime": [
+    "application/vnd.unity"
+  ],
+  "category": "other",
+  "related": [],
+  "containers": []
 }

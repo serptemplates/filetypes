@@ -4,8 +4,20 @@
   "slug": "mbn",
   "extension": "mbn",
   "name": ".MBN File Extension",
+  "type_name": "Multi Boot Image",
   "summary": "Learn about .MBN files and view a list of programs that open them.",
   "developer": "N/A",
+  "more_information": {
+    "description": [
+      "Multi boot binary firmware image used by a variety of Android devices, mainly Samsung mobile phones; contains binary data for a device's memory partitions, such as the resources and power manager, secondary bootloader, AP bootloader, and trust zone; used to update firmware on an Android device."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "A bootloader is a program executed before an operating system begins to run, whether it be on your computer, smartphone, or other device. It checks and verifies software on your device before it loads. Each Android phone has a bootloader that instructs the operating system kernel to boot normally. In order to install custom firmware on your Android device, the bootloader needs to be unlocked.",
+      "NOTE: Data contained in the MBN file can be flashed on to a Samsung Android device using the Odin3 utility."
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -1,9 +1,11 @@
 {
   "slug": "lbr",
   "extension": "lbr",
-  "name": "LBR File",
+  "name": "LU Library Archive",
   "summary": "Learn about .LBR files and view a list of programs that open them.",
   "developer": "Gary P. Novosielski",
+  "category": "compression",
+  "category_slug": "compression",
   "programs": {
     "windows": [
       {
@@ -16,11 +18,46 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "Developer Gary P. Novosielski created LU to help developers more efficiently package and distribute software for the CP/M operating system. Later, LU was also used to package and distribute DOS software. Associated programs, including NULU and LRUN, also allowed users to create and manipulate LBR files.",
+      "Like .TAR files, LBR files are not compressed. To reduce LBR files' size, users often compressed them using Squeeze or Crunch compression. These compressed LBR files often use different file extensions. For example, LBR files compressed using Squeeze use the .LQR extension, and LBR files compressed using Crunch use the .LZR extension.",
+      "NOTE: LBR is an abbreviation for \"library.\""
+    ]
+  },
+  "more_information": {
+    "description": [
+      "A file with .lbr extension is an archive file created with LU program and used on CP/M and DOS operating systems during 1980s. It is no longer being used and has been replaced by modern archiving file formats. The format does not compress the member files and acts as container archive for these. The archiving feature was mostly used for transfer of archived files over the internet. Since LBR didn’t offer compression, other utilities such as SQ or CRUNCH were used to compress the member files pre-archiving or the resultant archive file post-archiving to reduce its size.",
+      "An LBR file is an archive created by the LU archiving utility. It contains one or more files that have been packaged together for easier storage and distribution. Notably, LBR files are not compressed."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can use CFX (Windows), The Unarchiver (Mac), lbrate (Linux), LAR (Linux), or to extract the files an LBR file contains."
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -49,15 +86,16 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/compression/lbr/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.275Z"
     },
     {
       "url": "https://fileinfo.com/extension/lbr",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.926Z"
+      "retrieved_at": "2025-11-01T22:32:42.275Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.926Z"
+  "last_updated": "2025-11-01T22:32:42.275Z",
+  "containers": []
 }

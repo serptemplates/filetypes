@@ -4,8 +4,19 @@
   "slug": "mfs",
   "extension": "mfs",
   "name": ".MFS File Extension",
+  "type_name": "MetFS Encrypted File System",
   "summary": "Learn about .MFS files and view a list of programs that open them.",
   "developer": "EnderUNIX",
+  "more_information": {
+    "description": [
+      "An MFS file is a virtual partition formatted using the MetFS file system. MetFS is a software system that creates and maintains an encrypted FUSE-based file system. MetFS partitions use the MFS extension by default, but no file extension is required."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "Data stored in an MetFS partition cannot be read without the user entering the correct password. Until decrypted, an MetFS partition contains unrecognizable data."
+    ]
+  },
   "programs": {
     "windows": [
       {

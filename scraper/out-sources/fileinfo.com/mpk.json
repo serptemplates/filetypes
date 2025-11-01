@@ -4,8 +4,21 @@
   "slug": "mpk",
   "extension": "mpk",
   "name": ".MPK File Extension",
+  "type_name": "ArcGIS Map Package",
   "summary": "Learn about .MPK files and view a list of programs that open them.",
   "developer": "ESRI",
+  "more_information": {
+    "description": [
+      "Packaged map file created by ArcMap, a GIS mapping program included with ESRI ArcGIS Desktop; stores both the .MXD file and all data for the map, even if the data is originally located at remote or disparate locations; used for saving a consolidated, self-contained map and sharing it with a user at a different location."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "To create a map package, ArcMap first downloads all data and then combines it with the MXD file into the resulting MPK file. This is useful for viewing maps without having access to the data connections required to view the map contents.",
+      "To extract a MPK file, drag the file into ArcMap or right-click on the file and select \"Unpack.\" By default, map packages are extracted to the \\​[user]\\​Documents\\​ArcGIS\\​Packages\\​ directory.",
+      "NOTE: MPK files were introduced with ArcGIS version 10 and are not compatible with earlier versions of the software."
+    ]
+  },
   "programs": {
     "windows": [
       {

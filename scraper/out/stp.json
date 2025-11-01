@@ -1,9 +1,11 @@
 {
   "slug": "stp",
   "extension": "stp",
-  "name": "STP File",
+  "name": "STEP 3D CAD File",
   "summary": "Learn about .STP files and view a list of programs that open them.",
   "developer": "International Organization for Standardization",
+  "category": "3d",
+  "category_slug": "3d",
   "programs": {
     "windows": [
       {
@@ -88,8 +90,23 @@
       }
     ]
   },
+  "technical_info": {
+    "content": [
+      "The STEP file format is a standardized 3D model format that engineers can use to save and transfer 3D models between different computer-aided design (CAD) and computer-aided manufacturing (CAM) programs. Before the STEP format's existence, users of one program often could not open models created in another program, making it difficult to share 3D models among users.",
+      "Most STEP files are saved with the .stp file extension. However, you may also encounter STEP models saved with the .step extension (.STEP files). The files contain plain text data that a CAD or CAM program references to load a 3D model. For example, many STP files contain data used to show a model of a manufactured mold or part."
+    ]
+  },
+  "more_information": {
+    "description": [
+      "An STP file is a 3D CAD file used for exchange of product data between CAD and CAM applications. It contains information about 3D objects and is saved similar to the STEP file format. STP files facilitate the exchange of data between applications as per the STEP Application Protocols ISO 10303-2xx. This ISO defines the encoding mechanism for data representation in EXPRESS data modeling language. STP files can be opened in applications such as such as Autodesk Fusion 360.",
+      "An STP file is a 3D assembly file supported by various mechanical design programs, such as IMSI TurboCAD and Autodesk Fusion 360. It contains three-dimensional object data saved in the Standard for the Exchange of Product Data (STEP) format. STP files are saved in a text-based ASCII format that conforms to the STEP Application Protocols ISO 10303-2xx."
+    ]
+  },
   "how_to_open": {
     "instructions": [
+      "STP files can be opened in STP Viewers as well as Text Editors.",
+      "Various CAD applications can open STP files for viewing on Windows, MacOS and Linux. These include:\n\nAutodesk Fusion 360 (cross-platform)FreeCAD (cross-platform)IMSI TurboCAD (Windows, Mac)Dassault Systems CATIA (WIndows, Linux)",
+      "STP files are saved as plain text files. This makes it possible to open STP files with text editors. Popular text editors such as Notepad and Notepad++ on Windows OS, and Apple TextEdit on MacOS can open STP files. Once opened in a text editor, user can edit the properties of STP file. However, it can lead to corruption of file in case of updating the properties incorrectly.",
       "You can open an STP file with various CAD applications, including Autodesk Fusion 360 (cross-platform, FreeCAD (cross-platform), IMSI TurboCAD (Windows, Mac), and Dassault Systemes CATIA (Windows, Linux).",
       "For example, to open an STP file in Autodesk Fusion 360:",
       "Select File → Open... from the program's menu bar",
@@ -101,6 +118,7 @@
   },
   "how_to_convert": {
     "instructions": [
+      "There are several applications that can convert STP files to other file formats. CAD applications that can convert STP files include:\n\nAutodesk Fusion 360IMSI TurboCADSiemens Solid Edge\n\nIn addition to these, there are several online apps that can convert STP files to other file formats. These online apps lets you upload your STP file to cloud servers where they are converted to your desired format and returned back for downloading.\n\nThe Autodesk Fusion 360 can convert STP files to the following 3D and CAD file formats.\n\nOBJ3MFDWGDXFASMIGESSTLFBXF3DUSD",
       "Several CAD applications, including Autodesk Fusion 360, IMSI TurboCAD, and Siemens Solid Edge, can convert STP files to other formats.",
       "For example, Autodesk Fusion 360 can convert STP files to various file types, including the following formats:",
       ".OBJ - Wavefront 3D Object",
@@ -115,38 +133,32 @@
       ".USD - Universal Scene Description Format"
     ]
   },
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
   "images": [
     {
       "url": "https://assets.file.org/images/fileorg-logo-440x90-4-8b.png",
       "alt": "File.org logo"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAI1UlEQVR42sVXa2wU1xX+ZnZm9uVdP3Ztr43BLH4FzMs4Ea+AiElCgfIqEUVqpERK0kaNRNsfLarSqg/RqgpRiUSrKFGVNrRKQvkDLQ2CijaRoOBAKJSHMbbXz13vmt31vmZ3Z1/Tc+/alg2GUilVR7ra0cydc75zzne+c1fQ6cL/8RK+OADMjPDFA2CvBWGm4f6hEC5d7UcsnsL8uQ480eZGqc08tZ8bFoRHsjcFYDZH935YKOh476Nz+Ov5O9BlIyAaoGfTsCkCXnuhA+1L580eJdmdLU72fAaA/3QdP3UFH/zlGuCYA8E5D4IkQ4+HoQeHoKSjOPj6btRUl/53JSiwsB7hSmtZfP17R5C2OCG62yDVz4UgCyhENOQGuqAP3cCa1ip8+5Vn/zcAfP4IXnv995DdSyEvXAnDPBMEKnshDOR7fcjdvgAHInj7jZceauc+DswGYHo5JjcH7sbw4nfegXnBMpiXrINhLnk30d4QZad3EOr1T1FnzuLdgy89sN6zAsjn8/r0lw+68vkCXvzW2xjTZJibH4cyrxmiIiEdCiPZR7zwduGrX2rHy1/b8Eh8mgHgQemZ+Rz45HwXfnzojzDYnIiJNphKSiAVNCA4AmQTOHnkB7CY5dkdPaDDpgA8DPUksEAggH37D2HIn0IiGUcyI8CiGFBeXor1bU68+srzqJsz56HB3Acgl8vNyMAk2umAJo397sgH0DQNWzc/i5s3byCrl6BxQR0ea5mPo8eOQ0ureO4ru2A2m+6LerrNGc+z2eyM0Cc3iaKAdDqLlJaDkaIcDwfxizcP46c/3I+xu2MYHh5GR0fHDKMH33wLy5cvxdMbO5ilKaf3ZmIGgEwmc08JdGQpKUePX8QnnR5omQyMsgh3VQzOchu++erL6Oy8hGRKxfp160gdC1NOkskk3jr8NnZu24LFi1vpeQGT8+FeMFO/mpae1EKwX7Z+fvgUuoZjEKykapIC1dcNJf5P1Dc/hQPf34PPOjthNJnQvqIN07uYGb3T48HpM2ewd89uuFwuqMk07RE4OSVpemmFohSnUimuxpPPL10dwOE/nIdY0wCxtgUFg4SzH/0WS8oyqLRZse3pZagqzcJR6UJTY0MxPmZowqzBYMCfT54krmThGQU83gRyeQH2EgXbn1mOjU+2zMyEqiaLACgS0SDi0LuncXVQhdjwBMltIwSTiNgdD3KjvRB9N+EqKWD35oWYR++qqys5cG5rAgQz7A9E8aMDb8CfLIWziexY7UAyRnMjhE2rG/D87pU8czwDsViCA8hTLRnxDv76Y3zuCcO2ZAPk+iakchoiPb2wxb24cOJ9bF49F3t2bkABEspL7TBbrFAUI2e+2WyGLEv42S+Poten4nJIxJovPwdTuQN6bBz54VvA2AAOfHc7aqvsRQCh8ajOVC6fy4NaEn87dwvvHTsHQ20jlGo3RojtqZunUGJ3IeHrQsfaVmzbtAp9/cMgAiMejyESS0CjZvL7/WhuWYw/nb6C5Rt2IVPfhpKFTRBsNDOCRO6+bhTuXMT29Q3YvqmtmLFRf1DPkmMtrRGz0wiNR3DwVycQShKDFQtyWgpp/78oYgFmoxH7vkERGUVUOGsoejMUWYbIa6DT9yl4vX7s/8k7aG7fiLh7LVo2rirOjIiOTHc34lfPYuvaBuzduapYtv4hr57NZJFQU4hEo/COjqG724OTZy5BVVUqDeCqULBsxRp4x5IU8TidglxYtaIeVY4SnnJRFPlimUxTe97p6cH7xy4gXLUSq3fshWiiQOIRpHsuI+frwb4XnkHb0joodJ4Qej1DeobULRpXEY3F4fUFMDDQj9tdt9FNUy5DQtT6+A4YrOUoSEYEaV9GjaDaasSi+VYsaS6b6AB2YsrDNxrAtes9OP/5AGyuFhhrF0Chb6GpNDlH4LAI2L9vB3WFhWdQ6Okd0NNahqc/Ho9jPBpDeDyOUDCAGAHyR8qgiiXQnfUwVNbTKUhCgbJQ8PciNTqAJ5dZML+2DEPElWAkBVmRkSCQnZdvIRDOwkiDS5YVDtFkKGDXlnYsbGlApbMcFWWllIG+QZ3kGBwE50ESyYRKwyZNJUnj7GdBiK4FkBrbYahxEC+IUNE88p7bdAq6hrHei9i64TFqYRkp+j4SiSAcDtHgGsPgcADjEYpckOCsoGy1NqJ10UK4F7jhqqqEg4aY4BkY0XMEgIHQiAvMCIkTHzpDI+M48ekg7ItWQWpphziXakZn0QIdQvJ9Pmi3ziPYcwV7tzQX65/J0/dpmiHF75mdAm9vEXY7aYLTiWpXNY++zG6nMlghDAz5iIQZMpDnbZWiTGi0UpSJwZEIPvz4BmyNbbAsXQepzgrI7BimI0EcSV7/O2TVTxmYP6GCYpGUJN8kKaCjDgmVwJ+bSLpLrBZYaVmo9lbSDSPphzA0PKqz/mcZyEyWgviQosESpf7+zYedyFocUNzLIbuIA3Qcz0XuIjNI43ikG01zLGhvdcJOMm1iokT1LqosOSa+SARIIjlXFIXAyfQrw8Tv2TvK6PAIA1CMPpvNUQY0ar8ktaWKUDiKy1c9uHTDD6m8BmIpSa8oo0BdkA/7iNnj2N7RhArHBACjwh0wZ8w4i5A5kiUDd26g/xES3TNgBioLuxdGvAE9R+mf5EEimeIZYNEHg2H4vCP4x+VeDI6q1AFFNucpY1JBpT8idXDXz4GzshLlZTb6d0QgTGaalEaKkoCwKKnX2YBii3FB4kCECe0QmBLe5RlgapibVoK4mkAoFCFlC8DT34ceEhevL0j78rBaTGh016GhoQE1tbWUgQru3EakYmPaYpR567EIJWlCqIgHEgchTAkXnwVjd0N8FuT4YiByVI4sl9U4tWMkmqBWiiIcCnK1ZGDNZoWc2egsWEbsthG5KGpKu4lHrnAtYM4M3LnAU8+IyCMWiktkYPgwCkd01ipsPDLjbCrmeUkISDbD25KdiliL5rJ5FOiUwwwW6yoVicXrLHHHPM3TUm4wTDiciJgxVJwEQevf7waO8PYjjsEAAAAASUVORK5CYII=",
-      "alt": "STP Viewer"
-    },
-    {
-      "url": "data:image/png;base64,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",
-      "alt": "eDrawings RapidFire Lite"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABp0lEQVR42t1WMVLEMAyMf5CUV15JCR2UdLTwA2h5AUPJ8AJa+AG0dJTQQUl55ZXJD8LIthx5o8Q2HMMQNfau19JekpHOVBlR13Wfo8Pous6kNEkBG9g+dHa/Oq/typgDecI7NdA+rey+Od3alTEH8oQXZuD5yCU+eXWFPA4GgCe8MANvFy7x4b0r5HEwADzhhRn4uHGJ969dIY+DAeAJL8zA5tElXp+5Qh4HA8AT3okBWbzEQK6JPANtOyRtGldIcFM8cf/bABV/v42HzsGVGzol/JyJpAE59XjCIT93lpqK6gHPf23gcJHSMwrNiJEFObDP2ySit8vZkHvOGhmkHy5Aax1dFq1V06fOp/INF6CzRWLoapo+R6PpBwPQWIJQaSaaPleHejOXkN8TXs41wFpap/TqRzhVGJP+9E4w8JfBBr71v38X9QyDu02eh8u1UbUpnlYZzFkD8qImRF7jSniJwxPo+9i98Z8H8x4bR41/KZ2X8Hw2eif9y94gOP4MmPbBQMxVeFfjMRdzpoIP8LcMSF7iKGH0eBQxGkB9ip80UOVHqT4ZX1Dh0CiyLwlhAAAAAElFTkSuQmCC",
-      "alt": "Steem - Atari ST emulator"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAnUlEQVR42mNkwAOKS4r/g+jenl5GavCxAUYGPGDUAQPigBMCev8ZaAgsPlxCsXPUAYyweIKB0Dm74Wzz9xepYulJQX04e3WKK4rcwDsAXTFyFNDCASSlAbo4gJQoYGTEW2zAwf//qOmYammAJg5A14wvCqjhAIrSAE0cMOBRMOAOQNc8mgZG08BoXTDaHhh5bcJB5wBkMDJ7RiPOAQArJWGqiyTeYgAAAABJRU5ErkJggg==",
-      "alt": "Ultra Librarian"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHwklEQVR42sWXC1CU1xXH//uGhYXlJQ81vCJQeWSRtGClyaKM6QAqZNSM06Zo2pnYaToFpzrT0RnA0cy0iaKTTFNrGkk62iamlUaZtI3KtjEiVmEFkUBE3jCIhAUWFvbZc+6yVlxAO2Ond+fu3b3f/b7zO/9z7rm7Evyfm+SxVr32oQ5yWbGvUq4PVsh1wSo5gpVyaKn7KeRQK2VGtVxuUMqlf3mzOMPw5AB2ntJDIikj43qZko0qEKZSIJQBaAyg0V/JAHL4KmRQyCS0VGqUS6Wle15MfiwQyQKGtfReRr0EUimgZENk3EeBcJV7jAzwQXy4BtMOJ12WgoxCJpWgz2RBakQAvrbaq11yyQ3PIw9daDcMvl5geDQAGd+YtrT2k6Z+nfgul0FKxkPIcDgZjqAe4qtEVIAvNmc+hW8nhYll49M2NHSNYnh0GtmJYYgM9hXzvaMWHiqeClaXP1oBt+e1Z3Z+R1f0m8/dc2RcSQqE+yiFcR5D1EoE+xJMoC/2FCWLZccvd6L/7hT0caEICVAhNUYr5nd9fAPxvj5BrxUkmR4J8NH17sqtx78oIQBUnLsJY79JyK9WuY1HMgB5H6xmCBWyyfuCZ5eJe185eQ070qMR7Edrg3wEBLfvvVuPNVHa6p/kJxUtDkAJV16QWltVdwcxIX4oy09FzpGLQgENyR9Bhj0AbDyEDL20Jgap0W5P83/9BY4WPoNAPwWC/JUUOQlaBsfxnuEOVmjVME/bi3a/mFy9IEDY7j/VrokL0z+fsASlpxtQW7pOKFD6STNlu1v6KF+PAiqEEsDPNyUjUK1AXecIfl/Xgz3rEhAWqIKfj/x+WJyTDoASdXTS2vWLzamx8wJc6x4pfNvQfqaqrhOdBzYip/KCuNi497sorW7CaeOA8D6SjLsVUCI+zB+7C93xP3TxK8jtQG7iEoST/KGz8u/+cxMyQmlHmGcYABMz9qJfvryq2luBnacqyeMSNrx9dSyKs+Lg/hyHEz/IxM7Tjfhb8yDlAcWXVAj2VSE3JQLbsmPE7ZvfvYLChAgRuqTlAfcBtv62DnlxS2CasmKU+pjFVnX0lW/umA+gkTP/6MU2GNrvCs+NvSbs+OAKyjekoSwvGR839uH1mlsiFC+sjBBbcFmIWtxeRvNNfSb8MDMGz1FiBpBansQ0j1uRviTADWGxdR1/NSvWC2D7+3Uu05QNZQUpSD/4V+iWBQkIBqi62k0qZGH7t6LRNjSB8jPNKNQthYqKjw/VCB6VMimGx2awPFRNhdPtk9Ppgs3pxD9uDmFi2o4xqhMmixUnf5ot8QI4cfmOi42xUVaAk5BDwYaP1LaLPChdm4jDm1JhnrGj8tMv0dJjEp5qqBz7eUoxwcgIwEUvu8OFGbsDU1aHuGdixoYxGs12R875PWsNXgAVNc0ihpz9wnNKSOE5gVTVd2EX7YYtzyzDrzamIJAMt5Dkx87fxiR5R4eRUIPPAumsAnanG2Da5sAkQ1jtMFltmLA7c67tWz8XQH/4vIsTjw1XblmFEvL2YQhj/xh+9GED1OTlO1vSkRwZgEny6FPaIZ81DcJGW01B54F0VgEHh4Dmpu1OTBHIuM2OUYKYJICO/XlzASgJXew5q8Ah4M96qgceCCpQVJhSKIY2HPisDVVXOrE3N4nCskLcfnd8Gh9d6Ybh1tAsAG19lxvAQt1MEBOkxBhB9B8s8M4BAqglg3ouwZyEnJC1u9aKZGQABikk+U8UZ0JLdeCfHfewr6YFKvJ4f/5KrI4NEY8ZGpvG9fY+XO0Zx9/bv4aVVODTcsrOEA7uXZY3CmPnA6ik9xKWnz3POXxRTHsgjH2j2PF+vchihuQ5biev92LvuRY8Fx+KgwQSpHDBbDaLa7dHLDj0eS8u9YwJFaYdDjgczioc2TxvHeCK0umpftzYIBv25AC3ipqbKD/XLELys7UJQg0Oy1uXOnC96x7eWB+HUzeG0DY85T6IdOFChTcvdeNy5yjgcqXj7ZeMCx1GtZyP/FD2nHcEH8mcE5yUXCP4WtfIpAgJj3xgMZyL4j08PIySs1/BcGfuqfvsUg1ezYyiBIUpLVJTFBkZYVgI4L4KHgiW+ghVR64L/JlzwCM/g3HScvvd1hRcaB9B2flOLNQ2fCMUFbmidDNAhQfk4R8k5XD/FBMQHG/OCY/XD6vB7Wb3EKwzVmz7YwsVGwcWa3/YthKJVC2Hhu5Cp0uTeAO4IU7Q+3bPV88WfNBrPidK1iXix9mxcFrM2FVz20v6+VpFbizWx2vQ0tKK/LwXFgCYB2I++SsvtGJfTgyWa31w7OoAjtUPLGpco5LhXHEaejraMTVlqdi4Ia98YQA3RMlsOLSeKU443qosf0NDI225SSQkrMDZ1sXjz+1w/tNI8LGgf2DQSMbTPfOP+l8QMwtR6AFh4yy/TjaEG/+qh0bjj4xVq+AfES2UONt6z+sx+jgtDuQsRcutVv6aTgDGxwP4D4h2FuJ56gyl85E6tTmaUWT5jYslUZGRyMhIx4DTX4TjWv+EmOeke2fT0+jv6pgj/X8HsEir2H/Qo9L2B0HGFYHCOLee3j7O/DnSPzGAhUBiYqKxOitLXPuyrd1L+icO8ACIfhaERyQnJ9MfG6WX9P8zgIdB4uLitC9/f1v6Quv+DfHPYU7tJjc6AAAAAElFTkSuQmCC",
-      "alt": "Quartus II"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADK0lEQVR42rWXrZLUQBCAO1XUCQyvMOoEahGnEDsKwRsciM0KEKdOcyJZwelTCBBkBXtvsALDRGBAsAqBYR7hziDgqkJ3ZibJ/GWyW3Utkp1kMv31z0z3Zg0KTJTr77fw988OpAQohf2u5AAM70ePZ3D6BH88eDRpzSwJcHcL6087qFApKZajk3uqknMoXs6SIKMA67qGvJrqnzBMhSCLxXxPALR6hVa7bj4UJGccPl6EveEDoPLlW+XykOSs/23m0DOmn4eh1cPN2TmcntgQNsCI8lYxU4lGItUQjgdJR0n6frsD4X5PE6WCaD6cW56wAFbr2rPAVdyuh4OjhzPPmjV+nwc94ISj6HOiA4glXM6VcqYtCSk2slzV0dANIYaJqQDQ9dmrXdDtjA3298n4liIjKDZSh0hqGDskol3vUudDCxBynXE9n6g8Kmjc9Q9oDzACqYSCKDEUBYaiBciWddB69BQs5vO99E0BooONYGhrZptvN82Ld1egbO2lyu9BeUCyqhJNLoQHUOoh6y79WA4nSutmifmWEpckVCOyEgHKAIC7/VwQo1XaQx3juJjEPtZ5leWlaKYcPBH93jgFoERNokTMMP2jxSgEEROpL+lzwIZIA0Aa4lDlLYAKAT3gB0HI7rI/AK2dNf9umvqr2pem4Riuw5x7TKYrdwEC5dicXKEsD+23lG6vOhIAPiux0KRbspAgZCdjLRfNw/d2oRMddVVqACrDtDfv4+SjOlPKvjAZAFQHv7E3UAArmqReUDPZ1fs9ultXqDn5/HPnnAu99W3TaooRTX6D9UBBcmuhYbvF9CXlKeVyAf7O6q23yrFxlaoJNgQDN8mE11ZZVm9j/eTAeky+wmpItGTL1eADHlqlLVKF02Ybd5utPKaco0VfBgZYAG1TiaHow+ZDbM765mSyYq2cQnnpdMbeNvQh4t4YF1s5Wf462ZYPXbq9UhnMQovHgIT/aER5FMAInQ8VJmbrXgb7iVQupza8uIj/R0yehOSNX21miz7OMRj9nhRzVPzsebqZnX4UUzOJRYvOK0m9veQYCKEdz9FSarfxEON4TjxN/ys28h934trfNdQoOQAAAABJRU5ErkJggg==",
-      "alt": "SystranTP Module"
-    },
-    {
-      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABUUlEQVR42s2XAQ6DIAxF4WTzZsLN9GRsv6aOMUoBIdqE6IDyH6V0m3XOBXOTfbSNBcCKl09HCMF472lwWRZqmKQtEj/5vWZX0EwA0H247vt+B8A3ArmFpwOMtGYA7sAxeO8q3OWI1Gb1HwB3zt55ESCdgB0hGSXDWO89rgKIbwYnaGwtIX9uBPgKhcyEGgsdPud8isC6Hh+szS7GUUDbto2a5hOCHhf4/gCkC1pFXAKAD+WGApEFiBfFYhCUxJGUaRIyAEeuBCEC8CCbJM6RkQA0iBOgVO81cTrvAoAx5e8TAshdM+6DsyTOx1MDgLk5DRUgDl8qzvMmAxxBTsX5WKRbMDQCkjgJzgborQPDAK7UgSEADNFbB4ZEYEQduJQDj60DaNNzoFQHcr+GhgGkx5ATx/MV+baIVwHEEKldFa8GKEFoVhJvAphlJ4D2/2+mvQGOWO0Qc8FpTAAAAABJRU5ErkJggg==",
-      "alt": "Mill"
     },
     {
       "url": "https://fileinfo.com/svg/logo.svg",
@@ -155,29 +167,58 @@
     {
       "url": "https://fileinfo.com/svg/random.svg",
       "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/stp_2374.png",
+      "alt": "Screenshot of a .stp file in Autodesk Fusion 360 2.0",
+      "caption": "STP file open in Autodesk Fusion 360 2.0"
+    },
+    {
+      "url": "https://fileinfo.com/img/ss/sm/stp_2374-2.png",
+      "alt": "STP file open in Microsoft Notepad",
+      "caption": "STP file open in Microsoft Notepad"
     }
   ],
   "sources": [
     {
       "url": "https://file.org",
       "source": "file.org",
-      "retrieved_at": "2025-11-01T20:11:14.873Z"
+      "retrieved_at": "2025-11-01T22:32:42.216Z"
     },
     {
-      "url": "fileformat.com",
+      "url": "https://docs.fileformat.com/3d/stp/index.html",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.873Z"
+      "retrieved_at": "2025-11-01T22:32:42.216Z"
     },
     {
       "url": "https://fileinfo.com/extension/stp",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.873Z"
+      "retrieved_at": "2025-11-01T22:32:42.216Z"
     },
     {
-      "url": "filext.com",
       "source": "filext.com",
-      "retrieved_at": "2025-11-01T20:11:14.873Z"
+      "retrieved_at": "2025-11-01T22:32:42.216Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.873Z"
+  "last_updated": "2025-11-01T22:32:42.216Z",
+  "mime": [
+    "model/step"
+  ],
+  "containers": []
 }

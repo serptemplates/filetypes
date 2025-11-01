@@ -4,8 +4,20 @@
   "slug": "pack.gz",
   "extension": "pack.gz",
   "name": ".PACK.GZ File Extension",
+  "type_name": "Pack200 Compressed Archive",
   "summary": "Learn about .PACK.GZ files and view a list of programs that open them.",
   "developer": "Oracle",
+  "more_information": {
+    "description": [
+      "File packed first using Pak200 (to create a .PACK file), and then compressed using gzip compression (into a .GZ file); used to reduce the file size of a .JAR file for download over the Internet."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "PACK.GZ files are commonly used by Java Web Start clients to retrieve and unpack JAR files over the Internet for Java applications.",
+      "NOTE: PACK.GZ files may be decompressed into PACK files using a gzip decompression utility, but they cannot be restored to the original JAR file without using Pack200."
+    ]
+  },
   "programs": {
     "windows": [
       {

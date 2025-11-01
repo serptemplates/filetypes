@@ -4,8 +4,23 @@
   "slug": "hds",
   "extension": "hds",
   "name": ".HDS File Extension",
+  "type_name": "Parallels Desktop Hard Disk File",
   "summary": "Learn about .HDS files and view a list of programs that open them.",
   "developer": "Parallels",
+  "more_information": {
+    "description": [
+      "An HDS file is a partial or whole hard disk created by Parallels Desktop for Mac virtualization software. It stores the contents of a virtual machine's (VM) hard drive and is mounted by Parallels when opening the VM. HDS files may be one of multiple HDS files that comprise the total hard drive (.HDD file)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "You can find HDS files within an HDD hard drive file, which itself is saved inside the .PVM or .MACVM VM file. To view the files within an HDS file, you must mount its enclosing HDD file with Parallels Mounter, a program included with Parallels Desktop. You can accomplish this by following these instructions:",
+      "Open the associated PVM file by right-clicking it and choosing \"Show Package Contents.\"",
+      "Locate the main HDD file for the VM (bears the same filename prefix as the PVM file).",
+      "Right-click the HDD file and choose Open With → Parallels Mounter.app.",
+      "If you do not see the Parallels Mounter.app in the list of programs to open the HDD file, you can find it in the /​Library/​Parallels/​ directory on your hard drive."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You should not attempt to open HDS files. Instead, Parallels Desktop for Mac loads HDS files automatically when loading an operating system."

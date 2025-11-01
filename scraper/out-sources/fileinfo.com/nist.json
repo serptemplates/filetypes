@@ -4,8 +4,21 @@
   "slug": "nist",
   "extension": "nist",
   "name": ".NIST File Extension",
+  "type_name": "NIST SPHERE Audio File",
   "summary": "Learn about .NIST files and view a list of programs that open them.",
   "developer": "NIST",
+  "more_information": {
+    "description": [
+      "A NIST file is a waveform audio file saved in the National Institute of Standards and Technology's Speech Header Resources (SPHERE) format, which is used in speech recognition research. It contains a recording of a person speaking. NIST files are used as input for speech recognition systems, such as the Hidden Markov Model Toolkit (HTK)."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "In 1991, the National Institute of Standards and Technology (NIST) developed a standard audio format that could be used to save and distribute files meant to be used with speech recognition research software. This format was called NIST SPHERE, and files saved in this format were often saved with the .nist extension.",
+      "Notably, NIST files all include a standard ASCII header that specifies numerous pieces of metadata, including the files' database type, database version, number of audio channels, number of audio samples, and sample rate.",
+      "NOTE: NIST files are sometimes saved with the .SPH extension."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "Because NIST files are uncommon, most popular media players cannot play them. However, you can play NIST audio in VLC media player, and you can convert NIST files to a more usable audio format using FFmpeg or SoX."

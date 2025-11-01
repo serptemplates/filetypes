@@ -7,6 +7,18 @@
   "type_name": "Apple Disk Image",
   "summary": "Learn about .DMG files and view a list of programs that open them.",
   "developer": "Apple",
+  "more_information": {
+    "description": [
+      "A DMG file is a mountable disk image primarily used to distribute software to the macOS operating system. Mac users typically download the file from the Internet and then double-click it to install an application on their computer."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "The DMG format is one of several file types software developers utilize to distribute macOS applications outside of Apple's App Store. Other options include .APP files compressed in a .ZIP archive, .PKG files, and .IMG files (more common in Mac OS Classic and replaced by DMG files).",
+      "DMG is a prevalent distribution format because it maintains the disk image's integrity via checksums. When opening a DMG file to begin the installation process, the DiskImageMounter utility bundled with macOS verifies the checksum to ensure the disk image has not been modified or corrupted during the distribution. This process is valuable for developers and end-users to make sure they install an untampered application.",
+      "NOTE: In rare cases, Mac users may package files instead of macOS apps in a DMG file for transfer purposes. In these cases, the DMG file functions as a virtual flash drive recipients can mount to retrieve the stored files."
+    ]
+  },
   "how_to_open": {
     "instructions": [
       "You can open a DMG file by double-clicking the file. After clicking the file, the DiskImageMounter utility bundled with macOS verifies the disk image's integrity. After confirming the disk image, the utility mounts the virtual disk and places it on your desktop and in an Apple Finder window as if it was a CD or a USB flash drive inserted into the computer.",

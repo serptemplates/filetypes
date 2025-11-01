@@ -1,9 +1,59 @@
 {
   "slug": "crypt15",
   "extension": "crypt15",
-  "name": "CRYPT15 File",
+  "name": "WhatsApp Encrypted Database File",
   "summary": "Learn about .CRYPT15 files and view a list of programs that open them.",
   "developer": "WhatsApp",
+  "category": "database",
+  "category_slug": "database",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "WhatsApp is a multiplatform messaging app used by people in many countries to communicate with each other. The app provides encryption options to secure users' messages, including encrypting backups of messages it periodically generates.",
+      "Throughout the years, WhatsApp has utilized various algorithms to encrypt backup databases, with each one signified by the file extension appended onto the database (.DB file). For example, WhatsApp utilizing CRYPT15 encryption creates a .db.crypt15 file.",
+      "Examples of other file extensions include .CRYPT14, .CRYPT12, and .CRYPT10. WhatsApp began saving message history backups as CRYPT15 files in late 2021.",
+      "WhatsApp stores CRYPT15 files in the following directory:",
+      "/​sdcard/​WhatsApp/​Databases",
+      "If your data is not stored on an SD card, you may see \"internal storage\" or \"main storage\" instead of \"sdcard.\"",
+      "Also, you may find multiple CRYPT15 database files in your Databases folder, with YYYY-MM-DD dates included in their filenames. WhatsApp employs this naming convention because it creates new backup files periodically (the dates in these files' filenames represent when the app created them).",
+      "If you need to reclaim storage space on your SD card, you can delete dated CRYPT15 files without affecting WhatsApp or your message history. However, you should always keep the most recent one or two CRYPT15 files in the event you need to restore your message history."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "To open or decrypt .crypt15 files, you need:\n\nA backup file (msgstore.db.crypt15).The decryption key (from internal storage).A decryption tool like WhatsApp Viewer or custom scripts that use the key.",
+      "You can decrypt a CRYPT15 database with WhatsApp Crypt Tools (Windows), but you must provide the key file or 64-digit key. You can find your WhatsApp key file, which stores your CRYPT15 file's encryption key, in the following location:",
+      "/data/data/com.whatsapp/files/key",
+      "You can also migrate or restore your WhatsApp message history on an Android device with a CRYPT15 file. To do so, you must rename your most recent CRYPT15 file to msgstore.db.crypt15, uninstall and reinstall WhatsApp, and then tap RESTORE in the app when prompted."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "If you have the decryption key:Use third-party tools like WhatsApp Viewer (for older versions).Use a Python script (if you understand cryptography and Android forensics)."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -14,13 +64,6 @@
         "name": "WhatsApp Messenger",
         "url": "https://fileinfo.com/software/whatsapp_inc/whatsapp_messenger"
       }
-    ]
-  },
-  "how_to_open": {
-    "instructions": [
-      "You can decrypt a CRYPT15 database with WhatsApp Crypt Tools (Windows), but you must provide the key file or 64-digit key. You can find your WhatsApp key file, which stores your CRYPT15 file's encryption key, in the following location:",
-      "/data/data/com.whatsapp/files/key",
-      "You can also migrate or restore your WhatsApp message history on an Android device with a CRYPT15 file. To do so, you must rename your most recent CRYPT15 file to msgstore.db.crypt15, uninstall and reinstall WhatsApp, and then tap RESTORE in the app when prompted."
     ]
   },
   "images": [
@@ -51,15 +94,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "url": "https://docs.fileformat.com/database/crypt15/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.260Z"
     },
     {
-      "url": "https://fileinfo.com/extension/crypt15",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.917Z"
+      "url": "https://fileinfo.com/extension/crypt15",
+      "retrieved_at": "2025-11-01T22:32:42.260Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.917Z"
+  "last_updated": "2025-11-01T22:32:42.260Z"
 }

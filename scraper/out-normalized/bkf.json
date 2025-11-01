@@ -1,9 +1,48 @@
 {
   "slug": "bkf",
   "extension": "bkf",
-  "name": "BKF File",
+  "name": "Windows Backup Utility File",
   "summary": "Learn about .BKF files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "category": "compression",
+  "category_slug": "compression",
+  "containers": [],
+  "related": [
+    "cad",
+    "afs",
+    "art",
+    "asc",
+    "asm",
+    "axm",
+    "bdc",
+    "catpart",
+    "cf2",
+    "cir",
+    "cpa",
+    "dc3",
+    "dgn",
+    "dst",
+    "dwf",
+    "dwfx",
+    "dwg",
+    "dwt",
+    "dxb",
+    "dxf"
+  ],
+  "technical_info": {
+    "content": [
+      "Developed by Microsoft CorporationPrimary association with WindowsXPSupported by Windows NT Backup applicationApplication Category is Archive filesFormat type is BinaryBelongs to Backup files categoryAssociated with BKF Viewer",
+      "The BKF file format organizes backup data into sections:\n\nHeader: Contains metadata about the backup, including its date, time, and volume.Data Blocks: Store the actual file data in compressed form.Catalog Files: Hold indexing data to help locate and organize files during a restore.",
+      "BKF files can be restored to Windows Server 2008 and Windows Vista systems using the Windows NT Backup - Restore Utility.",
+      "You can also restore files from a BKF catalog in Windows 7, 8, and 10 with NTBackup (it is titled \"nt5backup.cab\" on the download page). Select \"Restore files and settings\" in the \"Backup or Restore\" wizard, select Browse..., navigate to the BKF file, click OK.",
+      "NOTE: Windows Backup Utility must be installed from the XP Home installation disc to be used with Windows XP Home Edition."
+    ]
+  },
+  "how_to_open": {
+    "instructions": [
+      "Opening BKF files can be challenging, as NTBackup is not available in later Windows versions like Windows Vista, 7, 8, or 10. However, several methods are available:\n\nOn older Windows systems (like Windows XP and Server 2003), the NTBackup Tool can open and restore BKF files directly.Microsoft provides an NTBackup Restore Utility for Windows Vista and later, enabling users to restore BKF files.Programs such as Stellar Phoenix BKF Recovery, Kernel for BKF, and SysTools BKF Recovery allow users to open and repair BKF files on newer Windows versions."
+    ]
+  },
   "programs": {
     "windows": [
       {
@@ -40,15 +79,15 @@
   ],
   "sources": [
     {
-      "url": "fileformat.com",
       "source": "fileformat.com",
-      "retrieved_at": "2025-11-01T20:11:14.915Z"
+      "url": "https://docs.fileformat.com/compression/bkf/index.html",
+      "retrieved_at": "2025-11-01T22:32:42.256Z"
     },
     {
-      "url": "https://fileinfo.com/extension/bkf",
       "source": "fileinfo.com",
-      "retrieved_at": "2025-11-01T20:11:14.915Z"
+      "url": "https://fileinfo.com/extension/bkf",
+      "retrieved_at": "2025-11-01T22:32:42.256Z"
     }
   ],
-  "last_updated": "2025-11-01T20:11:14.915Z"
+  "last_updated": "2025-11-01T22:32:42.256Z"
 }

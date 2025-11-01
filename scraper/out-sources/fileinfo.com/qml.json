@@ -4,8 +4,20 @@
   "slug": "qml",
   "extension": "qml",
   "name": ".QML File Extension",
+  "type_name": "Qt Modeling Language File",
   "summary": "Learn about .QML files and view a list of programs that open them.",
   "developer": "Qt Group",
+  "more_information": {
+    "description": [
+      "A QML file is a source code file created with Qt SDK, a software development IDE used to create user interfaces for desktop and mobile applications. It contains QML source code encoded in UTF-8 format."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "QML files start with an import statement since they must import at least one imported library. Below is an example QML source code snippet:",
+      "Rectangle { width: 120; height: 160; resources: [ Component { id: contactDelegate Text { text: modelData.firstName + \" \" + modelData.lastName } } ] ListView { anchors.fill: parent model: contactModel delegate: contactDelegate } }"
+    ]
+  },
   "programs": {
     "windows": [
       {

@@ -4,8 +4,22 @@
   "slug": "downloadhost",
   "extension": "downloadhost",
   "name": ".DOWNLOADHOST File Extension",
+  "type_name": "MSN Download Settings File",
   "summary": "Learn about .DOWNLOADHOST files and view a list of programs that open them.",
   "developer": "Microsoft",
+  "more_information": {
+    "description": [
+      "Stores file download settings for MSN software; included with the MSN installation and required for downloading files and checking e-mail; typically named \"MSN#.downloadhost.\""
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "If the Downloadhost file becomes corrupt or is missing, the MSN software may display a \"Downloadhost File\" error. To recover the Downloadhost file, first select \"Run...\" from the Windows Start menu. Then type the following in the text box:",
+      "regsvr32 c:\\progra~1\\msn\\msncorefiles\\msnmetal.dll",
+      "This should restore the Downloadhost file and allow MSN to download files and e-mail messages again.",
+      "Also see the related .MAILHOST entry."
+    ]
+  },
   "programs": {
     "windows": [
       {

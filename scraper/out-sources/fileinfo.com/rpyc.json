@@ -4,8 +4,21 @@
   "slug": "rpyc",
   "extension": "rpyc",
   "name": ".RPYC File Extension",
+  "type_name": "Ren'Py Compiled Script",
   "summary": "Learn about .RPYC files and view a list of programs that open them.",
   "developer": "Ren'Py",
+  "more_information": {
+    "description": [
+      "Compiled script created by Ren'Py, a visual novel engine that allows users to create interactive digital stories; stores the compiled version of a .RPY game script, which is written using both Ren'Py Script and Python statements."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "RPYC files are primarily used by developers to obfuscate the plain text code written in RPY files so that it is difficult to read.",
+      "Every time a Ren'Py game runs, RPYC files are generated from the RPY scripts, and the game runs solely from the generated scripts. Therefore, the RPY files can be deleted after the compiled scripts are generated. Any newer RPY scripts saved to the game directories will signal the Ren'Py engine to generate new RPYC files.",
+      "NOTE: Ren'Py version 5.3.0 introduced the .RPYB format, which stores bytecode used for running the game. Previously RPYC files included the bytecode, but now they only save compiled Python script."
+    ]
+  },
   "programs": {
     "windows": [
       {

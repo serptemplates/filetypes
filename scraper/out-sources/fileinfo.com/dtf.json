@@ -4,8 +4,21 @@
   "slug": "dtf",
   "extension": "dtf",
   "name": ".DTF File Extension",
+  "type_name": "Domino Temporary File",
   "summary": "Learn about .DTF files and view a list of programs that open them.",
   "developer": "IBM",
+  "more_information": {
+    "description": [
+      "File created by Lotus Domino, an enterprise-level application used for business processes and collaboration; stores temporary data used by the server's update task; deleted when the update task has completed."
+    ]
+  },
+  "technical_info": {
+    "content": [
+      "DTF filenames begin with \"IDB\" or \"S0-S9\" and are followed by a unique five-digit number. For example, s054321.dtf and idb98765.dtf are a valid DTF filenames.",
+      "Domino temporary files are stored in a temporary directory defined by a system environment variable. If a directory is not specified, the files are placed in the working directory and are not automatically deleted.",
+      "NOTE: If DTF files are not automatically removed from the temporary directory, it may be because the server crashed during the update task. In this case, you can shut down the Domino server and delete the files manually."
+    ]
+  },
   "programs": {
     "windows": [
       {
