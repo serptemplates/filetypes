@@ -1,0 +1,24 @@
+{
+  "name": "filetypes-scraper",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "fetch": "bash scripts/fetch.sh",
+    "parse": "node scripts/parse-sources.mjs",
+    "merge": "node scripts/merge.mjs",
+    "enrich:mime": "node scripts/enrich-mime.mjs",
+    "build": "npm run parse && npm run merge && npm run enrich:mime && node scripts/combine.mjs",
+    "normalize:filetypes": "node scripts/normalize-filetypes.mjs",
+    "gen:exts": "node scripts/gen-extensions-from-mime-db.mjs data/extensions.txt",
+    "gen:exts:scan": "node scripts/gen-extensions-scan-raw.mjs data/extensions.txt",
+    "all": "npm run fetch && npm run build",
+    "inventory:fields": "node scripts/inventory-fields.mjs",
+    "fetch:zyte": "python3 scripts/fetch_zyte_api.py"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "mime-db": "^1.53.0",
+    "yaml": "^2.5.0"
+  }
+}

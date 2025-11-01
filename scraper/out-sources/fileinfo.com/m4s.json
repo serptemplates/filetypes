@@ -1,0 +1,84 @@
+{
+  "source": "fileinfo.com",
+  "url": "https://fileinfo.com/extension/m4s",
+  "slug": "m4s",
+  "extension": "m4s",
+  "name": ".M4S File Extension",
+  "type_name": "MPEG-DASH Video Segment",
+  "summary": "Learn about .M4S files and view a list of programs that open them.",
+  "developer": "Moving Picture Experts Group",
+  "how_to_open": {
+    "instructions": [
+      "M4S files cannot be opened and played individually. To play the video an M4S file contains, you must:",
+      "Combine all the M4S files that comprise a single streamed video into one M4S file.",
+      "Convert the combined M4S file into an .MP4 file.",
+      "Then, you'll be able to play the resulting MP4 file in a media player, such as VideoLAN VLC media player (multiplatform).",
+      "In Linux and macOS terminals, you can use the cat command to combine multiple M4S files into a single file. In Windows command prompt, you can use the type or copy commands. When you combine your M4S files, be sure to combine them in the correct order. For example, if you have files named 000000.m4s, 000001.m4s, and 000002.m4s, combine them in that order. If you combine M4S files in the wrong order, the resulting video won't play in media players.",
+      "After you combine your M4S files into a single file, you can use FFmpeg (multiplatform) to convert that file into an MP4 file."
+    ]
+  },
+  "how_to_convert": {
+    "instructions": [
+      "You can use FFmpeg to convert M4S videos to the MP4 format. Before doing so, be sure to combine all the segments of your video into a single video file, using the instructions in the How to open an M4S file section.",
+      "To convert your M4S file, open a terminal window, navigate to the directory that contains your M4S file, and enter ffmpeg -i YourFile.m4s YourFile.mp4."
+    ]
+  },
+  "programs": {
+    "windows": [
+      {
+        "name": "VideoLAN VLC media player",
+        "url": "https://fileinfo.com/software/videolan/vlc_media_player"
+      },
+      {
+        "name": "FFmpeg",
+        "url": "https://fileinfo.com/software/ffmpeg/ffmpeg"
+      },
+      {
+        "name": "FFmpeg",
+        "url": "https://fileinfo.com/software/ffmpeg/ffmpeg"
+      },
+      {
+        "name": "Open over 400 file formats with File Viewer Plus.Free Download",
+        "url": "https://fileinfo.com/software/windows_file_viewer?ref=12040&b=1"
+      },
+      {
+        "name": "FFmpeg",
+        "url": "https://fileinfo.com/software/ffmpeg/ffmpeg"
+      },
+      {
+        "name": "FFmpeg",
+        "url": "https://fileinfo.com/software/ffmpeg/ffmpeg"
+      },
+      {
+        "name": "FFmpeg",
+        "url": "https://fileinfo.com/software/ffmpeg/ffmpeg"
+      }
+    ]
+  },
+  "images": [
+    {
+      "url": "https://fileinfo.com/svg/logo.svg",
+      "alt": "FileInfo.com"
+    },
+    {
+      "url": "https://fileinfo.com/svg/random.svg",
+      "alt": "random"
+    },
+    {
+      "url": "https://fileinfo.com/svg/search-white.svg",
+      "alt": "search"
+    },
+    {
+      "url": "https://fileinfo.com/svg/menu.svg",
+      "alt": "open menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/close.svg",
+      "alt": "close menu"
+    },
+    {
+      "url": "https://fileinfo.com/svg/settings.svg",
+      "alt": "settings"
+    }
+  ]
+}
