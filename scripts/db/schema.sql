@@ -142,3 +142,19 @@ CREATE TABLE IF NOT EXISTS codec_impl_docs (
   content_md TEXT NOT NULL,
   PRIMARY KEY (source, impl_id, role)
 );
+
+-- Containers and container↔codec matrix
+CREATE TABLE IF NOT EXISTS containers (
+  slug TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  links_json TEXT              -- JSON array of {label,url}
+);
+
+CREATE TABLE IF NOT EXISTS container_codecs (
+  container_slug TEXT NOT NULL,
+  kind TEXT NOT NULL,          -- 'video' | 'audio' | 'subtitle'
+  codec_id TEXT NOT NULL,      -- references codecs.id when available
+  PRIMARY KEY (container_slug, kind, codec_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_container_codecs_kind ON container_codecs(kind);
