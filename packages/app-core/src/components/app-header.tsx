@@ -3,7 +3,7 @@
 import { Menu, X } from "lucide-react";
 import { Button } from "@serp-filetypes/ui/components/button";
 import Link from "next/link";
-import { hrefHome, hrefMimeRoot } from "../lib/url";
+import { hrefHome, hrefMimeRoot, hrefCodecsRoot } from "../lib/url";
 import { useState } from "react";
 
 export function AppHeader() {
@@ -11,7 +11,8 @@ export function AppHeader() {
 
  const navLinks: Array<{ href: string; label: string; external?: boolean }> = [
    { href: hrefMimeRoot(), label: "MIME Types", external: false },
-    { href: "https://serp.co", label: "SERP", external: true },
+   { href: hrefCodecsRoot(), label: "Codecs", external: false },
+   { href: "https://serp.co", label: "SERP", external: true },
     { href: "https://extensions.serp.co", label: "Extensions", external: true },
     { href: "https://tools.serp.co", label: "Tools", external: true },
     { href: "https://apps.serp.co", label: "Apps", external: true },

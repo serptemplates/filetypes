@@ -3,6 +3,7 @@ import { getMimeRecord } from '@/lib/server/mime-repo';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { displayNameForMime, canonicalizeMime } from '@/lib/mime-utils';
+import { findCodecByIdentifier } from '@/lib/server/codec-repo';
 import { hrefHome, hrefMimeType, hrefMimeRoot } from '@/lib/url';
 
 export const dynamic = 'force-dynamic';
@@ -18,6 +19,10 @@ export default async function MimePage({ params }: any) {
   }
   const rec = await getMimeRecord(type, normSubtype);
   if (!rec) notFound();
+  let relatedCodec: any = null;
+  if (rec.type === 'video' || rec.type === 'audio') {
+    relatedCodec = await findCodecByIdentifier(rec.subtype);
+  }
   return (
     <main>
       {/* Breadcrumb */}
@@ -48,6 +53,11 @@ export default async function MimePage({ params }: any) {
         </h1>
         <div className="text-sm text-gray-600 mb-4">MIME: {rec.full}</div>
         <div className="text-sm text-gray-600 mb-4">Extensions: {(rec.extensions || []).map((e: string) => `.${e}`).join(', ') || '—'}</div>
+        {relatedCodec && (
+          <div className="mb-4 text-sm">
+            Related codec: <Link href={`/codecs/${relatedCodec.id}/`} className="text-blue-600 hover:underline">{relatedCodec.name}</Link>
+          </div>
+        )}
         <pre className="bg-white rounded border p-4 overflow-auto text-sm">{JSON.stringify(rec.iana ? { ...rec, iana: { ...rec.iana, template_text: rec.iana.template_text ? '[omitted]' : undefined } } : rec, null, 2)}</pre>
       </div>
     </main>

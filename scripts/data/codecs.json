@@ -1,0 +1,125 @@
+[
+  {
+    "id": "av1",
+    "kind": "video",
+    "name": "AOMedia Video 1 (AV1)",
+    "year": 2018,
+    "summary": "Royalty-free next-gen video codec with high efficiency.",
+    "spec_url": "https://aomediacodec.github.io/av1-spec/",
+    "aliases": ["aom-av1"],
+    "containers": ["webm", "mp4", "mkv"],
+    "mimes": ["video/av1"]
+  },
+  {
+    "id": "h264",
+    "kind": "video",
+    "name": "H.264 / AVC",
+    "year": 2003,
+    "summary": "Ubiquitous delivery codec; broad hardware decode.",
+    "spec_url": "https://www.itu.int/rec/T-REC-H.264",
+    "aliases": ["avc", "mpeg-4 avc"],
+    "containers": ["mp4", "mkv", "mov", "ts", "flv", "avi"],
+    "mimes": ["video/avc", "video/h264"]
+  },
+  {
+    "id": "hevc",
+    "kind": "video",
+    "name": "H.265 / HEVC",
+    "year": 2013,
+    "summary": "High Efficiency Video Coding; 4K/8K capable; licensing encumbered.",
+    "spec_url": "https://www.itu.int/rec/T-REC-H.265",
+    "aliases": ["h265"],
+    "containers": ["mp4", "mkv", "ts", "mov"],
+    "mimes": ["video/hevc", "video/h265"]
+  },
+  {
+    "id": "vp9",
+    "kind": "video",
+    "name": "VP9",
+    "year": 2013,
+    "summary": "Royalty-free Google codec; common in WebM.",
+    "spec_url": "https://www.webmproject.org/",
+    "aliases": [],
+    "containers": ["webm", "mkv"],
+    "mimes": ["video/vp9"]
+  },
+  {
+    "id": "vp8",
+    "kind": "video",
+    "name": "VP8",
+    "year": 2008,
+    "summary": "Earlier Google codec; legacy but still encountered.",
+    "spec_url": "https://www.webmproject.org/",
+    "aliases": [],
+    "containers": ["webm", "mkv"],
+    "mimes": ["video/vp8"]
+  },
+  {
+    "id": "mpeg2video",
+    "kind": "video",
+    "name": "MPEG-2 Video",
+    "year": 1995,
+    "summary": "Broadcast/DVD era video; common in TS/PS/VOB.",
+    "spec_url": "https://www.iso.org/standard/22981.html",
+    "aliases": ["mpeg2"],
+    "containers": ["ts", "ps", "vob", "mkv", "mpg"],
+    "mimes": ["video/mpeg"]
+  },
+  {
+    "id": "mpeg4asp",
+    "kind": "video",
+    "name": "MPEG-4 Part 2 (ASP)",
+    "year": 1999,
+    "summary": "Older MPEG-4 video (DivX/Xvid); legacy downloads.",
+    "spec_url": "https://www.iso.org/standard/34229.html",
+    "aliases": ["mpeg4", "xvid", "divx"],
+    "containers": ["avi", "mp4", "mkv"],
+    "mimes": ["video/mp4v-es"]
+  },
+  {
+    "id": "prores",
+    "kind": "video",
+    "name": "Apple ProRes",
+    "year": 2007,
+    "summary": "Mezzanine intra codec for editing; MOV/MXF.",
+    "spec_url": "https://support.apple.com/en-us/102048",
+    "aliases": [],
+    "containers": ["mov", "mxf"],
+    "mimes": []
+  },
+  {
+    "id": "dnxhr",
+    "kind": "video",
+    "name": "Avid DNxHR / DNxHD",
+    "year": 2004,
+    "summary": "Mezzanine intra codec family; MOV/MXF.",
+    "spec_url": "https://resources.avid.com/SupportFiles/attach/DNxHR_MXF.pdf",
+    "aliases": ["dnxhd"],
+    "containers": ["mov", "mxf"],
+    "mimes": []
+  },
+  {
+    "id": "theora",
+    "kind": "video",
+    "name": "Theora",
+    "year": 2004,
+    "summary": "Legacy open video codec typically in Ogg or Matroska.",
+    "spec_url": "https://www.theora.org/",
+    "aliases": [],
+    "containers": ["ogg", "mkv"],
+    "mimes": ["video/ogg"]
+  },
+
+  {"id": "aac", "kind": "audio", "name": "Advanced Audio Coding (AAC)", "year": 1997, "summary": "Common delivery audio (LC/HE).", "spec_url": "https://www.iso.org/standard/43345.html", "aliases": ["aac-lc","he-aac","aacp"], "containers": ["mp4","m4a","mkv","adts"], "mimes": ["audio/aac","audio/aacp"]},
+  {"id": "opus", "kind": "audio", "name": "Opus", "year": 2012, "summary": "Modern low-latency audio; web and streaming.", "spec_url": "https://datatracker.ietf.org/doc/rfc6716/", "aliases": [], "containers": ["webm","ogg","mkv"], "mimes": ["audio/opus"]},
+  {"id": "mp3", "kind": "audio", "name": "MP3 (MPEG Layer III)", "year": 1993, "summary": "Legacy ubiquitous audio.", "spec_url": "https://www.iso.org/standard/22412.html", "aliases": ["mpeg-1 layer 3"], "containers": ["mp3","mpg"], "mimes": ["audio/mpeg"]},
+  {"id": "vorbis", "kind": "audio", "name": "Vorbis", "year": 2000, "summary": "Open audio; Ogg/WebM.", "spec_url": "https://xiph.org/vorbis/", "aliases": [], "containers": ["ogg","webm","mkv"], "mimes": ["audio/vorbis","audio/ogg"]},
+  {"id": "flac", "kind": "audio", "name": "FLAC", "year": 2001, "summary": "Lossless audio.", "spec_url": "https://xiph.org/flac/format.html", "aliases": [], "containers": ["flac","ogg","mkv"], "mimes": ["audio/flac"]},
+  {"id": "alac", "kind": "audio", "name": "Apple Lossless (ALAC)", "year": 2004, "summary": "Lossless audio within MP4/M4A.", "spec_url": "https://www.mpeg.org/standards/MPEG-4/", "aliases": [], "containers": ["mp4","m4a","mkv"], "mimes": ["audio/alac"]},
+  {"id": "ac3", "kind": "audio", "name": "Dolby Digital (AC-3)", "year": 1991, "summary": "Cinema/broadcast 5.1.", "spec_url": "https://developer.dolby.com/", "aliases": ["dolby digital"], "containers": ["ts","mkv","mp4","vob"], "mimes": ["audio/ac3"]},
+  {"id": "eac3", "kind": "audio", "name": "Dolby Digital Plus (E-AC-3)", "year": 2005, "summary": "Enhanced AC-3 for streaming.", "spec_url": "https://developer.dolby.com/", "aliases": ["dd+"], "containers": ["ts","mkv","mp4"], "mimes": ["audio/eac3"]},
+  {"id": "dts", "kind": "audio", "name": "DTS", "year": 1993, "summary": "Cinema/broadcast multi-channel.", "spec_url": "https://dts.com/", "aliases": [], "containers": ["ts","mkv","mp4","vob"], "mimes": ["audio/vnd.dts","audio/vnd.dts.hd"]},
+  {"id": "pcm", "kind": "audio", "name": "PCM (Uncompressed)", "year": 1980, "summary": "Raw or WAV/LPCM.", "spec_url": "https://en.wikipedia.org/wiki/Pulse-code_modulation", "aliases": ["lpcm","wav"], "containers": ["wav","mov","mkv"], "mimes": ["audio/L16","audio/L24","audio/wav","audio/x-wav"]},
+  {"id": "amr", "kind": "audio", "name": "AMR-NB/WB", "year": 2000, "summary": "Telephony speech (NB/WB).", "spec_url": "https://www.3gpp.org/", "aliases": ["amr-nb","amr-wb"], "containers": ["3gp","amr"], "mimes": ["audio/amr","audio/amr-wb"]}
+]
+

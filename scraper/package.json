@@ -17,6 +17,7 @@
     "build:signatures": "node scripts/build-signatures.mjs",
     "integrate:signatures": "node scripts/integrate-signatures.mjs",
     "build:matrix": "node scripts/build-matrix.mjs",
+    "fetch:ffmpeg:codecs": "node scripts/fetch-ffmpeg-codecs.mjs",
     "fetch:rfc": "bash scripts/fetch-rfc.sh",
     "build:rfc": "node scripts/build-rfc.mjs",
     "integrate:rfc": "node scripts/integrate-rfc.mjs",
@@ -26,11 +27,13 @@
     "gen:exts:scan": "node scripts/gen-extensions-scan-raw.mjs data/extensions.txt",
     "all": "npm run fetch && npm run build",
     "inventory:fields": "node scripts/inventory-fields.mjs",
+    "fetch:codecs:wiki": "node scripts/fetch-codec-wiki.mjs",
     "fetch:zyte": "python3 scripts/fetch_zyte_api.py"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "mime-db": "^1.53.0",
+    "turndown": "^7.2.2",
     "yaml": "^2.5.0"
   }
 }

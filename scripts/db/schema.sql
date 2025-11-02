@@ -97,3 +97,39 @@ CREATE TABLE IF NOT EXISTS refs (
   body TEXT,
   PRIMARY KEY (kind, id)
 );
+
+-- Codecs catalog
+CREATE TABLE IF NOT EXISTS codecs (
+  id TEXT PRIMARY KEY,           -- canonical identifier (e.g., 'h264', 'hevc', 'av1', 'aac')
+  kind TEXT NOT NULL,            -- 'video' | 'audio' | 'subtitle' | 'image'
+  name TEXT NOT NULL,            -- display name
+  summary TEXT,                  -- one-liner
+  year INTEGER,                  -- first standard/publication year
+  spec_url TEXT,                 -- canonical spec or landing page
+  aliases_json TEXT,             -- JSON array of strings
+  containers_json TEXT,          -- JSON array of container slugs (e.g., ['mp4','webm','mkv'])
+  mimes_json TEXT,               -- JSON array of typical MIME strings
+  content_md TEXT,               -- catch-all markdown content (unstructured)
+  sources_json TEXT              -- JSON array of {label,url} provenance entries
+);
+
+-- Implementation-level codec listings (e.g., from FFmpeg)
+CREATE TABLE IF NOT EXISTS codec_impls (
+  source TEXT NOT NULL,           -- 'ffmpeg', etc.
+  impl_id TEXT NOT NULL,          -- implementation identifier (e.g., 'h264', 'aac')
+  kind TEXT NOT NULL,             -- 'video' | 'audio' | 'subtitle' | 'image' | 'other'
+  decoder INTEGER,                -- 1/0/NULL (unknown)
+  encoder INTEGER,                -- 1/0/NULL (unknown)
+  desc TEXT,
+  PRIMARY KEY (source, impl_id)
+);
+
+-- Map implementation codec IDs to curated codec families
+CREATE TABLE IF NOT EXISTS codec_family_impls (
+  family_id TEXT NOT NULL,
+  source TEXT NOT NULL,
+  impl_id TEXT NOT NULL,
+  PRIMARY KEY (family_id, source, impl_id)
+);
+CREATE INDEX IF NOT EXISTS idx_codec_family_impls_source ON codec_family_impls(source);
+CREATE INDEX IF NOT EXISTS idx_codec_family_impls_impl ON codec_family_impls(impl_id);

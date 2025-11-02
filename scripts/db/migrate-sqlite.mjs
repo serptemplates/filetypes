@@ -21,6 +21,22 @@ if (fs.existsSync(DB_FILE)) {
 }
 const schemaSql = fs.readFileSync(SCHEMA, 'utf8');
 db.run(schemaSql);
+// Ensure newly added columns exist when table already present
+function hasColumn(db, table, col) {
+  const res = db.exec(`PRAGMA table_info(${table})`)[0];
+  if (!res) return false;
+  const idx = res.columns.indexOf('name');
+  return res.values.some((row) => String(row[idx]) === col);
+}
+function addColumn(db, table, col, type) {
+  db.run(`ALTER TABLE ${table} ADD COLUMN ${col} ${type}`);
+}
+try {
+  if (!hasColumn(db, 'codecs', 'content_md')) addColumn(db, 'codecs', 'content_md', 'TEXT');
+  if (!hasColumn(db, 'codecs', 'sources_json')) addColumn(db, 'codecs', 'sources_json', 'TEXT');
+} catch (e) {
+  console.warn('Column ensure failed (non-fatal):', e?.message || e);
+}
 const data = db.export();
 fs.writeFileSync(DB_FILE, Buffer.from(data));
 console.log(`Migrated SQLite schema (sql.js) → ${DB_FILE}`);
