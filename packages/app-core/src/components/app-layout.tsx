@@ -24,6 +24,7 @@ export function AppLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
+        suppressHydrationWarning
         className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased `}
       >
         <GTagManager />

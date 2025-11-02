@@ -133,3 +133,12 @@ CREATE TABLE IF NOT EXISTS codec_family_impls (
 );
 CREATE INDEX IF NOT EXISTS idx_codec_family_impls_source ON codec_family_impls(source);
 CREATE INDEX IF NOT EXISTS idx_codec_family_impls_impl ON codec_family_impls(impl_id);
+
+-- FFmpeg implementation docs per role (decoder/encoder)
+CREATE TABLE IF NOT EXISTS codec_impl_docs (
+  source TEXT NOT NULL,
+  impl_id TEXT NOT NULL,
+  role TEXT NOT NULL,           -- 'decoder' | 'encoder'
+  content_md TEXT NOT NULL,
+  PRIMARY KEY (source, impl_id, role)
+);

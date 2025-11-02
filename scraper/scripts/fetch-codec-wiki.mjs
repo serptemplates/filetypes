@@ -6,7 +6,8 @@ import path from 'node:path';
 import TurndownService from 'turndown';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
-const SEED_FILE = path.resolve('scripts', 'data', 'codecs.json');
+const REPO_ROOT = path.resolve(ROOT, '..');
+const SEED_FILE = path.resolve(REPO_ROOT, 'scripts', 'data', 'codecs.json');
 const MAP_FILE = path.join(ROOT, 'data', 'codec-wiki.json');
 const API = 'https://wiki.multimedia.cx/api.php';
 
@@ -65,4 +66,3 @@ async function run() {
 }
 
 run().catch(e => { console.error(e); process.exit(1); });
-

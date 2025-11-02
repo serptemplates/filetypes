@@ -43,3 +43,11 @@ export function joinWithQuery(path: string, query?: Record<string, any>): string
 export function hrefMimeRoot(): string {
   return '/mimetypes/';
 }
+
+export function hrefCodecsRoot(): string {
+  return '/codecs/';
+}
+
+export function hrefCodec(id: string): string {
+  return urlcat('/codecs/:id', { id: String(id || '') });
+}

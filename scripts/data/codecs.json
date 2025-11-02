@@ -1,14 +1,48 @@
 [
   {
+    "id": "ffmpeg",
+    "kind": "other",
+    "name": "FFmpeg Implementations Catalog",
+    "year": 2000,
+    "summary": "Browse every codec implementation supported by FFmpeg (video/audio/subtitles).",
+    "spec_url": "https://ffmpeg.org/ffmpeg-codecs.html",
+    "aliases": ["ffmpeg-codecs", "ffmpeg-impls"],
+    "containers": [],
+    "mimes": [],
+    "content_md": "This catalog lists all codec implementations compiled in FFmpeg (by kind: video/audio/subtitle).\n\nCommon comparison metrics and terms you may see:\n\n- `psnr` — sum of squared quantization errors (avoid, low quality)\n- `bit` — number of bits needed for the block\n- `rd` — rate–distortion optimal, slow\n- `zero` — 0\n- `vsad` — sum of absolute vertical differences\n- `vsse` — sum of squared vertical differences\n- `nsse` — noise-preserving sum of squared differences\n- `w53` — 5/3 wavelet (only used in Snow)\n- `w97` — 9/7 wavelet (only used in Snow)\n- `dctmax`\n- `chroma`\n\nFor each implementation you can open its FFmpeg docs and, when applicable, jump to the curated family page.",
+    "sources": [
+      { "label": "FFmpeg: Codecs", "url": "https://ffmpeg.org/ffmpeg-codecs.html" }
+    ]
+  },
+  {
     "id": "av1",
     "kind": "video",
     "name": "AOMedia Video 1 (AV1)",
     "year": 2018,
     "summary": "Royalty-free next-gen video codec with high efficiency.",
     "spec_url": "https://aomediacodec.github.io/av1-spec/",
-    "aliases": ["aom-av1"],
-    "containers": ["webm", "mp4", "mkv"],
-    "mimes": ["video/av1"]
+    "aliases": [
+      "aom-av1"
+    ],
+    "containers": [
+      "webm",
+      "mp4",
+      "mkv"
+    ],
+    "mimes": [
+      "video/av1"
+    ],
+    "content_md": "*   Source code: [https://aomedia.googlesource.com/aom/](https://aomedia.googlesource.com/aom/)\n*   Samples: [http://samples.ffmpeg.org/av1](http://samples.ffmpeg.org/av1) and [http://ghostarchive.org/samples/av1](http://ghostarchive.org/samples/av1)\n\nAV1 is a new codec created by Google and the Alliance of Open Media.",
+    "sources": [
+      {
+        "label": "MultimediaWiki: AV1",
+        "url": "https://wiki.multimedia.cx/index.php?title=AV1"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=AV1"
+      }
+    ]
   },
   {
     "id": "h264",
@@ -17,9 +51,33 @@
     "year": 2003,
     "summary": "Ubiquitous delivery codec; broad hardware decode.",
     "spec_url": "https://www.itu.int/rec/T-REC-H.264",
-    "aliases": ["avc", "mpeg-4 avc"],
-    "containers": ["mp4", "mkv", "mov", "ts", "flv", "avi"],
-    "mimes": ["video/avc", "video/h264"]
+    "aliases": [
+      "avc",
+      "mpeg-4 avc"
+    ],
+    "containers": [
+      "mp4",
+      "mkv",
+      "mov",
+      "ts",
+      "flv",
+      "avi"
+    ],
+    "mimes": [
+      "video/avc",
+      "video/h264"
+    ],
+    "content_md": "*   FOURCCs: AVC1, DAVC, H264, X264, VSSH\n*   Matroska CodecID: V\\_MPEG4/ISO/AVC\n*   Technical Description: [http://akuvian.org/src/x264/ITU-T\\_H264.pdf.gz](http://akuvian.org/src/x264/ITU-T_H264.pdf.gz)\n*   Draft Specs from 2003: [http://www.dspr.com/www/technology/JVT-G050.pdf](http://www.dspr.com/www/technology/JVT-G050.pdf)\n*   Specs : [http://www.itu.int/rec/T-REC-H.264/en](http://www.itu.int/rec/T-REC-H.264/en)\n*   Reference Decoder : [http://iphome.hhi.de/suehring/tml/](http://iphome.hhi.de/suehring/tml/)\n*   Samples:\n    *   AVC1: [http://samples.mplayerhq.hu/V-codecs/AVC1/](http://samples.mplayerhq.hu/V-codecs/AVC1/)\n    *   H264: [http://samples.mplayerhq.hu/V-codecs/h264/](http://samples.mplayerhq.hu/V-codecs/h264/)\n    *   VSSH: [http://samples.mplayerhq.hu/V-codecs/VSSH/](http://samples.mplayerhq.hu/V-codecs/VSSH/)\n\nMPEG-4 part 10 video, also known as AVC, or \"Advanced Video Coding.\"\n\n## AVC vs. H.264\\[[edit](/index.php?title=H.264&action=edit&section=1 \"Edit section: AVC vs. H.264\")\\]\n\nAVC and H.264 are synonymous. The standard is known by the full names \"ISO/IEC 14496-10\" and \"ITU-T Recommendation H.264\". In addition, a number of alternate names are used (or have been) in reference to this standard. These include:\n\n*   MPEG-4 part 10\n*   MPEG-4 AVC\n*   AVC\n*   MPEG-4 (in the broadcasting world MPEG4 part 2 is ignored)\n*   H.264\n*   JVT (Joint Video Team, nowadays rarely used referring to actual spec)\n*   H.26L (early drafts went by this name)\n\nAll of the above (and those I've missed) include the Annex B byte-stream format. Unlike earlier MPEG1/2/4 and H.26x codecs, the H.264 specification proper does not define a full bit-stream syntax. It describes a number of NAL (Network Abstraction Layer) units, a sequence of which can be decoded into video frames. These NAL units have no boundary markers, and rely on some unspecified format to provide framing.\n\nAnnex B of of the document specifies one such format, which wraps NAL units in a format resembling a traditional MPEG video elementary stream, thus making it suitable for use with containers like MPEG PS/TS unable to provide the required framing. Other formats, such as ISO base media based formats, are able to properly separate the NAL units and do not need the Annex B wrapping.\n\nThe H.264 spec suffers from a deficiency. It defines several header-type NAL units ([SPS](/index.php/SPS \"SPS\") and [PPS](/index.php?title=PPS&action=edit&redlink=1 \"PPS (page does not exist)\")) without specifying how to pack them into the single codec data field available in most containers. Fortunately, most containers seem to have adopted the packing used by the ISO format known as [MP4](/index.php/MP4 \"MP4\").\n\n## Extensions to H.264\\[[edit](/index.php?title=H.264&action=edit&section=2 \"Edit section: Extensions to H.264\")\\]\n\n*   [Scalable\\_Video\\_Coding](/index.php/Scalable_Video_Coding \"Scalable Video Coding\") has been added to H.264: the reference implementation is here: [http://ip.hhi.de/imagecom\\_G1/savce/downloads/SVC-Reference-Software.htm](http://ip.hhi.de/imagecom_G1/savce/downloads/SVC-Reference-Software.htm)",
+    "sources": [
+      {
+        "label": "MultimediaWiki: H.264",
+        "url": "https://wiki.multimedia.cx/index.php?title=H.264"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=H.264"
+      }
+    ]
   },
   {
     "id": "hevc",
@@ -28,9 +86,30 @@
     "year": 2013,
     "summary": "High Efficiency Video Coding; 4K/8K capable; licensing encumbered.",
     "spec_url": "https://www.itu.int/rec/T-REC-H.265",
-    "aliases": ["h265"],
-    "containers": ["mp4", "mkv", "ts", "mov"],
-    "mimes": ["video/hevc", "video/h265"]
+    "aliases": [
+      "h265"
+    ],
+    "containers": [
+      "mp4",
+      "mkv",
+      "ts",
+      "mov"
+    ],
+    "mimes": [
+      "video/hevc",
+      "video/h265"
+    ],
+    "content_md": "High Efficiency Video Coding (HEVC) is an emerging video coding standard that is scheduled to succeed [H.264](/index.php/H.264 \"H.264\"). As the successor to H.264, it is sometimes called H.265, though that is not an official name.",
+    "sources": [
+      {
+        "label": "MultimediaWiki: H.265",
+        "url": "https://wiki.multimedia.cx/index.php?title=H.265"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=H.265"
+      }
+    ]
   },
   {
     "id": "vp9",
@@ -40,8 +119,24 @@
     "summary": "Royalty-free Google codec; common in WebM.",
     "spec_url": "https://www.webmproject.org/",
     "aliases": [],
-    "containers": ["webm", "mkv"],
-    "mimes": ["video/vp9"]
+    "containers": [
+      "webm",
+      "mkv"
+    ],
+    "mimes": [
+      "video/vp9"
+    ],
+    "content_md": "*   FOURCCs: VP90\n*   Description: ???\n*   Code : [https://github.com/webmproject/libvpx](https://github.com/webmproject/libvpx)\n*   Samples: ???\n\nVP9 is an open and royalty free video compression standard being developed by Google. VP9 had earlier development names of Next Gen Open Video (NGOV) and VP-Next. VP9 is a successor to VP8.\n\nA test (not pretending to be scientific or reliable) from 17th January 2013 is present in the discussion thread [http://forum.doom9.org/showthread.php?p=1610941](http://forum.doom9.org/showthread.php?p=1610941)",
+    "sources": [
+      {
+        "label": "MultimediaWiki: VP9",
+        "url": "https://wiki.multimedia.cx/index.php?title=VP9"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=VP9"
+      }
+    ]
   },
   {
     "id": "vp8",
@@ -51,8 +146,24 @@
     "summary": "Earlier Google codec; legacy but still encountered.",
     "spec_url": "https://www.webmproject.org/",
     "aliases": [],
-    "containers": ["webm", "mkv"],
-    "mimes": ["video/vp8"]
+    "containers": [
+      "webm",
+      "mkv"
+    ],
+    "mimes": [
+      "video/vp8"
+    ],
+    "content_md": "*   Company: [On2](/index.php/On2 \"On2\"), [Google](/index.php/Google \"Google\")\n*   Data Format and Decoding Specification: RFC 6386\n\nOn May 19, 2010, Google announced that the VP8 source code was open source as part of the [WebM](/index.php/WebM \"WebM\") project.\n\nVP8 has features in common with [H.264](/index.php/H.264 \"H.264\"). For example, see [H.264 Prediction](/index.php/H.264_Prediction \"H.264 Prediction\") to understand where VP8's prediction modes mimic and differ from H.264's modes.",
+    "sources": [
+      {
+        "label": "MultimediaWiki: VP8",
+        "url": "https://wiki.multimedia.cx/index.php?title=VP8"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=VP8"
+      }
+    ]
   },
   {
     "id": "mpeg2video",
@@ -61,9 +172,30 @@
     "year": 1995,
     "summary": "Broadcast/DVD era video; common in TS/PS/VOB.",
     "spec_url": "https://www.iso.org/standard/22981.html",
-    "aliases": ["mpeg2"],
-    "containers": ["ts", "ps", "vob", "mkv", "mpg"],
-    "mimes": ["video/mpeg"]
+    "aliases": [
+      "mpeg2"
+    ],
+    "containers": [
+      "ts",
+      "ps",
+      "vob",
+      "mkv",
+      "mpg"
+    ],
+    "mimes": [
+      "video/mpeg"
+    ],
+    "content_md": "MPEG stands for [Moving Picture Experts Group](/index.php/Moving_Picture_Experts_Group \"Moving Picture Experts Group\"). MPEG taken out of context can refer to many different things, the most important are:\n\n*   the [Moving Picture Experts Group](/index.php/Moving_Picture_Experts_Group \"Moving Picture Experts Group\") standards body\n*   the [MPEG container](/index.php/MPEG_container \"MPEG container\") formats\n*   MPEG video, mostly [MPEG-1](/index.php/MPEG-1 \"MPEG-1\") and [MPEG-2](/index.php/MPEG-2 \"MPEG-2\")",
+    "sources": [
+      {
+        "label": "MultimediaWiki: MPEG-2",
+        "url": "https://wiki.multimedia.cx/index.php?title=MPEG-2"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=MPEG-2"
+      }
+    ]
   },
   {
     "id": "mpeg4asp",
@@ -72,9 +204,23 @@
     "year": 1999,
     "summary": "Older MPEG-4 video (DivX/Xvid); legacy downloads.",
     "spec_url": "https://www.iso.org/standard/34229.html",
-    "aliases": ["mpeg4", "xvid", "divx"],
-    "containers": ["avi", "mp4", "mkv"],
-    "mimes": ["video/mp4v-es"]
+    "aliases": [
+      "mpeg4",
+      "xvid",
+      "divx"
+    ],
+    "containers": [
+      "avi",
+      "mp4",
+      "mkv"
+    ],
+    "mimes": [
+      "video/mp4v-es"
+    ],
+    "content_md": "MPEG-4 Part 2 (Advanced Simple Profile, ASP) is the older MPEG-4 video compression format used by DivX/Xvid-era downloads. Typical containers are AVI and MP4 (with `mp4v` sample entries) and Matroska. Modern web delivery prefers H.264/AVC or newer.\n\nKey points:\n\n- Profiles: Simple, Advanced Simple (ASP)\n- Typical FourCCs: `XVID`, `DIVX`, `mp4v`\n- Common containers: AVI, MP4, MKV\n- Successors: MPEG-4 Part 10 (H.264/AVC)\n\nCompatibility: playable in most players via FFmpeg; hardware decode is uncommon today.",
+    "sources": [
+      { "label": "Wikipedia: MPEG-4 Part 2", "url": "https://en.wikipedia.org/wiki/MPEG-4_Part_2" }
+    ]
   },
   {
     "id": "prores",
@@ -84,8 +230,15 @@
     "summary": "Mezzanine intra codec for editing; MOV/MXF.",
     "spec_url": "https://support.apple.com/en-us/102048",
     "aliases": [],
-    "containers": ["mov", "mxf"],
-    "mimes": []
+    "containers": [
+      "mov",
+      "mxf"
+    ],
+    "mimes": [],
+    "content_md": "Apple ProRes is a family of intra-frame, lossy mezzanine codecs commonly used for editing and archival. It typically lives in MOV (QuickTime) or MXF containers. Variants include ProRes 422, 422 HQ, 422 LT, 422 Proxy, and 4444/4444 XQ (supporting alpha).\n\nKey points:\n\n- Intra-frame; visually lossless at higher profiles\n- 10‑bit (422 family), up to 12‑bit (4444)\n- Alpha channel supported in 4444\n- Common containers: MOV, MXF\n\nProRes is widely supported in NLEs (Final Cut Pro, Premiere, Resolve) and via FFmpeg decoding/encoding. Distribution to end users is uncommon; it is primarily a production/editing format.",
+    "sources": [
+      { "label": "Apple: About Apple ProRes", "url": "https://support.apple.com/en-us/102048" }
+    ]
   },
   {
     "id": "dnxhr",
@@ -94,9 +247,18 @@
     "year": 2004,
     "summary": "Mezzanine intra codec family; MOV/MXF.",
     "spec_url": "https://resources.avid.com/SupportFiles/attach/DNxHR_MXF.pdf",
-    "aliases": ["dnxhd"],
-    "containers": ["mov", "mxf"],
-    "mimes": []
+    "aliases": [
+      "dnxhd"
+    ],
+    "containers": [
+      "mov",
+      "mxf"
+    ],
+    "mimes": [],
+    "content_md": "Avid DNxHR (and DNxHD) is a family of intra-frame, mezzanine codecs for post-production. DNxHD targets HD resolutions; DNxHR extends to 2K/4K/UHD. Commonly wrapped in MOV or MXF.\n\nKey points:\n\n- Intra-frame; visually lossless at higher bitrates\n- 8‑bit/10‑bit variants depending on profile\n- Designed for multi-generation editing\n- Common containers: MXF (OP-Atom/OP1a), MOV\n\nDNxHR/DNxHD is widely used in broadcast and editing workflows; delivery to end users is uncommon.",
+    "sources": [
+      { "label": "Avid: DNxHR Spec", "url": "https://resources.avid.com/SupportFiles/attach/DNxHR_MXF.pdf" }
+    ]
   },
   {
     "id": "theora",
@@ -106,20 +268,348 @@
     "summary": "Legacy open video codec typically in Ogg or Matroska.",
     "spec_url": "https://www.theora.org/",
     "aliases": [],
-    "containers": ["ogg", "mkv"],
-    "mimes": ["video/ogg"]
+    "containers": [
+      "ogg",
+      "mkv"
+    ],
+    "mimes": [
+      "video/ogg"
+    ],
+    "content_md": "*   FOURCC: ???\n*   Company: [Xiph](/index.php/Xiph \"Xiph\")\n*   Samples: [http://samples.mplayerhq.hu/V-codecs/Theora/](http://samples.mplayerhq.hu/V-codecs/Theora/)\n*   Patents: [On2](/index.php/On2 \"On2\") claims to hold several (undisclosed) patents, but has granted an irrevocable, royalty-free, transferrable license for any use, distribution, or sale of their [VP3](/index.php/On2_VP3 \"On2 VP3\") software, or any derivative thereof (including Theora). It is unclear which patents actually apply.\n*   Website: [http://theora.org](http://theora.org)\n*   [Theora at XiphWiki](http://wiki.xiph.org/index.php/Theora)\n\nVideo codec developed by [Xiph](/index.php/Xiph \"Xiph\"). Theora is based on [VP3](/index.php/On2_VP3 \"On2 VP3\"), which [On2](/index.php/On2 \"On2\") released as open source.",
+    "sources": [
+      {
+        "label": "MultimediaWiki: Theora",
+        "url": "https://wiki.multimedia.cx/index.php?title=Theora"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=Theora"
+      }
+    ]
   },
-
-  {"id": "aac", "kind": "audio", "name": "Advanced Audio Coding (AAC)", "year": 1997, "summary": "Common delivery audio (LC/HE).", "spec_url": "https://www.iso.org/standard/43345.html", "aliases": ["aac-lc","he-aac","aacp"], "containers": ["mp4","m4a","mkv","adts"], "mimes": ["audio/aac","audio/aacp"]},
-  {"id": "opus", "kind": "audio", "name": "Opus", "year": 2012, "summary": "Modern low-latency audio; web and streaming.", "spec_url": "https://datatracker.ietf.org/doc/rfc6716/", "aliases": [], "containers": ["webm","ogg","mkv"], "mimes": ["audio/opus"]},
-  {"id": "mp3", "kind": "audio", "name": "MP3 (MPEG Layer III)", "year": 1993, "summary": "Legacy ubiquitous audio.", "spec_url": "https://www.iso.org/standard/22412.html", "aliases": ["mpeg-1 layer 3"], "containers": ["mp3","mpg"], "mimes": ["audio/mpeg"]},
-  {"id": "vorbis", "kind": "audio", "name": "Vorbis", "year": 2000, "summary": "Open audio; Ogg/WebM.", "spec_url": "https://xiph.org/vorbis/", "aliases": [], "containers": ["ogg","webm","mkv"], "mimes": ["audio/vorbis","audio/ogg"]},
-  {"id": "flac", "kind": "audio", "name": "FLAC", "year": 2001, "summary": "Lossless audio.", "spec_url": "https://xiph.org/flac/format.html", "aliases": [], "containers": ["flac","ogg","mkv"], "mimes": ["audio/flac"]},
-  {"id": "alac", "kind": "audio", "name": "Apple Lossless (ALAC)", "year": 2004, "summary": "Lossless audio within MP4/M4A.", "spec_url": "https://www.mpeg.org/standards/MPEG-4/", "aliases": [], "containers": ["mp4","m4a","mkv"], "mimes": ["audio/alac"]},
-  {"id": "ac3", "kind": "audio", "name": "Dolby Digital (AC-3)", "year": 1991, "summary": "Cinema/broadcast 5.1.", "spec_url": "https://developer.dolby.com/", "aliases": ["dolby digital"], "containers": ["ts","mkv","mp4","vob"], "mimes": ["audio/ac3"]},
-  {"id": "eac3", "kind": "audio", "name": "Dolby Digital Plus (E-AC-3)", "year": 2005, "summary": "Enhanced AC-3 for streaming.", "spec_url": "https://developer.dolby.com/", "aliases": ["dd+"], "containers": ["ts","mkv","mp4"], "mimes": ["audio/eac3"]},
-  {"id": "dts", "kind": "audio", "name": "DTS", "year": 1993, "summary": "Cinema/broadcast multi-channel.", "spec_url": "https://dts.com/", "aliases": [], "containers": ["ts","mkv","mp4","vob"], "mimes": ["audio/vnd.dts","audio/vnd.dts.hd"]},
-  {"id": "pcm", "kind": "audio", "name": "PCM (Uncompressed)", "year": 1980, "summary": "Raw or WAV/LPCM.", "spec_url": "https://en.wikipedia.org/wiki/Pulse-code_modulation", "aliases": ["lpcm","wav"], "containers": ["wav","mov","mkv"], "mimes": ["audio/L16","audio/L24","audio/wav","audio/x-wav"]},
-  {"id": "amr", "kind": "audio", "name": "AMR-NB/WB", "year": 2000, "summary": "Telephony speech (NB/WB).", "spec_url": "https://www.3gpp.org/", "aliases": ["amr-nb","amr-wb"], "containers": ["3gp","amr"], "mimes": ["audio/amr","audio/amr-wb"]}
+  {
+    "id": "aac",
+    "kind": "audio",
+    "name": "Advanced Audio Coding (AAC)",
+    "year": 1997,
+    "summary": "Common delivery audio (LC/HE).",
+    "spec_url": "https://www.iso.org/standard/43345.html",
+    "aliases": [
+      "aac-lc",
+      "he-aac",
+      "aacp"
+    ],
+    "containers": [
+      "mp4",
+      "m4a",
+      "mkv",
+      "adts"
+    ],
+    "mimes": [
+      "audio/aac",
+      "audio/aacp"
+    ],
+    "content_md": "*   FourCC: AAC AACP MP4A mp4a VLB\n*   Company: [ISO](/index.php/ISO \"ISO\")\n*   Samples: [http://samples.mplayerhq.hu/A-codecs/AAC/](http://samples.mplayerhq.hu/A-codecs/AAC/)\n*   Samples: [sample repo at standards.iso.org](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_IEC_14496-4_2004_Conformance_Testing/audio_conformance/mpeg4audio-conformance/compressedMp4/)\n*   Sample Docs: [sample docs](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_IEC_14496-4_2004_Conformance_Testing/audio_conformance/mpeg4audio-conformance/doc/fileNameConventions.html)\n\nSpecification links:\n\n*   AAC: [ISO/IEC 14496-3:2009](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=53943), [Old (free) drafts](ftp://ftp.tnt.uni-hannover.de/pub/MPEG/audio/mpeg4/documents/)\n*   Conformance: [ISO/IEC 14496-26:2010](http://www.iso.org/iso/catalogue_detail.htm?csnumber=53750)\n*   Gapless: [14496-24:2008](http://www.iso.org/iso/catalogue_detail.htm?csnumber=46461), [Draft](http://www.itscj.ipsj.or.jp/sc29/open/29view/29n7733t.doc)\n*   [ETSI 26.401-406](http://www.3gpp.org/ftp/specs/html-info/26-series.htm)\n\nReference Sources:\n\n*   MPEG [AAC Reference Software](/index.php/AAC_Reference_Software \"AAC Reference Software\")\n*   [ETSI 26.410-412](http://www.3gpp.org/ftp/specs/html-info/26-series.htm)\n\nUsually stored in an [MP4](/index.php/MP4 \"MP4\") container.\n\nSee also [Understanding AAC](/index.php/Understanding_AAC \"Understanding AAC\").\n\n## Contents\n\n*   [1 Implementations](#Implementations)\n    *   [1.1 With Source Code](#With_Source_Code)\n    *   [1.2 Other Notables](#Other_Notables)\n    *   [1.3 Decoder Features](#Decoder_Features)\n*   [2 Common AAC Flavors](#Common_AAC_Flavors)\n    *   [2.1 MPEG-2 AAC-LC](#MPEG-2_AAC-LC)\n    *   [2.2 The AAC Profile (MPEG-4 AAC-LC)](#The_AAC_Profile_\\(MPEG-4_AAC-LC\\))\n    *   [2.3 The HE-AAC Profile (v1 and v2)](#The_HE-AAC_Profile_\\(v1_and_v2\\))\n    *   [2.4 MPEG-2/4 AAC Main](#MPEG-2/4_AAC_Main)\n    *   [2.5 MPEG-4 AAC LTP](#MPEG-4_AAC_LTP)\n    *   [2.6 BSAC AAC](#BSAC_AAC)\n*   [3 Extensions](#Extensions)\n    *   [3.1 GAIN headers](#GAIN_headers)\n    *   [3.2 MPEG Surround](#MPEG_Surround)\n*   [4 AAC Encoding Guidelines](#AAC_Encoding_Guidelines)\n\n## Implementations\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=1 \"Edit section: Implementations\")\\]\n\n### With Source Code\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=2 \"Edit section: With Source Code\")\\]\n\n*   [Google](/index.php/Google \"Google\") has opensourced Android, which includes an Apache 2.0 licensed aac encoder and decoder:\n    *   [http://android.git.kernel.org/?p=platform/frameworks/base.git;a=tree;f=media/libstagefright/codecs;hb=HEAD](http://android.git.kernel.org/?p=platform/frameworks/base.git;a=tree;f=media/libstagefright/codecs;hb=HEAD)\n*   [Intel](/index.php/Intel \"Intel\") has source for its IPP based [AAC](/index.php/AAC \"AAC\") decoder:\n    *   [http://www.intel.com/cd/software/products/asmo-na/eng/perflib/ipp/219967.htm](http://www.intel.com/cd/software/products/asmo-na/eng/perflib/ipp/219967.htm)\n*   [Real Networks](/index.php/Real \"Real\") has source for its Helix AAC fixedpoint decoder here:\n    *   [https://datatype.helixcommunity.org/2005/aacfixptdec](https://datatype.helixcommunity.org/2005/aacfixptdec)\n*   [FAAC](/index.php?title=FAAC&action=edit&redlink=1 \"FAAC (page does not exist)\")/[FAAD](/index.php?title=FAAD&action=edit&redlink=1 \"FAAD (page does not exist)\")\n    *   [http://www.audiocoding.com](http://www.audiocoding.com)\n*   FFmpeg/Libav\n*   HE-AAC encoder based on 3GPP reference implementation\n    *   [http://tipok.org.ua/node/17](http://tipok.org.ua/node/17)\n\n### Other Notables\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=3 \"Edit section: Other Notables\")\\]\n\n*   [Nero](/index.php?title=Nero&action=edit&redlink=1 \"Nero (page does not exist)\") has a well regarded freeware AAC encoder and decoder\n    *   [http://www.nero.com/enu/technologies-aac-codec.html](http://www.nero.com/enu/technologies-aac-codec.html)\n*   [Coding Technologies](/index.php/Dolby_Laboratories \"Dolby Laboratories\") the inventor of [SBR](/index.php/Spectral_Band_Replication \"Spectral Band Replication\") has a shareware encoder available in [Winamp](/index.php?title=Winamp&action=edit&redlink=1 \"Winamp (page does not exist)\")\n    *   [http://www.winamp.com](http://www.winamp.com)\n*   [Apple](/index.php/Apple \"Apple\") who popularized the format in its [iTunes](/index.php?title=ITunes&action=edit&redlink=1 \"ITunes (page does not exist)\") software has an encoders and decoders available in iTunes and [QuickTime](/index.php/QuickTime \"QuickTime\"). [Dolby](/index.php/Dolby \"Dolby\") was involved in its implementation. [\\[1\\]](http://support.apple.com/kb/HT2103)\n    *   [http://www.apple.com/itunes](http://www.apple.com/itunes)\n\n### Decoder Features\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=4 \"Edit section: Decoder Features\")\\]\n\nAAC decoder feature matrix\n\nDecoder\n\n[al17](http://streams.videolan.org/Mpeg_Conformance/ftp.iis.fhg.de/mpeg4audio-conformance/compressedMp4/al17_44.mp4)\n\n[elem\\_id0](http://samples.mplayerhq.hu/A-codecs/AAC/channel_model/elem_id0.mp4)\n\n[bad\\_concat](http://samples.mplayerhq.hu/A-codecs/AAC/channel_model/bad_concat.mp4)\n\n[lfe\\_is\\_sce](http://samples.mplayerhq.hu/A-codecs/AAC/channel_model/lfe_is_sce.mp4)\n\nSBR\n\nPS\n\n[CCE](http://streams.videolan.org/Mpeg_Conformance/ftp.iis.fhg.de/mpeg4audio-conformance/compressedMp4/al07_44.mp4)\n\n[Main](http://streams.videolan.org/Mpeg_Conformance/ftp.iis.fhg.de/mpeg4audio-conformance/compressedMp4/am00_44.mp4)\n\n[LTP](http://streams.videolan.org/Mpeg_Conformance/ftp.iis.fhg.de/mpeg4audio-conformance/compressedMp4/ap01_48.mp4)\n\n[ER AAC LC](http://streams.videolan.org/Mpeg_Conformance/ftp.iis.fhg.de/mpeg4audio-conformance/compressedMp4/er_ad1000_22_ep0.mp4)\n\n[ER AAC LD](http://streams.videolan.org/Mpeg_Conformance/ftp.iis.fhg.de/mpeg4audio-conformance/compressedMp4/er_al10_44_ep0.mp4)\n\n[AAC-960](http://streams.videolan.org/Mpeg_Conformance/ftp.iis.fhg.de/mpeg4audio-conformance/compressedMp4/al00sf_44.mp4)\n\n[ADTS (Implicit SBR+PS)](http://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File1.aac)\n\n[MP4 (Implicit SBR+PS)](http://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File2.mp4)\n\n[MP4 (EBC SBR / Impl PS)](http://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File3.mp4)\n\n[MP4 (EBC SBR / EBC PS)](http://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File4.mp4)\n\n[MP4 (Impl SBR / ENBC PS)](http://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File5.mp4)\n\n[3GPP (EBC SBR / Impl PS)](http://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File6.3gp)\n\n[3GPP (ENBC SBR / Impl PS)](http://samples.mplayerhq.hu/A-codecs/AAC/aacPlusDecoderCheckPackage_v2.1/bitstreams/File7.3gp)\n\nmp4mcDec\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nlibavcodec\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nNo\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nlibfaad2\n\nNo\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nNo\n\nYes\n\nYes\n\nNo\n\nNo\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nNo\n\nYes\n\nYes\n\niTunes\n\nNo\n\nNo\n\nYes\n\nNo LFE\n\nYes\n\nNo?\n\nNo\n\nNo\n\nNo\n\nNo\n\nNo\n\nNo\n\nNo\n\nNo SBR\n\nNo PS\n\nNo PS\n\nNo PS\n\nNo PS\n\nNo PS\n\nWinAMP\n\nYes\n\nGarbled\n\nNo\n\nYes\n\nYes\n\nYes\n\nNo\n\nNo\n\nNo\n\nNo\n\nNo\n\nNo\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nNo\n\nNo\n\nMicrosoft DTV-DVD Audio Decoder\n\nNo\n\nYes\n\nYes\n\nNo LFE\n\nYes\n\nYes\n\nYes\n\nNo\n\nNo\n\nNo\n\nNo\n\nNo\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\nYes\n\n## Common AAC Flavors\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=5 \"Edit section: Common AAC Flavors\")\\]\n\n### MPEG-2 AAC-LC\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=6 \"Edit section: MPEG-2 AAC-LC\")\\]\n\nThe basic subset of AAC that most other flavors and profiles are based on.\n\n### The AAC Profile (MPEG-4 AAC-LC)\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=7 \"Edit section: The AAC Profile (MPEG-4 AAC-LC)\")\\]\n\nMPEG-2 AAC-LC plus a Perceptual Noise Substitution (PNS) tool.\n\n### The HE-AAC Profile (v1 and v2)\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=8 \"Edit section: The HE-AAC Profile (v1 and v2)\")\\]\n\nHE-AAC (also known by the [Dolby](/index.php/Dolby_Laboratories \"Dolby Laboratories\") trade name [aacPlus](http://www.codingtechnologies.com/products/aacPlus.htm)) is MPEG-4 AAC-LC + [SBR (Spectral Band Replication)](/index.php/Spectral_Band_Replication \"Spectral Band Replication\") and HE-AAC v2 (aacPlus v2) is MPEG-4 AAC-LC + SBR + [PS (Parametric Stereo)](http://www.codingtechnologies.com/products/paraSter.htm). Standard AAC-LC decoders can decode HE-AAC encoded files/streams but without SBR and PS you do not get the full quality.\n\n*   See also\n    *   [MP3PRO](/index.php/MP3#mp3PRO \"MP3\") that also uses SBR.\n\n### MPEG-2/4 AAC Main\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=9 \"Edit section: MPEG-2/4 AAC Main\")\\]\n\nMPEG-2/4 AAC-LC plus a computationally intensive, intra-channel, inter-frame frequency domain prediction tool. Additionally this profile adds relaxation to the maximum TNS filter size, and time domain coupling. The details of the prediction tool are only given in ISO/IEC 13818-7 not in ISO/IEC 14496-3. In the wild this appears to be used in some [Hulu](/index.php?title=Hulu&action=edit&redlink=1 \"Hulu (page does not exist)\") streams.\n\n### MPEG-4 AAC LTP\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=10 \"Edit section: MPEG-4 AAC LTP\")\\]\n\nMPEG-4 AAC-LC plus a less computationally intensive frequency domain prediction tool. This flavor is rarely seen in the wild. Despite being an MPEG-4 only flavor it can be embedded in an [ADTS](/index.php/ADTS \"ADTS\") stream.\n\n### BSAC AAC\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=11 \"Edit section: BSAC AAC\")\\]\n\nBit Slice Arithmetic Coding (BSAC) is an alternate quantization and entropy coding scheme for AAC. It is used by the [T-DMB](/index.php/T-DMB \"T-DMB\") broadcast standard.\n\n## Extensions\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=12 \"Edit section: Extensions\")\\]\n\n### GAIN headers\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=13 \"Edit section: GAIN headers\")\\]\n\nSee [http://mp3gain.sourceforge.net](http://mp3gain.sourceforge.net) and [MP3 GAIN header](/index.php/MP3#GAIN_\\(MP3Gain\\)_header \"MP3\").\n\n### MPEG Surround\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=14 \"Edit section: MPEG Surround\")\\]\n\n[MPEG Surround](http://www.mpegsurround.com) is a multichannel coding scheme that can used with any core coder audio but is most often used with (HE-)AAC and BSAC. MPEG Surround technology shares similar characteristics with PS (Parametric Stereo) used in HE-AAC v2 including mixing in the same [SBR](/index.php/SBR \"SBR\") domain used by HE-AAC.\n\nReferences:\n\n*   [N7390: Tutorial on MPEG Surround Audio Coding](http://mpeg.chiariglione.org/technologies/mpeg-d/mpd-mps/index.htm)\n*   [Coding Technologies product page](http://web.archive.org/web/20071008044710/http://www.codingtechnologies.com/products/mpgsrnd.htm)\n\n## AAC Encoding Guidelines\\[[edit](/index.php?title=Advanced_Audio_Coding&action=edit&section=15 \"Edit section: AAC Encoding Guidelines\")\\]\n\nThe following documents are must reads for anyone implementing an AAC encoder\n\n*   ISO/IEC 14496-3:2009 - Decoding AAC, systems MPEG-4 integration\n*   ISO/IEC 14496-26:2010 - Conformance, includes limits on various bitstream values\n*   ISO/IEC 14496-24:2008 - ISO Gapless AAC\n*   ISO/IEC 13818-7:2006 - MPEG-2 AAC includes informative annexes on encoding omitted from 14496-3\n*   3GPP 26.403-405 - Elaborations on the annexes in 13818-7\n*   [Improved ISO AAC Coder, Ivan Dimkovic, PsyTEL Research](http://www.mp3-tech.org/programmer/docs/di042001.pdf)",
+    "sources": [
+      {
+        "label": "MultimediaWiki: AAC",
+        "url": "https://wiki.multimedia.cx/index.php?title=AAC"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=AAC"
+      }
+    ]
+  },
+  {
+    "id": "opus",
+    "kind": "audio",
+    "name": "Opus",
+    "year": 2012,
+    "summary": "Modern low-latency audio; web and streaming.",
+    "spec_url": "https://datatracker.ietf.org/doc/rfc6716/",
+    "aliases": [],
+    "containers": [
+      "webm",
+      "ogg",
+      "mkv"
+    ],
+    "mimes": [
+      "audio/opus"
+    ],
+    "content_md": "*   Company: [Xiph](/index.php/Xiph \"Xiph\"), IETF\n*   Extension: .opus\n*   Specification (codec): [https://tools.ietf.org/html/rfc6716](https://tools.ietf.org/html/rfc6716)\n*   Specification (Ogg encapsulation): [https://tools.ietf.org/html/draft-terriberry-oggopus-01](https://tools.ietf.org/html/draft-terriberry-oggopus-01)\n*   Reference implementation: [http://www.opus-codec.org/downloads/](http://www.opus-codec.org/downloads/)\n\nOpen standard for low-latency, scalable lossy audio coding based on the speech-oriented [SILK](/index.php/SILK \"SILK\") codec and the low-latency [CELT](/index.php/CELT \"CELT\") codec. Opus can transition between a linear prediction codec at low bitrates and a transform codec at high bitrates and supports a hybrid mode for a small bitrate range. Opus defaults to a latency that's 1/10th that of earlier music codecs (20ms vs. 200ms), making it possible for use in VoIP, and yet performs better in listening tests.\n\nNote that Opus does not seem to perform better than [CELT](/index.php/CELT \"CELT\") for music at bitrates over 75 kbit ([http://www.hydrogenaudio.org/forums/index.php?showtopic=97913&st=0](http://www.hydrogenaudio.org/forums/index.php?showtopic=97913&st=0)). This means that the unconditional merge of [CELT](/index.php/CELT \"CELT\") into Opus doubled the complexity (both code size and CPU usage) even for applications which do not benefit from the addition.\n\n## Links\\[[edit](/index.php?title=Opus&action=edit&section=1 \"Edit section: Links\")\\]\n\n*   [http://www.opus-codec.org/](http://www.opus-codec.org/)\n*   [https://wiki.xiph.org/OpusFAQ](https://wiki.xiph.org/OpusFAQ)",
+    "sources": [
+      {
+        "label": "MultimediaWiki: Opus",
+        "url": "https://wiki.multimedia.cx/index.php?title=Opus"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=Opus"
+      }
+    ]
+  },
+  {
+    "id": "mp3",
+    "kind": "audio",
+    "name": "MP3 (MPEG Layer III)",
+    "year": 1993,
+    "summary": "Legacy ubiquitous audio.",
+    "spec_url": "https://www.iso.org/standard/22412.html",
+    "aliases": [
+      "mpeg-1 layer 3"
+    ],
+    "containers": [
+      "mp3",
+      "mpg"
+    ],
+    "mimes": [
+      "audio/mpeg"
+    ],
+    "content_md": "*   Company: Fraunhofer\n*   Microsoft Audio ID: 0x0055\n*   QuickTime FOURCCs: CBR: ('m', 's', 0x00, 0x55); VBR: '.mp3'\n*   [Patents](/index.php/MP3_Patents \"MP3 Patents\")\n\nLossy audio coding using a time-frequency transform consisting of a 32-subband polyphase quadrature filter followed by an 18-point [MDCT](/index.php/Discrete_Cosine_Transform \"Discrete Cosine Transform\") on blocks of 576 samples. Each coded frame is padded to a byte boundary. In addition, coded frames may be padded by 1 byte as necessary to maintain a strict CBR. This rather odd design was meant to provide backwards compatibility with the blocksize and bit rates of the existing [MP2](/index.php/MP2 \"MP2\") format. Although it is less efficient than using a pure MDCT (e.g. [AAC](/index.php/AAC \"AAC\") and [Vorbis](/index.php/Vorbis \"Vorbis\")) MP3 has become a de facto standard since it was the first widely available format.\n\n  \n\n## Contents\n\n*   [1 Extensions](#Extensions)\n    *   [1.1 mp3PRO](#mp3PRO)\n    *   [1.2 mp3HD](#mp3HD)\n    *   [1.3 XING and VBRI headers](#XING_and_VBRI_headers)\n    *   [1.4 GAIN (MP3Gain) header](#GAIN_\\(MP3Gain\\)_header)\n\n## Extensions\\[[edit](/index.php?title=MP3&action=edit&section=1 \"Edit section: Extensions\")\\]\n\n### mp3PRO\\[[edit](/index.php?title=MP3&action=edit&section=2 \"Edit section: mp3PRO\")\\]\n\nmp3PRO is MP3 + [SBR (Spectral Band Replication)](/index.php/Spectral_Band_Replication \"Spectral Band Replication\"). (Standard MP3 decoders can decode mp3PRO encoded files/streams but without SBR you do not get the full quality. A SBR decoder could be share code with an [HE-AAC](/index.php/AAC#HE-AAC \"AAC\") (aacPlus) decoder as HE-AAC also uses SBR).\n\nA [US Patent application](http://www.google.com/patents?id=XLmWAAAAEBAJ) explains how to identify and locate the SBR data.\n\n### mp3HD\\[[edit](/index.php?title=MP3&action=edit&section=3 \"Edit section: mp3HD\")\\]\n\nmp3HD is MP3-based lossless audio codec. This codec has backward compatibility to MP3 and extensions are in ID3 tag.\n\n### XING and VBRI headers\\[[edit](/index.php?title=MP3&action=edit&section=4 \"Edit section: XING and VBRI headers\")\\]\n\n*   See this MPlayer patch: [http://lists.mplayerhq.hu/pipermail/mplayer-dev-eng/2007-March/050609.html](http://lists.mplayerhq.hu/pipermail/mplayer-dev-eng/2007-March/050609.html)\n\n### GAIN ([MP3Gain](http://mp3gain.sourceforge.net)) header\\[[edit](/index.php?title=MP3&action=edit&section=5 \"Edit section: GAIN (MP3Gain) header\")\\]\n\nThere is two versions of this header: one for MP3 and one for [AAC](/index.php/AAC \"AAC\").",
+    "sources": [
+      {
+        "label": "MultimediaWiki: MP3",
+        "url": "https://wiki.multimedia.cx/index.php?title=MP3"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=MP3"
+      }
+    ]
+  },
+  {
+    "id": "vorbis",
+    "kind": "audio",
+    "name": "Vorbis",
+    "year": 2000,
+    "summary": "Open audio; Ogg/WebM.",
+    "spec_url": "https://xiph.org/vorbis/",
+    "aliases": [],
+    "containers": [
+      "ogg",
+      "webm",
+      "mkv"
+    ],
+    "mimes": [
+      "audio/vorbis",
+      "audio/ogg"
+    ],
+    "content_md": "*   Company: [Xiph.org](/index.php/Xiph \"Xiph\")\n*   Technical Description: [http://xiph.org/vorbis/doc/](http://xiph.org/vorbis/doc/)\n\n  \nOpen standard for lossy audio coding using quantized MDCT.",
+    "sources": [
+      {
+        "label": "MultimediaWiki: Vorbis",
+        "url": "https://wiki.multimedia.cx/index.php?title=Vorbis"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=Vorbis"
+      }
+    ]
+  },
+  {
+    "id": "flac",
+    "kind": "audio",
+    "name": "FLAC",
+    "year": 2001,
+    "summary": "Lossless audio.",
+    "spec_url": "https://xiph.org/flac/format.html",
+    "aliases": [],
+    "containers": [
+      "flac",
+      "ogg",
+      "mkv"
+    ],
+    "mimes": [
+      "audio/flac"
+    ],
+    "content_md": "*   Format: 0xF1AC\n*   Company: [Xiph](/index.php/Xiph \"Xiph\")\n*   Website: [http://flac.sourceforge.net/](http://flac.sourceforge.net/)\n*   Samples: [http://samples.mplayerhq.hu/A-codecs/lossless/](http://samples.mplayerhq.hu/A-codecs/lossless/) (luckynight.flac)\n\nFLAC stands for Free Lossless Audio Codec. Sometimes it also serves as its own container format and sometimes it is encapsulated in [Ogg](/index.php/Ogg \"Ogg\") files. It has a prediction model that is very similar to the one used by [Shorten](/index.php/Shorten \"Shorten\").\n\n##### References\\[[edit](/index.php?title=FLAC&action=edit&section=1 \"Edit section: References\")\\]\n\n*   [HydrogenAudio wiki entry for FLAC](http://wiki.hydrogenaudio.org/index.php?title=FLAC)\n*   [Wikipedia article on FLAC](http://en.wikipedia.org/wiki/FLAC)\n*   [digitalpreservation.gov entry on FLAC](http://www.digitalpreservation.gov/formats/fdd/fdd000198.shtml)",
+    "sources": [
+      {
+        "label": "MultimediaWiki: FLAC",
+        "url": "https://wiki.multimedia.cx/index.php?title=FLAC"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=FLAC"
+      }
+    ]
+  },
+  {
+    "id": "alac",
+    "kind": "audio",
+    "name": "Apple Lossless (ALAC)",
+    "year": 2004,
+    "summary": "Lossless audio within MP4/M4A.",
+    "spec_url": "https://www.mpeg.org/standards/MPEG-4/",
+    "aliases": [],
+    "containers": [
+      "mp4",
+      "m4a",
+      "mkv"
+    ],
+    "mimes": [
+      "audio/alac"
+    ],
+    "content_md": "*   FOURCCS: alac\n*   Company: [Apple](/index.php/Apple \"Apple\")\n*   Technical Description: [http://craz.net/programs/itunes/alac.html](http://craz.net/programs/itunes/alac.html)\n*   Samples: [http://samples.mplayerhq.hu/A-codecs/lossless/](http://samples.mplayerhq.hu/A-codecs/lossless/) (luckynight.m4a)\n\nApple Lossless Audio Coding using linear prediction with [Golomb-Rice](/index.php/Golomb \"Golomb\") coding of the difference. Similar to FLAC, although the bitstreams are not compatible. Usually stored in an [MP4](/index.php/MP4 \"MP4\") container, as a private extension since it is not part of the MPEG-4 standard.\n\nOn October 27, 2011, ALAC was open sourced under the Apache License 2.0. The source can be found at [http://alac.macosforge.org/](http://alac.macosforge.org/).\n\n## Contents\n\n*   [1 Extradata](#Extradata)\n*   [2 Frame Header](#Frame_Header)\n*   [3 Verbatim frame](#Verbatim_frame)\n*   [4 Compressed frame](#Compressed_frame)\n*   [5 Frame Footer](#Frame_Footer)\n\n### Extradata\\[[edit](/index.php?title=Apple_Lossless_Audio_Coding&action=edit&section=1 \"Edit section: Extradata\")\\]\n\nSyntax\n\nNumber of bits\n\nSemantics\n\natom size\n\n32\n\n(0x24), big-endian\n\ntag\n\n32\n\n'alac'\n\n???\n\n32\n\nzero ?\n\nmax sample per frame\n\n32\n\n???\n\n8\n\nzero ?\n\nsample size\n\n8\n\nrice history mult\n\n8\n\nrice initial history\n\n8\n\nrice kmodifier\n\n8\n\nchannels\n\n8\n\n?\n\n???\n\n16\n\nmax coded frame size\n\n32\n\nbitrate\n\n32\n\n?\n\nsamplerate\n\n32\n\n### Frame Header\\[[edit](/index.php?title=Apple_Lossless_Audio_Coding&action=edit&section=2 \"Edit section: Frame Header\")\\]\n\nSyntax\n\nNumber of bits\n\nSemantics\n\nchannels\n\n3\n\nNumber of channel -1 (Should be the same than in extradata ???)\n\n???\n\n4\n\n??? (seem to be always 0)\n\n???\n\n12\n\n??? (seem to be always 0)\n\nhasoutputsamples\n\n1\n\nthe number of samples is stored in the header\n\nwasted\\_bytes\n\n2\n\nunknow (same as flac ???)\n\nisverbatim\n\n1\n\nif 1, the data is not compressed\n\nif (hasoutputsamples) {\n\noutputsamples\n\n32\n\nnumber of samples (sometimes the value is wrong \\[1\\])\n\n}\n\n  \n\\[1\\] [http://www1.mplayerhq.hu/MPlayer/samples/A-codecs/lossless/luckynight.m4a](http://www1.mplayerhq.hu/MPlayer/samples/A-codecs/lossless/luckynight.m4a) need + 32 and [http://www1.mplayerhq.hu/MPlayer/samples/A-codecs/lossless/ALAC/old\\_midi\\_stuff.m4a](http://www1.mplayerhq.hu/MPlayer/samples/A-codecs/lossless/ALAC/old_midi_stuff.m4a) + 112\n\n### Verbatim frame\\[[edit](/index.php?title=Apple_Lossless_Audio_Coding&action=edit&section=3 \"Edit section: Verbatim frame\")\\]\n\nSyntax\n\nNumber of bits\n\nSemantics\n\ndata\n\nsample\\_size \\* outputsamples \\* channels\n\nUnencoded subblock\n\n### Compressed frame\\[[edit](/index.php?title=Apple_Lossless_Audio_Coding&action=edit&section=4 \"Edit section: Compressed frame\")\\]\n\nSyntax\n\nNumber of bits\n\nSemantics\n\ninterlacing\\_shift\n\n8\n\nshould be 0 if no channel interlacing.\n\ninterlacing\\_leftweight\n\n8\n\nfor each channel {\n\nprediction\\_type\n\n4\n\nshould be 0\n\nprediction\\_quantitization\n\n4\n\nricemodifier\n\n3\n\npredictor\\_coef\\_num\n\n5\n\npredictor\\_coef\\_table\n\n16 \\* predictor\\_coef\\_num\n\n}\n\nfor each channel {\n\ncompressed data\n\nmodfied Rice coding and Adaptive FIR filter\n\n}\n\nChannel Interlacing\n\nIt is a mid/side stereo with weight. channel 0 is the mid(average) channel, channel 1 is the side(difference) channel.\n\n_right = mid - ((difference \\* interlacing\\_leftweight) >> interlacing\\_shift)_\n\n_left = right + difference_\n\nIt seems we have interlacing\\_leftweight == interlacing\\_shift in most of the samples\n\n### Frame Footer\\[[edit](/index.php?title=Apple_Lossless_Audio_Coding&action=edit&section=5 \"Edit section: Frame Footer\")\\]\n\nSyntax\n\nNumber of bits\n\nSemantics\n\nEOF\n\n3\n\nshould be always 7",
+    "sources": [
+      {
+        "label": "MultimediaWiki: ALAC",
+        "url": "https://wiki.multimedia.cx/index.php?title=ALAC"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=ALAC"
+      }
+    ]
+  },
+  {
+    "id": "ac3",
+    "kind": "audio",
+    "name": "Dolby Digital (AC-3)",
+    "year": 1991,
+    "summary": "Cinema/broadcast 5.1.",
+    "spec_url": "https://developer.dolby.com/",
+    "aliases": [
+      "dolby digital"
+    ],
+    "containers": [
+      "ts",
+      "mkv",
+      "mp4",
+      "vob"
+    ],
+    "mimes": [
+      "audio/ac3"
+    ],
+    "content_md": "*   Codec ID: 0x2000\n*   Specification for A/52 (2018): [https://www.atsc.org/wp-content/uploads/2015/03/A52-2018.pdf](https://www.atsc.org/wp-content/uploads/2015/03/A52-2018.pdf) ([mirrored](/index.php/Mirrored_Files \"Mirrored Files\"))\n*   Encoding / decoding Guidelines: [http://www.dolby.com/assets/pdf/tech\\_library/46\\_DDEncodingGuidelines.pdf](http://www.dolby.com/assets/pdf/tech_library/46_DDEncodingGuidelines.pdf)\n*   Short description: [http://focus.ti.com/lit/an/spra724/spra724.pdf](http://focus.ti.com/lit/an/spra724/spra724.pdf)\n*   Samples: [dexvert samples — audio/ac3](http://sembiance.com/fileFormatSamples/audio/ac3)\n\n## AC3\\[[edit](/index.php?title=A52&action=edit&section=1 \"Edit section: AC3\")\\]\n\nATSC A/52a is a standard for lossy encoding of audio in digital television broadcasting in the United States. It is the same as Dolby Digital AC3.\n\n## EAC3\\[[edit](/index.php?title=A52&action=edit&section=2 \"Edit section: EAC3\")\\]\n\nATSC A/52b is an extension to A/52a and was approved for the [Blu-ray](/index.php/Blu-ray \"Blu-ray\") and [HD DVD](/index.php/HD_DVD \"HD DVD\") standard. It is the same as Enhanced AC3 or EAC3 for short. EAC3 is also supposed to be backwards compatible with AC3. But that is not the case, you have to transcode somewhere in the middle of the decode process.",
+    "sources": [
+      {
+        "label": "MultimediaWiki: AC-3",
+        "url": "https://wiki.multimedia.cx/index.php?title=AC-3"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=AC-3"
+      }
+    ]
+  },
+  {
+    "id": "eac3",
+    "kind": "audio",
+    "name": "Dolby Digital Plus (E-AC-3)",
+    "year": 2005,
+    "summary": "Enhanced AC-3 for streaming.",
+    "spec_url": "https://developer.dolby.com/",
+    "aliases": [
+      "dd+"
+    ],
+    "containers": [
+      "ts",
+      "mkv",
+      "mp4"
+    ],
+    "mimes": [
+      "audio/eac3"
+    ],
+    "content_md": "Dolby Digital Plus (E‑AC‑3) is an enhanced version of AC‑3 used in streaming and broadcast. It supports higher bitrates, more channels, and improved efficiency. Often found in MP4/TS/MKV alongside H.264/HEVC video.\n\nKey points:\n\n- Successor to AC‑3 (Dolby Digital)\n- Support for 7.1 channels and advanced features (JOC in Atmos workflows)\n- Typical containers: TS, MP4, MKV\n\nPlayers with FFmpeg backends can decode E‑AC‑3; some devices may transcode to AC‑3 or AAC for compatibility.",
+    "sources": [
+      { "label": "Dolby: Dolby Digital Plus", "url": "https://developer.dolby.com/technologies/dolby-digital-plus/" }
+    ]
+  },
+  {
+    "id": "dts",
+    "kind": "audio",
+    "name": "DTS",
+    "year": 1993,
+    "summary": "Cinema/broadcast multi-channel.",
+    "spec_url": "https://dts.com/",
+    "aliases": [],
+    "containers": [
+      "ts",
+      "mkv",
+      "mp4",
+      "vob"
+    ],
+    "mimes": [
+      "audio/vnd.dts",
+      "audio/vnd.dts.hd"
+    ],
+    "content_md": "*   Codec ID: 0x2001 (0x0008 Microsoft DTS)\n*   Company: [DTS Inc.](/index.php/DTS_Inc. \"DTS Inc.\")\n\nDTS Coherent Acoustics is a perceptual audio codec. The main technique used is a QMF filter together with [Huffman](/index.php/Huffman \"Huffman\"), [ADPCM](/index.php/PCM#Adaptive_DPCM \"PCM\") and [vector quantization](/index.php/Vector_Quantization \"Vector Quantization\").\n\nSpecification can be found [here](http://webapp.etsi.org/WorkProgram/Report_WorkItem.asp?WKI_ID=35781), [direct link](http://www.etsi.org/deliver/etsi_ts/102100_102199/102114/01.03.01_60/ts_102114v010301p.pdf) (v1.3.1, 2011-08-09); [mirrored locally](/index.php/Mirrored_Files \"Mirrored Files\").\n\nThe [VideoLAN](/index.php/VideoLAN \"VideoLAN\") project has created [libdts/libdca](http://www.videolan.org/developers/libdca.html) an open source implementation of DTS. Unfortunately libdts was pushed underground through patent scare tactics for a while.\n\n## Contents\n\n*   [1 Bitstream coding](#Bitstream_coding)\n    *   [1.1 Raw bitstream coding](#Raw_bitstream_coding)\n    *   [1.2 14-bit words](#14-bit_words)\n    *   [1.3 How to distinguish different versions](#How_to_distinguish_different_versions)\n*   [2 Frame format](#Frame_format)\n\n## Bitstream coding\\[[edit](/index.php?title=DTS&action=edit&section=1 \"Edit section: Bitstream coding\")\\]\n\nThere are four different bitstream formats -- little- or big-endian and 16 or 14 bits per word.\n\n### Raw bitstream coding\\[[edit](/index.php?title=DTS&action=edit&section=2 \"Edit section: Raw bitstream coding\")\\]\n\nRaw bitstream is packed into 16-bit words with possible little- or big-endian. The native file formats, compact (.cpt) and padded (.dts), are all coded in big-endian byte order.\n\n### 14-bit words\\[[edit](/index.php?title=DTS&action=edit&section=3 \"Edit section: 14-bit words\")\\]\n\nThis kind of bitstream is packed into 16-bit sample words so that the amplitude is reduced by 12 dB in the event that the data is inadvertently interpreted as uncompressed audio samples. The upper two bits are basically sign bit extension, as defined by twos-complement format. This coding is used in many DTS-in-[WAV](/index.php/WAV \"WAV\") files. It is also found on DTS Music CD, where the potential of 1411.2 kbps is reduced to 1234.8 kbps in a tradeoff to reduce speaker damage.\n\n### How to distinguish different versions\\[[edit](/index.php?title=DTS&action=edit&section=4 \"Edit section: How to distinguish different versions\")\\]\n\nEvery frame in DTS starts with 32-bit syncword which can be used to distinguish current bitstream encoding:\n\nSequence\n\nBitstream type\n\n7F FE 80 01\n\nraw big-endian\n\nFE 7F 01 80\n\nraw little-endian\n\n1F FF E8 00 07 Fx\n\n14-bit big-endian\n\nFF 1F 00 E8 Fx 07\n\n14-bit little-endian\n\nDTS is natively big-endian byte order. Wave and CD are little-endian formats, so DTS will (usually) be little-endian when found in those media containers.\n\n## Frame format\\[[edit](/index.php?title=DTS&action=edit&section=5 \"Edit section: Frame format\")\\]\n\nSize\n\nExplanation\n\nValue\n\n32 bits\n\nSync marker\n\n0x7FFE8001\n\n1 bit\n\nFrame type (or last frame)\n\n0 - termination frame, 1 - normal frame\n\n5 bits\n\nDeficit sample count\n\nnumber of samples in block - 1 (should be 31 for normal frame)\n\n1 bit\n\nCRC present\n\n7 bits\n\nNumber of blocks\n\n5-127\n\n14 bits\n\nFrame size in bytes - 1\n\n95-16383\n\n6 bits\n\nChannel configuration\n\nvalues 0-15 are standard, 16-63 are user-defined\n\n4 bits\n\nSample frequency\n\nSee table below\n\n5 bits\n\nBitrate\n\nSee table below\n\n1 bit\n\nDown mix\n\n1 bit\n\nDynamic range\n\n1 bit\n\nTime stamp\n\n1 bit\n\nAuxiliary data\n\n1 bit\n\nHDCD\n\n3 bits\n\nExternal descr\n\n1 bit\n\nExternal coding\n\n1 bit\n\nASPF\n\n2 bits\n\nLFE\n\n1 bit\n\nPredictor history\n\n16 bits\n\nHeader CRC\n\nif CRC present above is set\n\n1 bit\n\nMultirate inter\n\n4 bits\n\nVersion\n\n2 bits\n\nCopy history\n\n3 bits\n\nSource PCM resolution\n\n1 bit\n\nFront sum\n\n1 bit\n\nSurround sum\n\n4 bits\n\nDialog normalization\n\ndB of recovery\n\n\"\"SUBFRAMES\"\"\n\n**TODO**",
+    "sources": [
+      {
+        "label": "MultimediaWiki: DTS",
+        "url": "https://wiki.multimedia.cx/index.php?title=DTS"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=DTS"
+      }
+    ]
+  },
+  {
+    "id": "pcm",
+    "kind": "audio",
+    "name": "PCM (Uncompressed)",
+    "year": 1980,
+    "summary": "Raw or WAV/LPCM.",
+    "spec_url": "https://en.wikipedia.org/wiki/Pulse-code_modulation",
+    "aliases": [
+      "lpcm",
+      "wav"
+    ],
+    "containers": [
+      "wav",
+      "mov",
+      "mkv"
+    ],
+    "mimes": [
+      "audio/L16",
+      "audio/L24",
+      "audio/wav",
+      "audio/x-wav"
+    ],
+    "content_md": "PCM stands for pulse code modulation. In the context of audio coding PCM encodes an audio waveform in the time domain as a series of amplitudes.\n\n## Contents\n\n*   [1 Basic Theory](#Basic_Theory)\n*   [2 PCM Parameters](#PCM_Parameters)\n    *   [2.1 Resolution/Sample Size](#Resolution/Sample_Size)\n    *   [2.2 Byte Order](#Byte_Order)\n    *   [2.3 Sign](#Sign)\n    *   [2.4 Channels And Interleaving](#Channels_And_Interleaving)\n    *   [2.5 Frequency And Sample Rate](#Frequency_And_Sample_Rate)\n    *   [2.6 Integer Or Floating Point](#Integer_Or_Floating_Point)\n*   [3 PCM Types](#PCM_Types)\n    *   [3.1 Linear PCM](#Linear_PCM)\n    *   [3.2 Logarithmic PCM](#Logarithmic_PCM)\n    *   [3.3 Differential PCM](#Differential_PCM)\n    *   [3.4 Adaptive DPCM](#Adaptive_DPCM)\n*   [4 Platform-Specific PCM Identifiers And Characteristics](#Platform-Specific_PCM_Identifiers_And_Characteristics)\n    *   [4.1 DOS/Windows](#DOS/Windows)\n    *   [4.2 Microsoft WAV/AVI/ASF Identifiers](#Microsoft_WAV/AVI/ASF_Identifiers)\n    *   [4.3 Apple Macintosh](#Apple_Macintosh)\n    *   [4.4 Apple QuickTime Identifiers](#Apple_QuickTime_Identifiers)\n    *   [4.5 Red Book CD Audio](#Red_Book_CD_Audio)\n    *   [4.6 Sega CD](#Sega_CD)\n    *   [4.7 Sega Saturn](#Sega_Saturn)\n    *   [4.8 DVD PCM](#DVD_PCM)\n        *   [4.8.1 24-Bit PCM](#24-Bit_PCM)\n        *   [4.8.2 20-Bit PCM](#20-Bit_PCM)\n        *   [4.8.3 16-bit PCM](#16-bit_PCM)\n*   [5 Identifying PCM Data](#Identifying_PCM_Data)\n\n## Basic Theory\\[[edit](/index.php?title=PCM&action=edit&section=1 \"Edit section: Basic Theory\")\\]\n\n**TODO: add some basic theory and pictures explaining PCM for the uninitiated**\n\n## PCM Parameters\\[[edit](/index.php?title=PCM&action=edit&section=2 \"Edit section: PCM Parameters\")\\]\n\nPCM audio is coded using a combination of various parameters.\n\n### Resolution/Sample Size\\[[edit](/index.php?title=PCM&action=edit&section=3 \"Edit section: Resolution/Sample Size\")\\]\n\nThis parameter specifies the amount of data used to represent each discrete amplitude sample. The most common values are 8 bits (1 byte), which gives a range of 256 amplitude steps, or 16 bits (2 bytes), which gives a range of 65536 amplitude steps. Other sizes, such as 12, 20, and 24 bits, are occasionally seen. Some king-sized formats even opt for 32 and 64 bits per sample.\n\n### Byte Order\\[[edit](/index.php?title=PCM&action=edit&section=4 \"Edit section: Byte Order\")\\]\n\nWhen more than one byte is used to represent a PCM sample, the byte order (big endian vs. little endian) must be known. Due to the widespread use of little-endian Intel CPUs, little-endian PCM tends to be the most common byte orientation.\n\n### Sign\\[[edit](/index.php?title=PCM&action=edit&section=5 \"Edit section: Sign\")\\]\n\nIt is not enough to know that a PCM sample is, for example, 8 bits wide. Whether the sample is signed or unsigned is needed to understand the range. If the sample is unsigned, the sample range is 0..255 with a centerpoint of 128. If the sample is signed, the sample range is -128..127 with a centerpoint of 0. If a PCM type is signed, the sign encoding is almost always 2's complement. In very rare cases, signed PCM audio is represented as a series of sign/magnitude coded numbers.\n\n### Channels And Interleaving\\[[edit](/index.php?title=PCM&action=edit&section=6 \"Edit section: Channels And Interleaving\")\\]\n\nIf the PCM type is monaural, each sample will belong to that one channel. If there is more than one channel, the channels will almost always be interleaved: Left sample, right sample, left, right, etc., in the case of stereo interleaved data. In some rare cases, usually when optimized for special playback hardware, chunks of audio destined for different channels will not be interleaved.\n\n### Frequency And Sample Rate\\[[edit](/index.php?title=PCM&action=edit&section=7 \"Edit section: Frequency And Sample Rate\")\\]\n\nThis parameter measures how many samples/channel are played each second. Frequency is measured in samples/second (Hz). Common frequency values include 8000, 11025, 16000, 22050, 32000, 44100, and 48000 Hz.\n\n### Integer Or Floating Point\\[[edit](/index.php?title=PCM&action=edit&section=8 \"Edit section: Integer Or Floating Point\")\\]\n\nMost PCM formats encode samples using integers. However, some applications which demand higher precision will store and process PCM samples using floating point numbers.\n\nFloating-point PCM samples (32- or 64-bit in size) are zero-centred and varies in the interval \\[-1.0, 1.0\\], thus signed values.\n\n## PCM Types\\[[edit](/index.php?title=PCM&action=edit&section=9 \"Edit section: PCM Types\")\\]\n\n### Linear PCM\\[[edit](/index.php?title=PCM&action=edit&section=10 \"Edit section: Linear PCM\")\\]\n\nThe most common PCM type.\n\n### Logarithmic PCM\\[[edit](/index.php?title=PCM&action=edit&section=11 \"Edit section: Logarithmic PCM\")\\]\n\nRather than representing sample amplitudes on a linear scale as linear PCM coding does, logarithmic PCM coding plots the amplitudes on a logarithmic scale. Log PCM is more often used in telephony and communications applications than in entertainment multimedia applications.\n\nThere are two major variants of log PCM: mu-law (u-law) and A-law. Mu-law coding uses the format number 0x07 in Microsoft multimedia files (WAV/AVI/ASF) and the fourcc 'ulaw' in Apple Quicktime files. A-law coding uses the format number 0x06 is Microsoft multimedia files and the fourcc 'alaw' in Apple Quicktime files.\n\nEvery byte of a log PCM data chunk maps to a signed 16-bit linear PCM sample. **\\[TODO: Add either the conversion tables or conversion formulas\\]**\n\n### Differential PCM\\[[edit](/index.php?title=PCM&action=edit&section=12 \"Edit section: Differential PCM\")\\]\n\nValues are encoded as differences between the current and the previous value. This reduces the number of bits required per audio sample by about 25% compared to PCM.\n\n### Adaptive DPCM\\[[edit](/index.php?title=PCM&action=edit&section=13 \"Edit section: Adaptive DPCM\")\\]\n\nThe size of the quantization step is varied to allow further reduction of the required bandwidth for a given signal-to-noise ratio.\n\n## Platform-Specific PCM Identifiers And Characteristics\\[[edit](/index.php?title=PCM&action=edit&section=14 \"Edit section: Platform-Specific PCM Identifiers And Characteristics\")\\]\n\nThis section describes how different computing platforms store PCM audio data and any format identifiers they use.\n\n### DOS/Windows\\[[edit](/index.php?title=PCM&action=edit&section=15 \"Edit section: DOS/Windows\")\\]\n\nThe first widely available, PC audio card that could play back PCM audio was the Creative Labs' Sound Blaster. This drove the audio format for a lot of early audio-capable DOS applications and games. The original Sound Blaster could only play mono, unsigned 8-bit PCM data. Later Sound Blaster cards were capable of playing back 16-bit audio data. However, while these cards still played unsigned 8-bit PCM data, 16-bit data needed be signed.\n\nLikely owing to the DOS/Intel little endian architecture, 16-bit PCM for the Sound Blaster also needs to be little endian.\n\nFurther, the original Sound Blaster was somewhat limited in the frequencies that it could support. The digital to analog conversion hardware (DAC) had to be programmed with a byte value (frequency divisor) that was processed through the following formula to yield the final playback frequency:\n\nfrequency = 1000000 / (256 - frequency\\_divisor)\n\nA common divisor is 211 which yields an integer frequency of 22222 Hz, a common rate in the days of the Sound Blaster. Note that while very low frequencies (all the way down to 3921 Hz) were supported, frequencies above 45454 Hz were not.\n\n### Microsoft WAV/AVI/ASF Identifiers\\[[edit](/index.php?title=PCM&action=edit&section=16 \"Edit section: Microsoft WAV/AVI/ASF Identifiers\")\\]\n\nMicrosoft multimedia file formats such as [WAV](/index.php/Microsoft_Wave \"Microsoft Wave\"), [AVI](/index.php/Microsoft_Audio/Video_Interleaved \"Microsoft Audio/Video Interleaved\"), and [ASF](/index.php/Microsoft_Advanced_Streaming_Format \"Microsoft Advanced Streaming Format\") all share the [WAVEFORMATEX](/index.php/WAVEFORMATEX \"WAVEFORMATEX\") data structure. The structure defines, among other properties, a 16-bit little endian audio identifier. The following audio identifiers correspond to various PCM formats:\n\n*   0x0001 denotes linear PCM\n*   0x0006 denotes A-law logarithmic PCM\n*   0x0007 denotes mu-law logarithmic PCM\n\n### Apple Macintosh\\[[edit](/index.php?title=PCM&action=edit&section=17 \"Edit section: Apple Macintosh\")\\]\n\nNative sample rates of early Apple Macintosh audio hardware included 11127 Hz and 22254 Hz. These sample rates are commonly seen in early [QuickTime](/index.php/QuickTime_container \"QuickTime container\") files.\n\n### Apple QuickTime Identifiers\\[[edit](/index.php?title=PCM&action=edit&section=18 \"Edit section: Apple QuickTime Identifiers\")\\]\n\nAudio information in [QuickTime](/index.php/QuickTime_container \"QuickTime container\") files is stored along with an stsd atom that contains a [FOURCC](/index.php/FOURCC \"FOURCC\") to indicate the format type. Apple QuickTime accomodates a number of different PCM formats:\n\n*   'raw ' (need space character, ASCII 0x20, to round out FOURCC) denotes unsigned, linear PCM. 16-bit data is stored in little endian format.\n*   'twos' denotes signed (i.e. twos-complement) linear PCM. 16-bit data is stored in big endian format.\n*   'sowt' ('twos' spelled backwards) also denotes signed linear PCM. However, 16-bit data is stored in little endian format.\n*   'in24' denotes 24-bit, big endian, linear PCM.\n*   'in32' denotes 32-bit, big endian, linear PCM.\n*   'fl32' denotes 32-bit floating point PCM. **(Presumably IEEE 32-bit; byte order?)**\n*   'fl64' denotes 64-bit floating point PCM. **(Presumably IEEE 64-bit; byte order?)**\n*   'alaw' denotes A-law logarithmic PCM.\n*   'ulaw' denotes mu-law logarithmic PCM.\n\n### Red Book CD Audio\\[[edit](/index.php?title=PCM&action=edit&section=19 \"Edit section: Red Book CD Audio\")\\]\n\nThe \"Red Book\" defines the format of a standard audio [compact disc (CD)](/index.php/Compact_Disc \"Compact Disc\"). The audio data on a standard CD consists of 16-bit linear PCM samples stored in little endian format, replayed at 44100 Hz (hence the standard term \"CD-quality audio\"), with left-right stereo interleaving.\n\n### Sega CD\\[[edit](/index.php?title=PCM&action=edit&section=20 \"Edit section: Sega CD\")\\]\n\nGames made for the Sega CD, an add-on for the Sega Genesis game console, all seem to use sign-magnitude coding to store PCM information. It is a good guess that the Sega CD unit has custom hardware to play this format natively.\n\n### Sega Saturn\\[[edit](/index.php?title=PCM&action=edit&section=21 \"Edit section: Sega Saturn\")\\]\n\nGames made for the Sega Saturn video game console generally seem to store PCM data as signed, 8-bit data or signed, big endian, 16-bit data. The curious property of the PCM, however, is the stereo handling. Generally, multimedia files on Sega Saturn games (most often stored using the [Sega FILM](/index.php/Sega_FILM \"Sega FILM\") format) would store a block of left channel information followed by a block of right channel information rather than interleaving left and right samples. This is likely due to custom multi-channel audio hardware in which individual channels are assigned pan positions. For playing stereo data, one channel is assigned extreme left and another is assigned extreme right. The correct samples are sent to their respective channels. Interleaved data would require deinterleaving before playback.\n\n### DVD PCM\\[[edit](/index.php?title=PCM&action=edit&section=22 \"Edit section: DVD PCM\")\\]\n\nStandard Video-DVDs can contain 16-bit, 20-bit and 24-bit signed, linear PCM (often called LPCM) streams. A stream can consist of up to 8 channels as long as the maximum bandwidth of 6.144 mbit/sec for any LPCM audio stream is not exceeded. Two samplerates are supported: 48kHz and 96kHz.\n\n*   technical info: [\\[1\\]](http://www.mpeg.org/MPEG/DVD/Book_B/Audio.html)\n\n#### 24-Bit PCM\\[[edit](/index.php?title=PCM&action=edit&section=23 \"Edit section: 24-Bit PCM\")\\]\n\n24-bit linear PCM is stored in blocks. Each block is divided into two parts. The first part contains the most significant two bytes of each channel for two samples in big endian order:\n\n < ---  sample 1 --- > < ---  sample 2 --- >\n T0 M0 T1 M1 ... Tx Mx T0 M0 T1 M1 ... Tx Mx\n\nThe second part contains all least significant bytes of each channel for the two samples in the same order:\n\n < sample 1 > < sample 2 >\n B0 B1 ... Bx B0 B1 ... Bx\n\nThe complete block looks like this:\n\n < ---  sample 1 --- > < ---  sample 2 --- > < sample 1 > < sample 2 >\n T0 M0 T1 M1 ... Tx Mx T0 M0 T1 M1 ... Tx Mx B0 B1 ... Bx B0 B1 ... Bx\n\n  \n\n*   T = top byte = bits 23..16\n*   M = middle byte = bits 15..8\n*   B = bottom byte = bits 7..0\n\n[![Dvd-24bit-pcm.png](/images/4/47/Dvd-24bit-pcm.png)](/index.php/File:Dvd-24bit-pcm.png)\n\n#### 20-Bit PCM\\[[edit](/index.php?title=PCM&action=edit&section=24 \"Edit section: 20-Bit PCM\")\\]\n\nThe 20-bit packing is similar to the 24-bit packing. The only difference is that 2 channels use the nibbles of one byte as their least significant bits.\n\n*   stereo 20-bit example:\n\n < s1 >  < s2 >  < s1 >  < s2 >  <s1>  <s2>\n T0  M0  T1  M1  T0  M0  T1  M1  L01   L01\n\nThe 4 high bits of L01 (higher nibble) being the least significant bits of channel 0 and the 4 lower bits (lower nibble) being the least significant bits of channel 1.\n\n byte = 2^7  2^6  2^5  2^4  2^3  2^2  2^1  2^0\n L01  =  B0   B0   B0   B0   B1   B1   B1   B1  (bitwise)\n\nThere are always 2 samples coded to not need to pad anything with 0s.\n\n#### 16-bit PCM\\[[edit](/index.php?title=PCM&action=edit&section=25 \"Edit section: 16-bit PCM\")\\]\n\nWith this coding the block consists only of the first part described above.\n\n## Identifying PCM Data\\[[edit](/index.php?title=PCM&action=edit&section=26 \"Edit section: Identifying PCM Data\")\\]\n\n**(TODO: add explanation and example for identifying PCM data in a hex dump)**",
+    "sources": [
+      {
+        "label": "MultimediaWiki: PCM",
+        "url": "https://wiki.multimedia.cx/index.php?title=PCM"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=PCM"
+      }
+    ]
+  },
+  {
+    "id": "amr",
+    "kind": "audio",
+    "name": "AMR-NB/WB",
+    "year": 2000,
+    "summary": "Telephony speech (NB/WB).",
+    "spec_url": "https://www.3gpp.org/",
+    "aliases": [
+      "amr-nb",
+      "amr-wb"
+    ],
+    "containers": [
+      "3gp",
+      "amr"
+    ],
+    "mimes": [
+      "audio/amr",
+      "audio/amr-wb"
+    ],
+    "content_md": "*   company: [VoiceAge](/index.php/VoiceAge \"VoiceAge\")\n*   samples: [http://samples.mplayerhq.hu/A-codecs/amr/](http://samples.mplayerhq.hu/A-codecs/amr/)\n*   specification: [http://www.3gpp.org/ftp/Specs/html-info/26-series.htm](http://www.3gpp.org/ftp/Specs/html-info/26-series.htm)\n*   Wikipedia article: [http://en.wikipedia.org/wiki/Adaptive\\_Multi-Rate](http://en.wikipedia.org/wiki/Adaptive_Multi-Rate)\n\nAMR (Adaptive Multi-Rate) is a [vocoder](/index.php/Vocoder \"Vocoder\") employed in low-bitrate applications like mobile phones. There are [narrowband](/index.php/AMR-NB \"AMR-NB\") and [wideband](/index.php/AMR-WB \"AMR-WB\") variants of this codec.",
+    "sources": [
+      {
+        "label": "MultimediaWiki: AMR",
+        "url": "https://wiki.multimedia.cx/index.php?title=AMR"
+      },
+      {
+        "label": "MediaWiki API parse",
+        "url": "https://wiki.multimedia.cx/api.php?action=parse&format=json&prop=text&redirects=1&page=AMR"
+      }
+    ]
+  }
 ]
-

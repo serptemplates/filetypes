@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "typecheck": "tsc --noEmit",
@@ -25,6 +26,8 @@
     "db:seed:all": "pnpm run db:seed:filetypes && pnpm run db:seed:mime && pnpm run db:seed:refs",
     "db:seed:codecs": "node scripts/db/seed-codecs.mjs",
     "db:seed:codecs:impls": "node scripts/db/seed-ffmpeg-impls.mjs",
+    "db:seed:codecs:impl-docs": "node scripts/db/seed-ffmpeg-impl-docs.mjs",
+    "db:update:codecs:impl-desc": "node scripts/db/update-ffmpeg-impl-desc.mjs",
     "db:seed:all:plus": "pnpm run db:seed:filetypes && pnpm run db:seed:mime && pnpm run db:seed:refs && pnpm run db:seed:codecs",
     "db:seed:refs": "node scripts/db/seed-references.mjs",
     "db:link:codecs": "node scripts/db/link-codec-impls.mjs",
@@ -51,6 +54,7 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "next-sitemap": "^4.2.3",
     "linkinator": "^4.0.1",
     "@types/node": "^20.19.9",
     "@types/react": "^19.1.11",

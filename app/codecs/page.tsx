@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { listCodecs } from '@/lib/server/codec-repo';
 import { countCodecImpls } from '@/lib/server/codec-impls-repo';
+import { ChevronRight } from 'lucide-react';
+import { hrefHome, hrefCodecsRoot, hrefCodec } from '@/lib/url';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
@@ -17,21 +19,29 @@ export default async function CodecsIndexPage() {
   }, {});
   const kinds = Object.keys(groups).sort();
   return (
-    <main className="max-w-6xl mx-auto px-4 py-8">
+    <main>
+      <div className="bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <nav className="flex items-center space-x-2 text-sm">
+            <a href={hrefHome()} className="text-gray-500 hover:text-gray-700">Home</a>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <Link href={hrefCodecsRoot()} className="text-gray-900 font-medium">Codecs</Link>
+          </nav>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-2">Codecs</h1>
       <p className="text-gray-600 mb-6">
         Core delivery codecs for web media (video/audio). Click to see details, containers, and references.
-        <span className="ml-2">
-          <Link href="/codecs/all/" className="text-blue-600 hover:underline">View all FFmpeg codecs</Link>
-          <span className="text-gray-500"> ({implCount})</span>
-        </span>
+        <span className="ml-2 text-gray-500">FFmpeg implementations catalog: {implCount}</span>
       </p>
       {kinds.map(kind => (
         <section key={kind} className="mb-8">
           <h2 className="text-xl font-semibold mb-3 capitalize">{kind}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {groups[kind].map(c => (
-              <Link key={c.id} href={`/codecs/${c.id}/`} className="block bg-white border rounded p-4 hover:border-gray-300">
+              <Link key={c.id} href={hrefCodec(c.id)} className="block bg-white border rounded p-4 hover:border-gray-300">
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-medium">{c.name}</div>
@@ -44,6 +54,7 @@ export default async function CodecsIndexPage() {
           </div>
         </section>
       ))}
+      </div>
     </main>
   );
 }
