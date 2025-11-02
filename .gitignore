@@ -1,6 +1,7 @@
 # Build outputs
 .next
 out
+out-sources/
 
 # Package manager artifacts
 node_modules/
@@ -9,7 +10,14 @@ node_modules/
 scraper/out
 scraper/out-normalized
 scraper/out-sources
+scraper/out-mime
+scraper/out-references
+scraper/raw/references
 scraper/raw
+
+# Old public JSON outputs (unused; DB-backed now)
+public/data/files
+public/data/mime
 
 # Local data/db (if using SQLite locally)
 .data/

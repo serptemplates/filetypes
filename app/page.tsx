@@ -1,23 +1,22 @@
-'use client';
+"use client";
 
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import { Search, X, ChevronDown } from 'lucide-react';
 import { categoryDefinitions, getFileCategory, type FileCategory } from '@/lib/files-categories';
+import { hrefFiletype } from '@/lib/url';
 
 interface FileType {
   slug: string;
   name: string;
   category: string;
   extension?: string;
-  updated_at?: string;
-  developer_org?: string;
-  developer_name?: string;
   summary?: string;
 }
 
 export default function FileTypesPage() {
   const [fileTypes, setFileTypes] = useState<FileType[]>([]);
+  const [total, setTotal] = useState<number>(0);
   const [filteredTypes, setFilteredTypes] = useState<FileType[]>([]);
   const [displayedTypes, setDisplayedTypes] = useState<FileType[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -28,75 +27,55 @@ export default function FileTypesPage() {
   const [letterDropdownOpen, setLetterDropdownOpen] = useState(false);
   const [categorySearchTerm, setCategorySearchTerm] = useState('');
   const [letterSearchTerm, setLetterSearchTerm] = useState('');
-  const [displayCount, setDisplayCount] = useState(100); // Start with 100 items
+  const [displayCount, setDisplayCount] = useState(100);
   const categoryDropdownRef = useRef<HTMLDivElement>(null);
   const letterDropdownRef = useRef<HTMLDivElement>(null);
 
-  // Group files by first letter and category
   const [groupedTypes, setGroupedTypes] = useState<Record<string, FileType[]>>({});
   const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({});
 
   useEffect(() => {
     async function loadFileTypes() {
       try {
-        const response = await fetch('/data/files/index.json');
-        const data = await response.json();
+        const response = await fetch('/api/filetypes?limit=12000');
+        const json = await response.json();
+        const items: FileType[] = json.items || [];
+        setTotal(json.total || items.length);
 
-        // Process data in chunks to avoid blocking
-        const chunkSize = 1000;
-        let enrichedData: FileType[] = [];
+        // derive client-side category key
+        const enriched = items.map((ft) => ({
+          ...ft,
+          fileCategory: getFileCategory(ft.extension || ft.slug)
+        }));
 
-        for (let i = 0; i < data.length; i += chunkSize) {
-          const chunk = data.slice(i, i + chunkSize);
-          const enrichedChunk = chunk.map((ft: FileType) => ({
-            ...ft,
-            fileCategory: getFileCategory(ft.extension || ft.slug)
-          }));
-          enrichedData = [...enrichedData, ...enrichedChunk];
+        setFileTypes(enriched);
+        setFilteredTypes(enriched);
+        setLoading(false);
 
-          // Allow UI to update between chunks
-          if (i === 0) {
-            // Set initial data quickly
-            setFileTypes(enrichedChunk);
-            setFilteredTypes(enrichedChunk);
-            setLoading(false);
-          }
-        }
-
-        // Set complete data
-        setFileTypes(enrichedData);
-        setFilteredTypes(enrichedData);
-
-        // Group by first character
-        const grouped = enrichedData.reduce((acc: Record<string, FileType[]>, ft: FileType) => {
+        const grouped = enriched.reduce((acc: Record<string, FileType[]>, ft: any) => {
           const firstChar = (ft.extension || ft.slug || '').charAt(0).toUpperCase();
           if (!acc[firstChar]) acc[firstChar] = [];
           acc[firstChar].push(ft);
           return acc;
         }, {});
-
         setGroupedTypes(grouped);
 
-        // Count by category
-        const catCounts = enrichedData.reduce((acc: Record<string, number>, ft: any) => {
-          const category = ft.fileCategory || 'misc';
-          acc[category] = (acc[category] || 0) + 1;
+        const catCounts = enriched.reduce((acc: Record<string, number>, ft: any) => {
+          const cat = ft.fileCategory || 'misc';
+          acc[cat] = (acc[cat] || 0) + 1;
           return acc;
         }, {});
-
         setCategoryCounts(catCounts);
-      } catch (error) {
-        console.error('Failed to load file types:', error);
+      } catch (err) {
+        console.error('Failed to load file types from DB API:', err);
         setLoading(false);
       }
     }
-
     loadFileTypes();
   }, []);
 
   useEffect(() => {
     let filtered = fileTypes;
-
     if (searchTerm) {
       filtered = filtered.filter(ft =>
         ft.slug.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -104,57 +83,22 @@ export default function FileTypesPage() {
         (ft.extension && ft.extension.toLowerCase().includes(searchTerm.toLowerCase()))
       );
     }
-
     if (selectedLetters.length > 0) {
-      filtered = filtered.filter(ft =>
-        selectedLetters.includes((ft.extension || ft.slug || '').charAt(0).toUpperCase())
-      );
+      filtered = filtered.filter(ft => selectedLetters.includes((ft.extension || ft.slug || '').charAt(0).toUpperCase()));
     }
-
     if (selectedCategories.length > 0) {
       filtered = filtered.filter((ft: any) => selectedCategories.includes(ft.fileCategory));
     }
-
-    // Sort by extension (default)
-    filtered = [...filtered].sort((a, b) => {
-      return (a.extension || a.slug).localeCompare(b.extension || b.slug);
-    });
-
+    filtered = [...filtered].sort((a, b) => (a.extension || a.slug).localeCompare(b.extension || b.slug));
     setFilteredTypes(filtered);
   }, [searchTerm, selectedLetters, selectedCategories, fileTypes]);
 
-  // Update displayed types based on pagination
-  useEffect(() => {
-    setDisplayedTypes(filteredTypes.slice(0, displayCount));
-  }, [filteredTypes, displayCount]);
+  useEffect(() => { setDisplayedTypes(filteredTypes.slice(0, displayCount)); }, [filteredTypes, displayCount]);
+  useEffect(() => { setDisplayCount(100); }, [searchTerm, selectedLetters, selectedCategories]);
 
-  // Reset display count when filters change
-  useEffect(() => {
-    setDisplayCount(100);
-  }, [searchTerm, selectedLetters, selectedCategories]);
-
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (categoryDropdownRef.current && !categoryDropdownRef.current.contains(event.target as Node)) {
-        setCategoryDropdownOpen(false);
-      }
-      if (letterDropdownRef.current && !letterDropdownRef.current.contains(event.target as Node)) {
-        setLetterDropdownOpen(false);
-      }
-    }
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-  // Get alphabet for navigation
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ#&'.split('');
   const availableLetters = Object.keys(groupedTypes).sort();
-
-  // Sort categories by count (most popular first)
-  const sortedCategories = Object.entries(categoryCounts)
-    .sort((a, b) => b[1] - a[1])
-    .map(([key]) => key as FileCategory);
+  const sortedCategories = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]).map(([key]) => key as FileCategory);
 
   if (loading) {
     return (
@@ -174,34 +118,19 @@ export default function FileTypesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8 max-w-7xl">
-        {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">File Extensions</h1>
-          <p className="text-gray-600">
-            Browse {fileTypes.length.toLocaleString()} file types and their associated programs
-          </p>
+          <p className="text-gray-600">Browse {total.toLocaleString()} file types and their associated programs</p>
         </div>
 
-        {/* Search and Filters Bar - All on one line */}
         <div className="mb-6 flex flex-col lg:flex-row gap-4">
-          {/* Search Input */}
           <div className="relative flex-1 max-w-md">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-            <input
-              type="text"
-              placeholder="Search extensions..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent h-[48px]"
-            />
+            <input type="text" placeholder="Search extensions..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent h-[48px]" />
           </div>
 
-          {/* Category Multi-Select */}
           <div ref={categoryDropdownRef} className="relative w-full lg:w-80">
-            <div
-              onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
-              className="w-full min-h-[48px] px-3 py-2 bg-white border border-gray-200 rounded-lg cursor-pointer hover:border-gray-300 transition-colors"
-            >
+            <div onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)} className="w-full min-h-[48px] px-3 py-2 bg-white border border-gray-200 rounded-lg cursor-pointer hover:border-gray-300 transition-colors">
               <div className="flex items-center justify-between">
                 <div className="flex flex-wrap gap-1 flex-1">
                   {selectedCategories.length === 0 ? (
@@ -211,19 +140,10 @@ export default function FileTypesPage() {
                       const config = categoryDefinitions[cat as FileCategory];
                       const Icon = config?.icon;
                       return (
-                        <span
-                          key={cat}
-                          className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-md text-sm"
-                        >
+                        <span key={cat} className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-md text-sm">
                           {Icon && <Icon className="h-3 w-3" />}
                           {config?.name}
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              setSelectedCategories(selectedCategories.filter(c => c !== cat));
-                            }}
-                            className="ml-1 hover:text-red-600"
-                          >
+                          <button onClick={(e) => { e.stopPropagation(); setSelectedCategories(selectedCategories.filter(c => c !== cat)); }} className="ml-1 hover:text-red-600">
                             <X className="h-3 w-3" />
                           </button>
                         </span>
@@ -231,8 +151,7 @@ export default function FileTypesPage() {
                     })
                   )}
                 </div>
-                <ChevronDown className={`h-4 w-4 text-gray-400 transition-transform ${categoryDropdownOpen ? 'rotate-180' : ''
-                  }`} />
+                <ChevronDown className={`h-4 w-4 text-gray-400 transition-transform ${categoryDropdownOpen ? 'rotate-180' : ''}`} />
               </div>
             </div>
 
@@ -428,7 +347,7 @@ export default function FileTypesPage() {
                 return (
                   <Link
                     key={fileType.slug}
-                    href={`/${fileType.slug}`}
+                    href={hrefFiletype(fileType.slug)}
                     className="group block"
                   >
                     <div className="bg-white rounded-lg border border-gray-200 px-4 py-3 hover:border-gray-300 hover:shadow-sm transition-all">

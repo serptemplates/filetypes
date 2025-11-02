@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import fs from 'fs';
-import path from 'path';
 import CategoryPageTemplate from '@/components/CategoryPageTemplate';
-import { getFileCategory, fromCategoryUrlSlug, toCategoryUrlSlug } from '@/lib/files-categories';
+import { fromCategoryUrlSlug, toCategoryUrlSlug } from '@/lib/files-categories';
+import { listFileTypesByCategory } from '@/lib/server/filetypes-repo';
 
 interface FileTypeData {
   extension: string;
@@ -87,6 +86,9 @@ const categoryMetadata: Record<string, { name: string; description: string }> = 
   }
 };
 
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 async function getCategoryData(categorySlug: string): Promise<CategoryInfo | null> {
   try {
     // Normalize incoming slug from URL (hyphenated) to internal (underscored)
@@ -98,37 +100,16 @@ async function getCategoryData(categorySlug: string): Promise<CategoryInfo | nul
       return null;
     }
 
-    // Read all individual file type data files
-    const dataDir = path.join(process.cwd(), 'public', 'data', 'files', 'individual');
-    const files = fs.readdirSync(dataDir).filter(file => file.endsWith('.json'));
-
-    const fileTypes: FileTypeData[] = [];
-
-    for (const file of files) {
-      try {
-        const filePath = path.join(dataDir, file);
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const data = JSON.parse(content);
-
-        // Determine category slug from data or derive from extension/slug
-        const derivedCategorySlug: string = data.categorySlug || getFileCategory(data.extension || data.slug);
-
-        // Include if it matches the requested category
-        if (derivedCategorySlug === internalSlug) {
-          fileTypes.push({
-            extension: data.extension || data.slug,
-            name: data.name,
-            summary: data.summary,
-            category: categoryMetadata[derivedCategorySlug]?.name,
-            categorySlug: derivedCategorySlug,
-            developer: data.developer,
-            image: data.image
-          });
-        }
-      } catch (error) {
-        console.error(`Error reading ${file}:`, error);
-      }
-    }
+    // Query DB for this category
+    const rows = await listFileTypesByCategory(internalSlug, 20000, 0);
+    const fileTypes: FileTypeData[] = rows.map((r: any) => ({
+      extension: r.extension || r.slug,
+      name: r.name,
+      summary: r.summary,
+      category: categoryMetadata[internalSlug]?.name,
+      categorySlug: internalSlug,
+      developer: r.developer,
+    }));
 
     // Sort file types alphabetically by extension (fallback-safe)
     fileTypes.sort((a, b) => (a.extension || '').localeCompare(b.extension || ''));
@@ -152,7 +133,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { category } = await params;
   const categoryData = await getCategoryData(category);
 
@@ -175,7 +156,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   };
 }
 
-export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+export default async function CategoryPage({ params }: any) {
   const { category } = await params;
   const categoryData = await getCategoryData(category);
 

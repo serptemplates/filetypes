@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { buildCategoryHref } from '@/lib/files-categories';
 import { ChevronRight, FolderOpen, Grid, List } from 'lucide-react';
+import { hrefHome, hrefFiletype } from '@/lib/url';
 
 interface FileTypeData {
   extension: string;
@@ -31,7 +32,7 @@ export default function CategoryPageTemplate({ data }: { data: CategoryData }) {
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center space-x-2 text-sm">
-            <a href="/" className="text-gray-500 hover:text-gray-700">Home</a>
+            <a href={hrefHome()} className="text-gray-500 hover:text-gray-700">Home</a>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <Link href="/" className="text-gray-500 hover:text-gray-700">File Types</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
@@ -86,7 +87,7 @@ export default function CategoryPageTemplate({ data }: { data: CategoryData }) {
             {data.fileTypes.map((fileType) => (
               <Link
                 key={fileType.extension}
-                href={`/${fileType.extension}`}
+                href={hrefFiletype(fileType.extension)}
                 className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-6 border border-gray-200"
               >
                 <div className="flex items-start space-x-4">
@@ -134,7 +135,7 @@ export default function CategoryPageTemplate({ data }: { data: CategoryData }) {
                   <tr key={fileType.extension} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap">
                       <Link
-                        href={`/${fileType.extension}`}
+                        href={hrefFiletype(fileType.extension)}
                         className="text-blue-600 hover:text-blue-700 font-medium"
                       >
                         .{fileType.extension}

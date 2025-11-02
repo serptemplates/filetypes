@@ -2,12 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@serp-filetypes/ui/*": [
-        "../../packages/ui/src/*"
-      ]
+      "@/*": ["./*"],
+      "@serp-filetypes/ui/*": ["packages/ui/src/*"],
+      "@serp-filetypes/app-core/*": ["packages/app-core/src/*"]
     },
     "plugins": [
       {
@@ -27,7 +24,7 @@
     "incremental": true,
     "module": "esnext",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
@@ -41,6 +38,7 @@
   ],
   "exclude": [
     "node_modules",
+    "db/**",
     "scraper/raw/**",
     "scraper/out/**",
     "scraper/out-normalized/**"

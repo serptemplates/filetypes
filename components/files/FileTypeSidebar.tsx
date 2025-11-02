@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { toIsoUtcZ } from '@/lib/dates';
+import { hrefTool, hrefHome } from '@/lib/url';
 
 interface Tool {
   title: string;
@@ -45,26 +46,27 @@ export default function FileTypeSidebar({
                 <div className="space-y-2">
                   {category.tools.map((tool, toolIdx) => {
                     const route = typeof tool.href === 'string' ? tool.href : '';
-                    const href = route.startsWith('/') ? `/tools${route}` : `/tools/${route}`;
+                    const href = hrefTool(route);
                     return (
-                    <a
-                      key={toolIdx}
-                      href={href}
-                      className="block bg-blue-50 hover:bg-blue-100 rounded-lg p-3 transition-colors group"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <div className="font-medium text-gray-900 group-hover:text-blue-600">
-                            {tool.title}
+                      <Link
+                        key={toolIdx}
+                        href={href}
+                        className="block bg-blue-50 hover:bg-blue-100 rounded-lg p-3 transition-colors group"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <div className="font-medium text-gray-900 group-hover:text-blue-600">
+                              {tool.title}
+                            </div>
+                            <div className="text-sm text-gray-600 mt-1">
+                              {tool.description}
+                            </div>
                           </div>
-                          <div className="text-sm text-gray-600 mt-1">
-                            {tool.description}
-                          </div>
+                          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600" />
                         </div>
-                        <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600" />
-                      </div>
-                    </a>
-                  );})}
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             ))}
@@ -101,7 +103,7 @@ export default function FileTypeSidebar({
       <div className="bg-white rounded-lg shadow-sm p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Related File Types</h3>
         <div className="space-y-2">
-          <Link href="/" className="text-blue-600 hover:text-blue-700 text-sm">
+          <Link href={hrefHome()} className="text-blue-600 hover:text-blue-700 text-sm">
             Browse all file types →
           </Link>
         </div>

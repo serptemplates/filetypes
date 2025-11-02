@@ -1,0 +1,37 @@
+[
+  {
+    "id": "iana",
+    "label": "IANA Media Types Registry",
+    "url": "https://www.iana.org/assignments/media-types/media-types.xhtml",
+    "kind": "registry",
+    "crawl": "html"
+  },
+  {
+    "id": "apache",
+    "label": "Apache httpd mime.types",
+    "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types",
+    "kind": "mapping",
+    "crawl": "text"
+  },
+  {
+    "id": "nginx",
+    "label": "nginx mime.types",
+    "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types",
+    "kind": "mapping",
+    "crawl": "text"
+  },
+  {
+    "id": "mime-db",
+    "label": "mime-db JSON (aggregated)",
+    "url": "https://www.npmjs.com/package/mime-db",
+    "kind": "json",
+    "crawl": "pkg"
+  },
+  {
+    "id": "mimetype-io",
+    "label": "mimetype.io all types (deprecated)",
+    "url": "https://mimetype.io/all-types",
+    "kind": "index",
+    "crawl": "skip"
+  }
+]

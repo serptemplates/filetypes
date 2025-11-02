@@ -1,15 +1,17 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight, FileText, Image, Video, Archive, Code, Database, Gamepad2, Settings } from 'lucide-react';
-import fs from 'fs';
-import path from 'path';
-import { getFileCategory, buildCategoryHref } from '@/lib/files-categories';
+import { buildCategoryHref } from '@/lib/files-categories';
+import { countByCategory } from '@/lib/server/filetypes-repo';
 
 export const metadata: Metadata = {
   title: 'File Type Categories - Browse All File Extensions by Category',
   description: 'Explore file types organized by category including documents, images, videos, data files, and more. Find detailed information about any file extension.',
   keywords: 'file types, file extensions, file categories, document files, image files, video files, data files',
 };
+
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 interface Category {
   slug: string;
@@ -20,31 +22,7 @@ interface Category {
 }
 
 async function getCategoryCounts(): Promise<Record<string, number>> {
-  const counts: Record<string, number> = {};
-
-  try {
-    const dataDir = path.join(process.cwd(), 'public', 'data', 'files', 'individual');
-    const files = fs.readdirSync(dataDir).filter(file => file.endsWith('.json'));
-
-    for (const file of files) {
-      try {
-        const filePath = path.join(dataDir, file);
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const data = JSON.parse(content);
-
-        const slug = data.extension || data.slug || '';
-        const categorySlug: string = data.categorySlug || getFileCategory(slug);
-
-        counts[categorySlug] = (counts[categorySlug] || 0) + 1;
-      } catch (error) {
-        console.error(`Error reading ${file}:`, error);
-      }
-    }
-  } catch (error) {
-    console.error('Error counting categories:', error);
-  }
-
-  return counts;
+  return await countByCategory();
 }
 
 export default async function CategoriesPage() {

@@ -216,3 +216,20 @@ pnpm run report:coverage
 ```
 
 Optional: Enable strict Zod schema during normalization (already enabled via `schemas/filetype.runtime.js`).
+
+---
+
+## MIME Types (new)
+
+- Targets list: `scraper/data/targets/mime.json` (IANA, Apache, nginx, mime-db)
+- Build normalized MIME data from local `mime-db`:
+
+```bash
+pnpm -C scraper build:mime
+node scraper/scripts/integrate-mime.mjs
+```
+
+Outputs to `public/data/mime/` with:
+- `index.json` – list of all MIME types
+- `extensions.json` – extension → [mime] map
+- Per-type JSON files under `/public/data/mime/<type>/<subtype>.json`

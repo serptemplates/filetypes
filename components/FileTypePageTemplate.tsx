@@ -10,7 +10,6 @@ import HowToOpenSection from '@/components/files/HowToOpenSection';
 import FileTypeSidebar from '@/components/files/FileTypeSidebar';
 import MimeContainersSection from '@/components/files/MimeContainersSection';
 import SignaturesSection from '@/components/files/SignaturesSection';
-import ImagesGallery from '@/components/files/ImagesGallery';
 import SupportMatrixSection from '@/components/files/SupportMatrixSection';
 
 interface FileTypeData {
@@ -113,8 +112,7 @@ export default function FileTypePageTemplate({ data }: { data: FileTypeData }) {
             {/* Signatures */}
             <SignaturesSection magic={data.magic} />
 
-            {/* Images */}
-            <ImagesGallery images={data.images} screenshotUrl={data.image?.screenshot} />
+            {/* Images disabled: external sources too noisy */}
 
             {/* How to Open Section */}
             <HowToOpenSection

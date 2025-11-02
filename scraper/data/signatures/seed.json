@@ -1,0 +1,15 @@
+[
+  { "id": "jpeg", "hex": "FF D8 FF", "offset": 0, "description": "JPEG SOI + marker", "detects": ["jpg", "jpeg", "jfif", "exif"] },
+  { "id": "png", "hex": "89 50 4E 47 0D 0A 1A 0A", "offset": 0, "description": "PNG signature", "detects": ["png"] },
+  { "id": "gif87a", "hex": "47 49 46 38 37 61", "offset": 0, "description": "GIF87a", "detects": ["gif"] },
+  { "id": "gif89a", "hex": "47 49 46 38 39 61", "offset": 0, "description": "GIF89a", "detects": ["gif"] },
+  { "id": "pdf", "hex": "25 50 44 46 2D", "offset": 0, "description": "PDF %PDF-", "detects": ["pdf"] },
+  { "id": "zip", "hex": "50 4B 03 04", "offset": 0, "description": "ZIP local file header", "detects": ["zip", "jar", "docx", "xlsx", "pptx", "apk"] },
+  { "id": "gzip", "hex": "1F 8B", "offset": 0, "description": "GZIP", "detects": ["gz"] },
+  { "id": "rar5", "hex": "52 61 72 21 1A 07 01 00", "offset": 0, "description": "RAR v5", "detects": ["rar"] },
+  { "id": "rar", "hex": "52 61 72 21 1A 07 00", "offset": 0, "description": "RAR v1.5-4.x", "detects": ["rar"] },
+  { "id": "mp3-id3", "hex": "49 44 33", "offset": 0, "description": "MP3 with ID3v2 tag", "detects": ["mp3"] },
+  { "id": "mp4", "hex": "66 74 79 70", "offset": 4, "description": "MP4/ISO-BMFF 'ftyp' box", "detects": ["mp4", "m4a", "m4v", "mov"] },
+  { "id": "matroska", "hex": "1A 45 DF A3", "offset": 0, "description": "Matroska/WebM EBML", "detects": ["mkv", "webm"] }
+]
+
