@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.bbf.usp.error",
+  "full": "application/vnd.bbf.usp.error",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.bbf.usp.error",
+    "encoding_considerations": "UTF-8",
+    "security_considerations": "This media type is used to send an error message to the sender of a USP Record (content type vnd.bbf.usp.msg) when that received USP Record could not be processed or read. It is defined to include specific headers with a numeric error code and human-readable error message. The exact text of the human-readable message is undefined, so it can be language-specific and allow vendor-defined errors. The information transported in this media type is not defined to include active or executable content, or directives of any kind.\n\nUse of TLS or DTLS for authentication, encryption, and/or message integrity is described in Broadband Forum TR-369. If one of these security mechanisms was not used for prior messages with content type vnd.bbf.usp.msg, they will not be used for messages with this content type, either. If TLS or DTLS was used for prior messages, it will also be used for messages with this content type. A received message of this content type is invalid if a message with content type vnd.bbf.usp.msg was not previously sent to the source. \n\nWhile the media type does not include provisions for active or executable content, directives, or URLs, there is nothing defined in TR-369 that would prevent messages with strings or characters that might be interpreted as such by some programming or database languages. \n\nThis media type does not employ compression.",
+    "interoperability_considerations": "Error code and message text are UTF-8 encoded. Error codes are defined in the USP specification.",
+    "additional_information": "1. Deprecated alias names for this type: none \n2. Magic number(s): none \n3. File extension(s): none \n4. Macintosh file type code: none \n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-04-29, last updated 2020-01-09)\n\nMedia type name: application\n\nMedia subtype name: vnd.bbf.usp.error\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: 8bit\nUTF-8\n\nSecurity considerations:\nThis media type is used to send an error message to the sender of a USP Record (content type vnd.bbf.usp.msg) when that received USP Record could not be processed or read. It is defined to include specific headers with a numeric error code and human-readable error message. The exact text of the human-readable message is undefined, so it can be language-specific and allow vendor-defined errors. The information transported in this media type is not defined to include active or executable content, or directives of any kind.\n\nUse of TLS or DTLS for authentication, encryption, and/or message integrity is described in Broadband Forum TR-369. If one of these security mechanisms was not used for prior messages with content type vnd.bbf.usp.msg, they will not be used for messages with this content type, either. If TLS or DTLS was used for prior messages, it will also be used for messages with this content type. A received message of this content type is invalid if a message with content type vnd.bbf.usp.msg was not previously sent to the source. \n\nWhile the media type does not include provisions for active or executable content, directives, or URLs, there is nothing defined in TR-369 that would prevent messages with strings or characters that might be interpreted as such by some programming or database languages. \n\nThis media type does not employ compression.\n\nInteroperability considerations:\nError code and message text are UTF-8 encoded. Error codes are defined in the USP specification.\n\nPublished specification:\nhttps://usp.technology/\n\nApplications which use this media:\nThis media type is used by USP Endpoints to send an error code and message to an Endpoint when a USP Record received from that Endpoint could not be read. It is expected to be used mainly when USP Records are exchanged using publish-subscribe messaging protocols.\n\nFragment identifier considerations: none\n\nRestrictions on usage: none\n\n\nAdditional information:\n\n1. Deprecated alias names for this type: none \n2. Magic number(s): none \n3. File extension(s): none \n4. Macintosh file type code: none \n5. Object Identifiers: none\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Broadband Forum\n2. Email: help&broadband-forum.org\n\nIntended usage: Common\nNone\n\nAuthor/Change controller: help&broadband-forum.org\n"
+  },
+  "references": []
+}

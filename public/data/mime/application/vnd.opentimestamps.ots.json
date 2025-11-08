@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.opentimestamps.ots",
+  "full": "application/vnd.opentimestamps.ots",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.opentimestamps.ots",
+    "encoding_considerations": "Security considerations: OTS files contain URLs pointing to the \n   server that provided it. Applications can ignore URLs if not \n   trusted. This media type does not contain active or executable \n   content. The information contained in the media type does not need \n   integrity services. Considering the information is made by hashes, \n   integrity can be verified only by having the original document \n   that is not included in the media type. No personal data are \n   directly exposed because the information is a timestamp that can \n   only proof the original document existed at a defined date. \n   Protecting this indirect information alone with standard \n   encryption is an extremely rare use case. It's often the case that \n   timestamps are provided bundled with the referring documents. \n   Links are referenced in order to get additional information, they \n   are not necessary to properly interpret the type.\n\nInteroperability considerations: Bytes ordering is little-endian\n\nPublished specification: Not currently available\n\nApplications which use this media: OpenTimestamps calendar server and\n   client for distributed ledgers (aka blockchain) timestamping. See \n   opentimestamps.org for more details.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: intended for common use",
+    "security_considerations": "server that provided it. Applications can ignore URLs if not \n   trusted. This media type does not contain active or executable \n   content. The information contained in the media type does not need \n   integrity services. Considering the information is made by hashes, \n   integrity can be verified only by having the original document \n   that is not included in the media type. No personal data are \n   directly exposed because the information is a timestamp that can \n   only proof the original document existed at a defined date. \n   Protecting this indirect information alone with standard \n   encryption is an extremely rare use case. It's often the case that \n   timestamps are provided bundled with the referring documents. \n   Links are referenced in order to get additional information, they \n   are not necessary to properly interpret the type.\n\nInteroperability considerations: Bytes ordering is little-endian\n\nPublished specification: Not currently available\n\nApplications which use this media: OpenTimestamps calendar server and\n   client for distributed ledgers (aka blockchain) timestamping. See \n   opentimestamps.org for more details.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: intended for common use",
+    "interoperability_considerations": "Published specification: Not currently available\n\nApplications which use this media: OpenTimestamps calendar server and\n   client for distributed ledgers (aka blockchain) timestamping. See \n   opentimestamps.org for more details.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: intended for common use",
+    "additional_information": "1. Deprecated alias names for this type: not defined\n   2. Magic number(s): Proof files start with: 00 4f 70 65 6e 54 69 \n      6d 65 73 74 61\n   3. File extension(s): ots\n   4. Macintosh file type code: not defined\n   5. Object Identifiers: not defined",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-06-24, last updated 2021-06-24)\n\nName: Emanuele Cisbani\n\nEmail: ecisbani&intesigroup.com\n\nMedia type name: application\n\nMedia subtype name: vnd.opentimestamps.ots\n\nRequired parameters: There are no Required Parameters\n\nOptional parameters: There are no Optional Parameters\n\nEncoding considerations: binary\n\nSecurity considerations: OTS files contain URLs pointing to the \n   server that provided it. Applications can ignore URLs if not \n   trusted. This media type does not contain active or executable \n   content. The information contained in the media type does not need \n   integrity services. Considering the information is made by hashes, \n   integrity can be verified only by having the original document \n   that is not included in the media type. No personal data are \n   directly exposed because the information is a timestamp that can \n   only proof the original document existed at a defined date. \n   Protecting this indirect information alone with standard \n   encryption is an extremely rare use case. It's often the case that \n   timestamps are provided bundled with the referring documents. \n   Links are referenced in order to get additional information, they \n   are not necessary to properly interpret the type.\n\nInteroperability considerations: Bytes ordering is little-endian\n\nPublished specification: Not currently available\n\nApplications which use this media: OpenTimestamps calendar server and\n   client for distributed ledgers (aka blockchain) timestamping. See \n   opentimestamps.org for more details.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: intended for common use\n\nAdditional information:\n\n   1. Deprecated alias names for this type: not defined\n   2. Magic number(s): Proof files start with: 00 4f 70 65 6e 54 69 \n      6d 65 73 74 61\n   3. File extension(s): ots\n   4. Macintosh file type code: not defined\n   5. Object Identifiers: not defined\n\nGeneral Comments:\n\n   The complete magic numbers list is: \n\n   00 4f 70 65 6e 54 69 6d 65 73 74 61 6d 70 73 00\n   00 50 72 6f 6f 66 00 bf 89 e2 e8 84 e8 92 94 01\n\n   where the last byte of that header is the major version number, 1 \n   in this case\n\nPerson to contact for further information:\n\n   1. Name: Peter Todd\n   2. Email: pete&petertodd.org\n\nIntended usage: Common\n\n   Usage is aimed at opentimestamps clients or any software that \n   wishes to view or verify the content of an opentimestamps proof\n\nAuthor/Change controller: OpenTimestamps developer team\n   https://github.com/orgs/opentimestamps/people"
+  },
+  "references": []
+}

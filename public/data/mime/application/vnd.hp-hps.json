@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.hp-hps",
+  "full": "application/vnd.hp-hps",
+  "extensions": [
+    "hps"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.hp-hps",
+    "template_text": "\n\nDate: Thu, 9 Jul 1998 14:04:18 -0700 (PDT)\nFrom: Steve Aubrey <steve_aubrey&hp.com>\nTo: iana&iana.org, steve_aubrey&hp.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.\n\nName : Steve Aubrey\n\nE-mail : steve_aubrey&hp.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.hp-hps\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nbase64 -- the data may contain binary information\n\nSecurity considerations : \n  There are no known security issues associated with this type. The\n  file contains no executable content.  However, the file may contain\n  embedded URLs, which could reference insecure data, so the same\n  security considerations apply as for a standard HTML page\n\n\n\nInteroperability considerations : \nnone\n\nPublished specification : \nhttp://www.hp.com/go/webprintsmart_mimetype_specs\n\nApplications which use this media : \nHewlett-Packard's WebPrintSmart\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : .hps\n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Steve Aubrey\n2. E-mail : steve_aubrey&hp.com\n\nIntended usage : Common \n\n\nAuthor/Change controller : Steve Aubrey\nHewlett-Packard\n690 E. Middlefield Rd, MS 31Z\nMountain View, CA 94043 \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

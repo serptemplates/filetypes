@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.uic.osdm+json",
+  "full": "application/vnd.uic.osdm+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.uic.osdm+json",
+    "encoding_considerations": "Security considerations: N/A\n\nInteroperability considerations: The media type is used in the OSDM API for rail distribution systems. The media type will be used for versioning of the API. The API is managed by UIC (Union International des Chemins de Fer, www.uic.org).\n\nPublished specification: www.osdm.io\n\nApplications which use this media: Distribution systems of rail products will provide the OSDM API to retailers.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: No",
+    "security_considerations": "Interoperability considerations: The media type is used in the OSDM API for rail distribution systems. The media type will be used for versioning of the API. The API is managed by UIC (Union International des Chemins de Fer, www.uic.org).\n\nPublished specification: www.osdm.io\n\nApplications which use this media: Distribution systems of rail products will provide the OSDM API to retailers.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: No",
+    "interoperability_considerations": "Published specification: www.osdm.io\n\nApplications which use this media: Distribution systems of rail products will provide the OSDM API to retailers.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: No",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2024-09-03, last updated 2024-09-03)\n\nMedia type name: application\n\nMedia subtype name: vnd.uic.osdm+json\n\nRequired parameters: version - Version of the API the messages are compliant with.\n\nOptional parameters: N/A\n\nEncoding considerations: 7bit\n\nSecurity considerations: N/A\n\nInteroperability considerations: The media type is used in the OSDM API for rail distribution systems. The media type will be used for versioning of the API. The API is managed by UIC (Union International des Chemins de Fer, www.uic.org).\n\nPublished specification: www.osdm.io\n\nApplications which use this media: Distribution systems of rail products will provide the OSDM API to retailers.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: No\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n1. Name: Sarfatti\n2. Email: sarfatti&uic.org\n\nIntended usage: LIMITED USE\n\nUsed in UIC APIs to indicate the message format and version.\n\nAuthor/Change controller: osdm&uic.org"
+  },
+  "references": []
+}

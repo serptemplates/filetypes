@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.comicbook-rar",
+  "full": "application/vnd.comicbook-rar",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.comicbook-rar",
+    "security_considerations": "All processors that read CBR files should rigorously check the size and \nvalidity of data retrieved.\n\nComic book archives consist of one or more image files in various formats, \ne.g., PNG or JPEG. Security considerations for the image formats all apply to \nCBR files. No executable content should be contained in a CBR file.\n\nAs CBR files are a form of RAR-compressed files, security considerations for \nRAR files also apply to CBR files. See also the IANA specification for the \napplication/vnd.rar media type.\n\nRAR files optionally provide both privacy protection, in the form of \npassword-protected encrypted archives, and integrity protection through\ninternal routines, and these protections may be used for CBR files as well.",
+    "interoperability_considerations": "As there is no published specification for CBR files, different reading \napplications may exhibit different behaviors.",
+    "additional_information": "1. Deprecated alias names for this type: application/x-cbr\n2. Magic number(s): none\n3. File extension(s): .cbr\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-12-11, last updated 2017-12-11)\n\nMedia type name: application\n\nMedia subtype name: vnd.comicbook-rar\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations:\nAll processors that read CBR files should rigorously check the size and \nvalidity of data retrieved.\n\nComic book archives consist of one or more image files in various formats, \ne.g., PNG or JPEG. Security considerations for the image formats all apply to \nCBR files. No executable content should be contained in a CBR file.\n\nAs CBR files are a form of RAR-compressed files, security considerations for \nRAR files also apply to CBR files. See also the IANA specification for the \napplication/vnd.rar media type.\n\nRAR files optionally provide both privacy protection, in the form of \npassword-protected encrypted archives, and integrity protection through\ninternal routines, and these protections may be used for CBR files as well.\n\nInteroperability considerations:\nAs there is no published specification for CBR files, different reading \napplications may exhibit different behaviors.\n\nPublished specification:\nThere has not been a published specification for CBR files per se; however,\nthe specification for RAR files generally is available at the developer's \ndiscretion from\n<http://www.rarlab.com/technote.htm>.\n\nApplications which use this media:\nComic book readers such as ComicRack, MComix, and SimpleComic.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nProvisional registration? (standards tree only): N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: application/x-cbr\n2. Magic number(s): none\n3. File extension(s): .cbr\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Kim Scarborough\n2. Email: user&unknown.nu\n\nIntended usage: Common\nAlong with CBZ files, this is the de facto standard for comic book archives.\n\nAuthor/Change controller: N/A"
+  },
+  "references": []
+}

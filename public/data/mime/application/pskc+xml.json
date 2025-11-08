@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "pskc+xml",
+  "full": "application/pskc+xml",
+  "extensions": [
+    "pskcxml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/pskc+xml",
+    "encoding_considerations": "characters, depending on the character encoding used.  See RFC\n   3023 [RFC3023], Section 3.2.\n\nSecurity considerations:  Please refer to Section 13 of RFC 6030.\n\nInteroperability considerations:  None\n\nPublished specification:  RFC 6030.\n\nApplications which use this media type:  This media type is being\n   used as a symmetric key container format for transport and\n   provisioning of symmetric keys (One-Time Password (OTP) shared\n   secrets or symmetric cryptographic keys) to different types of\n   strong authentication devices.  As such, it is used for key\n   provisioning systems.",
+    "security_considerations": "Interoperability considerations:  None\n\nPublished specification:  RFC 6030.\n\nApplications which use this media type:  This media type is being\n   used as a symmetric key container format for transport and\n   provisioning of symmetric keys (One-Time Password (OTP) shared\n   secrets or symmetric cryptographic keys) to different types of\n   strong authentication devices.  As such, it is used for key\n   provisioning systems.",
+    "interoperability_considerations": "Published specification:  RFC 6030.\n\nApplications which use this media type:  This media type is being\n   used as a symmetric key container format for transport and\n   provisioning of symmetric keys (One-Time Password (OTP) shared\n   secrets or symmetric cryptographic keys) to different types of\n   strong authentication devices.  As such, it is used for key\n   provisioning systems.",
+    "additional_information": "Magic Number:  None\n\n   File Extension:  .pskcxml\n\n   Macintosh file type code:  'TEXT'",
+    "intended_usage": "limited use",
+    "change_controller": "The IESG <iesg&ietf.org>",
+    "template_text": "(RFC 6030 published October 2010, subtype last updated October 2010)\n\nMIME media type name:  application\n\nMIME subtype name:  pskc+xml\n\nRequired parameters:  There is no required parameter.\n\nOptional parameters:  charset\n\n   Indicates the character encoding of enclosed XML.\n\nEncoding considerations:  Uses XML, which can employ 8-bit\n   characters, depending on the character encoding used.  See RFC\n   3023 [RFC3023], Section 3.2.\n\nSecurity considerations:  Please refer to Section 13 of RFC 6030.\n\nInteroperability considerations:  None\n\nPublished specification:  RFC 6030.\n\nApplications which use this media type:  This media type is being\n   used as a symmetric key container format for transport and\n   provisioning of symmetric keys (One-Time Password (OTP) shared\n   secrets or symmetric cryptographic keys) to different types of\n   strong authentication devices.  As such, it is used for key\n   provisioning systems.\n\nAdditional information:\n\n   Magic Number:  None\n\n   File Extension:  .pskcxml\n\n   Macintosh file type code:  'TEXT'\n\nPersonal and email address to contact for further information:\n   Philip Hoyer, Philip.Hoyer&actividentity.com\n\nIntended usage:  LIMITED USE\n\nRestrictions on usage:  None\n\nAuthor:  This specification is a work item of the IETF KEYPROV\n   working group, with mailing list address <keyprov&ietf.org>.\n\nChange controller:  The IESG <iesg&ietf.org>\n"
+  },
+  "references": []
+}

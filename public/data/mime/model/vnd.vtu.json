@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.vtu",
+  "full": "model/vnd.vtu",
+  "extensions": [
+    "vtu"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.vtu",
+    "template_text": "\n\n\nName : Boris Rabinovitch\n\nE-mail : boris&virtue3d.com\n\nMIME media type name : Model\n\nMIME subtype name : Vendor Tree - vnd.vtu\n\nRequired parameters : None.\n\nOptional parameters : \nNone.\n\nEncoding considerations : \nA file of this type contains binary data.\nThere exists possibility that the data is encrypted.\n\nSecurity considerations : \nThis type does not carry any executable code so it can not present any\nsecurity risk for a client machine.\n\nInteroperability considerations : \nData of this type can be created and understood only by software\ndeveloped by Virtue Ltd.\nThis type is intended to be used as a web-ready representation of 3D\nscenes and animations, so Internet-related applications (such as\nweb servers and browsers) are expected to recognize VTU as a valid\nMIME type and handle it correctly without any reference to the\ncontents.\n\nPublished specification : \nThis is a proprietary format and there is no publicly available\nspecification.\n\nApplications which use this media : \nVirtue-developed applications and plug-ins for creating and viewing\nthe VTU type.\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : vtu\n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Boris Rabinovitch\n2. E-mail : boris&virtue3d.com\n\nIntended usage : Common \n\n\nAuthor/Change controller : Virtue Ltd. \n\n\n\n\n\n"
+  },
+  "references": []
+}

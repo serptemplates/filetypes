@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.gmx",
+  "full": "application/vnd.gmx",
+  "extensions": [
+    "gmx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.gmx",
+    "template_text": "(deprecated 2009-03-04)\n\nName : Christian V. Sciberras\n\nEmail : contact&covac-software.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.gmx\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nGmX uses a system whereby the downloaded content is executed on the\nclient machine through an interpreter (and possibly a sandbox). The\ncontent is not signed, but contains information about the\ncreator/sender. As a security precaution, the user must accept the\nexecution of such caution except when the content is being download\nfrom a secure site or trusted source. Even though there are many\nsecurity precautions enabled by default, the user may change or\ndisable any of them easily.\nThe sender related information is classified and doesn't actually\ndetermine information about the sender except IP information and IP\ntype (static or dynamic).\nAs a concealment of this information and protection, the content is\nencrypted on a secure server which users only have preprocess upload\nand postprocess download access.\n\nInteroperability considerations :\nNon applicable - At the moment the runner/interpreter which executes\nthe content is a trade secret not controlled by us (developers of\nGmX). As to cross platform, it is possible for different operating\nsystems but not at the moment.\n\nPublished specification :\n\n\nApplications which use this media :\nGameMaker ActiveX (GmX), GameMaker ActiveX Builder (GmXB)\n\nAdditional information :\n\n1. Magic number(s) : 0x476d58\n2. File extension(s) : gmx\n3. Macintosh file type code : APGX\n4. Object Identifiers:\n\nPerson to contact for further information :\n\n1. Name : Christian Sciberras\n2. Email : uuf6429&gmail.com\n\nIntended usage : Common\n\n\nAuthor/Change controller :\nChristian V. Sciberras\nCovac Software Team\n\n\n(file created 2008-09-19)"
+  },
+  "references": []
+}

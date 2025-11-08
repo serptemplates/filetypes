@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "vnd.datalog",
+  "full": "application/vnd.datalog",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.datalog",
+    "encoding_considerations": "The content encoding of a Datalog text document MUST be UTF-8\n\nSecurity considerations: This media type does include program code \n   for a Datalog interpreter to execute. However, as Datalog is a \n   restricted deductive logic language its execution environment is \n   limited to entailment and query, and not capable of general \n   purpose programming.\n\n   The Datalog language does contain references to additional \n   resources that may be required to complete a program. For example, \n   an \"input\" processing instruction will add facts from an external \n   resource (using IRIs) to an extensional relation whereas the \n   \"output\" processing instruction will be some local resource that \n   may be written to. The ability to include malicious data in an \n   input file is limited by the supported representations such as \n   CSV. The ability to write to a local system may be intercepted by \n   a parser to redirect to safe locations, and as such the allowed \n   reference is always relative.\n\n   Privacy and integrity services are not required, or provided, by \n   this specification.\n\nInteroperability considerations: A number of vendors have extended \n   Datalog with additional syntax, this has been a general problem \n   for some years. The introduction of a common standard, and support \n   for the \"dialect\" parameter will help clients understand the\n   potential parsing issues of a specific document.",
+    "security_considerations": "for a Datalog interpreter to execute. However, as Datalog is a \n   restricted deductive logic language its execution environment is \n   limited to entailment and query, and not capable of general \n   purpose programming.\n\n   The Datalog language does contain references to additional \n   resources that may be required to complete a program. For example, \n   an \"input\" processing instruction will add facts from an external \n   resource (using IRIs) to an extensional relation whereas the \n   \"output\" processing instruction will be some local resource that \n   may be written to. The ability to include malicious data in an \n   input file is limited by the supported representations such as \n   CSV. The ability to write to a local system may be intercepted by \n   a parser to redirect to safe locations, and as such the allowed \n   reference is always relative.\n\n   Privacy and integrity services are not required, or provided, by \n   this specification.\n\nInteroperability considerations: A number of vendors have extended \n   Datalog with additional syntax, this has been a general problem \n   for some years. The introduction of a common standard, and support \n   for the \"dialect\" parameter will help clients understand the\n   potential parsing issues of a specific document.",
+    "interoperability_considerations": "Datalog with additional syntax, this has been a general problem \n   for some years. The introduction of a common standard, and support \n   for the \"dialect\" parameter will help clients understand the\n   potential parsing issues of a specific document.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): dl\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "change_controller": "N/A",
+    "template_text": "(registered 2022-07-20, last updated 2022-07-20)\n\nMedia type name: application\n\nMedia subtype name: vnd.datalog\n\nRequired parameters: N/A\n\nOptional parameters:\n\n   The optional \"features\" parameter allows the transport to identify \n   language features used within the representation. The value of \n   this parameter is a comma-separated list of feature pragma \n   identifiers supported by the specification. Feature pragmas exist \n   to turn on/off certain language capabilities, and the purpose of \n   this parameter is to save a client from having to parse a document \n   if the features identified in the parameter are unsupported by \n   them.\n\n   Feature identifiers conform to the following EBNF production.\n\n   id ::= LC_ALPHA ( ALPHA | DIGIT | UNDERSCORE )* ;\n\n   If this parameter is specified more than once its values MUST be \n   aggregated into a set, removing duplicates.\n\n   The optional \"dialect\" parameter identifies the tool which \n   generated the document, there are some existing tools with \n   extensive usage that deviate from this core specification. Dialect \n   identifiers conform to the same `id` production described for \n   feature identifiers.\n\n   If this parameter is specified more than once, the first value \n   MUST be used and any subsequent value MUST be discarded.\n\nEncoding considerations: 8bit\n\n   The content encoding of a Datalog text document MUST be UTF-8\n\nSecurity considerations: This media type does include program code \n   for a Datalog interpreter to execute. However, as Datalog is a \n   restricted deductive logic language its execution environment is \n   limited to entailment and query, and not capable of general \n   purpose programming.\n\n   The Datalog language does contain references to additional \n   resources that may be required to complete a program. For example, \n   an \"input\" processing instruction will add facts from an external \n   resource (using IRIs) to an extensional relation whereas the \n   \"output\" processing instruction will be some local resource that \n   may be written to. The ability to include malicious data in an \n   input file is limited by the supported representations such as \n   CSV. The ability to write to a local system may be intercepted by \n   a parser to redirect to safe locations, and as such the allowed \n   reference is always relative.\n\n   Privacy and integrity services are not required, or provided, by \n   this specification.\n\nInteroperability considerations: A number of vendors have extended \n   Datalog with additional syntax, this has been a general problem \n   for some years. The introduction of a common standard, and support \n   for the \"dialect\" parameter will help clients understand the\n   potential parsing issues of a specific document.\n\nPublished specification:\n\n   https://datalog-specs.info/vnd_datalog_text/abstract.html;\n   Version: 1.0, 2 April 2022.\n\nApplications which use this media: Applications that need to upload, \n   download, or transfer Datalog programs.\n\nFragment identifier considerations: None identified by this \n   specification.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): dl\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A\n\nPerson & email address to contact for further information:\n\n   Simon Johnston, johnstonskj&gmail.com\n\nIntended usage: COMMON\n\nRestrictions on usage: None identified by this specification.\n\nAuthor: Simon Johnston, johnstonskj&gmail.com\n\nChange controller: N/A\n"
+  },
+  "references": []
+}

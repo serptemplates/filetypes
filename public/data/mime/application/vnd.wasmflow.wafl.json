@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.wasmflow.wafl",
+  "full": "application/vnd.wasmflow.wafl",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wasmflow.wafl",
+    "encoding_considerations": "Security considerations: - The media does not contain executable \n   content\n\n   - The contents should not contain any private or personal \n      information\n   - The content should always be passed using TLS encryption\n   - The media does not incorporate links\n\nInteroperability considerations: N/A\n\nPublished specification: https://wasmflow.com\n\nApplications which use this media: The media type will be read by a \n   runtime \"wasmflow\". (https://wasmflow.com). This file will contain \n   instructions for the runtime to define applications specifying the \n   capabilities and permissions for the application.\n\nFragment identifier considerations: There is no suffix.\n\nRestrictions on usage: No restrictions",
+    "security_considerations": "content\n\n   - The contents should not contain any private or personal \n      information\n   - The content should always be passed using TLS encryption\n   - The media does not incorporate links\n\nInteroperability considerations: N/A\n\nPublished specification: https://wasmflow.com\n\nApplications which use this media: The media type will be read by a \n   runtime \"wasmflow\". (https://wasmflow.com). This file will contain \n   instructions for the runtime to define applications specifying the \n   capabilities and permissions for the application.\n\nFragment identifier considerations: There is no suffix.\n\nRestrictions on usage: No restrictions",
+    "interoperability_considerations": "Published specification: https://wasmflow.com\n\nApplications which use this media: The media type will be read by a \n   runtime \"wasmflow\". (https://wasmflow.com). This file will contain \n   instructions for the runtime to define applications specifying the \n   capabilities and permissions for the application.\n\nFragment identifier considerations: There is no suffix.\n\nRestrictions on usage: No restrictions",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .wafl\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-09-01, last updated 2022-09-01)\n\nMedia type name: application\n\nMedia subtype name: vnd.wasmflow.wafl\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\n\nSecurity considerations: - The media does not contain executable \n   content\n\n   - The contents should not contain any private or personal \n      information\n   - The content should always be passed using TLS encryption\n   - The media does not incorporate links\n\nInteroperability considerations: N/A\n\nPublished specification: https://wasmflow.com\n\nApplications which use this media: The media type will be read by a \n   runtime \"wasmflow\". (https://wasmflow.com). This file will contain \n   instructions for the runtime to define applications specifying the \n   capabilities and permissions for the application.\n\nFragment identifier considerations: There is no suffix.\n\nRestrictions on usage: No restrictions\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .wafl\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Fawad Shaikh\n   2. Email: fawad&candle.dev\n\nIntended usage: COMMON\n\n   It will be used by the Wasmflow runtime and Candle's container \n   registry to package and deploy Wasmflow applications. Current \n   registry is located at reg.candle.run.\n\nAuthor/Change controller: fawad&candle.dev"
+  },
+  "references": []
+}

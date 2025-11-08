@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.irepository.package+xml",
+  "full": "application/vnd.irepository.package+xml",
+  "extensions": [
+    "irp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.irepository.package+xml",
+    "template_text": "\n\nRegistered 2001 June 12\n(last updated 2001 June 12)\n\nApplicant: Martin Knowles\n\nSubject: Application/vnd.irepository.package\n\nName : Martin Knowles\n\nE-mail : mjk&irepository.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.irepository.package+xml\n\nRequired parameters : None\n\nOptional parameters :  None\n\nEncoding considerations :\n\nFiles of type application/vnd.irepository.package+xml are XML documents\nand as such have the same encoding considerations as application/xml,\ndescribed  in RFC 3023. Since the package may contain embedded base64, a\nbase64 codec may be required to generate/interpret some parts of the package.\n\nSecurity considerations :\n\nWhen transmitted to a user's machine from the Lucidoc server, files\nof type application/vnd.irepository.package+xml contain textual document\nmetadata only. No executable code is present within the package. Therefore, \nthere are no known security issues with this MIME type.\n\nPackages are transmitted back to the Lucidoc server by means of a\nmultipart HTTP POST request. If an HTTP proxy is in use, it must be\nconfigured to accept and forward multipart POSTs containing data of this \nMIME type in order for documents to be returned to the server successfully.\n\nInteroperability considerations :\n\nPackages are used for transporting documents between the Lucidoc\nserver and the Lucidoc Editor, a commercial application which\nestablishes connection to the Lucidoc server and retrieves document content. \nIt is the user's responsibility to ensure that the \napplication/vnd.irepository.package+xml MIME type triggers execution of the \nLucidoc Editor and that the connection is established.\n\nPublished specification :\n\napplication/vnd.irepository.package+xml is an XML document with a\npresently proprietary and evolving DTD.\n\nApplications which use this media :\n\nLucidoc Editor and associated tools published by iRepository.net, Inc.\n(http://www.irepository.net)\n\nAdditional information :\n\n 1. Magic number(s) : none\n 2. File extension(s) : .irp\n 3. Macintosh file type code : none\n 4. Object Identifiers: none\n\nPerson to contact for further information :\n\n 1. Name : Martin Knowles\n 2. E-mail : mjk&irepository.net\n\nIntended usage : Limited Use\n\nUse of this MIME type is limited to users of Lucidoc and associated\ndocument management tools published by iRepository.net, Inc.\n\nAuthor/Change controller : Martin Knowles\nDirector of Development\niRepository.net, Inc.\n\n\n\n\n\n"
+  },
+  "references": []
+}

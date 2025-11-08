@@ -1,0 +1,35 @@
+{
+  "type": "image",
+  "subtype": "vnd.microsoft.icon",
+  "full": "image/vnd.microsoft.icon",
+  "extensions": [
+    "ico"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/vnd.microsoft.icon",
+    "template_text": "\r\n(last updated 2003-09-03)\r\n\r\nName : Simon Butcher\r\n\r\nEmail : simonb&alien.net.au\r\n\r\nMIME media type name : Image\r\n\r\nMIME subtype name : Vendor Tree - vnd.microsoft.icon\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : \r\nnone\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nThis file format can only contain one or more images. The file format \r\nitself may contain malformed headers (especially the image-offset pointer) \r\nwhich may cause unexpected problems in poorly written software.\r\n\r\nThe file format does not provide any means to perform automated tasks, or \r\ndirectly contain information (other than that potentially encoded outside \r\nof the image data boundaries). There is, therefore, under normal circumstances, \r\nno risk of information leakage within the file format.\r\n\r\nInteroperability considerations : \r\nDue to the file format originating on i80x86 computer architecture, the \r\nword byte-ordering is \"Little Endian\", or Least Significant Byte first; \r\nthe opposite to \"network byte order\", used on the Internet. Applications \r\nwritten for \"Big Endian\" (Most Significant Byte first) computer systems \r\nwill need to take this into consideration when parsing the file.\r\n\r\nPublished specification : \r\nPublicly published file format details:\r\nHornick, John, \"Icons in Win32\", Microsoft Corporation, Sept 29, 1995.\r\n<http://msdn.microsoft.com/library/en-us/dnwui/html/msdn_icons.asp>\r\n\r\nApplications which use this media : \r\nThe Microsoft Windows platforms use this file format extensively. It is \r\nable to be read (to varying degrees) by many popular web-browsers, and \r\nimage editing/viewing software.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : 00 00 01 00 (first four octets in hexadecimal)\r\n2. File extension(s) : ico\r\n3. Macintosh file type code : n/a\r\n4. Object Identifiers: n/a\r\n\r\nThis media type is currently being labelled with a potpourri of names, \r\nincluding \"text/ico\", \"image/ico\", \"image/icon\", \"application/ico\", and \r\nso on. While \"image/x-icon\" is also used, this registration intends to \r\nfinally clarify the media type for this file format.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Simon Butcher\r\n2. Email : simonb&alien.net.au\r\n\r\nIntended usage : Common \r\nThis file format is currently most commonly being used for the popular \r\n\"favicon.ico\" function; to provide icon(s) for a web-browser's bookmark/shortcut \r\nlist (favicon = \"Favourites Icon\"). The format itself has many other purposes, \r\nhowever normally restricted to that of being intended to be a representative \r\nicon within a GUI environment.\r\n\r\nAuthor/Change controller : The Microsoft Corporation. \r\n\r\n(created 2003-09-03)"
+  },
+  "references": []
+}

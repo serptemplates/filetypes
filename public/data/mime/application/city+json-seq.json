@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "city+json-seq",
+  "full": "application/city+json-seq",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/city+json-seq",
+    "encoding_considerations": "Security considerations: CityJSON shares security issues common to all JSON content types, see RFC7159 Section 12.\n\nInteroperability considerations: The Extensions of CityJSON use extra JSON Schemas to document user-defined features in a CityJSON document. It is recommended to make an Extension available at a public URL.\n\nPublished specification: CityJSON specifications are available at https://cityjson.org/specs/, and CityJSON is an international standard adopted by the Open Geospatial Consortium (OGC) (CityJSON Community Standard 2.0, document 20-072r5, https://docs.ogc.org/cs/20-072r5/20-072r5.html).\n\nApplications which use this media: CityJSON Text Sequence is a format based on JSON Text Sequences and CityJSON, inspired by GeoJSON Text Sequences. The idea is to decompose a (often large) CityJSON dataset into its features (eg each building, each bridge, each road, etc.), to create several JSON objects (of type CityJSONFeature), and stream/store them in a JSON Text Sequence (for instance ndjson – newline delimited JSON).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none",
+    "security_considerations": "Interoperability considerations: The Extensions of CityJSON use extra JSON Schemas to document user-defined features in a CityJSON document. It is recommended to make an Extension available at a public URL.\n\nPublished specification: CityJSON specifications are available at https://cityjson.org/specs/, and CityJSON is an international standard adopted by the Open Geospatial Consortium (OGC) (CityJSON Community Standard 2.0, document 20-072r5, https://docs.ogc.org/cs/20-072r5/20-072r5.html).\n\nApplications which use this media: CityJSON Text Sequence is a format based on JSON Text Sequences and CityJSON, inspired by GeoJSON Text Sequences. The idea is to decompose a (often large) CityJSON dataset into its features (eg each building, each bridge, each road, etc.), to create several JSON objects (of type CityJSONFeature), and stream/store them in a JSON Text Sequence (for instance ndjson – newline delimited JSON).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none",
+    "interoperability_considerations": "Published specification: CityJSON specifications are available at https://cityjson.org/specs/, and CityJSON is an international standard adopted by the Open Geospatial Consortium (OGC) (CityJSON Community Standard 2.0, document 20-072r5, https://docs.ogc.org/cs/20-072r5/20-072r5.html).\n\nApplications which use this media: CityJSON Text Sequence is a format based on JSON Text Sequences and CityJSON, inspired by GeoJSON Text Sequences. The idea is to decompose a (often large) CityJSON dataset into its features (eg each building, each bridge, each road, etc.), to create several JSON objects (of type CityJSONFeature), and stream/store them in a JSON Text Sequence (for instance ndjson – newline delimited JSON).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments: Hugo Ledoux <h.ledoux&tudelft.nl> is the primary contact for CityJSON. Scott Simmons <ssimmons&ogc.org> is the primary contact for OGC Standards, including the CityJSON 2.0 Community Standard.",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-10-30, last updated 2024-10-30)\n\nMedia type name: application\n\nMedia subtype name: city+json-seq\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: CityJSON shares security issues common to all JSON content types, see RFC7159 Section 12.\n\nInteroperability considerations: The Extensions of CityJSON use extra JSON Schemas to document user-defined features in a CityJSON document. It is recommended to make an Extension available at a public URL.\n\nPublished specification: CityJSON specifications are available at https://cityjson.org/specs/, and CityJSON is an international standard adopted by the Open Geospatial Consortium (OGC) (CityJSON Community Standard 2.0, document 20-072r5, https://docs.ogc.org/cs/20-072r5/20-072r5.html).\n\nApplications which use this media: CityJSON Text Sequence is a format based on JSON Text Sequences and CityJSON, inspired by GeoJSON Text Sequences. The idea is to decompose a (often large) CityJSON dataset into its features (eg each building, each bridge, each road, etc.), to create several JSON objects (of type CityJSONFeature), and stream/store them in a JSON Text Sequence (for instance ndjson – newline delimited JSON).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments: Hugo Ledoux <h.ledoux&tudelft.nl> is the primary contact for CityJSON. Scott Simmons <ssimmons&ogc.org> is the primary contact for OGC Standards, including the CityJSON 2.0 Community Standard.\n\nPerson to contact for further information:\n\n1. Name: Scott Simmons\n2. Email: ssimmons&ogc.org\n\nIntended usage: COMMON\n\nAuthor/Change controller: Open Geospatial Consortium"
+  },
+  "references": []
+}

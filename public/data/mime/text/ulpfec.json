@@ -1,0 +1,41 @@
+{
+  "type": "text",
+  "subtype": "ulpfec",
+  "full": "text/ulpfec",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/ulpfec",
+    "type_name": "video",
+    "subtype_name": "ulpfec",
+    "encoding_considerations": "the template document [3]) and contains binary data.\n\nSecurity considerations: The same security considerations apply to\nthese media type registrations as to the payloads for them, as\ndetailed in RFC 5109.\n\nInteroperability considerations: none\n\nPublished specification: RFC 5109\n\nApplications that use this media type: Multimedia applications that\nseek to improve resiliency to loss by sending additional data with\nthe media stream.\n\nAdditional information: none",
+    "security_considerations": "these media type registrations as to the payloads for them, as\ndetailed in RFC 5109.\n\nInteroperability considerations: none\n\nPublished specification: RFC 5109\n\nApplications that use this media type: Multimedia applications that\nseek to improve resiliency to loss by sending additional data with\nthe media stream.\n\nAdditional information: none",
+    "interoperability_considerations": "Published specification: RFC 5109\n\nApplications that use this media type: Multimedia applications that\nseek to improve resiliency to loss by sending additional data with\nthe media stream.\n\nAdditional information: none",
+    "applications": "seek to improve resiliency to loss by sending additional data with\nthe media stream.\n\nAdditional information: none",
+    "intended_usage": "common",
+    "change_controller": "IETF Audio/Video Transport Working Group",
+    "template_text": "(RFC 5109 published December 2007, subtype last updated December 2007)\n\nType name: video\n\nSubtype name: ulpfec\n\nRequired parameters:\n\nrate: The RTP timestamp rate that is used to mark the time of\n   transmission of the FEC packet in a separate stream.  In cases in\n   which it is sent as redundant data to another stream, the rate\n   SHALL be the same as the primary encoding it is used to protect.\n   When used in a separate stream, the rate SHALL be larger than 1000\n   Hz to provide sufficient resolution to RTCP operations.  The\n   selected rate MAY be any value above 1000 Hz, but is RECOMMENDED\n   to match the rate of the media this stream protects.\n\nOptional parameters:\n\nonelevelonly: This specifies whether only one level of FEC protection\n   is used.  The permissible values are 0 and 1.  If 1 is signaled,\n   only one level of FEC protection SHALL be used in the stream.  If\n   0 is signaled, more than one level of FEC protection MAY be used.\n   If omitted, it has the default value of 0.\n\nEncoding considerations: This format is framed (see Section 4.8 in\nthe template document [3]) and contains binary data.\n\nSecurity considerations: The same security considerations apply to\nthese media type registrations as to the payloads for them, as\ndetailed in RFC 5109.\n\nInteroperability considerations: none\n\nPublished specification: RFC 5109\n\nApplications that use this media type: Multimedia applications that\nseek to improve resiliency to loss by sending additional data with\nthe media stream.\n\nAdditional information: none\n\nPerson & email address to contact for further information:\n   Adam Li adamli&hyervision.com\n   IETF Audio/Video Transport Working Group\n\nIntended usage: COMMON\n\nRestrictions on usage: This media type depends on RTP framing, and\nhence is only defined for transfer via RTP [1].  Transport within\nother framing protocols SHALL NOT be defined as this is a robustness\nmechanism for RTP.\n\nAuthor:\n   Adam Li adamli&hyervision.com\n\nChange controller:  IETF Audio/Video Transport Working Group\n   delegated from the IESG."
+  },
+  "references": []
+}

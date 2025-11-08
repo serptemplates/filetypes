@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.msa-disk-image",
+  "full": "application/vnd.msa-disk-image",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.msa-disk-image",
+    "template_text": "(registered 2015-02-02, last updated 2015-02-02)\n\nName : Thomas Huth\n\nEmail : huth&tuxfamily.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.msa-disk-image\n\nRequired parameters : N/A\n\nOptional parameters : \nN/A\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nMSA disk images can store the same data as a real Atari ST floppy disk.\nThat means they may contain arbitrary content, including but not limited\nto active content. Thus if the users do not trust the contents of the disk\nimage, they should carefully check the contents first before using it\n(e.g. with a suitable anti-virus software to check for known malicious\nsoftware). The MSA format also does not provide privacy or integrity\nprotection, so if these protections are desired they must be applied\nexternally.\n\nInteroperability considerations : \nThere has never been an official documentation of the .msa disk image\nfile format, so this could lead to incompatibilities. But the layout has\nbeen analysed and documented by third parties and it is rather simple,\nso the chances for interoperability issues are rather small.\n\nPublished specification : \nThere is no official published specification, but the MSA format has been\ndescribed by Damien Burke in 1997 as part of the documentation of his\n\"MSA-to-ST\" converter program. This description can be found here, for\nexample: http://www.atari-wiki.com/index.php/MSATOST\n\nApplications which use this media : \nFloppy disk image programs for the Atari ST computers, and Atari ST emulators.\n\nFragment identifier considerations :\nN/A\n\nRestrictions on usage :\nN/A\n\nProvisional registration? (standards tree only) :\nNo\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : Big endian 0x0E0F at byte position 0\n3. File extension(s) : .msa\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Thomas Huth\n2. Email : huth&tuxfamily.org\n\nIntended usage : Common\nMSA disk images are used for storing the contents of floppy disk images for the Atari ST compatible computers. Thus these files are used by archiver programs for the ST computers to either back-up the contents of a floppy disk into such a file, or to restore the contents of a floppy disk from such a file. The MSA files are also used by Atari ST emulators for providing the contents of an emulated floppy disk.\n\nAuthor/Change controller : Thomas Huth"
+  },
+  "references": []
+}

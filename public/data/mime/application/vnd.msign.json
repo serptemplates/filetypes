@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.msign",
+  "full": "application/vnd.msign",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.msign",
+    "template_text": "\n\nName : Malte Borcherding\n\nE-mail : Malte.Borcherding&brokat.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.msign\n\nRequired parameters :\nNone\n\nOptional parameters :\ncharset:\nSince this content type is an encoding of an XML application, this\nparameter conforms to the same guidelines as the XML Mediatypes\ndescribed in RFC 2376.\n\nEncoding considerations :\nSince this content type is an encoding of an XML application, the\nsame encoding considerations apply as in the XML Mediatypes described \nin RFC 2376.\n\nSecurity considerations :\nThe msign protocol is a signature request protocol, and as such care\nmust be taken in the secure transport of the messages. The protocol\nmessages themselves contain no mechanisms to protect the integrity or\nconfidentiality of the contents, such that a transport via SSL or \nS/MIME is strongly recommended.\n\nNo msign message contains \"executable\" information of any kind.\n\nInteroperability considerations :\nThe Mobile Electronic Signature Consortium sets up a compliance\ntesting process to ensure interoperability of complying products.\n\nPublished specification :\nThe specification is not public at this time.\n\nApplications which use this media :\nThis media type is used by applications implementing the msign\nprotocol. The purpose of the msign protocol is to request signatures \nfrom a mobile device.\n\nAdditional information :\n\n1. Magic number(s) :\n2. File extension(s) :\n3. Macintosh file type code :\n\nPerson to contact for further information :\n\n1. Name : Malte Borcherding\n2. E-mail : Malte.Borcherding&brokat.com\n\nIntended usage : Common\n\nAuthor/Change controller : The msign specification is a work product\nof The Mobile Electronic Signature Consortium's Technical Advisory\nGroup and was edited by Malte Borcherding, Malte.Borcherding&brokat.com\n\n\n\n\n"
+  },
+  "references": []
+}

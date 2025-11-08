@@ -1,0 +1,45 @@
+{
+  "type": "text",
+  "subtype": "dns",
+  "full": "text/dns",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/dns",
+    "encoding_considerations": "in a line-oriented mode. Text literals may contain CRLF within the\ntext. Binary transport is possible between systems that use the same\nend-of-line conventions. Master files are in general ASCII, but\nnon-ASCII octet values may occur and are treated as opaque values by\nDNS software (compare RFC 1035, section 5). The master file format\npermits encoding arbitrary octet values by using the \"\\DDD\" encoding.\nThe use of \"\\DDD\" encoding can be more reliable than transporting\nnon-ASCII through MIME transports, if data passes through a gateway\nthat re-encodes the character data.\n\nSecurity considerations: This media type identifies content as being\nDNS information in \"master file\" format, as documented in RFC 1035\n[2]. The DNS data may be security relevant as per to RFC 2538 [7],\nor may be secured information as per to RFC 2535 [6]. Securing the\ncontent further may be done with standard techniques, such as OpenPGP\n[5] or CMS [9], but this is outside of the scope here. Further\nsecurity assessments are not available at this point.\n\nInteroperability considerations: There are interoperability concerns\nwith master files, due to the widespread use of vendor-specific\nextensions. Non-ASCII comments within master files may have been\nencoded in locally chosen character sets, which may be difficult to\ntransport interoperably. Non-ASCII data in general can become\ncorrupted by re-encoding gateways. To achieve interoperability, one\ncan use the master file format described in the specification and the\n\"\\DDD\" encoding for non-ASCII octets. Further interoperability\nissues with unrecognized RR types exist, which may be handled as\ndiscussed in section 5 of RFC 3597 [8].\n\nPublished specification: The format of data that could be tagged with\nthis MIME type is documented in RFC 1035 [2].\n\nApplications that use this media type: DNS-related software,\nincluding software storing and using certificates stored in DNS.",
+    "security_considerations": "DNS information in \"master file\" format, as documented in RFC 1035\n[2]. The DNS data may be security relevant as per to RFC 2538 [7],\nor may be secured information as per to RFC 2535 [6]. Securing the\ncontent further may be done with standard techniques, such as OpenPGP\n[5] or CMS [9], but this is outside of the scope here. Further\nsecurity assessments are not available at this point.\n\nInteroperability considerations: There are interoperability concerns\nwith master files, due to the widespread use of vendor-specific\nextensions. Non-ASCII comments within master files may have been\nencoded in locally chosen character sets, which may be difficult to\ntransport interoperably. Non-ASCII data in general can become\ncorrupted by re-encoding gateways. To achieve interoperability, one\ncan use the master file format described in the specification and the\n\"\\DDD\" encoding for non-ASCII octets. Further interoperability\nissues with unrecognized RR types exist, which may be handled as\ndiscussed in section 5 of RFC 3597 [8].\n\nPublished specification: The format of data that could be tagged with\nthis MIME type is documented in RFC 1035 [2].\n\nApplications that use this media type: DNS-related software,\nincluding software storing and using certificates stored in DNS.",
+    "interoperability_considerations": "with master files, due to the widespread use of vendor-specific\nextensions. Non-ASCII comments within master files may have been\nencoded in locally chosen character sets, which may be difficult to\ntransport interoperably. Non-ASCII data in general can become\ncorrupted by re-encoding gateways. To achieve interoperability, one\ncan use the master file format described in the specification and the\n\"\\DDD\" encoding for non-ASCII octets. Further interoperability\nissues with unrecognized RR types exist, which may be handled as\ndiscussed in section 5 of RFC 3597 [8].\n\nPublished specification: The format of data that could be tagged with\nthis MIME type is documented in RFC 1035 [2].\n\nApplications that use this media type: DNS-related software,\nincluding software storing and using certificates stored in DNS.",
+    "applications": "including software storing and using certificates stored in DNS.",
+    "additional_information": "Magic number(s): None.\nFile extension(s): 'soa' and 'zone' are known to be used.\nMacintosh file type code(s): Unknown.",
+    "intended_usage": "limited use",
+    "template_text": "(RFC 4027 published April 2005, subtype last updated April 2005)\n\nMIME media type name: text\n\nMIME subtype name: dns\n\nRequired parameters: None.\n\nOptional parameters: None.\n\nEncoding considerations: The data is textual and should be transfered\nin a line-oriented mode. Text literals may contain CRLF within the\ntext. Binary transport is possible between systems that use the same\nend-of-line conventions. Master files are in general ASCII, but\nnon-ASCII octet values may occur and are treated as opaque values by\nDNS software (compare RFC 1035, section 5). The master file format\npermits encoding arbitrary octet values by using the \"\\DDD\" encoding.\nThe use of \"\\DDD\" encoding can be more reliable than transporting\nnon-ASCII through MIME transports, if data passes through a gateway\nthat re-encodes the character data.\n\nSecurity considerations: This media type identifies content as being\nDNS information in \"master file\" format, as documented in RFC 1035\n[2]. The DNS data may be security relevant as per to RFC 2538 [7],\nor may be secured information as per to RFC 2535 [6]. Securing the\ncontent further may be done with standard techniques, such as OpenPGP\n[5] or CMS [9], but this is outside of the scope here. Further\nsecurity assessments are not available at this point.\n\nInteroperability considerations: There are interoperability concerns\nwith master files, due to the widespread use of vendor-specific\nextensions. Non-ASCII comments within master files may have been\nencoded in locally chosen character sets, which may be difficult to\ntransport interoperably. Non-ASCII data in general can become\ncorrupted by re-encoding gateways. To achieve interoperability, one\ncan use the master file format described in the specification and the\n\"\\DDD\" encoding for non-ASCII octets. Further interoperability\nissues with unrecognized RR types exist, which may be handled as\ndiscussed in section 5 of RFC 3597 [8].\n\nPublished specification: The format of data that could be tagged with\nthis MIME type is documented in RFC 1035 [2].\n\nApplications that use this media type: DNS-related software,\nincluding software storing and using certificates stored in DNS.\n\nAdditional information:\nMagic number(s): None.\nFile extension(s): 'soa' and 'zone' are known to be used.\nMacintosh file type code(s): Unknown.\n\nPerson & email address to contact for further information:\n\nSimon Josefsson simon&josefsson.org\n\nIntended usage: LIMITED USE\n\nAuthor/change controller: simon&josefsson.org\n"
+  },
+  "references": [
+    {
+      "title": "RFC 1035",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "kind": "RFC"
+    }
+  ]
+}

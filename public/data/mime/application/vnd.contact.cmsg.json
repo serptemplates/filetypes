@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.contact.cmsg",
+  "full": "application/vnd.contact.cmsg",
+  "extensions": [
+    "cdbcmsg"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.contact.cmsg",
+    "template_text": "MIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.contact.cmsg\n\nRequired parameters : none\n\nOptional parameters :  none\n\nEncoding considerations : \nCMSG files contain human readable key values identifying object(s)\nin a database system. As such they may contain non-ASCII characters\nfrom international character encodings. The recommended transfer\nencoding\ntherefore is \"quoted-printable\".\n\nSecurity considerations : \nCMSG files do not contain \"real\" data but keys to identify objects \nstored in a database system elsewhere.\n\nInteroperability considerations : \nUsed by CIM DATABASE applications and customized extensions in closed\nuser groups.\n\nPublished specification : \nCIM DATABASE manuals. Subject to change without notification.\n\nApplications which use this media : \nCIM DATABASE, Product Data Management system by CONTACT Software.\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : cdbcmsg\n3. Macintosh file type code : \n\nPerson to contact for further information :\n\n1. Name : Frank Patz\n2. E-mail : fp&contact.de\n\nIntended usage : Limited Use \n\nAuthor/Change controller : CONTACT Software GmbH\nhttp://www.contact.de/ \n\n\n"
+  },
+  "references": []
+}

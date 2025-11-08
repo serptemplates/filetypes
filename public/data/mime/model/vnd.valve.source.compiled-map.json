@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.valve.source.compiled-map",
+  "full": "model/vnd.valve.source.compiled-map",
+  "extensions": [
+    "bsp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.valve.source.compiled-map",
+    "template_text": "(registered 2014-05-01, last updated 2014-05-01)\r\n\r\nName : Henrik Andersson\r\n\r\nEmail : henke&henke37.cjb.net\r\n\r\nMIME media type name : Model\r\n\r\nMIME subtype name : Vendor Tree - vnd.valve.source.compiled-map\r\n\r\nRequired parameters : No defined parameters.\r\n\r\nOptional parameters : \r\ngame - This parameter indicates the specific game with which\r\nthe map is intended to be played. The value of the game parameter is\r\na Steam application id number written as an unsigned integer with\r\nno leading zeroes.\r\n\r\nadditional-content - This parameter indicates any additional games the\r\nmap needs from which the map needs content in addition to the game\r\nindicated by the game parameter. The value of the additional-content\r\nparameter consists of a comma-separated list of Steam application id\r\nnumbers, again written as unsigned integers with no leading zeroes.\r\n\r\n\r\nEncoding considerations : binary\r\n\r\n\r\nSecurity considerations : \r\nBSP files include a scripting system, commonly referred to as I/O, where different entities are connected with each other to allow one entity to cause another entity to perform a task. This system is limited to entity to entity communication. Entities represent objects in the game world and do not include general purpose scripting features such as working with the file system.\r\n\r\nI/O connections can be self modifying and this needs to be kept in mind when validating content.\r\n\r\nBSP files allows for maps to contain entities that instruct the application to execute in game console commands on the client and on the server. Some console commands are dangerous and whitelisting should be employed to guard against harmful commands.\r\n\r\nBSP files allows for maps to contain entities that run VScript scripts. VScripts can communicate with game entities as well as directly execute console commands.\r\n\r\n\r\nBSP files allow for storing an embedded, non-compressed, non-encrypted, zip archive as per the application/zip MIME-type. The same security considerations as for normal zip archives apply here.\r\nAdditional care should be taken since the archive is loaded in the same namespace as the main game files. This means that the archive can override the contents of game files.\r\n\r\nBSP files are frequently delivered using the bzip2 transfer encoding and as such users should be prepared for the data expanding during decompression. In addition, some lumps may be compressed using LZMA.\r\n\r\nBSP files do not themselves contain any personally sensitive data, but may contain such files by the use of the embedded zip archive.\r\n\r\nBSP files do not provide integrity or confidentiality protection.\r\n\r\n\r\nInteroperability considerations : \r\nThe lumps used in the file format are identified by numerical identifiers. A few of these identifiers are reused for different purposes in different versions of the file format.\r\n\r\nSome games have slightly modified data structures without using a different version number.\r\n\r\n\r\nPublished specification : \r\nThe format has no official documentation, but a reasonably well researched unofficial documentation can be found at the following address: http://developer.valvesoftware.com/wiki/Source_BSP_File_Format\r\n\r\nApplications which use this media : \r\nThe type is used for all Source™ engine based games. Several popular games using the Source™ engine include Halflife 2, Team Fortress 2 and the Portal series.\r\n\r\nFragment identifier considerations :\r\nBSP files do not contain any data suitable for addressing using fragment identifiers.\r\n\r\nRestrictions on usage :\r\n.\r\n\r\nProvisional registration? (standards tree only) :\r\n.\r\n\r\n\r\nAdditional information :\r\n\r\n1. Deprecated alias names for this type : .\r\n2. Magic number(s) : VBSP\r\n3. File extension(s) : .bsp\r\n4. Macintosh file type code : .\r\n5. Object Identifiers: .\r\n\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Henrik Andersson\r\n2. Email : henke&henke37.cjb.net\r\n\r\nIntended usage : Common\r\nBSP files are commonly used to distribute maps for games.\r\n\r\nAuthor/Change controller : Henrik Andersson on behalf of Valve Software."
+  },
+  "references": []
+}

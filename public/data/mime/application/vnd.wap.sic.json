@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.wap.sic",
+  "full": "application/vnd.wap.sic",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wap.sic",
+    "template_text": "\n\n\n\nName : WAP Forum Ltd.\n\nE-mail : wap-feedback&mail.wapforum.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.wap.sic\n\nRequired parameters : none\n\nOptional parameters : \ncharset and version\n\nThe charset parameter is the same as specified in [RFC-2046].\n\nThe version parameter indicates the version of the Service\nIndication. The value has the format: <major>.<minor> - where major\nand minor are integers. For example version=1.0 indicates version 1.0\n\nEncoding considerations : \nEncoding of this media type follows the same principles as specified\nfor the XML media types in [RFC-2376].\n\nSecurity considerations : \nAs an XML format, Service Indication has the same security\nconsiderations as specified in [RFC-2376].\n\nInteroperability considerations : \nThe WAP Forum Ltd. Wireless Interoperability Group (WIG) assesses\ninteroperability for all WAP Forum Ltd. specifications. See\nhttp://www.wapforum.org.\n\nPublished specification : \nThe Service Indication specification is available at\nhttp://www.wapforum.org.\n\n\nApplications which use this media : \nAny that conforms to the Service Indication specification.\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : .sic .wbxml\n3. Macintosh file type code : \nThe data is Service Indication in Wireless Binary XML (WBXML)\nformat. The WBXML specification is available at\nhttp://www.wapforum.org.\n\nPerson to contact for further information :\n\n1. Name : WAP Forum Ltd., Wireless Application Group Chairperson\n2. E-mail : wap-feedback&mail.wapforum.org\n\nIntended usage : Common \n\n\nAuthor/Change controller : The WAP Forum Ltd. \n\n\n\n"
+  },
+  "references": []
+}

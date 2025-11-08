@@ -1,0 +1,54 @@
+{
+  "type": "text",
+  "subtype": "javascript",
+  "full": "text/javascript",
+  "extensions": [
+    "js",
+    "mjs"
+  ],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/javascript",
+    "type_name": "text",
+    "subtype_name": "javascript",
+    "encoding_considerations": "Security considerations:  See Section 5 of RFC 9239.\n\nInteroperability considerations:  It is expected that implementations\n   will behave as if this registration applies to later editions of\n   [ECMA-262], and its published specification references may be\n   updated accordingly from time to time.  Although this expectation\n   is unusual among media type registrations, it matches widespread\n   industry conventions.  See Section 2 of RFC 9239.\n\nPublished specification:  [ECMA-262]\n\nApplications that use this media type:  Script interpreters as\n   discussed in RFC 9239.",
+    "security_considerations": "Interoperability considerations:  It is expected that implementations\n   will behave as if this registration applies to later editions of\n   [ECMA-262], and its published specification references may be\n   updated accordingly from time to time.  Although this expectation\n   is unusual among media type registrations, it matches widespread\n   industry conventions.  See Section 2 of RFC 9239.\n\nPublished specification:  [ECMA-262]\n\nApplications that use this media type:  Script interpreters as\n   discussed in RFC 9239.",
+    "interoperability_considerations": "will behave as if this registration applies to later editions of\n   [ECMA-262], and its published specification references may be\n   updated accordingly from time to time.  Although this expectation\n   is unusual among media type registrations, it matches widespread\n   industry conventions.  See Section 2 of RFC 9239.\n\nPublished specification:  [ECMA-262]\n\nApplications that use this media type:  Script interpreters as\n   discussed in RFC 9239.",
+    "applications": "discussed in RFC 9239.",
+    "additional_information": "Deprecated alias names for this type:  application/javascript,\n      application/x-javascript, text/javascript1.0, \n      text/javascript1.1, text/javascript1.2, text/javascript1.3, \n      text/javascript1.4, text/javascript1.5, text/jscript, \n      text/livescript\n   Magic number(s):  N/A\n   File extension(s):  .js, .mjs\n   Macintosh File Type Code(s):  TEXT\n\nPerson & email address to contact for further information:  See the\n   Authors' Addresses sections of RFC 9239 and [RFC4329].\n\nIntended usage:  COMMON\n\nRestrictions on usage:  The .mjs file extension signals that the file\n   represents a JavaScript module.  Execution environments that rely\n   on file extensions to determine how to process inputs parse .mjs\n   files using the Module grammar of [ECMA-262].\n\nAuthor:  See the Authors' Addresses sections of RFC 9239 and\n   [RFC4329].\n\nChange controller:  IESG <iesg&ietf.org>",
+    "intended_usage": "common",
+    "change_controller": "IESG <iesg&ietf.org>",
+    "template_text": "Type name:  text\n\nSubtype name:  javascript\n\nRequired parameters:  N/A\n\nOptional parameters:  charset.  See Section 4.1 of RFC 9239.\n\nEncoding considerations:  Binary\n\nSecurity considerations:  See Section 5 of RFC 9239.\n\nInteroperability considerations:  It is expected that implementations\n   will behave as if this registration applies to later editions of\n   [ECMA-262], and its published specification references may be\n   updated accordingly from time to time.  Although this expectation\n   is unusual among media type registrations, it matches widespread\n   industry conventions.  See Section 2 of RFC 9239.\n\nPublished specification:  [ECMA-262]\n\nApplications that use this media type:  Script interpreters as\n   discussed in RFC 9239.\n\nAdditional information:\n   Deprecated alias names for this type:  application/javascript,\n      application/x-javascript, text/javascript1.0, \n      text/javascript1.1, text/javascript1.2, text/javascript1.3, \n      text/javascript1.4, text/javascript1.5, text/jscript, \n      text/livescript\n   Magic number(s):  N/A\n   File extension(s):  .js, .mjs\n   Macintosh File Type Code(s):  TEXT\n\nPerson & email address to contact for further information:  See the\n   Authors' Addresses sections of RFC 9239 and [RFC4329].\n\nIntended usage:  COMMON\n\nRestrictions on usage:  The .mjs file extension signals that the file\n   represents a JavaScript module.  Execution environments that rely\n   on file extensions to determine how to process inputs parse .mjs\n   files using the Module grammar of [ECMA-262].\n\nAuthor:  See the Authors' Addresses sections of RFC 9239 and\n   [RFC4329].\n\nChange controller:  IESG <iesg&ietf.org>\n\n\nNormative References:\n\n[ECMA-262] Ecma International, \"ECMA-262 12th Edition, June 2021.\n           ECMAScript 2021 language specification\", June 2021,\n           <https://262.ecma-international.org/12.0/>."
+  },
+  "references": [
+    {
+      "title": "RFC 9239",
+      "url": "https://www.rfc-editor.org/rfc/rfc9239.html",
+      "kind": "RFC"
+    }
+  ]
+}

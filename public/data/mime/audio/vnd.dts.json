@@ -1,0 +1,36 @@
+{
+  "type": "audio",
+  "subtype": "vnd.dts",
+  "full": "audio/vnd.dts",
+  "extensions": [
+    "dts"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.dts",
+    "change_controller": "Xperi Corporation, c/o Phillip Maness,",
+    "template_text": "(registered 2008-08-06, last updated 2018-11-15)\n\nName : William Zou\n\nEmail : bill.zou&dts.com\n\nMIME media type name : Audio\n\nMIME subtype name : Vendor Tree - vnd.dts\n\nRequired parameters : None\n\nOptional parameters :\nOne of the following parameters is optional:\nProfile:\n-- DTS\n-- DTSES\n-- DTS96\n-\n-Profile = DTS:\n-This profile is limited to a maximum of 5.1 channels and 48 kHz\nsampling rate.\n-\nProfile = DTSES:\n-This profile decodes to a maximum of 6.1 channels and has a maximum\nsampling frequency of 48 kHz. If DTS-ES is presented to a DTS (non-ES)\ndecoder, the decoder will present a down-mixed 5.1 presentation to be\noutput.\n-\nProfile=DTS96:\n-This profile is limited to a maximum of 5.1 channels and may be decoded\nat either 88.2 or 96 kHz. If DTS\n96/24 is presented to a DTS (non-96/24) decoder, the decoder will\npresent up to 5.1 channels at up to 48 kHz sampling frequency.\n\nThe default is to let the receiving device auto-detect the format, if it\nsupports more than the basic DTS profile. All DTS receivers can decode\nthe DTS profile. If a receiver only supports the DTS profile, then all\nprofiles are decoded as \"DTS\" by default, since the DTSES and DTS96\nprofiles are supersets of DTS.\n\nA subset of existing decoders can detect and decode the DTSES format,\nand/or the DTS96 format. By using the optional Profile parameter, the\ntransmitter is explicitly notifying the receiver which form is being\nsent so it can bypass the auto-detection process. For some receivers\nthis will result in a shorter time to begin decoding audio.\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media type consists of audio samples; it does not contain any commands,\ncontrol sequences, executable content nor any other material the misuse of which\ncould result in a security vulnerability. No security risks are introduced by\nthis media type aside for those associated with any media format (for example,\ntransmission of a frame larger than the receiver can handle). This media type\ndoes not specify any privacy or additional integrity services; thus, such\nmethods should be implemented in the upper protocol levels. Other security\nconsiderations, if any, have not been assessed.\n\nInteroperability considerations :\nNone\n\nPublished specification :\nETSI TS 102114: DTS Coherent Acoustics; Core and Extensions (2006)\n\nApplications which use this media :\nApplications for encoding and decoding digital audio in packaged media, digital\nbroadcast and content distribution.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : .wav, .cpt, .dts\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name: Phillip Maness\n2. Email: phillip.maness&xperi.com\n\nIntended usage : Common\nHigh quality audio compression\n\nChange controller: Xperi Corporation, c/o Phillip Maness, \nphillip.maness&xperi.com\n"
+  },
+  "references": []
+}

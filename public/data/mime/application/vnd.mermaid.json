@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.mermaid",
+  "full": "application/vnd.mermaid",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mermaid",
+    "encoding_considerations": "Security considerations: As the format allows embedding actions and\n   images, it is possible to embed malicious code in the text.\n   It is recommended to use a sandboxed environment to render the \n   diagram from untrusted sources.\n   Sanitization of the input is also recommended.\n\n   May contain URI links inside the diagram text, which is only used \n   in the output directly and not for any internal interpretations.\n\n   Not compressed.\n\nInteroperability considerations: The format is character-based, and\n   applications exist on Web, Desktop and Mobile platforms which \n   render the format.\n\nPublished specification: https://mermaid.js.org/intro/#diagram-types\n   includes examples of supported diagram types, and the links to\n   complete syntax of individual diagrams.\n\nApplications which use this media: Tools which render diagrams from\n   text, popular markdown editors, GitHub, GitLab, etc.\n\n   Detailed list available at\n   https://mermaid.js.org/ecosystem/integrations.html\n\nFragment identifier considerations: N/A.\n\nRestrictions on usage: N/A.",
+    "security_considerations": "images, it is possible to embed malicious code in the text.\n   It is recommended to use a sandboxed environment to render the \n   diagram from untrusted sources.\n   Sanitization of the input is also recommended.\n\n   May contain URI links inside the diagram text, which is only used \n   in the output directly and not for any internal interpretations.\n\n   Not compressed.\n\nInteroperability considerations: The format is character-based, and\n   applications exist on Web, Desktop and Mobile platforms which \n   render the format.\n\nPublished specification: https://mermaid.js.org/intro/#diagram-types\n   includes examples of supported diagram types, and the links to\n   complete syntax of individual diagrams.\n\nApplications which use this media: Tools which render diagrams from\n   text, popular markdown editors, GitHub, GitLab, etc.\n\n   Detailed list available at\n   https://mermaid.js.org/ecosystem/integrations.html\n\nFragment identifier considerations: N/A.\n\nRestrictions on usage: N/A.",
+    "interoperability_considerations": "applications exist on Web, Desktop and Mobile platforms which \n   render the format.\n\nPublished specification: https://mermaid.js.org/intro/#diagram-types\n   includes examples of supported diagram types, and the links to\n   complete syntax of individual diagrams.\n\nApplications which use this media: Tools which render diagrams from\n   text, popular markdown editors, GitHub, GitLab, etc.\n\n   Detailed list available at\n   https://mermaid.js.org/ecosystem/integrations.html\n\nFragment identifier considerations: N/A.\n\nRestrictions on usage: N/A.",
+    "additional_information": "1. Deprecated alias names for this type: N/A.\n   2. Magic number(s): N/A.\n   3. File extension(s): .mmd, .mermaid\n   4. Macintosh file type code: N/A.\n   5. Object Identifiers: N/A.\n   6. Apple Uniform Type Identifier: org.js.mermaid conforms to \n      public.utf8-plain-text\n   7. Windows Clipboard Name: Mermaid",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-09-18, last updated 2023-09-18)\n\nMedia type name: application\n\nMedia subtype name: vnd.mermaid\n\nRequired parameters: N/A.\n\nOptional parameters: N/A.\n\nEncoding considerations: binary\n\nSecurity considerations: As the format allows embedding actions and\n   images, it is possible to embed malicious code in the text.\n   It is recommended to use a sandboxed environment to render the \n   diagram from untrusted sources.\n   Sanitization of the input is also recommended.\n\n   May contain URI links inside the diagram text, which is only used \n   in the output directly and not for any internal interpretations.\n\n   Not compressed.\n\nInteroperability considerations: The format is character-based, and\n   applications exist on Web, Desktop and Mobile platforms which \n   render the format.\n\nPublished specification: https://mermaid.js.org/intro/#diagram-types\n   includes examples of supported diagram types, and the links to\n   complete syntax of individual diagrams.\n\nApplications which use this media: Tools which render diagrams from\n   text, popular markdown editors, GitHub, GitLab, etc.\n\n   Detailed list available at\n   https://mermaid.js.org/ecosystem/integrations.html\n\nFragment identifier considerations: N/A.\n\nRestrictions on usage: N/A.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A.\n   2. Magic number(s): N/A.\n   3. File extension(s): .mmd, .mermaid\n   4. Macintosh file type code: N/A.\n   5. Object Identifiers: N/A.\n   6. Apple Uniform Type Identifier: org.js.mermaid conforms to \n      public.utf8-plain-text\n   7. Windows Clipboard Name: Mermaid\n\nPerson to contact for further information:\n\n   1. Name: Sidharth Vinod\n   2. Email: iana&mermaid.js.org\n\nIntended usage: COMMON\n\nAuthor/Change controller: \n\n   Sidharth Vinod\n   iana&mermaid.js.org"
+  },
+  "references": []
+}

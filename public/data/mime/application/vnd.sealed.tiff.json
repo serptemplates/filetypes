@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.sealed.tiff",
+  "full": "application/vnd.sealed.tiff",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sealed.tiff",
+    "template_text": "(Last updated 23 March 2006)\n\nName : John Kwan\n\nEmail : John.Kwan&sealedmedia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.sealed.tiff\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : 8bit\n\nSecurity considerations :\nThese files are intended to be read by a proprietary client\n(the \"Unsealer\") which makes the unencrypted content available in a \nvery limited fashion to a user's system. As the data format is \nprivate and encrypted using well-known algorithms, it is unlikely \nthat the data could be spoofed. The client is also designed to \nrefuse to work with data that is corrupt or ill-formed. This data \ndoes not contain any executable material.\n\nInteroperability considerations :\nThis mime-type is valid for Windows systems only.\n\nPublished specification :\nThe specifications for this content-type are proprietary. They\nare specified by Sealed Media. The registration of this content-\ntype is intended only to provide a convention for labeling this\nproprietary data type within the MIME/HTTP environment and does not \nspecify any details about the content format or semantics, except \nto refer to the software and specifications provided by Sealed Media. \nCompany information may be obtained at http://www.sealedmedia.com.\n\nApplications which use this media :\nThis mime-type is intended for use only by the client software, \"Unsealer\",\ncreated by Sealed Media.\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .stif\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Martin Lambert\n2. Email : Martin.Lambert&sealedmedia.com\n\nIntended usage : Common\n\nAuthor/Change controller : Martin Lambert\nMartin.Lambert&sealedmedia.com\n\n(File created 23 March 2006)"
+  },
+  "references": []
+}

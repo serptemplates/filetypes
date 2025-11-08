@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.osgi.subsystem",
+  "full": "application/vnd.osgi.subsystem",
+  "extensions": [
+    "esa"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.osgi.subsystem",
+    "template_text": "(last updated 2012-03-02)\n\nName : Peter Kriens\n\nEmail : Peter.Kriens&OSGi.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.osgi.subsystem\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\n\n\nSecurity considerations :\nA Subsystem can contain executable code and is therefore a\npotential threat. However, the package contains an internal\nsignature that is verified using a certificate-based system\nprior to installing the contents of the Subsystem.\nThere is no encryption defined for subsystems.\n\n\nInteroperability considerations :\n\n\nPublished specification :\nThe OSGi R5 specification (Summer 2012) will contain a detailed\nspecification of this format.\n\n\nApplications which use this media :\nOSGi Service Platforms and Management Servers.\n\nAdditional information :\n\n1. Magic number(s) : 0x04034b50 (from ZIP)\n2. File extension(s) : esa\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Peter Kriens\n2. Email : Peter.Kriens&OSGi.org\n\nIntended usage : Common\nAs a deployment format for OSGi Subsystems, specifically next\ngeneration Java application servers.\n\nAuthor/Change controller : Peter Kriens\n\n\n(file created 2012-03-02)"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.tml",
+  "full": "application/vnd.tml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.tml",
+    "template_text": "(registered 2015-12-24, last updated 2015-12-24)\n\nName : Joey Smith\n\nEmail : joeysmith&gmail.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.tml\n\nRequired parameters : None\n\nOptional parameters :\nversion: A value of the form \"major.minor.patch\" where \"major\", \"minor\", and \"patch\" are unsigned numeric values without leading zeros.\n\nencoding: one of \"open\", \"unknown\", \"crypt\", or \"plain\"\n\nIf present, the \"encoding\" parameter specifies how the client software shall interpret the contents. There are 4 registered values for this parameter:\n1) open: There will be a public, open specification of the vnd.tml format; files which conform to this format may declare themselves to be \"application/vnd.tml;encoding=open\". Any implementation of the format will be able to rely on such a document being parsed according to the open specification;\n\n2) plain: an unencrypted format, with certain proprietary extensions not available in the open specification; only the official, commercial implementation of ViaFrame will be able to generate files that conform to \"application/vnd.tml;encoding=plain\";\n\n3) crypt: this will be the \"plain\" format, with the addition of AES-128 bit encryption using CCM block cipher mode, as defined in RFC 3610, and base64 encoded, per RFC 2045;\n\n4) unknown: a file served as \"application/vnd.tml;encoding=unknown\" will be treated as \"application/vnd.tml;encoding=open\" unless it violates the open specification; in such a case, applications will be free to handle the exception in an implementation-defined way. This gives the possibility for experimentation with the file format itself to try various ideas that may not yet be accepted into the open specification.\n\nIf no \"encoding\" parameter is provided, the document will be treated as though \"encoding=unknown\" had been specified.\n\nEncoding considerations : 7bit\n\nSecurity considerations :\nThe security issues associated with this type have not been assessed.\n\nInteroperability considerations :\nThere are no known interoperability issues with this type.\n\nPublished specification :\nThere is no published specification for this type.\n\nApplications which use this media :\nViaFrame backup software\n\nFragment identifier considerations :\nThere are no fragment identifier considerations for this type at this\ntime.\n\nRestrictions on usage :\nThere are no restrictions on usage for this type at this time.\n\nProvisional registration? (standards tree only) :\nNot part of standards tree; no provisional registration.\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : None\n2. Magic number(s) : 04 22 4E 23\n3. File extension(s) : vfr, viaframe\n4. Macintosh file type code : None\n5. Object Identifiers: None\n\nNone\n\nPerson to contact for further information :\n\n1. Name : Joey Smith\n2. Email : joeysmith&gmail.com\n\nIntended usage : Common\ndisk images for a backup solution\n\nAuthor/Change controller : Joey Smith <joeysmith&gmail.com>"
+  },
+  "references": []
+}

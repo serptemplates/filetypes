@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.osgi.bundle",
+  "full": "application/vnd.osgi.bundle",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.osgi.bundle",
+    "template_text": "(last updated 2007-08-30)\n\nName : Peter Kriens\n\nEmail : Peter.Kriens&aQute.biz\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.osgi.bundle\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nA Bundle can contain executable code and is therefore a\npotential threat. However, the package contains an internal\nsignature that is verified using a certificate-based system\nprior to installing the contents of the Bundle.\nThere is no encryption defined for bundles.\n\nInteroperability considerations :\nThe format is based on the ZIP file format and fully compatible with it.\n\n\nPublished specification :\nThe OSGi R4 specification will contain a detailed specification of this\nformat. We would like to mention the MIME type in this specification.\n\n\nApplications which use this media :\nOSGi Service Platforms and Management Servers.\n\n\nAdditional information :\n\n1. Magic number(s) : Magic number(s) : 0x04034b50 (from a ZIP file\n2. File extension(s) : .jar\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Peter Kriens\n2. Email : Peter.Kriens\n\nIntended usage : Common\nAs a deployment format for OSGi Service Platforms, specifically next\ngeneration smart phones.\n\n\nAuthor/Change controller : Peter Kriens\n\n(file created 2007-08-30)"
+  },
+  "references": []
+}

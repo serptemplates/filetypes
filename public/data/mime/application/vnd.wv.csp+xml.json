@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.wv.csp+xml",
+  "full": "application/vnd.wv.csp+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wv.csp+xml",
+    "template_text": "\r\n(last updated 2003-12-03)\r\n\r\nName : Jon Ingi Ingimundarson\r\n\r\nEmail : jii&oz.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.wv.csp+xml\r\n\r\nRequired parameters :     \r\nNo parameters are required - covered by client-server capability negotiation.\r\n\r\nOptional parameters : \r\nNo parameters are required - covered by client-server capability\r\nnegotiation.\r\n\r\nEncoding considerations :\r\n8bit\r\nThis media type may require encoding on transports not capable of handling 8 bit text.\r\n\r\nSecurity considerations : \r\nThe content type is used to encode WV protocol transactions from a client to a server.  The content may contain sensitive information, such as password or application data belonging to an user.\r\n\r\nIn the WV specifications, the security of the content is managed by\r\ntransport layer protocols, not the content. Thus, the security considerations \r\nof the media type have not been assessed.\r\n\r\nInteroperability considerations : \r\nThe OMA IMPS specifications define static conformance requirements and\r\ninteroperability test cases for this content.\r\n\r\nPublished specification : \r\nOMA IMPS v1.1 - http://www.openmobilealliance.org/documents.html\r\n\r\nApplications which use this media : \r\nOMA IMPS Clients and Servers.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n1. Name : Open Mobile Alliance Ltd.\r\n2. Email : jii&oz.com\r\n\r\nIntended usage : Common \r\nThis content type is used to define messages that are exchanged between\r\nOMA IMPS Clients and Servers.\r\n\r\nAuthor/Change controller :         \r\nOpen Mobile Alliance Ltd.\r\n7660 Fay Ave\r\nSuite H-516\r\nLa Jolla, CA 92037 \r\n\r\n\r\n[Created 2003-12-03]\r\n"
+  },
+  "references": []
+}

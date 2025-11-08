@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.acucobol",
+  "full": "application/vnd.acucobol",
+  "extensions": [
+    "acu"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.acucobol",
+    "template_text": "\r\n(last updated 2002-06-24)\r\n\r\nDate: Wed, 24 Sep 97 23:21:47 PDT\r\nFrom: Dovid Lubin <dovid&acucorp.com>\r\nTo: iana&ISI.EDU, dovid&acucorp.com\r\nSubject: Request for MIME media type Application/Vendor Tree - vnd.\r\n\r\nName : Dovid Lubin\r\n\r\nE-mail : dovid&acucorp.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.acucobol\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : \r\nnone\r\n\r\nEncoding considerations : \r\nACU files are binary\r\n\r\nSecurity considerations : \r\nACU files are machine independent COBOL objects. When executed using\r\nthe ACUCOBOL-GT runtime, they have access to all of the local and\r\nnetwork resources that are allowed by the operating system for the\r\nuser. ACU files from an unknown source should never be considered as\r\ntrusted applications.\r\n\r\nInteroperability considerations : \r\nACU files are interpreted by the ACUCOBOL-GT runtime. The ACUCOBOL-GT\r\nruntime is currently available on over 600 different platforms. It has\r\nbeen ported to MS-DOS, 16 bit Windows, 32 bit Windows (95 and NT),\r\nOS/2, Unix, VMS, AMOS, and AOS/VS operating systems.\r\n\r\nPublished specification : \r\nnone\r\n\r\nApplications which use this media : \r\nACUCOBOL-GT Runtime\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : 0x10121420 and 0x10121421\r\n2. File extension(s) : .acu\r\n3. Macintosh file type code : none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Dovid Lubin\r\n2. E-mail : dovid&acucorp.com\r\n\r\nIntended usage : Common \r\n\r\n\r\nAuthor/Change controller :  \r\n\r\nChange History\r\n--------------\r\n2002-06-24\r\nUpdated all e-mail address from \r\ndovid&acucobol.com to dovid&acucorp.com.\r\n\r\n[]\r\n\r\n\r\n\r\n\r\n"
+  },
+  "references": []
+}

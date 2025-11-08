@@ -1,0 +1,47 @@
+{
+  "type": "application",
+  "subtype": "rpki-updown",
+  "full": "application/rpki-updown",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/rpki-updown",
+    "type_name": "application",
+    "subtype_name": "rpki-updown",
+    "encoding_considerations": "Security considerations:  Carries an RPKI Provisioning Protocol\n   Message, as defined in this document.\nInteroperability considerations:  None\nPublished specification:  This document\nApplications that use this media type:  HTTP [RFC5652]",
+    "security_considerations": "Message, as defined in this document.\nInteroperability considerations:  None\nPublished specification:  This document\nApplications that use this media type:  HTTP [RFC5652]",
+    "interoperability_considerations": "Published specification:  This document\nApplications that use this media type:  HTTP [RFC5652]",
+    "additional_information": "Magic number(s):  None\n   File extension(s):\n   Macintosh File Type Code(s):",
+    "intended_usage": "common",
+    "change_controller": "Geoff Huston <gih&apnic.net>",
+    "template_text": "(RFC 6492 published February 2012, subtype last updated February 2012)\n\nType name:  application\nSubtype name:  rpki-updown\nRequired parameters:  None\nOptional parameters:  None\nEncoding considerations:  binary\nSecurity considerations:  Carries an RPKI Provisioning Protocol\n   Message, as defined in this document.\nInteroperability considerations:  None\nPublished specification:  This document\nApplications that use this media type:  HTTP [RFC5652]\nAdditional information:\n   Magic number(s):  None\n   File extension(s):\n   Macintosh File Type Code(s):\nPerson & email address to contact for further information:\n   Geoff Huston <gih&apnic.net>\nIntended usage:  COMMON\nRestrictions on usage:  Only to be used as an RPKI Provisioning\n   Protocol message object type, as defined in this document.\nAuthor:  Geoff Huston <gih&apnic.net>\nChange controller:  Geoff Huston <gih&apnic.net>\n"
+  },
+  "references": [
+    {
+      "title": "RFC 5652",
+      "url": "https://www.rfc-editor.org/rfc/rfc5652.html",
+      "kind": "RFC"
+    }
+  ]
+}

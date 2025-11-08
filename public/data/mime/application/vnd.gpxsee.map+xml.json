@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.gpxsee.map+xml",
+  "full": "application/vnd.gpxsee.map+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.gpxsee.map+xml",
+    "encoding_considerations": "Security considerations: The GPXsee online map definition file \n   defines the URL and parameters of online maps loaded by GPXSee  \n   (and possibly other applications). The content is not \n   interpreted/executed, but the defined URL will be accessed. \n   Additionally, the parameters/URL may include secrets like \n   username/password or some kind of service access codes. In such \n   case, privacy or integrity services must be provided externally.\n\nInteroperability considerations: None.",
+    "security_considerations": "defines the URL and parameters of online maps loaded by GPXSee  \n   (and possibly other applications). The content is not \n   interpreted/executed, but the defined URL will be accessed. \n   Additionally, the parameters/URL may include secrets like \n   username/password or some kind of service access codes. In such \n   case, privacy or integrity services must be provided externally.\n\nInteroperability considerations: None.",
+    "additional_information": "1. Deprecated alias names for this type: -\n   2. Magic number(s): -\n   3. File extension(s): xml\n   4. Macintosh file type code: -\n   5. Object Identifiers: -\n\nGeneral Comments: The GPXsee online map definition file defines the \n   URL and parameters of online maps. OSM/Google tiles, TMS, WMTS, \n   WMS and QuadTiles maps are supported.",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-02-09, last updated 2023-02-09)\n\nName: Martin Tůma\n\nEmail: tumic&gpxsee.org\n\nMedia type name: application\n\nMedia subtype name: vnd.gpxsee.map+xml\n\nRequired parameters: N/A.\n\nOptional parameters: N/A.\n\nEncoding considerations: binary\n\nSecurity considerations: The GPXsee online map definition file \n   defines the URL and parameters of online maps loaded by GPXSee  \n   (and possibly other applications). The content is not \n   interpreted/executed, but the defined URL will be accessed. \n   Additionally, the parameters/URL may include secrets like \n   username/password or some kind of service access codes. In such \n   case, privacy or integrity services must be provided externally.\n\nInteroperability considerations: None.\n\nPublished specification: \n\n   Formal specification (XSD):\n   https://www.gpxsee.org/map/1.4/map.xsd\n\n   Format documentation:\n   https://www.gpxsee.org/doc.html#online\n\nApplications which use this media: GPXSee (https://www.gpxsee.org)\n\nFragment identifier considerations: None.\n\nRestrictions on usage: None.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: -\n   2. Magic number(s): -\n   3. File extension(s): xml\n   4. Macintosh file type code: -\n   5. Object Identifiers: -\n\nGeneral Comments: The GPXsee online map definition file defines the \n   URL and parameters of online maps. OSM/Google tiles, TMS, WMTS, \n   WMS and QuadTiles maps are supported.\n\nPerson to contact for further information:\n\n   1. Name: Martin Tůma\n   2. Email: tumic&gpxsee.org\n\nIntended usage: COMMON\n\nAuthor/Change controller: GPXSee project"
+  },
+  "references": []
+}

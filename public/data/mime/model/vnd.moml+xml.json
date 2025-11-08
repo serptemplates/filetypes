@@ -1,0 +1,33 @@
+{
+  "type": "model",
+  "subtype": "vnd.moml+xml",
+  "full": "model/vnd.moml+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.moml+xml",
+    "template_text": "\r\n(Last Updated 2006-08-16)\r\n\r\nName : Christopher Brooks\r\n\r\nEmail : cxh&eecs.berkeley.edu\r\n\r\nMIME media type name : Model\r\n\r\nMIME subtype name : Vendor Tree - vnd.moml+xml\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : \r\nNone\r\n\r\nEncoding considerations : 7bit\r\n\r\nSecurity considerations : \r\nMoML files may invoke actor blocks that can perform arbitrary\r\noperations such as reading, writing and removing files.  It\r\nis recommended that MoML files be invoked in a sandbox to\r\nprevent dangerous behaviour.  MoML files consist of well constructed\r\nXML as defined by the MoML DTD, which can be found at\r\nhttp://ptolemy.eecs.berkeley.edu/xml/dtd/MoML_1.dtd (the\r\nDOCTYPE is \"-//UC Berkeley//DTD MoML 1//EN\").  Other than being\r\nwell constructed XML as defined by the MoML DTD, there is\r\nno integrity checking intrinsic to MoML, it is expected that systems\r\nwill overlay authentication mechanisms such as including MoML files\r\nin signed jar files.  MoML files can contain confidential data such\r\nas model design intellectual property or confidential data used\r\nin a model.  MoML has no intrinsice confidentiality mechanisim,\r\nit is expected that systems that use MoML will encrypt MoML files\r\non an as needed basis.\r\n\r\nInteroperability considerations : \r\nThe file format is used by the Ptolemy II\r\n(http://ptolemy.eecs.berkeley.edu/ptolemyII), which is a software\r\nframework used to study modeling, simulation, and design of\r\nconcurrent, real-time, embedded systems.  MoML is used to\r\nrepresent heterogenous, hierarchical models consisting of\r\nmultiple components used possibly within different models of\r\ncomputation. Other tools have been interfaced to MoML, such as\r\nHSIF (http://micc.isis.vanderbilt.edu:8080/HSIF).  Hyper is the\r\nnext generation interface to MoML (http://chess.eecs.berkeley.edu/hyper/)\r\n\r\nPublished specification : \r\nMoML was first defined in Ptolemy II 1.0.1. released on March 19, 2001.\r\nThe most recent specification can be found in Volume 1 of the Ptolemy Design Document,\r\nhttp://ptolemy.eecs.berkeley.edu/ptolemyII/designdoc.htm\r\nThe most recent DTD may always be found at\r\nhttp://ptolemy.eecs.berkeley.edu/xml/dtd/moml.dtd\r\n\r\nApplications which use this media : \r\nPtolemy II (http://ptolemy.eecs.berkeley.edu/ptolemyII)\r\nThe Kepler Project (http://www.kepler-project.org) is based on Ptolemy II.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : .xml .moml\r\n3. Macintosh file type code : None\r\n4. Object Identifiers: None\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Christopher Brooks\r\n2. Email : cxh&eecs.berkeley.edu\r\n\r\nIntended usage : Limited Use\r\nMoML is used to represent actor based models.  We intend to use\r\nMoML for web-tier programming and having a registered MIME type\r\nwould be a big help.\r\n\r\n\r\nAuthor/Change controller : Christopher Brooks (cxh&eecs.berkeley.edu)\r\n\r\n(File Created 16 August 2006)\r\n"
+  },
+  "references": []
+}

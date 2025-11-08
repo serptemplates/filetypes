@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "activemessage",
+  "full": "application/activemessage",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/activemessage",
+    "encoding_considerations": "Currently, the content of the activemessage subtype is of the form:\n\n<host identifier> <application identifier>\n\nwhere <host identifier> is an internet host name or number and\n<application identifier> could be any alphanumeric string. \n\n\nThe effect of \"opening\" the activemessage is that the user becomes\nconnected to the Active Mail application <application identifier>\nresiding on host <host identifier>.",
+    "security_considerations": "An application identifier is similar to a password to enter a\nparticular  Active Mail application (such as a conversation, document,\netc.) running on host <host address>.  It is up to the\nuser/application to choose public (well known) names, for openly\naccessible applications, or sparse names for private applications,\nas well as to protect the names known to them.\n\nActive Mail can incorporate more sophisticated security mechanisms,\nbased on public keys, but they are not being planned at present.",
+    "template_text": "MIME type name:\t\tapplication\n\n(If the above is not an existing top-level MIME type,\nplease explain why an existing type cannot be used.)\n\nMIME subtype name:\tactivemessage\n\nRequired parameters:\tnone\n\nOptional parameters:\tnone\n\nEncoding considerations:\n\nCurrently, the content of the activemessage subtype is of the form:\n\n<host identifier> <application identifier>\n\nwhere <host identifier> is an internet host name or number and\n<application identifier> could be any alphanumeric string. \n\n\nThe effect of \"opening\" the activemessage is that the user becomes\nconnected to the Active Mail application <application identifier>\nresiding on host <host identifier>.\n\n\nSecurity considerations:\n\nAn application identifier is similar to a password to enter a\nparticular  Active Mail application (such as a conversation, document,\netc.) running on host <host address>.  It is up to the\nuser/application to choose public (well known) names, for openly\naccessible applications, or sparse names for private applications,\nas well as to protect the names known to them.\n\nActive Mail can incorporate more sophisticated security mechanisms,\nbased on public keys, but they are not being planned at present.\n\n\n\n\n"
+  },
+  "references": []
+}

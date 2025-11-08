@@ -1,0 +1,33 @@
+{
+  "type": "audio",
+  "subtype": "vnd.dolby.mps",
+  "full": "audio/vnd.dolby.mps",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.dolby.mps",
+    "template_text": "(last updated 2009-02-19)\n\nName : Steve Hattersley\n\nEmail : steve.hattersley&dolby.com\n\nMIME media type name : Audio\n\nMIME subtype name : Vendor Tree - vnd.dolby.mps\n\nRequired parameters : None\n\nOptional parameters :\nlevel\n\nProvides detail of the MPEG surround level number implemented within the encoded \ncontent, or within a decoder if used as an indicator of supported content.\n\n====================================================\n       | Max num. | Downmix  | Maximum    | Can use\n Value | Output   | Channels | Sampling   | Residual\n       | Channels |          | Rate [kHz] | Data\n=======|==========|==========|============|=========\n   1   |   2.0    | Mono,    |   48       |  No\n       |          | Stereo   |            |\n-------|----------|----------|------------|---------\n   2   |   5.1    | Mono,    |   48       |  No\n       |          | Stereo   |            |\n-------|----------|----------|------------|---------\n   3   |   5.1    | Mono,    |   48       |  Yes\n       |          | Stereo   |            |\n-------|----------|----------|------------|---------\n   4   |   7.1    | Mono,    |   48       |  Yes\n       |          | Stereo   |            |\n-------|----------|----------|------------|---------\n       |          | Mono,    |            |  \n   5   |   7.1    | Stereo,  |   48       |  Yes\n       |          | 5.1      |            |\n-------|----------|----------|------------|---------\n       | 32 incl. | Mono,    |            |  \n   6   |    LFE   | Stereo,  |   96       |  Yes\n       |          | 5.1      |            |\n====================================================\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media type consists of encoded audio and playback information and contains no \nexecutable content, commands or control sequences. It provides no privacy or \nintegrity services. Other security considerations, if any, have not been assessed.\n\nInteroperability considerations :\nPlayback of this encoded content requires a specification-compliant decoder.\n\nPublished specification :\nISO/IEC 23003-1: MPEG Surround\n\nApplications which use this media :\nVarious and multiple content encoding and decoding/playback applications.\n\nAdditional information :\n\n1. Magic number(s) : n/a\n2. File extension(s) : n/a\n3. Macintosh file type code : n/a\n4. Object Identifiers: n/a\n\n\n\nPerson to contact for further information :\n\n1. Name : Steve Hattersley\n2. Email : steve.hattersley&dolby.com\n\nIntended usage : Limited Use\nThis media type is intended for use by those licensing and implementing Dolby \ntechnologies on mobile devices; specifically to provide mobile handset manufacturers \nwith a media type that may be used in User Agent Profiles (UAProfs) in the mobile \neco-system without being misinterpreted. In User Agent Profiles, this media type \nidentifies clients and/or devices that are able to process content encoded to the \nMPEG Surround standard by Dolby encoding software, or that implement Dolby MPEG \nSurround decoders, including in both cases support for any Dolby-specific additions \nor metadata.\n\nAuthor/Change controller : Steve Hattersley [steve.hattersley&dolby.com]\n\n(file created 2009-02-19)"
+  },
+  "references": []
+}

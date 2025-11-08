@@ -1,0 +1,42 @@
+{
+  "type": "audio",
+  "subtype": "mp4",
+  "full": "audio/mp4",
+  "extensions": [
+    "m4a",
+    "mp4a",
+    "m4b"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/mp4",
+    "encoding_considerations": "binary and should be transmitted without CR/LF conversion, 7-bit\n   stripping, etc.\n\nSecurity considerations: See section 5 of RFC 4337.\n\nInteroperability considerations: A number of interoperating\n   implementations exist within the ISO/IEC 14496 community, and that\n   community has reference software for reading and writing the file\n   format.\n\nPublished specification: ISO/IEC 14496-1:2001.\n\nApplications: Multimedia",
+    "security_considerations": "Interoperability considerations: A number of interoperating\n   implementations exist within the ISO/IEC 14496 community, and that\n   community has reference software for reading and writing the file\n   format.\n\nPublished specification: ISO/IEC 14496-1:2001.\n\nApplications: Multimedia",
+    "interoperability_considerations": "implementations exist within the ISO/IEC 14496 community, and that\n   community has reference software for reading and writing the file\n   format.\n\nPublished specification: ISO/IEC 14496-1:2001.\n\nApplications: Multimedia",
+    "additional_information": "Magic number(s): none\n\n   File extension(s): mp4 and mpg4 are both declared at\n      <http://pitch.nist.gov/nics/>.\n\n   Macintosh File Type Code(s): mpg4 is registered with Apple.\n\nPerson to contact for info: David Singer, singer&apple.com\n\nIntended usage: Common\n\nAuthor/Change controller: David Singer, ISO/IEC 14496 file format\n   chair.",
+    "intended_usage": "common",
+    "template_text": "(RFC 4337 published March 2006, RFC 6381 published August 2011, subtype last updated August 2011)\n\nMIME media type name: audio\n\nMIME subtype name: mp4\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: base64 IS generally preferred; files are\n   binary and should be transmitted without CR/LF conversion, 7-bit\n   stripping, etc.\n\nSecurity considerations: See section 5 of RFC 4337.\n\nInteroperability considerations: A number of interoperating\n   implementations exist within the ISO/IEC 14496 community, and that\n   community has reference software for reading and writing the file\n   format.\n\nPublished specification: ISO/IEC 14496-1:2001.\n\nApplications: Multimedia\n\nAdditional information:\n\n   Magic number(s): none\n\n   File extension(s): mp4 and mpg4 are both declared at\n      <http://pitch.nist.gov/nics/>.\n\n   Macintosh File Type Code(s): mpg4 is registered with Apple.\n\nPerson to contact for info: David Singer, singer&apple.com\n\nIntended usage: Common\n\nAuthor/Change controller: David Singer, ISO/IEC 14496 file format\n   chair.\n\n"
+  },
+  "references": []
+}

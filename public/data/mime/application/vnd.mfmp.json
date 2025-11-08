@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.mfmp",
+  "full": "application/vnd.mfmp",
+  "extensions": [
+    "mfm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mfmp",
+    "template_text": "\r\n(last updated 2004-04-23)\r\n\r\nName : Yukari Ikeda\r\n\r\nEmail : ikeda&tokyo.faith.co.jp\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.mfmp\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations :\r\nThe content doesn't contain executable code and hence cannot be employed\r\nmaliciously.  In addition, the content does not include user confidential\r\ninformation.\r\n\r\nInteroperability considerations : none\r\n\r\nPublished specification :\r\nMFMP (Melody Format for Mobile Platform) is a format for the multimedia\r\ncontent intended mainly to handle the playback information of electronic\r\ninstruments on mobile platforms. MFMP is ideal for the transmission via\r\ninternet/wireless network because of the small data size.  MFMP enables the\r\nplayback information as well as the information to control devices on mobile\r\nplatforms to play back synchronizing on the time axis. In addition, adding\r\nprofiles allows to add or extend the specifications which are not currently\r\nsupported. This specification is not public.  This specification is obtained\r\nby contacting MFMP Spec Group described in Contact Person as follows.\r\n\r\nApplications which use this media :\r\nEmbeded MFMP Player\r\nMFMP Content Authoring Tool and Player on PC\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .mfm\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : MFMP Spec Group\r\n2. Email : mfmp_spec&faith.co.jp\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : Shinobu Katayama\r\nFaith, Inc.\r\nSumitomo-Hamamatsucho Bldg.\r\n1-18-16 Hamamatsu-cho,\r\nMinato-ku, Tokyo 105-0013\r\nJAPAN\r\n\r\n(file created 2004-04-23)"
+  },
+  "references": []
+}

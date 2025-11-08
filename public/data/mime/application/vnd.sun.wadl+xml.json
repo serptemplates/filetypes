@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.sun.wadl+xml",
+  "full": "application/vnd.sun.wadl+xml",
+  "extensions": [
+    "wadl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sun.wadl+xml",
+    "template_text": "\r\n(last updated 07 March 2006)\r\n\r\nName : Marc Hadley\r\n\r\nEmail : marc.hadley&sun.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.sun.wadl+xml\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters :\r\ncharset: This parameter has identical semantics to the charset \r\nparameter of the \"application/xml\" media type as specified in RFC \r\n3023 [http://www.ietf.org/rfc/rfc3023.txt].\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of \r\nhandling 8 bit text.\r\n\r\nSecurity considerations :\r\nThe media type does not contain active or executable content. The \r\nother security issues associates with this type have not been assessed.\r\n\r\nInteroperability considerations :\r\nThis media type is designed to be interoperable across a wide range \r\nof platforms and devices with different capabilities. The format does \r\nnot provide any functionality that could be considered as platform or \r\ndevice specific.\r\n\r\nPublished specification :\r\nhttp://weblogs.java.net/blog/mhadley/wadl.pdf\r\n\r\nApplications which use this media :\r\nNone yet released.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .wadl\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Marc Hadley\r\n2. Email : marc.hadley&sun.com\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : marc.hadley&sun.com\r\n\r\n(file created 07 March 2006)"
+  },
+  "references": []
+}

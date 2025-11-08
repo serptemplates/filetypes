@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "msword",
+  "full": "application/msword",
+  "extensions": [
+    "doc",
+    "dot"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/msword",
+    "encoding_considerations": "Microsoft word files are in a binary format. Some encoding will be\nnecessary for MIME mailers as in application/octet-stream.  Microsoft\nWord files for the Macintosh are encoded in the data fork of a\nmacintosh file.  The type creator is MSWD, the file type is WDBN.\n\nMiccrosoft Word files that contain external data references such as\npublish & subscribe services are explicitly not allowed.",
+    "security_considerations": "None known.",
+    "template_text": "\n\nFrom lindner&mudhoney.micro.umn.edu Thu Jul 22 13:26:29 1993\nFrom: lindner&mudhoney.micro.umn.edu (Paul Lindner)\nSubject: Registion of a new MIME Content-Type/Subtype\nTo: iana&ISI.EDU, gopher&boombox.micro.umn.edu (Team Gopher)\nDate: Thu, 22 Jul 93 15:26:39 CDT\nReply-To: lindner&boombox.micro.umn.edu\nContent-Length: 1518\nX-Lines: 57\nStatus: RO\n\nMIME TYPE NAME:\napplication\n\nMIME SUBTYPE NAME:\nmsword\n\nREQUIRED PARAMETERS:\nnone\n\nOPTIONAL PARAMETERS:\n\nAn optional version parameter can be specified.  Some of the more\ncommon versions are:\n\n  4  :  Microsoft Word 4.0 for the Macintosh.\n  5  :  Microsoft Word 5.0 and 5.1 for the Macintosh.\n  2w :  Microsoft Word for Windows 2.0\n  6  :  Microsoft Word 6 for Windows and Macintosh platform\n        independent format(coming soon)\n\nENCODING CONSIDERATIONS:\n\nMicrosoft word files are in a binary format. Some encoding will be\nnecessary for MIME mailers as in application/octet-stream.  Microsoft\nWord files for the Macintosh are encoded in the data fork of a\nmacintosh file.  The type creator is MSWD, the file type is WDBN.\n\nMiccrosoft Word files that contain external data references such as\npublish & subscribe services are explicitly not allowed.\n\n\nSECURITY CONSIDERATIONS:\nNone known.\n\n\nPUBLISHED SPECIFICATION:\n\nSpecification by example:\n\n   From any microsoft word application select \"Save As...\" from the\n   \"File\" menu.  Enter a filename, make sure that \"Normal\" is specified\n   for the file type, and click \"Save\".\n\nCompany Contact:\n\n   Microsoft Inc.\n\n   16011 NE 36th Way\n   Box 97017\n   Redmond WA, 98073-9717\n\n\n-- \n | Paul Lindner | lindner&boombox.micro.umn.edu   | Slipping into madness\n |              | Computer & Information Services | is good for the sake\n | Gophermaster | University of Minnesota         | of comparison.\n///// / / /    /////// / / / /  /  /  /   /      //// / / / /  /  /  /   /\n\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.apothekende.reservation+json",
+  "full": "application/vnd.apothekende.reservation+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.apothekende.reservation+json",
+    "encoding_considerations": "Same as encoding considerations of application/json as specified in RFC 7159 section 8.1.",
+    "security_considerations": "Reservation+JSON shares security issues common to all JSON content types like specified in RFC 7159 section 12. It does not provide executable content.\nInformation contained in Reservation+JSON documents must be handled with both confidentiality and integrity protection since it may contain medical patient data.\nTransportation SHOULD be via SSL.",
+    "interoperability_considerations": "Reservation+JSON is described by a json-schema.org schema definition and SHOULD be validated against it. Details of the schema are confidential.",
+    "additional_information": "1. Deprecated alias names for this type: n/a 2. Magic number(s): none 3. File extension(s): .json 4. Macintosh file type code: TEXT 5. Object Identifiers: n/a",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-02-07, last updated 2017-02-07)\n\nMedia type name: application\n\nMedia subtype name: vnd.apothekende.reservation+json\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: binary\nSame as encoding considerations of application/json as specified in RFC 7159 section 8.1.\n\nSecurity considerations:\nReservation+JSON shares security issues common to all JSON content types like specified in RFC 7159 section 12. It does not provide executable content.\nInformation contained in Reservation+JSON documents must be handled with both confidentiality and integrity protection since it may contain medical patient data.\nTransportation SHOULD be via SSL.\n\nInteroperability considerations:\nReservation+JSON is described by a json-schema.org schema definition and SHOULD be validated against it. Details of the schema are confidential.\n\nPublished specification:\nVendor confidential\n\nApplications which use this media:\nReservation+JSON is used by software that is involved in exchanging medicaments reservation data.\n\nFragment identifier considerations:\nWould be the same as Fragment Identifier Considerations of application/json\n\nRestrictions on usage:\nnone\n\nProvisional registration? (standards tree only):\nn/a\n\nAdditional information:\n\n1. Deprecated alias names for this type: n/a 2. Magic number(s): none 3. File extension(s): .json 4. Macintosh file type code: TEXT 5. Object Identifiers: n/a\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Adrian Föder\n2. Email: adrian.foeder&netformic.de\n\nIntended usage: Common\nn/a\n\nAuthor/Change controller: n/a"
+  },
+  "references": []
+}

@@ -1,0 +1,44 @@
+{
+  "type": "model",
+  "subtype": "step",
+  "full": "model/step",
+  "extensions": [
+    "step",
+    "stp",
+    "stpnc",
+    "p21",
+    "210"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/step",
+    "encoding_considerations": "Security considerations: This media type does not allow for any kind \n   of executable or active content and is nonextensible. As such, the\n   data elements currently defined in ISO 10303-21 do not in \n   themselves create security risks beyond the information disclosed,\n   since the elements are not used to induce any behavior by the \n   recipient software application.\n\n   This media type does not employ compression.\n\nInteroperability considerations: The semantics is given by an EXPRESS \n   schema which is referenced in the header section of an exchange \n   file.\n\nPublished specification: The specification is published in various \n   parts of the ISO 10303 series. The most recent specification is \n   available from the ISO website or from National standardization \n   bodies for a nominal fee.\n\nApplications which use this media: Applications that display, create, \n   edit, import, or export ISO 10303 product data models, which are \n   encoded in the exchange syntax defined in ISO 10303-21, use this \n   media type. While the ISO 10303-21 syntax is also used in \n   application/p21, model/step provides assurance that the model \n   represented is a STEP product data model.\n\nFragment identifier considerations: none\n\nRestrictions on usage: none",
+    "security_considerations": "of executable or active content and is nonextensible. As such, the\n   data elements currently defined in ISO 10303-21 do not in \n   themselves create security risks beyond the information disclosed,\n   since the elements are not used to induce any behavior by the \n   recipient software application.\n\n   This media type does not employ compression.\n\nInteroperability considerations: The semantics is given by an EXPRESS \n   schema which is referenced in the header section of an exchange \n   file.\n\nPublished specification: The specification is published in various \n   parts of the ISO 10303 series. The most recent specification is \n   available from the ISO website or from National standardization \n   bodies for a nominal fee.\n\nApplications which use this media: Applications that display, create, \n   edit, import, or export ISO 10303 product data models, which are \n   encoded in the exchange syntax defined in ISO 10303-21, use this \n   media type. While the ISO 10303-21 syntax is also used in \n   application/p21, model/step provides assurance that the model \n   represented is a STEP product data model.\n\nFragment identifier considerations: none\n\nRestrictions on usage: none",
+    "interoperability_considerations": "schema which is referenced in the header section of an exchange \n   file.\n\nPublished specification: The specification is published in various \n   parts of the ISO 10303 series. The most recent specification is \n   available from the ISO website or from National standardization \n   bodies for a nominal fee.\n\nApplications which use this media: Applications that display, create, \n   edit, import, or export ISO 10303 product data models, which are \n   encoded in the exchange syntax defined in ISO 10303-21, use this \n   media type. While the ISO 10303-21 syntax is also used in \n   application/p21, model/step provides assurance that the model \n   represented is a STEP product data model.\n\nFragment identifier considerations: none\n\nRestrictions on usage: none",
+    "additional_information": "1. Deprecated alias names for this type: n/a\n   2. Magic number(s): n/a\n   3. File extension(s): .p21, .stp, .step, .stpnc, .210\n   4. Macintosh file type code: n/a\n   5. Object Identifiers: n/a\n\nGeneral Comments: The ISO standard that specifies this type can be \n   found at: \n\n   https://www.iso.org/standard/63141.html?browse=tc",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-08-05, last updated 2021-08-05)\n\nName: Kenneth Swope\n\nEmail: kenneth.a.swope&boeing.com\n\nMedia type name: model\n\nMedia subtype name: step\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: binary\n\nSecurity considerations: This media type does not allow for any kind \n   of executable or active content and is nonextensible. As such, the\n   data elements currently defined in ISO 10303-21 do not in \n   themselves create security risks beyond the information disclosed,\n   since the elements are not used to induce any behavior by the \n   recipient software application.\n\n   This media type does not employ compression.\n\nInteroperability considerations: The semantics is given by an EXPRESS \n   schema which is referenced in the header section of an exchange \n   file.\n\nPublished specification: The specification is published in various \n   parts of the ISO 10303 series. The most recent specification is \n   available from the ISO website or from National standardization \n   bodies for a nominal fee.\n\nApplications which use this media: Applications that display, create, \n   edit, import, or export ISO 10303 product data models, which are \n   encoded in the exchange syntax defined in ISO 10303-21, use this \n   media type. While the ISO 10303-21 syntax is also used in \n   application/p21, model/step provides assurance that the model \n   represented is a STEP product data model.\n\nFragment identifier considerations: none\n\nRestrictions on usage: none\n\nAdditional information:\n\n   1. Deprecated alias names for this type: n/a\n   2. Magic number(s): n/a\n   3. File extension(s): .p21, .stp, .step, .stpnc, .210\n   4. Macintosh file type code: n/a\n   5. Object Identifiers: n/a\n\nGeneral Comments: The ISO standard that specifies this type can be \n   found at: \n\n   https://www.iso.org/standard/63141.html?browse=tc\n\nPerson to contact for further information:\n\n   1. Name: Dana Tripp\n   2. Email: trippdsc4&gmail.com\n\nIntended usage: Common\n\nAuthor/Change controller: Committee Manager, ISO/TC 184/SC 4 - \n   Industrial Data"
+  },
+  "references": []
+}

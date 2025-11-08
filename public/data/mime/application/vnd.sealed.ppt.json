@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.sealed.ppt",
+  "full": "application/vnd.sealed.ppt",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sealed.ppt",
+    "template_text": "\n(last updated 2003-10-02)\n\nName : David Petersen\n\nEmail : david.petersen&sealedmedia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.sealed.ppt\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : Binary\n\nSecurity considerations : \nThese files are intended to be read by a proprietary client (the \"Unsealer\") \nwhich makes the unencrypted content available in a very limited fashion to a \nuser's system. As the data format is private and encrypted using well-known \nalgorithms, it is unlikely that the data could be spoofed. The client is also \ndesigned to refuse to work with data that is corrupt or ill-formed. This data \ndoes not contain any executable material. Although this file type will be displayed \nas a Microsoft Office file type, all macro and scripting functionality is disabled \nby the Unsealer client.\n\nInteroperability considerations : \nThis mime-type is valid for Windows systems only.\n\nPublished specification : \nThe specifications for this content-type are proprietary. They are specified \nby Sealed Media. The registration of this content-type is intended only to provide \na convention for labeling this proprietary data type within the MIME/HTTP environment \nand does not specify any details about the content format or semantics, except to refer \nto the software and specifications provided by Sealed Media. Company information may \nbe obtained at http://www.sealedmedia.com.\n\nApplications which use this media : \nThis mime-type is intended for use only by the client software, \"Unsealer\", created by \nSealed Media.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : .sppt, .spp, .s1p\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\nPerson to contact for further information :\n\n1. Name : Martin Lambert\n2. Email : martin.lambert&sealedmedia.com\n\nIntended usage : Common \n\nAuthor/Change controller : \n\nMartin Lambert\nmartin.lambert&sealedmedia.com  \n\n(created 2003-09-09) \n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.isac.fcs",
+  "full": "application/vnd.isac.fcs",
+  "extensions": [
+    "fcs"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.isac.fcs",
+    "security_considerations": "This media type does not carry any sort of active or executable content.\nData in the file may contain information related to the health status\nof a human subject. In these cases, the data file shall be protected using\nappropriate external mechanisms as regulated by various jurisdictions.\nBasic integrity of the file may be ensured by an optional internal 16-bit\ncyclic redundancy check (CRC) value, but full integrity protection must\nbe provided using external integrity protection mechanisms, which again may be\nrequired depending on environment and applicable lawful regulations.",
+    "template_text": "(last updated 2010-03-26)\n\nName : Ryan Brinkman\n\nEmail : rbrinkman&bccrc.ca\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.isac.fcs\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations:\nThis media type does not carry any sort of active or executable content.\nData in the file may contain information related to the health status\nof a human subject. In these cases, the data file shall be protected using\nappropriate external mechanisms as regulated by various jurisdictions.\nBasic integrity of the file may be ensured by an optional internal 16-bit\ncyclic redundancy check (CRC) value, but full integrity protection must\nbe provided using external integrity protection mechanisms, which again may be\nrequired depending on environment and applicable lawful regulations.\n\n\nInteroperability considerations :\nNo known interoperability issues.\n\nPublished specification :\nhttp://www.isac-net.org/index.php?option=com_content&task=view&id=828&Itemid=150\n\nApplications which use this media :\nFCS Express, (De Novo Software),\nFlowJo (TreeStar Inc.),\n[CellQuest Pro, Spigot] (BD Biosciences, Inc.),\n[Winlist, Modfit, GemStone] (Verity Software House),\n[Gallios, Kaluza](Beckam Coulter Inc.),\nguavaSoft (Guava, Inc.),\nParticle Analysing System PAS-III (Partec, Inc.),\n[VenturiOne, STarStation], (Applied Cytometry Inc.),\n[iCyte and iCys Cytometric Analysis Software], (CompuCyte Inc.),\nMultiCycle AV (Phoenix Flow Inc.),\nWinMDI (Scripps)\nBioConductor (Free/Open Source software, various authors)\n\nAdditional information :\n\n1. Magic number(s) : Bytes 00 to 02 contain string \"FCS\"\n2. File extension(s) : .fcs\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\nFCS data file standard has been in common use by the flow cytometry\ncommunity since version 1.0 was published in 1984. In 2009 the\nInternational Society for Advancement of Cytometry approved version 3.1\nof the standard developed by ISAC's Data Standards Task Force in\ncollaboration with instrument and software vendors and members of the\ncytometry community\n\nPerson to contact for further information :\n\n1. Name : Ryan Brinkman\n2. Email : rbrinkman&bccrc.ca\n\nIntended usage : Common\nThe flow cytometry data file standard provides the specifications\nneeded to completely describe flow cytometry data sets within the\nconfines of the file containing the experimental data. The standard\nprovides a uniform file format that allows data files created by one\ntype of acquisition hardware and software to be analyzed by any other\ntype of software.\n\nAuthor/Change controller : Chair, Data Standards Task Force,\nInternational Society for Advancement of Cytometry\nhttp://www.isac-net.org\n\n(file created 2010-03-26)"
+  },
+  "references": []
+}

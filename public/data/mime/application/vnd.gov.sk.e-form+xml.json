@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.gov.sk.e-form+xml",
+  "full": "application/vnd.gov.sk.e-form+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.gov.sk.e-form+xml",
+    "template_text": "(registered 2015-01-08, last updated 2024-01-12)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.gov.sk.e-form+xml\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : 8bit\n\nThe UTF-8 charset is always used for this type.\n\nSecurity considerations :\nThe files carried inside the electronic forms (e-forms) container may \ncontain script and other active content: all definitions, schemas, \ntransformations and other files needed for a visual and other \npresentations of an electronic e-form, for filling an e-form, \nvalidation of filled data, etc.\nThe e-forms container may contain malicious code and hence unless the \nsource is trusted the usual protection against malware and viruses \nshould be applied. Sandbox or safe operation set is recommended for \nprocessing of the container contents.\nThe integrity of the data should be guaranteed externally by the \nelectronic signature and/or through the use of SSL/TLS transport \nprotocol and cryptographic hash functions.\n\nAll definitions and files needed for use of any publicly available \ne-government electronic form must be published in the e-forms \ncontainer and must not use any encryption. Publicly available e-forms \ncontainers shall not contain any private or confidential data. Privacy \nof non-public e-forms containers can be guaranteed through the use of \nSSL/TLS transport protocol. In case the container is used for storage \nof private or confidential data (e.g. filled in the presentation of \nthe e-form), the container should not be available publicly.\nNeveretheless, general security considerations of RFC 7303 (section \n10) apply to this media type.\n\nInteroperability considerations :\nThere are no known interoperability issues.\n\nPublished specification :\nThe specification is published by the Ministry of Finance of the \nSlovak Republic as a legislative document: Edict About Standards for \ninformation systems of public administration - No. 55/2014 Z. z., \n(Annex 3 - Standard for eGovernment forms) pursuant to Act No. \n275/2006 Coll. on information systems of public administration.\n\nName of the Edict in Slovak: \"Výnos o štandardoch pre informačné \nsystémy verejnej správy č. 55/2014 Z. z. (Príloha č. 3 - Štandard pre \nelektronické formuláre)\"\n\nSources:\nhttp://informatizacia.sk/standards-for-is-pa/4632s (in English)\nhttp://informatizacia.sk/standardy-is-vs/596s (in Slovak)\n\nApplications which use this media :\nThis media type is used by Slovak public administration for use and \npublication of all electronic forms (e.g. on the national e-government \nweb portal). It could be used also by other countries or vendors.\n\nFragment identifier considerations :\nAs specified for \"application/xml\" in RFC7303 section 5.\n\nRestrictions on usage :\nThere are no restriction on usage.\n\nAdditional information :\n\n1. Deprecated alias names for this type : application/x-eform-xml\n2. Magic number(s) : As specified for \"application/xml\" in RFC7303.\n3. File extension(s) : .xml\n4. Macintosh file type code : TEXT\n5. Object Identifiers: None\n\nThe container has two equal forms: XML structure \n(application/vnd.gov.sk.e-form+xml) and a file structure in a ZIP \ncontainer (application/vnd.gov.sk.e-form+zip).\n\nThe electronic forms container will contain all definitions, schemas, \ntransformations and files needed for a visual and other presentation \nof an e-government e-form, for filling an e-form, validation of filled data, etc.\n\nThe e-forms container is based on existing standards: JAR file format, \nDublinCore, Open Packaging Format, OpenDocument format, EPUB Open\nContainer Format. The e-forms container also extends these standards \nfor specific e-forms usage.\n\nThe specification is maintained by the Committee for standardization \nof information systems of public administration, which is the main \nadvisory body for standardization established by Ministry of Finance \nof the Slovak republic. Members of the Committeee compose of wide \nspectrum of experts, representing public, private and academic \nsectors. Source: http://informatizacia.sk/standards-for-is-pa/4632s\n\nPerson to contact for further information :\n\n1. Name: Stefan Szilva\n2. Email: stefan.szilva&gmail.com\n\nIntended usage : OBSOLETE\n\nAs of 2023, the XML form of the container is not used.\n\nAuthor/Change controller: Ministry of Investments, Regional Development and Informatization of the Slovak Republic\n- Mr. Stefan Szilva - standard&mirri.gov.sk"
+  },
+  "references": []
+}

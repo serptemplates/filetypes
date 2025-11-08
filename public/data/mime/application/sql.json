@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "sql",
+  "full": "application/sql",
+  "extensions": [
+    "sql"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/sql",
+    "type_name": "application",
+    "subtype_name": "sql",
+    "encoding_considerations": "If the \"charset\" parameter is used, the corresponding 7-bit, 8-bit,\n  or binary encoding may be used.  If the \"charset\" parameter is not\n  used, binary encoding may be required.",
+    "security_considerations": "Being that SQL is a full-fledged programming language and may\n  include embedded source code for other programming languages,\n  there is a risk of it being used to transfer malware, viruses, and\n  other malicious payloads.  Implementors and users are encouraged\n  only to exchange SQL files among trusted parties and utilize all\n  available security measures, such as restricted access, virus\n  scanners, etc., to minimize risk.\n\n  Implementors should be aware that guessing character sets,\n  encodings, and possible conflicts between in-band and out-of-band\n  character set information may lead to the similar security issues\n  as described above.\n\n  Implementors should also be aware that SQL does not provide or\n  guarantee any sort of confidentiality and integrity checking, and\n  SQL files can expose account information or private information\n  about database structure and contents.  It is therefore important\n  for applications to provide confidentiality and protection against\n  modification by malicious third parties while in transit.",
+    "interoperability_considerations": "While a single standard exists ([ISO.9075.2011]), vendor\n  implementations of the standard vary significantly.  Implementors\n  and users should make sure that the exchanged SQL files match to\n  the specific database/tool and version that they are using.",
+    "applications": "Databases and related tools\n\nFragment identifier considerations: N/A",
+    "additional_information": "Deprecated alias names for this type: N/A\n\n  Magic number(s): N/A\n\n  File extension(s): sql\n\n  Macintosh File Type Code(s): N/A",
+    "intended_usage": "common",
+    "change_controller": "IESG",
+    "template_text": "(file created 2013-02-27, last updated 2013-04-02)\n\nType name: application\n\nSubtype name: sql\n\nRequired parameters: N/A\n\nOptional parameters:\n\n  \"charset\" -- indicates the character set to be used.  When not\n  specified, a default value MUST NOT be assumed without inspection\n  of the content.\n\n  Implementors should be aware that SQL may carry character set\n  information in-band.  In such cases, the \"charset\" parameter MUST\n  NOT be used in order to avoid conflict.  In cases where no\n  character set information is supplied in-band, and the character\n  set is known, implementors SHOULD use the \"charset\" parameter.  If\n  no in-band or out-of-band character set information is available,\n  implementors MUST NOT specify the \"charset\" parameter.\n\nEncoding considerations:\n\n  If the \"charset\" parameter is used, the corresponding 7-bit, 8-bit,\n  or binary encoding may be used.  If the \"charset\" parameter is not\n  used, binary encoding may be required.\n\nSecurity considerations:\n\n  Being that SQL is a full-fledged programming language and may\n  include embedded source code for other programming languages,\n  there is a risk of it being used to transfer malware, viruses, and\n  other malicious payloads.  Implementors and users are encouraged\n  only to exchange SQL files among trusted parties and utilize all\n  available security measures, such as restricted access, virus\n  scanners, etc., to minimize risk.\n\n  Implementors should be aware that guessing character sets,\n  encodings, and possible conflicts between in-band and out-of-band\n  character set information may lead to the similar security issues\n  as described above.\n\n  Implementors should also be aware that SQL does not provide or\n  guarantee any sort of confidentiality and integrity checking, and\n  SQL files can expose account information or private information\n  about database structure and contents.  It is therefore important\n  for applications to provide confidentiality and protection against\n  modification by malicious third parties while in transit.\n\nInteroperability considerations:\n\n  While a single standard exists ([ISO.9075.2011]), vendor\n  implementations of the standard vary significantly.  Implementors\n  and users should make sure that the exchanged SQL files match to\n  the specific database/tool and version that they are using.\n\nPublished specification:\n\n  The most recent specification of SQL is available in\n  [ISO.9075.2011].\n\nApplications that use this media type:\n\n  Databases and related tools\n\nFragment identifier considerations: N/A\n\nAdditional information:\n\n  Deprecated alias names for this type: N/A\n\n  Magic number(s): N/A\n\n  File extension(s): sql\n\n  Macintosh File Type Code(s): N/A\n\nPerson & email address to contact for further information:\n\n  Yakov Shafranovich <ietf&shaftek.org>\n\nIntended usage: COMMON\n\nRestrictions on usage: N/A\n\nAuthor: IESG\n\nChange controller: IESG\n\nProvisional registration? (standards tree only): N/A"
+  },
+  "references": []
+}

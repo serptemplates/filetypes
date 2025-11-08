@@ -1,0 +1,36 @@
+{
+  "type": "model",
+  "subtype": "e57",
+  "full": "model/e57",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/e57",
+    "encoding_considerations": "Security considerations: Per their specification, E57 files do not \n   contain executable content. However, in addition to binary data, \n   they contain an XML-encoded stream. Therefore, they have all of \n   the general security considerations presented in section 10 of \n   [RFC7303].\n\nInteroperability considerations: The E57 file format has been \n   implemented by several vendors listed in [LIBE57] \n   https://www.astm.org/Standards/E2807.htm.\n\nPublished specification: The E57 specification has been formally \n   standardized in [ASTME2807] \n   https://www.astm.org/Standards/E2807.htm.\n\n   An informal overview is available from [HUBER] \n   https://www.ri.cmu.edu/pub_files/2011/1/2011-huber-e57-v3.pdf, and \n   there is an open-source implementation in [LIBE57].",
+    "security_considerations": "contain executable content. However, in addition to binary data, \n   they contain an XML-encoded stream. Therefore, they have all of \n   the general security considerations presented in section 10 of \n   [RFC7303].\n\nInteroperability considerations: The E57 file format has been \n   implemented by several vendors listed in [LIBE57] \n   https://www.astm.org/Standards/E2807.htm.\n\nPublished specification: The E57 specification has been formally \n   standardized in [ASTME2807] \n   https://www.astm.org/Standards/E2807.htm.\n\n   An informal overview is available from [HUBER] \n   https://www.ri.cmu.edu/pub_files/2011/1/2011-huber-e57-v3.pdf, and \n   there is an open-source implementation in [LIBE57].",
+    "interoperability_considerations": "implemented by several vendors listed in [LIBE57] \n   https://www.astm.org/Standards/E2807.htm.\n\nPublished specification: The E57 specification has been formally \n   standardized in [ASTME2807] \n   https://www.astm.org/Standards/E2807.htm.\n\n   An informal overview is available from [HUBER] \n   https://www.ri.cmu.edu/pub_files/2011/1/2011-huber-e57-v3.pdf, and \n   there is an open-source implementation in [LIBE57].",
+    "template_text": "(registered 2020-07-20, last updated 2020-07-20)\n\nName: Sascha Brawer\n\nEmail: sascha&brawer.ch\n\nMedia type name: model\n\nMedia subtype name: e57\n\nRequired parameters: none\n\nOptional parameters: None.\n\n   The \"dimension\" parameter with just an integer count would not \n   provide sufficient information for choosing an application to view \n   or edit an e57 file. Beyond 3D coordinates and 2D images, the e57 \n   format supports per-point attributes such as color, temperature\n   or arbitrary user-defined properties.\n\n   The value of the \"state\" parameter, if permitted, would always be \n   \"static\". This is because the typical use of E57 is to capture \n   reality at a given point in time using 3D laser scanners or \n   similar devices), preserving past state.\n\nEncoding considerations: binary\n\nSecurity considerations: Per their specification, E57 files do not \n   contain executable content. However, in addition to binary data, \n   they contain an XML-encoded stream. Therefore, they have all of \n   the general security considerations presented in section 10 of \n   [RFC7303].\n\nInteroperability considerations: The E57 file format has been \n   implemented by several vendors listed in [LIBE57] \n   https://www.astm.org/Standards/E2807.htm.\n\nPublished specification: The E57 specification has been formally \n   standardized in [ASTME2807] \n   https://www.astm.org/Standards/E2807.htm.\n\n   An informal overview is available from [HUBER] \n   https://www.ri.cmu.edu/pub_files/2011/1/2011-huber-e57-v3.pdf, and \n   there is an open-source implementation in [LIBE57].\n\nPerson and email address to contact for further information:\n   The contact information for the current chairman of the ASTM E57 \n   Committee on Imaging Systems can be found on the astm.org web site.\n\nApplications which use this media: The E57 file format is a compact, \n   vendor-neutral format for storing point clouds, images, and \n   metadata produced by 3D imaging systems such as laser scanners.\n\nFragment identifier considerations: none\n\nRestrictions on usage: none"
+  },
+  "references": []
+}

@@ -1,0 +1,40 @@
+{
+  "type": "image",
+  "subtype": "jais",
+  "full": "image/jais",
+  "extensions": [
+    "jais"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/jais",
+    "encoding_considerations": "Security considerations: See the media type image/heif. In addition, sample entries of type 'jaim' contain structures of variable length and have an extensible syntax. Both aspects present potential security risks for implementations. In particular, variable length structures present buffer overflow risks and extensible syntax could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type image/heif. In addition, sample entries of type 'jaim' can conform to one of several profiles and/or require one of several capabilities, e.g. as specified in Rec. ITU-T T.JPEG-AI-P | ISO/IEC 6048-2 – not all of which are necessarily supported by a receiving decoder. As a result, decoders might attempt to process the contents only to determine that they cannot be rendered either partially or in full.\n\nPublished specification: Rec. ITU-T T.JPEG-AI-FF | ISO/IEC 6048-5, JPEG AI learning-based Image Coding — Part 5: File format\n\nApplications which use this media: Use of image sequences in Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: The same as for the media type image/heif\n\nRestrictions on usage: N/A",
+    "security_considerations": "Interoperability considerations: Same as for the media type image/heif. In addition, sample entries of type 'jaim' can conform to one of several profiles and/or require one of several capabilities, e.g. as specified in Rec. ITU-T T.JPEG-AI-P | ISO/IEC 6048-2 – not all of which are necessarily supported by a receiving decoder. As a result, decoders might attempt to process the contents only to determine that they cannot be rendered either partially or in full.\n\nPublished specification: Rec. ITU-T T.JPEG-AI-FF | ISO/IEC 6048-5, JPEG AI learning-based Image Coding — Part 5: File format\n\nApplications which use this media: Use of image sequences in Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: The same as for the media type image/heif\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "Published specification: Rec. ITU-T T.JPEG-AI-FF | ISO/IEC 6048-5, JPEG AI learning-based Image Coding — Part 5: File format\n\nApplications which use this media: Use of image sequences in Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: The same as for the media type image/heif\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): jais\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2025-01-01, last updated 2025-01-01)\n\nMedia type name: image\n\nMedia subtype name: jais\n\nRequired parameters: N/A\n\nOptional parameters: Same as for the media type image/heif. The presence of a sample entry of type 'jaim' is signalled by including a value whose first element is 'jaim' in the codecs parameter, which starts with 'jaim', followed by a dot ('.'), further followed by a series of dot-separated ('.') values from the JAIMConfigurationBox() as specified in clause A.3 of Rec. ITU-T T.JPEG-AI-FF | ISO/IEC 6048-5, starting from stream_profile_idc up to and including level_idc, each encoded as a hexadecimal number.\n\nEncoding considerations: binary\n\nSecurity considerations: See the media type image/heif. In addition, sample entries of type 'jaim' contain structures of variable length and have an extensible syntax. Both aspects present potential security risks for implementations. In particular, variable length structures present buffer overflow risks and extensible syntax could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type image/heif. In addition, sample entries of type 'jaim' can conform to one of several profiles and/or require one of several capabilities, e.g. as specified in Rec. ITU-T T.JPEG-AI-P | ISO/IEC 6048-2 – not all of which are necessarily supported by a receiving decoder. As a result, decoders might attempt to process the contents only to determine that they cannot be rendered either partially or in full.\n\nPublished specification: Rec. ITU-T T.JPEG-AI-FF | ISO/IEC 6048-5, JPEG AI learning-based Image Coding — Part 5: File format\n\nApplications which use this media: Use of image sequences in Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: The same as for the media type image/heif\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): jais\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: Ye-Kui Wang\n   2. Email: yekui.wang&bytedance.com\n\nIntended usage: COMMON\n\nAuthor/Change controller: ISO/IEC JTC 1/SC29/WG1 (i.e., JPEG)"
+  },
+  "references": []
+}

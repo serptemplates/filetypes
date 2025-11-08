@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.xecrets-encrypted",
+  "full": "application/vnd.xecrets-encrypted",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.xecrets-encrypted",
+    "encoding_considerations": "N/A\n\nSecurity considerations: The media type is an encrypted container and may contain any type of data. It is not by itself executable, but the contained data may become executable. The media type provides privacy and integrity for the contained data.\n\nInteroperability considerations: The encrypted container itself is fully interoperable in any environment where software exists that can extract the contained data. The contained data may, or may not, be interoperable between environments depending on the nature of the data.\n\nPublished specification: N/A\n\nApplications which use this media: As the media type is an encrypted container of arbitrary data, the only application that will directly use the format is an application capable of creating containers (encrypting data) or extracting data from them (decrypting data). Implementations provided by this vendor are Xecrets File Ez, Xecrets File Commmand Line and Xecrets File Classic - https://www.axantum.com/ .\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "security_considerations": "Interoperability considerations: The encrypted container itself is fully interoperable in any environment where software exists that can extract the contained data. The contained data may, or may not, be interoperable between environments depending on the nature of the data.\n\nPublished specification: N/A\n\nApplications which use this media: As the media type is an encrypted container of arbitrary data, the only application that will directly use the format is an application capable of creating containers (encrypting data) or extracting data from them (decrypting data). Implementations provided by this vendor are Xecrets File Ez, Xecrets File Commmand Line and Xecrets File Classic - https://www.axantum.com/ .\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "Published specification: N/A\n\nApplications which use this media: As the media type is an encrypted container of arbitrary data, the only application that will directly use the format is an application capable of creating containers (encrypting data) or extracting data from them (decrypting data). Implementations provided by this vendor are Xecrets File Ez, Xecrets File Commmand Line and Xecrets File Classic - https://www.axantum.com/ .\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): c0b9072e4f93f146a015792ca1d9e821 in positions 0:15\n3. File extension(s): .axx\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments: The media format is similar in purpose to other formats, for example application/pgp-encrypted and application/x-zip, but with some different benefits and aspects.",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-01-03, last updated 2024-01-03)\n\nMedia type name: application\n\nMedia subtype name: vnd.xecrets-encrypted\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nN/A\n\nSecurity considerations: The media type is an encrypted container and may contain any type of data. It is not by itself executable, but the contained data may become executable. The media type provides privacy and integrity for the contained data.\n\nInteroperability considerations: The encrypted container itself is fully interoperable in any environment where software exists that can extract the contained data. The contained data may, or may not, be interoperable between environments depending on the nature of the data.\n\nPublished specification: N/A\n\nApplications which use this media: As the media type is an encrypted container of arbitrary data, the only application that will directly use the format is an application capable of creating containers (encrypting data) or extracting data from them (decrypting data). Implementations provided by this vendor are Xecrets File Ez, Xecrets File Commmand Line and Xecrets File Classic - https://www.axantum.com/ .\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): c0b9072e4f93f146a015792ca1d9e821 in positions 0:15\n3. File extension(s): .axx\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments: The media format is similar in purpose to other formats, for example application/pgp-encrypted and application/x-zip, but with some different benefits and aspects.\n\nPerson to contact for further information:\n\n1. Name: Svante Seleborg\n2. Email: svante&axantum.com\n\nIntended usage: COMMON\n\nThe format is used, and is intended to be used, as an encrypted container of arbitrary data in any computing environment capable of supporting suitable software for encrypting and decrypting the container.\n\nAuthor/Change controller: Axantum Software AB, https://www.axantum.com/"
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "news-transmission",
+  "full": "application/news-transmission",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/news-transmission",
+    "encoding_considerations": "of the article transmitted MAY be\n                          supplied to ensure correct transmission\n                          over some 7bit transport medium.\n\nSecurity considerations:  News articles may constitute \"control\n                          messages\", which can have effects on a\n                          host's news system beyond just addition\n                          of information.  Since control messages\n                          may occur in normal news flow, most hosts\n                          are suitably defended against undesired\n                          effects already, but transmission of news\n                          articles via mail may bypass\n                          firewall-type defenses.\n\nPublished specification:  RFC 5537\n\nBody part:                A complete proto-article ready for\n                          injection into Netnews or an article\n                          being relayed to another agent.",
+    "security_considerations": "messages\", which can have effects on a\n                          host's news system beyond just addition\n                          of information.  Since control messages\n                          may occur in normal news flow, most hosts\n                          are suitably defended against undesired\n                          effects already, but transmission of news\n                          articles via mail may bypass\n                          firewall-type defenses.\n\nPublished specification:  RFC 5537\n\nBody part:                A complete proto-article ready for\n                          injection into Netnews or an article\n                          being relayed to another agent.",
+    "applications": "Injecting agents, Netnews moderators.\n\nIntended usage:           COMMON\n\nChange controller:        IETF\n\nusage=moderate indicates the article is intended for a moderator,\nusage=inject for an injecting agent, and usage=relay for a relaying\nagent.  The entity receiving the article may only implement one type\nof agent, in which case the parameter MAY be omitted.\n\nContrary to the prior registration of this media type, article\nbatches are not permitted as a body part.  Multiple messages or a\nmessage with multiple application/news-transmission parts may be used\ninstead.",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "(RFC 5537 published November 2009, subtype last updated November 2009)\n\nMIME type name:           application\n\nMIME subtype name:        news-transmission\n\nRequired parameters:      none\n\nOptional parameters:      One and only one of \"usage=moderate\",\n                          \"usage=inject\", or \"usage=relay\".\n\nEncoding considerations:  A transfer-encoding different from that\n                          of the article transmitted MAY be\n                          supplied to ensure correct transmission\n                          over some 7bit transport medium.\n\nSecurity considerations:  News articles may constitute \"control\n                          messages\", which can have effects on a\n                          host's news system beyond just addition\n                          of information.  Since control messages\n                          may occur in normal news flow, most hosts\n                          are suitably defended against undesired\n                          effects already, but transmission of news\n                          articles via mail may bypass\n                          firewall-type defenses.\n\nPublished specification:  RFC 5537\n\nBody part:                A complete proto-article ready for\n                          injection into Netnews or an article\n                          being relayed to another agent.\n\nApplications that use this media type:\n                          Injecting agents, Netnews moderators.\n\nIntended usage:           COMMON\n\nChange controller:        IETF\n\nusage=moderate indicates the article is intended for a moderator,\nusage=inject for an injecting agent, and usage=relay for a relaying\nagent.  The entity receiving the article may only implement one type\nof agent, in which case the parameter MAY be omitted.\n\nContrary to the prior registration of this media type, article\nbatches are not permitted as a body part.  Multiple messages or a\nmessage with multiple application/news-transmission parts may be used\ninstead."
+  },
+  "references": []
+}

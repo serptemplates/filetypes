@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.nearst.inv+json",
+  "full": "application/vnd.nearst.inv+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.nearst.inv+json",
+    "security_considerations": "vnd.nearst.inv+json shares security issues common to all JSON content types.\nSee RFC7159 Section #12 (http://tools.ietf.org/html/rfc7159#section-12)\nfor additional information. vnd.nearst.inv+json does not provide executable\ncontent. \n\nNormally, the information contained in vnd.nearst.inv+json does not require\nprivacy or integrity services. Nonetheless if privacy is needed it must be realized via the transport layer, e.g. with HTTPs or DTLS. Additional integrity checking can be built into client and server software that transmits this information, and goes beyond the scope of this document.",
+    "interoperability_considerations": "N/A",
+    "additional_information": "1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .json\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-08-12, last updated 2016-08-12)\n\nName: Thomas Schoffelen\nEmail: thomas&nearst.co\n\nMedia type name: application\nMedia subtype name: vnd.nearst.inv+json\n\nRequired parameters: none\n\nOptional parameters:\nnone\n\nEncoding considerations: binary\n\nSecurity considerations:\nvnd.nearst.inv+json shares security issues common to all JSON content types.\nSee RFC7159 Section #12 (http://tools.ietf.org/html/rfc7159#section-12)\nfor additional information. vnd.nearst.inv+json does not provide executable\ncontent. \n\nNormally, the information contained in vnd.nearst.inv+json does not require\nprivacy or integrity services. Nonetheless if privacy is needed it must be realized via the transport layer, e.g. with HTTPs or DTLS. Additional integrity checking can be built into client and server software that transmits this information, and goes beyond the scope of this document.\n\nInteroperability considerations:\nN/A\n\nPublished specification:\nThe specification is not published yet.\n\nApplications which use this media:\nSoftware interfacing with the NearLIVE platform (par of near.st), or any other software that wishes to exchange basic shop inventory information.\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .json\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Thomas Schoffelen\n2. Email: thomas&nearst.co\n\nIntended usage: Common\nExchange of information related the the availability and price of products in shops. Primary usage will be uploading stock information from inventory management systems to a server for processing or display on a website.\n\nAuthor/Change controller: NearSt Ltd."
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "text",
+  "subtype": "prs.prop.logic",
+  "full": "text/prs.prop.logic",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/prs.prop.logic",
+    "encoding_considerations": "CRLFs are used as line breaks and only printable characters in the ASCII range with the addition of the Horizontal Tab character are meaningful.",
+    "security_considerations": "The proof in propositional logic may be incorrect or invalid. This may invalidate the security of systems that rely on the validity of such proofs.\n\nAdditional security considerations have yet to be assessed.",
+    "interoperability_considerations": "The format is not yet formally defined or finalized. For display the horizontal tab is considered to be 8 characters wide. If the format is unparsable or the parse yields an incorrect proof, the application should fallback to display the plain text.",
+    "additional_information": "1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): .txt\n4. Macintosh file type code: None\n5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-04-04, last updated 2022-11-10)\n\nMedia type name: text\nMedia subtype name: prs.prop.logic\n\nRequired parameters: None\n\nOptional parameters:\nNone\n\nEncoding considerations: 7bit\nCRLFs are used as line breaks and only printable characters in the ASCII range with the addition of the Horizontal Tab character are meaningful.\n\nSecurity considerations:\nThe proof in propositional logic may be incorrect or invalid. This may invalidate the security of systems that rely on the validity of such proofs.\n\nAdditional security considerations have yet to be assessed. \n\nInteroperability considerations:\nThe format is not yet formally defined or finalized. For display the horizontal tab is considered to be 8 characters wide. If the format is unparsable or the parse yields an incorrect proof, the application should fallback to display the plain text.\n\nPublished specification:\nN/A\n\nApplications which use this media:\nUnknown\n\nFragment identifier considerations:\nNone\n\nRestrictions on usage:\nNone\n\nProvisional registration? (standards tree only):\nNone\n\nAdditional information:\n\n1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): .txt\n4. Macintosh file type code: None\n5. Object Identifiers: None\n\nGeneral Comments:\nAn example proof of one side of one of De Morgan's laws:\n\n1.' ~P /\\ ~Q\n2.( P \\/ Q prem.\n3.( P prem.\n4.' ~P /\\e1 1.\n5.) 0 0i 3,4.\n6.( Q prem.\n7.' ~Q /\\e2 1.\n8.) 0 0i 6,7.\n9.) 0 \\/e 2,3-5,6-8.\n10.' ~(P \\/ Q) PBC 2-9.\n\nPerson to contact for further information:\n\n1. Name: Hans-Dieter A. Hiep\n2. Email: hdh&cwi.nl\n\nIntended usage: Common\nA storage mechanism for finite proofs in natural deduction of propositional logic.\n\nAuthor/Change controller: Hans-Dieter A. Hiep (see Contact) or Micha F. J. Klamer."
+  },
+  "references": []
+}

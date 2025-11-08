@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.amiga.ami",
+  "full": "application/vnd.amiga.ami",
+  "extensions": [
+    "ami"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.amiga.ami",
+    "template_text": "MIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.amiga.ami\r\n\r\nRequired parameters : none    \r\n\r\nOptional parameters : none    \r\n\r\nEncoding considerations : \r\nThe content of this media type is binary and requires suitable encoding.    \r\n\r\nSecurity considerations : \r\nThis media type may contain executable code which runs within the AmigaDE(tm). The AmigaDE is an operating environment running either natively on the target device's hardware, or hosted in the memory-protected application space of the supporting operating system. In either case, the device is exposed to the intentional and unintentional effects of running the executable code.\r\n\r\nInteroperability considerations : \r\nThis media type is a general purpose format for transferring AmigaDE content to Amiga enabled devices.    \r\n\r\nPublished specification : \r\nThe file format is not an open specification. Amiga Incorporated controls the specification.    \r\n\r\nApplications which use this media : \r\nAmigaDE system software. AmigaDE applications hosted on other platforms.    \r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .ami\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Kevin Blumberg\r\n2. E-mail : kevin&amiga.com\r\n\r\nIntended usage : Common \r\nThis media type is a general purpose format for transferring AmigaDE content to Amiga enabled devices.    \r\n\r\nAuthor/Change controller : Amiga, Incorporated\r\nAddress: 34935 SE Douglas Street, Suite 210\r\nSnoqualmie, WA 98065         \r\n\r\n(created 17 Jan 2002)\r\n"
+  },
+  "references": []
+}

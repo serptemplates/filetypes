@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.cab-jscript",
+  "full": "application/vnd.cab-jscript",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cab-jscript",
+    "template_text": "(last updated 2007-01-18)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.cab-jscript\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nDelivery of this format to a printer which is not capable of parsing the format may \nresult in poor printer behavior. The media type doesn't contain executable content, \nnor does it need privacy. It can however be used to transfer the source code of BASIC \nprograms which are executed in a sandbox in the printer.\n\nInteroperability considerations :\nnone\n\nPublished specification :\ncab Programming Manual Thermal/Thermal Transfer Printers\n\nhttp://www.cabgmbh.com/deutsch/downloads/kennzeichnung/pdf/ProgmanE51a.pdf\n\nApplications which use this media :\nWindows printer drivers, label printing software\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Jörg Falkenberg\n2. Email : j.falkenberg&cabgmbh.com\n\nIntended usage : Common\nNeeded for identification of cab label printers with zeroconf.\n\nAuthor/Change controller : cab Produkttechnik GmbH & Co KG\nTechnical support\nWilhelm-Schickard-Str. 14\n76131 Karlsruhe\nGermany\n\n(file created 2007-01-18)"
+  },
+  "references": []
+}

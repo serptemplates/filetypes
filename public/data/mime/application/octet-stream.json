@@ -1,0 +1,56 @@
+{
+  "type": "application",
+  "subtype": "octet-stream",
+  "full": "application/octet-stream",
+  "extensions": [
+    "bin",
+    "dms",
+    "lrf",
+    "mar",
+    "so",
+    "dist",
+    "distz",
+    "pkg",
+    "bpk",
+    "dump",
+    "elc",
+    "deploy",
+    "exe",
+    "dll",
+    "deb",
+    "dmg",
+    "iso",
+    "img",
+    "msi",
+    "msp",
+    "msm",
+    "buffer"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/octet-stream",
+    "template_text": "(RFC 2045 and 2046 published November 1996, subtype last updated April November 1996)\n\nThe \"octet-stream\" subtype is used to indicate that a body contains\narbitrary binary data.  The set of currently defined parameters is:\n\n (1)   TYPE -- the general type or category of binary data.\n       This is intended as information for the human recipient\n       rather than for any automatic processing.\n\n (2)   PADDING -- the number of bits of padding that were\n       appended to the bit-stream comprising the actual\n       contents to produce the enclosed 8bit byte-oriented\n       data.  This is useful for enclosing a bit-stream in a\n       body when the total number of bits is not a multiple of\n       8.\n\nBoth of these parameters are optional.\n\nAn additional parameter, \"CONVERSIONS\", was defined in RFC 1341 but\nhas since been removed.  RFC 1341 also defined the use of a \"NAME\"\nparameter which gave a suggested file name to be used if the data\nwere to be written to a file.  This has been deprecated in\nanticipation of a separate Content-Disposition header field, to be\ndefined in a subsequent RFC.\n\nThe recommended action for an implementation that receives an\n\"application/octet-stream\" entity is to simply offer to put the data\nin a file, with any Content-Transfer-Encoding undone, or perhaps to\nuse it as input to a user-specified process.\n\nTo reduce the danger of transmitting rogue programs, it is strongly\nrecommended that implementations NOT implement a path-search\nmechanism whereby an arbitrary program named in the Content-Type\nparameter (e.g., an \"interpreter=\" parameter) is found and executed\nusing the message body as input."
+  },
+  "references": []
+}

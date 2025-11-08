@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.yamaha.openscoreformat",
+  "full": "application/vnd.yamaha.openscoreformat",
+  "extensions": [
+    "osf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.yamaha.openscoreformat",
+    "template_text": "(last updated 2009-03-04)\n\nName : Mark Olleson\n\nEmail : mark.olleson&yamaha.co.uk\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.yamaha.openscoreformat\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis compressed format shares security considerations common to both compressed\nformats and zip-based formats. Additional security considerations associated\nwith this type have not been assessed.\n\nInteroperability considerations :\nNone\n\nPublished specification :\nThe Open Score Format Packaging Specification describes the format of the\ncompressed container:\n\nhttp://openscoreformat.sourceforge.net/\n\nW3C XML Schemas for all XML documents used in the container can be found at the\nsame location.\n\nApplications which use this media :\nContainers primarily contain a digital score (sheet music) conforming to a\nrestricted subset of MusicXML 2.0.\n\nMany existing applications capable of reading and writing MusicXML 2.0 files are\nalso capable of reading the contents of an uncompressed container. A list of\napplications can be found at:\n\nhttp://www.recordare.com/xml/software.html\n\nRecordare's Dolet 4 MusicXML import/export plug-in for Finale is capable of\ndirectly reading and writing Open Score Format containers.\n\nThe Open Score Format Packaging Toolkit can be used pack, unpack and validate\ncontainers. It can be used with application lacking native support for Open\nScore Format to provide access to the digital score in the container.\n\nThe Open Score Format Packaging Toolkit is available at:\n\nhttp://openscoreformat.sourceforge.net/\n\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : osf\n3. Macintosh file type code : osfp\n4. Object Identifiers: none\n\nNone\n\nPerson to contact for further information :\n\n1. Name : Mark Olleson\n2. Email : mark.olleson&yamaha.co.uk\n\nIntended usage : Common\nOpen Score Format is a container format for Digital scores (sheet music) that\ncan be used for interchange between applications, distribution of digital scores\nto users and for archive.\n\nOpen Score Format provides:\n\n* A restricted subset of MusicXML 2.0 targeted at specific content genres\n* Definitions of container content and catalogue metadata\n* Optional digital signing for container contents\n\nAuthor/Change controller : Yamaha Corporation\n\n(file created 2009-03-04)"
+  },
+  "references": []
+}

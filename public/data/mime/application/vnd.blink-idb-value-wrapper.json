@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.blink-idb-value-wrapper",
+  "full": "application/vnd.blink-idb-value-wrapper",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.blink-idb-value-wrapper",
+    "encoding_considerations": "This media type was designed to be transmitted exclusively over IPC channels, where binary data is the norm.",
+    "security_considerations": "The media type's data consists of references to other data (Blobs registered in the Chromium browser). Data should be decoded in the context of the user that is about to consume the resulting blobs, to ensure that the user does not gain access to other users' Blobs.\n\nThis data is designed to be transferred across IPC boundaries, and stored in a database (such as LevelDB) backed by files in the user's home directory. Chromium assumes that the OS provides sufficient integrity and privacy guarantees to both IPC channels (via process isolation) and to the user's home directory (via access control and/or home directory encryption). Therefore, the data described here is expected to be transmitted without additional concerns for integrity or privacy.\n\nMore details about the security model of the Chromium system can be found at https://www.chromium.org/chromium-os/chromiumos-design-docs/security-overview",
+    "additional_information": "1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): None\n4. Macintosh file type code: None\n5. Object Identifiers: None",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2017-06-12, last updated 2017-06-12)\n\nMedia type name: application\n\nMedia subtype name: vnd.blink-idb-value-wrapper\n\nRequired parameters: This type has no parameters\n\nOptional parameters: This type has no parameters\n\nEncoding considerations: binary\nThis media type was designed to be transmitted exclusively over IPC channels, where binary data is the norm.\n\nSecurity considerations:\nThe media type's data consists of references to other data (Blobs registered in the Chromium browser). Data should be decoded in the context of the user that is about to consume the resulting blobs, to ensure that the user does not gain access to other users' Blobs.\n\nThis data is designed to be transferred across IPC boundaries, and stored in a database (such as LevelDB) backed by files in the user's home directory. Chromium assumes that the OS provides sufficient integrity and privacy guarantees to both IPC channels (via process isolation) and to the user's home directory (via access control and/or home directory encryption). Therefore, the data described here is expected to be transmitted without additional concerns for integrity or privacy.\n\nMore details about the security model of the Chromium system can be found at https://www.chromium.org/chromium-os/chromiumos-design-docs/security-overview\n\nPublished specification:\nThe specification will live at https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/indexeddb/IDBValueWrapping.h\n\nApplications which use this media:\nApplications that use the Blink rendering engine, most likely via Chromium's content module. The most prominent applications are currently the Google Chrome and Opera browsers, followed by Electron-based applications, such as Slack, Atom, and Visual Studio Code. A list of Electron-based applications can be found at https://electron.atom.io/apps/\n\nFragment identifier considerations:\nThis media type does not support any fragment identifiers\n\nRestrictions on usage:\nData of this media type is intended to be consumed and produced solely by Blink, the rendering engine in Chromium's browser.\n\nProvisional registration? (standards tree only):\nN/A, this is a vendor tree application\n\nAdditional information:\n\n1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): None\n4. Macintosh file type code: None\n5. Object Identifiers: None\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Victor Costan\n2. Email: pwnall&chromium.org\n\nIntended usage: Limited Use\nData of this media type is intended to be consumed and produced solely by Blink, the rendering engine in Chromium's browser. The data will be stored on disk and transferred between Chromium processes using Chromium's IPC mechanisms.\n\nAuthor/Change controller: Google Chrome's OWP Storage team - storage-dev&chromium.org"
+  },
+  "references": []
+}

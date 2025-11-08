@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.autopackage",
+  "full": "application/vnd.autopackage",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.autopackage",
+    "template_text": "(last updated November 2005)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.autopackage\r\n\r\nRequired parameters : \r\n\r\nOptional parameters : \r\n\r\nEncoding considerations : binary\r\n\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations : \r\nAutopackages are similar to RPMs in that they can contain arbitrary UNIX\r\nshell scripts which can cause harm to the users system by deleting files\r\netc. It's recommended that they are digitally signed and only packages\r\ntrusted by the user are run.\r\n\r\nInteroperability considerations : None\r\n\r\nPublished specification : \r\nSubject to change without notice, however the API used by the embedded shell\r\nscripts is documented at http://autopackage.org/\r\n\r\nApplications which use this media : Autopackage support code\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : package\r\n3. Macintosh file type code : None\r\n4. Object Identifiers: None\r\n\r\nSee http://autopackage.org/ for more information\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Mike Hearn\r\n2. Email : mike&navi.cx\r\n\r\nIntended usage : Common \r\n\r\nAuthor/Change controller : \r\n\r\n(file created 30 November 2005)\r\n"
+  },
+  "references": []
+}

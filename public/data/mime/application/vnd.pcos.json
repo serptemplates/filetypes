@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.pcos",
+  "full": "application/vnd.pcos",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.pcos",
+    "template_text": "(registered 2014-01-31, last updated 2014-01-31)\n\nName : Slawomir Lisznianski\n\nEmail : sl&pushcoin.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.pcos\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\n\n\nSecurity considerations :\nWhile PCOS itself does not offer privacy nor data integrity, it\nprovides the foundation for adding message authenticity and integrity\nservices.\n\nOne of the problems with text-based Internet messages, like\n\"application/json\" or XML, with respect to data integrity is their\nliberal use of whitespace and arbitrary order of name-value fields. In\nshort, two text messages carrying the same information may, and often\nwill, yield different signatures.\n\nPCOS packs data \"densely\" and follows strict structure (schema). As a\nresult, there won't be ambiguities regarding message boundaries nor\nparts included in the signature. With PCOS, remote peers signing a\nmessage independently will always arrive at identical signatures as long\nas the information going into the message was the same.\n\nIn addition to signing, to facilitate ease of encryption of arbitary\npayloads, including non-PCOS derived payloads, PCOS supports wrapping\nand segmentation of messages:\n\nEncrypted PCOS wraps -> Signed PCOS wraps -> Payload\n\nA PCOS message may consist of multiple segments, and each segment\ninclude PCOS or non-PCOS payload. A special meta-segment, following the\nmessage-header and present in every conforming PCOS message, provides\ninformation (an index) regarding data segments included in the message.\nThanks to this index, the receiver may efficiently (without full\nparsing) choose to skip certain segments and proceed to parts it cares for.\n\nIn this manner, PCOS can contain other PCOS or non-PCOS payloads, like\nPNG or PDF files with minimal additional overhead.\n\nIt is fair to mention here that PCOS can wrap an executable binary,\nwhich can cause harm if chosen to be executed by the receiving party.\nThis is no different than running a program found in a ZIP archive or an\nemail attachment.\n\nPCOS parsers themselves do not execute any scripts nor code within\nencoded messages. Parsers rely on static schema, obtained independently\nfrom the message, to decode payloads. Without the schema, it's\nimpossible to reconstruct the original object. Also if the schema used\nby the message-generating side was different than the schema used by the\nmessage-receiving side, the decoded message will not match the original.\nWhile the receiving-side's parser will not crash nor \"run out of\nbounds\", it may not always realize the decoded message is incorrect.\nIt's the application's responsibility to include schema-version or a\nchecksum directly into the PCOS message, to determine if the decoded\nmessage is valid.\n\nThe PCOS messages contain information to be parsed and processed by the\nrecipient's PCOS system. These messages may contain and such systems may\npermit explicit system level commands to be executed while processing\nthe PCOS data. To the extent that a PCOS system will execute arbitrary\ncommand strings, recipients of PCOS messages may be a risk.\n\nInteroperability considerations :\nThe serialization is language and platform neutral.\n\nPublished specification :\nhttps://github.com/slisznia/pcos\n\nApplications which use this media :\nA growing number of open-source mobile point of sale applications distributed \non the Google Play market, as well as consumer applications on Android and \niPhone markets.\n\n- https://play.google.com/store/apps/details?id=com.pushcoin.merchant&hl=en\n- https://play.google.com/store/apps/details?id=com.pushcoin.icebreaker&hl=en\n- https://itunes.apple.com/us/app/pushcoin/id535035214?ls=1&mt=8\n\nFragment identifier considerations :\nNone\n\nRestrictions on usage :\nThere are no restrictions on usage.\n\nProvisional registration? (standards tree only) :\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : -\n2. Magic number(s) : PCOS\n3. File extension(s) : -\n4. Macintosh file type code : -\n5. Object Identifiers: -\n\n\n\nPerson to contact for further information :\n\n1. Name : Slawomir Lisznianski\n2. Email : sl&pushcoin.com\n\nIntended usage : Common\nNone\n\nAuthor/Change controller : Slawomir Lisznianski, sl&pushcoin.com"
+  },
+  "references": []
+}

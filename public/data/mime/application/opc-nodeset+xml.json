@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "opc-nodeset+xml",
+  "full": "application/opc-nodeset+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/opc-nodeset+xml",
+    "encoding_considerations": "The default and only encoding is UTF8.\n\nSecurity considerations: The media types are used for the exchange of \n   metadata between industrial applications. Accepting metadata from \n   an untrustworthy source could have many serious consequences. \n   Therefore all consumers of this media type shall not accept files \n   from an untrusted or unverifiable origin.\n\n   The media format itself allows for recursive operations that could \n   be a vector for denial service attacks. All consumers shall have \n   protections to protect against infinite recursive loops.\n\n   The document format does not contain machine code or scripts. It \n   only has metadata that could trigger the execution of existing \n   programs or scripts.\n\nInteroperability considerations: The data format is completely \n   specified in IEC 62541-6. This specification provides a common \n   representation to ensure interoperability across all platforms.\n\n   (see https://webstore.iec.ch/publication/61115).\n\nPublished specification: IEC 62541-6\n   https://webstore.iec.ch/publication/61115\n\n   An online version maintained by the OPC Foundation is found here:\n   https://reference.opcfoundation.org/v104/Core/docs/Part6/\n\n   The published XML schema is found here:\n   https://opcfoundation.org/UA/2011/03/UANodeSet.xsd\n\nApplications which use this media: Industrial automation applications \n   which exchange metadata that describes the components of \n   automation systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "security_considerations": "metadata between industrial applications. Accepting metadata from \n   an untrustworthy source could have many serious consequences. \n   Therefore all consumers of this media type shall not accept files \n   from an untrusted or unverifiable origin.\n\n   The media format itself allows for recursive operations that could \n   be a vector for denial service attacks. All consumers shall have \n   protections to protect against infinite recursive loops.\n\n   The document format does not contain machine code or scripts. It \n   only has metadata that could trigger the execution of existing \n   programs or scripts.\n\nInteroperability considerations: The data format is completely \n   specified in IEC 62541-6. This specification provides a common \n   representation to ensure interoperability across all platforms.\n\n   (see https://webstore.iec.ch/publication/61115).\n\nPublished specification: IEC 62541-6\n   https://webstore.iec.ch/publication/61115\n\n   An online version maintained by the OPC Foundation is found here:\n   https://reference.opcfoundation.org/v104/Core/docs/Part6/\n\n   The published XML schema is found here:\n   https://opcfoundation.org/UA/2011/03/UANodeSet.xsd\n\nApplications which use this media: Industrial automation applications \n   which exchange metadata that describes the components of \n   automation systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "interoperability_considerations": "specified in IEC 62541-6. This specification provides a common \n   representation to ensure interoperability across all platforms.\n\n   (see https://webstore.iec.ch/publication/61115).\n\nPublished specification: IEC 62541-6\n   https://webstore.iec.ch/publication/61115\n\n   An online version maintained by the OPC Foundation is found here:\n   https://reference.opcfoundation.org/v104/Core/docs/Part6/\n\n   The published XML schema is found here:\n   https://opcfoundation.org/UA/2011/03/UANodeSet.xsd\n\nApplications which use this media: Industrial automation applications \n   which exchange metadata that describes the components of \n   automation systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): None\n   4. Macintosh file type code: None\n   5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2020-09-01, last updated 2020-09-01)\n\nName: Randall Armstrong\n\nEmail: sysadmin&opcfoundation.org\n\nMedia type name: application\n\nMedia subtype name: opc-nodeset+xml\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n   The default and only encoding is UTF8.\n\nSecurity considerations: The media types are used for the exchange of \n   metadata between industrial applications. Accepting metadata from \n   an untrustworthy source could have many serious consequences. \n   Therefore all consumers of this media type shall not accept files \n   from an untrusted or unverifiable origin.\n\n   The media format itself allows for recursive operations that could \n   be a vector for denial service attacks. All consumers shall have \n   protections to protect against infinite recursive loops.\n\n   The document format does not contain machine code or scripts. It \n   only has metadata that could trigger the execution of existing \n   programs or scripts.\n\nInteroperability considerations: The data format is completely \n   specified in IEC 62541-6. This specification provides a common \n   representation to ensure interoperability across all platforms.\n\n   (see https://webstore.iec.ch/publication/61115).\n\nPublished specification: IEC 62541-6\n   https://webstore.iec.ch/publication/61115\n\n   An online version maintained by the OPC Foundation is found here:\n   https://reference.opcfoundation.org/v104/Core/docs/Part6/\n\n   The published XML schema is found here:\n   https://opcfoundation.org/UA/2011/03/UANodeSet.xsd\n\nApplications which use this media: Industrial automation applications \n   which exchange metadata that describes the components of \n   automation systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): None\n   4. Macintosh file type code: None\n   5. Object Identifiers: None\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: OPC Foundation\n   2. Email: sysadmin&opcfoundation.org\n\nIntended usage: Common\n   No restrictions on the use are required.\n\nAuthor/Change controller: OPC Foundation/OPC UA Working Group Chair"
+  },
+  "references": []
+}

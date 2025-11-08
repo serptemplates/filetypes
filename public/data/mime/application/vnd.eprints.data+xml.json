@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.eprints.data+xml",
+  "full": "application/vnd.eprints.data+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.eprints.data+xml",
+    "template_text": "(last updated 2011-06-22)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.eprints.data+xml\n\nRequired parameters : None\n\nOptional parameters : charset\n\n   Same as charset parameter of application/xml as specified in RFC \n   3023.\n\n   files\n   Indicates that file content has been embedded in the response XML. \n   This is used during content-negotiation to allow the client to \n   request file content be included. If the client does not have \n   permission to access file content this parameter will be ignored.\n\n   \"base64\" is the only supported value and indicates that file \n   content has been embedded using base64 encoding. If the parameter \n   is empty or any other value the parameter meaning is undefined (in \n   a response) or should be ignored (during content negotiation).\n\nEncoding considerations : binary\n\nSecurity considerations : In addition to those of application/xml as \n   specified in RFC 3023, section 10 the following considerations \n   apply:\n\n   No executable or active content is defined.\n\n   No integrity features are defined by the media type, with the \n   exception that where files are embedded and checksums are provided \n   the ingesting service should verify the decoded file content \n   against its checksum before further processing those files.\n\n   No explicit privacy features are defined by the media type but\n   privacy-relevant metadata may be provided on an \n   implementation-specific basis.\n\n   If files are embedded they may contain executable and/or malicious\n   content. If file content is decoded care should be taken before any\n   further processing or publication by for example applying a\n   virus-checker.\n\n   Record identifiers may be included that either intentionally or\n   unintentionally conflict with existing identifiers in a consuming\n   system. Care must be taken that existing records are not\n   unintentionally overwritten. This can be achieved by assigning new \n   identifiers on ingest or by ensuring the current user is the owner \n   of the existing records.\n\n   During ingest the system may choose to retrieve files included \n   by-URL reference. If the file is located on the Web (http: or \n   https:) the system should exercise caution to avoid being used by \n   untrusted users as a means of circumventing host-based \n   restrictions. URLs pointing to the local file-system must be \n   ignored for any untrusted sources.\n\nInteroperability considerations :\n\nPublished specification :\n\n   http://wiki.eprints.org/EPData_XML_Representation\n\nApplications which use this media : EPrints http://www.eprints.org/\n\nAdditional information :\n\n   1. Magic number(s) : None\n   2. File extension(s) : .xml\n   3. Macintosh file type code : \"TEXT\"\n   4. Object Identifiers: None\n\nPerson to contact for further information :\n\n   1. Name : Tim Brody\n   2. Email : tdb2&ecs.soton.ac.uk\n\nIntended usage : Limited Use\n\n   XML serialisation of EPrints Data (or \"EPData\") for the \n   import/export of the complete record. This is used e.g. for \n   ingesting the results of XSL transforms from standardised XML \n   formats. The mime-type is necessary to support correct \n   content-type negotiation when using the EPrints REST interface \n   although the client will require knowledge of the instance's\n   database scheme.\n\nAuthor/Change controller : EPrints.org http://www.eprints.org/\n\nTim Brody <tdb2&ecs.soton.ac.uk>\n\n(file created 2011-06-22)"
+  },
+  "references": []
+}

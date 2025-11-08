@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.epson.msf",
+  "full": "application/vnd.epson.msf",
+  "extensions": [
+    "msf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.epson.msf",
+    "template_text": "\n\nDate: Thu, 21 Jan 1999 18:49:27 -0800 (PST)\nFrom: Shoji Hoshina <Hoshina.Shoji&exc.epson.co.jp>\nTo: iana&iana.org, Hoshina.Shoji&exc.epson.co.jp\nSubject: Request for MIME media type Application/Vendor Tree - vnd.epson.msf\n\nName : Shoji Hoshina\n\nE-mail : Hoshina.Shoji&exc.epson.co.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.epson.msf\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nThe content is in 8bit text. And each of that element is used for\ndescribing the characteristic of QUASS Stream file and QUASS Stream\nPlayer.\n\nSecurity considerations : \nSeiko Epson Corp. refuses to give out information that can be used to\nevaluate the security implications of the MIME type.As such,the\nsecurity implications of using this type cannot be assessed and there\nmay be substantial risks is using this type.\n\nInteroperability considerations : \n\n\nPublished specification : \nIt is not an opened specification and no published document is\navailable. Seiko Epson Corp. controls the specification.\n\nApplications which use this media : \nfollowing applications of Seiko Epson Corp. and any licensed company,\nQUASS Stream Player Plugin\nQUASS Stream Player for Embedded System\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : msf\n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Shoji Hoshina\n2. E-mail : Hoshina.Shoji&exc.epson.co.jp\n\nIntended usage : Common \n\n\nAuthor/Change controller : Name:Hoshina.Shoji&exc.epson.co.jp\nCompany:Seiko Epson Corporation\nSection:Research & Development Department\n        Information Technology R&D Department\n        Media Technology Laboratory\nAddress:Hino421-8, Hino-shi, Tokyo, Japan\nZIP:191-8501\nTEL:+81-42-585-1733\nFAX:+81-42-585-1734 \n\n\n"
+  },
+  "references": []
+}

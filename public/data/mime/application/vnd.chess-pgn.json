@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.chess-pgn",
+  "full": "application/vnd.chess-pgn",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.chess-pgn",
+    "encoding_considerations": "PGN data is represented using a subset of the iso-8859-1 charset. Note\nthat printing characters outside the US-ASCII range can only appear\nin string data and commentary. They are not permitted for use in\nsymbol construction.\"",
+    "security_considerations": "PGN files are simply application-readable descriptions of chess matches, and should not contain unexpected and/or executable content.\n\nPGN files do not provide integrity or privacy protection. In the event these\nservices are needed for PGN data they must be supplied externally.",
+    "interoperability_considerations": "N/A",
+    "additional_information": "1. Deprecated alias names for this type: application/x-chess-pgn\n2. Magic number(s): none\n3. File extension(s): .pgn\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-07-01, last updated 2016-07-01)\n\nMedia type name: application\n\nMedia subtype name: vnd.chess-pgn\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\nPGN data is represented using a subset of the iso-8859-1 charset. Note\nthat printing characters outside the US-ASCII range can only appear\nin string data and commentary. They are not permitted for use in\nsymbol construction.\"\n\nSecurity considerations:\nPGN files are simply application-readable descriptions of chess matches, and should not contain unexpected and/or executable content.\n\nPGN files do not provide integrity or privacy protection. In the event these\nservices are needed for PGN data they must be supplied externally.\n\nInteroperability considerations:\nN/A\n\nPublished specification:\n\"Portable Game Notation Specification and Implementation Guide\", March 12, 1994, Steven J. Edwards (coordinator). Available at:\n\n<https://www.chessclub.com/user/help/PGN-spec> or\n<http://opensource.apple.com/source/Chess/Chess-109.0.3/Documentation/PGN-Standard.txt>\n\nApplications which use this media:\nChess applications such as XBoard and WinBoard.\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: application/x-chess-pgn\n2. Magic number(s): none\n3. File extension(s): .pgn\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Kim Scarborough\n2. Email: user&unknown.nu\n\nIntended usage: Common\nRepresentation of chess matches.\n\nAuthor/Change controller: N/A"
+  },
+  "references": []
+}

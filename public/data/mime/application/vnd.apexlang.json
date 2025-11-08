@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.apexlang",
+  "full": "application/vnd.apexlang",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.apexlang",
+    "security_considerations": "- The contents of the idl can be read and interpreted by code \n      generation tools.\n   - The specification itself does not allow for programmatic logic \n      and therefore can not be exploited.\n   - The contents should not contain any private or personal \n      information.\n   - The content may be passed in any way the creator intends \n      (insecure or secure).\n\nInteroperability considerations: The contents in the file will be \n   UTF-8 encoded.\n\nPublished specification: Vendor provided. \n\n   https://apexlang.io/docs/specification",
+    "interoperability_considerations": "UTF-8 encoded.\n\nPublished specification: Vendor provided. \n\n   https://apexlang.io/docs/specification",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s):\n      - .apexlang\n      - .apex\n      - .axdl\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-09-05, last updated 2022-11-02)\n\nMedia type name: application\n\nMedia subtype name: vnd.apexlang\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\n\nSecurity considerations:\n\n   - The contents of the idl can be read and interpreted by code \n      generation tools.\n   - The specification itself does not allow for programmatic logic \n      and therefore can not be exploited.\n   - The contents should not contain any private or personal \n      information.\n   - The content may be passed in any way the creator intends \n      (insecure or secure).\n\nInteroperability considerations: The contents in the file will be \n   UTF-8 encoded.\n\nPublished specification: Vendor provided. \n\n   https://apexlang.io/docs/specification\n\nApplications which use this media:\n\n   - Compilers and editing tools that understand the Apex language \n      for modeling and generation of cloud-native applications\n   - The primary consumer (use case) for the application is via CLI \n      commands that interpret the apex file to generate template code \n      based on the interface definitions. \n      https://github.com/apexlang/codegen\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: No restrictions\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s):\n      - .apexlang\n      - .apex\n      - .axdl\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: Fawad Shaikh\n   2. Email: fawad&candle.dev\n\nIntended usage: COMMON\n\n   This is a IDL that can be used to describe any application.\n\nAuthor/Change controller: phil&candle.dev"
+  },
+  "references": []
+}

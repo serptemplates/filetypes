@@ -1,0 +1,43 @@
+{
+  "type": "application",
+  "subtype": "index.response",
+  "full": "application/index.response",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/index.response",
+    "security_considerations": "Security considerations come into play in at least the following\n   two scenarios.  Indexing information can leak undesirable amounts\n   of proprietary information, unless carefully controlled. At a more\n   fundamental level, the CIP protocol itself requires external\n   security services to operate in a safe manner. Both topics are\n   covered below.",
+    "interoperability_considerations": "Implementors should handle unknown responses gracefully.",
+    "additional_information": "This media type _is_ a standalone type. The code parameter\n   contains the specific response code as specified by Appendix B of\n   the specification document.",
+    "intended_usage": "limited use",
+    "template_text": "(RFC 2652 published August 1999, subtype last updated August 1999)\n\nMIME media type name: application\n\nMIME subtype name: index.response\n\nRequired parameters: code\n\nOptional parameters: none\n\nEncoding considerations: none\n\nSecurity considerations:\n\n   Security considerations come into play in at least the following\n   two scenarios.  Indexing information can leak undesirable amounts\n   of proprietary information, unless carefully controlled. At a more\n   fundamental level, the CIP protocol itself requires external\n   security services to operate in a safe manner. Both topics are\n   covered below.\n\nInteroperability considerations:\n\n   Implementors should handle unknown responses gracefully.\n\nPublished specification:\n\n   RFC 2652\n\nApplications which use this media type:\n\n   This media type is used to encode responses to CIP commands passed\n   between hosts that exchange indices for the purpose of routing\n   referrals.\n\nAdditional information:\n\n   This media type _is_ a standalone type. The code parameter\n   contains the specific response code as specified by Appendix B of\n   the specification document.\n\nPerson & email address to contact for further information:\n\nIntended usage: LIMITED USE\n\nAuthor/Change controller:\n\n"
+  },
+  "references": [
+    {
+      "title": "RFC 2652",
+      "url": "https://www.rfc-editor.org/rfc/rfc2652.html",
+      "kind": "RFC"
+    }
+  ]
+}

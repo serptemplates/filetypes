@@ -1,0 +1,46 @@
+{
+  "type": "audio",
+  "subtype": "eac3",
+  "full": "audio/eac3",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/eac3",
+    "type_name": "audio",
+    "subtype_name": "eac3",
+    "encoding_considerations": "This media type is framed and contains binary data.",
+    "security_considerations": "See Section 6 of RFC 4598.",
+    "interoperability_considerations": "To maintain interoperability with AC-3-capable end-points, in cases\nwhere negotiation is possible, an E-AC-3 end-point SHOULD declare\nitself also as AC-3 capable (i.e., supporting also \"audio/ac3\" as\nspecified in RFC 4184 [RFC4184]).  Note that all E-AC-3 end-points\nare required to be AC-3 capable.",
+    "applications": "Multichannel audio compression of audio, and audio for video.",
+    "additional_information": "Magic number(s):  The first two octets of an E-AC-3 frame are\n      always the synchronization word, which has the hex value\n      0x0B77.",
+    "template_text": "(RFC 4598 published July 2006, subtype last updated July 2006)\n\nType name: audio\n\nSubtype name: eac3\n\nRequired parameter:\n\no  rate: The RTP timestamp clock rate that is equal to the audio\n   sampling rate.  Permitted rates are 32000, 44100, and 48000.\n\nOptional parameter:\n\no  bitStreamConfig: The configuration of programs and substreams in\n   the bit stream, expressed as a sequence of ASCII characters.  This\n   parameter can serve two purposes.  First, during the creation of a\n   session, the bitStreamConfig parameter might be used to negotiate\n   a match between the requirements of a bit stream and the\n   capabilities of a receiver to avoid using network bandwidth for\n   data that cannot be used.  Second, it makes the configuration of\n   the bit stream explicit to the receiver so that whenever a packet\n   is lost, the receiver can identify which kind of frame(s) has been\n   lost to aid error mitigation.\n\n   The format for the value for this parameter is to represent each\n   substream of the bit stream by a single character indicating its\n   type, immediately followed by the number of audio channels\n   resulting if a frame of that substream (plus any other required\n   substreams) is decoded.  Note that even though Low-Frequency\n   Effects (LFE) channels are often described as \"fractional\"\n   channels (e.g., the \".1\" in 5.1), for this parameter, an LFE\n   channel is counted as one (e.g., a 5.1-channel configuration is\n   indicated as 6).  The configuration of the bit stream MUST match\n   the value of this parameter for the duration of the session.\n\n   Allowed values for the substream type are as follows:\n\n   i - Independent substream.\n   d - Dependent substream.\n\nThe E-AC-3 specification [ETSI] defines which configurations of bit\nstreams are legal, which constrains the values the bitStreamConfig\nparameter will take.  Each program starts with, and contains exactly\none, independent substream ('i').  Each independent substream is\nfollowed by between 0 and 8 dependent substreams ('d'), which belong\nto the same program.  See Section 2.1.2 for more discussion of\nprograms and substreams.\n\nFor example, consider a bit stream containing two programs:\n\n*  the first program with\n\n   +  a six-channel independent substream\n   +  a dependent substream containing the additional channels needed\n      for eight channels\n   +  a second dependent substream containing the further channels\n      needed for 14 channels\n\n*  along with a second program with\n\n   +  another six-channel independent substream\n   +  a dependent substream containing the additional channels needed\n      for eight channels\n\nThen the configuration of the bit stream is indicated as follows:\n\n   bitStreamConfig = i6d8d14i6d8\n\nWhen the bitStreamConfig parameter is being used in an offer/answer\nexchange, zero (0) for the number of channels for a substream in an\nanswer is used to indicate a substream that the answerer desires not\nto receive.\n\nEncoding considerations:\n\n   This media type is framed and contains binary data.\n\nSecurity considerations:\n\n   See Section 6 of RFC 4598.\n\nInteroperability considerations:\n\nTo maintain interoperability with AC-3-capable end-points, in cases\nwhere negotiation is possible, an E-AC-3 end-point SHOULD declare\nitself also as AC-3 capable (i.e., supporting also \"audio/ac3\" as\nspecified in RFC 4184 [RFC4184]).  Note that all E-AC-3 end-points\nare required to be AC-3 capable.\n\nPublished specification:\n\n   RFC 4598 and ETSI TS 102.366 [ETSI].\n\nApplications that use this media type:\n\n   Multichannel audio compression of audio, and audio for video.\n\nAdditional information:\n\n   Magic number(s):  The first two octets of an E-AC-3 frame are\n      always the synchronization word, which has the hex value\n      0x0B77.\n\nPerson & email address to contact for further information:\n\n   Brian Link <bdl&dolby.com> IETF AVT working group.\n\nIntended usage:\n\n   COMMON\n\nRestrictions on usage:\n\n   This media type depends on RTP framing, and hence is only defined\n   for transfer via RTP [RFC3550].  Transport within other framing\n   protocols is not defined at this time.\n\nAuthor/Change controller:\n\n   IETF Audio/Video Transport Working Group delegated from the IESG.\n"
+  },
+  "references": [
+    {
+      "title": "RFC 4598",
+      "url": "https://www.rfc-editor.org/rfc/rfc4598.html",
+      "kind": "RFC"
+    }
+  ]
+}

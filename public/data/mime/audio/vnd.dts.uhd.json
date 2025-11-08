@@ -1,0 +1,39 @@
+{
+  "type": "audio",
+  "subtype": "vnd.dts.uhd",
+  "full": "audio/vnd.dts.uhd",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.dts.uhd",
+    "encoding_considerations": "Security considerations: This media subtype consists of audio \n   samples; there is no provision for the carriage of active content \n   in a DTS-UHD bitstream, therefore there is no mechanism to \n   introduce executable code to the client. The size, in bytes, of \n   the decoded payload is known at the time of decoding, so a \n   playback system can respond accordingly if more, or less, than the\n   expected amount of data is generated. Where copy protection of the\n   audio signal is necessary, encryption methods described in ISO/IEC\n   23000-7 and ISO/IEC 23000-9 can be employed, along with a digital \n   rights management system.\n\nInteroperability considerations: DTS-UHD streams and decoders shall \n   comply with the published specifications. The use of DTS-UHD in \n   specific ecosystems may have additional requirements and/or \n   constraints.\n\nPublished specification: ETSI TS 103 491 v 1.1.1\n\n   https://www.etsi.org/deliver/etsi_ts/103400_103499/103491/01.01.01_60/ts_103491v010101p.pdf\n\nApplications which use this media: Application for encoding and \n   decoding digital audio used in packaged media, streaming and \n   broadcast applications\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "security_considerations": "samples; there is no provision for the carriage of active content \n   in a DTS-UHD bitstream, therefore there is no mechanism to \n   introduce executable code to the client. The size, in bytes, of \n   the decoded payload is known at the time of decoding, so a \n   playback system can respond accordingly if more, or less, than the\n   expected amount of data is generated. Where copy protection of the\n   audio signal is necessary, encryption methods described in ISO/IEC\n   23000-7 and ISO/IEC 23000-9 can be employed, along with a digital \n   rights management system.\n\nInteroperability considerations: DTS-UHD streams and decoders shall \n   comply with the published specifications. The use of DTS-UHD in \n   specific ecosystems may have additional requirements and/or \n   constraints.\n\nPublished specification: ETSI TS 103 491 v 1.1.1\n\n   https://www.etsi.org/deliver/etsi_ts/103400_103499/103491/01.01.01_60/ts_103491v010101p.pdf\n\nApplications which use this media: Application for encoding and \n   decoding digital audio used in packaged media, streaming and \n   broadcast applications\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "comply with the published specifications. The use of DTS-UHD in \n   specific ecosystems may have additional requirements and/or \n   constraints.\n\nPublished specification: ETSI TS 103 491 v 1.1.1\n\n   https://www.etsi.org/deliver/etsi_ts/103400_103499/103491/01.01.01_60/ts_103491v010101p.pdf\n\nApplications which use this media: Application for encoding and \n   decoding digital audio used in packaged media, streaming and \n   broadcast applications\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A \n   2. Magic number(s): N/A \n   3. File extension(s): various media file types, such as .mp4, \n      .mov, .mkv, etc.\n   4. Macintosh file type code: various media file types, such as \n      moov, mpeg2, etc.\n   5. Object Identifiers: N/A\n\nGeneral Comments: To be used for I.P. streaming delivery or download \n   of audio-visual and audio only content.",
+    "intended_usage": "common",
+    "change_controller": "Xperi Corporation, c/o Phillip Maness,",
+    "template_text": "(registered 2018-11-14, last udpated 2021-05-21)\n\nName: Phillip Maness\n\nEmail: phillip.maness&xperi.com\n\nMedia type name: audio\n\nMedia subtype name: vnd.dts.uhd\n\nRequired parameters: profile\n\n   Values for profile:\n\n   Profile = “p1” or “P1”, indicates a stream that conforms to a \n   DTS-UHD transcoder profile that supports variable channel \n   assignments, audio objects and associated metadata. This \n   transcoder profile is used to send a partially decoded bitstream \n   using a high bandwidth interface from a receiving device, such as \n   one containing an HTML5 streaming client, to a compatible \n   rendering client, such as an audio receiver.\n\n   profile = \"p2\" or \"P2\", indicates a stream that conforms to \n   DTS-UHD Profile 2, which corresponds to ISOBMFF sample entry types\n   coded as 'dtsx' and CMAF compliant streams carrying the 'dts2'  \n   brand. \n\n   profile = \"p3\" or \"P3\", indicates a stream that conforms to \n   DTS-UHD Profile 3, which corresponds to ISOBMFF sample entry types\n   coded as 'dtsy' and CMAF compliant streams carrying the 'dts3' \n   brand.\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: This media subtype consists of audio \n   samples; there is no provision for the carriage of active content \n   in a DTS-UHD bitstream, therefore there is no mechanism to \n   introduce executable code to the client. The size, in bytes, of \n   the decoded payload is known at the time of decoding, so a \n   playback system can respond accordingly if more, or less, than the\n   expected amount of data is generated. Where copy protection of the\n   audio signal is necessary, encryption methods described in ISO/IEC\n   23000-7 and ISO/IEC 23000-9 can be employed, along with a digital \n   rights management system.\n\nInteroperability considerations: DTS-UHD streams and decoders shall \n   comply with the published specifications. The use of DTS-UHD in \n   specific ecosystems may have additional requirements and/or \n   constraints.\n\nPublished specification: ETSI TS 103 491 v 1.1.1\n\n   https://www.etsi.org/deliver/etsi_ts/103400_103499/103491/01.01.01_60/ts_103491v010101p.pdf\n\nApplications which use this media: Application for encoding and \n   decoding digital audio used in packaged media, streaming and \n   broadcast applications\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n   1. Deprecated alias names for this type: N/A \n   2. Magic number(s): N/A \n   3. File extension(s): various media file types, such as .mp4, \n      .mov, .mkv, etc.\n   4. Macintosh file type code: various media file types, such as \n      moov, mpeg2, etc.\n   5. Object Identifiers: N/A\n\nGeneral Comments: To be used for I.P. streaming delivery or download \n   of audio-visual and audio only content.\n\nPerson to contact for further information:\n\n   1. Name: Phillip Maness\n   2. Email: phillip.maness&xperi.com\n\nIntended usage: Common\n\nAuthor: Phillip Maness\n\nChange controller: Xperi Corporation, c/o Phillip Maness, \n   phillip.maness&xperi.com"
+  },
+  "references": []
+}

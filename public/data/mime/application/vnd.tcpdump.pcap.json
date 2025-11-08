@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.tcpdump.pcap",
+  "full": "application/vnd.tcpdump.pcap",
+  "extensions": [
+    "pcap",
+    "cap",
+    "dmp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.tcpdump.pcap",
+    "template_text": "(last updated 2011-03-30)\n\nName : Glen Turner\n\nEmail : gdt&gdt.id.au\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.tcpdump.pcap\n\nRequired parameters : None.\n\nOptional parameters : None.\n\nEncoding considerations : binary\n\n\nSecurity considerations :\nThe media does not contain \"active content\" (see RFC4288 section 4.6).\nHowever a packet capture may contain traffic created by software which uses \n\"active content\".\nAttempts to decode the contents of these captured packets beyond a simple hex \ndump may require the interpretation of \"active content\".\nSuch interpretation should take care not to use files and other resources on the \nmachine inspecting the packet capture.\n\nThe media does not contain \"compressed content\" (see RFC4288 section 4.6). \nHowever a packet capture may contain traffic created by software which uses \n\ncompression. Attempts to decode the contents of these captured packets beyond a \nsimple hex dump may require decompression. Such decompression should take care \nto ameliorate the risk of excessive resource use on the machine inspecting the \npacket capture.\n\nThe media does not contain XML. However a packet capture may contain traffic \ncreated by software which uses XML. Attempts to decode the contents of these \ncaptured packets beyond a simple hex dump may require the parsing of XML. Such \nparsing should take care to ameliorate the risks noted in Section 10 \"Security \nConsiderations\" of RFC3023 \"XML Media Types\".\n\nThe media does not contain ASN.1. However a packet capture may contain traffic \ncreated by software which uses ASN.1. Attempts to decode the contents of these \ncaptured packets beyond a simple hex dump may require the parsing of ASN.1. Such \nparsing has a history of implementation flaws which can be exploited for denial of \nservice or access. There were 39 distinct NIST CVE entries concerning the \ninterpretation of ASN.1 between 2004 and 2010.\n\nThe general header and the packet headers may form a covert channel which \nidentifies the class of host which created the media.\n\nThe media contains captured network packets. These packets may reveal the private \nmatters of network users. Those network users may be unaware that a packet \ncapture has taken place. Even where software attempts to preserve network user \nprivacy by encrypting packet content (such as by using Transport Layer Security or \nIPsec) the packets' headers and timing are still subject to traffic analysis.\n\nIt is strongly recommended that packet captures be encrypted when further \ntransmitted (such as by e-mail or web) to preserve network users' privacy from \nfurther interception.\n\nBugs may exist in some reading programs which could possibly be exploited to gain \nunauthorized access to a recipient's system. Apart from noting this possibility, there \nis no specific action to take to prevent this, apart from the timely correction of such \nbugs if any are found.\n\nInteroperability considerations :\nA network protocol capture is written in host byte order. The first four bytes form a \nmagic number.\n\n0xa1b2c3d4 indicates that the reader has the same byte order as the writer. \n0xd4c3b2a1 indicates that the reader has a different byte order from the writer and \nso the reader should swap bytes in the general header, in the packet header and in \nsome link layer headers. The other bytes of the captured packet are always in the \norder they appeared on the wire.\n\nThe accuracy and resolution of the time stamp on each packet and the moment \nduring packet processing when the timestamp is applied depends upon the host's \nhardware and its operating system.\n\nAs a result of the two items above, differing hosts capturing the same traffic at the \nsame moment may not produce the same pcap media.\n\nThe header contains major and minor version numbers to allow a reading program \nto determine if it is compatible with the media. A reading program is not compatible \nif it encounters a major version number greater than it expects.\n\nData link types are assigned by tcpdump.org and defined in the source code of \nlibpcap, which is available from www.tcpdump.org.\n\nThe data link types LINKTYPE_USER0 to LINKTYPE_USER15 are reserved for local \nuse and thus captures containing those data link types are intentionally not \ninteroperable.\n\nPublished specification :\nThe specification is contained within the libpcap source code. At the time of \napplication (2011) the specification was in UNIX manual format with the name \npcap-savefile.manfile.in. Source code for libpcap is available from\n<http://www.tcpdump.org/>.\n\nFurther information is available from the web page \"Libpcap File Format\". At the \ntime of application (2011) this was at\n<http://wiki.wireshark.org/Development/LibpcapFileFormat>.\n\nThe pcap file format was invented for use by tcpdump. Tcpdump and its pcap file \nformat was created by V Jacobson, C Leres and S McCanne. It was included in \nBerkeley Software Distribution (BSD) UNIX, and is widely available on many \nsystems.\n\nApplications which use this media :\nLibpcap, a C library to capture network packets for POSIX-like systems.\nNet::Pcap, Jpcap, python-libpcap, Ruby/Pcap are respectively Perl, Java, Python and \nRuby bindings for libpcap.\n\nWinPcap, a port of libpcap for Microsoft Windows.\n\nLibpcap and WinPcap are in turn used by:\n\nSnort, a network intrusion detector.\n\nTcpdump, a command line tool to capture and display network packets.\n\nWinDump, a port of tcpdump to Microsoft Windows.\n\nWireshark (formerly Ethereal), a graphical tool to capture, display and analyse \nnetwork packets.\n\nMany other programs which capture, display, analyse, manipulate and replay \nnetwork traffic use this media format.\n\nAdditional information :\n\n1. Magic number(s) : 0xa1b2c3d4, 0xd4c3b2a1\n2. File extension(s) : .pcap, .cap, .dmp\n3. Macintosh file type code : None.\n4. Object Identifiers: None.\n\nFor further information see <http://www.tcpdump.org/>.\n\nPerson to contact for further information :\n\n1. Name : Guy Harris\n2. Email : guy&alum.mit.edu\n\nIntended usage : Common\nNetwork captures written in the pcap format are widely used in the data networking \ncommunity. They can be sent in email with a strong expectation that the receiver's \nnetwork capture software can read them.\n\nAuthor/Change controller : Guy Harris <guy&alum.mit.edu>\n\n(file created 2011-03-30)"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.windows.devicepairing",
+  "full": "application/vnd.windows.devicepairing",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.windows.devicepairing",
+    "template_text": "(Registered 2013-07-23, last updated 2013-07-23)\r\n\r\nName : Priya Dandawate\r\n\r\nEmail : pdandaw&microsoft.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.windows.devicepairing\r\n\r\nRequired parameters : None.\r\nOptional parameters :\r\nNone.\r\n\r\nEncoding considerations : binary\r\n\r\nSecurity considerations :\r\n\r\nThis is a simple media type. Security is handled at other layers in the OS.\r\nThis media type sends the device friendly name & installation type to the OS.\r\n\r\nThe content does not include any active or executable content and does\r\nnot provide any integrity or privacy protections of its own.\r\n\r\nInteroperability considerations :\r\n\r\n\r\nPublished specification :\r\nWindows Near Field Proximity Implementation Specification. Please see section 5 \r\nfor a full description of the payload.\r\n\r\nApplications which use this media :\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None.\r\n2. File extension(s) : None.\r\n3. Macintosh file type code : None.\r\n4. Object Identifiers: None.\r\n\r\nThis Media type should be used in conjunction with the NFC Forum Connection \r\nHandover Select message. The message informs Windows how to install the device \r\n(i.e. try all transports OR one-and-done) & provides Windows with the device \r\nfriendly name.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Priya Dandawate\r\n2. Email : pdandaw&microsoft.com\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : Microsoft, Program Manager"
+  },
+  "references": []
+}

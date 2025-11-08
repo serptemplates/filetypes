@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.fujixerox.ddd",
+  "full": "application/vnd.fujixerox.ddd",
+  "extensions": [
+    "ddd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.fujixerox.ddd",
+    "intended_usage": "common",
+    "template_text": "\n\n\nMIME media type name : application\n\nMIME subtype name : vnd.fujixerox.ddd\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations :\n This media type consists of binary data; appropriate\n encoding must be used on transports that cannot handle binary\n directly.\n\nSecurity considerations :\n ddd is a 2D CAD format which is intended to be processed by\n applications described in the section \"Applications which\n use this media\". It dose not include executable data such as\n OLE objects, executable macros, and so forth. As such,\n there are not security risks, since it does not induce\n any particular behavior by an application.\n And it includes no information and has no architecture for data\n integrity and confidentiality. So if necessary, appropriate integrity\n or confidentiality services should be used on transports.\n\nInteroperability considerations :\n This media type will be used by applications described below.\n There's no interoperability issues among users who use these\n applications.\n\nPublished specification :\n nothing\n\nApplications which use this media :\n following applications of Fuji Xerox,\n   - EDMICS 2000\n   - DocuFile\n\nAdditional information :\n Magic number(s) : 44 00 00 DD hex, or 44 00 00 0D hex\n File extension(s) : ddd\n Macintosh file type code : none\n\n\nPerson & email address to contact for further information:\n Name: Masanori Onda\n E-mail: Masanori.Onda&fujixerox.co.jp\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n Name: Masanori Onda\n Company: Fuji Xerox Co., Ltd.\n Section: Engineering Document Systems Business Unit\n     Engineering Systems Group\n Address: 3-2-1, Sakado, Takatsu-ku, Kawasaki-shi, Kanagawa-ken\n213-8508,\nJapan\n TEL:+81-44-812-7241\n FAX:+81-44-812-8101\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "davmount+xml",
+  "full": "application/davmount+xml",
+  "extensions": [
+    "davmount"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/davmount+xml",
+    "encoding_considerations": "Identical to those of \"application/xml\" as described in [RFC3023],\nSection 3.2.",
+    "security_considerations": "As defined in this specification. In addition, as this media type\nuses the \"+xml\" convention, it shares the same security\nconsiderations as described in [RFC3023], Section 10.",
+    "interoperability_considerations": "There are no known interoperability issues.",
+    "applications": "SAP Netweaver Knowledge Management, Xythos Drive.",
+    "additional_information": "Magic number(s):\n\nAs specified for \"application/xml\" in [RFC3023], Section 3.2.\n\nFile extension(s):\n\n.davmount",
+    "template_text": "(RFC 4709 published October 2006, subtype last updated October 2006)\n\nType name:\n\napplication\n\nSubtype name:\n\ndavmount+xml\n\nRequired parameters:\n\nnone\n\nOptional parameters:\n\n\"charset\": This parameter has identical semantics to the charset\nparameter of the \"application/xml\" media type as specified in\n[RFC3023].\n\nEncoding considerations:\n\nIdentical to those of \"application/xml\" as described in [RFC3023],\nSection 3.2.\n\nSecurity considerations:\n\nAs defined in this specification. In addition, as this media type\nuses the \"+xml\" convention, it shares the same security\nconsiderations as described in [RFC3023], Section 10.\n\nInteroperability considerations:\n\nThere are no known interoperability issues.\n\nPublished specification:\n\nThis specification.\n\nApplications that use this media type:\n\nSAP Netweaver Knowledge Management, Xythos Drive.\n\nAdditional information:\n\nMagic number(s):\n\nAs specified for \"application/xml\" in [RFC3023], Section 3.2.\n\nFile extension(s):\n\n.davmount\n\nFragment identifiers:\n\nAs specified for \"application/xml\" in [RFC3023], Section 5.\n\nBase URI:\n\nAs specified in [RFC3023], Section 6.\n\nMacintosh file type code(s):\n\nTEXT\n\nPerson & email address to contact for further information:\n\nJulian Reschke <julian.reschke&greenbytes.de>\n\nIntended usage:\n\nCOMMON\n\nRestrictions on usage:\n\nNone.\n\nAuthor:\n\nJulian Reschke\n\nChange controller:\n\nIESG\n\n\n"
+  },
+  "references": []
+}

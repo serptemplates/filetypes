@@ -1,0 +1,37 @@
+{
+  "type": "multipart",
+  "subtype": "vnd.bint.med-plus",
+  "full": "multipart/vnd.bint.med-plus",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/multipart/vnd.bint.med-plus",
+    "security_considerations": "The security issues associated with this type have not been assessed.",
+    "interoperability_considerations": "No interoperability issues known or expected.",
+    "additional_information": "1. Deprecated alias names for this type: N/A 2. Magic number(s): N/A \n3. File extension(s): bmed 4. Macintosh file type code: N/A 5. Object\nIdentifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2017-04-07, last updated 2017-04-07)\n\nName: Heinz-Peter Schütz\nEmail: heinz.schuetz&bint.ch\n\nMedia type name: multipart\nMedia subtype name: vnd.bint.med-plus\n\nRequired parameters:\nN/A\n\nOptional parameters:\nN/A\n\nEncoding considerations:\nIt shall contain:\n\nmultipart/vnd.bint.med-plus containers are supposed to contain two\nordered parts, each containing the same data but in a different form,\nto be processed in a fashion similar to multipart/alternative.\n\nFor example:\nA) application/pdf and an\nB) application/vnd.bint.med-content media type.\n\nThe first part is a conventional, easily rendered type, usually something\nlike application/pdf, that's meant for rendering/documentation only.\n\nThe second part will be a special type that's used when special \nprocessing is appropriate.\n\nA compliant processor capable of handling the first part but not the second\nshall process the first part only. Subsequent documents derived from the\ncontents of the multipart/vnd.bint.med-plus container shall be based on the\nfirst part only, and will not be placed inside a multipart/vnd.bint.med-plus\ncontainer.\n\nA processor, able to handle the second body part, shall use it as \nprimary data source and must be able to reproduce a consistent first \npart, when creating an updated multipart/vnd.bint.med-plus document.\n\nThe parts are two alternative representations (syntax) of the data, \nwith the same semantics, which can be processed each to a different \nextent by different processors.\n\n- one more generically to be handled, primarily for display and robust\ndocumentation purpose, handled by widely spread processors\n\n- one more structured for automatic processing but generally not known\nby common processors\n\nSecurity considerations:\nThe security issues associated with this type have not been assessed.\n\nInteroperability considerations:\nNo interoperability issues known or expected.\n\nPublished specification:\nN/A\n\nApplications which use this media:\nBINTmed Affinity Domain\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nNone known yet.\nThought to be used in the BINTmed Context only.\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A 2. Magic number(s): N/A \n3. File extension(s): bmed 4. Macintosh file type code: N/A 5. Object\nIdentifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n1. Name: Heinz Schuetz\n2. Email: heinz.schuetz&bint.ch\n\nIntended usage: Limited Use\nfor Internal store and exchange over IHE profiles\n\nAuthor/Change controller: Heinz Schuetz / Heinz Schuetz \nheinz.schuetz&bint.ch BINT CH-8408 Winterthur"
+  },
+  "references": []
+}

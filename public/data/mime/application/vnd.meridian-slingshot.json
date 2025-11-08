@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.meridian-slingshot",
+  "full": "application/vnd.meridian-slingshot",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.meridian-slingshot",
+    "encoding_considerations": "Slingshot content may include 8-bit binary data and so\n        requires a binary-safe connection or encoding.",
+    "security_considerations": "This MIME type is intended for use in triggering the launch\n        of applications on a user workstation.  This is done in\n        conjunction with a pre-installed Slingshot client program.\n        The Slingshot MIME type does not contain any executable content,\n        nor does it directly specify the application to be launched.\n        Instead, it names a server which the Slingshot client must\n        contact to obtain application launch parameters.\n        The Slingshot client may be configured to accept only those\n        requests which name particular servers.",
+    "template_text": "\n\nFrom ewedel&meridian-data.com  Wed Aug 14 04:49:56 1996\nDate: Wed, 14 Aug 96 12:49:56 PST\nFrom: \"Eric Wedel\" <ewedel&meridian-data.com>\nTo: iana&isi.edu\nSubject: Proposed Media Type: application/vnd.Meridian-Slingshot\nContent-Length: 1843\nStatus: RO\nX-Lines: 47\n\nHi..  this application has been in circulation on ietf-types&uninett.no for\ntwo weeks.  No adverse comments were received, so I'd like to submit\nthis for addition to the formal list of MIME types.\n\nThanks, Eric Wedel\n==================================================================\nSubject:  Registration of new Media Type application/vnd.Meridian-Slingshot\n\nMedia Type name: application\n\nMedia subtype name: vnd.Meridian-Slingshot\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations:\n        Slingshot content may include 8-bit binary data and so\n        requires a binary-safe connection or encoding.\n\nSecurity considerations:\n        This MIME type is intended for use in triggering the launch\n        of applications on a user workstation.  This is done in\n        conjunction with a pre-installed Slingshot client program.\n        The Slingshot MIME type does not contain any executable content,\n        nor does it directly specify the application to be launched.\n        Instead, it names a server which the Slingshot client must\n        contact to obtain application launch parameters.\n        The Slingshot client may be configured to accept only those\n        requests which name particular servers.\n\nPublished specification:\n        The Slingshot MIME content specifications are proprietary to\n        Meridian Data, Inc.  This MIME type is being registered to\n        identify its use within the HTTP environment.  This registration\n        is not intended to specify either the content format or details\n        of its usage.\n\nPerson & email address to contact for further information:\n        Eric Wedel\n        Meridian Data, Inc.\n        5615 Scotts Valley Drive\n        Scotts Valley, CA  95066\n        ewedel&meridian-data.com\n==================================================================\n\n\n\n\n\n"
+  },
+  "references": []
+}

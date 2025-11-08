@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.cloanto.rp9",
+  "full": "application/vnd.cloanto.rp9",
+  "extensions": [
+    "rp9"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cloanto.rp9",
+    "template_text": "(last updated 2009-09-01)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.cloanto.rp9\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe media type does not contain active content or other code intended to be\nexecuted in the host environment. The media type MAY contain code intended to\nrun in a sandboxed emulation environment. Implementations that execute such\ncontent MUST ensure that untrusted content is not executed in an unprotected\nenvironment. The security considerations for this type have not been completely\nassessed.\n\nInteroperability considerations :\n\n\nPublished specification :\nAvailable for information purposes only at http://www.retroplatform.com/kb/15-122\n\nApplications which use this media :\nRetroPlatform Player (http://www.retroplatform.com)\n\nAdditional information :\n\n1. Magic number(s) : 50 4B 03 04\n2. File extension(s) : rp9\n3. Macintosh file type code : CRP9\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Mike Labatt\n2. Email : mike-labatt.iana-mime&cloanto.net\n\nIntended usage : Common\n\n\nAuthor/Change controller :\n\n(file created 2009-09-01)"
+  },
+  "references": []
+}

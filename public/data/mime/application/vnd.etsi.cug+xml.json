@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.cug+xml",
+  "full": "application/vnd.etsi.cug+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.cug+xml",
+    "template_text": "(last updated 2009-03-30)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.etsi.cug+xml\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : 8bit\n\n   This media type may require encoding on transports not capable of \n   handling 8 bit text.\n\nSecurity considerations : The information allows to identify that the \n   user is belonging to a closed user group. Security mechanisms at \n   the transport layer are needed to provide integrity of the \n   content. There is no Active or Executable Content included in\n   the media type mentioned.\n\n   The ETSI TS 183 054 includes only textual XML to Control Services.\n   The security protection between the User Equipment and the Core \n   IMS complies with 3GPP TS 33.203 release 7\n   (http://www.3gpp.org/ftp/Specs/archive/33_series/33.203/).\n\n   The security protection between the Core IMS and other network \n   entities complies with 3GPP TS 33.210 release 7\n   (ftp://www.3gpp.org/Specs/archive/33_series/33.210/). Both 3GPP \n   specifications provide authentication, integrity and encryption \n   protection.\n\nInteroperability considerations : Interoperability is assessed not to \n   be an issue, as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and byte \n   ordering issues. Message format does have version number and \n   backwards compatibility will be preserved in the possible format \n   evolution.\n\nPublished specification :\n\n   ETSI TS 183 054 v2.1.0 available at \n   http://pda.etsi.org/pda/queryform.asp\n\nApplications which use this media : The Closed User Group (CUG) \n   service enables users to form groups of members, whose \n   communication profile is restricted for incoming and outgoing \n   communications. The CUG service, based on stage one and two of the \n   ISDN Communication diversion supplementary services. Within the \n   Next Generation Network (NGN) the stage 3 description is specified \n   using the IP Multimedia Communication Control Protocol based on \n   Session Initiation Protocol (SIP) and Session Description Protocol \n   (SDP). This clause defines the XML Schema to be used for providing \n   the CUG Interlock code and the CUGcommunicationindicator.\n\nAdditional information :\n\n   1. Magic number(s) : none\n   2. File extension(s) : none\n   3. Macintosh file type code : none\n   4. Object Identifiers: none\n\n   CUG\n\nPerson to contact for further information :\n\n   1. Name : Shicheng Hu\n   2. Email : shicheng.hu&etsi.org\n\nIntended usage : Common\n\nAuthor/Change controller : sonia.compans&etsi.org\n\n(file created 2009-03-30)"
+  },
+  "references": []
+}

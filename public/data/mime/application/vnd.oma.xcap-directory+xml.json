@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.xcap-directory+xml",
+  "full": "application/vnd.oma.xcap-directory+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.xcap-directory+xml",
+    "template_text": "(last updated 14 September 2006)\r\n\r\nName : Sean Kelley\r\n\r\nEmail : seankelley&motorola.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.oma.xcap-directory+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : 8bit\r\nThe UTF-8 charset is used in the content of this XML-based media type.\r\n\r\nSecurity considerations : This content type carries a list of XML\r\ndocuments with associated a user and should be kept private. The XML\r\ndocuments themselves are protected by authorization policies enforced by\r\nthe XCAP Server where the documents are stored, which controls access to\r\nthe document contents.\r\n\r\nThis media type does not contain active or executable content.\r\n\r\nInteroperability considerations : This content type provides a format\r\nfor exchanging a list of XCAP-managed XML documents stored in the\r\nnetwork for a particular XCAP User ID (XUI), for OMA XDM purposes.\r\n\r\nPublished specification : The OMA XDM Specification is published at\r\nhttp://www.openmobilealliance.org/.\r\n\r\nApplications which use this media : OMA-specified applications that make\r\nuse of the OMA XDM service enabler.\r\n\r\nAdditional information :\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none \r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n1. Name : OMA Presence and Availability (PAG) Working Group \r\n2. Email : technical-comments&mail.openmobilealliance.org\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : The OMA XML Document Management\r\nspecifications are a work item of the OMA Presence and Availability\r\n(PAG) Working Group. The Open Mobile Alliance has change control over\r\nthese specifications, with mailing list address\r\ntechnical-comments&mail.openmobilealliance.org.\r\n\r\n(file created 14 September 2006)\r\n"
+  },
+  "references": []
+}

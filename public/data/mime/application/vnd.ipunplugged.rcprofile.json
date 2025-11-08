@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.ipunplugged.rcprofile",
+  "full": "application/vnd.ipunplugged.rcprofile",
+  "extensions": [
+    "rcprofile"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ipunplugged.rcprofile",
+    "template_text": "\r\n(last updated 2003-12-03)\r\n\r\nName : Per Ersson\r\n\r\nEmail : per&ipunplugged.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.ipunplugged.rcprofile\r\n\r\nRequired parameters :     \r\n\r\nOptional parameters : \r\n    \r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nSecurity considerations : The attachement is encrypted with strong encryption, 3DES \r\nwith 168 bit effective key length. The content of the encrypted attachement is a text \r\nfile containing sensetive data, such as keys, used to establish mobile VPN's. The attachement \r\ndoes not contain any executable content.\r\n\r\nInteroperability considerations : \r\n    \r\n\r\nPublished specification : \r\n    \r\n\r\nApplications which use this media : \r\nIP Unplugged Roaming Client 3.5+\r\n\r\n\r\nAdditional information :\r\n1. Magic number(s) : n/a\r\n2. File extension(s) : rcprofile\r\n3. Macintosh file type code : n/a\r\n4. Object Identifiers: n/a\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Per Ersson\r\n2. Email : per&ipunplugged.com\r\n\r\nIntended usage : Limited Use \r\nTo do the inital configuration of a mobile VPN client.\r\n\r\nAuthor/Change controller :          \r\n\r\n\r\n[Created 2003-12-03]\r\n"
+  },
+  "references": []
+}

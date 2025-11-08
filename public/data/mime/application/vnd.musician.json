@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.musician",
+  "full": "application/vnd.musician",
+  "extensions": [
+    "mus"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.musician",
+    "encoding_considerations": "Files of subtype \"musician\" are in 8-bit binary format.",
+    "security_considerations": "Files of subtype \"musician\" contain no executable\n   code, and do not pose any known security risks.",
+    "template_text": "\n\nDate: Fri, 7 Mar 1997 00:28:25 -0800 (PST)\nFrom: Greg Adams <gadams&waynesworld.ucsd.edu>\nTo: iana&isi.edu\nSubject: Registration of a new MIME media-subtype application/vnd.musician\n\n==================================================================\n\nMedia Type name: application\n\n(If the above is not an existing top-level Media Type, please\nexplain why an existing type cannot be used.)\n\nMedia subtype name: vnd.musician\n\nRequired parameters: No required parameters\n\nOptional parameters: No optional parameters\n\nEncoding considerations:\n\n   Files of subtype \"musician\" are in 8-bit binary format.\n\nSecurity considerations:\n\n   Files of subtype \"musician\" contain no executable\n   code, and do not pose any known security risks.\n\nPublished specification:\n\n  There is currently no published specification for files\n  of the media-type \"application/vnd.musician\".\n\nSpecification by example:\n\n  Invoke the MUSICIAN score-creation interface, and \n  depress the 'SAVE SCORE' button.  This will create\n  a default file of the type \"application/vnd.musician\" \n  with the default name \"score.mus\". \n       \nComments:\n\n  The Media subtype \"musician\" derives its name from\n  the MUSICIAN language/encoding conceived and developed\n  by RenaiScience Corporation.  MUSICIAN is an acronym\n  standing for \"MUsical Score Interpreted Code Invented\n  for the ASCII designation of Notation\". Files of\n  the type \"application/musician\" are always denoted by\n  the \".mus\" file extension, and contain MUSICIAN code\n  as a part of their content. These files will be \n  viewable via the MUSICIAN plugin for the Netscape,\n  Explorer, and other plugin-capable browsers.              \n       \n\nPerson & email address to contact for further information:\n\n  Robert G. Adams\n  (gadams&renaiscience.com)\n  RenaiScience Corporation\n  2371 Caringa Way, Suite D\n  Carlsbad, CA 92009        \n\n==================================================================\n\n\n\n"
+  },
+  "references": []
+}

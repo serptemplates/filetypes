@@ -1,0 +1,44 @@
+{
+  "type": "audio",
+  "subtype": "ip-mr_v2.5",
+  "full": "audio/ip-mr_v2.5",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/ip-mr_v2.5",
+    "encoding_considerations": "This media type is framed and binary (see RFC 4288, Section 4.8).",
+    "security_considerations": "See Section 6 of RFC 6262.",
+    "interoperability_considerations": "none",
+    "applications": "Real-time audio applications like voice over IP,\n   teleconference, and multimedia streaming.",
+    "additional_information": "none",
+    "template_text": "(RFC 6262 published August 2011)\n\nMedia Type name:     audio\n\nMedia Subtype name:  ip-mr_v2.5\n\nRequired parameters: none\n\nOptional parameters:\n   These parameters apply to RTP transfer only.\n\n   ptime: The media packet length in milliseconds.  Allowed values\n   are: 20, 40, 60, and 80.\n\nEncoding considerations:\n   This media type is framed and binary (see RFC 4288, Section 4.8).\n\nSecurity considerations:\n   See Section 6 of RFC 6262.\n\nInteroperability considerations:\n   none\n\nPublished specification:\n   RFC 6262\n\nApplications that use this media type:\n   Real-time audio applications like voice over IP,\n   teleconference, and multimedia streaming.\n\nAdditional information:\n   none\n\nPerson & email address to contact for further information:\n   V. Sviridenko <vladimirs&spiritdsp.com>\n\nIntended usage:\n   COMMON\n\nRestrictions on usage:\n   This media type depends on RTP framing and thus is only defined\n   for transfer via RTP [RFC3550].\n\nAuthors:\n   Sergey Ikonin <info&spiritdsp.com>\n   Dmitry Yudin <info&spiritdsp.com>\n\nChange controller:\n   IETF Audio/Video Transport working group delegated from the IESG."
+  },
+  "references": [
+    {
+      "title": "RFC 6262",
+      "url": "https://www.rfc-editor.org/rfc/rfc6262.html",
+      "kind": "RFC"
+    }
+  ]
+}

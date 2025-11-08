@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.scribus",
+  "full": "application/vnd.scribus",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.scribus",
+    "template_text": "(last updated 27 June 2006)\r\n\r\nName : Craig Bradney\r\n\r\nEmail : cbradney&zip.com.au\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.scribus\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters :\r\nNone\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of handling 8\r\nbit text.\r\n\r\nSecurity considerations :\r\nNone at present other than user included data which is editable by the user.\r\nScripting is supported within Scribus but at present scripts (python) are\r\nnot stored within the documents. Format is XML-based, soon to be pure XML\r\nwith the new format being developed which will use the same media type. \r\nGzipped (.gz) variant or other compressed\r\nfuture variants are/will be unpackable by existing tools (gzip, etc).\r\n\r\nInteroperability considerations :\r\nCurrent version is only used by Scribus. New version being developed (with\r\nsame extensions) which could perhaps be used by other DTP software.\r\n\r\nPublished specification :\r\nAvailable at: http://docs.scribus.net under Developer section, file format,\r\nand within the next release of tar.bz2 package. New format once developed\r\nwill appear at the same page with XML DTD.\r\n\r\nApplications which use this media :\r\nScribus\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : SCRIBUSUTF8\r\n2. File extension(s) : .scd, .scd.gz, .sla, .sla.gz, .slaz\r\n3. Macintosh file type code : n/a\r\n4. Object Identifiers: n/a\r\n\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Craig Bradney\r\n2. Email : cbradney&zip.com.au\r\n\r\nIntended usage : Common\r\nOpen Source Desktop Publishing\r\n\r\nAuthor/Change controller : Craig Bradney\r\nScribus - www.scribus.net/docs.scribus.net\r\n\r\n(file created 27 June 2006)"
+  },
+  "references": []
+}

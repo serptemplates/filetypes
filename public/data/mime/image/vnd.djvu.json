@@ -1,0 +1,36 @@
+{
+  "type": "image",
+  "subtype": "vnd.djvu",
+  "full": "image/vnd.djvu",
+  "extensions": [
+    "djvu",
+    "djv"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/vnd.djvu",
+    "template_text": "\nName : Leon Bottou\n\nE-mail : leonb&research.att.com\n\nMIME media type name : Image\n\nMIME subtype name : Vendor Tree - vnd.djvu\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nBinary or base64 is preferred.\n\nSecurity considerations : \nThe specified components of the DjVu media format are of a descriptive nature\nand provide information that is useful to facilitate viewing and rendering of\nimages by a recipient.  As such, the DjVu media format does not in itself\ncreate additional security risks, since the fields are not used to induce any\nparticular behavior by the recipient application.\n\nThe DjVu media format has an extensible structure, so that it is theoretically\npossible that fields could be defined in the future which could be used to\ninduce particular actions on the part of the recipient, thus presenting\nadditional security risks, but this type of capability is not supported in the\nreferenced DjVu specification.\n\nThe DjVu media format does not specify a way to certify the authenticity of a\ndocument.  Such a warranty might be provided by other means, for instance by\nsigning the complete contents of an email containing DjVu media data.\n\nInteroperability considerations : \nDjVu represents document images using multiple layers encoded using different\nencoding methods.  Future extensions of the DjVu format might define new\nencoding methods that would not be supported by older viewers. DjVu viewer\nimplementations should detect and report this condition by comparing the DjVu\nversion number embedded in every DjVu media file with the highest supported\nDjVu version number.  They should then decode those layers they can decode and\ndisplay these layers only.\n\nPublished specification : \n* SPECIFICATION OF THE DJVU IMAGE COMPRESSION FORMAT.\n  1999-04-29, AT&T Labs.\n    This is the original specification of DjVu.\n    Copies are available at the following URLs:\n        http://www.djvuzone.org/djvu/sci/djvuspec          (DjVu)\n        http://djvu.sourceforge.net/specs/djvu2spec.djvu   (DjVu)\n        http://djvu.sourceforge.net/specs/djvu2spec.ps.gz  (ps.gz)\n\n* DIFFERENCES BETWEEN DJVU2 and DJVU3\n  2001/10/22, Leon Bottou, AT&T Labs\n    This is a compilation of the changes between the AT&T \n    specification and the currently released\n    Lizardtech souce code.\n        http://djvu.sourceforge.net/specs/djvu3changes.txt (Text)\n\n* DJVU SOURCE CODE\nVarious open-source implementations (GNU Public License) have been\nmade available by both AT&T-Labs Research and Lizardtech, Inc.\nThese files are availablke at the following URL:\n        http://sourceforge.net/project/djvu\n\nApplications which use this media : \nImaging, messaging, web publishing.\n\nAdditional information :\n\n1. Magic number(s) :  \n\nASCII \"FORM\" at offset 4 and ASCII \"DJVU\" \nor \"DJVM\" or \"PM44\" or \"BM44\" at offset 12.\n\n2. File extension(s) : djvu, djv\n3. Macintosh file type code : DJVU\n4. Object Identifiers: \n\nGeneral information on DjVu is available\nat http://www.djvuzone.org .\n\nCommercial software is available from Lizardtech, Inc \nat http://www.lizardtech.com .\n\nOpen source software (encoders, decoders, viewers, utilities) \nis available at http://djvu.sourceforge.net .   \n\nPerson to contact for further information :\n\n1. Name : Leon Bottou\n2. E-mail : <leonb&users.sourceforge.net>\n\nIntended usage : Common \n\nDjVu is a web-centric format for distributing documents and images.  DjVu is\ndesigned for distributing scanned documents, digital documents, or\nhigh-resolution pictures. DjVu content downloads faster, displays and renders\nfaster, looks nicer on a screen, and consume less client resources than\ncompeting formats. DjVu images display instantly and can be smoothly zoomed\nand panned with no lengthy re-rendering.  DjVu is used by hundreds of\nacademic, commercial, governmental, and non-commercial web sites around the\nworld.\n\nAuthor/Change controller : \nOther contact persons:\n- Leon Bottou <leonb&research.att.com>\n- Yann Le Cun <yann&research.att.com> \n\n(created 17 Jan 2002)\n\n"
+  },
+  "references": []
+}

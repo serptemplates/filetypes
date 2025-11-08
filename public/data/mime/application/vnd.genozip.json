@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.genozip",
+  "full": "application/vnd.genozip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.genozip",
+    "encoding_considerations": "Security considerations: The media does NOT contain active or \n   executable content.\n\n   The media is designed to contain genomic data of biological \n   organisms.\n\n   Organizations using this media to store human genomic data, are \n   often subject to privacy regulations.\n\n   The Genozip format contains a capability of built-in encryption \n   (using 256 bit AES), activated at the discretion of the user \n   creating the file, as well as data integrity verification, for \n   which the user can choose between MD5 or Adler32.\n\n   The format is proprietary and does not use an existing format.\n\n   The format does not contain links.\n\nInteroperability considerations: none\n\nPublished specification: n/a\n\nApplications which use this media: The genozip type is used by \n   Genozip, a compression system for genomic files. Medical archiving \n   systems and other storage management systems might store genozip \n   files and invoke Genozip to access those files, based on the media \n   type.\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: Intended for limited usage in genomics \n   research and clinical space.",
+    "security_considerations": "executable content.\n\n   The media is designed to contain genomic data of biological \n   organisms.\n\n   Organizations using this media to store human genomic data, are \n   often subject to privacy regulations.\n\n   The Genozip format contains a capability of built-in encryption \n   (using 256 bit AES), activated at the discretion of the user \n   creating the file, as well as data integrity verification, for \n   which the user can choose between MD5 or Adler32.\n\n   The format is proprietary and does not use an existing format.\n\n   The format does not contain links.\n\nInteroperability considerations: none\n\nPublished specification: n/a\n\nApplications which use this media: The genozip type is used by \n   Genozip, a compression system for genomic files. Medical archiving \n   systems and other storage management systems might store genozip \n   files and invoke Genozip to access those files, based on the media \n   type.\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: Intended for limited usage in genomics \n   research and clinical space.",
+    "interoperability_considerations": "Published specification: n/a\n\nApplications which use this media: The genozip type is used by \n   Genozip, a compression system for genomic files. Medical archiving \n   systems and other storage management systems might store genozip \n   files and invoke Genozip to access those files, based on the media \n   type.\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: Intended for limited usage in genomics \n   research and clinical space.",
+    "additional_information": "1. Deprecated alias names for this type: none\n   2. Magic number(s): 0x27, 0x05, 0x20, 0x12\n   3. File extension(s): .genozip\n   4. Macintosh file type code: none\n   5. Object Identifiers: n/a",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2022-04-05, last updated 2022-04-11)\n\nMedia type name: application\n\nMedia subtype name: vnd.genozip\n\nRequired parameters: n/a\n\nOptional parameters: n/a\n\nEncoding considerations: binary\n\nSecurity considerations: The media does NOT contain active or \n   executable content.\n\n   The media is designed to contain genomic data of biological \n   organisms.\n\n   Organizations using this media to store human genomic data, are \n   often subject to privacy regulations.\n\n   The Genozip format contains a capability of built-in encryption \n   (using 256 bit AES), activated at the discretion of the user \n   creating the file, as well as data integrity verification, for \n   which the user can choose between MD5 or Adler32.\n\n   The format is proprietary and does not use an existing format.\n\n   The format does not contain links.\n\nInteroperability considerations: none\n\nPublished specification: n/a\n\nApplications which use this media: The genozip type is used by \n   Genozip, a compression system for genomic files. Medical archiving \n   systems and other storage management systems might store genozip \n   files and invoke Genozip to access those files, based on the media \n   type.\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: Intended for limited usage in genomics \n   research and clinical space.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: none\n   2. Magic number(s): 0x27, 0x05, 0x20, 0x12\n   3. File extension(s): .genozip\n   4. Macintosh file type code: none\n   5. Object Identifiers: n/a\n\nPerson to contact for further information:\n\n   1. Name: Divon Lan\n   2. Email: divon&genozip.com\n\nIntended usage: Limited Use\n\n   Genozip is a commercial compression software for genomic file \n   formats. Other software packages, such as software used for \n   storage and archival of medical files, might store files in \n   Genozip format, and require a media type to be able to do so.\n\nAuthor/Change controller: Divon Lan"
+  },
+  "references": []
+}

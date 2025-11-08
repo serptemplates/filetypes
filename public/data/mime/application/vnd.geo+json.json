@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.geo+json",
+  "full": "application/vnd.geo+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.geo+json",
+    "template_text": "(registered 2014-05-20, last updated 2016-07-07; obsoleted by \nRFC7946 in favor of application/geo+json)\n\nName : Sean Gillies\n\nEmail : sean.gillies&gmail.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.geo+json\n\nRequired parameters : N/A\n\nOptional parameters : \nN/A\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nvnd.geo+json shares security issues common to all JSON content types.\nSee RFC7159 Section #12 (http://tools.ietf.org/html/rfc7159#section-12)\nfor additional information. vnd.geo+json does not provide executable\ncontent.\n\nAs with other geographic data formats, e.g., application/vnd.google-earth.kml+xml, providing details about the locations of sensitive persons, animals, habitats, and facilities can expose them to unauthorized tracking or injury. vnd.geo+json does not provide privacy or integrity services; if sensitive data requires privacy or integrity\nprotection the service must be provided externally.\n\nInteroperability considerations : \nThere is a difference of opinion among geographic data formats\nover whether latitude or longitude come first in a pair of\nnumbers. Longitude comes first in vnd.geo+json coordinates as it \ndoes in application/vnd.google-earth.kml+xml.\n\nPublished specification : \nThe GeoJSON format is specified at http://geojson.org/.\n\nApplications which use this media : \nVarious. See https://en.wikipedia.org/wiki/GeoJSON#Supported_software\nfor a list of software.\n\nFragment identifier considerations :\nN/A\n\nRestrictions on usage :\nN/A\n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : N/A\n3. File extension(s) : .json, .geojson\n4. Macintosh file type code : TEXT\n5. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Sean Gillies\n2. Email : sean.gillies&gmail.com\n\nIntended usage : OBSOLETE\nGeoJSON is a geospatial data interchange format based on JavaScript\nObject Notation (JSON). It defines several types of JSON objects and\nthe manner in which they are combined to represent data about\ngeographic features, their properties, and their spatial extents.\n\nAuthor/Change controller : Sean Gillies <sean.gillies&gmail.com>"
+  },
+  "references": []
+}

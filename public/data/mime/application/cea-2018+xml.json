@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "cea-2018+xml",
+  "full": "application/cea-2018+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/cea-2018+xml",
+    "type_name": "application",
+    "subtype_name": "cea-2018+xml",
+    "encoding_considerations": "as specified in RFC 3023.\n\nSecurity considerations: All of the security considerations described in RFC\n3023.\n\n  Additionally, the inclusion of ECMAScript fragments (so-called \"active\ncontent\") in a CEA-2018 document bears risks in that a task-based\napplication may execute malicious or erroneous ECMAScript code as part of a\ntask model embedded condition or grounding statement.  However, a task-based\napplication will typically execute this code in sandbox and can thus prevent\npotential damage to local and other resources.  Note that the embedded\nECMAScript code fragments pose only minimal additional security risks for\nWeb browsers since ECMAScript code is only embedded as content of XML\nelements other than <script>.\n  \n  The general utility of this media type to the Internet community is in the\narea of user interfaces for consumer electronics (and other areas of devices\nand services).  Task models facilitate user interfaces that can be easier to\nuse than traditional user interfaces.  Task models can thus be discovered\nand shared over the Internet (and local home networks), and be uniquely\nidentified as such by the receiving entity.\n\nInteroperability considerations: Same as interoperability considerations of\ntext/xml as specified in RFC 3023.\n\nPublished specification: CEA-2018\n\nApplications that use this media type: Task-based applications, i.e.\nprograms that interpret task model descriptions according to the semantics\ndefined in CEA-2018.",
+    "security_considerations": "3023.\n\n  Additionally, the inclusion of ECMAScript fragments (so-called \"active\ncontent\") in a CEA-2018 document bears risks in that a task-based\napplication may execute malicious or erroneous ECMAScript code as part of a\ntask model embedded condition or grounding statement.  However, a task-based\napplication will typically execute this code in sandbox and can thus prevent\npotential damage to local and other resources.  Note that the embedded\nECMAScript code fragments pose only minimal additional security risks for\nWeb browsers since ECMAScript code is only embedded as content of XML\nelements other than <script>.\n  \n  The general utility of this media type to the Internet community is in the\narea of user interfaces for consumer electronics (and other areas of devices\nand services).  Task models facilitate user interfaces that can be easier to\nuse than traditional user interfaces.  Task models can thus be discovered\nand shared over the Internet (and local home networks), and be uniquely\nidentified as such by the receiving entity.\n\nInteroperability considerations: Same as interoperability considerations of\ntext/xml as specified in RFC 3023.\n\nPublished specification: CEA-2018\n\nApplications that use this media type: Task-based applications, i.e.\nprograms that interpret task model descriptions according to the semantics\ndefined in CEA-2018.",
+    "interoperability_considerations": "text/xml as specified in RFC 3023.\n\nPublished specification: CEA-2018\n\nApplications that use this media type: Task-based applications, i.e.\nprograms that interpret task model descriptions according to the semantics\ndefined in CEA-2018.",
+    "applications": "programs that interpret task model descriptions according to the semantics\ndefined in CEA-2018.",
+    "additional_information": "Magic number(s): Same as magic number(s) of text/xml as specified in RFC\n3023.\n  File extension(s): .xml\n  Macintosh file type code(s): \"TEXT\"",
+    "intended_usage": "common",
+    "change_controller": "CEA R7 and its working group 12 have change control over",
+    "template_text": "(last updated 2008-12-19)\n\nRegistration Request:\n\nType name: application\n\nSubtype name: cea-2018+xml\n\nRequired parameters: none\n\nOptional parameters: none\n\n   Note that (in contrast to application/xml) no charset parameter is\ndefined since CEA-2018 specifies UTF-8 as the required file format.\n\nEncoding considerations: Same as encoding considerations of application/xml\nas specified in RFC 3023.\n\nSecurity considerations: All of the security considerations described in RFC\n3023.\n\n  Additionally, the inclusion of ECMAScript fragments (so-called \"active\ncontent\") in a CEA-2018 document bears risks in that a task-based\napplication may execute malicious or erroneous ECMAScript code as part of a\ntask model embedded condition or grounding statement.  However, a task-based\napplication will typically execute this code in sandbox and can thus prevent\npotential damage to local and other resources.  Note that the embedded\nECMAScript code fragments pose only minimal additional security risks for\nWeb browsers since ECMAScript code is only embedded as content of XML\nelements other than <script>.\n  \n  The general utility of this media type to the Internet community is in the\narea of user interfaces for consumer electronics (and other areas of devices\nand services).  Task models facilitate user interfaces that can be easier to\nuse than traditional user interfaces.  Task models can thus be discovered\nand shared over the Internet (and local home networks), and be uniquely\nidentified as such by the receiving entity.\n\nInteroperability considerations: Same as interoperability considerations of\ntext/xml as specified in RFC 3023.\n\nPublished specification: CEA-2018\n\nApplications that use this media type: Task-based applications, i.e.\nprograms that interpret task model descriptions according to the semantics\ndefined in CEA-2018.\n\nAdditional information:\n\n  Magic number(s): Same as magic number(s) of text/xml as specified in RFC\n3023.\n  File extension(s): .xml\n  Macintosh file type code(s): \"TEXT\"\n\nPerson & email address to contact for further information: \n   Gottfried Zimmermann <gzimmermann at acm.org>\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: CEA-2018 is a standard by the Consumer Electronics Association\n(CEA), and was edited by:\n   Gottfried Zimmermann <gzimmermann at acm.org>\n\nChange controller: CEA R7 and its working group 12 have change control over\nCEA-2018.\n\n(file created 2008-12-19)"
+  },
+  "references": []
+}

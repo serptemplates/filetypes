@@ -1,0 +1,39 @@
+{
+  "type": "audio",
+  "subtype": "aptx",
+  "full": "audio/aptx",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/aptx",
+    "type_name": "audio",
+    "subtype_name": "aptx",
+    "encoding_considerations": "contains binary data; see Section 4.8 of [RFC6838].\n\nSecurity considerations: See Section 5 of [RFC4855] and Section 4\nof [RFC4856].\n\nInteroperability considerations: none\n\nPublished specification: RFC7310    \n\nApplications which use this media type: Audio streaming\n\nFragment identifier considerations: None\n\nAdditional information: none",
+    "security_considerations": "of [RFC4856].\n\nInteroperability considerations: none\n\nPublished specification: RFC7310    \n\nApplications which use this media type: Audio streaming\n\nFragment identifier considerations: None\n\nAdditional information: none",
+    "interoperability_considerations": "Published specification: RFC7310    \n\nApplications which use this media type: Audio streaming\n\nFragment identifier considerations: None\n\nAdditional information: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2014-05-12, last updated 2014-07-31)\r\n\r\nType name: audio\r\n\r\nSubtype name: aptx\r\n\r\nRequired parameters:\r\n\r\nrate:\r\nRTP timestamp clock rate, which is equal to the sampling rate\r\nin Hz. RECOMMENDED values for rate are 8000, 11025, 16000,\r\n22050, 24000, 32000, 44100, and 48000 samples per second. Other\r\nvalues are permissible.\r\n\r\nchannels:\r\nThe number of logical audio channels that are present in the\r\naudio stream.\r\n\r\nvariant:\r\nThe variant of apt-X (i.e., Standard or Enhanced) that is being\r\nused. The following variants can be signaled:\r\n\r\nvariant=standard\r\nvariant=enhanced\r\n\r\nbitresolution:\r\nThe number of bits used by the algorithm to encode four PCM\r\nsamples. This value MAY only be set to 16 for Standard apt-X\r\nand 16 or 24 for Enhanced apt-X.\r\n\r\nOptional parameters:\r\n\r\nptime:\r\nThe recommended length of time (in milliseconds) represented by\r\nthe media in a packet. Defaults to 4 milliseconds.\r\nSee Section 6 of RFC 8866.\r\n\r\nmaxptime:\r\nThe maximum amount of media that can be encapsulated in each\r\npacket, expressed as time in milliseconds. See Section 6 of\r\nRFC 8866.\r\n\r\nstereo-channel-pairs:\r\nDefines audio channels that are stereo paired in the stream.\r\nSee Section 3. Each pair of audio channels is defined as two\r\ncomma-separated values that correspond to channel numbers in\r\nthe range 1..channels. Each stereo channel pair is preceded\r\nby a '{' and followed by a '}'. Pairs of audio channels are\r\nseparated by a comma. A channel MUST NOT be paired with more\r\nthan one other channel. The absence of this parameter signals\r\nthat each channel has been independently encoded.\r\n\r\nembedded-autosync-channels:\r\nDefines channels that carry embedded autosync.\r\nEmbedded-autosync-channels is defined as a list of\r\ncomma-separated values that correspond to channel numbers in\r\nthe range 1..channels. When a channel is stereo paired, embedded\r\nautosync is shared across channels in the pair. The first channel\r\nas defined in stereo-channel-pairs MUST be specified in the\r\nembedded-autosync-channels list.\r\n\r\nembedded-aux-channels:\r\nDefines channels that carry embedded auxiliary data.\r\nEmbedded-aux-channels is defined as a list of comma-separated\r\nvalues that correspond to channel numbers in the range\r\n1..channels. When a channel is stereo paired, embedded auxiliary\r\ndata is shared across channels in the pair. The second channel\r\nas defined in stereo-channel-pairs MUST be specified in the\r\nembedded-aux-channels list.\r\n\r\nEncoding considerations: This media type is framed in RTP and\r\ncontains binary data; see Section 4.8 of [RFC6838].\r\n\r\nSecurity considerations: See Section 5 of [RFC4855] and Section 4\r\nof [RFC4856].\r\n\r\nInteroperability considerations: none\r\n\r\nPublished specification: RFC7310    \r\n\r\nApplications which use this media type: Audio streaming\r\n\r\nFragment identifier considerations: None\r\n\r\nAdditional information: none\r\n\r\nPerson & email address to contact for further information:\r\nJohn Lindsay <Lindsay&worldcastsystems.com>\r\n\r\nIntended usage: COMMON\r\n\r\nRestrictions on usage: This media type depends on RTP framing,\r\nand hence is only defined for transfer via RTP [RFC3550].\r\n\r\nAuthor/Change controller: IETF Payload Working Group delegated\r\nfrom the IESG.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n               "
+  },
+  "references": []
+}

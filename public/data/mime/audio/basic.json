@@ -1,0 +1,36 @@
+{
+  "type": "audio",
+  "subtype": "basic",
+  "full": "audio/basic",
+  "extensions": [
+    "au",
+    "snd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/basic",
+    "template_text": "(RFC 2046 published November 1996, subtype last updated November 1996)\n\nA media type of \"audio\" indicates that the body contains audio data.\nAlthough there is not yet a consensus on an \"ideal\" audio format for\nuse with computers, there is a pressing need for a format capable of\nproviding interoperable behavior.\n\nThe initial subtype of \"basic\" is specified to meet this requirement\nby providing an absolutely minimal lowest common denominator audio\nformat.  It is expected that richer formats for higher quality and/or\nlower bandwidth audio will be defined by a later document.\n\nThe content of the \"audio/basic\" subtype is single channel audio\nencoded using 8bit ISDN mu-law [PCM] at a sample rate of 8000 Hz.\n\nUnrecognized subtypes of \"audio\" should at a miniumum be treated as\n\"application/octet-stream\".  Implementations may optionally elect to\npass subtypes of \"audio\" that they do not specifically recognize to a\nrobust general-purpose audio playing application, if such an\napplication is available.\n"
+  },
+  "references": []
+}

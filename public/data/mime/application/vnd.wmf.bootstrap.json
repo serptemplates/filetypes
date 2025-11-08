@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.wmf.bootstrap",
+  "full": "application/vnd.wmf.bootstrap",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wmf.bootstrap",
+    "template_text": "(last updated 2008-02-07)\n\nName : Thinh Nguyenphu\n\nEmail : thinh.nguyenphu&nsn.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.wmf.bootstrap\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe media type content contains bootstrap information for the client to initiate a \nconnection to the server. The bootstrap information shall be encrypted utilizing \nAES CCM The device and network shall performs authentication prior to the delivery \nof the bootstrap information. This media type does not contain executable content.\n\nInteroperability considerations :\nThere are not known interoperability issues.\n\nPublished specification :\nWiMAX Over-The-Air General Provisioning System Specification.\n\nApplications which use this media :\nOMA DM\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : None\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\nNone\n\nPerson to contact for further information :\n\n1. Name : Prakash Iyer\n2. Email : Prakash.iyer&intel.com\n\nIntended usage : Common\nWiMAX compliant devices\n\nAuthor/Change controller : WiMAX Forum\n\n(file created 2008-02-07)"
+  },
+  "references": []
+}

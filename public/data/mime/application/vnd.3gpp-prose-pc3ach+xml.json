@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "vnd.3gpp-prose-pc3ach+xml",
+  "full": "application/vnd.3gpp-prose-pc3ach+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.3gpp-prose-pc3ach+xml",
+    "encoding_considerations": "The media type encodes parameters to manage group affiliation as \n   specified in 3GPP TS 24.554\n\nSecurity considerations: Same as general security considerations for \n   application/xml media type as specified in section 9.1 of IETF RFC \n   7303. The information transported in this media type does not \n   include active or executable content. Mechanisms for privacy and \n   integrity protection of protocol parameters exist. Those \n   mechanisms as well as authentication and further security \n   mechanisms are described in 3GPP TS 33.503.\n\n   This media type does not include provisions for directives that \n   institute actions on a recipient's files or other resources.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\nInteroperability considerations: Same as general interoperability \n   considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. Any unknown XML elements and any \n   unknown XML attributes are to be ignored by recipient of the MIME \n   body.\n\n   The media type allows for interoperability of messages transmitted \n   for 5G ProSe over the PC3ach interface. The messages are sent \n   between user equipment and mobile network.\n\nPublished specification: 3GPP TS 24.554 \" Proximity-services (ProSe) \n   in 5G System (5GS) protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24554.htm\n\nApplications which use this media: Applications supporting 5G \n   proximity service procedures as described in the 3GPP TS 24.554.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: None",
+    "security_considerations": "application/xml media type as specified in section 9.1 of IETF RFC \n   7303. The information transported in this media type does not \n   include active or executable content. Mechanisms for privacy and \n   integrity protection of protocol parameters exist. Those \n   mechanisms as well as authentication and further security \n   mechanisms are described in 3GPP TS 33.503.\n\n   This media type does not include provisions for directives that \n   institute actions on a recipient's files or other resources.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\nInteroperability considerations: Same as general interoperability \n   considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. Any unknown XML elements and any \n   unknown XML attributes are to be ignored by recipient of the MIME \n   body.\n\n   The media type allows for interoperability of messages transmitted \n   for 5G ProSe over the PC3ach interface. The messages are sent \n   between user equipment and mobile network.\n\nPublished specification: 3GPP TS 24.554 \" Proximity-services (ProSe) \n   in 5G System (5GS) protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24554.htm\n\nApplications which use this media: Applications supporting 5G \n   proximity service procedures as described in the 3GPP TS 24.554.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: None",
+    "interoperability_considerations": "considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. Any unknown XML elements and any \n   unknown XML attributes are to be ignored by recipient of the MIME \n   body.\n\n   The media type allows for interoperability of messages transmitted \n   for 5G ProSe over the PC3ach interface. The messages are sent \n   between user equipment and mobile network.\n\nPublished specification: 3GPP TS 24.554 \" Proximity-services (ProSe) \n   in 5G System (5GS) protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24554.htm\n\nApplications which use this media: Applications supporting 5G \n   proximity service procedures as described in the 3GPP TS 24.554.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-09-05, last updated 2022-09-05)\n\nMedia type name: application\n\nMedia subtype name: vnd.3gpp-prose-pc3ach+xml\n\nRequired parameters: None\n\nOptional parameters: \"charset\"\n\n   The parameter has identical semantics to the charset parameter of \n   the \"application/xml\" media type as specified in section 9.1 of \n   IETF RFC 7303.\n\nEncoding considerations: binary\n\n   The media type encodes parameters to manage group affiliation as \n   specified in 3GPP TS 24.554\n\nSecurity considerations: Same as general security considerations for \n   application/xml media type as specified in section 9.1 of IETF RFC \n   7303. The information transported in this media type does not \n   include active or executable content. Mechanisms for privacy and \n   integrity protection of protocol parameters exist. Those \n   mechanisms as well as authentication and further security \n   mechanisms are described in 3GPP TS 33.503.\n\n   This media type does not include provisions for directives that \n   institute actions on a recipient's files or other resources.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\nInteroperability considerations: Same as general interoperability \n   considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. Any unknown XML elements and any \n   unknown XML attributes are to be ignored by recipient of the MIME \n   body.\n\n   The media type allows for interoperability of messages transmitted \n   for 5G ProSe over the PC3ach interface. The messages are sent \n   between user equipment and mobile network.\n\nPublished specification: 3GPP TS 24.554 \" Proximity-services (ProSe) \n   in 5G System (5GS) protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24554.htm\n\nApplications which use this media: Applications supporting 5G \n   proximity service procedures as described in the 3GPP TS 24.554.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Haorui Yang\n   2. Email: yanghaorui&oppo.com\n\nIntended usage: COMMON\n\nThe media type is intended to be widely used by mobile devices for 5G \n   proximity service procedures.\n\nAuthor/Change controller: Author/Change controller: 3GPP\n\n3GPP contact: Lionel Morand <lionel.morand&orange.com>"
+  },
+  "references": [
+    {
+      "title": "RFC 7303",
+      "url": "https://www.rfc-editor.org/rfc/rfc7303.html",
+      "kind": "RFC"
+    }
+  ]
+}

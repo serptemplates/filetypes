@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.shana.informed.package",
+  "full": "application/vnd.shana.informed.package",
+  "extensions": [
+    "ipk"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.shana.informed.package",
+    "encoding_considerations": "Security considerations: This type does not pose any security threats\nbecause it does not contain any executable code.",
+    "security_considerations": "because it does not contain any executable code.",
+    "template_text": "\n\nSubject: MIME type registration\nDate: Thu, 6 Feb 97 15:36:56 -0000\nFrom: Tim Senger <tsenger&shana.com>\nTo: \"IANA\" <iana&iana.org>\nCc: \"Guy Selzler\" <gSelzler&shana.com>, \"Kevan Farrah\" <kFarrah&shana.com>\n\n\nHi,\n\nThis is in reply to a message received back from Josh (IANA) regarding\nmy previous registration requests for four new MIME types (submitted\n3-Feb-97).\n\n>Tim,\n>\n>This is what our specialist had to say:\n>\n>Security consideration: None is not acceptable.  At least say that the\n>type does not pose any security threats because it does not contain any\n>executable code.\n>\n>Apart from that, fine.\n>\n>Please make these additions and/or changes to your application\n>immediately in order to expediate the processing of your applications.\n>\n>Josh\n\nI've adjusted my requests and appended them to this message.\n\nThanks,\n\n-Tim Senger\n\n-------------------------------------------------------------------------\nREGISTRATION 3\n-------------------------------------------------------------------------\nMedia Type: application\n\nMedia subtype name: vnd.shana.informed.package\n\nRequired parameters: none.\n\nOptional parameters: An optional version parameter can be specified.\n\nEncoding considerations: Informed package documents contain binary data.\n\nSecurity considerations: This type does not pose any security threats\nbecause it does not contain any executable code.\n\nPublished specifications:\n\nSpecification by example: From Informed Filler's File menu, choose New\nDocument, select a template to use, then click New. Choose Save As, also\nfrom the File menu. Check the \"Make Package (include template)\" option,\nenter a name, and click Save. The resulting document is a package\ndocument.\n\nSpecification by filename: The DOS file extension for package documents\nis \".IPK\".\n\nSpecification by Macintosh file type: The Apple Computer registered file\ntype for package documents is \"IPkg\".\n\nPerson & email address to contact for further information:\n  Guy Selzler\n  Shana Corporation\n  9744-45th Avenue\n  Edmonton, Alberta, Canada  T6E 5C5\n  (403) 433-3690 ext. 225\n  gselzler&shana.com\n\n\n\n"
+  },
+  "references": []
+}

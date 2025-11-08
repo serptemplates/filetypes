@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "mosskey-request",
+  "full": "application/mosskey-request",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/mosskey-request",
+    "template_text": "(RFC 1848 published October 1995, subtype last updated October 1995)\n\n(1)  MIME type name: application\n\n(2)  MIME subtype name: mosskey-request\n\n(3)  Required parameters: none\n\n(4)  Optional parameters: none\n\n(5)  Encoding considerations: quoted-printable is always sufficient\n\n(6)  Security Considerations: none\n\nThe content of this body part corresponds to the following\nproduction.\n\n   <request>       ::= <version>\n                       ( <subject> / <issuer> / <certification> )\n\n   <version>       ::= \"Version:\" \"5\" CRLF\n\n   <subject>       ::= \"Subject:\" <id> CRLF\n\n   <issuer>        ::= \"Issuer:\" <id> CRLF\n\n   <certification> ::= \"Certification:\" <encbin> CRLF\n\nA user would use this content type to specify needed cryptographic\nkey information.  The message containing this content type might be\ndirected towards an automatic or manual responder, which may be\nmail-based, depending on the local implementation and environment.\nThe application/mosskey-request content type is an independent body\npart because it is entirely independent of any other body part.\n\nIf the application/mosskey-request content contains a Certification:\nfield it requests certification of the self-signed certificate in the\nfield value.  If the content contains an Issuer: field it requests\nthe Certificate Revocation List (CRL) chain beginning with the CRL of\nthe issuer identified in the field value.  If the content contains a\nSubject: field it requests either the public key of the subject or a\ncertificate chain beginning with the subject identified in the field\nvalue, or both if both exist.\n\nThe Subject: and Issuer: fields each contain a value of type <id>,\nwhich is defined in Section 4.\n\nOne possible response to receiving an application/mosskey-request\nbody part is to construct and return an application/mosskey-data body\npart.  When returning public keys, certificate chains, and\ncertificate revocation list chains, if there exists more than one,\nseveral application/mosskey-data body parts are to be returned in the\nreply message, one for each."
+  },
+  "references": []
+}

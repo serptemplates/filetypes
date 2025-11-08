@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.americandynamics.acc",
+  "full": "application/vnd.americandynamics.acc",
+  "extensions": [
+    "acc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.americandynamics.acc",
+    "template_text": "(last updated 2008-01-25)\n\nMIME media type name :\nApplication\n\nMIME subtype name :\nVendor Tree - vnd.americandynamics.acc\n\nRequired parameters :\nrate - this must be a positive integer and indicates the resolution of\nthe timestamp field in the RTP header.\n\nOptional parameters :\nnone\n\nEncoding considerations :\nbinary\n\nSecurity considerations :\nACC is a binary file format that contains no active content and no\ntextual information. The ACC format does not support confidentiality or\nintegrity checking. If such checks are required then they should be\ncarried out externally.\n\nInteroperability considerations :\nnone\n\nPublished specification :\nnone\n\nApplications which use this media :\nIntellex DVMS, Intellex Management Suite\n\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : acc\n3. Macintosh file type code :\n4. Object Identifiers: none\n\nActive Content Compression (ACC) is a proprietary video compression that\nis optimised for CCTV applications. ACC has been deployed world-wide in\nsecurity applications since 1997.\n\nA white paper on ACC is available at\nhttp://americandynamics.net/webapps/getdocument.aspx?filename=whitepaper\n_acc_lt_en.pdf\n\nPerson to contact for further information :\n\n1. Name : Gary Sands\n2. Email : gsands AT tycoint.com\n\nIntended usage : Limited Use\nThis media type depends on RTP framing, and hence is only defined for\ntransfer via RTP (RFC 3550). Transfer within other framing protocols is\nnot defined at this time.\n\n\nAuthor/Change controller : gsands AT tycoint.com\n\n(file created 2008-01-25)"
+  },
+  "references": []
+}

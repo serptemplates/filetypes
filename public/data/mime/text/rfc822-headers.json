@@ -1,0 +1,42 @@
+{
+  "type": "text",
+  "subtype": "rfc822-headers",
+  "full": "text/rfc822-headers",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/rfc822-headers",
+    "type_name": "text",
+    "subtype_name": "rfc822-headers",
+    "encoding_considerations": "headers, however, if the headers are broken or extended and\n   require encoding to make them legal 7-bit content, they MAY be\n   encoded with quoted-printable as defined in [MIME].\n\nSecurity considerations:  See Section 7 of [RFC6522].\n\nInteroperability considerations:  none\n\nPublished specification:  [RFC6522]\n\nApplications that use this media type:  Mail Transfer Agents, Mail\n   User Agents, spam detection and reporting modules, virus detection\n   modules, and message authentication modules.",
+    "security_considerations": "Interoperability considerations:  none\n\nPublished specification:  [RFC6522]\n\nApplications that use this media type:  Mail Transfer Agents, Mail\n   User Agents, spam detection and reporting modules, virus detection\n   modules, and message authentication modules.",
+    "interoperability_considerations": "Published specification:  [RFC6522]\n\nApplications that use this media type:  Mail Transfer Agents, Mail\n   User Agents, spam detection and reporting modules, virus detection\n   modules, and message authentication modules.",
+    "applications": "User Agents, spam detection and reporting modules, virus detection\n   modules, and message authentication modules.",
+    "additional_information": "Magic number(s):  N/A\n\n   File extension(s):  N/A\n\n   Macintosh file type code(s):  N/A\n\nPerson and email address to contact for further information:  Murray\n   S. Kucherawy <msk&cloudmark.com>\n\nIntended usage:  common\n\nRestrictions on usage:  none\n\nAuthor:  Murray S. Kucherawy <msk&cloudmark.com>\n\nChange controller:  IESG",
+    "intended_usage": "common",
+    "change_controller": "IESG",
+    "template_text": "(per RFC6522)\n\nType name:  text\n\nSubtype name:  rfc822-headers\n\nRequired parameters:  None\n\nOptional parameters:  None\n\nEncoding considerations:  7-bit is sufficient for normal mail\n   headers, however, if the headers are broken or extended and\n   require encoding to make them legal 7-bit content, they MAY be\n   encoded with quoted-printable as defined in [MIME].\n\nSecurity considerations:  See Section 7 of [RFC6522].\n\nInteroperability considerations:  none\n\nPublished specification:  [RFC6522]\n\nApplications that use this media type:  Mail Transfer Agents, Mail\n   User Agents, spam detection and reporting modules, virus detection\n   modules, and message authentication modules.\n\nAdditional information:\n\n   Magic number(s):  N/A\n\n   File extension(s):  N/A\n\n   Macintosh file type code(s):  N/A\n\nPerson and email address to contact for further information:  Murray\n   S. Kucherawy <msk&cloudmark.com>\n\nIntended usage:  common\n\nRestrictions on usage:  none\n\nAuthor:  Murray S. Kucherawy <msk&cloudmark.com>\n\nChange controller:  IESG"
+  },
+  "references": []
+}

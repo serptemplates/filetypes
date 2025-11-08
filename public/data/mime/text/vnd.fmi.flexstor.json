@@ -1,0 +1,40 @@
+{
+  "type": "text",
+  "subtype": "vnd.fmi.flexstor",
+  "full": "text/vnd.fmi.flexstor",
+  "extensions": [
+    "flx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.fmi.flexstor",
+    "encoding_considerations": "FLEXSTOR is US-ASCII only format, but it allows\n        very long lines. If there are lines not too long \n\tand there are no characters beyond US-ASCII in \n\tcomments, then '7bit' encoding is sufficient. \n\tIf there are lines too long, then 'quoted-printable' \n\tencoding can be used.",
+    "security_considerations": "FLEXSTOR format is a data format and does not include\n        executable code in any form. 'include' directive\n        allows refering to other files. Parser of FLEXSTOR\n        should check that no references otside the allowed\n        data directory tree occur.",
+    "interoperability_considerations": "It is of great importance that both data providers\n\tand developers of data analysis tools agree on a symbol\n\tname and identifier convention and stick to it. In\n\tpractice this means that document, which describes\n\tthe used symbol table, is required.",
+    "additional_information": "Magic number(s):\tFormat starts with string \"flexstor\".\n    File extension(s):\tGenerally \"flx\", but documents describing \n\t\t\tcertain symbol table may allocate their \n\t\t\town set of extensions.\n    Macintosh File Type Code(s):\tnone\n\n    The canonical format:\n\n\tFlexstor data format treats CRLF, CR and LF as end of line.\n\tEnd of line presentation for the canonical format is CRLF.\n\tIn canonical format CR and LF is not allowed outside of\n\tend of line.\n\n\tRationale for version numbers of FLEXSTOR format:\n\n\tIf the parser detects the MINOR number and only the MINOR \n\tnumber to be greater than the one(s) the parser supports, \n\tit knows that it perhaps fails parsing the file. However, \n\tif it succeeds in parsing the file, it knows that the resulting \n\tinterpretation is the same as intended by the data submitter.\n\n\tIf the parser detects the MAJOR number to be greater than the \n\tone(s) the parser supports, it knows that parsing of the file, \n\teven when performed succesfully, does not result in an \n\tinterpretation guaranteed to be the same as intended by the data \n\tsubmitter.",
+    "intended_usage": "limited use",
+    "template_text": "\n\nDate: Fri, 18 Oct 1996 17:42:28 +0300 (EDT)\nFrom: flexstor&ozone.FMI.FI\nTo: IANA&isi.edu\nSubject: Registration of MIME media type Text/vnd.fmi.flexstor\n\n\nMIME media type name: Text\n\nMIME subtype name: vnd.FMI.FLEXSTOR\n\nRequired parameters: none\n\nOptional parameters: version-major, version-minor, charset,\n                     table-prefix, table-minor, table-major\n\n        version-major is MAJOR number from the first line\n                flexstor MAJOR MINOR\n\n        version-minor is MINOR number from the first line\n                flexstor MAJOR MINOR\n\n\tcharset is a coded character set used in the media type.\n\t\tBecause flexstor's grammar allows only use of \n\t\tUS-ASCII, only comments may contain characters\n\t\tbeyond US-ASCII.\n\n\tThis registration refers flexstor format with MAJOR = 1\n\t\tand MINOR = 0.\n\n\tIn the first line of flexstor -format there may be also\n\tinformation on used symbol table and version of symbol \n        table. In that case the first line is\n\t\tflexstor MAJOR MINOR TABLE_PREFIX TABLEMINOR TABLEMAJOR\t\n\n\ttable-prefix is TABLE_PREFIX from the first line\n\t\tflexstor MAJOR MINOR TABLE_PREFIX TABLEMINOR TABLEMAJOR\n\n\ttable-minor is TABLEMINOR from the first line\n\t\tflexstor MAJOR MINOR TABLE_PREFIX TABLEMINOR TABLEMAJOR\n\n\ttable-major is TABLEMAJOR from the first line\n\t\tflexstor MAJOR MINOR TABLE_PREFIX TABLEMINOR TABLEMAJOR\n\n\n        Notice: File-name should be given in\n                Content-Disposation -header, as described\n                in RFC 1806:\n\n1806  E    R. Troost, S. Dorner, \"Communicating Presentation Information in  \n           Internet Messages:  The Content-Disposition Header\", 06/07/1995.  \n           (Pages=8) (Format=.txt) \n\n\nEncoding considerations:\n\n        FLEXSTOR is US-ASCII only format, but it allows\n        very long lines. If there are lines not too long \n\tand there are no characters beyond US-ASCII in \n\tcomments, then '7bit' encoding is sufficient. \n\tIf there are lines too long, then 'quoted-printable' \n\tencoding can be used.\n\nSecurity considerations:\n\n        FLEXSTOR format is a data format and does not include\n        executable code in any form. 'include' directive\n        allows refering to other files. Parser of FLEXSTOR\n        should check that no references otside the allowed\n        data directory tree occur.\n\nInteroperability considerations:\n\n\tIt is of great importance that both data providers\n\tand developers of data analysis tools agree on a symbol\n\tname and identifier convention and stick to it. In\n\tpractice this means that document, which describes\n\tthe used symbol table, is required.\n\nPublished specification:\n\n\tFlexstor format ducument with MAJOR = 1 and MINOR = 0\n        is available with\n\n\t<URL: http://www.ozone.fmi.fi/flexstor/flexstor_1.html >\n\t<URL: http://www.ozone.fmi.fi/flexstor/flexstor_1.ps >\n\n        ( Latest version of this document are available with\n\t  <URL: http://www.ozone.fmi.fi/flexstor/flexstor_current.html >\n\t  <URL: http://www.ozone.fmi.fi/flexstor/flexstor_current.ps >\n        )\n\nApplications which use this media type:\n\n\tUVRAPPF / SUVDAMA database (uv.fmi.fi)\n\nAdditional information:\n\n    Magic number(s):\tFormat starts with string \"flexstor\".\n    File extension(s):\tGenerally \"flx\", but documents describing \n\t\t\tcertain symbol table may allocate their \n\t\t\town set of extensions.\n    Macintosh File Type Code(s):\tnone\n\n    The canonical format:\n\n\tFlexstor data format treats CRLF, CR and LF as end of line.\n\tEnd of line presentation for the canonical format is CRLF.\n\tIn canonical format CR and LF is not allowed outside of\n\tend of line.\n\n\tRationale for version numbers of FLEXSTOR format:\n\n\tIf the parser detects the MINOR number and only the MINOR \n\tnumber to be greater than the one(s) the parser supports, \n\tit knows that it perhaps fails parsing the file. However, \n\tif it succeeds in parsing the file, it knows that the resulting \n\tinterpretation is the same as intended by the data submitter.\n\n\tIf the parser detects the MAJOR number to be greater than the \n\tone(s) the parser supports, it knows that parsing of the file, \n\teven when performed succesfully, does not result in an \n\tinterpretation guaranteed to be the same as intended by the data \n\tsubmitter.\n\n\nPerson & email address to contact for further information:\n\n\tflexstor&ozone.FMI.FI\n        Kari E. Hurtta <Kari.Hurtta&FMI.FI>\n        Arve Kylling <arve.kylling&itek.norut.no>\n\nIntended usage: LIMITED USE\n\n   This is intended to use in \n   SUVDAMA <URL: http://www.ozone.fmi.fi/SUVDAMA/ > and\n   UVRAPPF <URL: http://www.ozone.fmi.fi/UVRAPPF/ > -projects.\n   This media type is useful both in MIME mail and in HTTP -protocol\n   (WWW).\n\nAuthor/Change controller:\n\n\t\tflexstor&ozone.FMI.FI\n\n\n\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

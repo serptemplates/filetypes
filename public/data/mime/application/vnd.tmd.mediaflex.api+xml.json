@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.tmd.mediaflex.api+xml",
+  "full": "application/vnd.tmd.mediaflex.api+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.tmd.mediaflex.api+xml",
+    "template_text": "(registered 2014-11-06, last updated 2014-11-06)\n\nName : Alex Sibilev\n\nEmail : alex.sibilev&tmd.tv\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.tmd.mediaflex.api+xml\n\nRequired parameters : none\n\nOptional parameters : \ncharset: This parameter has identical semantics to the charset\nparameter of the \"application/xml\" media type as specified in RFC\n3023 [http://www.ietf.org/rfc/rfc3023.txt]\n\nEncoding considerations : binary\n\nThis media type is intended to be transported over HTTP/HTTPS or\nstored in files or databases. For transports not capable of handling\nbinary content, encoding considerations from RFC 7303 will apply.\n\nIt is recommended to use UTF-8 for entities of this media type.\n\n\nSecurity considerations : \nThe media type does not contain active or executable content.\nThe information contained in the media type will in most cases\nbe subject to security, integrity and privacy concerns. The media\ntype does not provide any privacy or integrity services in itself.\nApplications using this media type will need to rely on mechanisms\nprovided by transport protocols or data storage to satisfy their\nsecurity requirements.\n\nInteroperability considerations : \nThere are no known interoperability issues.\n\nPublished specification : \nNone released at this time. Available to TMD Ltd. customers on request.\n\nApplications which use this media : \nMediaflex API by TMD Ltd. (http://www.tmd.tv)\n\nFragment identifier considerations :\nn/a\n\nRestrictions on usage :\nTo be used with Mediaflex API\n\nProvisional registration? (standards tree only) :\nn/a\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : none\n2. Magic number(s) : none\n3. File extension(s) : xml\n4. Macintosh file type code : none\n5. Object Identifiers: none\n\nThis media type is used for Mediaflex RESTful API available to TMD Ltd. customers.\n\nPerson to contact for further information :\n\n1. Name : Alex Sibilev\n2. Email : alex.sibilev&tmd.tv\n\nIntended usage : Limited Use\nn/a\n\nAuthor/Change controller : Alex Sibilev"
+  },
+  "references": []
+}

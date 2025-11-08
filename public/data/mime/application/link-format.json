@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "link-format",
+  "full": "application/link-format",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/link-format",
+    "type_name": "application",
+    "subtype_name": "link-format",
+    "security_considerations": "Multicast requests using CoAP for the well-known link-format\nresources could be used to perform denial of service on a constrained\nnetwork. A multicast request SHOULD only be accepted if the request\nis sufficiently authenticated and secured using, e.g., IPsec or an\nappropriate object security mechanism.\n\nCoRE Link Format parsers should be aware that a link description may\nbe cyclical, i.e., contain a link to itself. These cyclical links\ncould be direct or indirect (i.e., through referenced link\nresources). Care should be taken when parsing link descriptions and\naccessing cyclical links.\n\nInteroperability considerations: None\n\nPublished specification: RFC 6690\n\nApplications that use this media type: CoAP server and client\nimplementations for resource discovery and HTTP applications that use\nthe link-format as a payload.",
+    "interoperability_considerations": "Published specification: RFC 6690\n\nApplications that use this media type: CoAP server and client\nimplementations for resource discovery and HTTP applications that use\nthe link-format as a payload.",
+    "applications": "implementations for resource discovery and HTTP applications that use\nthe link-format as a payload.",
+    "additional_information": "Magic number(s):\n\nFile extension(s): *.wlnk\n\nMacintosh file type code(s):\n\nIntended usage: COMMON\n\nRestrictions on usage: None\n\nAuthor: CoRE WG\n\nChange controller: IETF",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "(RFC 6690 published August 2012, subtype last updated August 2012)\n\nType name: application\n\nSubtype name: link-format\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: Binary data (UTF-8)\n\nSecurity considerations:\n\nMulticast requests using CoAP for the well-known link-format\nresources could be used to perform denial of service on a constrained\nnetwork. A multicast request SHOULD only be accepted if the request\nis sufficiently authenticated and secured using, e.g., IPsec or an\nappropriate object security mechanism.\n\nCoRE Link Format parsers should be aware that a link description may\nbe cyclical, i.e., contain a link to itself. These cyclical links\ncould be direct or indirect (i.e., through referenced link\nresources). Care should be taken when parsing link descriptions and\naccessing cyclical links.\n\nInteroperability considerations: None\n\nPublished specification: RFC 6690\n\nApplications that use this media type: CoAP server and client\nimplementations for resource discovery and HTTP applications that use\nthe link-format as a payload.\n\nAdditional information:\n\nMagic number(s):\n\nFile extension(s): *.wlnk\n\nMacintosh file type code(s):\n\nIntended usage: COMMON\n\nRestrictions on usage: None\n\nAuthor: CoRE WG\n\nChange controller: IETF\n\n"
+  },
+  "references": []
+}

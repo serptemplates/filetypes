@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "prs.rdf-xml-crypt",
+  "full": "application/prs.rdf-xml-crypt",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/prs.rdf-xml-crypt",
+    "template_text": "(last updated 2010-10-19)\n\nMIME media type name : Application\n\nMIME subtype name : Personal Tree - prs.rdf-xml-crypt\n\nRequired parameters :\n\n\nOptional parameters :\nversion - a non-negative integer written in canonical (i.e. no leading\nzeroes) decimal form. The version of application/prs.rdf-xml-crypt\ncurrently emitted by RDF-Crypt is 0. Future versions may be defined in\nfuture versions of RDF-Crypt. If the version number is omitted, no\ndefault is assumed.\n\n\nEncoding considerations : 7bit\n\n\nSecurity considerations :\n\nThe media type does not contain executable content.\n\nThe media type uses RSA encryption and cipher-block chaining with OAEP,\na combination that has a reasonably good track-record for security. It\nshould certainly offer significant security improvements over other\nexisting RDF serialisation including RDF/XML (application/rdf+xml) and\nTurtle which do not include any built-in encryption.\n\nHowever, as with any file format, if the payload data is of a\nparticularly sensitive nature, people may wish to consider wrapping the\nfile in additional layers of security.\n\nThe security concerns in RFC 3870 (application/rdf+xml Media Type\nRegistration) should also be considered by implementors.\n\nInteroperability considerations :\n\n\n\nPublished specification :\nThe documentation for the RDF::Crypt Perl library specifies the format\nin some detail. <http://search.cpan.org/dist/RDF-Crypt/>\n\nApplications which use this media :\nThe RDF::Crypt Perl library\n\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : rdf-crypt\n3. Macintosh file type code : RDFc\n4. Object Identifiers: 1.3.6.1.4.1.33926.1.0\n\n\n\n\nPerson to contact for further information :\n\n1. Name : Toby Inkster\n2. Email : mail&tobyinkster.co.uk\n\nIntended usage : Common\nSecure transmission of RDF graphs.\n\n\nAuthor/Change controller :\n\nToby Inkster <mail&tobyinkster.co.uk>\n\n(file created 2010-10-19)"
+  },
+  "references": []
+}

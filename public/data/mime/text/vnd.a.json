@@ -1,0 +1,33 @@
+{
+  "type": "text",
+  "subtype": "vnd.a",
+  "full": "text/vnd.a",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.a",
+    "template_text": "(registered 2014-02-07, last updated 2014-02-07)\n\nName : Regis Dehoux\n\nEmail : biznis&regadou.net\n\nMIME media type name : Text\n\nMIME subtype name : Vendor Tree - vnd.a\n\nRequired parameters : N/A\n\nOptional parameters :\n\nThe charset parameter can be used to specify the charset encoding of the\nunderlying text. If this parameter is not specified, utf-8 will be assumed\nif 8 bit bytes are encountered. If no 8 bit bytes are encountered, then\nus-ascii will be assumed.\n\nEncoding considerations : 8bit\n\nSecurity considerations :\nthe security issues associated with this type have not been assessed\n\nInteroperability considerations :\n\nLocal file paths can create problems when a text/vnd.a file is exchanged \nbetween a windows system and a non-windows system.\n\nIf a text file is not utf-8 encoded, has not specified a charset and \ncontains characters that uses the 8th bit, undefined behavior will happen\n\n\nPublished specification :\n\nOngoing writing specification can be found at http://regadou.net/a\n\nApplications which use this media :\n\nThe A language, a framework to build domain specific languages. The \nframework\nis currently in active development. The first open source implementation of\nthis framework will be released and available soon. You can find more \ninformation\nat http://regadou.net/a\n\nFragment identifier considerations :\n\nFragment will cause the text after the # sign to be interpreted as A \nlanguage source text.\nThe viewer agent should display the result evaluation of the expression\nfollowing the pound sign (#) instead of the evaluation of the whole \nsource file.\n\nRestrictions on usage :\nN/A\n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : N/A\n3. File extension(s) : a\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\nN/A\n\nPerson to contact for further information :\n\n1. Name : Regis Dehoux\n2. Email : biznis&regadou.net\n\nIntended usage : Common\n\nAuthor/Change controller : N/A"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.3gpp.bsf+xml",
+  "full": "application/vnd.3gpp.bsf+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.3gpp.bsf+xml",
+    "template_text": "\r\n(Last Updated 2006-08-17)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.3gpp.bsf+xml\r\n\r\nRequired parameters : none    \r\n\r\nOptional parameters : \r\nnone    \r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of\r\nhandling 8 bit text. UFT-16 encoding is an unnecessary overhead for\r\nimplementors.\r\n\r\nSecurity considerations : \r\nThe purpose of this MIME type is to transfer 3GPP GBA bootstrapping data\r\n(bootstrapping transaction identifier and key lifetime) from network\r\nserver (BSF) to the client (UE) in HTTP response message (3GPP TS 33.220\r\n[1]). The content of the HTTP message is protected by HTTP Digest AKA\r\n(RFC 3310 [2]) using \"auth-int\" as \"qop\" parameter. The content is\r\nnon-active and non-executable. SSL uses HMACs to ensure message\r\nintegrity. SSL provides also confidentiality; client side authentication\r\nis optional.\r\n \r\n[1] http://www.3gpp.org/ftp/Specs/html-info/33220.htm\r\n[2] http://www.ietf.org/rfc/rfc3310.txt\r\n    \r\n\r\nInteroperability considerations : \r\nInteroperability is assessed not to be an issue, as the MIME type is in\r\nthe vendor tree. XML definitions are assessed to solve different\r\ncharacter set and byte ordering issues. Message format does have version\r\nnumber and backwards compatibility will be preserved in the possible\r\nformat evolution.\r\n    \r\n\r\nPublished specification : \r\nETSI TS 133 220 (being an official transposition of 3GPP TS 33.220)\r\nversion 7.4.0; ETSI TS 124 109 (being an official transposition of 3GPP\r\nTS 24.109) version 7.3.0\r\nAvailable via http://www.3gpp.org/specs/numbering.htm.        \r\n\r\nApplications which use this media : \r\nApplications that are capable of establishing a shared secret based on\r\n3GPP Generic Boostrapping Architecture (GBA) (e.g., Bootstrappng Server\r\nFunction (BSF) and User Equipment (UE) that support 3GPP GBA).\r\n\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nApplication submitted on behalf of the Organizational Partners of 3GPP.\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : John M Meredith, 3GPP Specifications Manager\r\n2. Email : john.meredith&etsi.org\r\n\r\nIntended usage : Common\r\nThe content is used for interworking of 3GPP generic boostrapping\r\narchitecture (GBA) elements.\r\n    \r\n\r\nAuthor/Change controller : 3GPP Specifications Manager via www.3gpp.org\r\nTechnical contact: jozsef.varga&nokia.com\r\n\r\n(File Created 17 August 2006)\r\n"
+  },
+  "references": []
+}

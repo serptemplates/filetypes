@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.realvnc.bed",
+  "full": "application/vnd.realvnc.bed",
+  "extensions": [
+    "bed"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.realvnc.bed",
+    "template_text": "(last updated 2009-08-04)\n\nName : Nick Reeves\n\nEmail : ndr&realvnc.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.realvnc.bed\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis is a pure data format without any embedded elements which are directly\nexecuted or interpreted.\n\n\n\nIt does contain mechanisms for avoiding repetitions of repeated strings.\nApplications which expand these in-line should enforce an implementation limit\non total decoded size. Finally applications should check all fields for\nconsistency, e.g. that internal lengths of elements do not exceed the remaining\nlength of data available or willing to process.\n\n\n\nMost security issues are handled at a higher level, since it is used in\ncombination with standards based mechanisms for secure connections and\nauthentication, and an application specific mechanism for authorization.\n\nInteroperability considerations :\nThis binary format is designed to be interoperable in all cases when an 8 bit\noctet stream can be handled. As such it is designed to be independent of issues\nsuch as big/little endian, word size, and CPU memory access alignment\nrestrictions. It also uses UTF8 exclusively for character data.\n\n\n\nPublished specification :\nInternal vendor format.\n\nApplications which use this media :\nVendor privileged information.\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : .BED\n3. Macintosh file type code : N/A\n4. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Nick Reeves\n2. Email : ndr&realvnc.com\n\nIntended usage : Limited Use\nCommunication between vendors applications.\n\nAuthor/Change controller : Nick Reeves\n\n(file created 2009-08-04)"
+  },
+  "references": []
+}

@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "dicom",
+  "full": "application/dicom",
+  "extensions": [
+    "dcm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/dicom",
+    "encoding_considerations": "The DICOM information is binary, therefore the encoding used shall\nsupport lossless transfer of binary information. Typically, the\nContent-Transfer-Encoding would be set to \"Base64\".\n\nMultiple DICOM parts should be included as a Multipart/related\nentity [2387]. Receiving agents shall also support multiple parts\nas a Multipart/mixed entity. When multiple DICOM parts are\nincluded, one of the parts may be a DICOMDIR, in which case, all\nthe files referred to by the DICOMDIR shall also be present. The\nDICOMDIR is not required to be the first Application/dicom part\nencoded in the message, in which case the optional \"start\"\nparameter should refer to the content-id of the part containing\nthe DICOMDIR.\n\nMultiple DICOM Application/dicom parts may be included with other\ntypes of parts as a Multipart/mixed entity.",
+    "security_considerations": "Application/dicom parts contain medical information, including\nindividual demographic information. Accordingly, their exchange\nshould be restricted to a secure network or within a secure\nwrapper that protects a patient's right to confidentiality\naccording to local and national policy. The specific security\nmechanisms are outside the scope of this proposal. Such\nmechanisms as Secured MIME (S/MIME) [2633] or similar might be\nappropriate.",
+    "interoperability_considerations": "Because DICOM information is specific to the medical (imaging)\ndomain, generic e-mail applications may not be able to interpret\nthe information.\n\nThe Media Type has been designed in order to allow for\n\n(i) DICOM aware applications to interoperate,\n(ii) generic applications to save the files in a form\nrecognizable as DICOM files, that a DICOM application may\nsubsequently use.",
+    "additional_information": "1. Magic number(s): \"DICM\" after 128 byte preamble indicates DICOM\nPS 3.10 file\n\n2. File extension(s): \".dcm\" is recommended for files saved to\ndisk (other than DICOMDIR)\n\n\n3. Macintosh file type code: Macintosh File Type \"DICM\" is\nrecommended\n\n4. Object Identifiers: none",
+    "template_text": "(RFC 3240 published February 2002, subtype last updated February 2002)\n\nMIME media type name: Application\n\nMIME subtype name: dicom\n\nRequired parameters:\n\n\"id\" is constructed from a DICOM File ID (see DICOM PS3.11). The\ntotal length is limited to 71 characters. Each component is\nlimited to 8 characters. The delimiter is a forward slash \"/\".\nThere is never a leading delimiter (i.e., this is not a\ntraditional path from a root directory).\n\nIf a DICOMDIR (which provides an index of files) is included, then\nit will refer to other DICOM files in the file set by use of this\nFile ID. The File ID is not encoded within each DICOM file. If a\nDICOMDIR is not present, then the \"id\" parameter may be absent.\nNote that the DICOMDIR will also have a Media Type of\napplication/dicom and is distinguished from other files by its ID\nof \"DICOMDIR\".\n\nFor example:\n\"ROOTDIR/SUBDIR1/MRSCAN/A789FD07/19991024/ST00234/S00003/I00023\"\n\nEach component shall be character strings made of characters from\na subset of the G0 repertoire of ISO 8859. This subset consists\nof uppercase alphabetic characters, numeric characters and\nunderscore. The following characters are permissable:\n\nA, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V,\nW, X, Y, Z (uppercase)\n1, 2, 3, 4, 5, 6, 7, 8, 9, 0 and _ (underscore)\n\nOptional parameters:\n\nnone\n\nEncoding considerations:\n\nThe DICOM information is binary, therefore the encoding used shall\nsupport lossless transfer of binary information. Typically, the\nContent-Transfer-Encoding would be set to \"Base64\".\n\nMultiple DICOM parts should be included as a Multipart/related\nentity [2387]. Receiving agents shall also support multiple parts\nas a Multipart/mixed entity. When multiple DICOM parts are\nincluded, one of the parts may be a DICOMDIR, in which case, all\nthe files referred to by the DICOMDIR shall also be present. The\nDICOMDIR is not required to be the first Application/dicom part\nencoded in the message, in which case the optional \"start\"\nparameter should refer to the content-id of the part containing\nthe DICOMDIR.\n\nMultiple DICOM Application/dicom parts may be included with other\ntypes of parts as a Multipart/mixed entity.\n\nSecurity considerations:\n\nApplication/dicom parts contain medical information, including\nindividual demographic information. Accordingly, their exchange\nshould be restricted to a secure network or within a secure\nwrapper that protects a patient's right to confidentiality\naccording to local and national policy. The specific security\nmechanisms are outside the scope of this proposal. Such\nmechanisms as Secured MIME (S/MIME) [2633] or similar might be\nappropriate.\n\nInteroperability considerations:\n\nBecause DICOM information is specific to the medical (imaging)\ndomain, generic e-mail applications may not be able to interpret\nthe information.\n\nThe Media Type has been designed in order to allow for\n\n(i) DICOM aware applications to interoperate,\n(ii) generic applications to save the files in a form\nrecognizable as DICOM files, that a DICOM application may\nsubsequently use.\n\nPublished specification:\n\nThe Digital Imaging and Communications in Medicine (DICOM)\nStandard is a standard of the DICOM Standards Committee, published\nby the National Electrical Manufacturers Association (NEMA), 1300\nN. 17th Street, Rosslyn, Virginia 22209 USA,\n(http://medical.nema.org).\n\nApplications which use this media:\n\nBiomedical imaging applications.\n\nAdditional information:\n\n1. Magic number(s): \"DICM\" after 128 byte preamble indicates DICOM\nPS 3.10 file\n\n2. File extension(s): \".dcm\" is recommended for files saved to\ndisk (other than DICOMDIR)\n\n\n3. Macintosh file type code: Macintosh File Type \"DICM\" is\nrecommended\n\n4. Object Identifiers: none\n\nPerson to contact for further information:\n\n1. Name: Howard Clark\n2. E-mail: how_clark&nema.org\n\nIntended usage:\n\nCommon\n\nInterchange of biomedical images.\n\nAuthor/Change controller:\n\nDICOM Standards Committee\n"
+  },
+  "references": []
+}

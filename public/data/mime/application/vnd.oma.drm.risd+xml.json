@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.drm.risd+xml",
+  "full": "application/vnd.oma.drm.risd+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.drm.risd+xml",
+    "template_text": "(registered 2007-06-13, last updated 2015-03-05)\n\nName : Uwe Rauschenbach\n\nEmail : uwe.rauschenbach&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.drm.risd+xml\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nRights Issuer services carry Rights Objects, Registration data and Certificate Chain \nUpdates in messages over broadcast channels. BCAST Rights Issuer Service Data shall \nbe passive, and do not generally represent a unique or new security threat. Some \nmessages contain confidential and security critical fields. These are encrypted \nusing AES-128-CBC, and are authenticated using HMAC-SHA-1-96 as described in the \nOMA BCAST specification referenced below. That means, the security of such critical \nfields is provided by the type itself and does not have to be provided externally. \nFurthermore, in sharing any kind of data, there is some risk that unintentional \ninformation may be exposed, and that risk applies to unencrypted fields contained in \nRights Issuer Service Data as well.\n\nInteroperability considerations :\nThis content type carries BCAST Rights Issuer Service Data within the scope of the \nOMA BCAST enabler. The OMA BCAST enabler specification includes static \nconformance requirements and interoperability test cases for this content.\n\nPublished specification :\nOMA BCAST 1.0 Enabler Specification - OMA DRM v2.0 Extensions for Broadcast \nSupport, especially Section 12.7.1. Available from http://www.openmobilealliance.org\n\nApplications which use this media :\nOMA BCAST Services\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\nPerson to contact for further information :\n\n1. Name : Uwe Rauschenbach\n2. Email : Uwe.Rauschenbach&nokia.com\n\nIntended usage : Limited Use\nOnly for usage with OMA DRM v2.0 Extensions for Mobile Broadcast Services, which \nmeet the semantics given in the mentioned specification.\n\nAuthor/Change controller : OMNA - Open Mobile Naming Authority,\nOMA-OMNA&mail.openmobilealliance.org\n                                     "
+  },
+  "references": []
+}

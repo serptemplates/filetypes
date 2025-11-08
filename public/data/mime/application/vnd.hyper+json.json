@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.hyper+json",
+  "full": "application/vnd.hyper+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.hyper+json",
+    "template_text": "(registered 2018-03-06, last updated 2018-03-06)\n\nName : Irakli Nadareishvili\nEmail : irakli&gmail.com\n\nMedia type name: application\nMedia subtype name: vnd.hyper+json\n\nRequired parameters: n/a\nOptional parameters : n/a\n\nEncoding considerations : binary\n\nSecurity considerations : Hyper+JSON shares security issues common to all JSON \ncontent types. See RFC 8259 Section #12 (https://trac.tools.ietf.org/html/rfc8259#section-12) \nfor additional information.\n\nThis media type was designed to encode arbitrary data, therefore \nit may contain executable code, but it is entirely up to the implementation to\ndetermine if the data is malicious and whether or not to execute it. Generally,\napplications consuming Hyper+JSON documents should safeguard against possibility \nof malicious executible code to prevent attacks such as cross-site scripting (XSS).\n\nHyper+JSON heavily utilizes Uniform Resource Identifiers (URIs) and as such \nshares security issues common to URI usage.\nSee RFC3986 Section #7 (https://tools.ietf.org/html/rfc3986#section-7) \nfor additional information.\n\nSince Hyper+JSON can carry any type of data, some data may require privacy or \nintegrity services. This specification does not prescribe any specific solution\nand assumes that concrete implementations will utilize common, trusted approaches\nsuch as TLS/HTTPS, OAuth2 etc.\n\nInteroperability considerations : None\n\nPublished specification : http://hyperjson.io/spec.html\n\nApplications which use this media : Various\n\nFragment identifier considerations :\n\nHyper+JSON follows RFC6901 for implementing URI Fragment Identification standard\nto JSON content types.\n\nRestrictions on usage : None\n\nAdditional information :\n\n1. Deprecated alias names for this type : n/a\n2. Magic number(s) : n/a\n3. File extension(s) : .json\n4. Macintosh file type code : TEXT\n5. Object Identifiers: n/a\n\nGeneral Comments:\n\nPerson to contact for further information :\n\n1. Name : Irakli Nadareishvili\n2. Email : irakli&gmail.com\n\nIntended usage : Common. Hyper+JSON is a fully-featured hypermedia media type,\nsupporting all standard Hypermedia Factors. It can be used independently\nor a as versatile intermediary media type for facilitating conversions between various\nhypermedia types as described in the Representor\n(https://github.com/the-hypermedia-project/charter#representor-pattern) pattern.\n\n\nAuthor/Change controller : Irakli Nadareishvili"
+  },
+  "references": []
+}

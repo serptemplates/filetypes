@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.cirpack.isdn-ext",
+  "full": "application/vnd.cirpack.isdn-ext",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cirpack.isdn-ext",
+    "template_text": "(last updated 2006-11-13)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.cirpack.isdn-ext\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\n\r\nAs the information transported is only ISDN signalling information, there is neither \r\nactive nor executable information transported in this media type. It is purely ISDN \r\ninformation element, coded in binary for the sake of simplicity of development, \r\ncontaining information which will be used in fine by a SIP-to-ISDN equipment which \r\nwill extract the embedded ISDN information elements and reuse them \"as it is\" in the \r\nISDN signalling. Therefore the SIP-to-ISDN equipment must check that the content is \r\nwell formatted before sending it in the ISDN signalling to avoid the propagation of \r\nbad-formatted ISDN information elements in an ISDN network.\r\nFurthermore, as in RFC3204, the information may require the use of encryption as it \r\nmay be sensitive information. In that case the security mechanisms are provided in \r\nRFC 3261 (SIP - Session Initiation Protocol) and should be used as appropriate for \r\nboth the SIP message and the encapsulated vnd.cirpack.isdn-ext body.\r\n\r\n\r\nInteroperability considerations : \r\nThis vendor specific subtype is intended to interoperate with the following vendors:\r\n- Dataflex\r\n- Patton\r\n- Thomson Cirpack\r\n- Voxtream \r\n\r\nThis list may vary as there is no restriction for other vendors to use this subtype, \r\naccording to Thomson/Cirpack specifications. \r\n\r\n\r\nPublished specification : \r\nNone.\r\nThe aim of this subtype is to transport ISDN messages and ISDN information elements \r\nin SIP while waiting for a standard way of doing it. The two features are:\r\n1. the transport of AOC\r\n2. the transport of HLC and LLC \r\n\r\n\r\nApplications which use this media : \r\nThis subtype will allow the transparent transport in SIP of ISDN messages and ISDN \r\ninformation elements, such as AOC or LLC and HLC.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPlease refer to 8. Published Specifications for further information about the need of \r\nthis subtype. \r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Pascal Mayeux\r\n2. Email : pmayeux&cirpack.com\r\n\r\nIntended usage : Limited Use \r\nAs this subtype requires to be compliant with Thomson/Cirpack specifications it is for \r\na limited use. \r\n\r\nAuthor/Change controller : \r\n\r\n\r\n(file created 2006-11-13)"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.dvb.service",
+  "full": "application/vnd.dvb.service",
+  "extensions": [
+    "svc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.dvb.service",
+    "template_text": "(last updated 2011-01-25)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.dvb.service\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : binary\n\n   This media type may require encoding on transports not capable of\n   handling binary.\n\nSecurity considerations : The security issues associates with this \n   type have not been assessed\n\nInteroperability considerations : None\n\nPublished specification :\n\n   GEM 1.2.2 - ETSI TS 102 728 v.1.1.1 (February 2010) available at\n   http://www.etsi.org/deliver/etsi_ts/102700_102799/102728/01.01.01_60/ts_102728v010101p.pdf\n\nApplications which use this media : This media type is intended for \n   use by implementers of devices, services or applications compliant \n   with the GEM and MHP specifications\n\nAdditional information :\n\n   1. Magic number(s) : None\n   2. File extension(s) : .svc\n   3. Macintosh file type code : None\n   4. Object Identifiers: None\n\nPerson to contact for further information :\n\n   1. Name : Michael Lagally\n   2. Email : Michael.Lagally&oracle.com\n\nIntended usage : Common\n\nAuthor/Change controller : Peter Siebert, siebert&dvb.org\n\n(file created 2011-01-25)"
+  },
+  "references": []
+}

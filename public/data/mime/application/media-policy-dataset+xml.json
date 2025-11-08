@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "media-policy-dataset+xml",
+  "full": "application/media-policy-dataset+xml",
+  "extensions": [
+    "mpf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/media-policy-dataset+xml",
+    "encoding_considerations": "application/xml as specified in RFC 3023 [RFC3023].\n\nSecurity considerations: See Section 10 of RFC 3023 [RFC3023] and\nSection 9 of this specification.\n\nInteroperability considerations: none.\n\nPublished specification: This document.\n\nApplications that use this media type: This document type is used to\nconvey session description and media policy information between SIP\nuser agents and a domain.",
+    "security_considerations": "Section 9 of this specification.\n\nInteroperability considerations: none.\n\nPublished specification: This document.\n\nApplications that use this media type: This document type is used to\nconvey session description and media policy information between SIP\nuser agents and a domain.",
+    "interoperability_considerations": "Published specification: This document.\n\nApplications that use this media type: This document type is used to\nconvey session description and media policy information between SIP\nuser agents and a domain.",
+    "applications": "convey session description and media policy information between SIP\nuser agents and a domain.",
+    "additional_information": "Magic Number: None\n\nFile Extension: .mpf or .xml\n\nMacintosh file type code: \"TEXT\"\n\nPersonal and email address for further information: Volker Hilt\n<volker.hilt&bell-labs.com>\n\nIntended usage: COMMON\n\nAuthor/Change controller: The IETF.",
+    "intended_usage": "common",
+    "template_text": "(RFC 6796 published December 2012, subtype last updated December 2012)\n\nMedia type name: application\n\nMedia subtype name: media-policy-dataset+xml\n\nMandatory parameters: none\n\nOptional parameters: Same as charset parameter of application/xml as\nspecified in RFC 3023 [RFC3023].\n\nEncoding considerations: Same as encoding considerations of\napplication/xml as specified in RFC 3023 [RFC3023].\n\nSecurity considerations: See Section 10 of RFC 3023 [RFC3023] and\nSection 9 of this specification.\n\nInteroperability considerations: none.\n\nPublished specification: This document.\n\nApplications that use this media type: This document type is used to\nconvey session description and media policy information between SIP\nuser agents and a domain.\n\nAdditional Information:\n\nMagic Number: None\n\nFile Extension: .mpf or .xml\n\nMacintosh file type code: \"TEXT\"\n\nPersonal and email address for further information: Volker Hilt\n<volker.hilt&bell-labs.com>\n\nIntended usage: COMMON\n\nAuthor/Change controller: The IETF.\n"
+  },
+  "references": []
+}

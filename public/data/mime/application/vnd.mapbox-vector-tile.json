@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "vnd.mapbox-vector-tile",
+  "full": "application/vnd.mapbox-vector-tile",
+  "extensions": [
+    "mvt"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mapbox-vector-tile",
+    "security_considerations": "The Mapbox Vector Tile media type is a protocol buffer encoded format. It cannot contain active or executable content. The information contained in the Mapbox Vector Tile media type does not require privacy or integrity services.",
+    "interoperability_considerations": "A Mapbox Vector Tile may is encoded using a Google Proto Buffer and requires a proto file to decode properly. The proto file required for each version of the Mapbox Vector Tile specification is located with the version of the specification at: \n\nhttps://github.com/mapbox/vector-tile-spec\n\nVersion information about the version of the specification is located within each Mapbox Vector Tile.",
+    "additional_information": "1. Deprecated alias names for this type: NONE\n2. Magic number(s): N/A\n3. File extension(s): mvt\n4. Macintosh file type code: NONE\n5. Object Identifiers: NONE",
+    "intended_usage": "common",
+    "template_text": "(registered 2015-12-21, last updated 2015-12-21)\n\nName: Blake Thompson\nEmail: flippmoke&gmail.com\n\nMedia type name: application\nMedia subtype name: vnd.mapbox-vector-tile\n\nRequired parameters: N/A\n\nOptional parameters:\nN/A\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nThe Mapbox Vector Tile media type is a protocol buffer encoded format. It cannot contain active or executable content. The information contained in the Mapbox Vector Tile media type does not require privacy or integrity services.\n\nInteroperability considerations:\nA Mapbox Vector Tile may is encoded using a Google Proto Buffer and requires a proto file to decode properly. The proto file required for each version of the Mapbox Vector Tile specification is located with the version of the specification at: \n\nhttps://github.com/mapbox/vector-tile-spec\n\nVersion information about the version of the specification is located within each Mapbox Vector Tile. \n\nPublished specification:\nA specification and reference for Mapbox Vector Tiles may be found at:\n\nhttps://github.com/mapbox/vector-tile-spec\n\nApplications which use this media:\nVarious. See https://github.com/mapbox/awesome-vector-tiles\nfor a list of software.\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: NONE\n2. Magic number(s): N/A\n3. File extension(s): mvt\n4. Macintosh file type code: NONE\n5. Object Identifiers: NONE\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Blake Thompson\n2. Email: flippmoke&gmail.com\n\nIntended usage: Common\nMapbox Vector Tiles are files designed for the transportation of geographic information for a specific limited and predefined region. \n\nAuthor/Change controller: Blake Thompson"
+  },
+  "references": []
+}

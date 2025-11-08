@@ -1,0 +1,38 @@
+{
+  "type": "text",
+  "subtype": "vnd.exchangeable",
+  "full": "text/vnd.exchangeable",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.exchangeable",
+    "encoding_considerations": "UTF-8\n\nSecurity considerations: The data format does not contain any \n   executable content, it is only text.\n\n   The data does not need privacy or integrity services.\n\nInteroperability considerations: This is a specific format for the \n   Czech real estate cadastre, which is shared between the state \n   administration and land surveyors.",
+    "security_considerations": "executable content, it is only text.\n\n   The data does not need privacy or integrity services.\n\nInteroperability considerations: This is a specific format for the \n   Czech real estate cadastre, which is shared between the state \n   administration and land surveyors.",
+    "interoperability_considerations": "Czech real estate cadastre, which is shared between the state \n   administration and land surveyors.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): VFK\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: The ISKN (Cadastral Registry Information System) \n   exchangeable text format (VF) contains descriptive and graphical \n   information including control data according to the specified \n   block combination (downloadable VF samples) and is used to import \n   and export spatial information.\n\n   The format can be created in the following time modes:\n   - Initial data (from any point in time after the ISKN has been \n   introduced)\n   - changes for a specified period (dates from - to and including \n   time can be entered)\n\n   Scope of data provided:\n   - territorial unit (cadastral territory, municipality, district, \n   Czech Republic),\n   - authorised entity,\n   - selection of parcels,\n   - selection of parcels by polygon on the map.\n\n   Developed by State Administration of Land Surveying and Cadastre \n   Czech Republic",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-08-03, last updated 2022-08-03)\n\nMedia type name: text\n\nMedia subtype name: vnd.exchangeable \n\n   text format of Cadastral Registry System\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\n\n   UTF-8\n\nSecurity considerations: The data format does not contain any \n   executable content, it is only text.\n\n   The data does not need privacy or integrity services.\n\nInteroperability considerations: This is a specific format for the \n   Czech real estate cadastre, which is shared between the state \n   administration and land surveyors.\n\nPublished specification: \n   https://cuzk.cz/Katastr-nemovitosti/Poskytovani-udaju-z-KN/Vymenny-format-KN/Vymenny-format-ISKN-v-textovem-tvaru.aspx\n\n\nApplications which use this media: Mainly surveying software for \n   updating the real estate cadastre, etc.\n\nFragment identifier considerations: Described groups\n\n   Real estate - contains groups: NEMO (plots, buildings, parts of \n   buildings, building rights), JEDN (units), BDPA (creditable parts \n   of plots)\n\n   Real estate + ownership - contains groups: NEMO, JEDN, BDPA, VLST \n   (beneficiaries, ownership, title deeds)\n\n   Real estate + ownership + other legal relations - contains groups: \n   NEMO, JEDN, BDPA, VLST, JPVZ (other legal relations), RIZE \n   (proceedings, deeds, price data)\n\n   Cadastral map - contains groups: PKMP (cadastral map elements), \n   BPEJ (certified soil ecological unit), DEBO (definition points), \n   ADRM (address points)\n\n   Geometric plans - contains groups: GMPL (confirmed geometric \n   plans), ZPMZ (record of detailed measurement of changes)\n\nRestrictions on usage: N/A\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): VFK\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: The ISKN (Cadastral Registry Information System) \n   exchangeable text format (VF) contains descriptive and graphical \n   information including control data according to the specified \n   block combination (downloadable VF samples) and is used to import \n   and export spatial information.\n\n   The format can be created in the following time modes:\n   - Initial data (from any point in time after the ISKN has been \n   introduced)\n   - changes for a specified period (dates from - to and including \n   time can be entered)\n\n   Scope of data provided:\n   - territorial unit (cadastral territory, municipality, district, \n   Czech Republic),\n   - authorised entity,\n   - selection of parcels,\n   - selection of parcels by polygon on the map.\n\n   Developed by State Administration of Land Surveying and Cadastre \n   Czech Republic\n\nPerson to contact for further information:\n\n   1. Name: Martin Cizek\n   2. Email: martin.cizek&cuzk.cz\n\nIntended usage: COMMON\n\n   Use by professionals and the general public.\n\nAuthor/Change controller: Martin Cizek, martin.cizek&cuzk.cz"
+  },
+  "references": []
+}

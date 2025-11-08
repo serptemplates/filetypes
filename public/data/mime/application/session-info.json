@@ -1,0 +1,34 @@
+{
+  "type": "application",
+  "subtype": "session-info",
+  "full": "application/session-info",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/session-info",
+    "change_controller": "Frederic Firmin (Frederic.Firmin&etsi.org)",
+    "template_text": "(registered 2013-05-16, last updated 2013-08-12)\n\nMIME media type name : Application\n\nMIME subtype name : Standards Tree - session-info\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : binary\n\n\nSecurity considerations : Modifications of the MIME body by a\nman-in-the-middle can have severe consequences: The overlap digits\nthat can be transported with this MIME body influence the routeing of\nthe SIP session that is being setup. Dual Tone Multi Frequency (DTMF)\ntones that can also be transported with this MIME body will be\ninterpreted by the application of the end points of the communication\nfor various purposes. However, this MIME body is used only attached to\nSIP INFO messages, and modifications of other parts of the SIP\nsignalling will lead to comparable consequences. Protection of the SIP\nsignalling will also protect the present MIME body. The SIP signalling\nshould be protected as described in RFC 3261.\n\nThere is no active or executable material in this MIME body.\n\nInteroperability considerations :\n\n\nPublished specification : 3GPP TS 29.163 Rel-9(version 9.13.0)\n(http://www.3gpp.org/ftp/Specs/html-info/29163.htm)\n\nApplications which use this media : This MIME type is used as a\nmessage body within SIP INFO messages. It is either used for sending\nadditional digits of the callee´s number, which have not previously\nbeen sent, in SIP INFO messages (\"legacy\" mode of usage of the INFO\nmethod as defined in IETF RFC 6086) when the in-dialog method is used\nfor overlap dialling. The same message body can also be used for\ntransporting Dual Tone Multi Frequency (DTMF) tones using SIP INFO\nrequests, using the DTMF info package (see RFC 6086) defined in Annex\nP of 3GPP TS 24.229.\n\nAdditional information :\n\n1. Magic number(s) : none 2. File extension(s) : none 3. Macintosh\nfile type code : none 4. Object Identifiers: none\n\nnone\n\nPerson to contact for further information :\n\n1. Name : Frederic Firmin\n2. Email : Frederic.Firmin&etsi.org\n\nIntended usage : Limited Use\n\n\nAuthor: Technical Contact : Dr. Thomas Belling (thomas.belling&nsn.com)\nChange Controller: Frederic Firmin (Frederic.Firmin&etsi.org)"
+  },
+  "references": []
+}

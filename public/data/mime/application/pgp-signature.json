@@ -1,0 +1,46 @@
+{
+  "type": "application",
+  "subtype": "pgp-signature",
+  "full": "application/pgp-signature",
+  "extensions": [
+    "sig",
+    "asc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/pgp-signature",
+    "encoding_considerations": "The content of this media type always consists of 7bit text.",
+    "security_considerations": "See Section 8 and RFC 2440 Section 13.\n\nInteroperability considerations: none",
+    "additional_information": "Magic number(s): none\n   File extension(s): asc, sig\n   Macintosh File Type Code(s): pgDS",
+    "intended_usage": "common",
+    "template_text": "(RFC 3156 published August 2001, subtype last updated August 2001)\n\nMIME media type name: application\nMIME subtype name: pgp-signature\nRequired parameters: none\nOptional parameters: none\n\nEncoding considerations:\n\n   The content of this media type always consists of 7bit text.\n\nSecurity considerations:\n\n   See Section 8 and RFC 2440 Section 13.\n\nInteroperability considerations: none\n\nPublished specification:\n\n   RFC 2440 and this document.\n\nAdditional information:\n\n   Magic number(s): none\n   File extension(s): asc, sig\n   Macintosh File Type Code(s): pgDS\n\nPerson & email address to contact for further information:\n\n   Michael Elkins\n   Email: me&cs.hmc.edu\n\nIntended usage: common\n\nAuthor/Change controller:\n\n   Michael Elkins\n   Email: me&cs.hmc.edu"
+  },
+  "references": [
+    {
+      "title": "RFC 2440",
+      "url": "https://www.rfc-editor.org/rfc/rfc2440.html",
+      "kind": "RFC"
+    }
+  ]
+}

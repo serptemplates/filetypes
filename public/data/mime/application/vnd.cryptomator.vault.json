@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.cryptomator.vault",
+  "full": "application/vnd.cryptomator.vault",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cryptomator.vault",
+    "encoding_considerations": "Security considerations: Cryptomator vault files are either JSON or \n   JWT files with a fixed set of fields. Therefore, all security \n   considerations for application/json and application/jwt also apply\n   to this media type.\n\n   The media type does not contain executable content.\n\n   The media type may contain encryption and authentication keys. \n   Since those are highly confidential, the keys are wrapped with AES\n   key wrapping as defined in RFC 3394 \n   (https://tools.ietf.org/html/rfc3394) with a KEK derived with \n   scrypt from a given passsphrase. The protection against key \n   leakage is therefore mainly based on the complexity and length of \n   the chosen passphrase.\n\n   The media type may contain URIs. Hence, the security \n   considerations of URIs also apply to this media type. (see \n   https://tools.ietf.org/html/rfc3986#section-7)\n\nInteroperability considerations: There are no known interoperability \n   issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation \n   and \n   https://github.com/cryptomator/cryptofs/issues/95#issue-747361116.\n\nApplications which use this media: Data and privacy protection, \n   file-based encryption and integrity protection.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: If a Cryptomator vault file contains keys, \n   those are encrypted with a user defined passphrase. If the \n   passphrase is not present, those cannot be decrypted and used.",
+    "security_considerations": "JWT files with a fixed set of fields. Therefore, all security \n   considerations for application/json and application/jwt also apply\n   to this media type.\n\n   The media type does not contain executable content.\n\n   The media type may contain encryption and authentication keys. \n   Since those are highly confidential, the keys are wrapped with AES\n   key wrapping as defined in RFC 3394 \n   (https://tools.ietf.org/html/rfc3394) with a KEK derived with \n   scrypt from a given passsphrase. The protection against key \n   leakage is therefore mainly based on the complexity and length of \n   the chosen passphrase.\n\n   The media type may contain URIs. Hence, the security \n   considerations of URIs also apply to this media type. (see \n   https://tools.ietf.org/html/rfc3986#section-7)\n\nInteroperability considerations: There are no known interoperability \n   issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation \n   and \n   https://github.com/cryptomator/cryptofs/issues/95#issue-747361116.\n\nApplications which use this media: Data and privacy protection, \n   file-based encryption and integrity protection.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: If a Cryptomator vault file contains keys, \n   those are encrypted with a user defined passphrase. If the \n   passphrase is not present, those cannot be decrypted and used.",
+    "interoperability_considerations": "issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation \n   and \n   https://github.com/cryptomator/cryptofs/issues/95#issue-747361116.\n\nApplications which use this media: Data and privacy protection, \n   file-based encryption and integrity protection.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: If a Cryptomator vault file contains keys, \n   those are encrypted with a user defined passphrase. If the \n   passphrase is not present, those cannot be decrypted and used.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): cryptomator\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This media type belongs to the Cryptomator vault \n   specification. The specification is publicly available and can be \n   implemented by everyone. For more information, see section \n   \"Published Specification\".",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-04-12, last updated 2021-04-12)\n\nMedia type name: application\n\nMedia subtype name: vnd.cryptomator.vault\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\n\nSecurity considerations: Cryptomator vault files are either JSON or \n   JWT files with a fixed set of fields. Therefore, all security \n   considerations for application/json and application/jwt also apply\n   to this media type.\n\n   The media type does not contain executable content.\n\n   The media type may contain encryption and authentication keys. \n   Since those are highly confidential, the keys are wrapped with AES\n   key wrapping as defined in RFC 3394 \n   (https://tools.ietf.org/html/rfc3394) with a KEK derived with \n   scrypt from a given passsphrase. The protection against key \n   leakage is therefore mainly based on the complexity and length of \n   the chosen passphrase.\n\n   The media type may contain URIs. Hence, the security \n   considerations of URIs also apply to this media type. (see \n   https://tools.ietf.org/html/rfc3986#section-7)\n\nInteroperability considerations: There are no known interoperability \n   issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture/#masterkey-derivation \n   and \n   https://github.com/cryptomator/cryptofs/issues/95#issue-747361116.\n\nApplications which use this media: Data and privacy protection, \n   file-based encryption and integrity protection.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: If a Cryptomator vault file contains keys, \n   those are encrypted with a user defined passphrase. If the \n   passphrase is not present, those cannot be decrypted and used.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): cryptomator\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This media type belongs to the Cryptomator vault \n   specification. The specification is publicly available and can be \n   implemented by everyone. For more information, see section \n   \"Published Specification\".\n\nPerson to contact for further information:\n\n   1. Name: Sebastian Stenzel\n   2. Email: info&skymatic.de\n\nIntended usage: Common\n\n   A Cryptomator vault file normally is found only within a specific \n   directory structure (\"vault\"), to which it contains the used \n   encryption and authentication keys or configuration parameters and \n   values. Common names are \"masterkey.cryptomator\" and \n   \"vault.cryptomator\".\n\nAuthor/Change controller: Sebastian Stenzel, on behalf of Skymatic \n   GmbH"
+  },
+  "references": []
+}

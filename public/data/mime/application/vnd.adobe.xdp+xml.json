@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.adobe.xdp+xml",
+  "full": "application/vnd.adobe.xdp+xml",
+  "extensions": [
+    "xdp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.adobe.xdp+xml",
+    "template_text": "(last updated 2007-05-22)\n\nName : John Brinkman\n\nEmail : john.brinkman&adobe.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.adobe.xdp+xml\n\nRequired parameters : none\n\nOptional parameters :\ncharset - with semantics identical to the charset parameter defined for application/xml \nin RFC 3023 charset\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nXDP files may contain script, database access definitions and other active content.\nWhen interpreting an XDP file, a processor must ensure that active content is run in a \n'sandbox' environment where resource access is appropriate for the level of trust.\n\nSee also:\nhttp://www.adobe.com/devnet/livecycle/articles/lc_checking_security_risks.pdf\n\nThe XDP format supports the use of XML Signatures to ensure integrity.\nXDP does not provide confidentiality protection facilities by itself;\nthese must be provided by the transport or container (e.g., when XDP is \nembedded within a PDF container).\n\n\nInteroperability considerations :\nnone\n\nPublished specification :\nAdobe XML Forms Architecture (XFA)\nhttp://partners.adobe.com/public/developer/en/xml/xfa_spec_2_4.pdf#page=785\n\nApplications which use this media :\nAdobe LiveCycle Designer, Adobe LiveCycle Forms, Adobe LiveCycle\nWorkflow, Adobe LiveCycle FormManager, Adobe LiveCycle Print, Adobe Acrobat, Adobe Reader\n\nAdditional information :\n\n1. Magic number(s) : XDP files are xml and use the namespace: http://ns.adobe.com\n2. File extension(s) : .xdp\n3. Macintosh file type code :\n4. Object Identifiers:\n\n\n\nPerson to contact for further information :\n\n1. Name : John Brinkman\n2. Email : john.brinkman&adobe.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : Adobe Systems Incorporated\n\n\n(file created 2007-05-22)"
+  },
+  "references": []
+}

@@ -1,0 +1,40 @@
+{
+  "type": "image",
+  "subtype": "jxsi",
+  "full": "image/jxsi",
+  "extensions": [
+    "jxsi"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/jxsi",
+    "encoding_considerations": "Security considerations: See media type image/heif. In addition, \n   image items of type 'jxsi' contain structures of variable length \n   and have an extensible syntax. Both aspects present potential \n   security risks for implementations. In particular, variable length\n   structures present buffer overflow risks and extensible syntax \n   could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type \n   image/heif. In addition, image items of type 'jxsi' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in ISO/IEC 21122-2, not all of \n   which are necessarily supported by a receiving decoder. As a \n   result, decoders might attempt to process the contents only to \n   determine that they cannot be rendered either partially or in \n   full.\n\nPublished specification: ISO/IEC 21122-3, Information technology – \n   JPEG XS low-latency lightweight image coding system - Part 3: \n   Transport and container formats\n\nApplications: Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: the same as for Media type \n   image/heif \n\nRestrictions on usage: None",
+    "security_considerations": "image items of type 'jxsi' contain structures of variable length \n   and have an extensible syntax. Both aspects present potential \n   security risks for implementations. In particular, variable length\n   structures present buffer overflow risks and extensible syntax \n   could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type \n   image/heif. In addition, image items of type 'jxsi' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in ISO/IEC 21122-2, not all of \n   which are necessarily supported by a receiving decoder. As a \n   result, decoders might attempt to process the contents only to \n   determine that they cannot be rendered either partially or in \n   full.\n\nPublished specification: ISO/IEC 21122-3, Information technology – \n   JPEG XS low-latency lightweight image coding system - Part 3: \n   Transport and container formats\n\nApplications: Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: the same as for Media type \n   image/heif \n\nRestrictions on usage: None",
+    "interoperability_considerations": "image/heif. In addition, image items of type 'jxsi' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in ISO/IEC 21122-2, not all of \n   which are necessarily supported by a receiving decoder. As a \n   result, decoders might attempt to process the contents only to \n   determine that they cannot be rendered either partially or in \n   full.\n\nPublished specification: ISO/IEC 21122-3, Information technology – \n   JPEG XS low-latency lightweight image coding system - Part 3: \n   Transport and container formats\n\nApplications: Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: the same as for Media type \n   image/heif \n\nRestrictions on usage: None",
+    "additional_information": "Deprecated alias names: N/A\n   Magic number(s): none\n   File extension(s): jxsi\n   Macintosh File Type Code(s): N/A\n\nIntended usage: Common\n\nContact name: ISO/IEC JTC 1/SC 29/WG 1 Convenor\n\nContact email address: sc29-sec&itscj.ipsj.or.jp\n\nAuthor/Change controller: ISO/IEC JTC1 SC29 WG1",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-07-25, last updated 2019-07-25)\n\nMedia type name: image\n\nMedia subtype name: jxsi\n\nRequired parameters: none\n\nOptional parameters: Same as for the Media type image/heif. The \n   presence of an image item of type 'jxsi' is signalled by including\n   in the itemtypes parameter, an item description whose item type \n   string starts with 'jxs1' followed by a dot-separated ('.') value.\n   The value after the '.' is the concatenation of the profile and \n   level value named Ppih and Plev as defined in ISO/IEC 21122-2.\n\nEncoding considerations: binary\n\nSecurity considerations: See media type image/heif. In addition, \n   image items of type 'jxsi' contain structures of variable length \n   and have an extensible syntax. Both aspects present potential \n   security risks for implementations. In particular, variable length\n   structures present buffer overflow risks and extensible syntax \n   could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type \n   image/heif. In addition, image items of type 'jxsi' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in ISO/IEC 21122-2, not all of \n   which are necessarily supported by a receiving decoder. As a \n   result, decoders might attempt to process the contents only to \n   determine that they cannot be rendered either partially or in \n   full.\n\nPublished specification: ISO/IEC 21122-3, Information technology – \n   JPEG XS low-latency lightweight image coding system - Part 3: \n   Transport and container formats\n\nApplications: Multimedia, Imaging, Pictures, Scientific\n\nFragment identifier considerations: the same as for Media type \n   image/heif \n\nRestrictions on usage: None\n\nAdditional information:\n   Deprecated alias names: N/A\n   Magic number(s): none\n   File extension(s): jxsi\n   Macintosh File Type Code(s): N/A\n\nIntended usage: Common\n\nContact name: ISO/IEC JTC 1/SC 29/WG 1 Convenor\n\nContact email address: sc29-sec&itscj.ipsj.or.jp\n\nAuthor/Change controller: ISO/IEC JTC1 SC29 WG1"
+  },
+  "references": []
+}

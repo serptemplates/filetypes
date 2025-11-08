@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "vnd.wt.stf",
+  "full": "application/vnd.wt.stf",
+  "extensions": [
+    "stf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wt.stf",
+    "security_considerations": "This is an \"encapsulation\" type which contains other objects that\n  may have associated security risks, but does not add any additional\n  risks of its own.  As with any type of this sort, countermeasures\n  based upon MIME content-types and their contents won't reduce the\n  risk from objects encapsulated in vnd.wt.stf, without filtering out\n  all vnd.wt.stf content-types.\n\n  However, countermeasures for vnd.wt.stf-related threats can be\n  implemented using Worldtalk security services.\n\nInteroperability considerations: None, as type describes proprietary format.\n\nPublished specification:         Worldtalk proprietary.\n\nApplications which  \nuse this media type:             Worldtalk NetJunction/NetTalk.",
+    "interoperability_considerations": "Published specification:         Worldtalk proprietary.\n\nApplications which  \nuse this media type:             Worldtalk NetJunction/NetTalk.",
+    "additional_information": "Magic number(s):               None.\n  File extension(s):             .stf\n  Macintosh File Type Code(s):   None.\n\nPerson & email address to \ncontact for further information: Bill Wohler\n                                 Worldtalk Corporation\n                                 wohler&worldtalk.com\nIntended usage:                  LIMITED USE\n\nAuthor/Change controller:        Bill Wohler <wohler&newt.com>\n\nComments:                        Replaces experimental type\n                                 application/x-wt-stf.",
+    "intended_usage": "limited use",
+    "template_text": "\n\nFrom wohler&uluru.worldtalk.com  Thu Jul 10 08:44:28 1997\nTo: iana&iana.org\nSubject: Registration of MIME media type application/vnd.wt.stf\nDate: Thu, 10 Jul 1997 15:44:28 -0700\n\n  Please find enclosed a request for registration of the media type\n  application/vnd.wt.stf.  It has undergone the review period on\n  ietf-types&iana.org recommended by RFC 2048.\n\nMIME media type name:            application\n\nMIME subtype name:               vnd.wt.stf\n\nRequired parameters:             None.\n\nOptional parameters:             None.\n\nEncoding considerations:         As content is binary, base64 is used.\n\nSecurity considerations:\n  This is an \"encapsulation\" type which contains other objects that\n  may have associated security risks, but does not add any additional\n  risks of its own.  As with any type of this sort, countermeasures\n  based upon MIME content-types and their contents won't reduce the\n  risk from objects encapsulated in vnd.wt.stf, without filtering out\n  all vnd.wt.stf content-types.\n\n  However, countermeasures for vnd.wt.stf-related threats can be\n  implemented using Worldtalk security services.\n\nInteroperability considerations: None, as type describes proprietary format.\n\nPublished specification:         Worldtalk proprietary.\n\nApplications which  \nuse this media type:             Worldtalk NetJunction/NetTalk.\n\nAdditional information:\n  Magic number(s):               None.\n  File extension(s):             .stf\n  Macintosh File Type Code(s):   None.\n\nPerson & email address to \ncontact for further information: Bill Wohler\n                                 Worldtalk Corporation\n                                 wohler&worldtalk.com\nIntended usage:                  LIMITED USE\n\nAuthor/Change controller:        Bill Wohler <wohler&newt.com>\n\nComments:                        Replaces experimental type\n                                 application/x-wt-stf.\n\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.airzip.filesecure.azs",
+  "full": "application/vnd.airzip.filesecure.azs",
+  "extensions": [
+    "azs"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.airzip.filesecure.azs",
+    "template_text": "(last updated 2009-02-18)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.airzip.filesecure.azs\n\nRequired parameters : None.\n\nOptional parameters : None.\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nA proprietary encrypted format that is designed to only be viewed using AirZip's\nReader client software. Mechanisms are in place to ensure the integrity of these\nfiles, and they do not contain executable code.\n\nInteroperability considerations :\nValid on Windows systems. Will be valid on Mac OS X, Linux and Unix systems\nduring 2009.\n\nPublished specification :\nThe specifications are proprietary and confidential.\n\nApplications which use this media :\nFileSECURE Reader is the only intended user of this format. Product information\navailable at http://www.airzip.com/FileSECURE.htm.\n\nAdditional information :\n\n1. Magic number(s) : 0xD3415A53\n2. File extension(s) : .azs\n3. Macintosh file type code : AZS\n4. Object Identifiers: None.\n\n\n\nPerson to contact for further information :\n\n1. Name : Daniel Mould\n2. Email : dmould&airzip.com\n\nIntended usage : Common\nIntended for widespread dissemination of FileSECURE secured files.\n\nAuthor/Change controller : Contact Daniel Mould.\n\n(file created 2009-02-18)"
+  },
+  "references": []
+}

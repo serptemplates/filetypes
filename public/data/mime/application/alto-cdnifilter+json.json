@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "alto-cdnifilter+json",
+  "full": "application/alto-cdnifilter+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/alto-cdnifilter+json",
+    "encoding_considerations": "Encoding considerations are identical to those specified for the\n   \"application/json\" media type.  See [RFC8259].",
+    "security_considerations": "Security considerations related to the generation and consumption\n   of ALTO Protocol messages are discussed in Section 15 of\n   [RFC7285].",
+    "interoperability_considerations": "N/A",
+    "applications": "ALTO servers and ALTO clients [RFC7285] either stand alone or are\n   embedded within other applications that provide CDNI interfaces\n   for uCDNs or dCDNs and supports CDNI capability-based filtering.",
+    "additional_information": "Magic number(s):  N/A\n\n   File extension(s):  N/A\n\n   Macintosh file type code(s):  N/A",
+    "template_text": "Type name:\n   application\n\nSubtype name:\n   alto-cdnifilter+json\n\nRequired parameters:\n   N/A\n\nOptional parameters:\n   N/A\n\nEncoding considerations:\n   Encoding considerations are identical to those specified for the\n   \"application/json\" media type.  See [RFC8259].\n\nSecurity considerations:\n   Security considerations related to the generation and consumption\n   of ALTO Protocol messages are discussed in Section 15 of\n   [RFC7285].\n\nInteroperability considerations:\n   N/A\n\nPublished specification:\n   Section 5 of RFC 9241\n\nApplications that use this media type:\n   ALTO servers and ALTO clients [RFC7285] either stand alone or are\n   embedded within other applications that provide CDNI interfaces\n   for uCDNs or dCDNs and supports CDNI capability-based filtering.\n\nFragment identifier considerations:\n   N/A\n\nAdditional information:\n   Magic number(s):  N/A\n\n   File extension(s):  N/A\n\n   Macintosh file type code(s):  N/A\n\nPerson & email address to contact for further information:\n   See Authors' Addresses section of RFC 9241.\n\nIntended usage:\n   COMMON\n\nRestrictions on usage:\n   N/A\n\nAuthor:\n   See Authors' Addresses section of RFC 9241.\n\nChange controller:\n   Internet Engineering Task Force (iesg&ietf.org).\n"
+  },
+  "references": [
+    {
+      "title": "RFC 9241",
+      "url": "https://www.rfc-editor.org/rfc/rfc9241.html",
+      "kind": "RFC"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "marc",
+  "full": "application/marc",
+  "extensions": [
+    "mrc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/marc",
+    "encoding_considerations": "arbitrary octet values. The base64 content-transfer-encoding is\nrecommended for transmission of MARC over electronic mail.\n\nSecurity Considerations\n\nThere are no known security risks associated with the use or viewing\nof MARC data. A MARC record may have security classification\nassociated with the document it describes or metadata in that record.\nAlthough this does not present any security risk to the user of MARC\ndata, it may provide an opportunity for a security breach for the\nsource of classified MARC data.\n\nInteroperability Considerations\n\nMARC is a communication format and is designed for interoperability\nbetween different systems that may store data in local formats\ninternally.\n\nPublished Specification\n\n\"USMARC Format for Bibliographic Data\"; \"USMARC Format for Authority\nData\"; \"USMARC Format for Holdings Data\"; \"USMARC Format for\nClassification Data\"; \"USMARC Format for Community Information\".",
+    "additional_information": "File extension: .mrc\nOID: 1.2.840.10003.5.10",
+    "template_text": "(RFC 2220 published October 1997, subtype last updated October 1997)\n\nMedia type name: application\n\nMedia subtype name: marc\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: MARC records may contain long lines and/or\narbitrary octet values. The base64 content-transfer-encoding is\nrecommended for transmission of MARC over electronic mail.\n\nSecurity Considerations\n\nThere are no known security risks associated with the use or viewing\nof MARC data. A MARC record may have security classification\nassociated with the document it describes or metadata in that record.\nAlthough this does not present any security risk to the user of MARC\ndata, it may provide an opportunity for a security breach for the\nsource of classified MARC data.\n\nInteroperability Considerations\n\nMARC is a communication format and is designed for interoperability\nbetween different systems that may store data in local formats\ninternally.\n\nPublished Specification\n\n\"USMARC Format for Bibliographic Data\"; \"USMARC Format for Authority\nData\"; \"USMARC Format for Holdings Data\"; \"USMARC Format for\nClassification Data\"; \"USMARC Format for Community Information\".\n\nAdditional information:\nFile extension: .mrc\nOID: 1.2.840.10003.5.10\n\nPerson & email address to contact for further information:\nNetwork Development & MARC Standards Office <ndmso&loc.gov>\n101 Independence Ave. SE\nLibrary of Congress\nWashington, DC 20540-4102 U.S.A.\n"
+  },
+  "references": []
+}

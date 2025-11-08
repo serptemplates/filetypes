@@ -1,0 +1,36 @@
+{
+  "type": "text",
+  "subtype": "vnd.esmertec.theme-descriptor",
+  "full": "text/vnd.esmertec.theme-descriptor",
+  "extensions": [],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.esmertec.theme-descriptor",
+    "template_text": "(Registered 16 December 2004)\r\n\r\nName : Stefan Eilemann\r\n\r\nEmail : eile&esmertec.com\r\n\r\nMIME media type name : Text\r\n\r\nMIME subtype name : Vendor Tree - vnd.esmertec.theme-descriptor\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : charset\r\n\r\nThe esmertec theme descriptor file conforms to the usage of the\r\noptional charset parameter for text/plain in rfc2046.  Since the file\r\ncontains text used by Java applications it is expected that most theme\r\ndescriptor files will be delivered as UTF-8.\r\nThe default charset is UTF-8.\r\n\r\nEncoding considerations : 8bit\r\n\r\nThis media type may require encoding on transports not capable of\r\nhandling 8 bit text.\r\n\r\nSecurity considerations :\r\n\r\nThe theme descriptor contains attribute information used by\r\nMIDP rendering software. The descriptor file references a\r\ndownloadable Jar file. The resources in the jar file configure\r\nthe look and feel of MIDP applications. Although the jar file\r\ndoes not contain executable code, a bogus descriptor file could\r\ndirect a client to download a potentially harmful theme description\r\nfile. Alternately, the request to get the theme description could\r\nbe intercepted and a bogus file substituted. For this reason a\r\nnetwork operator might require the descriptor file and associated\r\nJar file to be delivered from the same source and delivered over a\r\nsecure network connection.\r\n\r\nInteroperability considerations : None\r\n\r\nPublished specification : None\r\n\r\nApplications which use this media :\r\nEsmertec's J2ME application management software which runs on mobile\r\ndevices that are enabled with a Java Virtual Machine(JVM) execution\r\nenvironment. The theme descriptor provides the information\r\nneeded to download and install a theme.\r\n\r\nAdditional information :\r\n\r\n 1. Magic number(s) : none\r\n 2. File extension(s) : jtd\r\n 3. Macintosh file type code : none\r\n 4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n 1. Name : Stefan Eilemann\r\n 2. Email : eile&esmertec.com\r\n\r\nIntended usage : Limited Use\r\n\r\nAuthor/Change controller : esmertec ag\r\n"
+  },
+  "references": []
+}

@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.gnu.taler.merchant+json",
+  "full": "application/vnd.gnu.taler.merchant+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.gnu.taler.merchant+json",
+    "encoding_considerations": "Security considerations: The media type is not expected to ever \n   transmit executable content. However, it can contain \n   privacy-sensitive information, such as financial data, so it \n   should be transmitted over a secure channel. The format itself \n   doesn't include any support for data confidentiality.\n\nInteroperability considerations: None.",
+    "security_considerations": "transmit executable content. However, it can contain \n   privacy-sensitive information, such as financial data, so it \n   should be transmitted over a secure channel. The format itself \n   doesn't include any support for data confidentiality.\n\nInteroperability considerations: None.",
+    "additional_information": "1. Deprecated alias names for this type: none\n   2. Magic number(s): none\n   3. File extension(s): none\n   4. Macintosh file type code: none\n   5. Object Identifiers: none",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2022-02-28, last updated 2022-02-28)\n\nMedia type name: application\n\nMedia subtype name: vnd.gnu.taler.merchant+json\n\nRequired parameters: version -- specifies the expected protocol \n   version as a simple plain integer (e.g. 42)\n\nOptional parameters: None.\n\nEncoding considerations: binary\n\nSecurity considerations: The media type is not expected to ever \n   transmit executable content. However, it can contain \n   privacy-sensitive information, such as financial data, so it \n   should be transmitted over a secure channel. The format itself \n   doesn't include any support for data confidentiality.\n\nInteroperability considerations: None.\n\nPublished specification:\n\n   https://docs.taler.net/core/api-merchant.html\n\nApplications which use this media: GNU Taler, https://taler.net/\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Expected to be used only for the GNU Taler \n   REST API.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: none\n   2. Magic number(s): none\n   3. File extension(s): none\n   4. Macintosh file type code: none\n   5. Object Identifiers: none\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Christian Grothoff\n   2. Email: grothoff&gnu.org\n\nIntended usage: Limited Use\n\n   For GNU Taler.\n\nAuthor/Change controller: Christian Grothoff"
+  },
+  "references": []
+}

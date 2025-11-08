@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.informedcontrol.rms+xml",
+  "full": "application/vnd.informedcontrol.rms+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.informedcontrol.rms+xml",
+    "template_text": "(last updated 24-10-2006)\r\n\r\nName : Mark Wahl\r\n\r\nEmail : Mark.Wahl&informed-control.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.informedcontrol.rms+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of\r\nhandling 8 bit text. The content, in XML format, is to be encoded in\r\nthe UTF-8 charset. No Byte Order Mark is used.\r\n\r\nSecurity considerations :\r\nThis media type is used to exchange information which is sensitive or\r\nrepresents personal private information. The use of either \"wrapper\"\r\nsecurity encodings, such as S/MIME or HTTPS, or intrinsic security\r\ncapabilities, such as XML Encryption and XML Signature, is recommended,\r\nto protect this information from eavesdropping or modification while in\r\ntransit.\r\n\r\nThis media type is not used to carry any executable or active content.\r\nApplications receiving a content of this type should save it to a file,\r\nand should protect this file from viewing or modification by other users\r\non the system.\r\n\r\nInteroperability considerations :\r\nThe content transferred in a MIME body part is in an XML format, and is\r\nencoded in the UTF-8 charset.\r\n\r\nPublished specification :\r\nThe content is described in the document \"RDBMS Model Schema\" located at\r\nhttp://www.informed-control.com/2/resources/spec/schema-rms.shtml\r\n\r\nApplications which use this media :\r\nCurrently this media type is only used for exchange of data between\r\nimplementations developed by Informed Control Inc.\r\n\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : xml\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Mark Wahl\r\n2. Email : Mark.Wahl&informed-control.com\r\n\r\nIntended usage : Limited Use\r\nCurrently this media type is only used for exchange of data between\r\nimplementations developed by Informed Control Inc.\r\n\r\n\r\nAuthor/Change controller : Mark Wahl\r\n\r\n(file created 24-10-2006)"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "rtf",
+  "full": "application/rtf",
+  "extensions": [
+    "rtf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/rtf",
+    "template_text": "(last updated 2007-06-18)\n\nMIME media type name : application\n\nMIME subtype name : Vendor Tree (grandfathered name) - rtf\n\nRequired parameters : None\n\nOptional parameters : None\n\n Note: RTF specifies its own character set internally for its text data,\n thus having a charset parameter would be redundant.\n\nEncoding considerations : binary\n\n This media type may require encoding on transports not capable of\n handling binary data.\n\n Prior to version 1.5 textual content in RTF was 7bit only. 1.5 changed this\n to allow  unencoded 8bit characters. However, since RTF allows inclusion\n of binary data in <pict> elements, binary encoding may have to be used for\n object of type application/rtf.\n\nSecurity considerations :\n\n RTF content consists of unformatted text and control words. Executable\n content is not allowed. RTF provides no integrity or confidentiality services\n internally so external signature and encryption services must be used to\n protect sensitive content.\n\n RTF supports references to external files and other objects. Care should\n be taken when resolving such references in order not to violate\n security policies.\n\nInteroperability considerations :\n\nPublished specification :\n\n RTF version 1.6:\n\n   http://msdn2.microsoft.com/en-us/library/aa140277(office.10).aspx\n\n RTF version 1.5:\n\n   http://www.biblioscape.com/rtf15_spec.htm\n\nApplications which use this media type :\n\n Many applications are capable of reading and writing RTF objects.\n\nAdditional information :\n\n 1. Magic number(s) : RTF objects always begin with the\n                      five character string {\\rtf\n 2. File extension(s) : .rtf\n 3. Macintosh file type code : -\n 4. Object Identifiers: -\n\nPerson to contact for further information :\n\n1. Name :\n2. Email :\n\nIntended usage : Common\n\n"
+  },
+  "references": []
+}

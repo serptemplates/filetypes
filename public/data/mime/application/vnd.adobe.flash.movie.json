@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.adobe.flash.movie",
+  "full": "application/vnd.adobe.flash.movie",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.adobe.flash.movie",
+    "template_text": "(registered 2013-09-06, last updated 2013-09-06)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.adobe.flash.movie\n\nRequired parameters : The format defines no parameters.\n\nOptional parameters :\nThe format defines no parameters.\n\nEncoding considerations : binary\n\n\nSecurity considerations :\nFlash movies frequently contain active content. Execution is done in a sandboxed \nvirtual machine.\n\nFlash movies are nearly always compressed. Users should be prepared for the data \nexpanding.\n\nFlash movies are known to sometimes use so called \"Local Shared Objects\", small \nchunks of data persistently stored on the computer, which can be used for similar \ntracking purposes as HTTP cookies.\n\nFlash movies can, by permission and aid of the embedding application, reach out \nof the sandbox. This is traditionally done using JavaScript.\n\nFlash movies can carry metadata, but do not generally contain personally \nidentifiable data.\n\nThe flash movie format does not provide either confidentiality or integrity\nprotection. If such protections are desired they must be supplied\nexternally, e.g., through the use of SSL/TLS.\n\n\nInteroperability considerations :\nThe SWF file format has an obsoleted audio format that depends on the\nendianess of the player computer. Modern content has no known endianess\nissues.\n\nLegacy content exists that may depend on player implementation bugs,\nintentionally and accidentally. File format version numbers are used to\ndetect legacy content.\n\nPublished specification :\nThe latest published specification can be found at the following URL: \nhttp://www.adobe.com/devnet/swf.html\n\nApplications which use this media :\nThe Adobe Flash player and Adobe AIR\n\nAdditional information :\n\n1. Magic number(s) : FWS, CWS or ZWS\n2. File extension(s) : *.swf\n3. Macintosh file type code : .\n4. Object Identifiers: .\n\nHas been previously seen under the non-standard media type application/x-shockwave-flash.\n\nPerson to contact for further information :\n\n1. Name : Henrik Andersson\n2. Email : henke&henke37.cjb.net\n\nIntended usage : Common\nFlash movies are frequently used on the web for rich content such as games and \nmedia playing applications. It is also used for vector art based animation.\n\nAuthor/Change controller : Henrik Andersson, on behalf of Adobe Systems Incorporated."
+  },
+  "references": []
+}

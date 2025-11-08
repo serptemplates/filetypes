@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.microsoft.portable-executable",
+  "full": "application/vnd.microsoft.portable-executable",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.microsoft.portable-executable",
+    "template_text": "(registered 2015-04-23, last updated 2015-04-23)\n\nName : Henrik Andersson\n\nEmail : henke&henke37.cjb.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.microsoft.portable-executable\n\nRequired parameters : None.\n\nOptional parameters : \nNone.\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nPE files contain native code that executes with the privilege of the user without the use of sandboxing. Extreme caution is advised.\n\nPE files supports digital signatures providing strong integrity protection. Basic checksums are also supported.\n\nThe PE format do not provide any confidentiality protection of its own and requires external means if that is required.\n\nThe PE format does not use compression.\n\nPE files allow for runtime generation of additional code.\n\nInteroperability considerations : \nAside from general parser and generator bugs, as well as linking with libraries that only exist in certain OS versions, the format is somewhat dependent on the bitness of the target CPU architecture.\n\nPublished specification : \nhttp://www.microsoft.com/whdc/system/platform/firmware/PECOFF.mspx\n\nApplications which use this media : \nThe Windows operating system and all software made for it.\n\nFragment identifier considerations :\nPE files expose several kinds of data that may be of interest to address externally.\n\nThe first type is the exported functions. Functions may be exported using numerical ordinances and/or names. The format for addressing functions is either the exported name or the ordinance as a text string.\n\nThe second type is data and code at a given address. Due to relocation, addresses vary depending on where the module is loaded at runtime. This is solved by the use of relative virtual addresses (RVA for short). The fragment syntax for RVAs is the digit zero, followed by the lower case letter x followed by the RVA in base 16.\n\nThe third type is resources. Resources are identified either with an integer id or a text string. The fragment syntax is either the integer id or the text string. Resources use several predefined types and are localizable, the context of the URI is expected to resolve which type and locale is desired.\n\nAmbiguities between the types of data referenced are expected to be resolved using the context of the URI.\n\n\nRestrictions on usage :\nNo restrictions.\n\nProvisional registration? (standards tree only) :\n.\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : .\n2. Magic number(s) : MZ\n3. File extension(s) : *.exe, *.dll\n4. Macintosh file type code : .\n5. Object Identifiers: .\n\n\n\nPerson to contact for further information :\n\n1. Name : Henrik Andersson\n2. Email : henke&henke37.cjb.net\n\nIntended usage : Common\nPE files are very commonly used to store built software.\n\nAuthor/Change controller : Henrik Andersson, on behalf of Microsoft."
+  },
+  "references": []
+}

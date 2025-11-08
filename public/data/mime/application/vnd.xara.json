@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.xara",
+  "full": "application/vnd.xara",
+  "extensions": [
+    "xar"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.xara",
+    "template_text": "\n\nFrom nobody&ISI.EDU  Wed Aug 14 06:04:32 1996\nDate: Wed, 14 Aug 96 13:04:32 PDT\nFrom: David Matthewman <david&xara.com>\nTo: iana&isi.edu\nReply-To: david&xara.com\nSender: david&xara.com\nSubject: Request for MIME media type application/xara\nX-Real-Host-From: cconcepts176.cconcepts.co.uk\nContent-Length: 1941\nStatus: RO\nX-Lines: 50\n\nName : David Matthewman\n\nE-mail : david&xara.com\n\nMIME media type name : application\n\nMIME subtype name : xara\n\nRequired parameters : none\n\n\nOptional parameters : creator = xxx where 'xxx' is the name of the software that created the file.\nversion=n, where 'n' is the version number of the software that created the file.\n\n\nEncoding considerations : Xara files are 8-bit, and so should be base64-encoded for transmission where transport is not 8-bit clean.\n\n\nSecurity considerations : Xara files have no executable component. However, there is provision for them to contain embedded URLs, which could reference insecure data, so the same security considerations apply as for a standard HTML page.\n\n\nInteroperability considerations : \n\n\nPublished specification : Xara files are saved by CorelXARA, an object-oriented vector graphics package written by Xara Limited (and marketed by Corel). Xara files currently in use have an EPS format, but the MIME type is intended to cover an new, more compact format supported by future versions (and more suitable for transmission on the Internet because of its compactness). All new-format files have the same internal data structure - the difference is in the richness of the information contained. A freely available technical specification does not yet exist, but is being worked on.\n\n\nApplications which use this media : CorelXARA. A plug-in and ActiveX control should be available soon, and it is hoped that the format will be supported by other packages in future, once the specification is freely available.\n\n\nAdditional information :\n\n1. Magic number(s) : First 8 bytes: 58 41 52 41 A3 A3 0D 0A\n2. File extension(s) : .XAR\n3. Macintosh file type code : \n\nPerson to contact for further information :\n\n1. Name : David Matthewman\n2. E-mail : david&xara.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : Xara Limited, Gaddesden Place, Hemel Hempstead, HP2 6EX, UK\nhttp://www.xara.com/\n \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

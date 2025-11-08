@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.gridmp",
+  "full": "application/vnd.gridmp",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.gridmp",
+    "template_text": "(last updated 14 September 2006)\r\n\r\nName : Jeff Lawson\r\n\r\nEmail : jlawson&ud.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.gridmp\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of \r\nhandling binary.\r\n\r\nSecurity considerations :\r\n\r\nThis is a proprietary data format used solely by the UD Grid MP\r\nproduct between the MP Agent and the Grid MP services.\r\n\r\nThe body of any request using this MIME type contains an encrypted \r\nand digitially-signed message that is prepared by the client. The \r\nresponse from the server also uses this MIME type and is also \r\nencrypted and digitally-signed. The security policies and digital keys\r\nused to authenticate the network communication are configurable\r\nby the user at the time of installation.\r\n\r\nThe Grid MP Agent uses the data encrypted communications to receive\r\ninstructions regarding what programs and data files should be\r\nexecuted on the grid node. Role-based access control on the server\r\nauthenticates any users that wish to send jobs or instructions to\r\nthe MP Agent.\r\n\r\nActual executable programs or data files are not actually transmitted\r\nusing this protocol; instead, remote references included within this\r\nprotocol specify the digital hash (currently SHA1) of the file(s) that\r\nare needed to execute the program. The MP Agent searches its local\r\nfile cache for an identical hash and executes the program with the\r\nrequested arguments. File hashes that are not already cached can be\r\nautomatically downloaded from a Grid MP File Service using a separate\r\nauthenticated HTTP/SSL protocol that is not described here.\r\n\r\n\r\nInteroperability considerations :\r\n\r\nThis is a proprietary data format used solely by the UD Grid MP \r\nproduct between the MP Agent and the Grid MP services.\r\n\r\n\r\nPublished specification :\r\n\r\nThe specifications for this content-type are proprietary. They are \r\nspecified by United Devices.\r\nThe registration of this content-type is intended only to provide \r\na convention for labeling this proprietary data type within the \r\nMIME/HTTP environment and does not specify any details about the \r\ncontent format or semantics, except to refer to the software and \r\nspecifications provided by United Devices. Company information \r\nmay be obtained at http://www.ud.com/\r\n\r\nApplications which use this media :\r\n\r\nThis mime-type is intended for use only by the MP Agent and Grid \r\nMP server software included with the Grid MP Platform.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : n/a\r\n2. File extension(s) : n/a\r\n3. Macintosh file type code : n/a\r\n4. Object Identifiers: n/a\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Jeff Lawson\r\n2. Email : jlawson&ud.com\r\n\r\nIntended usage : Limited Use\r\nGrid MP is a commercial product typically used internally within a \r\ncorporation, enterprise, or academic environment for managing \r\ncomputation on grid and cluster environments.\r\n\r\nAuthor/Change controller : jlawson&ud.com\r\n\r\n(file created 14 September 2006)"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.llamagraphics.life-balance.exchange+xml",
+  "full": "application/vnd.llamagraphics.life-balance.exchange+xml",
+  "extensions": [
+    "lbe"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.llamagraphics.life-balance.exchange+xml",
+    "template_text": "\r\n(last updated 2003-03-28)\r\n\r\nName : W. Scott Meeks\r\n\r\nEmail : wsmeeks&llamagraphics.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree -\r\nvnd.llamagraphics.life-balance.exchange+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : charset\r\n\r\nThe syntax and semantics of this parameter are the same as for\r\napplication/xml.\r\n\r\nEncoding considerations : Because Life Balance supports Unicode, content\r\ndata may need to be in UTF-16 as well as UTF-8.  As per RFC 3023: For\r\n7-bit transports, data in either UTF-8 or UTF-16 MUST be encoded in\r\nquoted-printable or base64.  For 8-bit clean transport (e.g.,\r\n8BITMIME[RFC1652] ESMTP or NNTP[RFC0977]), UTF-8 is not encoded, but the\r\nUTF-16 family MUST be encoded in base64.  For binary clean transports\r\n(e.g., HTTP[RFC2616]), no content-transfer-encoding is necessary.\r\n\r\nSecurity considerations :\r\nThe security issues associated with this type have not been thoroughly\r\nassessed.\r\n\r\nLife Balance Exchange shares security issues common to all XML content\r\ntypes.\r\n\r\nThis type does not contain any executable code or macros. However, users\r\nmay store personal data using this format and this data is not encrypted\r\nand could easily be extracted from the format.\r\n\r\nInteroperability considerations :\r\nThis type is primarily intended for data exchange among Life Balance(TM)\r\napplications running on the Macintosh(R) or Windows(R) operating system.\r\n\r\nHowever, because it is an XML-based format and will have a published\r\nDTD, it should be parsable by any software with a validating parser using \r\nthe DTD.\r\n\r\nPublished specification :\r\nThe DTD is currently proprietary and evolving.  Once the DTD is\r\nstabilized and we release the first version of Life Balance that can \r\nuse the Exchange format, we will also provide a downloadable version \r\nof the DTD.\r\n\r\nApplications which use this media :\r\nLife Balance(TM) Desktop Edition\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : lbe\r\n3. Macintosh file type code : LBex\r\n4. Object Identifiers: none\r\n\r\nIn general, the considerations for application/xml apply to this format.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Catherine E. White\r\n2. Email : cewhite&llamagraphics.com\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : llamagraphics.com      \r\n\r\n(file created 2003-03-28))"
+  },
+  "references": []
+}

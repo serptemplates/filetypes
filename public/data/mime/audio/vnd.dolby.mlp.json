@@ -1,0 +1,33 @@
+{
+  "type": "audio",
+  "subtype": "vnd.dolby.mlp",
+  "full": "audio/vnd.dolby.mlp",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.dolby.mlp",
+    "template_text": "(last updated 2007-06-18)\n\nName : Mike Ward\n\nEmail : mcw&dolby.com\n\nMIME media type name : Audio\n\nMIME subtype name : Vendor Tree - vnd.dolby.mlp\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media type consists of a sequence of coded audio access units, and\ncontains no executable content. This media type provides no privacy or\nintegrity services, and such services are not required to extract the\ncoded audio information from this media type.\n\nInteroperability considerations :\nMLP streams may be encoded in big-endian or little-endian byte order. The byte\norder of a particular stream can be determined from the order of the MLP Sync\nHeader present at the start of every MLP access unit. The value of the MLP Sync\nHeader is either 0xF8726FBA or 0xF8726FBB depending on which version of the\nstream syntax the stream complies with. The value of the MLP Sync Header is\nconstant for all access units within a stream.\n\nPublished specification :\nDVD Specifications for High Definition Video: MLP Reference Information -\nVersion 1.0, August 2005\n\nApplications which use this media :\nApplications for encoding and decoding digital audio.\n\nAdditional information :\n\n1. Magic number(s) : 0xF8726FBA, 0xF8726FBB\n2. File extension(s) : .mlp\n3. Macintosh file type code : -\n4. Object Identifiers: -\n\n\n\nPerson to contact for further information :\n\n1. Name : Mike Ward\n2. Email : mcw&dolby.com\n\nIntended usage : Common\nLossless audio compression\n\nAuthor/Change controller : Mike Ward\nDolby Laboratories Licensing Corporation\n100 Potrero Avenue\nSan Francisco\nCA 94103-4813\nUSA\n\n(file created 2007-06-18)"
+  },
+  "references": []
+}

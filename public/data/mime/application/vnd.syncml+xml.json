@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.syncml+xml",
+  "full": "application/vnd.syncml+xml",
+  "extensions": [
+    "xsm"
+  ],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.syncml+xml",
+    "template_text": "\r\n(last updated 2004-06-18)\r\n\r\nName : OMA Data Synchronization Working Group\r\n\r\nEmail : technical-comments&mail.openmobilealliance.org\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.syncml+xml\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : \r\ncharset Parameter\r\nPurpose: Specifies the character set used to represent the SyncML document.\r\nThe default character set for SyncML representation protocol is UTF-8.\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of handling 8 bit text.\r\n\r\nSecurity considerations : \r\nAuthentication: \r\nThe MIME content type definition provides for the inclusion of authentication information \r\nfor the purpose of authenticating the originator and recipient of messages containing the \r\ndata synchronization content type. The content type definition supports Basic, Base64 \r\nuserid/password mark-up, MD5 digest challenge and response strings and any other registered \r\nauthentication credential scheme.\r\n\r\nThreats: \r\nThe MIME content type definition provides for the inclusion of remote execution commands. \r\nAdministrators for MIME implementations that support this content type SHOULD take every \r\nstandard precaution to assure the activation of the originator of content, as well as \r\ntake every standard precaution to confirm the validity of the included remote execution \r\ncommand prior to allowing the command to be executed on the targeted recipient's system.\r\n\r\nInteroperability considerations : \r\nImplementations that have support for the mandatory features of this content type will \r\ngreatly increase the chances of interoperating with other implementations supporting this \r\ncontent type. Conformance to this content type requires an implementation to support every mandatory feature.\r\n\r\nPublished specification : \r\nhttp://www.openmobilealliance.org/\r\n\r\nApplications which use this media : \r\nThis MIME content type is intended for common use by networked data synchronization applications.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : XSM\r\n3. Macintosh file type code : XSML\r\n4. Object Identifiers: None\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Aki Lehto\r\n2. Email : aki.lehto&nokia.com\r\n\r\nIntended usage : Common \r\n    \r\nAuthor/Change controller : Open Mobile Alliance - Data Synchronization Working Group         \r\n\r\n\r\n[Created 2004-06-18]\r\n"
+  },
+  "references": []
+}

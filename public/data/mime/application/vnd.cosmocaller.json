@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.cosmocaller",
+  "full": "application/vnd.cosmocaller",
+  "extensions": [
+    "cmc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cosmocaller",
+    "template_text": "\n\nDate: Wed, 21 Jan 1998 13:02:16 -0800 (PST)\nFrom: Steve Dellutri <sdellutri&cosmocom.com>\nTo: iana&ISI.EDU, sdellutri&cosmocom.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.cosmocaller\n\nName : Steve Dellutri\n\nE-mail : sdellutri&cosmocom.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.cosmocaller\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nFiles associated with this mime type will be ascii text based.\n\nSecurity considerations : \n\nThe application/vnd.cosmocaller mime type specifically does cause the\nremote execution of the CosmoCaller.exe application.  ComoCaller is a\ncommercial program from CosmoCom which is used to establish a TCP\nconnection to a CosmoCall ACD server.  The contents of the file tagged\nas an application/vnd.cosmocaller  mime type describes where to find\nthe CosmoCall acd to connect to and the specific properties to apply to\nthe session once established.  Users should be aware that by opening\nthe cosmocaller mime file, this connection should be established.  At\nthe current time, the CosmoCaller.exe program which is used to read the\nmime is only available on  32bit Windows platforms.\n\n\nInteroperability considerations : \nCurrently only available on Windows 95/NT Intel based systems\n\nPublished specification : \nfiles will contain various parameters which allow CosmoCaller\napplications to connect to CosmoCall ACD servers.\n\nexample file:\n\nCall_Center_Name=<Descriptive name>\nCall_Center_Address=<IP or host name>\nCall_Center_Port=<application port>\nCall_Center_QueueName=<name of queue>\nCalling_User_PhoneType=<MSNetmeeting/NSConference>\nCalling_User_FirstName=<First Name>\nCalling_User_LastName=<Last Name>\nCalling_User_UserID=<User ID>\nCalling_User_Skills=<list of skill requirements>\nCalling_User_URL=<URL of call related information>\nCalling_User_HardMessage=<Descriptive Message>\nCalling_User_Priority=<defined priority>\n\n\nApplications which use this media : \nCosmoCom's CosmoCaller Application\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : .cmc\n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Steve Dellutri\n2. E-mail : sdellutri&cosmocom.com\n\nIntended usage : Common \nIntended use is to allow for files containing connection parameters to\nbe downloaded from web sites and invoke the CosmoCaller application to\ninterperet the parameters, and initiate connections with the CosmoCall\nACD server\n\nAuthor/Change controller : Steve Dellutri \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

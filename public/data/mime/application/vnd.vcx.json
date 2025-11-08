@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.vcx",
+  "full": "application/vnd.vcx",
+  "extensions": [
+    "vcx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.vcx",
+    "template_text": "\n\nDate: Tue, 16 Mar 1999 02:40:31 -0800 (PST)\nFrom: Taisuke Sugimoto <sugimototi&noanet.nttdata.co.jp>\nTo: iana&iana.org, sugimototi&noanet.nttdata.co.jp\nSubject: Request for MIME media type Application/Vendor Tree - vnd.\n\nName : Taisuke Sugimoto\n\nE-mail : sugimototi&noanet.nttdata.co.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.vcx\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nThe contents of the vcx media type is composed of line-oriented\nUS-ASCII,and hence does not require encoding.  However,encoding may be\nused if desired to protect the contents from damage on some\ntransports.\n\nSecurity considerations : \nThe vcx type data is an ASCII data which does not contain any kind of\nexecutable code that herms a client machine.  There is no provision\nthat applications support vcx type insert executable code.  There is no\nconcern about data confideniality.\n\nInteroperability considerations : \nnone\n\nPublished specification : \nNot available.\n\nApplications which use this media : \nVirtualCatalog\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : vcx\n3. Macintosh file type code : N/A\n\n\nPerson to contact for further information :\n\n1. Name : Taisuke Sugimoto\n2. E-mail : sugimototi&noanet.nttdata.co.jp\n\nIntended usage : Common \n\n\nAuthor/Change controller : NTT DATA CORPORATION \n\n"
+  },
+  "references": []
+}

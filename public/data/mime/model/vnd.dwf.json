@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.dwf",
+  "full": "model/vnd.dwf",
+  "extensions": [
+    "dwf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.dwf",
+    "template_text": "\n\nFrom: Jason Pratt <jason.pratt&autodesk.com>\nTo: \"'iana&ISI.EDU'\" <iana&ISI.EDU>\nSubject: RE: Request for MIME media type Model/Vendor Tree - vnd.dwf\nDate: Wed, 13 Aug 1997 18:34:49 -0700\n\nName : Jason Pratt\n\nE-mail : jason.pratt&adeskgate.autodesk.com\n\nMIME media type name : Model\n\nMIME subtype name : Vendor Tree - vnd.dwf\n\nRequired parameters : No parameters are required for this type.\n\nOptional parameters :\nNo parameters are required for this type.\n\nEncoding considerations :\nThis type contains three parts: a header, a body, and a terminator.\nThe header is ASCII text that describes the file's creation date,\nauthor, filename, and other file details.  The body contains the\ndescriptions of the vector geometry, and can be either binary or ASCII\ntext, depending on how the the file is authored.  (Manually written DWF\nfiles will tend to be ASCII, software-generated DWF files will tend to\nbe binary) The terminator is ASCII text and consists of a single EOF\nindicator.\n\n\nSecurity considerations :\nThe dwf type is an ASCII and binary data stream which contains no\nexecutable code that could disrupt a client processor. There is no\nprovision in the type specification that would allow authors to insert\nexecutable code that would present any security risk to a client machine.\n\n\nInteroperability considerations :\nThe dwf type is intended to be used as a display mechanism for\ncompressed, streamed, and scaled vector data. Dwf requires a viewer\napplication to be useful.  The viewer applications will become widely\navailable as vendors begin to support dwf. One viewer, Autodesk WHIP!,\nis currently freely available.\n\nPublished specification :\nThe source code for the dwf format and its specification are freely\navailable at www.autodesk.com. Any person or organization who wishes to\npublish in the dwf type has full access to the methodologies and the\nrequirements of the type.\n\nApplications which use this media :\nApplications which use this media type include the world's best-selling\nPC CAD application, AutoCAD, as well as AutoCAD LT, Mechanical Desktop,\nAutoCAD Map, Autodesk View, Autodesk WHIP!, and IMSI TurboCAD. AutoCAD\nalone represents an installed base of 1.6 million users -- all of whom\nhave access to publishing in the dwf type.\n\nAdditional information :\n\n1. Magic number(s) :\n2. File extension(s) : dwf\n3. Macintosh file type code :\n\nFurther information is available upon request.\n\nPerson to contact for further information :\n\n1. Name : Jason Pratt\n2. E-mail : jason.pratt&autodesk.com\n\nIntended usage : Common\n\n\nAuthor/Change controller :\n\nAutodesk, Inc.\n\n\n"
+  },
+  "references": []
+}

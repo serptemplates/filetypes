@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "exi",
+  "full": "application/exi",
+  "extensions": [
+    "exi"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/exi",
+    "encoding_considerations": "binary",
+    "security_considerations": "When used as an XML replacement in an application, EXI shares the same security concerns as XML, described in IETF RFC 3023 [IETF RFC 3023], section 10.\n\nIn addition to concerns shared with XML, the schema identifier refers to information external to the EXI document itself. If an attacker is able to substitute another schema in place of the intended one, the semantics of the EXI document could be changed in some ways. As an example, EXI is sensitive to the order of the values in an enumeration. It is not known whether such an attack is possible on the actual structure of the document.\n\nAlso, EXI supports user-defined datatype representations, and such representations, if present in a document and purportedly understood by a processor, can be a security weakness. Definitions of these representations are expected to be external, often application- or industry-specific, so any definition needs to be analyzed carefully from the security perspective before being adopted.",
+    "interoperability_considerations": "The datatype representation map feature of EXI requires coordination between the producer and consumer of an EXI document, and is not recommended except in controlled environments or using standardized datatype representations potentially defined in the future.\n\nEXI permits information necessary to decode a document to be omitted with the expectation that such information has been communicated out of band. Such omissions hinder interoperability in uncontrolled environments.",
+    "applications": "No known applications currently use this media type.",
+    "additional_information": "Magic number(s):\n \tThe first four octets may be hexadecimal 24 45 58 49 (\"$EXI\"). The first octet after these, or the first octet of the whole content if they are not present, has its high two bits set to values 1 and 0 in that order.\nFile extension(s):\n \t.exi\nMacintosh file type code(s):\n \tAPPL",
+    "template_text": "Type name:\napplication\n\nSubtype name:\nexi\n\nRequired parameters:\nnone\n\nOptional parameters:\nnone\n\nEncoding considerations:\nbinary\n\nSecurity considerations:\nWhen used as an XML replacement in an application, EXI shares the same security concerns as XML, described in IETF RFC 3023 [IETF RFC 3023], section 10.\n\nIn addition to concerns shared with XML, the schema identifier refers to information external to the EXI document itself. If an attacker is able to substitute another schema in place of the intended one, the semantics of the EXI document could be changed in some ways. As an example, EXI is sensitive to the order of the values in an enumeration. It is not known whether such an attack is possible on the actual structure of the document.\n\nAlso, EXI supports user-defined datatype representations, and such representations, if present in a document and purportedly understood by a processor, can be a security weakness. Definitions of these representations are expected to be external, often application- or industry-specific, so any definition needs to be analyzed carefully from the security perspective before being adopted.\n\nInteroperability considerations:\nThe datatype representation map feature of EXI requires coordination between the producer and consumer of an EXI document, and is not recommended except in controlled environments or using standardized datatype representations potentially defined in the future.\n\nEXI permits information necessary to decode a document to be omitted with the expectation that such information has been communicated out of band. Such omissions hinder interoperability in uncontrolled environments.\n\nPublished specification:\nEfficient XML Interchange (EXI) Format 1.0, World Wide Web Consortium\n\nApplications that use this media type:\nNo known applications currently use this media type.\n\nAdditional information:\n \nMagic number(s):\n \tThe first four octets may be hexadecimal 24 45 58 49 (\"$EXI\"). The first octet after these, or the first octet of the whole content if they are not present, has its high two bits set to values 1 and 0 in that order.\nFile extension(s):\n \t.exi\nMacintosh file type code(s):\n \tAPPL\nConsideration of alternatives :\n \t\nWhen transferring EXI streams over a protocol that can identify and negotiate the content coding of XML information independent of its media-type, the content-coding should be used to identify and negotiate how the XML information is encoded and the media-type should be used to negotiate and identify what type of information is transferred.\n\n \nPerson & email address to contact for further information:\nWorld Wide Web Consortium <web-human&w3.org>\n\nIntended usage:\nCOMMON\n\nRestrictions on usage:\nnone\n\nAuthor/Change controller:\nThe EXI specification is the product of the World Wide Web Consortium's Efficient XML Interchange Working Group. The W3C has change control over this specification."
+  },
+  "references": []
+}

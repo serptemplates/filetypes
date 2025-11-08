@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "pkix-pkipath",
+  "full": "application/pkix-pkipath",
+  "extensions": [
+    "pkipath"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/pkix-pkipath",
+    "encoding_considerations": "Binary; this MIME type is a DER encoding of the ASN.1 type\n   PkiPath, defined as follows:\n     PkiPath ::= SEQUENCE OF Certificate\n     PkiPath is used to represent a certification path.  Within the\n     sequence, the order of certificates is such that the subject of\n     the first certificate is the issuer of the second certificate,\n     etc.\n   This is identical to the definition published in [X509-4th-TC1];\n   note that it is different from that in [X509-4th].\n\n   All Certificates MUST conform to [RFC5280].  (This should be\n   interpreted as a requirement to encode only PKIX-conformant\n   certificates using this type.  It does not necessarily require\n   that all certificates that are not strictly PKIX-conformant must\n   be rejected by relying parties, although the security consequences\n   of accepting any such certificates should be considered\n   carefully.)\n\n   DER (as opposed to BER) encoding MUST be used.  If this type is\n   sent over a 7-bit transport, base64 encoding SHOULD be used.",
+    "security_considerations": "The security considerations of [X509-4th] and [RFC5280] (or any\n   updates to them) apply, as well as those of any protocol that uses\n   this type (e.g., TLS).\n\n   Note that this type only specifies a certificate chain that can be\n   assessed for validity according to the relying party's existing\n   configuration of trusted CAs; it is not intended to be used to\n   specify any change to that configuration.",
+    "interoperability_considerations": "No specific interoperability problems are known with this type,\n   but for recommendations relating to X.509 certificates in general,\n   see [RFC5280].\n\nPublished specification: This document and [RFC5280].",
+    "applications": "TLS.  It may also be used by other protocols or for general\n   interchange of PKIX certificate chains.",
+    "additional_information": "Magic number(s): DER-encoded ASN.1 can be easily recognized.\n     Further parsing is required to distinguish it from other ASN.1\n     types.\n   File extension(s): .pkipath\n   Macintosh File Type Code(s): not specified",
+    "intended_usage": "common",
+    "change_controller": "IESG <iesg&ietf.org>",
+    "template_text": "(RFC 6066 published January 2011, subtype last updated January 2011)\n\nMIME media type name: application\nMIME subtype name: pkix-pkipath\nRequired parameters: none\n\nOptional parameters: version (default value is \"1\")\n\nEncoding considerations:\n   Binary; this MIME type is a DER encoding of the ASN.1 type\n   PkiPath, defined as follows:\n     PkiPath ::= SEQUENCE OF Certificate\n     PkiPath is used to represent a certification path.  Within the\n     sequence, the order of certificates is such that the subject of\n     the first certificate is the issuer of the second certificate,\n     etc.\n   This is identical to the definition published in [X509-4th-TC1];\n   note that it is different from that in [X509-4th].\n\n   All Certificates MUST conform to [RFC5280].  (This should be\n   interpreted as a requirement to encode only PKIX-conformant\n   certificates using this type.  It does not necessarily require\n   that all certificates that are not strictly PKIX-conformant must\n   be rejected by relying parties, although the security consequences\n   of accepting any such certificates should be considered\n   carefully.)\n\n   DER (as opposed to BER) encoding MUST be used.  If this type is\n   sent over a 7-bit transport, base64 encoding SHOULD be used.\n\nSecurity considerations:\n   The security considerations of [X509-4th] and [RFC5280] (or any\n   updates to them) apply, as well as those of any protocol that uses\n   this type (e.g., TLS).\n\n   Note that this type only specifies a certificate chain that can be\n   assessed for validity according to the relying party's existing\n   configuration of trusted CAs; it is not intended to be used to\n   specify any change to that configuration.\n\nInteroperability considerations:\n   No specific interoperability problems are known with this type,\n   but for recommendations relating to X.509 certificates in general,\n   see [RFC5280].\n\nPublished specification: This document and [RFC5280].\n\nApplications that use this media type:\n   TLS.  It may also be used by other protocols or for general\n   interchange of PKIX certificate chains.\n\nAdditional information:\n   Magic number(s): DER-encoded ASN.1 can be easily recognized.\n     Further parsing is required to distinguish it from other ASN.1\n     types.\n   File extension(s): .pkipath\n   Macintosh File Type Code(s): not specified\n\nPerson & email address to contact for further information:\n   Magnus Nystrom <mnystrom&microsoft.com>\n\nIntended usage: COMMON\n\nChange controller: IESG <iesg&ietf.org>\n\n"
+  },
+  "references": []
+}

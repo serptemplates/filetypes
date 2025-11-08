@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.joost.joda-archive",
+  "full": "application/vnd.joost.joda-archive",
+  "extensions": [
+    "joda"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.joost.joda-archive",
+    "template_text": "(last updated 2007-10-16)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.joost.joda-archive\n\nRequired parameters : none\nOptional parameters : none\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\n\nA Joost Open Distribution Archive (JODA) contains an extension for the\nJoost Application which is integrated within the application. The JODA\nmay contain javascript which is executed in a sand boxed environment.\nThey can be conceptualized as 'any web page or web-widget with some\njavascript' running inside the Joost Application.\n\nAs such there are significant security considerations.\n\nThese are addressed by:\n\n- Digital signatures.\n\nJoda archives may be signed (See\nhttp://java.sun.com/j2se/1.4.2/docs/guide/jar/jar.html\nfor the technology used) or must be signed - depending on\nsandbox restrictions.\n\nSignatures are only issued to identified parties after an\nagreement is reached. Depending on the level this agreement\nincludes mandatory privacy, eula and terms of service\nlimitations.\n\n- The digital keys used for signatures are (to be) issued by a\nsandbox recognized certificate authority. Normal x509 based\nCRL's, expiry and similar control technology applies.\n\n- The digital signature also prevents tampering with the joda.\n\n- As the contents of JODA's are public - there are no requirements\nfor ensuring that the JODA its content is protected in any way.\n\n- Any executable components are ran in a sandbox-ed environment\nwithin the application. The user has configuration options\nallow him or her to further pair down these restrictions,\nindependent of certification level.\n\n- Depending on the degree of vetting; the digital signature\nindicates to what level certain sandbox restrictions may be\nlifted after which the sandbox may, with the users permission,\nallow access to information outside the sandbox associated with\nthe user (e.g. his unique ID) and other environmental\ninformation.\n\n- Depending on the degree of vetting and communication allowed\n- the sandbox may enforce/allow client-side x509 certificate\nauthenticate https connections with the outside world to servers\nwith a x509 certificate issued by a recognized authority. Any\nsuch (secret) keys or other private digital artifacts are not\npart of, or accessible to, the JODA but are kept outside it's\nsandbox and distributed/created by another (secure) path.\n\nInteroperability considerations :\n\nPlatform neutral.\n\nPublished specification :\n\nThe Joost(tm) Open Distribution Archive (JODA) version 1.00 details the\nsemantics (see the developer section on the website:\nhttp://dev.joost.com); while\nhttp://java.sun.com/j2se/1.4.2/docs/guide/jar/jar.html in essence\ndescribes the binary encoding (ZIP) and digital signature procedures).\n\nApplications which use this media :\nUse within software distributed by Joost Operations S.A.\n\nAdditional information :\n\n1. Magic number(s) : PK\\003\\004\n2. File extension(s) : joda\n3. Macintosh file type code : JODA\n4. Object Identifiers: enterprise.27305.1.2.1\n\nSee the developer section on http://dev.joost.com/ for more information.\n\nIntended usage : Common\nDistribution of 'widgets'.\n\nAuthor/Change controller:\nJoost Technologies B.V.\nSchipholweg 101 T\n2316 XC Leiden\nThe Netherlands\nmailto:joda&joost.com\nhttp://dev.joost.com\n\n(file created 2007-10-16)"
+  },
+  "references": []
+}

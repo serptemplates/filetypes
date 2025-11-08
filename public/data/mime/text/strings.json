@@ -1,0 +1,38 @@
+{
+  "type": "text",
+  "subtype": "strings",
+  "full": "text/strings",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/strings",
+    "encoding_considerations": "UTF-8 encoded Unicode text.",
+    "security_considerations": "Localized strings do not contain executable or active content, and do not need privacy services since the same information is intended to be provided to all users of a specific language group. Integrity of the strings must be provided by the transport protocol, for example using HTTP over TLS (HTTPS).\n\nLocalized strings may be arbitrarily large and could potentially cause a denial-of-service. Localized strings may also contain printf-style format characters that could cause a program to display unintended information or crash.",
+    "interoperability_considerations": "NONE",
+    "additional_information": "1. Deprecated alias names for this type: NONE\n2. Magic number(s): NONE\n3. File extension(s): NONE\n4. Macintosh file type code: NONE\n5. Object Identifiers: NONE",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-05-01, last updated 2017-05-01)\n\nName: Michael Sweet\nEmail: msweet&apple.com\n\nMedia type name: text\nMedia subtype name: strings\n\nRequired parameters: NONE\n\nOptional parameters:\nNONE\n\nEncoding considerations: 8bit\nUTF-8 encoded Unicode text.\n\nSecurity considerations:\nLocalized strings do not contain executable or active content, and do not need privacy services since the same information is intended to be provided to all users of a specific language group. Integrity of the strings must be provided by the transport protocol, for example using HTTP over TLS (HTTPS).\n\nLocalized strings may be arbitrarily large and could potentially cause a denial-of-service. Localized strings may also contain printf-style format characters that could cause a program to display unintended information or crash.\n\nInteroperability considerations:\nNONE\n\nPublished specification:\nhttp://ftp.pwg.org/pub/pwg/candidates/cs-ippjobprinterext3v10-20120727-5100.13.pdf\n\n\nApplications which use this media:\nAll Cocoa, NeXTStep, and OpenStep applications\nCUPS\nIPP Everywhere\n\n\nFragment identifier considerations:\nNONE\n\nRestrictions on usage:\nNONE\n\nProvisional registration? (standards tree only):\nNONE\n\nAdditional information:\n\n1. Deprecated alias names for this type: NONE\n2. Magic number(s): NONE\n3. File extension(s): NONE\n4. Macintosh file type code: NONE\n5. Object Identifiers: NONE\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: ISTO-PWG Internet Printing Protocol Workgroup\n2. Email: ipp&pwg.org\n\nIntended usage: Common\nUsed for providing localizations of English keywords and numeric values.\n\n\nAuthor/Change controller: The Printer Working Group\nc/o The IEEE Industry Standards and Technology Organization\n445 Hoes Lane\nPiscataway, NJ 08854\nUSA"
+  },
+  "references": []
+}

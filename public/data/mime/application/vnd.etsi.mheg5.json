@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.mheg5",
+  "full": "application/vnd.etsi.mheg5",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.mheg5",
+    "security_considerations": "Applications of this type are executed within a defined virtual machine\nsandbox.\nApplications may make use of an HTTP based server for both GET and PUT\nfacilities but the set of allowed target addresses is limited by an\naccess control list which can only be obtained from a secure source (a\nbroadcast TV network). Likewise, applications obtained from an HTTP\nsource (and text or image content if required) are signed and must be\nconfirmed using a secure certificate list before they are executed.\nThere is no facility within the sandbox API for applications to read\nfrom or write to arbitrary files from the local file system.\nApplications may be authenticated using public key cryptography. The\nbasic method by which this is achieved is by signing files with a\nprivate key. The corresponding public key is then placed in the\nbroadcast carousel of any service from which access to the signed files\nis required.\nDifferent sources of content in a digital TV receiver have different\ninherent levels of security. For example, a broadcast delivery mechanism\nmight be considered more secure than an Internet delivery mechanism.\nWhere applications need to send or receive data over the Internet\nsecurely, secure connections can be established using the TLS (Transport\nLayer Security) protocol as described in RFC2246. Certificates for\nauthentication of TLS servers shall be provided in the broadcast\ncarousel. TLS connections shall be requested by applications by using\nthe \"https:\" URI scheme in place of \"http:\".",
+    "additional_information": "1. Magic number(s): none\n2. File extension(s): none\n3. Macintosh file type code: none\n4. Object Identifiers: none\n\nApplications are encoded in ASN.1 DER format.",
+    "intended_usage": "common",
+    "template_text": "(file created 2012-12-21; last updated 2012-12-21)\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.etsi.mheg5\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nApplications of this type are executed within a defined virtual machine\nsandbox.\nApplications may make use of an HTTP based server for both GET and PUT\nfacilities but the set of allowed target addresses is limited by an\naccess control list which can only be obtained from a secure source (a\nbroadcast TV network). Likewise, applications obtained from an HTTP\nsource (and text or image content if required) are signed and must be\nconfirmed using a secure certificate list before they are executed.\nThere is no facility within the sandbox API for applications to read\nfrom or write to arbitrary files from the local file system.\nApplications may be authenticated using public key cryptography. The\nbasic method by which this is achieved is by signing files with a\nprivate key. The corresponding public key is then placed in the\nbroadcast carousel of any service from which access to the signed files\nis required.\nDifferent sources of content in a digital TV receiver have different\ninherent levels of security. For example, a broadcast delivery mechanism\nmight be considered more secure than an Internet delivery mechanism.\nWhere applications need to send or receive data over the Internet\nsecurely, secure connections can be established using the TLS (Transport\nLayer Security) protocol as described in RFC2246. Certificates for\nauthentication of TLS servers shall be provided in the broadcast\ncarousel. TLS connections shall be requested by applications by using\nthe \"https:\" URI scheme in place of \"http:\".\n\n\nInteroperability considerations:\n\n\nPublished specification:\nThe specification for the application virtual machine is published as\nETSI standard ES 202 184 available at:\n\nhttp://www.etsi.org/deliver/etsi_es/202100_202199/202184/02.02.01_60/es_202184v020201p.pdf\n\nApplications which use this media:\nApplications of this type are commonly executed on a digital television\nreceiver to provide Interactive Application Services associated with a\nbroadcast service or event.\n\nAdditional information:\n\n1. Magic number(s): none\n2. File extension(s): none\n3. Macintosh file type code: none\n4. Object Identifiers: none\n\nApplications are encoded in ASN.1 DER format.\n\nPerson to contact for further information:\n\n1. Name: Miguel Angel Reina Ortega\n2. Email: MiguelAngel. ReinaOrtega&etsi.org\n\nIntended usage: Common\nApplications of this type are commonly executed on a digital television\nreceiver to provide Interactive Application Services associated with a\nbroadcast service or event.\n\nAuthor/Change controller: Ian Medland (imedland&dtg.org.uk)"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.pawaafile",
+  "full": "application/vnd.pawaafile",
+  "extensions": [
+    "paw"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.pawaafile",
+    "template_text": "(last updated 2009-12-15)\n\nName : Prakash Baskaran\n\nEmail : prakash&pawaa.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.pawaafile\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe PawaaFILE file is an encrypted file of any content\n\ntype. It is intended to be processed by the PawaaFILE application. The content\ncan contain underlying file data in the encrypted format, executable commands,\nprocessing instructions and additional information related to the content\nsource. Additional integrity/confidentiality service is not needed.\n\n\n\nInteroperability considerations :\nIntended to be used with PawaaFILE application.\n\nPublished specification :\nNone\n\nApplications which use this media :\nPawaaFILE\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : paw\n3. Macintosh file type code : None\n4. Object Identifiers: PawaaFILE\n\nAdditional information available at www.pawaa.com\n\nPerson to contact for further information :\n\n1. Name : Prakash Baskaran\n2. Email : prakash&pawaa.com\n\nIntended usage : Common\nPawaaFILE is intended to carry information in a secure manner.\n\nAuthor/Change controller : Pawaa Software\n\n1133 Anand Embassy, 100 Ft Road, Indira Nagar\n\nBangalore, 560038, India\n\n+91 9880923655\n\n(file created 2009-12-15)"
+  },
+  "references": []
+}

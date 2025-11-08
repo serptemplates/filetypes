@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.smart.notebook",
+  "full": "application/vnd.smart.notebook",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.smart.notebook",
+    "template_text": "(last updated 2009-12-17)\n\nName : Jonathan Neitz\n\nEmail : jneitz&smarttech.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.smart.notebook\n\nRequired parameters : none \n\nOptional parameters :\nnone \n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe Notebook file format is a zipped directory structure that can contain,\nvideo,audio,executables,flash, svg and other document formats whose stucture is\nspecified by manifest file contained in the archive.\n\nThe Notebook file format can contain active content in the form of executables\nand/or flash files. The first can be added to a notebook file as an attachment\nakin to an email attachment. However you can not run the executable until you\nhave opened the file inside of Notebook and clicked on the attachment tab. Flash\nfiles are embedded in the document itself and are loaded and run upon loading of\nthe notebook file.\n\n\n\nThe information contained in the notebook file currently does not provide\nprivacy or integrity services.\n\n\n\nBeyond what is mentioned other security considerations of the media type have\nnot been assessed.\n\nInteroperability considerations :\nnone known\n\nPublished specification :\nno formal specification\n\nApplications which use this media :\nSMART Notebook, SMART Meeting Pro, SMART Notebook SE\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .notebook\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Jonathan Neitz\n2. Email : jneitz&smarttech.com\n\nIntended usage : Common\nFile format for whiteboard boarding applications intended to transport content\nbetween the SMART family of white boarding applications\n\nAuthor/Change controller : SMART Technologies ULC.\n\n(file create 2009-12-17)"
+  },
+  "references": []
+}

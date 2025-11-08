@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vemmi",
+  "full": "application/vemmi",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vemmi",
+    "encoding_considerations": "The \"base64\" mechanism is preferred because VEMMI use a native 8-bit\n   binary file format. However, as VEMMI includes its own 7-bits\n   encoding mechanisms, VEMMI data could also be transmitted in 7-bit\n   mode.",
+    "security_considerations": "Refer to paragraph 8.",
+    "interoperability_considerations": "VEMMI is designed to be fully platform independent, and the VEMMI\n   objects and contents could interoperate between any platform. The\n   only exception are the VEMMI operative objects that could be binary\n   programs specific to a given hardware platform and operating system.",
+    "template_text": "(RFC 2122 published March 1997, subtype last updated March 1997)\n\nMIME media type name: \"application\"\n\nMIME subtype name: \"vemmi\"\n\nRequired parameters: none\n\nOptional parameters:\n- version:\n  an optional version number may be specified, in the format:\n\n    version=<integer>\n\n  The version number is a numeric integer whose is encoded as the\n  <version> parameter defined in ETS 300 709 (e.g. version=100), and\n  whose the first digit represents the major VEMMI version number.\n  It must be pointed out that the VEMMI objects includes the VEMMI\n  version and a timestamp.\n\nENCODING CONSIDERATIONS:\n\n   The \"base64\" mechanism is preferred because VEMMI use a native 8-bit\n   binary file format. However, as VEMMI includes its own 7-bits\n   encoding mechanisms, VEMMI data could also be transmitted in 7-bit\n   mode.\n\nSECURITY CONSIDERATIONS:\n\n   Refer to paragraph 8.\n\nINTEROPERABILITY CONSIDERATIONS:\n\n   VEMMI is designed to be fully platform independent, and the VEMMI\n   objects and contents could interoperate between any platform. The\n   only exception are the VEMMI operative objects that could be binary\n   programs specific to a given hardware platform and operating system.\n\nLiaison address:\n\nFor all technical questions regarding this request, please contact:\n\n        Daniel Mavrakis\n        Monaco Telematique MC-TEL\n        P.O. Box 225\n        MC 98004 Monte-Carlo Cedex\n        PRINCIPALITY OF MONACO\n        EMail: Mavrakis&mctel.fr\n        Tel: (+377) 9216 8860\n        Fax: (+377) 9330 4545\n\nComments may also be addressed to:\n\n        Mr. Herve Layec,\n        ETSI STC TE1\n        06921 SOPHIA ANTIPOLIS Cedex\n        FRANCE\n        EMail: herve.layec&dri.france-telecom.fr\n        Tel: (+33) 2 99 12 73 01\n        Fax: (+33) 2 99 38 49 61\n\n  Mr. Kurt Kartmann\n        Consulting\n        Telecommunication+Multimedia\n        Gabelsbergerstr. 2\n        D-64807 DIEBURG\n        GERMANY\n        EMail: k.kartmann&t-online.de\n        Tel: (+49) 6071 1528\n        c/o Deutsche Telekom AG\n        Tel. (+49)6151 834965, Fax (+49) 6151 834284\n\nThe authors thank the other members of the ETSI TE1 VEMMI Working\nGroup for their comments:\n\n   - Michael Blaschitz (michael.blaschitz&etsi.fr)\n   - Agnelo Fernandes (agnelo&telepac.pt)\n   - Daniel Allonsius (daniel.allonsius&is.belgacom.be)\n   - Stefaan Herrebout (Stefaan.Herrebout&mail.interpac.be)\n   - Francisca Oliva (oliva&tid.es)\n   - Herwart Wermescher (Herwart.Wermescher&infonova.telecom.at)\n\n"
+  },
+  "references": []
+}

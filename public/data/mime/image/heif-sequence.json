@@ -1,0 +1,40 @@
+{
+  "type": "image",
+  "subtype": "heif-sequence",
+  "full": "image/heif-sequence",
+  "extensions": [
+    "heifs"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/heif-sequence",
+    "encoding_considerations": "Security considerations: See section 4 of RFC 4337 and section 7 of \n   RFC 6381. This format does not supply integrity or confidentiality \n   protection and so they are applied externally when needed. The \n   security considerations of URLs are discussed in RFC 3986.\n\nInteroperability considerations: Interoperably deployed in reference \n   code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html",
+    "security_considerations": "RFC 6381. This format does not supply integrity or confidentiality \n   protection and so they are applied externally when needed. The \n   security considerations of URLs are discussed in RFC 3986.\n\nInteroperability considerations: Interoperably deployed in reference \n   code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html",
+    "interoperability_considerations": "code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html",
+    "additional_information": "Magic number(s): none\n   File extension(s): heifs (for subtype heif-sequence), heics (for \n      subtype heic-sequence), hif (for subtypes heif-sequence and \n      heic-sequence)\n   Macintosh File Type Code(s): None\n\nPerson to contact for info: David Singer, singer&apple.com\n\nIntended usage: Common\n\nAuthor/Change controller: David Singer, ISO/IEC/JTC1/SC29/WG11 file \n   format chair",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-07-30, last updated 2018-08-09)\n\nMIME media type name: image\n\nMIME subtype name: heif-sequence, heic-sequence\n\n   The semantics of the subtypes are as follows:\n\n   heif-sequence: High efficiency image file containing one or more \n      image sequences using any coding format\n\n   heic-sequence: High efficiency image file containing one or more \n      HEVC coded image sequences\n\n   The use of subtype values is constrained as follows: \n\n   The MIME subtype name may be 'heic-sequence' only if the file \n   conforms to the requirements of the 'hevc', 'hevx', 'hevm', or \n   'hevs' brand, and contains that brand as a compatible brand. The \n   MIME subtype name may be 'heif-sequence' only if the file conforms \n   to the requirements of the 'msf1' brand, and contains that brand \n   as a compatible brand. (A brand in the file header identifies a \n   specific profile of a more general format.)\n\nRequired parameters: none\n\nOptional parameters:\n\n   profiles: Specified by RFC 6381 and its successors.\n\n   codecs: Specified by RFC 6381 and its successors for files \n      conforming to specifications derived from ISO/IEC 14496-12. \n      Note that for HEVC, the format of a list item included in the \n      value of the codecs parameter is specified in ISO/IEC 14496-15.\n      When the codecs parameter is present, the first list item \n      should represent a track having the handler type 'pict'. Other \n      list items represent other tracks.\n\n   lhevcptl: For multi-layer image items, specifies the decoding \n      capabilities required for different combinations of layers and \n      temporal sub-layers; the syntax and semantics specific to HEVC \n      and are formally specified by the lhevcptl optional MIME \n      parameter in ISO/IEC 14496-15 for the L-HEVC sample entry \n      types. Informatively, the syntax is BLInternal, ListItem1(, \n      ListItemN)*, where \n\n      BLInternal is 0 or 1; \n      each Listitem has the structure \n         OlsIdx.MaxTid.ProfileTierLevel1(.ProfileTierLevelN)*\n      and\n      OlsIdx and MaxTid are integers\n      ProfileTierLevelX is the substring specified for any HEVC \n         sample-entry for the codecs parameter\n\n   dependencies: as specified for the dependencies optional MIME \n      parameter of image/heif and image/heic MIME types.\n\nEncoding considerations: as for video/mp4\n\nSecurity considerations: See section 4 of RFC 4337 and section 7 of \n   RFC 6381. This format does not supply integrity or confidentiality \n   protection and so they are applied externally when needed. The \n   security considerations of URLs are discussed in RFC 3986.\n\nInteroperability considerations: Interoperably deployed in reference \n   code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nAdditional information:\n\n   Magic number(s): none\n   File extension(s): heifs (for subtype heif-sequence), heics (for \n      subtype heic-sequence), hif (for subtypes heif-sequence and \n      heic-sequence)\n   Macintosh File Type Code(s): None\n\nPerson to contact for info: David Singer, singer&apple.com\n\nIntended usage: Common\n\nAuthor/Change controller: David Singer, ISO/IEC/JTC1/SC29/WG11 file \n   format chair"
+  },
+  "references": []
+}

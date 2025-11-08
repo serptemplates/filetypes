@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "geopackage+sqlite3",
+  "full": "application/geopackage+sqlite3",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/geopackage+sqlite3",
+    "encoding_considerations": "Security considerations: The OGC GeoPackage (GPKG) is a generic SQL \n   schema for exchanging geographic information in a SQLite database,\n   but application designers must not assume that it provides any \n   protection against security threats. SQLite is a single user \n   database that does not include security protections. SQLite \n   databases can be used to store blobs containing data to be handled\n   by other applications or libraries; any security considerations of\n   the content of those blob objects must also be taken into account.\n\n   GeoPackage can contain embedded images such as image/jpeg and \n   image/png objects, thus GeoPackage inherits the security \n   considerations of these object types.\n\n   See the application/vnd.sqlite3 media type for additional security\n   considerations.\n\nInteroperability considerations: To date, all versions of GeoPackage \n   are designed to be backward and forward compatible. While it is \n   technically possible to produce compliant GeoPackages that are \n   incompatible, these involve the use of non-standardized extensions \n   that were rarely if ever implemented by software available at the \n   time.",
+    "security_considerations": "schema for exchanging geographic information in a SQLite database,\n   but application designers must not assume that it provides any \n   protection against security threats. SQLite is a single user \n   database that does not include security protections. SQLite \n   databases can be used to store blobs containing data to be handled\n   by other applications or libraries; any security considerations of\n   the content of those blob objects must also be taken into account.\n\n   GeoPackage can contain embedded images such as image/jpeg and \n   image/png objects, thus GeoPackage inherits the security \n   considerations of these object types.\n\n   See the application/vnd.sqlite3 media type for additional security\n   considerations.\n\nInteroperability considerations: To date, all versions of GeoPackage \n   are designed to be backward and forward compatible. While it is \n   technically possible to produce compliant GeoPackages that are \n   incompatible, these involve the use of non-standardized extensions \n   that were rarely if ever implemented by software available at the \n   time.",
+    "interoperability_considerations": "are designed to be backward and forward compatible. While it is \n   technically possible to produce compliant GeoPackages that are \n   incompatible, these involve the use of non-standardized extensions \n   that were rarely if ever implemented by software available at the \n   time.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 47 50 4B 47 (version 1.2 or higher) at offset \n      68\n   3. File extension(s): .gpkg\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-08-10, last updated 2018-08-10)\n\nMedia type name: application\n\nMedia subtype name: geopackage+sqlite3\n\nRequired parameters: none\n\nOptional parameters:\n   version: If provided, this parameter indicates the GeoPackage \n   version used in the GeoPackage. Only the major and the first minor\n   version number are provided, e.g., 1.2. The major and minor \n   version number values are unsigned integers without leading zeros.\n   Profiles are not applicable.\n\nEncoding considerations: binary\n\nSecurity considerations: The OGC GeoPackage (GPKG) is a generic SQL \n   schema for exchanging geographic information in a SQLite database,\n   but application designers must not assume that it provides any \n   protection against security threats. SQLite is a single user \n   database that does not include security protections. SQLite \n   databases can be used to store blobs containing data to be handled\n   by other applications or libraries; any security considerations of\n   the content of those blob objects must also be taken into account.\n\n   GeoPackage can contain embedded images such as image/jpeg and \n   image/png objects, thus GeoPackage inherits the security \n   considerations of these object types.\n\n   See the application/vnd.sqlite3 media type for additional security\n   considerations.\n\nInteroperability considerations: To date, all versions of GeoPackage \n   are designed to be backward and forward compatible. While it is \n   technically possible to produce compliant GeoPackages that are \n   incompatible, these involve the use of non-standardized extensions \n   that were rarely if ever implemented by software available at the \n   time.\n\nPublished specification:\n   [OGC 12-128r14] Open Geospatial Consortium (OGC): OGC GeoPackage \n   Encoding Standard version 1.2, 2017-08-25.\n   https://portal.opengeospatial.org/files/12-128r14\n\nApplications which use this media: GPKG is a generic device-, \n   platform-, and vendor-neutral SQLite schema and is supported by a \n   range of applications creating, providing access to, and \n   processing geographic information. GPKG is in use internationally \n   with dozens of deployed applications able to create and ingest \n   GPKG payloads, including all of the major Geographic Information \n   System (GIS) vendors, many database providers, earth browser \n   applications, and so forth.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nProvisional registration? (standards tree only): N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 47 50 4B 47 (version 1.2 or higher) at offset \n      68\n   3. File extension(s): .gpkg\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Scott Simmons\n   2. Email: ssimmons&opengeospatial.org\n\nIntended usage: Common\n\n   OGC GeoPackage Encoding Standard defines GeoPackages for exchange \n   and GeoPackage SQLite Extensions for direct use of vector \n   geospatial features and / or tile matrix sets of earth images and \n   raster maps at various scales. Direct use means the ability to \n   access and update data in a \"native\" storage format without \n   intermediate format translations in an environment (e.g. through \n   an API) that guarantees data model and data set integrity and \n   identical access and update results in response to identical \n   requests from different client applications. GeoPackages are \n   interoperable across all enterprise and personal computing \n   environments, and are particularly useful on mobile devices like \n   cell phones and tablets in communications environments with \n   limited connectivity and bandwidth.\n\nAuthor/Change controller: Open Geospatial Consortium"
+  },
+  "references": []
+}

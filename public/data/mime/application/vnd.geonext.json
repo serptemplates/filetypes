@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.geonext",
+  "full": "application/vnd.geonext",
+  "extensions": [
+    "gxt"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.geonext",
+    "template_text": "(last updated 2009-07-28)\n\nName : Matthias Ehmann\n\nEmail : matthias.ehmann&uni-bayreuth.de\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.geonext\n\nRequired parameters :\n\nOptional parameters :\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThere exist no security risks concerning GEONExT files.\n\nThe media type does not contain executable content. It is just a\ncompressed XML based description of a mathematical/geometric\nconstruction. This construction can be opened using the Java software\nGEONExT.\n\nThe content does not need privacy or integrity services.\n\nInteroperability considerations :\nFiles are in XML structure (ASCII with Java unicode encoding). Files can be\ncompressed using the gzip algorithm and base 64 encoded.\n\nPublished specification :\nFile specification is published in \"Carsten Miller:\n\nEntwicklung dynamischer Arbeitsblätter und ihre Realisierung für den\nMathematikunterricht\", ISBN 3-89963-060-2\n\nApplications which use this media :\nGEONExT, JSXGraph\n\nAdditional information :\n\n1. Magic number(s) : NOT USED\n2. File extension(s) : gxt\n3. Macintosh file type code : NOT USED\n4. Object Identifiers: NOT USED\n\n\n\nPerson to contact for further information :\n\n1. Name : Matthias Ehmann\n2. Email : matthias.ehmann&uni-bayreuth.de\n\nIntended usage : Common\nThis mime type shall be used to identify data files of the dynamic mathematics\nsoftware GEONExT.\n\n\n\nAuthor/Change controller : Matthias Ehmann\n\n(file created 2009-07-28)"
+  },
+  "references": []
+}

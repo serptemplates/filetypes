@@ -1,0 +1,35 @@
+{
+  "type": "text",
+  "subtype": "tab-separated-values",
+  "full": "text/tab-separated-values",
+  "extensions": [
+    "tsv"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/tab-separated-values",
+    "template_text": "\n---------------------------------------\nMIME type name: text\nMIME subtype name: tab-separated-values\nRequired Parameters: Character Set, Encoding Type\nOptional Paramters: None\n\nSecurity Considerations: none\n\n\nPublished Specification:\n\nDoesn't really need any, but here goes:\n\nDefinition of tab-separated-values (tsv)\n----------------------------------------\n\ntsv is a popular method of data interchange among databases and\nspreadsheets and word processors with Mail-merge functions. It is the\nlowest common denominator in many cases between two different\napplications.\n\nA tsv file encodes a number of records that may contain multiple\nfields.  Each record is represented as a single line.  Each field\nvalue is represented as text.  Fields in a record are separated from\neach other by a tab character.\n\nNote that fields that contain tabs are not allowable in this encoding.\n\nThe first line of this encoding is special, it contains the name of\neach field, separated by tabs.\n\nEach record must have the same number of fields.\n\nHere is a quick BNF\n\n\nfield    ::= [character]+           # multiple characters\nname     ::= [character]+            \nnameline ::= name [TAB name]+ EOL\n\nrecord   ::= field [TAB field]+ EOL   # at least one field, or more\n\ntsv      ::= nameline record+\n\nGiven that the number of tabs per line must be constant.\n\n\n\nExample\n=======\n\nName<TAB>Age<TAB>Address\nPaul<TAB>23<TAB>1115 W Franklin\nBessy the Cow<TAB>5<TAB>Big Farm Way\nZeke<TAB>45<TAB>W Main St\n\n\nContact-Info:\n\nU of MN Internet Gopher Team <gopher&boombox.micro.umn.edu>\n\n\n"
+  },
+  "references": []
+}

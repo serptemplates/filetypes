@@ -1,0 +1,38 @@
+{
+  "type": "text",
+  "subtype": "vnd.senx.warpscript",
+  "full": "text/vnd.senx.warpscript",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.senx.warpscript",
+    "encoding_considerations": "Security considerations: The possible security issues are in Warp 10 \n   exec endpoint, not the source code format itself. UTF-8 decoder \n   handle correctly invalid byte sequences, but a user writing \n   specific WarpScript may overload the database. We mitigate this \n   risk with an authorization system based on access tokens and lots \n   of default limits you can find in \n   https://github.com/senx/warp10-platform/blob/master/etc/conf-standalone.template .\n\n   Removing these limits are the responsibility of the Warp 10 \n   instance administrator. \n\nInteroperability considerations: File parser is open source and every\n   language function is documented and published.\n\n   Supported platforms are today the ones supported by oracle JVM. \n\n   Versioning is handled user side with the REV function and is not \n   part of the file format or extension.\n\nPublished specification: WarpScript is a language used in our open \n   source platform called Warp 10 since 2015. \n   See http://www.warp10.io/\n\nApplications which use this media: Scripting language for Warp 10 \n   time series database.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "security_considerations": "exec endpoint, not the source code format itself. UTF-8 decoder \n   handle correctly invalid byte sequences, but a user writing \n   specific WarpScript may overload the database. We mitigate this \n   risk with an authorization system based on access tokens and lots \n   of default limits you can find in \n   https://github.com/senx/warp10-platform/blob/master/etc/conf-standalone.template .\n\n   Removing these limits are the responsibility of the Warp 10 \n   instance administrator. \n\nInteroperability considerations: File parser is open source and every\n   language function is documented and published.\n\n   Supported platforms are today the ones supported by oracle JVM. \n\n   Versioning is handled user side with the REV function and is not \n   part of the file format or extension.\n\nPublished specification: WarpScript is a language used in our open \n   source platform called Warp 10 since 2015. \n   See http://www.warp10.io/\n\nApplications which use this media: Scripting language for Warp 10 \n   time series database.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "language function is documented and published.\n\n   Supported platforms are today the ones supported by oracle JVM. \n\n   Versioning is handled user side with the REV function and is not \n   part of the file format or extension.\n\nPublished specification: WarpScript is a language used in our open \n   source platform called Warp 10 since 2015. \n   See http://www.warp10.io/\n\nApplications which use this media: Scripting language for Warp 10 \n   time series database.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): mc2\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: Warp 10 is an open source time series. WarpScript \n   is the name of our analytics language. This is a scripting \n   language dedicated to time series analytics. WarpScript Source \n   code is utf8 encoded text with the mc2 extension. More information\n   is available here : http://www.warp10.io/\n\nThe company behind is called SenX : https://senx.io/",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-11-21, last updated 2018-11-21)\n\nName: Pierre Papin\n\nEmail: pierre.papin&senx.io\n\nMedia type name: text\n\nMedia subtype name: vnd.senx.warpscript\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: The possible security issues are in Warp 10 \n   exec endpoint, not the source code format itself. UTF-8 decoder \n   handle correctly invalid byte sequences, but a user writing \n   specific WarpScript may overload the database. We mitigate this \n   risk with an authorization system based on access tokens and lots \n   of default limits you can find in \n   https://github.com/senx/warp10-platform/blob/master/etc/conf-standalone.template .\n\n   Removing these limits are the responsibility of the Warp 10 \n   instance administrator. \n\nInteroperability considerations: File parser is open source and every\n   language function is documented and published.\n\n   Supported platforms are today the ones supported by oracle JVM. \n\n   Versioning is handled user side with the REV function and is not \n   part of the file format or extension.\n\nPublished specification: WarpScript is a language used in our open \n   source platform called Warp 10 since 2015. \n   See http://www.warp10.io/\n\nApplications which use this media: Scripting language for Warp 10 \n   time series database.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): mc2\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: Warp 10 is an open source time series. WarpScript \n   is the name of our analytics language. This is a scripting \n   language dedicated to time series analytics. WarpScript Source \n   code is utf8 encoded text with the mc2 extension. More information\n   is available here : http://www.warp10.io/\n\nThe company behind is called SenX : https://senx.io/ \n\nPerson to contact for further information:\n\n   1. Name: Pierre Papin\n   2. Email: pierre.papin&senx.io\n\nIntended usage: Common\n\nAuthor/Change controller: Mathias Herberts <mathias.herberts&senx.io>\n   Pierre Papin <pierre.papin&senx.io>"
+  },
+  "references": []
+}

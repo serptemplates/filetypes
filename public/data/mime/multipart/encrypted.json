@@ -1,0 +1,33 @@
+{
+  "type": "multipart",
+  "subtype": "encrypted",
+  "full": "multipart/encrypted",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/multipart/encrypted",
+    "template_text": "(per RFC1847)\n\n(1)  MIME type name: multipart\n\n(2)  MIME subtype name: encrypted\n\n(3)  Required parameters: boundary, protocol\n\n(4)  Optional parameters: none\n\n(5)  Security considerations: none\n\nThe multipart/encrypted content type contains exactly two body parts.\nThe first body part contains the control information necessary to\ndecrypt the data in the second body part and is labeled according to\nthe value of the protocol parameter.  The second body part contains\nthe data which was encrypted and is always labeled\napplication/octet-stream.\n\nThe attribute token for the protocol parameter is \"protocol\", i.e.,\n\n parameter := \"protocol\" \"=\" value\n\nThe value token is comprised of the type and sub-type tokens of the\nContent-Type: header of the first body part, i.e.,\n\n value := <\"> type \"/\" subtype <\">\n\nwhere the type and subtype tokens are defined by the MIME [2]\nspecification.  The semantics of the protocol parameter are defined\naccording to its value.\n\nWhen creating a multipart/encrypted body part, the following sequence\nof steps describes the processing necessary.  It must be emphasized\nthat these steps are descriptive, not prescriptive, and in no way\nimpose restrictions or requirements on implementations of this\nspecification.\n\n(1)  The contents of the body part to be protected is prepared according\n     to a local convention.  The contents are then transformed into a\n     MIME body part in canonical MIME format, including an appropriate\n     set of MIME headers.\n\n(2)  The body part (headers and content) to be encrypted is prepared for\n     encryption according to the value of the protocol parameter.  The\n     MIME headers of the encrypted body part are included in the\n     encryption to protect from disclosure the MIME labeling of the\n     data that is encrypted.\n\n(3)  The prepared body part is made available to the encryption process\n     according to a local convention.  The encryption process must make\n     available to a MIME implementation two data streams: the control\n     information necessary to decrypt the body part, which the MIME\n     implementation will place in the first body part and label\n     according to the value of the protocol parameter, and the\n     encrypted body part, which the MIME implementation will place in\n     the second body part and label application/octet-stream.  Thus,\n     when used in a multipart/encrypted, the application/octet-stream\n     data is comprised of a nested MIME body part.\n\nWhen receiving a multipart/encrypted body part, the following\nsequence of steps describes the processing necessary to decrypt the\nenclosed data.  It must be emphasized that these steps are\ndescriptive, not prescriptive, and in no way impose restrictions or\nrequirements on implementations of this specification.\n\n(1)  The second body part and the control information in the first body\n     part must be prepared for the decryption process according to the\n     value of the protocol parameter.\n\n(2)  The prepared body parts must be made available to the decryption\n     process according to a local convention.  The decryption process\n     must make available to the MIME implementation the result of the\n     decryption and the decrypted form of the encrypted body part.\n\n         NOTE: The result of the decryption process is likely to\n         include a testament of the success or failure of the\n         decryption.  Failure may be due to an inability to locate\n         the proper decryption key or the proper recipient field,\n         etc.  Implementors should note that the data, if any, of a\n         failed decryption process is pretty much guaranteed to be\n         garbage.\n\n(3)  The result of the decryption process is made available to the user\n     and the MIME implementation continues processing with the decrypted\n     body part, i.e., the body part returned by the decryption process.\n\n         NOTE: A MIME implementation will not be able to display the\n         received form of the second body part because the\n         application of encryption will transform the body part.\n         This transformation will not be described in the MIME\n         headers (Content-Type: and Content-Transfer-Encoding:) but,\n         rather, will be described in the content of the first body\n         part.  Therefore, an implementation should wait until the\n         encryption has been removed before attempting to display\n         the content.\n\nThe following example is an illustration of a multipart/encrypted\nbody part.  It is necessarily incomplete since the control\ninformation is defined by the security protocol, which must be\nspecified in a separate document.\n\n Content-Type: multipart/encrypted; protocol=\"TYPE/STYPE\";\n         boundary=\"Encrypted Boundary\"\n\n --Encrypted Boundary\n Content-Type: TYPE/STYPE\n\n CONTROL INFORMATION for protocol \"TYPE/STYPE\" would be here\n\n --Encrypted Boundary\n Content-Type: application/octet-stream\n\n     Content-Type: text/plain; charset=\"us-ascii\"\n\n     All of this indented text, including the indented headers,\n     would be unreadable since it would have been encrypted by\n     the protocol \"TYPE/STYPE\".  Also, this encrypted data could\n     be any type of data, labeled accordingly, of course.\n\n --Encrypted Boundary--"
+  },
+  "references": []
+}

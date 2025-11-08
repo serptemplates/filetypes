@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "trig",
+  "full": "application/trig",
+  "extensions": [
+    "trig"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/trig",
+    "encoding_considerations": "The syntax of TriG is expressed over code points in Unicode. The encoding is always UTF-8.\nUnicode code points may also be expressed using an \\uXXXX (U+0000 to U+FFFF) or \\UXXXXXXXX syntax (for U+10000 onwards) where X is a hexadecimal digit [0-9A-Fa-f]",
+    "security_considerations": "TriG is a general-purpose assertion language; applications may evaluate given data to infer more assertions or to dereference IRIs, invoking the security considerations of the scheme for that IRI. Note in particular, the privacy issues in [RFC3023] section 10 for HTTP IRIs. Data obtained from an inaccurate or malicious data source may lead to inaccurate or misleading conclusions, as well as the dereferencing of unintended IRIs. Care must be taken to align the trust in consulted resources with the sensitivity of the intended use of the data; inferences of potential medical treatments would likely require different trust than inferences for trip planning.\n\nTriG is used to express arbitrary application data; security considerations will vary by domain of use. Security tools and protocols applicable to text (e.g. PGP encryption, MD5 sum validation, password-protected compression) may also be used on TriG documents. Security/privacy protocols must be imposed which reflect the sensitivity of the embedded information.\n\nTriG can express data which is presented to the user, for example, RDF Schema labels. Application rendering strings retrieved from untrusted TriG documents must ensure that malignant strings may not be used to mislead the reader. The security considerations in the media type registration for XML ([RFC3023] section 10) provide additional guidance around the expression of arbitrary data and markup.\n\nTriG uses IRIs as term identifiers. Applications interpreting data expressed in TriG should address the security issues of Internationalized Resource Identifiers (IRIs) [RFC3987] Section 8, as well as Uniform Resource Identifier (URI): Generic Syntax [RFC3986] Section 7.\n\nMultiple IRIs may have the same appearance. Characters in different scripts may look similar (a Cyrillic \"о\" may appear similar to a Latin \"o\"). A character followed by combining characters may have the same visual representation as another character (LATIN SMALL LETTER E followed by COMBINING ACUTE ACCENT has the same visual representation as LATIN SMALL LETTER E WITH ACUTE). Any person or application that is writing or interpreting data in TriG must take care to use the IRI that matches the intended semantics, and avoid IRIs that make look similar. Further information about matching of similar characters can be found in Unicode Security Considerations [UNICODE-SECURITY] and Internationalized Resource Identifiers (IRIs) [RFC3987], Section 8.",
+    "interoperability_considerations": "There are no known interoperability issues.",
+    "additional_information": "1. Deprecated alias names for this type: None\n2. Magic number(s): TriG documents may have the strings 'prefix' or 'base'.\n3. File extension(s): .trig\n4. Macintosh file type code: TEXT\n5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-11-30, last updated 2016-11-30)\n\nMedia type name: application\n\nMedia subtype name: trig\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: 8bit\nThe syntax of TriG is expressed over code points in Unicode. The encoding is always UTF-8.\nUnicode code points may also be expressed using an \\uXXXX (U+0000 to U+FFFF) or \\UXXXXXXXX syntax (for U+10000 onwards) where X is a hexadecimal digit [0-9A-Fa-f]\n\n\nSecurity considerations:\nTriG is a general-purpose assertion language; applications may evaluate given data to infer more assertions or to dereference IRIs, invoking the security considerations of the scheme for that IRI. Note in particular, the privacy issues in [RFC3023] section 10 for HTTP IRIs. Data obtained from an inaccurate or malicious data source may lead to inaccurate or misleading conclusions, as well as the dereferencing of unintended IRIs. Care must be taken to align the trust in consulted resources with the sensitivity of the intended use of the data; inferences of potential medical treatments would likely require different trust than inferences for trip planning.\n\nTriG is used to express arbitrary application data; security considerations will vary by domain of use. Security tools and protocols applicable to text (e.g. PGP encryption, MD5 sum validation, password-protected compression) may also be used on TriG documents. Security/privacy protocols must be imposed which reflect the sensitivity of the embedded information.\n\nTriG can express data which is presented to the user, for example, RDF Schema labels. Application rendering strings retrieved from untrusted TriG documents must ensure that malignant strings may not be used to mislead the reader. The security considerations in the media type registration for XML ([RFC3023] section 10) provide additional guidance around the expression of arbitrary data and markup.\n\nTriG uses IRIs as term identifiers. Applications interpreting data expressed in TriG should address the security issues of Internationalized Resource Identifiers (IRIs) [RFC3987] Section 8, as well as Uniform Resource Identifier (URI): Generic Syntax [RFC3986] Section 7.\n\nMultiple IRIs may have the same appearance. Characters in different scripts may look similar (a Cyrillic \"о\" may appear similar to a Latin \"o\"). A character followed by combining characters may have the same visual representation as another character (LATIN SMALL LETTER E followed by COMBINING ACUTE ACCENT has the same visual representation as LATIN SMALL LETTER E WITH ACUTE). Any person or application that is writing or interpreting data in TriG must take care to use the IRI that matches the intended semantics, and avoid IRIs that make look similar. Further information about matching of similar characters can be found in Unicode Security Considerations [UNICODE-SECURITY] and Internationalized Resource Identifiers (IRIs) [RFC3987], Section 8.\n\n\nInteroperability considerations:\nThere are no known interoperability issues.\n\nPublished specification:\nhttps://www.w3.org/TR/2014/REC-trig-20140225/\n\nApplications which use this media:\nNo widely deployed applications are known to use this media type. It may be used by some web services and clients consuming their data.\n\nFragment identifier considerations:\nNone\n\nRestrictions on usage:\nNone\n\nProvisional registration? (standards tree only):\nNone\n\nAdditional information:\n\n1. Deprecated alias names for this type: None\n2. Magic number(s): TriG documents may have the strings 'prefix' or 'base'.\n3. File extension(s): .trig\n4. Macintosh file type code: TEXT\n5. Object Identifiers: None\n\nGeneral Comments:\nNone\n\nPerson to contact for further information:\n\n1. Name: RDF Working Group\n2. Email: public-rdf-comments&w3.org\n\nIntended usage: Common\nNone\n\nAuthor/Change controller: The TriG specification is the product of the RDF WG. The W3C reserves change control over this specifications."
+  },
+  "references": []
+}

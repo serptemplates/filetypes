@@ -1,0 +1,44 @@
+{
+  "type": "audio",
+  "subtype": "mpa-robust",
+  "full": "audio/mpa-robust",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/mpa-robust",
+    "encoding_considerations": "This type is defined only for transfer via RTP, as specified in\n   RFC 5219.",
+    "security_considerations": "See the \"Security Considerations\" section of RFC 5219.",
+    "interoperability_considerations": "This encoding is incompatible with both the \"audio/mpa\" and\n   \"audio/mpeg\" media types.",
+    "applications": "Audio streaming tools (transmitting and receiving)\n\nAdditional information: none",
+    "intended_usage": "common",
+    "template_text": "(registered in RFC 3119, updated in RFC 5219)\n\nMedia type name: audio\n\nMedia subtype: mpa-robust\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations:\n   This type is defined only for transfer via RTP, as specified in\n   RFC 5219.\n\nSecurity considerations:\n   See the \"Security Considerations\" section of RFC 5219.\n\nInteroperability considerations:\n   This encoding is incompatible with both the \"audio/mpa\" and\n   \"audio/mpeg\" media types.\n\nPublished specification:\n   The ISO/IEC MPEG-1 [3] and MPEG-2 [4] audio specifications, and\n   RFC 5219.\n\nApplications that use this media type:\n   Audio streaming tools (transmitting and receiving)\n\nAdditional information: none\n\nPerson & email address to contact for further information:\n   Ross Finlayson\n   finlayson&live555.com\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n   Author: Ross Finlayson\n   Change controller: IETF AVT Working Group"
+  },
+  "references": [
+    {
+      "title": "RFC 5219",
+      "url": "https://www.rfc-editor.org/rfc/rfc5219.html",
+      "kind": "RFC"
+    }
+  ]
+}

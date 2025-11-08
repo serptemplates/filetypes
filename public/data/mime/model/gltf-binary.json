@@ -1,0 +1,39 @@
+{
+  "type": "model",
+  "subtype": "gltf-binary",
+  "full": "model/gltf-binary",
+  "extensions": [
+    "glb"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/gltf-binary",
+    "security_considerations": "The glTF 2.0 standard does not specify a way of including active content - no directives that institute actions on a recipient's files or other resources.\nglTF does not itself provide any integrity or confidentiality protection, so if such services are needed they must be supplied externally. glTF uses JSON internally and inherits the security considerations of JSON. glTF can include URI references to external images - currently limited to PNG and JPEG format. glTF does not use compression internally.",
+    "interoperability_considerations": "glTF documents are designed to provide interoperability between content creation and processing tools, and visualization applications. glTF minimizes both the size of 3D assets, and the runtime processing needed by applications using 3D graphics APIs like WebGL, OpenGL, Vulkan and DirectX. glTF defines a common publishing format for 3D content tools and services that streamlines authoring workflows and enables interoperable use of content across the industry.",
+    "additional_information": "1. Deprecated alias names for this type: N/A 2. Magic number(s): glb header contains magic 0x46546C67 (ASCII for glTF) 3. File extension(s): .glb 4. Macintosh file type code: N/A 5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-11-06, last updated 2017-11-06)\n\nName: Saurabh Bhatia\nEmail: glTFIANA&microsoft.com\n\nMedia type name: model\nMedia subtype name: gltf-binary\n\nRequired parameters: None\n\nOptional parameters:\nNone\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nThe glTF 2.0 standard does not specify a way of including active content - no directives that institute actions on a recipient's files or other resources.\nglTF does not itself provide any integrity or confidentiality protection, so if such services are needed they must be supplied externally. glTF uses JSON internally and inherits the security considerations of JSON. glTF can include URI references to external images - currently limited to PNG and JPEG format. glTF does not use compression internally. \n\n\nInteroperability considerations:\nglTF documents are designed to provide interoperability between content creation and processing tools, and visualization applications. glTF minimizes both the size of 3D assets, and the runtime processing needed by applications using 3D graphics APIs like WebGL, OpenGL, Vulkan and DirectX. glTF defines a common publishing format for 3D content tools and services that streamlines authoring workflows and enables interoperable use of content across the industry.\n\n\nPublished specification:\nSpecification released by the Khronos Group\nhttps://www.khronos.org/gltf \n\nDirect link to .glb section: \nhttps://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification \n\nApplications which use this media:\nSeveral graphics oriented applications, frameworks or libraries have adopted glTF as supported file format:\n* three.js - A library that makes WebGL - 3D in the browser - easy to use. While a simple cube in raw WebGL would turn out hundreds of lines of Javascript and shader code, a Three.js equivalent is only a fraction of that.\n* Babylon.js - An open source 3D engine based on WebGL and Javascript\n* Microsoft is adding support for .glb files across a variety of applications including Paint 3D, View 3D and Microsoft Office\n* Blender is working on support for glTF 2.0 export including .glb export.\nThere are converters from COLLADA and OBJ, so exports from DCC tools such as 3ds Max, Maya, Modo, Poser and Blender can easily be converted to glTF. \nList of various glTF tools can be found here - https://github.com/khronosgroup/gltf#gltf-tools \n\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A 2. Magic number(s): glb header contains magic 0x46546C67 (ASCII for glTF) 3. File extension(s): .glb 4. Macintosh file type code: N/A 5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n1. Name: Saurabh Bhatia\n2. Email: glTFIANA&microsoft.com\n\nIntended usage: Common\nglTF™ 2.0 (GL Transmission Format) is a royalty-free specification for the efficient transmission and loading of 3D scenes and models by applications. glTF minimizes both the size of 3D assets, and the runtime processing needed by 3D applications. glTF defines a common publishing format for 3D content tools and services that streamlines authoring workflows and enables interoperable use of content across the industry.\n\nAuthor/Change controller: The Khronos Group (https://www.khronos.org/)"
+  },
+  "references": []
+}

@@ -1,0 +1,43 @@
+{
+  "type": "application",
+  "subtype": "rpki-ghostbusters",
+  "full": "application/rpki-ghostbusters",
+  "extensions": [
+    "gbr"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/rpki-ghostbusters",
+    "type_name": "application",
+    "subtype_name": "rpki-ghostbusters",
+    "encoding_considerations": "Security considerations: Carries an RPKI Ghostbusters Record\n                         [RFC6493].\nInteroperability considerations: None\nPublished specification: This document.\nApplications that use this media type: RPKI administrators.",
+    "security_considerations": "[RFC6493].\nInteroperability considerations: None\nPublished specification: This document.\nApplications that use this media type: RPKI administrators.",
+    "interoperability_considerations": "Published specification: This document.\nApplications that use this media type: RPKI administrators.",
+    "additional_information": "Content: This media type is a signed object, as defined\n      in [RFC6488], which contains a payload\n      of a profiled vCard as defined above in this document.\n  Magic number(s): None\n  File extension(s): .gbr\n  Macintosh file type code(s):",
+    "intended_usage": "common",
+    "change_controller": "Randy Bush <randy&psg.com>",
+    "template_text": "(RFC 6493 published February 2012, subtype last updated February 2012)\n\nType name: application\nSubtype name: rpki-ghostbusters\nRequired parameters: None\nOptional parameters: None\nEncoding considerations: binary\nSecurity considerations: Carries an RPKI Ghostbusters Record\n                         [RFC6493].\nInteroperability considerations: None\nPublished specification: This document.\nApplications that use this media type: RPKI administrators.\nAdditional information:\n  Content: This media type is a signed object, as defined\n      in [RFC6488], which contains a payload\n      of a profiled vCard as defined above in this document.\n  Magic number(s): None\n  File extension(s): .gbr\n  Macintosh file type code(s):\nPerson & email address to contact for further information:\n  Randy Bush <randy&psg.com>\nIntended usage: COMMON\nRestrictions on usage: None\nAuthor: Randy Bush <randy&psg.com>\nChange controller: Randy Bush <randy&psg.com>\n\n"
+  },
+  "references": []
+}

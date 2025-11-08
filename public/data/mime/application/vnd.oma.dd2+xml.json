@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.dd2+xml",
+  "full": "application/vnd.oma.dd2+xml",
+  "extensions": [
+    "dd2"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.dd2+xml",
+    "template_text": "(Last updated 23 March 2006)\r\n\r\nName : Jun Sato\r\n\r\nEmail : junn.sato&toshiba.co.jp\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.oma.dd2+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : \r\ncharset : This parameter has identical semantics to the charset parameter\r\nspecified in [XMLMIME].\r\n\r\nversion : Indicates the Download Descriptor version. The value has the\r\nformat: <major>.<minor>; where major and minor are integers. For example,\r\nversion=\"2.0\" indicates version 2.0.\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations : \r\nThe vnd.oma.dd2+xml typed content (i.e. Download Descriptor v2.0)\r\ncontains meta data for the media object that is to be downloaded by the\r\nDownload Agent. It also can optionally contain executable content in the\r\nform of installation commands.\r\n\r\nIn normal usage the vnd.oma.dd2+xml typed content does not contain\r\ninformation that needs to be kept private.\r\n\r\nThe vnd.oma.dd2+xml typed content itself does not provide either privacy or\r\nintegrity protection. However, the specification [OMADLOTAv2] provides\r\nDownload Agent authentication and Server authentication using HTTP Digest\r\nmechanism [RFC2617] and TLS [RFC2246], and also provides confidentiality\r\nand integrity protection using TLS [RFC2246].\r\n\r\nFor more details, see [XMLMIME] and [OMADLOTAv2].\r\n\r\nInteroperability considerations : \r\nThe OMA Download specifications [OMADLOTAv2] specify user agent (Download\r\nAgent) conformance rules that dictate behaviour that must be followed when\r\ndealing with, among other things, unrecognized elements.\r\n\r\nPublished specification : \r\nThe OMA Download OTA v2 specification is published at\r\n<http://www.openmobilealliance.org/>.\r\n\r\nApplications which use this media : \r\nOMA Download Agents. See [OMADLOTAv2].\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : There is no single initial byte sequence.\r\n2. File extension(s) : .xml, .dd2\r\n3. Macintosh file type code : TEXT\r\n4. Object Identifiers: none\r\n\r\nFor the encoding considerations, see [XMLMIME] and [OMADLOTAv2].\r\n\r\nReferences:\r\n[OMADLOTAv2] ?OMA Download OTA V2.0 Specification?, Open Mobile Alliance\r\nSpecification. Available at <http://www.openmobilealliance.org/>.\r\n\r\n[XMLMIME] Murata, M., St.Laurent, S., Kohn, D., \"XML Media Types\",\r\nRFC3023, January 2001.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : OMA BAC DLDRM WG\r\n2. Email : technical-comments&mail.openmobilealliance.org\r\n\r\nIntended usage : Common \r\n\r\nAuthor/Change controller : The OMA Download specifications are a work\r\nproduct of the Open Mobile Alliance's BAC DLDRM Working Group. The Open\r\nMobile Alliance has change control over these specifications.\r\nmailto:technical-comments&mail.openmobilealliance.org \r\n\r\n(File created 23 March 2006)"
+  },
+  "references": []
+}

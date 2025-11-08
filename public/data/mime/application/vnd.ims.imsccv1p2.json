@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.ims.imsccv1p2",
+  "full": "application/vnd.ims.imsccv1p2",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ims.imsccv1p2",
+    "template_text": "(registered 2014-12-11, last updated 2014-12-11)\n\nName : Lisa Mattson\n\nEmail : lisa&imsglobal.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ims.imsccv1p2\n\nRequired parameters : NA\n\nOptional parameters : \nNA\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nThis media type does not contain executable content. Since this vendor-specific media type is based on the more general .zip media type, all of the security considerations for ZIP apply. For details see http://www.iana.org/assignments/media-types/application/zip.\n\nExtracting a zipfile could possible overwrite existing files. Care should be taken that files are extracted into an empty directory, not at the root level.\n\nTo protect the privacy and integrity of the data, it is recommended that documents based on this media type be exchanged over SSL.\n\nInteroperability considerations : \nNA\n\nPublished specification : \nhttp://www.imsglobal.org/cc/\n\nApplications which use this media : \nAuthoring and Delivery platforms.\n\nFragment identifier considerations :\nNA\n\nRestrictions on usage :\nNone\n\nProvisional registration? (standards tree only) :\nNone\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : None\n2. Magic number(s) : same as application .zip\n3. File extension(s) : .imscc\n4. Macintosh file type code : NA\n5. Object Identifiers: NA\n\nNA\n\nPerson to contact for further information :\n\n1. Name : Lisa Mattson\n2. Email : lisa&imsglobal.org\n\nIntended usage : Common\nNA\n\nAuthor/Change controller : IMS Global Learning Consortium"
+  },
+  "references": []
+}

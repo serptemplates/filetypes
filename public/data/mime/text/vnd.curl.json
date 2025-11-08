@@ -1,0 +1,35 @@
+{
+  "type": "text",
+  "subtype": "vnd.curl",
+  "full": "text/vnd.curl",
+  "extensions": [
+    "curl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.curl",
+    "template_text": "\nComments: 2002-12-18\nNew contact person at Curl Corporation is Robert Byrnes\nContact e-mail address: <systems-vendor&curl.com>\n\nComments: 2002-02-02\nNew contact person at Curl Corporation is Mary Boudreau\nContact e-mail address: <boudreau&curl.com>\n\n***********************************************************************\n\nName : Tim Hodge\n\nE-mail : thodge&curl.com\n\nMIME media type name : Text\n\nMIME subtype name : Vendor Tree - vnd.curl\n\nRequired parameters : None\n\nOptional parameters :\nCharset\n\nThe charset parameter follows the normal rules for the charset\nparameter in MIME text. However, only the following values are expected:\n\nus-ascii\niso-8859-1\nutf-8\n\nEncoding considerations :\nThe content of this type is in general 8bit text, which must be\nsuitably encoded on transports that don't support 8bit.\n\nSecurity considerations :\nBecause various subtypes of vnd.curl will represent mobile code\nthe content can potentially present a security hazard, for this\nreason content from most sources will be executed in a restricted,\nsandbox like, environment.\n\nInteroperability considerations :\nContent of this type my contain references to content of various\nother popular types, including HTML, GIF, MPEG, JPEG, JAVA Applets \nand ActiveX controls.\n\nPublished specification :\nCURL Corporation will from time to time publish reference manuals,\nuser guides and tutorials for the various content types. These will be\ncommercially available as part of software development kits. And a\nsubset will be available free of charge from CURL's web site.\n\nApplications which use this media :\nThe media provides a set of content definition languages that will\nbe interpreted by the CURL runtime plug-in.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : curl\n3. Macintosh file type code : curl\n\nPerson to contact for further information :\n\n1. Name : Tim Hodge\n2. E-mail : thodge&curl.com\n\nIntended usage : Common\n\nAuthor/Change controller : Tim Hodge\n\n\n\n\n"
+  },
+  "references": []
+}

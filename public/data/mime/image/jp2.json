@@ -1,0 +1,42 @@
+{
+  "type": "image",
+  "subtype": "jp2",
+  "full": "image/jp2",
+  "extensions": [
+    "jp2",
+    "jpg2"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/jp2",
+    "encoding_considerations": "transmitted in a suitable encoding\n                                   without CR/LF conversion, 7-bit\n                                   stripping etc.; base64 is a suitable\n                                   encoding;\nSecurity considerations:           see [RFC3745]\nInteroperability considerations:   The ability of implementations to\n                                   handle all the defined applications\n                                   (or profiles within applications) of\n                                   JPEG 2000 may not be ubiquitous. As a\n                                   result, implementations may decode\n                                   and attempt to display the encoded\n                                   JPEG 2000 image data only to\n                                   determine that the image cannot be\n                                   rendered either partially or in full.\nPublished specification:           ISO/IEC 15444-1 defines the JPEG 2000\n                                   codec and the jp2 file format\nApplications which use this media type: Imaging, fax, messaging and\n                                   multi-media",
+    "security_considerations": "Interoperability considerations:   The ability of implementations to\n                                   handle all the defined applications\n                                   (or profiles within applications) of\n                                   JPEG 2000 may not be ubiquitous. As a\n                                   result, implementations may decode\n                                   and attempt to display the encoded\n                                   JPEG 2000 image data only to\n                                   determine that the image cannot be\n                                   rendered either partially or in full.\nPublished specification:           ISO/IEC 15444-1 defines the JPEG 2000\n                                   codec and the jp2 file format\nApplications which use this media type: Imaging, fax, messaging and\n                                   multi-media",
+    "interoperability_considerations": "handle all the defined applications\n                                   (or profiles within applications) of\n                                   JPEG 2000 may not be ubiquitous. As a\n                                   result, implementations may decode\n                                   and attempt to display the encoded\n                                   JPEG 2000 image data only to\n                                   determine that the image cannot be\n                                   rendered either partially or in full.\nPublished specification:           ISO/IEC 15444-1 defines the JPEG 2000\n                                   codec and the jp2 file format\nApplications which use this media type: Imaging, fax, messaging and\n                                   multi-media",
+    "additional_information": "Magic number(s):                   12 byte string: X'0000 000C 6A50 2020\n                                   0D0A 870A' (for all JPEG-2000 family\n                                   files)\nFile extension(s):                 jp2 and jpg2 are both declared at\n                                   http://www.nist.gov/nics/; jp2 is\n                                   preferred\nMacintosh File Type Code(s):       'jp2 '",
+    "intended_usage": "common",
+    "change_controller": "JPEG Webmaster",
+    "template_text": "Still Image Registration\r\n\r\n   The image/jp2 content-type refers to all of the profiles and\r\n   extensions that build on JPEG 2000 [ISO-JPEG2000-1] encoded image\r\n   data. The file format is also defined in [ISO-JPEG2000-1], Annex I.\r\n   The recommended file suffix is \"jp2\"\r\n\r\n   To: ietf-types&iana.org\r\n   Subject: Registration of Standard MIME media type image/jp2\r\n\r\nMIME media type name:              image\r\nMIME subtype name:                 jp2\r\nRequired parameters:               none\r\nOptional parameters:               none\r\n                                   It is up to the implementation to\r\n                                   determine the application (if\r\n                                   necessary) and render the image to\r\n                                   the user.\r\nEncoding considerations:           files are binary and should be\r\n                                   transmitted in a suitable encoding\r\n                                   without CR/LF conversion, 7-bit\r\n                                   stripping etc.; base64 is a suitable\r\n                                   encoding;\r\nSecurity considerations:           see [RFC3745]\r\nInteroperability considerations:   The ability of implementations to\r\n                                   handle all the defined applications\r\n                                   (or profiles within applications) of\r\n                                   JPEG 2000 may not be ubiquitous. As a\r\n                                   result, implementations may decode\r\n                                   and attempt to display the encoded\r\n                                   JPEG 2000 image data only to\r\n                                   determine that the image cannot be\r\n                                   rendered either partially or in full.\r\nPublished specification:           ISO/IEC 15444-1 defines the JPEG 2000\r\n                                   codec and the jp2 file format\r\nApplications which use this media type: Imaging, fax, messaging and\r\n                                   multi-media\r\nAdditional information:\r\nMagic number(s):                   12 byte string: X'0000 000C 6A50 2020\r\n                                   0D0A 870A' (for all JPEG-2000 family\r\n                                   files)\r\nFile extension(s):                 jp2 and jpg2 are both declared at\r\n                                   http://www.nist.gov/nics/; jp2 is\r\n                                   preferred\r\nMacintosh File Type Code(s):       'jp2 '\r\nPerson & email address to contact for further information:\r\n                                   JPEG Webmaster - mimesupport&jpeg.org\r\n                                   JPEG Convenor - convenor&jpeg.org\r\n                                   JPEG2000 Editor - J2KEditor&jpeg.org\r\nIntended usage:                    COMMON\r\nChange controller:                 JPEG Webmaster\r\n"
+  },
+  "references": []
+}

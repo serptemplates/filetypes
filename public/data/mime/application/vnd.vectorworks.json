@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.vectorworks",
+  "full": "application/vnd.vectorworks",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.vectorworks",
+    "encoding_considerations": "VectorWorks documents are binary and need appropriate encoding.",
+    "security_considerations": "VectorWorks documents can contain executable content in the form\nof MiniPascal or VectorScript scripts contained in command palettes.\nThis content is never executed except at the explicit direction of\nthe user by double-clicking on a command. It is possible, however,\nthat malicious users could create scripts which would cause harm to an\nunsuspecting user's local files or otherwise violate the security\nof their system if they were manually executed.",
+    "interoperability_considerations": "VectorWorks files are fully interoperable across the\nMacintosh 68k/PowerPC/Intel and Windows 95/98/NT4/2000/Vista\nplatforms & operating systems.",
+    "additional_information": "Magic number(s):\nFile extension(s): MCD, VWX\nMacintosh File Type Code(s):\nCreator: 'CDP3' Types: 'MC8d', 'MC9d', 'DO10', 'DO11'\nCreator: 'VW12' Types: 'DO12'\nCreator: 'VW13' Types: 'DO13'\nCreator: 'VW14' Types: 'DO14'",
+    "intended_usage": "limited use",
+    "template_text": "(last updated 2009-02-19)\n\nMIME media type name: application\n\nMIME subtype name: vnd.vectorworks\n\nRequired parameters: none \n\nOptional parameters: none\n\nEncoding considerations:\n\nVectorWorks documents are binary and need appropriate encoding.\n\nSecurity considerations:\n    \nVectorWorks documents can contain executable content in the form\nof MiniPascal or VectorScript scripts contained in command palettes.\nThis content is never executed except at the explicit direction of\nthe user by double-clicking on a command. It is possible, however,\nthat malicious users could create scripts which would cause harm to an\nunsuspecting user's local files or otherwise violate the security\nof their system if they were manually executed.\n    \nInteroperability considerations:\n\nVectorWorks files are fully interoperable across the\nMacintosh 68k/PowerPC/Intel and Windows 95/98/NT4/2000/Vista\nplatforms & operating systems.\n\nPublished specification:\n    \nFor documentation of the VectorWorks file format, contact:\n    \n    Nemetschek North America, Inc.\n    7150 Riverwood Drive,\n    Columbia, MD 21046\n\nApplications which use this media type:\n\n    Vectorworks 2009\n    VectorWorks 2008, 12.0, 11.0, 10.0, 9.0, 8.0,\n    MiniCAD 7.0, 6.0, 5.0, 4.0\n\nAdditional information:\n\nMagic number(s):\nFile extension(s): MCD, VWX\nMacintosh File Type Code(s):\nCreator: 'CDP3' Types: 'MC8d', 'MC9d', 'DO10', 'DO11'\nCreator: 'VW12' Types: 'DO12'\nCreator: 'VW13' Types: 'DO13'\nCreator: 'VW14' Types: 'DO14'\n    \nPerson & email address to contact for further information:\n\n    Lyndsey Ferguson\n    Lyndsey&nemetschek.net\n\nIntended usage: LIMITED USE\n\nAuthor/Change controller:\n\n    Biplab Sarkar\n    Chief Technology Officer\n    Nemetschek North America, Inc.\n    7150 Riverwood Drive\n    Columbia, MD 21046\n    \n    Biplab&nemetschek.net\n\n\n(file created 2000-02)"
+  },
+  "references": []
+}

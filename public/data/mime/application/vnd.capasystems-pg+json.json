@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.capasystems-pg+json",
+  "full": "application/vnd.capasystems-pg+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.capasystems-pg+json",
+    "encoding_considerations": "Same as [RFC7159]",
+    "security_considerations": "vnd.capasystems-pg+json shares security issues common to all JSON content types.\nSee RFC7159 Section #12 (http://tools.ietf.org/html/rfc7159#section-12)\nfor additional information. vnd.nearst.inv+json does not provide executable\ncontent. \n\nIf privacy is needed it must be realized via the transport layer, e.g. with HTTPs. Additional integrity checking can be built into client and server software that transmits this information, and goes beyond the scope of this document",
+    "interoperability_considerations": "N/A",
+    "additional_information": "1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .json\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2017-05-03, last updated 2017-05-03)\n\nMedia type name: application\n\nMedia subtype name: vnd.capasystems-pg+json\n\nRequired parameters: none\n\nOptional parameters: none \n\nEncoding considerations: binary\nSame as [RFC7159]\n\nSecurity considerations:\nvnd.capasystems-pg+json shares security issues common to all JSON content types.\nSee RFC7159 Section #12 (http://tools.ietf.org/html/rfc7159#section-12)\nfor additional information. vnd.nearst.inv+json does not provide executable\ncontent. \n\nIf privacy is needed it must be realized via the transport layer, e.g. with HTTPs. Additional integrity checking can be built into client and server software that transmits this information, and goes beyond the scope of this document\n\nInteroperability considerations:\nN/A\n\nPublished specification:\nThe specification is not published yet.\n\nApplications which use this media:\nSoftware interfacing with CapaSystems PerformanceGuard server software, wishing to setup or extract performance measurement data.\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .json\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none\n\nGeneral Comments:\nN/A\n\nPerson to contact for further information:\n\n1. Name: Yüksel Aydemir\n2. Email: yay&capasystems.com\n\nIntended usage: Limited Use\nUsed primarily by CapaSystems customers that wish to build front ends that display performance data from PerformanceGuard servers\n\nAuthor/Change controller: Yüksel Aydemir on behalf of CapaSystems A/S"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.yamaha.smaf-audio",
+  "full": "application/vnd.yamaha.smaf-audio",
+  "extensions": [
+    "saf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.yamaha.smaf-audio",
+    "template_text": "\r\n(last updated 2003-07-11)\r\n\r\nName : Keiichi Shinoda\r\n\r\nEmail : shino-k&post.yamaha.co.jp\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.yamaha.smaf-audio\r\n\r\nRequired parameters :     \r\n\r\nOptional parameters : \r\n    \r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nThe content doesn't contain executable code and hence cannot be employed maliciously.\r\n\r\nInteroperability considerations : \r\n    \r\n\r\nPublished specification : \r\nSMAF-Audio is a data format specification intended mainly to define a data format for realtime multitrack game sounds based multimedia content, transportable via internet/intranet/wireless internet in very small packages.\r\nSMAF-Audio specification data is expressed as a single audio stream data for output device.\r\nThe format enables and specifies to start playing back simultaneously with SMAF-Phrase files.\r\nSo as a result, realtime and simultaneous and multi-track playing like game sounds are realized.\r\n\r\nApplications which use this media : \r\nEmbeded SMAF-Audio player on cellular phone,personal digital assistant\r\nor other electronic equipments.\r\nSMAF-Audio Contents Authoring tool on PC.\r\nSMAF-Audio player Application on PC.  \r\n\r\nAdditional information :\r\n1. Magic number(s) : none\r\n2. File extension(s) : .saf\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n1. Name : Masahiro Mukojima\r\n2. Email : masam&asc.yamaha.co.jp\r\n\r\nIntended usage : Common \r\n   \r\nAuthor/Change controller :  \r\nKeiichi Shinoda or Masahiro Mukojima\r\nYamaha Corporation\r\n203 Matsunokijima Toyooka-mura Iwata-gun\r\nShizuoka-ken 438-0192 Japan   \r\n\r\n[]"
+  },
+  "references": []
+}

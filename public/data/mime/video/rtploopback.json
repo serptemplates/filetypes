@@ -1,0 +1,47 @@
+{
+  "type": "video",
+  "subtype": "rtploopback",
+  "full": "video/rtploopback",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/rtploopback",
+    "type_name": "video",
+    "subtype_name": "rtploopback",
+    "encoding_considerations": "Security considerations: See Section 12 of [RFC6849].\n\nInteroperability considerations: none\n\nPublished specification: [RFC6849].\n\nApplications which use this media type: Applications wishing\n    to monitor and ensure the quality of transport to the\n    edge of a given Video Over IP Service.\n\nAdditional information: none\n\nContact: the authors of [RFC6849].\n\nIntended usage: LIMITED USE\n\nRestrictions on usage: This media type depends on RTP\n    framing, and hence is only defined for transfer via\n    RTP. Transfer within other framing protocols is not\n    defined at this time.",
+    "security_considerations": "Interoperability considerations: none\n\nPublished specification: [RFC6849].\n\nApplications which use this media type: Applications wishing\n    to monitor and ensure the quality of transport to the\n    edge of a given Video Over IP Service.\n\nAdditional information: none\n\nContact: the authors of [RFC6849].\n\nIntended usage: LIMITED USE\n\nRestrictions on usage: This media type depends on RTP\n    framing, and hence is only defined for transfer via\n    RTP. Transfer within other framing protocols is not\n    defined at this time.",
+    "interoperability_considerations": "Published specification: [RFC6849].\n\nApplications which use this media type: Applications wishing\n    to monitor and ensure the quality of transport to the\n    edge of a given Video Over IP Service.\n\nAdditional information: none\n\nContact: the authors of [RFC6849].\n\nIntended usage: LIMITED USE\n\nRestrictions on usage: This media type depends on RTP\n    framing, and hence is only defined for transfer via\n    RTP. Transfer within other framing protocols is not\n    defined at this time.",
+    "additional_information": "Contact: the authors of [RFC6849].\n\nIntended usage: LIMITED USE\n\nRestrictions on usage: This media type depends on RTP\n    framing, and hence is only defined for transfer via\n    RTP. Transfer within other framing protocols is not\n    defined at this time.",
+    "intended_usage": "limited use",
+    "change_controller": "IETF PAYLOAD working",
+    "template_text": "(file created 2013-01-18, last updated 2013-02-25)\r\n\r\nType name: video\r\n\r\nSubtype name: rtploopback\r\n\r\nRequired parameters:\r\n\r\n    rate:RTP timestamp clock rate, which is equal to the\r\n    sampling rate. This is specified by the loop back\r\n    source, and reflected by the mirror.\r\n\r\nOptional parameters: none\r\n\r\nEncoding considerations: This media type is framed.\r\n\r\nSecurity considerations: See Section 12 of [RFC6849].\r\n\r\nInteroperability considerations: none\r\n\r\nPublished specification: [RFC6849].\r\n\r\nApplications which use this media type: Applications wishing\r\n    to monitor and ensure the quality of transport to the\r\n    edge of a given Video Over IP Service.\r\n\r\nAdditional information: none\r\n\r\nContact: the authors of [RFC6849].\r\n\r\nIntended usage: LIMITED USE\r\n\r\nRestrictions on usage: This media type depends on RTP\r\n    framing, and hence is only defined for transfer via\r\n    RTP. Transfer within other framing protocols is not\r\n    defined at this time.\r\n\r\nAuthor:\r\n    Kaynam Hedayat.\r\n\r\nChange controller: IETF PAYLOAD working\r\n    group delegated from the IESG.\r\n"
+  },
+  "references": [
+    {
+      "title": "RFC 6849",
+      "url": "https://www.rfc-editor.org/rfc/rfc6849.html",
+      "kind": "RFC"
+    }
+  ]
+}

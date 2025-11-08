@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.smaf",
+  "full": "application/vnd.smaf",
+  "extensions": [
+    "mmf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.smaf",
+    "template_text": "\r\nName : Hiroaki Takahashi\r\n\r\nE-mail : takaha&beat.yamaha.co.jp\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.smaf\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters :\r\nnone\r\n\r\nEncoding considerations :\r\nYamaha SMAF is binary data.\r\n\r\nSecurity considerations :\r\n\r\nThe content doesn't contain executable code and hence cannot be employed \r\nmaliciously.\r\n\r\nInteroperability considerations :\r\nnone\r\n\r\nPublished specification :\r\nSMAF is a data format specification intended mainly to define a data format\r\nfor synthetic music based multimedia content, transporatble via\r\ninternet/intranet/wireless internet in very small packages.\r\nSMAF specification data is expressed as multiple bundles of\r\nindependent sequence data for each output device. The format enables and\r\nspecifies all sequences to start playing back simultaneously, and as a\r\nresult, all sequences will be playing in accurate synchronization.\r\n\r\nApplications which use this media :\r\nApplications which use this media type are \r\n  Embeded SMAF player on cellular phone.\r\n  SMAF Contents Authoring tool on PC.\r\n  SMAF player Application on PC.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .mmf\r\n3. Macintosh file type code : none\r\n4. Object Identifiers:\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : smaf-support\r\n2. E-mail : smaf-support&beat.yamaha.co.jp\r\n\r\nIntended usage : Common\r\n\r\n\r\nAuthor/Change controller : Takuro Sone or Hiroaki Takahashi\r\n Yamaha Corporation\r\n 203 Matsunokijima Toyooka-mura Iwata-gun\r\n Shizuoka-ken 438-0192 Japan\r\n\r\n(created 24 Jan 2002)"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.powerbuilder75-s",
+  "full": "application/vnd.powerbuilder75-s",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.powerbuilder75-s",
+    "template_text": "\n\nFrom: reed.shilts&sybase.com on behalf of Reed Shilts\n[reed.shilts&sybase.com]\nSent: Wednesday, July 21, 1999 11:37 AM\nTo: iana&iana.org; reed.shilts&sybase.com\nSubject: Request for MIME media type Application/Vendor Tree -\nvnd.powerbuilder75-s\n\nName : Reed Shilts\n\nE-mail : reed.shilts&sybase.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.powerbuilder75-s\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \n\nDocuments of this type contain binary data and should be suitably\nencoded for transfer\n\n\nSecurity considerations : \nThis type contains p-code, which executes in the PowerBuilder release\n7.5 secure mode run-time.  The secure mode run-time prevents the\nexeuction of p-codes which may compromise the user's environment or\ndisk.  There is no other indication to the user that a file is secure\nor not other than this MIME type.\n\nInteroperability considerations : \nInteroperates only on platforms supported by the PowerBuilder version\n7.5 run-time environment.  This is incompatible with PowerBuilder\nversion 7.0\n\n\nPublished specification : \nNot available.  Objects in this library may be executed using the\nPowerBuilder release 7.5 secure mode run-time available from\nSybase, Inc., Powersoft products.\n\n\nApplications which use this media : \nUsed only by PowerBuilder release 7.5 secure mode run-time\nenvironment.\n\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : pbd\n3. Macintosh file type code : \nIdentifies a PowerBuiler release 7.5 run-time library (.PBD).  This\nlibrary contains class definitions and p-code suitable for execution\nby the PowerBuilder release 7.5 secure mode run-time environment.\nThis is incompatible with PowerBuilder version 7.0\n\n\nPerson to contact for further information :\n\n1. Name : Reed Shilts\n2. E-mail : reed.shilts&sybase.com\n\nIntended usage : Limited Use \n\n\nAuthor/Change controller : Reed Shilts - PowerBuilder Kernel Group\n\n\n"
+  },
+  "references": []
+}

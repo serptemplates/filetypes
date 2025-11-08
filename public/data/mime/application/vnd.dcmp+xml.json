@@ -1,0 +1,46 @@
+{
+  "type": "application",
+  "subtype": "vnd.dcmp+xml",
+  "full": "application/vnd.dcmp+xml",
+  "extensions": [
+    "dcmp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.dcmp+xml",
+    "encoding_considerations": "Security considerations: The data is in XML, but it is intended to be parsed by applications compliant with the DCMP format specification. In that specification there is no support for executable content. The format is intended to contain detailed information on construction products and no personal information except a contact point at the issuer's organization, i.e. there is no need for privacy or integrity services. The detailed information about a construction product might be confidential, but that is managed outside the data format, i.e. who gets access to the data set.\n\nInteroperability considerations: The usefulness of these XML-based datasets is directly dependent on its interoperability and therefore the specification is rather strict regarding data formats. To mitigate character set problems, the use of UTF-8, and careful attention to the guidelines set out in RFC 7303 Section 3, are strongly encouraged.\n\nPublished specification: The specification, including an XSD, is published here: https://dcmp.dev/\n\nApplications which use this media: It is intended to be used by anyone that has a need to communicate this type of information about a construction product.\n\nFragment identifier considerations: As described in RFC 7303 Section 5.\n\nRestrictions on usage: No restrictions.",
+    "security_considerations": "Interoperability considerations: The usefulness of these XML-based datasets is directly dependent on its interoperability and therefore the specification is rather strict regarding data formats. To mitigate character set problems, the use of UTF-8, and careful attention to the guidelines set out in RFC 7303 Section 3, are strongly encouraged.\n\nPublished specification: The specification, including an XSD, is published here: https://dcmp.dev/\n\nApplications which use this media: It is intended to be used by anyone that has a need to communicate this type of information about a construction product.\n\nFragment identifier considerations: As described in RFC 7303 Section 5.\n\nRestrictions on usage: No restrictions.",
+    "interoperability_considerations": "Published specification: The specification, including an XSD, is published here: https://dcmp.dev/\n\nApplications which use this media: It is intended to be used by anyone that has a need to communicate this type of information about a construction product.\n\nFragment identifier considerations: As described in RFC 7303 Section 5.\n\nRestrictions on usage: No restrictions.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .dcmp\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-12-23, last updated 2024-12-23)\n\nMedia type name: application\n\nMedia subtype name: vnd.dcmp+xml\n\nRequired parameters: N/A\n\nOptional parameters: charset\n\nEncoding considerations: binary\n\nSecurity considerations: The data is in XML, but it is intended to be parsed by applications compliant with the DCMP format specification. In that specification there is no support for executable content. The format is intended to contain detailed information on construction products and no personal information except a contact point at the issuer's organization, i.e. there is no need for privacy or integrity services. The detailed information about a construction product might be confidential, but that is managed outside the data format, i.e. who gets access to the data set.\n\nInteroperability considerations: The usefulness of these XML-based datasets is directly dependent on its interoperability and therefore the specification is rather strict regarding data formats. To mitigate character set problems, the use of UTF-8, and careful attention to the guidelines set out in RFC 7303 Section 3, are strongly encouraged.\n\nPublished specification: The specification, including an XSD, is published here: https://dcmp.dev/\n\nApplications which use this media: It is intended to be used by anyone that has a need to communicate this type of information about a construction product.\n\nFragment identifier considerations: As described in RFC 7303 Section 5.\n\nRestrictions on usage: No restrictions.\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .dcmp\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n1. Name: Jan Boström\n2. Email: jan&sundahus.se\n\nIntended usage: COMMON\n\nAuthor/Change controller: The DCMP Initiative <https://materialpass.org/>"
+  },
+  "references": [
+    {
+      "title": "RFC 7303",
+      "url": "https://www.rfc-editor.org/rfc/rfc7303.html",
+      "kind": "RFC"
+    }
+  ]
+}

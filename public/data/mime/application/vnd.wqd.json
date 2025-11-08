@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.wqd",
+  "full": "application/vnd.wqd",
+  "extensions": [
+    "wqd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wqd",
+    "template_text": "\r\n(last updated 2003-07-09)\r\n\r\nName : Jan Boström\r\n\r\nEmail : jan&sundahus.se\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.wqd\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nThe format does not contain any form of executable code, i.e. there is no way to embed malicious instructions. Although a WQD file only contains data from different surveys, some of that data, depending on the nature of the surveys, might be confidential.\r\n\r\nInteroperability considerations : \r\nNone\r\n\r\nPublished specification : \r\nThe specification is currently not available to the public.\r\n\r\nApplications which use this media : \r\nThe SundaHus WQ application suit, most notably WQD Viewer, which displays results from questionnaire surveys.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : Always starts with: 0x98 0xF0 0x8B 0x5A 0x51 0x44 0x8E 0x32\r\n2. File extension(s) : .wqd\r\n3. Macintosh file type code : None\r\n4. Object Identifiers: None\r\n\r\nPerson to contact for further information :\r\n1. Name : Jan Boström\r\n2. Email : jan&sundahus.se\r\n\r\nIntended usage : Limited Use \r\nThe format is intended to be used by SundaHus i Linköping AB, its partners and customers.\r\n\r\nAuthor/Change controller : \r\nSundaHus i Linköping AB, \r\nTeknikringen 1 E, \r\nSE-583 30 Linköping, Sweden \r\n\r\n[]\r\n"
+  },
+  "references": []
+}

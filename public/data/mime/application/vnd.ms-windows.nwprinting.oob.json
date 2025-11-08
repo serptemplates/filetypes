@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.ms-windows.nwprinting.oob",
+  "full": "application/vnd.ms-windows.nwprinting.oob",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ms-windows.nwprinting.oob",
+    "template_text": "(registered 2015-12-21, last updated 2015-12-21)\n\nName : Justin Hutchings\n\nEmail : justhu&microsoft.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ms-windows.nwprinting.oob\n\nRequired parameters : N/A\n\nOptional parameters : \nN/A\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nThe content of the media type consists of a network path to a printer which has been shared from a Windows print server and contains no executable content. The media type is used as a record in an NFC Handover Select message in support of a \"Tap to Setup\" use case. The media type does not itself provide confidentiality or integrity protection. \n\nInteroperability considerations : \nN/A\n\nPublished specification : \nhttps://msdn.microsoft.com/en-us/library/windows/hardware/dn481542(v=vs.85).aspx\n\nApplications which use this media : \nWindows 10, Windows 8.1\n\nFragment identifier considerations :\nN/A\n\nRestrictions on usage :\nN/A\n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : N/A\n3. File extension(s) : N/A\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Justin Hutchings\n2. Email : justhu&microsoft.com\n\nIntended usage : Common\nThis media type is used to describe a UNC path to a network printer and is suitable to encode into an NFC Handover Select message. \n\nAuthor/Change controller : Justin Hutchings"
+  },
+  "references": []
+}

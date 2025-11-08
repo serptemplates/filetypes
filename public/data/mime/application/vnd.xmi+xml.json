@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.xmi+xml",
+  "full": "application/vnd.xmi+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.xmi+xml",
+    "template_text": "(last updated 2008-05-01)\n\nName : Fred Waskiewicz\n\nEmail : wask&omg.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.xmi+xml\n\nRequired parameters : none\n\nOptional parameters :\ncharset\n\nThis parameter has identical semantics to the charset parameter of the\napplication/xml media type as specified in [RFC3023].\n\n\n\nEncoding considerations : 8bit\n\n\nSecurity considerations :\nSeveral XMI instructions may cause arbitrary URIs to be dereferenced. In this\ncase, the security issues of [RFC3986], section 7, should be considered.\n\nIn addition, because of the extensibility features for XMI, it is possible that\n\"application/xmi+xml\" may describe content that has security implications beyond\nthose described here. However, if the processor follows only the normative\nsemantics of this specification, this content will be ignored. Only in the case\nwhere the processor recognizes and processes the additional content, or where\nfurther processing of that content is dispatched to other processors, would\nsecurity issues potentially arise. And in that case, they would fall outside the\ndomain of this registration document.\n\nThis media type DOES NOT contain active or executable content.\n\nThis media type is application dependent. Any privacy or integrity\nservices must be provided by the application.\n\n\nInteroperability considerations :\nThis specification describes processing semantics that dictate behavior that\nmust be followed when dealing with, among other things, unrecognized elements.\n\nBecause XMI is extensible, conformant \"application/xmi+xml\" processors can\nexpect that content received is well-formed XML, but it cannot be guaranteed\nthat the content is valid XMI or that the processor will recognize all of the\nelements and attributes in the document.\n\n\nPublished specification :\nThis media type registration is for XMI stylesheet modules as described by the\nXMI 2.1.1 specification, which is located at http://www.omg.org/spec/XMI/2.1.1/.\nIt is also appropriate to use this media type with earlier and later versions of\nthe XMI language.\n\n\n\nApplications which use this media :\nThere is no experimental, vendor specific, or personal tree predecessor to\n\"application/xmi+xml\", reflecting the fact that no applications currently\nrecognize it. This new type is being registered in order to allow for the\nexpected deployment of XMI 2.1.1 as a first class XML application.\n\n\nAdditional information :\n\n1. Magic number(s) : There is no single initial octet sequence that is always pre\n2. File extension(s) : XMI documents are most often identified with the extensions\n3. Macintosh file type code : TEXT\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Fred Waskiewicz\n2. Email : liaison&omg.org\n\nIntended usage : Common\n\n\nAuthor/Change controller : The XMI specification is a work product of the OMG\nPlatform Technical Committee. The OMG has change control over these specifications.\n\n(file created 2008-05-01)"
+  },
+  "references": []
+}

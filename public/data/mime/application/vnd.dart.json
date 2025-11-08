@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.dart",
+  "full": "application/vnd.dart",
+  "extensions": [
+    "dart"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.dart",
+    "template_text": "(last updated 2011-12-14)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.dart\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : 8bit\n\nSecurity considerations :\nThe media type doesn't provide any sort of internal integrity or\nconfidentiality protection. If these services are needed they must be\nlayered on top of the content. In particular, clients that receive this\nmime type may execute the enclosed code, which can potentially access\narbitrary objects. It is therefore the responsibility of the client to\nimplement appropriate security policies, which are outside the scope of\nthe Dart language. The Isolates document on dartlang.org discusses the\nDart security model.\n\nInteroperability considerations :\n\n\nPublished specification :\nhttp://www.dartlang.org/docs/spec/index.html\n\nApplications which use this media :\n\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .dart\n3. Macintosh file type code : TEXT\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Anders Sandholm\n2. Email : sandholm&google.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : Dart Project, dartlang.org\n\n(file created 2011-12-14)"
+  },
+  "references": []
+}

@@ -1,0 +1,42 @@
+{
+  "type": "video",
+  "subtype": "matroska-3d",
+  "full": "video/matroska-3d",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/matroska-3d",
+    "type_name": "video",
+    "subtype_name": "matroska-3d",
+    "encoding_considerations": "Security considerations: See Section 26 of RFC9559.\n\nInteroperability considerations: Due to the extensibility of Matroska, it is possible to encounter files with unknown but valid EBML Elements. Readers should be ready to handle this case. The fixed byte order, octet boundaries and UTF-8 usage allow for broad interoparability.\n\nPublished specification: RFC9559\n\nApplications that use this media type: FFmpeg, VLC, ...\n\nFragment identifier considerations: N/A",
+    "security_considerations": "Interoperability considerations: Due to the extensibility of Matroska, it is possible to encounter files with unknown but valid EBML Elements. Readers should be ready to handle this case. The fixed byte order, octet boundaries and UTF-8 usage allow for broad interoparability.\n\nPublished specification: RFC9559\n\nApplications that use this media type: FFmpeg, VLC, ...\n\nFragment identifier considerations: N/A",
+    "interoperability_considerations": "Published specification: RFC9559\n\nApplications that use this media type: FFmpeg, VLC, ...\n\nFragment identifier considerations: N/A",
+    "applications": "Fragment identifier considerations: N/A",
+    "additional_information": "Deprecated alias names for this type: video/x-matroska-3d\n   Magic number(s): N/A\n   File extension(s): mk3d\n   Macintosh file type code(s): N/A\n\nPerson & email address to contact for further information: IETF CELLAR WG cellar&ietf.org\n\nIntended usage: COMMON\n\nRestrictions on usage: None\n\nAuthor: IETF CELLAR WG\n\nChange controller: IETF",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "Type name: video\n\nSubtype name: matroska-3d\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: as per RFC9559 and RFC8794\n\nSecurity considerations: See Section 26 of RFC9559.\n\nInteroperability considerations: Due to the extensibility of Matroska, it is possible to encounter files with unknown but valid EBML Elements. Readers should be ready to handle this case. The fixed byte order, octet boundaries and UTF-8 usage allow for broad interoparability.\n\nPublished specification: RFC9559\n\nApplications that use this media type: FFmpeg, VLC, ...\n\nFragment identifier considerations: N/A\n\nAdditional information:\n\n   Deprecated alias names for this type: video/x-matroska-3d\n   Magic number(s): N/A\n   File extension(s): mk3d\n   Macintosh file type code(s): N/A\n\nPerson & email address to contact for further information: IETF CELLAR WG cellar&ietf.org\n\nIntended usage: COMMON\n\nRestrictions on usage: None\n\nAuthor: IETF CELLAR WG\n\nChange controller: IETF"
+  },
+  "references": []
+}

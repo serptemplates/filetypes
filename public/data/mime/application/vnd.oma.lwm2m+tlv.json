@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.lwm2m+tlv",
+  "full": "application/vnd.oma.lwm2m+tlv",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.lwm2m+tlv",
+    "type_name": "application",
+    "subtype_name": "vnd.oma.lwm2m+tlv",
+    "encoding_considerations": "Security considerations: OMA LWM2M data is passive, meaning it does not contain executable or active content which may represent a security threat. The OMA LWM2M TLV format does not contain fields which are confidential. The usage of the LWM2M TLV format may be vulnerable to attacks modifying or spoofing the content of this format. The OMA LWM2M protocol uses source authentication and integrity protection.\n\nThis media type inherits the security issues associated with the TLV format.\n\nInteroperability considerations: This content type carries OMA LWM2M data model serialization within the scope of the OMA LWM2M enabler. The OMA LWM2M enabler specification includes static conformance requirements for this content.\n\nPublished specification: OMA LWM2M 1.0 Technical Specification – especially section 6.3.3. Available from http://www.openmobilealliance.org\n\nApplications which use this media type: OMA LWM2M\n\nFragment identifier considerations: none",
+    "security_considerations": "This media type inherits the security issues associated with the TLV format.\n\nInteroperability considerations: This content type carries OMA LWM2M data model serialization within the scope of the OMA LWM2M enabler. The OMA LWM2M enabler specification includes static conformance requirements for this content.\n\nPublished specification: OMA LWM2M 1.0 Technical Specification – especially section 6.3.3. Available from http://www.openmobilealliance.org\n\nApplications which use this media type: OMA LWM2M\n\nFragment identifier considerations: none",
+    "interoperability_considerations": "Published specification: OMA LWM2M 1.0 Technical Specification – especially section 6.3.3. Available from http://www.openmobilealliance.org\n\nApplications which use this media type: OMA LWM2M\n\nFragment identifier considerations: none",
+    "additional_information": "Deprecated alias names for this type: none\n\nMagic number(s): none\n\nFile extension(s): none\n\nMacintosh File Type Code(s): none\n\nIntended usage: Limited use. Only for usage with OMA LWM2M, which meet the semantics given in the mentioned specification.\n\nRestriction on usage: no",
+    "intended_usage": "limited use. only for usage with oma lwm2m, which meet the semantics given in the mentioned specification",
+    "restrictions_on_usage": "no",
+    "template_text": "(registered 2016-06-20, last updated 2016-06-20)\n\nType name: application \n\nSubtype name: vnd.oma.lwm2m+tlv\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: binary\n\nSecurity considerations: OMA LWM2M data is passive, meaning it does not contain executable or active content which may represent a security threat. The OMA LWM2M TLV format does not contain fields which are confidential. The usage of the LWM2M TLV format may be vulnerable to attacks modifying or spoofing the content of this format. The OMA LWM2M protocol uses source authentication and integrity protection.\n\nThis media type inherits the security issues associated with the TLV format.\n\nInteroperability considerations: This content type carries OMA LWM2M data model serialization within the scope of the OMA LWM2M enabler. The OMA LWM2M enabler specification includes static conformance requirements for this content.\n\nPublished specification: OMA LWM2M 1.0 Technical Specification – especially section 6.3.3. Available from http://www.openmobilealliance.org\n\nApplications which use this media type: OMA LWM2M\n\nFragment identifier considerations: none\n\nAdditional information:\n\nDeprecated alias names for this type: none\n\nMagic number(s): none\n\nFile extension(s): none\n\nMacintosh File Type Code(s): none\n\nIntended usage: Limited use. Only for usage with OMA LWM2M, which meet the semantics given in the mentioned specification.\n\nRestriction on usage: no\n\nPerson & email address to contact for further information:\n\nJohn Mudge\nhelpdesk&omaorg.org\n\nAuthor/Change controller:\n\nOpen Mobile Naming Authority (OMNA)\nOMA-OMNA&mail.openmobilealliance.org\n\nProvisional registration (standards tree only): N/A"
+  },
+  "references": []
+}

@@ -1,0 +1,40 @@
+{
+  "type": "text",
+  "subtype": "markdown",
+  "full": "text/markdown",
+  "extensions": [
+    "md",
+    "markdown"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/markdown",
+    "interoperability_considerations": "Markdown variations (some might say \"innovations\") are designed to\n  be broadly compatible with humans (\"humane\"), but not necessarily\n  with each other. Therefore, syntax in one Markdown derivative may\n  be ignored or treated differently in another derivative. The\n  overall effect is a general degradation of the output that\n  increases with the quantity of variant-specific Markdown used in\n  the text. When it is desirable to reflect the author's intent in\n  the output, stick with the variant identified in the variant\n  parameter, i.e., receivers SHOULD only accept Markdown variants\n  that they explicitly know about, and senders SHOULD avoid use of\n  variants that intended recipients are not known to understand.\n\nPublished specification: RFC7763; [MDSYNTAX].",
+    "applications": "Markdown conversion tools, Markdown WYSIWYG editors, and plain text\n  editors and viewers; markup processor targets indirectly use\n  Markdown (e.g., web browsers for Markdown converted to HTML).",
+    "additional_information": "Magic number(s): None\n  File extension(s): .md, .markdown\n  Macintosh file type code(s):\n    TEXT. A uniform type identifier (UTI) of\n    \"net.daringfireball.markdown\", which conforms to \"public.plain-\n    text\", is RECOMMENDED [MDUTI]. See [MDMTGUID] for other\n    considerations.",
+    "intended_usage": "common",
+    "template_text": "(registered 2014-11-11, updated 2016-03-28; see RFC7763)\n\n Type name: text\n\n Subtype name: markdown\n\n Required parameters:\n\n  charset: Per Section 4.2.1 of [RFC6838], charset is REQUIRED. There\n    is no default value because neither [MDSYNTAX] nor many popular\n    implementations at the time of this registration do either.\n    [MDSYNTAX] clearly describes Markdown as a \"writing format\"; its\n    syntax rules operate on characters (specifically, on punctuation)\n    rather than code points. Many Markdown processors will get along\n    just fine by operating on characters in the US-ASCII repertoire\n    (specifically punctuation), blissfully oblivious to other\n    characters or codes.\n\n Optional parameters:\n\n  variant: An optional identifier of the specific Markdown variant\n    that the author intended. The value serves as a \"hint\" to the\n    recipient, meaning that the recipient MAY interpret the Markdown\n    as that variant, but is under no obligation to do so. When\n    omitted, there is no hint; the interpretation is entirely up to\n    the receiver and context. This identifier is plain US-ASCII and\n    case-insensitive. To promote interoperability, identifiers can be\n    registered in the registry defined in Section 6. If a receiver\n    does not recognize the variant identifier, the receiver MAY\n    present the identifier to a user to inform him or her of it.\n\n  Other parameters MAY be included with the media type. The variant\n  SHOULD define the semantics of such other parameters. Additionally,\n  the variant MAY be registered under another media type; this\n  text/markdown registration does not preclude other registrations.\n\n Encoding considerations:\n\n  Markdown content is plain text content; any octet sequence is valid\n  as long as it conforms to the character codes of the charset\n  parameter. See [RFC2046]. Markup characters in [MDSYNTAX] are\n  limited to printable US-ASCII; however, other variants can define\n  markup characters outside this range (including control characters\n  such as NUL and characters encoded in multiple octets).\n\n Security considerations:\n\n  Markdown interpreted as plain text is relatively harmless. A text\n  editor need only display the text. The editor SHOULD take care to\n  handle control characters appropriately, and to limit the effect of\n  the Markdown to the text editing area itself; malicious Unicode-\n  based Markdown could, for example, surreptitiously change the\n  directionality of the text. An editor for normal text would already\n  take these control characters into consideration, however.\n\n  Markdown interpreted as a precursor to other formats, such as HTML,\n  carries all of the security considerations as the target formats.\n  For example, HTML can contain instructions to execute scripts,\n  redirect the user to other webpages, download remote content, and\n  upload personally identifiable information. Markdown also can\n  contain islands of formal markup, such as HTML. These islands of\n  formal markup may be passed as-is, transformed, or ignored (perhaps\n  because the islands are conditional or incompatible) when the\n  Markdown is processed. Since Markdown may have different\n  interpretations depending on the tool and the environment, a better\n  approach is to analyze (and sanitize or block) the output markup,\n  rather than attempting to analyze the Markdown.\n\nInteroperability considerations:\n\n  Markdown variations (some might say \"innovations\") are designed to\n  be broadly compatible with humans (\"humane\"), but not necessarily\n  with each other. Therefore, syntax in one Markdown derivative may\n  be ignored or treated differently in another derivative. The\n  overall effect is a general degradation of the output that\n  increases with the quantity of variant-specific Markdown used in\n  the text. When it is desirable to reflect the author's intent in\n  the output, stick with the variant identified in the variant\n  parameter, i.e., receivers SHOULD only accept Markdown variants\n  that they explicitly know about, and senders SHOULD avoid use of\n  variants that intended recipients are not known to understand.\n\nPublished specification: RFC7763; [MDSYNTAX].\n\nApplications that use this media type:\n\n  Markdown conversion tools, Markdown WYSIWYG editors, and plain text\n  editors and viewers; markup processor targets indirectly use\n  Markdown (e.g., web browsers for Markdown converted to HTML).\n\nFragment identifier considerations:\n\n  See Section 3.\n\nAdditional information:\n\n  Magic number(s): None\n  File extension(s): .md, .markdown\n  Macintosh file type code(s):\n    TEXT. A uniform type identifier (UTI) of\n    \"net.daringfireball.markdown\", which conforms to \"public.plain-\n    text\", is RECOMMENDED [MDUTI]. See [MDMTGUID] for other\n    considerations.\n\nPerson & email address to contact for further information:\n\n  Sean Leonard <dev+ietf&seantek.com>\n\nRestrictions on usage: None.\n\nAuthor/Change controller: Sean Leonard <dev+ietf&seantek.com>\n\nIntended usage: COMMON\n\nProvisional registration? No\n\nImplementations SHOULD record the value of the variant parameter (and\nother parameters if defined by the variant) along with the Markdown\ncontent when the content leaves the domain of Internet media type-\ncapable formats. Strategies for doing so are discussed in [MDMTGUID].\n\nThe Content-Disposition header (particularly the preview-type\nparameter) can be used with Markdown content. See Section 4 of \nRFC7763."
+  },
+  "references": []
+}

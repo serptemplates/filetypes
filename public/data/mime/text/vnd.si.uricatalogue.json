@@ -1,0 +1,37 @@
+{
+  "type": "text",
+  "subtype": "vnd.si.uricatalogue",
+  "full": "text/vnd.si.uricatalogue",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.si.uricatalogue",
+    "encoding_considerations": "7bit\nSee section 5.4 of SSD3",
+    "security_considerations": "As a structured ASCII-text document, there is little to no potential for\nURI-Catalogue to be able to cause harm directly or indirectly to a system.\nThe only currently known possibility is that an implementation or user\nmay try to follow a malicious URI, this eventuality cannot be prevented\nby any mechanism in this specification, and it is entirely up to the\nimplementation or user whether to follow suspicious URIs. It is conceivable\nthat some kind of protection might be required to protect a file of the\nURI-Catalogue format, such as encryption, however this must be done via\nsome external mechanism, as this specification makes no attempt at providing\na solution.\nURI-Catalogue makes no attempt to ensure that its own data is transferred\ncorrectly, and this is up to the application (or transport layer\nprotocols) to achieve, though, it can be considered a general rule that\nif forbidden characters are present in the\nURI-Catalogue, that corruption occurred during transit.",
+    "additional_information": "1. Magic number(s): N/A\n2. File extension(s): uric\n3. Macintosh file type code: N/A\n4. Object Identifiers: N/A",
+    "intended_usage": "obsolete",
+    "template_text": "(last updated 2012-09-19; obsoleted)\n\nName:\nNicholas Parks Young\n\nEmail:\nnick&shadyindustries.com\n\nMIME media type name:\nText\n\nMIME subtype name:\nVendor Tree - vnd.si.uricatalogue\n\nRequired parameters:\nVersion\nThis parameter specifies the version number\nof the URI-Catalogue format being used in the\ndocument. The value must be a positive decimal\nfloat; two integers separated by a period.\nThis attribute is required because there is no\nway of specifying this information inside the\ndocument itself.\n\nOptional parameters :\nN/A\nNOTE: a 'charset' parameter would be redundant, since\nURI-Catalog 1.0 can only use US-ASCII, and so is not\nallowed.\n\nEncoding considerations:\n7bit\nSee section 5.4 of SSD3\n\nSecurity considerations:\nAs a structured ASCII-text document, there is little to no potential for\nURI-Catalogue to be able to cause harm directly or indirectly to a system.\nThe only currently known possibility is that an implementation or user\nmay try to follow a malicious URI, this eventuality cannot be prevented\nby any mechanism in this specification, and it is entirely up to the\nimplementation or user whether to follow suspicious URIs. It is conceivable\nthat some kind of protection might be required to protect a file of the\nURI-Catalogue format, such as encryption, however this must be done via\nsome external mechanism, as this specification makes no attempt at providing\na solution.\nURI-Catalogue makes no attempt to ensure that its own data is transferred\ncorrectly, and this is up to the application (or transport layer\nprotocols) to achieve, though, it can be considered a general rule that\nif forbidden characters are present in the\nURI-Catalogue, that corruption occurred during transit.\n\nInteroperability considerations:\n\nPublished specification:\n\nApplications which use this media:\nN/A\n\nAdditional information:\n1. Magic number(s): N/A\n2. File extension(s): uric\n3. Macintosh file type code: N/A\n4. Object Identifiers: N/A\n\nPerson to contact for further information :\n1. Name: Nicholas Parks Young\n\n2. Email: nick&shadyindustries.com\nIntended usage: OBSOLETE\n\nAuthor/Change controller : Nicholas Parks Young\n<admin&shadyindustries.com>\n\n(file created 2007-12-03)"
+  },
+  "references": []
+}

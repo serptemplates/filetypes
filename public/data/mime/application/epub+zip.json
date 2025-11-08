@@ -1,0 +1,47 @@
+{
+  "type": "application",
+  "subtype": "epub+zip",
+  "full": "application/epub+zip",
+  "extensions": [
+    "epub"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/epub+zip",
+    "encoding_considerations": "encoded in the application/zip media type.\n\nSecurity considerations: All processors that read OCF ZIP container \n   files should rigorously check the size and validity of data \n   retrieved.\n\n   In addition, because of the various content types that can be \n   embedded in OCF ZIP container files, application/epub+zip may \n   describe content that poses security implications beyond those \n   noted here. However, only in cases where the processor recognizes \n   and processes the additional content, or where further processing \n   of that content is dispatched to other processors, would security \n   issues potentially arise. In such cases, matters of security would \n   fall outside the domain of this registration document.\n\nSecurity considerations that apply to application/zip also apply to \n   OCF ZIP container files.\n\nInteroperability considerations: None.\n\nPublished specification: This media type registration is for the EPUB \n   Open Container Format (OCF), as described by the EPUB 3 \n   specification located at https://www.w3.org/TR/epub-33/.\n\n   The EPUB 3 specification supersedes both RFC 4839 and the Open \n   Container Format 2.0.1 specification, which is located at \n   http://idpf.org/epub/20/spec/OCF_2.0.1_draft.doc, and which also \n   uses the application/epub+zip media type.\n\nApplications that use this media type: This media type is in wide use \n   for the distribution of ebooks in the EPUB format.",
+    "security_considerations": "files should rigorously check the size and validity of data \n   retrieved.\n\n   In addition, because of the various content types that can be \n   embedded in OCF ZIP container files, application/epub+zip may \n   describe content that poses security implications beyond those \n   noted here. However, only in cases where the processor recognizes \n   and processes the additional content, or where further processing \n   of that content is dispatched to other processors, would security \n   issues potentially arise. In such cases, matters of security would \n   fall outside the domain of this registration document.\n\nSecurity considerations that apply to application/zip also apply to \n   OCF ZIP container files.\n\nInteroperability considerations: None.\n\nPublished specification: This media type registration is for the EPUB \n   Open Container Format (OCF), as described by the EPUB 3 \n   specification located at https://www.w3.org/TR/epub-33/.\n\n   The EPUB 3 specification supersedes both RFC 4839 and the Open \n   Container Format 2.0.1 specification, which is located at \n   http://idpf.org/epub/20/spec/OCF_2.0.1_draft.doc, and which also \n   uses the application/epub+zip media type.\n\nApplications that use this media type: This media type is in wide use \n   for the distribution of ebooks in the EPUB format.",
+    "interoperability_considerations": "Published specification: This media type registration is for the EPUB \n   Open Container Format (OCF), as described by the EPUB 3 \n   specification located at https://www.w3.org/TR/epub-33/.\n\n   The EPUB 3 specification supersedes both RFC 4839 and the Open \n   Container Format 2.0.1 specification, which is located at \n   http://idpf.org/epub/20/spec/OCF_2.0.1_draft.doc, and which also \n   uses the application/epub+zip media type.\n\nApplications that use this media type: This media type is in wide use \n   for the distribution of ebooks in the EPUB format.",
+    "applications": "for the distribution of ebooks in the EPUB format.",
+    "additional_information": "Magic number(s): \n      0: PK 0x03 0x04, 30: mimetype, 38: application/epub+zip\n\n   File extension(s): OCF ZIP container files are most often \n      identified with the extension .epub.\n\n   Macintosh file type code(s): ZIP\n\nFragment identifiers: EPUB Canonical Fragment Identifiers are custom \n   fragment identifiers defined for EPUB Publications. They may be \n   used to refer to an arbitrary content within any publication \n   resource defined for the publication. These identifiers are \n   defined at https://idpf.org/epub/linking/cfi/.",
+    "intended_usage": "common",
+    "template_text": "(registered 2014-11-06, last updated 2025-06-26)\n\nMIME media type name: application\n\nMIME subtype name: epub+zip\n\nRequired parameters: None.\n\nOptional parameters: None.\n\nEncoding considerations: OCF ZIP container files are binary files \n   encoded in the application/zip media type.\n\nSecurity considerations: All processors that read OCF ZIP container \n   files should rigorously check the size and validity of data \n   retrieved.\n\n   In addition, because of the various content types that can be \n   embedded in OCF ZIP container files, application/epub+zip may \n   describe content that poses security implications beyond those \n   noted here. However, only in cases where the processor recognizes \n   and processes the additional content, or where further processing \n   of that content is dispatched to other processors, would security \n   issues potentially arise. In such cases, matters of security would \n   fall outside the domain of this registration document.\n\nSecurity considerations that apply to application/zip also apply to \n   OCF ZIP container files.\n\nInteroperability considerations: None.\n\nPublished specification: This media type registration is for the EPUB \n   Open Container Format (OCF), as described by the EPUB 3 \n   specification located at https://www.w3.org/TR/epub-33/.\n\n   The EPUB 3 specification supersedes both RFC 4839 and the Open \n   Container Format 2.0.1 specification, which is located at \n   http://idpf.org/epub/20/spec/OCF_2.0.1_draft.doc, and which also \n   uses the application/epub+zip media type.\n\nApplications that use this media type: This media type is in wide use \n   for the distribution of ebooks in the EPUB format.\n\nAdditional information:\n\n   Magic number(s): \n      0: PK 0x03 0x04, 30: mimetype, 38: application/epub+zip\n\n   File extension(s): OCF ZIP container files are most often \n      identified with the extension .epub.\n\n   Macintosh file type code(s): ZIP\n\nFragment identifiers: EPUB Canonical Fragment Identifiers are custom \n   fragment identifiers defined for EPUB Publications. They may be \n   used to refer to an arbitrary content within any publication \n   resource defined for the publication. These identifiers are \n   defined at https://idpf.org/epub/linking/cfi/.\n\nPerson & email address to contact for further information:\n   EPUB 3 Working Group (epub-maintenance&w3.org)\n\nIntended usage: COMMON\n\nAuthor/change controller: World Wide Web Consortium (W3C)"
+  },
+  "references": [
+    {
+      "title": "RFC 4839",
+      "url": "https://www.rfc-editor.org/rfc/rfc4839.html",
+      "kind": "RFC"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "audio",
+  "subtype": "dls",
+  "full": "audio/dls",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/dls",
+    "type_name": "audio",
+    "subtype_name": "dls",
+    "encoding_considerations": "be transmitted in a suitable\n\t\t\t\t\t\t\t\t  encoding without CR/LF\n\t\t\t\t\t\t\t\t  conversion, 7-bit stripping\n\t\t\t\t\t\t\t\t  etc.; base64 [RFC3548] is a\n\t\t\t\t\t\t\t\t  suitable encoding.\n\nSecurity considerations:           see the security considerations\n\t\t\t\t\t\t\t\t  in Section 2 of RFC 4613.\n\nInteroperability considerations:   This media type is for\n\t\t\t\t\t\t\t\t  consumption by a MIDI player\n\t\t\t\t\t\t\t\t  capable of utilizing\n\t\t\t\t\t\t\t\t  downloadable sounds for its\n\t\t\t\t\t\t\t\t  synthesizers.  A general-purpose\n\t\t\t\t\t\t\t\t  audio player will not be capable\n\t\t\t\t\t\t\t\t  of utilizing the audio within\n\t\t\t\t\t\t\t\t  the format without explicit\n\t\t\t\t\t\t\t\t  support of the format.\n\nPublished specification:           Downloadable Sounds Level 1.1b\n\t\t\t\t\t\t\t\t  [DLS1], Downloadable Sounds\n\t\t\t\t\t\t\t\t  Level 2.1 [DLS2], and Mobile\n\t\t\t\t\t\t\t\t  Downloadable Sounds [MDLS].  MMA\n\t\t\t\t\t\t\t\t  specifications can be ordered\n\t\t\t\t\t\t\t\t  from the MMA web site,\n\t\t\t\t\t\t\t\t  www.midi.org.\n\nApplications that use this media type: Multi-media",
+    "security_considerations": "in Section 2 of RFC 4613.\n\nInteroperability considerations:   This media type is for\n\t\t\t\t\t\t\t\t  consumption by a MIDI player\n\t\t\t\t\t\t\t\t  capable of utilizing\n\t\t\t\t\t\t\t\t  downloadable sounds for its\n\t\t\t\t\t\t\t\t  synthesizers.  A general-purpose\n\t\t\t\t\t\t\t\t  audio player will not be capable\n\t\t\t\t\t\t\t\t  of utilizing the audio within\n\t\t\t\t\t\t\t\t  the format without explicit\n\t\t\t\t\t\t\t\t  support of the format.\n\nPublished specification:           Downloadable Sounds Level 1.1b\n\t\t\t\t\t\t\t\t  [DLS1], Downloadable Sounds\n\t\t\t\t\t\t\t\t  Level 2.1 [DLS2], and Mobile\n\t\t\t\t\t\t\t\t  Downloadable Sounds [MDLS].  MMA\n\t\t\t\t\t\t\t\t  specifications can be ordered\n\t\t\t\t\t\t\t\t  from the MMA web site,\n\t\t\t\t\t\t\t\t  www.midi.org.\n\nApplications that use this media type: Multi-media",
+    "interoperability_considerations": "consumption by a MIDI player\n\t\t\t\t\t\t\t\t  capable of utilizing\n\t\t\t\t\t\t\t\t  downloadable sounds for its\n\t\t\t\t\t\t\t\t  synthesizers.  A general-purpose\n\t\t\t\t\t\t\t\t  audio player will not be capable\n\t\t\t\t\t\t\t\t  of utilizing the audio within\n\t\t\t\t\t\t\t\t  the format without explicit\n\t\t\t\t\t\t\t\t  support of the format.\n\nPublished specification:           Downloadable Sounds Level 1.1b\n\t\t\t\t\t\t\t\t  [DLS1], Downloadable Sounds\n\t\t\t\t\t\t\t\t  Level 2.1 [DLS2], and Mobile\n\t\t\t\t\t\t\t\t  Downloadable Sounds [MDLS].  MMA\n\t\t\t\t\t\t\t\t  specifications can be ordered\n\t\t\t\t\t\t\t\t  from the MMA web site,\n\t\t\t\t\t\t\t\t  www.midi.org.\n\nApplications that use this media type: Multi-media",
+    "additional_information": "Magic number(s):                The ninth to twelfth bytes of\n\t\t\t\t\t\t\t\t  the file must equal (in\n\t\t\t\t\t\t\t\t  hexadecimal notation) 44, 4c,\n\t\t\t\t\t\t\t\t  53, and 20, respectively.\n  File extension(s):              .dls is declared at\n\t\t\t\t\t\t\t\t  http://www.nist.gov/nics",
+    "intended_usage": "common",
+    "change_controller": "MIDI Manufacturers Association",
+    "template_text": "(RFC 4613 published September 2006, subtype last updated September 2006)\n\nType name:                         audio\n\nSubtype name:                      dls\n\nRequired parameters:               None\n\nOptional parameters:               'dls-type'\n\t\t\t\t\t\t\t\t  A comma-separated list of the\n\t\t\t\t\t\t\t\t  dls types (one or more) that the\n\t\t\t\t\t\t\t\t  file content conforms to.  The\n\t\t\t\t\t\t\t\t  following values are specified:\n\t\t\t\t\t\t\t\t  0, 1, and 2 signify Downloadable\n\t\t\t\t\t\t\t\t  Sounds Level 1.1b content,\n\t\t\t\t\t\t\t\t  Downloadable Sounds Level 2.1\n\t\t\t\t\t\t\t\t  content, and Mobile Downloadable\n\t\t\t\t\t\t\t\t  Sound content, respectively.  All\n\t\t\t\t\t\t\t\t  types that the content conforms\n\t\t\t\t\t\t\t\t  to should be indicated.  Further\n\t\t\t\t\t\t\t\t  values (integers) may be\n\t\t\t\t\t\t\t\t  specified in the future, and any\n\t\t\t\t\t\t\t\t  unknown values shall be ignored.\n\t\t\t\t\t\t\t\t  If the parameter is not\n\t\t\t\t\t\t\t\t  specified, it corresponds to a\n\t\t\t\t\t\t\t\t  value equal to 0; i.e., the\n\t\t\t\t\t\t\t\t  content conforms to Downloadable\n\t\t\t\t\t\t\t\t  Sound level 1.1b.\n\nEncoding considerations:           DLS files are binary and should\n\t\t\t\t\t\t\t\t  be transmitted in a suitable\n\t\t\t\t\t\t\t\t  encoding without CR/LF\n\t\t\t\t\t\t\t\t  conversion, 7-bit stripping\n\t\t\t\t\t\t\t\t  etc.; base64 [RFC3548] is a\n\t\t\t\t\t\t\t\t  suitable encoding.\n\nSecurity considerations:           see the security considerations\n\t\t\t\t\t\t\t\t  in Section 2 of RFC 4613.\n\nInteroperability considerations:   This media type is for\n\t\t\t\t\t\t\t\t  consumption by a MIDI player\n\t\t\t\t\t\t\t\t  capable of utilizing\n\t\t\t\t\t\t\t\t  downloadable sounds for its\n\t\t\t\t\t\t\t\t  synthesizers.  A general-purpose\n\t\t\t\t\t\t\t\t  audio player will not be capable\n\t\t\t\t\t\t\t\t  of utilizing the audio within\n\t\t\t\t\t\t\t\t  the format without explicit\n\t\t\t\t\t\t\t\t  support of the format.\n\nPublished specification:           Downloadable Sounds Level 1.1b\n\t\t\t\t\t\t\t\t  [DLS1], Downloadable Sounds\n\t\t\t\t\t\t\t\t  Level 2.1 [DLS2], and Mobile\n\t\t\t\t\t\t\t\t  Downloadable Sounds [MDLS].  MMA\n\t\t\t\t\t\t\t\t  specifications can be ordered\n\t\t\t\t\t\t\t\t  from the MMA web site,\n\t\t\t\t\t\t\t\t  www.midi.org.\n\nApplications that use this media type: Multi-media\n\nAdditional information:\n\n  Magic number(s):                The ninth to twelfth bytes of\n\t\t\t\t\t\t\t\t  the file must equal (in\n\t\t\t\t\t\t\t\t  hexadecimal notation) 44, 4c,\n\t\t\t\t\t\t\t\t  53, and 20, respectively.\n  File extension(s):              .dls is declared at\n\t\t\t\t\t\t\t\t  http://www.nist.gov/nics\n\n\nPerson & email address to contact for further information:\n\t\t\t\t\t\t\t\t  Ulf A. Lindgren,\n\t\t\t\t\t\t\t\t  ulf.a.lindgren&ericsson.com\n\nIntended usage:                    COMMON\n\nRestrictions on usage:             None\n\nAuthor:                            Per Frojdh\n\t\t\t\t\t\t\t\t  Ulf A. Lindgren\n\t\t\t\t\t\t\t\t  Magnus Westerlund\n\nChange controller:                 MIDI Manufacturers Association\n\t\t\t\t\t\t\t\t  http://www.midi.org\n\t\t\t\t\t\t\t\t  info&midi.org\n"
+  },
+  "references": []
+}

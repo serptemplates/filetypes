@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "vnd.fujifilm.fb.jfi+xml",
+  "full": "application/vnd.fujifilm.fb.jfi+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.fujifilm.fb.jfi+xml",
+    "encoding_considerations": "constrained to UTF-8. See [RFC 7303], Section 3.\n\nSecurity considerations: This media type is intended to be processed \n   by MFP and Printer of FUJIFILM Business Innovation Corp.\n\n   It may contain printer definitions as well as server passwords, \n   which could be extracted and executed on the receiver's system. \n   This could compromise the security of the machine.\n\n   This media type may contain private information and does not \n   itself provide privacy protection. Use of SSL/TLS is therefore \n   recommended when transferring this media type.\n\n   Since this media type is XML-based, it inherits the security \n   considerations described in [RFC7303], Section 10.\n\nInteroperability considerations: None\n\nPublished specification: None\n\nApplications which use this media: Applications of FUJIFILM Business \n   Innovation Corp.\n\nFragment identifier considerations: As specified for \n   \"application/xml\" in[RFC7303], Section 5.\n\nRestrictions on usage: None",
+    "security_considerations": "by MFP and Printer of FUJIFILM Business Innovation Corp.\n\n   It may contain printer definitions as well as server passwords, \n   which could be extracted and executed on the receiver's system. \n   This could compromise the security of the machine.\n\n   This media type may contain private information and does not \n   itself provide privacy protection. Use of SSL/TLS is therefore \n   recommended when transferring this media type.\n\n   Since this media type is XML-based, it inherits the security \n   considerations described in [RFC7303], Section 10.\n\nInteroperability considerations: None\n\nPublished specification: None\n\nApplications which use this media: Applications of FUJIFILM Business \n   Innovation Corp.\n\nFragment identifier considerations: As specified for \n   \"application/xml\" in[RFC7303], Section 5.\n\nRestrictions on usage: None",
+    "interoperability_considerations": "Published specification: None\n\nApplications which use this media: Applications of FUJIFILM Business \n   Innovation Corp.\n\nFragment identifier considerations: As specified for \n   \"application/xml\" in[RFC7303], Section 5.\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): xml\n   4. Macintosh file type code: None\n   5. Object Identifiers: None\n\nGeneral Comments: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-04-27, last updated 2021-04-27)\n\nName: Takatomo Wakibayashi\n\nEmail: takatomo.wakibayashi.jt&fujifilm.com\n\nMedia type name: application\n\nMedia subtype name: vnd.fujifilm.fb.jfi+xml\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: Same as for application/xml, except \n   constrained to UTF-8. See [RFC 7303], Section 3.\n\nSecurity considerations: This media type is intended to be processed \n   by MFP and Printer of FUJIFILM Business Innovation Corp.\n\n   It may contain printer definitions as well as server passwords, \n   which could be extracted and executed on the receiver's system. \n   This could compromise the security of the machine.\n\n   This media type may contain private information and does not \n   itself provide privacy protection. Use of SSL/TLS is therefore \n   recommended when transferring this media type.\n\n   Since this media type is XML-based, it inherits the security \n   considerations described in [RFC7303], Section 10.\n\nInteroperability considerations: None\n\nPublished specification: None\n\nApplications which use this media: Applications of FUJIFILM Business \n   Innovation Corp.\n\nFragment identifier considerations: As specified for \n   \"application/xml\" in[RFC7303], Section 5.\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): xml\n   4. Macintosh file type code: None\n   5. Object Identifiers: None\n\nGeneral Comments: None\n\nPerson to contact for further information:\n\n   1. Name: Keitaro Ishida\n   2. Email: keitaro.ishida.yu&fujifilm.com\n\nIntended usage: Common\n\nAuthor/Change controller: \n\n   Name: Keitaro Ishida\n   E-mail Address: keitaro.ishida.yu&fujifilm.com\n"
+  },
+  "references": [
+    {
+      "title": "RFC 7303",
+      "url": "https://www.rfc-editor.org/rfc/rfc7303.html",
+      "kind": "RFC"
+    }
+  ]
+}

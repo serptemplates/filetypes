@@ -1,0 +1,44 @@
+{
+  "type": "audio",
+  "subtype": "t140c",
+  "full": "audio/t140c",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/t140c",
+    "encoding_considerations": "as specified in RFC 4351.\n\nSecurity considerations: See section 8 of RFC 4351.\n\nInteroperability considerations: None\n\nPublished specification: ITU-T T.140 Recommendation.\n                         RFC 4351.",
+    "security_considerations": "Interoperability considerations: None\n\nPublished specification: ITU-T T.140 Recommendation.\n                         RFC 4351.",
+    "interoperability_considerations": "Published specification: ITU-T T.140 Recommendation.\n                         RFC 4351.",
+    "additional_information": "via RTP.\n\n  Magic number(s): None\n  File extension(s): None\n  Macintosh File Type Code(s): None",
+    "intended_usage": "common",
+    "template_text": "(registered by RFC4351)\n\nMIME media type name: audio\n\nMIME subtype name: t140c\n\nRequired parameters:\n  rate: The RTP timestamp clock rate, which is equal to the\n  sampling rate.  This parameter SHOULD have the same value as\n  for any audio codec packets interleaved in the same RTP\n  stream.\n\nOptional parameters:\n  cps: The maximum number of characters that may be received\n  per second.  The default value is 30.\n\nEncoding considerations: T.140 text can be transmitted with RTP\nas specified in RFC 4351.\n\nSecurity considerations: See section 8 of RFC 4351.\n\nInteroperability considerations: None\n\nPublished specification: ITU-T T.140 Recommendation.\n                         RFC 4351.\n\nApplications which use this media type:\n  Text communication systems and text conferencing tools that\n  transmit text associated with audio and within the same RTP\n  session as the audio, such as PSTN gateways that transmit\n  audio and text signals between two PSTN textphone users\n  over an IP network.\n\nAdditional information:  This type is only defined for transfer\n  via RTP.\n\n  Magic number(s): None\n  File extension(s): None\n  Macintosh File Type Code(s): None\n\nPerson & email address to contact for further information:\n  Paul E. Jones\n  E-mail: paulej&packetizer.com\n\nIntended usage: COMMON\n\nAuthor                        / Change controller:\n  Paul E. Jones               | IETF avt WG delegated from the IESG\n  paulej&packetizer.com       |"
+  },
+  "references": [
+    {
+      "title": "RFC 4351",
+      "url": "https://www.rfc-editor.org/rfc/rfc4351.html",
+      "kind": "RFC"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "audio",
+  "subtype": "vnd.cmles.radio-events",
+  "full": "audio/vnd.cmles.radio-events",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.cmles.radio-events",
+    "template_text": "(Last updated November 2005.) \r\n\r\nName : Jean-Philippe Goulet\r\n\r\nEmail : jpgoulet&cmles.com\r\n\r\nMIME media type name : Audio\r\n\r\nMIME subtype name : Vendor Tree - vnd.cmles.radio-events\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : \r\nnone \r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nvnd.cmles.radio-events use the real-time protocol (RTP) as described in rfc3550. vnd.cmles.radio-events will be subject to the same security considerations that were described in rfc3550 (RTP) and any RTP payload specifications such as RTP payload for DTMF digits(rfc2833)\r\n\r\nInteroperability considerations : \r\nThe use of vnd.cmles.radio-events must comply with internal CML Emergency Services documentation. CML Emergency Services reserves the right to make any changes to the vnd.cmles.radio-events specification. \r\n\r\nPublished specification : \r\nNone at this time. Documentation for CML Emergency Services radio events is available to customers and partners. Contact name below. \r\n\r\nApplications which use this media : \r\nAn analog radio to Voice Over IP gateway created by CML Emergency Services. \r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : N/A\r\n2. File extension(s) : N/A\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n\r\nN/A \r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Jean-Philippe Goulet\r\n2. Email : jpgoulet&cmles.com\r\n\r\nIntended usage : Limited Use \r\nCML Emergency Services radio events(cmles.radio-events) are intended to be used to communicate the events of a analog radio. A gateway will interface with the analog radio and will propagate radio events using RTP as described in rfc3550. \r\n\r\nAuthor/Change controller : Jean-Philippe Goulet\r\nCML Emergency Services\r\n75, Blvd de la technologie\r\nGatineau, QC J8Z 3G4\r\nCanada\r\n\r\nPhone: 1-819-778-2053\r\nFax: 1-819-772-8905\r\nEMail: jpgoulet&cmles.com\r\n\r\n(file created 30 November 2005) "
+  },
+  "references": []
+}

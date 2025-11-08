@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.miele+json",
+  "full": "application/vnd.miele+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.miele+json",
+    "template_text": "(registered 2014-05-01, last updated 2014-05-01)\n\nName : Nils Langhammer\n\nEmail : nils.langhammer&miele.de\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.miele+json\n\nRequired parameters : None.\n\nOptional parameters : \nNone.\n\nEncoding considerations : 8bit\n\n\nSecurity considerations : \napplication/vnd.miele+json objects do not contain executable content. Privacy and integrity protection are realized by using transport layer's security mechanisms. For example, if this media type is exchanged via HTTPs, a secure hash-function (e.g. SHA-1/256) is applied to calculate a hash value of the vnd.miele+json object based on a previously exchanged key. This hash-value is used for integrity protection. Normally, the information contained in vnd.miele+json does not require privacy services. Nonetheless if privacy is needed it must be realized via the transport layer, e.g. with HTTPs or DTLS.\n\nInteroperability considerations : \nN/A\n\nPublished specification : \nThe specification is not published yet.\n\nApplications which use this media : \nThe Miele@home applications will use this media type for data exchange.\n\nFragment identifier considerations :\nN/A\n\nRestrictions on usage :\nN/A\n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : None.\n3. File extension(s) : .json\n4. Macintosh file type code : Text\n5. Object Identifiers: None.\n\n\n\nPerson to contact for further information :\n\n1. Name : Nils Langhammer\n2. Email : nils.langhammer&miele.de\n\nIntended usage : Common\nThe intended usage is to provide a flexible data format to interface with Miele appliances.\n\nAuthor/Change controller : Nils Langhammer"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.ibm.afplinedata",
+  "full": "application/vnd.ibm.afplinedata",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ibm.afplinedata",
+    "template_text": "(last updated 2018-04-10)\n\nName : Roger Buis\n\nE-mail : buis&us.ibm.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ibm.afplinedata\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations :\n\n IBM's Line Data carries text and can also carry some of the data\n defined in IBM's Mixed Object Document Content Architecture\n (MO:DCA).  The MO:DCA data can be text, image, and graphics data objects.\n Therefore, IBM's Line Data can be a mixture of binary and character\n data.  The recommended content-transfer-encoding is base64.\n\nSecurity considerations :\n\nIBM's Line Data is not a programming language, does not contain file\noperators, and therefore cannot corrupt a receiver's file system or\nprogramming environment.\n\nInteroperability considerations : None\n\nPublished specification :\n\nAdvanced Function Presentation: Programming Guide and Line Data\nReference (IBM publication S544-3884).\n\nApplications which use this media :\n\nPrint Services Facility (PSF), AFP Conversion and Indexing Facility\n(ACIF)\n\nAdditional information :\n\n 1. Magic number(s) : None\n 2. File extension(s) : N/A\n 3. Macintosh file type code : N/A\n 4. Object Identifiers: None\n\nMixed Object Document Content Archictecture, and MO:DCA are\ntrademarks of the IBM Corporation.\n\nPerson to contact for further information :\n\n 1. Name : Roger Buis\n 2. E-mail : buis&us.ibm.com\n\nIntended usage : OBSOLETE\nObsoleted in favor of application/vnd.afpc.afplinedata.\nLine data is application output to be printed that has not already\nadded printer data stream specific controls.\n\nAuthor/Change controller : Roger Buis, buis&us.ibm.com\n\n(last updated 03-16-01)\n\n(created 03-16-01)\n\n[]\n\n"
+  },
+  "references": []
+}

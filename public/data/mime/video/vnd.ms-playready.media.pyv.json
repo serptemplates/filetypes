@@ -1,0 +1,35 @@
+{
+  "type": "video",
+  "subtype": "vnd.ms-playready.media.pyv",
+  "full": "video/vnd.ms-playready.media.pyv",
+  "extensions": [
+    "pyv"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/vnd.ms-playready.media.pyv",
+    "template_text": "(last updated 2008-05-29)\n\nName : Steve DiAcetis\n\nEmail : stevedia&microsoft.com\n\nMIME media type name : Video\n\nMIME subtype name : Vendor Tree - vnd.ms-playready.media.pyv\n\nRequired parameters :\n\nOptional parameters :\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media type consists of video and optionally audio samples; it does not contain \nany commands, executable content, control sequences, or any other material the misuse \nof which could result in a security vulnerability. As an video encryption format, the \ncontent may need privacy or integrity services. As the media type does not provide such \nservices in itself, for higher security suitable methods should be implemented in the \nupper protocol layers. Other security considerations, if any, have not been assessed.\n\nInteroperability considerations :\nClients must ignore any received PlayReady Video content which they do not understand \nor which they do not know how to render.\n\nPublished specification :\n\n\nApplications which use this media :\nApplications on clients that are part of the Microsoft PlayReady Ecosystem.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : pyv\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Steve DiAcetis\n2. Email : stevedia&microsoft.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : stevedia&microsoft.com\n\n(file created 2008-05-29)"
+  },
+  "references": []
+}

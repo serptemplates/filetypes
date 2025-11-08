@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "provided-claims+jwt",
+  "full": "application/provided-claims+jwt",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/provided-claims+jwt",
+    "encoding_considerations": "An external claims JWT is a JWT; JWT values are encoded as a series of base64url-encoded values (some of which may be the empty string) separated by period ('.') characters.\n\nSecurity considerations: See https://openid.net/specs/openid-connect-4-identity-assurance-1_0-final.html#name-security-considerations\n\nInteroperability considerations: N/A.\n\nPublished specification: OpenID Connect for Identity Assurance 1.0, Section 5.2: https://openid.net/specs/openid-connect-4-identity-assurance-1_0-final.html#section-5.2\n\nApplications which use this media: When using OpenID Connect for Identity Assurance 1.0, this media type is used in the typ header of assertions provided as aggregated or distributed claims (see section 5.6.2 of the OpenID Connect specification [OpenID]).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none",
+    "security_considerations": "Interoperability considerations: N/A.\n\nPublished specification: OpenID Connect for Identity Assurance 1.0, Section 5.2: https://openid.net/specs/openid-connect-4-identity-assurance-1_0-final.html#section-5.2\n\nApplications which use this media: When using OpenID Connect for Identity Assurance 1.0, this media type is used in the typ header of assertions provided as aggregated or distributed claims (see section 5.6.2 of the OpenID Connect specification [OpenID]).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none",
+    "interoperability_considerations": "Published specification: OpenID Connect for Identity Assurance 1.0, Section 5.2: https://openid.net/specs/openid-connect-4-identity-assurance-1_0-final.html#section-5.2\n\nApplications which use this media: When using OpenID Connect for Identity Assurance 1.0, this media type is used in the typ header of assertions provided as aggregated or distributed claims (see section 5.6.2 of the OpenID Connect specification [OpenID]).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none",
+    "additional_information": "1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): none\n4. Macintosh file type code: none\n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-11-26, last updated 2024-11-27)\n\nMedia type name: application\n\nMedia subtype name: provided-claims+jwt\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nAn external claims JWT is a JWT; JWT values are encoded as a series of base64url-encoded values (some of which may be the empty string) separated by period ('.') characters.\n\nSecurity considerations: See https://openid.net/specs/openid-connect-4-identity-assurance-1_0-final.html#name-security-considerations\n\nInteroperability considerations: N/A.\n\nPublished specification: OpenID Connect for Identity Assurance 1.0, Section 5.2: https://openid.net/specs/openid-connect-4-identity-assurance-1_0-final.html#section-5.2\n\nApplications which use this media: When using OpenID Connect for Identity Assurance 1.0, this media type is used in the typ header of assertions provided as aggregated or distributed claims (see section 5.6.2 of the OpenID Connect specification [OpenID]).\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none\n\nAdditional information:\n\n1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): none\n4. Macintosh file type code: none\n5. Object Identifiers: none\n\nPerson to contact for further information:\n\n1. Name: Daniel Fett\n2. Email: mail&danielfett.de\n\nIntended usage: COMMON\n\nAuthor/Change controller: OpenID Foundation eKYC & IDA Work Group\n"
+  },
+  "references": []
+}

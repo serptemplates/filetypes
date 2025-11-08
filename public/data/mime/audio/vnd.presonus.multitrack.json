@@ -1,0 +1,37 @@
+{
+  "type": "audio",
+  "subtype": "vnd.presonus.multitrack",
+  "full": "audio/vnd.presonus.multitrack",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.presonus.multitrack",
+    "security_considerations": "This media type contains multiple tracks of mono or stereo PCM audio samples with lossless compression and associated meta data in text and image format. It does not contain any executable code or other kind of active content. Other security considerations, if any, have not been assessed.",
+    "interoperability_considerations": "Playback and authoring of this media type requires a specification-compliant DAW (digital audio workstation) or similar application capable of handling multiple audio tracks.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .multitrack\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2017-08-22, last updated 2017-08-22)\n\nName: Matthias Juwan\nEmail: mjuwan&presonus.com\n\nMedia type name: audio\nMedia subtype name: vnd.presonus.multitrack\n\nRequired parameters: N/A\n\nOptional parameters:\nN/A\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nThis media type contains multiple tracks of mono or stereo PCM audio samples with lossless compression and associated meta data in text and image format. It does not contain any executable code or other kind of active content. Other security considerations, if any, have not been assessed.\n\nInteroperability considerations:\nPlayback and authoring of this media type requires a specification-compliant DAW (digital audio workstation) or similar application capable of handling multiple audio tracks.\n\nPublished specification:\nThe PreSonus Multitrack File Format is a proprietary format with the specification available upon request from PreSonus Audio Electronics, Inc.\n\nApplications which use this media:\nThe file format was developed to facilitate digital distribution of multi-track music. Multi-track stems are a common technique to deliver songs for mixing or remixing by another music producer. Stems usually combine groups of audio sources into mono or stereo sub-mixes. Instead of delivering all (sometimes hundreds of) original source tracks, stems massively reduce file sizes. Even very large projects become portable when delivered as a .multitrack file.\n\nFragment identifier considerations:\nThis media type does not support fragment identifiers.\n\nRestrictions on usage:\nThis media type is intended for use by PreSonus Audio Electronics, Inc and its business partners.\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .multitrack\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Matthias Juwan\n2. Email: mjuwan&presonus.com\n\nIntended usage: Limited Use\nThis media type is intended for use by PreSonus Audio Electronics, Inc and its business partners.\n\nAuthor/Change controller: Matthias Juwan\nPreSonus Audio Electronics, Inc\n18011 Grand Bay Court\nBaton Rouge, LA 70809-USA"
+  },
+  "references": []
+}

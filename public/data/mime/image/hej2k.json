@@ -1,0 +1,40 @@
+{
+  "type": "image",
+  "subtype": "hej2k",
+  "full": "image/hej2k",
+  "extensions": [
+    "hej2"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/hej2k",
+    "encoding_considerations": "Security considerations: See media type image/heif. In addition, \n   image items of type 'j2ki' contain structures of variable length \n   and have an extensible syntax. Both aspects present potential \n   security risks for implementations. In particular, variable length\n   structures present buffer overflow risks and extensible syntax \n   could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type \n   image/heif. In addition, image items of type 'j2ki' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in Rec. ITU-T T.800 | ISO/IEC \n   15444-1, not all of which are necessarily supported by a receiving\n   decoder. As a result, decoders might attempt to process the \n   contents only to determine that they cannot be rendered either \n   partially or in full.\n\nPublished specification: Rec. ITU-T T.815 | ISO/IEC 15444-16.\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: Same as for the media type \n   image/heif.\n\nRestrictions on usage: None.",
+    "security_considerations": "image items of type 'j2ki' contain structures of variable length \n   and have an extensible syntax. Both aspects present potential \n   security risks for implementations. In particular, variable length\n   structures present buffer overflow risks and extensible syntax \n   could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type \n   image/heif. In addition, image items of type 'j2ki' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in Rec. ITU-T T.800 | ISO/IEC \n   15444-1, not all of which are necessarily supported by a receiving\n   decoder. As a result, decoders might attempt to process the \n   contents only to determine that they cannot be rendered either \n   partially or in full.\n\nPublished specification: Rec. ITU-T T.815 | ISO/IEC 15444-16.\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: Same as for the media type \n   image/heif.\n\nRestrictions on usage: None.",
+    "interoperability_considerations": "image/heif. In addition, image items of type 'j2ki' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in Rec. ITU-T T.800 | ISO/IEC \n   15444-1, not all of which are necessarily supported by a receiving\n   decoder. As a result, decoders might attempt to process the \n   contents only to determine that they cannot be rendered either \n   partially or in full.\n\nPublished specification: Rec. ITU-T T.815 | ISO/IEC 15444-16.\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: Same as for the media type \n   image/heif.\n\nRestrictions on usage: None.",
+    "additional_information": "1. Deprecated alias names for this type: N/A \n   2. Magic number(s): None.\n   3. File extension(s): hej2\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-05-17, last updated 2019-05-17)\n\nMedia type name: image\n\nMedia subtype name: hej2k\n\nRequired parameters: None\n\nOptional parameters: Same as for the media type image/heif. The \n   presence of an image item of type 'j2ki' is signalled by \n   including, in the itemtypes parameter, an item description whose \n   item type string starts with 'j2ki'.\n\nEncoding considerations: binary\n\nSecurity considerations: See media type image/heif. In addition, \n   image items of type 'j2ki' contain structures of variable length \n   and have an extensible syntax. Both aspects present potential \n   security risks for implementations. In particular, variable length\n   structures present buffer overflow risks and extensible syntax \n   could result in the triggering of adverse actions.\n\nInteroperability considerations: Same as for the media type \n   image/heif. In addition, image items of type 'j2ki' can conform to\n   one of several profiles and/or require one of several \n   capabilities, e.g. as specified in Rec. ITU-T T.800 | ISO/IEC \n   15444-1, not all of which are necessarily supported by a receiving\n   decoder. As a result, decoders might attempt to process the \n   contents only to determine that they cannot be rendered either \n   partially or in full.\n\nPublished specification: Rec. ITU-T T.815 | ISO/IEC 15444-16.\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: Same as for the media type \n   image/heif.\n\nRestrictions on usage: None.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A \n   2. Magic number(s): None.\n   3. File extension(s): hej2\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: ISO/IEC JTC 1/SC 29/WG 1 Convenor \n   2. Email: sc29-sec&itscj.ipsj.or.jp\n\nIntended usage: Common\n\nAuthor/Change controller: ITU-T & ISO/IEC JTC 1"
+  },
+  "references": []
+}

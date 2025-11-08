@@ -1,0 +1,33 @@
+{
+  "type": "message",
+  "subtype": "sipfrag",
+  "full": "message/sipfrag",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/message/sipfrag",
+    "template_text": "(per RFC3420)\n\nMedia type name: message\nMedia subtype name: sipfrag\nRequired parameters: none\nOptional parameters: version\n  Version: The SIP-Version number of the enclosed message (e.g.,\n  \"2.0\"). If not present, the version defaults to \"2.0\".\nEncoding scheme: SIP messages consist of an 8-bit header optionally\n  followed by a binary MIME data object. As such, SIP messages must\n  be treated as binary. Under normal circumstances SIP messages are\n  transported over binary-capable transports, no special encodings\n  are needed.\nSecurity considerations: see Section 6"
+  },
+  "references": []
+}

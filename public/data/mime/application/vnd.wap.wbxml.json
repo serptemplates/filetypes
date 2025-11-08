@@ -1,0 +1,43 @@
+{
+  "type": "application",
+  "subtype": "vnd.wap.wbxml",
+  "full": "application/vnd.wap.wbxml",
+  "extensions": [
+    "wbxml"
+  ],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wap.wbxml",
+    "encoding_considerations": "This is binary material and suitable encoding must be used when\ntransferring over protocols that cannot handle binary.",
+    "security_considerations": "As a binary XML format, WBXML has the same security considerations as\nspecified in [RFC-2376].",
+    "interoperability_considerations": "The WAP Forum Ltd. Interoperability Working Group (WIG) assess\ninteroperability for all WAP Forum Ltd. specifications, including\n[WBXML].  Interoperability is guaranteed through conformance\nstatements, test cases, and trial interworking sessions. See [WAP].\n\nPublished specification: see [WBXML].\n\nApplications which use this media type: see [WML].",
+    "additional_information": "Magic number(s): none\n\nThe first byte of an WBXML entity is always the WBXML version number,\nfollowed by a public Id that identifies the XML document type. For\nversion number 1.1 and WML documents, the first two bytes are 01 04.\n\nThe public Id represents the XML document type identifier for the XML\napplication; e.g. \"-//WAPFORUM//DTD WML 1.1//EN\" (WML 1.1)) for WML\n1.1 documents. Public Ids are registered by the WAP Naming Authority\n[WAP], and published in [WBXML].\n\nFile extension: .wbxml\n\nPerson and e-mail address for further information:\n\nBashar Jano <jano&ccrl.mot.com>\nBruce Martin <bruce.martin&uplanet.com>\nPeter Stark <peter.stark&uplanet.com>\n\nIntended usage: COMMON.\n\nAuthor/Change controller:\n\nThe WBXML specification is a work product of the WAP Forum Ltd.\nApplication's Working Group, and was edited by:\n\nBashar Jano <jano&ccrl.mot.com>\nBruce Martin <bruce.martin&uplanet.com>\n\nReferences\n\n[RFC-2376] E. Whitehead, \"XML Media Types\", RFC 2376, July 1998.\n[WAP]\tThe WAP Forum Ltd. <URL:http://www.wapforum.org>\n[WBXML]WAP Forum Ltd., \"WAP Binary XML Content Format -- WBXML version 1.1\",\n[WML]\tWAP Forum Ltd., \"Wireless Markup Language --WML version 1.1\"\n[WSP] WAP Forum Ltd., \"Wireless Session Protocl -- WSP/1.1\"",
+    "intended_usage": "common",
+    "template_text": "\n\nFrom: \"Peter Stark\" <stark&uplanet.com>\nTo: \"Internet Assigned Numbers Authority\" <iana&ISI.EDU>\nSubject: RE: Registration of MIME media type application/vnd.wap.wbxml inVendor tree\nDate: Thu, 11 Mar 1999 13:18:41 -0800\n\nMIME media type name: application\n\nMIME subtype name: vnd.wap.wbxml\n\nMandatory parameters: none\n\nOptional parameters: charset and level\n\nThe binary XML format always contains a charset attribute that\nindicates the XML document's character encoding, and thus the\nadditional charset parameter is, in most cases, redundant. The charset\nparameter MAY, however, be used to provide protocol-specific\noperations, such as charset-based content negotiation in WSP [WSP] and\nHTTP [RFC-2068]. The recommended value is the same as recommended for\nthe text/xml media type in [RFC-2376]; that is, \"UTF-8\" [RFC-2279],\nrepresenting the UTF-8 charset.\n\nThe charset parameter can be used by WBXML processors to determine\nauthoritatively the character encoding of the WBXML entity.\n\nIf an application/wbxml entity is received where the charset parameter\nis omitted, and the charset attribute in the binary XML format\nindicates an unknown character set, the default encoding of \"UTF-8\"\nshould be assumed.\n\nThe level parameter indicates the version. The value has the format:\n<major>.<minor>; where major and minor are integers. For example,\nlevel=\"1.1\" indicates version 1.1.\n\nEncoding considerations:\n\nThis is binary material and suitable encoding must be used when\ntransferring over protocols that cannot handle binary.\n\nSecurity considerations:\n\nAs a binary XML format, WBXML has the same security considerations as\nspecified in [RFC-2376].\n\nInteroperability considerations:\n\nThe WAP Forum Ltd. Interoperability Working Group (WIG) assess\ninteroperability for all WAP Forum Ltd. specifications, including\n[WBXML].  Interoperability is guaranteed through conformance\nstatements, test cases, and trial interworking sessions. See [WAP].\n\nPublished specification: see [WBXML].\n\nApplications which use this media type: see [WML].\n\nAdditional information:\n\nMagic number(s): none\n\nThe first byte of an WBXML entity is always the WBXML version number,\nfollowed by a public Id that identifies the XML document type. For\nversion number 1.1 and WML documents, the first two bytes are 01 04.\n\nThe public Id represents the XML document type identifier for the XML\napplication; e.g. \"-//WAPFORUM//DTD WML 1.1//EN\" (WML 1.1)) for WML\n1.1 documents. Public Ids are registered by the WAP Naming Authority\n[WAP], and published in [WBXML].\n\nFile extension: .wbxml\n\nPerson and e-mail address for further information:\n\nBashar Jano <jano&ccrl.mot.com>\nBruce Martin <bruce.martin&uplanet.com>\nPeter Stark <peter.stark&uplanet.com>\n\nIntended usage: COMMON.\n\nAuthor/Change controller:\n\nThe WBXML specification is a work product of the WAP Forum Ltd.\nApplication's Working Group, and was edited by:\n\nBashar Jano <jano&ccrl.mot.com>\nBruce Martin <bruce.martin&uplanet.com>\n\nReferences\n\n[RFC-2376] E. Whitehead, \"XML Media Types\", RFC 2376, July 1998.\n[WAP]\tThe WAP Forum Ltd. <URL:http://www.wapforum.org>\n[WBXML]WAP Forum Ltd., \"WAP Binary XML Content Format -- WBXML version 1.1\",\n[WML]\tWAP Forum Ltd., \"Wireless Markup Language --WML version 1.1\"\n[WSP] WAP Forum Ltd., \"Wireless Session Protocl -- WSP/1.1\"\n\n\n\n"
+  },
+  "references": []
+}

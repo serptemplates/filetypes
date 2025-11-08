@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.sema",
+  "full": "application/vnd.sema",
+  "extensions": [
+    "sema"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sema",
+    "template_text": "\r\nName : Anders Hansson\r\n\r\nEmail : anders.hansson&securedemail.org\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.sema\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations : \r\nFiles of subtype \"sema\" contain no executable code, and do not pose any\r\nknown security risks. Furthermore, the data within is encrypted with 256 bit\r\nkeys only known to the intended data owner.\r\n\r\nInteroperability considerations : \r\nCurrently the subtype \"sema\" has parser support on Windows Platforms\r\n(98, ME, NT, 2000 and XP) - however other platforms are to be covered in the\r\nfuture.\r\n\r\nPublished specification : \r\nThere is currently no RFC available for the media-type\r\n\"application/vnd.sema\".\r\n\r\nApplications which use this media : \r\nClients of Secured eMail (www.securedemail.org). Currently, clients are\r\nMicrosoft Office 2000, XP (w/o content) and 2003. Groupwise and Outlook\r\nExpress are planned.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : varies depending on object type and version 2. File\r\nextension(s) : .sema 3. Macintosh file type code : none, missing 4. Object\r\nIdentifiers: none, missing\r\n\r\nSema derives its name from \"Secured EMail Archive\". A cornerstone in the\r\nconcept of secured emailing is that the intended recipient of a email gets\r\nthe email intact. This is why it is important that the \"sema\" subtype is\r\nrecognized as a MIME media type.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Peter Davin\r\n2. Email : peter.davin&securedemail.org\r\n\r\nIntended usage : Common \r\nThe subtype \"sema\" is ment to be a extension to the world of secured\r\nemail communication, and act as a archive container for encrypted data in\r\ngeneral. It is a encrypted binary package that can be locked with multiple\r\nkeys - both symetric and PKI style. Since its format is planned to be\r\nreferenced at a later date, the intended usage is common.\r\n\r\nAuthor/Change controller : Contact Author Anders Hansson, CTO\r\nSecured eMail, anders.hansson&securedemail.org regarding issues of technical\r\nnature. \r\n\r\n(created 08 September 2005)\r\n\r\n[]\r\n\r\n\r\n\r\n"
+  },
+  "references": []
+}

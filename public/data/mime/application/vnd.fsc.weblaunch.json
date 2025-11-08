@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "vnd.fsc.weblaunch",
+  "full": "application/vnd.fsc.weblaunch",
+  "extensions": [
+    "fsc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.fsc.weblaunch",
+    "encoding_considerations": "Content consists of lines of less than 1000 characters (each\nline will be at most 50 characters) containing only US-ASCII\nalphanumeric characters.",
+    "security_considerations": "Information in this media type could be used to reference\nmembership information for a member of the on-line gaming community\nfor the application listed below.  The chances of this happening are\nremote and are not detrimental to a user (from a financial or privacy\nperspective) in the event it occurs.  No values in this file could\ncause any type of data from a user's system to be compromised or\ndisseminated.  Data in this file simply references event and possibly\nmember login information on the game servers used in on-line play for\nthe application below.",
+    "interoperability_considerations": "Media type is used to access web-based events and match-making\nfor the Windows-based application below.\n\nPublished specification:  NONE",
+    "additional_information": "Magic number(s):  none\n       File extension(s):  .fsc\n       Macintosh File Type Code(s):  n/a",
+    "intended_usage": "common",
+    "template_text": "\n\n\nMIME media type name:  application\n\nMIME subtype name:  Vendor tree - vnd.fsc.weblaunch\n\nRequired parameters:  NONE\n\nOptional parameters:  NONE\n\nEncoding considerations:  \n \nContent consists of lines of less than 1000 characters (each\nline will be at most 50 characters) containing only US-ASCII\nalphanumeric characters.\n\nSecurity considerations:\n \nInformation in this media type could be used to reference\nmembership information for a member of the on-line gaming community\nfor the application listed below.  The chances of this happening are\nremote and are not detrimental to a user (from a financial or privacy\nperspective) in the event it occurs.  No values in this file could\ncause any type of data from a user's system to be compromised or\ndisseminated.  Data in this file simply references event and possibly\nmember login information on the game servers used in on-line play for\nthe application below.\n\nInteroperability considerations:\n \nMedia type is used to access web-based events and match-making\nfor the Windows-based application below.\n\nPublished specification:  NONE\n\nApplications which use this media type:  \n \nAboutGolf.com World Tours (Windows-based golf simulation\ndeveloped by Friendly Software Corporation)\n(there are multiple version of this application under different\nnames such as the Myrtle Beach Tour, Texas Golf Network Tour, etc\nwhich are compatible golf simulations developed by the same company\nand are compatible with this media type)\n\nAdditional information:\n\n       Magic number(s):  none\n       File extension(s):  .fsc\n       Macintosh File Type Code(s):  n/a\n\nPerson & email address to contact for further information:\n\nDerek Smith (derek&friendlysoftware.com)\n\nIntended usage:  COMMON\n\nAuthor/Change controller:  Derek Smith\n\nRelevant Website:  http://www.aboutgolf.com/\n\n\n\n"
+  },
+  "references": []
+}

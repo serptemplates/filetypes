@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.micro+json",
+  "full": "application/vnd.micro+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.micro+json",
+    "template_text": "(registered 2015-03-16, last updated 2015-03-16)\n\nName : Dali Zheng\n\nEmail : d&liwa.li\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.micro+json\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : 8bit\n\n\nSecurity considerations : \nMicro API shares security concerns with all JSON types. It does not provide executable content. Security is left to the implementer, though TLS, specifically HTTPS may be recommended for exchanging sensitive information. \n\nInteroperability considerations : \nSome reserved keys overlap with JSON-LD but can be used interchangeably.\n\nPublished specification : \nhttp://micro-api.org\n\nApplications which use this media : \nVarious\n\nFragment identifier considerations :\nnone\n\nRestrictions on usage :\nnone\n\nProvisional registration? (standards tree only) :\nnone\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : none\n2. Magic number(s) : none\n3. File extension(s) : .json\n4. Macintosh file type code : TEXT\n5. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Dali Zheng\n2. Email : d&liwa.li\n\nIntended usage : Common\nMicro+JSON is intended to provide a baseline for implementing hypermedia APIs using JSON. \n\nAuthor/Change controller : Dali Zheng"
+  },
+  "references": []
+}

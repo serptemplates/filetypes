@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "mathematica",
+  "full": "application/mathematica",
+  "extensions": [
+    "ma",
+    "nb",
+    "mb"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/mathematica",
+    "template_text": "(last updated 2007-08-17)\n\nDate: Tue, 26 Jan 1999 16:45:45 -0800 (PST)\nFrom: \"Kenneth R. Brownfield\" <kenb&wolfram.com>\nTo: iana&iana.org, kenb&wolfram.com\nSubject: Request for MIME media type Application/IETF Tree -mathematica\n\nName : Kenneth R. Brownfield\n\nE-mail : kenb&wolfram.com\n\nMIME media type name : Application\n\nMIME subtype name : IETF Tree -mathematica\n\nRequired parameters : A required version parameter must be specified.\nThe value of the version parameter should be in one of the following\nforms:\n\n<major release number>.<minor release number>\n<major release number>\n\n<major release number> and <minor release number> are digits.  Examples\nof valid values for the version parameter include:\n\n2\n2.2\n3\n4\n\n\nOptional parameters : \nAn optional filename parameter may be specified.\n\n\nEncoding considerations : \nAll the necessary information in Mathematica notebooks is represented\nin text format, usually ASCII.  Whenever possible, Mathematica\nnotebooks should be transmitted with the 7-bit encoding mechanism.\n\nNotebooks created with version 2.x of Mathematica may contain 8-bit\ncharacters, which should be transmitted using the quoted-printable\nmechanism.  Version 2.x notebooks may also have a binary portion (see\nCOMMENTS section), which should be transmitted with base64 or another\nsuitable encoding scheme.\n\n\nSecurity considerations : \nMathematica notebooks can contain \"initialization cells\", which are\nintended by the notebook's author to be evaluated by a Mathematica\nkernel when the notebook is opened.  The Mathematica front end, the\nprimary viewer of Mathematica notebooks, provides an option to have a\nnotebook's initialization cells automatically evaluated without\nprompting the user.  This option is OFF by default.  Since Mathematica\ncan run external programs on some computers, and can effect the\nfilesystems on all computers, users of the Mathematica front end are\nstrongly encouraged to disable the option to automatically evaluate\ninitialization cells when receiving potentially unsafe Mathematica\nnotebooks.  Whenever possible, MathReader, a read-only notebook viewer,\nshould be used to view notebooks that are potentially unsafe.  No\nsecurity risks are present when MathReader is used to view notebooks.\n\n\nInteroperability considerations : \n\n\nPublished specification : \nThe published file format specification is available in \"The\nMathematica Book\", an extensive guide to Mathematica written by Stephen\nWolfram.\n\n\nApplications which use this media : \nTwo known applications that are aware of this media type are\n\"Mathematica\", and the read-only \"MathReader\" notebook viewer, both\nmade by Wolfram Research, Inc..\n\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : .nb,.ma,.mb\n3. Macintosh file type code : Creator: OMEG  Type: ttxt\nValid Mathematica version 3 and 4 notebooks only contain 7-bit ASCII\ncharacters.  All 8-bit content is encoded to and decoded from a 7-bit\nformat.\n\nMathematica version 2 notebooks are created in two \"portions\":  the\ntext portion which contains all of the notebook's necessary\ninformation, and the binary portion which facilitates fast loading of\nthe notebook.  On non-Macintosh computers, the text portion of a\nnotebook is stored in a file with a \".mb\" extension.  On Macintosh\ncomputers, the text portion is stored in the file's data fork and the\nbinary portion is stored in the file's resource fork.\n\n\nPerson to contact for further information :\n\n1. Name : Wolfram Research, Inc.\n2. E-mail : info&wolfram.com\n\nIntended usage : Common \n\n\nAuthor/Change controller : \nWolfram Research, Inc.\n100 Trade Center Drive\nChampaign, IL  61820-7237\n \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.opengex",
+  "full": "model/vnd.opengex",
+  "extensions": [
+    "ogex"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.opengex",
+    "template_text": "(registered 2014-04-28; last updated 2014-04-28)\r\n\r\nName : Eric Lengyel\r\n\r\nEmail : lengyel&terathon.com\r\n\r\nMIME media type name : Model\r\n\r\nMIME subtype name : Vendor Tree - vnd.opengex\r\n\r\nRequired parameters : N/A\r\n\r\nOptional parameters : \r\nN/A\r\n\r\nEncoding considerations : 8bit\r\n\r\nSecurity considerations : \r\nThe media type does not contain executable content, and it does not need \r\nprivacy or integrity services. The media type may contain partial or full \r\npaths to external image files that are used as texture maps.\r\n\r\nInteroperability considerations : \r\nOpenGEX is designed to provide a method of 3D model exchange among a broad set of applications.\r\n\r\nPublished specification : \r\nSpecification available at http://opengex.org/ and in the book Open Game Engine Exchange Specification, ISBN 978-0-9858117-2-3.\r\n\r\nApplications which use this media : \r\nOriginal OpenGEX reader implemented in the C4 Engine, version 3.5. First OpenGEX writers are available for Maya and 3D Studio Max.\r\n\r\nFragment identifier considerations :\r\nN/A\r\n\r\nRestrictions on usage :\r\nN/A\r\n\r\nProvisional registration? (standards tree only) :\r\nN/A\r\n\r\n\r\nAdditional information :\r\n\r\n1. Deprecated alias names for this type : N/A\r\n2. Magic number(s) : N/A\r\n3. File extension(s) : .ogex\r\n4. Macintosh file type code : TEXT\r\n5. Object Identifiers: N/A\r\n\r\nThe charset for OpenGEX is always UTF-8.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Eric Lengyel\r\n2. Email : lengyel&terathon.com\r\n\r\nIntended usage : Common\r\nThe Open Game Engine Exchange (OpenGEX) format is a text-based file format designed to facilitate the transfer of complex scene data between applications such as modeling tools and game engines.\r\n\r\nAuthor/Change controller : Eric Lengyel, lengyel&terathon.com"
+  },
+  "references": []
+}

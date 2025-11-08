@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.minisoft-hp3000-save",
+  "full": "application/vnd.minisoft-hp3000-save",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.minisoft-hp3000-save",
+    "encoding_considerations": "binary data, encoding should be BASE64 or QUOTED-PRINTABLE if\n        necessary.\n\nSecurity considerations: Since the encoded file may be any supported HP3000\n        file type, including an executable file, appropriate caution should\n        be excercised.\n\nInteroperability considerations: Since HP3000 files have specific attributes\n        (separate from their contents) that must be preserved in transport,\n        this encoding imbeds file attribute information at the beginning of\n        the body part. Inclusion of these attributes makes the data essent-\n        ially useless to other platforms, but is required in order to\n        eventually reconstruct an identical file on a destination HP3000.\n        This encoding should only be used for files which are intended to\n        be transported only to another HP3000 system.",
+    "security_considerations": "file type, including an executable file, appropriate caution should\n        be excercised.\n\nInteroperability considerations: Since HP3000 files have specific attributes\n        (separate from their contents) that must be preserved in transport,\n        this encoding imbeds file attribute information at the beginning of\n        the body part. Inclusion of these attributes makes the data essent-\n        ially useless to other platforms, but is required in order to\n        eventually reconstruct an identical file on a destination HP3000.\n        This encoding should only be used for files which are intended to\n        be transported only to another HP3000 system.",
+    "interoperability_considerations": "(separate from their contents) that must be preserved in transport,\n        this encoding imbeds file attribute information at the beginning of\n        the body part. Inclusion of these attributes makes the data essent-\n        ially useless to other platforms, but is required in order to\n        eventually reconstruct an identical file on a destination HP3000.\n        This encoding should only be used for files which are intended to\n        be transported only to another HP3000 system.",
+    "template_text": "\n\nFrom: \"Chris Bartram\" <RCB&3k.com>\nOrganization: 3k Associates\nDate: Tue,  5 May 1998 15:41:25 -0400\nSubject: Re: New MIME Type: vnd.minisoft-hp3000-save\nTo: iana&ISI.EDU\n\nMIME type name: application\n\nMIME subtype name: vnd.minisoft-hp3000-save\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: Since the encoded file may contain long lines or\n        binary data, encoding should be BASE64 or QUOTED-PRINTABLE if\n        necessary.\n\nSecurity considerations: Since the encoded file may be any supported HP3000\n        file type, including an executable file, appropriate caution should\n        be excercised.\n\nInteroperability considerations: Since HP3000 files have specific attributes\n        (separate from their contents) that must be preserved in transport,\n        this encoding imbeds file attribute information at the beginning of\n        the body part. Inclusion of these attributes makes the data essent-\n        ially useless to other platforms, but is required in order to\n        eventually reconstruct an identical file on a destination HP3000.\n        This encoding should only be used for files which are intended to\n        be transported only to another HP3000 system.\n\nPublished specification:\n        ftp://ftp.3k.com/DOC/ms92-save-format.txt\n\nApplications which use this media type:\n        MS92 (various versions) [terminal emulator package]\n        NetMail/3000 (various versions) [e-mail package for HP3000 systems]\n        DeskLink (various versions) [HPDesk SMTP gateway]\n\nContact for further information:\n        Minisoft, Inc.\n        1024 First Street\n        Snohomish, WA 98290\n        e-mail: support&minisoft.com\n        Phone: +1(360)568-6602 Fax: +1(360)568-2923\n        3k Associates, Inc.\n        6901 Old Keene Mill Road, Suite 500\n        Springfield, VA 22150\n        e-mail: support&3k.com\n        Phone: +1(703)569-9189 Fax: +1(703)451-3720\nAuthor: Chris Bartram, 3k Associates, Inc.\n\n\n"
+  },
+  "references": []
+}

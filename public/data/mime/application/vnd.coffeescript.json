@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.coffeescript",
+  "full": "application/vnd.coffeescript",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.coffeescript",
+    "template_text": "(registered 2014-11-21, updated 2014-11-21)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.coffeescript\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : binary\n\nSecurity considerations :\nCoffeescript is a scripting language that is transcompiled to Javascript.\nThen, the Javascript code is executed. As a result, all of the\nsecurity consideration for Javascript (see RFC 4329 section 5) are \ninherited.\nAdditionally, it is possible for the transcompilation process to\nintroduce its own errors, or for malicious code to be inserted into the\nCoffeescript file prior to transcompilation. Coffeescript files usually \nappear asplain-text files prior to transcompilation. Therefore, such \nfiles typicallylack special security and permission restraints.\n\nInteroperability considerations : none\n\nPublished specification : none\n\nApplications which use this media : Script interpreters and transpilers \n(such as \"coffee\")\n\nFragment identifier considerations : n/a\n\nRestrictions on usage : n/a\n\nProvisional registration? (standards tree only) : n/a\n\nAdditional information :\n1. Deprecated alias names for this type : n/a\n2. Magic number(s) : n/a\n3. File extension(s) : .coffee\n4. Macintosh file type code : TEXT\n5. Object Identifiers: n/a\n\nDocumentation: http://coffeescript.org/\n\nPerson to contact for further information :\n1. Name : Devyn Collier Johnson\n2. Email : DevynCJohnson&Gmail.com\n\nIntended usage : Common Coffeescript files can be converted to \n\"application/javascript\" files via the \"coffee\" transpiler.\n\nAuthor/Change controller : Devyn Collier Johnson"
+  },
+  "references": []
+}

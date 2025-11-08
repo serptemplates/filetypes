@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "sbe",
+  "full": "application/sbe",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/sbe",
+    "encoding_considerations": "Character encodings may be specified within an SBE message schema.\n\nSecurity considerations: Simple Binary Encoding is strictly a \n   presentation layer protocol, and makes no claim to safety at \n   session or application layers. Data consists of a stream of octets\n   of either fixed or variable length. Users must take care to avoid \n   buffer overruns and should verify that data conforms to specified \n   data types. This format is not intended for active context, such \n   as executable code.\n\nInteroperability considerations: Implementers may demonstrate \n   interoperability with others by publishing results of \n   fix-sbe-conformance test suite, published as open source by FIX \n   Trading Community.\n\nPublished specification: Simple Binary Encoding standards are \n   published by FIX Trading Community at \n   https://www.fixtrading.org/standards/sbe/ and \n   https://github.com/FIXTradingCommunity/fix-simple-binary-encoding\n\nApplications which use this media: Simple Binary Encoding was \n   conceived as a binary message encoding of FIX Protocol, \n   standardized by FIX Trading Community. SBE was optimized for \n   market data and trading that require low latency is applicable to \n   any high performance messaging need.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "security_considerations": "presentation layer protocol, and makes no claim to safety at \n   session or application layers. Data consists of a stream of octets\n   of either fixed or variable length. Users must take care to avoid \n   buffer overruns and should verify that data conforms to specified \n   data types. This format is not intended for active context, such \n   as executable code.\n\nInteroperability considerations: Implementers may demonstrate \n   interoperability with others by publishing results of \n   fix-sbe-conformance test suite, published as open source by FIX \n   Trading Community.\n\nPublished specification: Simple Binary Encoding standards are \n   published by FIX Trading Community at \n   https://www.fixtrading.org/standards/sbe/ and \n   https://github.com/FIXTradingCommunity/fix-simple-binary-encoding\n\nApplications which use this media: Simple Binary Encoding was \n   conceived as a binary message encoding of FIX Protocol, \n   standardized by FIX Trading Community. SBE was optimized for \n   market data and trading that require low latency is applicable to \n   any high performance messaging need.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "interoperability_considerations": "interoperability with others by publishing results of \n   fix-sbe-conformance test suite, published as open source by FIX \n   Trading Community.\n\nPublished specification: Simple Binary Encoding standards are \n   published by FIX Trading Community at \n   https://www.fixtrading.org/standards/sbe/ and \n   https://github.com/FIXTradingCommunity/fix-simple-binary-encoding\n\nApplications which use this media: Simple Binary Encoding was \n   conceived as a binary message encoding of FIX Protocol, \n   standardized by FIX Trading Community. SBE was optimized for \n   market data and trading that require low latency is applicable to \n   any high performance messaging need.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2020-04-14, last updated 2020-04-14)\n\nMedia type name: application\n\nMedia subtype name: sbe\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\n   Character encodings may be specified within an SBE message schema.\n\nSecurity considerations: Simple Binary Encoding is strictly a \n   presentation layer protocol, and makes no claim to safety at \n   session or application layers. Data consists of a stream of octets\n   of either fixed or variable length. Users must take care to avoid \n   buffer overruns and should verify that data conforms to specified \n   data types. This format is not intended for active context, such \n   as executable code.\n\nInteroperability considerations: Implementers may demonstrate \n   interoperability with others by publishing results of \n   fix-sbe-conformance test suite, published as open source by FIX \n   Trading Community.\n\nPublished specification: Simple Binary Encoding standards are \n   published by FIX Trading Community at \n   https://www.fixtrading.org/standards/sbe/ and \n   https://github.com/FIXTradingCommunity/fix-simple-binary-encoding\n\nApplications which use this media: Simple Binary Encoding was \n   conceived as a binary message encoding of FIX Protocol, \n   standardized by FIX Trading Community. SBE was optimized for \n   market data and trading that require low latency is applicable to \n   any high performance messaging need.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: Donald L. Mendelson\n   2. Email: donmendelson&silver-flash.net\n\nIntended usage: Common\n\n   High performance messaging\n\nAuthor/Change controller: FIX Trading Community incorporated as FIX \n   Protocol Ltd. <fix&fixtrading.org>"
+  },
+  "references": []
+}

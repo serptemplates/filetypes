@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "urc-uisocketdesc+xml",
+  "full": "application/urc-uisocketdesc+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/urc-uisocketdesc+xml",
+    "template_text": "(registered 2013-06-24, last updated 2013-06-24)\n\n1. Media Type Name: application\n\n2. Subtype name: standards tree urc-uisocketdesc+xml\n\n3. Required parameters: none\n\n4. Optional parameters: charset parameter (see definition of charset\nparameter for application/xml, RFC 3023). The allowed values are:\n\"utf-8\" [RFC2279] and \"utf-16\" [RFC2781]. In the absence of the\ncharset parameter, UTF-8 and UTF-16 are differentiated by the\nprocedure described in [XML 4.3.3].\n\n[XML 4.3.3] Extensible Markup Language (XML) 1.0 (Fifth Edition). W3C\nRecommendation 26 November 2008. 4.3.3 Character Encoding in Entities.\nhttp://www.w3.org/TR/REC-xml/#charencoding\n\n5. Encoding considerations: binary\n\n6. Security considerations:\n\nThe general utility of this media type to the Internet community is in\nthe area of remote user interfaces for devices and services that use\nInternet-based technologies, in particular the Universal Remote\nConsole (URC) technology (ISO/IEC 24752). A device/service that\nexposes a User Interface Socket Description, as defined by ISO/IEC\n24752-2, can be remotely controlled by pluggable user interfaces\nconforming to this standard. The separation of device/service\nfunctionality and user interface allows for an open user interface\nplatform, thus facilitating personalized user interfaces and user\ninterfaces tailored for specific user groups, including users with\ndisabilities.\n\nThe basic (standardized) format of information contained in the media\ntype does not carry active or executable content (with the exception\nof the <mapping> elements, and the XPath 2.0 fragments, see below).\nContent is restricted to describing the structure of a data model, not\nthe actual values of the data model (that could potentially be\nmodified). For most applications, this information is publicly\navailable, and not sensitive to privacy and integrity. However, for\nsensitive applications transport security (HTTPS) may be employed,\nproviding a basic level of integrity and privacy.\n\nHowever, the <mapping> elements underneath <uiSocket>, <set>,\n<variable>, <command>, <param> and <notify> (see ISO/IEC 24752-2:2013,\nsections 6.12, 7.5, 8.11, 9.10, 9.12.9, and 10.11) that allow for\nvendor- and platform-specific extensions, could potentially carry such\ncontent. For each of these <mapping> elements, ISO/IEC 24752-2:2013\ncontains a note that strongly discourages vendors to use the\n<extension> element for active or executable content.\n\nThe inclusion of XPath 2.0 fragments is deemed to not significantly\nincrease the security risk, since it is interpreted in a sandbox-like\ncontext (rather than directly executed).\n\nNote: ISO/IEC 24752-2:2013 section 12 explicitly encourages vendors\nand platform carriers to consider employment of privacy and integrity\nservices such as transport security. However, concrete measures in\nthis regard are outside the scope of this standard.\n\nSee also the security considerations described in section 10 of RFC\n3023.\n\n7. Interoperability considerations: Same as interoperability\nconsiderations of text/xml as specified in RFC 3023.\n\n8. Published specification: ISO/IEC 24752-2:2013 (currently in FDIS\nvote)\n\n9. Applications which use this media type: Universal Remote Console\nclients, i.e. software and hardware for the purpose of remote control\nof devices and services.\n\n10. Additional information:\n\nMagic number(s): Same as magic number(s) of text/xml as specified in\nRFC 3023. File extension(s): .uis Macintosh file type code(s): not\nassigned Object Identifier(s) or OID(s): not assigned\n\n11. Intended usage: COMMON\n\n12. Other Information/General Comment:\n\n13. Person to contact for further information: Name: Gottfried\nZimmermann E-mail: gzimmermann&acm.org Author/change controller:\nISO/IEC 24752-2 is an international standard by ISO/IEC JTC1 SC35,\nwith editor Gottfried Zimmermann. ISO/IEC JTC1 SC35 has change control\nover ISO/IEC 24752-2."
+  },
+  "references": []
+}

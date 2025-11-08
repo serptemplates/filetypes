@@ -1,0 +1,38 @@
+{
+  "type": "audio",
+  "subtype": "clearmode",
+  "full": "audio/clearmode",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/clearmode",
+    "encoding_considerations": "This type is only defined for transfer via RTP [4].",
+    "security_considerations": "See Section 6 of RFC 4040\n\nInteroperability considerations: none\n\nPublished specification: RFC 4040\n\nApplications, which use this media type:\n\n\t\t Voice over IP Media Gateways, transferring \"ISDN 64 kb/s\n\t\t data\", \"ISDN 7 kHz voice\", or other 64 kbit/s data streams\n\t\t via an RTP connection\n\n\t\t Note: the choice of the \"audio\" top-level MIME type was\n\t\t made because the dominant uses of this pseudo-codec are\n\t\t expected to telephony and voice-gateway-related.  The\n\t\t \"audio\" type allows the use of sharing of the port in the\n\t\t SDP \"m=\" line with codecs such as audio/g711 [6], [7], for\n\t\t one example.  This sharing is an important application and\n\t\t would not be possible otherwise.\n\nAdditional information: none\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n\n\t\t IETF Audio/Video transport working group\n\t\t delegated from the IESG",
+    "interoperability_considerations": "Published specification: RFC 4040\n\nApplications, which use this media type:\n\n\t\t Voice over IP Media Gateways, transferring \"ISDN 64 kb/s\n\t\t data\", \"ISDN 7 kHz voice\", or other 64 kbit/s data streams\n\t\t via an RTP connection\n\n\t\t Note: the choice of the \"audio\" top-level MIME type was\n\t\t made because the dominant uses of this pseudo-codec are\n\t\t expected to telephony and voice-gateway-related.  The\n\t\t \"audio\" type allows the use of sharing of the port in the\n\t\t SDP \"m=\" line with codecs such as audio/g711 [6], [7], for\n\t\t one example.  This sharing is an important application and\n\t\t would not be possible otherwise.\n\nAdditional information: none\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n\n\t\t IETF Audio/Video transport working group\n\t\t delegated from the IESG",
+    "additional_information": "Intended usage: COMMON\n\nAuthor/Change controller:\n\n\t\t IETF Audio/Video transport working group\n\t\t delegated from the IESG",
+    "intended_usage": "common",
+    "template_text": "(RFC 4040 published April 2005, subtype last updated April 2005)\n\nMIME media type name: audio\n\nMIME subtype name: clearmode\n\nRequired parameters: none\n\nOptional parameters: ptime, maxptime\n\n\t\t \"ptime\" gives the length of time in milliseconds\n\t\t represented by the media in a packet, as described in RFC\n\t\t 2327 [6].\n\n\t\t \"maxptime\" represents the maximum amount of media, which\n\t\t can be encapsulated in each packet, expressed as time in\n\t\t milliseconds, as described in RFC 3267 [9].\n\nEncoding considerations:\n\n\t\t This type is only defined for transfer via RTP [4].\n\nSecurity considerations:\n\n\t\t See Section 6 of RFC 4040\n\nInteroperability considerations: none\n\nPublished specification: RFC 4040\n\nApplications, which use this media type:\n\n\t\t Voice over IP Media Gateways, transferring \"ISDN 64 kb/s\n\t\t data\", \"ISDN 7 kHz voice\", or other 64 kbit/s data streams\n\t\t via an RTP connection\n\n\t\t Note: the choice of the \"audio\" top-level MIME type was\n\t\t made because the dominant uses of this pseudo-codec are\n\t\t expected to telephony and voice-gateway-related.  The\n\t\t \"audio\" type allows the use of sharing of the port in the\n\t\t SDP \"m=\" line with codecs such as audio/g711 [6], [7], for\n\t\t one example.  This sharing is an important application and\n\t\t would not be possible otherwise.\n\nAdditional information: none\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n\n\t\t IETF Audio/Video transport working group\n\t\t delegated from the IESG"
+  },
+  "references": []
+}

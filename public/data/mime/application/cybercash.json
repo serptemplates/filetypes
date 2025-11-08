@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "cybercash",
+  "full": "application/cybercash",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/cybercash",
+    "encoding_considerations": "CyberCash messages are currently in 7 bit US-ASCII with limited line\nlengths. Some message types are quite readable but many include within\nthem some digital signature information and many have large portions\nencrypted. This signature and/or encrypted information is essentially\nbinary and is currently base64 encoded in certain fields. In the\nfuture, CyberCash messages may be extended to include a more extended\nset of byte values in which case a Content-Transfer-Encoding of other\nthan 7bit will be required.",
+    "security_considerations": "The CyberCash system is designed so that a secure channel is not\nrequired other than for privacy reasons. Someone observing CyberCash\nmessages may be able to tell who is transfering funds to whom and for\nwhat reason but they will not be able to misappropriate funds based on\nthese messages unless they can break the cryptosystems used. Use of\nCyberCash messages within a secure envelope will usually eliminate all\nprivacy concerns other than basic traffic analysis. No currently\ndefined CyberCash messages has any \"executable\" material.",
+    "template_text": "\n\nDate: Mon, 20 Mar 1995 16:15:25 -0500 (EST) \nFrom: \"Donald E. Eastlake 3rd\" <dee&cybercash.com\nTo: ietf-types&uninett.no\nSubject: application/CyberCash\n\n\nMEDIA TYPE NAME:\nApplication\n\nMEDIA SUBTYPE NAME:\nCyberCash\n\nREQUIRED PARAMETERS:\nnone\n(CyberCash messages encode within themselves a format version number) \n\nOPTIONAL PARAMETERS:\nnone\n\nENCODING CONSIDERATIONS:\n\nCyberCash messages are currently in 7 bit US-ASCII with limited line\nlengths. Some message types are quite readable but many include within\nthem some digital signature information and many have large portions\nencrypted. This signature and/or encrypted information is essentially\nbinary and is currently base64 encoded in certain fields. In the\nfuture, CyberCash messages may be extended to include a more extended\nset of byte values in which case a Content-Transfer-Encoding of other\nthan 7bit will be required.\n\nSECURITY CONSIDERATIONS:\n\nThe CyberCash system is designed so that a secure channel is not\nrequired other than for privacy reasons. Someone observing CyberCash\nmessages may be able to tell who is transfering funds to whom and for\nwhat reason but they will not be able to misappropriate funds based on\nthese messages unless they can break the cryptosystems used. Use of\nCyberCash messages within a secure envelope will usually eliminate all\nprivacy concerns other than basic traffic analysis. No currently\ndefined CyberCash messages has any \"executable\" material.\n\nPUBLISHED SPECIFICATION:\n\nThe specifications for this content-type are proprietary. They are\nspecified by CyberCash, Inc. The registration of this content-type is\nintended only to provide a convention for labeling this proprietary\ndata type within the MIME/HTTP environment and does not specify any\ndetails about the content format or semantics, except to refer to the\nsoftware and specifications provided by CyberCash, Inc.\n\n\nCompany Contact:\n\n\tCyberCash, Inc.\n\tAttn:  Donald Eastlake\n\t2100 Reston Parkway, Suite 430\n\tReston, VA 22091 USA\n\t\n\ttel: +1 703-620-4200\n\tfax: +1 703-620-4215\n\temail: info&cybercash.com\n\tURL: http://www.cybercash.com\n\n\n\n=====================================================================\nDonald E. Eastlake 3rd     +1 508-287-4877(tel)     dee&cybercash.com\n   318 Acton Street        +1 508-371-7148(fax)     dee&world.std.com\nCarlisle, MA 01741 USA     +1 703-620-4200(main office, Reston, VA)\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

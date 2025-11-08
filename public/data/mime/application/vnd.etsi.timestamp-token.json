@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.timestamp-token",
+  "full": "application/vnd.etsi.timestamp-token",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.timestamp-token",
+    "template_text": "(registered 2013-10-15, last updated 2013-10-15)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.etsi.timestamp-token\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : binary\n\nSecurity considerations :\nThis media type consists of a DER-encoded TimeStampToken as specified\nin RFC 3161; all the security considerations specified in section 4\nof that document apply to this media type.\n\nNo active or executable content is present.\n\nThe token only contains a hash of the data being time-stamped so under\nnormal circumstances no confidentiality protection is needed. Integrity\nof the data is guaranteed because time-stamp token are electronically\nsigned by a Time Stamping Authority.\n\nIt should be noted that the hash refers to data objects carried in ASiC\ncontainers. These may contain malicious code and hence unless the source\nis trusted the usual protection against malware and viruses should be\napplied.\n\nInteroperability considerations :\n\nPublished specification :\nETSI TS 102 918 available at\nhttp://www.etsi.org/deliver/etsi_ts/102900_102999/102918/01.03.01_60/ts_102918v010301p.pdf\n\nApplications which use this media :\nSoftware602 AdES Server, Polysys TEA 2.0.0+, Cryptolog CUTE, DigiDoc3 Client 3.8\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : tst\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\nNone\n\nPerson to contact for further information :\n\n1. Name : Miguel Angel Reina Ortega\n2. Email : miguelangel.reinaortega&etsi.org\n\nIntended usage : Common\nNone\n\nAuthor/Change controller : Sonia Compans (sonia.compans&etsi.org)"
+  },
+  "references": []
+}

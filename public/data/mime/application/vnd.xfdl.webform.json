@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.xfdl.webform",
+  "full": "application/vnd.xfdl.webform",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.xfdl.webform",
+    "template_text": "(last updated 2009-02-18)\n\nName : Michael Mansell\n\nEmail : mmansell&ca.ibm.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.xfdl.webform\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe mime type is used to initiate actions on the user computer, such as\nprinting a document, or digitally signing a document. The MIME Type is\nassociated with a plugin, and the thus, the plugin does contain executable code.\nHowever, the installation of this plugin requires user confirmation, as there is\nno way to perform this actions automatically. Therefore, the normal security\nprecautions present within all browsers is what protects the user from\nmalicious content.\n\nThe plugin (or ActiveX control) is digitally signed by IBM, and thus has\nan increased security measure (the plugin is verified by the browser to have\nnot been tampered with).\n\nLastly, the content that is provided to the plugin does not contain any\nactive content, but instead just the input to the plugin to perform its\njob (ie. the payload is the document to print, or the payload is the\ndocument to sign). Therefore, the payload itself cannot define or execute\nactions on the user's computer.\n\nThe content provided is the same document that the user is currently\nviewing in their browser, just in a format (such as GIF or PNG) that\nis easier to print accurately or sign accurately than HTML. Thus, the\ncontent has the same confidentiality as the original document that\ntriggered this mime type. This means that there are no privacy or\nintegrity issues with this mime type.\n\n\nInteroperability considerations :\nAs this media type is used to load a plugin, and not as a file format, no\ninteroperability considerations exist.\n\nPublished specification :\nAs this media type is used to load a plugin, and not as a file format, there is\nno published specification.\n\nApplications which use this media :\nThe IBM Lotus Forms Server application uses this media type.\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : N/A\n3. Macintosh file type code : N/A\n4. Object Identifiers: N/A\n\n\nPerson to contact for further information :\n\n1. Name : Michael Mansell\n2. Email : mmansell&ca.ibm.com\n\nIntended usage : Limited Use\nAs this media type is used to load a plugin on behalf of the IBM Lotus Forms\nsoftware, the intended usage is limited to only the IBM Lotus Forms software.\n\nAuthor/Change controller :\n\n\n(file created 2009-02-18)"
+  },
+  "references": []
+}

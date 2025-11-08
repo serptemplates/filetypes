@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.font-fontforge-sfd",
+  "full": "application/vnd.font-fontforge-sfd",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.font-fontforge-sfd",
+    "template_text": "(last updated 2008-05-13)\n\nName : George Williams\n\nEmail : gww&silcom.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.font-fontforge-sfd\n\nRequired parameters : (None)\n\nOptional parameters : (None)\n\nEncoding considerations : 7bit\n\n\nSecurity considerations :\n1. This datatype contains no mechanism for attaching the downloader's\nfile system.\n2. It may contain \"active content\" in the form of TrueType\ninstructions. These instructions operate in a controlled interpreter.\nInfinite loops are possible, though all interpreters I know of guard\nagainst them. These instructions cannot allocate memory. These\ninstructions cannot affect the file system or anything other than\nthe rasterization process.\n3. There is no mechanism for sending information back to the server.\n4. When a font is rasterized, especially if rasterized at a large point\nsize it is possible for the process to consume large amounts of memory.\nGenerally an upper bound can be placed on this in advance (by bounding\nbox analysis) and a rasterizer can refuse to perform an operation which\nwould require excessive resources.\n5. Fonts are meant to be used. Restrictions on usage are described in\nLicense Agreements (and the format allows for a Licence Agreement to be\nspecified within it).\n6. Privacy considerations are not an issue in fonts.\n7. Confidentiality protection is not needed for this type. (All\nstandard font formats are well documented. Once released the data are\nexposed to all an sundry, protecting those data before they are released\nseems unnecessary).\n8. No protection is provided against tampering in transit, nor is there\na mechanism to check that the data are consistent.\n\nInteroperability considerations :\nThis datatype has been used for ~10 years on many flavors of Unix and\nLinux (including Macs) as well as Windows boxes. Its design goals\nincluded being specified in plain, readable text using only the\nprintable characters of US-ASCII (and space and newline).\n\nThe only interoperability problem I recall occurred early on in locales\nwhich used \",\" for the decimal point. That has been fixed.\n\nPublished specification :\nA specification has been available on the web for approximately 10\nyears:\nhttp://fontforge.sf.net/sfdformat.html\n(it is ~60K so I shall not include it here)\n\nApplications which use this media :\nFontForge -- http://fontforge.sf.net/\nXgridfit -- http://xgridfit.sf.net/\n\nThe creators of FontLab (http://www.fontlab.com/) have discussed the\nspecification with me and say that they may implement it in the future.\n\nAdditional information :\n\n1. Magic number(s) : <match type=\"string\" offset=\"0\"\nvalue=\"SplineFontDB\"/>\n2. File extension(s) : sfd\n3. Macintosh file type code : TEXT\n4. Object Identifiers:\n\nIn specifying the \"Magic number\" I am using the syntax of the\nfreedesktop. An sfd file will always contain the text \"SplineFontDB\" at\nthe beginning of the file.\n\nNo parameters are used. RFC4288 says not to use \"None\" but if I leave\nthe fields blank the form is rejected.\n\n\nPerson to contact for further information :\n\n1. Name : George Williams\n2. Email : gww&silcom.com\n\nIntended usage : Limited Use\nI'm not sure exactly what section 4.9 of RFC4288 means by limited use.\n\nThere are not a large number of font designers when compared to users\nof Word. But there are thousands of them, and the sfd format is in use\nin many opensource projects (for example: http://dejavu.sf.net/ ).\n\nOn the other hand the format is openly specified, and some users have\nwritten their own little programs to do simple modification so the data\nspecified therein.\n\nAuthor/Change controller : George Williams (gww&silcom.com)\n\n(file created 2008-05-13)"
+  },
+  "references": []
+}

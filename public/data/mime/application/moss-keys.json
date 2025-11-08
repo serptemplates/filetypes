@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "moss-keys",
+  "full": "application/moss-keys",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/moss-keys",
+    "template_text": "(RFC 1848 published October 1995, subtype last updated October 1995)\n\n(1)  MIME type name: application\n\n(2)  MIME subtype name: moss-keys\n\n(3)  Required parameters: none\n\n(4)  Optional parameters: none\n\n(5)  Encoding considerations: quoted-printable is always sufficient\n\n(6)  Security considerations: none\n\nThe \"application/moss-keys\" content type is used on the first body\npart of an enclosing multipart/encrypted.  Its content is comprised\nof the data encryption key used to encrypt the data in the second\nbody part and other control information required to decrypt the data,\nas defined by Section 2.2.1.  The label \"application/moss-keys\" must\nbe used as the value of the protocol parameter of the enclosing\nmultipart/encrypted; the protocol parameter must be present.\n\nAn application/moss-keys body part is constructed as follows:\n\n   Content-Type: application/moss-keys\n\n   <mosskeys>\n\nwhere the <mosskeys> token is defined as follows.\n\n   <mosskeys>      ::= <version> <dekinfo> 1*<recipasymflds>\n\n   <version>       ::= \"Version:\" \"5\" CRLF\n\n   <dekinfo>       ::= \"DEK-Info\" \":\" <dekalgid>\n                       [ \",\" <dekparameters> ] CRLF\n\n   <recipasymflds> ::= <recipid> <asymkeyinfo>\n\n   <recipid>       ::= \"Recipient-ID:\" <id> CRLF\n\n   <asymkeyinfo>   ::= \"Key-Info\" \":\" <ikalgid> \",\" <asymencdek> CRLF\n\nThe token <id> is defined in Section 4.  The token <version> is\ndefined in Section 2.1.2.1.  All other tokens are defined in Section\n2.2.1.3."
+  },
+  "references": []
+}

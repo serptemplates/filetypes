@@ -1,0 +1,47 @@
+{
+  "type": "image",
+  "subtype": "tiff-fx",
+  "full": "image/tiff-fx",
+  "extensions": [
+    "tfx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/tiff-fx",
+    "encoding_considerations": "This media type consists of binary data.  The base64 encoding\n   should be used on transports that cannot accommodate binary data\n   directly.",
+    "security_considerations": "TIFF-FX utilizes a structure which can store image data and\n   attributes of this image data.  The fields defined in the TIFF-FX\n   specification are of a descriptive nature and provide information\n   that is useful to facilitate viewing and rendering of images by a\n   recipient.  As such, the fields currently defined in the TIFF-FX\n   specification do not in themselves create additional security\n   risks, since the fields are not used to induce any particular\n   behavior by the recipient application.\n\n   TIFF-FX has an extensible structure, so that it is theoretically\n   possible that fields could be defined in the future which could be\n   used to induce particular actions on the part of the recipient,\n   thus presenting additional security risks, but this type of\n   capability is not supported in the referenced TIFF-FX\n   specification.  Indeed, the definition of fields which would\n   include such processing instructions is inconsistent with the\n   goals and spirit of the TIFF-FX specification.\n\n   The MIME type and file extension defined by this document MUST NOT\n   be used to blindly select a processing program.  It is up to the\n   implementation to determine the application (if necessary) and\n   render the image to the user.",
+    "interoperability_considerations": "The ability of implementations to handle all the defined\n   applications (or profiles within applications) of TIFF-FX may not\n   be ubiquitous.  As a result, implementations may decode and\n   attempt to display the encoded TIFF-FX image data only to\n   determine that the image cannot be rendered.",
+    "additional_information": "Magic number(s):\n        II (little-endian):  49 49 2A 00 hex\n        MM (big-endian):     4D 4D 00 2A hex\n   File extension(s): .TFX\n   Macintosh File Type Code(s): TFX",
+    "intended_usage": "common",
+    "change_controller": "Lloyd McIntyre",
+    "template_text": "(registered in RFC3250, updated by RFC3950)\n\nMIME media type name: image\n\nMIME subtype name: tiff-fx\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding Considerations:\n\n   This media type consists of binary data.  The base64 encoding\n   should be used on transports that cannot accommodate binary data\n   directly.\n\nSecurity considerations:\n\n   TIFF-FX utilizes a structure which can store image data and\n   attributes of this image data.  The fields defined in the TIFF-FX\n   specification are of a descriptive nature and provide information\n   that is useful to facilitate viewing and rendering of images by a\n   recipient.  As such, the fields currently defined in the TIFF-FX\n   specification do not in themselves create additional security\n   risks, since the fields are not used to induce any particular\n   behavior by the recipient application.\n\n   TIFF-FX has an extensible structure, so that it is theoretically\n   possible that fields could be defined in the future which could be\n   used to induce particular actions on the part of the recipient,\n   thus presenting additional security risks, but this type of\n   capability is not supported in the referenced TIFF-FX\n   specification.  Indeed, the definition of fields which would\n   include such processing instructions is inconsistent with the\n   goals and spirit of the TIFF-FX specification.\n\n   The MIME type and file extension defined by this document MUST NOT\n   be used to blindly select a processing program.  It is up to the\n   implementation to determine the application (if necessary) and\n   render the image to the user.\n\nInteroperability considerations:\n\n   The ability of implementations to handle all the defined\n   applications (or profiles within applications) of TIFF-FX may not\n   be ubiquitous.  As a result, implementations may decode and\n   attempt to display the encoded TIFF-FX image data only to\n   determine that the image cannot be rendered.\n\nPublished specification:\n\n   TIFF-FX (Tag Image File Format Fax eXtended) is defined in:\n\n   RFC 3949, \"File Format for Internet Fax\", February 2005, Buckley,\n   R., Venable, D., McIntyre, L., Parsons, G., and J. Rafferty.\n\nApplications which use this media type:\n\n   Imaging, fax, messaging and multi-media\n\nAdditional information:\n\n   Magic number(s):\n        II (little-endian):  49 49 2A 00 hex\n        MM (big-endian):     4D 4D 00 2A hex\n   File extension(s): .TFX\n   Macintosh File Type Code(s): TFX\n\nPerson & email address to contact for further information:\n\n   Lloyd McIntyre\n   Lloyd_McIntyre&Dell.com\n\n   Glenn W. Parsons\n   gparsons&nortelnetworks.com\n\n   James Rafferty\n   jraff&brooktrout.com\n\nIntended usage: COMMON\n\nChange controller: Lloyd McIntyre"
+  },
+  "references": [
+    {
+      "title": "RFC 3949",
+      "url": "https://www.rfc-editor.org/rfc/rfc3949.html",
+      "kind": "RFC"
+    }
+  ]
+}

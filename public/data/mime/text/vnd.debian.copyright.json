@@ -1,0 +1,40 @@
+{
+  "type": "text",
+  "subtype": "vnd.debian.copyright",
+  "full": "text/vnd.debian.copyright",
+  "extensions": [],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.debian.copyright",
+    "encoding_considerations": "The encoding is always UTF-8.",
+    "security_considerations": "The machine-readable debian/copyright file format is declarative\nand does not cause commands to be executed. However, some programs\nthat parse it may execute commands containing values of some fields.\nTherefore an attacker may exploit some security flaws in such programs.\nParsers should therefore follow general practices to sanitise their\ninput.\n\nThe machine-readable debian/copyright file format does not feature\nmechanisms to ensure the integrity of the file. Consider using secure\ntransport or a digital signature when needed.\n\nThis media type has no special privacy considerations.",
+    "interoperability_considerations": "This media type is a subtype of text/plain in the sense of the\nFreeDesktop Shared MIME-info Database specification.",
+    "applications": "The media type vnd.debian.copyright is not yet recognised by\napplications. The machine-readable debian/copyright file format\nis for instance read and written by the 'cme' command from the\nConfig::Model Perl module. This list is not exhaustive.",
+    "template_text": "(file created 2012-11-15; last updated 2012-11-15)\n\nType name:\ntext\n\nSubtype name:\nvnd.debian.copyright\n\nRequired parameters:\ncharset - the value of charset is always UTF-8.\n\nOptional parameters:\nrevision - the revision number of the specification (digits.digits).\n\nEncoding considerations:\nThe encoding is always UTF-8.\n\nSecurity considerations:\nThe machine-readable debian/copyright file format is declarative\nand does not cause commands to be executed. However, some programs\nthat parse it may execute commands containing values of some fields.\nTherefore an attacker may exploit some security flaws in such programs.\nParsers should therefore follow general practices to sanitise their\ninput.\n\nThe machine-readable debian/copyright file format does not feature\nmechanisms to ensure the integrity of the file. Consider using secure\ntransport or a digital signature when needed.\n\nThis media type has no special privacy considerations.\n\nInteroperability considerations:\nThis media type is a subtype of text/plain in the sense of the\nFreeDesktop Shared MIME-info Database specification.\n\nPublished specification:\nhttp://www.debian.org/doc/packaging-manuals/copyright-format/1.0/\n\nApplications that use this media type:\nThe media type vnd.debian.copyright is not yet recognised by\napplications. The machine-readable debian/copyright file format\nis for instance read and written by the 'cme' command from the\nConfig::Model Perl module. This list is not exhaustive.\n\nAdditional information:\nDeprecated alias names for this type:\nNone.\nMagic number(s):\nFiles usually start with the following string:\nFormat: http://www.debian.org/doc/packaging-manuals/copyright-format/\n\nFile extension(s):\nNo extension, but the file is usually named 'copyright'.\n\nMacintosh file type code(s):\nNone.\n\nPerson & email address to contact for further information:\nThe Debian Policy mailing list <debian-policy&lists.debian.org>\n\nIntended usage:\nLIMITED USE\n\nRestrictions on usage:\nNone.\n\nAuthor:\nCharles Plessy <plessy&debian.org>\n\nChange controller:\nThe Debian Project <http://www.debian.org>"
+  },
+  "references": []
+}

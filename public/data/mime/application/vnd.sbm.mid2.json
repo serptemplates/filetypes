@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.sbm.mid2",
+  "full": "application/vnd.sbm.mid2",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sbm.mid2",
+    "template_text": "(last updated 2007-12-20)\n\nName : Masanori Murai\n\nEmail : masanori.murai&mb.softbank.co.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.sbm.mid2\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of handling 8 bit text.\n\nSecurity considerations :\nMID MMS Notification data are passive, meaning they do not contain executable or active content which may represent a security threat.\nThe format does not include confidential fields.\nHowever, the information present in this media format is used to configure the receiving application.\nThus, the usage of the format may be vulnerable to attacks modifying or spoofing the content of this format.\nDepending on the similar system architecture with MMS, it is recommended to use source authentication and integrity protection.\n\nInteroperability considerations :\nThis media type is used only in MID-MMS Notification enhanced by SOFTBANK MOBILE.\n\n\nPublished specification :\n\"SOFTBANK MOBILE Support Document MID-AppendixD 2007/12 Version\"\nThis document is a not opened to the public.\nThis document is offered only to the enterprise that contracts our company to NDA.\n\nApplications which use this media :\nWAP MMS Applications.(extended by SOFTBANK MOBILE)\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nnone\n\nPerson to contact for further information :\n\n1. Name : Masanori Murai\n2. Email : masanori.murai&mb.softbank.co.jp\n\nIntended usage : Limited Use\nThis media type is limited use by our closed system environment.\nTherefore, this media type is not opened to the public.\n\nAuthor/Change controller : SOFTBANK MOBILE corp.\nTokyo Shiodome Build 1-9-1,\nHigashi-Shimbashi,\nMinato-ku, Tokyo 105-7317 Japan\n\nTel: +81-3-6889-6413\nFax: +81-3-6889-6622\n\nURL: http://www.softbankmobile.co.jp/\n\n(file created 2007-12-20)"
+  },
+  "references": []
+}

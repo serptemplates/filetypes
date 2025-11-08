@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "pidf-diff+xml",
+  "full": "application/pidf-diff+xml",
+  "extensions": [],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/pidf-diff+xml",
+    "encoding_considerations": "Same as encoding considerations of application/xml as specified in\nRFC 3023 [RFC3023].",
+    "security_considerations": "See Section 10 of RFC 3023 [RFC3023].  This content type is designed\nto carry presence data, which may be considered private information.\nAppropriate precautions should be adopted to limit disclosure of this\ninformation.\n\nInteroperability considerations: none\n\nPublished specification: RFC 5262\n\nApplications that use this media type: SIP-based presence systems",
+    "interoperability_considerations": "Published specification: RFC 5262\n\nApplications that use this media type: SIP-based presence systems",
+    "additional_information": "Magic Number: None\n\n   File Extension: .xml\n\n   Macintosh file type code: \"TEXT\"\n\nPersonal and email address for further information: Jari Urpalainen,\njari.urpalainen&nokia.com\n\nIntended usage: LIMITED USE\n\nRestrictions on usage: Presence [RFC3863] based systems.",
+    "intended_usage": "limited use",
+    "template_text": "(RFC 5262 published September 2008, subtype last updated September 2008)\n\nMIME media type name: application\n\nMIME subtype name: pidf-diff+xml\n\nMandatory parameters: none\n\nOptional parameters:\nSame as charset parameter of application/xml as specified in RFC 3023\n[RFC3023].  Default value is UTF-8.\n\nEncoding considerations:\nSame as encoding considerations of application/xml as specified in\nRFC 3023 [RFC3023].\n\nSecurity considerations:\nSee Section 10 of RFC 3023 [RFC3023].  This content type is designed\nto carry presence data, which may be considered private information.\nAppropriate precautions should be adopted to limit disclosure of this\ninformation.\n\nInteroperability considerations: none\n\nPublished specification: RFC 5262\n\nApplications that use this media type: SIP-based presence systems\n\nAdditional information:\n\n   Magic Number: None\n\n   File Extension: .xml\n\n   Macintosh file type code: \"TEXT\"\n\nPersonal and email address for further information: Jari Urpalainen,\njari.urpalainen&nokia.com\n\nIntended usage: LIMITED USE\n\nRestrictions on usage: Presence [RFC3863] based systems.\n\nAuthor:\nThis specification is a work item of the IETF SIMPLE working group,\nwith mailing list address <simple&ietf.org>.\n\nAuthor/Change controller: the IETF.\n"
+  },
+  "references": []
+}

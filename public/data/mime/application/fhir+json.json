@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "fhir+json",
+  "full": "application/fhir+json",
+  "extensions": [],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/fhir+json",
+    "security_considerations": "The content that may be carried in the FHIR media type includes Protected Health Information, information that identifies individuals (including genetic sequences), executable code, XHTML and billing and claiming information. Exchanging this kind of information carries many kinds of security risks to the systems that handle, store and administer the media. Further details are available at http://hl7.org/fhir/security.html.\nAs an JSON based type, this media type inherits the security considerations of JSON - See RFC 8259, Section 12.",
+    "interoperability_considerations": "FHIR is an interoperability format defined for use across the healthcare system. However the healthcare system itself has wide variations in information and business processes across jurisdiction, domain, institution type, and clinical context. For this reason, it should never be assumed that 2 applications that implement FHIR in a conformant fashion will interoperate with each other. FHIR includes an extensive meta-language for dealing with this variability, and the applicable conformance statements or implementation guides should be consulted (see http://hl7.org/fhir/profiling.html).",
+    "additional_information": "1. Deprecated alias names for this type: n/a\n2. Magic number(s): n/a\n3. File extension(s): n/a\n4. Macintosh file type code: n/a\n5. Object Identifiers: n/a",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-03-06, last updated 2018-03-06)\n\nMedia type name: application\n\nMedia subtype name: fhir+json\n\nRequired parameters: (none)\n\nOptional parameters:\ncharset - has the same meaning as for text/xml (see RFC 7303 section 3), If present, this must have the value \"UTF-8\". \n\nEncoding considerations: 8bit (since only UTF-8 is allowed)\n\n\nSecurity considerations:\nThe content that may be carried in the FHIR media type includes Protected Health Information, information that identifies individuals (including genetic sequences), executable code, XHTML and billing and claiming information. Exchanging this kind of information carries many kinds of security risks to the systems that handle, store and administer the media. Further details are available at http://hl7.org/fhir/security.html.\nAs an JSON based type, this media type inherits the security considerations of JSON - See RFC 8259, Section 12.\n\nInteroperability considerations:\nFHIR is an interoperability format defined for use across the healthcare system. However the healthcare system itself has wide variations in information and business processes across jurisdiction, domain, institution type, and clinical context. For this reason, it should never be assumed that 2 applications that implement FHIR in a conformant fashion will interoperate with each other. FHIR includes an extensive meta-language for dealing with this variability, and the applicable conformance statements or implementation guides should be consulted (see http://hl7.org/fhir/profiling.html).\n\nPublished specification:\nhttp://hl7.org/fhir\n\nApplications which use this media:\nMany 100s of applications across healthcare, including EHRs, patient registries, Clinical research applications, Terminology servers\n\nFragment identifier considerations:\nFragment identifier rules for JSON apply\n\nRestrictions on usage:\nn/a\n\nAdditional information:\n\n1. Deprecated alias names for this type: n/a\n2. Magic number(s): n/a\n3. File extension(s): n/a\n4. Macintosh file type code: n/a\n5. Object Identifiers: n/a\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Grahame Grieve\n2. Email: fhir-director&hl7.org\n\nIntended usage: Common\nUsed for exchange of data in healthcare related applications\n\nAuthor/Change controller: HL7 (http://www.hl7.org)"
+  },
+  "references": []
+}

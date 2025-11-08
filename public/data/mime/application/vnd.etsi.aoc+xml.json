@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.aoc+xml",
+  "full": "application/vnd.etsi.aoc+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.aoc+xml",
+    "encoding_considerations": "This media type may require encoding on transports not capable of \n   handling 8 bit text.\n\nSecurity considerations: Objects of this media type contain charging \n   information that is relevant to the user and the current call. \n   Security mechanisms at the transport layer are needed to provide \n   integrity of the content.\n\n   There is no Active or Executable Content on the AOC MIME body. The \n   ETSI TS 183 047 include only textual XML to Control Services.\n\n   There was no formal requirement to Encrypt the AOC MIME body in \n   NGN Rel-2. Operators can be expected to convey such information as \n   part of the AOC service on request. It is expected that the \n   constraints of the Managed IMS Network Entities will be sufficient.\n\nInteroperability considerations: Interoperability is assessed not to \n   be an issue, as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and byte \n   ordering issues. Message format does have version number and \n   backwards compatibility will be preserved in the possible format \n   evolution.",
+    "security_considerations": "information that is relevant to the user and the current call. \n   Security mechanisms at the transport layer are needed to provide \n   integrity of the content.\n\n   There is no Active or Executable Content on the AOC MIME body. The \n   ETSI TS 183 047 include only textual XML to Control Services.\n\n   There was no formal requirement to Encrypt the AOC MIME body in \n   NGN Rel-2. Operators can be expected to convey such information as \n   part of the AOC service on request. It is expected that the \n   constraints of the Managed IMS Network Entities will be sufficient.\n\nInteroperability considerations: Interoperability is assessed not to \n   be an issue, as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and byte \n   ordering issues. Message format does have version number and \n   backwards compatibility will be preserved in the possible format \n   evolution.",
+    "interoperability_considerations": "be an issue, as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and byte \n   ordering issues. Message format does have version number and \n   backwards compatibility will be preserved in the possible format \n   evolution.",
+    "additional_information": "1. Magic number(s): none\n   2. File extension(s): none\n   3. Macintosh file type code: none\n   4. Object Identifiers: none\n\n   AOC",
+    "intended_usage": "common",
+    "template_text": "(last updated 2009-06-03)\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.etsi.aoc+xml\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: 8bit\n\n   This media type may require encoding on transports not capable of \n   handling 8 bit text.\n\nSecurity considerations: Objects of this media type contain charging \n   information that is relevant to the user and the current call. \n   Security mechanisms at the transport layer are needed to provide \n   integrity of the content.\n\n   There is no Active or Executable Content on the AOC MIME body. The \n   ETSI TS 183 047 include only textual XML to Control Services.\n\n   There was no formal requirement to Encrypt the AOC MIME body in \n   NGN Rel-2. Operators can be expected to convey such information as \n   part of the AOC service on request. It is expected that the \n   constraints of the Managed IMS Network Entities will be sufficient.\n\nInteroperability considerations: Interoperability is assessed not to \n   be an issue, as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and byte \n   ordering issues. Message format does have version number and \n   backwards compatibility will be preserved in the possible format \n   evolution.\n\nPublished specification:\n\n   ETSI TS 183 047 v2.1.1 available at    http://pda.etsi.org/pda/queryform.asp\n\nApplications which use this media: The Advice Of Charge (AOC) \n   service, based on stage 1 and 2 of the ISDN Supplementary Service \n   Advice Of Charge for all calls (permanent mode). Within the TISPAN \n   NGN Release 2 Next Generation Network (NGN) the stage 3 \n   description is specified using the IP Multimedia Call Control \n   Protocol based on Session Initiation Protocol (SIP) and Session \n   Description Protocol (SDP). AOC is using the XML Schema providing \n   the charging informationfrom an application server in SIP methods \n   to the served user.\n\nAdditional information:\n\n   1. Magic number(s): none\n   2. File extension(s): none\n   3. Macintosh file type code: none\n   4. Object Identifiers: none\n\n   AOC\n\nPerson to contact for further information:\n\n1. Name: Shicheng Hu\n2. Email: shicheng.hu&etsi.org\n\nIntended usage: Common\n\nAuthor/Change controller: sonia.compans&etsi.org\n\n\n(file created 2009-03-13)"
+  },
+  "references": []
+}

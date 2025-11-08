@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.efi.img",
+  "full": "application/vnd.efi.img",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.efi.img",
+    "encoding_considerations": "Security considerations: UEFI firmware environment will mount the EFI \n   disk images as virtual disk device in pre-boot environment. \n   EFI disk images can store the same data as a real hard drive. That \n   means that they may contain arbitrary content, including but not \n   limited to active content. If the users do not trust the contents \n   of the EFI disk images, they should carefully check the contents \n   before using it (e.g. check the digital signatures of the EFI \n   executable image in it).\n\n   The EFI disk image does not provide any confidentiality protection \n   of its own and requires external means if that is required.\n\n   The EFI disk image does not use compression.\n\nInteroperability considerations: EFI disk images require a UEFI \n   compliant firmware to mount it as virtual disk device for proper \n   execution.",
+    "security_considerations": "disk images as virtual disk device in pre-boot environment. \n   EFI disk images can store the same data as a real hard drive. That \n   means that they may contain arbitrary content, including but not \n   limited to active content. If the users do not trust the contents \n   of the EFI disk images, they should carefully check the contents \n   before using it (e.g. check the digital signatures of the EFI \n   executable image in it).\n\n   The EFI disk image does not provide any confidentiality protection \n   of its own and requires external means if that is required.\n\n   The EFI disk image does not use compression.\n\nInteroperability considerations: EFI disk images require a UEFI \n   compliant firmware to mount it as virtual disk device for proper \n   execution.",
+    "interoperability_considerations": "compliant firmware to mount it as virtual disk device for proper \n   execution.",
+    "additional_information": "1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): *.img\n   4. Macintosh file type code: None\n   5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-01-30, last updated 2017-01-30)\n\nMedia type name: application\n\nMedia subtype name: vnd.efi.img\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: UEFI firmware environment will mount the EFI \n   disk images as virtual disk device in pre-boot environment. \n   EFI disk images can store the same data as a real hard drive. That \n   means that they may contain arbitrary content, including but not \n   limited to active content. If the users do not trust the contents \n   of the EFI disk images, they should carefully check the contents \n   before using it (e.g. check the digital signatures of the EFI \n   executable image in it).\n\n   The EFI disk image does not provide any confidentiality protection \n   of its own and requires external means if that is required.\n\n   The EFI disk image does not use compression.\n\nInteroperability considerations: EFI disk images require a UEFI \n   compliant firmware to mount it as virtual disk device for proper \n   execution.\n\nPublished specification:\n\n   http://www.uefi.org/sites/default/files/resources/UEFI%20Spec%202_6.pdf\n\nApplications which use this media: EFI compliant firmware, boot \n   loaders, and network boot programs (NBPs) utilizing UEFI HTTP Boot.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): *.img\n   4. Macintosh file type code: None\n   5. Object Identifiers: None\n\nPerson to contact for further information:\n\n   1. Name: Fu Siyuan\n   2. Email: siyuan.fu&intel.com\n\nIntended usage: Common\n\nAuthor/Change controller: UEFI Forum"
+  },
+  "references": []
+}

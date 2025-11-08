@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "prs.xsf+xml",
+  "full": "application/prs.xsf+xml",
+  "extensions": [
+    "xsf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/prs.xsf+xml",
+    "template_text": "(last updated 2010-04-22)\n\nMIME media type name : Application\n\nMIME subtype name : Personal Tree - prs.xsf+xml\n\nRequired parameters : none\n\nOptional parameters : charset\n\nThe charset parameter has identical semantics to the charset\nparameter/encoding considerations of the application/xml media type as\nspecified in [RFC3023]. The use of the charset parameter is strongly\nrecommended, otherwise UTF-8 encoded input is assumed.\n\nEncoding considerations : Binary. In general, the encoding\nconsiderations of section 3.2 of RFC 3023 apply.\n\nSecurity considerations : Same as general security considerations for\napplication/xml as specified in section 10 of RFC 3023. In general this\nmedia type will not contain any active or executable content. However,\nsince it may contain other XML mime entities using XML namespaces a\nfinal security statement cannot be made, since the included information\nis parsed and processed by the recipient's XML system (e.g. schema-aware\nXML parser and/or schema-aware XSLT processor).\nNo integrity protection is provided and if needed must be applied\nexternally.\nPrivacy and other security considerations depend on the type of included\ndata, since this media serves only as a wrapper for other XML mime\nentities using XML namespaces. This media type itself has no special\nprivacy needs, if needed it must be applied externally.\n\nInteroperability considerations : Same as Interoperability\nconsiderations as specified in section 3.1 of RFC 3023.\n\nPublished specification :\nApplications which use this media :\nAdditional information :\n1. Magic number(s) : none.\n2. File extension(s) : .xsf, .xml\n3. Macintosh file type code : TEXT\n4. Object Identifiers: none\nAdditional information is available at http://www.xstandoff.net\nPerson to contact for further information :\n1. Name : Maik Stührenberg\n2. Email : maik&xstandoff.net\nIntended usage : Common\nAuthor/Change controller : see above\n\n(file created 2010-04-22)"
+  },
+  "references": []
+}

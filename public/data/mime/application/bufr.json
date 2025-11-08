@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "bufr",
+  "full": "application/bufr",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/bufr",
+    "security_considerations": "a. BUFR data contain meteorological data widely shared and do not contain any encrypted data, authentication, or authentication data.\nb. It is not an executable application.\n\nInteroperability considerations: • Widely used in meteorological and atmospheric data applications.\n\nPublished specification: Manual on Codes (WMO-No. 306), Volume I.2\nManual on Codes (WMO-No. 306), Volume I.2\nPART B. BINARY CODES / b. List of binary codes with their specifications and associated code tables / FM 94–XIV BUFR Binary universal form for the representation of meteorological data\nhttps://library.wmo.int/idurl/4/35625\n\n\nApplications which use this media: • ECMWF software\n• NOAA tools\n• Various meteorological data processing tools\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "interoperability_considerations": "Published specification: Manual on Codes (WMO-No. 306), Volume I.2\nManual on Codes (WMO-No. 306), Volume I.2\nPART B. BINARY CODES / b. List of binary codes with their specifications and associated code tables / FM 94–XIV BUFR Binary universal form for the representation of meteorological data\nhttps://library.wmo.int/idurl/4/35625\n\n\nApplications which use this media: • ECMWF software\n• NOAA tools\n• Various meteorological data processing tools\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "additional_information": "Binary universal form for the representation of meteorological data (BUFR) is a WMO international code for meteorological data and other geophysical data relating to meteorology. BUFR data are used for the international exchange of meteorological information comprising observational data provided by the WMO Integrated Global Observing System.\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-07-05, last updated 2024-07-05)\n\nMedia type name: application\n\nMedia subtype name: bufr\n\nRequired parameters: edition=4; (where edition is the parameter name and 4 is the value of the parameter)\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations:\na. BUFR data contain meteorological data widely shared and do not contain any encrypted data, authentication, or authentication data.\nb. It is not an executable application.\n\nInteroperability considerations: • Widely used in meteorological and atmospheric data applications.\n\nPublished specification: Manual on Codes (WMO-No. 306), Volume I.2\nManual on Codes (WMO-No. 306), Volume I.2\nPART B. BINARY CODES / b. List of binary codes with their specifications and associated code tables / FM 94–XIV BUFR Binary universal form for the representation of meteorological data\nhttps://library.wmo.int/idurl/4/35625\n\n\nApplications which use this media: • ECMWF software\n• NOAA tools\n• Various meteorological data processing tools\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\nBinary universal form for the representation of meteorological data (BUFR) is a WMO international code for meteorological data and other geophysical data relating to meteorology. BUFR data are used for the international exchange of meteorological information comprising observational data provided by the WMO Integrated Global Observing System.\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n1. Name: Anna Milan\n2. Email: amilan&wmo.int; wis&wmo.int\n\nIntended usage: COMMON\n\nAuthor/Change controller: World Meterological Organization\nhttps://wmo.int/"
+  },
+  "references": []
+}

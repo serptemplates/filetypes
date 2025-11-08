@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.uri-map",
+  "full": "application/vnd.uri-map",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.uri-map",
+    "template_text": "(registered 2015-07-21, last updated 2015-07-21)\n\nName : Sebastian Baer\n\nEmail : sebastian.baer&elektrobit.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.uri-map\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : 7bit\n\nSecurity considerations :\n\nClient software should be aware or the security risks involved when handling URIs including but not limited to accessing malicious services and being tracked without consent.\n\nThe security considerations stated in RFC 2483 section 6 apply.\n\nThe media does not contain active or executable content.\n\nDepending on what URIs are contained in the URI map, additional measures might need to be taken in order to keep the content private.\n\nThe media does not provide internal encryption. It is therefore recommended to send privacy or security sensitive data only via properly protected communication channels (e.g. using TLS transport encryption, see RFC 5246) .\n\nInteroperability considerations :\nNone known.\n\nPublished specification :\n\nThe application/vnd.uri-map type is intended to decouple URI used as identifiers from those which need to be dereferenced allowing a client and a server to use common URIs for resource identification while giving the server side the freedom to change the deployment details at any time without impact to the client.\n\nThe format of the application/vnd.uri-map is aligned to the existing text/uri- list (see RFC 2483) format.\n\n1) All lines beginning with the '#' character are comment lines.\n\n2) The remaining non-comment lines must contain two URIs separated by '>'. Those URIs (URNs or URLs) must be encoded according to the URL or URN specifications (RFC2141, RFC1738 and RFC2396). The URIs on the left side of the separator must be unique.\n\n3) Lines are terminated with a CR LF pair.\n\nExample:\n\n# This line begins with a hash mark and is a comment\nhttps://www.example.org/wiki>https://example.com/auth/https%3A%2F2Fexample.org%2Fwiki\norg.example.blog>https://example.com/auth/blog\n\nApplications which use this media :\nApplications that need to map between one set of URIs and another set.\n\nFragment identifier considerations :\nN/A\n\nRestrictions on usage :\nNone.\n\nProvisional registration? (standards tree only) :\nN/A\n\nAdditional information :\n\n1. Deprecated alias names for this type : none\n2. Magic number(s) : none\n3. File extension(s) : .urim, .urimap recommended\n4. Macintosh file type code : URIM recommended\n5. Object Identifiers: N/A\n\nPerson to contact for further information :\n\n1. Name : Sebastian Baer\n2. Email : sebastian.baer&elektrobit.com\n\nIntended usage : Unlimited use"
+  },
+  "references": []
+}

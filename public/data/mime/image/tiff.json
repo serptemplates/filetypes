@@ -1,0 +1,42 @@
+{
+  "type": "image",
+  "subtype": "tiff",
+  "full": "image/tiff",
+  "extensions": [
+    "tif",
+    "tiff"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/tiff",
+    "encoding_considerations": "This media type consists of binary data.  The base64 encoding\n   should be used on transports that cannot accommodate binary\n   data directly.",
+    "security_considerations": "TIFF utilizes a structure which can store image data and\n   attributes of this image data.  The fields defined in the TIFF\n   specification are of a descriptive nature and provide\n   information that is useful to facilitate the viewing and\n   rendering of images by a recipient.  As such, the fields\n   currently defined in the TIFF specification do not in\n   themselves create additional security risks, since the fields\n   are not used to induce any particular behavior by the\n   recipient application.\n\n   TIFF has an extensible structure, so that it is theoretically\n   possible that fields could be defined in the future which\n   could be used to induce particular actions on the part of the\n   recipient, thus presenting additional security risks, but\n   this type of capability is not supported in the referenced\n   TIFF specification.  Indeed, the definition of fields which\n   would include such processing instructions is inconsistent\n   with the goals and spirit of the TIFF specification as\n   defined to date.",
+    "interoperability_considerations": "The ability of implementations to handle all the defined\n   applications (or profiles within applications) of TIFF may\n   not be ubiquitous.  As a result, implementations may decode\n   and attempt to display the encoded TIFF image data only to\n   determine that the image cannot be rendered.  The presence of\n   the application parameter may aid in allowing this\n   determination before dispatching for rendering.  However, it\n   should be noted that the parameter value is not intended to\n   convey levels of capabilities for a particular application.",
+    "additional_information": "Magic number(s):\n        II (little-endian):  49 49 2A 00 hex\n        MM (big-endian):     4D 4D 00 2A hex\n   File extension(s): .TIF\n   Macintosh File Type Code(s): TIFF",
+    "intended_usage": "common",
+    "change_controller": "James Rafferty",
+    "template_text": "(registered by RFC2302, updated by RFC3302)\n\nMIME media type name: image\n\nMIME subtype name: tiff\n\nRequired parameters: none\n\nOptional parameters: application\n\n   There is no format specified for the value of this parameter\n   in addition to that specified by [MIME1].  Various\n   applications of TIFF may define values as required as hints\n   to the receiver.  There is no default value for application,\n   as the absence of the application parameter indicates that\n   the encoded TIFF image is Baseline TIFF or that it is not\n   necessary to identify the application.  It is up to the\n   implementation to determine the application (if necessary)\n   and render the image to the user.\n\nEncoding considerations:\n\n   This media type consists of binary data.  The base64 encoding\n   should be used on transports that cannot accommodate binary\n   data directly.\n\nSecurity considerations:\n\n   TIFF utilizes a structure which can store image data and\n   attributes of this image data.  The fields defined in the TIFF\n   specification are of a descriptive nature and provide\n   information that is useful to facilitate the viewing and\n   rendering of images by a recipient.  As such, the fields\n   currently defined in the TIFF specification do not in\n   themselves create additional security risks, since the fields\n   are not used to induce any particular behavior by the\n   recipient application.\n\n   TIFF has an extensible structure, so that it is theoretically\n   possible that fields could be defined in the future which\n   could be used to induce particular actions on the part of the\n   recipient, thus presenting additional security risks, but\n   this type of capability is not supported in the referenced\n   TIFF specification.  Indeed, the definition of fields which\n   would include such processing instructions is inconsistent\n   with the goals and spirit of the TIFF specification as\n   defined to date.\n\nInteroperability considerations:\n\n   The ability of implementations to handle all the defined\n   applications (or profiles within applications) of TIFF may\n   not be ubiquitous.  As a result, implementations may decode\n   and attempt to display the encoded TIFF image data only to\n   determine that the image cannot be rendered.  The presence of\n   the application parameter may aid in allowing this\n   determination before dispatching for rendering.  However, it\n   should be noted that the parameter value is not intended to\n   convey levels of capabilities for a particular application.\n\nPublished specification:\n\n   TIFF (Tag Image File Format) is defined in:\n       TIFF (TM) Revision 6.0 - Final  June 3, 1992\n\n   Adobe Developers Association\n   Adobe Systems Incorporated\n   345 Park Avenue\n   San Jose, CA 95110-2704\n\n   Phone: +1-408-536-6000\n   Fax:   +1-408-537-6000\n\n   A copy of this specification can be found in:\n   http://partners.adobe.com/asn/developer/pdfs/tn/TIFF6.pdf\n\nApplications which use this media type:\n\n   Imaging, fax, messaging and multi-media\n\nAdditional information:\n\n   Magic number(s):\n        II (little-endian):  49 49 2A 00 hex\n        MM (big-endian):     4D 4D 00 2A hex\n   File extension(s): .TIF\n   Macintosh File Type Code(s): TIFF\n\nPerson & email address to contact for further information:\n\n   Glenn W. Parsons\n   gparsons&nortelnetworks.com\n\n   James Rafferty\n   jraff&brooktrout.com\n\nIntended usage: COMMON\n\nChange controller: James Rafferty"
+  },
+  "references": []
+}

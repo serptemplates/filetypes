@@ -1,0 +1,38 @@
+{
+  "type": "text",
+  "subtype": "vnd.ascii-art",
+  "full": "text/vnd.ascii-art",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.ascii-art",
+    "encoding_considerations": "ASCII art is 7-bit ASCII-encoded plaintext content; any octet sequence is invalid and any ASCII art file containing such should be rejected.",
+    "security_considerations": "ASCII art, being nonexecutable plain text, is relatively harmless. Viewing\napplications should reject any files containing 8-bit characters,\nespecially control characters.\n\nThe format obviously provides no privacy or integrity protection; if\nsuch protection is desired it must be supplied externally.",
+    "interoperability_considerations": "ASCII art can contain very long lines or very large numbers of lines,\nhowever, some displays may make it difficult to view extremely wide\nor long material.",
+    "additional_information": "1. Deprecated alias names for this type: text/x-ascii-art, image/ascii-art\n2. Magic number(s): none\n3. File extension(s): .ascii\n4. Macintosh file type code: none\n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-08-12, last updated 2016-08-12)\n\nName: Kim Scarborough\nEmail: user&unknown.nu\n\nMedia type name: text\nMedia subtype name: vnd.ascii-art\n\nRequired parameters: NONE\n\nOptional parameters:\nNONE\n\nEncoding considerations: 7bit\nASCII art is 7-bit ASCII-encoded plaintext content; any octet sequence is invalid and any ASCII art file containing such should be rejected.\n\nSecurity considerations:\nASCII art, being nonexecutable plain text, is relatively harmless. Viewing\napplications should reject any files containing 8-bit characters,\nespecially control characters.\n\nThe format obviously provides no privacy or integrity protection; if\nsuch protection is desired it must be supplied externally.\n\nInteroperability considerations:\nASCII art can contain very long lines or very large numbers of lines,\nhowever, some displays may make it difficult to view extremely wide\nor long material.\n\nPublished specification:\nNone.\n\nApplications which use this media:\nAny text editor or web browser capable of receiving ASCII plaintext and displaying it in a monospaced font.\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nNone.\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: text/x-ascii-art, image/ascii-art\n2. Magic number(s): none\n3. File extension(s): .ascii\n4. Macintosh file type code: none\n5. Object Identifiers: none\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Kim Scarborough\n2. Email: user&unknown.nu\n\nIntended usage: Common\nCOMMON\n\nAuthor/Change controller: Kim Scarborough"
+  },
+  "references": []
+}

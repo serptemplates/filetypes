@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "vnd.cryptii.pipe+json",
+  "full": "application/vnd.cryptii.pipe+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cryptii.pipe+json",
+    "encoding_considerations": "Shares the encoding considerations of application/json as \n   specified in RFC 7159 section 8.1.\n\nSecurity considerations: Pipe+JSON shares security issues common to \n   all JSON content types. It does not provide executable content. \n   Information contained in Pipe+JSON documents may potentially be \n   sensitive. TLS, and specifically HTTPS, are the recommended ways \n   to protect potentially sensitive information.\n\nInteroperability considerations: Pipe+JSON is described by a \n   json-schema.org schema definition and SHOULD be validated \n   against it.\n\nPublished specification: The specification will be made available at \n   the URI https://cryptii.com/developer when it is considered to be \n   stable.\n\n   The specification is not published yet.\n\nApplications which use this media: The cryptii.com ecosystem will use\n   this media type for data exchange.\n\nFragment identifier considerations: Shares the fragment identifier \n   considerations of application/json as specified in RFC 7159.\n\nRestrictions on usage: None.",
+    "security_considerations": "all JSON content types. It does not provide executable content. \n   Information contained in Pipe+JSON documents may potentially be \n   sensitive. TLS, and specifically HTTPS, are the recommended ways \n   to protect potentially sensitive information.\n\nInteroperability considerations: Pipe+JSON is described by a \n   json-schema.org schema definition and SHOULD be validated \n   against it.\n\nPublished specification: The specification will be made available at \n   the URI https://cryptii.com/developer when it is considered to be \n   stable.\n\n   The specification is not published yet.\n\nApplications which use this media: The cryptii.com ecosystem will use\n   this media type for data exchange.\n\nFragment identifier considerations: Shares the fragment identifier \n   considerations of application/json as specified in RFC 7159.\n\nRestrictions on usage: None.",
+    "interoperability_considerations": "json-schema.org schema definition and SHOULD be validated \n   against it.\n\nPublished specification: The specification will be made available at \n   the URI https://cryptii.com/developer when it is considered to be \n   stable.\n\n   The specification is not published yet.\n\nApplications which use this media: The cryptii.com ecosystem will use\n   this media type for data exchange.\n\nFragment identifier considerations: Shares the fragment identifier \n   considerations of application/json as specified in RFC 7159.\n\nRestrictions on usage: None.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): None.\n   3. File extension(s): .json\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: None.",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2019-07-25, last updated 2019-07-25)\n\nMedia type name: application\n\nMedia subtype name: vnd.cryptii.pipe+json\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n   Shares the encoding considerations of application/json as \n   specified in RFC 7159 section 8.1.\n\nSecurity considerations: Pipe+JSON shares security issues common to \n   all JSON content types. It does not provide executable content. \n   Information contained in Pipe+JSON documents may potentially be \n   sensitive. TLS, and specifically HTTPS, are the recommended ways \n   to protect potentially sensitive information.\n\nInteroperability considerations: Pipe+JSON is described by a \n   json-schema.org schema definition and SHOULD be validated \n   against it.\n\nPublished specification: The specification will be made available at \n   the URI https://cryptii.com/developer when it is considered to be \n   stable.\n\n   The specification is not published yet.\n\nApplications which use this media: The cryptii.com ecosystem will use\n   this media type for data exchange.\n\nFragment identifier considerations: Shares the fragment identifier \n   considerations of application/json as specified in RFC 7159.\n\nRestrictions on usage: None.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): None.\n   3. File extension(s): .json\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: None.\n\nPerson to contact for further information:\n\n   1. Name: Fränz Friederes\n   2. Email: fraenz&frieder.es\n\nIntended usage: Limited Use\n   The intended usage is to provide a flexible data format to \n   interface with the cryptii.com ecosystem.\n\nAuthor/Change controller: Fränz Friederes"
+  },
+  "references": [
+    {
+      "title": "RFC 7159",
+      "url": "https://www.rfc-editor.org/rfc/rfc7159.html",
+      "kind": "RFC"
+    }
+  ]
+}

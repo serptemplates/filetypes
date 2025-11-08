@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.hbci",
+  "full": "application/vnd.hbci",
+  "extensions": [
+    "hbci"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.hbci",
+    "template_text": "\r\nName : Ingo Hammann\r\n\r\nE-mail : ingo.hammann&ppi.de\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.hbci\r\n\r\nRequired parameters : version : Version of the HBCI specification with the\r\npattern x.yz where x, y ans z are digits and z is omitted if it is 0; at the\r\nmoment valid version-parameters are: 2.01, 2.1, 2.2, 3.0 and 4.0\r\n\r\nOptional parameters :\r\nnone\r\n\r\nEncoding considerations :\r\nThe encodings base64 or binary MUST be used.\r\n\r\nSecurity considerations :\r\nHBCI has its own security framework and uses DES- and RSA-encryption.\r\nSignatures are used for secure identifiaction of customers and banks. It is\r\nalso possible that banks and customers exchange messages using bilateral\r\nconcerted security techniques. This MIME-type is used for the exchange of\r\nfinancial messages. There is no executable content in HBCI messages. (see\r\nHBCI specification)\r\n\r\nInteroperability considerations :\r\nConformance of HBCI MIME to the HBCI specification is required.\r\n\r\nPublished specification :\r\nThe specification of HBCI in German and English language can be downloaded\r\nfrom http://www.hbci-zka.de/spezifikation/2.html\r\n\r\nApplications which use this media :\r\nGerman Banks support HBCI as an open standard. There are several HBCI server\r\nproducts and at least two different client APIs. The client APIs will be\r\navailable free. Additional information: http://www.siz.de and\r\nhttp://www.bdb.de\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .hbci and .hbc; .kom, .upa, .pkd an .bpd for special purpose\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nThe usage is limited to banking applications.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Ingo Hammann\r\n2. E-mail : ingo.hammann&ppi.de\r\n\r\nIntended usage : Limited Use\r\nThe media type application/vnd.hbci is containing sequences of segments\r\nspecified in the Homebanking Computer Interface (HBCI) specification.\r\n\r\nAuthor/Change controller : Zentraler Kreditausschuss (http://www.zka.de) is\r\nthe standardization board for the HBCI standard.\r\nPlease contact me under the above address if you need further information.\r\n\r\n(created 17 Jan 2002)\r\n"
+  },
+  "references": []
+}

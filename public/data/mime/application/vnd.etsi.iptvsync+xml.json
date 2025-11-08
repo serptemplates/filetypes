@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.iptvsync+xml",
+  "full": "application/vnd.etsi.iptvsync+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.iptvsync+xml",
+    "encoding_considerations": "This media type may require encoding on transports not capable of\nhandling 8 bit text.",
+    "security_considerations": "TS 183 064 fully relies on the underlying protocol security to ensure\nsecurity of the media type. The security protection between the User\nEquipment and the NGN-integrated IPTV Subsystem can be handled by using\nhttps [RFC 2818] to provide encrypted communication ensuring the\nintegrity of the signalling.\nThere is no active or executable content. It only includes textual XML\nto Control Services.\nThe security protection between the User Equipment and the\nNGN-integrated IPTV Subsystem can be handled by using https [RFC 2818]\nto provide encrypted communication ensuring the integrity of the\nsignalling. Additionally NGN integrated IPTV support procedure for\nAuthentication (section 5.1.3) on Tr interface using HTTP Digest [RFC\n2617]. MD5 is recommended digest algorithm as defined in [RFC 1321], MD5\nMessage Digest Algorithm.",
+    "additional_information": "1. Magic number(s): None\n2. File extension(s): None\n3. Macintosh file type code: None\n4. Object Identifiers: None\n\nThis is a registration of Mime Type for inter-destination media\nsynchronization (IDMS)",
+    "intended_usage": "common",
+    "template_text": "(last updated 2011-02-01)\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.etsi.iptvsync+xml\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: 8bit\nThis media type may require encoding on transports not capable of\nhandling 8 bit text.\n\nSecurity considerations:\nTS 183 064 fully relies on the underlying protocol security to ensure\nsecurity of the media type. The security protection between the User\nEquipment and the NGN-integrated IPTV Subsystem can be handled by using\nhttps [RFC 2818] to provide encrypted communication ensuring the\nintegrity of the signalling.\nThere is no active or executable content. It only includes textual XML\nto Control Services.\nThe security protection between the User Equipment and the\nNGN-integrated IPTV Subsystem can be handled by using https [RFC 2818]\nto provide encrypted communication ensuring the integrity of the\nsignalling. Additionally NGN integrated IPTV support procedure for\nAuthentication (section 5.1.3) on Tr interface using HTTP Digest [RFC\n2617]. MD5 is recommended digest algorithm as defined in [RFC 1321], MD5\nMessage Digest Algorithm.\n\nInteroperability considerations:\n\nPublished specification:\nThe draft deliverable is available here:\nhttp://docbox.etsi.org/tispan/Open/NGN_LATEST_DRAFTS/RELEASE3/03208-ngn-r3v332.pdf\n\nOnce published, ETSI TS 183 064 v3.4.1 (Annex E) available at\nhttp://www.etsi.org/deliver/etsi_ts/183000_183099/183064/\n\n\nApplications which use this media:\nThis media type is used by the Integrated IPTV service; the XML schema\nis used by a Synchronization Client (SC) and a Media Synchronization\nApplicayion Server (MSAS) to exchange information for inter-destination\nmedia synchronization.\n\n\nAdditional information:\n\n1. Magic number(s): None\n2. File extension(s): None\n3. Macintosh file type code: None\n4. Object Identifiers: None\n\nThis is a registration of Mime Type for inter-destination media\nsynchronization (IDMS)\n\n\nPerson to contact for further information:\n\n1. Name: Miguel Angel Reina Ortega\n2. Email: MiguelAngel.ReinaOrtega&etsi.org\n\nIntended usage: Common\n\nAuthor/Change controller: sonia.compans&etsi.org\n\n(file created 2011-02-01)"
+  },
+  "references": []
+}

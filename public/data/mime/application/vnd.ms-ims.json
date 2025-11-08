@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.ms-ims",
+  "full": "application/vnd.ms-ims",
+  "extensions": [
+    "ims"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ms-ims",
+    "template_text": "(last updated December 2005)\r\n\r\nName : Eric Ledoux\r\nEmail : ericle&microsoft.com\r\n\r\nMIME media type name : Application\r\n    \r\nMIME subtype name : Vendor Tree - vnd.ms-ims\r\n    \r\nRequired parameters : N/A\r\n  \r\nNone\r\n\r\nOptional parameters :\r\n    \r\nNone\r\n    \r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable\r\nof handling binary.\r\n    \r\nSecurity considerations :\r\n   \r\n(1) The media type contains no active or executable content,\r\n    except possibly ECMAScript content that is executed in a Web\r\n    browser sandbox.\r\n(2) The information in the media type does not require privacy\r\n    or integration services.\r\n\r\nInteroperability considerations :\r\n   \r\nThe content is a standard zipped package containing content\r\nthat conforms to one of the following packaging standards:\r\nIMS Content Packaging v1.1.1\r\nIMS Content Packaging v1.1.2\r\nIMS Content Packaging v1.1.3\r\n\r\nAdditionally, the package may also contain content in the\r\nproprietary Microsoft Unbundled LRM (Learning Resource\r\nModule) format.\r\n \r\n-- Published specification:\r\nhttp://classserver.msn.com/SDK/Install/\r\n    \r\nApplications which use this media :\r\nMicrosoft Class Server (http://microsoft.com/ClassServer)\r\n    \r\nAdditional information :\r\n    \r\n1. Magic number(s) : N/A\r\n2. File extension(s) : .ims\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n    \r\napplication/vnd.ms-ims is intended to be used in a manner similar to application/vnd.ms-lrm \r\n(also registered by me for use by Microsoft Class Server, an educational application). \r\napplication/vnd.ms-ims is for a more recent version of content than application/vnd.ms-lrm.\r\n   \r\nPerson to contact for further information :\r\n    \r\n1. Name : Eric Ledoux\r\n2. Email : ericle&microsoft.com\r\n   \r\nIntended usage : Common\r\nN/A\r\n    \r\nAuthor/Change controller : Eric Ledoux\r\n\r\n(file created 09 December 2005)\r\n"
+  },
+  "references": []
+}

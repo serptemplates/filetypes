@@ -1,0 +1,39 @@
+{
+  "type": "image",
+  "subtype": "aces",
+  "full": "image/aces",
+  "extensions": [
+    "exr"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/aces",
+    "security_considerations": "ACES Image Container files utilize a structure which can store image data and attributes of this image data. The fields defined in the ACES Image Container specification are of a descriptive nature and provide information that is useful to facilitate the viewing and rendering of images by a recipient, along with additional metadata not required for viewing and rendering, but which may be helpful in the use of the image in the context of a larger project, such as the accomplishment of a motion picture or television project. As such, the fields currently defined in the ACES Image Container specification do not in themselves create additional security risks, since the fields are not used to induce any particular behavior by the recipient application.\n\nThe format does not contain executable code, scripts, or macros. The format contains offset values and count values, which can trigger segmentation faults in applications.\n\nThe image is not compressed, and the compression attribute is set to No Compression.\n\nThe format does not include encryption, or other forms of privacy protection. If needed, such would have to be provided externally.\n\nThe format includes optional MD5 digests for verifying the integrity of metadata and image data.",
+    "interoperability_considerations": "ACES Image Container files are scene-referred.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s):\nThe first 8 bytes (fields magic number and version) are 76 2F 31 01 02 00\n00 00 or 76 2F 31 01 02 04 00 00.\nThe attribute acesImageContainerFlag has value 1.\n3. File extension(s): exr\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-12-08, last updated 2017-12-11)\n\nName: Lars Borg\nEmail: borg&adobe.com\n\nMedia type name: image\nMedia subtype name: aces\n\nRequired parameters: none\n\nOptional parameters:\nnone\n\nEncoding considerations: binary\n\nSecurity considerations:\nACES Image Container files utilize a structure which can store image data and attributes of this image data. The fields defined in the ACES Image Container specification are of a descriptive nature and provide information that is useful to facilitate the viewing and rendering of images by a recipient, along with additional metadata not required for viewing and rendering, but which may be helpful in the use of the image in the context of a larger project, such as the accomplishment of a motion picture or television project. As such, the fields currently defined in the ACES Image Container specification do not in themselves create additional security risks, since the fields are not used to induce any particular behavior by the recipient application.\n\nThe format does not contain executable code, scripts, or macros. The format contains offset values and count values, which can trigger segmentation faults in applications.\n\nThe image is not compressed, and the compression attribute is set to No Compression.\n\nThe format does not include encryption, or other forms of privacy protection. If needed, such would have to be provided externally.\n\nThe format includes optional MD5 digests for verifying the integrity of metadata and image data.\n\n\nInteroperability considerations:\nACES Image Container files are scene-referred.\n\nPublished specification:\nThe ACES Image Container is defined by\nSMPTE ST 2065-4:2013, \"ACES Image Container File Layout\"\npublished in 2013 by\nSociety of Motion Picture and Television Engineers (SMPTE)\nWhite Plains Plaza\n445 Hamilton Ave, Ste 601\nWhite Plains, NY 10601-1827\nphone: (914) 761-1100\nAvailable online via\nhttp://ieeexplore.ieee.org/servlet/opac?punumber=7290439\nhttps://doi.org/10.5594/SMPTE.ST2065-4.2013\n\nApplications which use this media:\nFilm and Television production and post-production applications, including\nbut not\nlimited to on-set or near-set color correction, editorial, visual effects,\nand finishing.\n\nFragment identifier considerations:\nnone\n\nRestrictions on usage:\nnone\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s):\nThe first 8 bytes (fields magic number and version) are 76 2F 31 01 02 00\n00 00 or 76 2F 31 01 02 04 00 00.\nThe attribute acesImageContainerFlag has value 1.\n3. File extension(s): exr\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\nACES images can be stand-alone files or wrapped in container files such as\nMXF or AXF.\n\nPerson to contact for further information:\n\n1. Name: Howard Lukk \n2. Email: hlukk&smpte.org\n\nIntended usage: Common\nFilm and Television production and post-production, including but not\nlimited to on-set or near-set color correction, editorial, visual effects,\nand finishing.\n\nAuthor/Change controller: Howard Lukk\nDirector of Standards\nSociety of Motion Picture and Television Engineers (SMPTE)\nWhite Plains Plaza\n445 Hamilton Ave, Ste 601\nWhite Plains, NY 10601-1827\n+1 914 761 1100\nhlukk&smpte.org"
+  },
+  "references": []
+}

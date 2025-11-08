@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.commonspace",
+  "full": "application/vnd.commonspace",
+  "extensions": [
+    "csp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.commonspace",
+    "template_text": "\n\nDate: Fri, 20 Nov 1998 09:57:19 -0800 (PST)\nFrom: Ravinder Chandhok <chandhok&within.com>\nTo: iana&iana.org, chandhok&within.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.\n\nName : Ravinder Chandhok\n\nE-mail : chandhok&within.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.commonspace\n\nRequired parameters : None.\n\nOptional parameters : \nNone.\n\nEncoding considerations : \nCommonSpace files contain binary data. Some encoding will be necessary\nfor 7bit or 8bit environments.\n\nSecurity considerations : \nNone known. This type does not contain any executable code or macros.\nCommonSpace documents may contain URL references as part of the\ndocument but these references are never processed automatically.\n\nInteroperability considerations : \nNone.\n\nPublished specification : \nNo published specification is available.  An example of this media type\ncan be generated in the following way:\n\n>From any CommonSpace application select \"Save\" from the \"File\" menu.\nEnter a filename, make sure that \"CommonSpace\" is specified for the\nformat and click \"Save\".\n\nApplications which use this media : \nCommonSpace(tm), published by Sixth Floor Media, part of the Houghton\nMifflin Company.\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : .csp, .cst\n3. Macintosh file type code : Creator WWRI, type WWRD\nOn Windows machines, CommonSpace documents are normally denoted by the\n.csp extension.\n\nCommonSpace files with the .cst extension contain data in an identical\nformat, but are intended as \"template\" or \"stationary\" documents.\n\n\nPerson to contact for further information :\n\n1. Name : Ravinder Chandhok\n2. E-mail : chandhok&within.com\n\nIntended usage : Common \nThe intended use of this MIME media type is to allow for proper\ntransmission of CommonSpace documents via MIME based processes.\n\nAuthor/Change controller : Ravinder Chandhok\nWithin Technology, Inc.\nRD#1 Box 228\nWaynesburg, PA 15370 \n\n\n\n"
+  },
+  "references": []
+}

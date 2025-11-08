@@ -1,0 +1,37 @@
+{
+  "type": "video",
+  "subtype": "quicktime",
+  "full": "video/quicktime",
+  "extensions": [
+    "qt",
+    "mov"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/quicktime",
+    "encoding_considerations": "that do not support binary streams should enocode the data\n  appropriately.  Movies should be encoded as a single-fork movie file\n  to facilitate transfer to non-macintosh platforms.\n\nSecurity considerations: None",
+    "template_text": "\nFrom lindner&mudhoney.micro.umn.edu Fri Jun  4 14:15:40 1993\nFrom: lindner&mudhoney.micro.umn.edu (Paul Lindner)\nSubject: Registration of new MIME content-type/subtype\nTo: iana&ISI.EDU\nDate: Fri, 4 Jun 93 16:15:26 CDT\nCc: gopher&boombox.micro.umn.edu, info-metamail&thumper.bellcore.com\nReply-To: lindner&boombox.micro.umn.edu\nContent-Length: 1090\nStatus: RO\nX-Lines: 37\n\nMIME type name: video\nMIME subtype name: quicktime\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: Quicktime movies are binary data.  Transports\n  that do not support binary streams should enocode the data\n  appropriately.  Movies should be encoded as a single-fork movie file\n  to facilitate transfer to non-macintosh platforms.\n\nSecurity considerations: None\n\nPublished specification: \n\n Quicktime for Macintosh Documentation Kit v1.6  R0455LL/B  $50\n in the Chapter \"QuickTime Movie Resource Format\" (18pp)\n\n   or \n\n Inside Macintosh: Quicktime TO563LL/A  $29.95\n\n Apple Computer Inc.\n Apple Programmers and Developers Association\n P.O. Box 319\n Buffalo, New York 14207-0319\n 1-800-282-2732\n APDA&applelink.apple.com\n\nContact-info: gopher&boombox.micro.umn.edu\n\n-- \n | Paul Lindner | lindner&boombox.micro.umn.edu   | Slipping into madness\n |              | Computer & Information Services | is good for the sake\n | Gophermaster | University of Minnesota         | of comparison.\n///// / / /    /////// / / / /  /  /  /   /      //// / / / /  /  /  /   /\n\n\n\n"
+  },
+  "references": []
+}

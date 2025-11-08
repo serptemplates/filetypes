@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.biopax.rdf+xml",
+  "full": "application/vnd.biopax.rdf+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.biopax.rdf+xml",
+    "template_text": "(registered 2015-06-09, last updated 2015-06-09)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.biopax.rdf+xml\n\nRequired parameters : none\n\nOptional parameters :\ncharset\nSame as charset parameter of application/xml, defined in RFC7303.\n\nEncoding considerations : 8bit \n(utf-8 is the preferred)\n\nSecurity considerations :\nSee section 6 of RFC 3870 (rdf+xml).\nA BioPAX file/data is an instance of the BioPAX OWL ontology, formatted as RDF/XML.\nBioPAX is for modelling and sharing knowledge about biological processes, entities. \nBioPAX is not about executing commands or encoding algorithms or encrypting anything.\n(1) This media type contains no active nor executable content.\n(2) The information contained in the media type\ndoes not need any privacy or integrity services.\n\nInteroperability considerations :\nIt is recommended that BioPAX documents follow the RDF/XML Syntax Grammar.\n\nPublished specification :\nDemir E, Cary MP, Paley S, et al. BioPAX – A community standard for pathway data sharing. Nature biotechnology. 2010;28(9):935-942. doi:10.1038/nbt.1666.\nhttp://www.nature.com/nbt/journal/v28/n9/full/nbt.1666.html\n\nSpecification: \nBioPAX Level 1: OWL and Documentation;\nBioPAX Level 2: OWL and Documentation;\nBioPAX Level 3: OWL and Documentation (current);\n\nApplications which use this media :\nClient and server applications that produce or consume BioPAX data, also standard OWL, RDF and SPARQL based applications (editors, reasoners, etc.)\n\nFragment identifier considerations :\nnone\n\nRestrictions on usage :\nnone\n\nProvisional registration? (standards tree only) :\nnone\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : none\n2. Magic number(s) : none\n3. File extension(s) : .owl .rdf\n4. Macintosh file type code : TEXT rdf\n5. Object Identifiers: none\n\nBioPAX is a OWL-DL ontology plus additional semantic rules and best practices (which cannot be formally defined via OWL classes and restrictions). BioPAX data (a biological pathway, interactions model) is usually serialized as RDF/XML.\n\nAlthough no byte sequences can be counted on to consistently\nidentify BioPAX, BioPAX documents will have the sequence\n\"http://www.biopax.org/release/biopax-level3.owl#\" or \"http://www.biopax.org/release/biopax-level2.owl#\" to identify\nthe BioPAX namespace. This will usually be towards the top of\nthe document.\n\n\nPerson to contact for further information :\n\n1. Name : Pathway Commons project team\n2. Email : pc-info&pathwaycommons.org (or biopax-discuss&googlegroups.org, the official public BioPAX Discussion Forum, a Google Group)\nAuthors of the publication doi:10.1038/nbt.1666 can be of cause contacted too.\n\nIntended usage : Common\nBioPAX (Biological Pathway Exchange) is a standard language to represent biological pathways at the molecular and cellular level. Its major use is to facilitate the exchange of pathway data (http://www.biopax.org). Pathway data captures our understanding of biological processes, but its rapid growth necessitates development of databases and computational tools to aid interpretation. However, the current fragmentation of pathway information across many databases with incompatible formats presents barriers to its effective use. BioPAX solves this problem by making pathway data substantially easier to collect, index, interpret and share. BioPAX can represent metabolic and signaling pathways, molecular and genetic interactions and gene regulation networks. BioPAX was created through a community process. Through BioPAX, millions of interactions organized into thousands of pathways across many organisms, from a growing number of sources, are available. Thus, large amounts of pathway data are available in a computable form to support visualization, analysis and biological discovery.\n\nAuthor/Change controller : BioPAX.org editors (elected) or the core developers group."
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.iptvprofile+xml",
+  "full": "application/vnd.etsi.iptvprofile+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.iptvprofile+xml",
+    "encoding_considerations": "This media type may require encoding on transports not capable of \n   handling 8 bit text.\n\nSecurity considerations: We do not foresee any additional security \n   considerations over and above the existing security considerations \n   of SIP. There is no active or executable content.\n\n   The ETSI TSs 183 xxx include only textual XML to Control Services.\n   If the Signalling and the XML media contained therein is security\n   protected then no explicit protection of the media privacy and\n   integrity is required.\n\nInteroperability considerations: Interoperability is assessed not to \n   be an issue as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and\n   byte ordering issues. Message format does have version number and \n   backwards ompatibility will be preserved in the possible format \n   evolution.",
+    "security_considerations": "considerations over and above the existing security considerations \n   of SIP. There is no active or executable content.\n\n   The ETSI TSs 183 xxx include only textual XML to Control Services.\n   If the Signalling and the XML media contained therein is security\n   protected then no explicit protection of the media privacy and\n   integrity is required.\n\nInteroperability considerations: Interoperability is assessed not to \n   be an issue as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and\n   byte ordering issues. Message format does have version number and \n   backwards ompatibility will be preserved in the possible format \n   evolution.",
+    "interoperability_considerations": "be an issue as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and\n   byte ordering issues. Message format does have version number and \n   backwards ompatibility will be preserved in the possible format \n   evolution.",
+    "additional_information": "1. Magic number(s): none\n   2. File extension(s): none\n   3. Macintosh file type code: none\n   4. Object Identifiers: none\n\n   IPTV profile",
+    "intended_usage": "common",
+    "template_text": "(last updated 2009-03-13)\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.etsi.iptvprofile+xml\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: 8bit\n\n   This media type may require encoding on transports not capable of \n   handling 8 bit text.\n\nSecurity considerations: We do not foresee any additional security \n   considerations over and above the existing security considerations \n   of SIP. There is no active or executable content.\n\n   The ETSI TSs 183 xxx include only textual XML to Control Services.\n   If the Signalling and the XML media contained therein is security\n   protected then no explicit protection of the media privacy and\n   integrity is required.\n\nInteroperability considerations: Interoperability is assessed not to \n   be an issue as the MIME type is in the vendor tree. XML \n   definitions are assessed to solve different character set and\n   byte ordering issues. Message format does have version number and \n   backwards ompatibility will be preserved in the possible format \n   evolution.\n\nPublished specification:\n\n   ETSI TS 183 063 v2.1.0 available at \n   http://pda.etsi.org/pda/queryform.asp\n\nApplications which use this media: This media type is used by the \n   IMS-based IPTV service; this schema is used by the Service Control \n   Function for service authorization or by Service Selection\n   Function & Service Discovery Function for personalization\n\nAdditional information:\n\n   1. Magic number(s): none\n   2. File extension(s): none\n   3. Macintosh file type code: none\n   4. Object Identifiers: none\n\n   IPTV profile\n\nPerson to contact for further information:\n\n   1. Name: Shicheng Hu\n   2. Email: shicheng.hu&etsi.org\n\nIntended usage: Common\n\nAuthor/Change controller: sonia.compans&etsi.org\n\n\n(file created 2009-03-13)"
+  },
+  "references": []
+}

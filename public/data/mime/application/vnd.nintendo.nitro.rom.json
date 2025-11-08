@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.nintendo.nitro.rom",
+  "full": "application/vnd.nintendo.nitro.rom",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.nintendo.nitro.rom",
+    "template_text": "(last updated 2012-09-04)\n\nName : Henrik Andersson\n\nEmail : henke&henke37.cjb.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.nintendo.nitro.rom\n\nRequired parameters : This format has no defined parameters.\n\nOptional parameters :\nThis format has no defined parameters.\n\nEncoding considerations : binary\n\n\nSecurity considerations :\nThis format contains executable code that is intended to run directly on\nthe target hardware.\n\nThis format has defined use of compression and users should be prepared\nfor the data to expand.\n\nThis format supports including arbitrary files inside of it that may be\ncompressed.\n\nThis format does not contain any personally identifiable data. In\nparticular it does not contain \"save games\" created by the carried\ncontent. Users are not expected to ever change a file they did not\nthemselves produce.\n\nThe format does not provide any integrity protection on its own.\nEncryption and signing of the content is delegated to the delivery system.\n\n\nInteroperability considerations :\nThe file contains executable code that directly accesses platform\nspecific hardware.\n\n\nPublished specification :\nThere is no published official specification, but the format is well\nunderstood and several unofficial specifications has been written. One\nsuch specification can be found at the following URL:\nhttp://nocash.emubase.de/gbatek.htm#dscartridgeheader\n\nApplications which use this media :\nThe format is mainly used by hardware emulator software, but hardware\nsolutions (commonly refered to as \"Flash cards\") exists to use files\ndirectly on the target hardware.\n\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : *.nds\n3. Macintosh file type code : N/A\n4. Object Identifiers: N/A\n\nThis registration is made by a 3rd party who is unaffiliated with the\nvendor in question.\n\nThe format is most frequently used for acts of questionable legitimacy,\nbut there is a real, legitimate, use for it in distributing unlicensed\n\"homebrew\" software too.\n\nThe use of \"nitro\" in the media type name refers to the fact that the\nconsole has the code name of \"Nitro\" which is frequently favored in\nnaming of development tools for the target platform. It is my personal\nopinion that the vendor would have made the same call had they made the\napplication.\n\nPerson to contact for further information :\n\n1. Name : Henrik Andersson\n2. Email : henke&henke37.cjb.net\n\nIntended usage : Common\n\n\nAuthor/Change controller : The format was created by the Nintendo\ncompany and they should be considered the official owner of this\nregistration.\n\n\n(file created 2012-09-04)"
+  },
+  "references": []
+}

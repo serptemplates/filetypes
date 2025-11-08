@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.picsel",
+  "full": "application/vnd.picsel",
+  "extensions": [
+    "efif"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.picsel",
+    "template_text": "\r\n(last updated 2003-11-05)\r\n\r\nName : Giuseppe Naccarato\r\n\r\nEmail : giuseppe.naccarato&picsel.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.picsel\r\n\r\nRequired parameters : [none]\r\n\r\nOptional parameters : version, charset\r\nThe version parameter consists of one or more digits 0-9 with no leading \r\nzeroes. There is no default version to assume if none is specified.\r\nCharset needs to be modelled on existing charset parameters, e.g. \r\nthe one in RFC 2046.\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nThere are no significant security issues associated with EFIF.\r\nThe file contains no facilities for access to files, network resources or \r\ninteract in any way with a web browser (e.g. create additional windows).\r\nEFIF files may be interpreted by applications which can produce images, \r\ndocuments, printable files, and/or audio/video output.\r\n\r\nInteroperability considerations : \r\nMost EFIF files can be interpreted by all EFIF applications or plugins.\r\nSome EFIF files contain experimental features which are not\r\npart of the published standard. The EFIF plugin developers maintain an \r\ne-mail list where strategies for minimizing evolutionary differences are discussed.\r\n\r\nPublished specification : \r\nA complete description of the EFIF file format is available at\r\n<URL: http://www.picsel.com/standards/eFIF.txt>\r\n\t\r\nA BNF description in the format described by RFC 822 is at\r\n<URL: http://www.picsel.com/eFIFbnf.html>\r\n   \r\nApplications which use this media : \r\nAs of today, only Picsel products and applications would be able to decode \r\neFIF files. With the availability of our SDK, other vendors would be able to \r\ndevelop decoders or plugins to interpret eFIF files.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : \"%eFIF\r\n2. File extension(s) : .eFIF\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Giuseppe Naccarato\r\n2. Email : giuseppe.naccarato&picsel.com\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller :\r\n \r\n(created 2003-11-05)"
+  },
+  "references": []
+}

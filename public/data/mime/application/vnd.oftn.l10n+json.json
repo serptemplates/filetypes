@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.oftn.l10n+json",
+  "full": "application/vnd.oftn.l10n+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oftn.l10n+json",
+    "security_considerations": "1. The media type does not contain executable content.\n2. Information contained in the media type may need privacy or integrity\nservices if it contains localized messages personally pertaining to the\nuser.\n3. The media type provides no privacy or integrity services itself, and\nshould be served over any applicable secure protocol if it contains\nsensitive information pertaining to the user. In the case of the Web,\nthis should be HTTPS.",
+    "intended_usage": "common",
+    "template_text": "(last updated 2011-04-07)\n\nName: Eli Grey\n\nEmail: me&eligrey.com\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.oftn.l10n+json\n\nRequired parameters: None.\n\nOptional parameters: None.\n\nEncoding considerations: binary\n\nSecurity considerations:\n\n1. The media type does not contain executable content.\n2. Information contained in the media type may need privacy or integrity\nservices if it contains localized messages personally pertaining to the\nuser.\n3. The media type provides no privacy or integrity services itself, and\nshould be served over any applicable secure protocol if it contains\nsensitive information pertaining to the user. In the case of the Web,\nthis should be HTTPS.\n\nInteroperability considerations:\n\nPublished specification:\nI have published an very informal document on\nhttps://github.com/eligrey/l10n.js#readme that can help you get a feel\nfor the format, but it is by no means normative.\n\nApplications which use this media:\nThe reference implementation, named l10n.js (\nhttps://github.com/eligrey/l10n.js), is the only application which uses\nthis media type.\n\nAdditional information :\n\n1. Magic number(s): None\n2. File extension(s): .json\n3. Macintosh file type code: None\n4. Object Identifiers: None\n\nThe name of the format is simply \"The l10n.js Format\" and the media type\nincludes vnd.oftn as I run an organization called ΩF:∅ (http://oftn.org/)\nthat this format should be registered under.\n\nPerson to contact for further information :\n\n1. Name: Eli Grey\n2. Email: me&eligrey.com\n\nIntended usage: Common\nThe intended usage is to provide a simple localization format for use by\nany localization framework or library.\n\nAuthor/Change controller: Eli Grey\n\n(file created 2011-04-07)"
+  },
+  "references": []
+}

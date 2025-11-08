@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.paos.xml",
+  "full": "application/vnd.paos.xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.paos.xml",
+    "template_text": "\n(last updated 2003-09-09)\n\nName : John Kemp\n\nEmail : john.kemp&amp;earthlink.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.paos+xml\n\nRequired parameters : None\n\nOptional parameters : \nNone\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of handling 8 bit text.\n\nSecurity considerations : \nTo paraphrase section 3 of RFC 1874, XML MIME entities contain\ninformation to be parsed and processed by the recipient's XML system.\nThese entities may contain and such systems may permit explicit system\nlevel commands to be executed while processing the data.  To\nthe extent that an XML system will execute arbitrary command strings,\nrecipients of XML MIME entities may be at risk.\n\nIn addition to this general concern, the paos+xml typed\ndocuments will contain data that may identify or pertain to an individual.\n\nTo counter potential issues, paos+xml typed documents\ncontain data that must be signed appropriately by the sender. Any such\nsignature must be verified by the recipient of the data - both as a\nvalid signature, and as being the signature of the sender. \n\nThere is no executable content passed via this MIME type. To counter any \nprivacy concerns, opaque handles are assigned to individuals, which may \nonly identify an individual when used by either the sender or the recipient \nof the data. Transport-level security is ensured by Liberty\ntransactions occurring over secured channels.\n\nFor a more detailed discussion of general security considerations of\nthe Liberty protocol & profiles, please reference:\n\n1) Section 4 of: Liberty ID-FF Bindings & Profiles Specification, Version 1.2, Liberty\nAlliance Project, <\"http://www.projectliberty.org/specs\">\n2) Liberty ID-WSF Security Profiles, Version 1.0, Liberty Alliance Project,\n<\"http://www.projectliberty.org/specs\">\n3) Liberty ID-WSF Security & Privacy Guidelines, Version 1.0, Liberty Alliance Project,\n<\"http://www.projectliberty.org/specs\">\n\n\nInteroperability considerations : \nThere are no known interoperability concerns regarding this media type\n\nPublished specification : \nThe media type is used for the Liberty Reverse HTTP Binding for SOAP (PAOS)\n\nThe relevant specification is:\n\nLiberty Reverse HTTP Binding for SOAP, Version 1.0\n<http://www.projectliberty.org/specs/>\n\nApplications which use this media : \nAny implementation of the Liberty Reverse HTTP Binding for SOAP\n(none are known yet)\n\nAdditional information :\n\n1. Magic number(s) : n/a\n2. File extension(s) : n/a\n3. Macintosh file type code : n/a\n4. Object Identifiers: n/a\n\nPerson to contact for further information :\n1. Name : John Kemp\n2. Email : john.kemp&amp;earthlink.net\n\nIntended usage : Limited Use \n    \nAuthor/Change controller : John Kemp of IEEE-ISTO\n(john.kemp&amp;ieee-isto.org) has change control for any future\nupdates.\n \n(created 2003-09-09)"
+  },
+  "references": []
+}

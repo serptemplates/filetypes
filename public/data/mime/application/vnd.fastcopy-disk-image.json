@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.fastcopy-disk-image",
+  "full": "application/vnd.fastcopy-disk-image",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.fastcopy-disk-image",
+    "template_text": "(registered 2015-03-02, last updated 2015-03-02)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.fastcopy-disk-image\n\nRequired parameters : N/A\n\nOptional parameters : \nN/A\n\nEncoding considerations : binary\n\nSecurity considerations : \nFastCopy DIM disk images can store the same data as a real Atari ST floppy disk. That means they may contain arbitrary content, including but not limited to active content.\nThus if the users do not trust the contents of the disk image, they should carefully check the contents first before using it (e.g. with a suitable anti-virus software to check for known malicious software). The DIM format also does not provide privacy or integrity protection, so if these protections are desired they must be applied externally.\n\nInteroperability considerations : \nThere has never been an official documentation of the FastCopy DIM disk image file format, so this could lead to incompatibilities. But the layout has been analysed and documented by third parties and it is rather simple, so the chances for interoperability issues are rather small.\n\nPublished specification : \nThere has never been an official published specification of the file format. However, there are at least some simple descriptions available, for example in the \"Atari Image File Formats\" document from \"DrCoolZic\", which can be found at the following URL:\nhttp://info-coach.fr/atari/documents/_mydoc/FD_Image_File_Format.pdf\n\nApplications which use this media : \nThe file format was originally used by the disk copy program \"FastCopy Pro\" for the Atari ST computers (written by Martin Backschat). It is nowadays also used by and Atari ST emulators to provide the contents of an emulated floppy drive.\n\n\nFragment identifier considerations :\nN/A\n\nRestrictions on usage :\nN/A\n\nProvisional registration? (standards tree only) :\nNo\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : 0x4242 at byte position 0\n3. File extension(s) : .dim\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Thomas Huth\n2. Email : huth&tuxfamily.org\n\nIntended usage : Common\nDIM disk images are used for storing the contents of floppy disk images for the Atari ST compatible computers. Thus these files are used by archiver and floppy disk copy programs for the ST computers to either back-up the contents of a floppy disk into such a file, or to restore the contents of a floppy disk from such a file. The DIM files are also used by Atari ST emulators for providing the contents of an emulated floppy disk.\n\nAuthor/Change controller : Thomas Huth"
+  },
+  "references": []
+}

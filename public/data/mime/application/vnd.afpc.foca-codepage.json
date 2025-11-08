@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.afpc.foca-codepage",
+  "full": "application/vnd.afpc.foca-codepage",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.afpc.foca-codepage",
+    "encoding_considerations": "Being an object inside of the AFP MO:DCA specification, a code \n   page carries binary data. The recommended \n   content-transfer-encoding is \"base64\".\n\nSecurity considerations: Code Pages are part of MO:DCA, which is an \n   architected specification of final-form presentation data. It is \n   not a programming language, does not contain any file operators, \n   and therefore cannot corrupt a receiver's file system or \n   programming environment. It does not allow executable content or \n   calls to external applications.\n\n   The format does not provide integrity or privacy protection in \n   itself. Integrity on file level could be ensured by means external\n   to the specification.\n\nInteroperability considerations: none\n\nPublished specification: As part of \"FOCA Reference (Font Object \n   Content Architecture Reference)\", AFP Consortium publication \n   AFPC-0007-06.\n\n   Link:\n   https://www.afpconsortium.org/uploads/1/1/8/4/118458708/foca-reference-06.pdf\n\nApplication usage: A code page is a MO:DCA resource object that \n   associates graphic character IDs to code points.\n\n   Used in Advanced Function Presentation (AFP) generators and \n   consumers. A wide variety of applications are created by members \n   of the AFP Consortium and other parties.\n\nFragment Identifier Considerations: N/A\n\nRestrictions in Usage: This format is mostly used in applications \n   around high speed transactional printing.",
+    "security_considerations": "architected specification of final-form presentation data. It is \n   not a programming language, does not contain any file operators, \n   and therefore cannot corrupt a receiver's file system or \n   programming environment. It does not allow executable content or \n   calls to external applications.\n\n   The format does not provide integrity or privacy protection in \n   itself. Integrity on file level could be ensured by means external\n   to the specification.\n\nInteroperability considerations: none\n\nPublished specification: As part of \"FOCA Reference (Font Object \n   Content Architecture Reference)\", AFP Consortium publication \n   AFPC-0007-06.\n\n   Link:\n   https://www.afpconsortium.org/uploads/1/1/8/4/118458708/foca-reference-06.pdf\n\nApplication usage: A code page is a MO:DCA resource object that \n   associates graphic character IDs to code points.\n\n   Used in Advanced Function Presentation (AFP) generators and \n   consumers. A wide variety of applications are created by members \n   of the AFP Consortium and other parties.\n\nFragment Identifier Considerations: N/A\n\nRestrictions in Usage: This format is mostly used in applications \n   around high speed transactional printing.",
+    "interoperability_considerations": "Published specification: As part of \"FOCA Reference (Font Object \n   Content Architecture Reference)\", AFP Consortium publication \n   AFPC-0007-06.\n\n   Link:\n   https://www.afpconsortium.org/uploads/1/1/8/4/118458708/foca-reference-06.pdf\n\nApplication usage: A code page is a MO:DCA resource object that \n   associates graphic character IDs to code points.\n\n   Used in Advanced Function Presentation (AFP) generators and \n   consumers. A wide variety of applications are created by members \n   of the AFP Consortium and other parties.\n\nFragment Identifier Considerations: N/A\n\nRestrictions in Usage: This format is mostly used in applications \n   around high speed transactional printing.",
+    "additional_information": "Deprecated alias names for this type: N/A\n   Magic number(s):\n      0xD3A887 - Begin Code Page (BCP) Structured Field\n      0xD3A987 - End Code Page (ECP) Structured Field\n   File extension(s): N/A\n   Macintosh File Type Code(s): N/A\n   Object Identifiers: none\n\nIntended usage: Limited use\n   FOCA Code Pages as part of MO:DCA data is application output to be \n   presented on screen or paper.\n\nContact Name: Jörg Palmer\n\nContact Email Address: Joerg.Palmer&compart.com\n\nAuthor/Change controller: AFP Consortium - \n   https://www.afpconsortium.org/",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2019-10-14, last updated 2019-10-14)\n\nMIME media type name: application\n\nMIME subtype name: vnd.afpc.foca-codepage\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary (framed transport)\n\n   Being an object inside of the AFP MO:DCA specification, a code \n   page carries binary data. The recommended \n   content-transfer-encoding is \"base64\".\n\nSecurity considerations: Code Pages are part of MO:DCA, which is an \n   architected specification of final-form presentation data. It is \n   not a programming language, does not contain any file operators, \n   and therefore cannot corrupt a receiver's file system or \n   programming environment. It does not allow executable content or \n   calls to external applications.\n\n   The format does not provide integrity or privacy protection in \n   itself. Integrity on file level could be ensured by means external\n   to the specification.\n\nInteroperability considerations: none\n\nPublished specification: As part of \"FOCA Reference (Font Object \n   Content Architecture Reference)\", AFP Consortium publication \n   AFPC-0007-06.\n\n   Link:\n   https://www.afpconsortium.org/uploads/1/1/8/4/118458708/foca-reference-06.pdf\n\nApplication usage: A code page is a MO:DCA resource object that \n   associates graphic character IDs to code points.\n\n   Used in Advanced Function Presentation (AFP) generators and \n   consumers. A wide variety of applications are created by members \n   of the AFP Consortium and other parties.\n\nFragment Identifier Considerations: N/A\n\nRestrictions in Usage: This format is mostly used in applications \n   around high speed transactional printing.\n\nAdditional information: \n   Deprecated alias names for this type: N/A\n   Magic number(s):\n      0xD3A887 - Begin Code Page (BCP) Structured Field\n      0xD3A987 - End Code Page (ECP) Structured Field\n   File extension(s): N/A\n   Macintosh File Type Code(s): N/A\n   Object Identifiers: none\n\nIntended usage: Limited use\n   FOCA Code Pages as part of MO:DCA data is application output to be \n   presented on screen or paper.\n\nContact Name: Jörg Palmer\n\nContact Email Address: Joerg.Palmer&compart.com\n\nAuthor/Change controller: AFP Consortium - \n   https://www.afpconsortium.org/"
+  },
+  "references": []
+}

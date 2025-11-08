@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.ah-barcode",
+  "full": "application/vnd.ah-barcode",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ah-barcode",
+    "template_text": "(last updated 2010-11-17)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ah-barcode\n\nRequired parameters : type : Specify a type of barcode.\n\nThe following are accepted.\n\nQR\nMicroQR\nJPCBC\nIMBC\nRM4SCC\nPOSTNET\nEAN\nJAN\nUPC\nITF\nCODE39\nCODEBAR\nNW7\nCODE128\nEAN128\n\n\nOptional parameters :\nOptional parameters are depending on barcode type.\n\nFor type : QR and MicroQR\n\nver : version of barcode\naccept \"auto\", \"1\" to \"40\"\n\necl : level of error correction\naccept \"auto\", \"L\", \"M\", \"Q\", \"H\"\n\nenc : specify sorts of characters\naccept \"auto\", \"all\", \"N\", \"A\", \"B\", \"K\"\n\nauto : Equivalence to NAB\n\nall : Equivalence to NABK\n\nN : Alpabet and numecir\n\nB : byte\n\nK : Kanji(Shift JIS)\n\nmpr : mask pattern\naccept \"auto\", \"0\" to \"7\"\n\nout : output form\naccept \"svg\", \"png\"\n\ndpi : resolution of png\naccept non-negative number\n\nscale : output size of module unit\naccept Positive number. Leading plus sign is not accepted.\nLeading zeros are disregarded.\n\ncharset : encoding of the string that specified\naccept the name of an IANA-registered charset\n\n\nFor type : JPCBC, IMBC, RM4SCC, POSTNET\n\nl : length of long bar or full bar\naccept positive number\n\nt : length of timing bar or tracker bar\naccept positive number\n\nh : length of half bar\naccept positive number\n\nw : width of bar\naccept positive number\n\np : pitch of bar\naccept positive number\n\nhsp : horizontal blank\naccept non-negative number\n\nvsp : vertical blank\naccept non-negative number\n\nout : output form\naccept \"svg\", \"png\"\n\ndpi : resolution of png\naccept positive number\n\n\nFor type : EAN, JAN, UPC, ITF, CODE39, CODEBAR, NW7, CODE128, EAN128\n\nw : width of thin bar\naccept positive number\n\nr : ratio for the width of a thin bar of the width of a fat bar\naccept positive number\n\nh : length of the bar\naccept positive number\n\nqz : quiet zone\naccept non-negative number\n\nscale : display magnification\naccept positive number\n\nout : output form\naccept \"svg\", \"png\"\n\ndpi : resolution of png\naccept positive number\n\nfont : font when the code is displayed under the bar code is specified.\n(svg only)\n\ncd : specify a modulus\naccept \"none\", \"m43\" (for type:code39) accept \"none\", \"m10w2\", \"m10w2r\",\n\"m10w3\", \"m11\", \"wm11\", \"m16\", \"7dr\", \"7dsr\", \"9dr\", \"9dsr\"(for\ntype:CODEBAR, NW7)\n\ncode : specify \"CODE-A\", \"CODE-B\", \"CODE-C\" (for type:CODE128/EAN128)\naccept \"A\", \"B\", \"C\"\n\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of\nhandling 8 bit text.\n\nSecurity considerations :\nThis type contains no executable code.\nCertain types of barcodes, such as the \"QR\" type, e.g.,\n\ndata:application/vnd.ah-barcode;type=qr;out=png;,Hello%20World\n\nmay represent data that requires confidentiality or integrity problem.\nNo protection is given by the media type itself so such protections,\nif needed, must be provided externally.\n\n\nInteroperability considerations :\nnone\n\n\nPublished specification :\nnone\n\n\nApplications which use this media :\nAntenna House Formatter.\n\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nnone\n\n\nPerson to contact for further information :\n\n1. Name : Katsuhiko Ichinose\n2. Email : ichinose&antenna.co.jp\n\nIntended usage : Obsolete\nOnly for Antenna House Formatter to specify a barcode data.\n\n\nAuthor/Change controller :\n\n(file created 2010-11-17)"
+  },
+  "references": []
+}

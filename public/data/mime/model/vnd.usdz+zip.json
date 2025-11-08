@@ -1,0 +1,40 @@
+{
+  "type": "model",
+  "subtype": "vnd.usdz+zip",
+  "full": "model/vnd.usdz+zip",
+  "extensions": [
+    "usdz"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.usdz+zip",
+    "encoding_considerations": "Security considerations: The usdz file format is an aggregate of \n   other files that are used to describe 3D scene data with optional \n   image files representing texture data, volume format data \n   representing volumes, all known statically at archive creation \n   time. Usdz file content is not simply extracted and blindly \n   executed, rather, it is consumed by applications as it is needed. \n   USD files allow references to other USD files and the usdz file \n   format does not forbid the referencing of files external to the \n   archive.\n\n   usdz files are zip archives and are subject to the security risks \n   of that format.\n\n   No exhaustive security audit has been performed on the \n   specification.\n\n   The format provides no privacy or integrity services. Users \n   wishing to provide such services externally can do so using \n   available security protocols such as SSL/TLS.\n\nInteroperability considerations: usdz is designed to allow for \n   transfer of 3D scene content with high fidelity across supported \n   platforms and applications. It is intended as an interchange \n   format, capable of delivering most data required for a modern 3D \n   pipeline in film and game industries. The USD library is provided \n   as open source software available at \n   https://github.com/PixarAnimationStudios/USD.",
+    "security_considerations": "other files that are used to describe 3D scene data with optional \n   image files representing texture data, volume format data \n   representing volumes, all known statically at archive creation \n   time. Usdz file content is not simply extracted and blindly \n   executed, rather, it is consumed by applications as it is needed. \n   USD files allow references to other USD files and the usdz file \n   format does not forbid the referencing of files external to the \n   archive.\n\n   usdz files are zip archives and are subject to the security risks \n   of that format.\n\n   No exhaustive security audit has been performed on the \n   specification.\n\n   The format provides no privacy or integrity services. Users \n   wishing to provide such services externally can do so using \n   available security protocols such as SSL/TLS.\n\nInteroperability considerations: usdz is designed to allow for \n   transfer of 3D scene content with high fidelity across supported \n   platforms and applications. It is intended as an interchange \n   format, capable of delivering most data required for a modern 3D \n   pipeline in film and game industries. The USD library is provided \n   as open source software available at \n   https://github.com/PixarAnimationStudios/USD.",
+    "interoperability_considerations": "transfer of 3D scene content with high fidelity across supported \n   platforms and applications. It is intended as an interchange \n   format, capable of delivering most data required for a modern 3D \n   pipeline in film and game industries. The USD library is provided \n   as open source software available at \n   https://github.com/PixarAnimationStudios/USD.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): None\n   3. File extension(s): .usdz\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-06-01, last updated 2018-06-01)\n\nName: Sebastian Grassia\nEmail: usd-iana&pixar.com\n\nMedia type name: model\nMedia subtype name: vnd.usdz+zip\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: The usdz file format is an aggregate of \n   other files that are used to describe 3D scene data with optional \n   image files representing texture data, volume format data \n   representing volumes, all known statically at archive creation \n   time. Usdz file content is not simply extracted and blindly \n   executed, rather, it is consumed by applications as it is needed. \n   USD files allow references to other USD files and the usdz file \n   format does not forbid the referencing of files external to the \n   archive.\n\n   usdz files are zip archives and are subject to the security risks \n   of that format.\n\n   No exhaustive security audit has been performed on the \n   specification.\n\n   The format provides no privacy or integrity services. Users \n   wishing to provide such services externally can do so using \n   available security protocols such as SSL/TLS.\n\nInteroperability considerations: usdz is designed to allow for \n   transfer of 3D scene content with high fidelity across supported \n   platforms and applications. It is intended as an interchange \n   format, capable of delivering most data required for a modern 3D \n   pipeline in film and game industries. The USD library is provided \n   as open source software available at \n   https://github.com/PixarAnimationStudios/USD.\n\nPublished specification:\n   usdz file format:\n   http://graphics.pixar.com/usd/docs/Usdz-File-Format-Specification.html\n\n   USD library code:\n   https://github.com/PixarAnimationStudios/USD\n\nApplications which use this media: The usdz file format provides a \n   convenient packaging of a group of files that express 3D scene \n   data using USD (http://graphics.pixar.com/usd/docs/index.html) \n   and other supporting data (e.g., textures). USD is intended for \n   use by digital content creation software in the film and game \n   industries. As of Spring 2018, plugins are available for Houdini, \n   Maya, Katana, and Unity (by third-party repository). Applications \n   are expected to consume USD files to display the contents of the \n   file to the user, and optionally import the contents into the \n   application’s native data structures. Using USD allows \n   applications an efficient representation for scene data and \n   collaborative workflows that are otherwise difficult to achieve.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): None\n   3. File extension(s): .usdz\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: N/A\n\nPerson to contact for further information:\n\n   1. Name: Sebastian Grassia\n   2. Email: usd-iana&pixar.com\n\nIntended usage: Common\n   N/A\n\nAuthor/Change controller: Pixar Animation Studios"
+  },
+  "references": []
+}

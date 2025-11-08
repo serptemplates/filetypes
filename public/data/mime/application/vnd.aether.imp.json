@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.aether.imp",
+  "full": "application/vnd.aether.imp",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.aether.imp",
+    "template_text": "MIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.aether.imp\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations :\n This content is binary and should be transfer encoded using base64\n when a non-binary transfer protocol is being used to propogate this\n content.\n The format of the binary data follows the encoding scheme defined in\n the Aether Wireless Instant Messaging Protocol (IMP) specification,\n licensed by Aether Systems of Owings Mills, VA. Certain compression\n techniques employed within the binary data are licensed under patent\n 5,249,220. between the originating wireless device and its associated\n service provider. For character sets that use only 7-bits per character,\n the text must be packed using the Pack7 transfer encoding scheme defined\n by FLEXsuite(tm)\n\nSecurity considerations :\n Encyption of secure data carried by this content-type is defined\n within the licensed intellectual property.\n\nInteroperability considerations :\n This media type uses canonical encodings which precludes\n interoperability issues.\n\nPublished specification :\n The definition of this type is a part of the Wireless Instant\n Messaging Protocol (IMP) specification available from Aether\n Systems under an appropriate licensing agreement. Some\n compression techniques used within IMP are licensed under\n patent 5,249,220.\n\nApplications which use this media :\n Various wireless messaging devices and messaging infrastructure\n equipment used in 2way paging and PCS industry.\n\nAdditional information :\n\n 1. Magic number(s) : None\n 2. File extension(s) : None\n 3. Macintosh file type code : None\n 4. Object Identifiers: None\n\nPerson to contact for further information :\n\n 1. Name : Jay Moskowitz\n 2. E-mail : jay&aethersystems.com\n\nIntended usage : Common\n This content type represents a very airtime efficient means of\n conducting Instant Message communications between a Wireline\n Instant Messaging service, such as AOL Instant Messenger,\n Yahoo Messenger or MSN Messenger and a special set of Instant\n Messaging client software on a wireless device.\n\n one of the content types available from the\n FLEXsuite(tm) of Enabling Protocols. This text format enables\n features such as subject line delineation as well as methods for\n tokenizing common phrases and enumerating potential responses\n in a multiple choice format.\n\nAuthor/Change controller : The IMP protocol specification which\ndefines the binary data format of Wireless Instant Messaging\ntransactions, is managed by the Wireless Instant Messaging Group\nof Aether Systems, Inc.\n\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

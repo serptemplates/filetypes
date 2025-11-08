@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.palm",
+  "full": "application/vnd.palm",
+  "extensions": [
+    "pdb",
+    "pqa",
+    "oprc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.palm",
+    "template_text": "\n\nName : Gavin Peacock\n\nE-mail : gpeacock&palm.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.palm\n\nRequired parameters : none\n\nOptional parameters :\n\n   Creator: A four character PalmOS Creator ID. See\n\n    http://www.palmos.com/dev/tech/palmos/creatorid/\n\n    for additional information. A Creator ID consists \n    of four characters.\n    Characters in Creator IDs are limited to printable US-ASCII.\n\nEncoding considerations :\n\nThe contents of this media type are binary and must be suitably\nencoded on transports unable to handle binary material.\n\nSecurity considerations :\n\nThis format may contain executable code for a PalmOS platform,\ndownloading an object of this type to a PalmOS based device may\nexpose that device to any effects of that code either intentional\nor unintentional.\n\nInteroperability considerations :\n\nThis data type is intended for PalmOS based devices. There are\nvarious programs for other platforms that can read and write these\nfiles. This is a general purpose format for transferring PalmOS\ndatabases outside the PalmOS platform. This specifies the format\nof the database structure, but not the content of records or\nresources within that structure.\n\nPublished specification :\n\nwww.palmos.com/dev/tech/docs/fileformats.zip\n\nApplications which use this media :\nPalmOS system software, PalmOS applications and associated\nsoftware on other platforms.\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .prc, .pdb, .pqa, .oprc\n3. Macintosh file type code : Creator 'Gld1' Type 'Palm'\n\nThe palm format can be used to store applications/resource\n(prc), databases (.pbd), web clippings (.pqa) and overlays (.oprc).\nThese are all variations on the same basic storage format, so we are\nregistering only one type here. If there are good reasons to\ndistinguish these subtypes in a mime/context, we can register\nfurther palm types such as application/vnd.palm.prc and etc... There\nwould also be associated macintosh types 'PRC ' and etc...\n\nPerson to contact for further information :\n\n1. Name : Gavin Peacock\n2. E-mail : gpeacock&palm.com\n\nIntended usage : Common\n\napplication/vnd.palm is intended to replace application/x-pilot.\nAuthor/Change controller :  Gavin Peacock\n\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

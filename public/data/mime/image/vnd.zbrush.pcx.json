@@ -1,0 +1,35 @@
+{
+  "type": "image",
+  "subtype": "vnd.zbrush.pcx",
+  "full": "image/vnd.zbrush.pcx",
+  "extensions": [
+    "pcx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/vnd.zbrush.pcx",
+    "template_text": "(registered 2015-04-03, last updated 2015-04-03)\n\nName : Chris Charabaruk\n\nEmail : chris&charabaruk.com\n\nMIME media type name : Image\n\nMIME subtype name : Vendor Tree - vnd.zbrush.pcx\n\nRequired parameters : None\n\nOptional parameters : \nversion=n: n should be one of { 0, 2, 3, 4, 5} where the value is equal to the version number in the PCX header (byte 1).\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nThe security issues associated with this type have not been assessed.\n\nInteroperability considerations : \nThe format assumes little-endian byte order. An understanding of CGA, EGA, and VGA palette modes may be useful in decoding colour information.\n\nPublished specification : \nFile format reference is available at http://web.archive.org/web/20100206055706/http://www.qzx.com/pc-gpe/pcx.txt\n\nApplications which use this media : \nFormat was originally designed by ZSoft Corporation for their PC Paintbrush software. Typical uses of the PCX format were in computer games in the late 1980s through 1990s, both for graphics assets and screenshots.\n\nCurrent applications that support PCX for viewing and/or editing include (but not limited to) Photoshop, GIMP, ImageMagick, and IrfanView. Some games may still use PCX for graphics assets within the development pipeline.\n\nFragment identifier considerations :\nNone\n\nRestrictions on usage :\nNone\n\nProvisional registration? (standards tree only) :\nNone\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : image/x-pcx\n2. Magic number(s) : Byte 0: 0x0A (dec 10)\n3. File extension(s) : .pcx\n4. Macintosh file type code : (None known)\n5. Object Identifiers: (None assigned)\n\n\n\nPerson to contact for further information :\n\n1. Name : Chris Charabaruk\n2. Email : chris&charabaruk.com\n\nIntended usage : Common\nFormat was defined in 1985, last updated in 1991. However it has still seen usage up to the current date even as other lossless image formats have overtaken it in the areas where PCX was commonly used.\n\nAuthor/Change controller : Chris Charabaruk"
+  },
+  "references": []
+}

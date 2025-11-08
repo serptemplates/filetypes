@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.mseq",
+  "full": "application/vnd.mseq",
+  "extensions": [
+    "mseq"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mseq",
+    "template_text": "\n\nName : Gwenael Le Bodic\n\nE-mail : Gwenael.Le_Bodic&alcatel.fr\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.mseq\n\nRequired parameters : none\n\nOptional parameters :\n\n class: version of MSEQ format, this is an integer value from 1 to\n 15, the default value is 1.\n\nEncoding considerations :\n The content consists of 16 bit binary data that must be encoded on\n transports that cannot handle binary.\n\nSecurity considerations :\n The MSEQ format is a multimedia format which contains no executable\n code.\n\nInteroperability considerations :\n With all MSEQ compliant products.\n\nPublished specification :\n MSEQ format specifications have been released publicly to 3GPP\n SA#10.  See www.3gpp.org\n\nApplications which use this media :\n MSEQ multimedia player.\n MSEQ multimedia player plugins for browsers.\n\nAdditional information :\n\n 1. Magic number(s) : none\n 2. File extension(s) : .mseq\n 3. Macintosh file type code : none\n 4. Object Identifiers: none\n\nPerson to contact for further information :\n\n 1. Name : Le Bodic (Alcatel)\n 2. E-mail : Gwenael.le_bodic&alcatel.fr\n\nIntended usage : Common\nMSEQ is a compact multimedia format suitable for wireless devices.\n\nAuthor/Change controller : Gwenael Le Bodic (Alcatel)\n\n(created 03/05/01)\n\n[]\n\n"
+  },
+  "references": []
+}

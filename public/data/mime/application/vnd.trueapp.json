@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.trueapp",
+  "full": "application/vnd.trueapp",
+  "extensions": [
+    "tra"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.trueapp",
+    "template_text": "\n\n\nName : J. Scott Hepler\n\nE-mail : scott&truebasic.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.trueapp\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nbinary\n\nSecurity considerations : \nExecutable content!  The content of these are executed by the True\nBASIC Language system, which has the ability to manipulate memory and the\nlocal filesystem.\n\nInteroperability considerations : \nThese files are simply True BASIC bytecode, so can be executed by most\nversions of the True BASIC Language System.\n\nPublished specification : \nnone (propietary).\n\nApplications which use this media : \nTrue BASIC WebBASIC Reader\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : tra\n3. Macintosh file type code : TruA\n\n\nPerson to contact for further information :\n\n1. Name : J. Scott Hepler\n2. E-mail : scott&truebasic.com\n\nIntended usage : Common \n\n\nAuthor/Change controller : True BASIC, Inc.\nPO Box 5428\nWest Lebanon, NH  03784\n(802) 296-2711 \n\n\n\n\n\n"
+  },
+  "references": []
+}

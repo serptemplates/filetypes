@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.is-xpr",
+  "full": "application/vnd.is-xpr",
+  "extensions": [
+    "xpr"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.is-xpr",
+    "template_text": "\n\nDate: Tue, 4 Aug 1998 10:17:54 -0700 (PDT)\nFrom: Satish Natarajan <satish&infoseek.com>\nTo: iana&iana.org, satish&infoseek.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.is-xpr\n\nName : Satish Natarajan\n\nE-mail : satish&infoseek.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.is-xpr\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nASCII TEXT\n\nSecurity considerations : \nThe security issues have not been completely assessed at this time.\n\nInteroperability considerations : \nCAN BE USED ONLY WITH EXPRESS BY INFOSEEK. NOT RELEASED TO THE PUBLIC\nAS ON 8/4/98.\n\nPublished specification : \nFORMAT: ASCII\nSource:<servername>:<port>\nID:<subscription_id>\n\nsevername - http sever; port - socket port on which the sever responds;\nsubcription_id - information about importing data\n\nApplications which use this media : \nExpress by Infoseek. Not released to the public as on 8/4/98\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .XPR\n3. Macintosh file type code : none\nThe file is used for sharing information among servers running Infoseek\nExpress\n\nPerson to contact for further information :\n\n1. Name : Satish Natarajan or Bill Rose\n2. E-mail : satish&infoseek.com, bill&infoseek.com\n\nIntended usage : Common \n\n\nAuthor/Change controller : Satish Natarajan for Infoseek Corporation, \n1399 Moffett Park Drive,\nSunnyvale \nCA -94089 \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

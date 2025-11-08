@@ -1,0 +1,48 @@
+{
+  "type": "application",
+  "subtype": "senml+cbor",
+  "full": "application/senml+cbor",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/senml+cbor",
+    "type_name": "application",
+    "subtype_name": "senml+cbor",
+    "encoding_considerations": "Security considerations: See Section 13 of RFC 8428.\n\nInteroperability considerations: Applications MUST ignore any key-\nvalue pairs that they do not understand unless the key ends with the\n\"_\" character, in which case an error MUST be generated.  This allows\nbackwards-compatible extensions to this specification.  The \"bver\"\nfield can be used to ensure the receiver supports a minimal level of\nfunctionality needed by the creator of the CBOR object.\n\nPublished specification: RFC 8428\n\nApplications that use this media type: The type is used by systems\nthat report, e.g., electrical power usage and environmental\ninformation such as temperature and humidity.  It can be used for a\nwide range of sensor reporting systems.\n\nFragment identifier considerations: Fragment identification for\napplication/senml+cbor is supported by using fragment identifiers as\nspecified by RFC 8428.",
+    "security_considerations": "Interoperability considerations: Applications MUST ignore any key-\nvalue pairs that they do not understand unless the key ends with the\n\"_\" character, in which case an error MUST be generated.  This allows\nbackwards-compatible extensions to this specification.  The \"bver\"\nfield can be used to ensure the receiver supports a minimal level of\nfunctionality needed by the creator of the CBOR object.\n\nPublished specification: RFC 8428\n\nApplications that use this media type: The type is used by systems\nthat report, e.g., electrical power usage and environmental\ninformation such as temperature and humidity.  It can be used for a\nwide range of sensor reporting systems.\n\nFragment identifier considerations: Fragment identification for\napplication/senml+cbor is supported by using fragment identifiers as\nspecified by RFC 8428.",
+    "interoperability_considerations": "value pairs that they do not understand unless the key ends with the\n\"_\" character, in which case an error MUST be generated.  This allows\nbackwards-compatible extensions to this specification.  The \"bver\"\nfield can be used to ensure the receiver supports a minimal level of\nfunctionality needed by the creator of the CBOR object.\n\nPublished specification: RFC 8428\n\nApplications that use this media type: The type is used by systems\nthat report, e.g., electrical power usage and environmental\ninformation such as temperature and humidity.  It can be used for a\nwide range of sensor reporting systems.\n\nFragment identifier considerations: Fragment identification for\napplication/senml+cbor is supported by using fragment identifiers as\nspecified by RFC 8428.",
+    "applications": "that report, e.g., electrical power usage and environmental\ninformation such as temperature and humidity.  It can be used for a\nwide range of sensor reporting systems.\n\nFragment identifier considerations: Fragment identification for\napplication/senml+cbor is supported by using fragment identifiers as\nspecified by RFC 8428.",
+    "additional_information": "Deprecated alias names for this type: N/A\n\n   Magic number(s): N/A\n\n   File extension(s): senmlc\n\n   Macintosh file type code(s): none\n\n   Macintosh Universal Type Identifier code: org.ietf.senml-cbor\n   conforms to public.data",
+    "intended_usage": "common",
+    "change_controller": "IESG",
+    "template_text": "Type name: application\n\nSubtype name: senml+cbor\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: Must be encoded as using RFC 8949.  See RFC 8428 for details.\n\nSecurity considerations: See Section 13 of RFC 8428.\n\nInteroperability considerations: Applications MUST ignore any key-\nvalue pairs that they do not understand unless the key ends with the\n\"_\" character, in which case an error MUST be generated.  This allows\nbackwards-compatible extensions to this specification.  The \"bver\"\nfield can be used to ensure the receiver supports a minimal level of\nfunctionality needed by the creator of the CBOR object.\n\nPublished specification: RFC 8428\n\nApplications that use this media type: The type is used by systems\nthat report, e.g., electrical power usage and environmental\ninformation such as temperature and humidity.  It can be used for a\nwide range of sensor reporting systems.\n\nFragment identifier considerations: Fragment identification for\napplication/senml+cbor is supported by using fragment identifiers as\nspecified by RFC 8428.\n\nAdditional information:\n\n   Deprecated alias names for this type: N/A\n\n   Magic number(s): N/A\n\n   File extension(s): senmlc\n\n   Macintosh file type code(s): none\n\n   Macintosh Universal Type Identifier code: org.ietf.senml-cbor\n   conforms to public.data\n\nPerson & email address to contact for further information:\n   Cullen Jennings <fluffy&iii.ca>\n\nIntended usage: COMMON\n\nRestrictions on usage: None\n\nAuthor: Cullen Jennings <fluffy&iii.ca>\n\nChange controller: IESG\n"
+  },
+  "references": [
+    {
+      "title": "RFC 8428",
+      "url": "https://www.rfc-editor.org/rfc/rfc8428.html",
+      "kind": "RFC"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "prs.vcfbzip2",
+  "full": "application/prs.vcfbzip2",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/prs.vcfbzip2",
+    "encoding_considerations": "Security considerations: The Media type does not contain active or executable content.\nThe format is simply genomic data VCF (Variant Call Format) file compressed with bzip2 compressor https://sourceware.org/bzip2/\nThe data security of this specific format is the responsibility of the organization utilizing it.\n\nInteroperability considerations: The use of open and non-proprietary formats in the medical field increases the possibility of integration between systems at all levels.\n\nPublished specification: None\n\nApplications which use this media: The format can be used to enable interoperability in genomics data exchange between Electronic Health Record and Picture Archiving and Communication Systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "security_considerations": "The format is simply genomic data VCF (Variant Call Format) file compressed with bzip2 compressor https://sourceware.org/bzip2/\nThe data security of this specific format is the responsibility of the organization utilizing it.\n\nInteroperability considerations: The use of open and non-proprietary formats in the medical field increases the possibility of integration between systems at all levels.\n\nPublished specification: None\n\nApplications which use this media: The format can be used to enable interoperability in genomics data exchange between Electronic Health Record and Picture Archiving and Communication Systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "interoperability_considerations": "Published specification: None\n\nApplications which use this media: The format can be used to enable interoperability in genomics data exchange between Electronic Health Record and Picture Archiving and Communication Systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): 0x42, 0x5A, 0x68\n3. File extension(s): .vcf.bz2 , .vcfbzip2, vcfbz2\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-08-03, last updated 2023-08-03)\n\nMedia type name: application\n\nMedia subtype name: prs.vcfbzip2\n\nRequired parameters: N/A.\n\nOptional parameters: N/A.\n\nEncoding considerations: binary\n\nSecurity considerations: The Media type does not contain active or executable content.\nThe format is simply genomic data VCF (Variant Call Format) file compressed with bzip2 compressor https://sourceware.org/bzip2/\nThe data security of this specific format is the responsibility of the organization utilizing it.\n\nInteroperability considerations: The use of open and non-proprietary formats in the medical field increases the possibility of integration between systems at all levels.\n\nPublished specification: None\n\nApplications which use this media: The format can be used to enable interoperability in genomics data exchange between Electronic Health Record and Picture Archiving and Communication Systems.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): 0x42, 0x5A, 0x68\n3. File extension(s): .vcf.bz2 , .vcfbzip2, vcfbz2\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n1. Name: Paolo Marcheschi\n2. Email: paolo.marcheschi&ftgm.it\n\nIntended usage: COMMON\n\nAuthor/Change controller: Paolo Marcheschi"
+  },
+  "references": []
+}

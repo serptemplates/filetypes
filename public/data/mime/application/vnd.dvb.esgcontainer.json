@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.dvb.esgcontainer",
+  "full": "application/vnd.dvb.esgcontainer",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.dvb.esgcontainer",
+    "template_text": "(Last updated 23 March 2006)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.dvb.esgcontainer\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of\r\nhandling binary.\r\n\r\nSecurity considerations :\r\nESG Container typically carries electronic service guide data\r\norganized in fragments. This information is provided to signal the\r\nreceiver what IPDC services are available and how to acquire those.\r\n\r\nThe receiver reads the esg fragments and might initialize applications\r\nto receive and render media flows based on this information. For\r\nthis purpose SDP files are instantiated as part of the ESG.\r\nAccordingly the security considerations in RFC 2327 apply.\r\n\r\nBeside descriptive data also so called auxiliary data can be\r\ntransported within ESG Containers. The content of auxiliary data is\r\nlabelled by a MIME type. According to ETSI 102 471 IP Datacast over\r\nDVB-H: Electronic Service Guide (ESG) specification the content\r\ntypes application/sdp, text/html and image/png are supported as\r\nauxiliary data. Consequently the ESG Container specified in ETSI\r\n102 471 does not contain executable code.\r\n\r\nHowever in particular implementations the auxiliary data might not be\r\nrestricted to those content types declared in ETSI 102 471. If\r\nother content types are supported the security considerations of\r\nthose content types identified by the signalled MIME type have to\r\nbe taken under account. This is especially true if implementations\r\nsupport particular executable content types.\r\n\r\nInteroperability considerations :\r\nnone\r\n\r\nPublished specification :\r\nThis MIME type is described fully in ETSI 102 471 IP Datacast over\r\nDVB-H: Electronic Service Guide (ESG).\r\n\r\nApplications which use this media :\r\nThis media type is used by ESG Applications to discover IPDC services\r\navailable over DVB-H.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Joerg Heuer\r\n2. Email : Joerg.Heuer&siemens.com\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : Joerg Heuer\r\nSiemens AG\r\n81730 Muenchen\r\nGermany\r\n\r\n(File created 23 March 2006)"
+  },
+  "references": []
+}

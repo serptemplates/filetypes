@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.nitf",
+  "full": "application/vnd.nitf",
+  "extensions": [
+    "ntf",
+    "nitf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.nitf",
+    "template_text": "(last updated 2012-02-16)\n\nName : Steve Rogan\n\nEmail : rogans&nga.mil\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.NITF\n\nRequired parameters : None\n\nOptional parameters :\nversion\n\nThe NITF file format version is included as a “version” parameter. Known\nversion values are 1.0, 2.0, and 2.1.\n\nversion-parameter := version-parameter-name “=” version-parameter-value\nversion-parameter-name := “version”\nversion-parameter-value = 1*DIGIT \".\" 1*DIGIT\n\n\nEncoding considerations : binary\n\nSecurity considerations :\nNo security action, directives, or active content are associated with\nthis type.\nThis content type does NOT contain “Active Content”, or other provisions\nto institute actions on a recipient’s file or other resources.\nEmbedded image and other subparts may employ compression mechanisms.\nAvailable limits for resource consumption and expansion capability\nshould be determined prior to execution of decompression operations.\nThis media type may be targeted for imagery and/or other geospatial data\nwhich requires external security and/or is intended for use in a secure\nenvironment.\nEmbedded image or other subparts may employ encryption mechanisms and\nsecurity tags. External keys or codes may be required to fully decode\nsubpart information.\nEmbedded subpart fields may contain sensitive origination information,\nsuch as names, phone numbers, and/or other contact information. Systems\nwhich use and transfer this information should address privacy\nconsiderations for contact and origination field information.\n\n\nInteroperability considerations :\n\n\nPublished specification :\nhttp://www.gwg.nga.mil/ntb/baseline/docs/2500c/2500C.pdf\n\nApplications which use this media :\n\n\nAdditional information :\n\n1. Magic number(s) : 4E:49:54:46\n2. File extension(s) : ntf nitf\n3. Macintosh file type code : nitf\n4. Object Identifiers: not used\n\nComments, suggestions or questions regarding the NITF format should be\naddressed to the National Geospatial-Intelligence Agency (NGA) National\nCenter for Geospatial Intelligence Standards (NCGIS), Mail Stop P-106,\n12310 Sunrise Valley Drive, Reston, VA 20191-3449, or emailed to\nncgis-mail&nga.mil. Since contact information can change, you may want\nto verify the currency of this address information using the ASSIST\nOnline database at http://assist.daps.dla.mil.\n\nPerson to contact for further information :\n\n1. Name : National Geospatial-Intelligence Agency (NGA)\n2. Email : ncgis-mail&nga.mil\n\nIntended usage : Common\n\n\nAuthor/Change controller : National Center for Geospatial Intelligence\nStandards (NCGIS)\n\n\n(file created 2012-02-16)"
+  },
+  "references": []
+}

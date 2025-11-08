@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vividence.scriptfile",
+  "full": "application/vividence.scriptfile",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vividence.scriptfile",
+    "encoding_considerations": "Vividence Scriptfile files are ASCII streams transmitted via HTTP.\nEncoding may optionally be \nused to protect the contents from damage during transport.",
+    "security_considerations": "This media type cannot contain executable content and thus cannot\ncause harm directly.  When parsed \nby the recipient system, it instructs the client software on which\nactivities to monitor -- since\nthis client software operates as read-only, it cannot cause harm to\nthe recipient system.",
+    "interoperability_considerations": "None",
+    "additional_information": "Magic number: none\nFile extensions: .vsf, .vtd, .vd\nMacintosh File Type Code: CREATOR: VVTD",
+    "template_text": "\nMIME TYPE NAME:\napplication\n\nMIME SUBTYPE NAME:\nVendor subtree - vnd.vividence.scriptfile\n\nREQUIRED PARAMETERS:\nA version number is required.  The format for this version number can\nbe specified as\n<MAJOR> or <MAJOR>.<MINOR>  The following examples would be valid\nversion numbers:\n\n6\n14.5\n\n\nOPTIONAL PARAMETERS:\nNone\n\n\nENCODING CONSIDERATIONS:\n\nVividence Scriptfile files are ASCII streams transmitted via HTTP.\nEncoding may optionally be \nused to protect the contents from damage during transport.\n\n\nSECURITY CONSIDERATIONS:\nThis media type cannot contain executable content and thus cannot\ncause harm directly.  When parsed \nby the recipient system, it instructs the client software on which\nactivities to monitor -- since\nthis client software operates as read-only, it cannot cause harm to\nthe recipient system.\n\n\nINTEROPERABILITY CONSIDERATIONS:\nNone\n\n\nPUBLISHED SPECIFICATION:\nNot available\n\n\nAPPLICATIONS WHICH USE THIS MEDIA TYPE:\nVividence Browser\nVividence Argus\n\n  \nADDITIONAL INFORMATION:\nMagic number: none\nFile extensions: .vsf, .vtd, .vd\nMacintosh File Type Code: CREATOR: VVTD\n\n\nINTENDED USAGE:\nLimited use\n\n\nAUTHOR:\nMark Risher\n(markr&vividence.com)\nVividence Inc.,\n1850 Gateway Dr. #500\nSan Mateo, CA 94404\n\n\n(Created 12/27/00)\n\n[]\n\n\n\n\n\n"
+  },
+  "references": []
+}

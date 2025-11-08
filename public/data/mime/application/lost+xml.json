@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "lost+xml",
+  "full": "application/lost+xml",
+  "extensions": [
+    "lostxml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/lost+xml",
+    "encoding_considerations": "characters, depending on the character encoding used.  See RFC\n   3023 [5], Section 3.2.\n\nSecurity considerations:  This content type is designed to carry LoST\n   protocol payloads.\n\nInteroperability considerations:  None\n\nPublished specification:  RFC 5222\n\nApplications that use this media type:  Emergency and location-based\n   systems",
+    "security_considerations": "protocol payloads.\n\nInteroperability considerations:  None\n\nPublished specification:  RFC 5222\n\nApplications that use this media type:  Emergency and location-based\n   systems",
+    "interoperability_considerations": "Published specification:  RFC 5222\n\nApplications that use this media type:  Emergency and location-based\n   systems",
+    "applications": "systems",
+    "additional_information": "Magic Number:  None\n\n   File Extension:  .lostxml\n\n   Macintosh file type code:  'TEXT'",
+    "intended_usage": "limited use",
+    "template_text": "(RFC 5222 published August 2008, subtype last updated August 2008)\n\nMIME media type name:  application\n\nMIME subtype name:  lost+xml\n\nMandatory parameters:  none\n\nOptional parameters:  charset\n   Indicates the character encoding of enclosed XML.\n\nEncoding considerations:  Uses XML, which can employ 8-bit\n   characters, depending on the character encoding used.  See RFC\n   3023 [5], Section 3.2.\n\nSecurity considerations:  This content type is designed to carry LoST\n   protocol payloads.\n\nInteroperability considerations:  None\n\nPublished specification:  RFC 5222\n\nApplications that use this media type:  Emergency and location-based\n   systems\n\nAdditional information:\n\n   Magic Number:  None\n\n   File Extension:  .lostxml\n\n   Macintosh file type code:  'TEXT'\n\nPersonal and email address for further information:\n   Hannes Tschofenig, Hannes.Tschofenig&nsn.com\n\nIntended usage:  LIMITED USE\n\nAuthor:\n   This specification is a work item of the IETF ECRIT working group,\n   with mailing list address <ecrit&ietf.org>.\n\nChange controller:\n   The IESG <iesg&ietf.org>\n\n"
+  },
+  "references": []
+}

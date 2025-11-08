@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "logout+jwt",
+  "full": "application/logout+jwt",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/logout+jwt",
+    "encoding_considerations": "A Logout Token is a JWT; JWT values are encoded as a series of \n   base64url-encoded values (some of which may be the empty string) \n   separated by period ('.') characters.\n\nSecurity considerations: See \n   https://openid.net/specs/openid-connect-backchannel-1_0.html#CrossJWT\n\nInteroperability considerations: N/A",
+    "security_considerations": "https://openid.net/specs/openid-connect-backchannel-1_0.html#CrossJWT\n\nInteroperability considerations: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-10-07, last updated 2022-10-07)\n\nMedia type name: application\n\nMedia subtype name: logout+jwt\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\n   A Logout Token is a JWT; JWT values are encoded as a series of \n   base64url-encoded values (some of which may be the empty string) \n   separated by period ('.') characters.\n\nSecurity considerations: See \n   https://openid.net/specs/openid-connect-backchannel-1_0.html#CrossJWT\n\nInteroperability considerations: N/A\n\nPublished specification: \n\n   https://openid.net/specs/openid-connect-backchannel-1_0.html\n\nApplications which use this media: Applications that use Logout \n   Tokens to achieve back-channel logout\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: N/A\n\nPerson to contact for further information:\n\n   1. Name: OpenID Foundation Artifact Binding Working Group\n   2. Email: openid-specs-ab&lists.openid.net\n\nIntended usage: COMMON\n\nAuthor/Change controller: OpenID Foundation Artifact Binding Working \n   Group - openid-specs-ab&lists.openid.net"
+  },
+  "references": []
+}

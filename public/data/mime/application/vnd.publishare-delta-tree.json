@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.publishare-delta-tree",
+  "full": "application/vnd.publishare-delta-tree",
+  "extensions": [
+    "qps"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.publishare-delta-tree",
+    "template_text": "\n\nDate: Thu, 29 Oct 1998 00:27:51 -0800 (PST)\nFrom: Oren Ben-Kiki <oren&capella.co.il>\nTo: iana&iana.org, oren&capella.co.il\nSubject: Request for MIME media type Application/Vendor Tree - vnd.\n\nName : Oren Ben-Kiki\n\nE-mail : oren&capella.co.il\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.publishare-delta-tree\n\nRequired parameters : None.\n\nOptional parameters : \nAn optional version parameter in the format \"V<int>.<int>\" may be\nspecified.  The first integer is the major version number, the second\nis the minor version number.  The version numbers indicate upward\ncompatibility; a version is upward compatible with another if it has\nthe same major version number and a greater or equal minor version\nnumber.  The currently valid version number is \"V1.0\".\n\n\nEncoding considerations : \nDocuments of this type contain binary data and should be suitably\nencoded for transfer.\n\n\nSecurity considerations : \nThis type may contain embedded JavaScript fragments which are run on\nthe client (via a browser).  All the capabilities available to embedded\nJavaScript code are available to such code.  The code is subject to the\nusual security checks placed on embedded JavaScript code.  In addition,\nthis type may contain application-specific data whose sensitivity\ndepends on the specific application.  Therefore in some cases\nmanipulation of objects of this type should be done via secured\nmechanisms (for example, transfer via HTTPS).\n\nInteroperability considerations : \nInteroperates only on platforms supported by the PubliShare run-time\nenvironment.\n\n\nPublished specification : \nNot available. Objects of this type may be interpreted using the\nPubliShare run-time environment available from Capella Computers Ltd.\n\n\nApplications which use this media : \nUsed only by the PubliShare run-time environment.\n\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : qps\n3. Macintosh file type code : \nThis type is used to transfer data from the PubliShare server to the\nPubliShare run-time environment.  PubliShare\n(http://www.publishare.com) is a Web-enabled electronic publishing\nsystem developed by Capella Computers Ltd.\n\n\nPerson to contact for further information :\n\n1. Name : Oren Ben-Kiki\n2. E-mail : publishare-delta-tree&capella.co.il\n\nIntended usage : Limited Use \n\n\nAuthor/Change controller : Capella Computers Ltd. \n\n"
+  },
+  "references": []
+}

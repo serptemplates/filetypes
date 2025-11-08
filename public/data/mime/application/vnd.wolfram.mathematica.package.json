@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.wolfram.mathematica.package",
+  "full": "application/vnd.wolfram.mathematica.package",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wolfram.mathematica.package",
+    "template_text": "(last updated 2009-10-15)\n\nName : John Fultz\n\nEmail : jfultz&wolfram.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.wolfram.mathematica.package\n\nRequired parameters : None\n\nOptional parameters :\nOne optional parameter, version, which will take a value of two integers (a\nmajor version number and a minor version number) separated by a decimal point.\nE.g., <major>.<minor>\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of handling 8 bit\ntext.\n\nSecurity considerations :\nThe purpose of Mathematica package files is to contain source code for execution\nin Mathematica. As a result of executing the code, you can do anything\nMathematica can do, which includes changing the file system and launching\nprocesses. However, the default launching mechanisms for package files cause\nthem to be opened in an editor in source form. The code can only be executed by\nexplicit user command.\n\nA Mathematica package file may be encrypted using the Encode function of the\nMathematica language. The resulting file will be executable in Mathematica\nusing the Get or Needs functions, but it will no longer be editable or viewable\nby any means. Attempting to open such a file in the user interface would show\nonly the encrypted form. The code cannot be viewed, although any side effects\nof executing the code will be discernible by inspecting the state of the\nMathematica kernel after executing the code.\n\nThe Encode function may optionally be provided an arbitrary string which will\nact as a key. Only users who have this key will be able to execute the content\nby invoking the Get function with that key. The file may also be encoded for a\nparticular machine. This is done by using a relatively unique (but not\nguaranteed unique) hash called the \"MathID\" of the target machine as part of the\nEncode operation.\n\nAs of the time of this writing, this is the complete set of features Mathematica\npackages support to ensure authorship, integrity, or privacy. It is, in\nprinciple, possible to extend the format in a backwardly compatible way to\ninclude other, more flexible features which would insure authorship and\nintegrity. As a result, the feature set may improve in the future without\nrequiring the registration of a new media type.\n\n\nInteroperability considerations :\nThe Mathematica package file can be executed by Mathematica on any platform.\nPackage files support a Unicode representation in 7-bit form. However, it's also\npossible to use the native system character encoding in a package file. If this\nis done, then parts of the file may execute incorrectly on a platform which uses\na different native system character encoding.\n\nPublished specification :\nThe syntax for the file is the Mathematica syntax, as described in the\ndocumentation for Mathematica.\n\nApplications which use this media :\nMathematica, Mathematica Player Pro\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : .m\n3. Macintosh file type code : Creator: OMEG, Type: TEXT\n4. Object Identifiers: none\n\nMathematica is an interpreted language. Mathematica package files are the\ncanonical raw source files for that language.\n\nPerson to contact for further information :\n\n1. Name : Wolfram Research, Inc.\n2. Email : info&wolfram.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : Wolfram Research, Inc.\n\n100 Trade Center Drive\n\nChampaign, IL 61820-7237\n\n(file created 2009-10-15)"
+  },
+  "references": []
+}

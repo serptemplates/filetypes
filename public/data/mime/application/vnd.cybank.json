@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.cybank",
+  "full": "application/vnd.cybank",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cybank",
+    "template_text": "\n\nDate: Thu, 22 Oct 1998 00:42:09 -0700 (PDT)\nFrom: Helmee <helmee&my.cybank.net>\nTo: iana&iana.org, helmee&my.cybank.net\nSubject: Request for MIME media type Application/Vendor Tree - vnd.cybank\n\nName : Helmee\n\nE-mail : helmee&my.cybank.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.cybank\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nCybank is in 8bit binary and requires encoding when sent over transport\nincapble of transferring binary data.\n\nSecurity considerations : \nCybank uses RSA1024 public key encryption for key exchange, and block\nchaining triple DES, plus a tamperproof key lock for transmission of\nencrypted data.  The Cybank packet also contains E-Commerce\ninformations which is useful to the system. No currently defined Cybank\npacket has any \"executable\" material.\n\nInteroperability considerations : \n\n\nPublished specification : \nThe specifications for this content-type are proprietary. They are\nspecified by Cybank. The registration of this content-type is intended\nonly to provide a convention for labeling this proprietary data type\nwithin the MIME/HTTP environment and does not specify any details about\nthe content format or semantics, except to refer to the software and\nspecifications provided by Cybank.\n\nApplications which use this media : \n\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : \n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Nor Helmee B. Abd. Halim\n2. E-mail : helmee&cybank.net\n\nIntended usage : Common \n\n\nAuthor/Change controller :    Oxford Media Sdn Bhd\n   51CD, 51st Floor, Empire Tower, City Square Centre,\n   182 Jalan Tun Razak, 50400 Kuala Lumpur.\n\n   tel   : 603-2629475\n   fax   : 603-2629505\n   email : helmee&my.cybank.net ( Technical Contact)\n   email info : info&cybank.net\n   URL   : http://www.cybank.net\n\n\n"
+  },
+  "references": []
+}

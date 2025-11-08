@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.android.ota",
+  "full": "application/vnd.android.ota",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.android.ota",
+    "encoding_considerations": "Security considerations: The ota file is a zip archive containing a \n   system update for the Android Operating System.  This file must be\n   cryptographically signed, using the process set out at \n   https://source.android.com/devices/tech/ota/sign_builds .  The \n   signature can be verified via a tool, the latest code of which is \n   located at \n   https://android.googlesource.com/platform/build/+/refs/heads/master/tools/releasetools/check_ota_package_signature.py\n\n   Since this is a zip file, it has all the same concerns a zip file \n   normally has. \n\nInteroperability considerations: There are no special \n   interoperability considerations. ota files are expected to have a \n   specific structure, and the Operating System updater expects and \n   confirms this prior to updating.\n\nPublished specification: While not an exhaustive specification, there\n   is \n   https://source.android.com/devices/tech/ota/nonab/inside_packages.html\n\nApplications which use this media: This is used by the Android \n   Operating System update mechanism.\n\n   This file can be transferred via arbitrary file transfer \n   applications, and then invoked on an Android device to initialize \n   an operating system update without requiring the device to have \n   any sort of internet connectivity.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "security_considerations": "system update for the Android Operating System.  This file must be\n   cryptographically signed, using the process set out at \n   https://source.android.com/devices/tech/ota/sign_builds .  The \n   signature can be verified via a tool, the latest code of which is \n   located at \n   https://android.googlesource.com/platform/build/+/refs/heads/master/tools/releasetools/check_ota_package_signature.py\n\n   Since this is a zip file, it has all the same concerns a zip file \n   normally has. \n\nInteroperability considerations: There are no special \n   interoperability considerations. ota files are expected to have a \n   specific structure, and the Operating System updater expects and \n   confirms this prior to updating.\n\nPublished specification: While not an exhaustive specification, there\n   is \n   https://source.android.com/devices/tech/ota/nonab/inside_packages.html\n\nApplications which use this media: This is used by the Android \n   Operating System update mechanism.\n\n   This file can be transferred via arbitrary file transfer \n   applications, and then invoked on an Android device to initialize \n   an operating system update without requiring the device to have \n   any sort of internet connectivity.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "interoperability_considerations": "interoperability considerations. ota files are expected to have a \n   specific structure, and the Operating System updater expects and \n   confirms this prior to updating.\n\nPublished specification: While not an exhaustive specification, there\n   is \n   https://source.android.com/devices/tech/ota/nonab/inside_packages.html\n\nApplications which use this media: This is used by the Android \n   Operating System update mechanism.\n\n   This file can be transferred via arbitrary file transfer \n   applications, and then invoked on an Android device to initialize \n   an operating system update without requiring the device to have \n   any sort of internet connectivity.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: None\n   2. Magic number(s): 50 4b 03 04\n   3. File extension(s): ota\n   4. Macintosh file type code: None\n   5. Object Identifiers: None\n\nGeneral Comments: The magic number is the ZIP magic number and \n   appears at the beginning of the file.\n\n   OTA is an acronym for Over The Air, since the file format is \n   identical to what is used for OTA updates.",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-06-25, last updated 2019-06-25)\n\nMedia type name: application\n\nMedia subtype name: vnd.android.ota\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: The ota file is a zip archive containing a \n   system update for the Android Operating System.  This file must be\n   cryptographically signed, using the process set out at \n   https://source.android.com/devices/tech/ota/sign_builds .  The \n   signature can be verified via a tool, the latest code of which is \n   located at \n   https://android.googlesource.com/platform/build/+/refs/heads/master/tools/releasetools/check_ota_package_signature.py\n\n   Since this is a zip file, it has all the same concerns a zip file \n   normally has. \n\nInteroperability considerations: There are no special \n   interoperability considerations. ota files are expected to have a \n   specific structure, and the Operating System updater expects and \n   confirms this prior to updating.\n\nPublished specification: While not an exhaustive specification, there\n   is \n   https://source.android.com/devices/tech/ota/nonab/inside_packages.html\n\nApplications which use this media: This is used by the Android \n   Operating System update mechanism.\n\n   This file can be transferred via arbitrary file transfer \n   applications, and then invoked on an Android device to initialize \n   an operating system update without requiring the device to have \n   any sort of internet connectivity.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: None\n   2. Magic number(s): 50 4b 03 04\n   3. File extension(s): ota\n   4. Macintosh file type code: None\n   5. Object Identifiers: None\n\nGeneral Comments: The magic number is the ZIP magic number and \n   appears at the beginning of the file.\n\n   OTA is an acronym for Over The Air, since the file format is \n   identical to what is used for OTA updates.\n\nPerson to contact for further information:\n\n   1. Name: Greg Kaiser\n   2. Email: android-iana-mime-registration&google.com\n\nIntended usage: Common\n\nAuthor/Change controller: Greg Kaiser"
+  },
+  "references": []
+}

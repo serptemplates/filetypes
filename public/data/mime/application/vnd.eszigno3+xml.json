@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.eszigno3+xml",
+  "full": "application/vnd.eszigno3+xml",
+  "extensions": [
+    "es3",
+    "et3"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.eszigno3+xml",
+    "template_text": "(last updated 2007-07-31)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.eszigno3+xml\n\nRequired parameters : None.\n\nOptional parameters : None.\n\n   Note: The character set is always defined is the XML declaration \n   of the file and it can be either UTF-8 or ISO-8859-2. Thus having \n   a charset parameter would be redundant.\n\nEncoding considerations : 8bit\n\n   This media type may require encoding on transports not capable of \n   handling 8 bit text.\n\nSecurity considerations : The file consists of XML labels and \n   unformatted text contents. Executable content is not allowed.\n\n   While it is an XML signature file (adequate to RFC 3275 and ETSI \n   TS 101 903 v1.2.2.), integrity of the most elements (the signed \n   elements) is provided.\n\n   It is not necessary to protect the content for confidentiality -- \n   it depends on the application area and the decision of the users.\n   In default case, confidentiality is not provided. But if someone \n   decides that he/she needs confidentiality-protection, the original \n   file can be encrypted and placed into a data structure having the \n   same (vnd.eszigno3+xml) format. Existing application (e.g. \n   MICROSEC e-Szignó 3.1) supports this operation.\n\nInteroperability considerations : The format fulfils the requirements \n   of RFC 3275 and ETSI TS 101 903 v1.2.2.\n\nPublished specification :\n\n   https://www.microsec.hu/ds/e-szigno30.xsd\n\nApplications which use this media : MICROSEC e-Szignó 3.1 and some \n   other applications.\n\nAdditional information :\n\n   1. Magic number(s) : –\n   2. File extension(s) : .es3, .et3\n   3. Macintosh file type code : –\n   4. Object Identifiers: –\n\nPerson to contact for further information :\n\n   1. Name : Szilveszter Tóth\n   2. Email : sztoth&microsec.hu\n\nIntended usage : Common\n\nAuthor/Change controller : Szilveszter Tóth\n\n(file created 2007-07-31)"
+  },
+  "references": []
+}

@@ -1,0 +1,47 @@
+{
+  "type": "application",
+  "subtype": "news-groupinfo",
+  "full": "application/news-groupinfo",
+  "extensions": [],
+  "charsets": [
+    "US-ASCII"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/news-groupinfo",
+    "encoding_considerations": "maintain compatibility.\n\nSecurity considerations:  None.",
+    "interoperability_considerations": "Disposition should by default be inline.",
+    "applications": "Control message issuers, relaying\n                          agents, serving agents.\n\nPublished specification:  RFC 5537\n\nIntended usage:           COMMON\n\nChange controller:        IETF\n\nThe content of the application/news-groupinfo body part is defined\nas:\n\n   groupinfo-body      = [ newsgroups-tag CRLF ]\n                            newsgroups-line CRLF\n   newsgroups-tag      = %x46.6F.72 SP %x79.6F.75.72 SP\n                            %x6E.65.77.73.67.72.6F.75.70.73 SP\n                            %x66.69.6C.65.3A\n                            ; case sensitive\n                            ; \"For your newsgroups file:\"\n   newsgroups-line     = newsgroup-name\n                            [ 1*HTAB newsgroup-description ]\n                            [ *WSP moderation-flag ]\n   newsgroup-description\n                       = eightbit-utext *( *WSP eightbit-utext )\n   moderation-flag     = SP \"(\" %x4D.6F.64.65.72.61.74.65.64 \")\"\n\n                            ; SPACE + case sensitive \"(Moderated)\"\n   eightbit-utext      = VCHAR / %d127-255\n\nThis unusual format is backward-compatible with the scanning of the\nbody of newgroup control messages for descriptions done by Netnews\nimplementations that predate this specification.  Although optional,\nthe <newsgroups-tag> SHOULD be included for backward compatibility.\n\nThe <newsgroup-description> MUST NOT contain any occurrence of the\nstring \"(Moderated)\" within it.  Moderated newsgroups MUST be marked\nby appending the case-sensitive text \" (Moderated)\" at the end.\n\nWhile a charset parameter is defined for this media type, most\nexisting software does not understand MIME header fields or correctly\nhandle descriptions in a variety of charsets.  Using a charset of US-\nASCII where possible is therefore RECOMMENDED; if not possible, UTF-8\n[RFC3629] SHOULD be used.  Regardless of the charset used, the\nconstraints of the above grammar MUST be met and the <newsgroup-name>\nMUST be represented in that charset using the same octets as would be\nused with a charset of US-ASCII.",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "(RFC 5537 published November 2009, subtype last updated November 2009)\n\nMIME type name:           application\n\nMIME subtype name:        news-groupinfo\n\nRequired parameters:      none\n\nOptional parameters:      charset, which MUST be a charset\n                          registered for use with MIME text types.\n                          It has the same syntax as the parameter\n                          defined for text/plain [RFC2046].\n                          Specifies the charset of the body part.\n                          If not given, the charset defaults to\n                          US-ASCII [ASCII].\n\nEncoding considerations:  7bit or 8bit encoding MUST be used to\n                          maintain compatibility.\n\nSecurity considerations:  None.\n\nInteroperability considerations:\n                          Disposition should by default be inline.\n\nApplications that use this media type:\n                          Control message issuers, relaying\n                          agents, serving agents.\n\nPublished specification:  RFC 5537\n\nIntended usage:           COMMON\n\nChange controller:        IETF\n\nThe content of the application/news-groupinfo body part is defined\nas:\n\n   groupinfo-body      = [ newsgroups-tag CRLF ]\n                            newsgroups-line CRLF\n   newsgroups-tag      = %x46.6F.72 SP %x79.6F.75.72 SP\n                            %x6E.65.77.73.67.72.6F.75.70.73 SP\n                            %x66.69.6C.65.3A\n                            ; case sensitive\n                            ; \"For your newsgroups file:\"\n   newsgroups-line     = newsgroup-name\n                            [ 1*HTAB newsgroup-description ]\n                            [ *WSP moderation-flag ]\n   newsgroup-description\n                       = eightbit-utext *( *WSP eightbit-utext )\n   moderation-flag     = SP \"(\" %x4D.6F.64.65.72.61.74.65.64 \")\"\n\n                            ; SPACE + case sensitive \"(Moderated)\"\n   eightbit-utext      = VCHAR / %d127-255\n\nThis unusual format is backward-compatible with the scanning of the\nbody of newgroup control messages for descriptions done by Netnews\nimplementations that predate this specification.  Although optional,\nthe <newsgroups-tag> SHOULD be included for backward compatibility.\n\nThe <newsgroup-description> MUST NOT contain any occurrence of the\nstring \"(Moderated)\" within it.  Moderated newsgroups MUST be marked\nby appending the case-sensitive text \" (Moderated)\" at the end.\n\nWhile a charset parameter is defined for this media type, most\nexisting software does not understand MIME header fields or correctly\nhandle descriptions in a variety of charsets.  Using a charset of US-\nASCII where possible is therefore RECOMMENDED; if not possible, UTF-8\n[RFC3629] SHOULD be used.  Regardless of the charset used, the\nconstraints of the above grammar MUST be met and the <newsgroup-name>\nMUST be represented in that charset using the same octets as would be\nused with a charset of US-ASCII."
+  },
+  "references": [
+    {
+      "title": "RFC 3629",
+      "url": "https://www.rfc-editor.org/rfc/rfc3629.html",
+      "kind": "RFC"
+    }
+  ]
+}

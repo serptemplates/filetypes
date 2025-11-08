@@ -1,0 +1,42 @@
+{
+  "type": "image",
+  "subtype": "vnd.radiance",
+  "full": "image/vnd.radiance",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/vnd.radiance",
+    "type_name": "image",
+    "subtype_name": "vnd.radiance",
+    "encoding_considerations": "type with a text header; \"binary\" or \"base64\" are the only\nreasonable choices.\n\nSecurity considerations: The Radiance HDR file format does not include\nexecutable code or scripts; it is a graphics file with an ASCII\nheader. Compression is used, which could crash an image\nviewer. There is no way to completely rule out the possibility of\nmalicious content, however HDR viewer applications do not usually\nrun with administrator privileges--they seem poor targets for such\nattacks.\n\nInteroperability considerations: byte orders are spelled in the\npublished specification; we expect that Radiance HDR files will be\nreadable on all systems.\n\nPublished specification: *Radiance File Formats*, available freely at\n<http://radsite.lbl.gov/radiance/refer/> and also as part of Ch 18\nof *Rendering With Radiance* (Booksurge/Amazon, ISBN 0974538108).\n\nApplications that use this media type: Adobe Photoshop, AHDRIA,\nAHDRIC, CinePaint, FDRTools, hdrgen, HDR Shop, PFStools,\nPhotosphere, Qtpfsgui, RadDisplay, Radiance, Web HDR",
+    "security_considerations": "executable code or scripts; it is a graphics file with an ASCII\nheader. Compression is used, which could crash an image\nviewer. There is no way to completely rule out the possibility of\nmalicious content, however HDR viewer applications do not usually\nrun with administrator privileges--they seem poor targets for such\nattacks.\n\nInteroperability considerations: byte orders are spelled in the\npublished specification; we expect that Radiance HDR files will be\nreadable on all systems.\n\nPublished specification: *Radiance File Formats*, available freely at\n<http://radsite.lbl.gov/radiance/refer/> and also as part of Ch 18\nof *Rendering With Radiance* (Booksurge/Amazon, ISBN 0974538108).\n\nApplications that use this media type: Adobe Photoshop, AHDRIA,\nAHDRIC, CinePaint, FDRTools, hdrgen, HDR Shop, PFStools,\nPhotosphere, Qtpfsgui, RadDisplay, Radiance, Web HDR",
+    "interoperability_considerations": "published specification; we expect that Radiance HDR files will be\nreadable on all systems.\n\nPublished specification: *Radiance File Formats*, available freely at\n<http://radsite.lbl.gov/radiance/refer/> and also as part of Ch 18\nof *Rendering With Radiance* (Booksurge/Amazon, ISBN 0974538108).\n\nApplications that use this media type: Adobe Photoshop, AHDRIA,\nAHDRIC, CinePaint, FDRTools, hdrgen, HDR Shop, PFStools,\nPhotosphere, Qtpfsgui, RadDisplay, Radiance, Web HDR",
+    "applications": "AHDRIC, CinePaint, FDRTools, hdrgen, HDR Shop, PFStools,\nPhotosphere, Qtpfsgui, RadDisplay, Radiance, Web HDR",
+    "additional_information": "Magic number(s): Text \"#?RADIANCE\\n\" (octet sequence 23 3f 52 41\n44 49 41 4e 43 45 0a) at the beginning of the file.\nFile extension(s): pic, hdr, rgbe, xyze\nMacintosh file type code(s):\n\nPerson & email address to contact for further information: rfritz&u.washington.edu\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: Randolph Fritz\n\nChange controller: Greg Ward (gregoryjward&gmail.com) / The Radiance\nLighting\nSimulation Group",
+    "intended_usage": "common",
+    "change_controller": "Greg Ward (gregoryjward&gmail.com) / The Radiance",
+    "template_text": "(last updated 2009-03-04)\n\nType name: image\n\nSubtype name: vnd.radiance\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: Binary preferred. This is a binary image\ntype with a text header; \"binary\" or \"base64\" are the only\nreasonable choices.\n\nSecurity considerations: The Radiance HDR file format does not include\nexecutable code or scripts; it is a graphics file with an ASCII\nheader. Compression is used, which could crash an image\nviewer. There is no way to completely rule out the possibility of\nmalicious content, however HDR viewer applications do not usually\nrun with administrator privileges--they seem poor targets for such\nattacks.\n\nInteroperability considerations: byte orders are spelled in the\npublished specification; we expect that Radiance HDR files will be\nreadable on all systems.\n\nPublished specification: *Radiance File Formats*, available freely at\n<http://radsite.lbl.gov/radiance/refer/> and also as part of Ch 18\nof *Rendering With Radiance* (Booksurge/Amazon, ISBN 0974538108).\n\nApplications that use this media type: Adobe Photoshop, AHDRIA,\nAHDRIC, CinePaint, FDRTools, hdrgen, HDR Shop, PFStools,\nPhotosphere, Qtpfsgui, RadDisplay, Radiance, Web HDR\n\nAdditional information:\nMagic number(s): Text \"#?RADIANCE\\n\" (octet sequence 23 3f 52 41\n44 49 41 4e 43 45 0a) at the beginning of the file.\nFile extension(s): pic, hdr, rgbe, xyze\nMacintosh file type code(s):\n\nPerson & email address to contact for further information: rfritz&u.washington.edu\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: Randolph Fritz\n\nChange controller: Greg Ward (gregoryjward&gmail.com) / The Radiance\nLighting\nSimulation Group\n\nNotes:\n1. The \"pic\" extension is also used for Macintosh PICT files; it is\ndeprecated.\n\n2. The rgbe and xyze extensions represent information about the\ncontent of the files,\nand may conflict with the actual content of files. Applications\nshould check.\n\n3. Radiance also uses \"?RADIANCE\\n\" as a tag for its octree files;\napplications should read the file header to confirm that the file\nis indeed a Radiance HDR file, as described in the specification.\n\n(file created 2009-03-04)"
+  },
+  "references": []
+}

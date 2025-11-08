@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "linkset",
+  "full": "application/linkset",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/linkset",
+    "type_name": "application",
+    "subtype_name": "linkset",
+    "encoding_considerations": "definitions provided in [RFC8288]. The encoding discussed in\n[RFC8288] is based on the general encoding rules specified by\nHTTP [RFC9110] and allows specific parameters to be extended\nby the indication of character encoding and language as\ndefined by [RFC8187].\n\nSecurity considerations: The security considerations of [RFC9264] apply.\n\nInteroperability considerations: N/A\n\nPublished specification: [RFC9264]\n\nApplications that use this media type: This media type is not\nspecific to any application, as it can be used by any application\nthat wants to interchange web links.",
+    "security_considerations": "Interoperability considerations: N/A\n\nPublished specification: [RFC9264]\n\nApplications that use this media type: This media type is not\nspecific to any application, as it can be used by any application\nthat wants to interchange web links.",
+    "interoperability_considerations": "Published specification: [RFC9264]\n\nApplications that use this media type: This media type is not\nspecific to any application, as it can be used by any application\nthat wants to interchange web links.",
+    "applications": "specific to any application, as it can be used by any application\nthat wants to interchange web links.",
+    "additional_information": "Magic number(s): N/A\n\n   File extension(s): This media type does not propose a specific\n   extension.\n\n   Macintosh file type code(s): TEXT\n\nPerson & email address to contact for further information: Erik\nWilde <erik.wilde&dret.net>\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: Erik Wilde <erik.wilde&dret.net>\n\nChange controller: IETF",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "Type name: application\n\nSubtype name: linkset\n\nRequired parameters: N/A\n\nOptional parameters: profile\n\nEncoding considerations: Linksets are encoded according to the\ndefinitions provided in [RFC8288]. The encoding discussed in\n[RFC8288] is based on the general encoding rules specified by\nHTTP [RFC9110] and allows specific parameters to be extended\nby the indication of character encoding and language as\ndefined by [RFC8187].\n\nSecurity considerations: The security considerations of [RFC9264] apply.\n\nInteroperability considerations: N/A\n\nPublished specification: [RFC9264]\n\nApplications that use this media type: This media type is not\nspecific to any application, as it can be used by any application\nthat wants to interchange web links.\n\nAdditional information:\n\n   Magic number(s): N/A\n\n   File extension(s): This media type does not propose a specific\n   extension.\n\n   Macintosh file type code(s): TEXT\n\nPerson & email address to contact for further information: Erik\nWilde <erik.wilde&dret.net>\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: Erik Wilde <erik.wilde&dret.net>\n\nChange controller: IETF"
+  },
+  "references": []
+}

@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.shana.informed.interchange",
+  "full": "application/vnd.shana.informed.interchange",
+  "extensions": [
+    "iif"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.shana.informed.interchange",
+    "encoding_considerations": "data.\n\nSecurity considerations: This type does not pose any security threats\nbecause it does not contain any executable code.",
+    "security_considerations": "because it does not contain any executable code.",
+    "template_text": "\n\nSubject: MIME type registration\nDate: Thu, 6 Feb 97 15:36:56 -0000\nFrom: Tim Senger <tsenger&shana.com>\nTo: \"IANA\" <iana&iana.org>\nCc: \"Guy Selzler\" <gSelzler&shana.com>, \"Kevan Farrah\" <kFarrah&shana.com>\n\n\nHi,\n\nThis is in reply to a message received back from Josh (IANA) regarding\nmy previous registration requests for four new MIME types (submitted\n3-Feb-97).\n\n>Tim,\n>\n>This is what our specialist had to say:\n>\n>Security consideration: None is not acceptable.  At least say that the\n>type does not pose any security threats because it does not contain any\n>executable code.\n>\n>Apart from that, fine.\n>\n>Please make these additions and/or changes to your application\n>immediately in order to expediate the processing of your applications.\n>\n>Josh\n\nI've adjusted my requests and appended them to this message.\n\nThanks,\n\n-Tim Senger\n\n\n-------------------------------------------------------------------------\nREGISTRATION 4\n-------------------------------------------------------------------------\nMedia Type: application\n\nMedia subtype name: vnd.shana.informed.interchange\n\nRequired parameters: none.\n\nOptional parameters: An optional version parameter can be specified.\n\nEncoding considerations: Informed interchange documents contain binary\ndata.\n\nSecurity considerations: This type does not pose any security threats\nbecause it does not contain any executable code.\n\nPublished specifications:\n\nSpecification by example: From Informed Filler's File menu, choose New\nDocument, select a template to use, then click New. Choose Export, also\nfrom the File menu. Click the \">> Move All >>\" button, select \"Informed\nInterchange\" from the Data Format drop-down list, and click Export. Enter\na name and click Save. The resulting document is an Informed interchange\ndocument.\n\nSpecification by filename: The DOS file extension for Informed\ninterchange documents is \".IIF\".\n\nSpecification by Macintosh file type: The Apple Computer registered file\ntype for Informed interchange documents is \"IIF1\".\n\nPerson & email address to contact for further information:\n  Guy Selzler\n  Shana Corporation\n  9744-45th Avenue\n  Edmonton, Alberta, Canada  T6E 5C5\n  (403) 433-3690 ext. 225\n  gselzler&shana.com\n\n\n\n"
+  },
+  "references": []
+}

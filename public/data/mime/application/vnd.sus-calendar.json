@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.sus-calendar",
+  "full": "application/vnd.sus-calendar",
+  "extensions": [
+    "sus",
+    "susp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sus-calendar",
+    "template_text": "\r\n(last updated 2004-04-14)\r\n\r\nName : Jonathan Niedfeldt\r\n\r\nEmail : jniedfeldt&americatrue.org\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.sus-calendar\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : 7bit\r\n\r\nSecurity considerations : \r\nThis media type defines static calendar information.  There is no executable\r\ninformation in the calendar information.  The calendar information is\r\ncompressed and has a CRC to protect against corruption in transit.  No\r\nsignature or encryption facilities are provided; if any are needed they\r\ncan be applied to the calendar object as a whole.\r\n\r\nInteroperability considerations : \r\nNone\r\n\r\nPublished specification : \r\nScheduleUs is a proprietary commercial software product.\r\n\r\nApplications which use this media : \r\n\"ScheduleUs\" and \"ScheduleUs Publisher\"\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : .sus and .susp\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nUsed under license to Greenwood Technology, Auckland, NZ.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Chris Coffin\r\n2. Email : gccoffin&americatrue.org\r\n\r\nIntended usage : Common \r\nThis is a web based calendar information transfer encoding.\r\n\r\nAuthor/Change controller :\r\nVision Ventures, LLC.\r\n263 Market Square\r\nLake Forest, IL 60045\r\n847-604-9256 \r\ngccoffin&americatrue.org \r\n\r\n[Created 2004-04-14]\r\n"
+  },
+  "references": []
+}

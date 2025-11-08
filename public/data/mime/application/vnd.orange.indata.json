@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.orange.indata",
+  "full": "application/vnd.orange.indata",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.orange.indata",
+    "template_text": "(last updated 2012-04-19)\r\n\r\nName : CHATRAS Bruno\r\n\r\nEmail : bruno.chatras&orange.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.orange.indata\r\n\r\nRequired parameters : N/A\r\n\r\nOptional parameters : \r\n\r\n\"variant\"\r\nThis parameter allows identifying different variants of the information \r\nexchanged using this MIME type in networks where several variants may be used. \r\nThis enables the receiver to recognize and parse the message correctly,or \r\n(possibly) to reject the message if the specified variant is not supported.\r\n\r\nThis specification places no constraints on the values that may be used in \r\n'variant'; these are\r\nleft to the discretion of the network administrator.\r\n\r\n\"direction\"\r\nThis parameter specifies whether the message body has been created by a user \r\nequipment (\"up\") or a network node (\"np\").\r\n\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations :\r\nThis media type does not make use of any executable content. \r\nThis media type may contain customer confidential and network confidential \r\ninformation. \r\nSecurity mechanisms at the transport layer may thus be needed to provide \r\nintegrity and privacy of the content.\r\n\r\n\r\nInteroperability considerations :\r\nN/A\r\n\r\nPublished specification :\r\nN/A\r\n\r\nApplications which use this media :\r\nIntelligent Network services over the Session Initiation Protocol (RFC3261). \r\nThis media type enables Intelligent Network applications to exchange information\r\nbetween them and/or with end user devices, using the SIP.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : N/A\r\n2. File extension(s) : N/A\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n\r\nN/A\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : CHATRAS Bruno\r\n2. Email : bruno.chatras&orange.com\r\n\r\nIntended usage : Common\r\nN/A\r\n\r\nAuthor/Change controller : N/A"
+  },
+  "references": []
+}

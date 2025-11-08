@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.oasis.opendocument.formula",
+  "full": "application/vnd.oasis.opendocument.formula",
+  "extensions": [
+    "odf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.formula",
+    "template_text": "(Last updated 2022-06-07)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oasis.opendocument.formula\n\nRequired parameters : N/A\n\nOptional parameters : N/A\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations : \nDocuments may contain script programs which are able to perform various \nactions on behalf of the user. Applications should make the user aware of \nthis fact when opening a document of unknown/not-trusted origin.\nDocuments stored in the OpenDocument format may embed external objects\nand/or may include hyper-links to other objects. Implementors should pay\nspecial attention to security of resolving such external references.\nIn order to protect the privacy of information stored in documents,\nSection 17.3 of the OpenDocument specification describes a mechanism\nby which applications can encrypt documents in an interoperable way.\nThere are no mechanisms in OpenDocument v1.0 to verify the integrity\nof documents (e.g. digital signatures). Users have to rely on external \napplications, should such integrity verification be required.\n\nInteroperability considerations : \n- none -\n\nPublished specification : \nhttp://www.oasis-open.org/committees/download.php/12572/OpenDocument-v1.0-os.pdf \n\n\nApplications which use this media : \nAbiword 2.4\nGnumeric (spreadsheets).\nIBM Workplace Documents 2.6+\nKOffice\nNeoOffice 1.2 (import)\nOpenOffice.org 2\nOpenOffice.org 1.1.5 (import) \nScribus 1.2.2+ (import)\nStarOffice 8\nStarOffice 7 PP5 (import) \nTextMaker 2005 (import)\nVisioo Writer 0.6 (viewer)\nWritely (text documents)\nSee also:\nhttp://opendocumentfellowship.org/Applications/HomePage\n\nAdditional information :\n\n1. Magic number(s) : 0:PK,30:mimetype,38:vnd.oasis.opendocument.formula\n2. File extension(s) : odf\n3. Macintosh file type code : no specified Macintosh file type code(s) for OpenDocument\n4. Object Identifiers: no specific OID(s) for OpenDocument\n\n\n\nPerson to contact for further information :\n\n1. Name: OASIS TC Admin\n2. Email: project-admin&oasis-open.org\n\nIntended usage : Common \n\n\nAuthor/Change controller : OASIS OpenDocument TC\nhttp://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office\nEmail: tc-admin&oasis-open.org\n\n(File Created 2006-05-31)"
+  },
+  "references": []
+}

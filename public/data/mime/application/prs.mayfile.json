@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "prs.mayfile",
+  "full": "application/prs.mayfile",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/prs.mayfile",
+    "security_considerations": "- The application.mayfile format does not contain active or executable content. It is a static file format meant for storing multiple pieces of media and data for easier retrieval and storage.\n\n- The application.mayfile format does not inherently provide any kind of security features. as such external methods such as AES in storage or SSL/TLS should be used to secure the contents.\n\n- The application.mayfile format does not make use of xml or json formats and therefore does not inherit any security considerations from those formats.\n\n- The application.mayfile format does not make use of compression and therefore does not require additional security considerations related to compressing/uncompressing\n\n- The application.mayfile format is not a container format as it stores data in a predefined structure without encapsulating any other kind of file format or type.\n\n- The application.mayfile format does not require any external information to be processed, all the necessary data is contained within the file itself.",
+    "interoperability_considerations": "- Provides a PHP class as an example for an Implementation or to be used as a writer/reader\n\n- Little Endian Byte Order\n\nPublished specification: https://git.oat.zone/mayflower/file-format\n\nApplications which use this media: File format is intended for centralized storage within backend servers for the web.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): \\0x4D\\0x41\\0x59\\0x46\n3. File extension(s): .mayf\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "Media type name: application\n\nMedia subtype name: prs.mayfile\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: \n\n- The application.mayfile format does not contain active or executable content. It is a static file format meant for storing multiple pieces of media and data for easier retrieval and storage.\n\n- The application.mayfile format does not inherently provide any kind of security features. as such external methods such as AES in storage or SSL/TLS should be used to secure the contents.\n\n- The application.mayfile format does not make use of xml or json formats and therefore does not inherit any security considerations from those formats.\n\n- The application.mayfile format does not make use of compression and therefore does not require additional security considerations related to compressing/uncompressing\n\n- The application.mayfile format is not a container format as it stores data in a predefined structure without encapsulating any other kind of file format or type.\n\n- The application.mayfile format does not require any external information to be processed, all the necessary data is contained within the file itself.\n\nInteroperability considerations: \n\n- Provides a PHP class as an example for an Implementation or to be used as a writer/reader\n\n- Little Endian Byte Order\n\nPublished specification: https://git.oat.zone/mayflower/file-format\n\nApplications which use this media: File format is intended for centralized storage within backend servers for the web.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): \\0x4D\\0x41\\0x59\\0x46\n3. File extension(s): .mayf\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n1. Name: Azalea Gardenia\n2. Email: bestie&mayf.pink\n\nIntended usage: COMMON\n\nAuthor/Change controller: Azalea \"Mayflower\" Gardenia (bestie&mayf.pink)"
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.mdl-mbsdf",
+  "full": "application/vnd.mdl-mbsdf",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mdl-mbsdf",
+    "encoding_considerations": "MDL files are utf8 encoded per specification\n\nSecurity considerations: The MBSDF file format stores the data for a \n   measurement of a bidirectional scattering distribution function\n   (BSDF) in binary form. It is not extensible and fully specified as \n   part of the MDL specification. It does not contain any \n   “executable” components in itself. It contains metadata in the \n   form of string data that could be displayed as text to the user \n   and should be filtered for non displayable content. \n   Inconsistencies within the bsdf data block could lead to \n   unexpected behavior with poorly written software.\n\nInteroperability considerations: Byte order for MBSDF per \n   specification is little-endian",
+    "security_considerations": "measurement of a bidirectional scattering distribution function\n   (BSDF) in binary form. It is not extensible and fully specified as \n   part of the MDL specification. It does not contain any \n   “executable” components in itself. It contains metadata in the \n   form of string data that could be displayed as text to the user \n   and should be filtered for non displayable content. \n   Inconsistencies within the bsdf data block could lead to \n   unexpected behavior with poorly written software.\n\nInteroperability considerations: Byte order for MBSDF per \n   specification is little-endian",
+    "interoperability_considerations": "specification is little-endian",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .mbsdf\n   4. Macintosh file type code: \"TEXT\"\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-03-02, last updated 2023-03-02)\n\nMedia type name: application\n\nMedia subtype name: vnd.mdl-mbsdf\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nMDL files are utf8 encoded per specification\n\nSecurity considerations: The MBSDF file format stores the data for a \n   measurement of a bidirectional scattering distribution function\n   (BSDF) in binary form. It is not extensible and fully specified as \n   part of the MDL specification. It does not contain any \n   “executable” components in itself. It contains metadata in the \n   form of string data that could be displayed as text to the user \n   and should be filtered for non displayable content. \n   Inconsistencies within the bsdf data block could lead to \n   unexpected behavior with poorly written software.\n\nInteroperability considerations: Byte order for MBSDF per \n   specification is little-endian\n\nPublished specification:\n\n   https://github.com/NVIDIA/MDL-SDK/tree/master/doc/specification\n\nApplications which use this media: NVIDIA® Material Definition \n   Language (MDL) is a domain-specific language that describes the \n   appearance of scene elements for a physically based rendering \n   process. It allows sharing physically based appearances between \n   supporting applications, for example, Adobe® Substance , Chaos \n   Software EOOD V-Ray®, NVIDIA Omniverse™ and many others. An open \n   source SDK is available to add MDL to custom applications. MDL can \n   be used with USD and an extension is under development to use MDL \n   as an alternative high quality material model within glTF.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .mbsdf\n   4. Macintosh file type code: \"TEXT\"\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Lutz Kettner\n   2. Email: lkettner&nvidia.com\n\nIntended usage: COMMON\n\nAuthor/Change controller: MDL is specified by the MDL specification \n   group at NVIDIA Corporation, led by Lutz Kettner. NVIDIA has \n   control over the MDL specification"
+  },
+  "references": []
+}

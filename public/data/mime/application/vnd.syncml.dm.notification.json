@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.syncml.dm.notification",
+  "full": "application/vnd.syncml.dm.notification",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.syncml.dm.notification",
+    "template_text": "(last updated 2009-03-17)\n\nName : Peter Thompson\n\nEmail : pthompso&qualcomm.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.syncml.dm.notification\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nAuthentication: The notification package contains MD5 Digest challenge\nauthentication information for the purpose of authenticating the originator. A\ndevice management server can use the notification to request a device management\nclient to initiate a connection back to the server. The server must send the\ndigest to prevent any denial of service by replay attacks. The client may decide\nfor any reason not to respond to the notification package.\n\nThe media type also specifies the device management server recommendations\nwhether the server wants the connection to be executed in background or show a\nnotification to the user. This media type contains no executable content.\nImplementations that support this media type should assure the authentication of\nthe originator, as well as assure that the end-users will be aware of the\ninitiated connection (if they wish so).\n\nThe notification message does not contain any confidential information. It only\ncontains the name of the server for the device to contact. If the device is not\nfamiliar with the server, it is under no compunction to connect to that server.\n\n\nInteroperability considerations :\nMany devices cannot continuously listen for connections from a device management\nserver. Other devices simply do not wish to \"open a port\" (i.e. accept\nconnections) for security reasons. However, most devices\ncan receive unsolicited messages, sometimes called \"notifications\". Some\nhandsets, for example, can receive SMS messages. Other devices may have the\nability to receive other, similar data gram messages. A device management server\ncan use this notification capability to cause the device management client to\ninitiate a connection back to the server. This connection might be over HTTP,\nWAP or another transport protocol.\nThis media type (i.e. notification package) is intended to provide a possibility\nfor the device management server to alert the client to perform a device\nmanagement session and tell for example the protocol version and whether the\nserver proposes the session to be a foreground or background event.\n\n\nPublished specification :\nOMA Device Management Notification Initiated Session, a subset of the OMA Device\nManagement Protocol (v1.2), http://www.openmobilealliance.org/\n\n\nApplications which use this media :\nThis MIME content type is intended for common use by networked data device\nmanagement applications.\n\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : None\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\nThis notification\n\nPerson to contact for further information :\n\n1. Name : Peter Thompson\n2. Email : pthompso&qualcomm.com\n\nIntended usage : Common\n\nAuthor/Change controller : OMA Device Management working group\n\n\n(last updated 2009-03-17)"
+  },
+  "references": []
+}

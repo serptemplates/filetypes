@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "timestamp-query",
+  "full": "application/timestamp-query",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/timestamp-query",
+    "template_text": "(RFC 3161 published August 2001, subtype last updated April August 2001)\n\nThis section specifies a means for conveying ASN.1-encoded messages\nfor the protocol exchanges described in Section 2 and Appendix D via\nInternet mail.\n\nTwo MIME objects are specified as follows:\n\nContent-Type: application/timestamp-query\nContent-Transfer-Encoding: base64\n<<the ASN.1 DER-encoded Time-Stamp message, base64-encoded>>\n\nContent-Type: application/timestamp-reply\nContent-Transfer-Encoding: base64\n<<the ASN.1 DER-encoded Time-Stamp message, base64-encoded>>\n\nThese MIME objects can be respectively sent and received using common\nMIME processing engines and provides a simple Internet mail transport\nfor Time-Stamp messages.\n\nFor the application/timestamp-query and application/timestamp-reply\nMIME types, implementations SHOULD include the optional \"name\" and\n\"filename\" parameters.  Including a file name helps preserve type\ninformation when time-stamp queries and replies are saved as files.\nWhen these parameters are included, a file name with the appropriate\nextension SHOULD be selected:\n\n        MIME Type                     File Extension\n   application/timestamp-query            .TSQ\n   application/timestamp-reply            .TSR\n\nIn addition, the file name SHOULD be limited to eight characters\nfollowed by a three letter extension.  The eight character filename\nbase can be any distinct name."
+  },
+  "references": []
+}

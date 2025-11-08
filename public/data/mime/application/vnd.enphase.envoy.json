@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.enphase.envoy",
+  "full": "application/vnd.enphase.envoy",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.enphase.envoy",
+    "encoding_considerations": "Security considerations: Enphase Energy manufactures solar monitoring\n   gateways, named Envoy. Envoy transmits reports to an Enphase \n   web-based monitoring platform, named Enlighten. Envoy reports, and \n   non-trivial Enlighten responses, will use this media type, which \n   includes encrypted and signed content. None of the content is \n   active or executable.\n\nInteroperability considerations: Interoperability is not required \n   between Enphase and non-Enphase equipment. The version parameter \n   allows Enlighten to receive different format reports from \n   different versions of Envoy.\n\nPublished specification: N/A\n\nApplications which use this media: Enphase Energy products and \n   services.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Intended for Enphase Energy products and \n   services only.\n\nProvisional registration? (standards tree only): N/A",
+    "security_considerations": "gateways, named Envoy. Envoy transmits reports to an Enphase \n   web-based monitoring platform, named Enlighten. Envoy reports, and \n   non-trivial Enlighten responses, will use this media type, which \n   includes encrypted and signed content. None of the content is \n   active or executable.\n\nInteroperability considerations: Interoperability is not required \n   between Enphase and non-Enphase equipment. The version parameter \n   allows Enlighten to receive different format reports from \n   different versions of Envoy.\n\nPublished specification: N/A\n\nApplications which use this media: Enphase Energy products and \n   services.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Intended for Enphase Energy products and \n   services only.\n\nProvisional registration? (standards tree only): N/A",
+    "interoperability_considerations": "between Enphase and non-Enphase equipment. The version parameter \n   allows Enlighten to receive different format reports from \n   different versions of Envoy.\n\nPublished specification: N/A\n\nApplications which use this media: Enphase Energy products and \n   services.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Intended for Enphase Energy products and \n   services only.\n\nProvisional registration? (standards tree only): N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2014-11-10, last updated 2014-11-10)\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.enphase.envoy\n\nRequired parameters: version\n\n   - version syntax: two or three decimal values separated by periods\n   - version semantics: indicates the protocol version according to \n   Semantic Versioning (cf. http://semver.org/spec/v2.0.0.html).\n\n   The three decimal values are:\n\n   * major - bumped for incompatible changes\n   * minor - bumped for compatible changes (typically additions)\n   * bugfix - optional and purely informative, indicating change in \n   implementation without a protocol change\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: Enphase Energy manufactures solar monitoring\n   gateways, named Envoy. Envoy transmits reports to an Enphase \n   web-based monitoring platform, named Enlighten. Envoy reports, and \n   non-trivial Enlighten responses, will use this media type, which \n   includes encrypted and signed content. None of the content is \n   active or executable.\n\nInteroperability considerations: Interoperability is not required \n   between Enphase and non-Enphase equipment. The version parameter \n   allows Enlighten to receive different format reports from \n   different versions of Envoy.\n\nPublished specification: N/A\n\nApplications which use this media: Enphase Energy products and \n   services.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Intended for Enphase Energy products and \n   services only.\n\nProvisional registration? (standards tree only): N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: Chris Eich\n   2. Email: ceich&enphaseenergy.com\n\nIntended usage: Limited Use\n\n   Limited to communication between Enphase Energy products and \n   services\n\nAuthor/Change controller: Chris Eich"
+  },
+  "references": []
+}

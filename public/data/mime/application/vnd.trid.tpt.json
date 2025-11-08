@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.trid.tpt",
+  "full": "application/vnd.trid.tpt",
+  "extensions": [
+    "tpt"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.trid.tpt",
+    "template_text": "(last updated 2007-07-05)\n\nName : Frank Cusack\n\nEmail : frank&tri-dsystems.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.trid.tpt\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : 7bit\n\n\nSecurity considerations :\nThe media type is a text configuration file, and is not executable.\nThe data is inherently integrity-protected and needs no additional security.\nThe data does contain secret information (an encryption key), however that\ninformation is inherently privacy-protected (the key is itself encrypted)\nand needs no additional transport security. Upon reception of the\nconfiguration file, the application asks for an unlock code, which is\na string transformation of the key used to protect the key data in\nthe configuration file. The unlock code is provided to the user out\nof band.\n\nInteroperability considerations :\n\n\nPublished specification :\nnone\n\nApplications which use this media :\ntpt (provisioning application)\notp (client application)\n\nAdditional information :\n\n1. Magic number(s) :\n2. File extension(s) : .tpt\n3. Macintosh file type code : TRID\n4. Object Identifiers:\n\n\n\nPerson to contact for further information :\n\n1. Name : Frank Cusack\n2. Email : frank&tri-dsystems.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : Frank Cusack\n\n(file created 2007-07-05)"
+  },
+  "references": []
+}

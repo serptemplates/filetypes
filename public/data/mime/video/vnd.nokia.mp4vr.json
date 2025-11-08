@@ -1,0 +1,38 @@
+{
+  "type": "video",
+  "subtype": "vnd.nokia.mp4vr",
+  "full": "video/vnd.nokia.mp4vr",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/vnd.nokia.mp4vr",
+    "encoding_considerations": "As for video/mp4.",
+    "security_considerations": "See section 4 of RFC 4337. The media type SHOULD only be used in environments where privacy and integrity protection are handled outside of the format itself, e.g., by using https for transmitting Nokia MP4VR files. If encryption of the content is desirable and cannot be provided by the environment, encrypted tracks (e.g., with 'encv' or 'enca' sample entry type) of the ISO base media file format and mp4 media subtype specified in RFC 4337 MAY be used.",
+    "interoperability_considerations": "This media type registration remains compatible with RFC 6381, for which several interoperable implementations exist.",
+    "additional_information": "1. Deprecated alias names for this type: None 2. Magic number(s): N/A 3. File extension(s): mp4 4. Macintosh file type code: N/A 5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-09-15, last updated 2017-09-15)\n\nName: Miska M. Hannuksela\nEmail: mimetype.registration&nokia.com\n\nMedia type name: video\nMedia subtype name: vnd.nokia.mp4vr\n\nRequired parameters: None.\n\nOptional parameters:\nNokia MP4VR files conform to the ISO base media file format (ISO/IEC 14496-12) with additional constraints. Hence, the optional parameters specified in RFC 6381 for files conforming to ISO/IEC 14496-12 MAY be used.\n\nprofiles: Specified by RFC 6381 and its successors.\n\ncodecs: As specified in RFC 6381 for files derived from ISO/IEC 14496-12. When the codecs parameter is present, the first list item of the codecs parameter SHOULD represent a video or audio track that conforms to Nokia MP4VR file format.\n\n\nEncoding considerations: binary\nAs for video/mp4.\n\nSecurity considerations:\nSee section 4 of RFC 4337. The media type SHOULD only be used in environments where privacy and integrity protection are handled outside of the format itself, e.g., by using https for transmitting Nokia MP4VR files. If encryption of the content is desirable and cannot be provided by the environment, encrypted tracks (e.g., with 'encv' or 'enca' sample entry type) of the ISO base media file format and mp4 media subtype specified in RFC 4337 MAY be used.\n\nInteroperability considerations:\nThis media type registration remains compatible with RFC 6381, for which several interoperable implementations exist. \n\nPublished specification:\nNone.\n\nApplications which use this media:\nApplications that create, play, or otherwise process files containing 360-degree audio and/or video.\n\nFragment identifier considerations:\nAs for video/mp4.\n\nRestrictions on usage:\nNone.\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: None 2. Magic number(s): N/A 3. File extension(s): mp4 4. Macintosh file type code: N/A 5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Miska M. Hannuksela\n2. Email: mimetype.registration&nokia.com\n\nIntended usage: Common\nCommon, no restrictions.\n\nAuthor/Change controller: Nokia"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.rapid",
+  "full": "application/vnd.rapid",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.rapid",
+    "encoding_considerations": "Emultek's Rapid packaged applications are compressed in a signle\nfile in binary format. Some encoding will be necessary for MIME \nmailers.",
+    "security_considerations": "This data is intended for execution by Emultek's Rapid products,\nthat run on the recipient's system. Recipients need to understand\nthat the data will be executed on their system, and security of\ntheir machines can be violated.",
+    "template_text": "\n\nFrom etay&emultek.co.il  Thu Sep 12 05:44:14 1996\nDate: Thu, 12 Sep 1996 14:40:04 EET\nReply-To: etay&emultek.co.il\nFrom: etay&emultek.co.il (Etay Szekely)\nTo: iana&isi.edu\nSubject: Proposed Media Type\nContent-Length: 1680\nStatus: RO\nX-Lines: 59\n\nHi\n\nEmultek's Rapid is a tool developed for product designers and \ncomputer based training developers who need a fast way to simulate,\ntest and alter the human machine interface of products.\nThis is a proposed media type for applications designed in Rapid.\nIt has been sent to the ietf-types&cs.utk.edu mailing list two \nweeks ago, but I didn't get any response from there.\n\nthanks,\n-Itay\n\n---------------------------------------------------------------------------\nMedia Type name:\napplication\n\n\nMedia subtype name:\nrapid\n\n\nRequired parameters:\n\n\nOptional parameters:\nAn optional version parameter can be specified. For example:\n\n   301  :   Rapid 3.01\n   35   :   Rapid 3.5\n\n\nEncoding considerations:\n\nEmultek's Rapid packaged applications are compressed in a signle\nfile in binary format. Some encoding will be necessary for MIME \nmailers.\n\n\nSecurity considerations:\n\nThis data is intended for execution by Emultek's Rapid products,\nthat run on the recipient's system. Recipients need to understand\nthat the data will be executed on their system, and security of\ntheir machines can be violated.\n\n\nPublished specification:\n\nRapid packaged applications are saved with the the file suffix zrp.\n\n\n\n---------------------------------------------------------------------------\nItay Szekely                                      eMail: etay&emultek.co.il\n                                                  Tel:       972-4-999-0044\nEmultek                                           Fax:             999-0050\nD.N. Misgav, Yuvalim 20142\nIsrael                                            At Home:       04-8257771\n---------------------------------------------------------------------------\n\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "srgs+xml",
+  "full": "application/srgs+xml",
+  "extensions": [
+    "grxml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/srgs+xml",
+    "template_text": "(RFC 4267 published November 2005, subtype last updated November 2005)\n\nMIME media type name: application\n\nMIME subtype names: voicexml+xml, ssml+xml, srgs+xml, ccxml+xml,\npls+xml\n\nRequired parameters: none\n\nOptional parameters:\n\n\"charset\": This parameter has identical semantics to the charset\nparameter of the \"application/xml\" media type as specified in RFC\n3023 [RFC3023].\n\nEncoding Considerations\n\nIdentical to those of \"application/xml\" as described in RFC 3023\n[RFC3023], section 3.2.\n\nInteroperability Considerations\n\nThere are no known interoperability issues.\n\nPublished Specifications\n\n\nVoice Extensible Markup Language 2.0 [VoiceXML2.0]\n\nVoice Extensible Markup Language 2.1 [VoiceXML2.1]\n\nSpeech Synthesis Markup Language (SSML) Version 1.0 [SSML]\n\nSpeech Recognition Grammar Specification Version 1.0 [SRGS]\n\nVoice Browser Call Control: CCXML Version 1.0 [CCXML]\n\nPronunciation Lexicon Specification (PLS) Version 1.0 [PLS]\n\n\nApplications that Use These Media Types\n\nVarious W3C Speech Interface Framework implementations use these\nmedia types.\n\nSecurity Considerations\n\nSeveral instructions in the cited specifications may cause arbitrary\nUniform Resource Identifiers (URIs) to be dereferenced. In this\ncase, the security issues of [RFC3986], section 7, should be\nconsidered.\n\nIn addition, because of the extensibility features of those\nspecifications, it is possible that the registered media types may\ndescribe content that has security implications beyond those\ndescribed here. However, if the processor follows only the normative\nsemantics of the specifications, this content will be ignored. Only\nin the case where the processor recognizes and processes the\nadditional content, or where further processing of that content is\ndispatched to other processors, would security issues potentially\narise. And in that case, they would fall outside the domain of this\nregistration document.\n\nAdditional Information\n\nMagic Numbers\n\nAlthough no byte sequences can be counted on to always be present,\nXML MIME entities in ASCII-compatible charsets (including UTF-8)\noften begin with hexadecimal 3C 3F 78 6D 6C (\"<?xml\"), and those in\nUTF-16 often begin with hexadecimal FE FF 00 3C 00 3F 00 78 00 6D 00\n6C or FF FE 3C 00 3F 00 78 00 6D 00 6C 00 (the Byte Order Mark (BOM)\nfollowed by \"<?xml\"). For more information, see Appendix F of [XML].\n\nFile Extensions\n\nVoiceXML files: .vxml\n\nSSML files: .ssml\n\nSRGS files (XML syntax): .grxml\n\nCCXML files: .ccxml\n\nPLS files: .pls\n\n\nFragment Identifiers\n\nIdentical to that of \"application/xml\" as described in RFC 3023\n[RFC3023], section 5.\n\nMacintosh File Type Code\n\n\"TEXT\"\n\nPerson and Email Address to Contact for Further Information\n\nWorld Wide Web Consortium <web-human&w3.org>\n\nIntended Usage\n\nCOMMON\n\nChange Controller\n\nThe Speech Interface Framework specifications set is a work product\nof the World Wide Web Consortium's Voice Browser Working Group. The\nW3C has change control over these specifications."
+  },
+  "references": []
+}

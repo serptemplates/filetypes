@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.ahead.space",
+  "full": "application/vnd.ahead.space",
+  "extensions": [
+    "ahead"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ahead.space",
+    "template_text": "(last updated 2010-10-19)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ahead.space\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nThe primary content of this media type is an AMF[1][2] encoded object.\n\nThe AMF encoded object isn't designed to contain any any executable or\nactive content.\n\nThe header contains null-terminated strings, and it is therefore\npossible to exploit buffer overflows in an implementation through these\nheader values.\n\nThe primary content is decoded using a AMF decoder, normally the one\nembedded in Adobe Air[3] or Adobe Flash Player[4]. Vulnerabilities in\nthese products AMF decoders might therefore exploitable through this\nmedia type.\n\nThe media type may as a document format contain sensitive or confidential\ninformation, however the content is stored unsigned and unencrypted, in a\npublicly described format (AMF), and the media type doesn't provide any\nprotection of this information.\n\n[1] Adobe BlazeDS Developer Documentation / AMF Specification\nhttp://opensource.adobe.com/wiki/display/blazeds/Developer+Documentation\n\n[2] Wikipedia: Action Message Format\nhttp://en.wikipedia.org/wiki/Action_Message_Format\n\n[3] Adobe Air\nhttp://www.adobe.com/products/air/\n\n[4] Adobe Flash Player\nhttp://www.adobe.com/products/flashplayer/\n\n\nInteroperability considerations :\nThis type is currently only relevant on operating systems, supported by\nAdobe Air.\n\nPublished specification :\nNo public specification.\n\nApplications which use this media :\nAhead AIR application http://ahead.com/\n\nAdditional information :\n\n1. Magic number(s) : starting with the 16 bytes:\n\\x89AHEAD\\x0d\\x0a\\x1a\\x0aSPACE\\0\n2. File extension(s) : ahead\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Tor Kristensen\n2. Email : tor&lila.io\n\nIntended usage : Common\nUsed to launch the Ahead application in Adobe Air, with an offline\nversion of a Ahead space, contained in this file format.\n\nAuthor/Change controller : Tor Kristensen\nAhead Now ApS\nc/o Schiller House\nNannasgade 28\n2200 Copenhagen N\n\n(file created 2010-10-19)"
+  },
+  "references": []
+}

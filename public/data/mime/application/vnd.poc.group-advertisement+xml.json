@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.poc.group-advertisement+xml",
+  "full": "application/vnd.poc.group-advertisement+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.poc.group-advertisement+xml",
+    "template_text": "(last updated 14 September 2006)\r\n\r\nName : Sean Kelley\r\n\r\nEmail : seankelley&motorola.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.poc.group-advertisement+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : 8bit\r\nThe UTF-8 charset is used in the content of this XML-based media type.\r\n\r\nSecurity considerations : This content type carries one or more service\r\nURIs used to initiate Group calls, and normally does not contain\r\ninformation that needs to be kept private. Usage of the service URIs\r\nis controlled by authorization policies associated with the Group, and\r\nwhich are enforced by the Application Server that has control over the\r\nservice URI.\r\n\r\nThe vnd.poc.group-advertisement+xml typed content itself does not\r\nprovide either privacy or integrity protection. If needed, external\r\nmechanisms such as those suggested by [RFC3428] for SIP MESSAGE bodies\r\nmay be applied.\r\n\r\nThis media type does not contain executable content.\r\n\r\nInteroperability considerations : This content type provides a format\r\nfor exchanging information about the existence of a Group.\r\n\r\nPublished specification : The OMA PoC Control Plane Specification is\r\npublished at http://www.openmobilealliance.org/.\r\n\r\nApplications which use this media : Applications that support group\r\ncommunication, such as OMA Push to Talk over Cellular (PoC) service.\r\n\r\nAdditional information :\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n1. Name : OMA Push to Talk over Cellular (POC) Working Group \r\n2. Email : technical-comments&mail.openmobilealliance.org\r\n\r\nIntended usage : Common \r\n\r\nAuthor/Change controller : The OMA PoC specifications are a work item of\r\nthe OMA Push to Talk over Cellular (POC) Working Group. The Open Mobile\r\nAlliance has change control over these specifications, with mailing list\r\naddress technical-comments&mail.openmobilealliance.org.\r\n\r\n(file created 14 September 2006)"
+  },
+  "references": []
+}

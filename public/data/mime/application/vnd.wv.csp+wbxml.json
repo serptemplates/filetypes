@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.wv.csp+wbxml",
+  "full": "application/vnd.wv.csp+wbxml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.wv.csp+wbxml",
+    "template_text": "\r\n(last updated 2003-03-04)\r\n\r\nName : Matti Salmi\r\n\r\nEmail : matti.salmi&nokia.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.wv.csp+wbxml\r\n\r\nRequired parameters : No parameters are required since WV capability\r\nnegotiation covers this.\r\n\r\nOptional parameters :\r\nNo parameters are required since WV capability negotiation\r\ncovers this.\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations :\r\nThe Wireless Village transport binding has two alternatives with\r\nthe content being registered, HTTP transport with username/password\r\nor HTTP(S) if more secure transport is desired.\r\n\r\nIn the WV specifications, the security of the content is managed by\r\nprotocols, not the content. Thus, the security considerations of the \r\nmedia type have not been assessed.\r\n\r\nInteroperability considerations :\r\nThe WIreless Village (Open Mobile Alliance, Ltd.) specifications define\r\nstatic conformance requirement and interoperability test cases for this\r\ncontent.\r\n\r\nPublished specification :\r\nWV Client Server Protocol - Session and Transactions v1.1 (WV-022).\r\nWV Client Server Protocol - Data Types v1.1 (WV-025).\r\nWV Client Server Protocol - XML DTD and Examples (WV-023).\r\nWV Client Server Protocol - Binary XML definition and\r\nExamples (WV-027).\r\n\r\nApplications which use this media :\r\nThe Wireless Village Clients and Servers.\r\n\r\nAdditional information :\r\n\r\n 1. Magic number(s) : -\r\n 2. File extension(s) : wv\r\n 3. Macintosh file type code : -\r\n 4. Object Identifiers: -\r\n\r\nThe Wireless Village initiative (www.wireless-village.org) will be\r\nconsolidated to Open Mobile Alliance, Ltd.\r\n(www.openmobilealliance.org).\r\n\r\nPerson to contact for further information :\r\n\r\n 1. Name : Open Mobile Alliance, Ltd.\r\n 2. Email : matti.salmi&nokia.com\r\n\r\nIntended usage : Common\r\nThis content type is used to define binary messages that are\r\nexchanged between the Wireless Village Clients and Servers.\r\n\r\nAuthor/Change controller : Open Mobile Alliance, Ltd.\r\n445 Hoes Lane\r\nPiscataway, NJ 08854 USA.\r\n\r\n(file created 2003-03-04))"
+  },
+  "references": []
+}

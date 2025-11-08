@@ -1,0 +1,38 @@
+{
+  "type": "image",
+  "subtype": "j2c",
+  "full": "image/j2c",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/j2c",
+    "encoding_considerations": "Single JPEG 2000 codestream, whose structure is specified in Rec. \n   ITU-T T.800 | ISO/IEC 15444-1.\n\nSecurity considerations: JPEG 2000 codestreams contain structures of \n   variable length and have an extensible syntax. Both of these \n   aspects present potential security risks for implementations. In \n   particular, variable length structures present buffer overflow \n   risks and extensible syntax could result in the triggering of \n   adverse actions.\n\nInteroperability considerations: A JPEG 2000 codestream can use \n   capabilities from any part of Rec. ITU-T T.8xx series | ISO/IEC \n   15444. The capabilities required to process the codestream are \n   specified by a combination of the Rsiz parameter and the value of \n   the CAP marker segment (see Rec. ITU-T T.800 | ISO/IEC 15444-1). \n   In addition, a JPEG 2000 codestream does not contain information \n   on the colourspace of the image. This information is implied or \n   provided out-of-band.\n\nPublished specification: Rec. ITU-T T.8xx series | ISO/IEC 15444\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "security_considerations": "variable length and have an extensible syntax. Both of these \n   aspects present potential security risks for implementations. In \n   particular, variable length structures present buffer overflow \n   risks and extensible syntax could result in the triggering of \n   adverse actions.\n\nInteroperability considerations: A JPEG 2000 codestream can use \n   capabilities from any part of Rec. ITU-T T.8xx series | ISO/IEC \n   15444. The capabilities required to process the codestream are \n   specified by a combination of the Rsiz parameter and the value of \n   the CAP marker segment (see Rec. ITU-T T.800 | ISO/IEC 15444-1). \n   In addition, a JPEG 2000 codestream does not contain information \n   on the colourspace of the image. This information is implied or \n   provided out-of-band.\n\nPublished specification: Rec. ITU-T T.8xx series | ISO/IEC 15444\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "interoperability_considerations": "capabilities from any part of Rec. ITU-T T.8xx series | ISO/IEC \n   15444. The capabilities required to process the codestream are \n   specified by a combination of the Rsiz parameter and the value of \n   the CAP marker segment (see Rec. ITU-T T.800 | ISO/IEC 15444-1). \n   In addition, a JPEG 2000 codestream does not contain information \n   on the colourspace of the image. This information is implied or \n   provided out-of-band.\n\nPublished specification: Rec. ITU-T T.8xx series | ISO/IEC 15444\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): Starts with the byte sequence: 0xFF 0x4F 0xFF \n      0x51\n   3. File extension(s): j2c, J2C, j2k, J2K\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This media type refers to a data payload that \n   consists of a single JPEG 2000 codestream that can contain \n   capabilities from any part of ISO/IEC 15444. This data payload, \n   and the file extensions \"j2c\" and \"j2k\" when the data payload is \n   stored in a file, are in widespread use.",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-06-12, last updated 2023-06-12)\n\nMedia type name: image\n\nMedia subtype name: j2c\n\nRequired parameters: N/A.\n\nOptional parameters: N/A.\n\nEncoding considerations: binary\n\n   Single JPEG 2000 codestream, whose structure is specified in Rec. \n   ITU-T T.800 | ISO/IEC 15444-1.\n\nSecurity considerations: JPEG 2000 codestreams contain structures of \n   variable length and have an extensible syntax. Both of these \n   aspects present potential security risks for implementations. In \n   particular, variable length structures present buffer overflow \n   risks and extensible syntax could result in the triggering of \n   adverse actions.\n\nInteroperability considerations: A JPEG 2000 codestream can use \n   capabilities from any part of Rec. ITU-T T.8xx series | ISO/IEC \n   15444. The capabilities required to process the codestream are \n   specified by a combination of the Rsiz parameter and the value of \n   the CAP marker segment (see Rec. ITU-T T.800 | ISO/IEC 15444-1). \n   In addition, a JPEG 2000 codestream does not contain information \n   on the colourspace of the image. This information is implied or \n   provided out-of-band.\n\nPublished specification: Rec. ITU-T T.8xx series | ISO/IEC 15444\n\nApplications which use this media: Multimedia and scientific\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): Starts with the byte sequence: 0xFF 0x4F 0xFF \n      0x51\n   3. File extension(s): j2c, J2C, j2k, J2K\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This media type refers to a data payload that \n   consists of a single JPEG 2000 codestream that can contain \n   capabilities from any part of ISO/IEC 15444. This data payload, \n   and the file extensions \"j2c\" and \"j2k\" when the data payload is \n   stored in a file, are in widespread use.\n\nPerson to contact for further information:\n\n   1. Name: ISO/IEC JTC 1/SC 29/WG 1 Convenor\n   2. Email: sc29-sec&itscj.ipsj.or.jp\n\nIntended usage: COMMON\n\nAuthor/Change controller: ITU-T & ISO/IEC JTC 1\n"
+  },
+  "references": []
+}

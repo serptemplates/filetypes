@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.yamaha.openscoreformat.osfpvg+xml",
+  "full": "application/vnd.yamaha.openscoreformat.osfpvg+xml",
+  "extensions": [
+    "osfpvg"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.yamaha.openscoreformat.osfpvg+xml",
+    "template_text": "(last updated 2009-03-11)\n\nName : Mark Olleson\n\nEmail : mark.olleson&yamaha.co.uk\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.yamaha.openscoreformat.osfpvg+xml\n\nRequired parameters : None\n\nOptional parameters :\n\"charset\": This parameter has semantics identical to the charset\nparameter of the \"application/xml\" media type as specified in RFC\n3023.\n\nEncoding considerations : \nIdentical to those of \"application/xml\" as described in RFC 3023,\nSection 3.2.\n\nSecurity considerations :\nAs this media type uses the \"+xml\" convention, it shares the same\nsecurity considerations as described in RFC 3023, Section 10.\nAdditional security issues associated with this type have not\nbeen assessed.\n\nInteroperability considerations :\nOSFPVG is a profile of the MusicXML 2.0 format for digital (sheet music) that is\ntargeted at a particular content genre: PVG (Piano, Voice & guitar) arrangements\nof popular music.\n\nAside from the addition of a few infrequently used features, OSFPVG is a\nrestricted subset of MusicXML Strict 2.0. Consequently, existing applications\ncapable of reading and writing MusicXML 2.0 files are expected to be capable of\nusing OSFPVG.\n\nIt should be noted that the OSFPVG format is intended to be used with a specific\ngenre of digital score whereas MusicXML is a general purpose format.\nInteroperability is therefore only intended with PVG scores.\n\n\nPublished specification :\nhttp://www.musicxml.org/xsd/osfpvg.xsd\n\nApplications which use this media :\nRecordare's Dolet 4 MusicXML import/export filter for Finale is capable of\nreading and writing containers that contain scores conforming to the OSFPVG schema.\n\nDue to OSFPVG predominantly being a subset of MusicXML 2.0, applications capable\nof reading and writing MusicXML 2.0 files are capable of reading and writing\nOSFPVG also.\n\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : xml\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Mark Olleson\n2. Email : mark.olleson&yamaha.co.uk\n\nIntended usage : Common\n\n\nAuthor/Change controller : Yamaha Corporation\n\n\n(file created 2009-03-11)"
+  },
+  "references": []
+}

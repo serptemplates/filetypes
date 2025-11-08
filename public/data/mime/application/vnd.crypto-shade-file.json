@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.crypto-shade-file",
+  "full": "application/vnd.crypto-shade-file",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.crypto-shade-file",
+    "security_considerations": "The content of Crypto Shade files are encrypted with a key derived\nfrom a password. Aside from this however, the content can be anything,\nand that may introduce the security considerations and concerns of that \ncontent.\n\nAdditionally Crypto Shade Files offer no method of validating the content's\norigin so the content may be replaced and re-encrypted with a new password.\nValidation of both the content and origin may be achieved in transport,\nsuch as through the use of TLS.",
+    "interoperability_considerations": "There are no known Interoperability Considerations",
+    "additional_information": "1. Deprecated alias names for this type: No Previous Names\n2. Magic number(s): EC 4E 43 54\n3. File extension(s): .ssv, .ssvc\n4. Macintosh file type code: None\n5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-08-13)\n\nMedia type name: application\n\nMedia subtype name: vnd.crypto-shade-file\n\nRequired parameters: There are no Required Parameters\n\nOptional parameters:\n\nThere are no Optional Parameters\n\nEncoding considerations: binary\n\nSecurity considerations:\n\nThe content of Crypto Shade files are encrypted with a key derived\nfrom a password. Aside from this however, the content can be anything,\nand that may introduce the security considerations and concerns of that \ncontent.\n\nAdditionally Crypto Shade Files offer no method of validating the content's\norigin so the content may be replaced and re-encrypted with a new password.\nValidation of both the content and origin may be achieved in transport,\nsuch as through the use of TLS.\n\nInteroperability considerations:\n\nThere are no known Interoperability Considerations\n\nPublished specification:\n\nShadeNBT is the base specification of CryptoShade, it is documented\nat https://chorman0773.github.com/BinarySpecifications/ShadeNBT. Note\nthat use of this media type is not appropriate for unencrypted ShadeNBT \nfiles.\n\nThe CryptoShade specification defines extensions including a method\nof encrypting the content of a ShadeNBT file with a key derived from a\npassword. These extensions are documented here\nhttps://chorman0773.github.com/BinarySpecifications/ShadeNBT/CryptoShade\n\nApplications which use this media:\n\nAny application can use CryptoShade as a form of password protected\npersistent storage, however its intended use is for persistent storage for\ncomputer games. As the password used to derive the key is not\nrequired to be user supplied, applications can use this format for persistent\nstorage which is intended for use with a single application.\n\nFragment identifier considerations:\nThere are no Fragment Identifier Considerations\n\nRestrictions on usage:\n\nThe content of CryptoShade files are encrypted using the Advanced\nEncryption Standard with a 256-bit key. As such there may be export restrictions\non applications which implement these extensions. Therefore CryptoShade\nfiles may not be possible to read worldwide.\n\nProvisional registration? (standards tree only):\nThere are no provisional registrations\n\nAdditional information:\n\n1. Deprecated alias names for this type: No Previous Names\n2. Magic number(s): EC 4E 43 54\n3. File extension(s): .ssv, .ssvc\n4. Macintosh file type code: None\n5. Object Identifiers: None\n\nGeneral Comments:\n\nThe media type application/vnd.shade-save-file is associated with this\nmedia type.\nIn particular use of that media type is appropriate for the unencrypted\nversion.\nThere are several differences in the content of CryptoShade files,\nwhich use this media type, and unencrypted ShadeNBT files.\nIn particular, ShadeNBT files do not use encryption,\nand therefore are not subject to the limitations noted in \"Restrictions on usage\"\nAdditionally, CryptoShade is a non-mandatory set of extensions,\nnot all implementations of ShadeNBT are required to support CryptoShade files.\nUse of this media type for ShadeNBT files, or application/vnd.shade-save-file \nfor CryptoShade files is not appropriate.\n\nPerson to contact for further information:\n\n1. Name: Connor Horman\n2. Email: chorman64&gmail.com\n\nIntended usage: Common\n\nCryptoShade files are intended for use a persistent storage for computer\ngames which desire or require either the ability to restrict other\napplications from opening the file or allow users to restrict other users \nfrom opening the file.\n\nAuthor/Change controller: Connor Horman\n"
+  },
+  "references": []
+}

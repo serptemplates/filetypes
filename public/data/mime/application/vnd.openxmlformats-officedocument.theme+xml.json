@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.openxmlformats-officedocument.theme+xml",
+  "full": "application/vnd.openxmlformats-officedocument.theme+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.theme+xml",
+    "template_text": "(last updated 2009-11-12)\n\nName : MURATA Makoto\n\nEmail : eb2m-mrt&asahi-net.or.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.openxmlformats-officedocument.theme+xml\n\nRequired parameters : None\n\nOptional parameters : \ncharset, as specified in 3.2 of RFC 3023.\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations : \nThe security considerations for application/xml (section 3.2 of RFC\n3023) all apply to this subtype.\n\nThis subtype is intended for an OPC part of an OOXML document rather\nthan an entire OOXML document.  In the simplest case, an OOXML\ndocument is a zip file while an OPC part is a file in the zip file.\n\nThe OPC part announced by this subtype does not contain active or\nexecutable contents, although an OPC package representing an OOXML\ndocument may contain them as other OPC parts.\n\nThe OPC part announced by this subtype may contain personal\ninformation if the user types such personal information as part of an\nOOXML document.  Privacy protections of such personal information may be\nprovided at the OPC package layer or a layer above it.  They are not\nprovided at the layer of the OPC part announced by this subtype.\n\nAlthough OOXML documents can have digital signatures, such digital\nsignatures are not at the layer of the OPC part announced by this\nsubtype but rather at the OPC package layer.\n\nInteroperability considerations : \nNo specific issues have been identified.\n\nPublished specification : \nISO/IEC 29500-1:2008, Clause 14.2.7\n\nApplications which use this media : \nOOXML applications.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : xml\n3. Macintosh file type code : \"TEXT\"\n4. Object Identifiers: None\n\n    \n\nPerson to contact for further information :\n\n1. Name : MURATA Makoto\n2. Email : eb2m-mrt&asahi-net.or.jp\n\nIntended usage : Common \n    \n\nAuthor/Change controller : ISO/IEC JTC1/SC34/WG4 \n\n\n\n(file created 2009-11-12)"
+  },
+  "references": []
+}

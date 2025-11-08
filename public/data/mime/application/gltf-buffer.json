@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "gltf-buffer",
+  "full": "application/gltf-buffer",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/gltf-buffer",
+    "encoding_considerations": "Security considerations: The gltf-buffer object consists of one more \n   arrays of binary values - either bytes (8 bit), words (16 bit) or \n   floating point (32 bit). These arrays are referenced by offset \n   and length from a separate but associated object (the glTF json). \n   Data from the glTF-buffer object is then used to construct 3D \n   models. \n\n   As such, gltf-buffer cannot contain executable content, nor do \n   they provide any form of confidentiality or integrity protection. \n   Such protection, if desired, must be provided externally.\n\nInteroperability considerations: glTF documents are designed to \n   provide interoperability between content creation and processing \n   tools, and visualization applications. In this context gltf-buffer \n   objects are used to store binary geometry and animation data, and \n   other buffer-based data that can be used with 3D graphics APIs \n   like DirectX, Metal, OpenGL, Vulkan and WebGL.",
+    "security_considerations": "arrays of binary values - either bytes (8 bit), words (16 bit) or \n   floating point (32 bit). These arrays are referenced by offset \n   and length from a separate but associated object (the glTF json). \n   Data from the glTF-buffer object is then used to construct 3D \n   models. \n\n   As such, gltf-buffer cannot contain executable content, nor do \n   they provide any form of confidentiality or integrity protection. \n   Such protection, if desired, must be provided externally.\n\nInteroperability considerations: glTF documents are designed to \n   provide interoperability between content creation and processing \n   tools, and visualization applications. In this context gltf-buffer \n   objects are used to store binary geometry and animation data, and \n   other buffer-based data that can be used with 3D graphics APIs \n   like DirectX, Metal, OpenGL, Vulkan and WebGL.",
+    "interoperability_considerations": "provide interoperability between content creation and processing \n   tools, and visualization applications. In this context gltf-buffer \n   objects are used to store binary geometry and animation data, and \n   other buffer-based data that can be used with 3D graphics APIs \n   like DirectX, Metal, OpenGL, Vulkan and WebGL.",
+    "additional_information": "1. Deprecated alias names for this type: N/A \n   2. Magic number(s): N/A \n   3. File extension(s): .bin, glbin, glbuf \n   4. Macintosh file type code: N/A \n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-05-07, last updated 2018-05-07)\n\nMedia type name: application\n\nMedia subtype name: gltf-buffer\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: The gltf-buffer object consists of one more \n   arrays of binary values - either bytes (8 bit), words (16 bit) or \n   floating point (32 bit). These arrays are referenced by offset \n   and length from a separate but associated object (the glTF json). \n   Data from the glTF-buffer object is then used to construct 3D \n   models. \n\n   As such, gltf-buffer cannot contain executable content, nor do \n   they provide any form of confidentiality or integrity protection. \n   Such protection, if desired, must be provided externally.\n\nInteroperability considerations: glTF documents are designed to \n   provide interoperability between content creation and processing \n   tools, and visualization applications. In this context gltf-buffer \n   objects are used to store binary geometry and animation data, and \n   other buffer-based data that can be used with 3D graphics APIs \n   like DirectX, Metal, OpenGL, Vulkan and WebGL. \n\nPublished specification:\n   glTF overview and specification: https://www.khronos.org/gltf/ \n\n   This media type is for the binary file that can store graphics \n   buffer based data like 3D geometry and animations: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#gltf-basics \n\n\nApplications which use this media: Several graphics oriented \n   applications, frameworks or libraries have adopted glTF as \n   supported file format:\n   \n   * three.js - A library that makes WebGL - 3D in the browser.\n   * Babylon.js - An open source 3D engine based on WebGL and \n     Javascript\n   * Microsoft is adding support for .gltf files across a variety of \n     applications including Paint 3D, remix3d.com and Microsoft Office\n   * Facebook is using glTF for its 3D Posts capabilities\n   * Google is using glTF for delivering 3D models from its poly \n     website\n   * Sketchfab has download APIs for 3d models using glTF \n   * Blender is working on support for glTF 2.0 export There are \n     converters from COLLADA and OBJ, so exports from DCC tools such \n     as 3ds Max, Maya, Modo, Poser and Blender can easily be\n     converted to glTF. \n\n     List of various glTF tools can be found here -     \n     https://github.com/khronosgroup/gltf#gltf-tools \n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A \n   2. Magic number(s): N/A \n   3. File extension(s): .bin, glbin, glbuf \n   4. Macintosh file type code: N/A \n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Saurabh Bhatia\n   2. Email: glTFIANA&microsoft.com\n\nIntended usage: Common\n\n   glTF™ 2.0 (GL Transmission Format) is a royalty-free \n   specification  for the efficient transmission and loading of 3D \n   scenes and models by applications. glTF minimizes both the size \n   of 3D assets, and the runtime processing needed by 3D \n   applications. glTF defines a common publishing format for 3D \n   content tools and services that streamlines authoring workflows \n   and enables interoperable use of content across the industry.\n\nAuthor/Change controller: https://www.khronos.org/"
+  },
+  "references": []
+}

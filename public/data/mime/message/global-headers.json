@@ -1,0 +1,44 @@
+{
+  "type": "message",
+  "subtype": "global-headers",
+  "full": "message/global-headers",
+  "extensions": [
+    "u8hdr"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/message/global-headers",
+    "type_name": "message",
+    "subtype_name": "global-headers",
+    "encoding_considerations": "Email Headers [RFC6532] with no message body.  Whenever possible,\n   the 8-bit content transfer encoding SHOULD be used.  When this\n   media type passes through a 7-bit-only SMTP infrastructure, it MAY\n   be encoded with the base64 or quoted-printable content transfer\n   encoding.\n\nSecurity considerations:  See Section 7.\n\nInteroperability considerations:  It is important that this media\n   type is not converted to a charset other than UTF-8.  As a result,\n   implementations MUST NOT include a charset parameter with this\n   media type.  Although it might be possible to down-convert this\n   media type to the text/rfc822-header media type, such conversion\n   is discouraged as it loses information.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  SMTPUTF8 servers and email\n   clients that support multipart/report generation or parsing.",
+    "security_considerations": "Interoperability considerations:  It is important that this media\n   type is not converted to a charset other than UTF-8.  As a result,\n   implementations MUST NOT include a charset parameter with this\n   media type.  Although it might be possible to down-convert this\n   media type to the text/rfc822-header media type, such conversion\n   is discouraged as it loses information.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  SMTPUTF8 servers and email\n   clients that support multipart/report generation or parsing.",
+    "interoperability_considerations": "type is not converted to a charset other than UTF-8.  As a result,\n   implementations MUST NOT include a charset parameter with this\n   media type.  Although it might be possible to down-convert this\n   media type to the text/rfc822-header media type, such conversion\n   is discouraged as it loses information.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  SMTPUTF8 servers and email\n   clients that support multipart/report generation or parsing.",
+    "applications": "clients that support multipart/report generation or parsing.",
+    "additional_information": "Magic number(s):  none\n\n   File extension(s):  In the event this is saved to a file, the\n      extension \".u8hdr\" is suggested.\n\n   Macintosh file type code(s):  The 'TEXT' type code is suggested as\n      files of this type are typically used for diagnostic purposes\n      and suitable for analysis in a UTF-8-aware text editor.  A\n      uniform type identifier (UTI) of\n      \"public.utf8-email-message-header\" is suggested.  This type\n      conforms to \"public.utf8-plain-text\" and \"public.plain-text\".\n\nPerson & email address to contact for further information:  See the\n   Authors' Addresses section of this document.\n\nIntended usage:  COMMON\n\nRestrictions on usage:  This media type contains textual data in the\n   UTF-8 charset.  It typically contains octets with the 8th bit set.\n   As a result, a transfer encoding is required when a 7-bit\n   transport is used.\n\nAuthor:  See the Authors' Addresses section of this document.\n\nChange controller:  IETF Standards Process",
+    "intended_usage": "common",
+    "change_controller": "IETF Standards Process",
+    "template_text": "(template updated by RFC6533; previous version included in RFC5337)\n\nType name:  message\n\nSubtype name:  global-headers\n\nRequired parameters:  none\n\nOptional parameters:  none\n\nEncoding considerations:  This media type contains Internationalized\n   Email Headers [RFC6532] with no message body.  Whenever possible,\n   the 8-bit content transfer encoding SHOULD be used.  When this\n   media type passes through a 7-bit-only SMTP infrastructure, it MAY\n   be encoded with the base64 or quoted-printable content transfer\n   encoding.\n\nSecurity considerations:  See Section 7.\n\nInteroperability considerations:  It is important that this media\n   type is not converted to a charset other than UTF-8.  As a result,\n   implementations MUST NOT include a charset parameter with this\n   media type.  Although it might be possible to down-convert this\n   media type to the text/rfc822-header media type, such conversion\n   is discouraged as it loses information.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  SMTPUTF8 servers and email\n   clients that support multipart/report generation or parsing.\n\nAdditional information:\n\n   Magic number(s):  none\n\n   File extension(s):  In the event this is saved to a file, the\n      extension \".u8hdr\" is suggested.\n\n   Macintosh file type code(s):  The 'TEXT' type code is suggested as\n      files of this type are typically used for diagnostic purposes\n      and suitable for analysis in a UTF-8-aware text editor.  A\n      uniform type identifier (UTI) of\n      \"public.utf8-email-message-header\" is suggested.  This type\n      conforms to \"public.utf8-plain-text\" and \"public.plain-text\".\n\nPerson & email address to contact for further information:  See the\n   Authors' Addresses section of this document.\n\nIntended usage:  COMMON\n\nRestrictions on usage:  This media type contains textual data in the\n   UTF-8 charset.  It typically contains octets with the 8th bit set.\n   As a result, a transfer encoding is required when a 7-bit\n   transport is used.\n\nAuthor:  See the Authors' Addresses section of this document.\n\nChange controller:  IETF Standards Process"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.gov.sk.e-form+zip",
+  "full": "application/vnd.gov.sk.e-form+zip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.gov.sk.e-form+zip",
+    "template_text": "(registered 2014-10-28, last updated 2024-01-12)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.gov.sk.e-form+zip\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : binary\n\nSecurity considerations :\nThe files carried inside the electronic forms (e-forms) container may \ncontain script and other active content: all definitions, schemas, \ntransformations and other files needed for a visual and other \npresentations of an electronic e-form, for filling an e-form, \nvalidation of filled data, etc.\nThe e-forms container may contain malicious code and hence unless the \nsource is trusted the usual protection against malware and viruses \nshould be applied. Sandbox or safe operation set is recommended for \nprocessing of the container contents.\nThe integrity of the data should be guaranteed externally by the \nelectronic signature and/or through the use of SSL/TLS transport \nprotocol and cryptographic hash functions.\n\nAll definitions and files needed for use of any publicly available \ne-government electronic form must be published in the e-forms \ncontainer and must not use any encryption. Publicly available e-forms \ncontainers shall not contain any private or confidential data. Privacy \nof non-public e-forms containers can be guaranteed through the use of \nZIP encryption features or externally, e.g. through the use of SSL/TLS \ntransport protocol. In case the container is used for storage of \nprivate or confidential data (e.g. filled in the presentation of the \ne-form), the container should not be available publicly.\nSecurity consideratons for application/zip also apply to this media type.\n\n\nInteroperability considerations :\nFor public administration electronic forms in Slovakia only features \ndefined in ZIP version 2.0 specification must be used.\n\nPublished specification :\nThe specification is published by the Ministry of Finance of the \nSlovak Republic as a legislative document: Edict About Standards for \ninformation systems of public administration - No. 55/2014 Z. z., \n(Annex 3 - Standard for eGovernment forms) pursuant to Act No. \n275/2006 Coll. on information systems of public administration.\n\nName of the Edict in Slovak: \"Výnos o štandardoch pre informačné \nsystémy verejnej správy č. 55/2014 Z. z. (Príloha č. 3 - Štandard pre \nelektronické formuláre)\"\n\nSources:\nhttp://informatizacia.sk/standards-for-is-pa/4632s\nhttp://informatizacia.sk/standardy-is-vs/596s (only in Slovak - a list \nof all versions and updates of the Edict)\nhttps://lt.justice.gov.sk/Attachment/Priloha_3_e-formulare.pdf?instEID=-1&attEID=63268&docEID=353297&matEID=6842&langEID=1&tStamp=20140304134546663 (direct link to Annex 3, effective since March 15, \n2014)\nhttps://lt.justice.gov.sk/Attachment/Vlastny_material_MPK.pdf?instEID=-1&attEID=68145&docEID=377595&matEID=7499&langEID=1&tStamp=20140804091611783 (only in Slovak - a direct link to a temporary draft version of the specification in an amendment of the Edict in a legislative \nprocess)\n\nApplications which use this media :\nThis media type is used by Slovak public administration for use and \npublication of all electronic forms (e.g. on the national e-government \nweb portal). It could be used also by other countries or vendors.\n\nFragment identifier considerations :\nNone\n\nRestrictions on usage :\nThere are no restriction on usage.\n\nAdditional information :\n\n1. Deprecated alias names for this type : application/eform+zip\n2. Magic number(s) : None\n3. File extension(s) : .zip\n4. Macintosh file type code : None\n5. Object Identifiers: None\n\nThe container has two equal forms: XML structure \n(application/vnd.gov.sk.e-form+xml) and a file structure in a ZIP \ncontainer (application/vnd.gov.sk.e-form+zip).\n\nThe electronic forms container will contain all definitions, schemas, \ntransformations and files needed for a visual and other presentation \nof an e-government e-form, for filling an e-form, validation of filled \ndata, etc.\n\nThe e-forms container is based on existing standards: JAR file format, \nDublinCore, Open Packaging Format, OpenDocument format, EPUB Open \nContainer Format. The e-forms container also extends these standards \nfor specific e-forms usage.\n\nThe specification is maintained by the Committee for standardization \nof information systems of public administration, which is the main \nadvisory body for standardization established by Ministry of Finance \nof the Slovak republic. Members of the Committeee compose of wide \nspectrum of experts, representing public, private and academic \nsectors. Source: http://informatizacia.sk/standards-for-is-pa/4632s\n\n\nPerson to contact for further information :\n\n1. Name: Stefan Szilva\n2. Email: stefan.szilva&gmail.com\n\nIntended usage : Common\nThis media type is used for a container of electronic form (e-form). \nIt will be used for sending and publishing of electronic forms \nincluding all definitions, schemas, transformations and files needed \nfor a visual and other presentation of an e-form, for filling an \ne-form, validation of filled data, etc.\n\nAuthor/Change controller: Ministry of Investments, Regional Development and Informatization of the Slovak Republic\n- Mr. Stefan Szilva - standard&mirri.gov.sk"
+  },
+  "references": []
+}

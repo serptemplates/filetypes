@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oracle.resource+json",
+  "full": "application/vnd.oracle.resource+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oracle.resource+json",
+    "template_text": "(registered 2014-12-22, last updated 2014-12-22)  \n\nName : Ning Dong\n\nEmail : ning.dong&oracle.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oracle.resource+json\n\nRequired parameters : \"type\"\nThis media type can be used by REST services to support specialized \nresource types defined by the \"type\" parameter.\nThe possible values for type are:\nsingular: single entity resource, such as an employee or a purchase order.\ncollection: list of items, such as employees, or purchase orders.\nerror: detailed information about a failed request.\nstatus: status of a long running job.\nsearch-form: query syntax description used by client to build a filter.\ncreate-form: template used by a client to get default values when \ncreating a new resource.\nedit-form: template used by a client to determine which properties are \nupdateable while editing a resource.\n\nOptional parameters :\nn/a\n\nEncoding considerations : binary\n\n\nSecurity considerations :\nIt shares security issues common to all JSON content types. \noracle.resource+json does not provide executable content. Information \ncontained in oracle.resource+json documents do not require privacy or \nintegrity services.\n\nInteroperability considerations :\nSame as all JSON content type.\n\nPublished specification :\nhttp://www.oracle.com/webfolder/technetwork/tutorials/appdevinfo/New%20REST%20Media%20Type.pdf\n\nApplications which use this media :\nOracle products and consumers.\n\nFragment identifier considerations :\nn/a\n\nRestrictions on usage :\nn/a\n\nProvisional registration? (standards tree only) :\nn/a\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : n/a\n2. Magic number(s) : n/a\n3. File extension(s) : .json\n4. Macintosh file type code : TEXT\n5. Object Identifiers: n/a\n\nThis is hypermedia type based on JSON for REST resources. It has a \nrequired parameter \"type\", which specializes the media type into \nspecific use cases.\n\nPerson to contact for further information :\n\n1. Name : Ning Dong\n2. Email : ning.dong&oracle.com\n\nIntended usage : Common\nAny programming environment that requires exchange of REST resources in \nJSON format.\n\nAuthor/Change controller : Oracle"
+  },
+  "references": []
+}

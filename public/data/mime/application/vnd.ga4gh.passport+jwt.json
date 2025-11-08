@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.ga4gh.passport+jwt",
+  "full": "application/vnd.ga4gh.passport+jwt",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ga4gh.passport+jwt",
+    "encoding_considerations": "Security considerations: The media type is a subtype of JWT, so its security considerations are inherited from JWT (RFC 7519 section 11).\n\nInteroperability considerations: Interoperability considerations are inherited from JWT, where are none.\n\nPublished specification: Specification of the format is publicly available at https://ga4gh.github.io/data-security/aai-openid-connect-profile#passport-form\n\nApplications which use this media: Applications using GA4GH standards for accessing genomic data.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Usage is envisioned for applications conforming to GA4GH standards for genomic data, but usage is not restricted.",
+    "security_considerations": "Interoperability considerations: Interoperability considerations are inherited from JWT, where are none.\n\nPublished specification: Specification of the format is publicly available at https://ga4gh.github.io/data-security/aai-openid-connect-profile#passport-form\n\nApplications which use this media: Applications using GA4GH standards for accessing genomic data.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Usage is envisioned for applications conforming to GA4GH standards for genomic data, but usage is not restricted.",
+    "interoperability_considerations": "Published specification: Specification of the format is publicly available at https://ga4gh.github.io/data-security/aai-openid-connect-profile#passport-form\n\nApplications which use this media: Applications using GA4GH standards for accessing genomic data.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Usage is envisioned for applications conforming to GA4GH standards for genomic data, but usage is not restricted.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2024-05-14, last updated 2024-05-14)\n\nMedia type name: application\n\nMedia subtype name: vnd.ga4gh.passport+jwt\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: The media type is a subtype of JWT, so its security considerations are inherited from JWT (RFC 7519 section 11).\n\nInteroperability considerations: Interoperability considerations are inherited from JWT, where are none.\n\nPublished specification: Specification of the format is publicly available at https://ga4gh.github.io/data-security/aai-openid-connect-profile#passport-form\n\nApplications which use this media: Applications using GA4GH standards for accessing genomic data.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Usage is envisioned for applications conforming to GA4GH standards for genomic data, but usage is not restricted.\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n1. Name: GA4GH Secretariat\n2. Email: info&ga4gh.org\n\nIntended usage: LIMITED USE\n\nAuthor/Change controller: GA4GH Secretariat"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.push",
+  "full": "application/vnd.oma.push",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.push",
+    "template_text": "(last updated 2009-08-20)\n\nName : Bryan Sullivan\n\nEmail : bryan.sullivan&att.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.push\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe information contained in the media type may need privacy and integrity\nservices but these are provided by an underling security protocol (e.g. TLS) and\nnot by the media type itself.\n\nAs the media type represents an envelope for other opaque content types, the\nsecurity requirements ensuring that the enveloped content can be used in a safe\nmanner are the responsibility of the application to which the content is\ndelivered, and governed by the applicable standards for the use of the specific\ncontent type. The security requirements of the application/vnd.oma.push content\nitself are governed by the OMA Push 2.2 specification.\n\nInteroperability considerations :\nThis media type is intended for delivery to clients that implement the OMA Push\nenabler protocols. Client support is determined through client registration with\nan OMA Push Proxy Gateway (PPG) or other means via which the PPG determines the\ncapabilities of the target client, e.g. OMA User Agent Profile.\n\nPublished specification :\nOMA Push v2.2\n\nAvailable from http://www.openmobilealliance.org\n\nApplications which use this media :\nVarious OMA-standardized proprietary applications, registered as Push\nApplications by the Open Mobile Naming Authority (OMNA).\n\nSee http://www.openmobilealliance.org/Tech/omna/omna-push-app-id.aspx\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nOMA Push - is a standard way to deliver server-initiated events (content,\nnotifications, application data in general) to clients. OMA Push can be used to\ndeliver any type of discrete content. It is widely supported by mobile clients\nin particular, and deployed as a key enabler for a variety of services\nstandardized by the OMA, in addition to non-standardized applications and\nservices. OMA Push is an evolving service enabler specification suite that in\nthe version 2.2 supports WAP1, WAP2, and SIP as transport protocol bindings. In\nthe case of SIP, dependency upon the ability to deliver OMA-defined Push message\nheaders and application-specific headers requires the enveloping of Push\nmessages for delivery via the SIP MESSAGE method. Further versions of OMA Push\nwill depend upon delivery via other transport bindings that do not support the\nOMA or application headers. The application/vnd.oma.push media type provides the\nenvelope via which arbitrary headers and content can be deliv\nered via the OMA Push enabler across any transport bearer.\n\nPerson to contact for further information :\n\n1. Name : Bryan Sullivan\n2. Email : bryan.sullivan&att.com\n\nIntended usage : Limited Use\nThis media type is intended for use by servers and clients that implement the\nOMA Push enabler protocols.\n\nAuthor/Change controller : Open Mobile Alliance (OMA)\n\nTECHNICAL-COMMENTS&mail.openmobilealliance.org\n\n(file created 2009-08-20)"
+  },
+  "references": []
+}

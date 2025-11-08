@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.las.las+xml",
+  "full": "application/vnd.las.las+xml",
+  "extensions": [
+    "lasxml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.las.las+xml",
+    "template_text": "(last updated 2010-11-17)\n\nName : Rob Bailey\n\nEmail : sysadmin&laserapp.com\n\nMIME media type name : Application\nMIME subtype name : Vendor Tree - vnd.las.las+xml\n\nRequired parameters : none\n\nOptional parameters :\ncharset, recommended value of \"UTF-8\" or \"UTF-16\" (see RFC 2376)\n\nEncoding considerations: binary\n\nSecurity considerations :\nThis XML based format is used to carry forms and application\nconfiguration information bi-directionally between HTTP servers and\nthe client desktop. Typically messages are generated at the server\nfor consumption by the associated application on the client who has\nauthenticated with the creating domain. Security implications are\ndependent on what use data are put to at either the client or server\nend. The messages used with this type have no known active content\nwhich could cause direct damage to receiving parties. The primary\nrisk associated with this content could be information disclosure if\nan SSL layer is not used in transport.  Because in most instances\nencryption or digital signing are not required, the content should be\nnonetheless be scrutinized by generating parties to prevent damaging\ninputs. The content of these messages are subject to the same\nsecurity considerations as any XML. See also security sections in RFC 2376.\n\nInteroperability considerations :\nThis XML-based format can be manipulated by any tool that handles XML.\n\n\nPublished specification :\nThe specification encompasses several defined XML elements depending on\nthe context of usage. Schema definitions are available from the\nsoftware development kit site: http://www.laserapp.com/rlink/developer.htm\n\nApplications which use this media :\nLaser App Enterprise\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .lasxml\n3. Macintosh file type code : N/A\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Rob Bailey\n2. Email : sysadmin&laserapp.com\n\nIntended usage : Limited\nThis type is used by a commercially available desktop application used\nby financial services industry professionals.\n\n\nAuthor/Change controller : Created 10/27/2010\n\n\n(file created 2010-11-17)"
+  },
+  "references": []
+}

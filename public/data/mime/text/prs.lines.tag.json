@@ -1,0 +1,39 @@
+{
+  "type": "text",
+  "subtype": "prs.lines.tag",
+  "full": "text/prs.lines.tag",
+  "extensions": [
+    "dsc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/prs.lines.tag",
+    "security_considerations": "The openness of the tag format enables a tag message to be checked for\nvalidity easily. Applications which read tag types should check that\nthe values that they are being presented with are valid.\n\nOverall using tag types should be more secure that passing application\nspecific data around.",
+    "interoperability_considerations": "The rules for tag type labels are the same as for mail headers.\n\nPublished specification:  http://www.paladin.demon.co.uk/tag-types/",
+    "additional_information": "Magic numbers: All tag data streams start Tag-xxx-version - where xxx is\nthe particular tag type.\n\nFile extensions: Suggest .tag for general purpose tag files, .dsc is used\nfor tag descriptor files",
+    "intended_usage": "common",
+    "template_text": "\nFrom john&paladin.demon.co.uk  Sun Jan 25 07:50:41 1998\nTo: iana&ISI.EDU\nSubject: Mime type registration for prs.lines.tag\n\nMIME media type name: text\n\nMIME subtype name: prs.lines.tag\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: 7bit.\n\nSecurity considerations:\n\nThe openness of the tag format enables a tag message to be checked for\nvalidity easily. Applications which read tag types should check that\nthe values that they are being presented with are valid.\n\nOverall using tag types should be more secure that passing application\nspecific data around.\n\nInteroperability considerations: \n\nThe rules for tag type labels are the same as for mail headers.\n\nPublished specification:  http://www.paladin.demon.co.uk/tag-types/\n\nApplications which use this media type:\n\nThere are a set of utilities for handling tag streams at\n http://www.paladin.demon.co.uk/tag-types/ including\ntag2html - converts a tag file to html.\ntagextract - extracts tagged records matching some conditions\n\nAdditional information:\n\nMagic numbers: All tag data streams start Tag-xxx-version - where xxx is\nthe particular tag type.\n\nFile extensions: Suggest .tag for general purpose tag files, .dsc is used\nfor tag descriptor files\n\nPerson & email address to contact for further information:\n\nJohn Lines <john&paladin.demon.co.uk>\n\nIntended usage: COMMON\n\nAuthor/Change controller: John Lines <john&paladin.demon.co.uk>\n\nThe text/prs.lines.tag MIME type is intended to convey the type of\ndata which is usually carried in mail messages in forms such as the\nMIME type registration form, but in a more structured manner. As an\nexample the preceding registration template is repeated at\nhttp://paladin.demon.co.uk/tag-types/mimetype-registration.tag in the\nform of a series of tags. The description for the mimetype tag format\ncan be found at\n\nhttp://www.paladin.demon.co.uk/tag-types/dsc/mimetypes.dsc and the\nformat of the mimetypes.dsc file is described in\nhttp://www.paladin.demon.co.uk/tag-types/dsc/dsc.dsc\n\n\n\n\n\n"
+  },
+  "references": []
+}

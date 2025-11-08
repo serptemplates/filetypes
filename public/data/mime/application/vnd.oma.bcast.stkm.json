@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.bcast.stkm",
+  "full": "application/vnd.oma.bcast.stkm",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.bcast.stkm",
+    "security_considerations": "Short Term Key Messages carry encrypted key material to decrypt live\nstreaming services. They are passive, meaning they do not contain\nexecutable or active content which may represent a security threat. The\nmessages contain confidential and security critical fields. Encryption\nand authentication of such critical fields are provided by the type\nitself and does not have to be provided externally.",
+    "interoperability_considerations": "This content type carries BCAST Short Term Key Messages within the scope\nof the OMA BCAST enabler. The OMA BCAST enabler specification includes\nstatic conformance requirements and interoperability test cases for this\ncontent.",
+    "additional_information": "Magic number(s): none\nFile extension(s): none\nMacintosh File Type Code(s): none",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2008-10-02, last updated 2015-03-05)\n\nName : Uwe Rauschenbach\n\nEmail : uwe.rauschenbach&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.bcast.stkm\n\n\nRequired parameters:\nstreamid:\nUnique positive integer identifying a particular key stream. Numbers are\nunique within a particular SDP session i.e. no global numbering is\nrequired. Used to indicate which media stream is protected by the actual\nSTKM stream, by referencing to the value given by the \"streamid\"\nparameter by the \"a=stkmstream\" attribute in the according media section\nof the SDP file.\n\nkmstype:\nString identifying the Key Management System used. The list of allowed\nvalues can be found in the specification referenced under \"Published\nspecification\".\n\n\nOptional parameters:\nserviceproviders:\nString identifying the service providers using the key stream, by\nreferencing one or more BSMSelectors as declared in the Service Guide\nDelivery Descriptor in the BCAST Service Guide and/or one or more\n<X>/ServiceProvider values defined in the BCAST Management Object. This\nparameter carries a list of BSMSelector IDs and/or ServiceProvider\nvalues, separated by the character \"|\". See also Table 52:\nserviceproviders syntax and semantics in the Published Specification.\n\nbaseCID:\nPart of the Service or Program CID used to identify the corresponding\nasset within an OMA DRM 2.0 Rights Object. This optional parameter is\nused in conjunction with the OMA BCAST DRM Profile for Service and\nContent protection.\n\nsrvCIDExt:\nPart of the Service CID used to identify the corresponding asset within\nan OMA DRM 2.0 Rights Object; allowing to distinguish between multiple\nSTKM streams for the same encrypted media stream. This optional\nparameter of type unsigned byte provides the value of the most\nsignificant byte of the service_CID_extension in the corresponding STKM\nstream. It is used in conjunction with the OMA BCAST DRM Profile for\nService and Content protection.\n\nprgCIDExt:\nPart of the Program CID used to identify the corresponding asset within\nan OMA DRM 2.0 Rights Object; allowing to distinguish between multiple\nDRM Profile STKM streams for the same encrypted media stream. This\noptional parameter of type unsigned byte provides the value of the most\nsignificant byte of the program_CID_extension in the corresponding STKM\nstream. It is used in conjunction with the OMA BCAST DRM Profile for\nService and Content protection.\n\nsrvKEYList:\nList of one or more so-called srvKEY values, separated by the \"|\"\ncharacter and encoded using base64 encoding. Each of those \"srvKEY\"\nvalues corresponds to the concatenation of the Key Domain ID with the\nKey Group part of an SEK/PEK (ServiceEncryptionKey/ProgramEncryptionKey)\nwhich applies to the related STKM stream. It is used in conjunction with\nthe OMA BCAST Smartcard Profile for Service and Content protection.\n\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nShort Term Key Messages carry encrypted key material to decrypt live\nstreaming services. They are passive, meaning they do not contain\nexecutable or active content which may represent a security threat. The\nmessages contain confidential and security critical fields. Encryption\nand authentication of such critical fields are provided by the type\nitself and does not have to be provided externally.\n\n\nInteroperability considerations:\nThis content type carries BCAST Short Term Key Messages within the scope\nof the OMA BCAST enabler. The OMA BCAST enabler specification includes\nstatic conformance requirements and interoperability test cases for this\ncontent.\n\n\nPublished specification:\nOMA BCAST 1.0 Enabler Specification - Service and Content Protection for\nMobile Broadcast Services, especially Section 10.1.2. Available from\nhttp://www.openmobilealliance.org\n\n\nApplications, which use this media type:\nOMA BCAST Services\n\n\nAdditional information:\nMagic number(s): none\nFile extension(s): none\nMacintosh File Type Code(s): none\n\n\nPerson & email address to contact for further information:\nUwe Rauschenbach\nUwe.Rauschenbach&nokia.com\n\n\nIntended usage: Limited use.\nOnly for usage with OMA BCAST Services, which meet the semantics given\nin the mentioned specification.\n\n\nAuthor/Change controller: OMNA - Open Mobile Naming Authority,\nOMA-OMNA&mail.openmobilealliance.org\n\n"
+  },
+  "references": []
+}

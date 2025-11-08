@@ -1,0 +1,39 @@
+{
+  "type": "image",
+  "subtype": "png",
+  "full": "image/png",
+  "extensions": [
+    "png"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/png",
+    "encoding_considerations": "Security considerations: A PNG document is composed of a collection \n   of explicitly typed \"chunks\".\n\n   For each of the chunk types defined in the PNG specification \n   (except for \"gIFx\"), the only effect associated with those chunks \n   is to cause an image to be rendered on the recipient's display or \n   printer.\n\n   The gIFx chunk type is used to encapsulate Application Extension\n   data, and some use of that data might present security risks, \n   though no risks are known. Likewise, the security risks associated \n   with future chunk types cannot be evaluated, particularly \n   unregistered chunks. However, it is the intention of the PNG group \n   to disallow chunks containing \"executable\" data to become \n   registered chunks.\n\n   The text chunks, tEXt and zTXt, contain data that can be displayed \n   in the form of comments, etc. Some operating systems or terminals \n   might allow the display of textual data with embedded control \n   characters to perform operations such as re-mapping of keys, \n   creation of files, etc. For this reason, the specification \n   recommends that the text chunks be filtered for control characters \n   before direct display.\n\n   The PNG format is specifically designed to facilitate early \n   detection of file transmission errors, and makes use of cyclical \n   redundancy checks to ensure the integrity of the data contained in \n   its chunks.\n\nInteroperability considerations: Network byte order used throughout.",
+    "security_considerations": "of explicitly typed \"chunks\".\n\n   For each of the chunk types defined in the PNG specification \n   (except for \"gIFx\"), the only effect associated with those chunks \n   is to cause an image to be rendered on the recipient's display or \n   printer.\n\n   The gIFx chunk type is used to encapsulate Application Extension\n   data, and some use of that data might present security risks, \n   though no risks are known. Likewise, the security risks associated \n   with future chunk types cannot be evaluated, particularly \n   unregistered chunks. However, it is the intention of the PNG group \n   to disallow chunks containing \"executable\" data to become \n   registered chunks.\n\n   The text chunks, tEXt and zTXt, contain data that can be displayed \n   in the form of comments, etc. Some operating systems or terminals \n   might allow the display of textual data with embedded control \n   characters to perform operations such as re-mapping of keys, \n   creation of files, etc. For this reason, the specification \n   recommends that the text chunks be filtered for control characters \n   before direct display.\n\n   The PNG format is specifically designed to facilitate early \n   detection of file transmission errors, and makes use of cyclical \n   redundancy checks to ensure the integrity of the data contained in \n   its chunks.\n\nInteroperability considerations: Network byte order used throughout.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 89 50 4E 47 0D 0A 1A 0A\n   3. File extension(s): .png\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This registration updates the earlier one as follows\n\n   1) The old one points to an expired Internet Draft. This updated \n   registration points to a W3C Recommendation.\n\n   2) The old contact person is sadly deceased. The new contact email \n   is a publicly archived W3C mailing list for the PNG Working Group.\n\n   3) Change controller is W3C",
+    "intended_usage": "common",
+    "template_text": "(last modified 2021-12-07)\n\nMedia type name: image\n\nMedia subtype name: png\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: A PNG document is composed of a collection \n   of explicitly typed \"chunks\".\n\n   For each of the chunk types defined in the PNG specification \n   (except for \"gIFx\"), the only effect associated with those chunks \n   is to cause an image to be rendered on the recipient's display or \n   printer.\n\n   The gIFx chunk type is used to encapsulate Application Extension\n   data, and some use of that data might present security risks, \n   though no risks are known. Likewise, the security risks associated \n   with future chunk types cannot be evaluated, particularly \n   unregistered chunks. However, it is the intention of the PNG group \n   to disallow chunks containing \"executable\" data to become \n   registered chunks.\n\n   The text chunks, tEXt and zTXt, contain data that can be displayed \n   in the form of comments, etc. Some operating systems or terminals \n   might allow the display of textual data with embedded control \n   characters to perform operations such as re-mapping of keys, \n   creation of files, etc. For this reason, the specification \n   recommends that the text chunks be filtered for control characters \n   before direct display.\n\n   The PNG format is specifically designed to facilitate early \n   detection of file transmission errors, and makes use of cyclical \n   redundancy checks to ensure the integrity of the data contained in \n   its chunks.\n\nInteroperability considerations: Network byte order used throughout.\n\nPublished specification: \n\n   Portable Network Graphics (PNG) Specification\n   https://www.w3.org/TR/PNG/\n\nApplications which use this media: PNG is widely implemented in all \n   Web browsers, image viewers, and image creation tools\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 89 50 4E 47 0D 0A 1A 0A\n   3. File extension(s): .png\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This registration updates the earlier one as follows\n\n   1) The old one points to an expired Internet Draft. This updated \n   registration points to a W3C Recommendation.\n\n   2) The old contact person is sadly deceased. The new contact email \n   is a publicly archived W3C mailing list for the PNG Working Group.\n\n   3) Change controller is W3C\n\nPerson to contact for further information:\n\n   1. Name: PNG Working Group\n   2. Email:public-png&w3.org\n\nIntended usage: Common\n\nAuthor/Change controller: W3C\n"
+  },
+  "references": []
+}

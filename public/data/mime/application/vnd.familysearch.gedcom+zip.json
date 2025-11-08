@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.familysearch.gedcom+zip",
+  "full": "application/vnd.familysearch.gedcom+zip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.familysearch.gedcom+zip",
+    "encoding_considerations": "See the specification for considerations about the GEDZIP archive \n   format.\n\nSecurity considerations: A GEDZIP archive payload can contain one or \n   more files, including a GEDCOM file, and any other files it \n   references. Such files may include personal and sensitive \n   information as well as information commonly used to create \n   security questions. This information is not encrypted or otherwise \n   protected by GEDCOM or the ZIP archive itself; hence, it falls on\n   the software and persons managing the files to ensure they are \n   kept confidential if they contain such information. Similarly, as \n   with other types of archive formats, the archive might contain \n   executable code or scripts, and it falls on the software and \n   persons managing the files to guard against malicious files.\n\nInteroperability considerations: The GEDZIP version is encoded in the \n   gedcom.ged file in the archive, and an algorithm is provided for \n   detecting the version.",
+    "security_considerations": "more files, including a GEDCOM file, and any other files it \n   references. Such files may include personal and sensitive \n   information as well as information commonly used to create \n   security questions. This information is not encrypted or otherwise \n   protected by GEDCOM or the ZIP archive itself; hence, it falls on\n   the software and persons managing the files to ensure they are \n   kept confidential if they contain such information. Similarly, as \n   with other types of archive formats, the archive might contain \n   executable code or scripts, and it falls on the software and \n   persons managing the files to guard against malicious files.\n\nInteroperability considerations: The GEDZIP version is encoded in the \n   gedcom.ged file in the archive, and an algorithm is provided for \n   detecting the version.",
+    "interoperability_considerations": "gedcom.ged file in the archive, and an algorithm is provided for \n   detecting the version.",
+    "additional_information": "1. Deprecated alias names for this type: none\n   2. Magic number(s): none\n   3. File extension(s): .gdz\n   4. Macintosh file type code: none\n   5. Object Identifiers: none\n\nGeneral Comments: A GEDZIP archive contains a GEDCOM file in a \n   well-known location in the archive, plus other files referenced by \n   the GEDCOM file. Thus this media type is related to the \n   text/vnd.familysearch.gedcom media type, but that one is text and \n   contains a single \"file\" whereas this format is used when the \n   GEDCOM contains references to other files that must be transferred \n   together with the GEDCOM file.",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-12-07, last updated 2021-12-07)\n\nMedia type name: application\n\nMedia subtype name: vnd.familysearch.gedcom+zip\n\nRequired parameters: None\n\nOptional parameters:\n\n   version: The version of the GEDCOM specification that specifies \n   the GEDZIP format. The GEDCOM version of the gedcom.ged file \n   within the archive must match the GEDZIP version number, and since \n   the GEDZIP format was just added in FamilySearch GEDCOM 7.0, \n   inclusion of the version parameter is optional, as absence implies \n   version 7.0. The version parameter uses the Semantic Versioning \n   2.0 (https://semver.org/) syntax.\n\nEncoding considerations: binary\n\n   See the specification for considerations about the GEDZIP archive \n   format.\n\nSecurity considerations: A GEDZIP archive payload can contain one or \n   more files, including a GEDCOM file, and any other files it \n   references. Such files may include personal and sensitive \n   information as well as information commonly used to create \n   security questions. This information is not encrypted or otherwise \n   protected by GEDCOM or the ZIP archive itself; hence, it falls on\n   the software and persons managing the files to ensure they are \n   kept confidential if they contain such information. Similarly, as \n   with other types of archive formats, the archive might contain \n   executable code or scripts, and it falls on the software and \n   persons managing the files to guard against malicious files.\n\nInteroperability considerations: The GEDZIP version is encoded in the \n   gedcom.ged file in the archive, and an algorithm is provided for \n   detecting the version.\n\nPublished specification:\n\n   https://gedcom.io/specifications/FamilySearchGEDCOMv7.html#gedzip\n\nApplications which use this media: GEDCOM is used by family history \n   and related applications, including family trees, one-place and \n   one-name studies, and historical analysis of interrelated \n   individuals. These same applications are expected to use GEDZIP in \n   the future.\n\nFragment identifier considerations: not used\n\nRestrictions on usage: none\n\nAdditional information:\n\n   1. Deprecated alias names for this type: none\n   2. Magic number(s): none\n   3. File extension(s): .gdz\n   4. Macintosh file type code: none\n   5. Object Identifiers: none\n\nGeneral Comments: A GEDZIP archive contains a GEDCOM file in a \n   well-known location in the archive, plus other files referenced by \n   the GEDCOM file. Thus this media type is related to the \n   text/vnd.familysearch.gedcom media type, but that one is text and \n   contains a single \"file\" whereas this format is used when the \n   GEDCOM contains references to other files that must be transferred \n   together with the GEDCOM file.\n\nPerson to contact for further information:\n\n   1. Name: Gordon Clarke\n   2. Email: gedcom&familysearch.org\n\nIntended usage: Common\n\n   Intended for use by genealogical applications and services.\n\nAuthor/Change controller: GEDCOM Steering Committee\n\n"
+  },
+  "references": []
+}

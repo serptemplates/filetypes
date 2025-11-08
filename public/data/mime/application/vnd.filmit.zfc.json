@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.filmit.zfc",
+  "full": "application/vnd.filmit.zfc",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.filmit.zfc",
+    "security_considerations": "The media type does not contain active or executable content and does not provide confidentiality protection. The media type consists of multiple chunks that use Jpeg and Deflate (RFC 1951) compression. Adler-32 and CRC are used for integrity protection.",
+    "interoperability_considerations": "n/a",
+    "additional_information": "1. Deprecated alias names for this type: n/a\n2. Magic number(s): 8 byte string: X'895A 4643 0D0A 1A0A'\n3. File extension(s): zfc\n4. Macintosh file type code: None\n5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2015-10-23, last updated 2015-10-23)\n\nMedia type name: application\n\nMedia subtype name: vnd.filmit.zfc\n\nRequired parameters: n/a\n\nOptional parameters: n/a\n\nEncoding considerations: binary\n\nSecurity considerations:\nThe media type does not contain active or executable content and does not provide confidentiality protection. The media type consists of multiple chunks that use Jpeg and Deflate (RFC 1951) compression. Adler-32 and CRC are used for integrity protection. \n\nInteroperability considerations:\nn/a\n\nPublished specification:\nn/a\n\nApplications which use this media:\nFilmit CMS\n\nFragment identifier considerations:\nn/a\n\nRestrictions on usage:\nn/a\n\nProvisional registration? (standards tree only):\nn/a\n\nAdditional information:\n\n1. Deprecated alias names for this type: n/a\n2. Magic number(s): 8 byte string: X'895A 4643 0D0A 1A0A'\n3. File extension(s): zfc\n4. Macintosh file type code: None\n5. Object Identifiers: None\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Harms Moeller\n2. Email: harms&film-it.co.za\n\nIntended usage: Common\nInterchange and storage of data managed with the Filmit CMS.\n\nAuthor/Change controller: None"
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.ciedi",
+  "full": "application/vnd.ciedi",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ciedi",
+    "encoding_considerations": "Security considerations: The media type contains no executable code. \n   Since the information contained in the media type does not employ \n   privacy or integrity services in many cases, privacy or integrity \n   services should be provided externally, e.g., through the use of \n   SSL/TLS or S/MIME. Each specification of format or link to \n   reference format specifications in order to properly interpret the\n   media type will be registered with an appropriate format \n   registering organization. \n\nInteroperability considerations: none\n\nPublished specification: none\n\nApplications which use this media: EDI applications\n\nFragment identifier considerations: none\n\nRestrictions on usage: none",
+    "security_considerations": "Since the information contained in the media type does not employ \n   privacy or integrity services in many cases, privacy or integrity \n   services should be provided externally, e.g., through the use of \n   SSL/TLS or S/MIME. Each specification of format or link to \n   reference format specifications in order to properly interpret the\n   media type will be registered with an appropriate format \n   registering organization. \n\nInteroperability considerations: none\n\nPublished specification: none\n\nApplications which use this media: EDI applications\n\nFragment identifier considerations: none\n\nRestrictions on usage: none",
+    "interoperability_considerations": "Published specification: none\n\nApplications which use this media: EDI applications\n\nFragment identifier considerations: none\n\nRestrictions on usage: none",
+    "additional_information": "1. Deprecated alias names for this type: none\n   2. Magic number(s): none\n   3. File extension(s): none\n   4. Macintosh file type code: none\n   5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-06-12, last updated 2019-06-12)\n\nMedia type name: application\n\nMedia subtype name: vnd.ciedi\n\nRequired parameters: \"format\"\n\n   This media type can be used by Electronic data interchange (EDI) \n   services to exchange messages that formats are identified by the \n   \"format\" parameter. \n\n   Values of the \"format\" parameter are case-insensitive alphanumeric\n   strings beginning with a letter and containing no more than 32 \n   characters.\n\n   The possible values for format are JPZ001001, JPZ001002 and so on \n   that are registered in format registering organizations such as \n   Supplychain Information Platform Study group in Japan.\n\nOptional parameters: none\n\nEncoding considerations: binary\n\nSecurity considerations: The media type contains no executable code. \n   Since the information contained in the media type does not employ \n   privacy or integrity services in many cases, privacy or integrity \n   services should be provided externally, e.g., through the use of \n   SSL/TLS or S/MIME. Each specification of format or link to \n   reference format specifications in order to properly interpret the\n   media type will be registered with an appropriate format \n   registering organization. \n\nInteroperability considerations: none\n\nPublished specification: none\n\nApplications which use this media: EDI applications\n\nFragment identifier considerations: none\n\nRestrictions on usage: none\n\nAdditional information:\n\n   1. Deprecated alias names for this type: none\n   2. Magic number(s): none\n   3. File extension(s): none\n   4. Macintosh file type code: none\n   5. Object Identifiers: none\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Hidekazu Enjo\n   2. Email: enjouh&ciedi.jp\n\nIntended usage: Common\n\nAuthor/Change controller: Supplychain Information Platform Study group"
+  },
+  "references": []
+}

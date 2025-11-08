@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.maxar.archive.3tz+zip",
+  "full": "application/vnd.maxar.archive.3tz+zip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.maxar.archive.3tz+zip",
+    "encoding_considerations": "3tz container files are binary files encoded using the \n   application/zip media type.\n\nSecurity considerations: This media type employs a specific profile \n   of the application/zip format, so the security considerations that \n   apply to application/zip also apply to 3tz container files. All \n   processors that read 3tz container files should rigorously check \n   the size and validity of data retrieved.\n\n   The archive must contain on the root level a file named \n   tileset.json, which means the security considerations for JSON \n   described in RFC 8259 section 12. The format of this file is \n   specified in:\n\n   https://github.com/CesiumGS/3d-tiles/tree/master/specification\n\n   Additional security considerations for this file have not been \n   assessed.\n\n   In addition, because of the various content types that can be \n   embedded in 3tz container files, \n   application/vnd.maxar.archive.3tz+zip may describe content that \n   poses security implications beyond those noted here. However, only \n   in cases where the processor recognizes and processes the \n   additional content, or where further processing of that content is \n   dispatched to other processors, would security issues potentially \n   arise. In such cases, matters of security would fall outside the \n   domain of this registration document.\n\n   The content types may or may not provide integrity or \n   confidentiality protection, but the vnd.maxar.archive.3tz+zip \n   format does not. As such, if such protection is desired, it may \n   have to be provided by some external service like HTTPS.\n\nInteroperability considerations: None.",
+    "security_considerations": "of the application/zip format, so the security considerations that \n   apply to application/zip also apply to 3tz container files. All \n   processors that read 3tz container files should rigorously check \n   the size and validity of data retrieved.\n\n   The archive must contain on the root level a file named \n   tileset.json, which means the security considerations for JSON \n   described in RFC 8259 section 12. The format of this file is \n   specified in:\n\n   https://github.com/CesiumGS/3d-tiles/tree/master/specification\n\n   Additional security considerations for this file have not been \n   assessed.\n\n   In addition, because of the various content types that can be \n   embedded in 3tz container files, \n   application/vnd.maxar.archive.3tz+zip may describe content that \n   poses security implications beyond those noted here. However, only \n   in cases where the processor recognizes and processes the \n   additional content, or where further processing of that content is \n   dispatched to other processors, would security issues potentially \n   arise. In such cases, matters of security would fall outside the \n   domain of this registration document.\n\n   The content types may or may not provide integrity or \n   confidentiality protection, but the vnd.maxar.archive.3tz+zip \n   format does not. As such, if such protection is desired, it may \n   have to be provided by some external service like HTTPS.\n\nInteroperability considerations: None.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): PK 0x03 0x04\n   3. File extension(s): .3tz\n   4. Macintosh file type code: ZIP\n   5. Object Identifiers: N/A\n\nGeneral Comments: The 3D Tiles Archive Format (3tz) file is a \n   container technology based on the zip archive format. It is used \n   to encapsulate large 3D Tiles datasets and its associated files.",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-02-01, last updated 2022-02-01)\n\nMedia type name: application\n\nMedia subtype name: vnd.maxar.archive.3tz+zip\n\nRequired parameters: None.\n\nOptional parameters: None.\n\nEncoding considerations: binary\n\n   3tz container files are binary files encoded using the \n   application/zip media type.\n\nSecurity considerations: This media type employs a specific profile \n   of the application/zip format, so the security considerations that \n   apply to application/zip also apply to 3tz container files. All \n   processors that read 3tz container files should rigorously check \n   the size and validity of data retrieved.\n\n   The archive must contain on the root level a file named \n   tileset.json, which means the security considerations for JSON \n   described in RFC 8259 section 12. The format of this file is \n   specified in:\n\n   https://github.com/CesiumGS/3d-tiles/tree/master/specification\n\n   Additional security considerations for this file have not been \n   assessed.\n\n   In addition, because of the various content types that can be \n   embedded in 3tz container files, \n   application/vnd.maxar.archive.3tz+zip may describe content that \n   poses security implications beyond those noted here. However, only \n   in cases where the processor recognizes and processes the \n   additional content, or where further processing of that content is \n   dispatched to other processors, would security issues potentially \n   arise. In such cases, matters of security would fall outside the \n   domain of this registration document.\n\n   The content types may or may not provide integrity or \n   confidentiality protection, but the vnd.maxar.archive.3tz+zip \n   format does not. As such, if such protection is desired, it may \n   have to be provided by some external service like HTTPS.\n\nInteroperability considerations: None.\n\nPublished specification:\n\n   https://github.com/erikdahlstrom/3tz-specification/\n\nApplications which use this media: This media type is in wide use for \n   the distribution of large 3d datasets. The following list of \n   applications is not exhaustive.\n\n   * Vricon Explorer\n   * Maxar Construct\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): PK 0x03 0x04\n   3. File extension(s): .3tz\n   4. Macintosh file type code: ZIP\n   5. Object Identifiers: N/A\n\nGeneral Comments: The 3D Tiles Archive Format (3tz) file is a \n   container technology based on the zip archive format. It is used \n   to encapsulate large 3D Tiles datasets and its associated files.\n\nPerson to contact for further information:\n\n   1. Name: Erik Dahlström\n   2. Email: erik.dahlstrom&maxar.com\n\nIntended usage: Common\n\nAuthor/Change controller: The published specification is a work \n   product of Maxar Technologies. Maxar Technologies has change \n   control over this specification."
+  },
+  "references": []
+}

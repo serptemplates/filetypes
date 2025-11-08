@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "vnd.lotus-notes",
+  "full": "application/vnd.lotus-notes",
+  "extensions": [
+    "nsf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.lotus-notes",
+    "encoding_considerations": "Lotus Notes databases (.nsf, .nsg, .nsh, .ns2, .ns3, .ns4, and .ntf)\ncontain binary data and should be suitably encoded (base64 preferred).\nA Notes Data Link (.ndl) contains text so quoted-printable encoding\nis preferred.",
+    "security_considerations": "File is intended to be processed by Lotus Notes.  It may contain\nscripts which could be executed on the receiver's system and could\ncompromise the security of the machine.\n\n\nInteroperability considerations: Intended for use only with Lotus Notes\n\nPublished specification: None\n\nApplications which use this media type: Lotus Notes",
+    "interoperability_considerations": "Published specification: None\n\nApplications which use this media type: Lotus Notes",
+    "additional_information": "Magic number(s):  None\n  File extension(s):  nsf (database)\n                      ntf (template)\n                      ndl (link)\n                      ns4 (database older form)\n                      ns3 (database older form)\n                      ns2 (database older form)\n                      nsh (database older form)\n                      nsg (database older form)\n  Macintosh File Type Code(s):",
+    "intended_usage": "common",
+    "template_text": "\n\nTo: iana&iana.org\nSubject: Registration of MIME media type application/vnd.lotus-notes\nMime-Version: 1.0\nDate: Thu, 18 Feb 1999 17:15:34 -0500\nFrom: \"Michael J. Laramie\" <laramiem&btv.ibm.com>\n\nMIME media type name: application\n\nMIME subtype name: vnd.lotus-notes\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations:\n\nLotus Notes databases (.nsf, .nsg, .nsh, .ns2, .ns3, .ns4, and .ntf)\ncontain binary data and should be suitably encoded (base64 preferred).\nA Notes Data Link (.ndl) contains text so quoted-printable encoding\nis preferred.\n\n\nSecurity considerations:\n\nFile is intended to be processed by Lotus Notes.  It may contain\nscripts which could be executed on the receiver's system and could\ncompromise the security of the machine.\n\n\nInteroperability considerations: Intended for use only with Lotus Notes\n\nPublished specification: None\n\nApplications which use this media type: Lotus Notes\n\nAdditional information:\n\n  Magic number(s):  None\n  File extension(s):  nsf (database)\n                      ntf (template)\n                      ndl (link)\n                      ns4 (database older form)\n                      ns3 (database older form)\n                      ns2 (database older form)\n                      nsh (database older form)\n                      nsg (database older form)\n  Macintosh File Type Code(s):\n\nPerson & email address to contact for further information:\n\n  Michael Laramie\n  laramiem&btv.ibm.com\n\nIntended usage: Common\n\nAuthor/Change controller:\n\n Michael Laramie\n IBM Corporation\n 1000 River Street, 862C\n Essex Junction, VT 05452\n\nOID:\n\n{joint-iso-ccitt(2) country(16) us(840) organization(1) Lotus(113678)\ncommunications-apps(2) Notes(2) files(1) nsf(1)}\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.sci+xml",
+  "full": "application/vnd.etsi.sci+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.sci+xml",
+    "template_text": "(last updated 2009-03-13)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.etsi.sci+xml\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of handling 8 bit\ntext.\n\nSecurity considerations :\nThe XML contains information that is exchanged between network entities.\nSecurity mechanisms at the transport layer are needed to provide integrity of\nthe content.\n\nThis media type does not contain active content.\n\nThe security protection between the Charge Determination Point (CDP) and the\nCharge Generation Point (CGP) complies with 3GPP TS 33.210 release 7\n(ftp://www.3gpp.org/Specs/archive/33_series/33.210/). This 3GPP specification\nprovides authentication, integrity and encryption protection.\n\nInteroperability considerations :\nInteroperability is assessed not to be an issue, as the MIME type is in\nthe vendor tree. XML definitions are assessed to solve different\ncharacter set and byte ordering issues. Message format does have version\nnumber and backwards compatibility will be preserved in the possible\nformat evolution.\n\nPublished specification :\nETSI TS 183 058 v2.0.0 available at http://pda.etsi.org/pda/queryform.asp\n\nApplications which use this media :\nThe application for the realtime transfer of charging information in SIP between\na Charge Determination Point (CDP) and a Charge Generation Point (CGP) is using\nthe xml information defined within TETSI TS 183 058. CDP is a network function\nthat determines which tariff/add-on charge should be applied and inserts the\ncharging information to the appropriate SIP requests or responses, whereas the\nCGP is a network function that receives the charging information that was added\nby a CDP.\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nSCI\n\nPerson to contact for further information :\n\n1. Name : Shicheng Hu\n2. Email : shicheng.hu&etsi.org\n\nIntended usage : Common\n\n\nAuthor/Change controller : sonia.compans&etsi.org\n\n\n(file created 2009-03-13)"
+  },
+  "references": []
+}

@@ -1,0 +1,44 @@
+{
+  "type": "multipart",
+  "subtype": "voice-message",
+  "full": "multipart/voice-message",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/multipart/voice-message",
+    "security_considerations": "This definition identifies the content as being a voice\n   message.  In some environments (though likely not the\n   majority), the loss of the anonymity of the content may be a\n   security issue.",
+    "interoperability_considerations": "Systems developed to conform with RFC 1911 may not conform to\n   this registration.  Specifically, the required version will\n   likely be absent, in this case the recipient system should\n   still be able to accept the message and will be able to\n   handle the content.  The VPIM v1 positional identification,\n   however, would likely be lost.",
+    "applications": "Primarily voice messaging",
+    "additional_information": "Magic number(s): none\n   File extension(s): .VPM\n   Macintosh File Type Code(s): VPIM",
+    "intended_usage": "common",
+    "template_text": "(per RFC 3801)\n\nMIME media type name: multipart\n\nMIME subtype name: voice-message\n\nRequired parameters: boundary, version\n\n   The use of boundary is defined in RFC 2046\n\n   The version parameter that contains the value \"2.0\" if\n   enclosed content conforms to RFC 3801.  The absence of this\n   parameter indicates conformance to the previous version\n   defined in RFC 1911.\n\nOptional parameters: none\n\nEncoding considerations: 7bit, 8bit or Binary\n\nSecurity considerations:\n\n   This definition identifies the content as being a voice\n   message.  In some environments (though likely not the\n   majority), the loss of the anonymity of the content may be a\n   security issue.\n\nInteroperability considerations:\n\n   Systems developed to conform with RFC 1911 may not conform to\n   this registration.  Specifically, the required version will\n   likely be absent, in this case the recipient system should\n   still be able to accept the message and will be able to\n   handle the content.  The VPIM v1 positional identification,\n   however, would likely be lost.\n\nPublished specification:\n   RFC 3801\n\nApplications that use this media type:\n\n   Primarily voice messaging\n\nAdditional information:\n\n   Magic number(s): none\n   File extension(s): .VPM\n   Macintosh File Type Code(s): VPIM\n\nPerson & email address to contact for further information:\n\n   Glenn W. Parsons\n   gparsons&nortelnetworks.com\n\n   Gregory M. Vaudreuil\n   gregv&ieee.org\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n\n   Glenn W. Parsons & Gregory M. Vaudreuil"
+  },
+  "references": [
+    {
+      "title": "RFC 3801",
+      "url": "https://www.rfc-editor.org/rfc/rfc3801.html",
+      "kind": "RFC"
+    }
+  ]
+}

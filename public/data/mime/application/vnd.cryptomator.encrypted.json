@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.cryptomator.encrypted",
+  "full": "application/vnd.cryptomator.encrypted",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cryptomator.encrypted",
+    "encoding_considerations": "Security considerations: Cryptomator encrypted files are binary files.\n\n   The media type may contain arbitrary content. Thus, after \n   decryption the content might impose a security risk. Due to \n   encryption, the content shows a high entropy that might trigger \n   malware countermeasures. The decryption as such does not impose \n   any specific risks. File metadata like size and timestamps are not\n   encrypted or obfuscated.\n\n   The information distributed with it is considered private, but it \n   is encrypted and authenticated with well-known standards. For more\n   information, see section \"Published Specification\".\n\nInteroperability considerations: There are no known interoperability \n   issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture.\n\nApplications which use this media: Applications focusing on data and \n   privacy protection, file-based encryption and integrity protection.\n   An example is Cryptomator (https://cryptomator.org/)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Without correct \"vault\" (a directory structure \n   following the Cryptomator vault specification), not all \n   information of the cleartext file can be recovered. If the \n   (master) encryption key is not present, the file content cannot be \n   decrypted. If the (master) mac key is not present, the file \n   content cannot be verified.",
+    "security_considerations": "The media type may contain arbitrary content. Thus, after \n   decryption the content might impose a security risk. Due to \n   encryption, the content shows a high entropy that might trigger \n   malware countermeasures. The decryption as such does not impose \n   any specific risks. File metadata like size and timestamps are not\n   encrypted or obfuscated.\n\n   The information distributed with it is considered private, but it \n   is encrypted and authenticated with well-known standards. For more\n   information, see section \"Published Specification\".\n\nInteroperability considerations: There are no known interoperability \n   issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture.\n\nApplications which use this media: Applications focusing on data and \n   privacy protection, file-based encryption and integrity protection.\n   An example is Cryptomator (https://cryptomator.org/)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Without correct \"vault\" (a directory structure \n   following the Cryptomator vault specification), not all \n   information of the cleartext file can be recovered. If the \n   (master) encryption key is not present, the file content cannot be \n   decrypted. If the (master) mac key is not present, the file \n   content cannot be verified.",
+    "interoperability_considerations": "issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture.\n\nApplications which use this media: Applications focusing on data and \n   privacy protection, file-based encryption and integrity protection.\n   An example is Cryptomator (https://cryptomator.org/)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Without correct \"vault\" (a directory structure \n   following the Cryptomator vault specification), not all \n   information of the cleartext file can be recovered. If the \n   (master) encryption key is not present, the file content cannot be \n   decrypted. If the (master) mac key is not present, the file \n   content cannot be verified.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): c9r, c9s\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This media type belongs to the Cryptomator vault \n   specification. The specification is publicly available and can be \n   implemented by everyone. For more information, see section \n   \"Published Specification\".",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-03-17, last updated 2021-03-17)\n\nMedia type name: application\n\nMedia subtype name: vnd.cryptomator.encrypted\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: Cryptomator encrypted files are binary files.\n\n   The media type may contain arbitrary content. Thus, after \n   decryption the content might impose a security risk. Due to \n   encryption, the content shows a high entropy that might trigger \n   malware countermeasures. The decryption as such does not impose \n   any specific risks. File metadata like size and timestamps are not\n   encrypted or obfuscated.\n\n   The information distributed with it is considered private, but it \n   is encrypted and authenticated with well-known standards. For more\n   information, see section \"Published Specification\".\n\nInteroperability considerations: There are no known interoperability \n   issues.\n\nPublished specification: See \n   https://docs.cryptomator.org/en/latest/security/architecture.\n\nApplications which use this media: Applications focusing on data and \n   privacy protection, file-based encryption and integrity protection.\n   An example is Cryptomator (https://cryptomator.org/)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Without correct \"vault\" (a directory structure \n   following the Cryptomator vault specification), not all \n   information of the cleartext file can be recovered. If the \n   (master) encryption key is not present, the file content cannot be \n   decrypted. If the (master) mac key is not present, the file \n   content cannot be verified.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): c9r, c9s\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: This media type belongs to the Cryptomator vault \n   specification. The specification is publicly available and can be \n   implemented by everyone. For more information, see section \n   \"Published Specification\".\n\nPerson to contact for further information:\n\n   1. Name: Sebastian Stenzel\n   2. Email: sebastian.stenzel&skymatic.de\n\nIntended usage: Common\n\n   A Cryptomator encrypted file normally is found only within a \n   specific directory structure (\"vault\").\n\nAuthor/Change controller: Sebastian Stenzel, on behalf of Skymatic \n   GmbH."
+  },
+  "references": []
+}

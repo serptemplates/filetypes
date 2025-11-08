@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.osgi.dp",
+  "full": "application/vnd.osgi.dp",
+  "extensions": [
+    "dp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.osgi.dp",
+    "template_text": "(last updated November 2005) \r\n\r\nName : Peter Kriens\r\n\r\nEmail : Peter.Kriens&aQute.biz\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.osgi.dp\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : \r\nnone\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations : \r\nA Deployment Package can contain executable code and is therefore a\r\npotential threat. However, the intention of the package is to safely install\r\none or more executables with their required resources in a system using a\r\ncertificate based signing system.\r\n\r\nInteroperability considerations : \r\nThe format is based on the ZIP file format.\r\n\r\nPublished specification : \r\nThe OSGi R4 specification will contain a detailed specification of this\r\nformat. We would like to mention the MIME type in this specification.\r\n\r\nApplications which use this media : \r\nOSGi Service Platforms and Management Servers.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : 0x04034b50 (from a ZIP file 2. File extension(s) : .dp\r\n3. Macintosh file type code : none 4. Object Identifiers: none\r\n\r\n-\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Peter Kriens\r\n2. Email : Peter.Kriens&aQute.biz\r\n\r\nIntended usage : Common\r\nAs a deployment format for OSGi Service Platforms, specifically next\r\ngeneration smart phones.\r\n\r\nAuthor/Change controller : Peter.Kriens&aQute.biz \r\n\r\n(file created 30 November 2005) \r\n"
+  },
+  "references": []
+}

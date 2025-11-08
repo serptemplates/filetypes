@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "mikey",
+  "full": "application/mikey",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/mikey",
+    "template_text": "(RFC 3830 published August 2004, subtype last updated August 2004)\n\nMIME media type name              : application\nMIME subtype name                 : mikey\nRequired parameters               : none\nOptional parameters               : version\n          version: The MIKEY version number of the enclosed message\n             (e.g., 1). If not present, the version defaults to 1.\nEncoding Considerations           : binary, base64 encoded\nSecurity Considerations           : see section 9 in this memo\nInteroperability considerations   : none\nPublished specification           : this memo\n"
+  },
+  "references": []
+}

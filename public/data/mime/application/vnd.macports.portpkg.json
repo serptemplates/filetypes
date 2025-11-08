@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.macports.portpkg",
+  "full": "application/vnd.macports.portpkg",
+  "extensions": [
+    "portpkg"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.macports.portpkg",
+    "template_text": "(last updated 2007-05-04)\n\nName : James Berry\n\nEmail : jberry&macports.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.macports.portpkg\n\nRequired parameters :\n\nOptional parameters :\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nA portpkg may include scripts and/or other executable content\nintended to be evaluated as part of the build or installation of a\nport. As such, there are security considerations in handling this\ncontent, but only to the degree that those scripts or other\nexecutables are actually installed or executed. Mechanisms for\ndigitally signing of portpkgs are being implemented; verifying and\nevaluating the trust chain of the signer should be a key element of\ntrust and security management for a portpkg, to be used with other\nadditional mechanisms, such as reputation and votes of confidence, to\nevaluate the trustworthiness of a portpkg.\n\nThere are not known to be any privacy issues inherent in the portpkg\ncontent. The email address and name of the portpkg submitter are\nincluded in the portpkg, but these are not considered to be privacy\nfactors that require special handling. Integrity checking through\ndigital signatures is incorporated into the portpkg internal format.\n\nInteroperability considerations :\n\n\nPublished specification :\n\n\nApplications which use this media :\nMacPorts port system.\n\nAdditional information :\n\n1. Magic number(s) : (none)\n2. File extension(s) : .portpkg\n3. Macintosh file type code : (none)\n4. Object Identifiers: (none)\n\nPerson to contact for further information :\n\n1. Name : James Berry\n2. Email : jberry&macports.org\n\nIntended usage : Common\nBunded package formats for MacPorts port package.\n\nAuthor/Change controller : James Berry\n\n\n(file created 2007-05-04)"
+  },
+  "references": []
+}

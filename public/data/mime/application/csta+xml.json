@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "csta+xml",
+  "full": "application/csta+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/csta+xml",
+    "encoding_considerations": "This content type uses XML, employing UTF-8 character encoding.",
+    "security_considerations": "This content type is designed to carry information about users involved with \ncommunications which may be considered private information. For example, the \nidentity of a calling party in a voice call. This content type is also designed \nto be used to control communication calls and communication devices such as telephones.\n\nAppropriate precautions should be taken to insure that applications observing \nand controlling communications and communication devices using CSTA are \nauthorized to do so.",
+    "interoperability_considerations": "application/csta+xml documents are specified by the XML schemas standardized \nin ECMA-323.",
+    "additional_information": "CSTA XML (ECMA-323) is an application level protocol that enables an application \nto control and observe communications involving various types of media (voice calls, \nvideo calls, instant messages, Email, SMS, Page, etc.) and devices associated \nwith the media.",
+    "intended_usage": "common",
+    "template_text": "\r\nMIME media type name: application\r\n\r\nMIME subtype name: csta+xml\r\n\r\nRequired parameters: (none)\r\n\r\nOptional parameters: (none)\r\n\r\nEncoding considerations:\r\nThis content type uses XML, employing UTF-8 character encoding.\r\n\r\nSecurity considerations:\r\nThis content type is designed to carry information about users involved with \r\ncommunications which may be considered private information. For example, the \r\nidentity of a calling party in a voice call. This content type is also designed \r\nto be used to control communication calls and communication devices such as telephones.\r\n\r\nAppropriate precautions should be taken to insure that applications observing \r\nand controlling communications and communication devices using CSTA are \r\nauthorized to do so.\r\n\r\nInteroperability considerations:\r\napplication/csta+xml documents are specified by the XML schemas standardized \r\nin ECMA-323.\r\n\r\nPublished specification:\r\nThe published Standard ECMA-323 is available at:\r\nhttp://www.ecma-international.org/publications/standards/Ecma-323.htm\r\n\r\nApplications which use this media type:\r\nThe application/csta+xml MIME type can be used to identify CSTA XML\r\n(ECMA-323) instance documents.\r\n\r\nAdditional information:\r\nCSTA XML (ECMA-323) is an application level protocol that enables an application \r\nto control and observe communications involving various types of media (voice calls, \r\nvideo calls, instant messages, Email, SMS, Page, etc.) and devices associated \r\nwith the media.\r\n\r\nPerson & email address to contact for further information:\r\nEcma International Helpdesk\r\nRue du Rhone114\r\nCH-1204 Geneva\r\nSwitzerland\r\nhelpdesk&ecma-international.org\r\n\r\nIntended usage: common\r\n\r\nAuthor/change controller:\r\nThe ECMA-323 Standard is developed and maintained by the Ecma TC32/TG11 Working Group.\r\n\r\nApproved by the IESG 24 January 2005\r\n(created 07 April 2005)"
+  },
+  "references": []
+}

@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "scvp-vp-request",
+  "full": "application/scvp-vp-request",
+  "extensions": [
+    "spq"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/scvp-vp-request",
+    "encoding_considerations": "Security considerations: Carries a request for information.\n\nInteroperability considerations: None\n\nPublished specification: RFC 5055\n\nApplications that use this media type: SCVP clients sending\nvalidation policy requests",
+    "security_considerations": "Interoperability considerations: None\n\nPublished specification: RFC 5055\n\nApplications that use this media type: SCVP clients sending\nvalidation policy requests",
+    "interoperability_considerations": "Published specification: RFC 5055\n\nApplications that use this media type: SCVP clients sending\nvalidation policy requests",
+    "applications": "validation policy requests",
+    "additional_information": "Magic number(s): None\n   File extension(s): .SPQ\n   Macintosh File Type Code(s): none",
+    "intended_usage": "common",
+    "change_controller": "IESG",
+    "template_text": "(RFC 5055 published December 2007, subtype last updated December 2007)\n\nMIME media type name: application\n\nMIME subtype name: scvp-vp-request\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: Binary\n\nSecurity considerations: Carries a request for information.\n\nInteroperability considerations: None\n\nPublished specification: RFC 5055\n\nApplications that use this media type: SCVP clients sending\nvalidation policy requests\n\nAdditional information:\n\n   Magic number(s): None\n   File extension(s): .SPQ\n   Macintosh File Type Code(s): none\n\nPerson & email address to contact for further information:\nAmbarish Malpani <ambarish&yahoo.com>\n\nIntended usage: COMMON\n\nRestrictions on usage: None\n\nAuthor: Ambarish Malpani <ambarish&yahoo.com>\n\nChange controller: IESG"
+  },
+  "references": []
+}

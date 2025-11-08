@@ -1,0 +1,35 @@
+{
+  "type": "audio",
+  "subtype": "vnd.rip",
+  "full": "audio/vnd.rip",
+  "extensions": [
+    "rip"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.rip",
+    "template_text": "(last updated 2011-01-27)\n\nName : Hit'n'Mix Ltd\n\nEmail : mdawe&hitnmix.com\n\nMIME media type name : Audio\n\nMIME subtype name : Vendor Tree - vnd.rip\n\nRequired parameters :\n\nOptional parameters :\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nthe security issues associates with this type have not been assessed\n\n\nInteroperability considerations :\n\n\nPublished specification :\n\n\nApplications which use this media :\nHit'n'Mix, Hit'n'Mix Play\n\n\nAdditional information :\n\n1. Magic number(s) : NASProject\\0\n2. File extension(s) : .rip\n3. Macintosh file type code : RIP\n4. Object Identifiers: no mapping defined\n\nRip files do not contain the usual waveform data found in .wavs and\nMP3s. Instead they contain all the information necessary to recreate (or\nresynthesize) this data.\n\nThe work of an engine (such as in Hit'n'Mix) used to create Rip files is\nto magically separate all of the individual sound waves that make up\neach note in a full audio mix and store their amplitude and frequency\ndescriptions.\n\nTo play a Rip file (or convert it back to, say, MP3) a playback engine\nresynthesizes the sound waves at a resolution necessary for it to be\nindistinguishable from the original.\n\nTo change the position, pitch or ANY other aspect of a note, the\nfrequency or amplitude descriptions of a note is adjusted (possible down\nto a resolution of milliseconds) and the result is heard when the\nplayback engine puts it all back together again.\n\nBecause a full audio mix is generally made up of noise as well as simple\nsound waves, the noise is also separated and stored. The playback engine\noverlays the noise on the note waveforms, and if the Rip has not been\nedited, the final waveform will match the original one - it has been\nripped apart and put back together again.\n\nThe separated noise can also be filtered, so anything unwanted can be\nremoved quickly without upsetting the notes.\n\nStereo waveforms are analyzed to store variable stereo positioning\ninformation for each note. Changing the positioning information (even if\nthe original was mono) causes the playback engine to make the note play\nmore loudly/quietly out of each speaker.\n\n\nPerson to contact for further information :\n\n1. Name : Martin Dawe\n2. Email : mdawe&hitnmix.com\n\nIntended usage : Common\nObject based audio distribution\n\n\nAuthor/Change controller : Hit'n'Mix Ltd\n\n(file created 2011-01-27)"
+  },
+  "references": []
+}

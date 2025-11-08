@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "set-registration-initiation",
+  "full": "application/set-registration-initiation",
+  "extensions": [
+    "setreg"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/set-registration-initiation",
+    "encoding_considerations": "Secure Electronic Transaction (SET) messages are in a binary format,\nusing ASN.1 DER encoding as specified in ITU-T Recommendation X.690.\nThese encodings may include encrypted information which is itself\nDER encoded.",
+    "security_considerations": "SET is designed so that all sensitive information is either encrypted\nor blinded and as such secure communication channels are not required\nfor privacy reasons.  Although an eavesdropper observing SET messages\ncan perform basic traffic analysis, the security of financial and\nand other private information is ensured through the use of encryption\nprivacy and digital signatures for authentication of origin and integrity\nprotection.  No SET message contains \"executable\" information of any kind.",
+    "template_text": "\n\nFrom briank&terisa.com  Tue Jul 16 02:10:54 1996\nFrom: Brian Korver <briank&terisa.com>\nSubject: registration of application/set-registration-initiation\nTo: iana&isi.edu\nDate: Tue, 16 Jul 1996 09:10:54 -0700 (PDT)\nCc: ietf-types&uninett.no\nContent-Type: text/plain; charset=US-ASCII\nContent-Length: 1630\nStatus: RO\nX-Lines: 63\n\nThe registration request attached below was posted to ietf-types&uninett.no\non June 19, 1996.  Since there have been no comments, I would like to see\nthis type registered.\n\n\nMEDIA TYPE NAME:\napplication\n\n\nMEDIA SUBTYPE NAME:\nset-registration-initiation\n\n\nPURPOSE:\nThis media subtype identifies a message that provides initialization\ninformation prior to SET's registration sequence.  Registration is the\nprocess by which entities obtain X.509v3 certificates which are used\nfor digital signatures and for exchanging encryption keys.\n\n\nREQUIRED PARAMETERS:\nnone\n\n\nOPTIONAL PARAMETERS:\nnone\n\n\nENCODING CONSIDERATIONS:\n\nSecure Electronic Transaction (SET) messages are in a binary format,\nusing ASN.1 DER encoding as specified in ITU-T Recommendation X.690.\nThese encodings may include encrypted information which is itself\nDER encoded.\n\n\nSECURITY CONSIDERATIONS:\n\nSET is designed so that all sensitive information is either encrypted\nor blinded and as such secure communication channels are not required\nfor privacy reasons.  Although an eavesdropper observing SET messages\ncan perform basic traffic analysis, the security of financial and\nand other private information is ensured through the use of encryption\nprivacy and digital signatures for authentication of origin and integrity\nprotection.  No SET message contains \"executable\" information of any kind.\n\n\nPUBLISHED SPECIFICATION:\n\nThe published specification is available from either http://www.visa.com or\nhttp://www.mastercard.com.\n\n\nCOMPANY CONTACT:\n \nVisa International\nPO Box 8999\nSan Francisco, CA 94128\n\nMasterCard International\n2000 Purchase Street\nPurchase NY 10577\n\n\n\n\n"
+  },
+  "references": []
+}

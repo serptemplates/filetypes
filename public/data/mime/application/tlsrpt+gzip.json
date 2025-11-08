@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "tlsrpt+gzip",
+  "full": "application/tlsrpt+gzip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/tlsrpt+gzip",
+    "type_name": "application",
+    "subtype_name": "tlsrpt+gzip",
+    "encoding_considerations": "Security considerations: Security considerations relating to SMTP TLS\nReporting are discussed in Section 7.  Security considerations\nrelated to gzip compression are discussed in RFC 6713.\n\nInteroperability considerations: This document specifies the format\nof conforming messages and the interpretation thereof.\n\nPublished specification: Section 5.3 of RFC 8460.\n\nApplications that use this media type: Mail User Agents (MUAs) and\nMail Transfer Agents.",
+    "security_considerations": "Reporting are discussed in Section 7.  Security considerations\nrelated to gzip compression are discussed in RFC 6713.\n\nInteroperability considerations: This document specifies the format\nof conforming messages and the interpretation thereof.\n\nPublished specification: Section 5.3 of RFC 8460.\n\nApplications that use this media type: Mail User Agents (MUAs) and\nMail Transfer Agents.",
+    "interoperability_considerations": "of conforming messages and the interpretation thereof.\n\nPublished specification: Section 5.3 of RFC 8460.\n\nApplications that use this media type: Mail User Agents (MUAs) and\nMail Transfer Agents.",
+    "applications": "Mail Transfer Agents.",
+    "additional_information": "Deprecated alias names for this type: N/A\n\n\tMagic number(s): The first two bytes are 0x1f, 0x8b.\n\n\tFile extension(s): \".gz\"\n\nMacintosh file type code(s): N/A",
+    "intended_usage": "common",
+    "change_controller": "Internet Engineering Task Force (iesg&ietf.org)",
+    "template_text": "Type name: application\n\nSubtype name: tlsrpt+gzip\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: Binary\n\nSecurity considerations: Security considerations relating to SMTP TLS\nReporting are discussed in Section 7.  Security considerations\nrelated to gzip compression are discussed in RFC 6713.\n\nInteroperability considerations: This document specifies the format\nof conforming messages and the interpretation thereof.\n\nPublished specification: Section 5.3 of RFC 8460.\n\nApplications that use this media type: Mail User Agents (MUAs) and\nMail Transfer Agents.\n\nAdditional information:\n\n\tDeprecated alias names for this type: N/A\n\n\tMagic number(s): The first two bytes are 0x1f, 0x8b.\n\n\tFile extension(s): \".gz\"\n\nMacintosh file type code(s): N/A\n\nPerson & email address to contact for further information:\nSee the Authors' Addresses section.\n\nIntended usage: COMMON\n\nRestrictions on usage: N/A\n\nAuthor: See the Authors' Addresses section.\n\nChange controller: Internet Engineering Task Force (iesg&ietf.org)."
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.umajin",
+  "full": "application/vnd.umajin",
+  "extensions": [
+    "umj"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.umajin",
+    "template_text": "(Last updated 31 March 2006)\r\n\r\nName : Jamie Riden\r\n\r\nEmail : jamie&umajin.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.umajin\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nThe security issues associate with this type have not been assessed.\r\n\r\nAn UMAJIN file may send HTTP requests to the Internet, invoke a local browser to render HTML, read the local directory structure and call a specific media converter helper application.\r\n\r\nInteroperability considerations : \r\nThis is not an open standard, but should interoperate correctly across the platforms where the UMAJIN application is supported.\r\n\r\nPublished specification : \r\nnone\r\n\r\nApplications which use this media : \r\nUMAJIN\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .umj\r\n3. Macintosh file type code : \"UMJ \"\r\n4. Object Identifiers: none\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Jamie Riden\r\n2. Email : jamie&umajin.com\r\n\r\nIntended usage : Common \r\n\r\n\r\nAuthor/Change controller : Name: UMAJIN IANA registrar\r\nEmail: iana-registrar&umajin.com \r\n\r\n(File created 31 March 2006)"
+  },
+  "references": []
+}

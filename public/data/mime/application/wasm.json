@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "wasm",
+  "full": "application/wasm",
+  "extensions": [
+    "wasm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/wasm",
+    "type_name": "application",
+    "subtype_name": "wasm",
+    "encoding_considerations": "Security Considerations: WebAssembly is a standard, a safe, portable,\n   low-level code format. The security considerations associated with\n   executing WebAssembly code are described in \n   https://www.w3.org/TR/wasm-core/#security-considerations.\n\n   The WebAssembly format includes no integrity or privacy \n   protection. If such protection is needed it must be provided \n   externally, e.g., through the use of HTTPS.",
+    "security_considerations": "low-level code format. The security considerations associated with\n   executing WebAssembly code are described in \n   https://www.w3.org/TR/wasm-core/#security-considerations.\n\n   The WebAssembly format includes no integrity or privacy \n   protection. If such protection is needed it must be provided \n   externally, e.g., through the use of HTTPS.",
+    "interoperability_considerations": "See WebAssembly Core Conformance\n   https://www.w3.org/TR/wasm-core/#conformance",
+    "additional_information": "Deprecated alias names for this type: None\n   Magic number(s): 0x00 0x61 0x73 0x6D\n   File extension(s): .wasm\n   Macintosh file type code(s): None\n   Object Identifier(s) or OID(s): None\n\nIntended usage: Common",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-04-20, last updated 2021-04-20)\n\nType Name: application\n\nSubtype Name: wasm\n\nRequired Parameters: N/A\n\nOptional Parameters: N/A\n\nEncoding Considerations: binary\n\nSecurity Considerations: WebAssembly is a standard, a safe, portable,\n   low-level code format. The security considerations associated with\n   executing WebAssembly code are described in \n   https://www.w3.org/TR/wasm-core/#security-considerations.\n\n   The WebAssembly format includes no integrity or privacy \n   protection. If such protection is needed it must be provided \n   externally, e.g., through the use of HTTPS.\n\nInteroperability Considerations:\n\n   See WebAssembly Core Conformance\n   https://www.w3.org/TR/wasm-core/#conformance\n\nPublished specification:\n\n   https://www.w3.org/TR/wasm-core-1/\n   https://www.w3.org/TR/wasm-js-api-1/\n   https://www.w3.org/TR/wasm-web-api-1/\n\nApplication Usage: The application/wasm media type is intended for \n   use as the type used to describe WebAssembly files when sent over \n   HTTP to be executed by browsers, which is a common scenario. \n   Additionally, the type is used by several WebAssembly runtimes \n   that take advantage of the safety and portability while targeting \n   efficient execution and compact representation.\n\nFragment Identifier Considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   Deprecated alias names for this type: None\n   Magic number(s): 0x00 0x61 0x73 0x6D\n   File extension(s): .wasm\n   Macintosh file type code(s): None\n   Object Identifier(s) or OID(s): None\n\nIntended usage: Common\n\nContact Person:\n\n   Contact Name: Eric Prud’hommeaux\n   Contact Email Address: eric&w3.org\n\nAuthor/Change Controller: W3C\n"
+  },
+  "references": []
+}

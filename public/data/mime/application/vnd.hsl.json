@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.hsl",
+  "full": "application/vnd.hsl",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.hsl",
+    "encoding_considerations": "Security considerations: HSL is a configuration language. It does not \n   support any active or executable format. The only potentially \n   personally identifiable information in an HSL document is the \n   author's name and email address. HSL content usually does not \n   request confidentiality or integrity protection, but if such \n   protection is needed it must be provided externally.\n\nInteroperability considerations: N/A",
+    "security_considerations": "support any active or executable format. The only potentially \n   personally identifiable information in an HSL document is the \n   author's name and email address. HSL content usually does not \n   request confidentiality or integrity protection, but if such \n   protection is needed it must be provided externally.\n\nInteroperability considerations: N/A",
+    "additional_information": "1. Deprecated alias names for this type: text/vnd.hgl\n   2. Magic number(s): N/A\n   3. File extension(s): .hsl\n   4. Macintosh file type code: HSL\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-02-13, last updated 2023-02-13)\n\nMedia type name: application\n\nMedia subtype name: vnd.hsl\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\n\nSecurity considerations: HSL is a configuration language. It does not \n   support any active or executable format. The only potentially \n   personally identifiable information in an HSL document is the \n   author's name and email address. HSL content usually does not \n   request confidentiality or integrity protection, but if such \n   protection is needed it must be provided externally.\n\nInteroperability considerations: N/A\n\nPublished specification: \n\n   https://pkg.go.dev/github.com/hangulize/hangulize/pkg/hsl\n\nApplications which use this media: Hangulize uses HSL to define \n   transcription rules for a specific language.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Public\n\nAdditional information:\n\n   1. Deprecated alias names for this type: text/vnd.hgl\n   2. Magic number(s): N/A\n   3. File extension(s): .hsl\n   4. Macintosh file type code: HSL\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Heungsub Lee\n   2. Email: heungsub&subl.ee\n\nIntended usage: COMMON\n\n   Language-specific transcription rules in Hangulize\n\nAuthor/Change controller: Heungsub Lee\n\n"
+  },
+  "references": []
+}

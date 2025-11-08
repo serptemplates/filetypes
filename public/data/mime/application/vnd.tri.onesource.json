@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.tri.onesource",
+  "full": "application/vnd.tri.onesource",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.tri.onesource",
+    "encoding_considerations": "The media will be encoded as UTF-8 JSON and will conform to RFC 4627.",
+    "security_considerations": "The content contains non-executable application data with no known security issues. The media type itself does not provide privacy or integrity protection and must be supplied externally if required. Appropriate access controls will be applied at the application level.",
+    "interoperability_considerations": "The media will be encoded as UTF-8 JSON with HAL-formatted links optionally available. The media type itself does not provide privacy or integrity protection and must be supplied externally if required. The content semantics are specific to the Thomson Reuters ONESOURCE (TM) global tax compliance and accounting portfolio of corporate technology solutions.",
+    "additional_information": "1. Deprecated alias names for this type: N/A 2. Magic number(s): N/A 3. File extension(s): N/A 4. Macintosh file type code: N/A 5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2016-09-27, last updated 2016-09-27)\n\nName: Richard Rupp\nEmail: richard.rupp&tr.com\n\nMedia type name: application\nMedia subtype name: vnd.tri.onesource\n\nRequired parameters: N/A\n\nOptional parameters:\nN/A\n\nEncoding considerations: 8bit\nThe media will be encoded as UTF-8 JSON and will conform to RFC 4627.\n\nSecurity considerations:\nThe content contains non-executable application data with no known security issues. The media type itself does not provide privacy or integrity protection and must be supplied externally if required. Appropriate access controls will be applied at the application level.\n\nInteroperability considerations:\nThe media will be encoded as UTF-8 JSON with HAL-formatted links optionally available. The media type itself does not provide privacy or integrity protection and must be supplied externally if required. The content semantics are specific to the Thomson Reuters ONESOURCE (TM) global tax compliance and accounting portfolio of corporate technology solutions.\n\nPublished specification:\nN/A\n\nApplications which use this media:\nThomson Reuters ONESOURCE (TM)\nhttp://tax.thomsonreuters.com/onesource/\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nThis media type will be specific to the Thomson Reuters ONESOURCE (TM) application.\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A 2. Magic number(s): N/A 3. File extension(s): N/A 4. Macintosh file type code: N/A 5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Rick Rupp\n2. Email: onesource-mediatype&tr.com\n\nIntended usage: Limited Use\nDocuments using this media type are expected to be specific to the Thomson Reuters ONESOURCE (TM) application.\n\nAuthor/Change controller: TRTA Corporate Architecture Council Thomson Reuters Tax and Accounting\n2395 Midway Road\nCarrollton, TX 75006"
+  },
+  "references": []
+}

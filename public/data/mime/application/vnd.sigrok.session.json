@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.sigrok.session",
+  "full": "application/vnd.sigrok.session",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sigrok.session",
+    "security_considerations": "The current version of the file format happens to be a compressed ZIP\narchive containing multiple files and inherits the security\nconsiderations of the ZIP format. However, this is an implementation\ndetail that will likely change in the future (hence no \"+zip\" suffix).\n\nThese files are not meant to be extracted to a file system, but are meant to be extracted to volatile memory only. An implementation choosing to extract the contents to a filesystem should extract the contents to a temporary directory to avoid overwriting file system contents.\n\nEach file currently contains a manifest file named \"metadata\" describing the contents. This file is of text/plain media type using the ASCII charset. It contains key-value pairs. An implementation should consider possible buffer overflows when reading these pairs.\n\nThe actual payload of the archive are one or several files containing raw logic and/or analog samples. These are not interpreted or executed.\n\nThis media type does not provide integrity or confidentiality\nprotection; if such protection is needed it must be provided externally.",
+    "interoperability_considerations": "N/A",
+    "additional_information": "1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): .sr\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-06-06, last updated 2017-06-06)\n\nName: Uwe Hermann\nEmail: uwe&hermann-uwe.de\n\nMedia type name: application\nMedia subtype name: vnd.sigrok.session\n\nRequired parameters: N/A\n\nOptional parameters:\nN/A\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nThe current version of the file format happens to be a compressed ZIP\narchive containing multiple files and inherits the security\nconsiderations of the ZIP format. However, this is an implementation\ndetail that will likely change in the future (hence no \"+zip\" suffix).\n\nThese files are not meant to be extracted to a file system, but are meant to be extracted to volatile memory only. An implementation choosing to extract the contents to a filesystem should extract the contents to a temporary directory to avoid overwriting file system contents.\n\nEach file currently contains a manifest file named \"metadata\" describing the contents. This file is of text/plain media type using the ASCII charset. It contains key-value pairs. An implementation should consider possible buffer overflows when reading these pairs.\n\nThe actual payload of the archive are one or several files containing raw logic and/or analog samples. These are not interpreted or executed.\n\nThis media type does not provide integrity or confidentiality\nprotection; if such protection is needed it must be provided externally.\n\nInteroperability considerations:\nN/A\n\nPublished specification:\nhttp://sigrok.org/wiki/File_format:Sigrok/v2\n\nThe open-source libsigrok C library provides the canonical implementation of read and write support for this format.\n\n\nApplications which use this media:\nApplications for capturing and displaying analog or logic measurement data, typically based on the libsigrok library, such as the open-source PulseView or sigrok-cli programs.\n\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): .sr\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\nN/A\n\nPerson to contact for further information:\n\n1. Name: Uwe Hermann\n2. Email: uwe&hermann-uwe.de\n\nIntended usage: Common\nThe sigrok session file format is the native storage format of the libsigrok library. \n\nsigrok is the leading open-source project for interfacing to measurement devices of all kinds, e.g. logic analyzers, oscilloscopes, multimeters, environmental probes, programmable power-supplies, function generators, scales and more. It is actively developed and continuously extending the range of supported devices and device types.\n\nAuthor/Change controller: Uwe Hermann <uwe&hermann-uwe.de>"
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.apache.parquet",
+  "full": "application/vnd.apache.parquet",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.apache.parquet",
+    "encoding_considerations": "Security considerations: Apache Parquet can be used to store arbitrary data which may or may not be sensitive in nature. Executable content is not expected. Apache Parquet supports multiple compression codecs and a single file may contain uncompressed and compressed regions. Apache Parquet files may be encrypted using mechanisms suitable for other file formats or using the format's modular encryption mechanism, whereby a file may contain both unencrypted and encrypted data regions.\n\nInteroperability considerations: Apache Parquet is designed to be highly-interoperable and can be read and written using software libraries and applications written in a wide variety of programming languages running on many platforms. The format is versioned and developed in a backwards-compatible fashion. Users can generally expect Apache Parquet files created by one system to be read in correctly by another system.\n\nPublished specification: https://parquet.apache.org/docs/file-format\n\nApplications which use this media: The Parquet file format is an efficient, general-purpose, column-oriented data format used across a wide variety of platforms, technologies, and environments.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "security_considerations": "Interoperability considerations: Apache Parquet is designed to be highly-interoperable and can be read and written using software libraries and applications written in a wide variety of programming languages running on many platforms. The format is versioned and developed in a backwards-compatible fashion. Users can generally expect Apache Parquet files created by one system to be read in correctly by another system.\n\nPublished specification: https://parquet.apache.org/docs/file-format\n\nApplications which use this media: The Parquet file format is an efficient, general-purpose, column-oriented data format used across a wide variety of platforms, technologies, and environments.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "interoperability_considerations": "Published specification: https://parquet.apache.org/docs/file-format\n\nApplications which use this media: The Parquet file format is an efficient, general-purpose, column-oriented data format used across a wide variety of platforms, technologies, and environments.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: x-parquet\n2. Magic number(s): PAR1, PARE\n3. File extension(s): .parquet\n4. Macintosh file type code: not available\n5. Object Identifiers: not available",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-02-14, last updated 2024-03-05)\n\nMedia type name: application\n\nMedia subtype name: vnd.apache.parquet\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: Apache Parquet can be used to store arbitrary data which may or may not be sensitive in nature. Executable content is not expected. Apache Parquet supports multiple compression codecs and a single file may contain uncompressed and compressed regions. Apache Parquet files may be encrypted using mechanisms suitable for other file formats or using the format's modular encryption mechanism, whereby a file may contain both unencrypted and encrypted data regions.\n\nInteroperability considerations: Apache Parquet is designed to be highly-interoperable and can be read and written using software libraries and applications written in a wide variety of programming languages running on many platforms. The format is versioned and developed in a backwards-compatible fashion. Users can generally expect Apache Parquet files created by one system to be read in correctly by another system.\n\nPublished specification: https://parquet.apache.org/docs/file-format\n\nApplications which use this media: The Parquet file format is an efficient, general-purpose, column-oriented data format used across a wide variety of platforms, technologies, and environments.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None\n\nAdditional information:\n\n1. Deprecated alias names for this type: x-parquet\n2. Magic number(s): PAR1, PARE\n3. File extension(s): .parquet\n4. Macintosh file type code: not available\n5. Object Identifiers: not available\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n1. Name: Apache Parquet Project Management Committee\n2. Email: private&parquet.apache.org\n\nIntended usage: COMMON\n\nAuthor/Change controller: The Apache Parquet Project (Part of the Apache Software Foundation)\n"
+  },
+  "references": []
+}

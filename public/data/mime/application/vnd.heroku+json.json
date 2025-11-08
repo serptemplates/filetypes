@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.heroku+json",
+  "full": "application/vnd.heroku+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.heroku+json",
+    "template_text": "(registered 2013-09-06, last updated 2013-09-06)\n\nName : Wesley Beary\n\nEmail : api&heroku.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.heroku+json\n\nRequired parameters : \"version\" -- unsigned int specifying API version to\nfulfill requests with\n\nOptional parameters :\nN/A\n\nEncoding considerations : 8bit\n\n\nSecurity considerations :\napplication/vnd.heroku+json shares the security considerations of \napplication/json as defined in RFC4627 Section #6\n(http://tools.ietf.org/html/rfc4627#section-6).\n\nPrivate information may be included, with authorization managed by OAuth\n2.0 and protection for data over the wire provided by SSL/TLS.\n\nNo executable content should be included.\n\nInteroperability considerations :\n\n\nPublished specification :\nhttps://devcenter.heroku.com/articles/platform-api-reference\n\nApplications which use this media :\n\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : .json\n3. Macintosh file type code : TEXT\n4. Object Identifiers: N/A\n\nN/A\n\nPerson to contact for further information :\n\n1. Name : Wesley Beary\n2. Email : api&heroku.com\n\nIntended usage : Common\napplication/vnd.heroku+json is a JSON-based read/write type designed to\nsupport management and querying of Heroku resources.\n\nAuthor/Change controller : Wesley Beary\napi&heroku.com"
+  },
+  "references": []
+}

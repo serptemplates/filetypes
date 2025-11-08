@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "rdf+xml",
+  "full": "application/rdf+xml",
+  "extensions": [
+    "rdf",
+    "owl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/rdf+xml",
+    "encoding_considerations": "Same as charset parameter of application/xml, defined in RFC\n   3023 [4].",
+    "security_considerations": "See \"Security Considerations\" (Section 6).",
+    "interoperability_considerations": "It is RECOMMENDED that RDF documents follow the newer RDF/XML\n   Syntax Grammar [1] as opposed to the older RDF Model and Syntax\n   specification [7].\n\n   RDF is intended to allow common information to be exchanged\n   between disparate applications.  A basis for building common\n   understanding is provided by a formal semantics [3], and\n   applications that use RDF should do so in ways that are\n   consistent with this.",
+    "additional_information": "Magic number(s): none\n\n      Although no byte sequences can be counted on to consistently\n      identify RDF, RDF documents will have the sequence\n      \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" to identify\n      the RDF namespace. This will usually be towards the top of\n      the document.\n\nFile extension(s): .rdf\n\nMacintosh File Type Code(s): \"rdf \"",
+    "intended_usage": "common",
+    "template_text": "(RFC 3870 published September 2004, subtype last updated September 2004)\n\nMIME media type name: application\n\nMIME subtype name: rdf+xml\n\nRequired parameters: none\n\nOptional parameters: charset\n\n   Same as charset parameter of application/xml, defined in RFC\n   3023 [4].\n\nEncoding considerations:\n\n   Same as charset parameter of application/xml, defined in RFC\n   3023 [4].\n\nSecurity considerations:\n\n   See \"Security Considerations\" (Section 6).\n\nInteroperability considerations:\n\n   It is RECOMMENDED that RDF documents follow the newer RDF/XML\n   Syntax Grammar [1] as opposed to the older RDF Model and Syntax\n   specification [7].\n\n   RDF is intended to allow common information to be exchanged\n   between disparate applications.  A basis for building common\n   understanding is provided by a formal semantics [3], and\n   applications that use RDF should do so in ways that are\n   consistent with this.\n\nPublished specification:\n\n   see RDF/XML Syntax Grammar [1] and RDF: Concepts and Abstract\n   Syntax [2] and the older RDF Model and Syntax [7]\n\nApplications which use this media type:\n\n   RDF is device-, platform-, and vendor-neutral and is supported\n   by a range of Web user agents and authoring tools.\n\nAdditional information:\n\n   Magic number(s): none\n\n      Although no byte sequences can be counted on to consistently\n      identify RDF, RDF documents will have the sequence\n      \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" to identify\n      the RDF namespace. This will usually be towards the top of\n      the document.\n\nFile extension(s): .rdf\n\nMacintosh File Type Code(s): \"rdf \"\n\nFor further information:\n\n   Dan Brickley <danbri&w3.org>\n\n   RDF Interest Group <www-rdf-interest&w3.org>\n\n   More information may be found on the RDF website:\n\n   <http://www.w3.org/RDF/>\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n\n   The RDF specification is a work product of the World Wide Web\n   Consortium.  The W3C and the W3C RDF Core Working Group have\n   change control over the specification.\n"
+  },
+  "references": []
+}

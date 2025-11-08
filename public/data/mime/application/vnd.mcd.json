@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.mcd",
+  "full": "application/vnd.mcd",
+  "extensions": [
+    "mcd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mcd",
+    "template_text": "\n\n\nName : Tadashi Gotoh\n\nE-mail : tgotoh&cadamsystems.co.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.mcd\n\nRequired parameters : None\n\nOptional parameters : \nNone\n\nEncoding considerations : \nMCD data contains binary data only.\nAlmost all data is in internal format.\n\nSecurity considerations : \nMCD data contains no executable and macro data.\nThe specification cannot include the executable code in this format.\nThere is no risk to destroy the client machine with executing the\ndata.\n\n\nInteroperability considerations : \nThe purpose of MCD is to exchange drawing data between persons.\nIt is expected that anyone using this data will have an Application \n(Micro CADAM Helix D&D)\n\nPublished specification : \nNothing\n\n\nApplications which use this media : \nApplication which use this media type is Micro CADAM Helix D&D.\nThis application is PC CAD (Computer Aided Design) for mainly\nMechanical Industry.\nFurther information is including the following web site (Japanese);\n http://www.cadamsystems.co.jp/\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : MCD\n3. Macintosh file type code : N/A\n\n\nPerson to contact for further information :\n\n1. Name : Tadashi Gotoh\n2. E-mail : tgotoh&cadamsystems.co.jp\n\nIntended usage : Common \n\n\nAuthor/Change controller : Name:     Tadashi Gotoh\nCompany:  CADAM SYSTEMS COMPANY, INC.\nSection:  Technical Planning \nAddress:  Estage Ohsaki 5F, 3-5-2, Ohsaki,\n          Shinagawa-Ku, Tokyo, Japan, 141-0032 \n\n\n\n\n\n"
+  },
+  "references": []
+}

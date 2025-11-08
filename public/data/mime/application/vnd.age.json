@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "vnd.age",
+  "full": "application/vnd.age",
+  "extensions": [
+    "age"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.age",
+    "encoding_considerations": "Despite its textual header, the format is binary. Applications \n   wishing to encode a file as ASCII may use the specified ASCII \n   armor and the \"armored\" parameter.\n\nSecurity considerations: This format is designed to provide strong \n   integrity and confidentiality for the encrypted payload, but does \n   not necessarily provide authentication of the sender or anonymity \n   for the recipient.\n\n   Correct implementation of the cryptographic primitives and system \n   are required to protect the integrity and confidentiality of the \n   payload.\n\n   The standard format does not contain active or executable content, \n   links to external material, or employ compression. However, the \n   standard can be extended through the use of custom recipient \n   types, whose content is arbitrary.\n\n   The payload contents are opaque to the format and arbitrary.\n\nInteroperability considerations: Implementations of the same major \n   format version are expected to be interoperable across platforms \n   and architectures. The reference implementation provides backwards \n   compatibility guarantees.\n\n   Different implementations may implement different or custom \n   recipient types, on the availability of which depends \n   interoperability.",
+    "security_considerations": "integrity and confidentiality for the encrypted payload, but does \n   not necessarily provide authentication of the sender or anonymity \n   for the recipient.\n\n   Correct implementation of the cryptographic primitives and system \n   are required to protect the integrity and confidentiality of the \n   payload.\n\n   The standard format does not contain active or executable content, \n   links to external material, or employ compression. However, the \n   standard can be extended through the use of custom recipient \n   types, whose content is arbitrary.\n\n   The payload contents are opaque to the format and arbitrary.\n\nInteroperability considerations: Implementations of the same major \n   format version are expected to be interoperable across platforms \n   and architectures. The reference implementation provides backwards \n   compatibility guarantees.\n\n   Different implementations may implement different or custom \n   recipient types, on the availability of which depends \n   interoperability.",
+    "interoperability_considerations": "format version are expected to be interoperable across platforms \n   and architectures. The reference implementation provides backwards \n   compatibility guarantees.\n\n   Different implementations may implement different or custom \n   recipient types, on the availability of which depends \n   interoperability.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 61 67 65 2d 65 6e 63 72 79 70 74 69 6f 6e 2e \n      6f 72 67\n   3. File extension(s): .age\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2021-10-05, last updated 2021-10-05)\n\nMedia type name: application\n\nMedia subtype name: vnd.age\n\nRequired parameters: None\n\nOptional parameters: The optional parameter \"armored\", without value, \n   indicates the file is encoded in 7-bit ASCII armor, a stricter \n   subset of RFC 7468 PEM with type \"AGE ENCRYPTED FILE\".\n\nEncoding considerations: binary\n\n   Despite its textual header, the format is binary. Applications \n   wishing to encode a file as ASCII may use the specified ASCII \n   armor and the \"armored\" parameter.\n\nSecurity considerations: This format is designed to provide strong \n   integrity and confidentiality for the encrypted payload, but does \n   not necessarily provide authentication of the sender or anonymity \n   for the recipient.\n\n   Correct implementation of the cryptographic primitives and system \n   are required to protect the integrity and confidentiality of the \n   payload.\n\n   The standard format does not contain active or executable content, \n   links to external material, or employ compression. However, the \n   standard can be extended through the use of custom recipient \n   types, whose content is arbitrary.\n\n   The payload contents are opaque to the format and arbitrary.\n\nInteroperability considerations: Implementations of the same major \n   format version are expected to be interoperable across platforms \n   and architectures. The reference implementation provides backwards \n   compatibility guarantees.\n\n   Different implementations may implement different or custom \n   recipient types, on the availability of which depends \n   interoperability.\n\nPublished specification:\n\n   https://age-encryption.org/v1\n\nApplications which use this media: This format can be used both by \n   dedicated file encryption applications, as well as by other \n   applications with a need for file encryption.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 61 67 65 2d 65 6e 63 72 79 70 74 69 6f 6e 2e \n      6f 72 67\n   3. File extension(s): .age\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: Filippo Valsorda\n   2. Email: age&filippo.io\n\nIntended usage: Common\n\n   This is a file encryption format that provides integrity and \n   confidentiality for its payload. Asymmetric encryption, \n   passphrase-based, and custom recipient types are supported.\n\nAuthor/Change controller: Filippo Valsorda <age&filippo.io>"
+  },
+  "references": []
+}

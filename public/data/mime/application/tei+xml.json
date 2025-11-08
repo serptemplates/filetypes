@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "tei+xml",
+  "full": "application/tei+xml",
+  "extensions": [
+    "tei",
+    "teicorpus"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/tei+xml",
+    "encoding_considerations": "Identical to those for 'application/xml'.  See RFC 3023\n   [RFC3023], Section 3.2.",
+    "security_considerations": "See Security Considerations (Section 4) in this specification.",
+    "interoperability_considerations": "TEI documents are often given the extension '.xml', which is\n   not uncommon for other XML document formats.",
+    "additional_information": "Magic number(s):\n\n      There is no single initial octet sequence that is always\n      present in TEI documents.\n\n   file extension(s):\n\n      Common extensions are '.tei', '.teiCorpus' and '.odd'.  See\n      Recognizing TEI files (Section 2) in this specification.\n\n   Macintosh File Type Code(s)\n\n      TEXT\n\n   Object Identifier(s) or OID(s)\n\n      Not applicable",
+    "template_text": "(RFC 6129 published February 2011, subtype last updated February 2011)\n\nMIME media type name: application\n\nMIME subtype name: tei+xml\n\nRequired parameters: None\n\nOptional parameters: charset\n\n   the parameter has identical semantics to the charset parameter\n   of the \"application/xml\" media type as specified in RFC 3023\n   [RFC3023].\n\nEncoding considerations:\n\n   Identical to those for 'application/xml'.  See RFC 3023\n   [RFC3023], Section 3.2.\n\nSecurity considerations:\n\n   See Security Considerations (Section 4) in this specification.\n\nInteroperability considerations:\n\n   TEI documents are often given the extension '.xml', which is\n   not uncommon for other XML document formats.\n\nPublished specification:\n\n   This media type registration is for TEI documents [TEI] as\n   described here.  TEI syntax is defined in a schema [TEIschema].\n\nApplications which use this media type:\n\n   There are currently no known applications using the media type\n   'application/tei+xml'.\n\nAdditional information:\n\n   Magic number(s):\n\n      There is no single initial octet sequence that is always\n      present in TEI documents.\n\n   file extension(s):\n\n      Common extensions are '.tei', '.teiCorpus' and '.odd'.  See\n      Recognizing TEI files (Section 2) in this specification.\n\n   Macintosh File Type Code(s)\n\n      TEXT\n\n   Object Identifier(s) or OID(s)\n\n      Not applicable"
+  },
+  "references": []
+}

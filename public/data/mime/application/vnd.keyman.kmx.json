@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.keyman.kmx",
+  "full": "application/vnd.keyman.kmx",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.keyman.kmx",
+    "encoding_considerations": "Security considerations: Does not contain executable content. Application must validate that all data fields are within specification and reject invalid content.\n\nInteroperability considerations: The file format with dwVersion lower than VERSION_50 is not documented and not supported by any current version of Keyman; do not rely on any fields other than COMP_KEYBOARD.dwIdentifier and COMP_KEYBOARD.dwFileVersion for these file versions. VERSION_160 adds support for KMX+ data block, which can only be read by Keyman 16.0 or later versions. All other changes relate only to data stored in the file.\n\nPublished specification: https://github.com/keymanapp/keyman/blob/master/docs/file-formats/kmx-file-format.md\n\nApplications which use this media: This format is produced by Keyman Developer keyboard build tools, and consumed by Keyman keyboard software. (https://keyman.com)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "security_considerations": "Interoperability considerations: The file format with dwVersion lower than VERSION_50 is not documented and not supported by any current version of Keyman; do not rely on any fields other than COMP_KEYBOARD.dwIdentifier and COMP_KEYBOARD.dwFileVersion for these file versions. VERSION_160 adds support for KMX+ data block, which can only be read by Keyman 16.0 or later versions. All other changes relate only to data stored in the file.\n\nPublished specification: https://github.com/keymanapp/keyman/blob/master/docs/file-formats/kmx-file-format.md\n\nApplications which use this media: This format is produced by Keyman Developer keyboard build tools, and consumed by Keyman keyboard software. (https://keyman.com)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "Published specification: https://github.com/keymanapp/keyman/blob/master/docs/file-formats/kmx-file-format.md\n\nApplications which use this media: This format is produced by Keyman Developer keyboard build tools, and consumed by Keyman keyboard software. (https://keyman.com)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): At byte offset zero, 4 octets, \"KXTS\"\n3. File extension(s): .kmx\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-09-30, last updated 2024-09-30)\n\nMedia type name: application\n\nMedia subtype name: vnd.keyman.kmx\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: Does not contain executable content. Application must validate that all data fields are within specification and reject invalid content.\n\nInteroperability considerations: The file format with dwVersion lower than VERSION_50 is not documented and not supported by any current version of Keyman; do not rely on any fields other than COMP_KEYBOARD.dwIdentifier and COMP_KEYBOARD.dwFileVersion for these file versions. VERSION_160 adds support for KMX+ data block, which can only be read by Keyman 16.0 or later versions. All other changes relate only to data stored in the file.\n\nPublished specification: https://github.com/keymanapp/keyman/blob/master/docs/file-formats/kmx-file-format.md\n\nApplications which use this media: This format is produced by Keyman Developer keyboard build tools, and consumed by Keyman keyboard software. (https://keyman.com)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): At byte offset zero, 4 octets, \"KXTS\"\n3. File extension(s): .kmx\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n1. Name: Marc Durdin\n2. Email: marc&keyman.com\n\nIntended usage: COMMON\n\nAuthor/Change controller: Marc Durdin, marc&keyman.com"
+  },
+  "references": []
+}

@@ -1,0 +1,48 @@
+{
+  "type": "application",
+  "subtype": "reputon+json",
+  "full": "application/reputon+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/reputon+json",
+    "type_name": "application",
+    "subtype_name": "reputon+json",
+    "encoding_considerations": "to maintain readability when viewed by non-MIME mail readers.\n\nSecurity considerations:  See Section 8 of [RFC7071].\n\nInteroperability considerations:  Implementers may encounter \"app\"\n      values, attribute/value pairs, or response set items that they do\n      not support, which are to be ignored.\n\nPublished specification:  [RFC7071]\n\nApplications that use this media type:  Any application that wishes\n      to query a service that provides reputation data using the form\n      defined in [RFC7072].  The example application is one that\n      provides reputation data about DNS domain names and other\n      identifiers found in email messages.\n\nFragment identifier considerations:  N/A\n\nAdditional information:  The value of the \"app\" parameter is\n      registered with IANA.\n\n      Deprecated alias names for this type:  N/A\n\n      Magic number(s):  N/A\n\n      File extension(s):  N/A\n\n      Macintosh file type code(s):  N/A",
+    "security_considerations": "Interoperability considerations:  Implementers may encounter \"app\"\n      values, attribute/value pairs, or response set items that they do\n      not support, which are to be ignored.\n\nPublished specification:  [RFC7071]\n\nApplications that use this media type:  Any application that wishes\n      to query a service that provides reputation data using the form\n      defined in [RFC7072].  The example application is one that\n      provides reputation data about DNS domain names and other\n      identifiers found in email messages.\n\nFragment identifier considerations:  N/A\n\nAdditional information:  The value of the \"app\" parameter is\n      registered with IANA.\n\n      Deprecated alias names for this type:  N/A\n\n      Magic number(s):  N/A\n\n      File extension(s):  N/A\n\n      Macintosh file type code(s):  N/A",
+    "interoperability_considerations": "values, attribute/value pairs, or response set items that they do\n      not support, which are to be ignored.\n\nPublished specification:  [RFC7071]\n\nApplications that use this media type:  Any application that wishes\n      to query a service that provides reputation data using the form\n      defined in [RFC7072].  The example application is one that\n      provides reputation data about DNS domain names and other\n      identifiers found in email messages.\n\nFragment identifier considerations:  N/A\n\nAdditional information:  The value of the \"app\" parameter is\n      registered with IANA.\n\n      Deprecated alias names for this type:  N/A\n\n      Magic number(s):  N/A\n\n      File extension(s):  N/A\n\n      Macintosh file type code(s):  N/A",
+    "applications": "to query a service that provides reputation data using the form\n      defined in [RFC7072].  The example application is one that\n      provides reputation data about DNS domain names and other\n      identifiers found in email messages.\n\nFragment identifier considerations:  N/A\n\nAdditional information:  The value of the \"app\" parameter is\n      registered with IANA.\n\n      Deprecated alias names for this type:  N/A\n\n      Magic number(s):  N/A\n\n      File extension(s):  N/A\n\n      Macintosh file type code(s):  N/A",
+    "additional_information": "registered with IANA.\n\n      Deprecated alias names for this type:  N/A\n\n      Magic number(s):  N/A\n\n      File extension(s):  N/A\n\n      Macintosh file type code(s):  N/A",
+    "intended_usage": "common",
+    "change_controller": "IESG",
+    "template_text": "(registered 2013-10-01, last updated 2013-11-26)\n\nType name:  application\n\nSubtype name:  reputon+json\n\nRequired parameters:  none\n\nOptional parameters:  none\n\nEncoding considerations:  \"7bit\" encoding is sufficient and is used\n      to maintain readability when viewed by non-MIME mail readers.\n\nSecurity considerations:  See Section 8 of [RFC7071].\n\nInteroperability considerations:  Implementers may encounter \"app\"\n      values, attribute/value pairs, or response set items that they do\n      not support, which are to be ignored.\n\nPublished specification:  [RFC7071]\n\nApplications that use this media type:  Any application that wishes\n      to query a service that provides reputation data using the form\n      defined in [RFC7072].  The example application is one that\n      provides reputation data about DNS domain names and other\n      identifiers found in email messages.\n\nFragment identifier considerations:  N/A\n\nAdditional information:  The value of the \"app\" parameter is\n      registered with IANA.\n\n      Deprecated alias names for this type:  N/A\n\n      Magic number(s):  N/A\n\n      File extension(s):  N/A\n\n      Macintosh file type code(s):  N/A\n\nPerson and email address to contact for further information:\n\n      Murray S. Kucherawy <superuser&gmail.com>\n\nIntended usage:  COMMON\n\n   Restrictions on usage:  N/A\n\nAuthor:\n      Nathaniel Borenstein\n      Murray S. Kucherawy\n\nChange controller:  IESG\n\nProvisional registration?:  no"
+  },
+  "references": [
+    {
+      "title": "RFC 7072",
+      "url": "https://www.rfc-editor.org/rfc/rfc7072.html",
+      "kind": "RFC"
+    }
+  ]
+}

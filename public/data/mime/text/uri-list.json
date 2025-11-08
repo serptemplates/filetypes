@@ -1,0 +1,37 @@
+{
+  "type": "text",
+  "subtype": "uri-list",
+  "full": "text/uri-list",
+  "extensions": [
+    "uri",
+    "uris",
+    "urls"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/uri-list",
+    "template_text": "(per RFC2483)\n\nName : Ron Daniel Jr.\n\nE-mail : rdaniel&lanl.gov\n\nMIME media type name : Text\n\nMIME subtype name : IETF Tree - uri-list\n\nRequired parameters : none\n\nOptional parameters : charset\n\nCurrently, URIs can be represented using US-ASCII. However, there\nare many non-standard URIs which use special character sets.\nDiscussion of how to best achieve internationalization of URIs is\nunderway. This registration will be updated with a discussion of the\nURI charsets once that discussion has concluded.\n\nEncoding considerations : Some transfer protocols, such as SMTP,\nplace limits on the length of lines. Very long URIs might exceed\nthose limits. Systems must therefore be prepared to use a suitable\ncontent transfer encoding. This is anticipated to be a rare\noccurance.\n\nSecurity considerations : Client software should be aware of the\nsecurity considerations of URIs.  For example, accessing some URIs\ncan result in sending a death threat to a head of state, frequently\nprompting a visit from the relevant protective service.  Accessing\nother URIs may result in financial obligations, or access to\nresources considered inappropriate by one's employer.\n\nWhile the legitimate provider of a uri-list could exploit these\nproperties for good or ill, it is more likely that uri-lists will be\nfalsified in order to exploit such characteristics of URIs.\n\nAdditionally, the lookup and reverse lookup potential of the uri-\nlist may be attractive to traffic analysts. URI lists may also\nreveal confidential information, such as the location of sensitive\ninformation.\n\nBecause of these considerations, external confidentiality measures\nshould be available to protect uri-list responses when appropriate.\n\nInteroperability considerations : none known\n\nPublished specification : Uniform Resource Locators (URLs) and\nUniform Resource Names (URNs) are two instances of the more general\nclass of identifiers known as Uniform Resource Identifiers (URIs).\nURN resolution methods frequently wish to return lists of URLs for a\nresource so that fault-tolerance and load balancing can be achieved.\nThe text/uri-list format is intended to be a very simple format for\ncommunicating such lists of URLs (and URNs) in a form suitable for\nautomatic processing.\n\nThe format of text/uri-list resources is:\n\n1) Any lines beginning with the '#' character are comment lines\n    and are ignored during processing. (Note that URIs may contain\n    the '#' character, so it is only a comment character when it is\n    the first character on a line.)\n\n2) The remaining non-comment lines shall be URIs (URNs or URLs),\n    encoded according to the URL or URN specifications (RFC2141,\n    RFC1738 and RFC2396). Each URI shall appear on one and only one\n    line. Very long URIs are not broken in the text/uri-list format.\n    Content-transfer-encodings may be used to enforce line length\n    limitations.\n\n3) As for all text/* formats, lines are terminated with a CRLF pair.\n\nIn applications where one URI has been mapped to a list of URIs, the\nfirst line of the text/uri-list response SHOULD be a comment giving\nthe original URI.\n\nAn example of the format is given below:\n\n  # urn:isbn:0-201-08372-8\n  http://www.huh.org/books/foo.html\n  http://www.huh.org/books/foo.pdf\n  ftp://ftp.foo.org/books/foo.txt\n\nApplications which use this media : URN resolvers are the initial\napplications. Web clients and proxies are applications that are\nlikely to support this format in the future.\n\nAdditional information :\n\n1. Magic number(s) : none at this time\n2. File extension(s) : .uris or .uri recommended\n3. Macintosh file type code : URIs recommended\n\nThis media type is the product of the URN working group of the IETF.\n\nPerson to contact for further information :\n\n1. Name : Ron Daniel Jr.\n2. E-mail : rdaniel&lanl.gov\n\nIntended usage : Limited Use\nThe text/uri-list media type is intended for use in applications\nwhich utilize URIs for replicated resources.\n\nAuthor/Change controller : Ron Daniel Jr.\nLos Alamos National Laboratory\nrdaniel&lanl.gov\n"
+  },
+  "references": []
+}

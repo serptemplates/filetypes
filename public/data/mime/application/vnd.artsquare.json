@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.artsquare",
+  "full": "application/vnd.artsquare",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.artsquare",
+    "template_text": "(registered 2014-08-01, last updated 2014-08-01)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.artsquare\n\nRequired parameters : n/a\n\nOptional parameters :\n\nfields\nembed\n\nEach of these parameters consists of a comma-separated list of field\nidentifiers. A field identifier is a string beginning with a letter and consisting of any combination of letters, numbers, and the underscore (_).\n\nIf neither parameter is present, the default set of fields will be included.\n\nIf the \"fields\" parameter is present, only the fields requested will be included.\n\nIf the \"embed\" parameter is present, the object(s) representing the contents of each listed field will be embedded directly rather than provided as a link. \n\nEncoding considerations : 8bit\n\nSecurity considerations :\nThe media will be encoded as UTF-8 JSON, and the discussion in RFC 4627\napplies. Beyond possible direct JavaScript evaluation, the content is\nnon-executable application data, and no known security issues pertain to\nit specifically. Appropriate access controls must be applied at the\napplication level.\n\nThis format itself provides no confidentiality or integrity. All uses\ncontaining sensitive information (such as personal details) MUST use\nappropriate transport and storage security, particularly HTTPS. As a best\npractice, all transmissions SHOULD use TLS or comparable transport security.\n\nInteroperability considerations :\nThe media will be encoded as UTF-8 JSON with HAL-formatted link embedding,\nand it is expected that standard JSON and HATEOAS tooling (such as\nTraverson) will be able to traverse it. The content semantics are specific\nto the ArtSquare Web application.\n\nPublished specification :\nThe documentation for the protocol and a publicly-available reference\nlibrary written in Java will be available at\nhttps://github.com/chrylis/artsquare-gallery-api.\n\nApplications which use this media :\nArtSquare (https://www.artsquare.com)\n\nFragment identifier considerations : n/a\n\nRestrictions on usage : n/a\n\nAdditional information :\n\n1. Deprecated alias names for this type : n/a\n2. Magic number(s) : n/a\n3. File extension(s) : n/a\n4. Macintosh file type code : n/a\n5. Object Identifiers: n/a\n\nPerson to contact for further information :\n\n1. Name : Christopher Smith\n2. Email : christopher.smith+iana&artsquare.com\n\nIntended usage : Common\nDocuments using this media type are expected to be specific to the\nArtSquare application.\n\nAuthor/Change controller : Christopher Smith"
+  },
+  "references": []
+}

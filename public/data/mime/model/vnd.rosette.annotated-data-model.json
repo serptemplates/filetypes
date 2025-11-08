@@ -1,0 +1,44 @@
+{
+  "type": "model",
+  "subtype": "vnd.rosette.annotated-data-model",
+  "full": "model/vnd.rosette.annotated-data-model",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.rosette.annotated-data-model",
+    "encoding_considerations": "for format=smile (or cbor or whatever) it will be binary.",
+    "security_considerations": "This format is primarily intended for public, low-value information,\nsuch as news articles.\nIn the event that there is a need to apply the format to information that needs\nprivacy or integrity, the application should use TLS to protect the connection\nto the server to protect privacy and/or validate the identity of the\nclient and/or server.\n\nThis is passive content; a representation of text and associated annotations\nexpressed in json. Nothing in it is intended to be interpreted\nactively (e.g. to be 'executed').\n\nJson representation has an intrinsic integrity in the sense that\na document is either well-formed json or it is not. There is always some risk of\ndenial of service by sheer size; in this case, there are no internal\nlinks that could be arranged circularly in an attempt to trigger\ndenial of service.\n\nAn application can avoid these risks of resource consumption, and any\nassociated privacy risks, by using a high-quality JSON parser library to parse\nthe content, and then by taking sensible precautions when iterating\nover the content.",
+    "interoperability_considerations": "The underlying data format(s) here are well-standardized JSON formats, widely available.",
+    "additional_information": "1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): None\n4. Macintosh file type code: None\n5. Object Identifiers: None",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2016-01-27, last updated 2016-01-27)\n\nName: Benson Margulies\nEmail: benson&basistech.com\n\nMedia type name: model\nMedia subtype name: vnd.rosette.annotated-data-model\n\nRequired parameters: format - this indicates whether the content is json, smile, or some other representation. The value format is a simple string token. \n\nOptional parameters:\nThere are no optional parameters.\n\nEncoding considerations: binary\nfor format=smile (or cbor or whatever) it will be binary.\n\nSecurity considerations:\nThis format is primarily intended for public, low-value information,\nsuch as news articles.\nIn the event that there is a need to apply the format to information that needs\nprivacy or integrity, the application should use TLS to protect the connection\nto the server to protect privacy and/or validate the identity of the\nclient and/or server.\n\nThis is passive content; a representation of text and associated annotations\nexpressed in json. Nothing in it is intended to be interpreted\nactively (e.g. to be 'executed').\n\nJson representation has an intrinsic integrity in the sense that\na document is either well-formed json or it is not. There is always some risk of\ndenial of service by sheer size; in this case, there are no internal\nlinks that could be arranged circularly in an attempt to trigger\ndenial of service.\n\nAn application can avoid these risks of resource consumption, and any\nassociated privacy risks, by using a high-quality JSON parser library to parse\nthe content, and then by taking sensible precautions when iterating\nover the content.\n\nInteroperability considerations:\nThe underlying data format(s) here are well-standardized JSON formats, widely available.\n\nPublished specification:\nThe specification is not currently available, except insofar as the\njson (rfc7159) and smile (http://wiki.fasterxml.com/SmileFormatSpec)\nrepresentations are available.\n\nApplications which use this media:\nNLP / Text Analytic applications that deal with annotated text (part of speech tags, etc).\n\nFragment identifier considerations:\nNone.\n\nRestrictions on usage:\nNone.\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): None\n4. Macintosh file type code: None\n5. Object Identifiers: None\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Benson Margulies\n2. Email: benson&basistech.com\n\nIntended usage: Limited Use\nNot that many things do text analytics.\n\nAuthor/Change controller: The same person, or N/A, as you like.\n#"
+  },
+  "references": [
+    {
+      "title": "RFC 7159",
+      "url": "https://www.rfc-editor.org/rfc/rfc7159.html",
+      "kind": "RFC"
+    }
+  ]
+}

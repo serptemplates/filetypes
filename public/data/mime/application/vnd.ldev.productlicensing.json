@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.ldev.productlicensing",
+  "full": "application/vnd.ldev.productlicensing",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ldev.productlicensing",
+    "encoding_considerations": "Binary-encoded data structure, consistent with Golang encoding/gob \n   package",
+    "security_considerations": "1: The transmission of proposed \n   application/vnd.ldev.productlicensing media type does not contain \n   active/executable payload; it is a data structure blob formatted \n   consistently with Golang encoding/gob package \n   (https://pkg.go.dev/encoding/gob). All compliant clients \n   (L.development Product Cloud server and client applications made \n   by L.development) make an effort to unserialize this structure \n   safely or throw an error on corrupted input. Applications will \n   never allow corrupted input to be accessed by any subroutine or \n   even stored into program memory.\n\n   2: In order to prevent tampering and/or eavesdropping, the \n   protocol requires a secure transport (TLS with currently supported \n   version as a transport for HTTPS is a hard requirement).\n\n   3: Requested media is passed as either a request body in HTTPS \n   POST requests, or returned as a response to a HTTPS POST request. \n   Compliant clients should never allow unencrypted HTTP as a \n   transport.\n\n   4: The exact generic format specification (without references to \n   actual fields used in this implementation) is given in the \n   following page: https://pkg.go.dev/encoding/gob\n\n   5: No external content nor links are necessary to interpret data \n   by either the server or a compliant client\n\nInteroperability considerations: This is a format specified for usage \n   within self-hosted instances of products made by L.development, \n   and is not expected for general use by other vendors.\n\nPublished specification: N/A",
+    "interoperability_considerations": "within self-hosted instances of products made by L.development, \n   and is not expected for general use by other vendors.\n\nPublished specification: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2023-12-21, last updated 2023-12-21)\n\nMedia type name: application\n\nMedia subtype name: vnd.ldev.productlicensing\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nBinary-encoded data structure, consistent with Golang encoding/gob \n   package\n\nSecurity considerations: \n\n   1: The transmission of proposed \n   application/vnd.ldev.productlicensing media type does not contain \n   active/executable payload; it is a data structure blob formatted \n   consistently with Golang encoding/gob package \n   (https://pkg.go.dev/encoding/gob). All compliant clients \n   (L.development Product Cloud server and client applications made \n   by L.development) make an effort to unserialize this structure \n   safely or throw an error on corrupted input. Applications will \n   never allow corrupted input to be accessed by any subroutine or \n   even stored into program memory.\n\n   2: In order to prevent tampering and/or eavesdropping, the \n   protocol requires a secure transport (TLS with currently supported \n   version as a transport for HTTPS is a hard requirement).\n\n   3: Requested media is passed as either a request body in HTTPS \n   POST requests, or returned as a response to a HTTPS POST request. \n   Compliant clients should never allow unencrypted HTTP as a \n   transport.\n\n   4: The exact generic format specification (without references to \n   actual fields used in this implementation) is given in the \n   following page: https://pkg.go.dev/encoding/gob\n\n   5: No external content nor links are necessary to interpret data \n   by either the server or a compliant client\n\nInteroperability considerations: This is a format specified for usage \n   within self-hosted instances of products made by L.development, \n   and is not expected for general use by other vendors.\n\nPublished specification: N/A\n\nApplications which use this media: \n\n   - L.development Product Cloud (the licensing server cluster used \n     to authorize client requests)\n\n   - Products of L.development, notably:\n\n     - LajtCMS\n     - Zespolik\n     - Bileter\n     - ŻakNET\n\n   - Any other product based on the L.Framework, with or without a \n     service daemon, intended for self-hosting or installation on a \n     customer-owned infrastructure\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: Documents of this media type are designed to \n   be interchanged directly between clients and the server, such \n   interchange MUST use a secure transport. Clients MAY cache a \n   server response for a certain time in-memory, but the exchange \n   SHOULD be repeated when software integrity requirements state so, \n   such as after reconfiguring a client. Intermediary servers and \n   proxies SHOULD NOT cache server responses using this media type.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: L.development Polska\n   2. Email: kontakt&ldev.pl\n\nIntended usage: LIMITED USE\n\n   The proposed type is used only over HTTP with a REQUIRED secure \n   transport (TLS) with OPTIONAL client-side temporary storage.    \n\n   Network transmission of this media type SHOULD NOT use other \n   transports, and MUST NOT use any unencrypted transports.\n\nAuthor/Change controller: L.development Polska"
+  },
+  "references": []
+}

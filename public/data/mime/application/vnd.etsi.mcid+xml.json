@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.mcid+xml",
+  "full": "application/vnd.etsi.mcid+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.mcid+xml",
+    "encoding_considerations": "This media type may require encoding on transports not capable of handling 8 bit\ntext.",
+    "security_considerations": "The XML contains information that is exchanged between networkentities. Security\nmechanisms at the transport\nlayer are needed to provide integrity of the content.\n\nThere is no Active or Executable Content included in the media type mentioned.\nThe ETSI TS 183 016 includes only textual XML to Control Services.\n\nIf the Signalling and the XML media contained therein is security protected then\nno explicit protection of the media privacy and integrity is required.",
+    "interoperability_considerations": "Interoperability is assessed not to be an issue, as the MIME type is in\nthe vendor tree. XML definitions are assessed to solve different\ncharacter set and byte ordering issues. Message format does have version\nnumber and backwards compatibility will be preserved in the possible\nformat evolution.",
+    "additional_information": "1. Magic number(s): none\n2. File extension(s): none\n3. Macintosh file type code: none\n4. Object Identifiers: none\n\nMCID",
+    "intended_usage": "common",
+    "template_text": "(last updated 2009-03-30)\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.etsi.mcid+xml\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: 8bit\nThis media type may require encoding on transports not capable of handling 8 bit\ntext.\n\nSecurity considerations:\nThe XML contains information that is exchanged between networkentities. Security\nmechanisms at the transport\nlayer are needed to provide integrity of the content.\n\nThere is no Active or Executable Content included in the media type mentioned.\nThe ETSI TS 183 016 includes only textual XML to Control Services.\n\nIf the Signalling and the XML media contained therein is security protected then\nno explicit protection of the media privacy and integrity is required.\n\nInteroperability considerations:\nInteroperability is assessed not to be an issue, as the MIME type is in\nthe vendor tree. XML definitions are assessed to solve different\ncharacter set and byte ordering issues. Message format does have version\nnumber and backwards compatibility will be preserved in the possible\nformat evolution.\n\nPublished specification:\nETSI TS 183 016 v2.5.0 available at http://pda.etsi.org/pda/queryform.asp\n\nApplications which use this media:\nThe Malicious Call Communication Identification (MCID) service based on the\nstage one and two of ISDN Malicious Call Identification supplementary service\nwill store session related information independent of the service requested.\nWithin the Next Generation Network (NGN) the stage 3 description is specified\nusing the IP Multimedia Call Control Protocol based on Session Initiation\nProtocol (SIP) and Session Description Protocol (SDP).\nThe XML Schema is used for providing the MCID Request/Response and to invoke the\ntemporary mode of the MCID Service.\n\nAdditional information:\n\n1. Magic number(s): none\n2. File extension(s): none\n3. Macintosh file type code: none\n4. Object Identifiers: none\n\nMCID\n\nPerson to contact for further information:\n\n1. Name: Shicheng Hu\n2. Email: shicheng.hu&etsi.org\n\nIntended usage: Common\n\n\nAuthor/Change controller: sonia.compans&etsi.org\n\n(file created 2009-03-30)"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "mosskey-data",
+  "full": "application/mosskey-data",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/mosskey-data",
+    "template_text": "(RFC 1848 published October 1995, subtype last updated October 1995)\n\n(1)  MIME type name: application\n\n(2)  MIME subtype name: mosskey-data\n\n(3)  Required parameters: none\n\n(4)  Optional parameters: none\n\n(5)  Encoding considerations: quoted-printable is always sufficient.\n\n(6)  Security Considerations: none\n\nThe content of this body part corresponds to the following\nproduction.\n\n   <mosskeydata>   ::= <version>\n                       ( <publickeydata> / <certchain> / <crlchain> )\n\n   <version>       ::= \"Version:\" \"5\" CRLF\n\n   <publickeydata> ::= \"Key:\" \"PK\" \",\" <publickey> \",\"\n                       <id-subset> CRLF\n\n   <certchain>     ::= <cert> *( [ <crl> ] <cert> )\n\n   <crlchain>      ::= 1*( <crl> [ <cert> ] )\n\n   <cert>          ::= \"Certificate:\" <encbin> CRLF\n\n   <crl>           ::= \"CRL:\" <encbin> CRLF\n\nThis content type is used to transfer public keys, certificate\nchains, or Certificate Revocation List (CRL) chains.  The information\nin the body part is entirely independent of any other body part.\n(Note that the converse is not true: the validity of a protected body\npart cannot be determined without the proper public keys,\ncertificates, or current CRL information.)  As such, the\napplication/mosskey-data content type is an independent body part.\n\nThe <publickeydata> production contains exactly one public key.  It\nis used to bind a public key with its corresponding name form and key\nselector.  It is recommended that when responders are returning this\ninformation that the enclosing body part be digitally signed by the\nresponder in order to protect the information.  The <id-subset> token\nis defined in Section 4.2.4.\n\nThe <certchain> production contains one certificate chain.  A\ncertificate chain starts with the requested certificate and continues\nwith the certificates of subsequent issuers.  Each issuer certificate\nincluded must have issued the preceding certificate.  For each\nissuer, a CRL may be supplied.  A CRL in the chain belongs to the\nimmediately following issuer.  Therefore, it potentially contains the\nimmediately preceding certificate.\n\nThe <crlchain> production contains one certificate revocation list\nchain.  The CRLs in the chain begin with the requested CRL and\ncontinue with the CRLs of subsequent issuers.  The issuer of each CRL\nis presumed to have issued a certificate for the issuer of the\npreceding CRL.  For each CRL, the issuer's certificate may be\nsupplied.  A certificate in the chain must belong to the issuer of\nthe immediately preceding CRL.\n\nThe relationship between a certificate and an immediately preceding\nCRL is the same in both <certchain> and <crlchain>.  In a <certchain>\nthe CRLs are optional.  In a <crlchain> the certificates are\noptional.\n"
+  },
+  "references": []
+}

@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "efi",
+  "full": "application/efi",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/efi",
+    "type_name": "application",
+    "subtype_name": "efi",
+    "encoding_considerations": "Security considerations: EFI files contains native code that executes in the pre-boot environment at the firmware privilege. Extreme caution is advised.\n\nEFI files support digital signatures providing strong integrity protection using UEFI Secure Boot. Basic checksums are also supported.\n\nThe EFI format does not provide any confidentiality protection of its own and requires external means if that is required.\n\nThe EFI format does not use compression.\n\nEFI files allow for runtime generation of additional code.\n\nInteroperability considerations: EFI binaries follow the PE-COFF standard image format, and require a UEFI compliant firmware for proper execution. The EFI file format is also dependent on the target processor architecture.",
+    "security_considerations": "EFI files support digital signatures providing strong integrity protection using UEFI Secure Boot. Basic checksums are also supported.\n\nThe EFI format does not provide any confidentiality protection of its own and requires external means if that is required.\n\nThe EFI format does not use compression.\n\nEFI files allow for runtime generation of additional code.\n\nInteroperability considerations: EFI binaries follow the PE-COFF standard image format, and require a UEFI compliant firmware for proper execution. The EFI file format is also dependent on the target processor architecture.",
+    "applications": "Fragment identifier considerations: None\n\nAdditional information: None\n\nDeprecated alias names for this type:None\n\nMagic number(s): MZ\n- The first two octets are the ASCII Characters \"M\" and \"Z\" (\"MZ\" at offset 0)\n- $offset = (read 4-bytes from byte 60)\n- The ASCII string \"PE\\0\\0\" must be found at $offset\n- The value of the two bytes at $offset + 24 must be 0x010b or 0x020b\n\nFile extension(s): *.efi\n\nMacintosh file type code(s):",
+    "additional_information": "Deprecated alias names for this type:None\n\nMagic number(s): MZ\n- The first two octets are the ASCII Characters \"M\" and \"Z\" (\"MZ\" at offset 0)\n- $offset = (read 4-bytes from byte 60)\n- The ASCII string \"PE\\0\\0\" must be found at $offset\n- The value of the two bytes at $offset + 24 must be 0x010b or 0x020b\n\nFile extension(s): *.efi\n\nMacintosh file type code(s):",
+    "template_text": "(registered 2016-04-06, last updated 2016-04-06)\n\nType name: application\n\nSubtype name: efi\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: EFI files contains native code that executes in the pre-boot environment at the firmware privilege. Extreme caution is advised.\n\nEFI files support digital signatures providing strong integrity protection using UEFI Secure Boot. Basic checksums are also supported.\n\nThe EFI format does not provide any confidentiality protection of its own and requires external means if that is required.\n\nThe EFI format does not use compression.\n\nEFI files allow for runtime generation of additional code.\n\nInteroperability considerations: EFI binaries follow the PE-COFF standard image format, and require a UEFI compliant firmware for proper execution. The EFI file format is also dependent on the target processor architecture.\n\nPublished specification:\n\nhttp://www.microsoft.com/whdc/system/platform/firmware/PECOFF.mspx\n\nhttp://www.uefi.org/sites/default/files/resources/UEFI%20Spec%202_6.pdf\n\nApplications that use this media type: EFI compliant firmware, boot loaders, and network boot programs (NBPs) utilizing UEFI HTTP Boot.\n\nFragment identifier considerations: None\n\nAdditional information: None\n\nDeprecated alias names for this type:None\n\nMagic number(s): MZ\n- The first two octets are the ASCII Characters \"M\" and \"Z\" (\"MZ\" at offset 0)\n- $offset = (read 4-bytes from byte 60)\n- The ASCII string \"PE\\0\\0\" must be found at $offset\n- The value of the two bytes at $offset + 24 must be 0x010b or 0x020b\n\nFile extension(s): *.efi\n\nMacintosh file type code(s):\n\nPerson & email address to contact for further information:\n\nSamer El-Haj-Mahmoud , Samer.el-haj-mahmoud&hpe.com\nUEFI Forum , unst&uefi.org"
+  },
+  "references": []
+}

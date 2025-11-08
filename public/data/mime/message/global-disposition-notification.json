@@ -1,0 +1,44 @@
+{
+  "type": "message",
+  "subtype": "global-disposition-notification",
+  "full": "message/global-disposition-notification",
+  "extensions": [
+    "u8mdn"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/message/global-disposition-notification",
+    "type_name": "message",
+    "subtype_name": "global-disposition-notification",
+    "encoding_considerations": "notification attributes in the UTF-8 charset.  The 8-bit content\n   transfer encoding MUST be used with this content-type, unless it\n   is sent over a 7-bit transport environment, in which case quoted-\n   printable or base64 may be necessary.\n\nSecurity considerations:  See Section 7.\n\nInteroperability considerations:  This media type provides\n   functionality similar to the message/disposition-notification\n   content-type for email message disposition information.  Clients\n   of the previous format will need to be upgraded to interpret the\n   new format; however, the new media type makes it simple to\n   identify the difference.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  Email clients or servers that\n   support message disposition notification generation or parsing.",
+    "security_considerations": "Interoperability considerations:  This media type provides\n   functionality similar to the message/disposition-notification\n   content-type for email message disposition information.  Clients\n   of the previous format will need to be upgraded to interpret the\n   new format; however, the new media type makes it simple to\n   identify the difference.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  Email clients or servers that\n   support message disposition notification generation or parsing.",
+    "interoperability_considerations": "functionality similar to the message/disposition-notification\n   content-type for email message disposition information.  Clients\n   of the previous format will need to be upgraded to interpret the\n   new format; however, the new media type makes it simple to\n   identify the difference.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  Email clients or servers that\n   support message disposition notification generation or parsing.",
+    "applications": "support message disposition notification generation or parsing.",
+    "additional_information": "Magic number(s):  none\n\n   File extension(s):  The extension \".u8mdn\" is suggested.\n\n   Macintosh file type code(s):  A uniform type identifier (UTI) of\n      \"public.utf8-email-message-disposition-notification\" is\n      suggested.  This type conforms to \"public.utf8-plain-text\".\n\nPerson & email address to contact for further information:  See the\n   Authors' Addresses section of this document.\n\nIntended usage:  COMMON\n\nRestrictions on usage:  This is expected to be the second part of a\n   multipart/report.\n\nAuthor:  See the Authors' Addresses section of this document.\n\nChange controller:  IETF Standards Process",
+    "intended_usage": "common",
+    "change_controller": "IETF Standards Process",
+    "template_text": "(template updated by RFC6533; previous version included in RFC5337)\n\nType name:  message\n\nSubtype name:  global-disposition-notification\n\nRequired parameters:  none\n\nOptional parameters:  none\n\nEncoding considerations:  This media type contains disposition\n   notification attributes in the UTF-8 charset.  The 8-bit content\n   transfer encoding MUST be used with this content-type, unless it\n   is sent over a 7-bit transport environment, in which case quoted-\n   printable or base64 may be necessary.\n\nSecurity considerations:  See Section 7.\n\nInteroperability considerations:  This media type provides\n   functionality similar to the message/disposition-notification\n   content-type for email message disposition information.  Clients\n   of the previous format will need to be upgraded to interpret the\n   new format; however, the new media type makes it simple to\n   identify the difference.\n\nPublished specification:  RFC 6533\n\nApplications that use this media type:  Email clients or servers that\n   support message disposition notification generation or parsing.\n\nAdditional information:\n\n   Magic number(s):  none\n\n   File extension(s):  The extension \".u8mdn\" is suggested.\n\n   Macintosh file type code(s):  A uniform type identifier (UTI) of\n      \"public.utf8-email-message-disposition-notification\" is\n      suggested.  This type conforms to \"public.utf8-plain-text\".\n\nPerson & email address to contact for further information:  See the\n   Authors' Addresses section of this document.\n\nIntended usage:  COMMON\n\nRestrictions on usage:  This is expected to be the second part of a\n   multipart/report.\n\nAuthor:  See the Authors' Addresses section of this document.\n\nChange controller:  IETF Standards Process"
+  },
+  "references": []
+}

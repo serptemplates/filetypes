@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.ipld.car",
+  "full": "application/vnd.ipld.car",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ipld.car",
+    "encoding_considerations": "Security considerations: The media type inherits the security \n   considerations for application/octet-stream: contains no \n   executable code, provides no means for integrity protection or \n   data confidentiality.\n\n   When used in IPFS context, all processors should rigorously verify \n   data integrity based on expected CIDs of blocks included inside a \n   CAR. Unexpected or invalid blocks must be discarded.\n\n   The CAR format contains no internal means, beyond the IPLD block \n   formats and their CIDs, to verify or differentiate contents. Where \n   such a requirement exists, this must be performed externally, such \n   as creating a digest of the entire CAR.\n\n   <https://docs.ipfs.io/concepts/glossary/#cid>\n   <https://docs.ipfs.io/concepts/glossary/#block>\n   <https://docs.ipfs.io/concepts/glossary/#ipld>\n   <https://ipld.io/specs/transport/car/>\n\nInteroperability considerations: N/A",
+    "security_considerations": "considerations for application/octet-stream: contains no \n   executable code, provides no means for integrity protection or \n   data confidentiality.\n\n   When used in IPFS context, all processors should rigorously verify \n   data integrity based on expected CIDs of blocks included inside a \n   CAR. Unexpected or invalid blocks must be discarded.\n\n   The CAR format contains no internal means, beyond the IPLD block \n   formats and their CIDs, to verify or differentiate contents. Where \n   such a requirement exists, this must be performed externally, such \n   as creating a digest of the entire CAR.\n\n   <https://docs.ipfs.io/concepts/glossary/#cid>\n   <https://docs.ipfs.io/concepts/glossary/#block>\n   <https://docs.ipfs.io/concepts/glossary/#ipld>\n   <https://ipld.io/specs/transport/car/>\n\nInteroperability considerations: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): car\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-04-01, last updated 2024-02-08)\n\nMedia type name: application\n\nMedia subtype name: vnd.ipld.car\n\nRequired parameters: N/A\n\nOptional parameters:\n\n   version: indicates the version of the CAR specification\n\n   It can be used for content negotiation when dealing with clients \n   and servers that support multiple CAR versions. The value is a \n   single unsigned integer. Its range is the range of published CAR \n   versions <https://ipld.io/specs/transport/car/>. \n\n   As of this writing, available version numbers are: 1 and 2.\n\n   If this parameter is not specified by the client, the server is \n   free to return any version it deems fit. If a client cannot or \n   does not want to deal with that, it should explicitly specify a \n   version. Example: \"application/vnd.ipld.car;version=1\"\n\nEncoding considerations: binary\n\nSecurity considerations: The media type inherits the security \n   considerations for application/octet-stream: contains no \n   executable code, provides no means for integrity protection or \n   data confidentiality.\n\n   When used in IPFS context, all processors should rigorously verify \n   data integrity based on expected CIDs of blocks included inside a \n   CAR. Unexpected or invalid blocks must be discarded.\n\n   The CAR format contains no internal means, beyond the IPLD block \n   formats and their CIDs, to verify or differentiate contents. Where \n   such a requirement exists, this must be performed externally, such \n   as creating a digest of the entire CAR.\n\n   <https://docs.ipfs.io/concepts/glossary/#cid>\n   <https://docs.ipfs.io/concepts/glossary/#block>\n   <https://docs.ipfs.io/concepts/glossary/#ipld>\n   <https://ipld.io/specs/transport/car/>\n\nInteroperability considerations: N/A\n\nPublished specification:\n\n   <https://ipld.io/specs/transport/car/>\n   <https://ipld.io/specs/transport/car/carv1/>\n   <https://ipld.io/specs/transport/car/carv2/>\n\nApplications which use this media: The CAR format (Content \n   Addressable aRchives) can be used to store content addressable \n   objects in the form of IPLD block data as a sequence of bytes.\n\n   The CAR format is intended as a serialized representation of any \n   IPLD DAG (graph) as the concatenation of its blocks, plus a header \n   that describes the graphs in the file (via root CIDs).\n\n   The requirement for the blocks in a CAR to form coherent DAGs is \n   not strict, so the CAR format may also be used to store arbitrary \n   IPLD blocks.\n\n   Used extensively in:\n\n   IPLD <https://ipld.io>\n   IPFS <https://ipfs.io>\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): car\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: Marcin Rataj\n   2. Email: lidel&ipshipyard.com\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n\n   IPFS Project\n   <standards&ipfs.tech>\n"
+  },
+  "references": []
+}

@@ -1,0 +1,45 @@
+{
+  "type": "application",
+  "subtype": "vnd.aplextor.warrp+json",
+  "full": "application/vnd.aplextor.warrp+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.aplextor.warrp+json",
+    "encoding_considerations": "Security considerations: WARRP JSON shares security issues common to \n   all JSON content types. It does not provide executable content. \n   Information contained in WARRP JSON documents do not require \n   privacy or integrity services.\n\n   If a client is storing information that is potentially sensitive,\n   some sort of security is recommended. TLS, and specifically HTTPS,\n   are the recommended ways to protect potentially sensitive \n   information.\n\nInteroperability considerations: N/A\n\nPublished specification: https://aplextor.com/\n\nApplications which use this media: various web applications that are\n   compatible with progressive web applications.\n\nFragment identifier considerations: Would be the same as Fragment \n   Identifier Considerations of application/json (RFC 7159).\n\nRestrictions on usage: N/A",
+    "security_considerations": "all JSON content types. It does not provide executable content. \n   Information contained in WARRP JSON documents do not require \n   privacy or integrity services.\n\n   If a client is storing information that is potentially sensitive,\n   some sort of security is recommended. TLS, and specifically HTTPS,\n   are the recommended ways to protect potentially sensitive \n   information.\n\nInteroperability considerations: N/A\n\nPublished specification: https://aplextor.com/\n\nApplications which use this media: various web applications that are\n   compatible with progressive web applications.\n\nFragment identifier considerations: Would be the same as Fragment \n   Identifier Considerations of application/json (RFC 7159).\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "Published specification: https://aplextor.com/\n\nApplications which use this media: various web applications that are\n   compatible with progressive web applications.\n\nFragment identifier considerations: Would be the same as Fragment \n   Identifier Considerations of application/json (RFC 7159).\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .json\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A\n\nGeneral Comments: N/A",
+    "intended_usage": "common",
+    "change_controller": "Hanna Balbasava, anna.bolbasova&gmail.com",
+    "template_text": "(registered 2019-11-21, last updated 2019-11-21)\n\nMedia type name: application\n\nMedia subtype name: vnd.aplextor.warrp+json\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\n\nSecurity considerations: WARRP JSON shares security issues common to \n   all JSON content types. It does not provide executable content. \n   Information contained in WARRP JSON documents do not require \n   privacy or integrity services.\n\n   If a client is storing information that is potentially sensitive,\n   some sort of security is recommended. TLS, and specifically HTTPS,\n   are the recommended ways to protect potentially sensitive \n   information.\n\nInteroperability considerations: N/A\n\nPublished specification: https://aplextor.com/\n\nApplications which use this media: various web applications that are\n   compatible with progressive web applications.\n\nFragment identifier considerations: Would be the same as Fragment \n   Identifier Considerations of application/json (RFC 7159).\n\nRestrictions on usage: N/A\n\nAdditional information:\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .json\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A\n\nGeneral Comments: N/A\n\nPerson to contact for further information:\n   1. Name: Oleg Uryutin\n   2. Email: oleg&aplextor.com\n\nIntended usage: Common\n\nAuthor: Oleg Uryutin\n\nChange controller: Hanna Balbasava, anna.bolbasova&gmail.com"
+  },
+  "references": [
+    {
+      "title": "RFC 7159",
+      "url": "https://www.rfc-editor.org/rfc/rfc7159.html",
+      "kind": "RFC"
+    }
+  ]
+}

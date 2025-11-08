@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.iccprofile",
+  "full": "application/vnd.iccprofile",
+  "extensions": [
+    "icc",
+    "icm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.iccprofile",
+    "template_text": "(registered 2008-02-07, last updated 2021-02-09)\n\nName : Phil Green\n\nEmail : green&colourspace.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.iccprofile\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : binary\n\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nThis type contains no active or executable content. The Profile ID\nfield (bytes 84-99) is a checksum that protects against accidential\ndamage to the content. Integrity and confidentiality protection are\nnot provided by the type and if needed must be supplied externally,\nhowever, data of this type is not expected to need such protection.\n\nInteroperability considerations :\nFully interoperable file format, with no data compression.\n\nPublished specification :\nICC.1:2004-10 (http://www.color.org/icc_specs2.html)\nThe profile format is also published as ISO 15076-1:2005\n\nApplications which use this media :\n\nAdditional information :\n1. Magic number(s) : acsp\n2. File extension(s) : .icc, .icm\n3. Macintosh file type code : prof\n4. Object Identifiers: none\n\nPerson to contact for further information :\n1. Name : Phil Green\n2. Email : green&colourspace.net\n\nIntended usage : Common\nThe ICC profile is an open vendor-neutral, cross-platform file format\nthat conveys data which enables color management systems to convert data\nrepresenting images and graphics between different color encodings.\n\nAuthor/Change controller : Phil Green\nICC Technical Secretary\nInternational Color Consortium\n1899 Preston White Drive\nReston, VA 20191\nTel: +1 (703) 264-7200\n"
+  },
+  "references": []
+}

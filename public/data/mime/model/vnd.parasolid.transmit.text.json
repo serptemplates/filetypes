@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.parasolid.transmit.text",
+  "full": "model/vnd.parasolid.transmit.text",
+  "extensions": [
+    "x_t"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.parasolid.transmit.text",
+    "template_text": "\n(last updated 2002-08-20)\n\nName : Parasolid\n\nE-mail : ps-mimetype&ugs.com\n\nMIME media type name : Model\n\nMIME subtype name : Vendor Tree - vnd.parasolid.transmit.text\n\nRequired parameters : (none)\n\nOptional parameters : \n(none)\n\nEncoding considerations : \nFile content is mostly 7-bit US-ASCII text, only printable characters\nplus whitespace, but it can contain 8-bit characters on occasion \n(anything except NULL characters). Maximum line length is 80 characters \n(not including LF).  However, when written to disk the file always uses \nUNIX line-ending conventions: line endings are indicated by a single \nLF (\"\\n\") character, regardless of the line-ending conventions used by\nthe platform the file is being written on. As a result, both the 7-bit\nand 8-bit encodings are unsuitable, and the file must be treated as \nbinary data. The best encoding to use is likely to be quoted-printable,\nsince the file contents is mostly 7-bit ASCII; obviously base64 will \nwork, but it will typically result in slightly larger message sizes\nthan quoted-printable.\n\nSecurity considerations : \nA corrupted or maliciously created file might possibly be able to\ncrash a particular solid-modelling program that read it in, and in the\npresence of buffer-overrun or similar bugs in a particular solid \nmodeller on a particular platform it might be possible to exploit these. \nMost applications that interpret the file format use the Parasolid \nkernel to do so, and that is written to be very cautious about the \npossibility of file corruption, but it still may be possible to generate \na file that will crash it. However, short of crashing the program reading \nthe file, the format just contains geometric and topological model data, \nand has no executable or scripted content and no features relating to \ndisk or network access, so there should be no way to use it to send \nviruses or similar malicious code.\n\nInteroperability considerations : \nThis file format is used by just about all solid modellers based on\nthe Parasolid kernel. Details of the format may change with versions of\nthe Parasolid kernel, but newer versions can always read in files written\nby older versions (though not necessarily vice versa). Translators to \nand from other solid-modelling file formats, including STEP, \nPro-Engineer, IGES, and Catia are commercially available, though such \nconversion is typically lossy and on occasion may fail.\n\nPublished specification : \nThis is available in PDF on request from UG Solutions marketing: see\n\nhttp://www.ugsolutions.com/products/parasolid/top_level/contact.shtml\n\nto locate the Marketing Representative for your region.\n\nFor a short while after the submission of this application it can also\nbe downloaded from:\n\nhttp://www.parasolid.com/downloads/xt_download.shtml\n\n\nApplications which use this media : \nSolid modelling software that uses the Parasolid kernel (currently\nover 200, see\n\nhttp://www.ugsolutions.com/products/parasolid/customers/ps_cad.shtml\n\nand linked pages for a selection), plus suitable solid-modelling file\nformat translators.\n\n\nAdditional information :\n\n1. Magic number(s) : (complex: see comment)\n2. File extension(s) : .X_T (recommended), .xmt_txt (deprecated)\n3. Macintosh file type code : none:\nas far as we know no current Mac apps read the format\n\nThe first 3 lines of text in the file are always:\n**ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*****************\n***********PARASOLID!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~0123456789*********\n*******************PART1;\n\nThe lines will normally be separated by single LF (\"\\n\") characters.\nIn addition, the following 3 lines of text are always found in the\nfile somewhere near the beginning, in the order given, though they \nmay have other data between them:\n**PART2;\n**PART3;\n**END_OF_HEADER********************************************************\n*********\n\nThe next line always begins with a 'T': this is the only thing that\ndistinguishes the header from that of the related .X_B format, where\nthis line always begins with a 'B'.\n\nAgain, these lines are normally terminated by single LF (\"\\n\")\ncharacters.\n\n\nPerson to contact for further information :\n\n1. Name : Parasolid\n2. E-mail : ps-mimetype&ugs.com\n\nIntended usage : Common \nExchanging solid-modelling data, particularly for CAD/CAM\napplications.\n\nAuthor/Change controller : John Juckes <johnj&ugsolutions.com>\n \nChange History\n--------------\n2002-08-20\nChanged contact information from \n2. John Juckes <johnj&ugsolutions.com> and\nRoger Dearnaley <x_dearna&ugsolutions.com>\nto\n2. Parasolid <ps-mimetypes&ugs.com>\n\n\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "video",
+  "subtype": "lottie+json",
+  "full": "video/lottie+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/lottie+json",
+    "encoding_considerations": "JSON based, but generally expected to be UTF-8 encoded text\n\nSecurity considerations: Security considerations relating to the generation and consumption of Lottie files are similar to application/json and are discussed in Section 12 of [RFC8259].\n\nDocuments may reference external image assets. Security considerations in the Media Type registrations for those formats shall apply.\n\nA commonly used extension to the format outside of the spec is \"expressions\" which allow code execution. In itself, the Lottie format is a text based json document and relatively harmless. Support for expressions and security considerations for the same are dependent on the renderer used.\n\nInteroperability considerations: Processors must expect that content received is well-formed JSON, but it cannot be guaranteed that the content is valid to a particular Schema version, or that the processor will recognize all of the elements and attributes in the document.\n\nPublished specification: The specification is published by Lottie Animation Community, and is publicly available at\n\nDocumentation: https://lottie.github.io/lottie-spec/1.0/\nJSON Schema: https://lottie.github.io/lottie-spec/1.0/specs/schema/\n\nApplications which use this media: Lottie is/will be used by systems and applications which require scalable static or interactive vector graphics animations.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "security_considerations": "Documents may reference external image assets. Security considerations in the Media Type registrations for those formats shall apply.\n\nA commonly used extension to the format outside of the spec is \"expressions\" which allow code execution. In itself, the Lottie format is a text based json document and relatively harmless. Support for expressions and security considerations for the same are dependent on the renderer used.\n\nInteroperability considerations: Processors must expect that content received is well-formed JSON, but it cannot be guaranteed that the content is valid to a particular Schema version, or that the processor will recognize all of the elements and attributes in the document.\n\nPublished specification: The specification is published by Lottie Animation Community, and is publicly available at\n\nDocumentation: https://lottie.github.io/lottie-spec/1.0/\nJSON Schema: https://lottie.github.io/lottie-spec/1.0/specs/schema/\n\nApplications which use this media: Lottie is/will be used by systems and applications which require scalable static or interactive vector graphics animations.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "interoperability_considerations": "Published specification: The specification is published by Lottie Animation Community, and is publicly available at\n\nDocumentation: https://lottie.github.io/lottie-spec/1.0/\nJSON Schema: https://lottie.github.io/lottie-spec/1.0/specs/schema/\n\nApplications which use this media: Lottie is/will be used by systems and applications which require scalable static or interactive vector graphics animations.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .lot\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2025-02-18, last updated 2025-02-18)\n\nMedia type name: video\n\nMedia subtype name: lottie+json\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nJSON based, but generally expected to be UTF-8 encoded text\n\nSecurity considerations: Security considerations relating to the generation and consumption of Lottie files are similar to application/json and are discussed in Section 12 of [RFC8259].\n\nDocuments may reference external image assets. Security considerations in the Media Type registrations for those formats shall apply.\n\nA commonly used extension to the format outside of the spec is \"expressions\" which allow code execution. In itself, the Lottie format is a text based json document and relatively harmless. Support for expressions and security considerations for the same are dependent on the renderer used.\n\nInteroperability considerations: Processors must expect that content received is well-formed JSON, but it cannot be guaranteed that the content is valid to a particular Schema version, or that the processor will recognize all of the elements and attributes in the document.\n\nPublished specification: The specification is published by Lottie Animation Community, and is publicly available at\n\nDocumentation: https://lottie.github.io/lottie-spec/1.0/\nJSON Schema: https://lottie.github.io/lottie-spec/1.0/specs/schema/\n\nApplications which use this media: Lottie is/will be used by systems and applications which require scalable static or interactive vector graphics animations.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: None\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .lot\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n1. Name: Lottie Animation Community\n2. Email: lottie-dev&googlegroups.com\n\nIntended usage: COMMON\n\nAuthor/Change controller: Lottie Animation Community (https://lottie.github.io) working group"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.canon-lips",
+  "full": "application/vnd.canon-lips",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.canon-lips",
+    "template_text": "MIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.canon-LIPS\n\nRequired parameters : none\n\nOptional parameters :  none\n\nEncoding considerations : \nLIPS(LBP Image Processing System)files consists of the command code\nfor printers processed by pages.\nThey may additionally contain text data or binary data such as images\nand should be encoded using Content-Transfer-Encoding base64.\n\nSecurity considerations : \nThe security considerations of this type have not been assessed.\nIf delivery of this type to a printer which is not able to parsing the\nformat of this type may result in unexpected behavior.\n\nInteroperability considerations : \n\n\nPublished specification : \nLIPS Programmer's manual software statement4.2 Part No. LLEEFA1\nLIPS Programmer's manual command reference4.2  Part No. LLEEFA2\nLIPS Programmer's manual cook book4.2 Part No. LLEEFA3\n\nApplications which use this media : \n\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : \n3. Macintosh file type code : \n\nPerson to contact for further information :\n\n1. Name : Shin Muto\n2. E-mail : shinmuto&pure.cpdc.canon.co.jp\n\nIntended usage : Common \n\nAuthor/Change controller : Shin Muto\nCANON INC.\nOffice Imaging Products Development Center 3\n30-2, Shimomaruko 3-Chome, Ohta-ku, Tokyo 146-8501, Japan\n\n"
+  },
+  "references": []
+}

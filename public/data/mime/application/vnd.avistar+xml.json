@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.avistar+xml",
+  "full": "application/vnd.avistar+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.avistar+xml",
+    "template_text": "(last updated 14 September 2006)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.avistar+xml\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : binary\r\n\r\nApplications should always include the encoding declaration and\r\noptionally the BOM in MIME entities of this media type. Procedures\r\nsimilar to those described in RFC 3023, sections 8.9-8.11 should\r\nbe used to determine the charset of a document.\r\n\r\nThis media type is intended to be transported over HTTP/HTTPS or\r\nstored in files or databases. For transports not capable of handling\r\nbinary content, encoding considerations from RFC 3023, section 3.2\r\nwill apply.\r\n\r\nIt is RECOMMENDED to use UTF-8 for entities of this media type.\r\n\r\nSecurity considerations :\r\n\r\nThe content of this media type is non-active and non-executable.\r\n\r\nThe purpose of this media type is to transfer small amounts of data\r\nand implement message-based control protocols for video telephony\r\nnetworks.\r\nThe information contained in the media type will in most cases\r\nbe subject to security, integrity and privacy concerns. The media\r\ntype does not provide any privacy or integrity services in itself.\r\nApplications using this media type will need to rely on mechanisms\r\nprovided by transport protocols or data storage to satisfy their\r\nsecurity requirements.\r\n\r\nGeneral XML security considerations described in RFC 3023, section\r\n10 also apply to this media type.\r\n\r\nThe full spectrum of security issues associated with this media type\r\nhas not been completely assessed.\r\n\r\nInteroperability considerations :\r\n\r\nThis media type is intended for internal use by AvistarVOS(tm)\r\nsoftware, as well as applications specifically designed to interoperate with\r\nit.\r\n\r\nBeing well-formed XML documents, entities of this type should\r\nprovide some degree of interoperability with other applications that\r\nunderstand XML. Such applications should treat this media type as\r\nsimilar to application/xml.\r\n\r\nPublished specification :\r\n\r\nConforming to XML 1.0 (http://www.w3.org/TR/REC-xml), XML Namespaces\r\n(http://www.w3.org/TR/REC-xml-names), XLink (http://www.w3.org/TR/xlink)\r\nand normative references therein.\r\n\r\nSpecific document schemas used with this media type are proprietary.\r\n\r\nApplications which use this media :\r\n\r\nAvistarVOS(tm),\r\nhttp://www.avistar.com/products.cfm/avistar/avistarvos.html\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : xml\r\n3. Macintosh file type code : None\r\n4. Object Identifiers: None\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Vladimir Vysotsky\r\n2. Email : vvysotsky&avistar.com\r\n\r\nIntended usage : Limited Use\r\n\r\nAuthor/Change controller :\r\n\r\nVladimir Vysotsky,\r\nSenior Software Engineer,\r\nAvistar Communications Corporation\r\n\r\n(file created 14 September 2006)\r\n"
+  },
+  "references": []
+}

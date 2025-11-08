@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "sslkeylogfile",
+  "full": "application/sslkeylogfile",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/sslkeylogfile",
+    "type_name": "application",
+    "subtype_name": "sslkeylogfile",
+    "encoding_considerations": "Security considerations: See RFC-ietf-tls-keylogfile-05, Section 3.\n\nInteroperability considerations: Line endings might differ from platform convention\n\nPublished specification: RFC-ietf-tls-keylogfile-05\n\nApplications that use this media type: Diagnostic and analysis tools that need to decrypt data that is otherwise protected by TLS.\n\nFragment identifier considerations: N/A",
+    "security_considerations": "Interoperability considerations: Line endings might differ from platform convention\n\nPublished specification: RFC-ietf-tls-keylogfile-05\n\nApplications that use this media type: Diagnostic and analysis tools that need to decrypt data that is otherwise protected by TLS.\n\nFragment identifier considerations: N/A",
+    "interoperability_considerations": "Published specification: RFC-ietf-tls-keylogfile-05\n\nApplications that use this media type: Diagnostic and analysis tools that need to decrypt data that is otherwise protected by TLS.\n\nFragment identifier considerations: N/A",
+    "applications": "Fragment identifier considerations: N/A",
+    "additional_information": "Deprecated alias names for this type: N/A\n   Magic number(s): N/A\n   File extension(s): N/A\n\nMacintosh file type code(s): N/A\nPerson & email address to contact for further information: TLS WG \n   (tls&ietf.org)\n\nIntended usage: COMMON\n\nRestrictions on usage: N/A\n\nAuthor: IETF TLS Working Group\n\nChange controller: IETF",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "Type name: application\n\nSubtype name: sslkeylogfile\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: UTF-8 without BOM, or ASCII only\n\nSecurity considerations: See RFC-ietf-tls-keylogfile-05, Section 3.\n\nInteroperability considerations: Line endings might differ from platform convention\n\nPublished specification: RFC-ietf-tls-keylogfile-05\n\nApplications that use this media type: Diagnostic and analysis tools that need to decrypt data that is otherwise protected by TLS.\n\nFragment identifier considerations: N/A\n\nAdditional information:\n   Deprecated alias names for this type: N/A\n   Magic number(s): N/A\n   File extension(s): N/A\n\nMacintosh file type code(s): N/A\nPerson & email address to contact for further information: TLS WG \n   (tls&ietf.org)\n\nIntended usage: COMMON\n\nRestrictions on usage: N/A\n\nAuthor: IETF TLS Working Group\n\nChange controller: IETF"
+  },
+  "references": []
+}

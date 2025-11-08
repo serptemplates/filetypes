@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.ncd.reference",
+  "full": "application/vnd.ncd.reference",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ncd.reference",
+    "template_text": "(last updated 2007-12-20)\n\nName : Lauri Tarkkala\n\nEmail : lauri.tarkkala&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ncd.reference\n\nRequired parameters : No parameters are required.\n\nOptional parameters :\nNo optional parameters are defined at this time.\n\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of\nhandling 8 bit text.\n\nSecurity considerations :\nThis media type identifies a payload as a reference to a single\nindividual section in a proprietary metadata format.\n\nThe metadata syntax and reference syntax is proprietary to Nokia.\n\nThe payload does not (and must not) contain executable code.\n\nThe metadata the references to is not considered confidential, so the\nreferences cannot reveal any sensitive data. The authenticity of the\norigin and integrity of these references needs to be guaranteed. This is\nrequired if some of these references are processed automatically and may\nfor example as a side-effect cause network traffic.\n\nThe syntax does not guarantee integrity or authenticity of the\nreferences, and in the case that the references would be processed\nautomatically, the implementation transferring these references would\nhave to guarantee these properties.\n\nInteroperability considerations :\nThere are no interoperability issues in parsing the MIME type at the\nmoment, as the single purpose of the MIME media type is to identify the\nmessage body as data unit constituting a reference to a proprietary\nmetadata syntax. The syntax is 8-bit text.\n\nThe identification is unambiguous. A payload with this MIME type is\nexpected to be conformant to a protocol specification that is (at this\nmoment) proprietary to Nokia.\n\n\nPublished specification :\nAt this time there is no published specification. We are requesting a\nvendor-specific MIME type.\n\nApplications which use this media :\nThis protocol is used between applications developed by Nokia.\nAt this time these applications are not released and I am unable to\nprovide additional identifying information.\n\n\nAdditional information :\n\n1. Magic number(s) : None.\n2. File extension(s) : None.\n3. Macintosh file type code : None.\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Lauri Tarkkala\n2. Email : lauri.tarkkala&nokia.com\n\nIntended usage : Limited Use\n\n\nAuthor/Change controller : Lauri Tarkkala\n\n\n(file created 2007-12-20)"
+  },
+  "references": []
+}

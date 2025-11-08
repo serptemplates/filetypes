@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "inkml+xml",
+  "full": "application/inkml+xml",
+  "extensions": [
+    "ink",
+    "inkml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/inkml+xml",
+    "encoding_considerations": "By virtue of InkML content being XML, it has the same considerations\nwhen sent as \"application/inkml+xml\" as does XML. See RFC 3023 (or its\nsuccessor), section 3.2.",
+    "security_considerations": "InkML elements may include arbitrary URIs. Therefore the\nsecurity issues of [RFC3986], section 7, should be considered.\n\nIn addition, because of the extensibility features for InkML, it is\npossible that \"application/inkml+xml\" may describe content that has\nsecurity implications beyond those described here. However, if the\nprocessor follows only the normative semantics of this specification,\nthis content will be ignored. Only in the case where the processor\nrecognizes and processes the additional content, or where further\nprocessing of that content is dispatched to other processors, would\nsecurity issues potentially arise. And in that case, they would fall\noutside the domain of this registration document.",
+    "interoperability_considerations": "This specification describes processing semantics that dictate\nbehavior that must be followed when dealing with, among other things,\nunrecognized elements.\n\nBecause InkML is extensible, conformant \"application/inkml+xml\"\nprocessors MAY expect that content received is well-formed XML, but\nprocessors SHOULD NOT assume that the content is valid InkML or expect\nto recognize all of the elements and attributes in the document.",
+    "additional_information": "Magic number(s):\n\nThere is no single initial octet sequence that is always present\nin InkML documents.\n\nFile extension(s):\n\nInkML documents are most often identified with the extensions\n\".ink\" or \".inkml\".\n\nMacintosh File Type Code(s):\n\nTEXT",
+    "template_text": "(last updated 2011-08-15)\n\nMIME media type name:\napplication\n\nMIME subtype name:\ninkml+xml\n\nRequired parameters:\n\nNone.\nOptional parameters:\n\ncharset\n\nThis parameter has identical semantics to the charset parameter of\nthe application/xml media type as specified in [RFC3023] or its successor.\nEncoding considerations:\n\nBy virtue of InkML content being XML, it has the same considerations\nwhen sent as \"application/inkml+xml\" as does XML. See RFC 3023 (or its\nsuccessor), section 3.2.\n\nSecurity considerations:\n\nInkML elements may include arbitrary URIs. Therefore the\nsecurity issues of [RFC3986], section 7, should be considered.\n\nIn addition, because of the extensibility features for InkML, it is\npossible that \"application/inkml+xml\" may describe content that has\nsecurity implications beyond those described here. However, if the\nprocessor follows only the normative semantics of this specification,\nthis content will be ignored. Only in the case where the processor\nrecognizes and processes the additional content, or where further\nprocessing of that content is dispatched to other processors, would\nsecurity issues potentially arise. And in that case, they would fall\noutside the domain of this registration document.\n\nInteroperability considerations:\n\nThis specification describes processing semantics that dictate\nbehavior that must be followed when dealing with, among other things,\nunrecognized elements.\n\nBecause InkML is extensible, conformant \"application/inkml+xml\"\nprocessors MAY expect that content received is well-formed XML, but\nprocessors SHOULD NOT assume that the content is valid InkML or expect\nto recognize all of the elements and attributes in the document.\nPublished specification:\n\nThis media type registration is extracted from Appendix D of the Ink\nMarkup Language (InkML) specification.\n\nAdditional information:\n\nMagic number(s):\n\nThere is no single initial octet sequence that is always present\nin InkML documents.\n\nFile extension(s):\n\nInkML documents are most often identified with the extensions\n\".ink\" or \".inkml\".\n\nMacintosh File Type Code(s):\n\nTEXT\n\nPerson & email address to contact for further information:\n\nKazuyuki Ashimura, <ashimura&w3.org>.\n\nIntended usage:\n\nCOMMON\nAuthor/Change controller:\n\nThe InkML specification is a work product of the World Wide Web\nConsortium's Multimodal Interaction Working Group. The W3C has change\ncontrol over these specifications.\n\n(file created 2011-08-15)"
+  },
+  "references": []
+}

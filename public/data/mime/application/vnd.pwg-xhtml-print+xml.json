@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.pwg-xhtml-print+xml",
+  "full": "application/vnd.pwg-xhtml-print+xml",
+  "extensions": [
+    "xhtm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.pwg-xhtml-print+xml",
+    "template_text": "\n\n(created 2001 Aug 31)\n\nName : Don Wright\n\nE-mail : don&lexmark.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.pwg-xhtml-print+xml\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations :\n\nXHTML-Print has the same encoding rules as XML and XHTML. The rules\nfor encoding XML types are described in RFC 3023.\n\nSecurity considerations :\n\nThe security considerations of this type have not been assessed.\nIf delivery of this type to a printer which is not able to parsing\nthe format of this type may result in unexpected behavior.\n\nInteroperability considerations : None\n\nPublished specification :\nThis document is currently available at\nftp://ftp.lexmark.com/pub/standards/xhtml-print.pdf\n\nApplications which use this media :\nThe document format will be used in a number of printing\nenvironments where a low-end client (cell phone, PDA, etc.)\ndoes not have access to a driver designed for a specific\nprinter e.g., PostScript, PCL, etc.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : .xhtml, .xhtm\n3. Macintosh file type code : see above\n4. Object Identifiers: none\n\nThis MIME type is being register by the Printer Working Group\n(www.pwg.org).\n\nPerson to contact for further information :\n\n1. Name : Don Wright, Chair PWG\n2. E-mail : don&lexmark.com\n\nIntended usage : Common\nThis is a \"universal\" printer datastream focused on delivering\ndesired content to the printer withou significant concern for\nthe format of the presentation of that information.\n\nAuthor/Change controller : Don Wright\n\n[]\n\n"
+  },
+  "references": []
+}

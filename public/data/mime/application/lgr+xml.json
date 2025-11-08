@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "lgr+xml",
+  "full": "application/lgr+xml",
+  "extensions": [
+    "lgr"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/lgr+xml",
+    "type_name": "application",
+    "subtype_name": "lgr+xml",
+    "security_considerations": "application/xml in [RFC7303] and the specific security considerations\nfor Label Generation Rulesets (LGRs) in RFC 7940\n\nInteroperability considerations: As for application/xml per RFC7303\n\nPublished specification: See RFC 7940\n\nApplications which use this media type: Software using LGRs for \ninternational identifiers, such as IDNs, including registry \napplications and client validators.",
+    "interoperability_considerations": "Published specification: See RFC 7940\n\nApplications which use this media type: Software using LGRs for \ninternational identifiers, such as IDNs, including registry \napplications and client validators.",
+    "additional_information": "Deprecated alias names for this type: N/A\n\n  Magic number(s): N/A\n\n  File extension(s): .lgr\n\n  Macintosh file type code(s): N/A",
+    "intended_usage": "common",
+    "change_controller": "IESG",
+    "template_text": "Type name: application\n\nSubtype name: lgr+xml\n\nRequired parameters: N/A\n\nOptional parameters: charset (as for application/xml per RFC7303)\n\nSecurity considerations: See the security considerations for\napplication/xml in [RFC7303] and the specific security considerations\nfor Label Generation Rulesets (LGRs) in RFC 7940\n\nInteroperability considerations: As for application/xml per RFC7303\n\nPublished specification: See RFC 7940\n\nApplications which use this media type: Software using LGRs for \ninternational identifiers, such as IDNs, including registry \napplications and client validators.\n\nAdditional information:\n\n  Deprecated alias names for this type: N/A\n\n  Magic number(s): N/A\n\n  File extension(s): .lgr\n\n  Macintosh file type code(s): N/A\n\nPerson & email address for further information:\n\n  Kim Davies <kim.davies&icann.org>\n\n  Asmus Freytag <asmus&unicode.org>\n\nIntended Usage: COMMON\n\nRestrictions on usage: N/A\n\nAuthor:\n\n  Kim Davies <kim.davies&icann.org>\n\n  Asmus Freytag <asmus&unicode.org>\n\nChange Controller: IESG\n\nProvisional registration? (standards tree only): No"
+  },
+  "references": []
+}

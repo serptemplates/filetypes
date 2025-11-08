@@ -1,0 +1,42 @@
+{
+  "type": "video",
+  "subtype": "jpm",
+  "full": "video/jpm",
+  "extensions": [
+    "jpm",
+    "jpgm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/jpm",
+    "encoding_considerations": "transmitted in a suitable encoding\n                                   without CR/LF conversion, 7-bit\n                                   stripping etc.; base64 is a suitable\n                                   encoding;\nSecurity considerations:           see above\nInteroperability considerations:   A number of interoperating\n                                   implementations are under development\n                                   within the JPEG 2000 community.\nPublished specification:           ISO/IEC 15444-6, JPEG 2000 Compound\n                                   Image File Format\nApplications:                      Imaging, fax, messaging, scanning",
+    "security_considerations": "Interoperability considerations:   A number of interoperating\n                                   implementations are under development\n                                   within the JPEG 2000 community.\nPublished specification:           ISO/IEC 15444-6, JPEG 2000 Compound\n                                   Image File Format\nApplications:                      Imaging, fax, messaging, scanning",
+    "interoperability_considerations": "implementations are under development\n                                   within the JPEG 2000 community.\nPublished specification:           ISO/IEC 15444-6, JPEG 2000 Compound\n                                   Image File Format\nApplications:                      Imaging, fax, messaging, scanning",
+    "additional_information": "Magic number(s):                   12 byte string: X'0000 000C 6A50 2020\n                                   0D0A 870A' (for all JPEG-2000 family\n                                   files)\nFile extension(s):                 jpm and jpgm are both declared at\n                                   http://www.nist.gov/nics/; jpm is\n                                   preferred\nMacintosh File Type Code(s):       jpgm",
+    "intended_usage": "common",
+    "change_controller": "JPEG Webmaster",
+    "template_text": "Compound Image Registration\r\n\r\n   The image/jpm content-type refers to all of the profiles and\r\n   extensions that build on JPEG 2000 [ISO-JPEG2000-1] encoded image\r\n   data. The file format is also defined in [ISO-JPEG2000-6]. The\r\n   recommended file suffix is \"jpm\"\r\n\r\n   To: ietf-types&iana.org\r\n   Subject: Registration of Standard MIME media type image/jpm\r\n\r\nMIME media type name:              image\r\nMIME subtype name:                 jpm\r\nRequired parameters:               none\r\nOptional parameters:               none\r\n                                   It is up to the implementation to\r\n                                   determine the application (if\r\n                                   necessary) and render the image to\r\n                                   the user.\r\nEncoding considerations:           files are binary and should be\r\n                                   transmitted in a suitable encoding\r\n                                   without CR/LF conversion, 7-bit\r\n                                   stripping etc.; base64 is a suitable\r\n                                   encoding;\r\nSecurity considerations:           see above\r\nInteroperability considerations:   A number of interoperating\r\n                                   implementations are under development\r\n                                   within the JPEG 2000 community.\r\nPublished specification:           ISO/IEC 15444-6, JPEG 2000 Compound\r\n                                   Image File Format\r\nApplications:                      Imaging, fax, messaging, scanning\r\nAdditional information:\r\nMagic number(s):                   12 byte string: X'0000 000C 6A50 2020\r\n                                   0D0A 870A' (for all JPEG-2000 family\r\n                                   files)\r\nFile extension(s):                 jpm and jpgm are both declared at\r\n                                   http://www.nist.gov/nics/; jpm is\r\n                                   preferred\r\nMacintosh File Type Code(s):       jpgm\r\nPerson & email address to contact for further information:\r\n                                   JPEG Webmaster - mimesupport&jpeg.org\r\n                                   JPEG Convenor - convenor&jpeg.org\r\n                                   JPEG 2000 Editor - J2KEditor&jpeg.org\r\nIntended usage:                    COMMON\r\nChange controller:                 JPEG Webmaster"
+  },
+  "references": []
+}

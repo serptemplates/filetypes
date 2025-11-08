@@ -1,0 +1,33 @@
+{
+  "type": "image",
+  "subtype": "vnd.cns.inf2",
+  "full": "image/vnd.cns.inf2",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/vnd.cns.inf2",
+    "template_text": "\n\nDate: Mon, 5 Apr 1999 06:51:24 -0700 (PDT)\nFrom: Ann Wheeler <awheeler&comversens.com>\nTo: iana&iana.org, awheeler&comversens.com\nSubject: Request for MIME media type Image/Vendor Tree - vnd.cns.inf2\n\nName : Ann McLaughlin\n\nE-mail : amclaughlin&comversens.com (changed from awheeler&comversens.com)\n\nMIME media type name : Image\n\nMIME subtype name : Vendor Tree - vnd.cns.inf2\n\nRequired parameters : None\n\nOptional parameters : \nNone\n\nEncoding considerations : \nvnd.cns.inf2 MIME body parts contain binary data.  A\ncontent-transfer-encoding of \"Binary\" is strongly encouraged for\nmessaging environments which support binary transport.  A\ncontent-transfer-encoding of Base-64 (and the associated\ntransformation) is strongly encouraged for messaging environments that\ndo not support binary transfer.\n\nSecurity considerations : \n1. vnd.cns.inf2 MIME body parts contain only \"passive\" binary data.\nThis fax data should not contain executable code or directives within\nthe binary data to cause a recipient or relay system to execute an\napplication or to perform a corresponding explicit action.\n\n2. vnd.cns.inf2 MIME body parts are not explicitly encrypted by the\nassociated encoding algorithm.  To ensure content confidentiality and\nintegrity, security capabilities should be employed at the messaging\napplication layer \"above\" the encapsulated data; These security\ncapabilities would likely generate a type/subtype defining the\nassociated encrypted data.\n\n\nInteroperability considerations : \nNone\n\nPublished specification : \nNone\n\nApplications which use this media : \nThe vnd.cns.inf1 image subtype supports voice and unified messaging\napplication features available on the TRILOGUE INfinity network\nservices platform from Comverse Network Systems, Ltd.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : None\n3. Macintosh file type code : None\nNone\n\nPerson to contact for further information :\n\n1. Name : Ann McLaughlin or Eli Jacobi\n2. E-mail : amclaughlin&comversens.com or eli_jacobi&icomversens.com\n\nIntended usage : Common \n\n\nAuthor/Change controller : Ann McLaughlin\nComverse Network Systems\n100 Quannapowitt Parkway\nWakefield, MA 01880\nUnited States\nPhone: +1-781-224-8903\nawheeler&comversens.com\n\nEli Jacobi\nComverse Network Systems\n29 Habarzel St.\nTel Aviv, 69710\nISRAEL\nPhone: +972-3-645-4176\neli_jacobi&icomverse.com\n\n\n"
+  },
+  "references": []
+}

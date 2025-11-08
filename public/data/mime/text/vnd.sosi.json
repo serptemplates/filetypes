@@ -1,0 +1,38 @@
+{
+  "type": "text",
+  "subtype": "vnd.sosi",
+  "full": "text/vnd.sosi",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.sosi",
+    "encoding_considerations": "Security considerations: The SOSI media type is a plain-text format. \n   It cannot contain active or executable content. The SOSI format \n   does not provide privacy or integrity protection. If such \n   protections are needed they must be provided externally.\n\nInteroperability considerations: There are no relevant \n   interoperability issues. SOSI files are plain text files using \n   various ASCII based character sets. The character set and encoding\n   used in the file is specified using the ..TEGNSETT statement \n   inside the file, and there is a limited set of charset names \n   permitted (ANSI, DECN7, DOSN8, ISO8859-1, ISO8859-10, ND7 and \n   UTF-8). New SOSI files should use \"UTF-8\".\n\nPublished specification: Information about the SOSI format can be \n   found in English from https://en.wikipedia.org/wiki/SOSI. The \n   specification is available in Norwegian from the Norwegian mapping\n   authority using \n   https://www.kartverket.no/geodataarbeid/Standarder/SOSI/.\n\nApplications which use this media: The SOSI format was designed to be\n   used in Norway to store and exchange digital vector based \n   geo-spatial information. It is supported by several map related \n   programs and libraries.\n\nFragment identifier considerations: Not applicable.\n\nRestrictions on usage: There are no restriction on usage.",
+    "security_considerations": "It cannot contain active or executable content. The SOSI format \n   does not provide privacy or integrity protection. If such \n   protections are needed they must be provided externally.\n\nInteroperability considerations: There are no relevant \n   interoperability issues. SOSI files are plain text files using \n   various ASCII based character sets. The character set and encoding\n   used in the file is specified using the ..TEGNSETT statement \n   inside the file, and there is a limited set of charset names \n   permitted (ANSI, DECN7, DOSN8, ISO8859-1, ISO8859-10, ND7 and \n   UTF-8). New SOSI files should use \"UTF-8\".\n\nPublished specification: Information about the SOSI format can be \n   found in English from https://en.wikipedia.org/wiki/SOSI. The \n   specification is available in Norwegian from the Norwegian mapping\n   authority using \n   https://www.kartverket.no/geodataarbeid/Standarder/SOSI/.\n\nApplications which use this media: The SOSI format was designed to be\n   used in Norway to store and exchange digital vector based \n   geo-spatial information. It is supported by several map related \n   programs and libraries.\n\nFragment identifier considerations: Not applicable.\n\nRestrictions on usage: There are no restriction on usage.",
+    "interoperability_considerations": "interoperability issues. SOSI files are plain text files using \n   various ASCII based character sets. The character set and encoding\n   used in the file is specified using the ..TEGNSETT statement \n   inside the file, and there is a limited set of charset names \n   permitted (ANSI, DECN7, DOSN8, ISO8859-1, ISO8859-10, ND7 and \n   UTF-8). New SOSI files should use \"UTF-8\".\n\nPublished specification: Information about the SOSI format can be \n   found in English from https://en.wikipedia.org/wiki/SOSI. The \n   specification is available in Norwegian from the Norwegian mapping\n   authority using \n   https://www.kartverket.no/geodataarbeid/Standarder/SOSI/.\n\nApplications which use this media: The SOSI format was designed to be\n   used in Norway to store and exchange digital vector based \n   geo-spatial information. It is supported by several map related \n   programs and libraries.\n\nFragment identifier considerations: Not applicable.\n\nRestrictions on usage: There are no restriction on usage.",
+    "additional_information": "1. Deprecated alias names for this type: none known\n   2. Magic number(s):\n   See https://github.com/file/file/blob/master/magic/Magdir/sosi\n   3. File extension(s): sos\n   4. Macintosh file type code: none known\n   5. Object Identifiers: none known\n\nGeneral Comments: SOSI is short for Samordnet Opplegg for Stedfestet \n   Informasjon (literally \"Coordinated Approach for Spatial \n   Information\", but more commonly expanded in English to Systematic \n   Organization of Spatial Information).",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-06-03, last updated 2019-06-03)\n\nName: Petter Reinholdtsen\n\nEmail: pere-iana&hungry.com\n\nMedia type name: text\n\nMedia subtype name: vnd.sosi\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: 8bit\n\nSecurity considerations: The SOSI media type is a plain-text format. \n   It cannot contain active or executable content. The SOSI format \n   does not provide privacy or integrity protection. If such \n   protections are needed they must be provided externally.\n\nInteroperability considerations: There are no relevant \n   interoperability issues. SOSI files are plain text files using \n   various ASCII based character sets. The character set and encoding\n   used in the file is specified using the ..TEGNSETT statement \n   inside the file, and there is a limited set of charset names \n   permitted (ANSI, DECN7, DOSN8, ISO8859-1, ISO8859-10, ND7 and \n   UTF-8). New SOSI files should use \"UTF-8\".\n\nPublished specification: Information about the SOSI format can be \n   found in English from https://en.wikipedia.org/wiki/SOSI. The \n   specification is available in Norwegian from the Norwegian mapping\n   authority using \n   https://www.kartverket.no/geodataarbeid/Standarder/SOSI/.\n\nApplications which use this media: The SOSI format was designed to be\n   used in Norway to store and exchange digital vector based \n   geo-spatial information. It is supported by several map related \n   programs and libraries.\n\nFragment identifier considerations: Not applicable.\n\nRestrictions on usage: There are no restriction on usage.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: none known\n   2. Magic number(s):\n   See https://github.com/file/file/blob/master/magic/Magdir/sosi\n   3. File extension(s): sos\n   4. Macintosh file type code: none known\n   5. Object Identifiers: none known\n\nGeneral Comments: SOSI is short for Samordnet Opplegg for Stedfestet \n   Informasjon (literally \"Coordinated Approach for Spatial \n   Information\", but more commonly expanded in English to Systematic \n   Organization of Spatial Information).\n\nPerson to contact for further information:\n\n   1. Name: Petter Reinholdtsen\n   2. Email: pere-iana&hungry.com\n\nIntended usage: Common\n\n   The SOSI format is in regular use in Norway. There are intentions \n   to replace its use with GML, but maps are still provided by the \n   Norwegian mapping authority in SOSI format and used by map \n   integrators and service providers.\n\nAuthor/Change controller: None"
+  },
+  "references": []
+}

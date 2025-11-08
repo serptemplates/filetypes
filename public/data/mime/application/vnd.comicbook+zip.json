@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.comicbook+zip",
+  "full": "application/vnd.comicbook+zip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.comicbook+zip",
+    "security_considerations": "All processors that read CBZ files should rigorously check the size and\nvalidity of data retrieved.\n\nThe contents comic book archives consist of one or more image files in\nvarious formats, e.g., PNG or JPEG. Security considerations for the image\nformats all apply to CBZ files.\n\nSecurity considerations that apply to application/zip also apply to CBZ\nfiles.",
+    "interoperability_considerations": "As there is no published specification for CBZ files, different reading applications may exhibit different behaviors.",
+    "additional_information": "1. Deprecated alias names for this type: application/x-cbr\n2. Magic number(s): none\n3. File extension(s): .cbz\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-07-01, last updated 2016-07-01)\n\nMedia type name: application\n\nMedia subtype name: vnd.comicbook+zip\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations:\nAll processors that read CBZ files should rigorously check the size and\nvalidity of data retrieved.\n\nThe contents comic book archives consist of one or more image files in\nvarious formats, e.g., PNG or JPEG. Security considerations for the image\nformats all apply to CBZ files.\n\nSecurity considerations that apply to application/zip also apply to CBZ\nfiles.\n\nInteroperability considerations:\nAs there is no published specification for CBZ files, different reading applications may exhibit different behaviors.\n\nPublished specification:\nThere is an informal specification that has not been published.\n\nApplications which use this media:\nComic book readers such as ComicRack, MComix, and SimpleComic.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nProvisional registration? (standards tree only): N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: application/x-cbr\n2. Magic number(s): none\n3. File extension(s): .cbz\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Kim Scarborough\n2. Email: user&unknown.nu\n\nIntended usage: Common\nAlong with CBR files, this is the de facto standard for comic book archives.\n\nAuthor/Change controller: N/A"
+  },
+  "references": []
+}

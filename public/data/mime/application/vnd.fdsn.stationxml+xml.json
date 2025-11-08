@@ -1,0 +1,47 @@
+{
+  "type": "application",
+  "subtype": "vnd.fdsn.stationxml+xml",
+  "full": "application/vnd.fdsn.stationxml+xml",
+  "extensions": [],
+  "charsets": [
+    "XML-BASED"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.fdsn.stationxml+xml",
+    "encoding_considerations": "By default the expected encoding of a StationXML document is UTF-8\n\nSecurity considerations: Refer to Section 10 of RFC 3023 for security considerations of XML-based media types. There are no known StationXML-specific security considerations.\n\nInteroperability considerations: The standard is maintained with schema versions and documentation of changes between versions. There are no non-standard or esoteric features of the format and it should be readable by any generic XML reader.\n\nPublished specification: The International Federation of Digital Seismograph Networks (FDSN) StationXML: https://docs.fdsn.org/projects/stationxml\n\nThe specification of the schema is provided as a XML Schema Definition (XSD) document to promote validation and conformance with the standard.\n\nApplications which use this media: Many applications use the StationXML metadata format in the seismological software ecosystem.\n\nFragment identifier considerations: Reference RFC 3023 regarding XML fragment identifiers.\n\nRestrictions on usage: No restrictions",
+    "security_considerations": "Interoperability considerations: The standard is maintained with schema versions and documentation of changes between versions. There are no non-standard or esoteric features of the format and it should be readable by any generic XML reader.\n\nPublished specification: The International Federation of Digital Seismograph Networks (FDSN) StationXML: https://docs.fdsn.org/projects/stationxml\n\nThe specification of the schema is provided as a XML Schema Definition (XSD) document to promote validation and conformance with the standard.\n\nApplications which use this media: Many applications use the StationXML metadata format in the seismological software ecosystem.\n\nFragment identifier considerations: Reference RFC 3023 regarding XML fragment identifiers.\n\nRestrictions on usage: No restrictions",
+    "interoperability_considerations": "Published specification: The International Federation of Digital Seismograph Networks (FDSN) StationXML: https://docs.fdsn.org/projects/stationxml\n\nThe specification of the schema is provided as a XML Schema Definition (XSD) document to promote validation and conformance with the standard.\n\nApplications which use this media: Many applications use the StationXML metadata format in the seismological software ecosystem.\n\nFragment identifier considerations: Reference RFC 3023 regarding XML fragment identifiers.\n\nRestrictions on usage: No restrictions",
+    "additional_information": "1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .xml\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2025-01-02, last updated 2025-03-20)\n\nMedia type name: application\n\nMedia subtype name: vnd.fdsn.stationxml+xml\n\nRequired parameters: N/A\n\nOptional parameters: charset\n\nEncoding considerations: binary\n\nBy default the expected encoding of a StationXML document is UTF-8\n\nSecurity considerations: Refer to Section 10 of RFC 3023 for security considerations of XML-based media types. There are no known StationXML-specific security considerations.\n\nInteroperability considerations: The standard is maintained with schema versions and documentation of changes between versions. There are no non-standard or esoteric features of the format and it should be readable by any generic XML reader.\n\nPublished specification: The International Federation of Digital Seismograph Networks (FDSN) StationXML: https://docs.fdsn.org/projects/stationxml\n\nThe specification of the schema is provided as a XML Schema Definition (XSD) document to promote validation and conformance with the standard.\n\nApplications which use this media: Many applications use the StationXML metadata format in the seismological software ecosystem.\n\nFragment identifier considerations: Reference RFC 3023 regarding XML fragment identifiers.\n\nRestrictions on usage: No restrictions\n\nAdditional information:\n\n1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .xml\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none\n\nPerson to contact for further information:\n\n1. Name: International FDSN\n2. Email: fdsn-wg2-data&fdsn.org\n\nIntended usage: COMMON\n\nThe StationXML metadata format is used extensively in the seismology community as an exchange format to describe seismological observable data recordings.\n\nAuthor/Change controller: The International Federation of Digital Seismograph Stations (FDSN), Working Group 2: https://fdsn.org/wg/wgII/"
+  },
+  "references": [
+    {
+      "title": "RFC 3023",
+      "url": "https://www.rfc-editor.org/rfc/rfc3023.html",
+      "kind": "RFC"
+    }
+  ]
+}

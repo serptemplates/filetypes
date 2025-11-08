@@ -1,0 +1,38 @@
+{
+  "type": "video",
+  "subtype": "vnd.planar",
+  "full": "video/vnd.planar",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/vnd.planar",
+    "encoding_considerations": "Security considerations: media type is binary image pixel data and therefore not executable. encryption is not required.\n\nInteroperability considerations: image data for 16 bit samples shall be little endian\n\nPublished specification: currently in draft: https://github.com/vsf-tv/gccg-api\n\nApplications which use this media: Professional Broadcast and Media processing\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: cloud based api use cases",
+    "security_considerations": "Interoperability considerations: image data for 16 bit samples shall be little endian\n\nPublished specification: currently in draft: https://github.com/vsf-tv/gccg-api\n\nApplications which use this media: Professional Broadcast and Media processing\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: cloud based api use cases",
+    "interoperability_considerations": "Published specification: currently in draft: https://github.com/vsf-tv/gccg-api\n\nApplications which use this media: Professional Broadcast and Media processing\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: cloud based api use cases",
+    "additional_information": "1. Deprecated alias names for this type: n/a\n2. Magic number(s): n/a\n3. File extension(s): .yuv\n4. Macintosh file type code: n/a\n5. Object Identifiers: n/a",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2025-01-22, last updated 2025-01-22)\n\nMedia type name: video\n\nMedia subtype name: vnd.planar\n\nRequired parameters:\n\nformat: yuv422, yuva4224 describes whether an alpha channel is present\nwidth: integer (1-32767) number of pixels across a scan line\nheight: integer (1-32767) number of scan lines in an image\ndepth: integer (8 or 16) only 8 or 16 bit images are supported\n\nOptional parameters: n/a\n\nEncoding considerations: binary\n\nSecurity considerations: media type is binary image pixel data and therefore not executable. encryption is not required.\n\nInteroperability considerations: image data for 16 bit samples shall be little endian\n\nPublished specification: currently in draft: https://github.com/vsf-tv/gccg-api\n\nApplications which use this media: Professional Broadcast and Media processing\n\nFragment identifier considerations: n/a\n\nRestrictions on usage: cloud based api use cases\n\nAdditional information:\n\n1. Deprecated alias names for this type: n/a\n2. Magic number(s): n/a\n3. File extension(s): .yuv\n4. Macintosh file type code: n/a\n5. Object Identifiers: n/a\n\nPerson to contact for further information:\n\n1. Name: David Atkins\n2. Email: david&3adesign.co.uk\n\nIntended usage: LIMITED USE\n\nprimary use case is VSF GCCG protocol targeting cloud api media processing\nhttps://github.com/vsf-tv/gccg-api\n\nAuthor/Change controller: VSF, GCCG&groups.vsf.tv\n"
+  },
+  "references": []
+}

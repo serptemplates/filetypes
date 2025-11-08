@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.mynfc",
+  "full": "application/vnd.mynfc",
+  "extensions": [
+    "taglet"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mynfc",
+    "template_text": "(last updated 2011-05-25)\n\nName : Franck LEFEVRE\nEmail : franck.lefevre&gmail.com\nMIME media type name : Application\nMIME subtype name : Vendor Tree - vnd.mynfc\nRequired parameters : None\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary data.\n\nSecurity considerations :\nThe concerned documents are packages containing different types of files\nlike JavaScript sources, images, font files or databases.\nSome of these files may incorporate active or executable content.\nThe agent handling a package must inspect the manifest that it contains\nto define whether the document can be accepted or not.\nThe integrity and the privacy of a package itself as well as the\nintegrity of the documents that it contains must be handled internally\nby the agent in charge of extracting the files from the package.\n\nInteroperability considerations :\n\nPublished specification :\nThe specification of the content of these documents is available at\nhttp://mynfctech.appspot.com/FAQ24.html\n\nApplications which use this media :\nSome applications using this media are listed on\nhttp://daw.mynfc.org/mynfc.org/index.php/downloadable-packages\n\nAdditional information :\n\nA document of this type contains an initial 512 byte header containing:\nbyte 000 to 000 : a byte containing the version's number ( 0x02)\nbyte 001 to 001 : a byte containing the value 0x32\nbyte 002 to 511 : reserved for future use\n\nThis header is followed by one chunk per file contained in the archive.\nEach chunk contains a header containing:\nbytes 000 to 127: a UTF8 NULL terminated string containing the name of\nthe file wrapped in this chunk\nbyte 128 to 128: a byte containing the type of the file ( 1= file,\n2=directory)\nbytes 129 to 139: reserved for future use\nbytes 140 to 159: a UTF8 NULL terminated string containing the length of\nthe file wrapped in this chunk\nbytes 160 to 287: a UTF8 NULL terminated string containing the name of\nthe directory containing this file/directory\nThis header is followed by the content of the chunk's file.\n\n1. Magic number(s) : Two first bytes of these files are: 0x32 and 0x20\n2. File extension(s) : .taglet\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Franck LEFEVRE\n2. Email : franck.lefevre&gmail.com\n\nIntended usage : Common\n\nAuthor/Change controller : Franck LEFEVRE\n\n(file created 2011-05-25)"
+  },
+  "references": []
+}

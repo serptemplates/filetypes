@@ -1,0 +1,38 @@
+{
+  "type": "audio",
+  "subtype": "amr-wb+",
+  "full": "audio/amr-wb+",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/amr-wb+",
+    "encoding_considerations": "An RTP payload according to this format is binary data\n\t\t\tand thus may need to be appropriately encoded in non-\n\t\t\tbinary environments.  However, as long as used within\n\t\t\tRTP, no encoding is necessary.",
+    "security_considerations": "See Section 6 of RFC 4352.",
+    "interoperability_considerations": "To maintain interoperability with AMR-WB-capable end-\n\t\t\tpoints, in cases where negotiation is possible and the\n\t\t\tAMR-WB+ end-point supporting this format also supports\n\t\t\tRFC 3267 for AMR-WB transport, an AMR-WB+ end-point\n\t\t\tSHOULD declare itself also as AMR-WB capable (i.e.,\n\t\t\tsupporting also \"audio/AMR-WB\" as specified in RFC\n\t\t\t3267).\n\n\t\t\tAs the AMR-WB+ decoder is capable of performing stereo\n\t\t\tto mono conversions, all receivers of AMR-WB+ should be\n\t\t\table to receive both stereo and mono, although the\n\t\t\treceiver is only capable of playout of mono signals.",
+    "additional_information": "This MIME type is not applicable for file storage.\n\t\t\tInstead, file storage of AMR-WB+ encoded audio is\n\t\t\tspecified within the 3GPP-defined ISO-based multimedia\n\t\t\tfile format defined in 3GPP TS 26.244; see reference\n\t\t\t[14] of RFC 4352.  This file format has the MIME types\n\t\t\t\"audio/3GPP\" or \"video/3GPP\" as defined by RFC 3839\n\t\t\t[15].",
+    "intended_usage": "common",
+    "template_text": "(RFC 4352 published January 2006, subtype last updated January 2006)\n\nMedia Type name:     audio\n\nMedia subtype name:  AMR-WB+\n\nRequired parameters:\n\nNone\n\nOptional parameters:\n\nchannels:       The maximum number of audio channels used by the\n\t\t\t   audio frames.  Permissible values are 1 (mono) or 2\n\t\t\t   (stereo).  If no parameter is present, the maximum\n\t\t\t   number of channels is 2 (stereo).  Note: When set to\n\t\t\t   1, implicitly the stereo frame types cannot be used.\n\ninterleaving:   Indicates that interleaved mode SHALL\n\t\t\t   be used for the payload.  The parameter specifies\n\t\t\t   the number of transport frame slots required in a\n\t\t\t   deinterleaving buffer (including the frame that is\n\t\t\t   ready to be consumed).  Its value is equal to one\n\t\t\t   plus the maximum number of frames that precede any\n\t\t\t   frame in transmission order and follow the frame in\n\t\t\t   RTP timestamp order.  The value MUST be greater than\n\t\t\t   zero.  If this parameter is not present,\n\t\t\t   interleaved mode SHALL NOT be used.\n\nint-delay:      The minimal media time delay in RTP timestamp ticks\n\t\t\t   that is needed in the deinterleaving buffer, i.e.,\n\t\t\t   the difference in RTP timestamp ticks between the\n\t\t\t   earliest and latest audio frame present in the\n\t\t\t   deinterleaving buffer.\n\nptime:          See Section 6 in RFC 2327 [6].\n\nmaxptime:       See Section 8 in RFC 3267 [7].\n\nRestriction on Usage:\n\t\t\tThis type is only defined for transfer via RTP (STD 64).\n\nEncoding considerations:\n\t\t\tAn RTP payload according to this format is binary data\n\t\t\tand thus may need to be appropriately encoded in non-\n\t\t\tbinary environments.  However, as long as used within\n\t\t\tRTP, no encoding is necessary.\n\nSecurity considerations:\n\t\t\tSee Section 6 of RFC 4352.\n\nInteroperability considerations:\n\t\t\tTo maintain interoperability with AMR-WB-capable end-\n\t\t\tpoints, in cases where negotiation is possible and the\n\t\t\tAMR-WB+ end-point supporting this format also supports\n\t\t\tRFC 3267 for AMR-WB transport, an AMR-WB+ end-point\n\t\t\tSHOULD declare itself also as AMR-WB capable (i.e.,\n\t\t\tsupporting also \"audio/AMR-WB\" as specified in RFC\n\t\t\t3267).\n\n\t\t\tAs the AMR-WB+ decoder is capable of performing stereo\n\t\t\tto mono conversions, all receivers of AMR-WB+ should be\n\t\t\table to receive both stereo and mono, although the\n\t\t\treceiver is only capable of playout of mono signals.\n\nPublic specification:\n\t\t\tRFC 4352\n\t\t\t3GPP TS 26.290, see reference [1] of RFC 4352\n\nAdditional information:\n\t\t\tThis MIME type is not applicable for file storage.\n\t\t\tInstead, file storage of AMR-WB+ encoded audio is\n\t\t\tspecified within the 3GPP-defined ISO-based multimedia\n\t\t\tfile format defined in 3GPP TS 26.244; see reference\n\t\t\t[14] of RFC 4352.  This file format has the MIME types\n\t\t\t\"audio/3GPP\" or \"video/3GPP\" as defined by RFC 3839\n\t\t\t[15].\n\nPerson & email address to contact for further information:\n\t\t\tmagnus.westerlund&ericsson.com\n\t\t\tari.lakaniemi&nokia.com\n\nIntended usage: COMMON.\n\t\t\tIt is expected that many IP-based streaming\n\t\t\tapplications will use this type.\n\nChange controller:\n\t\t\tIETF Audio/Video Transport working group delegated from\n\t\t\tthe IESG."
+  },
+  "references": []
+}

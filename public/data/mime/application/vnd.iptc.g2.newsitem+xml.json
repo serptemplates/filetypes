@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.iptc.g2.newsitem+xml",
+  "full": "application/vnd.iptc.g2.newsitem+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.iptc.g2.newsitem+xml",
+    "subtype_name": "vnd.iptc.g2.newsitem+xml",
+    "encoding_considerations": "described in rfc3023, section 3.2\n\nSecurity considerations: In regards to general XML Security issues,\nidentical to those of \"application/xml\" as described in rfc3023,\nsection 10. Beyond these general XML Security issues, the media\ntype does not contain active or executable content. The information\ncontained in the media type does not require privacy or integrity\nservices, however the media type does support the use of the XML\nsyntax and processing rules for creating and representing digital\nsignatures as described by rfc3275.",
+    "security_considerations": "identical to those of \"application/xml\" as described in rfc3023,\nsection 10. Beyond these general XML Security issues, the media\ntype does not contain active or executable content. The information\ncontained in the media type does not require privacy or integrity\nservices, however the media type does support the use of the XML\nsyntax and processing rules for creating and representing digital\nsignatures as described by rfc3275.",
+    "additional_information": "Magic number(s): none\n\nFile extension(s): xml\n\nMacintosh File Type Code(s): Identical to those of \"application/xml\"\nas described in rfc3023, \"TEXT\"\n\nObject Identifier(s) or OID(s):\n\nIt must be possible to positively identify an Item as it moves\nthrough the news workflow, and is transferred from place to place\nand from system to system. An Item therefore gets a globally\nunique identifier (guid), which is a persistent, universally unique\nidentifier, and a version which is incremented when the content of\nthe Item is updated. The first version is numbered 1: if the version\nis not explicitly set, this value must be assumed by the recipient of\nthe Item. The guid is required to be in the form of a IRI. Any IRI\ncapable of acting as a globally unique identifier is accepted; the\nIPTC provides a standard for this purpose in the form of an IETF RFC\n[RFC-3085].",
+    "template_text": "(last updated 2008-07-01)\n\nMedia Type Name: application\n\nSubtype name: vnd.iptc.g2.newsitem+xml\n\nRequired parameters: none\n\nOptional parameters: charset\nidentical to the charset parameter on application/xml as described\nin RFC 3023 section 3.2\n\nEncoding considerations: Identical to those of \"application/xml\" as\ndescribed in rfc3023, section 3.2\n\nSecurity considerations: In regards to general XML Security issues,\nidentical to those of \"application/xml\" as described in rfc3023,\nsection 10. Beyond these general XML Security issues, the media\ntype does not contain active or executable content. The information\ncontained in the media type does not require privacy or integrity\nservices, however the media type does support the use of the XML\nsyntax and processing rules for creating and representing digital\nsignatures as described by rfc3275.\n\nInteroperability considerations:\n\nPublished specification:\nNewsML-G2 version 2.0 specifications\n\nhttp://www.iptc.org/std/NewsML-G2/2.0/specification/NewsML-G2_2.0-spec_CCL_2.pdf\n\nOr\n\nEventsML-G2 version 1.0 specifications\n\nhttp://www.iptc.org/std/EventsML-G2/1.0/specification/EventsML-G2_1.0-spec-CCL_2.pdf\n\nApplications which use this media type: none\n\nAdditional information:\n\nMagic number(s): none\n\nFile extension(s): xml\n\nMacintosh File Type Code(s): Identical to those of \"application/xml\"\nas described in rfc3023, \"TEXT\"\n\nObject Identifier(s) or OID(s):\n\nIt must be possible to positively identify an Item as it moves\nthrough the news workflow, and is transferred from place to place\nand from system to system. An Item therefore gets a globally\nunique identifier (guid), which is a persistent, universally unique\nidentifier, and a version which is incremented when the content of\nthe Item is updated. The first version is numbered 1: if the version\nis not explicitly set, this value must be assumed by the recipient of\nthe Item. The guid is required to be in the form of a IRI. Any IRI\ncapable of acting as a globally unique identifier is accepted; the\nIPTC provides a standard for this purpose in the form of an IETF RFC\n[RFC-3085].\n\nIntended usage:\nA News Item is an XML construct aiming to convey news with the\nsense of the reporting of a newsworthy event or fact. Its content is\ngathered by journalists, presented with a journalistic style, and\nupdated according to the progression of the story.\nA News Item may convey this information in any media type or\nformat, e.g. the thumbnail, preview and high definition renditions\nof a picture. It can also convey more structured news information,\ne.g. information about companies, sports events and general\nevents, in instances when this information is related to an event or\nfact.\n\nOther Information/General Comment: none\n\nPerson to contact for further information:\nName: Michael Steidl\nE-mail: mdirector&iptc.org\n\nAuthor/Change controller:\nName: Michael Steidl\nE-mail: mdirector&iptc.org\n\n(file created 2008-07-01)"
+  },
+  "references": []
+}

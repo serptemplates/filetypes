@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.citationstyles.style+xml",
+  "full": "application/vnd.citationstyles.style+xml",
+  "extensions": [
+    "csl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.citationstyles.style+xml",
+    "template_text": "(registered 2015-02-23, last updated 2015-02-23)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.citationstyles.style+xml\n\nRequired parameters : none\n\nOptional parameters : none\n\nCSL styles are typically encoded in utf-8. Parsed entities of this\nmedia type which are stored in a different encoding must begin with a\ntext declaration containing an encoding declaration, following the\nrequirements specified in the \"Character Encoding in Entities\" section\nof the XML specification (http://www.w3.org/TR/xml/#charencoding).\n\nEncoding considerations : binary\n\nSame as encoding considerations of application/xml as specified in RFC 7303.\n\nSecurity considerations :\n\nCSL is a markup language for specifying the metadata, layout, and\nformatting of citation formats. CSL styles rely on so-called CSL\nprocessors for interpretation, and don't contain executable code\nthemselves.\n\nThis media type does not provide its own privacy or integrity protection; in the\nextent such protection is needed it must be provided externally.\n\nInteroperability considerations :\n\nThere are no special interoperability issues. CSL style files are simple\nplain-text files.\n\nPublished specification : Available at http://citationstyles.org/.\n\nApplications which use this media :\n\nSoftware products that are known to use CSL styles are listed at\nhttp://citationstyles.org. These include the reference managers Zotero, Mendeley,\nand Papers.\n\nFragment identifier considerations : none\n\nRestrictions on usage : none\n\nProvisional registration? (standards tree only) : n/a\n\nAdditional information :\n\n1. Deprecated alias names for this type : -\n2. Magic number(s) : -\n3. File extension(s) : .csl\n4. Macintosh file type code : -\n5. Object Identifiers: -\n\nThe Citation Style Language (CSL) is a popular open XML-based language to\ndescribe the formatting of citations and bibliographies.\n\nPerson to contact for further information :\n\n1. Name : Rintze M. Zelle\n2. Email : rintze.zelle&gmail.com\n\nIntended usage : Common\n-\n\nAuthor/Change controller : Rintze M. Zelle, Citation Style Language,\nhttp://citationstyles.org/"
+  },
+  "references": []
+}

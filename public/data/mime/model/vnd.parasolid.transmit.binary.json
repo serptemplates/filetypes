@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.parasolid.transmit.binary",
+  "full": "model/vnd.parasolid.transmit.binary",
+  "extensions": [
+    "x_b"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.parasolid.transmit.binary",
+    "template_text": "\n(last updated 2002-08-20)\n\nName : Parasolid\n\nE-mail : ps-mimetypes&ugs.com\n\nMIME media type name : Model\n\nMIME subtype name : Vendor Tree - vnd.parasolid.transmit.binary\n\nRequired parameters : (none)\n\nOptional parameters : \n(none)\n\nEncoding considerations : \nFile content is an octet-stream, and can contain arbitrary\ncombinations of 8-bit data. It should thus be encoded as binary\ndata, and base64 encoding is likely to be more efficient than\nquoted-printable.\n\nSecurity considerations : \nA corrupted or maliciously created file might possibly be able to\ncrash a particular solid-modelling program that read it in, and in\nthe presence of buffer-overrun or similar bugs in a particular\nsolid modeller on a particular platform it might be possible to\nexploit these. Most applications that interpret the file format use\nthe Parasolid kernel to do so, and that is written to be very cautious\nabout the possibility of file corruption, but it still may be possible\nto generate a file that will crash it. However, short of crashing\nthe program reading the file, the format just contains geometric and\ntopological model data, and has no executable or scripted content and\nno features relating to disk or network access, so there should be no\nway to use it to send viruses or similar malicious code.\n\nInteroperability considerations : \nThis file format is used by just about all solid modellers based on\nthe Parasolid kernel. Details of the format may change with versions\nof the Parasolid kernel, but newer versions can always read in files\nwritten by older versions (though not necessarily vice versa).\nTranslators to and from other solid-modelling file formats, including\nSTEP, Pro-Engineer, IGES, and Catia are commercially available,\nthough such conversion is typically lossy and on occasion may fail.\n\nPublished specification : \nThe full specification is not published, but some discussion of it\ncan be found in the specification for the related\nmodel/vnd.parasolid.transmit.text format (which we are applying for\nat the same time). This is available in PDF on request from UG\nSolutions marketing: see\n\nhttp://www.ugsolutions.com/products/parasolid/top_level/contact.shtml\n\nto locate the Marketing Representative for your region.\n\nFor a short while after the submission of this application it can also\nbe downloaded from:\n\nhttp://www.parasolid.com/downloads/xt_download.shtml\n\n\nApplications which use this media : \nSolid modelling software that uses the Parasolid kernel (currently\nover 200, see\n\nhttp://www.ugsolutions.com/products/parasolid/customers/ps_cad.shtml\n\nand linked pages for a selection), plus suitable solid-modelling file\nformat translators.\n\n\nAdditional information :\n\n1. Magic number(s) : (complex: see comment)\n2. File extension(s) : .X_B (recommended), .xmt_bin (deprecated)\n3. Macintosh file type code : none: as far as we know no current Mac\napps read the format While the file is binary, it has a header region\nthat is text (standardly with LF \"\\n\" line endings):\nThe first 3 lines of text in the file are always:\n**ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz**************\n************\n**PARASOLID\n!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~0123456789**************************\n**PART1;\n\nThe lines will normally be separated by single LF (\"\\n\") characters.\nIn addition, the following 3 lines of text are always found in the\nfile somewhere near the beginning, in the order given, though they may\nhave other data between them:\n**PART2;\n**PART3;\n**END_OF_HEADER*****************************************************\n************\n\nThe line after the END_OF_HEADER line always begins with a 'B': this\nis the only thing that distinguishes the header from that of the\nrelated .X_T format, where this line always begins with a 'T'.\n\nAgain, these lines are normally terminated by single LF (\"\\n\")\ncharacters.\n\n\nPerson to contact for further information :\n\n1. Name : Parasolid \n2. E-mail : ps-mimetypes&ugs.com\n         \n\nIntended usage : Common \nExchanging solid-modelling data, particularly for CAD/CAM\napplications.\n\nAuthor/Change controller : John Juckes <johnj&ugsolutions.com>\n \nChange History\n--------------\n2002-08-20\nChanged contact information from \n2. John Juckes <johnj&ugsolutions.com> and\nRoger Dearnaley <x_dearna&ugsolutions.com>\nto\n2. Parasolid <ps-mimetypes&ugs.com>\n\n \n\n\n\n\n\n"
+  },
+  "references": []
+}

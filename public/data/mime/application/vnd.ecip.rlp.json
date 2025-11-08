@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.ecip.rlp",
+  "full": "application/vnd.ecip.rlp",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ecip.rlp",
+    "encoding_considerations": "Security considerations: Security issues associated with this type \n   have not been assessed.\n\nInteroperability considerations: This media type (RLP encoding) is \n   universal inter-operable in all Ethereum and Ethereum Classic \n   clients.",
+    "security_considerations": "have not been assessed.\n\nInteroperability considerations: This media type (RLP encoding) is \n   universal inter-operable in all Ethereum and Ethereum Classic \n   clients.",
+    "interoperability_considerations": "universal inter-operable in all Ethereum and Ethereum Classic \n   clients.",
+    "additional_information": "1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): None\n   4. Macintosh file type code: None\n   5. Object Identifiers: Not used",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-09-08, last updated 2017-09-08)\n\nMedia type name: application\n\nMedia subtype name: vnd.ecip.rlp\n\nRequired parameters: No required parameters.\n\nOptional parameters: No optional parameters.\n\nEncoding considerations: binary\n\nSecurity considerations: Security issues associated with this type \n   have not been assessed.\n\nInteroperability considerations: This media type (RLP encoding) is \n   universal inter-operable in all Ethereum and Ethereum Classic \n   clients.\n\nPublished specification:\n\n   Ethereum Yellow Paper\n   (https://ethereum.github.io/yellowpaper/paper.pdf) Appendix B: \n   Recursive Length Prefix\n\nApplications which use this media: This media type is used by \n   go-ethereum (Ethereum Classic version) and many other Ethereum and \n   Ethereum Classic clients.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: None\n   2. Magic number(s): None\n   3. File extension(s): None\n   4. Macintosh file type code: None\n   5. Object Identifiers: Not used\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Wei Tang\n   2. Email: hi&that.world\n\nIntended usage: Common\n\n   Used by Ethereum and Ethereum Classic clients for interchanging \n   information of blocks, transactions and accounts.\n\nAuthor/Change controller: Wei Tang, on behalf of Ethereum Classic \n   Improvement Proposals."
+  },
+  "references": []
+}

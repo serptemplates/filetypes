@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "cellml+xml",
+  "full": "application/cellml+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/cellml+xml",
+    "encoding_considerations": "Security considerations: As per Section 5 of this document.\n\nInteroperability considerations: As per Section 4.1 of this document.",
+    "security_considerations": "Interoperability considerations: As per Section 4.1 of this document.",
+    "applications": "document.",
+    "additional_information": "Magic number(s): None.\nXML processing software can identify CellML Umbrella documents\nas XML documents that contain a document element with the local\nname \"model\".\n\nFile extension(s):\nThe RECOMMENDED file extension for CellML Umbrella documents is\n.cellml\n\nSome older software uses the file extension .xml. Software\nvendors have also used the non-standard extension .cml. In\ncontexts where the MIME type is available, or where the type\nhas already been determined as CellML, implementations SHOULD\nallow files to be opened regardless of the extension.\nImplementations transferring models to an environment that uses\nfile extensions SHOULD use the .cellml extension.\n\nMacintosh File Type Code(s): \"TEXT\"",
+    "intended_usage": "common",
+    "template_text": "(RFC 4708 published October 2006, subtype last updated October 2006)\n\nMIME media type name: application\n\nMIME subtype name: cellml+xml\n\nMandatory parameters: none\n\nOptional parameters: charset\n\nThe charset parameter of application/cellml+xml is handled in the\nsame fashion as for application/xml, as specified in Section 3.2\nof [RFC3023]. However, per conformance rule 4 of\n[CELLML-UMBRELLA], valid CellML Umbrella documents MUST be in the\nUTF-8 character set. If the charset parameter is present, it MUST\ntake the value \"utf-8\". CellML processing software SHOULD check\nthe charset field, and if it is present but not equal to \"utf-8\",\nMAY attempt to recover from the error by processing the document\nin the specified character set.\n\nEncoding considerations: As per Section 3.2 of [RFC3023].\n\nSecurity considerations: As per Section 5 of this document.\n\nInteroperability considerations: As per Section 4.1 of this document.\n\nPublished specification:\n\nCellML Umbrella Specification [CELLML-UMBRELLA].\n\nApplications that use this media type: As per Section 4.2 of this\ndocument.\n\nAdditional information:\n\nMagic number(s): None.\nXML processing software can identify CellML Umbrella documents\nas XML documents that contain a document element with the local\nname \"model\".\n\nFile extension(s):\nThe RECOMMENDED file extension for CellML Umbrella documents is\n.cellml\n\nSome older software uses the file extension .xml. Software\nvendors have also used the non-standard extension .cml. In\ncontexts where the MIME type is available, or where the type\nhas already been determined as CellML, implementations SHOULD\nallow files to be opened regardless of the extension.\nImplementations transferring models to an environment that uses\nfile extensions SHOULD use the .cellml extension.\n\nMacintosh File Type Code(s): \"TEXT\"\n\nPerson & email address to contact for further information:\nSee the Author's Address section of this document.\n\nIntended usage: COMMON\n\nAuthor/Change controller: The CellML Umbrella 1.0 specification\nwas authored by Andrew Miller.\n\nThe CellML Umbrella 1.0 specification itself will not change.\nHowever, the umbrella specification defines the process for new\nspecific formats to be registered. The Bioengineering\nInstitute at The University of Auckland, with input from the\nCellML Community via the cellml-discussion&cellml.org mailing\nlist, has control over the CellML Umbrella Format Registry.\n\n"
+  },
+  "references": []
+}

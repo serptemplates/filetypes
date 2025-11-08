@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.poc.groups+xml",
+  "full": "application/vnd.oma.poc.groups+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.poc.groups+xml",
+    "template_text": "(last updated 14 September 2006)\r\n\r\nName : Sean Kelley\r\n\r\nEmail : seankelley&motorola.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.oma.poc.groups+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : 8bit\r\nThe UTF-8 charset is used in the content of this XML-based media type.\r\n\r\nSecurity considerations : This content type carries information about a\r\nGroup (e.g. member lists, group policies, and group attributes), and\r\nshould be kept private. The XML documents describing Groups are\r\nprotected by authorization policies enforced by the XCAP Server where\r\nthe documents are stored, which controls access to the document\r\ncontents.\r\n\r\nThe security of the content is managed by transport layer protocols, not\r\nthe media type itself. This media type does not contain active or\r\nexecutable content.\r\n\r\nInteroperability considerations : This content type provides a format\r\nfor exchanging information that describes groups used for group\r\ncommunication.\r\n\r\nPublished specification : The OMA PoC XDM Specification is published at\r\nhttp://www.openmobilealliance.org/.\r\n\r\nApplications which use this media : Applications that support group\r\ncommunication, such as OMA Push to Talk over Cellular (PoC) service.\r\n\r\nAdditional information :\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none \r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n1. Name : OMA Push to Talk over Cellular (POC) Working Group \r\n2. Email : technical-comments&mail.openmobilealliance.org\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : The OMA PoC specifications are a work item of\r\nthe OMA Push to Talk over Cellular (POC) Working Group. The Open Mobile\r\nAlliance has change control over these specifications, with mailing list\r\naddress technical-comments&mail.openmobilealliance.org.\r\n\r\n(file created 14 September 2006)"
+  },
+  "references": []
+}

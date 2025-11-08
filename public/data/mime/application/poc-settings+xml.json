@@ -1,0 +1,47 @@
+{
+  "type": "application",
+  "subtype": "poc-settings+xml",
+  "full": "application/poc-settings+xml",
+  "extensions": [],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/poc-settings+xml",
+    "encoding_considerations": "characters, depending on the character encoding used. See RFC\n3023 [3], Section 3.2.\n\nSecurity considerations: This content type is designed to carry\ninformation about current PoC user settings, which in some cases\nmay be considered private information. Appropriate precautions\nshould be adopted to limit disclosure of this information.\n\nInteroperability considerations: This content type provides a\ncommon format for exchange of PoC settings information.\n\nPublished specification: RFC 4354 (this document).\n\nApplications which use this media type: Push-to-talk over Cellular\nsystems in compliance with the Open Mobile Alliance (OMA) PoC\nspecifications.\n\nAdditional information: The Open Mobile Alliance publishes the\nPush-to-talk over Cellular specifications in the OMA web site at\nhttp://www.openmobilealliance.org\n\nPerson & email address to contact for further information: Miguel\nA. Garcia-Martin, miguel.an.garcia&nokia.com\n\nIntended usage: Limited use, restricted to PoC terminals and\nservers.\n\nAuthor/Change controller: Open Mobile Alliance\n(http://www.openmobilealliance.org), PoC working group.\n\nOther information: This media type is a specialization of\napplication/xml RFC 3023 [3], and many of the considerations\ndescribed there also apply to application/poc-settings+xml.",
+    "security_considerations": "information about current PoC user settings, which in some cases\nmay be considered private information. Appropriate precautions\nshould be adopted to limit disclosure of this information.\n\nInteroperability considerations: This content type provides a\ncommon format for exchange of PoC settings information.\n\nPublished specification: RFC 4354 (this document).\n\nApplications which use this media type: Push-to-talk over Cellular\nsystems in compliance with the Open Mobile Alliance (OMA) PoC\nspecifications.\n\nAdditional information: The Open Mobile Alliance publishes the\nPush-to-talk over Cellular specifications in the OMA web site at\nhttp://www.openmobilealliance.org\n\nPerson & email address to contact for further information: Miguel\nA. Garcia-Martin, miguel.an.garcia&nokia.com\n\nIntended usage: Limited use, restricted to PoC terminals and\nservers.\n\nAuthor/Change controller: Open Mobile Alliance\n(http://www.openmobilealliance.org), PoC working group.\n\nOther information: This media type is a specialization of\napplication/xml RFC 3023 [3], and many of the considerations\ndescribed there also apply to application/poc-settings+xml.",
+    "interoperability_considerations": "common format for exchange of PoC settings information.\n\nPublished specification: RFC 4354 (this document).\n\nApplications which use this media type: Push-to-talk over Cellular\nsystems in compliance with the Open Mobile Alliance (OMA) PoC\nspecifications.\n\nAdditional information: The Open Mobile Alliance publishes the\nPush-to-talk over Cellular specifications in the OMA web site at\nhttp://www.openmobilealliance.org\n\nPerson & email address to contact for further information: Miguel\nA. Garcia-Martin, miguel.an.garcia&nokia.com\n\nIntended usage: Limited use, restricted to PoC terminals and\nservers.\n\nAuthor/Change controller: Open Mobile Alliance\n(http://www.openmobilealliance.org), PoC working group.\n\nOther information: This media type is a specialization of\napplication/xml RFC 3023 [3], and many of the considerations\ndescribed there also apply to application/poc-settings+xml.",
+    "additional_information": "Push-to-talk over Cellular specifications in the OMA web site at\nhttp://www.openmobilealliance.org\n\nPerson & email address to contact for further information: Miguel\nA. Garcia-Martin, miguel.an.garcia&nokia.com\n\nIntended usage: Limited use, restricted to PoC terminals and\nservers.\n\nAuthor/Change controller: Open Mobile Alliance\n(http://www.openmobilealliance.org), PoC working group.\n\nOther information: This media type is a specialization of\napplication/xml RFC 3023 [3], and many of the considerations\ndescribed there also apply to application/poc-settings+xml.",
+    "intended_usage": "limited use, restricted to poc terminals and",
+    "template_text": "(RFC 4354 published January 2006, subtype last updated January 2006)\n\nMIME media type name: application\n\nMIME subtype name: poc-settings+xml\n\nRequired parameters: (none)\n\nOptional parameters: charset; Indicates the character encoding of\nenclosed XML. Default is UTF-8 [7].\n\nEncoding considerations: Uses XML, which can employ 8-bit\ncharacters, depending on the character encoding used. See RFC\n3023 [3], Section 3.2.\n\nSecurity considerations: This content type is designed to carry\ninformation about current PoC user settings, which in some cases\nmay be considered private information. Appropriate precautions\nshould be adopted to limit disclosure of this information.\n\nInteroperability considerations: This content type provides a\ncommon format for exchange of PoC settings information.\n\nPublished specification: RFC 4354 (this document).\n\nApplications which use this media type: Push-to-talk over Cellular\nsystems in compliance with the Open Mobile Alliance (OMA) PoC\nspecifications.\n\nAdditional information: The Open Mobile Alliance publishes the\nPush-to-talk over Cellular specifications in the OMA web site at\nhttp://www.openmobilealliance.org\n\nPerson & email address to contact for further information: Miguel\nA. Garcia-Martin, miguel.an.garcia&nokia.com\n\nIntended usage: Limited use, restricted to PoC terminals and\nservers.\n\nAuthor/Change controller: Open Mobile Alliance\n(http://www.openmobilealliance.org), PoC working group.\n\nOther information: This media type is a specialization of\napplication/xml RFC 3023 [3], and many of the considerations\ndescribed there also apply to application/poc-settings+xml.\n\n"
+  },
+  "references": [
+    {
+      "title": "RFC 3023",
+      "url": "https://www.rfc-editor.org/rfc/rfc3023.html",
+      "kind": "RFC"
+    }
+  ]
+}

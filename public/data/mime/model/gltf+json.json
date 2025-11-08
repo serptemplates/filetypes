@@ -1,0 +1,40 @@
+{
+  "type": "model",
+  "subtype": "gltf+json",
+  "full": "model/gltf+json",
+  "extensions": [
+    "gltf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/gltf+json",
+    "encoding_considerations": "RFC 7159 §8.1 describes JSON encoding considerations",
+    "security_considerations": "The glTF 1.0 standard does not itself use active or executable content. However, it does allow inclusion of GLSL shaders via URL references, which supports loops and branching but has no directives for modifying files or other external resources.\n\nglTF also uses URLs to reference JPEG, PNG, BMP, and GIF images, and thus inherits the security considerations for these formats.\n\nglTF is not targeted towards applications that inherently require security assurance. While it is conceivable that glTF is used for storage of sensitive information, if it is used this access control, privacy, and integrity protections must be provided externally.\n\nglTF is targeted to the WebGL ecosystem, which has provable security in its browser-based sandbox concept for graphics API calls.\n\nSee RFC 7159 §12 for JSON-specific security considerations.",
+    "interoperability_considerations": "glTF documents are designed to provide interoperability between content creation and processing tools, and visualization applications, primarily in a WebGL environment. glTF documents can be validated by the published JSON schema.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): None\n3. File extension(s): gltf\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-07-01, last updated 2016-07-01)\n\nName: Uli Klumpp\nEmail: iana&uliklumpp.com\n\nMedia type name: model\nMedia subtype name: gltf+json\n\nRequired parameters: None\n\nOptional parameters:\nNone\n\nEncoding considerations: binary\nRFC 7159 §8.1 describes JSON encoding considerations\n\nSecurity considerations:\nThe glTF 1.0 standard does not itself use active or executable content. However, it does allow inclusion of GLSL shaders via URL references, which supports loops and branching but has no directives for modifying files or other external resources.\n\nglTF also uses URLs to reference JPEG, PNG, BMP, and GIF images, and thus inherits the security considerations for these formats.\n\nglTF is not targeted towards applications that inherently require security assurance. While it is conceivable that glTF is used for storage of sensitive information, if it is used this access control, privacy, and integrity protections must be provided externally.\n\nglTF is targeted to the WebGL ecosystem, which has provable security in its browser-based sandbox concept for graphics API calls.\n\nSee RFC 7159 §12 for JSON-specific security considerations.\n\nInteroperability considerations:\nglTF documents are designed to provide interoperability between content creation and processing tools, and visualization applications, primarily in a WebGL environment. glTF documents can be validated by the published JSON schema.\n\nPublished specification:\nSpecification released by the Khronos Group (alongside OpenGL, WebGL, OpenCL, COLLADA, etc.): https://www.khronos.org/gltf\n\nOverview:\nhttps://github.com/KhronosGroup/glTF/blob/master/specification/README.md\n\nSchema for validation:\nhttps://github.com/KhronosGroup/glTF/tree/master/specification/schema\n\nApplications which use this media:\nSeveral graphics oriented web applications, frameworks or libraries have adopted glTF as a supported file format:\n* Cesium - An open-source JavaScript library for world-class 3D globes and maps\n* Three.js - A library that makes WebGL - 3D in the browser - easy to use. While a simple cube in raw WebGL would turn out hundreds of lines of JavaScript and shader code, a Three.js equivalent is only a fraction of that.\n* Babylon.js - An open source 3D engine based on WebGL and JavaScript, initiated by Microsoft.\n* Montage Studio was founded with the vision of a true web-native universal SDK, a framework, and authoring combined as one creative, collaborative environment where web designers and developers would work seamlessly together, from start to finish, to deliver rich applications, made with HTML5, across billions of devices.\n\nThere are converters from COLLADA and FBX, so exports from DCC tools such as 3ds Max, Maya, Modo, Poser and Blender can easily be converted to glTF. Blender is working on native support for glTF export.\n\nFragment identifier considerations:\nSee RFC 6901 §6 for JSON fragment identifier rules\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): None\n3. File extension(s): gltf\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\nN/A\n\nPerson to contact for further information:\n\n1. Name: Uli Klumpp\n2. Email: iana&uliklumpp.com\n\nIntended usage: Common\nglTF 1.0 (GL Transmission Format) is a royalty-free specification for the efficient transmission and loading of 3D scenes and models by applications. glTF minimizes both the size of 3D assets, and the runtime processing needed by applications using WebGL and OpenGL-family APIs to unpack and use those assets. glTF defines a common publishing format for 3D content tools and services that streamlines authoring workflows and enables interoperable use of content across the industry.\n\nAuthor/Change controller: The Khronos Group (https://www.khronos.org)"
+  },
+  "references": []
+}

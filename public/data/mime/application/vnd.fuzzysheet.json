@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.fuzzysheet",
+  "full": "application/vnd.fuzzysheet",
+  "extensions": [
+    "fzs"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.fuzzysheet",
+    "template_text": "(last updated 2007-01-18)\n\nName : Simon Birtwistle\n\nEmail : mime&20000.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.fuzzysheet\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling\nbinary.\n\nSecurity considerations :\nNo executable content. Data integrity is checked within the application,\nand all textual content is encrypted to prevent casual inspection. No\nuser-identifying information is contained within the file.\n\nInteroperability considerations :\nFormat is multiplatform.\n\nPublished specification :\nProprietory.\n\nApplications which use this media :\nFuzzySheet.\n\nAdditional information :\n\n1. Magic number(s) : 46 7A 53 00\n2. File extension(s) : fzs\n3. Macintosh file type code : -none-\n4. Object Identifiers: -none-\n\n\n\nPerson to contact for further information :\n\n1. Name : Simon Birtwistle\n2. Email : mime&20000.org\n\nIntended usage : Common\nInterchange of non-precise information for census, polling, and other\ndata collection tasks in diverse multilingual and multicultural\nenvironments.\n\nAuthor/Change controller :\n\n\n(file created 2007-01-18)"
+  },
+  "references": []
+}

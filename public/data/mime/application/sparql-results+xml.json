@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "sparql-results+xml",
+  "full": "application/sparql-results+xml",
+  "extensions": [
+    "srx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/sparql-results+xml",
+    "encoding_considerations": "Identical to those of \"application/xml\" as specified in [RFC3023], section 3.2.",
+    "security_considerations": "SPARQL query results uses URIs. See Section 7 of [RFC3986].\n\nSPARQL query results uses IRIs. See Section 8 of [RFC3987].\n\nAs this media type uses the \"+xml\" convention, it shares the same security considerations as described in [RFC3023], section 10.",
+    "interoperability_considerations": "There are no known interoperability issues.",
+    "additional_information": "Magic number(s):\nAs specified for \"application/xml\" in [RFC3023], section 3.2.\n\nFile extension(s):\n\".srx\"",
+    "template_text": "Type name:\napplication\n\nSubtype name:\nsparql-results+xml\n\nRequired parameters:\nNone\n\nOptional parameters:\n\"charset\": This parameter has identical semantics to the charset parameter of the \"application/xml\" media type as specified in [RFC3023], section 3.2.\n\nEncoding considerations:\nIdentical to those of \"application/xml\" as specified in [RFC3023], section 3.2.\n\nSecurity considerations:\nSPARQL query results uses URIs. See Section 7 of [RFC3986].\n\nSPARQL query results uses IRIs. See Section 8 of [RFC3987].\n\nAs this media type uses the \"+xml\" convention, it shares the same security considerations as described in [RFC3023], section 10.\n\nInteroperability considerations:\nThere are no known interoperability issues.\n\nPublished specification:\nThis specification.\n\nApplications which use this media type:\nNo known applications currently use this media type.\n\nAdditional information:\n\nMagic number(s):\nAs specified for \"application/xml\" in [RFC3023], section 3.2.\n\nFile extension(s):\n\".srx\"\n\nFragment identifiers:\nIdentical to that of \"application/xml\" as described in RFC 3023 [RFC3023], section 5.\n\nBase URI:\nAs specified in [RFC3023], section 6.\n\nMacintosh file type code(s):\n\"TEXT\"\n\nPerson & email address to contact for further information:\nDave Beckett, Eric Prud'hommeaux <public-rdf-dawg-comments&w3.org>\n\nIntended usage:\nCOMMON\n\nRestrictions on usage:\nNone\n\nAuthor/Change controller:\nThe SPARQL specification is a work product of the World Wide Web Consortium's RDF Data Access Working Group. The W3C has change control over these specifications."
+  },
+  "references": []
+}

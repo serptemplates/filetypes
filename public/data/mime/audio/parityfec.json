@@ -1,0 +1,43 @@
+{
+  "type": "audio",
+  "subtype": "parityfec",
+  "full": "audio/parityfec",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/parityfec",
+    "encoding_considerations": "transport within the Real Time Transport protocol (RTP)\n    [4,5].  Its transport within RTP is fully specified with RFC\n    2733 [1].\n\nSecurity considerations: the same security considerations\n    apply to these mime registrations as to the payloads for\n    for them, as detailed in RFC 2733.\n\nInteroperability considerations: none\n\nPublished specification: This MIME type is described fully\n    within RFC 2733 [1].\n\nApplications which use this media type: Audio and video\n    streaming tools which seek to improve resiliency to loss by\n    sending additional data with the media stream.\n\nAdditional information: none",
+    "security_considerations": "apply to these mime registrations as to the payloads for\n    for them, as detailed in RFC 2733.\n\nInteroperability considerations: none\n\nPublished specification: This MIME type is described fully\n    within RFC 2733 [1].\n\nApplications which use this media type: Audio and video\n    streaming tools which seek to improve resiliency to loss by\n    sending additional data with the media stream.\n\nAdditional information: none",
+    "interoperability_considerations": "Published specification: This MIME type is described fully\n    within RFC 2733 [1].\n\nApplications which use this media type: Audio and video\n    streaming tools which seek to improve resiliency to loss by\n    sending additional data with the media stream.\n\nAdditional information: none",
+    "intended_usage": "common",
+    "template_text": "MIME media type name: audio\n\nMIME subtype name: parityfec\n\nRequired parameters: none\n\n    Note that [3] mandates that RTP payload formats without a\n    defined rate must define a rate parameter as part of their\n    MIME registration.  The payload format for generic forward\n    error correction [1] does not specify a rate parameter.\n    However, the rate for FEC data is equal to the rate of the\n    media data it protects.\n\nOptional parameters: none\n\n    Typical optional parameters [3], such as the number of\n    channels, and the duration of audio per packet, do not\n    apply to FEC data.  The number of channels is effectively\n    the same as the media data it protects; the same is true\n    for the duration of audio per packet.\n\nEncoding considerations: This format is only defined for\n    transport within the Real Time Transport protocol (RTP)\n    [4,5].  Its transport within RTP is fully specified with RFC\n    2733 [1].\n\nSecurity considerations: the same security considerations\n    apply to these mime registrations as to the payloads for\n    for them, as detailed in RFC 2733.\n\nInteroperability considerations: none\n\nPublished specification: This MIME type is described fully\n    within RFC 2733 [1].\n\nApplications which use this media type: Audio and video\n    streaming tools which seek to improve resiliency to loss by\n    sending additional data with the media stream.\n\nAdditional information: none\n\nPerson & email address to contact for further information:\n\n    Jonathan Rosenberg\n    dynamicsoft\n    72 Eagle Rock Avenue\n    First Floor\n    East Hanover, NJ 07936\n    email: jdrosen&dynamicsoft.com\n           jdrosen&alum.mit.edu\n\nIntended usage: COMMON\n\nAuthor/Change controller: This registration is part of the IETF\n    registration tree.\n\nRTP and SDP Issues: Usage of this format within RTP and the\n    Session Description Protocol (SDP) [6] are fully specified\n    within RFC 2733 [1]."
+  },
+  "references": [
+    {
+      "title": "RFC 2733",
+      "url": "https://www.rfc-editor.org/rfc/rfc2733.html",
+      "kind": "RFC"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.gerber",
+  "full": "application/vnd.gerber",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.gerber",
+    "template_text": "(registered 2015-02-05, last updated 2015-02-05)\n\nName : Thomas Weyn\n\nEmail : thomas.weyn&ucamco.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.gerber\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : 7bit\n\n\nSecurity considerations : \nThe Gerber file format is the de facto standard for printed circuit board\n(PCB) image data transfer. Gerber files consist of 7bit ASCII text and\ndo not contain any active or executable content. The format does include an\noptional integrity check: A checksum of the file's content can be specified\nusing the MD5 File Attribute. Any additional integrity protection or\nprivacy protection must be supplied externally.\n\nInteroperability considerations : \nGerber has the same interoperability issues as plain text\n\nPublished specification : \nhttp://www.ucamco.com/gerber\n\nApplications which use this media : \n\n\nFragment identifier considerations :\n\n\nRestrictions on usage :\n\n\nProvisional registration? (standards tree only) :\n\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : \n2. Magic number(s) : \n3. File extension(s) : gbr\n4. Macintosh file type code : \n5. Object Identifiers: \n\n\n\nPerson to contact for further information :\n\n1. Name : Thomas Weyn\n2. Email : thomas.weyn&ucamco.com\n\nIntended usage : Common\nGerber stores image vector data in a structured way together with metadata. It is generally applicable to display black and white images, but is especially suited for describing layers of a printed circuit board.\n\nAuthor/Change controller : Ucamco"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.jcp.javame.midlet-rms",
+  "full": "application/vnd.jcp.javame.midlet-rms",
+  "extensions": [
+    "rms"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.jcp.javame.midlet-rms",
+    "template_text": "(last updated 2007-06-25)\n\nName : Mikhail Gorshenev\n\nEmail : Mikhail.Gorshenev&sun.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.jcp.javame.midlet-rms\n\nRequired parameters : None\n\n\nOptional parameters :\nNone\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling \nbinary.\n\nSecurity considerations :\nThe RMS file contains serialized stream of persistent MIDP application data. \nData may be encrypted (PKCS#5 password-based encryption) or plaintext. \nPassword-based encryption provides only basic level of security and is not \nintended for secure interchange between different parties.\nFor authentication during provisioning RMS files may be embedded in a signed \njar file and/or delivered over a secure network connection.\n\nRMS files may contain sensitive data. Exporting RMS files may compromise the \ndata. An RMS file from an untrusted source is potentially unsafe and may break \nthe integrity of an application. It may be possible to exploit application \nvulnerability using malicious RMS file.\n\n\nInteroperability considerations :\nNone\n\nPublished specification :\nEarly draft of specification is available at\nhttp://jcp.org/en/jsr/detail?id=271\n\nApplications which use this media :\nRMS file contains persistent data for the MIDP application.\nMIDP applications and application management software use this format for the \ndata provisioning, exchange and backup.\n\n\nAdditional information :\n\n1. Magic number(s) : First six bytes: 0x4d 0x49 0x44 0x52 0x4d 0x53 (&#8220;MIDRMS&#8221;)\n2. File extension(s) : rms\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Mikhail Gorshenev\n2. Email : Mikhail.Gorshenev&sun.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : The Java Community Process(JCP) oversees the \nchanges made by theJSR-271 expert group to the MIDP Specification.\n(See Java Community Process website for details http://java.sun.com/jcp)\n\n(file created 2007-06-25)"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.fujixerox.docuworks",
+  "full": "application/vnd.fujixerox.docuworks",
+  "extensions": [
+    "xdw"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.fujixerox.docuworks",
+    "template_text": "(registered 1998, last updated 2019-12-03)\n\nName : Takatomo Wakibayashi\n\nE-mail : takatomo.wakibayashi&fujixerox.co.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.fujixerox.docuworks\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : \nnothing, using \"binary\".\n\nSecurity considerations : \nFile is intended to be processed by DocuWorks.\nIt may contain arbitrary files which could be extracted and executed on\nthe receivers system and could compromise the security of the machine.\nAlso, it may contain OLE objects. Files of this type should be\nconsidered insecure.\n\nInteroperability considerations : \nThis media type will be used by DocuWorks.  However, because this\nmedia type is open to the public, everyone can use it.\n\nPublished specification : \nnothing\n\nApplications which use this media : \nfollowing applications of Fuji Xerox,\n  - DocuWorks Desk\n  - DocuWorks Viewer\n  - DocuWorks Viewer Light\n  - DocuWorks Viewer Light for Web\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : xdw\n3. Macintosh file type code : none\n\nPerson to contact for further information :\n\n1. Name : Takatomo Wakibayashi\n2. E-mail : takatomo.wakibayashi&fujixerox.co.jp\n\nIntended usage : Common \nThis media type will be using HTTP.\n\nAuthor/Change controller:\nCompany: Fuji Xerox Co., Ltd.\nSection: Office Documanet Product Developmanet Center \n  ODP Software Module Development Division\n  Product Development Department V\n\nAddress: 3-2-1, Sakado, Takatsu-ku, Kawasaki-shi, Kanagawa-ken 213-0012, Japan\nTEL:+81-44-812-9119\nFAX:+81-44-812-7233\nE-mail:yasuo.taguchi&fujixerox.co.jp \n\n"
+  },
+  "references": []
+}

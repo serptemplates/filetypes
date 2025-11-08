@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.tao.intent-module-archive",
+  "full": "application/vnd.tao.intent-module-archive",
+  "extensions": [
+    "tao"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.tao.intent-module-archive",
+    "template_text": "(last updated 2007-02-07)\n\nName : Daniel Shelton\n\nEmail : sheltond&tao-group.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.tao.intent-module-archive\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media type represents a distribution mechanism for executable code (in addition \nto data and other content), which runs within the Tao Intent environment.\n\nIntent is an operating environment running either hosted within an application on a \nhost operating system or running natively on the device's hardware.\n\nIn both cases, use of the executable code contained within this media type exposes the \ndevice to arbitrary effects.\n\nA cryptographic signing mechanism is used to ensure integrity and authenticity of the \ncontent.\n\n\nInteroperability considerations :\nThis content type is intended for use solely with the Tao Intent environment, and is not \nexpected to be interoperable with any other system.\n\n\nPublished specification :\nThe specification for this media type is not an open specification, but is available from \nTao Group Ltd as part of the documentation in various Intent Software Development Kits.\n\n\nApplications which use this media :\nIntent (Tao Group Ltd) and application-specific player derivatives.\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .tao\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Daniel Shelton\n2. Email : sheltond&tao-group.com\n\nIntended usage : Common\nThis media type is a signed archive format containing executable code and data representing \na unit of extension functionality (libraries, applications, etc) for the Intent operating \nenvironment.\n\n\nAuthor/Change controller : Tao Group Ltd,\n62-63 Sutton Park Avenue,\nEarley,\nReading,\nRG6 1AZ,\nUK\n\n(file created 2007-02-07)"
+  },
+  "references": []
+}

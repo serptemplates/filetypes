@@ -1,0 +1,37 @@
+{
+  "type": "audio",
+  "subtype": "t38",
+  "full": "audio/t38",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/t38",
+    "encoding_considerations": "The encoding of the IFP RTP packets is defined in ITU-T\n   Recommendation T.38.  This sub-type is not intended for use with\n   e-mail.",
+    "security_considerations": "See Section 6 of RFC 4612.",
+    "interoperability_considerations": "ITU-T Recommendation T.38 defines the procedures, syntax, and\n   parameters for the carriage of T.38 over RTP within the context of\n   H.323 [8], SIP [9], and H.248 [7] systems.",
+    "additional_information": "Magic number(s):  File extension(s):  Macintosh File Type Code(s):",
+    "template_text": "(per RFC4612)\n\nMIME media type name: audio\n\nMIME subtype name: t38\n\nRequired parameters:\n\n   rate:  The RTP timestamp clock rate, which SHOULD be 8000Hz.  The\n   clock frequency MAY be set to any value, but it SHOULD be set to\n   the same value as that for any audio packets in the same RTP\n   stream in order to avoid RTP timestamp rate switching.\n\n   T38FaxRateManagement: Indicates the fax rate management model as\n   defined in T.38.  Values may be \"localTCF\" or \"transferredTCF\".\n   This parameter is defined in ITU-T Recommendation T.38.\n\nOptional parameters:\n\n   T38FaxFillBitRemoval: Indicates the capability to remove and\n   insert fill bits in Phase C (refer to [6]), non-ECM data to reduce\n   bandwidth.  This is a boolean parameter (inclusion = true,\n   exclusion = false).  This parameter is defined in ITU-T\n   Recommendation T.38.\n\n   T38FaxTranscodingMMR: Indicates the ability to convert to/from MMR\n   from/to the line format for increasing the compression of the data\n   and reducing the bandwidth in the packet network.  This is a\n   boolean parameter (inclusion = true, exclusion = false).  This\n   parameter is defined in ITU-T Recommendation T.38.\n\n   T38FaxTranscodingJBIG: Indicates the ability to convert to/from\n   JBIG to reduce bandwidth.  This is a boolean parameter (inclusion\n   = true, exclusion = false).  This parameter is defined in ITU-T\n   Recommendation T.38.\n\n   T38FaxVersion: This is the version number of ITU-T Rec. T.38.  New\n   versions shall be compatible with previous versions.  Absence of\n   this parameter indicates version 0.  The version is expressed as\n   an integer value.  This parameter is defined in ITU-T\n   Recommendation T.38.\n\n   T38FaxMaxBuffer: Indicates the maximum number of octets that can\n   be stored on the remote device before an overflow condition\n   occurs.  It is the responsibility of the transmitting application\n   to limit the transfer rate to prevent an overflow.  The negotiated\n   data rate should be used to determine the rate at which data is\n   being removed from the buffer.  Value is an integer.  This\n   parameter is defined in ITU-T Recommendation T.38.\n\n   T38FaxMaxDatagram: The maximum size of the payload within an RTP\n   packet that can be accepted by the remote device.  This is an\n   integer value.  This parameter is defined in ITU-T Recommendation\n   T.38.\n\nEncoding considerations:\n\n   The encoding of the IFP RTP packets is defined in ITU-T\n   Recommendation T.38.  This sub-type is not intended for use with\n   e-mail.\n\nSecurity considerations:\n\n   See Section 6 of RFC 4612.\n\nInteroperability considerations:\n\n   ITU-T Recommendation T.38 defines the procedures, syntax, and\n   parameters for the carriage of T.38 over RTP within the context of\n   H.323 [8], SIP [9], and H.248 [7] systems.\n\nPublished specification:\n\n   ITU-T Recommendation T.38, \"Procedures for real-time Group 3\n   facsimile communication over IP networks\", September 2005\n\nApplications which use this media type:\n\n   Real-time facsimile (fax)\n\nAdditional information:\n\n   Magic number(s):  File extension(s):  Macintosh File Type Code(s):\n\nPerson & email address to contact for further information:\n\n   Paul E. Jones paulej&packetizer.com\n\n   Intended usage: COMMON\n\n   Author/Change controller: Paul E. Jones"
+  },
+  "references": []
+}

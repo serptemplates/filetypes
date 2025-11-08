@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.nokia.n-gage.data",
+  "full": "application/vnd.nokia.n-gage.data",
+  "extensions": [
+    "ngdat"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.nokia.n-gage.data",
+    "template_text": "(last updated 2007-03-06)\n\nName : Nokia\n\nEmail : mime&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.nokia.n-gage.data\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis MIME type represents game data files, such as protected levels or tracks.\nWhere necessary, the content of these files will be protected using OMA DRM 2.\nOMA DRM 2 is not specific to the type. It is an industry standard\nexternal service used to encrypt and decrypt data.\n\nThe type does not contain any executable content.\n\nInteroperability considerations :\nNone\n\nPublished specification :\nNone\n\nApplications which use this media :\nN-Gage game applications\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : ngdat\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Nokia\n2. Email : mime&nokia.com\n\nIntended usage : Common\n\n\nAuthor/Change controller :\n\n(file created 2007-03-06)"
+  },
+  "references": []
+}

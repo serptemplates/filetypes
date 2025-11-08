@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "csvm+json",
+  "full": "application/csvm+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/csvm+json",
+    "template_text": "(registered 2015-10-12, last updated 2015-10-12)\n\nMIME media type name : Application\n\nMIME subtype name : Standards Tree - csvm+json\n\nRequired parameters : None\n\nOptional parameters : \nNone\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nSee RFC7159 section 12 https://tools.ietf.org/html/rfc7159\n\nand\n\nhttp://www.w3.org/TR/2015/CR-tabular-metadata-20150716/#security-considerations\nsection 7. Security Considerations of this specification\n[[\nApplications that process tabular data may use that data to drive other actions, which may have security implications. These behaviors are outside the scope of this specification.\n\nThird party metadata provided about a tabular data file (such as a CSV file) may rename or ignore headers, or exclude rows or columns, which may lead to data being misinterpreted by applications that process it.\n\nTransformation definitions are a possible security risk as they enable the creators of metadata to reference arbitrary code that may be executed to convert tabular data into other formats. Implementations should run this arbitrary code in a sandboxed environment to reduce the security risk.\n]]\n\n\nInteroperability considerations : \nNote that this format is not the same as the existing text/csv and text/tab-delimited-values mediatypes, but a JSON-based format used to annotate such documents. Also see [RFC7159] for interoperability information for JSON.\n\nPublished specification : \nLatest version:\nhttp://www.w3.org/TR/tabular-metadata/\n\nThis version:\nhttp://www.w3.org/TR/2015/CR-tabular-metadata-20150716/\n\n\nApplications which use this media : \nIt is anticipated that there is a broad need for data validators and converters to alternate structured representations of tabular data. It is expected that many applications and programming languages will be using this media type across many operating systems.\n\nFragment identifier considerations :\nSee RFC6839, section 3.1\nhttps://tools.ietf.org/html/rfc6839\n\nRestrictions on usage :\nNone\n\nProvisional registration? (standards tree only) :\nNo\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : None\n2. Magic number(s) : None\n3. File extension(s) : .json\n4. Macintosh file type code : org.w3c.csvm conforms to public.json\n5. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Ivan Herman\n2. Email : ivan&w3.org\n\nIntended usage : Common\nN/A\n\nAuthor/Change controller : The Tabular metadata specification is the product of the CSV on the Web Working Group. The W3C reserves change control over this specification."
+  },
+  "references": []
+}

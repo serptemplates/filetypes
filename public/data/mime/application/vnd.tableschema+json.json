@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.tableschema+json",
+  "full": "application/vnd.tableschema+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.tableschema+json",
+    "security_considerations": "The media type does not contain executable content. Additionally, as the media type makes no claims on the actual information transported with it, and is rather only concerned with the data structure of the payload, there is no known need for privacy or integrity services.",
+    "interoperability_considerations": "Interoperability is enabled via JSON support in the platform.",
+    "additional_information": "1. Deprecated alias names for this type: not applicable.\n2. Magic number(s): not applicable.\n3. File extension(s): json\n4. Macintosh file type code: not applicable.\n5. Object Identifiers: not applicable.",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-01-10, last updated 2017-01-10)\n\nName: Paul Walsh\nEmail: paul.walsh&okfn.org\n\nMedia type name: application\nMedia subtype name: vnd.tableschema+json\n\nRequired parameters: not applicable.\n\nOptional parameters:\nnot applicable.\n\nEncoding considerations: 8bit if UTF-8; binary if UTF-16 or UTF-32\n\n\nSecurity considerations:\nThe media type does not contain executable content. Additionally, as the media type makes no claims on the actual information transported with it, and is rather only concerned with the data structure of the payload, there is no known need for privacy or integrity services.\n\nInteroperability considerations:\nInteroperability is enabled via JSON support in the platform.\n\nPublished specification:\nhttp://specs.frictionlessdata.io/json-table-schema/\n\nApplications which use this media:\nApplications which use this media type handle raw, often text-based data sources, and require additional metadata on those data sources. The payload accompanying this media type is a descriptor for that metadata and data.\n\nFragment identifier considerations:\nnot applicable.\n\nRestrictions on usage:\nnot applicable.\n\nProvisional registration? (standards tree only):\nnot applicable.\n\nAdditional information:\n\n1. Deprecated alias names for this type: not applicable.\n2. Magic number(s): not applicable.\n3. File extension(s): json\n4. Macintosh file type code: not applicable.\n5. Object Identifiers: not applicable.\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Paul Walsh\n2. Email: paul.walsh&okfn.org\n\nIntended usage: Common\nTo transport data and metadata.\n\nAuthor/Change controller: not applicable."
+  },
+  "references": []
+}

@@ -1,0 +1,40 @@
+{
+  "type": "image",
+  "subtype": "jxsc",
+  "full": "image/jxsc",
+  "extensions": [
+    "jxsc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/jxsc",
+    "encoding_considerations": "Codestreams are binary and should be transmitted in a suitable \n   encoding without CR/LF conversion, 7-bit stripping etc.; base64 is\n   a suitable encoding.\n\nSecurity considerations: JPEG XS codestreams contain structures of \n   variable length and have an extensible syntax. Both of these \n   aspects present potential security risks for implementations. In \n   particular, variable length structures present buffer overflow \n   risks and extensible syntax could result in the triggering of \n   adverse actions.\n\nInteroperability considerations: The JPEG XS codestream does not \n   contain information on the colourspace of the image. This \n   information is implied or provided out-of-band. JPEG XS \n   codestreams can conform to one of several profiles and levels of \n   capabilities (as specified in ISO/IEC 21122-2) – not all of which \n   may be supported by a receiving decoder. As a result, \n   implementations may attempt to decode and display an encoded JPEG \n   XS codestream only to determine that the image cannot be rendered \n   either partially or in full.",
+    "security_considerations": "variable length and have an extensible syntax. Both of these \n   aspects present potential security risks for implementations. In \n   particular, variable length structures present buffer overflow \n   risks and extensible syntax could result in the triggering of \n   adverse actions.\n\nInteroperability considerations: The JPEG XS codestream does not \n   contain information on the colourspace of the image. This \n   information is implied or provided out-of-band. JPEG XS \n   codestreams can conform to one of several profiles and levels of \n   capabilities (as specified in ISO/IEC 21122-2) – not all of which \n   may be supported by a receiving decoder. As a result, \n   implementations may attempt to decode and display an encoded JPEG \n   XS codestream only to determine that the image cannot be rendered \n   either partially or in full.",
+    "interoperability_considerations": "contain information on the colourspace of the image. This \n   information is implied or provided out-of-band. JPEG XS \n   codestreams can conform to one of several profiles and levels of \n   capabilities (as specified in ISO/IEC 21122-2) – not all of which \n   may be supported by a receiving decoder. As a result, \n   implementations may attempt to decode and display an encoded JPEG \n   XS codestream only to determine that the image cannot be rendered \n   either partially or in full.",
+    "additional_information": "Deprecated alias names for this type: N/A\n   Magic number(s): Starts with the 4-byte string 0xFF10 FF50 as \n      specified in ISO/IEC 21122-1.\n   File extension(s): jxsc \n   Macintosh file type code: N/A\n   Object Identifiers: N/A\n\nIntended usage: Common\n\nContact name: ISO/IEC JTC 1/SC 29/WG 1 Convenor\n\nContact email address: sc29-sec&itscj.ipsj.or.jp\n\nAuthor/Change controller: ISO/IEC JTC1 SC29 WG1",
+    "intended_usage": "common",
+    "template_text": "(registered 2019-09-03, last updated 2019-09-03)\n\nMedia type name: image\n\nMedia subtype name: jxsc\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n   Codestreams are binary and should be transmitted in a suitable \n   encoding without CR/LF conversion, 7-bit stripping etc.; base64 is\n   a suitable encoding.\n\nSecurity considerations: JPEG XS codestreams contain structures of \n   variable length and have an extensible syntax. Both of these \n   aspects present potential security risks for implementations. In \n   particular, variable length structures present buffer overflow \n   risks and extensible syntax could result in the triggering of \n   adverse actions.\n\nInteroperability considerations: The JPEG XS codestream does not \n   contain information on the colourspace of the image. This \n   information is implied or provided out-of-band. JPEG XS \n   codestreams can conform to one of several profiles and levels of \n   capabilities (as specified in ISO/IEC 21122-2) – not all of which \n   may be supported by a receiving decoder. As a result, \n   implementations may attempt to decode and display an encoded JPEG \n   XS codestream only to determine that the image cannot be rendered \n   either partially or in full.\n\nPublished specifications:\n   ISO/IEC 21122-3, Information technology – JPEG XS low-latency \n   lightweight image coding system - Part 3: Transport and container \n   formats\n\nApplications: Multimedia, Imaging, Pictures, Scientific.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   Deprecated alias names for this type: N/A\n   Magic number(s): Starts with the 4-byte string 0xFF10 FF50 as \n      specified in ISO/IEC 21122-1.\n   File extension(s): jxsc \n   Macintosh file type code: N/A\n   Object Identifiers: N/A\n\nIntended usage: Common\n\nContact name: ISO/IEC JTC 1/SC 29/WG 1 Convenor\n\nContact email address: sc29-sec&itscj.ipsj.or.jp\n\nAuthor/Change controller: ISO/IEC JTC1 SC29 WG1"
+  },
+  "references": []
+}

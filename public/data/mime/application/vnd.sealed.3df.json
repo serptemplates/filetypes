@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.sealed.3df",
+  "full": "application/vnd.sealed.3df",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sealed.3df",
+    "template_text": "(Last updated 09 March 2006)\r\n\r\nName : John Kwan\r\n\r\nEmail : John.Kwan&sealedmedia.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.sealed.3df\r\n\r\nRequired parameters : none \r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : 8bit\r\n\r\nSecurity considerations : \r\nThese files are intended to be read by a proprietary client (the \"Unsealer\")\r\nwhich makes the unencrypted content available in a very limited fashion to a\r\nuser's system. As the data format is private and encrypted using well-known\r\nalgorithms, it is unlikely that the data could be spoofed. The client is\r\nalso designed to refuse to work with data that is corrupt or ill-formed.\r\nThis data does not contain any executable material.\r\n\r\nInteroperability considerations : \r\nThis mime-type is valid for Windows systems only.\r\n\r\nPublished specification : \r\nThe specifications for this content-type are proprietary. They are\r\nspecified by Sealed Media. The registration of this content-type is\r\nintended only to provide a convention for labeling this proprietary data\r\ntype within the MIME/HTTP environment and does not specify any details about\r\nthe content format or semantics, except to refer to the software and\r\nspecifications provided by Sealed Media. Company information may be\r\nobtained at http://www.sealedmedia.com.\r\n\r\nApplications which use this media : \r\nThis mime-type is intended for use only by the client software, \"Unsealer\",\r\ncreated by Sealed Media.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .s3df\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Martin Lambert\r\n2. Email : Martin.Lambert&sealedmedia.com\r\n\r\nIntended usage : Common \r\n\r\nAuthor/Change controller : Martin Lambert Martin.Lambert&sealedmedia.com \r\n\r\n(File created 09 March 2006)\r\n"
+  },
+  "references": []
+}

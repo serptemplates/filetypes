@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.modl",
+  "full": "application/vnd.modl",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.modl",
+    "encoding_considerations": "Security considerations: MODL is a simple data serialisation format \n   with no executable content nor active content. There are not \n   privacy or integrity services required and no compression is \n   employed. No links are required to properly interpret MODL.\n\nInteroperability considerations: MODL uses punycode to provide \n   Unicode support in ASCII systems like DNS: \n   https://modl.uk/docs/spec\n\nPublished specification: https://www.modl.uk/docs/spec\n\nApplications which use this media: MODL is primarily used for storing \n   small serialised objects in plaintext, where terseness is of high \n   importance. For example in DNS TXT records: \n\n   dig 0._num.numexample.com TXT\n\nFragment identifier considerations: N/A for this data serialisation \n   format\n\nRestrictions on usage: None",
+    "security_considerations": "with no executable content nor active content. There are not \n   privacy or integrity services required and no compression is \n   employed. No links are required to properly interpret MODL.\n\nInteroperability considerations: MODL uses punycode to provide \n   Unicode support in ASCII systems like DNS: \n   https://modl.uk/docs/spec\n\nPublished specification: https://www.modl.uk/docs/spec\n\nApplications which use this media: MODL is primarily used for storing \n   small serialised objects in plaintext, where terseness is of high \n   importance. For example in DNS TXT records: \n\n   dig 0._num.numexample.com TXT\n\nFragment identifier considerations: N/A for this data serialisation \n   format\n\nRestrictions on usage: None",
+    "interoperability_considerations": "Unicode support in ASCII systems like DNS: \n   https://modl.uk/docs/spec\n\nPublished specification: https://www.modl.uk/docs/spec\n\nApplications which use this media: MODL is primarily used for storing \n   small serialised objects in plaintext, where terseness is of high \n   importance. For example in DNS TXT records: \n\n   dig 0._num.numexample.com TXT\n\nFragment identifier considerations: N/A for this data serialisation \n   format\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .modl\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-02-22, last updated 2023-02-22)\n\nMedia type name: application\n\nMedia subtype name: vnd.modl\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: MODL is a simple data serialisation format \n   with no executable content nor active content. There are not \n   privacy or integrity services required and no compression is \n   employed. No links are required to properly interpret MODL.\n\nInteroperability considerations: MODL uses punycode to provide \n   Unicode support in ASCII systems like DNS: \n   https://modl.uk/docs/spec\n\nPublished specification: https://www.modl.uk/docs/spec\n\nApplications which use this media: MODL is primarily used for storing \n   small serialised objects in plaintext, where terseness is of high \n   importance. For example in DNS TXT records: \n\n   dig 0._num.numexample.com TXT\n\nFragment identifier considerations: N/A for this data serialisation \n   format\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .modl\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\nPerson to contact for further information:\n\n   1. Name: Elliott Brown\n   2. Email: elliott.brown&num.uk\n\nIntended usage: COMMON\n\n   MODL is a compact data serialisation format. It is used by the NUM \n   protocol (https://www.numprotocol.com, IANA scheme \"num://\") to \n   store structured data in DNS. There are around 30 million NUM \n   records written in MODL currently and the number is growing \n   consistently.\n\nAuthor/Change controller: Elliott Brown, NUM Technology Ltd"
+  },
+  "references": []
+}

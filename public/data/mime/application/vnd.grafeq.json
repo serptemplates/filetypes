@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.grafeq",
+  "full": "application/vnd.grafeq",
+  "extensions": [
+    "gqf",
+    "gqs"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.grafeq",
+    "template_text": "\n\nName : Jeff Tupper\n\nE-mail : tupper&peda.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.grafeq\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nbinary data\n\nSecurity considerations : \nThe encoded data represents formulae, graphs, vector drawings, ... \nThe encoding can not represent programs for GrafEq to directly execute\non the host.\n\n\nInteroperability considerations : \nThe same format is used by GrafEq on Windows (Windows 3.1, 95, 98, NT\n4) and the Macintosh (System 6 to MacOS 9) for GrafEq version 2.05 and later.\n\n\nPublished specification : \nnone\n\nApplications which use this media : \nGrafEq - see http://www.peda.com/grafeq\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : gqf gqs\n3. Macintosh file type code : gqFL gqSK\nGrafEq uses information in the file itself to identify the file type.\n\n\nPerson to contact for further information :\n\n1. Name : Jeff Tupper\n2. E-mail : tupper&peda.com\n\nIntended usage : Common \nIntended use is for users of GrafEq to be able to post and exchange\nGrafEq documents on the web and via email.\n\n\nAuthor/Change controller : Jeff Tupper\ntupper&peda.com \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

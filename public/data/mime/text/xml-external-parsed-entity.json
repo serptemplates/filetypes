@@ -1,0 +1,47 @@
+{
+  "type": "text",
+  "subtype": "xml-external-parsed-entity",
+  "full": "text/xml-external-parsed-entity",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/xml-external-parsed-entity",
+    "type_name": "text",
+    "subtype_name": "xml-external-parsed-entity",
+    "encoding_considerations": "RFC7303).\n\nSecurity considerations:  See Section 10 of RFC7303.\n\nInteroperability considerations:  XML external parsed entities are as\n   interoperable as XML documents, though they have a less tightly\n   constrained structure and therefore need to be referenced by XML\n   documents for proper handling by XML processors.  Similarly, XML\n   documents cannot be reliably used as external parsed entities\n   because external parsed entities are prohibited from having\n   standalone document declarations or DTDs.  Identifying XML\n   external parsed entities with their own content type enhances\n   interoperability of both XML documents and XML external parsed\n   entities.\n\nPublished specification:  Same as for application/xml (Section 9.1 of \n   RFC7303).\n\nApplications which use this media type:  Same as for application/xml\n   (Section 9.1 of RFC7303).",
+    "security_considerations": "Interoperability considerations:  XML external parsed entities are as\n   interoperable as XML documents, though they have a less tightly\n   constrained structure and therefore need to be referenced by XML\n   documents for proper handling by XML processors.  Similarly, XML\n   documents cannot be reliably used as external parsed entities\n   because external parsed entities are prohibited from having\n   standalone document declarations or DTDs.  Identifying XML\n   external parsed entities with their own content type enhances\n   interoperability of both XML documents and XML external parsed\n   entities.\n\nPublished specification:  Same as for application/xml (Section 9.1 of \n   RFC7303).\n\nApplications which use this media type:  Same as for application/xml\n   (Section 9.1 of RFC7303).",
+    "interoperability_considerations": "interoperable as XML documents, though they have a less tightly\n   constrained structure and therefore need to be referenced by XML\n   documents for proper handling by XML processors.  Similarly, XML\n   documents cannot be reliably used as external parsed entities\n   because external parsed entities are prohibited from having\n   standalone document declarations or DTDs.  Identifying XML\n   external parsed entities with their own content type enhances\n   interoperability of both XML documents and XML external parsed\n   entities.\n\nPublished specification:  Same as for application/xml (Section 9.1 of \n   RFC7303).\n\nApplications which use this media type:  Same as for application/xml\n   (Section 9.1 of RFC7303).",
+    "additional_information": "Magic number(s):  Same as for application/xml (Section 9.1 of \n   RFC7303).\n\n   File extension(s):  .xml or .ent\n\n   Macintosh File Type Code(s):  \"TEXT\"\n\n   Base URI:  See Section 6 of RFC7303\n\nPerson and email address for further information:  See Authors'\n   Addresses section in RFC7303.\n\nIntended usage:  COMMON\n\nAuthor:  See Authors' Addresses section in RFC7303.\n\nChange controller:  The XML specification is a work product of the\n   World Wide Web Consortium's XML Core Working Group.  The W3C has\n   change control over RFC7303.",
+    "intended_usage": "common",
+    "change_controller": "The XML specification is a work product of the",
+    "template_text": "(published in RFC 3023 in January 2001, last updated 2014-04-17 \nvia RFC7303)\n\nType name:  text\n\nSubtype name:  xml-external-parsed-entity\n\nRequired parameters:  none\n\nOptional parameters:  charset\n\n   See Section 3 of RFC7303.\n\nEncoding considerations:  Same as for application/xml (Section 9.1 of\n   RFC7303).\n\nSecurity considerations:  See Section 10 of RFC7303.\n\nInteroperability considerations:  XML external parsed entities are as\n   interoperable as XML documents, though they have a less tightly\n   constrained structure and therefore need to be referenced by XML\n   documents for proper handling by XML processors.  Similarly, XML\n   documents cannot be reliably used as external parsed entities\n   because external parsed entities are prohibited from having\n   standalone document declarations or DTDs.  Identifying XML\n   external parsed entities with their own content type enhances\n   interoperability of both XML documents and XML external parsed\n   entities.\n\nPublished specification:  Same as for application/xml (Section 9.1 of \n   RFC7303).\n\nApplications which use this media type:  Same as for application/xml\n   (Section 9.1 of RFC7303).\n\nAdditional information:\n\n   Magic number(s):  Same as for application/xml (Section 9.1 of \n   RFC7303).\n\n   File extension(s):  .xml or .ent\n\n   Macintosh File Type Code(s):  \"TEXT\"\n\n   Base URI:  See Section 6 of RFC7303\n\nPerson and email address for further information:  See Authors'\n   Addresses section in RFC7303.\n\nIntended usage:  COMMON\n\nAuthor:  See Authors' Addresses section in RFC7303.\n\nChange controller:  The XML specification is a work product of the\n   World Wide Web Consortium's XML Core Working Group.  The W3C has\n   change control over RFC7303."
+  },
+  "references": [
+    {
+      "title": "RFC 7303",
+      "url": "https://www.rfc-editor.org/rfc/rfc7303.html",
+      "kind": "RFC"
+    }
+  ]
+}

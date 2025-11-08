@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.ufdl",
+  "full": "application/vnd.ufdl",
+  "extensions": [
+    "ufd",
+    "ufdl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ufdl",
+    "template_text": "\n\nDate: Fri, 12 Mar 1999 11:24:14 -0800 (PST)\nFrom: Dave Manning <dmanning&uwi.com>\nTo: iana&iana.org, dmanning&uwi.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.\n\nName : Dave Manning\n\nE-mail : dmanning&uwi.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ufdl\n\nRequired parameters : NONE\n\nOptional parameters : \nNONE\n\nEncoding considerations : \nUFDL is encoded as ASCII text. Lines of any length are supported, but\nthere are certain character usage restrictions. The full details of\nthe encoding restraints are given in the UFDL specification.\n\nSecurity considerations : \nUFDL (Universal Forms Description Language) is an alternate\nsyntactical representation of XFDL (vnd.xfdl).\n\nUFDL was designed to represent complex business forms on the Web. UFDL\nincludes support for multiple overlapping digital signatures, and\nauditable transaction records. We believe that UFDL can provide full\nnon-repudiation of contractual forms.\n\nProtecting the privacy of a UFDL document during transmission is done\nusing common http encryption techniques. Some thought has been given\nto providing a built-in system of encryption to protect the privacy of\nUFDL documents while they reside in a file system, but no such system\nexists at this time.\n\nWhile UFDL uses a syntax that is reminiscent of a traditional\nprogramming language, the logic natively available from UFDL document\ncan not be used to alter the data on a users computer or extract data\nfrom that users computer without the users explicit participation.\n\nIt should be noted, that mechanisms exist within UFDL to extend the\nUFDL language using native code. It is possible to write native code\nextensions to UFDL that can manipulate a users local data. (This\nmechanism is very much like the \"plug-in\" mechanisms that are popular\namong browsers.) Because of this, any UFDL extension created using\nnative code need to be explicitly installed by the user on his/her\nlocal machine using the same process as the user would use to install\na new application. UFDL does not provide any mechanism to transport or\ninstall native code extensions from a UFDL document.\n\nUFDL also contains a mechanism for extending its logic through the use\nof Java code. Java code extensions can be either installed by the user\nusing a traditional application installation process or they can be\nencapsulated in the UFDL document. When a Java extension is\nencapsulated within a UFDL document, it is executed within a Java\nsandbox to prevent security concerns.\n\nInteroperability considerations : \nUFDL was designed as a cross-platform language.\n\nPublished specification : \nThe full UFDL specification can be found at:\n\nhttp://www.uwi.com/ufdl\n\nApplications which use this media : \nUWI.Com's InternetForms viewer, designer and gateway products.\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : ufdl, ufd, frm\n3. Macintosh file type code : \nUFDL (Universal Forms Description Language) is an alternate\nsyntactical representation of XFDL (vnd.xfdl).\n\n\nPerson to contact for further information :\n\n1. Name : Dave Manning\n2. E-mail : dmanning&uwi.com\n\nIntended usage : Common \nWe encourage the use of UFDL by other parties.\n\nAuthor/Change controller : Dave Manning - CTO UWI.Com \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

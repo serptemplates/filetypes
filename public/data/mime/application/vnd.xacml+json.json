@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.xacml+json",
+  "full": "application/vnd.xacml+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.xacml+json",
+    "template_text": "(file created 2013-02-19, last updated 2013-02-19)\n\nName : David Brossard\n\nEmail : david.brossard&axiomatics.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.xacml+json\n\nRequired parameters : None\n\nOptional parameters :\n• version: The version parameter indicates the version of the XACML\nspecification. Its range is the range of published XACML versions. As of\nthis writing that is: 1.0, 1.1, 2.0, and 3.0. These and future version \nidentifiers are of the form x.y, where x and y are decimal numbers with \nno leading zeros, with x being positive and y being non-negative.\n\nEncoding considerations : Same as for application/json [RFC4627].\n\nSecurity considerations :\nPer their specification, application/xacml+json typed objects do not contain executable content.\nXACML requests and responses contain information which integrity and authenticity are important.\nTo counter potential issues, the publisher may use the transport layer’s security mechanisms to \nsecure xacml+json typed objects when they are in transit. For instance, HTTPS offers means to \nensure the confidentiality, authenticity of the publishing party and the protection of the \nrequest / response in transit.\n\nInteroperability considerations :\n\n\nPublished specification :\nThe profile is not published yet. The latest draft is at\nhttps://www.oasis-open.org/committees/download.php/47775/xacml-json-http-v1.0-wd09.doc\n\nApplications which use this media :\n\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : .json\n3. Macintosh file type code : Text\n4. Object Identifiers: N/A\n\n\nPerson to contact for further information :\n\n1. Name : David Brossard\n2. Email : david.brossard&axiomatics.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : David Brossard"
+  },
+  "references": []
+}

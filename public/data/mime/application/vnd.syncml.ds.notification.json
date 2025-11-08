@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.syncml.ds.notification",
+  "full": "application/vnd.syncml.ds.notification",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.syncml.ds.notification",
+    "template_text": "\r\n(last updated 2004-04-20)\r\n\r\nName : OMA Data Synchronization Working Group\r\n\r\nEmail : technical-comments&mail.openmobilealliance.org\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.syncml.ds.notification\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : \r\nNone\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations :\r\nAuthentication: The notification package contains MD5 Digest challenge authentication information \r\nfor the purpose of authenticating the originator. A synchronization server can use the notification \r\nto request a synchronization client to initiate a connection back to the synchronization server. The \r\nserver must send the digest to prevent any denial of service by replay attacks. The client may decide \r\nfor any reason not to respond to the notification package. \r\nThe media type also specifies the synchronization server recommendations whether the server wants the \r\nconnection to be executed in background or show a notification to the user. This media type contains no \r\nexecutable content. Implementations that support this media type should assure the authentication of the \r\noriginator, as well as assure that the end-users will be aware of the initiated connection (if they wish so).\r\n\r\nInteroperability considerations : \r\nMany devices cannot continuously listen for connections from a synchronization server. Other devices \r\nsimply do not wish to “open a port” (i.e. accept connections) for security reasons. However, most devices \r\ncan receive unsolicited messages, sometimes called “notifications”. Some handsets, for example, can receive \r\nSMS messages. Other devices may have the ability to receive other, similar data gram messages. A synchronization \r\nserver can use this notification capability to cause the synchronization client to initiate a connection back \r\nto the server. This connection might be over HTTP, WAP or another transport protocol.\r\nThis media type (i.e. notification package) is intended to provide a possibility for the synchronization server \r\nto alert the client to perform a synchronization session and tell for example the protocol version and whether \r\nthe server proposes the session to be a foreground or background event. It can also tell if the session is \r\nhappening because server has some modifications to synchronize or if the user caused the start of the session.    \r\n\r\nPublished specification : \r\nSyncML Server Alerted Notification (v1.2), http://www.openmobilealliance.org/\r\n\r\nApplications which use this media : \r\nThis MIME content type is intended for common use by networked data synchronization applications.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : None\r\n3. Macintosh file type code : None\r\n4. Object Identifiers: None\r\n\r\nPerson to contact for further information :\r\n1. Name : Aki Lehto\r\n2. Email : aki.lehto&nokia.com\r\n\r\nIntended usage : Common\r\n \r\nAuthor/Change controller : OMA Data Synchronization Working Group\r\n\r\n\r\n[Created 2004-04-14]\r\n"
+  },
+  "references": []
+}

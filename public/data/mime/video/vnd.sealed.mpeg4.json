@@ -1,0 +1,33 @@
+{
+  "type": "video",
+  "subtype": "vnd.sealed.mpeg4",
+  "full": "video/vnd.sealed.mpeg4",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/vnd.sealed.mpeg4",
+    "template_text": "\r\n(last updated 2003-10-02)\r\n\r\nName : David Petersen\r\n\r\nEmail : david.petersen&sealedmedia.com\r\n\r\nMIME media type name : Video\r\n\r\nMIME subtype name : Vendor Tree - vnd.sealed.mpeg4\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : Binary\r\n\r\nSecurity considerations : \r\nThese files are intended to be read by a proprietary client (the \"Unsealer\")\r\n which makes the unencrypted content available in a very limited fashion to a \r\n user's system. As the data format is private and encrypted using well-known \r\n algorithms, it is unlikely that the data could be spoofed. The client is also \r\n designed to refuse to work with data that is corrupt or ill-formed. This data \r\n does not contain any executable material.\r\n\r\nInteroperability considerations : \r\nThis mime-type is valid for Windows systems only.\r\n\r\nPublished specification : \r\nThe specifications for this content-type are proprietary. They are specified by \r\nSealed Media. The registration of this content-type is intended only to provide \r\na convention for labeling this proprietary data type within the MIME/HTTP environment \r\nand does not specify any details about the content format or semantics, except to \r\nrefer to the software and specifications provided by Sealed Media. Company information\r\n may be obtained at http://www.sealedmedia.com.\r\n\r\nApplications which use this media : \r\nThis mime-type is intended for use only by the client software, \"Unsealer\", created by \r\nSealed Media.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : .smpg, .s14\r\n3. Macintosh file type code : None\r\n4. Object Identifiers: None\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Martin Lambert\r\n2. Email : martin.lambert&sealedmedia.com\r\n\r\nIntended usage : Common \r\n    \r\nAuthor/Change controller : \r\n\r\nMartin Lambert\r\nmartin.lambert&sealedmedia.com    \r\n\r\n(created 2003-09-09)"
+  },
+  "references": []
+}

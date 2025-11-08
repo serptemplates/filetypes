@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.powerbuilder6",
+  "full": "application/vnd.powerbuilder6",
+  "extensions": [
+    "pbd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.powerbuilder6",
+    "template_text": "\n\nDate: Thu, 29 May 97 11:10:28 PDT\nFrom: David Guy <dguy&powersoft.com>\nTo: iana&iana.org, dguy&powersoft.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.\n\nName : David Guy\n\nE-mail : dguy&powersoft.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.powerbuilder6\n\nRequired parameters : none\n\n\nOptional parameters : \nnone\n\n\nEncoding considerations : \nDocuments of this type contain binary data and should be suitably\nencoded for transfer\n\n\nSecurity considerations : \nThis type contains p-code, which executes in the PowerBuilder release 6\nrun-time.  PowerBuilder supports OLE automation, calls to external\nlibrary functions, and file I/O.  Files of this type should be\nconsidered insecure.\n\n\nInteroperability considerations : \nInteroperates only on platforms supported by the PowerBuiler run-time\nenvironment.\n\nPublished specification : \nNot available.  Objects in this library may be executed using the\nPowerBuilder release 6 run-time available from Sybase, Inc., Powersoft\nproducts.\n\n\nApplications which use this media : \nUsed only by PowerBuilder release 6 run-time environment.\n\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : pbd\n3. Macintosh file type code : PDLL\n\nIdentifies a PowerBuiler release 6 run-time library (.PBD).  This\nlibrary contains class definitions and p-code suitable for execution by\nthe PowerBuilder release 6 run-time environment.\n\n\nPerson to contact for further information :\n\n1. Name : David Guy\n2. E-mail : dguy&powersoft.com\n\nIntended usage : Limited Use \n\n\n\nAuthor/Change controller : \n \n\n\n\n"
+  },
+  "references": []
+}

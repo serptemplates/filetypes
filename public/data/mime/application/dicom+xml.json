@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "dicom+xml",
+  "full": "application/dicom+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/dicom+xml",
+    "encoding_considerations": "The 'application/dicom+xml' media type is an XML encoding of DICOM Information Objects.\nDetails of this encoding can be found in the DICOM Standard.",
+    "security_considerations": "The DICOM XML encoded data contains only bulk data (such as image pixel data) and metadata. As such, it does not in itself create security risks beyond the information disclosed on viewing the bulk data or metadata. There is no means to induce any particular behavior by the recipient application. DICOM Information Objects encoded in the 'application/dicom+xml' media type contain medical information, including personal information, so their transmission should be restricted to secure networks or within a secure wrapper that protects a person’s right to confidentiality. Mechanisms such as HTTPS [RFC7230], Secured MIME (S/MIME) [5751] or similar might be appropriate.\n\nSince this media type employs XML it inherits any security issues associated with that format [RFC7303].",
+    "interoperability_considerations": "This media type is a means of encoding a DICOM object in XML form, and identifying that a particular XML Schema is used with a standard content type. The media type has been designed to ease access by generic applications that may not understand the traditional DICOM binary encoding, even though the DICOM content is specific to the medical (imaging) domain, such that a generic e-mail or HTTP application may not be able to interpret it.",
+    "additional_information": "1. Deprecated alias names for this type: application/x-dicom.native\n2. Magic number(s): N/A\n3. File extension(s): .xml\n4. Macintosh file type code: 'TEXT'\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-09-26, last updated 2016-09-26)\n\nMedia type name: application\n\nMedia subtype name: dicom+xml\n\nRequired parameters: N/A\n\nOptional parameters:\n\n\"transfer-syntax\" defines the DICOM Transfer Syntax [http://dicom.nema.org/medical/dicom/current/output/chtml/part05/chapter_10.html] used to encode any inline binary data present in the XML metadata [http://dicom.nema.org/medical/dicom/current/output/chtml/part19/chapter_A.html#sect_A.1.5]. The parameter is constructed as a numeric form OSI Object Identifier [ISO/IEC 8824].\n\nEncoding considerations: 8bit\nThe 'application/dicom+xml' media type is an XML encoding of DICOM Information Objects.\nDetails of this encoding can be found in the DICOM Standard.\n\nSecurity considerations:\nThe DICOM XML encoded data contains only bulk data (such as image pixel data) and metadata. As such, it does not in itself create security risks beyond the information disclosed on viewing the bulk data or metadata. There is no means to induce any particular behavior by the recipient application. DICOM Information Objects encoded in the 'application/dicom+xml' media type contain medical information, including personal information, so their transmission should be restricted to secure networks or within a secure wrapper that protects a person’s right to confidentiality. Mechanisms such as HTTPS [RFC7230], Secured MIME (S/MIME) [5751] or similar might be appropriate.\n\nSince this media type employs XML it inherits any security issues associated with that format [RFC7303].\n\nInteroperability considerations:\nThis media type is a means of encoding a DICOM object in XML form, and identifying that a particular XML Schema is used with a standard content type. The media type has been designed to ease access by generic applications that may not understand the traditional DICOM binary encoding, even though the DICOM content is specific to the medical (imaging) domain, such that a generic e-mail or HTTP application may not be able to interpret it. \n\nPublished specification:\nThe DICOM XML encoding is defined in DICOM PS3.19 Application Hosting - Section A.1 Native DICOM Model [http://dicom.nema.org/medical/dicom/current/output/chtml/part19/chapter_A.html#sect_A.1]\n\nApplications which use this media:\nThe DICOM XML encoding is primarily used in the medical field, particularly to encode metadata extracted from DICOM image objects in a form that is familiar to non-medical developers and is suitable for processing with conventional tools (such as XSL-T). It is highly desirable that such metadata be made available using web services and identified with a standard media type.\n\nFragment identifier considerations:\nNo media type specific fragment identifier or fragment semantics are defined.\n\nRestrictions on usage:\nNone.\n\nProvisional registration? (standards tree only):\napplication/dicom+xml\n\nAdditional information:\n\n1. Deprecated alias names for this type: application/x-dicom.native\n2. Magic number(s): N/A\n3. File extension(s): .xml\n4. Macintosh file type code: 'TEXT'\n5. Object Identifiers: N/A\n\nGeneral Comments:\nThe use of application/dicom+xml is not directly related to the specification of application/dicom [RFC3240], other than that the semantics (as opposed to the encoding) of the content is defined by the same standard [DICOM]. In particular, the use of application/dicom+xml is fully specified in its own right, without any dependence on RFC3240, and none of the specifications of RFC3240 are inherited.\n\nPerson to contact for further information:\n\n1. Name: David Clunie, DICOM Standards Committee\n2. Email: dclunie&dclunie.com, dicom&medicalimaging.org\n\nIntended usage: Common\nBiomedical imaging applications\n\nAuthor/Change controller: DICOM Standards Committee.\n\nReferences:\n\n[DICOM] DICOM Standards Committee, \"Digital Imaging and Communications in Medicine (DICOM)\", <http://dicom.nema.org/standard.html>."
+  },
+  "references": []
+}

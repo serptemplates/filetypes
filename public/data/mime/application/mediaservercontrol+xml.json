@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "mediaservercontrol+xml",
+  "full": "application/mediaservercontrol+xml",
+  "extensions": [
+    "mscml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/mediaservercontrol+xml",
+    "encoding_considerations": "Interoperability considerations: See RFC 2023 [8] and RFC 5022.\nPublished specification: RFC 5022\nApplications that use this media type: Multimedia, enhanced\nconferencing and interactive applications.\nPersonal and email address for further\ninformation: eburger&cantata.com [31]\nIntended usage: COMMON",
+    "interoperability_considerations": "Published specification: RFC 5022\nApplications that use this media type: Multimedia, enhanced\nconferencing and interactive applications.\nPersonal and email address for further\ninformation: eburger&cantata.com [31]\nIntended usage: COMMON",
+    "applications": "conferencing and interactive applications.\nPersonal and email address for further\ninformation: eburger&cantata.com [31]\nIntended usage: COMMON",
+    "intended_usage": "common",
+    "template_text": "(RFC 5022 published September 2007, subtype last updated September 2007)\n\nMIME media type name: application\nMIME subtype name: mediaservercontrol+xml\nRequired parameters: none\nOptional parameters: charset\n\ncharset This parameter has identical semantics to the charset\nparameter of the \"application/xml\" media type, as specified in\nXML Media Types [8].\n\nEncoding considerations: See RFC 3023 [8].\nInteroperability considerations: See RFC 2023 [8] and RFC 5022.\nPublished specification: RFC 5022\nApplications that use this media type: Multimedia, enhanced\nconferencing and interactive applications.\nPersonal and email address for further\ninformation: eburger&cantata.com [31]\nIntended usage: COMMON\n"
+  },
+  "references": []
+}

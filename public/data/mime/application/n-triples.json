@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "n-triples",
+  "full": "application/n-triples",
+  "extensions": [
+    "nt"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/n-triples",
+    "encoding_considerations": "The syntax of N-Triples is expressed over code points in Unicode. The encoding is always UTF-8.\nUnicode code points may also be expressed using an \\uXXXX (U+0 to U+FFFF) or \\UXXXXXXXX syntax (for U+10000 onwards) where X is a hexadecimal digit [0-9A-F].",
+    "security_considerations": "N-Triples is a general-purpose assertion language; applications may evaluate given data to infer more assertions or to dereference IRIs, invoking the security considerations of the scheme for that IRI. Note in particular, the privacy issues in RFC 7303 section 10 for HTTP IRIs. Data obtained from an inaccurate or malicious data source may lead to inaccurate or misleading conclusions, as well as the dereferencing of unintended IRIs. Care must be taken to align the trust in consulted resources with the sensitivity of the intended use of the data; inferences of potential medical treatments would likely require different trust than inferences for trip planning.\n\nN-Triples is used to express arbitrary application data; security considerations will vary by domain of use. Security tools and protocols applicable to text (e.g. PGP encryption, cryptographuc hash validation, password-protected compression) may also be used on N-Triples documents. Integrity/privacy protocols must be imposed which reflect the sensitivity of the embedded information.\n\nN-Triples can express data which is presented to the user, for example, RDF Schema labels. Application rendering strings retrieved from untrusted N-Triples documents must ensure that malicious strings may not be used to mislead the reader. The security considerations in the media type registration for XML (RFC 7303 section 10) provide additional guidance around the expression of arbitrary data and markup.\n\nN-Triples uses IRIs as term identifiers. Applications interpreting data expressed in N-Triples should address the security issues of Internationalized Resource Identifiers (IRIs) RFC 3987 Section 8, as well as Uniform Resource Identifier (URI): Generic Syntax RFC 3986 Section 7.\n\nMultiple IRIs may have the same appearance. Characters in different scripts may look similar (a Cyrillic \"о\" may appear similar to a Latin \"o\"). A character followed by combining characters may have the same visual representation as another character (LATIN SMALL LETTER E followed by COMBINING ACUTE ACCENT has the same visual representation as LATIN SMALL LETTER E WITH ACUTE). Any person or application that is writing or interpreting data in N-Triples must take care to use the IRI that matches the intended semantics, and avoid IRIs that make look similar. Further information about matching of similar characters can be found in Unicode Security Considerations <http://www.unicode.org/reports/tr36/> and Internationalized Resource Identifiers (IRIs) [RFC3987] Section 8.",
+    "interoperability_considerations": "There are no known interoperability issues.",
+    "additional_information": "1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): \".nt\"\n4. Macintosh file type code: \"TEXT\"\n5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-02-01, last updated 2017-02-01)\n\nMedia type name: application\n\nMedia subtype name: n-triples\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: 8bit\nThe syntax of N-Triples is expressed over code points in Unicode. The encoding is always UTF-8.\nUnicode code points may also be expressed using an \\uXXXX (U+0 to U+FFFF) or \\UXXXXXXXX syntax (for U+10000 onwards) where X is a hexadecimal digit [0-9A-F].\n\nSecurity considerations:\nN-Triples is a general-purpose assertion language; applications may evaluate given data to infer more assertions or to dereference IRIs, invoking the security considerations of the scheme for that IRI. Note in particular, the privacy issues in RFC 7303 section 10 for HTTP IRIs. Data obtained from an inaccurate or malicious data source may lead to inaccurate or misleading conclusions, as well as the dereferencing of unintended IRIs. Care must be taken to align the trust in consulted resources with the sensitivity of the intended use of the data; inferences of potential medical treatments would likely require different trust than inferences for trip planning.\n\nN-Triples is used to express arbitrary application data; security considerations will vary by domain of use. Security tools and protocols applicable to text (e.g. PGP encryption, cryptographuc hash validation, password-protected compression) may also be used on N-Triples documents. Integrity/privacy protocols must be imposed which reflect the sensitivity of the embedded information.\n\nN-Triples can express data which is presented to the user, for example, RDF Schema labels. Application rendering strings retrieved from untrusted N-Triples documents must ensure that malicious strings may not be used to mislead the reader. The security considerations in the media type registration for XML (RFC 7303 section 10) provide additional guidance around the expression of arbitrary data and markup.\n\nN-Triples uses IRIs as term identifiers. Applications interpreting data expressed in N-Triples should address the security issues of Internationalized Resource Identifiers (IRIs) RFC 3987 Section 8, as well as Uniform Resource Identifier (URI): Generic Syntax RFC 3986 Section 7.\n\nMultiple IRIs may have the same appearance. Characters in different scripts may look similar (a Cyrillic \"о\" may appear similar to a Latin \"o\"). A character followed by combining characters may have the same visual representation as another character (LATIN SMALL LETTER E followed by COMBINING ACUTE ACCENT has the same visual representation as LATIN SMALL LETTER E WITH ACUTE). Any person or application that is writing or interpreting data in N-Triples must take care to use the IRI that matches the intended semantics, and avoid IRIs that make look similar. Further information about matching of similar characters can be found in Unicode Security Considerations <http://www.unicode.org/reports/tr36/> and Internationalized Resource Identifiers (IRIs) [RFC3987] Section 8.\n\nInteroperability considerations:\nThere are no known interoperability issues.\n\nPublished specification:\nhttps://www.w3.org/TR/n-triples/\n\nApplications which use this media:\nNo widely deployed applications are known to use this media type. It may be used by some web services and clients consuming their data.\n\nFragment identifier considerations:\nNone\n\nRestrictions on usage:\nNone\n\nProvisional registration? (standards tree only):\nNone\n\nAdditional information:\n\n1. Deprecated alias names for this type: None\n2. Magic number(s): None\n3. File extension(s): \".nt\"\n4. Macintosh file type code: \"TEXT\"\n5. Object Identifiers: None\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Eric Prud'hommeaux\n2. Email: eric&w3.org\n\nIntended usage: Common\nCOMMON\n\nAuthor/Change controller: The N-Triples specification is the product of the RDF WG. The W3C reserves change control over this specifications."
+  },
+  "references": []
+}

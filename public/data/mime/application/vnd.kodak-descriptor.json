@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.kodak-descriptor",
+  "full": "application/vnd.kodak-descriptor",
+  "extensions": [
+    "sse"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.kodak-descriptor",
+    "template_text": "(last updated 2008-01-04)\n\nName : Michael J Donahue\n\nEmail : donahue&kodak.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.kodak-descriptor\n\nRequired parameters : none\n\nOptional parameters : none\n\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of handling 8 bit\ntext.\n\nSecurity considerations :\nThis media type does not contain active or executable content.\nThe information contained in the media type does not need privacy or\nintegrity services.\n\nInteroperability considerations :\n\n\nPublished specification :\n\n\nApplications which use this media :\nApplications that can parse XML documents, in particular instances of MPV\nManifests (OSTA).\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : SSE\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\nThis MIME type is intended for interchange of Kodak Storyshare descriptor files\n(MPV Manifest documents with extensions for hardcopy/softcopy presentation).\n\nPerson to contact for further information :\n\n1. Name : Michael J Donahue\n2. Email : donahue&kodak.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : Michael J Donahue\n\n\n(file created 2008-01-04)"
+  },
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.etsi.iptvueprofile+xml",
+  "full": "application/vnd.etsi.iptvueprofile+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.etsi.iptvueprofile+xml",
+    "encoding_considerations": "This media type may require encoding on transports not capable of handling 8 bit\ntext.",
+    "security_considerations": "We do not foresee any additional security considerations over and\nabove the existing security considerations of SIP.\nThere is no active or executable content.\nThe ETSI TSs 183 xxx include only textual XML to Control Services.\nIf the Signalling and the XML media contained therein is security\nprotected then no explicit protection of the media privacy and\nintegrity is required.",
+    "interoperability_considerations": "Interoperability is assessed not to be an issue as the MIME type is in the\nvendor tree. XML definitions are assessed to solve different character set and\nbyte ordering issues. Message format does have version number and backwards\ncompatibility will be preserved in the possible format evolution.",
+    "additional_information": "1. Magic number(s): none\n2. File extension(s): none\n3. Macintosh file type code: none\n4. Object Identifiers: none\n\nIPTV UE profile",
+    "intended_usage": "common",
+    "template_text": "(last updated 2009-03-13)\n\nMIME media type name: Application\n\nMIME subtype name: Vendor Tree - vnd.etsi.iptvueprofile+xml\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: 8bit\nThis media type may require encoding on transports not capable of handling 8 bit\ntext.\n\nSecurity considerations:\nWe do not foresee any additional security considerations over and\nabove the existing security considerations of SIP.\nThere is no active or executable content.\nThe ETSI TSs 183 xxx include only textual XML to Control Services.\nIf the Signalling and the XML media contained therein is security\nprotected then no explicit protection of the media privacy and\nintegrity is required.\n\nInteroperability considerations:\nInteroperability is assessed not to be an issue as the MIME type is in the\nvendor tree. XML definitions are assessed to solve different character set and\nbyte ordering issues. Message format does have version number and backwards\ncompatibility will be preserved in the possible format evolution.\n\nPublished specification:\nETSI TS 183 063 v2.1.0 available at http://pda.etsi.org/pda/queryform.asp\n\nApplications which use this media:\nThis media type is used by the IMS-based IPTV service; this schema is used by\nthe user equipment to send information (e.g. UE capability, UE equipment ID) to\nService Discovery Function during service attachment of pull mode\n\nAdditional information:\n\n1. Magic number(s): none\n2. File extension(s): none\n3. Macintosh file type code: none\n4. Object Identifiers: none\n\nIPTV UE profile\n\nPerson to contact for further information:\n\n1. Name: Shicheng Hu\n2. Email: shicheng.hu&etsi.org\n\nIntended usage: Common\n\n\nAuthor/Change controller: sonia.compans&etsi.org\n\n\n(file created 2009-03-13)"
+  },
+  "references": []
+}

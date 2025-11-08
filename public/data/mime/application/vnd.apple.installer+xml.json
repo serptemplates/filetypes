@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.apple.installer+xml",
+  "full": "application/vnd.apple.installer+xml",
+  "extensions": [
+    "mpkg"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.apple.installer+xml",
+    "template_text": "(last updated November 2005)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.apple.installer+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : \r\nnone.\r\nThe charset should be determined as described in RFC 3023, section 8.10\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of handling 8\r\nbit text.\r\n\r\nSecurity considerations : \r\nThe type exists to provide a limited and safe subset of operations to media\r\nauthors, but the full spectrum of security issues associates with this type\r\nhave not been compltely assessed.\r\nSee RFC 3023, section 10 for a more complete analysis of XML related\r\nsecurity issues.\r\n\r\nInteroperability considerations : \r\nsame strengths and weaknesses as XML\r\n\r\nPublished specification : \r\nAvailable via Apple Developer Documentation. \r\n\r\nApplications which use this media : \r\nApple Computer, Inc.'s Mac OS X Installer application.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : n/a\r\n2. File extension(s) : dist, distz, pkg, mpkg 3. Macintosh file type code :\r\npkg1 4. Object Identifiers: n/a\r\n\r\nThis XML-based media type has many of the same classifications and\r\nconsiderations as application/xml, as specified in RFC 3023.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Peter Bierman\r\n2. Email : installer-mime&group.apple.com\r\n\r\nIntended usage : Common\r\nMIME type to identify that the Apple Installer application should be used to\r\nopen and process the inidcated media files when accessed via a web browser\r\nor similarly MIME-enabled Internet client.\r\n\r\nAuthor/Change controller : Peter Bierman \r\n\r\n(file create 30 November 2005) \r\n"
+  },
+  "references": []
+}

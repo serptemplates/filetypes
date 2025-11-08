@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "ibe-key-request+xml",
+  "full": "application/ibe-key-request+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/ibe-key-request+xml",
+    "encoding_considerations": "[ASCII].\n\nSecurity considerations: The data conveyed in this media type may\ncontain authentication credentials. Because of this, its\nconfidentiality and integrity is extremely important. To ensure\nthis, the request for an IBE private key must take place over a\nsecure protocol, such as TLS 1.2 or its successors. To ensure the\nvalidity of the server, the client MUST verify the server\ncertificate and MUST abort the key request if the verification of\nthe server certificate of the TLS connection fails. This media\ntype contains no active content and does not use compression.\n\nInteroperability considerations: There are no known interoperability\nconsiderations for this media type.\n\nApplications that use this media type: Applications that implement\nIBE in compliance with this specification will use this media\ntype. The most commonly used of these applications are encrypted\nemail and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\nmartin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "security_considerations": "contain authentication credentials. Because of this, its\nconfidentiality and integrity is extremely important. To ensure\nthis, the request for an IBE private key must take place over a\nsecure protocol, such as TLS 1.2 or its successors. To ensure the\nvalidity of the server, the client MUST verify the server\ncertificate and MUST abort the key request if the verification of\nthe server certificate of the TLS connection fails. This media\ntype contains no active content and does not use compression.\n\nInteroperability considerations: There are no known interoperability\nconsiderations for this media type.\n\nApplications that use this media type: Applications that implement\nIBE in compliance with this specification will use this media\ntype. The most commonly used of these applications are encrypted\nemail and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\nmartin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "interoperability_considerations": "considerations for this media type.\n\nApplications that use this media type: Applications that implement\nIBE in compliance with this specification will use this media\ntype. The most commonly used of these applications are encrypted\nemail and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\nmartin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "applications": "IBE in compliance with this specification will use this media\ntype. The most commonly used of these applications are encrypted\nemail and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\nmartin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "additional_information": "Person and email address for further information: Luther Martin,\nmartin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "intended_usage": "common",
+    "template_text": "(RFC 5408 published January 2009, subtype last updated January 2009)\n\nMIME media type name: application\n\nMIME subtype name: ibe-key-request+xml\n\nMandatory parameters: none\n\nOptional parameters: none\n\nEncoding considerations: This media type MUST be encoded as US-ASCII\n[ASCII].\n\nSecurity considerations: The data conveyed in this media type may\ncontain authentication credentials. Because of this, its\nconfidentiality and integrity is extremely important. To ensure\nthis, the request for an IBE private key must take place over a\nsecure protocol, such as TLS 1.2 or its successors. To ensure the\nvalidity of the server, the client MUST verify the server\ncertificate and MUST abort the key request if the verification of\nthe server certificate of the TLS connection fails. This media\ntype contains no active content and does not use compression.\n\nInteroperability considerations: There are no known interoperability\nconsiderations for this media type.\n\nApplications that use this media type: Applications that implement\nIBE in compliance with this specification will use this media\ntype. The most commonly used of these applications are encrypted\nemail and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\nmartin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com."
+  },
+  "references": []
+}

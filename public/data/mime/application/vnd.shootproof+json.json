@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.shootproof+json",
+  "full": "application/vnd.shootproof+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.shootproof+json",
+    "encoding_considerations": "Security considerations: application/vnd.shootproof+json shares the \n   security considerations of application/json as defined in RFC 8259 \n   section 12.\n\n   Private information may be included, with authorization managed by \n   OAuth 2 [RFC6749] and protection for data over the wire provided \n   by SSL/TLS.\n\n   No executable content should be included.\n\nInteroperability considerations: N/A",
+    "security_considerations": "security considerations of application/json as defined in RFC 8259 \n   section 12.\n\n   Private information may be included, with authorization managed by \n   OAuth 2 [RFC6749] and protection for data over the wire provided \n   by SSL/TLS.\n\n   No executable content should be included.\n\nInteroperability considerations: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .json\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-04-06, last updated 2018-04-06)\n\nName: Ben Ramsey\nEmail: ben&shootproof.com\n\nMedia type name: application\n\nMedia subtype name: vnd.shootproof+json\n\nRequired parameters: N/A\n\nOptional parameters:\n\n   version: The version parameter may indicate the version of the \n   specification. It is a single unsigned integer with no leading \n   zeros.\n\n   profile: The profile parameter identifies that the resource \n   representation conforms to a certain profile, without affecting \n   the non-profile semantics of the resource representation. The \n   profile is a URI that should be treated as an identifier and not \n   as a link. [RFC6906]\n\nEncoding considerations: binary\n\nSecurity considerations: application/vnd.shootproof+json shares the \n   security considerations of application/json as defined in RFC 8259 \n   section 12.\n\n   Private information may be included, with authorization managed by \n   OAuth 2 [RFC6749] and protection for data over the wire provided \n   by SSL/TLS.\n\n   No executable content should be included.\n\nInteroperability considerations: N/A\n\nPublished specification: \n\n   https://developer.shootproof.com/\n\nApplications which use this media: \n\n   https://www.shootproof.com/\n\nFragment identifier considerations: application/vnd.shootproof+json \n   follows RFC 6901 for implementing URI fragment identification in \n   JSON content types.\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): .json\n   4. Macintosh file type code: TEXT\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: Ben Ramsey\n   2. Email: ben&shootproof.com\n\nIntended usage: Common\n   application/vnd.shootproof+json is a JSON-based read/write type \n   designed to support management and querying of ShootProof \n   resources.\n\nAuthor/Change controller: ShootProof"
+  },
+  "references": []
+}

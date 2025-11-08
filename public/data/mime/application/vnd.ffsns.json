@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.ffsns",
+  "full": "application/vnd.ffsns",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ffsns",
+    "template_text": "\n\nDate: Mon, 11 May 1998 13:41:18 -0700 (PDT)\nFrom: Mary Holstege <holstege&firstfloor.com>\nTo: iana&ISI.EDU, holstege&firstfloor.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.ffsns\n\nName : Mary Holstege\n\nE-mail : holstege&firstfloor.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ffsns\n\nRequired parameters : NONE\n\nOptional parameters : \nversion: a version field, default is 2.0\n\nEncoding considerations : \nMay need base64 encoding\n\nSecurity considerations : \nThis is text; no security issues are raised.  Components of Smart\nDelivery in receipt of such messages will parse and interpret them; the\nmessages themselves include authentication and identification\ninformation.\n\nInteroperability considerations : \n\n\nPublished specification : \nAvailable for Smart Delivery OEMs as part of SDK documentation.\n\nApplications which use this media : \nFirstFloor Smart Delivery 2.0\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : \n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Mary Holstege\n2. E-mail : holstege&firstfloor.com\n\nIntended usage : Limited Use \nThis message type is intended to be used for application communicating\nwith Smart Delivery.  In particular CGI clients of the Smart\nNotification Server component of SD use such messages to tunnel across\nHTTP.\n\nAuthor/Change controller : FirstFloor Software, Inc.\n444 Castro Street, Suite 200\nMountain View, CA 94041 \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

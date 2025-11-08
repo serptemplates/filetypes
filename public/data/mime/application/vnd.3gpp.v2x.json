@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "vnd.3gpp.v2x",
+  "full": "application/vnd.3gpp.v2x",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.3gpp.v2x",
+    "encoding_considerations": "Security considerations: This media type does not include provisions \n   for directives that institute actions on a recipient's files or \n   other resources.\n\n   The information transported in this media type does not include \n   active or executable content.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\n   This media type is not targeted for applications that require some \n   sort of security assurance but don't provide the necessary \n   security mechanisms themselves. The security assurance is expected \n   to be provided by the environment this media type operates in. \n   When this media type operates in environment described in 3GPP TS \n   33.185, security mechanisms are described in 3GPP TS 33.185.\n\nInteroperability considerations: Receiving entity shall ignore any \n   media type parameter not defined in this media type registration.\n\n   If a content of the application/vnd.3gpp.v2x MIME type is \n   transported using UDP transport, the UDP message contains one V2X \n   message.\n\nPublished specification: 3GPP TS 24.386: \"User Equipment (UE) to V2X \n   control function; protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24386.htm\n\nApplications which use this media: The media type is intended to be \n   used for V2X communications over LTE-Uu as described in the 3GPP \n   TS 24.386.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: N/A",
+    "security_considerations": "for directives that institute actions on a recipient's files or \n   other resources.\n\n   The information transported in this media type does not include \n   active or executable content.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\n   This media type is not targeted for applications that require some \n   sort of security assurance but don't provide the necessary \n   security mechanisms themselves. The security assurance is expected \n   to be provided by the environment this media type operates in. \n   When this media type operates in environment described in 3GPP TS \n   33.185, security mechanisms are described in 3GPP TS 33.185.\n\nInteroperability considerations: Receiving entity shall ignore any \n   media type parameter not defined in this media type registration.\n\n   If a content of the application/vnd.3gpp.v2x MIME type is \n   transported using UDP transport, the UDP message contains one V2X \n   message.\n\nPublished specification: 3GPP TS 24.386: \"User Equipment (UE) to V2X \n   control function; protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24386.htm\n\nApplications which use this media: The media type is intended to be \n   used for V2X communications over LTE-Uu as described in the 3GPP \n   TS 24.386.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "media type parameter not defined in this media type registration.\n\n   If a content of the application/vnd.3gpp.v2x MIME type is \n   transported using UDP transport, the UDP message contains one V2X \n   message.\n\nPublished specification: 3GPP TS 24.386: \"User Equipment (UE) to V2X \n   control function; protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24386.htm\n\nApplications which use this media: The media type is intended to be \n   used for V2X communications over LTE-Uu as described in the 3GPP \n   TS 24.386.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-03-20, last updated 2023-03-20)\n\nMedia type name: application\n\nMedia subtype name: vnd.3gpp.v2x\n\nRequired parameters: type parameter.\n\n   The type parameter can be set to \"IP\", or \"non-IP\".\n\n   A content of the application/vnd.3gpp.v2x MIME type with the type \n   parameter set to \"IP\" contains one V2X message such that the V2X \n   message is an IP packet.\n\n   A content of the application/vnd.3gpp.v2x MIME type with the type \n   parameter set to \"non-IP\" and the v2x-message-family parameter \n   indicating a V2X message family contains one V2X message of the \n   V2X message family.\n\nOptional parameters: v2x-message-family parameter.\n\n   The v2x-message-family parameter shall be included when the type \n   parameter is set to \"non-IP\". Permissible values of the \n   v2x-message-family parameter are specified in TS 24.386 subclause \n   7.1.\n\nEncoding considerations: binary\n\nSecurity considerations: This media type does not include provisions \n   for directives that institute actions on a recipient's files or \n   other resources.\n\n   The information transported in this media type does not include \n   active or executable content.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\n   This media type is not targeted for applications that require some \n   sort of security assurance but don't provide the necessary \n   security mechanisms themselves. The security assurance is expected \n   to be provided by the environment this media type operates in. \n   When this media type operates in environment described in 3GPP TS \n   33.185, security mechanisms are described in 3GPP TS 33.185.\n\nInteroperability considerations: Receiving entity shall ignore any \n   media type parameter not defined in this media type registration.\n\n   If a content of the application/vnd.3gpp.v2x MIME type is \n   transported using UDP transport, the UDP message contains one V2X \n   message.\n\nPublished specification: 3GPP TS 24.386: \"User Equipment (UE) to V2X \n   control function; protocol aspects\" available at \n   http://www.3gpp.org/ftp/Specs/html-info/24386.htm\n\nApplications which use this media: The media type is intended to be \n   used for V2X communications over LTE-Uu as described in the 3GPP \n   TS 24.386.\n\nFragment identifier considerations: The handling in section 5 of IETF \n   RFC 7303 applies.\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n   1. Name: Sang Min Park\n   2. Email: sangmin2.park&lge.com\n\nIntended usage: COMMON\n\nAuthor/Change controller: \n\n   3GPP\n   3GPP contact: Lionel Morand <lionel.morand&orange.com>\n"
+  },
+  "references": [
+    {
+      "title": "RFC 7303",
+      "url": "https://www.rfc-editor.org/rfc/rfc7303.html",
+      "kind": "RFC"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "vnd.veraison.tsm-report+cbor",
+  "full": "application/vnd.veraison.tsm-report+cbor",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.veraison.tsm-report+cbor",
+    "encoding_considerations": "CBOR is a binary format\n\nSecurity considerations: The requested media type does not contain active or executable content.\n\nThe information contained in the media type needs privacy and integrity services applied to the mechanism used to transport the payload.\n\nWhen using the media type in REST APIs over HTTPS or CoAPS, the necessary security services will be provided by TLS or OSCORE.\n\nIn other use cases, the user of this media type must ensure that the right secure transport mechanism is utilized.\n\nThe security considerations in Section 12 of RFC8259 fully apply.\n\nNote that the media type does not employ compression and does not incorporate links that must be referenced to interpret the type properly.\n\nInteroperability considerations: N/A.\n\nPublished specification: https://github.com/veraison/ratsd/blob/main/docs/tsm-report.cddl\n\nApplications which use this media: This media type is exchanged by Attesters and Verifiers (RFC9334), typically in REST APIs over HTTPS or CoAPS.\n\nFragment identifier considerations: The syntax and semantics of fragment identifiers are as specified for \"application/cbor\". (No fragment identification syntax is currently defined for \"application/cbor\".)\n\nRestrictions on usage: none",
+    "security_considerations": "The information contained in the media type needs privacy and integrity services applied to the mechanism used to transport the payload.\n\nWhen using the media type in REST APIs over HTTPS or CoAPS, the necessary security services will be provided by TLS or OSCORE.\n\nIn other use cases, the user of this media type must ensure that the right secure transport mechanism is utilized.\n\nThe security considerations in Section 12 of RFC8259 fully apply.\n\nNote that the media type does not employ compression and does not incorporate links that must be referenced to interpret the type properly.\n\nInteroperability considerations: N/A.\n\nPublished specification: https://github.com/veraison/ratsd/blob/main/docs/tsm-report.cddl\n\nApplications which use this media: This media type is exchanged by Attesters and Verifiers (RFC9334), typically in REST APIs over HTTPS or CoAPS.\n\nFragment identifier considerations: The syntax and semantics of fragment identifiers are as specified for \"application/cbor\". (No fragment identification syntax is currently defined for \"application/cbor\".)\n\nRestrictions on usage: none",
+    "interoperability_considerations": "Published specification: https://github.com/veraison/ratsd/blob/main/docs/tsm-report.cddl\n\nApplications which use this media: This media type is exchanged by Attesters and Verifiers (RFC9334), typically in REST APIs over HTTPS or CoAPS.\n\nFragment identifier considerations: The syntax and semantics of fragment identifiers are as specified for \"application/cbor\". (No fragment identification syntax is currently defined for \"application/cbor\".)\n\nRestrictions on usage: none",
+    "additional_information": "1. Deprecated alias names for this type: N/A.\n2. Magic number(s): N/A.\n3. File extension(s): N/A.\n4. Macintosh file type code: N/A.\n5. Object Identifiers: N/A.",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-12-24, last updated 2024-12-24)\n\nMedia type name: application\n\nMedia subtype name: vnd.veraison.tsm-report+cbor\n\nRequired parameters: N/A.\n\nOptional parameters: provider:\n: name for the format specification of the payload found in the \"outblob\" field of the tsm-report. For example: \"sev_guest\", \"tdx_guest\". The value is encoded as an ASCII string. The parameter value is case-sensitive.\n\nEncoding considerations: binary\n\nCBOR is a binary format\n\nSecurity considerations: The requested media type does not contain active or executable content.\n\nThe information contained in the media type needs privacy and integrity services applied to the mechanism used to transport the payload.\n\nWhen using the media type in REST APIs over HTTPS or CoAPS, the necessary security services will be provided by TLS or OSCORE.\n\nIn other use cases, the user of this media type must ensure that the right secure transport mechanism is utilized.\n\nThe security considerations in Section 12 of RFC8259 fully apply.\n\nNote that the media type does not employ compression and does not incorporate links that must be referenced to interpret the type properly.\n\nInteroperability considerations: N/A.\n\nPublished specification: https://github.com/veraison/ratsd/blob/main/docs/tsm-report.cddl\n\nApplications which use this media: This media type is exchanged by Attesters and Verifiers (RFC9334), typically in REST APIs over HTTPS or CoAPS.\n\nFragment identifier considerations: The syntax and semantics of fragment identifiers are as specified for \"application/cbor\". (No fragment identification syntax is currently defined for \"application/cbor\".)\n\nRestrictions on usage: none\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A.\n2. Magic number(s): N/A.\n3. File extension(s): N/A.\n4. Macintosh file type code: N/A.\n5. Object Identifiers: N/A.\n\nPerson to contact for further information:\n\n1. Name: Thomas Fossati\n2. Email: thomas.fossati&linaro.org\n\nIntended usage: COMMON\n\nAuthor/Change controller: Veraison project (veraison&lists.confidentialcomputing.io)\n"
+  },
+  "references": [
+    {
+      "title": "RFC 9334",
+      "url": "https://www.rfc-editor.org/rfc/rfc9334.html",
+      "kind": "RFC"
+    }
+  ]
+}

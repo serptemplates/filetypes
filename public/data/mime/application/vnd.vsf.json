@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.vsf",
+  "full": "application/vnd.vsf",
+  "extensions": [
+    "vsf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.vsf",
+    "template_text": "\r\nName : Delton Rowe\r\n\r\nE-mail : cadman&gte.net\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.vsf\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters :\r\nnone\r\n\r\nEncoding considerations :\r\n\r\nVsffiles are binary data and thus should be encoded for MIME mail\r\ntransmission.  The same guidelines that apply to application/octet-stream\r\napply to vsffiles.\r\n\r\nSecurity considerations :\r\n\r\nVsffiles are container files and practically any computer-generated\r\nfile may be placed inside a vsffile. As a result the security implications \r\nof a vsffile are impossible to assess.\r\n\r\nInteroperability considerations :\r\n\r\nThis file type is not recommended for normal use, since Content-Type\r\ninformation for the files contained within the archive are not known.\r\nInstead, multipart/mixed should be used and each file should have its\r\nown content-type.\r\n\r\nPublished specification :\r\nThe published specification for this vsffile is available at the URL\r\n\r\nhttp://www.cadmancorp.com/pub/download/VSF_Spec.txt.\r\n\r\nApplications which use this media :\r\nViewPort+ and ViewPort+ Plug-In\r\n(see http://www.cadmancorp.com)\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : N/A\r\n2. File extension(s) : .vsf\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Delton Rowe\r\n2. E-mail : cadman&gte.net\r\n\r\nIntended usage : Common\r\n\r\nThe Content-Type of \"application/vsf\" indicates a document which is in\r\n\"ViewPort Streaming Format,\" a compressed format which is used for the\r\nefficient transmission of electronic documents and data over the\r\nInternet.\r\nContact sales&cadmancorp.com for more information on commercially\r\navailable utilities for creating, viewing and printing vsffiles.\r\n\r\nAuthor/Change controller : Delton Rowe\r\n\r\n(created 22 Jan 2002)"
+  },
+  "references": []
+}

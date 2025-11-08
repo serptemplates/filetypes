@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.bcast.provisioningtrigger",
+  "full": "application/vnd.oma.bcast.provisioningtrigger",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.bcast.provisioningtrigger",
+    "template_text": "(registered 2008-09-24, last updated 2015-03-05)\n\nName : Uwe Rauschenbach\n\nEmail : uwe.rauschenbach&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.bcast.provisioningtrigger\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nBCAST Provisioning Trigger message data are passive, meaning they do not contain\nexecutable or active content which may represent a security threat. The format\ndoes not include confidential fields. However, the information present in this\nmedia format is used to configure the receiving application. Thus, the usage of\nthe format may be vulnerable to attacks modifying or spoofing the content of\nthis format. Depending on the system architecture, it is recommended to use\nsource authentication and integrity protection.\n\nInteroperability considerations :\nThis content type carries trigger messages within the scope of the OMA BCAST\nenabler. The OMA BCAST enabler specification includes static conformance\nrequirements and interoperability test cases for this content.\n\nPublished specification :\nOMA BCAST 1.0 Enabler Specification – Mobile Broadcast Services, especially\nsection 5.1.8 \"Provisioning Trigger Message\". Available from\nhttp://www.openmobilealliance.org\n\nApplications which use this media :\nOMA BCAST Service Provisioning Client\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Uwe Rauschenbach\n2. Email : uwe.rauschenbach&nokia.com\n\nIntended usage : Limited Use\nOnly for usage with the BCAST Provisioning Trigger message, which meets the\nsemantics given in the mentioned specification.\n\nAuthor/Change controller : OMNA – Open Mobile Naming Authority,\nOMA-OMNA&mail.openmobilealliance.org\n"
+  },
+  "references": []
+}

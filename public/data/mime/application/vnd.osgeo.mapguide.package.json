@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.osgeo.mapguide.package",
+  "full": "application/vnd.osgeo.mapguide.package",
+  "extensions": [
+    "mgp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.osgeo.mapguide.package",
+    "template_text": "(last updated 2010-07-20)\n\nName : Jason Birch\n\nEmail : jason.birch&osgeo.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.osgeo.mapguide.package\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nAn MGP file is a zip-compressed archive containing a single .xml\nmanifest file at its root, and an arbitrary hierarchy of subfolders and\nfiles that may be referenced within this manifest file.\n\nThe current implementation of the MapGuide repository (and by extension\nthe MGP media type) allows the inclusion of the following:\n\n- XML files describing a MapGuide repository hierarchy, resources, etc\n- Image files (jpg, png, gif, bmp, tif, mrsid, ecw)\n- Mapping data files (dwf, shp, sdf, sqlite)\n\nNone of these allowed resources is by itself active or executable.\nHowever, clients should be aware that the zip-compressed archive is\neasily manipulated and should ensure that resources are of allowed types.\n\nAn MGP file provides no privacy or integrity mechanisms of its own. If\nthe content needs to be protected it must be secured through external means.\n\nThere are no other known security considerations, but a security\nanalysis was not performed.\n\nInteroperability considerations :\nNone known; same as for ZIP files.\n\nPublished specification :\nSpecification is not published. MGP file is essentially an offline copy\nof a segment of a MapGuide DBXML repository, along with a manifest\ncontaining instructions on how to load the XML and binary data into the\nserver.\n\nApplications which use this media :\nMapGuide Packages are used by OSGeo MapGuide Open Source, OSGeo MapGuide\nMaestro, Autodesk MapGuide Studio and Autodesk MapGuide Enterprise\n\nAdditional information :\n\n1. Magic number(s) : n/a\n2. File extension(s) : .mgp\n3. Macintosh file type code : n/a\n4. Object Identifiers: n/a\n\nThis application is being made on behalf of the MapGuide Open Source\nProject Steering Committee, which operates under the umbrella of the\nOpen Source Geospatial Foundation. Information on the MapGuide Open\nSource project may be found at http://mapguide.osgeo.org/\n\nPerson to contact for further information :\n\n1. Name : Jason Birch\n2. Email : jason.birch&osgeo.org\n\nIntended usage : Common\nIntended to be used on webservers hosting .mgp files for download, and\non local PCs for associating .mgp files with the client editing/upload\ntools.\n\nAuthor/Change controller : Jason Birch\n\n(file created 2010-07-20)"
+  },
+  "references": []
+}

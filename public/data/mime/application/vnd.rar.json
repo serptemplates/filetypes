@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "vnd.rar",
+  "full": "application/vnd.rar",
+  "extensions": [
+    "rar"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.rar",
+    "security_considerations": "The security issues associated with this type have not been\nassessed.",
+    "interoperability_considerations": "As this is not an open standard, interoperability is left up to\nthe discretion of the developer.",
+    "additional_information": "1. Deprecated alias names for this type: application/x-rar-compressed\n2. Magic number(s): 52 61 72 21 1A 07 00\n3. File extension(s): .rar\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-07-14, last updated 2016-07-14)\n\nName: Kim Scarborough\nEmail: user&unknown.nu\n\nMedia type name: application\nMedia subtype name: vnd.rar\n\nRequired parameters: N/A\n\nOptional parameters:\nN/A\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nThe security issues associated with this type have not been\nassessed.\n\nInteroperability considerations:\nAs this is not an open standard, interoperability is left up to\nthe discretion of the developer.\n\nPublished specification:\nThe published specification is available at the developer's discretion from\n\n<http://www.rarlab.com/technote.htm>\n\nApplications which use this media:\nThe RAR and WinRAR set of applications.\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: application/x-rar-compressed\n2. Magic number(s): 52 61 72 21 1A 07 00\n3. File extension(s): .rar\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\nOlder versions of the software would also use the file extensions .r00, .r01, etc. to .r99 to indicate multi-file archives. This usage is now deprecated, and all parts should use the .rar extension.\n\nPerson to contact for further information:\n\n1. Name: Kim Scarborough\n2. Email: user&unknown.nu\n\nIntended usage: Common\nThis is a reasonably popular proprietary archive format.\n\nAuthor/Change controller: win.rar GmbH\nMarienstrasse 12\n10117 Berlin\nGermany HRB 109885 B Amtsgericht Charlottenburg\nUst-ID Nr. DE255974207 "
+  },
+  "references": []
+}

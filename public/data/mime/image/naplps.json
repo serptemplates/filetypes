@@ -1,0 +1,34 @@
+{
+  "type": "image",
+  "subtype": "naplps",
+  "full": "image/naplps",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/naplps",
+    "encoding_considerations": "As NAPLPS is based on an extensible \"character set\"\n\tscheme which includes completely interchangeable 7-bit\n\tand 8-bit options, NAPLPS graphics may contain data in\n\teither 7-bit or 8-bit format. In order to avoid the need\n\tfor encoding and decoding, 7-bit NAPLPS character sets\n\tare recommended for all 7-bit environments.\n\nSecurity considerations: None.",
+    "template_text": "\n\nDate: Tue, 05 Dec 1995 22:58:15 +0100\nFrom: Ilya Ferber <iferber&netvision.net.il>\nSubject: Registration of MIME type: image/naplps\n\n\nMIME type name: image\n\nMIME subtype name: naplps\n\tContent-Type of \"image/naplps\" indicates a graphic in\n\tNAPLPS format. NAPLPS (North American Presentation Layer\n\tProtocol Syntax) is used to transmit device-independent\n\tvector and raster graphics. Due to their spatial and\n\tcolor coordinate schemes, these graphics, sometimes\n\treferred to as \"frames\", are executable by virtually any\n\tdevice.\n\nRequired parameters: version identification\n\n\tFor example:\n\n\t\t\timage/naplps; version=1983\n\nOptional parameters: none\n\nEncoding considerations:\n\tAs NAPLPS is based on an extensible \"character set\"\n\tscheme which includes completely interchangeable 7-bit\n\tand 8-bit options, NAPLPS graphics may contain data in\n\teither 7-bit or 8-bit format. In order to avoid the need\n\tfor encoding and decoding, 7-bit NAPLPS character sets\n\tare recommended for all 7-bit environments.\n\nSecurity considerations: None.\n\nPublished specification:\n\tDocuments describing NAPLPS (North American Presentation\n\tLayer Protocol Syntax):\n\t\tANSI X3.110-1983\n\t\tCSA T500-1983\n\nPerson & email address to contact for further information:\n\tIlya Ferber\n\tYAM International\n\t43 Bashari Street\n\tRehovoth\n\tISRAEL\n\tiferber&netvision.net.il\n\n\n\n"
+  },
+  "references": []
+}

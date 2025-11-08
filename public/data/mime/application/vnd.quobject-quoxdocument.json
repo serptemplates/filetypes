@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.quobject-quoxdocument",
+  "full": "application/vnd.quobject-quoxdocument",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.quobject-quoxdocument",
+    "template_text": "(last updated 2011-03-08)\n\nName : Matthias Ludwig\n\nEmail : mludwig&quobject.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.quobject-quoxdocument\n\nRequired parameters : N/A\n\nOptional parameters :\nN/A\n\nEncoding considerations : binary\n\nSecurity considerations :\nThe media content will not include executable or active content. It will be a\nsimple compressed collection of xml text files and jpeg picture files. This\nmedia type does not require privacy or integrity protection. There are no \nknown security considerations.\n\n\nInteroperability considerations :\nThere are no known interoperability considerations for this type. File format\ncan be read on any platform.\n\nPublished specification :\nN/A\n\nApplications which use this media :\nQuobject Designer, Quobject Explorer\n\nAdditional information :\n1. Magic number(s) : N/A\n2. File extension(s) : .quox and .quiz (.quiz=compressed collection of multiple\n.quox files + one xml information file containing the order in which questions\nshould be displayed)\n3. Macintosh file type code : N/A\n4. Object Identifiers: N/A\n\nPerson to contact for further information :\n1. Name : Matthias Ludwig\n2. Email : mludwig&quobject.com\n\nIntended usage : Common\nThis type will be used for all documents conforming to the Question Object\nDocument format.\n\n\n\nAuthor/Change controller : Matthias Ludwig\n\n\n(file created 2011-03-08)"
+  },
+  "references": []
+}

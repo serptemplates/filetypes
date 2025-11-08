@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.verimatrix.vcas",
+  "full": "application/vnd.verimatrix.vcas",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.verimatrix.vcas",
+    "template_text": "(last updated 2010-08-31)\n\nName : Petr Peterka\n\nEmail : petr&verimatrix.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.verimatrix.vcas\n\nRequired parameters : none\n\nOptional parameters :\nversion = 1*DIGIT \".\" 1*DIGIT\nThe VCAS conditional access system has evolved over time and the version \nindicates the version of VCAS this content employs.\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nThe proposed media type does not contain any active or executable\ncontent.\n\nThe media indicated by this media type is typically encrypted for\nsecrecy. An external key management protocol is used to deliver the\ndecryption key.\n\nVCAS does not provide content integrity protection.\n\nInteroperability considerations :\nNone\n\nPublished specification :\nThe Verimatrix VCAS (Video Content Authority System) Specification\ndocument is available from Verimatrix under the appropriate licensing\nagreement and general VCAS documents are available upon request.\n\nApplications which use this media :\nThis type is used by applications that use VCAS for multimedia content\nprotection, conditional access, and digital rights management purposes.\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nVCAS is used by hundreds of IPTV operators.\n\nPerson to contact for further information :\n\n1. Name : Petr Peterka\n2. Email : info&verimatrix.com\n\nIntended usage : Common\nThis media type is used to signal media content protected by VCAS.\nAn example usage of this type is in the DLNA/UPnP environment where the\nVCAS content protection is communicated in the Content Directory Service\n(CDS) using this type.\n\nAuthor/Change controller : Petr Peterka\n\n(file created 2010-08-31)"
+  },
+  "references": []
+}

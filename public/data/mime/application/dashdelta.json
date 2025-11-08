@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "dashdelta",
+  "full": "application/dashdelta",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/dashdelta",
+    "template_text": "(registered 2013-09-06, last updated 2013-09-06)\n\nMIME media type name : Application\n\nMIME subtype name : Standards Tree - dashdelta\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : 8bit\n\n\nSecurity considerations :\nA Media Presentation Description (MPD) Delta contains text changes to an MPD. An \nMPD Delta is used together with a first MPD to construct a second MPD. As such, \nany security considerations for an MPD (media type application/dash+xml) may \nalso be applicable to an MPD Delta. A MIME type handler would not launch a service \nwith only an MPD Delta.\n\nFurther to this, as an MPD Delta performs editing operations on an MPD there are \nrisks that deliberately malformed editing operations could cause security issues.\n\n\nInteroperability considerations :\n\n\nPublished specification :\n3GPP TS 26.247\n\nApplications which use this media :\nvarious including but not limited to On-Demand Streaming over the Internet, Live \nStreaming over the Internet, Internet Video, Internet Radio\n\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : mpdd\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : David Furbeck\n2. Email : dfurbeck&blackberry.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : 3GPP TSG SA WG4"
+  },
+  "references": []
+}

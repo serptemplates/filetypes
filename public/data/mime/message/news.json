@@ -1,0 +1,39 @@
+{
+  "type": "message",
+  "subtype": "news",
+  "full": "message/news",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/message/news",
+    "encoding_considerations": "Security considerations:  News articles may constitute \"control\n                          messages\", which can have effects on a\n                          host's news system beyond just addition\n                          of information.  Since control messages\n                          may occur in normal news flow, most hosts\n                          are suitably defended against undesired\n                          effects already, but transmission of news\n                          articles via mail may bypass\n                          firewall-type defenses.  Reading a news\n                          article transmitted by mail involves no\n                          hazards beyond those of mail, but\n                          submitting it to news software for\n                          processing should be done with care.",
+    "security_considerations": "messages\", which can have effects on a\n                          host's news system beyond just addition\n                          of information.  Since control messages\n                          may occur in normal news flow, most hosts\n                          are suitably defended against undesired\n                          effects already, but transmission of news\n                          articles via mail may bypass\n                          firewall-type defenses.  Reading a news\n                          article transmitted by mail involves no\n                          hazards beyond those of mail, but\n                          submitting it to news software for\n                          processing should be done with care.",
+    "interoperability_considerations": "Rarely used, and therefore often\n                          handled as application/octet-stream.\n                          Disposition should by default be inline.\n\nPublished specification:  RFC 5537",
+    "applications": "Some old mail and news user agents.\n\nIntended usage:           OBSOLETE\n\nAuthor:                   Henry Spencer\n\nChange controller:        IETF",
+    "intended_usage": "obsolete",
+    "change_controller": "IETF",
+    "template_text": "(registered 1993, obsoleted by RFC5537)\n\nMIME type name:           message\n\nMIME subtype name:        news\n\nRequired parameters:      none\n\nOptional parameters:      none\n\nEncoding considerations:  same as message/rfc822\n\nSecurity considerations:  News articles may constitute \"control\n                          messages\", which can have effects on a\n                          host's news system beyond just addition\n                          of information.  Since control messages\n                          may occur in normal news flow, most hosts\n                          are suitably defended against undesired\n                          effects already, but transmission of news\n                          articles via mail may bypass\n                          firewall-type defenses.  Reading a news\n                          article transmitted by mail involves no\n                          hazards beyond those of mail, but\n                          submitting it to news software for\n                          processing should be done with care.\n\nInteroperability considerations:\n                          Rarely used, and therefore often\n                          handled as application/octet-stream.\n                          Disposition should by default be inline.\n\nPublished specification:  RFC 5537\n\nApplications that use this media type:\n                          Some old mail and news user agents.\n\nIntended usage:           OBSOLETE\n\nAuthor:                   Henry Spencer\n\nChange controller:        IETF"
+  },
+  "references": []
+}

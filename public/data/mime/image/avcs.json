@@ -1,0 +1,40 @@
+{
+  "type": "image",
+  "subtype": "avcs",
+  "full": "image/avcs",
+  "extensions": [
+    "avcs"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/avcs",
+    "encoding_considerations": "Security considerations: See section 4 of RFC 4337 and section 7 of \n   RFC 6381. This format does not supply integrity or confidentiality \n   protection and so they are applied externally when needed.\n\nInteroperability considerations: Interoperably deployed in reference \n   code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html",
+    "security_considerations": "RFC 6381. This format does not supply integrity or confidentiality \n   protection and so they are applied externally when needed.\n\nInteroperability considerations: Interoperably deployed in reference \n   code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html",
+    "interoperability_considerations": "code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html",
+    "additional_information": "Magic number(s): none\n   File extension(s): avcs\n   Macintosh File Type Code(s): None\n\nPerson to contact for info: David Singer, singer&apple.com\n\nIntended usage: Common\n\nAuthor/Change controller: David Singer, ISO/IEC/JTC1/SC29/WG11 file \n   format chair",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-07-30, last updated 2018-07-30)\n\nMIME media type name: image\n\nMIME subtype name: avcs\n\n   This MIME type may be used when the requirements of the 'avcs' \n   brand specified in section E.4.2 of ISO/IEC 23008-12 apply. (A \n   brand in the file header identifies a specific profile of a more \n   general format.)\n\nRequired parameters: none\n\nOptional parameters:\n\n   profiles: Specified by RFC 6381 and its successors.\n\n   codecs: Specified by RFC 6381 and its successors for files \n      conforming to specifications derived from ISO/IEC 14496-12 and \n      derived specifications. Note that for AVC, the format of a list \n      item included in the value of the codecs parameter is specified \n      in ISO/IEC 14496-15.\n\n      When the codecs parameter is present, the first list item \n      should represent a track having the handler type 'pict'. Other \n      list items represent other tracks.\n\nEncoding considerations: as for video/mp4\n\nSecurity considerations: See section 4 of RFC 4337 and section 7 of \n   RFC 6381. This format does not supply integrity or confidentiality \n   protection and so they are applied externally when needed.\n\nInteroperability considerations: Interoperably deployed in reference \n   code available from ISO, Javascript code from Nokia labs, in \n   open-source in MP4Box and various other implementations.\n\nPublished specification: ISO/IEC 23008-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nApplications: Multimedia, Imaging, Pictures\n\nFragment identifier considerations: Fragment identifiers are \n   specified in Annex L of ISO/IEC 14496-12, available as a Publicly \n   Available Standard at \n   http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html\n\nAdditional information:\n\n   Magic number(s): none\n   File extension(s): avcs\n   Macintosh File Type Code(s): None\n\nPerson to contact for info: David Singer, singer&apple.com\n\nIntended usage: Common\n\nAuthor/Change controller: David Singer, ISO/IEC/JTC1/SC29/WG11 file \n   format chair"
+  },
+  "references": []
+}

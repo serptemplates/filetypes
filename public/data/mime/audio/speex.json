@@ -1,0 +1,44 @@
+{
+  "type": "audio",
+  "subtype": "speex",
+  "full": "audio/speex",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/speex",
+    "encoding_considerations": "This media type is framed and binary, see Section 4.8 in\n   [RFC4288].\n\nSecurity considerations: See Section 6.",
+    "interoperability_considerations": "None.",
+    "applications": "Audio streaming and conferencing applications.\n\nAdditional information: none.\n\nPerson and e-mail address to contact for further information:\n\n   Alfred E. Heggestad: aeh&db.org\n\nIntended usage: COMMON",
+    "additional_information": "Person and e-mail address to contact for further information:\n\n   Alfred E. Heggestad: aeh&db.org\n\nIntended usage: COMMON",
+    "intended_usage": "common",
+    "template_text": "(registered by RFC5574)\n\nMedia type name: audio\n\nMedia subtype name: speex\n\nRequired parameters:\n\n   rate:  RTP timestamp clock rate, which is equal to the sampling\n      rate in Hz.  The sampling rate MUST be either 8000, 16000, or\n      32000.\n\nOptional parameters:\n\n   ptime:  SHOULD be a multiple of 20 msec [RFC8866]\n\n   maxptime:  SHOULD be a multiple of 20 msec [RFC8866]\n\n   vbr:  variable bit-rate - either 'on', 'off', or 'vad' (defaults\n      to 'off').  If 'on', variable bit-rate is enabled.  If 'off',\n      disabled.  If set to 'vad', then constant bit-rate is used, but\n      silence will be encoded with special short frames to indicate a\n      lack of voice for that period.  This parameter is a preference\n      to the encoder.\n\n   cng:  comfort noise generation - either 'on' or 'off' (defaults to\n      'off').  If 'off', then silence frames will be silent; if 'on',\n      then those frames will be filled with comfort noise.  This\n      parameter is a preference to the encoder.\n\n   mode:  Comma-separated list of supported Speex decoding modes, in\n      order of preference.  The first is the most preferred and the\n      remaining is in decreasing order of preference.  The valid\n      modes are different for narrowband and wideband, and are\n      defined as follows:\n\n      *  {1,2,3,4,5,6,7,8,any} for narrowband\n\n      *  {0,1,2,3,4,5,6,7,8,9,10,any} for wideband and ultra-wideband\n\n      The 'mode' parameters may contain multiple values.  In this\n      case, the remote party SHOULD configure its encoder using the\n      first supported mode provided.  When 'any' is used, the offerer\n      indicates that it supports all decoding modes.  The 'mode'\n      parameter value MUST always be quoted.  If the 'mode' parameter\n      is not provided, the mode value is considered to be equivalent\n      to 'mode=\"3,any\"' in narrowband and 'mode=\"8,any\"' in wideband\n      and ultra-wideband.  Note that each Speex frame does contain\n      the mode (or bit-rate) that should be used to decode it.  Thus,\n      an application MUST be able to decode any Speex frame unless\n      the SDP clearly specifies that some modes are not supported\n      (e.g., by not including 'mode=\"any\"').  Indicating support for\n      a given set of decoding modes also implies that the\n      implementation support the same encoding modes.\n\nEncoding considerations:\n\n   This media type is framed and binary, see Section 4.8 in\n   [RFC4288].\n\nSecurity considerations: See Section 6.\n\nInteroperability considerations:\n\n   None.\n\nPublished specification:\n\n   RFC 5574.\n\nApplications that use this media type:\n\n   Audio streaming and conferencing applications.\n\nAdditional information: none.\n\nPerson and e-mail address to contact for further information:\n\n   Alfred E. Heggestad: aeh&db.org\n\nIntended usage: COMMON\n\nRestrictions on usage:\n\n   This media type depends on RTP framing, and hence is only defined\n   for transfer via RTP [RFC3550].  Transport within other framing\n   protocols is not defined at this time.\n\nAuthor: Alfred E. Heggestad\n\nChange controller:\n\n   IETF Audio/Video Transport working group delegated from the IESG.\n"
+  },
+  "references": [
+    {
+      "title": "RFC 5574",
+      "url": "https://www.rfc-editor.org/rfc/rfc5574.html",
+      "kind": "RFC"
+    }
+  ]
+}

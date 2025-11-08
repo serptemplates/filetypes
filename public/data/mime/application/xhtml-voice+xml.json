@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "xhtml-voice+xml",
+  "full": "application/xhtml-voice+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/xhtml-voice+xml",
+    "encoding_considerations": "XHTML+Voice has the same media type encoding\n            considerations specified in section 3.2 of [RFC3023].",
+    "security_considerations": "XHTML+Voice is an extension of XHTML and has the same security issues\nas XHTML.  These include interpreting anchors and forms in XHTML\ndocuments, and scripting languages and other dynamic interactive\ncapabilities.  See section 7 of [RFC3236].\n\nIn addition, the scripting language can be accessed by both the XHTML\nand the VoiceXML 2.0 markup embedded in the XHTML+Voice document.\nSee section 1.3.1.5 of [XPLUSV12].\n\nXML-Events [XMLEVNTS] allows an author to attach a handler to any\nnode in the document.  The handler that is activated in response to a\nspecified event may be either a voice dialog or a script that can be\neither in the same or an external document.",
+    "additional_information": "Magic number(s):  There is no single string that is always\n       present.\n   File extension(s): mxml, xhvml, xvml, xvm\n   Macintosh File Type Code(s): TEXT\n\nPerson & e-mail address to contact for further information:\n\n   Gerald M. McCobb\n   mccobb&us.ibm.com\n\n   Intended usage: LIMITED USE\n\n   Author/Change controller: Gerald McCobb",
+    "template_text": "(registered 2005-07-11, updated as \"obsolete\" per IESG on 2005-07-26)\n\nMIME media type name: application\n\nMIME subtype name: xhtml-voice+xml\n\nRequired parameters: none\n\nOptional parameters:\n\n  charset:  has the same semantics as the charset parameter of the\n            \"application/xml\" media type specified in [RFC3023].\n\nEncoding considerations:  \n            XHTML+Voice has the same media type encoding\n            considerations specified in section 3.2 of [RFC3023].\n\nSecurity considerations:\n\nXHTML+Voice is an extension of XHTML and has the same security issues\nas XHTML.  These include interpreting anchors and forms in XHTML\ndocuments, and scripting languages and other dynamic interactive\ncapabilities.  See section 7 of [RFC3236].\n\nIn addition, the scripting language can be accessed by both the XHTML\nand the VoiceXML 2.0 markup embedded in the XHTML+Voice document.\nSee section 1.3.1.5 of [XPLUSV12].\n\nXML-Events [XMLEVNTS] allows an author to attach a handler to any\nnode in the document.  The handler that is activated in response to a\nspecified event may be either a voice dialog or a script that can be\neither in the same or an external document.\n\nInteroperability considerations :\n\nBecause XHTML+Voice is built upon W3C standard recommendations, it is\ndesigned to be interoperable across a wide range of platforms and\nclient devices.  Because the extensions to XHTML are identified by\ntheir namespaces, all browsers that have namespace support can run an\nXHTML+Voice document as an XHTML document without voice interaction.\n   \nPublished specification:\n\n   The latest published version of XHTML+Voice is [XPLUSV12].\n\nApplications which use this media type:\n\n   XHTML+Voice documents are intended to be deployed on the World\n   Wide Web and rendered by multimodal browsers that support the\n   visual and voice modes of interaction.  Because XHTML+Voice is\n   an application of XML, authors can expect XHTML+Voice user\n   agents to be conformant XML 1.0 [XML] processors.  See section\n   2 of [RFC3236].\n\nAdditional information:\n\n   Magic number(s):  There is no single string that is always\n       present.\n   File extension(s): mxml, xhvml, xvml, xvm\n   Macintosh File Type Code(s): TEXT\n\nPerson & e-mail address to contact for further information:\n\n   Gerald M. McCobb\n   mccobb&us.ibm.com\n\n   Intended usage: LIMITED USE\n\n   Author/Change controller: Gerald McCobb\n"
+  },
+  "references": []
+}

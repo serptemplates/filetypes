@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "vnd.syncml.dm+xml",
+  "full": "application/vnd.syncml.dm+xml",
+  "extensions": [
+    "xdm"
+  ],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.syncml.dm+xml",
+    "subtype_name": "vnd.syncml.dm+xml",
+    "encoding_considerations": "This media type MAY be encoded as appropriate for the charset and\nthe capabilities of the underlying transport. For 7bit transports, data in \nboth UTF-8 and UTF-16 is encoded in quoted- printable or base64. For 8-bit \nclean transport (e.g., ESMTP with 8BITMIME, NNTP), UTF-8 is not encoded, but \nUTF-16 is best base64 encoded. For binary clean transport (e.g., HTTP), no \ncontent-transfer-encoding is necessary.",
+    "security_considerations": "Authentication: The OMA DM media type definition provides for the\ninclusion of authentication information for the purpose of authenticating the \noriginator and recipient of messages containing the device management content \ntype. The content type definition supports Basic, Base64 userid/password mark-\nup, MD5 digest challenge and response strings and any other registered \nauthentication credential scheme.\n\nConfidentiality considerations: Data communicated via this MIME-type may have \nto be kept confidential. Transport layer confidentiality is recommended. In \naddition, data may also be encrypted when sent using this MIME-type.\n\nIntegrity protection needs to be provided externally. For example, the \ntransport layer based on SSL or TLS may provide integrity protection.\n\nThreats: The OMA DM media type definition provides for the\ninclusion of remote execution commands. Administrators for implementations \nthat support this content type SHOULD take every standard precaution to assure \nthe authentication of the originator of OMA DM content, as well as take every \nstandard precaution to confirm the validity of the included remote execution \ncommand prior to allowing the command to be executed on the targeted \nrecipient's system.\n\n\nInteroperability considerations: Implementations that have\nsupport for the mandatory features of this content type will greatly increase \nthe chances of interoperating with other implementations supporting this \ncontent type. Conformance to this content type requires an implementation to \nsupport every mandatory feature.\n\n\nPublished specification: http://www.openmobilealliance.org.\n\n\nApplications which use this media type: This media type is\nintended for common use by networked device management applications.",
+    "interoperability_considerations": "support for the mandatory features of this content type will greatly increase \nthe chances of interoperating with other implementations supporting this \ncontent type. Conformance to this content type requires an implementation to \nsupport every mandatory feature.\n\n\nPublished specification: http://www.openmobilealliance.org.\n\n\nApplications which use this media type: This media type is\nintended for common use by networked device management applications.",
+    "additional_information": "1. Magic number(s): None\n2. File extension(s): XDM\n3. Macintosh File Type Code(s): XDML\n4. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(last updated 14 September 2006)\r\n\r\nName : Bindu Rama Rao\r\n\r\n\r\nEmail : brao&bitfone.com\r\n\r\n\r\nMedia type name: application\r\n\r\n\r\nSubtype name: vnd.syncml.dm+xml\r\n\r\n\r\nRequired parameters: None\r\n\r\n\r\nOptional parameters: charset, verproto, verdtd.\r\n\r\ncharset Parameter\r\n\r\nPurpose: Specifies the character set used to represent the DM document. The \r\ndefault character set for DM representation protocol is UTF-8, as defined [RFC \r\n3629].\r\n\r\nAlthough listed as an optional parameter, the use of the charset parameter is \r\nSTRONGLY RECOMMENDED, since this information can be used by XML processors to \r\ndetermine authoritatively the charset of the XML entity.\r\n\r\nAny IANA registered charset may be specified as a charset value.\r\n\r\n\"UTF-8\" [RFC-2279] and \"UTF-16\" (Appendix C.3 of [UNICODE] and Amendment 1 of \r\n[ISO-10646]) are the recommended values, representing the UTF-8 and UTF-16 \r\n[RFC 2781] charsets, respectively. These charsets are preferred since they \r\nare supported by all conforming XML processors.\r\n\r\nverproto Parameter\r\n\r\nPurpose: Specifies the major/minor revision identifiers for the\r\nOMA device management protocol specification for the workflow of messages \r\nwith OMA DM content. If present, MUST be the same value as that specified by \r\nthe \"VerProto\" element type in the OMA DM content information. If not present, \r\nno default value is to be assumed.\r\n\r\nFormal Specification: The following ABNF defines the syntax for\r\nThe parameter.\r\n\r\nverprot-param-value = \"DM/\" 1*DIGIT \".\" 1*DIGIT\r\n\r\nverdtd Parameter\r\n\r\nPurpose: Specifies the major/minor revision identifiers for the\r\nDM representation protocol specification that defines the OMA DM\r\nmedia type. If present, MUST be the same value as that specified by the\r\n\"VerDTD\" element type in the OMA DM content information. If not present, the \r\ndefault value \"1.2\" is to be assumed.\r\n\r\nFormal Specification: The following ABNF defines the syntax for\r\nthe parameter.\r\n\r\nverdtd-param-value = 1*DIGIT \".\" 1*DIGIT\r\n\r\n\r\nEncoding considerations:\r\n\r\nThis media type MAY be encoded as appropriate for the charset and\r\nthe capabilities of the underlying transport. For 7bit transports, data in \r\nboth UTF-8 and UTF-16 is encoded in quoted- printable or base64. For 8-bit \r\nclean transport (e.g., ESMTP with 8BITMIME, NNTP), UTF-8 is not encoded, but \r\nUTF-16 is best base64 encoded. For binary clean transport (e.g., HTTP), no \r\ncontent-transfer-encoding is necessary.\r\n\r\n\r\nSecurity considerations:\r\n\r\nAuthentication: The OMA DM media type definition provides for the\r\ninclusion of authentication information for the purpose of authenticating the \r\noriginator and recipient of messages containing the device management content \r\ntype. The content type definition supports Basic, Base64 userid/password mark-\r\nup, MD5 digest challenge and response strings and any other registered \r\nauthentication credential scheme.\r\n\r\nConfidentiality considerations: Data communicated via this MIME-type may have \r\nto be kept confidential. Transport layer confidentiality is recommended. In \r\naddition, data may also be encrypted when sent using this MIME-type.\r\n\r\nIntegrity protection needs to be provided externally. For example, the \r\ntransport layer based on SSL or TLS may provide integrity protection.\r\n\r\nThreats: The OMA DM media type definition provides for the\r\ninclusion of remote execution commands. Administrators for implementations \r\nthat support this content type SHOULD take every standard precaution to assure \r\nthe authentication of the originator of OMA DM content, as well as take every \r\nstandard precaution to confirm the validity of the included remote execution \r\ncommand prior to allowing the command to be executed on the targeted \r\nrecipient's system.\r\n\r\n\r\nInteroperability considerations: Implementations that have\r\nsupport for the mandatory features of this content type will greatly increase \r\nthe chances of interoperating with other implementations supporting this \r\ncontent type. Conformance to this content type requires an implementation to \r\nsupport every mandatory feature.\r\n\r\n\r\nPublished specification: http://www.openmobilealliance.org.\r\n\r\n\r\nApplications which use this media type: This media type is\r\nintended for common use by networked device management applications.\r\n\r\n\r\nAdditional information:\r\n\r\n1. Magic number(s): None\r\n2. File extension(s): XDM\r\n3. Macintosh File Type Code(s): XDML\r\n4. Object Identifiers: None\r\n\r\n\r\nPerson & email address to contact for further information:\r\ntechnical-comments&openmobilealliance.org\r\n\r\n\r\nIntended usage: COMMON\r\n\r\n\r\nAuthor/Change controller: technical-comments&openmobilealliance.org\r\n\r\n\r\nFor clarifications: On behalf of OMA-DM : \r\nbrao&bitfone.com \r\n\r\n(file created 14 September 2006)"
+  },
+  "references": []
+}

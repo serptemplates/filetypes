@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.xfdl",
+  "full": "application/vnd.xfdl",
+  "extensions": [
+    "xfdl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.xfdl",
+    "template_text": "\n\nDate: Thu, 14 Jan 1999 10:00:50 -0800 (PST)\nFrom: Dave Manning <dmanning&uwi.com>\nTo: iana&iana.org, dmanning&uwi.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.xfdl\n\nName : Dave Manning\n\nE-mail : dmanning&uwi.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.xfdl\n\nRequired parameters : NONE\n\nOptional parameters : \nNONE\n\nEncoding considerations : \nXFDL is an XML-based language. (RFC 2376)\n\nSecurity considerations : \nXFDL (Extensible Forms Description Language) is an XML-based language\ndesigned to represent complex business forms on the Web. XFDL includes\nsupport for multiple overlapping digital signatures, and auditable\ntransaction records. We believe that XFDL can provide full\nnon-repudiation of contractual forms.\n\nProtecting the privacy of an XFDL document during transmission is done\nusing common http encrytion techniques. Some thought has been given to\nproviding a built-in system on encryption to protect the privacy of\nXFDL document while they reside in a file system, but no such system\nexists at this time.\n\nInteroperability considerations : \nXFDL was designed to be a cross-platform language.\n\nPublished specification : \nThe full XFDL specification can be found at:\nhttp://www.w3.org/Submission/1998/16\nor\nhttp://www.uwi.com/xfdl\n\nApplications which use this media : \nUWI.Com's InternetForms viewer, designer and gateway products.\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : xfdl, xfd, frm\n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Dave\n2. E-mail : Manning\n\nIntended usage : Common \nWe encourage the common use of XFDL. It has been submitted to the W3C.\n\nAuthor/Change controller : Dave Manning, CTO - UWI.Com\ndmanning&uwi.com \n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.spotfire.dxp",
+  "full": "application/vnd.spotfire.dxp",
+  "extensions": [
+    "dxp"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.spotfire.dxp",
+    "template_text": "(last updated 2008-01-18)\n\nName : Stefan Jernberg\n\nEmail : SJernber&TIBCO.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.spotfire.dxp\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nDocuments of the MIME-type contain data and references to functions (code). These \nfunctions and code can only be run within the application and only run functions \navailable from within the application. It is therefore not possible to execute any ordinary \ncommand-line or operating system functions from the files of the specified MIME-type. \nAll settings and configuration files associated with the product have checksums and all \nsensitive information is encrypted. All executable files in the product are digitally signed.\n\nInteroperability considerations :\nNone known\n\nPublished specification :\nSpecification by example:\nBy using the TIBCO Spotfire product available from TIBCO Software Inc.\n(http://spotfire.tibco.com) start the application and select File>Save As, input a file name \nand click the Ok button. You have now created a file type that corresponds to this MIME \nContent-Type.\n\n\nApplications which use this media :\nTIBCO Spotfire\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : dxp\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\nPerson to contact for further information :\n\n1. Name : Stefan Jernberg\n2. Email : SJernber&TIBCO.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : TIBCO Spotfire, Stefan Jernberg\n\n\n(file created 2006-09-13)"
+  },
+  "references": []
+}

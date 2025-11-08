@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "urc-ressheet+xml",
+  "full": "application/urc-ressheet+xml",
+  "extensions": [
+    "rsheet"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/urc-ressheet+xml",
+    "template_text": "(file created 2013-03-29, last updated 2013-03-29)\n\n1. Media Type Name:\napplication\n\n2. Subtype name:\nstandards tree\nurc-ressheet+xml\n\n3. Required parameters:\nnone\n\n4. Optional parameters:\ncharset parameter (see definition of charset parameter for \napplication/xml, RFC 3023).\nThe allowed values are: \"utf-8\" [RFC2279] and \"utf-16\" [RFC2781]. \nIn the absence of the charset parameter, UTF-8 and UTF-16 are \ndifferentiated by the procedure described in [XML 4.3.3].\n\n[XML 4.3.3] Extensible Markup Language (XML) 1.0 (Fifth Edition). \nW3C Recommendation 26 November 2008. 4.3.3 Character Encoding in \nEntities. http://www.w3.org/TR/REC-xml/#charencoding\n\n5. Encoding considerations:\nbinary\n\n6. Security considerations:\n\nThe general utility of this media type to the Internet community \nis in the area of remote user interfaces for devices and services \nthat use Internet-based technologies, in particular the Universal \nRemote Console (URC) technology (ISO/IEC 24752). A Resource Sheet \ncontains labels and other atomic resources for a remote user \ninterface that is based on URC technology.\n\nThe basic (standardized) format of information contained in the \nmedia type does not carry active or executable content, except for \nthe <content> and <contentAt> elements. These elements may provide \nor reference atomic resources such as labels in any format, including \ntext, images, audio clips, and videos. These atomic resources are \neither referenced by URI and provided externally, or provided in the \ncontent of the media type, potentially encoded as Base64 or some \nother form of encoding binary content in text form. It is the \nresponsibility of the users of the media type to protect themselves \nagainst security threads arising from parsing and rendering these \natomic resources. ISO/IEC 24752-5:2013 includes a note as warning in \nthis regard.\n\nFor the protection of the privacy and integrity of a resource sheet, \nISO/IEC 24752-5:2013 section 7.8 explicitly encourages vendors and \nplatform carriers to consider employment of privacy and integrity \nservices such as transport security. However, concrete measures in \nthis regard are outside the scope of this standard.\n\nSee also the security considerations described in section 10 of \nRFC 3023.\n\n7. Interoperability considerations:\nSame as interoperability considerations of text/xml as specified in \nRFC 3023.\n\n8. Published specification:\nISO/IEC 24752-5:2013 (currently in FDIS vote)\n\n9. Applications which use this media type:\nUniversal Remote Console clients, i.e. software and hardware for the \npurpose of remote control of devices and services.\n\n10. Additional information:\n\nMagic number(s): Same as magic number(s) of text/xml as specified in \nRFC 3023.\nFile extension(s): .rsheet\nMacintosh file type code(s): not assigned\nObject Identifier(s) or OID(s): not assigned\n\n11. Intended usage:\nCOMMON\n\n12. Other Information/General Comment:\n\n13. Person to contact for further information:\nName: Gottfried Zimmermann\nE-mail: gzimmermann&acm.org\nAuthor/change controller: ISO/IEC 24752-5 is an international standard \nby ISO/IEC JTC1 SC35, with editor Gottfried Zimmermann. ISO/IEC JTC1 \nSC35 has change control over ISO/IEC 24752-5."
+  },
+  "references": []
+}

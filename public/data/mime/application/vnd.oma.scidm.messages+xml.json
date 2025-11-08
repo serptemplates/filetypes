@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.scidm.messages+xml",
+  "full": "application/vnd.oma.scidm.messages+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.scidm.messages+xml",
+    "template_text": "(last updated 2009-12-15)\n\nName : Wenjun Zeng\n\nEmail : zengw&huawei.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.scidm.messages+xml\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nClient-server request and respond messages are passive, meaning they do not\ncontain executable or active content which may represent a security threat. The\nformat does not include confidential fields. As client-server request and\nrespond messages convey information which services a user accesses, there is\nsome risk that unintentional information may be exposed. The information present\nin this media format is used to support content registration, identification and\nquery. Thus, the usage of the format may be vulnerable to attacks modifying or\nspoofing the content of this format. Depending on the system architecture, it is\nrecommended to use source authentication and integrity protection.\n\nInteroperability considerations :\nThis content type carries client-server messages within the scope of the OMA\nSCIDM enabler. The OMA SCIDM enabler specification includes static conformance\nrequirements and interoperability test cases for this content.\n\nPublished specification :\nOMA SCIDM 1.0 Enabler Specification – Secure Content Identification Mechanism,\nespecially Section 7.1. Available from http://www.openmobilealliance.org\n\nApplications which use this media :\nOMA SCIDM Services\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nnone\n\nPerson to contact for further information :\n\n1. Name : Wenjun Zeng\n2. Email : zengw&huawei.com\n\nIntended usage : Limited Use\nOnly for usage with client-server request and respond messages for SCIDM\nServices, which meet the semantics given in the mentioned specification.\n\nAuthor/Change controller : OMNA – Open Mobile Naming Authority,\nOMA-OMNA&mail.openmobilealliance.org\n\n(file created 2009-12-15)"
+  },
+  "references": []
+}

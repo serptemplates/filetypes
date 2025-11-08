@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.criticaltools.wbs+xml",
+  "full": "application/vnd.criticaltools.wbs+xml",
+  "extensions": [
+    "wbs"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.criticaltools.wbs+xml",
+    "template_text": "(last updated 2003-06-26)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.criticaltools.wbs+xml\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nfiles of type vnd.criticaltools.wbs+xml contain textual metadata only.\r\nThere is no executable code present in the file. Therefore, there are no known \r\nsecurity issues with this MIME type.\r\n  \r\n\r\nInteroperability considerations : \r\nFiles of this MIME type were created by PERT Chart EXPERT, a commercial\r\napplication. They were meant to be used only by this application and any\r\nplatforms this application supports.\r\n\r\nHowever, this MIME type represents an XML entity. Therefore, it provides\r\nvery limited interoperability with applications that understand XML.\r\n\r\n\r\nPublished specification : \r\nAs stated previously, this MIME type uses XML to store its structure and\r\nmetadata. However, the details of this structure are proprietary to\r\nCritical Tools, Inc.\r\n\r\nApplications which use this media : \r\nPERT Chart EXPERT published by Critical Tools, Inc. (http://www.criticaltools.com)\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : .wbs\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nEncoding considerations :\r\n\r\nFiles of type application/vnd.criticaltools.wbs+xml are XML documents and as such have \r\nthe same encoding considerations as application/xml, described in RFC 3023.    \r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Jim Spiller\r\n2. Email : jspiller&criticaltools.com\r\n\r\nIntended usage : Limited Use \r\nUse of this MIME type is limited to users of PERT Chart EXPERT published\r\nby Critical Tools, Inc.\r\n\r\nAuthor/Change controller :          \r\n\r\n(file created 2003-06-26)\r\n\r\n[]"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.3gpp.state-and-event-info+xml",
+  "full": "application/vnd.3gpp.state-and-event-info+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.3gpp.state-and-event-info+xml",
+    "template_text": "(registered 2015-09-01, last updated 2015-09-01)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.3gpp.state-and-event-info+xml\n\nRequired parameters : none\n\nOptional parameters : \n\"charset\" the parameter has identical semantics to the charset parameter of the \"application/xml\" media type as specified in section 9.1 of IETF RFC 7303.\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nSame as general security considerations for application/xml media type as specified in section 9.1 of IETF RFC 7303. In addition, this media type provides a format for exchanging information in SIP, so the security considerations from IETF RFC 3261apply.\nThe information transported in this media type does not include active or executable content.\nMechanisms for privacy and integrity protection of protocol parameters exist. Those mechanisms as well as authentication and further security mechanisms are described in 3GPP TS 24.229.\nThis media type does not include provisions for directives that institute actions on a recipient's files or other resources.\nThis media type does not include provisions for directives that institute actions that, while not directly harmful to the recipient, may result in disclosure of information that either facilitates a subsequent attack or else violates a recipient's privacy in any way.\nThis media type does not employ compression.\n\n\nInteroperability considerations : \nSame as general interoperability considerations for application/xml media type as specified in section 9.1 of IETF RFC 7303.\n\nPublished specification : \n3GPP TS 24.237 \"IP Multimedia Subsystem (IMS) Service Continuity\", version 10.19.0, available via http://www.3gpp.org/specs/numbering.htm.\n\nApplications which use this media : \nApplications supporting the service continuity as described in the published specification.\n\nFragment identifier considerations :\nThe handling in section 5 of IETF RFC 7303 applies.\n\nRestrictions on usage :\nnone\n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : N/A\n3. File extension(s) : N/A\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Frederic Firmin\n2. Email : frederic.firmin&etsi.org\n\nIntended usage : Common\ncommon\n\nAuthor/Change controller : Frederic Firmin"
+  },
+  "references": []
+}

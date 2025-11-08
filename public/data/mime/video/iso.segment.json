@@ -1,0 +1,40 @@
+{
+  "type": "video",
+  "subtype": "iso.segment",
+  "full": "video/iso.segment",
+  "extensions": [
+    "m4s"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/iso.segment",
+    "encoding_considerations": "Security considerations: For security, see section 5 of RFC 4337. The ISO Base \nMedia File Format does not contain internal integrity support, so if it is \nneeded it must be supplied externally. Some portions of the files may be \nencrypted, so if these portions are the ones that have confidentiality issues, \nthere is some support for such protection. Otherwise, confidentiality protection \nmust be externally provided.\n\nInteroperability considerations: A number of interoperating implementations \nexist within the ISO/IEC 14496 community, and that community has reference \nsoftware for reading and writing the file format.\n\nPublished specification: ISO/IEC 14496-12:2012, specifically section 8.16 \n“Segments”\n\nApplications: Multimedia",
+    "security_considerations": "Media File Format does not contain internal integrity support, so if it is \nneeded it must be supplied externally. Some portions of the files may be \nencrypted, so if these portions are the ones that have confidentiality issues, \nthere is some support for such protection. Otherwise, confidentiality protection \nmust be externally provided.\n\nInteroperability considerations: A number of interoperating implementations \nexist within the ISO/IEC 14496 community, and that community has reference \nsoftware for reading and writing the file format.\n\nPublished specification: ISO/IEC 14496-12:2012, specifically section 8.16 \n“Segments”\n\nApplications: Multimedia",
+    "interoperability_considerations": "exist within the ISO/IEC 14496 community, and that community has reference \nsoftware for reading and writing the file format.\n\nPublished specification: ISO/IEC 14496-12:2012, specifically section 8.16 \n“Segments”\n\nApplications: Multimedia",
+    "additional_information": "Magic number(s): none\nFile extension(s): m4s\nMacintosh File Type Code(s): None\n\nPerson to contact for info: David Singer, singer&apple.com\n\nIntended usage: Common\n\nAuthor/Change controller: ISO/IEC JTC1/SC29/WG11 (also known as MPEG); a \nsuitable contact is David Singer, singer&apple.com, the file format chair",
+    "intended_usage": "common",
+    "template_text": "(registered 2014-01-29, last updated 2014-01-29)\r\n\r\nMIME media type name: video\r\n\r\nMIME subtype name: iso.segment\r\n\r\nRequired parameters: none\r\n\r\nOptional parameters: as defined in RFC 6387 or its successors, specifically \r\nboth the codecs and profiles parameters\r\n\r\nEncoding considerations: binary\r\n\r\nSecurity considerations: For security, see section 5 of RFC 4337. The ISO Base \r\nMedia File Format does not contain internal integrity support, so if it is \r\nneeded it must be supplied externally. Some portions of the files may be \r\nencrypted, so if these portions are the ones that have confidentiality issues, \r\nthere is some support for such protection. Otherwise, confidentiality protection \r\nmust be externally provided.\r\n\r\nInteroperability considerations: A number of interoperating implementations \r\nexist within the ISO/IEC 14496 community, and that community has reference \r\nsoftware for reading and writing the file format.\r\n\r\nPublished specification: ISO/IEC 14496-12:2012, specifically section 8.16 \r\n“Segments”\r\n\r\nApplications: Multimedia\r\n\r\nAdditional information:\r\nMagic number(s): none\r\nFile extension(s): m4s\r\nMacintosh File Type Code(s): None\r\n\r\nPerson to contact for info: David Singer, singer&apple.com\r\n\r\nIntended usage: Common\r\n\r\nAuthor/Change controller: ISO/IEC JTC1/SC29/WG11 (also known as MPEG); a \r\nsuitable contact is David Singer, singer&apple.com, the file format chair"
+  },
+  "references": []
+}

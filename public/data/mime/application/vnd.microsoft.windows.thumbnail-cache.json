@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.microsoft.windows.thumbnail-cache",
+  "full": "application/vnd.microsoft.windows.thumbnail-cache",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.microsoft.windows.thumbnail-cache",
+    "security_considerations": "Thumbnail cache files contain low resolution copies of image files from\nthe same folder as the cache file. As such, they may contain trace evidence\nof otherwise deleted images.\n\nThe copies are stored as a collection of image/jpeg copies. Therefore the\nsecurity considerations for image/jpeg also apply to this media type.\n\nNo active or executable content is used.\n\nThe media type does not itself provide integrity or confidentiality\nprotection; if such protection is needed it must be provided externally.",
+    "interoperability_considerations": "No known interoperability issues.",
+    "additional_information": "1. Deprecated alias names for this type: .\n2. Magic number(s): .\n3. File extension(s): .\n4. Macintosh file type code: .\n5. Object Identifiers: .",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2017-04-06, last updated 2017-04-06)\n\nName: Henrik Andersson\nEmail: henke&henke37.cjb.net\n\nMedia type name: application\nMedia subtype name: vnd.microsoft.windows.thumbnail-cache\n\nRequired parameters: None.\n\nOptional parameters:\nNone.\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nThumbnail cache files contain low resolution copies of image files from\nthe same folder as the cache file. As such, they may contain trace evidence\nof otherwise deleted images.\n\nThe copies are stored as a collection of image/jpeg copies. Therefore the\nsecurity considerations for image/jpeg also apply to this media type.\n\nNo active or executable content is used.\n\nThe media type does not itself provide integrity or confidentiality\nprotection; if such protection is needed it must be provided externally.\n\nInteroperability considerations:\nNo known interoperability issues.\n\nPublished specification:\nNo official specification exists.\n\nApplications which use this media:\nUsed by the Microsoft Windows shell to cache thumbnail images.\n\nFragment identifier considerations:\nThe contents of thumbnail cache files are not addressable externally, so no fragment identifier requirements are defined. \n\nRestrictions on usage:\nThumbnail cache files SHOULD not be interchanged since they can easily be regenerated as needed.\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: .\n2. Magic number(s): .\n3. File extension(s): .\n4. Macintosh file type code: .\n5. Object Identifiers: .\n\nGeneral Comments:\nThumbnail cache files are often included by accident when transferring image files.\n\nThumbnail cache files are normally named \"thumbs.db\".\n\nPerson to contact for further information:\n\n1. Name: Henrik Andersson\n2. Email: henke&henke37.cjb.net\n\nIntended usage: Limited Use\nThumbnail cache files are only used internally by the Microsoft Windows shell.\n\nAuthor/Change controller: Henrik Andersson, on behalf of Microsoft."
+  },
+  "references": []
+}

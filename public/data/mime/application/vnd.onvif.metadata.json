@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.onvif.metadata",
+  "full": "application/vnd.onvif.metadata",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.onvif.metadata",
+    "encoding_considerations": "Security considerations: The conveyed data describes the content of a \n   video stream and needs to be handled correspondingly in regards to \n   privacy. The format does not provide any means for integrity or \n   privacy protection. Transport encryption and authentication should \n   be considered.\n\n   The content is descriptive and does not include any executable code \n   nor scripts.\n\n   Transmitted XML documents should only stretch a small amount of \n   frames to reduce impact of dropped packets. Nevertheless receivers \n   must be able to cope with arbitrary long documents.\n\nInteroperability considerations: This content type carries timed \n   metadata including scene description and event information. All \n   types are defined by ONVIF schema, as well as ONVIF Core and \n   Streaming Specification. Test cases are available via ONVIF Test \n   Tools.",
+    "security_considerations": "video stream and needs to be handled correspondingly in regards to \n   privacy. The format does not provide any means for integrity or \n   privacy protection. Transport encryption and authentication should \n   be considered.\n\n   The content is descriptive and does not include any executable code \n   nor scripts.\n\n   Transmitted XML documents should only stretch a small amount of \n   frames to reduce impact of dropped packets. Nevertheless receivers \n   must be able to cope with arbitrary long documents.\n\nInteroperability considerations: This content type carries timed \n   metadata including scene description and event information. All \n   types are defined by ONVIF schema, as well as ONVIF Core and \n   Streaming Specification. Test cases are available via ONVIF Test \n   Tools.",
+    "interoperability_considerations": "metadata including scene description and event information. All \n   types are defined by ONVIF schema, as well as ONVIF Core and \n   Streaming Specification. Test cases are available via ONVIF Test \n   Tools.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2022-03-28, last updated 2022-03-28)\n\nMedia type name: application\n\nMedia subtype name: vnd.onvif.metadata\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: The conveyed data describes the content of a \n   video stream and needs to be handled correspondingly in regards to \n   privacy. The format does not provide any means for integrity or \n   privacy protection. Transport encryption and authentication should \n   be considered.\n\n   The content is descriptive and does not include any executable code \n   nor scripts.\n\n   Transmitted XML documents should only stretch a small amount of \n   frames to reduce impact of dropped packets. Nevertheless receivers \n   must be able to cope with arbitrary long documents.\n\nInteroperability considerations: This content type carries timed \n   metadata including scene description and event information. All \n   types are defined by ONVIF schema, as well as ONVIF Core and \n   Streaming Specification. Test cases are available via ONVIF Test \n   Tools.\n\nPublished specification:\n\n   ONVIF Streaming Specification:\n   https://www.onvif.org/specs/stream/ONVIF-Streaming-Spec.pdf\n\n   ONVIF Analytics Specification section 5.1:\n   https://www.onvif.org/specs/srv/analytics/ONVIF-Analytics-Service-Spec.pdf\n\n   ONVIF Metadata schema:\n   https://www.onvif.org/ver10/schema/metadatastream.xsd\n\nApplications which use this media: ONVIF compliant cameras, recorder \n   and clients.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nProvisional registration? (standards tree only): N/A\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): N/A\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: Hans Busch\n   2. Email: hans.busch&de.bosch.com\n\nIntended usage: Common\n\n   Signaling stream content type via SDP Session Description Protocol \n   according to RFC 2327.\n\nAuthor/Change controller: ONVIF Technical Committee Chairman Hans \n   Busch"
+  },
+  "references": []
+}

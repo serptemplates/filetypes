@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.dna",
+  "full": "application/vnd.dna",
+  "extensions": [
+    "dna"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.dna",
+    "template_text": "\n\nDate: Wed, 11 Jun 97 14:54:13 PDT\nFrom: Meredith Searcy <msearcy&newmoon.com>\nTo: iana&iana.org, msearcy&newmoon.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.dna\n\nName : Meredith Searcy\n\nE-mail : msearcy&newmoon.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.dna\n\nRequired parameters : None\n\nOptional parameters : \nNone\n\nEncoding considerations : \nWe are transferring binary data.\n\nSecurity considerations : \nNew Moon Liftoff/DNA serves standard application packages through the\nserver, no particular security measures are necessary.  As we only\ntransfer API calls, we are dependent on the security features of the NT\nserver the application is sitting on.\n\nInteroperability considerations : \n32-bit Windows Platforms\n\nPublished specification : \nNo\n\nApplications which use this media : \nAny 32-bit Windows application can be instantly Liftoff-enabled at\nrun-time and would utilize this media type.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : dna\n3. Macintosh file type code : none\n\nI'm not sure what's needed for the OID?\n\nPerson to contact for further information :\n\n1. Name : Meredith Searcy\n2. E-mail : msearcy&newmoon.com\n\nIntended usage : Common \nDNA is intended to instantly Web enable any 32-bit Windows\napplication.\n\nAuthor/Change controller : Randy Menna \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

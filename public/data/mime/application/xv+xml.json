@@ -1,0 +1,43 @@
+{
+  "type": "application",
+  "subtype": "xv+xml",
+  "full": "application/xv+xml",
+  "extensions": [
+    "mxml",
+    "xhvml",
+    "xvml",
+    "xvm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/xv+xml",
+    "encoding_considerations": "XHTML+Voice has the same media type encoding considerations\nspecified in Section 3.2 of [1].",
+    "security_considerations": "XHTML+Voice is an extension of XHTML and has the same security\nissues as XHTML.  These include interpreting anchors and forms in\nXHTML documents, and scripting languages and other dynamic\ninteractive capabilities.  See Section 7 of [2].\nIn addition, the scripting language can be accessed by both the\nXHTML and the VoiceXML 2.0 markup embedded in the XHTML+Voice\ndocument.  See Section 1.3.1.5 of [8].\nXML-Events [7] allows an author to attach a handler to any node in\nthe document.  The handler that is activated in response to a\nspecified event may be either a voice dialog or a script that can\nbe in either the same or an external document.",
+    "interoperability_considerations": "Because XHTML+Voice is built upon W3C standard recommendations, it\nis designed to be interoperable across a wide range of platforms\nand client devices.  Because the extensions to XHTML are\nidentified by their namespaces, all browsers that have namespace\nsupport can run an XHTML+Voice document as an XHTML document\nwithout voice interaction.",
+    "additional_information": "Magic number(s): There is no single string that is always present.\nFile extension(s): mxml, xhvml, xvml, xvm\nMacintosh File Type Code(s): TEXT\n\nPerson & e-mail address to contact for further information:\n\nGerald McCobb\nmccobb&us.ibm.com\n\nIntended usage: LIMITED USE\n\nAuthor/Change controller: Gerald McCobb",
+    "intended_usage": "limited use",
+    "template_text": "(RFC 4374 published January 2006)\n\nMIME media type name: application\n\nMIME subtype name: xv+xml\n\nRequired parameters: none\n\nOptional parameters:\n\ncharset: has the same semantics as the charset parameter of the\n\"application/xml\" media type specified in [1].\n\nEncoding considerations:\nXHTML+Voice has the same media type encoding considerations\nspecified in Section 3.2 of [1].\n\nSecurity considerations:\nXHTML+Voice is an extension of XHTML and has the same security\nissues as XHTML.  These include interpreting anchors and forms in\nXHTML documents, and scripting languages and other dynamic\ninteractive capabilities.  See Section 7 of [2].\nIn addition, the scripting language can be accessed by both the\nXHTML and the VoiceXML 2.0 markup embedded in the XHTML+Voice\ndocument.  See Section 1.3.1.5 of [8].\nXML-Events [7] allows an author to attach a handler to any node in\nthe document.  The handler that is activated in response to a\nspecified event may be either a voice dialog or a script that can\nbe in either the same or an external document.\n\nInteroperability considerations:\nBecause XHTML+Voice is built upon W3C standard recommendations, it\nis designed to be interoperable across a wide range of platforms\nand client devices.  Because the extensions to XHTML are\nidentified by their namespaces, all browsers that have namespace\nsupport can run an XHTML+Voice document as an XHTML document\nwithout voice interaction.\n\nPublished specification:\nThe latest published version of XHTML+Voice is [8].\n\nApplications which use this media type:\nXHTML+Voice documents are intended to be deployed on the World\nWide Web and rendered by multimodal browsers that support the\nvisual and voice modes of interaction.  Because XHTML+Voice is an\napplication of XML, authors can expect XHTML+Voice user agents to\nbe conformant XML 1.0 [3] processors.  See section 2 of [2].\n\nAdditional information:\nMagic number(s): There is no single string that is always present.\nFile extension(s): mxml, xhvml, xvml, xvm\nMacintosh File Type Code(s): TEXT\n\nPerson & e-mail address to contact for further information:\n\nGerald McCobb\nmccobb&us.ibm.com\n\nIntended usage: LIMITED USE\n\nAuthor/Change controller: Gerald McCobb\n\nFurther information:\n"
+  },
+  "references": []
+}

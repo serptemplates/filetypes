@@ -1,0 +1,35 @@
+{
+  "type": "text",
+  "subtype": "vnd.graphviz",
+  "full": "text/vnd.graphviz",
+  "extensions": [
+    "gv"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.graphviz",
+    "template_text": "(last updated 2008-07-24)\n\nName : John Ellson\n\nEmail : ellson&research.att.com\n\nMIME media type name : Text\n\nMIME subtype name : Vendor Tree - vnd.graphviz\n\nRequired parameters :\n\nOptional parameters :\ncharset - Charset used for the content. Possible values are utf-8 and\niso-8859-1. utf-8 is the default if no parameter is specified.\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of handling 8 bit text.\n\nSecurity considerations :\nNo active content.\n\nMay contain URI links.\n\nNot compressed.\n\nThis media type does not provide privacy or integrity protection; if these services are \nneeded they must be provided externally.\n\nInteroperability considerations :\nFormat is character-based (typically: UTF8) and applications exist\nfor mac, windows, linux, and un*x platforms using this format.\n\nPublished specification :\nhttp://www.graphviz.org/doc/info/lang.html\n\nApplications which use this media :\ndot, neato, ... graph layout engines from the graphviz package.\n\nAn emerging class of networked graph viewers and GUIs.\n\nMultiple third party applications:\nhttp://www.graphviz.org/Resources.php\n\nAdditional information :\n\n1. Magic number(s) : (not available)\n2. File extension(s) : .gv .dot\n3. Macintosh file type code : (not available)\n4. Object Identifiers: (not available)\n\nGraphviz <http://www.graphviz.org/> is a mature family of tools for processing \ngraphs in the DOT language. The use of \".dot\" as a file extension has become \nproblematic as we see more GUI and networked graph tools since the same \nextension as used by MS Word.\n\nThe graphviz tools are open-source and widely used. I'm sure we'd\nbe willing to standardize this format if there was interest in us doing so.\n\n\nPerson to contact for further information :\n\n1. Name : John Ellson\n2. Email : ellson&research.att.com\n\nIntended usage : Common\nApplications exchanging abstract graph data in the DOT format.\nhttp://www.graphviz.org/doc/info/lang.html\n\nAuthor/Change controller : John Ellson\n\n\n(file created 2008-07-24)"
+  },
+  "references": []
+}

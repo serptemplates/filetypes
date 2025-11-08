@@ -1,0 +1,37 @@
+{
+  "type": "text",
+  "subtype": "rtf",
+  "full": "text/rtf",
+  "extensions": [
+    "rtf"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/rtf",
+    "encoding_considerations": "RTF allows one to include files that reside on a local disk.  Use of\n  this is forbidden.  All images must be inline.\n\n  RTF uses only 7 bits per octet.\n\n  RTF specifies it's own character set internally, thus character set\n  codes are redundant.",
+    "security_considerations": "RTF does not contain a method of writing data to a users filesystem,\n  thus it is a safe method of transmitting files.",
+    "template_text": "\n\nFrom lindner&mudhoney.micro.umn.edu Tue Jun  8 12:44:30 1993\nFrom: lindner&mudhoney.micro.umn.edu (Paul Lindner)\nSubject: Registration of new MIME content-type/subtype\nTo: iana&ISI.EDU\nDate: Tue, 8 Jun 93 14:44:18 CDT\nCc: gopher&boombox.micro.umn.edu (Team Gopher),\n        info-metamail&thumper.bellcore.com\nReply-To: lindner&boombox.micro.umn.edu\nContent-Length: 950\nStatus: RO\nX-Lines: 32\n\nMIME type name: text\nMIME subtype name: rtf\n\nRequired parameters: none\n\nOptional paramters: none\n\nEncoding Considerations:\n\n  RTF allows one to include files that reside on a local disk.  Use of\n  this is forbidden.  All images must be inline.\n\n  RTF uses only 7 bits per octet.\n\n  RTF specifies it's own character set internally, thus character set\n  codes are redundant.\n\nSecurity Considerations:\n\n  RTF does not contain a method of writing data to a users filesystem,\n  thus it is a safe method of transmitting files.\n\nPublished Specification:\n\n  ftp://indri.primate.wisc.edu/pub/RTF/RTF-Spec.rtf or\n  ftp://indri.primate.wisc.edu/pub/RTF/RTF-Spec.hqx \n\n-- \n | Paul Lindner | lindner&boombox.micro.umn.edu   | Slipping into madness\n |              | Computer & Information Services | is good for the sake\n | Gophermaster | University of Minnesota         | of comparison.\n///// / / /    /////// / / / /  /  /  /   /      //// / / / /  /  /  /   /\n\n\n\n"
+  },
+  "references": []
+}

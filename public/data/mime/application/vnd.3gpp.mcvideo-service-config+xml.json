@@ -1,0 +1,44 @@
+{
+  "type": "application",
+  "subtype": "vnd.3gpp.mcvideo-service-config+xml",
+  "full": "application/vnd.3gpp.mcvideo-service-config+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.3gpp.mcvideo-service-config+xml",
+    "encoding_considerations": "Security considerations: This XML-based media type inherits the \n   general security considerations for application/xml media type as \n   specified in section 9.1 of IETF RFC 7303. In addition, this \n   media type provides a format for exchanging information in SIP, \n   so the security considerations from IETF RFC 3261 apply.\n\n   The information transported in this media type does not include \n   active or executable content.\n\n   Mechanisms for privacy and integrity protection of protocol \n   parameters exist. These mechanisms are described in \n   3GPP TS 33.180.\n\n   This media type does not include provisions for directives that \n   institute actions on a recipient's files or other resources.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\n   Any unknown XML elements and any unknown XML attributes are to be \n   ignored by recipient of the media type.\n\nInteroperability considerations: Same as general interoperability \n   considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. \n\nPublished specification: 3GPP TS 24.484 \"Mission Critical Services \n   (MCS) configuration management; Protocol specification\" version \n   14.5.0, available via http://www.3gpp.org/specs/numbering.htm.\n\nApplications which use this media: Applications supporting the \n   MCVideo service configuration document as described in the \n   published specification.\n\nFragment identifier considerations: The handling in section 5 of \n   IETF RFC 7303 applies.\n\nRestrictions on usage: None",
+    "security_considerations": "general security considerations for application/xml media type as \n   specified in section 9.1 of IETF RFC 7303. In addition, this \n   media type provides a format for exchanging information in SIP, \n   so the security considerations from IETF RFC 3261 apply.\n\n   The information transported in this media type does not include \n   active or executable content.\n\n   Mechanisms for privacy and integrity protection of protocol \n   parameters exist. These mechanisms are described in \n   3GPP TS 33.180.\n\n   This media type does not include provisions for directives that \n   institute actions on a recipient's files or other resources.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\n   Any unknown XML elements and any unknown XML attributes are to be \n   ignored by recipient of the media type.\n\nInteroperability considerations: Same as general interoperability \n   considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. \n\nPublished specification: 3GPP TS 24.484 \"Mission Critical Services \n   (MCS) configuration management; Protocol specification\" version \n   14.5.0, available via http://www.3gpp.org/specs/numbering.htm.\n\nApplications which use this media: Applications supporting the \n   MCVideo service configuration document as described in the \n   published specification.\n\nFragment identifier considerations: The handling in section 5 of \n   IETF RFC 7303 applies.\n\nRestrictions on usage: None",
+    "interoperability_considerations": "considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. \n\nPublished specification: 3GPP TS 24.484 \"Mission Critical Services \n   (MCS) configuration management; Protocol specification\" version \n   14.5.0, available via http://www.3gpp.org/specs/numbering.htm.\n\nApplications which use this media: Applications supporting the \n   MCVideo service configuration document as described in the \n   published specification.\n\nFragment identifier considerations: The handling in section 5 of \n   IETF RFC 7303 applies.\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: none \n   2. Magic number(s): none \n   3. File extension(s): none \n   4. Macintosh file type code: none \n   5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-11-29, last updated 2018-11-29)\n\nMedia type name: application\n\nMedia subtype name: vnd.3gpp.mcvideo-service-config+xml\n\nRequired parameters: None\n\nOptional parameters: \"charset\" the parameter has identical semantics \n   to the charset parameter of the \"application/xml\" media type as \n   specified in section 9.1 of IETF RFC 7303.\n\nEncoding considerations: binary\n\nSecurity considerations: This XML-based media type inherits the \n   general security considerations for application/xml media type as \n   specified in section 9.1 of IETF RFC 7303. In addition, this \n   media type provides a format for exchanging information in SIP, \n   so the security considerations from IETF RFC 3261 apply.\n\n   The information transported in this media type does not include \n   active or executable content.\n\n   Mechanisms for privacy and integrity protection of protocol \n   parameters exist. These mechanisms are described in \n   3GPP TS 33.180.\n\n   This media type does not include provisions for directives that \n   institute actions on a recipient's files or other resources.\n\n   This media type does not include provisions for directives that \n   institute actions that, while not directly harmful to the \n   recipient, may result in disclosure of information that either \n   facilitates a subsequent attack or else violates a recipient's \n   privacy in any way.\n\n   This media type does not employ compression.\n\n   Any unknown XML elements and any unknown XML attributes are to be \n   ignored by recipient of the media type.\n\nInteroperability considerations: Same as general interoperability \n   considerations for application/xml media type as specified in \n   section 9.1 of IETF RFC 7303. \n\nPublished specification: 3GPP TS 24.484 \"Mission Critical Services \n   (MCS) configuration management; Protocol specification\" version \n   14.5.0, available via http://www.3gpp.org/specs/numbering.htm.\n\nApplications which use this media: Applications supporting the \n   MCVideo service configuration document as described in the \n   published specification.\n\nFragment identifier considerations: The handling in section 5 of \n   IETF RFC 7303 applies.\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: none \n   2. Magic number(s): none \n   3. File extension(s): none \n   4. Macintosh file type code: none \n   5. Object Identifiers: none\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: Frederic Firmin\n   2. Email: frederic.firmin&etsi.org\n\nIntended usage: Common\n   see 3GPP TS 24.484 \n\nAuthor/Change controller: 3GPP"
+  },
+  "references": [
+    {
+      "title": "RFC 7303",
+      "url": "https://www.rfc-editor.org/rfc/rfc7303.html",
+      "kind": "RFC"
+    }
+  ]
+}

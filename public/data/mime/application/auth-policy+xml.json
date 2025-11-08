@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "auth-policy+xml",
+  "full": "application/auth-policy+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/auth-policy+xml",
+    "encoding_considerations": "Uses XML, which can employ 8-bit characters, depending on the\ncharacter encoding used. See RFC 3023 [6], Section 3.2.",
+    "security_considerations": "This content type is designed to carry authorization policies.\nAppropriate precautions should be adopted to limit disclosure of\nthis information. Please refer to Section 14 of RFC 4745 and to\nthe security considerations described in Section 10 of RFC 3023\n[6] for more information.\n\nInteroperability considerations: None\n\nPublished specification: RFC 4745",
+    "interoperability_considerations": "Published specification: RFC 4745",
+    "additional_information": "Magic Number: None\n\nFile Extension: .apxml\n\nMacintosh file type code: 'TEXT'",
+    "intended_usage": "limited use",
+    "template_text": "(RFC 4745 published February 2007, subtype last updated February 2007)\n\nMIME media type name: application\n\nMIME subtype name: auth-policy+xml\n\nMandatory parameters: none\n\nOptional parameters: charset\n\nIndicates the character encoding of enclosed XML.\n\nEncoding considerations:\n\nUses XML, which can employ 8-bit characters, depending on the\ncharacter encoding used. See RFC 3023 [6], Section 3.2.\n\nSecurity considerations:\n\nThis content type is designed to carry authorization policies.\nAppropriate precautions should be adopted to limit disclosure of\nthis information. Please refer to Section 14 of RFC 4745 and to\nthe security considerations described in Section 10 of RFC 3023\n[6] for more information.\n\nInteroperability considerations: None\n\nPublished specification: RFC 4745\n\nApplications which use this media type:\n\nPresence- and location-based systems\n\nAdditional information:\n\nMagic Number: None\n\nFile Extension: .apxml\n\nMacintosh file type code: 'TEXT'\n\nPersonal and email address for further information:\nHannes Tschofenig, Hannes.Tschofenig&siemens.com\n\nIntended usage: LIMITED USE\n\nAuthor:\n\nThis specification is a work item of the IETF GEOPRIV working\ngroup, with mailing list address <geopriv&ietf.org>.\n\nChange controller:\n\nThe IESG <iesg&ietf.org>"
+  },
+  "references": []
+}

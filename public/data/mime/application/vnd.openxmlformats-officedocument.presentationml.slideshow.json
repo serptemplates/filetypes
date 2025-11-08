@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.openxmlformats-officedocument.presentationml.slideshow",
+  "full": "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+  "extensions": [
+    "ppsx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+    "template_text": "(last updated 2011-03-14)\n\nName : MURATA Makoto\n\nEmail : eb2m-mrt&asahi-net.or.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree -\nvnd.openxmlformats-officedocument.presentationml.slideshow\n\nRequired parameters : None.\n\nOptional parameters :\nNone.\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nThis subtype is intended for an OOXML document of the category\nPresentation. It is a ZIP package containing OPC parts, some of\nwhich are XML documents.\n\nAn OOXML document of this subtype does not contain macros. Other\nmedia types are expected to be registered for those which do. For\nexample, vnd.ms-powerpoint.slideshow.macroEnabled.12 has already been\nregistered for those which contain Microsoft macros. Note that\ndifferent file extensions are used depending on whether OOXML\ndocuments contain macros. For example, \"ppsx\" is used for macro-free\npresentation slide shows, while \"ppsm\" is used for macro-enabled\npresentation slide shows.\n\nAn OOXML document of this subtype may contain an Active-X control only\nwhen an OPC part of type application/vnd.ms-office.activeX+xml exists\nwithin this OOXML document.\n\nAn OOXML document of this subtype may contain executable contents\nother than macros or Active-X controls, since the the underlying technology,\nnamely ISO/IEC 29500-2 (Open Packaging Convention) and ZIP, allow\nsuch contents. However, such executable contents are beyond\nISO/IEC 29500-1 (Fundamentals and Markup Language Reference) and\nISO/IEC 29500-4 (Transitional Migration Features). Such executable\ncontents are not invoked by MS Office and similar office suites.\n\nAn OOXML document of this subtype may contain personal information,\nbut cannnot be encrypted. In other words, ISO/IEC 29500 or Ecma-376\ndo not provide any mechanisms for encryption. OOXML documents\nencrypted by mechanisms beyond ISO/IEC 29500 are not of this subtype.\n\nAn OOXML document of this subtype may contain a digital signature, as\nspecified in ISO/IEC 29500-2.\n\nInteroperability considerations :\n\nISO/IEC 29500 has two conformance classes: 'strict' and\n'transitional'. This subtype applies to both classes.\nSome application programs can handle one of them only.\n\nPart 3 (Markup Compatibility and Extensions) of ISO/IEC 29500\ndefines mechanisms for user- or vendor-defined extensions.\nEven when an OOXML document contains such extensions,\napplication programs are guranteed to work reasonably well\nas long as it correctly implement Part 3.\n\nPublished specification :\nISO/IEC 29500\n\nApplications which use this media :\nOOXML applications\n\nAdditional information :\n\n1. Magic number(s) : 50 4b 03 04 as in ZIP\n2. File extension(s) : ppsx\n3. Macintosh file type code : PPT3\n4. Object Identifiers: None\n\nPerson to contact for further information :\n\n1. Name : MURATA Makoto\n2. Email : eb2m-mrt&asahi-net.or.jp\n\nIntended usage : Common\n\nAuthor/Change controller : ISO/IEC JTC1/SC34/WG4\n\n(file created 2011-03-14)"
+  },
+  "references": []
+}

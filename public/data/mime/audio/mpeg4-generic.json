@@ -1,0 +1,49 @@
+{
+  "type": "audio",
+  "subtype": "mpeg4-generic",
+  "full": "audio/mpeg4-generic",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/mpeg4-generic",
+    "encoding_considerations": "The format for this type is framed and binary.",
+    "security_considerations": "See Section 9 of RFC 6295.",
+    "interoperability_considerations": "Except for the marker bit (Section 2.1), the packet formats\n   for audio/rtp-midi and audio/mpeg4-generic (mode rtp-midi)\n   are identical.  The formats differ in use: audio/mpeg4-generic\n   is for MPEG work, and audio/rtp-midi is for all other work.",
+    "applications": "MPEG 4 servers and terminals that support [MPEGSA].",
+    "additional_information": "None.",
+    "template_text": "(RFC 3640 published November 2003, subtype last updated June 2011 per RFC 6295)\n\nMedia type name:\n\n   audio\n\nSubtype name:\n\n   mpeg4-generic\n\nRequired parameters:\n\n   The mode parameter is required by [RFC3640].  [RFC3640]\n   requests a repository for mode so that new values for mode\n   may be added.  We request that the value rtp-midi be\n   added to the mode repository.\n\n   In mode rtp-midi, the mpeg4-generic parameter rate is\n   a required parameter.  Rate specifies the RTP timestamp\n   clock rate.  See Sections 2.1 and 6.2 for usage details\n   of rate in mode rtp-midi.\n\nOptional parameters:\n\n   We request registration of the following parameters\n   for use in mode rtp-midi for mpeg4-generic.\n\n   Non-extensible parameters:\n\n\t  ch_anchor:    See Appendix C.2.3 for usage details.\n\t  ch_default:   See Appendix C.2.3 for usage details.\n\t  ch_never:     See Appendix C.2.3 for usage details.\n\t  cm_unused:    See Appendix C.1 for usage details.\n\t  cm_used:      See Appendix C.1 for usage details.\n\t  chanmask:     See Appendix C.6.4.3 for usage details.\n\t  cid:          See Appendix C.6.3 for usage details.\n\t  guardtime:    See Appendix C.4.2 for usage details.\n\t  inline:       See Appendix C.6.3 for usage details.\n\t  linerate:     See Appendix C.3 for usage details.\n\t  mperiod:      See Appendix C.3 for usage details.\n\t  multimode:    See Appendix C.6.1 for usage details.\n\t  musicport:    See Appendix C.5 for usage details.\n\t  octpos:       See Appendix C.3 for usage details.\n\t  rinit:        See Appendix C.6.3 for usage details.\n\t  rtp_maxptime: See Appendix C.4.1 for usage details.\n\t  rtp_ptime:    See Appendix C.4.1 for usage details.\n\t  smf_cid:      See Appendix C.6.4.2 for usage details.\n\t  smf_inline:   See Appendix C.6.4.2 for usage details.\n\t  smf_url:      See Appendix C.6.4.2 for usage details.\n\t  tsmode:       See Appendix C.3 for usage details.\n\t  url:          See Appendix C.6.3 for usage details.\n\n   Extensible parameters:\n\n\t  j_sec:        See Appendix C.2.1 for usage details.\n\t\t\t\t\tSee Section 11.2.1 for repository details.\n\t  j_update:     See Appendix C.2.2 for usage details.\n\t\t\t\t\tSee Section 11.2.1 for repository details.\n\t  render:       See Appendix C.6 for usage details.\n\t\t\t\t\tSee Section 11.2.1 for repository details.\n\t  subrender:    See Appendix C.6.2 for usage details.\n\t\t\t\t\tSee Section 11.2.1 for repository details.\n\t  smf_info:     See Appendix C.6.4.1 for usage details.\n\t\t\t\t\tSee Section 11.2.1 for repository details.\n\nEncoding considerations:\n\n   The format for this type is framed and binary.\n\nRestrictions on usage:\n\n   Only defined for real-time transfers of audio/mpeg4-generic\n   RTP streams with mode=rtp-midi.\n\nSecurity considerations:\n\n   See Section 9 of RFC 6295.\n\nInteroperability considerations:\n\n   Except for the marker bit (Section 2.1), the packet formats\n   for audio/rtp-midi and audio/mpeg4-generic (mode rtp-midi)\n   are identical.  The formats differ in use: audio/mpeg4-generic\n   is for MPEG work, and audio/rtp-midi is for all other work.\n\nPublished specification:\n\n   RFC 6295, [MIDI], and [MPEGSA] are the normative references.\n   In addition, [NMP], [GRAME], and [RFC4696] provide\n   non-normative implementation guidance.\n\nApplications that use this media type:\n\n   MPEG 4 servers and terminals that support [MPEGSA].\n\nAdditional information:\n\n   None.\n\nPerson & email address to contact for further information:\n\n   John Lazzaro <lazzaro&cs.berkeley.edu>\n\nIntended usage:\n\n   COMMON.\n\nAuthor:\n\n   John Lazzaro <lazzaro&cs.berkeley.edu>\n\nChange controller:\n\n   IETF Audio/Video Transport Working Group delegated\n   from the IESG."
+  },
+  "references": [
+    {
+      "title": "RFC 6295",
+      "url": "https://www.rfc-editor.org/rfc/rfc6295.html",
+      "kind": "RFC"
+    },
+    {
+      "title": "RFC 4696",
+      "url": "https://www.rfc-editor.org/rfc/rfc4696.html",
+      "kind": "RFC"
+    }
+  ]
+}

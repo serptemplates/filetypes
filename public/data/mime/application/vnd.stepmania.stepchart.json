@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.stepmania.stepchart",
+  "full": "application/vnd.stepmania.stepchart",
+  "extensions": [
+    "sm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.stepmania.stepchart",
+    "template_text": "(last updated 2010-09-14)\n\nName : Henrik Andersson\nEmail : henke&henke37.cjb.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.stepmania.stepchart\n\nRequired parameters : There are no defined parameters.\nOptional parameters : There are no defined parameters.\n\nEncoding considerations : 8bit\nIt is utf-8 encoded text that may contain non latin characters.\n\nSecurity considerations :\nStepcharts does not contain any executable code. However, they may\nlink to externally bundled files that can run scripts. Such scripts\nshould be run sandboxed without access to any dangerous features.\nStepcharts data does not require confidentiality or integrity protections.\n\n\nInteroperability considerations :\nThe stepchart often contains non latin song titles. Some charts may use\nfeatures that aren't implemented. Some files may contain\nimplementation dependent caching information. Some files may\nexploit implementation bugs. Files will contain file names\nthat may use non latin characters.\n\nPublished specification :\nThere has never been any formal specification written for the format,\nbut anyone is free to read the source code.\n\nApplications which use this media :\nDDR style games such as StepMania and level editors for said games.\n\nAdditional information :\n\n1. Magic number(s) :\n2. File extension(s) : sm\n3. Macintosh file type code :\n4. Object Identifiers:\n\nIt is a tagbased format where additional types of information may be\nadded by the implementation.\n\nPerson to contact for further information :\n1. Name : Henrik Andersson\n2. Email : henke&henke37.cjb.net\n\nIntended usage : Common\nStepcharts for dance games. It is one or more set of steps that has to\nbe performed in sync with music. They can contain information about\nbackground animations to display during gameplay.\n\nAuthor/Change controller : Chris Danford <cdanford&u.washington.edu> and\nother developers of the\nStepMania project <Stepmania-devs&lists.sourceforge.net> should be\nconsidered the owner of this registration.\n\n(file created 2010-09-14)"
+  },
+  "references": []
+}

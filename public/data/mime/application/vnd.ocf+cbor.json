@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.ocf+cbor",
+  "full": "application/vnd.ocf+cbor",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ocf+cbor",
+    "security_considerations": "See RFC 7047 Section 8\n\nThis media type does not contain executable content.\n\nIt is recommended that some form of integrity and privacy protection be\nemployed when using this media type to carry sensitive or critical information.\nThe media type itself does not provide any integrity or privacy protection;\ntherefore some additional form of protection should be used. Transport layer\nsecurity using TLS+TCP or DTLS+UDP, or payload signing and encryption, are recommended.",
+    "interoperability_considerations": "The OCF media type can exchange representations which are interoperable with the CBOR serialization of RFC6690 (CoRE Link-Format) This makes it interoperable with CoRE Resource Directory and other IETF standards which make use of CoRE Link-Format",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-03-03, last updated 2017-03-03)\n\nName: Michael Koster\nEmail: michael.koster&smartthings.com\n\nMedia type name: application\nMedia subtype name: vnd.ocf+cbor\n\nRequired parameters: N/A\n\nOptional parameters:\nAn optional version parameter describes the media type version \n\nThe syntax of the version number is described by the following ABNF:\nversion = 1*2DIGIT \".\" *1*2DIGIT\nDIGIT = %x30-39\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nSee RFC 7047 Section 8\n\nThis media type does not contain executable content.\n\nIt is recommended that some form of integrity and privacy protection be\nemployed when using this media type to carry sensitive or critical information.\nThe media type itself does not provide any integrity or privacy protection;\ntherefore some additional form of protection should be used. Transport layer\nsecurity using TLS+TCP or DTLS+UDP, or payload signing and encryption, are recommended.\n\nInteroperability considerations:\nThe OCF media type can exchange representations which are interoperable with the CBOR serialization of RFC6690 (CoRE Link-Format) This makes it interoperable with CoRE Resource Directory and other IETF standards which make use of CoRE Link-Format\n\nPublished specification:\nThe current version of the specification is available at:\nhttps://openconnectivity.org/resources/specifications\n\n\nApplications which use this media:\nThis media type is applicable to applications which exchange Machine to Machine data (M2M) between constrained devices and between these devices and a network service layer, including unconstrained devices\n\nFragment identifier considerations:\nN/A\n\nRestrictions on usage:\nThere are no restrictions on usage of the OCF content format\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\nN/A\n\nPerson to contact for further information:\n\n1. Name: Michael Koster\n2. Email: michael.koster&smartthings.com\n\nIntended usage: Common\nThis media type is intended to be used with applications which exchange Machine to Machine data (M2M) between constrained devices and between these devices and a network service layer, including unconstrained devices\n\nAuthor/Change controller: Open Connectivity Foundation, Inc.\n3855 SW 153rd Drive, Beaverton, Oregon 97003\nPhone: +1.503.619.0673 | Email: admin&openconnectivity.org"
+  },
+  "references": []
+}

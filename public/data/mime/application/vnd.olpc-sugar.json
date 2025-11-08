@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.olpc-sugar",
+  "full": "application/vnd.olpc-sugar",
+  "extensions": [
+    "xo"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.olpc-sugar",
+    "template_text": "(last updated 2007-06-07)\n\nName : John Palmieri\n\nEmail : johnp&redhat.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.olpc-sugar\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nSugar application bundles are full source code packages which can be installed\non the target machine and run. They are intended to run in sandboxes if not\nproperly signed. If the sandboxes are not properly configured or a user opts to\nrun untrusted code there will be a security risk as the application will have\naccess to whatever the operating system gives to any other local application.\n\nAs this format is meant for sharing activities there is little use for\nencryption defined in the format. This does not exclude activities from\nhaving their own encryption mechanisms and encrypting the data they ship\nthough in such cases the keys reside within the executable and are\nvulnerable to reverse engineering.\n\nAs for encrypting using public key encryption to share with specific\nusers we may well define a container format in the future to deal with\nencrypting any data we might send. As for now encryption is not part of\nthe discussion and anything in this format can be assumed to be publicly\nreadable by whoever can obtain the bits.\n\nInteroperability considerations :\nThe file format is intended to be used by the Sugar environment and Linux.\n\nPublished specification :\nNone\n\nApplications which use this media :\nThe Sugar Linux Desktop system\n\nAdditional information :\n\n1. Magic number(s) : 0x584F\n2. File extension(s) : .xo\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : John Palmieri\n2. Email : johnp&redhat.com\n\nIntended usage : Common\nFor use with the Sugar environment and Linux.\n\nAuthor/Change controller :\n\n\n(file created 2007-06-07)"
+  },
+  "references": []
+}

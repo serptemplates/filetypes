@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.music-niff",
+  "full": "application/vnd.music-niff",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.music-niff",
+    "encoding_considerations": "The \"base64\" mechanism is preferred because \n    NIFF is an 8-bit binary file format.",
+    "security_considerations": "Most of the standard NIFF structure conveys only logical and\n    graphical information about music notation. This is intended \n    to be processed, formatted, and displayed by a program (NIFF reader).\n    Very few NIFF elements are intended to consume system resources or\n    be executable.\n\n    There are a few exceptions however.\n\n    NIFF files may store Postscript programs that represent fonts and\n    special symbols.  Thus the entire section on the media type\n    \"application/postscript\" security applies to \"application/niff\".\n\n    NIFF files may also include performance information in the form of\n    MIDI commands. Some NIFF readers will interpret and\n    transmit MIDI commands on a user's system. MIDI commands \n    can control a user's MIDI system to play notes or reset equipment.\n    MIDI system exclusive messages may perform any action that is\n    provided by a MIDI equipment vendor.  This can include exotic\n    or damaging system functions such as erasing or changing data.\n\n    NIFF users may extend NIFF with \"user-defined\" elements to\n    implement features not defined by the NIFF specification.\n    The security of these user-defined features is beyond the \n    scope of the NIFF standard.",
+    "template_text": "\n\nFrom: Tim Butler <tim&its.bldrdoc.gov>\nSubject: Registration request: application/music-niff\nTo: iana&ISI.EDU\nDate: Tue, 26 Mar 96 14:31:08 MST\n\nThe proposal has been available for discussion for more than two\nweeks on the ietf-types&uninett.no mailing list and there were no\nobjections.  I can provide all correspondence concerning \"music-niff\" \non request.\n\n===========================================\n\nMIME type name:\n \n    \"application\"\n\nMIME subtype name: \n   \n    \"vnd.music-niff\"\n\nRequired parameters:\n   \n    There are no required parameters.\n\nOptional parameters:\n\n    No optional parameters are specified.\n\nEncoding considerations:\n\n    The \"base64\" mechanism is preferred because \n    NIFF is an 8-bit binary file format.\n  \nSecurity considerations:\n\n    Most of the standard NIFF structure conveys only logical and\n    graphical information about music notation. This is intended \n    to be processed, formatted, and displayed by a program (NIFF reader).\n    Very few NIFF elements are intended to consume system resources or\n    be executable.\n\n    There are a few exceptions however.\n\n    NIFF files may store Postscript programs that represent fonts and\n    special symbols.  Thus the entire section on the media type\n    \"application/postscript\" security applies to \"application/niff\".\n\n    NIFF files may also include performance information in the form of\n    MIDI commands. Some NIFF readers will interpret and\n    transmit MIDI commands on a user's system. MIDI commands \n    can control a user's MIDI system to play notes or reset equipment.\n    MIDI system exclusive messages may perform any action that is\n    provided by a MIDI equipment vendor.  This can include exotic\n    or damaging system functions such as erasing or changing data.\n\n    NIFF users may extend NIFF with \"user-defined\" elements to\n    implement features not defined by the NIFF specification.\n    The security of these user-defined features is beyond the \n    scope of the NIFF standard.\n\nPublished specification:\n\n    An electronic version the the NIFF specification is available as \n\n       URL ftp://blackbox.cartah.washington.edu/pub/NIFF/NIFF6A.TXT\n\n    Please note that this document is undergoing revisions.\n\n\nPerson & email address to contact for further information:\n\n   Contact concerning the NIFF standard\n   -------------------------------------\n   Cindy Grande\n   NIFF Technical Coordinator\n   19004 37th Avenue South       \n   Seattle, WA  98188            \n   \n   Phone: +1 206-244-3411                  \n   Email: 72723.1272&compuserve.com\n\n   Contact concerning MIME media type\n   ----------------------------------\n   Timothy Butler\n   982 Wedgewood Rd\n   Pinecliffe, CO 80471\n   \n   Phone: +1 303-642-3047\n   Email: tim&netbox.com\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n\n\n"
+  },
+  "references": []
+}

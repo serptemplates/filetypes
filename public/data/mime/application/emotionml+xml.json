@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "emotionml+xml",
+  "full": "application/emotionml+xml",
+  "extensions": [
+    "emotionml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/emotionml+xml",
+    "template_text": "(registered 2013-10-30, last updated 2013-10-30)\n\nMIME media type name : Application\n\nMIME subtype name : emotionml+xml\n\nRequired parameters : None\n\nOptional parameters :\n\ncharset\n\nThis parameter has identical semantics to the charset parameter of the\napplication/xml media type as specified in [RFC 3023] or its\nsuccessor.\n\nEncoding considerations :\n\nBy virtue of EmotionML content being XML, it has the same\nconsiderations when sent as \"application/emotionml+xml\" as does\nXML. See RFC 3023 (or its successor), section 3.2.\n\nSecurity considerations :\n\nEmotionML elements may include arbitrary URIs. Therefore the\nsecurity issues of [RFC 3986], section 7, should be considered.\n\nIn addition, because of the extensibility features for EmotionML, it\nis possible that \"application/emotionml+xml\" will describe content\nthat has security implications beyond those described here. However,\nif the processor follows only the normative semantics of this\nspecification, this content will be ignored. Only in the case where\nthe processor recognizes and processes the additional content, or\nwhere further processing of that content is dispatched to other\nprocessors, would security issues potentially arise. And in that\ncase, they would fall outside the domain of this registration\ndocument.\n\nInteroperability considerations :\n\nThis specification describes processing semantics that dictate the\nrequired behavior for dealing with, among other things, unrecognized\nelements.\n\nBecause EmotionML is extensible, conformant\n\"application/emotionml+xml\" processors MAY expect that content\nreceived is well-formed XML, but processors SHOULD NOT assume that\nthe content is valid EmotionML or expect to recognize all of the\nelements and attributes in the document.\n\nPublished specification :\n\nThis media type registration is extracted from Appendix B of the\n\"Emotion Markup Language (EmotionML) 1.0\" specification.\n\nhttp://www.w3.org/TR/emotionml/\n\nApplications which use this media :\n\nXML is device-, platform-, and vendor-neutral and is supported by a\nwide range of Web user agents, as well as XML authoring tools.\n\nAdditional information :\n\n1. Magic number(s) : Not Applicable\n2. File extension(s) : .emotionml\n3. Macintosh file type code : TEXT\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Kazuyuki Ashimura\n2. Email : ashimura&w3.org\n\nIntended usage : Common\n\nRestrictions on usage : None\n\nAuthor/Change controller :\n\nThe EmotionML specification is a work product of the World Wide Web\nConsortium's Multimodal Interaction Working Group."
+  },
+  "references": []
+}

@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "yang-data+xml",
+  "full": "application/yang-data+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/yang-data+xml",
+    "type_name": "application",
+    "subtype_name": "yang-data+xml",
+    "encoding_considerations": "Each conceptual YANG data node is encoded according to the\n   XML Encoding Rules and Canonical Format for the specific\n   YANG data node type defined in [RFC7950].\n\nSecurity considerations: Security considerations related\n   to the generation and consumption of RESTCONF messages\n   are discussed in Section 12 of RFC 8040.\n   Additional security considerations are specific to the\n   semantics of particular YANG data models.  Each YANG module\n   is expected to specify security considerations for the\n   YANG data defined in that module.\n\nInteroperability considerations: RFC 8040 specifies the\n   format of conforming messages and the interpretation\n   thereof.\n\nPublished specification: RFC 8040\n\nApplications that use this media type: Instance document\n   data parsers used within a protocol or automation tool\n   that utilize YANG-defined data structures.\n\nFragment identifier considerations: Fragment identifiers for\n   this type are not defined.  All YANG data nodes are\n   accessible as resources using the path in the request URI.",
+    "security_considerations": "to the generation and consumption of RESTCONF messages\n   are discussed in Section 12 of RFC 8040.\n   Additional security considerations are specific to the\n   semantics of particular YANG data models.  Each YANG module\n   is expected to specify security considerations for the\n   YANG data defined in that module.\n\nInteroperability considerations: RFC 8040 specifies the\n   format of conforming messages and the interpretation\n   thereof.\n\nPublished specification: RFC 8040\n\nApplications that use this media type: Instance document\n   data parsers used within a protocol or automation tool\n   that utilize YANG-defined data structures.\n\nFragment identifier considerations: Fragment identifiers for\n   this type are not defined.  All YANG data nodes are\n   accessible as resources using the path in the request URI.",
+    "interoperability_considerations": "format of conforming messages and the interpretation\n   thereof.\n\nPublished specification: RFC 8040\n\nApplications that use this media type: Instance document\n   data parsers used within a protocol or automation tool\n   that utilize YANG-defined data structures.\n\nFragment identifier considerations: Fragment identifiers for\n   this type are not defined.  All YANG data nodes are\n   accessible as resources using the path in the request URI.",
+    "applications": "data parsers used within a protocol or automation tool\n   that utilize YANG-defined data structures.\n\nFragment identifier considerations: Fragment identifiers for\n   this type are not defined.  All YANG data nodes are\n   accessible as resources using the path in the request URI.",
+    "additional_information": "Deprecated alias names for this type: N/A\n   Magic number(s): N/A\n   File extension(s): None\n   Macintosh file type code(s): \"TEXT\"\n\nPerson & email address to contact for further information: See\n   the Authors' Addresses section of RFC 8040.\n\nIntended usage: COMMON\n\nRestrictions on usage: N/A\n\nAuthor: See the Authors' Addresses section of RFC 8040.\n\nChange controller: Internet Engineering Task Force\n   (mailto:iesg&ietf.org).\n\nProvisional registration? (standards tree only): no",
+    "intended_usage": "common",
+    "change_controller": "Internet Engineering Task Force",
+    "template_text": "Type name: application\n\nSubtype name: yang-data+xml\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: 8-bit\n   Each conceptual YANG data node is encoded according to the\n   XML Encoding Rules and Canonical Format for the specific\n   YANG data node type defined in [RFC7950].\n\nSecurity considerations: Security considerations related\n   to the generation and consumption of RESTCONF messages\n   are discussed in Section 12 of RFC 8040.\n   Additional security considerations are specific to the\n   semantics of particular YANG data models.  Each YANG module\n   is expected to specify security considerations for the\n   YANG data defined in that module.\n\nInteroperability considerations: RFC 8040 specifies the\n   format of conforming messages and the interpretation\n   thereof.\n\nPublished specification: RFC 8040\n\nApplications that use this media type: Instance document\n   data parsers used within a protocol or automation tool\n   that utilize YANG-defined data structures.\n\nFragment identifier considerations: Fragment identifiers for\n   this type are not defined.  All YANG data nodes are\n   accessible as resources using the path in the request URI.\n\nAdditional information:\n\n   Deprecated alias names for this type: N/A\n   Magic number(s): N/A\n   File extension(s): None\n   Macintosh file type code(s): \"TEXT\"\n\nPerson & email address to contact for further information: See\n   the Authors' Addresses section of RFC 8040.\n\nIntended usage: COMMON\n\nRestrictions on usage: N/A\n\nAuthor: See the Authors' Addresses section of RFC 8040.\n\nChange controller: Internet Engineering Task Force\n   (mailto:iesg&ietf.org).\n\nProvisional registration? (standards tree only): no"
+  },
+  "references": []
+}

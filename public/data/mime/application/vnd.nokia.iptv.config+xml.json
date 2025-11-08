@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.nokia.iptv.config+xml",
+  "full": "application/vnd.nokia.iptv.config+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.nokia.iptv.config+xml",
+    "template_text": "(Last Updated 02 June 2006)\r\n\r\nName : Nokia\r\n\r\nEmail : mime&nokia.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.nokia.iptv.config+xml\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of \r\nhandling 8 bit text.\r\n\r\nSecurity considerations :\r\nThe purpose of the mime type is to identify video application \r\nconfiguration messages. The actual mime type does not have any \r\nparameters, so the security risk is in the configuration message body\r\nitself.\r\nConfiguration messages are XML-based. Configurations are per service,\r\ni.e. \r\nhow a certain service is used within the video application. The \r\nmessage is expected as a response to browser interaction, and user is \r\nasked if the settings should be accepted. User is likely to discard \r\nany settings that come unexpectedly to terminal. Video application \r\noperation to other services are not affected by erroneous settings to \r\none service. Service settings can be deleted afterwards if found to be \r\nerroneous for example service content is not acceptable to user).\r\n\r\nMedia type contains passive textual XML content. It is not executable. \r\nIt is parsed as XML content and correct XML elements content is stored\r\nto a configuration file. \r\nRisk of inserting executable content to XML textual file is minimized.\r\nIn some cases the content needs protection. In those cases it is\r\nexpected that the content \r\nis received over confidentiality and integrity protected connection, \r\nas provided for example with TLS/SSL. XML level privacy or integrity\r\nprotection is not used. \r\nReceiving application should ensure that the received data is accepted\r\nonly if received over \r\nsuitably protected channel (depending on the message content). \r\nMedia type itself does not provide any means for privacy or integrity\r\nprotection.\r\n\r\n\r\nInteroperability considerations :\r\nInteroperability is assessed not to be an issue, as the MIME type is \r\nin the vendor tree. XML definitions are assessed to solve different \r\ncharacter set and byte ordering issues. Message format does have \r\nversion number and backwards compatibility will be preserved in the \r\npossible format evolution.\r\n\r\n\r\nPublished specification :\r\nThe specification for the message format is expected to be published \r\nin Forum Nokia developer support web site.\r\n\r\nApplications which use this media :\r\nApplication is Nokia cellular terminal IPTV application for downloaded \r\nand streamed video content discovery, delivery and management.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nnone\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Nokia\r\n2. Email : mime&nokia.com\r\n\r\nIntended usage : Common\r\nCommon in future Nokia multimedia terminals.\r\n\r\nAuthor/Change controller : Nokia, mime&nokia.com \r\n\r\n(File Created 02 June 2006)"
+  },
+  "references": []
+}

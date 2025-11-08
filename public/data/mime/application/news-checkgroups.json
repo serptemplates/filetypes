@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "news-checkgroups",
+  "full": "application/news-checkgroups",
+  "extensions": [],
+  "charsets": [
+    "US-ASCII"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/news-checkgroups",
+    "encoding_considerations": "maintain compatibility.\n\nSecurity considerations:  This media type provides only a means\n                          for conveying a list of newsgroups and\n                          does not provide any information\n                          indicating whether the sender is\n                          authorized to state which newsgroups\n                          should exist within a hierarchy.  Such\n                          authorization must be accomplished by\n                          other means.",
+    "security_considerations": "for conveying a list of newsgroups and\n                          does not provide any information\n                          indicating whether the sender is\n                          authorized to state which newsgroups\n                          should exist within a hierarchy.  Such\n                          authorization must be accomplished by\n                          other means.",
+    "interoperability_considerations": "Disposition should by default be inline.",
+    "applications": "Control message issuers, relaying\n                          agents, serving agents.\n\nPublished specification:  RFC 5537\n\nIntended usage:           COMMON\n\nChange controller:        IETF\n\nThe content of the application/news-checkgroups body part is defined\nas:\n\n   checkgroups-body    = *( valid-group CRLF )\n   valid-group         = newsgroups-line ; see Section 4.2\n\nThe same restrictions on charset, <newsgroup-name>, and <newsgroup-\ndescription> apply for this media type as for application/\nnews-groupinfo.\n\nOne application/news-checkgroups message may contain information for\none or more hierarchies and is considered complete for any hierarchy\nfor which it contains a <valid-group> unless accompanied by external\ninformation limiting its scope (such as a <chkscope> parameter to a\ncheckgroups control message, as described in Section 5.2.3).  In\nother words, an application/news-checkgroups body part consisting of\n\n   example.moderated         A moderated newsgroup (Moderated)\n   example.test              An unmoderated test group\n\nis a statement that the example.* hierarchy contains two newsgroups,\nexample.moderated and example.test, and no others.  This media type\ntherefore MUST NOT be used for conveying partial information about a\nhierarchy; if a group from a given hierarchy is present, all groups\nthat exist in that hierarchy MUST be listed unless its scope is\nlimited by external information, in which case all groups SHOULD be\nlisted.\n\nSpaces are used in this example for formatting reasons.  In an actual\nmessage, the newsgroup name and description MUST be separated by one\nor more tabs (HTAB, ASCII %d09), not spaces.",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "(RFC 5537 published November 2009, subtype last updated November 2009)\n\nMIME type name:           application\n\nMIME subtype name:        news-checkgroups\n\nRequired parameters:      none\n\nOptional parameters:      charset, which MUST be a charset\n                          registered for use with MIME text types.\n                          It has the same syntax as the parameter\n                          defined for text/plain [RFC2046].\n                          Specifies the charset of the body part.\n                          If not given, the charset defaults to\n                          US-ASCII [ASCII].\n\nEncoding considerations:  7bit or 8bit encoding MUST be used to\n                          maintain compatibility.\n\nSecurity considerations:  This media type provides only a means\n                          for conveying a list of newsgroups and\n                          does not provide any information\n                          indicating whether the sender is\n                          authorized to state which newsgroups\n                          should exist within a hierarchy.  Such\n                          authorization must be accomplished by\n                          other means.\n\nInteroperability considerations:\n                          Disposition should by default be inline.\n\nApplications that use this media type:\n                          Control message issuers, relaying\n                          agents, serving agents.\n\nPublished specification:  RFC 5537\n\nIntended usage:           COMMON\n\nChange controller:        IETF\n\nThe content of the application/news-checkgroups body part is defined\nas:\n\n   checkgroups-body    = *( valid-group CRLF )\n   valid-group         = newsgroups-line ; see Section 4.2\n\nThe same restrictions on charset, <newsgroup-name>, and <newsgroup-\ndescription> apply for this media type as for application/\nnews-groupinfo.\n\nOne application/news-checkgroups message may contain information for\none or more hierarchies and is considered complete for any hierarchy\nfor which it contains a <valid-group> unless accompanied by external\ninformation limiting its scope (such as a <chkscope> parameter to a\ncheckgroups control message, as described in Section 5.2.3).  In\nother words, an application/news-checkgroups body part consisting of\n\n   example.moderated         A moderated newsgroup (Moderated)\n   example.test              An unmoderated test group\n\nis a statement that the example.* hierarchy contains two newsgroups,\nexample.moderated and example.test, and no others.  This media type\ntherefore MUST NOT be used for conveying partial information about a\nhierarchy; if a group from a given hierarchy is present, all groups\nthat exist in that hierarchy MUST be listed unless its scope is\nlimited by external information, in which case all groups SHOULD be\nlisted.\n\nSpaces are used in this example for formatting reasons.  In an actual\nmessage, the newsgroup name and description MUST be separated by one\nor more tabs (HTAB, ASCII %d09), not spaces."
+  },
+  "references": []
+}

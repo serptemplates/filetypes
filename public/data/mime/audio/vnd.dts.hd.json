@@ -1,0 +1,36 @@
+{
+  "type": "audio",
+  "subtype": "vnd.dts.hd",
+  "full": "audio/vnd.dts.hd",
+  "extensions": [
+    "dtshd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.dts.hd",
+    "change_controller": "Xperi Corporation, c/o Phillip Maness,",
+    "template_text": "(registered 2008-08-06, last updated 2018-11-15)\n\nName : William Zou\n\nEmail : bill.zou&dts.com\n\nMIME media type name : Audio\n\nMIME subtype name : Vendor Tree - vnd.dts.hd\n\nRequired parameters : The following parameters are required:\nprofile:\n- DTS\n- DTSHR\n- DTSMA\n- LBR\n- MULTI1\n- MULTI2\n\nprofile is a required parameter.\n\nprofile=DTS indicates the DTS-HD is coded using Coherent Acoustics and\ndoes not exceed 1.5 Mbits/sec.\nprofile = DTSHR indicates that the stream consists of a Coherent\nAcoustics core and at least one extension and total bit-rate exceeds 1.5\nMbits/sec\nprofile = DTSMA indicates that the stream is variable bit rate and\ncontains lossless audio. The stream may exceed 6 Mbits/sec.\nprofile=LBR indicates that the stream is coded using the DTS LBR codec.\nprofile = MULTI1 indicates that the stream does not exceed 6 Mbits/sec\nand the basic presentation type should be read from btype.\nprofile=MULTI2 indicates that the stream may exceed 6 Mbits/sec and the\nbasic presentation type should be read from btype.\n\nbtype must be one of the following:\n\nDTS\nDTSHR\nDTSMA\nLBR\n\nThe parameters for these btypes are described under \"profile.\"\nFor DTS-HD audio streams consisting of a multiple audio objects\n(profile=MULTI1 or MULTI2) the btype indicates the type of base audio\nobject that all DTS-HD decoders are able to decode.\nFor DTS-HD audio streams consisting of a single audio object the\nbtype=profile.\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media subtype consists of audio samples; it does not contain any commands,\ncontrol sequences, executable content nor any other material the misuse of which\ncould result in a security vulnerability. No security risks are introduced by\nthis media subtype aside for those associated with any media format (for\nexample, transmission of a frame larger than the receiver can handle). This\nmedia subtype does not specify any privacy or additional integrity services;\nthus, such methods should be implemented in the upper protocol levels. Other\nsecurity considerations, if any, have not been assessed.\n\nInteroperability considerations :\nNone\n\nPublished specification :\nBDA System Description Blu-ray Disc Read-Only Format Part 3 Audio Visual Basic\nSpecifications (2005-03)\nDVD Forum DVD Specifications for High Definition Video, DTS-HD Reference\nInformation (Version 1.0, 2005-08)\n\n\nApplications which use this media :\nApplications for encoding and decoding digital audio in packaged media, digital\nbroadcast and content distribution.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : .dtshd\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name: Phillip Maness\n2. Email: phillip.maness&xperi.com\n\nIntended usage : Common\nHigh quality audio compression ranging from lossy to lossless\n\nChange controller: Xperi Corporation, c/o Phillip Maness, \nphillip.maness&xperi.com\n"
+  },
+  "references": []
+}

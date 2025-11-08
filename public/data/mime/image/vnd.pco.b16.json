@@ -1,0 +1,39 @@
+{
+  "type": "image",
+  "subtype": "vnd.pco.b16",
+  "full": "image/vnd.pco.b16",
+  "extensions": [
+    "b16"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/image/vnd.pco.b16",
+    "security_considerations": "B16 consists of image data and metadata and contains no active or executable content. However, the file header contains empty space for the possible further extension of the format, so it is theoretically possible that this sort of content could be added in the future.\n\nB16 does not provide any confidentiality or integrity protection; if such protection is needed it must be provided externally.\n\nB16 only potential use of compression is to reduce 16 bit values to 12 bit values. This type of compression cannot be maliciously misused to consume too many resources.",
+    "interoperability_considerations": "B16 file can be interpreted universally at different platforms.\nThe data section does not differ across the versions of the file type.\nThe byte ordering of the data and metadata values is little-endian.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): ASCII \"PCO-\" at offset 0.\n3. File extension(s): .b16\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2020-09-17)\n\nName: Jan Zeman\nEmail: jan.zeman&pco.de\n\nMedia type name: image\nMedia subtype name: vnd.pco.b16\n\nRequired parameters: \nN/A\n\nOptional parameters: \nN/A\n\nEncoding considerations: binary\n\nSecurity considerations:\nB16 consists of image data and metadata and contains no active or executable content. However, the file header contains empty space for the possible further extension of the format, so it is theoretically possible that this sort of content could be added in the future.\n\nB16 does not provide any confidentiality or integrity protection; if such protection is needed it must be provided externally.\n\nB16 only potential use of compression is to reduce 16 bit values to 12 bit values. This type of compression cannot be maliciously misused to consume too many resources.\n\nInteroperability considerations:\nB16 file can be interpreted universally at different platforms.\nThe data section does not differ across the versions of the file type.\nThe byte ordering of the data and metadata values is little-endian.\n\nPublished specification:\nhttps://www.pco.de/fileadmin/fileadmin/user_upload/pco-manuals/pco.camware_manual.pdf\n\nAppendix A1\n\nApplications which use this media:\nImaging applications\n-pco.camware\n-XnView in the standard version is able to read B16\n\nFragment identifier considerations:\nNo mechanism is defined to selectively locate positions or sub-regions within an image.\n\nRestrictions on usage:\nN/A\n\nProvisional registration? (standards tree only):\nN/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): ASCII \"PCO-\" at offset 0.\n3. File extension(s): .b16\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nGeneral Comments:\nN/A\n\nPerson to contact for further information:\n\n1. Name: Jan Zeman\n2. Email: development&pco.de\n\nIntended usage: Common\nInterchange of the camera images.\n\nAuthor/Change controller: PCO AG\nDonaupark 11\n93309 Kelheim, Germany\n"
+  },
+  "references": []
+}

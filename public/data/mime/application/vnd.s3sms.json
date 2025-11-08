@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.s3sms",
+  "full": "application/vnd.s3sms",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.s3sms",
+    "template_text": "\n\n\nName : Lauri Tarkkala\n\nE-mail : Lauri.Tarkkala&sonera.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.s3sms\n\nRequired parameters : url  -- an URL which represents the origin of\nthe message \ndate -- the date in seconds since the EPOCH as specified in RFC868\nid   -- an arbitrary string used to track message encodings\n\n\nOptional parameters : \nexpire  -- expiration date for the encoding specified in the same\n           format as for the date param above\n\nEncoding considerations : \nThe data to be encoded consists of arbitrary bytes (as opposed to\nmerely\narbitrary 7-bit characters).\n\nSecurity considerations : \nThe media type is used to identify the encoding and decoding\nassociated with the actual content data, which is not to be processed\nas executable code and does not contain instructions which are\nautomatically processed by some application.\n\nThe media type itself therefore does not cause any additional\nsecurity concerns. \n\n\nInteroperability considerations : \nEncodings of \"vnd.s3sms\" media transmitted using SMTP SHOULD be\nencoded using the \"base64\" Content-Transfer-Encoding.\n\n\nPublished specification : \nNone.\n\nApplications which use this media : \nSonera SmartTrust products. See http://www.smarttrust.com/ for more\ninformation.\n\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : \n3. Macintosh file type code : \nNone.\n\nPerson to contact for further information :\n\n1. Name : Lauri Tarkkala\n2. E-mail : Lauri.Tarkkala&sonera.com\n\nIntended usage : Limited Use \nThe media type will be used to integrate the transfer mechanisms of\nthe Sonera SmartTrust products seamlessly into the Internet infrastructure\nfor application level messaging.\n\nAuthor/Change controller : Lauri Tarkkala <Lauri.Tarkkala&sonera.com>\nSonera SmartTrust Ltd\nhttp://www.smarttrust.com/\n \n\n\n\n\n"
+  },
+  "references": []
+}

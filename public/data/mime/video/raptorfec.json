@@ -1,0 +1,72 @@
+{
+  "type": "video",
+  "subtype": "raptorfec",
+  "full": "video/raptorfec",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/raptorfec",
+    "type_name": "video",
+    "subtype_name": "raptorfec",
+    "encoding_considerations": "Section 4.8 in [RFC4288].\n\nSecurity considerations: Please see the security considerations in\n[RFC6363].",
+    "security_considerations": "[RFC6363].",
+    "interoperability_considerations": "Published specification: [RFC6681]\n\nApplications that use this media type: Real-time multimedia\napplications like video streaming, audio streaming, and video\nconferencing.",
+    "applications": "applications like video streaming, audio streaming, and video\nconferencing.",
+    "additional_information": "Magic number(s): <none defined>\n\nFile extension(s): <none defined>\n\nMacintosh file type code(s): <none defined>",
+    "intended_usage": "common",
+    "change_controller": "IETF PAYLOAD working group delegated from the",
+    "parameters": {
+      "required": [
+        {
+          "name": "rate",
+          "description": "The RTP timestamp (clock) rate.  The RTP timestamp (clock)\n   rate is specified in Hz and the format is unsigned integer."
+        },
+        {
+          "name": "raptor-scheme-id",
+          "description": "The value of this parameter is the FEC Scheme ID\n   for the specific Raptor FEC Scheme that will be used as defined in\n   [RFC6681]."
+        },
+        {
+          "name": "Kmax",
+          "description": "The value of this parameter is the FEC Framework\n   Configuration Information element, MSBL, as defined in [RFC6681],\n   encoded as a unsigned integer.  For specific requirements for this\n   value, refer to [RFC6681]."
+        },
+        {
+          "name": "T",
+          "description": "The value of this parameter is the FEC Framework Configuration\n   Information element, encoding symbol size, as defined in\n   [RFC6681], encoded as a unsigned integer.  For specific\n   requirements for this value, refer to [RFC6681]."
+        },
+        {
+          "name": "repair-window",
+          "description": "The maximum time that spans the source packets and\n   the corresponding repair packets.  The size of the repair window\n   is specified in microseconds, and the format is unsigned integer."
+        }
+      ],
+      "optional": [
+        {
+          "name": "P",
+          "description": "The value of this parameter is the FEC Framework Configuration\n   Information element, Payload ID Format, as defined in [RFC6681].\n   The default value of this parameter (when it does not appear\n   explicitly) is 'A'.\n\nEncoding considerations: This media type is framed and binary; see\nSection 4.8 in [RFC4288].\n\nSecurity considerations: Please see the security considerations in\n[RFC6363]."
+        }
+      ]
+    },
+    "template_text": "(RFC 6682 published August 2012, subtype last updated August 2012)\n\nType name: video\n\nSubtype name: raptorfec\n\nRequired parameters:\n\no  rate: The RTP timestamp (clock) rate.  The RTP timestamp (clock)\n   rate is specified in Hz and the format is unsigned integer.\n\no  raptor-scheme-id: The value of this parameter is the FEC Scheme ID\n   for the specific Raptor FEC Scheme that will be used as defined in\n   [RFC6681].\n\no  Kmax: The value of this parameter is the FEC Framework\n   Configuration Information element, MSBL, as defined in [RFC6681],\n   encoded as a unsigned integer.  For specific requirements for this\n   value, refer to [RFC6681].\n\no  T: The value of this parameter is the FEC Framework Configuration\n   Information element, encoding symbol size, as defined in\n   [RFC6681], encoded as a unsigned integer.  For specific\n   requirements for this value, refer to [RFC6681].\n\no  repair-window: The maximum time that spans the source packets and\n   the corresponding repair packets.  The size of the repair window\n   is specified in microseconds, and the format is unsigned integer.\n\nOptional parameters:\n\no  P: The value of this parameter is the FEC Framework Configuration\n   Information element, Payload ID Format, as defined in [RFC6681].\n   The default value of this parameter (when it does not appear\n   explicitly) is 'A'.\n\nEncoding considerations: This media type is framed and binary; see\nSection 4.8 in [RFC4288].\n\nSecurity considerations: Please see the security considerations in\n[RFC6363].\n\nInteroperability considerations:\n\nPublished specification: [RFC6681]\n\nApplications that use this media type: Real-time multimedia\napplications like video streaming, audio streaming, and video\nconferencing.\n\nAdditional information:\n\nMagic number(s): <none defined>\n\nFile extension(s): <none defined>\n\nMacintosh file type code(s): <none defined>\n\nPerson & email address to contact for further information:\nThomas Stockhammer, stockhammer&nomor.de\n\nIntended usage: COMMON\n\nRestrictions on usage: This media type depends on RTP framing, and\nhence is only defined for transfer via RTP [RFC3550].  Transport\nwithin other framing protocols is not defined at this time.\n\nAuthor: Thomas Stockhammer, Nomor Research.\n\nChange controller: IETF PAYLOAD working group delegated from the\nIESG."
+  },
+  "references": []
+}

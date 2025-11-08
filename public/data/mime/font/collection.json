@@ -1,0 +1,43 @@
+{
+  "type": "font",
+  "subtype": "collection",
+  "full": "font/collection",
+  "extensions": [
+    "ttc"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/font/collection",
+    "type_name": "font",
+    "subtype_name": "collection",
+    "encoding_considerations": "Interoperability considerations:  As it was noted in the first\n   paragraph of RFC 8081's Security Considerations section, a single \n   font file can contain encoding of the same glyphs using several\n   different representations, e.g., both TrueType and PostScript\n   (CFF) outlines.  Existing font rendering engines may not be able\n   to process some of the particular outline formats, and downloading\n   a font resource that contains only unsupported glyph data format\n   would be futile.  Therefore, it is useful to clearly identify the\n   format of the glyph outline data within a font using an optional\n   parameter, and allow applications to make decisions about\n   downloading a particular font resource sooner.  Similarly, another\n   optional parameter identifies the type of text shaping and layout\n   mechanism that is provided by a font.\n\nPublished specification:  ISO/IEC 14496-22 \"Open Font Format\" (OFF)\n   specification [ISO.14496-22.2015] being developed by ISO/IEC SC29/\n   WG11.\n\nApplications that use this media type:  All applications that are\n   able to create, edit, or display textual media content.",
+    "interoperability_considerations": "paragraph of RFC 8081's Security Considerations section, a single \n   font file can contain encoding of the same glyphs using several\n   different representations, e.g., both TrueType and PostScript\n   (CFF) outlines.  Existing font rendering engines may not be able\n   to process some of the particular outline formats, and downloading\n   a font resource that contains only unsupported glyph data format\n   would be futile.  Therefore, it is useful to clearly identify the\n   format of the glyph outline data within a font using an optional\n   parameter, and allow applications to make decisions about\n   downloading a particular font resource sooner.  Similarly, another\n   optional parameter identifies the type of text shaping and layout\n   mechanism that is provided by a font.\n\nPublished specification:  ISO/IEC 14496-22 \"Open Font Format\" (OFF)\n   specification [ISO.14496-22.2015] being developed by ISO/IEC SC29/\n   WG11.\n\nApplications that use this media type:  All applications that are\n   able to create, edit, or display textual media content.",
+    "applications": "able to create, edit, or display textual media content.",
+    "additional_information": "Magic number(s):  The TrueType fonts and OFF / OpenType fonts\n      containing TrueType outlines should use 0x00010000 as the\n      'sfnt' version number.\n\n      The OFF / OpenType fonts containing CFF outlines should use the\n      tag 'OTTO' as the 'sfnt' version number.  There is no magic\n      number for SVG outlines; these are always accompanied by either\n      TrueType or CFF outlines, and thus use the corresponding magic\n      number.\n\n   File extension(s):  Font file extensions used for OFF / TrueType\n      and OpenType fonts: .ttc\n\n   Macintosh file type code(s):  (no code specified)\n\n   Macintosh Universal Type Identifier code:  \"public.truetype-\n      collection-font\"\n\n   @font-face Format:  collection\n\n   Fragment Identifiers:  See Section 4.2.",
+    "intended_usage": "common",
+    "change_controller": "The ISO/IEC has change control over this",
+    "template_text": "Type name:  font\n\nSubtype name:  collection\n\nRequired parameters:  None\n\nOptional parameters\n\n   Name: outlines  \n   \n   Values: a comma-separated subset of TTF, CFF, and SVG\n\n      This parameter can be used to specify the type of outlines\n      provided by the font.  The value \"TTF\" shall be used when a\n      font resource contains glyph outlines in TrueType format, the\n      value \"CFF\" shall be used to identify fonts containing\n      PostScript/CFF outlines, and the value SVG shall be used to\n      identify fonts that include SVG outlines.  TTF, CFF, or SVG\n      outlines can be present in various combinations in the same\n      font file; therefore, this optional parameter is a list\n      containing one or more items, separated by commas.  Order in\n      the list is not significant.\n\nEncoding considerations:  Binary\n\nInteroperability considerations:  As it was noted in the first\n   paragraph of RFC 8081's Security Considerations section, a single \n   font file can contain encoding of the same glyphs using several\n   different representations, e.g., both TrueType and PostScript\n   (CFF) outlines.  Existing font rendering engines may not be able\n   to process some of the particular outline formats, and downloading\n   a font resource that contains only unsupported glyph data format\n   would be futile.  Therefore, it is useful to clearly identify the\n   format of the glyph outline data within a font using an optional\n   parameter, and allow applications to make decisions about\n   downloading a particular font resource sooner.  Similarly, another\n   optional parameter identifies the type of text shaping and layout\n   mechanism that is provided by a font.\n\nPublished specification:  ISO/IEC 14496-22 \"Open Font Format\" (OFF)\n   specification [ISO.14496-22.2015] being developed by ISO/IEC SC29/\n   WG11.\n\nApplications that use this media type:  All applications that are\n   able to create, edit, or display textual media content.\n\nAdditional information:\n\n   Magic number(s):  The TrueType fonts and OFF / OpenType fonts\n      containing TrueType outlines should use 0x00010000 as the\n      'sfnt' version number.\n\n      The OFF / OpenType fonts containing CFF outlines should use the\n      tag 'OTTO' as the 'sfnt' version number.  There is no magic\n      number for SVG outlines; these are always accompanied by either\n      TrueType or CFF outlines, and thus use the corresponding magic\n      number.\n\n   File extension(s):  Font file extensions used for OFF / TrueType\n      and OpenType fonts: .ttc\n\n   Macintosh file type code(s):  (no code specified)\n\n   Macintosh Universal Type Identifier code:  \"public.truetype-\n      collection-font\"\n\n   @font-face Format:  collection\n\n   Fragment Identifiers:  See Section 4.2.\n\nPerson & email address to contact for further information:  \n   Vladimir Levantovsky (vladimir.levantovsky&monotype.com).\n\nIntended usage:  COMMON\n\nRestrictions on usage:  None\n\nAuthor:  The ISO/IEC 14496-22 \"Open Font Format\" specification is a\n   product of the ISO/IEC JTC1 SC29/WG11.\n\nChange controller:  The ISO/IEC has change control over this\n   specification."
+  },
+  "references": []
+}

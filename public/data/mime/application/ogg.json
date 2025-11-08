@@ -1,0 +1,43 @@
+{
+  "type": "application",
+  "subtype": "ogg",
+  "full": "application/ogg",
+  "extensions": [
+    "ogx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/ogg",
+    "type_name": "application",
+    "subtype_name": "ogg",
+    "encoding_considerations": "Security considerations: See section 7 of RFC 5334.\n\nInteroperability considerations: None, as noted in section 8 of RFC\n5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Scientific and otherwise that\nrequire various multiplexed signals or streams of data, with or\nwithout scriptable control of content.",
+    "security_considerations": "Interoperability considerations: None, as noted in section 8 of RFC\n5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Scientific and otherwise that\nrequire various multiplexed signals or streams of data, with or\nwithout scriptable control of content.",
+    "interoperability_considerations": "5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Scientific and otherwise that\nrequire various multiplexed signals or streams of data, with or\nwithout scriptable control of content.",
+    "additional_information": "Magic number(s): The first four bytes, 0x4f 0x67 0x67 0x53,\ncorrespond to the string \"OggS\".\n\nFile extension(s): .ogx\n\n   RFC 3534 defined the file extension .ogg for application/ogg,\n   which RFC 5334 obsoletes in favor of .ogx due to concerns where,\n   historically, some implementations expect .ogg files to be solely\n   Vorbis-encoded audio.\n\nMacintosh File Type Code(s): OggX\n\nPerson & Email address to contact for further information: See\n\"Authors' Addresses\" section.\n\nIntended usage: COMMON\n\nRestrictions on usage: The type application/ogg SHOULD only be used\nin situations where it is not appropriate to serve data under the\nvideo/ogg or audio/ogg types.  Data served under the application/ogg\ntype SHOULD use the .ogx file extension and MUST contain an Ogg\nSkeleton logical bitstream to identify all other contained logical\nbitstreams.\n\nAuthor: See \"Authors' Addresses\" section.\n\nChange controller: The Xiph.Org Foundation.",
+    "intended_usage": "common",
+    "change_controller": "The Xiph.Org Foundation",
+    "template_text": "(RFC 5334 published September 2008, subtype last updated September 2008)\n\nType name: application\n\nSubtype name: ogg\n\nRequired parameters: none\n\nOptional parameters: codecs, whose syntax is defined in RFC 4281.\nSee section 4 of RFC 5334 for a list of allowed values.\n\nEncoding considerations: See section 6 of RFC 5334.\n\nSecurity considerations: See section 7 of RFC 5334.\n\nInteroperability considerations: None, as noted in section 8 of RFC\n5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Scientific and otherwise that\nrequire various multiplexed signals or streams of data, with or\nwithout scriptable control of content.\n\nAdditional information:\n\nMagic number(s): The first four bytes, 0x4f 0x67 0x67 0x53,\ncorrespond to the string \"OggS\".\n\nFile extension(s): .ogx\n\n   RFC 3534 defined the file extension .ogg for application/ogg,\n   which RFC 5334 obsoletes in favor of .ogx due to concerns where,\n   historically, some implementations expect .ogg files to be solely\n   Vorbis-encoded audio.\n\nMacintosh File Type Code(s): OggX\n\nPerson & Email address to contact for further information: See\n\"Authors' Addresses\" section.\n\nIntended usage: COMMON\n\nRestrictions on usage: The type application/ogg SHOULD only be used\nin situations where it is not appropriate to serve data under the\nvideo/ogg or audio/ogg types.  Data served under the application/ogg\ntype SHOULD use the .ogx file extension and MUST contain an Ogg\nSkeleton logical bitstream to identify all other contained logical\nbitstreams.\n\nAuthor: See \"Authors' Addresses\" section.\n\nChange controller: The Xiph.Org Foundation."
+  },
+  "references": []
+}

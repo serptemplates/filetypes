@@ -1,0 +1,36 @@
+{
+  "type": "video",
+  "subtype": "vnd.mpegurl",
+  "full": "video/vnd.mpegurl",
+  "extensions": [
+    "mxu",
+    "m4u"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/vnd.mpegurl",
+    "template_text": "\n(last updated 2002-06-24))\n\nName : Heiko Recktenwald\n\nE-mail : uzs106&uni-bonn.de\n\nMIME media type name : Video\n\nMIME subtype name : Vendor Tree - vnd.mpegurl\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations :\n\nThis media type consists of a series of URLs. URLs are textual in\nnature, however, they can be quite long and thus may need encoding in\nconjunction with transports that impose line length restrictions.\n\nSecurity considerations :\n\nIn order to use this media type the URLs it contains must be accessed.\nThis means that all security concerns that apply to URLs in general\nalso apply to this media type. See RFC 1738 for details.\n\nThe result of accessing the the URLs contained in this media type\nshould be one or more MPEG files. As such, the security considerations\nfor the video/mpeg type also apply to the use of this type.\n\nInteroperability considerations : \n\nThis MIME type can be used on all platforms, that can display MPEG\nVideo. \n\nPublished specification :\n\nThis media type consists of a series of URLs of MPEG Video files.\n \nSee also Guy van Belle et al.: Power and Responsibility, Conversations\nwith Contributors, LMJ 9 (1999), 127 - 133, 129 (MIT Press),\n\nSMIL (http://www.w3c.org/AudioVideo/).\n\nApplications which use this media :\n\nA shellscript like\n\n\n\t#!/bin/sh\n\tcat $1 | xargs -n 1 mtvp\n\n\nwith mtvp as the MPEG Video player. \n\nAdditional information :\n\n1. Magic number(s) :\n2. File extension(s) : .mxu or .m4u\n3. Macintosh file type code :\n\nPerson to contact for further information :\n\n1. Name : \n\nHeiko Recktenwald, Kurfuerstenstrasse 35, 53115 Bonn, Germany\n\n2. E-mail : uzs106&uni-bonn.de\n\nIntended usage : Common\n\nAuthor/Change controller : Heiko Recktenwald\n\nChange History\n--------------\n2002-06-24\nChanged File extension(s) from \n2. File extension(s) : .mxu and/or .m4u \nto\n2. File extension(s) : .mxu or .m4u\n\n(created 20 Nov 2000)\n\n[]\n\n\n\n"
+  },
+  "references": []
+}

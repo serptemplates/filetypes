@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.dvb.ipdcesgaccess",
+  "full": "application/vnd.dvb.ipdcesgaccess",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.dvb.ipdcesgaccess",
+    "template_text": "(Last updated 23 March 2006)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.dvb.ipdcesgaccess\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of\r\nhandling binary.\r\n\r\nSecurity considerations :\r\nDVB ESG Access Descriptors specify information for acquisition of\r\nESGs. This information is provided to signal the receiver how to\r\nconsume available ESG information. This ESG Access Descriptor\r\nshould not be trusted unless it has been obtained by an\r\nauthenticated transport protocol from a trusted source. Many\r\ndifferent transport protocols may be used to distribute ESG Access\r\nDescriptors, and the nature of the authentication will differ from\r\ntransport to transport.\r\n\r\nOne transport that will frequently be used to distribute ESG Access\r\nDescriptors is the FLUTE Protocol. FLUTE supports both encryption\r\nand authentication mechanisms but due to the nature of the\r\ncommunication of ESG Access Descriptors it is likely that there are\r\nmany occasions where the originator of a ESG Access Descriptor\r\ncannot be authenticated because they are previously unknown to the\r\nreceiver of the descriptor and also because no common public key\r\ninfrastructure is available.\r\n\r\nOn receiving an ESG Access Descriptor over an unauthenticated\r\ntransport mechanism or from an untrusted party, software parsing\r\nthe described session should take a few precautions. An ESG Access\r\nDescriptor contains information required to start software on the\r\nreceivers system. Software that parses an ESG Access Descriptor\r\nMUST NOT be able to start other software except that which is\r\nspecifically configured as appropriate software to consume DVB IPDC\r\nESGs.\r\n\r\nThe ESG Access Descriptor specified in ETSI 102 471 does not contain\r\nexecutable code.\r\n\r\nInteroperability considerations :\r\nnone\r\n\r\nPublished specification :\r\nThis MIME type is described fully in ETSI 102 471 IP Datacastover DVB-\r\nH: Electronic Service Guide (ESG).\r\n\r\nApplications which use this media :\r\nThis media type is used by ESG Applications to discover and acquire\r\nESGs available over DVB-H.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : none\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Joerg Heuer\r\n2. Email : Joerg.Heuer&siemens.com\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : Joerg Heuer\r\nSiemens AG\r\n81730 Muenchen\r\nGermany\r\n\r\n(File created 23 March 2006)"
+  },
+  "references": []
+}

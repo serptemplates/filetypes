@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "prs.plucker",
+  "full": "application/prs.plucker",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/prs.plucker",
+    "template_text": "MIME media type name : Application\r\n\r\nMIME subtype name : Personal Tree - prs.plucker\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nThis format contains static data.  There are no known security issues with the format.\r\n\r\nInteroperability considerations : \r\nThe format is open and published.  The only widely available viewer for the format runs \r\non PalmOS, but additional viewers for other platforms are in development.\r\n\r\nPublished specification : \r\nhttp://www.plkr.org/index.pl/cvs/docs/DBFormat.html?rev=HEAD\r\n\r\nApplications which use this media : \r\nPlucker viewers and parsers display and create documents in this format \r\n(see http://www.plkr.org/).\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : 60\tstring\t\tDataPlkr\tPlucker document\r\n2. File extension(s) : N/A\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n\r\nThe Plucker document format supports a single-file multi-page (in the\r\nWeb sense of 'page') hyperlinked information structure containing both\r\n'rich' text and images. Links must be internal to the document, though\r\nexternal links, in standard URL form, may be included and displayed,\r\nbut not followed. Images may either be embedded in a text page, as\r\nwith HTML, or be included as separate stand-alone pages.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Bill Janssen\r\n2. Email : bill&janssen.org\r\n\r\nIntended usage : Common \r\n\r\nAuthor/Change controller : Bill Janssen <bill&janssen.org>         \r\n\r\n(created 2002-24-02)\r\n\r\n[]"
+  },
+  "references": []
+}

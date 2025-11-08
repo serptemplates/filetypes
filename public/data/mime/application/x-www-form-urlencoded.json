@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "x-www-form-urlencoded",
+  "full": "application/x-www-form-urlencoded",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/x-www-form-urlencoded",
+    "security_considerations": "In isolation, an application/x-www-form-urlencoded payload poses no security risks. However, as this type is usually used as part of a form submission, all the risks that apply to HTML forms need to be considered in the context of this type.\n\nThese risks fall into multiple categories that pertain to the same-origin policy and cross-origin reach of HTML forms, general HTML application threats\n(https://html.spec.whatwg.org/#writing-secure-applications-with-html),\nand not relying on client-side validation for anything other than user\nfeedback (https://html.spec.whatwg.org/#security-forms).",
+    "interoperability_considerations": "Rules for generating and processing application/x-www-form-urlencoded payloads are defined in the URL Standard.",
+    "additional_information": "1. Deprecated alias names for this type: Not applicable\n2. Magic number(s): There is no reliable mechanism for recognising such payloads\n3. File extension(s): Not applicable\n4. Macintosh file type code: Not applicable\n5. Object Identifiers: Not applicable",
+    "intended_usage": "common",
+    "template_text": "(registered 2014-05-14, updated 2014-05-14, updated 2020-07-14)\n\n\nName: Anne van Kesteren\nEmail: annevk&annevk.nl\n\nMedia type name: application\nMedia subtype name: x-www-form-urlencoded\n\nRequired parameters: No parameters\n\nOptional parameters:\nNo parameters\n\nEncoding considerations: 7bit\n\n\nSecurity considerations:\nIn isolation, an application/x-www-form-urlencoded payload poses no security risks. However, as this type is usually used as part of a form submission, all the risks that apply to HTML forms need to be considered in the context of this type.\n\nThese risks fall into multiple categories that pertain to the same-origin policy and cross-origin reach of HTML forms, general HTML application threats\n(https://html.spec.whatwg.org/#writing-secure-applications-with-html),\nand not relying on client-side validation for anything other than user\nfeedback (https://html.spec.whatwg.org/#security-forms).\n\nInteroperability considerations:\nRules for generating and processing application/x-www-form-urlencoded payloads are defined in the URL Standard.\n\nPublished specification:\nhttps://url.spec.whatwg.org/#application/x-www-form-urlencoded\n\nApplications which use this media:\nWeb browsers and servers.\n\nFragment identifier considerations:\nFragment identifiers have no meaning with the application/x-www-form-urlencoded type.\n\nRestrictions on usage:\nThis type is only intended to be used to describe HTML form submission payloads.\n\nProvisional registration? (standards tree only):\nNo.\n\nAdditional information:\n\n1. Deprecated alias names for this type: Not applicable\n2. Magic number(s): There is no reliable mechanism for recognising such payloads\n3. File extension(s): Not applicable\n4. Macintosh file type code: Not applicable\n5. Object Identifiers: Not applicable\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Anne van Kesteren\n2. Email: annevk&annevk.nl\n\nIntended usage: Common\nIt is the default web form submission format and therefore in widespread usage.\n\nAuthor/Change controller: WHATWG\n"
+  },
+  "references": []
+}

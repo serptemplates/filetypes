@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.cups-postscript",
+  "full": "application/vnd.cups-postscript",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cups-postscript",
+    "template_text": "\n\nFrom web-usrn&ISI.EDU  Tue May 18 08:07:15 1999\nDate: Tue, 18 May 1999 08:07:10 -0700 (PDT)\nFrom: Michael Sweet <mike&easysw.com>\nTo: iana&iana.org, mike&easysw.com\nReply-To: mike&easysw.com\nSender: mike&easysw.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.cups-postscript\n\n\nName : Michael Sweet\n\nE-mail : mike&easysw.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.cups-postscript\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations :\n\nPostScript data of this format must consist only of characters in the\nASCII character set. 8-bit or \"binary\" data is not acceptable due to\nthe poor support over parallel and serial interfaces.  In addition,\nPostScript files tagged with this format MUST conform to the Adobe\nDocument Structuring Conventions, Version 3.0.\n\nSecurity considerations :\n\nSee RFC 2046, section 4.5.2.\n\nAlso see the encoding considerations for additional restrictions on\nthe accepted PostScript data.\n\nInteroperability considerations :\n\nUsed by the Common UNIX Printing System (\"CUPS\").  May be used by CUPS\nor Internet Printing Protocol (\"IPP\") clients to send printer-specific\nPostScript files to a server.\n\n\nPublished specification :\nCUPS-IDD-1.0: Common UNIX Printing System Interface Design\nDescription.\n\nAvailable at \"http://www.cups.org/documentation.html\".\n\n\nApplications which use this media :\n\nCommon UNIX Printing System (\"CUPS\") servers and clients.\nInternet Printing Protocol (\"IPP\") clients.\n\n\n\nAdditional information :\n\n1. Magic number(s) :\n2. File extension(s) :\n3. Macintosh file type code :\nThis format is provided primarily to tell the CUPS/IPP server that the\nPostScript file contains printer-specific configuration commands and\nthat it conforms to the encoding considerations outlined above.\n\nThis format is required to support some types of clients running from\nMicrosoft Windows as well.\n\nPerson to contact for further information :\n\n1. Name : Michael Sweet\n2. E-mail : mike&easysw.com\n\nIntended usage : Limited Use\n\n\nAuthor/Change controller : Michael Sweet\nEasy Software Products\n44141 Airport View Drive Suite 204\nHollywood, Maryland 20636-3111 USA\n+1.301.373.9600\n\n\n\n"
+  },
+  "references": []
+}

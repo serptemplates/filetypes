@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.ecowin.seriesupdate",
+  "full": "application/vnd.ecowin.seriesupdate",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ecowin.seriesupdate",
+    "security_considerations": "or macros. It contains updates of a set of time series and is returned\nin the response of an HTTP POST request with data of type\nvnd.ecowin.seriesrequest.",
+    "interoperability_considerations": "Published specification: Not available.\nApplications which use this media type: EcoWin",
+    "additional_information": "1. Magic number(s) :\n2. File extension(s) :\nMacintosh File Type Code(s) :",
+    "template_text": "\n\nFrom: Thomas Olsson <thomas&vinga.se>\nTo: \"'iana&isi.edu'\" <iana&ISI.EDU>\nSubject: Registration of media types vnd.ecowin.chart, vnd.ecowin.series, \n\tvnd.ecowin.filerequest, vnd.ecowin.fileupdate, vnd.ecowin.seriesrequest, \n\tvnd.ecowin.seriesupdate\nDate: Thu, 19 Mar 1998 18:19:59 +0100\n\nMIME media type name : Application\nMIME subtype name : Series update - vnd.ecowin.seriesupdate\nRequired parameters : None.\nOptional parameters : VERSION\nEncoding considerations : EcoWin series updates are binary\nSecurity considerations: This type does not contain any executable code\nor macros. It contains updates of a set of time series and is returned\nin the response of an HTTP POST request with data of type\nvnd.ecowin.seriesrequest.\nInteroperability considerations:\nPublished specification: Not available.\nApplications which use this media type: EcoWin\nAdditional information:\n1. Magic number(s) :\n2. File extension(s) :\nMacintosh File Type Code(s) :\nPerson & email address to contact for further information : \nName : Thomas Olsson\nE-mail : thomas&vinga.se\nIntended Usage : Limited Use\n\n---\nThomas Olsson   | mailto:thomas&vinga.se     | http://www.vinga.se\nVinga System AB | SNAIL: Forsta Langgatan 30 | Ph. +46 31 428270\nSweden          | 413 27  Gothenburg, Sweden | Fax +46 31 428275\n\n\n\n\n"
+  },
+  "references": []
+}

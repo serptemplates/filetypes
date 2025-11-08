@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.api+json",
+  "full": "application/vnd.api+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.api+json",
+    "template_text": "(registered 2013-07-21, last updated 2013-07-21)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.api+json\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : 8bit\n\nSecurity considerations :\nJSON API shares security issues common to all JSON content types. It\ndoes not provide executable content. Information contained in JSON API\ndocuments do not require privacy or integrity services.\n\nIf a client is storing information that is potentially sensitive,\nsome sort of security is recommended. TLS, and specifically HTTPS, are\nthe recommended way to protect potentially sensitive information.\n\nInteroperability considerations :\n\n\nPublished specification :\nhttp://jsonapi.org/\n\nApplications which use this media : Various\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .json\n3. Macintosh file type code : TEXT\n4. Object Identifiers: none\n\nThis format is currently being used by the Ember Data library to\nconsume JSON, and the ActiveModel::Serializer library for Ruby on\nRails to produce.\n\nPerson to contact for further information :\n\n1. Name : Steve Klabnik\n2. Email : steve&steveklabnik.com\n\nIntended usage : Common\nThe API+JSON media type is for interoperability between different APIs\nthat serve JSON.\n\nIt was created with consideration from \"thick JavaScript\" clients and\ntheir needs, but is not specific to them.\n\nAuthor/Change controller : Steve Klabnik"
+  },
+  "references": []
+}

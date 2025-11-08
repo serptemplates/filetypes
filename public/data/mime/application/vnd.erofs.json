@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.erofs",
+  "full": "application/vnd.erofs",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.erofs",
+    "encoding_considerations": "Security considerations: EROFS images can be mounted as a generic file system, for example, on Linux. They may contain arbitrary contents, including but not limited to executable contents. Unless the source is trusted, the usual protection against malware and viruses should be applied.\n\nTo protect the privacy and integrity of the data, it is recommended that EROFS images based on this media type be exchanged over TLS. If the users do not trust the contents of the EROFS images, they should carefully check the contents before using them (e.g. check the hash values by using a cryptographic hash function).\n\nThe EROFS image may contain compressed data, thus the data in usable form could represent many times the data volume, and thus consume significantly more resources than might be assumed based on size of the original EROFS image.\n\nExtracting an EROFS image could possible overwrite existing files. Care should be taken that files are extracted into an empty directory, not at the root level.\n\nInteroperability considerations: EROFS images can be mounted on Linux directly. For other operating systems, it's recommended to use erofs-utils (https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/) or other compatible tools (like Composefs or Dragonfly Nydus) to parse EROFS images.\n\nPublished specification: While not a precise specification, there are\nhttps://docs.kernel.org/filesystems/erofs.html\nhttps://erofs.docs.kernel.org/en/latest/core_ondisk.html\n\nApplications which use this media: Android system firmware; Archiso; Composefs; Dragonfly Nydus; gVisor; Kata Containers; Linglong\n\nFor more recent applications, visit:\nhttps://erofs.docs.kernel.org\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "security_considerations": "To protect the privacy and integrity of the data, it is recommended that EROFS images based on this media type be exchanged over TLS. If the users do not trust the contents of the EROFS images, they should carefully check the contents before using them (e.g. check the hash values by using a cryptographic hash function).\n\nThe EROFS image may contain compressed data, thus the data in usable form could represent many times the data volume, and thus consume significantly more resources than might be assumed based on size of the original EROFS image.\n\nExtracting an EROFS image could possible overwrite existing files. Care should be taken that files are extracted into an empty directory, not at the root level.\n\nInteroperability considerations: EROFS images can be mounted on Linux directly. For other operating systems, it's recommended to use erofs-utils (https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/) or other compatible tools (like Composefs or Dragonfly Nydus) to parse EROFS images.\n\nPublished specification: While not a precise specification, there are\nhttps://docs.kernel.org/filesystems/erofs.html\nhttps://erofs.docs.kernel.org/en/latest/core_ondisk.html\n\nApplications which use this media: Android system firmware; Archiso; Composefs; Dragonfly Nydus; gVisor; Kata Containers; Linglong\n\nFor more recent applications, visit:\nhttps://erofs.docs.kernel.org\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "Published specification: While not a precise specification, there are\nhttps://docs.kernel.org/filesystems/erofs.html\nhttps://erofs.docs.kernel.org/en/latest/core_ondisk.html\n\nApplications which use this media: Android system firmware; Archiso; Composefs; Dragonfly Nydus; gVisor; Kata Containers; Linglong\n\nFor more recent applications, visit:\nhttps://erofs.docs.kernel.org\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): 4 bytes, little-endian format. Value: 0xE0F5E1E2\n3. File extension(s): *.erofs; *.0fs\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2024-01-02, last updated 2024-01-02)\n\nMedia type name: application\n\nMedia subtype name: vnd.erofs\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: EROFS images can be mounted as a generic file system, for example, on Linux. They may contain arbitrary contents, including but not limited to executable contents. Unless the source is trusted, the usual protection against malware and viruses should be applied.\n\nTo protect the privacy and integrity of the data, it is recommended that EROFS images based on this media type be exchanged over TLS. If the users do not trust the contents of the EROFS images, they should carefully check the contents before using them (e.g. check the hash values by using a cryptographic hash function).\n\nThe EROFS image may contain compressed data, thus the data in usable form could represent many times the data volume, and thus consume significantly more resources than might be assumed based on size of the original EROFS image.\n\nExtracting an EROFS image could possible overwrite existing files. Care should be taken that files are extracted into an empty directory, not at the root level.\n\nInteroperability considerations: EROFS images can be mounted on Linux directly. For other operating systems, it's recommended to use erofs-utils (https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/) or other compatible tools (like Composefs or Dragonfly Nydus) to parse EROFS images.\n\nPublished specification: While not a precise specification, there are\nhttps://docs.kernel.org/filesystems/erofs.html\nhttps://erofs.docs.kernel.org/en/latest/core_ondisk.html\n\nApplications which use this media: Android system firmware; Archiso; Composefs; Dragonfly Nydus; gVisor; Kata Containers; Linglong\n\nFor more recent applications, visit:\nhttps://erofs.docs.kernel.org\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): 4 bytes, little-endian format. Value: 0xE0F5E1E2\n3. File extension(s): *.erofs; *.0fs\n4. Macintosh file type code: N/A\n5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n1. Name: Xiang Gao\n2. Email: xiang&kernel.org\n\nIntended usage: COMMON\n\nAuthor/Change controller: Contact Xiang Gao."
+  },
+  "references": []
+}

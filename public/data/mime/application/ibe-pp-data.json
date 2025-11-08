@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "ibe-pp-data",
+  "full": "application/ibe-pp-data",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/ibe-pp-data",
+    "encoding_considerations": "(US-ASCII text [ASCII]).\n\nSecurity considerations: The data conveyed as this media type are the\n   public parameters needed for the operation of a cryptographic\n   system.  To ensure that the parameters can be trusted, the request\n   for these parameters must take place over a secure protocol, such\n   as TLS 1.2 or its successors.  To ensure the validity of the\n   server, the client MUST verify the server certificate and MUST\n   abort the parameter request if the verification of the server\n   certificate of the TLS connection fails.  This media type contains\n   no active content and does not use compression.\n\nInteroperability considerations: There are no known interoperability\n   considerations for this media type.\n\nApplications that use this media type: Applications that implement\n   IBE in compliance with this specification will use this media\n   type.  The most commonly used of these applications are encrypted\n   email and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\n   martin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "security_considerations": "public parameters needed for the operation of a cryptographic\n   system.  To ensure that the parameters can be trusted, the request\n   for these parameters must take place over a secure protocol, such\n   as TLS 1.2 or its successors.  To ensure the validity of the\n   server, the client MUST verify the server certificate and MUST\n   abort the parameter request if the verification of the server\n   certificate of the TLS connection fails.  This media type contains\n   no active content and does not use compression.\n\nInteroperability considerations: There are no known interoperability\n   considerations for this media type.\n\nApplications that use this media type: Applications that implement\n   IBE in compliance with this specification will use this media\n   type.  The most commonly used of these applications are encrypted\n   email and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\n   martin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "interoperability_considerations": "considerations for this media type.\n\nApplications that use this media type: Applications that implement\n   IBE in compliance with this specification will use this media\n   type.  The most commonly used of these applications are encrypted\n   email and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\n   martin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "applications": "IBE in compliance with this specification will use this media\n   type.  The most commonly used of these applications are encrypted\n   email and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\n   martin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "additional_information": "Person and email address for further information: Luther Martin,\n   martin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.",
+    "intended_usage": "common",
+    "template_text": "(RFC 5408 published January 2009, subtype last updated January 2009)\n\nMIME media type name: application\n\nMIME subtype name: ibe-pp-data\n\nMandatory parameters: none\n\nOptional parameters: none\n\nEncoding considerations: This media type MUST be encoded as 7-bit\n   (US-ASCII text [ASCII]).\n\nSecurity considerations: The data conveyed as this media type are the\n   public parameters needed for the operation of a cryptographic\n   system.  To ensure that the parameters can be trusted, the request\n   for these parameters must take place over a secure protocol, such\n   as TLS 1.2 or its successors.  To ensure the validity of the\n   server, the client MUST verify the server certificate and MUST\n   abort the parameter request if the verification of the server\n   certificate of the TLS connection fails.  This media type contains\n   no active content and does not use compression.\n\nInteroperability considerations: There are no known interoperability\n   considerations for this media type.\n\nApplications that use this media type: Applications that implement\n   IBE in compliance with this specification will use this media\n   type.  The most commonly used of these applications are encrypted\n   email and file encryption.\n\nAdditional information: none\n\nPerson and email address for further information: Luther Martin,\n   martin&voltage.com.\n\nIntended usage: COMMON\n\nAuthor/Change controller: Luther Martin, martin&voltage.com.\n\n\n\n"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.openblox.game+xml",
+  "full": "application/vnd.openblox.game+xml",
+  "extensions": [
+    "obgx"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.openblox.game+xml",
+    "template_text": "(registered 2015-08-18, last updated 2015-08-18)\n\nName : Mark Otaris\n\nEmail : mark.otaris&openmailbox.org\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.openblox.game+xml\n\nRequired parameters : N/A\n\nOptional parameters : \nN/A\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nFiles using this media type can contain active content that will be executed when they are used. The specific capabilities of this executable code depend on the context and on the application used, but there is no system in place intended to prevent execution of untrusted code.\n\nIn order to preserve the user from harm, applications using this media type must make sure that the active content in untrusted files is not capable of arbitrarily manipulating the system it executes on and that they do not disclose information that may make a subsequent attack easier or violate the user's privacy.\n\nSince this active content will usually be used on a system with a filesystem, this will generally mean making sure there is no way for the active content to get access to parts of the filesystem that do not contain resources necessary for the use of this active content, usually files in a resources folder. The media type does not provide this protection, since the interface used to access the host system is not dependent on the way the game objects are encoded, or on the interface used to manipulate them.\n\nFiles using this media type do not need to be transmitted over a network by implementations of the media type, since communication between game clients and game servers is done using streams containing binary data that is not necessarily equivalent to the binary format. For this reason, the applications using this media type do not need to care for the integrity of the files. However, when these files are transmitted over a network for storage, backup or other purposes using other means, care should be taken to use secure transport protocols in order to guarantee the integrity of the files.\n\nInteroperability considerations : \nThe only interoperability issue with this media type is the lack of a published specification. This will be remedied when time allows.\n\nPublished specification : \nThere is no published specification for this media type at the moment.\n\nApplications which use this media : \nThis media type is used by OpenBlox Studio and the OpenBlox game engine.\n\nFragment identifier considerations :\nN/A\n\nRestrictions on usage :\nNo restrictions on usage of this media type arise from patented technology or intellectual property rights.\n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : N/A\n3. File extension(s) : obgx\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Mark Otaris\n2. Email : mark.otaris&openmailbox.org\n\nIntended usage : Common\nThis media type is intended for usage with the OpenBlox game engine and applications that use or modify files for this game engine.\n\nAuthor/Change controller : Mark Otaris <mark.otaris&openmailbox.org>\nJohn M Harris, Jr. <jharris&johnmh.me>"
+  },
+  "references": []
+}

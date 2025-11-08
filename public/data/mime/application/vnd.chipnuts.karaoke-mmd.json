@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.chipnuts.karaoke-mmd",
+  "full": "application/vnd.chipnuts.karaoke-mmd",
+  "extensions": [
+    "mmd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.chipnuts.karaoke-mmd",
+    "template_text": "(Last updated 27 June 2006)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.chipnuts.karaoke-mmd\r\n\r\nRequired parameters : none\r\n\r\nOptional parameters : none\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\n1. in this media type, there is no any active or executable \r\ncontent, it only contains data of multimedia content itself and head \r\ninformation.\r\n2. the information contained in the media type does not need privacy or integrity services.\r\n3. since part of content( e.g. compressed MIDI) in this type of media is encripted and only can \r\nbe descripted by hardware IP in our company's SoC product.any it is market proven (millions\r\nIC has been integrated into handset). so it is assessed and market approved.\r\n\r\nInteroperability considerations : \r\nNone\r\n\r\nPublished specification : \r\nThis content type is a combined binary file format where audio, video, lyric information \r\nis included in. Audio data is encapsulated by certain algorithm and could only be decoded \r\nby Chipnuts multimedia chipsets. Unicode is used for lyric information\r\n\r\nApplications which use this media : \r\nThis content type is used for enabling karaoke function in those mobile handsets where Chipnuts multimedia chipset is built in\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : none\r\n2. File extension(s) : mmd\r\n3. Macintosh file type code : none\r\n4. Object Identifiers: none\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Xiong, Chunyun\r\n2. Email : frankxiong&chipnuts.com\r\n\r\nIntended usage : Common \r\n\r\nAuthor/Change controller : \r\n\r\n(file created 27 June 2006)\r\n"
+  },
+  "references": []
+}

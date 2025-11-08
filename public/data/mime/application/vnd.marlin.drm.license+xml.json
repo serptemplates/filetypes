@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.marlin.drm.license+xml",
+  "full": "application/vnd.marlin.drm.license+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.marlin.drm.license+xml",
+    "template_text": "(last updated 2008-07-23)\n\nName : Gary Ellison\n\nEmail : gary.ellison&intertrust.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.marlin.drm.license+xml\n\nRequired parameters : None\n\nOptional parameters :\nSame as charset parameter of application/xml as specified in RFC 3023.\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nSee Section 13, and Section 10 of RFC 3023.\nThe media type does not contain executable content.\nThe media type does not contain any private information.\nIf integrity protections are needed they apply to individual\nelements and are self protected (e.g. X.509 Certificates.)\n\nInteroperability considerations :\nIn addition to processing the media that is signaled by thie MIME\ntype, implementations must also signal and recognize the namespace\nof the schema.\n\nPublished specification :\nhttp://www.marlin-community.com/\n\nApplications which use this media :\nClient/Server implementations engaging in media orchestration.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : None\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Gary Ellison\n2. Email : gary.ellison&intertrust.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : Marlin Developer Community,\n415-112 North Mary Avenue #383\nSunnyvale, CA 94085, USA.\nhttp://www.marlin-community.com/\neditor&marlin-community.com\n\n\n(file created 2008-07-23)"
+  },
+  "references": []
+}

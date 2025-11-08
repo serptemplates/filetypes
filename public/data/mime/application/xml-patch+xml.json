@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "xml-patch+xml",
+  "full": "application/xml-patch+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/xml-patch+xml",
+    "type_name": "application",
+    "subtype_name": "xml-patch+xml",
+    "encoding_considerations": "type \"application/xml\" as specified in RFC 7303 [RFC7303].\n\nSecurity considerations: This media type has all of the security\nconsiderations described in RFC 7303 [RFC7303], RFC 5261\n[RFC5261], and RFC 3470 [RFC3470], plus those listed in Section 4.\n\nInteroperability considerations: N/A\n\nPublished specification: RFC 7351\n\nApplications that use this media type: Applications that\nmanipulate XML documents.",
+    "security_considerations": "considerations described in RFC 7303 [RFC7303], RFC 5261\n[RFC5261], and RFC 3470 [RFC3470], plus those listed in Section 4.\n\nInteroperability considerations: N/A\n\nPublished specification: RFC 7351\n\nApplications that use this media type: Applications that\nmanipulate XML documents.",
+    "interoperability_considerations": "Published specification: RFC 7351\n\nApplications that use this media type: Applications that\nmanipulate XML documents.",
+    "applications": "manipulate XML documents.",
+    "additional_information": "Magic number(s): N/A\n\n         File extension(s): XML documents often use \".xml\" as the file\n         extension, and this media type does not propose a specific\n         extension other than this generic one.\n\n         Macintosh file type code(s): TEXT\n\nPerson & email address to contact for further information: Erik\nWilde <dret&berkeley.edu>\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: Erik Wilde <dret&berkeley.edu>\n\nChange controller: IETF",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "(registered 2014-07-03 through RFC7351, last updated 2014-07-03)\n\nType name: application\n\nSubtype name: xml-patch+xml\n\nRequired parameters: none\n\nOptional parameters:\n\n         charset: Same as charset parameter for the media type\n         \"application/xml\" as specified in RFC 7303 [RFC7303].\n\nEncoding considerations: Same as encoding considerations of media\ntype \"application/xml\" as specified in RFC 7303 [RFC7303].\n\nSecurity considerations: This media type has all of the security\nconsiderations described in RFC 7303 [RFC7303], RFC 5261\n[RFC5261], and RFC 3470 [RFC3470], plus those listed in Section 4.\n\nInteroperability considerations: N/A\n\nPublished specification: RFC 7351\n\nApplications that use this media type: Applications that\nmanipulate XML documents.\n\nAdditional information:\n\n         Magic number(s): N/A\n\n         File extension(s): XML documents often use \".xml\" as the file\n         extension, and this media type does not propose a specific\n         extension other than this generic one.\n\n         Macintosh file type code(s): TEXT\n\nPerson & email address to contact for further information: Erik\nWilde <dret&berkeley.edu>\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: Erik Wilde <dret&berkeley.edu>\n\nChange controller: IETF\n"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.cendio.thinlinc.clientconf",
+  "full": "application/vnd.cendio.thinlinc.clientconf",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cendio.thinlinc.clientconf",
+    "template_text": "(last updated 2007-06-12)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.cendio.thinlinc.clientconf\n\nRequired parameters : None.\n\nOptional parameters : None.\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of\nhandling 8 bit text.\n\nSecurity considerations :\nThe configuration file does not contain any executable code or\nmacros. It can however contain login credentials. Implementations\nshould avoid storing the data on disk longer than necessary and should\nmake sure that the data is handled with care. During transfer, both\nintegrity and confidentiality protection should be used. The\nTransport Layer Security (TLS) protocol is recommended.\n\nInteroperability considerations :\nConfiguration files for the ThinLinc Client can use either CR or CRLF\nline breaks. Implementations should accept both variants. The transport\ndoes not need to preserve the line break style.\n\nPublished specification :\nA full specification is not available at this time. The file format\nand allowed configuration parameters are however documented in the\nThinLinc Administrator's Guide, available from\nhttp://www.cendio.com/support/tag.\n\n\nApplications which use this media :\nThe ThinLinc Client.\n\nAdditional information :\n\n1. Magic number(s) : -\n2. File extension(s) : tlclient\n3. Macintosh file type code : -\n4. Object Identifiers: -\n\nThis type allows for integration between web portals and ThinLinc. The\nweb server can generate a file with this type in response when the\nuser wants to connect to a published desktop or application. This file\ninstructs the ThinLinc Client how to establish the connection.\n\n\nPerson to contact for further information :\n\n1. Name : Peter Åstrand\n2. Email : astrand&cendio.se\n\nIntended usage : Limited Use\nThis type is intended for the ThinLinc system and compatible clients.\n\nAuthor/Change controller : Cendio AB\nWallenbergs gata 4\nSE 583 30 Linköping\nSweden\n\n\n(file created 2007-06-12)"
+  },
+  "references": []
+}

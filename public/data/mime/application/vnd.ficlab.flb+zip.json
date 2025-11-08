@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.ficlab.flb+zip",
+  "full": "application/vnd.ficlab.flb+zip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ficlab.flb+zip",
+    "encoding_considerations": "Security considerations: There are no currently known security issues\n   with the format itself, however this type does encapsulate some \n   other types (application/json, image/svg, image/png, image/jpeg), \n   and thus inherits any security concerns that may apply to those \n   types.\n\n   This type may not contain any active or dynamic content.\n\n   A thorough assessment of security issues has not been done.\n\n   This type is zip-encapsulated, and allows any standard \n   zip-compatible compression method. As such, it inherits any \n   security considerations which may apply to zip encapsulation and \n   compression. The file is also prefixed with a fixed-length \n   identification header, not part of the zip container - this is \n   described in the 'interoperability' section below.\n\n   The integrity of the encapsulated contents is guaranteed via a \n   signed manifest, but there is no mechanism to provide \n   confidentiality. If confidentiality is required, it must be \n   handled externally.\n\nInteroperability considerations: A magic number of 0x4649434c414201 \n   is always present at the beginning of the file, prior to the start\n   of the zip container. The last byte of that is a version number, \n   used to distinguish any potential future types derived from this \n   one. Additionally, the first file in the zip container is always a\n   plain text file at the root of the zip named 'mimetype', \n   containing only the name of this media type (i.e. \n   application/vnd.ficlab.flb+zip).\n\nPublished specification: There is no publicly available specification.",
+    "security_considerations": "with the format itself, however this type does encapsulate some \n   other types (application/json, image/svg, image/png, image/jpeg), \n   and thus inherits any security concerns that may apply to those \n   types.\n\n   This type may not contain any active or dynamic content.\n\n   A thorough assessment of security issues has not been done.\n\n   This type is zip-encapsulated, and allows any standard \n   zip-compatible compression method. As such, it inherits any \n   security considerations which may apply to zip encapsulation and \n   compression. The file is also prefixed with a fixed-length \n   identification header, not part of the zip container - this is \n   described in the 'interoperability' section below.\n\n   The integrity of the encapsulated contents is guaranteed via a \n   signed manifest, but there is no mechanism to provide \n   confidentiality. If confidentiality is required, it must be \n   handled externally.\n\nInteroperability considerations: A magic number of 0x4649434c414201 \n   is always present at the beginning of the file, prior to the start\n   of the zip container. The last byte of that is a version number, \n   used to distinguish any potential future types derived from this \n   one. Additionally, the first file in the zip container is always a\n   plain text file at the root of the zip named 'mimetype', \n   containing only the name of this media type (i.e. \n   application/vnd.ficlab.flb+zip).\n\nPublished specification: There is no publicly available specification.",
+    "interoperability_considerations": "is always present at the beginning of the file, prior to the start\n   of the zip container. The last byte of that is a version number, \n   used to distinguish any potential future types derived from this \n   one. Additionally, the first file in the zip container is always a\n   plain text file at the root of the zip named 'mimetype', \n   containing only the name of this media type (i.e. \n   application/vnd.ficlab.flb+zip).\n\nPublished specification: There is no publicly available specification.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 0x4649434c414201 (0 byte offset)\n   3. File extension(s): flb\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2019-09-25, last updated 2019-09-25)\n\nMedia type name: application\n\nMedia subtype name: vnd.ficlab.flb+zip\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: There are no currently known security issues\n   with the format itself, however this type does encapsulate some \n   other types (application/json, image/svg, image/png, image/jpeg), \n   and thus inherits any security concerns that may apply to those \n   types.\n\n   This type may not contain any active or dynamic content.\n\n   A thorough assessment of security issues has not been done.\n\n   This type is zip-encapsulated, and allows any standard \n   zip-compatible compression method. As such, it inherits any \n   security considerations which may apply to zip encapsulation and \n   compression. The file is also prefixed with a fixed-length \n   identification header, not part of the zip container - this is \n   described in the 'interoperability' section below.\n\n   The integrity of the encapsulated contents is guaranteed via a \n   signed manifest, but there is no mechanism to provide \n   confidentiality. If confidentiality is required, it must be \n   handled externally.\n\nInteroperability considerations: A magic number of 0x4649434c414201 \n   is always present at the beginning of the file, prior to the start\n   of the zip container. The last byte of that is a version number, \n   used to distinguish any potential future types derived from this \n   one. Additionally, the first file in the zip container is always a\n   plain text file at the root of the zip named 'mimetype', \n   containing only the name of this media type (i.e. \n   application/vnd.ficlab.flb+zip).\n\nPublished specification: There is no publicly available specification.\n\nApplications which use this media:\n   FicLab >= v0.6.0 (ebook creation software)\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: This type is intended for use with vendor \n   software only (FicLab). Interoperability with other software is \n   not currently intended.\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 0x4649434c414201 (0 byte offset)\n   3. File extension(s): flb\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: Steve Gilberd\n   2. Email: steve&erayd.net\n\nIntended usage: Limited Use\n   This type is intended for use with vendor software only (FicLab). \n   Interoperability with other software is not currently intended.\n\nAuthor/Change controller: Steve Gilberd <steve&erayd.net>"
+  },
+  "references": []
+}

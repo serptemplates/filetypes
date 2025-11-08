@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.koan",
+  "full": "application/vnd.koan",
+  "extensions": [
+    "skp",
+    "skd",
+    "skt",
+    "skm"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.koan",
+    "template_text": "\n\nDate: Sat, 24 Feb 1996 13:34:34 GMT\nFrom: Peter Cole <pcole&sseyod.demon.co.uk>\nSubject: New MIME Subtype application/x-koan\n\n                                                               Pete Cole\n                                                           SSEYO Limited\n                                                           February 1996\n                  A New MIME Subtype application/x-koan\n\nStatus of this Memo\n\n   This memo proposes a new MIME Subtype (application/x-koan) for the\n   Internet community.  Hosts on the Internet are expected to adopt\n   and implement this new MIME Subtype standard.\n\n   This memo is being distributed to members of the Internet\n   community in order to solicit their reactions to the\n   proposals contained in it.  While the issues discussed may\n   not be directly relevant to the research problems of the\n   Internet, they may be interesting to a number of researchers\n   and implementers.\n\n   The information contained in this document is accurate as of the\n   date of publication, but is subject to change.  Subsequent memos\n   will reflect such changes.  Distribution of this memo is unlimited.\n\n1.  Specification\n\n   This memo specifies a new binary MIME Subtype for the Internet\n   community.  This MIME Subype is x-koan, and is for the existing MIME\n   type of application.  It is to have the following four file\n   extensions: .skp, .skd, .skm, .skt.\n\n2.  Discussion\n\n   The purpose of this memo is to propose a new MIME Subtype\n   (application/x-koan), to be used for the distribution of SSEYO Koan\n   files over the Internet.\n\n   This new MIME Subtype is necessary for the automatic playback of\n   Koan music files over the Internet, by World Wide Web browers, through\n   such helper applications as SSEYO Koan Web, SSEYO Koan Plus and the\n   SSEYO Netscape Plugin.\n\n   It is necessary to define a new subtype, because the (binary) file\n   format is unique to the SSEYO Koan Music Engine (SKME - pronounced\n   SCHEME or SKEEM).\n\n   Koan files are very small.  A file of less than 1000 bytes in size can\n   play non-repeating, melodious music for more than 8 hours.  This is\n   expected to be of not inconsiderable benefit to the Internet community,\n   in helping to reduce Net traffic.\n\n   All pieces of the proposed MIME Subtype application/x-koan (which are\n   created with SSEYO Koan Pro authoring package) are interpreted and\n   composed in real time by the SKME, which then sends MIDI information\n   to the soundcard or sound module of the client computer system.\n\n   The four necessary file extensions are as follows :\n   .skd - SSEYO Koan Design file, authored using SSEYO Koan Pro.\n   .skp - SSEYO Koan Play file - an encrypted version of an .skd file,\n          created from SSEYO Koan Pro, which can be played through the\n          Koan Web and Koan Plugins. SKP files cannot be loaded by Koan\n          Pro, making it a useful format for distributing Koan pieces\n          where you do not want the techniques you have used to be\n          seen by others.\n   .skm - SSEYO Koan Mix file - a user-remix of an .skp file.\n   .skt - SSEYO Koan Tempate file - used as the template of ideas for Koan\n          Pro.\n\n3.  Background Information - Koan Music\n\n   The SKME can use more than 150 specially designed variable controls\n   to influence and produce its music as it composes.  These values,\n   many of which are time dependent, are written into a SSEYO Koan file.\n   They determine the notes and melodies generated when the file is\n   played through the SKME.  It is these very controls that influence\n   the creation of music that it smooth, non-intrusive, and\n   natural-sounding.\n\n   Whenever a Koan piece is played it can be slightly different - like\n   a musical kaleidoscope.  SSEYO Koan music can sound very natural and\n   expressive and each piece tends to have its own character.  The SKME\n   has been designed to be flexible and so does not limit itself to\n   pre-defined, style-based music, making it particularly ideal for\n   ambient music of all genres.  Also, because a piece's musical output can\n   be different every time, it provides a higher level of originality and\n   interest than do MIDI files, whose output is always the same.\n\n   All these factors combine to make SSEYO Koan music particularly suited\n   to being embedded within World-Wide Web pages.\n\nAuthor's Address\n\n   Pete Cole\n   SSEYO Limited\n   Pyramid House\n   Easthampstead Road\n   Bracknell\n   Berkshire RG12 1YW\n   United Kingdom.\n\n   Phone:  +44 (0) 1344 712017\n   Fax:    +44 (0) 1344 712005\n   EMail:  pcole&sseyo.com\n   WWW:    http://www.sseyo.com\n\n[]\n\n\n\n\n"
+  },
+  "references": []
+}

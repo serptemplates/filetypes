@@ -1,0 +1,55 @@
+{
+  "type": "text",
+  "subtype": "csv",
+  "full": "text/csv",
+  "extensions": [
+    "csv"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/csv",
+    "type_name": "text",
+    "subtype_name": "csv",
+    "encoding_considerations": "[RFC6838].  As per section 4.1.1. of RFC 2046 [RFC2046], this\n   media type uses CRLF to denote line breaks.  However, implementers\n   should be aware that some implementations may use other values.",
+    "security_considerations": "Text/csv consists of nothing but passive text data that should\n      not pose any direct risks.  However, it is possible that\n      malicious data may be included in order to exploit buffer\n      overruns or other bugs in the program processing the text/csv\n      data.\n\n      The text/csv format provides no confidentiality or integrity\n      protection, so if such protections are needed they must be\n      supplied externally.\n\n      The fact that software implementing fragment identifiers for\n      CSV and software not implementing them differs in behavior, and\n      the fact that different software may show documents or\n      fragments to users in different ways, can lead to\n      misunderstandings on the part of users.  Such misunderstandings\n      might be exploited in a way similar to spoofing or phishing.\n\n      Implementers and users of fragment identifiers for CSV text\n      should also be aware of the security considerations in RFC 3986\n      [RFC3986] and RFC 3987 [RFC3987].\n\nInteroperability considerations:  Due to lack of a single\n   specification, there are considerable differences among\n   implementations.  Implementers should \"be conservative in what you\n   do, be liberal in what you accept from others\" (RFC 793 [RFC0793])\n   when processing CSV files.  An attempt at a common definition can\n   be found in Section 2.  Implementations deciding not to use the\n   optional \"header\" parameter must make their own decision as to\n   whether the header is absent or present.\n\nPublished specification:  While numerous private specifications exist\n   for various programs and systems, there is no single \"master\"\n   specification for this format.  An attempt at a common definition\n   can be found in Section 2 of RFC 4180 [RFC4180].\n\nApplications that use this media type:  Spreadsheet programs and\n   various data conversion utilities.\n\nFragment identifier considerations:  Fragment identification for\n   text/csv is supported by using fragment identifiers as specified\n   by RFC7111.",
+    "interoperability_considerations": "specification, there are considerable differences among\n   implementations.  Implementers should \"be conservative in what you\n   do, be liberal in what you accept from others\" (RFC 793 [RFC0793])\n   when processing CSV files.  An attempt at a common definition can\n   be found in Section 2.  Implementations deciding not to use the\n   optional \"header\" parameter must make their own decision as to\n   whether the header is absent or present.\n\nPublished specification:  While numerous private specifications exist\n   for various programs and systems, there is no single \"master\"\n   specification for this format.  An attempt at a common definition\n   can be found in Section 2 of RFC 4180 [RFC4180].\n\nApplications that use this media type:  Spreadsheet programs and\n   various data conversion utilities.\n\nFragment identifier considerations:  Fragment identification for\n   text/csv is supported by using fragment identifiers as specified\n   by RFC7111.",
+    "applications": "various data conversion utilities.\n\nFragment identifier considerations:  Fragment identification for\n   text/csv is supported by using fragment identifiers as specified\n   by RFC7111.",
+    "additional_information": "Magic number(s):  none\n\n   File extension(s):  CSV\n\n   Macintosh file type code(s):  TEXT\n\nPerson & email address to contact for further information:  Yakov\n   Shafranovich <ietf&shaftek.org> and Erik Wilde <dret&berkeley.edu>\n\nIntended usage:  COMMON\n\nRestrictions on usage:  none\n\nAuthor:  Yakov Shafranovich <ietf&shaftek.org> and Erik Wilde\n   <dret&berkeley.edu>\n\nChange controller:  IESG",
+    "intended_usage": "common",
+    "change_controller": "IESG",
+    "template_text": "(registered by RFC 4180, last updated 2014-01-17)\n\nType name:  text\n\nSubtype name:  csv\n\nRequired parameters:  none\n\nOptional parameters:  charset, header\n\n      The \"charset\" parameter specifies the charset employed by the\n      CSV content.  In accordance with RFC 6657 [RFC6657], the\n      charset parameter SHOULD be used, and if it is not present,\n      UTF-8 SHOULD be assumed as the default (this implies that US-\n      ASCII CSV will work, even when not specifying the \"charset\"\n      parameter).  Any charset defined by IANA for the \"text\" tree\n      may be used in conjunction with the \"charset\" parameter.\n\n      The \"header\" parameter indicates the presence or absence of the\n      header line.  Valid values are \"present\" or \"absent\".\n      Implementors choosing not to use this parameter must make their\n      own decisions as to whether the header line is present or\n      absent.\n\nEncoding considerations:  CSV MIME entities consist of binary data\n   [RFC6838].  As per section 4.1.1. of RFC 2046 [RFC2046], this\n   media type uses CRLF to denote line breaks.  However, implementers\n   should be aware that some implementations may use other values.\n\nSecurity considerations:\n\n      Text/csv consists of nothing but passive text data that should\n      not pose any direct risks.  However, it is possible that\n      malicious data may be included in order to exploit buffer\n      overruns or other bugs in the program processing the text/csv\n      data.\n\n      The text/csv format provides no confidentiality or integrity\n      protection, so if such protections are needed they must be\n      supplied externally.\n\n      The fact that software implementing fragment identifiers for\n      CSV and software not implementing them differs in behavior, and\n      the fact that different software may show documents or\n      fragments to users in different ways, can lead to\n      misunderstandings on the part of users.  Such misunderstandings\n      might be exploited in a way similar to spoofing or phishing.\n\n      Implementers and users of fragment identifiers for CSV text\n      should also be aware of the security considerations in RFC 3986\n      [RFC3986] and RFC 3987 [RFC3987].\n\nInteroperability considerations:  Due to lack of a single\n   specification, there are considerable differences among\n   implementations.  Implementers should \"be conservative in what you\n   do, be liberal in what you accept from others\" (RFC 793 [RFC0793])\n   when processing CSV files.  An attempt at a common definition can\n   be found in Section 2.  Implementations deciding not to use the\n   optional \"header\" parameter must make their own decision as to\n   whether the header is absent or present.\n\nPublished specification:  While numerous private specifications exist\n   for various programs and systems, there is no single \"master\"\n   specification for this format.  An attempt at a common definition\n   can be found in Section 2 of RFC 4180 [RFC4180].\n\nApplications that use this media type:  Spreadsheet programs and\n   various data conversion utilities.\n\nFragment identifier considerations:  Fragment identification for\n   text/csv is supported by using fragment identifiers as specified\n   by RFC7111.\n\nAdditional information:\n\n   Magic number(s):  none\n\n   File extension(s):  CSV\n\n   Macintosh file type code(s):  TEXT\n\nPerson & email address to contact for further information:  Yakov\n   Shafranovich <ietf&shaftek.org> and Erik Wilde <dret&berkeley.edu>\n\nIntended usage:  COMMON\n\nRestrictions on usage:  none\n\nAuthor:  Yakov Shafranovich <ietf&shaftek.org> and Erik Wilde\n   <dret&berkeley.edu>\n\nChange controller:  IESG"
+  },
+  "references": [
+    {
+      "title": "RFC 4180",
+      "url": "https://www.rfc-editor.org/rfc/rfc4180.html",
+      "kind": "RFC"
+    },
+    {
+      "title": "RFC 7111",
+      "url": "https://www.rfc-editor.org/rfc/rfc7111.html",
+      "kind": "RFC"
+    }
+  ]
+}

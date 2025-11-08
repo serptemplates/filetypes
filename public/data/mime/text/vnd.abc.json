@@ -1,0 +1,44 @@
+{
+  "type": "text",
+  "subtype": "vnd.abc",
+  "full": "text/vnd.abc",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/vnd.abc",
+    "encoding_considerations": "The ABC language was designed to transmit folk melodies via\n\te-mail, and the majority of ABC files are 7-bit ASCII.  The\n\tencoding of non-ASCII characters is currently based on TeX.\n\tIt is expected that some files may use 8-bit ISO-8859-x\n\tcharacter encodings for material in text fields (e.g.,\n\tcomments, titles, proper names) which are not essential to the\n\tinterpretation of the music.\n\n\tIn the unlikely case of ABC files with very long lines the\n\t\"quoted-printable\" encoding can be used during transmission.",
+    "security_considerations": "There are no significant security issues associated with ABC.\n\tThe language contains no facilities for access to files or\n\tnetwork resources.\n\n\tABC files may be interpreted by applications which can produce\n\timages, printable files, and/or audio output.  These\n\tapplications may make use of system resources in ways\n\tcommon to all other applications.",
+    "interoperability_considerations": "Most ABC files can be interpreted by all ABC applications.\n\tSome ABC files contain experimental features which are not\n\tpart of the published standard.  The ABC developers maintain\n\tan e-mail list where strategies for minimizing evolutionary\n\tdifferences are discussed.",
+    "additional_information": "Magic number(s): \"%abc\"\n\t\tIt is strongly recommended that abc files should begin\n\t\twith this string.  An optional version string may\n\t\tfollow these first 4 characters on the first line.\n\tFile extension(s): \".abc\"\n\t\tIt is recommended that abc file names should use this\n\t\textension.  (Many HTTP servers use the file extension\n\t\tas an indicator of MIME type.)\n\n\t\tThe ABC language uses the '<' and '>' characters.\n\t\tRaw ABC must not be embedded into HTML files, and the\n\t\tfile extension \".html\" must be avoided.\n\tMacintosh File Type Code(s): TEXT",
+    "intended_usage": "common",
+    "template_text": "\n\nFrom sla&ucolick.org  Sun Sep  7 13:26:30 1997\nSubject: Registration of MIME media type text/vnd.abc\nTo: iana&ISI.EDU\n\nMIME media type name: text\n\nMIME subtype name: vnd.abc\n\nRequired parameters:  [none]\n\nOptional parameters:  version, charset\n\nEncoding considerations:\n\tThe ABC language was designed to transmit folk melodies via\n\te-mail, and the majority of ABC files are 7-bit ASCII.  The\n\tencoding of non-ASCII characters is currently based on TeX.\n\tIt is expected that some files may use 8-bit ISO-8859-x\n\tcharacter encodings for material in text fields (e.g.,\n\tcomments, titles, proper names) which are not essential to the\n\tinterpretation of the music.\n\n\tIn the unlikely case of ABC files with very long lines the\n\t\"quoted-printable\" encoding can be used during transmission.\n\nSecurity considerations:\n\tThere are no significant security issues associated with ABC.\n\tThe language contains no facilities for access to files or\n\tnetwork resources.\n\n\tABC files may be interpreted by applications which can produce\n\timages, printable files, and/or audio output.  These\n\tapplications may make use of system resources in ways\n\tcommon to all other applications.\n\nInteroperability considerations:\n\tMost ABC files can be interpreted by all ABC applications.\n\tSome ABC files contain experimental features which are not\n\tpart of the published standard.  The ABC developers maintain\n\tan e-mail list where strategies for minimizing evolutionary\n\tdifferences are discussed.\n\nPublished specification:\n\tA complete description of the ABC language is available at\n\t<URL: http://www.gre.ac.uk/~c.walshaw/abc/ >\n\tMost of this information is mirrored at\n\t<URL: http://celtic.stanford.edu/pub/tunes/abc2mtex/ >\n\n\tA BNF description in the format described by RFC 822 is at\n\t<URL: http://home1.swipnet.se/~w-11382/abcbnf.htm >\n\nApplications which use this media type:\n\tAs of 1997 there are more than a dozen applications which\n\tinterpret ABC files.  All common computing platforms are\n\tsupported.  A complete list of applications is at\n\t<URL: http://www.gre.ac.uk/~c.walshaw/abc/ >\n\nAdditional information:\n\tMagic number(s): \"%abc\"\n\t\tIt is strongly recommended that abc files should begin\n\t\twith this string.  An optional version string may\n\t\tfollow these first 4 characters on the first line.\n\tFile extension(s): \".abc\"\n\t\tIt is recommended that abc file names should use this\n\t\textension.  (Many HTTP servers use the file extension\n\t\tas an indicator of MIME type.)\n\n\t\tThe ABC language uses the '<' and '>' characters.\n\t\tRaw ABC must not be embedded into HTML files, and the\n\t\tfile extension \".html\" must be avoided.\n\tMacintosh File Type Code(s): TEXT\n\nPerson & email address to contact for further information:\n\tSteve Allen <sla&ucolick.org>\n\tChris Walshaw <C.Walshaw&gre.ac.uk>\n\tHenrik Norbeck <henrik.norbeck&mailbox.swipnet.se>\n\nIntended usage: COMMON\n\nAuthor/Change controller:\n\tSteve Allen <sla&ucolick.org>\n\tacting on behalf of the ABC developers\n\nThe ABC musical notation language was developed by Chris Walshaw.  ABC\nfiles consist of human-readable notation for musical score.  ABC files\nhave been interchanged via e-mail and WWW since 1991.  As of 1997\nthere are nearly 10000 ABC tunes on the WWW.\n\nEarly use of ABC was largely for typesetting folk melodies from the\nBritish Isles.  This quickly broadened to include folk melodies from\nmany Western cultures, and applications capable of performing audio\nplayback came into existence.  Subsequent evolution of ABC has\npermitted the notation of multiple parts, Eastern musical scales, and\nfolk dance.\n\nFurther evolution of the language capabilities is expected.  The\ndevelopers strongly favor the idea that the notation should be simple\nenough for sight-reading from the ASCII text.\n\nThere are two e-mail lists which discuss ABC.  The developers list\ndiscusses implementation strategies for new language features;\ncontact one of the persons listed above for more information.\nThe ABC User Group Mailing List discusses usage of the existing\napplications; it is described at\n\t<URL: http://diana.ecs.soton.ac.uk/~jra/abc-users/ >\n\n--\nSteve Allen          UCO/Lick Observatory       Santa Cruz, CA 95064\nsla&ucolick.org      Voice: +1 408 459 3046     http://www.ucolick.org/~sla\n\n\n\n"
+  },
+  "references": [
+    {
+      "title": "RFC 822",
+      "url": "https://www.rfc-editor.org/rfc/rfc822.html",
+      "kind": "RFC"
+    }
+  ]
+}

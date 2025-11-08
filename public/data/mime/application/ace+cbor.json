@@ -1,0 +1,47 @@
+{
+  "type": "application",
+  "subtype": "ace+cbor",
+  "full": "application/ace+cbor",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/ace+cbor",
+    "type_name": "application",
+    "subtype_name": "ace+cbor",
+    "encoding_considerations": "protocol parameters defined in RFC 9200.\n\nSecurity considerations: See Section 6 of RFC 9200\n\nInteroperability considerations: N/A\n\nPublished specification: RFC 9200\n\nApplications that use this media type: The type is used by\nauthorization servers, clients, and resource servers that support the\nACE framework with CBOR encoding, as specified in RFC 9200.\n\nFragment identifier considerations: N/A\n\nAdditional information: N/A",
+    "security_considerations": "Interoperability considerations: N/A\n\nPublished specification: RFC 9200\n\nApplications that use this media type: The type is used by\nauthorization servers, clients, and resource servers that support the\nACE framework with CBOR encoding, as specified in RFC 9200.\n\nFragment identifier considerations: N/A\n\nAdditional information: N/A",
+    "interoperability_considerations": "Published specification: RFC 9200\n\nApplications that use this media type: The type is used by\nauthorization servers, clients, and resource servers that support the\nACE framework with CBOR encoding, as specified in RFC 9200.\n\nFragment identifier considerations: N/A\n\nAdditional information: N/A",
+    "applications": "authorization servers, clients, and resource servers that support the\nACE framework with CBOR encoding, as specified in RFC 9200.\n\nFragment identifier considerations: N/A\n\nAdditional information: N/A",
+    "intended_usage": "common",
+    "change_controller": "IETF",
+    "template_text": "Type name: application\n\nSubtype name: ace+cbor\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: Must be encoded as a CBOR map containing the\nprotocol parameters defined in RFC 9200.\n\nSecurity considerations: See Section 6 of RFC 9200\n\nInteroperability considerations: N/A\n\nPublished specification: RFC 9200\n\nApplications that use this media type: The type is used by\nauthorization servers, clients, and resource servers that support the\nACE framework with CBOR encoding, as specified in RFC 9200.\n\nFragment identifier considerations: N/A\n\nAdditional information: N/A\n\nPerson & email address to contact for further information: \nIESG <iesg&ietf.org>\n\nIntended usage: COMMON\n\nRestrictions on usage: none\n\nAuthor: Ludwig Seitz <ludwig.seitz&combitech.se>\n\nChange controller: IETF\n"
+  },
+  "references": [
+    {
+      "title": "RFC 9200",
+      "url": "https://www.rfc-editor.org/rfc/rfc9200.html",
+      "kind": "RFC"
+    }
+  ]
+}

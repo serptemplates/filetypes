@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.pagerduty+json",
+  "full": "application/vnd.pagerduty+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.pagerduty+json",
+    "template_text": "(registered 2015-09-30, last updated 2015-09-30)\n\nName : Kenneth Kwan\n\nEmail : kkwan&pagerduty.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.pagerduty+json\n\nRequired parameters : None\n\nOptional parameters : \nversion=1*DIGIT [\".\" 1*(DIGIT / a-z)] ; e.g. \"1.0\", \"9.3f\", \"0.abc\"\n\nEncoding considerations : 8bit\n\n\nSecurity considerations : \nthe security issues associated with this type have not been assessed\n\nInteroperability considerations : \nNone\n\nPublished specification : \nNone\n\nApplications which use this media : \nPagerDuty API (developer.pagerduty.com)\n\nFragment identifier considerations :\nNone\n\nRestrictions on usage :\nNone\n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : N/A\n3. File extension(s) : N/A\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\n\n\nPerson to contact for further information :\n\n1. Name : Steve Rice\n2. Email : developers&pagerduty.com\n\nIntended usage : Common\nUsed by clients to indicate that the request is in PagerDuty's API-specified format and is expecting a formatted response as per the API definition (as described at https://developer.pagerduty.com).\n\nAuthor/Change controller : Steve Rice, developers&pagerduty.com"
+  },
+  "references": []
+}

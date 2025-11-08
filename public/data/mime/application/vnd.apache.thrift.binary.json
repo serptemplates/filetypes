@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.apache.thrift.binary",
+  "full": "application/vnd.apache.thrift.binary",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.apache.thrift.binary",
+    "template_text": "(registered 2014-09-09, last updated 2014-09-09)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.apache.thrift.binary\n\nRequired parameters : none\n\nOptional parameters : none\n\nEncoding considerations : binary\n\nSecurity considerations : \nApache Thrift does not enforce a security mechanism.\nUsers define security features at application or transport level.\nThe data carried by Apache Thrift is essentially arbitrary, and can include\nactive or executable content. Apache Thrift does not provide or enforce a\nsecurity mechanism, so appropriate mechanisms must be implemented at the\napplication or transport level. \n\nInteroperability considerations : \nThe application/x-thift media type is currently used to describe multiple\nformats/protocols. Communications endpoints need to the format/protocol\nused, so this media type should be used preferentially when it is\nappropriate to do so.\n\nPublished specification : \nhttp://thrift.apache.org\n\nApplications which use this media : \nUsers do specify their own data structures and services via an interface description language (IDL) to communicate fast across languages and platforms.\n\nFragment identifier considerations :\nnot applicable\n\nRestrictions on usage :\nno restrictions, software is Apache License: http://www.apache.org/licenses/LICENSE-2.0\n\nProvisional registration? (standards tree only) :\nnot relevant, vendor tree registration.\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : x-thrift\n2. Magic number(s) : not available\n3. File extension(s) : not available\n4. Macintosh file type code : not available\n5. Object Identifiers: not available\n\n\n\nPerson to contact for further information :\n\n1. Name : Roger Meier\n2. Email : roger&apache.org\n\nIntended usage : Common\nEfficient communication across languages and platforms.\n\nAuthor/Change controller : Roger Meier - Apache Thrift PMC Member"
+  },
+  "references": []
+}

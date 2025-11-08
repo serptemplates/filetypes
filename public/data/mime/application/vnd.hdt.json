@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.hdt",
+  "full": "application/vnd.hdt",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.hdt",
+    "security_considerations": "HDT is a binary format that represents RDF Data in a compact manner. An HDT representation comprises tree components: \n\n- The Header, that provides metadata about the dataset in plain RDF format.\n- The Dictionary, that provides a mapping between strings and unique identifiers (IDs).\n- The Triples, that encodes the RDF graph using IDs.\n\nNone of the components contain active or executable contents. The Dictionary and the Triples components may be provided in a compressed format.\n\nThis format does not provide privacy or integrity protection. If such\nprotection is needed it must be provided externally.",
+    "interoperability_considerations": "A program module called an HDT processor is used by application programs to encode their data into HDT core data and/or to decode HDT core data to make the data accessible.The former and latter aforementioned roles of HDT processors are called HDT encoder and HDT decoder respectfully.\n\nAn HDT encoder may introduce different representations for each of the HDT components. However, the HDT file must contain all the required metadata so that HDT decoders can consume the HDT document.",
+    "additional_information": "1. Deprecated alias names for this type: none\n2. Magic number(s): The magic keyword ‘$HDT’, as four ASCII characters\n3. File extension(s): hdt\n4. Macintosh file type code: none\n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2016-01-07, last updated 2016-01-07)\n\nName: Javier D. Fernández\nEmail: javier.fernandez&wu.ac.at\n\nMedia type name: application\nMedia subtype name: vnd.hdt\n\nRequired parameters: none\n\nOptional parameters:\nnone\n\nEncoding considerations: binary\n\n\nSecurity considerations:\nHDT is a binary format that represents RDF Data in a compact manner. An HDT representation comprises tree components: \n\n- The Header, that provides metadata about the dataset in plain RDF format.\n- The Dictionary, that provides a mapping between strings and unique identifiers (IDs).\n- The Triples, that encodes the RDF graph using IDs.\n\nNone of the components contain active or executable contents. The Dictionary and the Triples components may be provided in a compressed format.\n\nThis format does not provide privacy or integrity protection. If such\nprotection is needed it must be provided externally.\n\nInteroperability considerations:\nA program module called an HDT processor is used by application programs to encode their data into HDT core data and/or to decode HDT core data to make the data accessible.The former and latter aforementioned roles of HDT processors are called HDT encoder and HDT decoder respectfully.\n\nAn HDT encoder may introduce different representations for each of the HDT components. However, the HDT file must contain all the required metadata so that HDT decoders can consume the HDT document. \n\nPublished specification:\nhttp://www.rdfhdt.org/hdt-binary-format/\n\nApplications which use this media:\nHDT-it! and C++/Java libraries. See http://www.rdfhdt.org/\n\nFragment identifier considerations:\nnone\n\nRestrictions on usage:\nnone\n\nProvisional registration? (standards tree only):\nnone\n\nAdditional information:\n\n1. Deprecated alias names for this type: none\n2. Magic number(s): The magic keyword ‘$HDT’, as four ASCII characters\n3. File extension(s): hdt\n4. Macintosh file type code: none\n5. Object Identifiers: none\n\nGeneral Comments:\nSee http://www.rdfhdt.org/\n\nPerson to contact for further information:\n\n1. Name: Javier D. Fernández\n2. Email: javier.fernandez&wu.ac.at\n\nIntended usage: Common\nCommon\n\nAuthor/Change controller: Javier D. Fernández             "
+  },
+  "references": []
+}

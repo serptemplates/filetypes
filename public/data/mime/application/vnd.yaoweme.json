@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.yaoweme",
+  "full": "application/vnd.yaoweme",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.yaoweme",
+    "template_text": "(registered 2014-05-01, last updated 2014-05-01)\n\nName : Jens Jorgensen\n\nEmail : jbj1&ultraemail.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.yaoweme\n\nRequired parameters : N/A\n\nOptional parameters : \nN/A\n\nEncoding considerations : binary\n\n\nSecurity considerations : \nYaOweMe is the name of a set of applications (mobile phone applications, initially) used to facilitate the negotiation of a debt and subsequent payment or voiding of a debt obligation between two parties. Messages include obligation details--human-readable descriptive text, dates, and amounts--as well as serial numbers and identity hashes but no executable content. To ensure message integrity and authenticity the entirety of a message is signed by the sender using RSA encryption and SHA-256 hashing. Privacy is optional and is employed by AES encryption of the original content and followed by encrypting the randomly-generated AES key and initialization vector with the receiver's RSA encryption key. \n\nInteroperability considerations : \nThe YaOweMe data format is intended for passing messages only between instances of the YaOweMe application. There is no intention to publicly specify the format for other applications to consume or produce it. The registration of a media type is desirable so that email (and potentially HTTP) may be used as one of the possible transports for the application messages.\n\nPublished specification : \nN/A\n\nApplications which use this media : \nYaOweMe Android application, YaOweMe iOS application.\n\nFragment identifier considerations :\nYaOweMe messages sent over a transport must by design be consumed atomically, therefore there's no usage which would benefit from a fragment identifier.\n\nRestrictions on usage :\nThe YaOweMe binary format is intended for use only in instances of the YaOweMe application. It is not expected that an email client or web browser would be able to perform any useful action aside from perhaps storing the message to a file system. \n\nProvisional registration? (standards tree only) :\nN/A\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : N/A\n2. Magic number(s) : N/A\n3. File extension(s) : yme\n4. Macintosh file type code : N/A\n5. Object Identifiers: N/A\n\nN/A\n\nPerson to contact for further information :\n\n1. Name : Jens Jorgensen\n2. Email : jbj1&ultraemail.net\n\nIntended usage : Limited Use\nThe YaOweMe mobile application allows individuals to negotiate a monetary obligation and its subsequent disposition by payment or forgiveness/annulment. This is established through messaging between individuals bearing digital signatures to insure message integrity and non-repudiation. Ideally the messaging will take place over bluetooth, wireless LAN or NFC when the individuals are in proximity to one another. When this is not the case some other transport is required. As the application is provided free of charge the application publisher does not provide a store-and-forward messaging facility. Instead the user may opt to send messages via email, therefore this mime-type is needed so the mobile phone operating system can pass the data to the YaOweMe application.\n\nAuthor/Change controller : N/A"
+  },
+  "references": []
+}

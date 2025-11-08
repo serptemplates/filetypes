@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.collada+xml",
+  "full": "model/vnd.collada+xml",
+  "extensions": [
+    "dae"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.collada+xml",
+    "template_text": "(last updated 2011-02-01)\n\nName : James Riordon\n\nEmail : webmaster&khronos.org\n\nMIME media type name : Model\n\nMIME subtype name : Vendor Tree - vnd.collada+xml\n\nRequired parameters : none\n\nOptional parameters :\ncharset as defined in RFC 3023 section 3.1\n\nEncoding considerations : 8bit\nThis media type may require encoding on transports not capable of\nhandling 8 bit text.\n\nSecurity considerations :\nSee RFC 3023 section 10 for XML media types.\n\nSeveral COLLADA elements may cause arbitrary URIs to be referenced. In\nthis case, the security issues of RFC 3986 section 7 should be\nconsidered. The COLLADA formula element may contain MathML 2.0 and so\nthe security considerations as described in MathML specification should\nbe considered\n\nTo paraphrase section 10 of RFC 3023, a COLLADA document may contain GPU\nshader program declarations that, when executed on the display\nprocessor, have the potential to change the display processor\nenvironment in ways that adversely affect subsequent operations. Display\nprocessors SHOULD validate such shaders before execution.'\n\nCOLLADA does not have intrinsic privacy or integrity protection\nmechanisms beyond that of well-formed and validated XML. It is expected\nthat systems will overlay security mechanisms on an as needed basis.\n\n\nInteroperability considerations :\nCOLLADA documents are designed to provide interoperability between\ncontent modeling tools, content processing and visualization\napplications (such as Google Earth, Photoshop, Maya, 3dsMax...). COLLADA\ndocuments can be validated by the published XML schema.\n\n\nPublished specification :\nSpecification released by the Khronos group (home of OpenGL, WebGL,\nOpenCL, COLLADA ...) at http://khronos.org/collada/ COLLADA.\n\nSchema for 1.4 validation and xml namespace:\nfor version 1.4: http://www.collada.org/2005/11/COLLADASchema\nfor version 1.5: http://www.collada.org/2008/03/COLLADASchema/\n\n\nApplications which use this media :\nCOLLADA defines an XML-based schema to make it easy to transport 3D\nassets between applications - enabling diverse 3D authoring and the\nformation of content production pipelines tools be combined into a\nproduction pipeline.\n\n\nAdditional information :\n\n1. Magic number(s) : <COLLADA> is the root XML element\n2. File extension(s) : dae\n3. Macintosh file type code : n/a\n4. Object Identifiers: n/a\n\nThe Khronos Group is a not for profit industry consortium creating open\nstandards for the authoring and acceleration of parallel computing,\ngraphics and dynamic media on a wide variety of platforms and devices.\nAll Khronos members are able to contribute to the development of Khronos\nAPI specifications, are empowered to vote at various stages before\npublic deployment, and are able to accelerate the delivery of their\ncutting-edge 3D platforms and applications through early access to\nspecification drafts and conformance tests.\n\n\nPerson to contact for further information :\n\n1. Name : James Riordon\n2. Email : webmaster&khronos.org\n\nIntended usage : Common\nCOLLADA (.dae) specification is very stable and has been used since its\nfirst publication in Jan 2006. There are thousands of documents\navailable in this format or in a zipped form (see\nhttp://sketchup.google.com/3dwarehouse/ for example)\n\n\nAuthor/Change controller : The Khronos Group (www.khronos.org)\n\n(file created 2011-02-01)"
+  },
+  "references": []
+}

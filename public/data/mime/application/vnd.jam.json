@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.jam",
+  "full": "application/vnd.jam",
+  "extensions": [
+    "jam"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.jam",
+    "template_text": "(last updated 2007-04-26)\n\nName : Brijesh Kumar\n\nEmail : bkumar&lightspeedaudiolabs.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.jam\n\nRequired parameters : No Required parameters\n\nOptional parameters : No Optional parameters\n\nEncoding considerations : 7bit\n\nSecurity considerations :\nFiles of subtype \"jam\" contain no executable code, and do not pose\nany known security risks. Further, if integrity and confidentiality\nprotection of the content transferred using this MIME Type is\nrequired then we recommend use of SSL or https to achieve the same.\n\n\nInteroperability considerations :\n\nPublished specification :\nThere is no published specification for the type.\n\nApplications which use this media :\nLightspeed Audio Lab's Jam Client and Server Software\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : jam\n3. Macintosh file type code : N/A\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Brijesh Kumar\n2. Email : bkumar&lightspeedaudiolabs.com\n\nIntended usage : Common\nThis Mime type is used to transfer certain Session Parameters\nfor the streaming audio rather than transferring actual media\ndata itself. The data in the MIME type is intended to start a\nuser's JAM client with the desired session parameters.\n\nIn addition, a .jam file type is registered in the system registry,\nat the time of installation of our audio client on a user's\nPC. This client is reponsible for the processing of audio data\nstreams.\n\nAuthor/Change controller : Brijesh Kumar, Ph.D.\nVice President of Engineering\nLightspeed Audio Labs, Inc.\n106 Apple Street, #221\nTinton Falls, NJ 07724, USA\n\n(file created 2007-04-26)"
+  },
+  "references": []
+}

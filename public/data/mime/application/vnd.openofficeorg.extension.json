@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.openofficeorg.extension",
+  "full": "application/vnd.openofficeorg.extension",
+  "extensions": [
+    "oxt"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.openofficeorg.extension",
+    "template_text": "(last updated 2006-11-17)\r\n\r\nName : Joachim Lingner\r\n\r\nEmail : joachim.lingner&sun.com\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.openofficeorg.extension\r\n\r\nRequired parameters : \r\n\r\nOptional parameters : \r\n\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling binary.\r\n\r\nSecurity considerations : \r\nThe security issues associates with this type have not been assessed. However since \r\nfiles of this media type may contain code, there is always the possibility, that a \r\nfile contains malicious code. \r\nThe media type is used to distinguish OpenOffice.org extensions. Such an extension \r\ncan contain code and/or data, which will be added to an OpenOffice.org installation.\r\nExecution of this code may occur when the file is added to OpenOffice.org. This \r\nhappens when\r\n- a user adds the file to the OpenOffice.org installation by using the Extension \r\nManager dialog of OpenOffice.org\r\n-executing unopkg, which is part of the OpenOffice.org installation,in order to add \r\nthe file to the OpenOffice.org installation\r\n-code of the extension is invoked while OpenOffice.org is running.\r\n-double clicking on a extension in a file browser (only available in future versions \r\nof OpenOffice.org)\r\n-installing the extension from a mail client or web browser. For example by clicking \r\non a link to a file and allow the browser to execute the program which is assigned \r\nto handle this type of file, which is the unopkg executable in this case. This \r\nfunctionality will only be available in future versions of OpenOffice.org.\r\n\r\n\r\nInteroperability considerations : \r\nFiles of this media type are currently only used by OpenOffice.org and derivates. \r\nInteroperability issues are not known yet.\r\n\r\nPublished specification : \r\n\r\n\r\nApplications which use this media : \r\nOpenOffice.org 2.0.4,\r\nStarOffice 8 Update 4,\r\nprobably derivates based on OpenOffice.org 2.0.4,\r\nnewer versions of the applications stated above\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : N/A\r\n2. File extension(s) : oxt\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Joachim Lingner\r\n2. Email : joachim.linger&sun.com\r\n\r\nIntended usage : Common \r\n\r\n\r\nAuthor/Change controller : \r\n\r\n\r\n(file created 2006-11-17)"
+  },
+  "references": []
+}

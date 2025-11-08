@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.mozilla.xul+xml",
+  "full": "application/vnd.mozilla.xul+xml",
+  "extensions": [
+    "xul"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.mozilla.xul+xml",
+    "template_text": "\n\nName : Braden N. McDaniel\n\nE-mail : braden&endoframe.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.mozilla.xul+xml\n\nRequired parameters : none\n\nOptional parameters :\ncharset\n\nThe qualifications regarding this parameter are the same as for\napplication/xml.\n\nEncoding considerations :\n\nThe encoding considerations for application/xml apply.\n\nSecurity considerations :\n\nXUL shares security issues common to all XML content\ntypes. Furthermore, certain applications of XUL could \npotentially present the problem of \"user interface spoofing\", \nin which users might be presented with an interface requesting\npersonal information and artificially designed to look like an\napplication or system interface. The measures taken (if any) to\nminimize the possibility of such abuse are left to the implementation.\n\nInteroperability considerations :\n\nXUL is not described by a DTD and applies only the well-formedness\nrules of XML.\nIt should thus only be parsed by a non-validating parser.\n\nPublished specification :\n\nn/a\n\nApplications which use this media :\n\nthe Mozilla Internet application suite\n\nAdditional information :\n\n1. Magic number(s) : None.\n2. File extension(s) : .xul\n3. Macintosh file type code : \"TEXT\"\n\n\nPerson to contact for further information :\n\n1. Name : Dan Rosen\n2. E-mail : dr&netscape.com\n\nIntended usage : Common\n\n\nAuthor/Change controller : mozilla.org\n\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

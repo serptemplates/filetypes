@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.netfpx",
+  "full": "application/vnd.netfpx",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.netfpx",
+    "template_text": "\n\nDate: Wed, 3 Dec 1997 19:26:18 -0800 (PST)\nFrom: Andy Mutz <andy_mutz&hp.com>\nTo: iana&ISI.EDU, andy_mutz&hp.com\nSubject: Request for MIME media type Application/Vendor Tree - vnd.netfpx\n\nName : Andy Mutz\n\nE-mail : andy_mutz&hp.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.netfpx\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nbinary data is transmitted; base64 generally preferred\n\nSecurity considerations : \nData communicated using this method is a collection of closely defined\n64x64 pixel image tiles and/or metadata.  Tiles are intended for\ndecoding and display while metadata contains either information\nnecessary for decoding and display or other information such as author,\ntitle, etc.\n\nNone of the data defined are intended for explicit execution on a\nmachine.  The ability to define optional named metadata is described in\nthe specification and it is not possible to predict the future behavior\nof optional named metadata.  It is not the intention of the Digital\nImaging Group to support executable data segments within this\napplication.\n\nSome of the metadata is intended to cause image processing such as\nsharpening and rotation to occur and numerical errors such as\ndivide-by-zero could be caused by inappropriate values of these\nparameters.\n\nTextual metadata can be displayed on a terminal, and is usually\ncommunicated as UNICODE. Some operating systems or terminals might\nallow the display of textual data with embedded control characters to\nperform operations such as re-mapping of keys, creation of files, etc.\nFor this reason, text chunks should be filtered for control characters\nbefore direct display.\n\nSome of the data methods supported by this application are\nbinary-stream oriented and could provide access to unanticipated data\nwithin a file, such as old edits of a document.  For this reason, these\nmethods should be restricted to appropriate files.  These data methods\nare described in detail in the specification.\n\n\n\nInteroperability considerations : \nIntended for use by any application implementing the specification.\n\nPublished specification : \nThe IIP 1.0 specification is available from http://image.hp.com and\nfrom http://www.kodak.com.  The authoritative source will be hosted\nbeginning in 1998 at http://www.digitalimaging.org.  The FlashPix\nspecification, which is referred to by the IIP spec, is available from\nthe same sources. The Digital Imaging Group maintains control over\nthese specifications.\n\nApplications which use this media : \nHewlett-Packard Company Imaging for Internet, Live Picture Realspace,\n\n\nAdditional information :\n\n1. Magic number(s) : n/a\n2. File extension(s) : often used with .fpx files.  \n3. Macintosh file type code : n/a\nIIP version is indicated by a particular named metadata object\ncalled \"iip\".\n\nPerson to contact for further information :\n\n1. Name : Andy Mutz\n2. E-mail : andy_mutz&hp.com\n\nIntended usage : Common \nThis data type is request-driven and intended for dynamic retrieval of\nmultiresolution image information.  It may be generated from many\nstatic file formats. It is best suited to environments where several\nrequests and responses may be quickly performed.  Generally a single\ntransmission does not yield a displayable image.\n\nAuthor/Change controller : Digital Imaging Group\nEddie Jennings, Marc Berger Technical chairs\nrejennin&kodak.com, berger&olivr.co.il\ncomments to iip&hplaef.cup.hp.com \n\n\n\n\n\n\n"
+  },
+  "references": []
+}

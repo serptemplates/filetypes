@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.bcast.associated-procedure-parameter+xml",
+  "full": "application/vnd.oma.bcast.associated-procedure-parameter+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.bcast.associated-procedure-parameter+xml",
+    "template_text": "(last updated 2007-06-29, last updated 2015-03-05)\n\nName : Uwe Rauschenbach\n\nEmail : uwe.rauschenbach&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree -\nvnd.oma.bcast.associated-procedure-parameter+xml\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\n\nSecurity considerations :\nOMA BCAST Associated Delivery Procedure Parameters are passive, meaning\nthey do not contain executable or active content which may represent a\nsecurity threat. The format does not include confidential fields.\nHowever, the information present in this media format is used to\nconfigure the receiving application. Thus, the usage of the format is\nvulnerable to attacks modifying or spoofing the content of this format.\nDepending on the system architecture, it is recommended to use source\nauthentication and integrity protection.\n\n\nInteroperability considerations :\nThis content type carries associated delivery procedure parameters\nwithin the scope of the OMA BCAST enabler. The OMA BCAST enabler\nspecification includes static conformance requirements and\ninteroperability test cases for this content.\n\nPublished specification :\nOMA BCAST 1.0 Enabler Specification - File and Stream Distribution for\nMobile Broadcast Services. Available from\nhttp://www.openmobilealliance.org\n\nApplications which use this media :\nOMA BCAST File Distribution Services\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Uwe Rauschenbach\n2. Email : uwe.rauschenbach&nokia.com\n\nIntended usage : Limited Use\nOnly for usage with OMA BCAST File Distribution Services , which meet\nthe semantics given in the mentioned specification.\n\nAuthor/Change controller : OMNA - Open Mobile Naming Authority,\nOMA-OMNA&mail.openmobilealliance.org\n                                       "
+  },
+  "references": []
+}

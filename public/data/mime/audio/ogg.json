@@ -1,0 +1,46 @@
+{
+  "type": "audio",
+  "subtype": "ogg",
+  "full": "audio/ogg",
+  "extensions": [
+    "oga",
+    "ogg",
+    "spx",
+    "opus"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/ogg",
+    "type_name": "audio",
+    "subtype_name": "ogg",
+    "encoding_considerations": "Security considerations: See section 7 of RFC 5334.\n\nInteroperability considerations: None, as noted in section 8 of RFC\n5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Multimedia applications,\nincluding embedded, streaming, and conferencing tools.",
+    "security_considerations": "Interoperability considerations: None, as noted in section 8 of RFC\n5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Multimedia applications,\nincluding embedded, streaming, and conferencing tools.",
+    "interoperability_considerations": "5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Multimedia applications,\nincluding embedded, streaming, and conferencing tools.",
+    "additional_information": "Magic number(s): The first four bytes, 0x4f 0x67 0x67 0x53,\ncorrespond to the string \"OggS\".\n\nFile extension(s): .oga, .ogg, .spx, .opus\n\nMacintosh File Type Code(s): OggA\n\nPerson & Email address to contact for further information: See\n\"Authors' Addresses\" section.\n\nIntended usage: COMMON\n\nRestrictions on usage: The type \"audio/ogg\" SHOULD be used when the\nOgg bitstream predominantly contains audio data.  Content served\nunder the \"audio/ogg\" type SHOULD have an Ogg Skeleton logical\nbitstream when using the default .oga file extension.  The .ogg and\n.spx file extensions indicate a specialization that requires no\nSkeleton due to backward compatibility concerns with existing\nimplementations.  In particular, .ogg is used for Ogg files that\ncontain only a Vorbis bitstream, while .spx is used for Ogg files\nthat contain only a Speex bitstream.\n\nAuthor: See \"Authors' Addresses\" section.\n\nChange controller: The Xiph.Org Foundation.",
+    "intended_usage": "common",
+    "change_controller": "The Xiph.Org Foundation",
+    "template_text": "(RFC 5334 published September 2008, subtype last updated 2016-03-07)\n\nType name: audio\n\nSubtype name: ogg\n\nRequired parameters: none\n\nOptional parameters: codecs, whose syntax is defined in RFC 4281.\nSee section 4 of RFC 5334 for a list of allowed values.\n\nEncoding considerations: See section 6 of RFC 5334.\n\nSecurity considerations: See section 7 of RFC 5334.\n\nInteroperability considerations: None, as noted in section 8 of RFC\n5334.\n\nPublished specification: RFC 3533\n\nApplications which use this media type: Multimedia applications,\nincluding embedded, streaming, and conferencing tools.\n\nAdditional information:\n\nMagic number(s): The first four bytes, 0x4f 0x67 0x67 0x53,\ncorrespond to the string \"OggS\".\n\nFile extension(s): .oga, .ogg, .spx, .opus\n\nMacintosh File Type Code(s): OggA\n\nPerson & Email address to contact for further information: See\n\"Authors' Addresses\" section.\n\nIntended usage: COMMON\n\nRestrictions on usage: The type \"audio/ogg\" SHOULD be used when the\nOgg bitstream predominantly contains audio data.  Content served\nunder the \"audio/ogg\" type SHOULD have an Ogg Skeleton logical\nbitstream when using the default .oga file extension.  The .ogg and\n.spx file extensions indicate a specialization that requires no\nSkeleton due to backward compatibility concerns with existing\nimplementations.  In particular, .ogg is used for Ogg files that\ncontain only a Vorbis bitstream, while .spx is used for Ogg files\nthat contain only a Speex bitstream.\n\nAuthor: See \"Authors' Addresses\" section.\n\nChange controller: The Xiph.Org Foundation."
+  },
+  "references": []
+}

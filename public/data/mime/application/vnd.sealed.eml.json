@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.sealed.eml",
+  "full": "application/vnd.sealed.eml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.sealed.eml",
+    "template_text": "\n(last updated 2003-09-03)\n\nName : David Petersen\n\nEmail : david.petersen&sealedmedia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.sealed.eml\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations : \nThese files are intended to be read by a proprietary client (the \"Unsealer\")\nwhich makes the unencrypted content available in a very limited fashion \nto a user's system. As the data format is private and encrypted using \nwell-known algorithms, it is unlikely that the data could be spoofed. \nThe client is also designed to refuse to work with data that is corrupt \nor ill-formed. This data does not contain any executable material.\n\nInteroperability considerations : \nThis mime-type is valid for Windows systems only.\n\nPublished specification : \nThe specifications for this content-type are proprietary. They are \nspecified by Sealed Media. The registration of this content-type is \nintended only to provide a convention for labeling this proprietary \ndata type within the MIME/HTTP environment and does not specify any \ndetails about the content format or semantics, except to refer to \nthe software and specifications provided by Sealed Media. Company \ninformation may be obtained at http://www.sealedmedia.com.\n\nApplications which use this media : \nThis mime-type is intended for use by the client software, \n\"Unsealer\", created by Sealed Media.\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : .seml, .sem\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Martin Lambert\n2. Email : martin.lambert&sealedmedia.com\n\nIntended usage : Common \nThis mime-type is intended for use by the client software,\n\"Unsealer\", created by Sealed Media.\n\nAuthor/Change controller : Martin Lambert\nmartin.lambert&sealedmedia.com \n\n(created 2003-09-03)"
+  },
+  "references": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.groove-account",
+  "full": "application/vnd.groove-account",
+  "extensions": [
+    "gac"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.groove-account",
+    "template_text": "\n\n\nName : Todd Joseph\n\nE-mail : todd_joseph&groove.net\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.groove-account\n\nRequired parameters : none\n\nOptional parameters : \nnone\n\nEncoding considerations : \nquoted-printable\n\"This media type is mostly ASCII characters but also contains binary\nmaterial. Quoted-printable is therefore the most appropriate choice\nfor transports that cannot handle binary material directly.\"\n\nSecurity considerations : \nAs with most application types this data is intended for\ninterpretation by a program that understands the data on the\nrecipient's system. Recipients need to understand that they are at the\n\"mercy\" of the sender, when receiving this type of data, since data\nwill be executed on their system, and the security of their machines\ncan be violated.\n\nInteroperability considerations : \nnone\n\nPublished specification : \nnone\n\nApplications which use this media : \nGroove\n\nAdditional information :\n\n1. Magic number(s) : \n2. File extension(s) : gac\n3. Macintosh file type code : \n\n\nPerson to contact for further information :\n\n1. Name : Todd Joseph\n2. E-mail : todd_joseph&groove.net\n\nIntended usage : Common \n\n\nAuthor/Change controller : Todd Joseph \n\n\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

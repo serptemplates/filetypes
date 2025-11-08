@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.intertrust.digibox",
+  "full": "application/vnd.intertrust.digibox",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.intertrust.digibox",
+    "encoding_considerations": "DigiBox Containers are binary data.\nTransports that do not support binary streams should encode the data\nappropriately.",
+    "security_considerations": "The InterTrust system is designed so that a secure channel is not\nrequired for other than privacy reasons. The currently defined\nDigiBox Container format does not contain any \"executable\" material.",
+    "template_text": "\n\nFrom: Luke Tomasello <luket&intertrust.com>\nTo: \"'iana&isi.edu'\" <iana&isi.edu>\nSubject: application/vnd.intertrust.digibox\nDate: Fri, 25 Oct 96 15:52:00 P\n\n\nThank you,\nLuke Tomasello\n\n ---------------------------------------\n\nMEDIA TYPE NAME:\nApplication\n\nMEDIA SUBTYPE NAME:\nvnd.intertrust.digibox\n\nREQUIRED PARAMETERS:\nnone\n(InterTrust-DigiBox messages encode within themselves a format version   \nnumber)\n\nOPTIONAL PARAMETERS:\nnone\n\nENCODING CONSIDERATIONS:\n\nDigiBox Containers are binary data.\nTransports that do not support binary streams should encode the data\nappropriately.\n\nSECURITY CONSIDERATIONS:\n\nThe InterTrust system is designed so that a secure channel is not\nrequired for other than privacy reasons. The currently defined\nDigiBox Container format does not contain any \"executable\" material.\n\nPUBLISHED SPECIFICATION:\n\nThe specifications for this content-type are proprietary. They are\nspecified by InterTrust Technologies Corporation. The registration of   \nthis content-type is\nintended only to provide a convention for labeling this proprietary\ndata type within the MIME/HTTP environment and does not specify any\ndetails about the content format or semantics, except to refer to the\nsoftware and specifications provided by InterTrust Technologies   \nCorporation.\n\n\nCompany Contact:\n\n        InterTrust Technologies Corporation.\n        460 Oakmead Parkway\n        Sunnyvale, CA 94086 USA\n          \n\n        tel: +1 408-222-6100\n        fax: +1 408-222-6144\n        email: info&intertrust.com\n        URL: http://www.intertrust.com\n\nCOMPANY BACKGROUND:\n\nFounded in 1990, InterTrust Technologies Corporation has been inventing   \nand implementing a\ngeneral purpose architecture for secure electronic commerce and digital   \nrights management.\nInterTrust delivers a powerful set of middleware and tools that enables   \ninformation providers\nand other electronic commerce participants to securely control electronic   \nrelationships and\nensure payment, usage measurement, and other rights management on the   \nInternet and\ncorporate Intranets. InterTrust products make diverse, global electronic   \ncommerce practical\nand profitable for the first time.\n\nSince its founding, InterTrust has devoted itself exclusively to   \ninventing and implementing the\nfirst secure foundation for trusted electronic commerce interaction and   \nadministration.\nInterTrust is single-mindedly dedicated to delivering middleware tools   \nthat enable the\ntransformation of cyberspace into a highly efficient and safe place to do   \nbusiness. Using the\nInterTrust Commerce Architecture, adopters of InterTrust technologies   \nwill enjoy substantial\nadvantages over their competitors and a wide array of new business   \nopportunities.\n\nInterTrust licensing models reflect a long-term commitment to our   \ncustomers, and license\nfees are small. For example, a royalty of less than 1% of revenue   \nresulting from content usage\nis charged. The InterTrust licensing philosophy keeps the Company focused   \non the long-term\nsuccess of its customers and creates strong incentives for customers to   \nproliferate their\nInterTrustworthy commerce applications to users worldwide.\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

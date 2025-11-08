@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.bcast.sgdd+xml",
+  "full": "application/vnd.oma.bcast.sgdd+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.bcast.sgdd+xml",
+    "template_text": "(registered 2007-06-29, last updated 2015-03-05)\n\nName : Uwe Rauschenbach\n\nEmail : Uwe.Rauschenbach&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.bcast.sgdd+xml\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\n\nSecurity considerations :\nBCAST Service Guide Delivery Descriptor data are passive, meaning they\ndo not contain executable or active content which may represent a\nsecurity threat. Also, the format does not include confidential fields.\nHowever, the information present in this media format is used to\nconfigure the receiving application. Thus, the usage of the format may\nbe vulnerable to attacks modifying or spoofing the content of this\nformat. Depending on the system architecture, it is recommended to use\nsource authentication and integrity protection.\n\n\nInteroperability considerations :\nThis content type carries service guide delivery information within the\nscope of the OMA BCAST enabler. The OMA BCAST enabler specification\nincludes static conformance requirements and interoperability test cases\nfor this content.\n\nPublished specification :\nOMA BCAST 1.0 Enabler Specification - Service Guide for Mobile Broadcast\nServices, especially section 5.4.1.5. Available from\nhttp://www.openmobilealliance.org\n\nApplications which use this media :\nOMA BCAST Service Guide\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Uwe Rauschenbach\n2. Email : Uwe.Rauschenbach&nokia.com\n\nIntended usage : Limited Use\nOnly for usage with BCAST Service Guide Delivery Descriptor, which meet\nthe semantics given in the mentioned specification.\n\nAuthor/Change controller : OMNA - Open Mobile Naming Authority,\nOMA-OMNA&mail.openmobilealliance.org\n"
+  },
+  "references": []
+}

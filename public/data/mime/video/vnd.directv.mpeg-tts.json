@@ -1,0 +1,33 @@
+{
+  "type": "video",
+  "subtype": "vnd.directv.mpeg-tts",
+  "full": "video/vnd.directv.mpeg-tts",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/vnd.directv.mpeg-tts",
+    "template_text": "(last updated 2010-09-22)\n\nName : Nathan Zerbe\n\nEmail : nzerbe&directv.com\n\nMIME media type name : Video\n\nMIME subtype name : Vendor Tree - vnd.directv.mpeg-tts\n\nRequired parameters :\n\nOptional parameters :\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nThe security issues with this type have not been assessed\n\n\nInteroperability considerations :\n\n\nPublished specification :\n\n\nApplications which use this media :\nThis media type is used in North and South America for Direct Broadcast\nSatellite distribution and home networking of audio/video content. This\nmedia type is supported by set top boxes, home media servers, home media\nclients and digital video recorders\n\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : undefined\n3. Macintosh file type code : undefined\n4. Object Identifiers: none\n\nThis media type identifies audiovisual streams multiplexed using an\nextended ITU BO 1516 system B Transport Stream packet of the media type\nvnd.directv.mpeg. For this extended format, the packet length is\nincreased to 134 bytes with the first 4 bytes defining an additional\ntime stamp for networking usage. The remaining 130 bytes\n\ncorrespond to the conventional vnd.directv.mpeg media type packet\n\n\nPerson to contact for further information :\n\n1. Name : Nathan Zerbe\n2. Email : nzerbe&directv.com\n\nIntended usage : Common\n\n\n\nAuthor/Change controller :\n\n(file created 2010-09-22)"
+  },
+  "references": []
+}

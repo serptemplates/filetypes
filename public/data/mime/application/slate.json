@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "slate",
+  "full": "application/slate",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/slate",
+    "encoding_considerations": "Since BBN/Slate documents may contain binary data, transfer encoding will\nnormally be Base64",
+    "security_considerations": "BBN/Slate documents can contain enclosures which may be executed by the\nrecipient.  These enclosures can include executable programs or input to\ninterpreters like the shell.  The user is queried to assure that they really\nwant to execute the enclosure and the documentation warns about the dangers\nof \"mail bombs\".  Users are cautioned to exercise care when executing\nenclosures received through the mail.",
+    "template_text": "\n\n\nMIME TYPE NAME:\napplication\n\nMIME SUBTYPE NAME:\nslate\n\nREQUIRED PARAMETERS:\nversion\n\tvalue of parameter is a text string\n\nOPTIONAL PARAMETERS:\nnone\n\nENCODING CONSIDERATIONS:\nSince BBN/Slate documents may contain binary data, transfer encoding will\nnormally be Base64\n\nSECURITY CONSIDERATIONS:\nBBN/Slate documents can contain enclosures which may be executed by the\nrecipient.  These enclosures can include executable programs or input to\ninterpreters like the shell.  The user is queried to assure that they really\nwant to execute the enclosure and the documentation warns about the dangers\nof \"mail bombs\".  Users are cautioned to exercise care when executing\nenclosures received through the mail.\n\nPUBLISHED SPECIFICATION:\nThe BBN/Slate document format is published as part of the standard\ndocumentation set distributed with the BBN/Slate product.  It is available\nfrom:\n\n\tBBN/Slate Product Manager\n\tBBN Systems and Technologies\n\t10 Moulton Street\n\tCambridge, MA 02138\n\n\n\n\n"
+  },
+  "references": []
+}

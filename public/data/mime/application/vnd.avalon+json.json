@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.avalon+json",
+  "full": "application/vnd.avalon+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.avalon+json",
+    "security_considerations": "Avalon+JSON shares security issues common to all JSON content types. See RFC 7159 Section #12 (https://tools.ietf.org/html/rfc7159#section-12) for additional information. Avalon+JSON does not provide executable content. Should the information contained in Avalon+JSON documents require privacy or integrity services, it is recommended that these be implemented by the underlying protocol (e.g. HTTPS).\n\nInteroperability considerations: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .json\n4. Macintosh file type code: TEXT\n5. Object Identifiers: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered 2017-09-19, last updated 2017-09-19)\n\nMedia type name: application\n\nMedia subtype name: vnd.avalon+json\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations:\nAvalon+JSON shares security issues common to all JSON content types. See RFC 7159 Section #12 (https://tools.ietf.org/html/rfc7159#section-12) for additional information. Avalon+JSON does not provide executable content. Should the information contained in Avalon+JSON documents require privacy or integrity services, it is recommended that these be implemented by the underlying protocol (e.g. HTTPS).\n\nInteroperability considerations: N/A\n\nPublished specification:\nhttps://github.com/AvalonJSON/Specification\n\nApplications which use this media: Various.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): .json\n4. Macintosh file type code: TEXT\n5. Object Identifiers: N/A\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n1. Name: Ben Hinman\n2. Email: avalonjson.1&ben.hinman.me\n\nIntended usage: Common\n\nAuthor/Change controller: N/A"
+  },
+  "references": []
+}

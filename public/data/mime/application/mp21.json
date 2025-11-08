@@ -1,0 +1,41 @@
+{
+  "type": "application",
+  "subtype": "mp21",
+  "full": "application/mp21",
+  "extensions": [
+    "m21",
+    "mp21"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/mp21",
+    "encoding_considerations": "transmitted without CR/LF conversion, 7-bit stripping, etc. Note that although files\nconforming to ISO/IEC 21000-2 are textual XML the mp21 file which contains it is binary.\n\nSecurity considerations: It is possible to inject non-compliant MPEG streams (Audio, Video,\nand Systems) in the MP21 file to overload the receiver/decoder's buffers. This might\ncompromise the functionality of the receiver or even crash it.\nAn MP21 file supports the storage of stream types, including commands that are executed on\nthe terminal such as Digital Item Methods based on ECMASCRIPT for which also bindings to\nJava(TM) and C++ exists. It is possible to use one or more of the above in a manner non-\ncompliant to MPEG to crash the receiver or temporarily make it unavailable.\nAuthentication mechanisms can be used to validate of the sender and the data to prevent\nsecurity problems due to non-compliant malignant MP21 files.\n\nInteroperability considerations: A number of interoperating implementations exist within\nthe ISO/IEC 21000 community, and that community has reference software for reading and\nwriting the file format.\n\nPublished specification: ISO/IEC 21000-9:2005\n\nApplications which use this media type: Multimedia",
+    "security_considerations": "and Systems) in the MP21 file to overload the receiver/decoder's buffers. This might\ncompromise the functionality of the receiver or even crash it.\nAn MP21 file supports the storage of stream types, including commands that are executed on\nthe terminal such as Digital Item Methods based on ECMASCRIPT for which also bindings to\nJava(TM) and C++ exists. It is possible to use one or more of the above in a manner non-\ncompliant to MPEG to crash the receiver or temporarily make it unavailable.\nAuthentication mechanisms can be used to validate of the sender and the data to prevent\nsecurity problems due to non-compliant malignant MP21 files.\n\nInteroperability considerations: A number of interoperating implementations exist within\nthe ISO/IEC 21000 community, and that community has reference software for reading and\nwriting the file format.\n\nPublished specification: ISO/IEC 21000-9:2005\n\nApplications which use this media type: Multimedia",
+    "interoperability_considerations": "the ISO/IEC 21000 community, and that community has reference software for reading and\nwriting the file format.\n\nPublished specification: ISO/IEC 21000-9:2005\n\nApplications which use this media type: Multimedia",
+    "additional_information": "Magic number(s): none\nFile extension(s): m21 and mp21 are both declared at http://www.fileinfo.net and\nhttp://filext.com/.\nMacintosh File Type Code(s): mp21 is registered with Apple.\n\nPerson & email address to contact for further information: David Singer, singer&apple.com\nIntended usage: COMMON\n\nAuthor/Change controller: David Singer, ISO/IEC 21000 file format chair",
+    "intended_usage": "common",
+    "template_text": "(registered 2009-07-07; last updated 2009-07-07)\n\nhttp://standards.iso.org/ittf/PubliclyAvailableStandards/c050551_ISOIEC_21009_2005_Amd_2008_Annex_D.pdf\n\nMIME media type name: application\n\nMIME subtype name: mp21\n\nRequired parameters: none\n\nOptional parameters: none\n\nEncoding considerations: base64 is generally preferred; files are binary and should be\ntransmitted without CR/LF conversion, 7-bit stripping, etc. Note that although files\nconforming to ISO/IEC 21000-2 are textual XML the mp21 file which contains it is binary.\n\nSecurity considerations: It is possible to inject non-compliant MPEG streams (Audio, Video,\nand Systems) in the MP21 file to overload the receiver/decoder's buffers. This might\ncompromise the functionality of the receiver or even crash it.\nAn MP21 file supports the storage of stream types, including commands that are executed on\nthe terminal such as Digital Item Methods based on ECMASCRIPT for which also bindings to\nJava(TM) and C++ exists. It is possible to use one or more of the above in a manner non-\ncompliant to MPEG to crash the receiver or temporarily make it unavailable.\nAuthentication mechanisms can be used to validate of the sender and the data to prevent\nsecurity problems due to non-compliant malignant MP21 files.\n\nInteroperability considerations: A number of interoperating implementations exist within\nthe ISO/IEC 21000 community, and that community has reference software for reading and\nwriting the file format.\n\nPublished specification: ISO/IEC 21000-9:2005\n\nApplications which use this media type: Multimedia\n\nAdditional information:\nMagic number(s): none\nFile extension(s): m21 and mp21 are both declared at http://www.fileinfo.net and\nhttp://filext.com/.\nMacintosh File Type Code(s): mp21 is registered with Apple.\n\nPerson & email address to contact for further information: David Singer, singer&apple.com\nIntended usage: COMMON\n\nAuthor/Change controller: David Singer, ISO/IEC 21000 file format chair\n"
+  },
+  "references": []
+}

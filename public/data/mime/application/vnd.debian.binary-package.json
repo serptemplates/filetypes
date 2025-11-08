@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.debian.binary-package",
+  "full": "application/vnd.debian.binary-package",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.debian.binary-package",
+    "template_text": "(registered 2014-05-20, last updated 2014-05-20)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.debian.binary-package\n\nRequired parameters : None.\n\nOptional parameters : None.\n\nEncoding considerations : binary\n\nSecurity considerations : \nDebian binary packages can contain scripts executing arbitrary commands during\ninstallation, which is done with administrator privileges. It is therefore\nessential to trust the origin of the package. The recommended way is to\ndownload packages from Debian format repositories that are authenticated with a\ntrusted cryptographic key (see the manual page of apt-secure for details). As\na lesser alternative for cases where secure package manager frontends (such as\nAPT, cupt, etc.) are not available, the package should be downloaded with\nsecured protocols such as HTTPS. There also exists a mechanism for signing\npackages directly (called ‘debsigs’), but it is not deployed.\n\nThe Debian binary package consists of an ‘ar’ archive (in old common format)\ncontaining, amongst other things, compressed tar archives for the primary\npackage contents such as the files to be installed (see the ‘deb’ manual page\nfor details on the format); it is therefore possible to inspect them with\nstandard UNIX tools (although the recommended way is through the command\n‘dpkg-deb’) without actually installing the package and therefore without\nexecuting the package's scripts. An estimate of the uncompressed size of the\npackage may be available in its ‘control’ file, but it can only be trusted if\nthe package itself is trusted (a malicious person can design a package\ncontaining small compressed files that become extremely large after\ndecompression).\n\nSince the Debian packages convey programs to be installed on a computer,\nthe monitoring of a user's downloads over non-secured transport protocols such\nas HTTP or FTP may reveal information pertaining to the user's privacy, or\nsuggest information related to the system's security such as the precise\nversion numbers of programs in use.\n\nInteroperability considerations : \nArbitrary Debian binary packages can be installed on any system where the\n‘dpkg’ package manager is used, but it is recommended to only install packages\nthat have been built for a release matching the distribution installed on the\nsystem.\n\nPublished specification : \nhttp://manpages.debian.org/cgi-bin/man.cgi?query=deb&manpath=Debian+unstable+sid\n\nApplications which use this media : \nThe Debian binary packages are manipulated by system programs such as ‘dpkg’,\n‘apt-get’, graphical front-ends such as ’Synaptic’ but also generic archive\ndecompressors such as ‘File Roller’. After downloading a package with a web\nbrowser or after clicking on its icon, front-ends or decompressors are usually\nstarted.\n\nFragment identifier considerations : None.\n\nRestrictions on usage : None.\n\n\nAdditional information :\n\n1. Deprecated alias names for this type : application/x-debian-package, application/x-deb\n2. Magic number(s) : Version 2.0 files start with: !<arch>\\ndebian-binary\n3. File extension(s) : deb, udeb\n4. Macintosh file type code : None.\n5. Object Identifiers: None.\n\nPerson to contact for further information :\n\n1. Name : The Debian Policy mailing list\n2. Email : debian-policy&lists.debian.org\n\nIntended usage : Common\n\nAuthor/Change controller : The Debian Project <http://www.debian.org>"
+  },
+  "references": []
+}

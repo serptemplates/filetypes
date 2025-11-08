@@ -1,0 +1,42 @@
+{
+  "type": "video",
+  "subtype": "smpte291",
+  "full": "video/smpte291",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/video/smpte291",
+    "type_name": "video",
+    "subtype_name": "smpte291",
+    "encoding_considerations": "Section 4.8 of RFC 6838 [RFC6838].\n\nSecurity considerations: See Section 7 of RFC 8331.\n\nInteroperability considerations: Data items in smpte291 can be very\ndiverse.  Receivers might only be capable of interpreting a subset of\nthe possible data items.  Some implementations might care about the\nlocation of the ANC data packets in the SDI raster, but other\nimplementations might not care.\n\nPublished specification: RFC 8331\n\nApplications that use this media type: Devices that stream real-time\nprofessional video, especially those that interoperate with legacy\nserial digital interfaces (SDI).",
+    "security_considerations": "Interoperability considerations: Data items in smpte291 can be very\ndiverse.  Receivers might only be capable of interpreting a subset of\nthe possible data items.  Some implementations might care about the\nlocation of the ANC data packets in the SDI raster, but other\nimplementations might not care.\n\nPublished specification: RFC 8331\n\nApplications that use this media type: Devices that stream real-time\nprofessional video, especially those that interoperate with legacy\nserial digital interfaces (SDI).",
+    "interoperability_considerations": "diverse.  Receivers might only be capable of interpreting a subset of\nthe possible data items.  Some implementations might care about the\nlocation of the ANC data packets in the SDI raster, but other\nimplementations might not care.\n\nPublished specification: RFC 8331\n\nApplications that use this media type: Devices that stream real-time\nprofessional video, especially those that interoperate with legacy\nserial digital interfaces (SDI).",
+    "applications": "professional video, especially those that interoperate with legacy\nserial digital interfaces (SDI).",
+    "additional_information": "Deprecated alias names for this type: N/A\n\n   Magic number(s): N/A\n\n   File extension(s): N/A\n\n   Macintosh file type code(s): N/A",
+    "intended_usage": "common",
+    "change_controller": "The IETF PAYLOAD Working Group, or other party as",
+    "template_text": "Type name: video\n\nSubtype name: smpte291\n\nRequired parameters:\n\n   Rate:\n      RTP timestamp clock rate.\n\n      When an ANC data RTP stream is to be associated with an RTP\n      video stream, the RTP timestamp rates SHOULD be the same to\n      ensure that ANC data packets can be associated with the\n      appropriate frame or field.  Otherwise, a 90 kHz rate SHOULD be\n      used.\n\n      Note that techniques described in RFC 7273 [RFC7273] can\n      provide a common reference clock for multiple RTP streams\n      intended for synchronized presentation.\n\nOptional parameters:\n\n   DID_SDID:\n      Data identification and secondary data identification words.\n\n      The presence of the DID_SDID parameters signals that all ANC\n      data packets of this stream are of a particular type or types,\n      i.e., labeled with particular DIDs and SDIDs.  DID and SDID\n      values of SMPTE-registered ANC data packet types can be found\n      in the SMPTE Registry for Data Identification Word Assignments\n      [SMPTE-RA].\n\n      \"Type 1\" ANC data packets (which do not have SDIDs defined)\n      SHALL be labeled with SDID=0x00.\n\n      DID and SDID values can be registered with SMPTE as per SMPTE\n      ST 291-1 [ST291].\n\n      The absence of the DID_SDID parameter signals that\n      determination of the DID and SDID of ANC data packets in the\n      payload can only be achieved through direct inspection of the\n      ANC data packet fields.\n\n      The ABNF description of the DID_SDID parameter is described in\n      Section 4.\n\n   VPID_Code:\n      This integer parameter specifies the Video Payload ID (VPID)\n      code of the source interface of ANC data packets using the\n      value from byte 1 of the VPID as defined in SMPTE ST 352\n      [ST352].  The integer SHALL be made with bit 7 of VPID byte 1\n      being the most significant bit and bit 0 of VPID byte 1 being\n      the least significant bit.  For example, 132 refers to SMPTE ST\n      292-1, 720-line video payloads on a 1.5 Gbps (nominal) serial\n      digital interface.\n\nEncoding considerations: This media type is framed and binary; see\nSection 4.8 of RFC 6838 [RFC6838].\n\nSecurity considerations: See Section 7 of RFC 8331.\n\nInteroperability considerations: Data items in smpte291 can be very\ndiverse.  Receivers might only be capable of interpreting a subset of\nthe possible data items.  Some implementations might care about the\nlocation of the ANC data packets in the SDI raster, but other\nimplementations might not care.\n\nPublished specification: RFC 8331\n\nApplications that use this media type: Devices that stream real-time\nprofessional video, especially those that interoperate with legacy\nserial digital interfaces (SDI).\n\nAdditional Information:\n\n   Deprecated alias names for this type: N/A\n\n   Magic number(s): N/A\n\n   File extension(s): N/A\n\n   Macintosh file type code(s): N/A\n\nPerson & email address to contact for further information:\n\n   T. Edwards <thomas.edwards&fox.com>\n   IETF Payload Working Group <payload&ietf.org>\n\nIntended usage: COMMON\n\nRestrictions on usage: This media type depends on RTP framing and\nhence is only defined for transfer via RTP RFC 3550 [RFC3550].\nTransport within other framing protocols is not defined at this time.\n\nAuthor: T.  Edwards <thomas.edwards&fox.com>\n\nChange controller: The IETF PAYLOAD Working Group, or other party as\ndesignated by the IESG."
+  },
+  "references": []
+}

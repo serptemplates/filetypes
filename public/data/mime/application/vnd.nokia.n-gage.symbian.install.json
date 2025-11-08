@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.nokia.n-gage.symbian.install",
+  "full": "application/vnd.nokia.n-gage.symbian.install",
+  "extensions": [
+    "n-gage"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.nokia.n-gage.symbian.install",
+    "template_text": "(last updated 2007-03-12; OBSOLETE)\n\nName : Nokia\n\nEmail : mime&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.nokia.n-gage.symbian.install\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe media type does contain executable content. The executable content\nis secured in a signed Symbian \".sis\" file. No special privacy or integrity\nservices are required.\n\nThis type is assigned to n-gage game install files. Security of game install\nfiles relies on signed Symbian install files.\n\n\nInteroperability considerations :\nNone\n\nPublished specification :\nNone\n\nApplications which use this media :\nWill be used by the S60 N-Gage application to install a N-Gage game.\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : n-gage\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\n\n\nPerson to contact for further information :\n\n1. Name : Nokia\n2. Email : mime&nokia.com\n\nIntended usage : Obsolete\n\n\nAuthor/Change controller :\n\n\n(filed created 2007-03-12)"
+  },
+  "references": []
+}

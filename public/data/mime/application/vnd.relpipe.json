@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.relpipe",
+  "full": "application/vnd.relpipe",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.relpipe",
+    "encoding_considerations": "Security considerations: This media type contains no executable \n   content, just data. Because it may contain any data (generic \n   format), it may also contain sensitive data. It is up to the user \n   to secure the message on the protocol or container level (TLS, \n   S/MIME, GPG etc.) when needed.\n\nPrimary use of this format is IPC (inter-process communication) on a \n   local machine, between two processes, mostly owned by the same \n   user. However data in this format may be transferred also over \n   e.g. HTTP(S) or e-mail, so having a Media type is desired.\n\n   Regarding DoS: data in this binary format contain length-prefixed \n   values, thus corrupted/malicious data + buggy implementation can \n   lead to attempt to allocate huge amounts of memory. However this \n   caveat is common for almost any binary format.\n\nInteroperability considerations: Data in this format have same \n   representation regardless platform operating system, default \n   encoding, endianness, CPU architecture etc. Text attributes are \n   serialized in UTF-8 regardless local default encoding. Integer \n   numbers are serialized as LEB128. Booleans are simply 0x00/0x01. \n   Other data types will be also strictly machine-readable and \n   platform independent.",
+    "security_considerations": "content, just data. Because it may contain any data (generic \n   format), it may also contain sensitive data. It is up to the user \n   to secure the message on the protocol or container level (TLS, \n   S/MIME, GPG etc.) when needed.\n\nPrimary use of this format is IPC (inter-process communication) on a \n   local machine, between two processes, mostly owned by the same \n   user. However data in this format may be transferred also over \n   e.g. HTTP(S) or e-mail, so having a Media type is desired.\n\n   Regarding DoS: data in this binary format contain length-prefixed \n   values, thus corrupted/malicious data + buggy implementation can \n   lead to attempt to allocate huge amounts of memory. However this \n   caveat is common for almost any binary format.\n\nInteroperability considerations: Data in this format have same \n   representation regardless platform operating system, default \n   encoding, endianness, CPU architecture etc. Text attributes are \n   serialized in UTF-8 regardless local default encoding. Integer \n   numbers are serialized as LEB128. Booleans are simply 0x00/0x01. \n   Other data types will be also strictly machine-readable and \n   platform independent.",
+    "interoperability_considerations": "representation regardless platform operating system, default \n   encoding, endianness, CPU architecture etc. Text attributes are \n   serialized in UTF-8 regardless local default encoding. Integer \n   numbers are serialized as LEB128. Booleans are simply 0x00/0x01. \n   Other data types will be also strictly machine-readable and \n   platform independent.",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 2b0601040182c65d0804\n   3. File extension(s): rp\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: 1.3.6.1.4.1.41821.8.4",
+    "intended_usage": "common",
+    "template_text": "(registered 2023-09-11, last updated 2023-09-11)\n\nMedia type name: application\n\nMedia subtype name: vnd.relpipe\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nSecurity considerations: This media type contains no executable \n   content, just data. Because it may contain any data (generic \n   format), it may also contain sensitive data. It is up to the user \n   to secure the message on the protocol or container level (TLS, \n   S/MIME, GPG etc.) when needed.\n\nPrimary use of this format is IPC (inter-process communication) on a \n   local machine, between two processes, mostly owned by the same \n   user. However data in this format may be transferred also over \n   e.g. HTTP(S) or e-mail, so having a Media type is desired.\n\n   Regarding DoS: data in this binary format contain length-prefixed \n   values, thus corrupted/malicious data + buggy implementation can \n   lead to attempt to allocate huge amounts of memory. However this \n   caveat is common for almost any binary format.\n\nInteroperability considerations: Data in this format have same \n   representation regardless platform operating system, default \n   encoding, endianness, CPU architecture etc. Text attributes are \n   serialized in UTF-8 regardless local default encoding. Integer \n   numbers are serialized as LEB128. Booleans are simply 0x00/0x01. \n   Other data types will be also strictly machine-readable and \n   platform independent.\n\nPublished specification: \n\n   https://relational-pipes.globalcode.info/v_0/specification.xhtml\n   (not final yet)\n\nApplications which use this media: \n\n   - IPC (inter-process communication) between two processes running \n     on a single machine or over network e.g. piped through SSH \n     (Media type is not needed in this case)\n   - HTTP request and response bodies\n   - MIME e-mail attachments\n   - extended attributes (xattr) file metadata on a file system\n   - storage in a container format or a database that records also \n     Media type of stored data\n\nFragment identifier considerations: currently no defined syntax, \n   reserved for further use\n\nRestrictions on usage: not explicitly intended for limited use\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): 2b0601040182c65d0804\n   3. File extension(s): rp\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: 1.3.6.1.4.1.41821.8.4\n\nPerson to contact for further information:\n\n   1. Name: Frantisek Kucera\n   2. Email: iana-contact&frantovo.cz\n\nIntended usage: COMMON\n\nAuthor/Change controller: Frantisek Kucera, Frantovo.cz, \n   GlobalCode.info"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.pal+xml",
+  "full": "application/vnd.oma.pal+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.pal+xml",
+    "template_text": "(last updated 2011-05-04)\n\nName : Brian McColgan\n\nEmail : b_mccolgan&hotmail.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.pal+xml\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\n\n\nSecurity considerations :\nPresence Access Layer carries Presence Context, and Presence Aspects\n(i.e. abstractions of Presence Information) in PAL messages over\nbroadcast channels. PAL messages are passive in nature and do not \ncontain any executable content.\nIt is possible that PAL messages may contain confidential and/or\ncritical information. These types of messages may be secured utilizing\nauthentication, authorization, message integrity, confidentiality and\nprotection mechanisms as outlined in the referenced specifications below.\n\nInteroperability considerations :\n\n\nPublished specification :\nOMA PAL 1.0 Enabler Specification, especially Section 6 - OMA Presence\nData Extension v1.3 - OMA Security Common Framework Architecture.\nEnabler specifications are available at: http://www.openmobilealliance.org\n\n\n\nApplications which use this media :\nPresence aware services, and/or class-of-services (i.e. a collection of\none or more services which are presence capable and have some unifying\ncharacteristic - e.g. originate from a single vendor, etc.).\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nNone.\n\nPerson to contact for further information :\n\n1. Name : Brian McColgan\n2. Email : b_mccolgan&hotmail.com\n\nIntended usage : Limited Use\nOnly for usage with OMA Presence Access Layer v1.0, which\nfollow semantics given in the specification detailed above.\n\n\n\nAuthor/Change controller : OMNA - Open Mobile Naming Authority,\nOMNA Secretary - mailto:OMA-OMNA&mail.openmobilealliance.org\n\n(file created 2011-05-04)"
+  },
+  "references": []
+}

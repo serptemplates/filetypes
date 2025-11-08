@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "pidf+xml",
+  "full": "application/pidf+xml",
+  "extensions": [],
+  "charsets": [
+    "UTF-8"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/pidf+xml",
+    "template_text": "   To: ietf-types&iana.org\r\n   Subject: Registration of MIME media type application/pidf+xml\r\n\r\n   MIME media type name:  application\r\n\r\n   MIME subtype name:     pidf+xml\r\n\r\n   Required parameters:   (none)\r\n\r\n   Optional parameters:   charset\r\n      Indicates the character encoding of enclosed XML.  Default is\r\n      UTF-8.\r\n\r\n   Encoding considerations:\r\n      Uses XML, which can employ 8-bit characters, depending on the\r\n      character encoding used.\r\n      See RFC 3023 [RFC 3023], section 3.2.\r\n\r\n   Security considerations:\r\n      This content type is designed to carry presence data, which may\r\n      be considered private information.  Appropriate precautions should\r\n      be adopted to limit disclosure of this information.\r\n\r\n   Interoperability considerations:\r\n      This content type provides a common format for exchange of\r\n      presence information across different CPP compliant protocols.\r\n\r\n   Published specification:\r\n      RFCXXXX (this document)\r\n\r\n   Applications which use this media type:\r\n      Presence and instant messaging systems.\r\n\r\n   Additional information:\r\n\r\n     Magic number(s):\r\n     File extension(s):\r\n     Macintosh File Type Code(s):\r\n\r\n   Person & email address to contact for further information:\r\n      Hiroyasu Sugano\r\n      E-mail: sugano.h&jp.fujitsu.com\r\n\r\n   Intended usage:\r\n      LIMITED USE\r\n\r\n   Author/Change controller:\r\n      This specification is a work item of the IETF IMPP working group,\r\n      with mailing list address <impp&iastate.edu>.\r\n\r\n   Other information:\r\n      This media type is a specialization of application/xml [RFC 3023],\r\n      and many of the considerations described there also apply to\r\n      application/pidf+xml.\r\n\r\n\r\n\r\n[]\r\n\r\n\r\n"
+  },
+  "references": []
+}

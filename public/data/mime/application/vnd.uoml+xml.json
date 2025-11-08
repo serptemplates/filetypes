@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "vnd.uoml+xml",
+  "full": "application/vnd.uoml+xml",
+  "extensions": [
+    "uoml",
+    "uo"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.uoml+xml",
+    "encoding_considerations": "UOML documents have an encoding of 7bit (US-ASCII).",
+    "security_considerations": "UOML is a XML-based markup language. For general security considerations \nsee section 10 of [RFC3023].\n\nUOML documents contain no active or executable contents.\n\nData integrity\nTo verify that the data of an UOML document has not been changed, destroyed \nor lost in an unauthorized or accidental manner, it is possible to check \nthe hash sum and / or digital signature in the document's meta element.\n\nData confidentiality\nTo ensure that the data of an UOML document stored on uniqueobject.com is \naccessible only to those authorized to have access, the meta element contains \ninformation about the access rights. Furthermore it is possible to encrypt \nparts of the document.",
+    "interoperability_considerations": "It is possible to transform parts of UOML documents into other XML formats, \ne.g. XHTML or XSL-FO",
+    "additional_information": "Magic number(s): None.\nFile extension(s): .uoml, .uo\nMacintosh file type code: None.\nObject Identifiers: None.",
+    "template_text": "(Last Updated 25 April 2006)\r\n\r\nName: Arne Gerdes\r\n\r\nEmail: arnegerdes&uniqueobject.com\r\n\r\nHomepage: http://www.uniqueobject.com\r\n\r\nMIME media type name: Application\r\n\r\nMIME subtype names: Vendor Tree - vnd.uoml+xml\r\n\r\nRequired parameters: None.\r\n\r\nOptional parameters: None.\r\n\r\nEncoding considerations:\r\nUOML documents have an encoding of 7bit (US-ASCII).\r\n\r\nSecurity considerations:\r\nUOML is a XML-based markup language. For general security considerations \r\nsee section 10 of [RFC3023].\r\n\r\nUOML documents contain no active or executable contents.\r\n\r\nData integrity\r\nTo verify that the data of an UOML document has not been changed, destroyed \r\nor lost in an unauthorized or accidental manner, it is possible to check \r\nthe hash sum and / or digital signature in the document's meta element.\r\n\r\nData confidentiality\r\nTo ensure that the data of an UOML document stored on uniqueobject.com is \r\naccessible only to those authorized to have access, the meta element contains \r\ninformation about the access rights. Furthermore it is possible to encrypt \r\nparts of the document.\r\n\r\nInteroperability considerations:\r\nIt is possible to transform parts of UOML documents into other XML formats, \r\ne.g. XHTML or XSL-FO\r\n\r\nPublished specification :\r\nA specification of UOML will be available later.\r\n\r\nApplications which use this media:\r\nuniqueobject (uniqueobject.com, uniqueobject.de, ...)\r\n\r\nAdditional information:\r\n\r\nMagic number(s): None.\r\nFile extension(s): .uoml, .uo\r\nMacintosh file type code: None.\r\nObject Identifiers: None.\r\n\r\nOther information:\r\nThis media type is a specialization of application/xml [RFC3023] and many of the\r\nconsiderations described there also apply to application/vnd.uoml+xml.\r\n\r\nPerson to contact for further information:\r\n\r\nName: Arne Gerdes\r\n\r\nEmail: arnegerdes&uniqueobject.com\r\n\r\nHomepage: http://www.arnegerdes.de\r\n\r\nIntended usage:\r\nCommon\r\n\r\nAuthor/Change controller:\r\nArne Gerdes\r\n\r\nReferences\r\n[RFC3023]\r\n\r\n\"XML Media Types\", RFC3023, M. Murata, S. St.Laurent, D. Kohn, January 2001. Available at:\r\nhttp://www.ietf.org/rfc/rfc3023.txt\r\n\r\n(File Created 25 April 2006)"
+  },
+  "references": []
+}

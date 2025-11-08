@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.lwm2m+cbor",
+  "full": "application/vnd.oma.lwm2m+cbor",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.lwm2m+cbor",
+    "encoding_considerations": "Security considerations: OMA LwM2M data is passive, meaning it does \n   not contain executable or active content which may represent a \n   security threat. The OMA LwM2M CBOR format does not contain fields \n   which are confidential. The usage of the LwM2M CBOR format may be \n   vulnerable to attacks modifying or spoofing the content of this \n   format. The OMA LwM2M protocol uses source authentication and \n   integrity protection.\n\n   This media type inherits the security issues associated with the \n   CBOR format detailed in section 8 of RFC 7049.\n\nInteroperability considerations: This content type carries OMA LwM2M \n   data model serialization within the scope of the OMA LwM2M \n   enabler. The OMA LwM2M enabler specification includes static \n   conformance requirements for this content.\n\nPublished specification: OMA LwM2M 1.2 Technical Specification. \n   Available from https://www.omaspecworks.org/\n\nApplications which use this media: OMA LwM2M\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "security_considerations": "not contain executable or active content which may represent a \n   security threat. The OMA LwM2M CBOR format does not contain fields \n   which are confidential. The usage of the LwM2M CBOR format may be \n   vulnerable to attacks modifying or spoofing the content of this \n   format. The OMA LwM2M protocol uses source authentication and \n   integrity protection.\n\n   This media type inherits the security issues associated with the \n   CBOR format detailed in section 8 of RFC 7049.\n\nInteroperability considerations: This content type carries OMA LwM2M \n   data model serialization within the scope of the OMA LwM2M \n   enabler. The OMA LwM2M enabler specification includes static \n   conformance requirements for this content.\n\nPublished specification: OMA LwM2M 1.2 Technical Specification. \n   Available from https://www.omaspecworks.org/\n\nApplications which use this media: OMA LwM2M\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "interoperability_considerations": "data model serialization within the scope of the OMA LwM2M \n   enabler. The OMA LwM2M enabler specification includes static \n   conformance requirements for this content.\n\nPublished specification: OMA LwM2M 1.2 Technical Specification. \n   Available from https://www.omaspecworks.org/\n\nApplications which use this media: OMA LwM2M\n\nFragment identifier considerations: None\n\nRestrictions on usage: None",
+    "additional_information": "1. Deprecated alias names for this type: None \n   2. Magic number(s): None \n   3. File extension(s): None \n   4. Macintosh file type code: None \n   5. Object Identifiers: None",
+    "intended_usage": "limited use",
+    "template_text": "Name: David Navarro\n\nEmail: david.navarro&ioterop.com\n\nMedia type name: application\n\nMedia subtype name: vnd.oma.lwm2m+cbor\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: binary\n\nSecurity considerations: OMA LwM2M data is passive, meaning it does \n   not contain executable or active content which may represent a \n   security threat. The OMA LwM2M CBOR format does not contain fields \n   which are confidential. The usage of the LwM2M CBOR format may be \n   vulnerable to attacks modifying or spoofing the content of this \n   format. The OMA LwM2M protocol uses source authentication and \n   integrity protection.\n\n   This media type inherits the security issues associated with the \n   CBOR format detailed in section 8 of RFC 7049.\n\nInteroperability considerations: This content type carries OMA LwM2M \n   data model serialization within the scope of the OMA LwM2M \n   enabler. The OMA LwM2M enabler specification includes static \n   conformance requirements for this content.\n\nPublished specification: OMA LwM2M 1.2 Technical Specification. \n   Available from https://www.omaspecworks.org/\n\nApplications which use this media: OMA LwM2M\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: None \n   2. Magic number(s): None \n   3. File extension(s): None \n   4. Macintosh file type code: None \n   5. Object Identifiers: None\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: John Mudge\n   2. Email: helpdesk&omaorg.org\n\nIntended usage: Limited Use\n\n   Only for usage with OMA LwM2M, which meet the semantics given in \n   the mentioned specification.\n\nAuthor/Change controller: Open Mobile Naming Authority (OMNA)\n\n   OMA-OMNA&mail.openmobilealliance.org\n"
+  },
+  "references": []
+}

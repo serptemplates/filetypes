@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.ntt-local.sip-ta_tcp_stream",
+  "full": "application/vnd.ntt-local.sip-ta_tcp_stream",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.ntt-local.sip-ta_tcp_stream",
+    "template_text": "(last updated 2011-01-14)\n\nName : Yoshiko Sugaya\n\nEmail : sugaya.y&east.ntt.co.jp\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.ntt-local.sip-ta_tcp_stream\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of\nhandling binary.\n\nSecurity considerations :\nThe contents of this media type may contain active or\nexecutable content. This media type will only be used\nin our specific application program. The connection\nof the application requires that sender's information\nhas to be known and set to the recipient's application\nprogram for authentication. Therefore the recipient\nis able to block anonymous connection and to prevent\nthe active contents from causing problems.\nThis media type doesn't provide privacy or integrity protection,\nso if tampering or eavesdropping are concerns an external service\nmust be used to get these types of protection.\n\nInteroperability considerations :\nNone\n\n\nPublished specification :\nNone\n\n\nApplications which use this media :\nFile transfer application on information device\n\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : None\n3. Macintosh file type code : None\n4. Object Identifiers: None\n\nNone\n\n\nPerson to contact for further information :\n\n1. Name : NTT-local\n2. Email : ngn-fmt-regist&ml.east.ntt.co.jp\n\nIntended usage : Common\n\n\nAuthor/Change controller : None\n\n(file created 2011-01-14)"
+  },
+  "references": []
+}

@@ -1,0 +1,42 @@
+{
+  "type": "application",
+  "subtype": "rfc+xml",
+  "full": "application/rfc+xml",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/rfc+xml",
+    "type_name": "application",
+    "subtype_name": "rfc+xml",
+    "encoding_considerations": "described in Section 9.1 of [RFC7303].\n\nSecurity considerations:  As defined in Section 7 of [RFC7991].  \n   In addition, as this Media Type uses the \"+xml\" convention, it \n   inherits the security considerations described in Section 10 of \n   [RFC7303].\n\nInteroperability considerations:  Different implementations of this\n   format have had interoperability issues.  It is not expected that\n   publication of this application will cause those implementations\n   to be fixed.\n\nPublished specification:  RFC7991.\n\nApplications that use this Media Type:  Applications that transform\n   xml2rfc to output representations such as plain text or HTML, plus\n   additional analysis tools.\n\nFragment identifier considerations:  The \"anchor\" attribute is used\n   for assigning document-wide unique identifiers that can be used as\n   shorthand pointers, as described in \"XPointer Framework\", W3C \n   Recommendation REC-xptr-framework-20030325, March 2003, \n   <http://www.w3.org/TR/2003/REC-xptr-framework-20030325/>.",
+    "security_considerations": "In addition, as this Media Type uses the \"+xml\" convention, it \n   inherits the security considerations described in Section 10 of \n   [RFC7303].\n\nInteroperability considerations:  Different implementations of this\n   format have had interoperability issues.  It is not expected that\n   publication of this application will cause those implementations\n   to be fixed.\n\nPublished specification:  RFC7991.\n\nApplications that use this Media Type:  Applications that transform\n   xml2rfc to output representations such as plain text or HTML, plus\n   additional analysis tools.\n\nFragment identifier considerations:  The \"anchor\" attribute is used\n   for assigning document-wide unique identifiers that can be used as\n   shorthand pointers, as described in \"XPointer Framework\", W3C \n   Recommendation REC-xptr-framework-20030325, March 2003, \n   <http://www.w3.org/TR/2003/REC-xptr-framework-20030325/>.",
+    "interoperability_considerations": "format have had interoperability issues.  It is not expected that\n   publication of this application will cause those implementations\n   to be fixed.\n\nPublished specification:  RFC7991.\n\nApplications that use this Media Type:  Applications that transform\n   xml2rfc to output representations such as plain text or HTML, plus\n   additional analysis tools.\n\nFragment identifier considerations:  The \"anchor\" attribute is used\n   for assigning document-wide unique identifiers that can be used as\n   shorthand pointers, as described in \"XPointer Framework\", W3C \n   Recommendation REC-xptr-framework-20030325, March 2003, \n   <http://www.w3.org/TR/2003/REC-xptr-framework-20030325/>.",
+    "applications": "xml2rfc to output representations such as plain text or HTML, plus\n   additional analysis tools.\n\nFragment identifier considerations:  The \"anchor\" attribute is used\n   for assigning document-wide unique identifiers that can be used as\n   shorthand pointers, as described in \"XPointer Framework\", W3C \n   Recommendation REC-xptr-framework-20030325, March 2003, \n   <http://www.w3.org/TR/2003/REC-xptr-framework-20030325/>.",
+    "additional_information": "Deprecated alias names for this type:  None.\n\n   Magic number(s):  As specified for \"application/xml\" in [RFC7303].\n\n   File extension(s):  .xml or .rfcxml when disambiguation from other\n      XML files is needed\n\n   Macintosh file type code(s):  TEXT\n\nPerson & email address to contact for further information:  See the\n   Author's Address section of RFC 7749.\n\nIntended usage:  COMMON\n\nRestrictions on usage:  None\n\nAuthor:  See the Author's Address section of RFC 7749.\n\nChange controller:  RFC Series Editor (rse&rfc-editor.org)",
+    "intended_usage": "common",
+    "change_controller": "RFC Series Editor (rse&rfc-editor.org)",
+    "template_text": "Type name:  application\n\nSubtype name:  rfc+xml\n\nRequired parameters:  There are no required parameters.\n\nOptional parameters:  \"charset\": This parameter has identical\n   semantics to the charset parameter of the \"application/xml\" Media\n   Type specified in Section 9.1 of [RFC7303].\n\nEncoding considerations:  Identical to those of \"application/xml\" as\n   described in Section 9.1 of [RFC7303].\n\nSecurity considerations:  As defined in Section 7 of [RFC7991].  \n   In addition, as this Media Type uses the \"+xml\" convention, it \n   inherits the security considerations described in Section 10 of \n   [RFC7303].\n\nInteroperability considerations:  Different implementations of this\n   format have had interoperability issues.  It is not expected that\n   publication of this application will cause those implementations\n   to be fixed.\n\nPublished specification:  RFC7991.\n\nApplications that use this Media Type:  Applications that transform\n   xml2rfc to output representations such as plain text or HTML, plus\n   additional analysis tools.\n\nFragment identifier considerations:  The \"anchor\" attribute is used\n   for assigning document-wide unique identifiers that can be used as\n   shorthand pointers, as described in \"XPointer Framework\", W3C \n   Recommendation REC-xptr-framework-20030325, March 2003, \n   <http://www.w3.org/TR/2003/REC-xptr-framework-20030325/>.\n\nAdditional information:\n\n   Deprecated alias names for this type:  None.\n\n   Magic number(s):  As specified for \"application/xml\" in [RFC7303].\n\n   File extension(s):  .xml or .rfcxml when disambiguation from other\n      XML files is needed\n\n   Macintosh file type code(s):  TEXT\n\nPerson & email address to contact for further information:  See the\n   Author's Address section of RFC 7749.\n\nIntended usage:  COMMON\n\nRestrictions on usage:  None\n\nAuthor:  See the Author's Address section of RFC 7749.\n\nChange controller:  RFC Series Editor (rse&rfc-editor.org)\n"
+  },
+  "references": []
+}

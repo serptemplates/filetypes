@@ -1,0 +1,33 @@
+{
+  "type": "audio",
+  "subtype": "vnd.dvb.file",
+  "full": "audio/vnd.dvb.file",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.dvb.file",
+    "template_text": "(last updated 2011-03-29)\n\nMIME media type name : Audio\n\nMIME subtype name : Vendor Tree - vnd.dvb.file\n\nRequired parameters : none\n\nOptional parameters :\ncodecs: is a single value or a comma-separated list that identifies the\ncodec(s) needed for rendering the content contained (in tracks) of a\nfile. The codecs parameter is defined in RFC 4281 [19]. The ISO file\nformat name space and ISO syntax in clauses 3.2 and 3.3 of RFC 4281\n[19], respectively, shall be used.\n\nprotected-content: is value '1' if some or all of the media data in the\nfile is protected, otherwise '0'.\n\nbrands: is a field which contains a textual representation of the file\ntype box of the DVB File. It consists of dot-separated elements.\nThe first element is the major brand as a printable four-character code,\nfollowed by the second element, which is the minor version of the major\nbrand. The following elements are the compatible brands of the file as\nprintable four-character codes.\n\nIf any of these optional values are not specified, they can only be\ndetermined by inspecting the content. Specifically, there is no standard\ndefault values for the above, beyond \"unspecified\".\n\nEncoding considerations : 8bit\n\nSecurity considerations :\nDVB files may contain audio, video, displayable text data images, ESG\nmetadata, etc. Clearly it is possible to author malicious files which\nattempt to call for e.g., an excessively large picture size,\nhigh-sampling rate audio, etc. However, clients can and usually do\nprotect themselves against this kind of attack. It should be noted\nthat the file may contain fields that encompass information partly\nintended to protect media against unauthorized use or distribution. In\nthis case, the intention is that alteration or removal of the data in\nthese fields would be treated as an offense under national agreements\nbased on World Intellectual Property Organization (WIPO) treaties.\n\nIn all forms of the file format apart from transport stream\nencapsulation there are no defined mechanisms for the inclusion of\nactive or executable content. In the case of transport stream\nencapsulation, it is possible that the stream could contain MHP\napplications. In this case, the security considerations are discusses in\nthe MHP specification, ETSI TS 101 812. There is no requirement or need\nfor such applications to be executed.\n\nThe information contained within the file does not include privacy or\nintegrity services.\n\nInteroperability considerations :\nDVB has defined this specification. Interoperability considerations are\nin the corresponding Implementation Guidelines document.\n\nPublished specification :\nDVB File Format Specification for the Storage and Playback of DVB\nServices, available at http://www.dvb.org and as ETSI TS 102 833 from\nhttp://www.etsi.org.\n\nApplications which use this media :\nMulti-media\n\nAdditional information :\n\n1. Magic number(s) : None\n2. File extension(s) : 'dvb'\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nThe type \"audio/vnd.dvb.file\" may be used for files that contain no\nother tracks than audio tracks.\n\nPerson to contact for further information :\n\n1. Name : Peter Siebert\n2. Email : siebert&dvb.org\n\nIntended usage : Common\nRestrictions on usage: Note that this MIME type is used only for files;\nseparate types are used for real-time transfer, such as for the RTP\npayload formats.\n\nAuthor/Change controller : Peter Siebert, siebert&dvb.org\n\n(file created 2011-03-29)"
+  },
+  "references": []
+}

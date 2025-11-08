@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "activity+json",
+  "full": "application/activity+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/activity+json",
+    "encoding_considerations": "This JSON-based media is always represented in the\nutf-8 charset. See [RFC 8259 section 8.1](https://tools.ietf.org/html/rfc8259#section-8.1).",
+    "security_considerations": "* https://www.w3.org/TR/activitystreams-core/#security-considerations\n* Executable Content - Most content with this media type is not executable. However, some values support any valid text/html value, and care should be taken when including these HTML values in other web documents. In particular, some consuming applications may sanitize this HTML to only include markup (e.g. dropping `<script />` tags).\n* Privacy and Integrity - Information with this media type is not considered private. Instead privacy and integrity is usually provided by exchanging application/activity+json messages over a secure transport layer, e.g. [Transport Layer Security (TLS)](https://tools.ietf.org/html/rfc5246).\n* This media type inherits security considerations from\n* The JavaScript Object Notation (JSON) Data Interchange Format - https://tools.ietf.org/html/rfc8259#section-12\n* Uniform Resource Identifier (URI): Generic Syntax - https://tools.ietf.org/html/rfc3986#section-7\n* Internationalized Resource Identifiers (IRIs) - https://www.ietf.org/rfc/rfc3987.txt",
+    "interoperability_considerations": "https://www.w3.org/TR/activitystreams-core/#implementations",
+    "additional_information": "1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): none\n4. Macintosh file type code: none\n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-03-06, last updated 2018-03-06)\n\nMedia type name: application\n\nMedia subtype name: activity+json\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations:\nThis JSON-based media is always represented in the\nutf-8 charset. See [RFC 8259 section 8.1](https://tools.ietf.org/html/rfc8259#section-8.1).\n\nSecurity considerations:\n* https://www.w3.org/TR/activitystreams-core/#security-considerations\n* Executable Content - Most content with this media type is not executable. However, some values support any valid text/html value, and care should be taken when including these HTML values in other web documents. In particular, some consuming applications may sanitize this HTML to only include markup (e.g. dropping `<script />` tags).\n* Privacy and Integrity - Information with this media type is not considered private. Instead privacy and integrity is usually provided by exchanging application/activity+json messages over a secure transport layer, e.g. [Transport Layer Security (TLS)](https://tools.ietf.org/html/rfc5246).\n* This media type inherits security considerations from\n* The JavaScript Object Notation (JSON) Data Interchange Format - https://tools.ietf.org/html/rfc8259#section-12\n* Uniform Resource Identifier (URI): Generic Syntax - https://tools.ietf.org/html/rfc3986#section-7\n* Internationalized Resource Identifiers (IRIs) - https://www.ietf.org/rfc/rfc3987.txt\n\nInteroperability considerations:\nhttps://www.w3.org/TR/activitystreams-core/#implementations\n\nPublished specification:\nhttps://www.w3.org/TR/activitystreams-core\n\nApplications which use this media:\nhttps://www.w3.org/TR/activitystreams-core/#implementations\n\nFragment identifier considerations:\nNone.\n\nRestrictions on usage:\nSee W3C License and Patent Policy and such\n\nAdditional information:\n\n1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): none\n4. Macintosh file type code: none\n5. Object Identifiers: none\n\nGeneral Comments:\nActivityStreams is now a W3C Technical Recommendation.\n\nPerson to contact for further information:\n\n1. Name: Benjamin Goering\n2. Email: ben&bengo.co\n\nIntended usage: Common\nThis specification details a model for representing potential and completed activities using the JSON format. It is intended to be used with vocabularies that detail the structure of activities, and define specific types of activities.\n\nAuthor/Change controller: W3C"
+  },
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "x400-bp",
+  "full": "application/x400-bp",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/x400-bp",
+    "template_text": "(RFC 1494 published August 1993, subtype last updated August 1993)\n\nThe application/x400-bp content-type\n\nThis content-type is defined to carry any X.400(88) body part for\nwhich there is no registered IANA mapping.\n\n    The content-type field is\n\n      application/x400-bp\n\n    The parameters are:\n\n          bp-type=<INTEGER or OBJECT IDENTIFIER>\n\nThe body contains the raw ASN.1 IPM.body octet stream, including the\ninitial tag octet.\n\nIf the body is a basic body part, the bp-type parameter is set to the\nnumber of the body part's context-specific tag, that is, the tag of\nthe IPMS.Body.BodyPart component.\n\nIf the body is an Extended Body Part, the bp-type parameter is set to\nthe OBJECT IDENTIFIER from\n\n         IPMS.body.externally-defined.data.direct-reference\n\nNo attempt is made to turn the parameters of Extended Body Parts into\nMIME parameters.  (This task is the responsibility of the recipient's\nUA).\n\nFor example, a basic VideotexBodyPart will have\n\n   Content-type=application/x400-bp; bp-type=6\n\nwhilst a Extended Videotex body part will have\n\n   Content-type=application/x400-bp; bp-type=2.6.1.4.5\n\napplication/x400-bp will need a content-transfer-encoding of base64\nor quoted-printable when carried in 7-bit MIME.  Since there is no\nway to know beforehand the content, it is recommended to just inspect\nthe first 1 KByte or so of data and choose the one that seems to\nproduce the more compact encoding.\n\nIf this is not feasible, Base64 is recommended.\n"
+  },
+  "references": []
+}

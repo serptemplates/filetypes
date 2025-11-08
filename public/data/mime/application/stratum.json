@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "stratum",
+  "full": "application/stratum",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/stratum",
+    "encoding_considerations": "The format is just JSON-RPC, but each command is seperated with \\n (or \\r\\n, as long as the line ends with \\n).",
+    "security_considerations": "(1) Whether the media type contains active or executable content: The media type itself doesn't contain data that can be executed. It is only a format that contains commands that will be responded to when send over TCP. Downloading and accidently double clicking it will have no effect.\n\n(2) Whether the information contained in the media type needs privacy or integrity services: No privacy. The format is mostly used to query public information. If people want more protection, they should use SSL/TLS.\n\n(3) If the media type uses an existing format: It is based on JSON, so: See RFC 8259, Section 12.\n\n(4) Link(s) that must be referenced in order to properly interpret the type:  https://github.com/ben221199/bips/blob/add-bip40/bip-0040.mediawiki\n\nInteroperability considerations: Also see RFC 8259.\n\nPublished specification: https://github.com/ben221199/bips/blob/add-bip40/bip-0040.mediawiki (But will be merged into the main repository.)\n\nApplications which use this media: Crypto wallets.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "Published specification: https://github.com/ben221199/bips/blob/add-bip40/bip-0040.mediawiki (But will be merged into the main repository.)\n\nApplications which use this media: Crypto wallets.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: TEXT\n5. Object Identifiers: N/A",
+    "intended_usage": "limited use",
+    "template_text": "(registered 2024-05-06, last updated 2024-05-06)\n\nMedia type name: application\n\nMedia subtype name: stratum\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: binary\n\nThe format is just JSON-RPC, but each command is seperated with \\n (or \\r\\n, as long as the line ends with \\n).\n\nSecurity considerations: \n\n(1) Whether the media type contains active or executable content: The media type itself doesn't contain data that can be executed. It is only a format that contains commands that will be responded to when send over TCP. Downloading and accidently double clicking it will have no effect.\n\n(2) Whether the information contained in the media type needs privacy or integrity services: No privacy. The format is mostly used to query public information. If people want more protection, they should use SSL/TLS.\n\n(3) If the media type uses an existing format: It is based on JSON, so: See RFC 8259, Section 12.\n\n(4) Link(s) that must be referenced in order to properly interpret the type:  https://github.com/ben221199/bips/blob/add-bip40/bip-0040.mediawiki\n\nInteroperability considerations: Also see RFC 8259.\n\nPublished specification: https://github.com/ben221199/bips/blob/add-bip40/bip-0040.mediawiki (But will be merged into the main repository.)\n\nApplications which use this media: Crypto wallets.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: N/A\n2. Magic number(s): N/A\n3. File extension(s): N/A\n4. Macintosh file type code: TEXT\n5. Object Identifiers: N/A\n\nPerson to contact for further information:\n\n1. Name: Ben van Hartingsveldt\n2. Email: ben.vanhartingsveldt&yocto.com\n\nIntended usage: LIMITED USE\n\nOnly HTTP (and HTTPS).\n\nAuthor/Change controller: Ben van Hartingsveldt"
+  },
+  "references": []
+}

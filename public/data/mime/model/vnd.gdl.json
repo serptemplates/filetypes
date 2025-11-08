@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.gdl",
+  "full": "model/vnd.gdl",
+  "extensions": [
+    "gdl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.gdl",
+    "template_text": "\n\n\nName : Attila Babits\n\nE-mail : ababits&graphisoft.hu\n\nMIME media type name : Model\n\nMIME subtype name : Vendor Tree - vnd.gdl\n\nRequired parameters : none\n\nOptional parameters :\nnone\n\nEncoding considerations :\nThe GDL is a binary data which may contain one or more text tags.\n\nThe GDL (Geometric Description Language) is Graphisoft's parametric\nobject definition language. It is invented for ArchiCAD and used in many\nother applications. The GDL defines a 3D model, a 2D model, property data,\na user interface and a parameter handler. All the above definitions\ncan be parametric.\nA GDL object is a container for the GDL scripts, default parameters,\noptional binary data and additonal information (eg. a preview image).\n\nTransports not capable of handling binary data must use a suitable\nencoding\n\nSecurity considerations :\nThe GDL type data does not contain any kind of executable code macro\nor batch) which runs on client machine.\n\nInteroperability considerations :\nNone\n\nPublished specification :\nThe GDL (Geometric Description Language) is published as a\nparametric object definition language for ArchiCAD by Graphisoft\n(http://www.graphisoft.com).\n\nApplications which use this media :\nThe 'GDL Object Web Plug-in' for Netscape and MS Internet Explorer -\na browser extension that can be found at \nhttp://www.graphisoft.com/products/gdl_plugin;\nArchiCAD; GDL Object Explorer (standalone application); GDL Object\nAdapter (standalone application)\n\nAdditional information :\n\n1. Magic number(s) :\n2. File extension(s) : gdl,gsm,win,dor,lmp,rsm,msm,ism\n3. Macintosh file type code : TEXT,GSYM,WSYM,DSYM,LAMP,RSYM,MSYM,ISYM\n\nPerson to contact for further information :\n\n1. Name : Attila Babits\n2. E-mail : ababits&graphisoft.hu\n\nIntended usage : Common\n\nAuthor/Change controller : Attila Babits\n\n\n\n\n\n\n"
+  },
+  "references": []
+}

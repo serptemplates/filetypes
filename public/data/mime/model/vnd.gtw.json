@@ -1,0 +1,35 @@
+{
+  "type": "model",
+  "subtype": "vnd.gtw",
+  "full": "model/vnd.gtw",
+  "extensions": [
+    "gtw"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/model/vnd.gtw",
+    "template_text": "\n\nDate: Sun, 17 Jan 1999 21:56:16 -0800 (PST)\nFrom: Yutaka Ozaki <yutaka_ozaki&gen.co.jp>\nTo: iana&iana.org, yutaka_ozaki&gen.co.jp\nSubject: Request for MIME media type Model/Vendor Tree - vnd.gtw\n\nName : Yutaka Ozaki\n\nE-mail : yutaka_ozaki&gen.co.jp\n\nMIME media type name : Model\n\nMIME subtype name : Vendor Tree - vnd.gtw\n\nRequired parameters : No parameters are required.\n\nOptional parameters : \nNo parameters are required.\n\nEncoding considerations : \nGenerally, base64 encoding is recommended.\nThe gtw type is an ASCII text data.\n\nThe gtw is a 3D model data which contains 3D polygons and URLs for\nthose texture images.  When viewer application reads the gtw data, the\nviewer reads the texture image from the it.\n     \nTexture image format can be various known image formats.  But,\napplication should support JPEG at least.  File extention part of URI\nshould indicate it's encoding format.\n     \nBinary encoding on texture images must obey its image format\nspecification.\n\n\nSecurity considerations : \nThe gtw type data does not contain any kind of executable code macro or\nbatch) which runs on client machine.\n\n\nInteroperability considerations : \nNone.\n\nPublished specification : \nNot available.\n\nApplications which use this media : \nGen-Trix Web Studio, Gen-Trix Plugin and Gen-Trix Studio\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : gtw\n3. Macintosh file type code : N/A\n\n\nPerson to contact for further information :\n\n1. Name : Yutaka Ozaki\n2. E-mail : yutaka_ozaki&gen.co.jp\n\nIntended usage : Common \n\n\nAuthor/Change controller : GENTECH Corp. \n\n\n"
+  },
+  "references": []
+}

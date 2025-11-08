@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.smart.teacher",
+  "full": "application/vnd.smart.teacher",
+  "extensions": [
+    "teacher"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.smart.teacher",
+    "template_text": "(last updated 2008-12-19)\n\nName : Michael Boyle\n\nEmail : michaelboyle&smarttech.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.smart.teacher\n\nRequired parameters :\n\nOptional parameters :\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media type uses compression: documents of this type are PK-ZIP archives of\nseveral specially named XML documents conforming to particular schemas. Does not\ncontain \"active\" content or \"directives\" as given in RFC 4288, section 4.6. May\ncontain confidential information in a cleartext form. Users are encouraged to\nkeep the files confidential and use password-based encryption where available.\nProcessors of documents in this media type should handle malformed XML,\nincomplete content, or content that expands to large sizes after decompression.\n\nInteroperability considerations :\nMedia type itself has no significant interoperability concerns. Software to\nprocess documents of this type are available on several operating system platforms.\n\nPublished specification :\nProprietary\n\nApplications which use this media :\nSMART Technologies ULC's Senteo Assessment Software version 2.0 and SynchronEyes\nClassroom Management Software version 8.0.\n\nAdditional information :\n\n1. Magic number(s) : 4 octets starting at beginning of data stream: PK\\003\\004\n2. File extension(s) : .teacher\n3. Macintosh file type code : SMRT\n4. Object Identifiers: none\n\nContains a collection of XML and RDF/XML documents organized in a PK-ZIP\narchive. XML documents inside give information for a \"gradebook\" that lists\nclasses, the students in those classes, the assessments given in those classes,\nand the students responses to those assessments and the grades they earned on them.\n\nPerson to contact for further information :\n\n1. Name : Michael Boyle\n2. Email : michaelboyle&smarttech.com\n\nIntended usage : Common\nSMART Teacher profile for use with SMART Technologies ULC's assessment software\nproducts.\n\nAuthor/Change controller : Changes may be made by SMART Technologies ULC or its\nemployees.\n\n(file created 2008-12-19)"
+  },
+  "references": []
+}

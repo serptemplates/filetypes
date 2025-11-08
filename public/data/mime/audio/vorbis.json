@@ -1,0 +1,45 @@
+{
+  "type": "audio",
+  "subtype": "vorbis",
+  "full": "audio/vorbis",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vorbis",
+    "type_name": "audio",
+    "subtype_name": "vorbis",
+    "encoding_considerations": "This media type is framed and contains binary data.",
+    "security_considerations": "See Section 10 of RFC 5215.",
+    "interoperability_considerations": "None",
+    "additional_information": "None",
+    "template_text": "(per RFC5215)\n\nType name:  audio\n\nSubtype name:  vorbis\n\nRequired parameters:\n\n   rate:  indicates the RTP timestamp clock rate as described in RTP\n      Profile for Audio and Video Conferences with Minimal Control\n      [RFC3551].\n\n   channels:  indicates the number of audio channels as described in\n      RTP Profile for Audio and Video Conferences with Minimal\n      Control [RFC3551].\n\n   configuration:  the base64 [RFC4648] representation of the Packed\n      Headers (Section 3.2.1).\n\nEncoding considerations:\n\n   This media type is framed and contains binary data.\n\nSecurity considerations:\n\n   See Section 10 of RFC 5215.\n\nInteroperability considerations:\n\n   None\n\nPublished specification:\n\n   RFC 5215\n\n   Ogg Vorbis I specification: Codec setup and packet decode.\n   Available from the Xiph website, http://xiph.org/\n\nApplications which use this media type:\n\n   Audio streaming and conferencing tools\n\nAdditional information:\n\n   None\n\nPerson & email address to contact for further information:\n\n   Luca Barbato: <lu_zero&gentoo.org>\n   IETF Audio/Video Transport Working Group\n\nIntended usage:\n\n   COMMON\n\nRestriction on usage:\n\n   This media type depends on RTP framing, hence is only defined for\n   transfer via RTP [RFC3550].\n\nAuthor:\n\n   Luca Barbato\n\nChange controller:\n\n   IETF AVT Working Group delegated from the IESG\n"
+  },
+  "references": [
+    {
+      "title": "RFC 5215",
+      "url": "https://www.rfc-editor.org/rfc/rfc5215.html",
+      "kind": "RFC"
+    }
+  ]
+}

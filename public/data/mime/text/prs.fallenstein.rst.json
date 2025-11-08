@@ -1,0 +1,33 @@
+{
+  "type": "text",
+  "subtype": "prs.fallenstein.rst",
+  "full": "text/prs.fallenstein.rst",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/prs.fallenstein.rst",
+    "template_text": "\r\n(last updated 2003-10-02)\r\n\r\nName : Benja Fallenstein\r\n\r\nEmail : b.fallenstein&gmx.de\r\n\r\nMIME media type name : Text\r\n\r\nMIME subtype name : Personal Tree - prs.fallenstein.rst\r\n\r\nRequired parameters : None.\r\n\r\nOptional parameters : \r\nThe charset parameter, as specified for all subtypes of the \"text\" media type \r\nin section 4.1.2 of RFC 2046. The default value is UTF-8.\r\n\r\nNote that due to the constraints on the \"text\" top-level type, linebreaks must \r\nbe represented as CR/LF octets, and the charset must allow for this. In particular,\r\nfor this reason, UTF-16 and UTF-32 are not suitable as charsets for this media \r\ntype. (This does not apply to HTTP, which is not MIME-compliant in that it \r\nrelaxes restrictions on the \"text\" type; see section 19.4.2 of RFC 2616.)\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of handling 8 bit text.\r\n\r\nSecurity considerations : \r\nReStructuredText is a textual format that is readable as plain text. If used in \r\nthis way, it introduces no security issues beyond those inherent in using text/plain.\r\n\r\nOn the other hand, reStructuredText can be used as the source for generating various \r\nother formats, for example HTML or LaTeX. The reStructuredText format includes a \r\nfacility for including \"raw\" information in any such format. Therefore, if used in \r\nthis way, all security considerations for the target format also apply to reStructuredText.\r\n\r\nInteroperability considerations : \r\nNo issues known.\r\n\r\nPublished specification : \r\nThe reStructuredText specification is available from the format's homepage,\r\n<http://docutils.sourceforge.net/rst.html>.\r\n\r\nApplications which use this media : \r\nThe docutils system, available from <http://docutils.sourceforge.net/>.\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None.\r\n2. File extension(s) : .txt, .rst\r\n3. Macintosh file type code : None.\r\n4. Object Identifiers: None.\r\n\r\nReStructuredText is a markup format that is particularly readable in source form, \r\nusing long-standing conventions for plain text (such as surrounding a phrase with \r\nasterisks to emphasize it).\r\n\r\nReStructuredText was designed and implemented by David Goodger, not by the registrant \r\nof this media type. The registrant just happened to have need of a registered media type for it.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Benja Fallenstein\r\n2. Email : b.fallenstein&gmx.de\r\n\r\nIntended usage : Common \r\n    \r\nAuthor/Change controller : Change control for this registration is currently \r\nwith Benja Fallenstein. (If anybody more intimately involved with ReStructuredText \r\nwants to take it over, it will be surrendered gladly.)\r\n \r\n(created 2-October-2003)"
+  },
+  "references": []
+}

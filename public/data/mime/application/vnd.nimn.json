@@ -1,0 +1,37 @@
+{
+  "type": "application",
+  "subtype": "vnd.nimn",
+  "full": "application/vnd.nimn",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.nimn",
+    "encoding_considerations": "Security considerations: Nimn data format in itself is not \n   executable. Data encoded to Nimn format may contain binary data, \n   regular expressions, scripting code, SQL queries etc. So the user \n   application should convert it first into the application object \n   instead of direct evaluation if they use the same format to \n   represent the executable code.\n\n   Structure of the application object is not bundled with encoded \n   data. It needs to be provided externally. Hence if there is any \n   modification in structure of encoded data like extra data field \n   is inserted, existing data field is deleted, or if the sequence of \n   data field is changed in encoded data then Nimn encoder will \n   error out. \n\n   The nimn format does not provide confidentiality or integrity \n   protection. If these are need the user must insure the integrity \n   or confidentiality of nimn format data using some external \n    mechanism.\n\n   Please check specification for more detail on Nimn format \n   supported characters.\n   https://github.com/nimndata/spec/blob/master/SPEC.md\n\nInteroperability considerations: N/A",
+    "security_considerations": "executable. Data encoded to Nimn format may contain binary data, \n   regular expressions, scripting code, SQL queries etc. So the user \n   application should convert it first into the application object \n   instead of direct evaluation if they use the same format to \n   represent the executable code.\n\n   Structure of the application object is not bundled with encoded \n   data. It needs to be provided externally. Hence if there is any \n   modification in structure of encoded data like extra data field \n   is inserted, existing data field is deleted, or if the sequence of \n   data field is changed in encoded data then Nimn encoder will \n   error out. \n\n   The nimn format does not provide confidentiality or integrity \n   protection. If these are need the user must insure the integrity \n   or confidentiality of nimn format data using some external \n    mechanism.\n\n   Please check specification for more detail on Nimn format \n   supported characters.\n   https://github.com/nimndata/spec/blob/master/SPEC.md\n\nInteroperability considerations: N/A",
+    "additional_information": "1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): nimn\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: Nimn is the dense format of data where the field \n   information is kept separate from the actual data. Boundary and \n   fixed value characters are used to identify the boundaries of \n   data and their structure. Encoded data is still readable, and \n   searchable. Field level encoding, character mapping, compression \n   or any other customization are not the part of Nimn specification.\n\n   As the serialized form keeps only data and boundary characters, \n   object schema need to be given at the time of de-serialization. \n   It is required to map the data with correct fields in the \n   application object.",
+    "intended_usage": "common",
+    "template_text": "(registered 2018-05-22, last updated 2018-05-22)\n\nName: Amit Kumar Gupta\nEmail: amitgupta.gwl&gmail.com\n\nMedia type name: application\n\nMedia subtype name: vnd.nimn\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit if UTF-8; binary if UTF-16 or UTF-32\n\nSecurity considerations: Nimn data format in itself is not \n   executable. Data encoded to Nimn format may contain binary data, \n   regular expressions, scripting code, SQL queries etc. So the user \n   application should convert it first into the application object \n   instead of direct evaluation if they use the same format to \n   represent the executable code.\n\n   Structure of the application object is not bundled with encoded \n   data. It needs to be provided externally. Hence if there is any \n   modification in structure of encoded data like extra data field \n   is inserted, existing data field is deleted, or if the sequence of \n   data field is changed in encoded data then Nimn encoder will \n   error out. \n\n   The nimn format does not provide confidentiality or integrity \n   protection. If these are need the user must insure the integrity \n   or confidentiality of nimn format data using some external \n    mechanism.\n\n   Please check specification for more detail on Nimn format \n   supported characters.\n   https://github.com/nimndata/spec/blob/master/SPEC.md\n\nInteroperability considerations: N/A\n\nPublished specification:\n   https://github.com/nimndata/spec/blob/master/SPEC.md\n\nApplications which use this media: Any application can use Nimn \n   data format to exchange data between same or two different \n   applications.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: none\n\nAdditional information:\n\n   1. Deprecated alias names for this type: N/A\n   2. Magic number(s): N/A\n   3. File extension(s): nimn\n   4. Macintosh file type code: N/A\n   5. Object Identifiers: N/A\n\nGeneral Comments: Nimn is the dense format of data where the field \n   information is kept separate from the actual data. Boundary and \n   fixed value characters are used to identify the boundaries of \n   data and their structure. Encoded data is still readable, and \n   searchable. Field level encoding, character mapping, compression \n   or any other customization are not the part of Nimn specification.\n\n   As the serialized form keeps only data and boundary characters, \n   object schema need to be given at the time of de-serialization. \n   It is required to map the data with correct fields in the \n   application object.\n\nPerson to contact for further information:\n\n   1. Name: Amit Kumar Gupta\n   2. Email: amitgupta.gwl&gmail.com\n\nIntended usage: Common\n   Any application can use nimn data format following the \n   specification."
+  },
+  "references": []
+}

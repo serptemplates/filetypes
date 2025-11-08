@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "bacnet-xdd+zip",
+  "full": "application/bacnet-xdd+zip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/bacnet-xdd+zip",
+    "template_text": "(registered 2014-01-29, last updated 2014-01-29)\n\nMIME media type name : Application\n\nMIME subtype name : Standards Tree - bacnet-xdd+zip\n\nRequired parameters : none\n\nOptional parameters : none - content provides its own versioning and manifest\n\nEncoding considerations : binary\n\nSecurity considerations : \nThis is a zip file. The standard contents are a textual manifest and XML and/or \nJSON files. There is no standard executable or interpretable content. However, \nthere is a vendor extensible area where arbitrary content can be provided. \nConsumers of these extended files are advised to use the same safety precautions \nas if these files had been loaded separately. \n\nThe standard use case of the file is to represent inherently public information \nand there is no standard support in the file to protect the contents from \ninspection during transmission or storage. The information defines data types \nand data arrangement. Tampering with this could possibly cause operator \nconfusion about what data is being viewed or modified. Even though the security \nof the data \"on the wire\" is provided by the underlying communication protocol, \noperator confusion could cause incorrect data to be modified if a single \nauthorization scope includes both a real and a maliciously substituted target. \nTherefore, consumers of this definition information are advised to ensure the \nfile came from a trusted source. The level of this assurance should be \nappropriate for the risk level of the data being described.\n\nGeneral security considerations for XML and JSON are given in Section 10 of \nRFC 3023 and Section 6 of RFC 4627, respectively.\n\nInteroperability considerations : \n\nPublished specification : \nHost standards are/will be: ANSI/ASHRAE Standard 135-2012 and ISO 16484-5\nThis media type will be defined in second public review of Addendum ba to 135-2012. \nFirst public review document originally published at http://osr/ashrae/org and \narchived at http://www.bacnet.org/Addenda/Add-135-2012ba-ppr1-draft-2_chair_approved.pdf\n\nApplications which use this media : \nProvided by BACent devices; consumed by BACnet clients and workstations.\n\nFragment identifier considerations : None\n\nAdditional information :\n\n1. Magic number(s) : It's a zip file; thus commonly: PK\\003\\004\n2. File extension(s) : xdd\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nPerson to contact for further information :\n\n1. Name : Dave Robin\n2. Email : iana2&daverobin.com\n\nIntended usage : Common\nBACnet is the leading international standard for Building Automation Systems. \nIt is expected that this will be widely deployed to allow BACnet devices and \ninstallations of BACnet devices to be richly \"discoverable\", providing both \nhuman-readable descriptions and machine-readable structural and semantic \ninformation.\n\nAuthor/Change controller : American Society of Heating, Refrigerating and \nAir-Conditioning Engineers (ASHRAE), ashrae&ashrae.org, 1791 Tullie Circle, \nN.E. Atlanta, GA 30329"
+  },
+  "references": []
+}

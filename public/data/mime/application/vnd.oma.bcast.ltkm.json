@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.bcast.ltkm",
+  "full": "application/vnd.oma.bcast.ltkm",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.bcast.ltkm",
+    "template_text": "(registered 2008-02-07, last updated 2015-03-05) \n\nName : Uwe Rauschenbach\n\nEmail : uwe.rauschenbach&nokia.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.bcast.ltkm\n\nRequired parameters : kmstype:\nString identifying the Key Management System used. The list of \nallowed values can be found in the specification referenced under \n\"Published specification\".\n\n\nOptional parameters :\nserviceproviders:\nString identifying the service providers using the key stream, by \nreferencing one or more BSMSelectors as declared in the Service \nGuide Delivery Descriptor in the BCAST Service Guide and/or one or \nmore <X>/ServiceProvider values defined in the BCAST \nManagement Object. This parameter carries a list of BSMSelector IDs \nand/or ServiceProvider values, separated by the character \"|\". See \nalso table 54 \"serviceproviders syntax and semantics\" in the \nPublished Specification.\n\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of \nhandling binary.\n\nSecurity considerations :\nLong Term Key Messages carry encrypted key material to decrypt \nlive streaming services. They are passive, meaning they do not \ncontain executable or active content which may represent a security \nthreat. The messages contain confidential and security critical \nfields. Encryption and authentication of such critical fields are \nprovided by the type itself and does not have to be provided \nexternally.\n\nInteroperability considerations :\nThis content type carries BCAST Long Term Key Messages within the \nscope of the OMA BCAST enabler. The OMA BCAST enabler \nspecification includes static conformance requirements and \ninteroperability test cases for this content.\n\nPublished specification :\nOMA BCAST 1.0 Enabler Specification - Service and Content \nProtection for Mobile Broadcast Services, especially Section 10.1.4. \nAvailable from http://www.openmobilealliance.org\n\nApplications which use this media :\nOMA BCAST Services\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Uwe Rauschenbach\n2. Email : uwe.rauschenbach&nokia.com\n\nIntended usage : Limited Use\nOnly for usage with OMA BCAST Services, which meet the semantics \ngiven in the mentioned specification.\n\nAuthor/Change controller : OMNA - Open Mobile Naming Authority, \nOMA-OMNA&mail.openmobilealliance.org\n\n"
+  },
+  "references": []
+}

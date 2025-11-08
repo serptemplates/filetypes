@@ -1,0 +1,47 @@
+{
+  "type": "application",
+  "subtype": "td+json",
+  "full": "application/td+json",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/td+json",
+    "type_name": "application",
+    "subtype_name": "td+json",
+    "encoding_considerations": "Security considerations: See RFC 8259, section 12.\n\n   Since WoT Thing Description is intended to be a pure data exchange\n   format for Thing metadata, the serialization SHOULD NOT be passed \n   through a code execution mechanism such as JavaScript's eval() \n   function to be parsed. An (invalid) document may contain code \n   that, when executed, could lead to unexpected side effects \n   compromising the security of a system.\n\n   WoT Thing Descriptions can be evaluated with a JSON-LD 1.1 \n   processor, which typically follows links to remote contexts (i.e.,\n   TD context extensions, see W3C WoT Thing Description, section 7) \n   automatically, resulting in the transfer of files without the \n   explicit request of the Consumer for each one. If remote contexts \n   are served by third parties, it may allow them to gather usage \n   patterns or similar information leading to privacy concerns. While\n   implementations on resource-constrained devices are expected to \n   perform raw JSON processing (as opposed to JSON-LD processing), \n   implementations in general SHOULD statically cache vetted versions\n   of their supported context extensions and not to follow links to \n   remote contexts. Supported context extensions can be managed \n   through a secure software update mechanism instead.\n\n   Context Extensions (see W3C WoT Thing Description, section 7) that\n   are loaded from the Web over non-secure connections, such as HTTP,\n   run the risk of being altered by an attacker such that they may \n   modify the TD Information Model in a way that could compromise \n   security. For this reason, Consumer again SHOULD vet and cache \n   remote contexts before allowing the system to use it.\n\n   Given that JSON-LD processing usually includes the substitution of\n   long IRIs [RFC3987] with short terms, WoT Thing Descriptions may \n   expand considerably when processed using a JSON-LD 1.1 processor \n   and, in the worst case, the resulting data might consume all of \n   the recipient's resources. Consumers SHOULD treat any TD metadata \n   with due skepticism.\n\nInteroperability considerations: See RFC 8259.\n\n   Rules for processing both conforming and non-conforming content \n   are defined in this specification.",
+    "security_considerations": "Since WoT Thing Description is intended to be a pure data exchange\n   format for Thing metadata, the serialization SHOULD NOT be passed \n   through a code execution mechanism such as JavaScript's eval() \n   function to be parsed. An (invalid) document may contain code \n   that, when executed, could lead to unexpected side effects \n   compromising the security of a system.\n\n   WoT Thing Descriptions can be evaluated with a JSON-LD 1.1 \n   processor, which typically follows links to remote contexts (i.e.,\n   TD context extensions, see W3C WoT Thing Description, section 7) \n   automatically, resulting in the transfer of files without the \n   explicit request of the Consumer for each one. If remote contexts \n   are served by third parties, it may allow them to gather usage \n   patterns or similar information leading to privacy concerns. While\n   implementations on resource-constrained devices are expected to \n   perform raw JSON processing (as opposed to JSON-LD processing), \n   implementations in general SHOULD statically cache vetted versions\n   of their supported context extensions and not to follow links to \n   remote contexts. Supported context extensions can be managed \n   through a secure software update mechanism instead.\n\n   Context Extensions (see W3C WoT Thing Description, section 7) that\n   are loaded from the Web over non-secure connections, such as HTTP,\n   run the risk of being altered by an attacker such that they may \n   modify the TD Information Model in a way that could compromise \n   security. For this reason, Consumer again SHOULD vet and cache \n   remote contexts before allowing the system to use it.\n\n   Given that JSON-LD processing usually includes the substitution of\n   long IRIs [RFC3987] with short terms, WoT Thing Descriptions may \n   expand considerably when processed using a JSON-LD 1.1 processor \n   and, in the worst case, the resulting data might consume all of \n   the recipient's resources. Consumers SHOULD treat any TD metadata \n   with due skepticism.\n\nInteroperability considerations: See RFC 8259.\n\n   Rules for processing both conforming and non-conforming content \n   are defined in this specification.",
+    "interoperability_considerations": "Rules for processing both conforming and non-conforming content \n   are defined in this specification.",
+    "additional_information": "Magic number(s): Not Applicable\n\n   File extension(s): .jsontd\n\n   Macintosh file type code(s): TEXT",
+    "intended_usage": "common",
+    "change_controller": "W3C",
+    "template_text": "(registered 2020-02-12, last updated 2020-02-12)\n\nType name: application\n\nSubtype name: td+json\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: See RFC 6839, section 3.1.\n\nSecurity considerations: See RFC 8259, section 12.\n\n   Since WoT Thing Description is intended to be a pure data exchange\n   format for Thing metadata, the serialization SHOULD NOT be passed \n   through a code execution mechanism such as JavaScript's eval() \n   function to be parsed. An (invalid) document may contain code \n   that, when executed, could lead to unexpected side effects \n   compromising the security of a system.\n\n   WoT Thing Descriptions can be evaluated with a JSON-LD 1.1 \n   processor, which typically follows links to remote contexts (i.e.,\n   TD context extensions, see W3C WoT Thing Description, section 7) \n   automatically, resulting in the transfer of files without the \n   explicit request of the Consumer for each one. If remote contexts \n   are served by third parties, it may allow them to gather usage \n   patterns or similar information leading to privacy concerns. While\n   implementations on resource-constrained devices are expected to \n   perform raw JSON processing (as opposed to JSON-LD processing), \n   implementations in general SHOULD statically cache vetted versions\n   of their supported context extensions and not to follow links to \n   remote contexts. Supported context extensions can be managed \n   through a secure software update mechanism instead.\n\n   Context Extensions (see W3C WoT Thing Description, section 7) that\n   are loaded from the Web over non-secure connections, such as HTTP,\n   run the risk of being altered by an attacker such that they may \n   modify the TD Information Model in a way that could compromise \n   security. For this reason, Consumer again SHOULD vet and cache \n   remote contexts before allowing the system to use it.\n\n   Given that JSON-LD processing usually includes the substitution of\n   long IRIs [RFC3987] with short terms, WoT Thing Descriptions may \n   expand considerably when processed using a JSON-LD 1.1 processor \n   and, in the worst case, the resulting data might consume all of \n   the recipient's resources. Consumers SHOULD treat any TD metadata \n   with due skepticism.\n\nInteroperability considerations: See RFC 8259.\n\n   Rules for processing both conforming and non-conforming content \n   are defined in this specification.\n\nPublished specification: \n\n   https://w3c.github.io/wot-thing-description\n\n   Applications that use this media type: All participating entities \n   in the W3C Web of Things, that is, Things, Consumers, and \n   Intermediaries as defined in the Web of Things (WoT) Architecture.\n\nFragment identifier considerations: See RFC 6839, section 3.1.\n\nAdditional information:\n\n   Magic number(s): Not Applicable\n\n   File extension(s): .jsontd\n\n   Macintosh file type code(s): TEXT\n\nPerson & email address to contact for further information:\n   Matthias Kovatsch <w3c&kovatsch.net>\n\nIntended usage: COMMON\n\nRestrictions on usage: None\n\nAuthor(s): The WoT Thing Description specification is a product of \n   the Web of Things Working Group.\n\nChange controller: W3C"
+  },
+  "references": [
+    {
+      "title": "RFC 6839",
+      "url": "https://www.rfc-editor.org/rfc/rfc6839.html",
+      "kind": "RFC"
+    }
+  ]
+}

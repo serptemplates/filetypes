@@ -1,0 +1,38 @@
+{
+  "type": "application",
+  "subtype": "lpf+zip",
+  "full": "application/lpf+zip",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/lpf+zip",
+    "encoding_considerations": "LPF files are binary files in ZIP format.\n\nSecurity considerations that apply to application/zip \n   (https://www.iana.org/assignments/media-types/application/zip) \n   also apply to LPF files. For instance, an archive could contain \n   compressed files that expand to fill all available disk space on a\n   hard drive. In consequence, user agents that read LPF files should\n   rigorously check the size and validity of data retrieved.\n\n   In addition, because of the various content types that can be \n   embedded in LPF files, application/lpf+zip may describe content \n   that poses security issues, e.g. malicious executable content \n   deliberately included in the package. However, only in cases where\n   the user agent recognizes and processes the additional content, or\n   where further processing of that content is dispatched to other \n   user agents, would security issues potentially arise. In such \n   cases, matters of security would fall outside the domain of this \n   registration document.\n\nInteroperability considerations: Any format based on LPF, if using \n   content encryption, MUST choose a different MIME media type and \n   file extension than those defined in this specification.\n\nPublished specification: This media type registration is for the \n   Lightweight Packaging Format (LPF), as described by the \n   Lightweight Packaging Format (LPF) specification located at \n   https://www.w3.org/TR/lpf.\n\nApplications that use this media type: This media type is intended to\n   be used by multiple interoperable applications for the \n   distribution and consumption of ebooks, audiobooks, digital visual\n   narratives and other types of digital publications.",
+    "interoperability_considerations": "content encryption, MUST choose a different MIME media type and \n   file extension than those defined in this specification.\n\nPublished specification: This media type registration is for the \n   Lightweight Packaging Format (LPF), as described by the \n   Lightweight Packaging Format (LPF) specification located at \n   https://www.w3.org/TR/lpf.\n\nApplications that use this media type: This media type is intended to\n   be used by multiple interoperable applications for the \n   distribution and consumption of ebooks, audiobooks, digital visual\n   narratives and other types of digital publications.",
+    "applications": "be used by multiple interoperable applications for the \n   distribution and consumption of ebooks, audiobooks, digital visual\n   narratives and other types of digital publications.",
+    "additional_information": "Magic number(s): 0: PK 0x03 0x04\nFile extension(s): LPF files are most often identified with the \n   extension .lpf.\nMacintosh file type code(s): ZIP\n\nFragment identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2020-03-18, last updated 2020-03-18)\n\nMIME media type name: application\n\nMIME subtype name: lpf+zip\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations:\nLPF files are binary files in ZIP format.\n\nSecurity considerations that apply to application/zip \n   (https://www.iana.org/assignments/media-types/application/zip) \n   also apply to LPF files. For instance, an archive could contain \n   compressed files that expand to fill all available disk space on a\n   hard drive. In consequence, user agents that read LPF files should\n   rigorously check the size and validity of data retrieved.\n\n   In addition, because of the various content types that can be \n   embedded in LPF files, application/lpf+zip may describe content \n   that poses security issues, e.g. malicious executable content \n   deliberately included in the package. However, only in cases where\n   the user agent recognizes and processes the additional content, or\n   where further processing of that content is dispatched to other \n   user agents, would security issues potentially arise. In such \n   cases, matters of security would fall outside the domain of this \n   registration document.\n\nInteroperability considerations: Any format based on LPF, if using \n   content encryption, MUST choose a different MIME media type and \n   file extension than those defined in this specification.\n\nPublished specification: This media type registration is for the \n   Lightweight Packaging Format (LPF), as described by the \n   Lightweight Packaging Format (LPF) specification located at \n   https://www.w3.org/TR/lpf.\n\nApplications that use this media type: This media type is intended to\n   be used by multiple interoperable applications for the \n   distribution and consumption of ebooks, audiobooks, digital visual\n   narratives and other types of digital publications.\n\nAdditional information:\n\nMagic number(s): 0: PK 0x03 0x04\nFile extension(s): LPF files are most often identified with the \n   extension .lpf.\nMacintosh file type code(s): ZIP\n\nFragment identifiers: None\n\nPerson & email address to contact for further information:\n   Ivan Herman (ivan&w3.org)\n\nIntended usage: COMMON\n\nAuthor/change controller: The published specification is a work \n   product of the World Wide Web Consortium (W3C)’s Publishing \n   Working Group. The W3C has change control over this specification."
+  },
+  "references": []
+}

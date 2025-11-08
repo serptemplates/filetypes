@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "cfw",
+  "full": "application/cfw",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/cfw",
+    "type_name": "application",
+    "subtype_name": "cfw",
+    "encoding_considerations": "Security considerations: See Section 12 of RFC 6230",
+    "interoperability_considerations": "Endpoints compliant to this specification must\n   use this MIME type.  Receivers who cannot support\n   this specification will reject using appropriate\n   protocol mechanism.\n\nPublished specification: RFC 6230",
+    "applications": "Applications compliant with Media Control Channels.\n\n Additional Information:\n   Magic number(s): (none)\n   File extension(s): (none)\n   Macintosh file type code(s): (none)",
+    "intended_usage": "common",
+    "template_text": "(RFC 6230 published May 2011, subtype last updated May 2011)\n\nType name: application\n\nSubtype name: cfw\n\nRequired parameters: None\n\nOptional parameters: None\n\nEncoding considerations: Binary and see Section 4 of RFC 6230\n\nSecurity considerations: See Section 12 of RFC 6230\n\nInteroperability considerations:\n   Endpoints compliant to this specification must\n   use this MIME type.  Receivers who cannot support\n   this specification will reject using appropriate\n   protocol mechanism.\n\nPublished specification: RFC 6230\n\nApplications that use this media type:\n   Applications compliant with Media Control Channels.\n\n Additional Information:\n   Magic number(s): (none)\n   File extension(s): (none)\n   Macintosh file type code(s): (none)\n\nPerson & email address to contact for further information:\n   Chris Boulton <chris&ns-technologies.com>\n\nIntended usage: COMMON\n\nRestrictions on usage:\n   Should be used only in conjunction with this specification,\n   RFC 6230.\n\nAuthor: Chris Boulton\n\nChange controller:\n   IETF MEDIACTRL working group, delegated from the IESG.\n\n\n"
+  },
+  "references": []
+}

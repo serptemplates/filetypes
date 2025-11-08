@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.arastra.swi",
+  "full": "application/vnd.arastra.swi",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.arastra.swi",
+    "template_text": "(last updated 2009-08-18)\n\nNOTE: this type has been obsoleted in favor of vnd.aristanetworks.swi\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.arastra.swi\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis file type is used to distribute SoftWare Images. There is no active\ncontent. There is no provision for the file type to write to the user's file\nsystem; it is simply meant to be downloaded and saved and installed on the device.\n\nThe file format itself contains an internal CRC-32 for integrity\nprotection. If additional integrity and/or privacy protections are\ndesired in given contexts, they can be provided as follows:\n\na) integrity protection is provided with a detached signature -\ncurrently simply a published md5 hash but the road is open to migrate\nto also provide a cryptographic signature.\nb) privacy protection can be provided by transporting via SSL. Since\nthe contents of this file are a software image, there is no\npersonally-identifying information to protect; in addition, software\nlicenses are transported separately, so there is not a high value to\nstealing the image is it is transported. If we decide that privacy\nprotection beyond SSL is required, we will investigate encrypting the\nfile and using existing MIME types to transport the encrypted file --\ne.g., using a multipart/encrypted application/pgp-encrypted wrapper.\n[RFC3156]\n\nInteroperability considerations :\nNo known interoperability issues.\n\nPublished specification :\nNone\n\nApplications which use this media :\nIt is intended to be booted on hardware that supports this file type. The only\napplications that touch it are file download applications.\n\nAdditional information :\n\n1. Magic number(s) : 0x4b500403\n2. File extension(s) : swi\n3. Macintosh file type code : -\n4. Object Identifiers: -\n\nPerson to contact for further information :\n\n1. Name : Bill Fenner\n2. Email : fenner&arastra.com\n\nIntended usage : OBSOLETE\n\n\nAuthor/Change controller :\n\n\n(file created 2008-07-03)"
+  },
+  "references": []
+}

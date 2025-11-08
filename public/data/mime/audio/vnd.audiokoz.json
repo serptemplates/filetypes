@@ -1,0 +1,33 @@
+{
+  "type": "audio",
+  "subtype": "vnd.audiokoz",
+  "full": "audio/vnd.audiokoz",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.audiokoz",
+    "template_text": "\r\n(last updated 2004-03-11)\r\n\r\nName : Vicki DeBarros\r\n\r\nEmail : vicki&chaoticom.com\r\n\r\nMIME media type name : Audio\r\n\r\nMIME subtype name : Vendor Tree - vnd.audiokoz\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters : None\r\n\r\nEncoding considerations : binary\r\nThis media type may require encoding on transports not capable of handling\r\nbinary.\r\n\r\nSecurity considerations :\r\nThese file are intended to be read by a propietary client.  The audiokoz\r\nfile does not provide a security mechanism however only a chaoticom client\r\ncan decode and replay the .koz format.  The client is authenticated and\r\ntherefore provides security. A corrupt .koz file will not endanger any\r\ndevice. It will be rejected by the client.  The .koz file contains no\r\nexecutable code.\r\n\r\nInteroperability considerations :\r\nThe audiokoz specifications document [Audiokoz] specifies conformance\r\nrules\r\nthat dictate the behavior that must be followed when dealing with\r\nrecognized and unrecognized elements.\r\n\r\nPublished specification :\r\nThe audiokoz specifiaction is published at:\r\n http://chaoticom.com/specifications/audiokoz.pdf\r\n\r\nApplications which use this media :\r\nChaoticom's compressed music files, see [Audiokoz]\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : None\r\n2. File extension(s) : .koz\r\n3. Macintosh file type code : ,BIN\r\n4. Object Identifiers: None\r\n\r\nThe audiokoz format is used by Chaoticom to store high fidelity audio\r\n(music) information in a highly compressed manner using proprietary CET\r\nalgorithm.  The .koz files are designed to be transmitted from a content\r\nserver to a mobile client and enable the rendering of music on mobile\r\ndevices.\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Vicki DeBarros\r\n2. Email : technicalcontact&chaoticom.com\r\n\r\nIntended usage : Common\r\n\r\nAuthor/Change controller : The audiokoz specifications are a patented\r\nproduct of Chaoticom, Inc.  Chaoticom has change control over these\r\nspecifications.\r\n\r\n\r\n[Created  2004 March 11]"
+  },
+  "references": []
+}

@@ -1,0 +1,36 @@
+{
+  "type": "application",
+  "subtype": "vnd.adobe.fxp",
+  "full": "application/vnd.adobe.fxp",
+  "extensions": [
+    "fxp",
+    "fxpl"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.adobe.fxp",
+    "template_text": "(last updated 2010-01-13)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.adobe.fxp\n\nRequired parameters : None.\n\nOptional parameters : None.\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThis media type is a zip package which may typically contain XML source\nfiles, ActionScript files, and image assets for a Flex project. However,\nthe zip package may contain any files that a user decides to add to their\nproject, including executable files.\n\nContents of the package do not need privacy or integrity services.\n\nThe Adobe software security team reviewed this file format and found no\nconcerns. No other information is available at this time.\n\nInteroperability considerations :\nNone.\n\nPublished specification :\nNo public specification.\n\nApplications which use this media :\nAuthoring tools may use this file type for interchange of graphics; for example,\nAdobe Flash Builder, Adobe Flash Catalyst and Adobe InDesign.\n\nAdditional information :\n\n1. Magic number(s) : PK\n2. File extension(s) : .fxp, fxpl\n3. Macintosh file type code : None.\n4. Object Identifiers: None.\n\n\n\nPerson to contact for further information :\n\n1. Name : Steven Heintz\n2. Email : heintz&adobe.com\n\nIntended usage : Common\nThe file type is meant to enable the exchange of Adobe Flex projects between\ncapable applications.\n\n(file created 2010-01-13)"
+  },
+  "references": []
+}

@@ -1,0 +1,40 @@
+{
+  "type": "application",
+  "subtype": "toml",
+  "full": "application/toml",
+  "extensions": [
+    "toml"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/toml",
+    "security_considerations": "(1) TOML files don't contain executable content.\n\n(2) Information contained in TOML files do not require privacy or integrity services. If a client is storing information that is potentially sensitive, some sort of security is recommended. TLS, and specifically HTTPS, are the recommended way to protect potentially sensitive information.\n\nInteroperability considerations: N/A\n\nPublished specification: https://toml.io/\n\nApplications which use this media: Many applications use TOML as a configuration file format. Also, many programming languages have libraries that give support to it.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "interoperability_considerations": "Published specification: https://toml.io/\n\nApplications which use this media: Many applications use TOML as a configuration file format. Also, many programming languages have libraries that give support to it.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A",
+    "additional_information": "1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .toml\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none",
+    "intended_usage": "common",
+    "change_controller": "https://github.com/toml-lang/toml/issues/870",
+    "template_text": "(registered 2024-10-21, last updated 2024-10-21)\n\nMedia type name: application\n\nMedia subtype name: toml\n\nRequired parameters: N/A\n\nOptional parameters: N/A\n\nEncoding considerations: 8bit\n\nSecurity considerations: \n\n(1) TOML files don't contain executable content.\n\n(2) Information contained in TOML files do not require privacy or integrity services. If a client is storing information that is potentially sensitive, some sort of security is recommended. TLS, and specifically HTTPS, are the recommended way to protect potentially sensitive information.\n\nInteroperability considerations: N/A\n\nPublished specification: https://toml.io/\n\nApplications which use this media: Many applications use TOML as a configuration file format. Also, many programming languages have libraries that give support to it.\n\nFragment identifier considerations: N/A\n\nRestrictions on usage: N/A\n\nAdditional information:\n\n1. Deprecated alias names for this type: none\n2. Magic number(s): none\n3. File extension(s): .toml\n4. Macintosh file type code: TEXT\n5. Object Identifiers: none\n\nPerson to contact for further information:\n\n1. Name: Ben van Hartingsveldt\n2. Email: ben.vanhartingsveldt&yocto.com\n\nIntended usage: COMMON\n\nAuthor: Tom Preston-Werner <tom&mojombo.com>\nChange controller: https://github.com/toml-lang/toml/issues/870\nSubmitter: Ben van Hartingsveldt <ben.vanhartingsveldt&yocto.com>"
+  },
+  "references": []
+}

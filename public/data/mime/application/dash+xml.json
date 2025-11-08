@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "dash+xml",
+  "full": "application/dash+xml",
+  "extensions": [
+    "mpd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/dash+xml",
+    "template_text": "(file created 2013-03-29, last updated 2013-03-29)\n\nMIME media type name : Application\n\nMIME subtype name : Standards Tree - dash+xml\n\nRequired parameters : none\n\nOptional parameters :\nThe ‘profiles’ parameter as documented in Annex C.3.1 in this part of \nISO/IEC 23009. The 'profiles' parameter is an optional parameter that \nindicates one or more profiles to which the file claims conformance. The \ncontents of this attribute shall conform to either the pro-simple or \npro-fancy productions of RFC6381, Section 4.5. The profile identifiers \nreported in the MIME type parameter should match identically the \nprofiles reported in the profiles attribute in the MPD\nitself (see ISO/IEC 23009-1, clause 8).\n\nEncoding considerations : 8bit\n\n\nSecurity considerations :\nThe MPD is a Media Presentation Description and contains references to \nother resources. It is coded in XML, and there are risks that \ndeliberately malformed XML could cause security issues. In addition, an \nMPD could be authored that causes receiving clients to access other \nresources; if widely distributed, this could be used to cause a \ndenial-of-service attack.\n\nThe Media Presentation Description (MPD) format does not incorporate any \nactive or executable content. However, other forms of material from \noutside sources can be referenced by an MPD, and this material could \ncontain active or executable content. Such material is expected to be \nidentified by its own MIME type, and the security considerations of that \nformat should be taken into account.\n\nIf operating in an insecure environment and required by the \ncontent/service provider, elements and attributes of MPD may be \nencrypted to protect their confidentiality by using the syntax and \nprocessing rules specified in the W3C Recommendation “XML Encryption \nSyntax and Processing”.\n\nIf operating in an insecure environment and required by the \ncontent/service provider, the digital signing and verification \nprocedures specified in the W3C Recommendation “XML Signature Syntax and \nProcessing” may be used to protect data origin authenticity and \nintegrity of the MPD\n\n\nInteroperability considerations :\n\n\nPublished specification :\nISO/IEC 23009-1: Information technology — Dynamic adaptive streaming \nover HTTP (DASH) — Part 1: Media presentation description and segment \nformats\n\nApplications which use this media :\nvarious including but not limited to On-Demand Streaming over the \nInternet, Live Streaming over the Internet, Internet Video, Internet \nRadio\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : mpd\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\n\n\nPerson to contact for further information :\n\n1. Name : Thomas Stockhammer\n2. Email : stockhammer&nomor.de\n\nIntended usage : Common\n\n\nAuthor/Change controller : ISO/IEC JTC1/SC29 (MPEG)"
+  },
+  "references": []
+}

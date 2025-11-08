@@ -1,0 +1,39 @@
+{
+  "type": "application",
+  "subtype": "sparql-query",
+  "full": "application/sparql-query",
+  "extensions": [
+    "rq"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/sparql-query",
+    "encoding_considerations": "The syntax of the SPARQL Query Language is expressed over code points in Unicode [UNICODE]. The encoding is always UTF-8 [RFC3629].\nUnicode code points may also be expressed using an \\uXXXX (U+0 to U+FFFF) or \\UXXXXXXXX syntax (for U+10000 onwards) where X is a hexadecimal digit [0-9A-F]",
+    "security_considerations": "See SPARQL Query appendix C, Security Considerations as well as RFC 3629 [RFC3629] section 7, Security Considerations.",
+    "interoperability_considerations": "There are no known interoperability issues.",
+    "additional_information": "Magic number(s):\nA SPARQL query may have the string 'PREFIX' (case independent) near the beginning of the document.\n\nFile extension(s):\n\".rq\"",
+    "template_text": "Type name:\napplication\n\nSubtype name:\nsparql-query\n\nRequired parameters:\nNone\n\nOptional parameters:\nNone\n\nEncoding considerations:\nThe syntax of the SPARQL Query Language is expressed over code points in Unicode [UNICODE]. The encoding is always UTF-8 [RFC3629].\nUnicode code points may also be expressed using an \\uXXXX (U+0 to U+FFFF) or \\UXXXXXXXX syntax (for U+10000 onwards) where X is a hexadecimal digit [0-9A-F]\n\nSecurity considerations:\nSee SPARQL Query appendix C, Security Considerations as well as RFC 3629 [RFC3629] section 7, Security Considerations.\n\nInteroperability considerations:\nThere are no known interoperability issues.\n\nPublished specification:\nThis specification.\n\nApplications which use this media type:\nNo known applications currently use this media type.\n\nAdditional information:\n\nMagic number(s):\nA SPARQL query may have the string 'PREFIX' (case independent) near the beginning of the document.\n\nFile extension(s):\n\".rq\"\n\nBase URI:\nThe SPARQL 'BASE <IRIref>' term can change the current base URI for relative IRIrefs in the query language that are used sequentially later in the document.\n\nMacintosh file type code(s):\n\"TEXT\"\n\nPerson & email address to contact for further information:\npublic-rdf-dawg-comments&w3.org\n\nIntended usage:\nCOMMON\n\nRestrictions on usage:\nNone\n\nAuthor/Change controller:\nThe SPARQL specification is a work product of the World Wide Web Consortium's RDF Data Access Working Group. The W3C has change control over these specifications."
+  },
+  "references": []
+}

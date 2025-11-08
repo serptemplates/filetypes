@@ -1,0 +1,40 @@
+{
+  "type": "audio",
+  "subtype": "opus",
+  "full": "audio/opus",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/opus",
+    "type_name": "audio",
+    "subtype_name": "opus",
+    "encoding_considerations": "The Opus media type is framed and consists of binary data\n   according to Section 4.8 of [RFC6838].",
+    "security_considerations": "See Section 8 of [RFC7587].\n\nInteroperability considerations: none\n\nPublished specification: RFC 7587",
+    "interoperability_considerations": "Published specification: RFC 7587",
+    "applications": "Any application that requires the transport of speech or audio\n   data can use this media type.  Some examples are, but not limited\n   to, audio and video conferencing, Voice over IP, and media\n   streaming.\n\nFragment identifier considerations: N/A",
+    "intended_usage": "common",
+    "template_text": "(registered via RFC 7587)\n\nType name: audio\n\nSubtype name: opus\n\nRequired parameters:\n\nrate:  the RTP timestamp is incremented with a 48000 Hz clock rate\n   for all modes of Opus and all sampling rates.  For data encoded\n   with sampling rates other than 48000 Hz, the sampling rate has to\n   be adjusted to 48000 Hz.\n\nOptional parameters:\n\nmaxplaybackrate:  a hint about the maximum output sampling rate that\n   the receiver is capable of rendering in Hz.  The decoder MUST be\n   capable of decoding any audio bandwidth, but, due to hardware\n   limitations, only signals up to the specified sampling rate can be\n   played back.  Sending signals with higher audio bandwidth results\n   in higher than necessary network usage and encoding complexity, so\n   an encoder SHOULD NOT encode frequencies above the audio bandwidth\n   specified by maxplaybackrate.  This parameter can take any value\n   between 8000 and 48000, although commonly the value will match one\n   of the Opus bandwidths (Table 1).  By default, the receiver is\n   assumed to have no limitations, i.e., 48000.\n\nsprop-maxcapturerate:  a hint about the maximum input sampling rate\n   that the sender is likely to produce.  This is not a guarantee\n   that the sender will never send any higher bandwidth (e.g., it\n   could send a prerecorded prompt that uses a higher bandwidth), but\n   it indicates to the receiver that frequencies above this maximum\n   can safely be discarded.  This parameter is useful to avoid\n   wasting receiver resources by operating the audio processing\n   pipeline (e.g., echo cancellation) at a higher rate than\n   necessary.  This parameter can take any value between 8000 and\n   48000, although commonly the value will match one of the Opus\n   bandwidths (Table 1).  By default, the sender is assumed to have\n   no limitations, i.e., 48000.\n\nmaxptime:  the maximum duration of media represented by a packet\n   (according to Section 6 of [RFC8826]) that a decoder wants to\n   receive, in milliseconds rounded up to the next full integer\n   value.  Possible values are 3, 5, 10, 20, 40, 60, or an arbitrary\n   multiple of an Opus frame size rounded up to the next full integer\n   value, up to a maximum value of 120, as defined in Section 4.  If\n   no value is specified, the default is 120.\n\nptime:  the preferred duration of media represented by a packet\n   (according to Section 6 of [RFC8826]) that a decoder wants to\n   receive, in milliseconds rounded up to the next full integer\n   value.  Possible values are 3, 5, 10, 20, 40, 60, or an arbitrary\n   multiple of an Opus frame size rounded up to the next full integer\n   value, up to a maximum value of 120, as defined in Section 4.  If\n   no value is specified, the default is 20.\n\nmaxaveragebitrate:  specifies the maximum average receive bitrate of\n   a session in bits per second (bit/s).  The actual value of the\n   bitrate can vary, as it is dependent on the characteristics of the\n   media in a packet.  Note that the maximum average bitrate MAY be\n   modified dynamically during a session.  Any positive integer is\n   allowed, but values outside the range 6000 to 510000 SHOULD be\n   ignored.  If no value is specified, the maximum value specified in\n   Section 3.1.1 for the corresponding mode of Opus and corresponding\n   maxplaybackrate is the default.\n\nstereo:  specifies whether the decoder prefers receiving stereo or\n   mono signals.  Possible values are 1 and 0, where 1 specifies that\n   stereo signals are preferred, and 0 specifies that only mono\n   signals are preferred.  Independent of the stereo parameter, every\n   receiver MUST be able to receive and decode stereo signals, but\n   sending stereo signals to a receiver that signaled a preference\n   for mono signals may result in higher than necessary network\n   utilization and encoding complexity.  If no value is specified,\n   the default is 0 (mono).\n\nsprop-stereo:  specifies whether the sender is likely to produce\n   stereo audio.  Possible values are 1 and 0, where 1 specifies that\n   stereo signals are likely to be sent, and 0 specifies that the\n   sender will likely only send mono.  This is not a guarantee that\n   the sender will never send stereo audio (e.g., it could send a\n   prerecorded prompt that uses stereo), but it indicates to the\n   receiver that the received signal can be safely downmixed to mono.\n   This parameter is useful to avoid wasting receiver resources by\n   operating the audio processing pipeline (e.g., echo cancellation)\n   in stereo when not necessary.  If no value is specified, the\n   default is 0 (mono).\n\ncbr:  specifies if the decoder prefers the use of a constant bitrate\n   versus a variable bitrate.  Possible values are 1 and 0, where 1\n   specifies constant bitrate, and 0 specifies variable bitrate.  If\n   no value is specified, the default is 0 (vbr).  When cbr is 1, the\n   maximum average bitrate can still change, e.g., to adapt to\n   changing network conditions.\n\nuseinbandfec:  specifies that the decoder has the capability to take\n   advantage of the Opus in-band FEC.  Possible values are 1 and 0.\n   Providing 0 when FEC cannot be used on the receiving side is\n   RECOMMENDED.  If no value is specified, useinbandfec is assumed to\n   be 0.  This parameter is only a preference, and the receiver MUST\n   be able to process packets that include FEC information, even if\n   it means the FEC part is discarded.\n\nusedtx:  specifies if the decoder prefers the use of DTX.  Possible\n   values are 1 and 0.  If no value is specified, the default is 0.\n\nEncoding considerations:\n\n   The Opus media type is framed and consists of binary data\n   according to Section 4.8 of [RFC6838].\n\nSecurity considerations:\n\n   See Section 8 of [RFC7587].\n\nInteroperability considerations: none\n\nPublished specification: RFC 7587\n\nApplications that use this media type:\n\n   Any application that requires the transport of speech or audio\n   data can use this media type.  Some examples are, but not limited\n   to, audio and video conferencing, Voice over IP, and media\n   streaming.\n\nFragment identifier considerations: N/A\n\nPerson & email address to contact for further information:\n\n   SILK Support, silksupport&skype.net\n\n   Jean-Marc Valin, jmvalin&jmvalin.ca\n\nIntended usage: COMMON"
+  },
+  "references": []
+}

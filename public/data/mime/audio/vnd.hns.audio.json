@@ -1,0 +1,33 @@
+{
+  "type": "audio",
+  "subtype": "vnd.hns.audio",
+  "full": "audio/vnd.hns.audio",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/audio/vnd.hns.audio",
+    "template_text": "(Last updated 23 March 2006)\r\n\r\nName : Kumar Swaminathan \r\n\r\nEmail : kswami&hns.com \r\n\r\nMIME media type name : Audio \r\n\r\nMIME subtype name : Vendor Tree - vnd.hns.audio \r\n\r\nRequired parameters : None \r\n\r\nOptional parameters : None \r\n\r\nEncoding considerations : binary \r\nThis media type may require encoding on transports not capable \r\nof handling binary. \r\n\r\nSecurity considerations :\r\nThe media type is not intended for execuatble or active content. \r\nIntegrity and Privacy are handled at a higher level since the intended \r\napplication is content delivery services for enterprise applications. \r\nThe server or sender, receiver or client plays the primary role in call \r\nestablishment, authentication, and privacy prior to launching the media \r\nplayer. These are not tied to any media type. Other security \r\nconsiderations, if any, have not been assessed. \r\n\r\n\r\nInteroperability considerations : \r\nThe media subtype is intended for identifying audio content that \r\nrequires decoding of compressed audio by HNS rendering plugins and \r\nlibraries that get invoked when using a Real Media Player (on all \r\nOS). \r\n\r\nThe audio content would have to be created by an utility that \r\nconverts the compressed audio payloads to a RM container format \r\n(recognized by Real Media Player and developed using RealSystemSDK) \r\nand which contains \r\n1. Compressed Audio Payload?s MIME type and specific Audio Decoder \r\nLibrary stored in its Media Properties Header \r\n2. Compressed Audio samples with each sample containing a header \r\nthat contains information such as its timestamp, its size, and \r\nindication of whether it is a key frame. \r\n\r\nPublished specification : \r\nIntended for use by HNS products and services. For further \r\ninformation please contact Kumar Swaminathan at 301-428-5705 or \r\nkswami&hns.com. \r\n\r\nApplications which use this media : \r\nThe intended applications are media content delivery services \r\nfor enterprise applications. The media payload is expected to be \r\nLPCM/WAV PCM/MP3/MPEG-4 AAC based for audio. Other compression \r\nformats are not excluded but these are the formats that are being \r\nconsidered at this time. The client player is Real Media Player \r\nwith the HNS developed rendering plugins and decoding libraries for \r\nthe various codecs. \r\n\r\nAdditional information : \r\n\r\n1. Magic number(s) : N/A \r\n2. File extension(s) : .rm \r\n3. Macintosh file type code : N/A \r\n4. Object Identifiers: N/A \r\n\r\nThe server/sender provides for the conversion of the \r\ncompressed media payloads to an RM container format that is \r\nrecognized by any Real Player. The RM container contains \r\n1. Compressed Video Payload?s MIME type and specific \r\nVideo Decoder \r\nLibrary stored in its Media Properties Header \r\n2. Compressed Audio Payload?s MIME type and specific \r\nAudio Decoder \r\nLibrary stored in its Media Properties Header \r\n3. Compressed Video and Audio samples with each sample \r\ncontaining a header that contains information such as its timestamp, \r\nits size, and indication of whether it is a key frame. \r\n\r\nThe receiver/client video and audio rendering plug-ins are invoked by \r\nthe Real Media Player for rendering of video and audio frames from \r\nthe RM file, encoded at the sender/server. These plug-ins are \r\ninvoked for rendering frames with mime types ?video/x-pn-hns1video? \r\nand ?audio/x-pn-hns1audio? to-day but these extended MIME types \r\nwill eventually be replaced by \"video/vnd.hns.video\" and \r\n\"audio/vnd/hns.audio\" after registartion of these media sub-types. \r\nWhen RealPlayer is starting it accesses all rendering plug-ins in \r\nthe plugins folder and asks them which mime type they support. The \r\nHNS video rendering plug-in hnsrvpln responds with \r\n?video/vnd.hns.video? while the HNS audio rendering plug-in \r\nhnsrapln responds with ?audio/x-pn-hns1audio? to that request. The \r\nheader of the every stream of RM file contains mime type. When \r\nRealPlayer receives stream header it finds renderer plug-in \r\nresponsible for that mime type and forward all related stream data \r\nto that plug-in. \r\n\r\nHNS video rendering plug-in hnsrvpln uses the decoder library which is \r\nspecified in the Video Stream Properties Header of the RM file. For \r\nexample, a library HnsAvcBpDec has been implemented which \r\ncorresponds to HNS implementation of MPEG-4 AVC Baseline Profile. \r\nSimilarly, the HNS audio rendering plug-in hnsrapln uses the \r\ndecoder library which is specified in the Audio Stream Properties \r\nHeader of the RM file. For example, the library HnsLpcmDec \r\ncorresponds to Linear PCM decoder.\r\n\r\nPerson to contact for further information : \r\n\r\n1. Name : Kumar Swaminathan \r\n2. Email : kswami&hns.com \r\n\r\nIntended usage : Limited Use \r\nIntended for use by HNS developed products and services. \r\n\r\nAuthor/Change controller : Kumar Swaminathan \r\n\r\n(File created 23 March 2006)"
+  },
+  "references": []
+}

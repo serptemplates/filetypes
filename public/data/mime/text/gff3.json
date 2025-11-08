@@ -1,0 +1,38 @@
+{
+  "type": "text",
+  "subtype": "gff3",
+  "full": "text/gff3",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/text/gff3",
+    "encoding_considerations": "Some whitespace and delimiter characters are URL-encoded; see the \n   specification for details.\n\nSecurity considerations: The GFF3 format is descriptive and does not \n   \"include provisions for directives that institute actions on a \n   recipient's files or other resources\". It is a simple \n   tab-delimited text format, but nevertheless the usual precautions \n   apply when parsing new GFF3 files, in case they are accidentally \n   or maliciously broken.\n\nInteroperability considerations: Line-ending characters depend on the \n   originating operating system, such as CR LF for Windows, CR for \n   Macintosh and LF for Unix.",
+    "security_considerations": "\"include provisions for directives that institute actions on a \n   recipient's files or other resources\". It is a simple \n   tab-delimited text format, but nevertheless the usual precautions \n   apply when parsing new GFF3 files, in case they are accidentally \n   or maliciously broken.\n\nInteroperability considerations: Line-ending characters depend on the \n   originating operating system, such as CR LF for Windows, CR for \n   Macintosh and LF for Unix.",
+    "interoperability_considerations": "originating operating system, such as CR LF for Windows, CR for \n   Macintosh and LF for Unix.",
+    "additional_information": "1. Deprecated alias names for this type: text/x-gff3\n   2. Magic number(s): Although no byte sequences can be counted on \n      to always be present, GFF3 data in ASCII-compatible character \n      sets (including UTF-8) often begin with hexadecimal 23 23 67 66 \n      66 2d 76 65 72 73 69 6f 6e 20 33 (\"##gff-version 3\").\n   3. File extension(s): gff3\n   4. Macintosh file type code: None\n   5. Object Identifiers: None",
+    "intended_usage": "common",
+    "template_text": "(registered 2020-08-17, last updated 2020-08-19)\n\nMedia type name: text\n\nMedia subtype name: gff3\n\nRequired parameters: The \"charset\" parameter is required as there is \n   no default charset. Nevertheless, for portability with other \n   systems, use of UTF-8 is recommended.\n\nOptional parameters: None\n\nEncoding considerations: 8bit\n   Some whitespace and delimiter characters are URL-encoded; see the \n   specification for details.\n\nSecurity considerations: The GFF3 format is descriptive and does not \n   \"include provisions for directives that institute actions on a \n   recipient's files or other resources\". It is a simple \n   tab-delimited text format, but nevertheless the usual precautions \n   apply when parsing new GFF3 files, in case they are accidentally \n   or maliciously broken.\n\nInteroperability considerations: Line-ending characters depend on the \n   originating operating system, such as CR LF for Windows, CR for \n   Macintosh and LF for Unix.\n\nPublished specification:\n   https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md\n\nApplications which use this media: The GFF3 format is used in \n   bioinformatics to output, export and exchange descriptions of \n   various features on biological sequences such as nucleic acids or \n   proteins. It is used by command-line tools and by web services \n   such as genome browsers.\n\nFragment identifier considerations: None\n\nRestrictions on usage: None\n\nAdditional information:\n\n   1. Deprecated alias names for this type: text/x-gff3\n   2. Magic number(s): Although no byte sequences can be counted on \n      to always be present, GFF3 data in ASCII-compatible character \n      sets (including UTF-8) often begin with hexadecimal 23 23 67 66 \n      66 2d 76 65 72 73 69 6f 6e 20 33 (\"##gff-version 3\").\n   3. File extension(s): gff3\n   4. Macintosh file type code: None\n   5. Object Identifiers: None\n\nGeneral Comments:\n\n\nPerson to contact for further information:\n\n   1. Name: Sequence Ontology\n   2. Email: song-devel&lists.utah.edu\n\nIntended usage: Common\n   The GFF3 is a standard format in bioinformatics.\n\nAuthor/Change controller: Sequence Ontology"
+  },
+  "references": []
+}

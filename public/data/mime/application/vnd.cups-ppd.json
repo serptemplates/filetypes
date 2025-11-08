@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.cups-ppd",
+  "full": "application/vnd.cups-ppd",
+  "extensions": [
+    "ppd"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.cups-ppd",
+    "template_text": "(Last Updated 02 June 2006)\r\n\r\nMIME media type name : Application\r\n\r\nMIME subtype name : Vendor Tree - vnd.cups-ppd\r\n\r\nRequired parameters : None\r\n\r\nOptional parameters :\r\nNone\r\n\r\nEncoding considerations : 8bit\r\nThis media type may require encoding on transports not capable of \r\nhandling 8 bit text.\r\n\r\nSecurity considerations :\r\nPPD files contain printer-specific commands which could cause incorrect \r\nprinting behavior. See section 4.5.2 of RFC 2046 for examples.\r\n\r\nThe base PPD specification provides a file inclusion facility which is a \r\npotential security hole; CUPS does not support it for that reason.\r\n\r\n\r\nInteroperability considerations :\r\nThe PPD specification requires all applications to support CR, LF, and \r\nCR LF line endings, and has a maximum line length of 255 characters, so \r\nthis file format is extremely portable across platforms.\r\n\r\nCUPS also supports PPD files compressed using gzip (RFC 1952), which is \r\nalso cross-platform.\r\n\r\nPublished specification :\r\nAdobe PostScript Printer Description File Format Specification, Version \r\n4.3 (http://partners.adobe.com/public/developer/ps/index_specs.html)\r\n\r\nAdobe Update to PPD Specification Version 4.3 \r\n(http://partners.adobe.com/public/developer/ps/index_specs.html)\r\n\r\nCUPS Interface Design Description (http://www.cups.org/documentation.php)\r\n\r\nCUPS Software Design Description (http://www.cups.org/documentation.php)\r\n\r\nApplications which use this media :\r\nCommon UNIX Printing System (http://www.cups.org/)\r\n\r\nGNOME (http://www.gnome.org/)\r\n\r\nKDE (http://www.kde.org/)\r\n\r\nMacOS X (http://www.apple.com/)\r\n\r\nMicrosoft Windows (http://www.microsoft.com/)\r\n\r\nOpenOffice (http://www.openoffice.org/)\r\n\r\n\r\nAdditional information :\r\n\r\n1. Magic number(s) : Starts with \"*PPD-Adobe:\"\r\n2. File extension(s) : .ppd, .PPD, .ppd.gz\r\n3. Macintosh file type code : N/A\r\n4. Object Identifiers: N/A\r\n\r\n\r\n\r\nPerson to contact for further information :\r\n\r\n1. Name : Michael Sweet\r\n2. Email : mike&easysw.com\r\n\r\nIntended usage : Common\r\nDescription and mapping of PostScript and non-PostScript printer driver \r\nfeatures for enhanced printing.\r\n\r\n\r\nAuthor/Change controller : Easy Software Products\r\n44141 Airport View Drive\r\nSuite 204\r\nHollywood, MD 20636 USA\r\n\r\n(File Created 02 June 2006)"
+  },
+  "references": []
+}

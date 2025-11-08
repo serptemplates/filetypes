@@ -1,0 +1,35 @@
+{
+  "type": "application",
+  "subtype": "vnd.astraea-software.iota",
+  "full": "application/vnd.astraea-software.iota",
+  "extensions": [
+    "iota"
+  ],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.astraea-software.iota",
+    "template_text": "(last updated 2011-05-04)\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.astraea-software.iota\n\nRequired parameters : None\n\nOptional parameters : None\n\nEncoding considerations : binary\n\nSecurity considerations :\niota is a mobile note taking application which allows users to quickly\ncapture information and decorate it with useful meta-data such as\nimages, sounds & locations captured via their device.\n\nUsers may exchange notes, principally via e-mail, in an iota document\nwhose contents will be unarchived & imported by the receiving instance\nof iota.\n\nThis file format is not intended for the transmission of secure\ninformation and offers no internal mechanism by which a user can ensure\nthe privacy of the data they have chosen to share.\n\nAs of this writing, iota documents do not contain any active content and\nit is believed that usage of this mime type does not introduce security\nconcerns other than those already inherent in the use of other archived\ndata formats such as ZIP archives.\n\nInteroperability considerations :\n-\n\nPublished specification :\nNone\n\nApplications which use this media :\n-\n\nAdditional information :\n\n1. Magic number(s) : N/A\n2. File extension(s) : iota\n3. Macintosh file type code : N/A\n4. Object Identifiers: N/A\n\nPerson to contact for further information :\n\n1. Name : Christopher Snazell\n2. Email : csnazell&astraea-software.com\n\nIntended usage : Common\n\nAuthor/Change controller : Christoper Snazell\n\n(file created 2011-05-04)"
+  },
+  "references": []
+}

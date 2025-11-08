@@ -1,0 +1,33 @@
+{
+  "type": "application",
+  "subtype": "vnd.oma.dcd",
+  "full": "application/vnd.oma.dcd",
+  "extensions": [],
+  "sources": [
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    },
+    {
+      "source": "iana",
+      "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+    },
+    {
+      "source": "apache",
+      "url": "https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types"
+    },
+    {
+      "source": "nginx",
+      "url": "https://hg.nginx.org/nginx/raw-file/default/conf/mime.types"
+    },
+    {
+      "source": "mime-db",
+      "url": "https://www.npmjs.com/package/mime-db"
+    }
+  ],
+  "iana": {
+    "template_url": "https://www.iana.org/assignments/media-types/application/vnd.oma.dcd",
+    "template_text": "(last updated 2008-04-28)\n\nName : Avi Primo\n\nEmail : aprimo&celltick.com\n\nMIME media type name : Application\n\nMIME subtype name : Vendor Tree - vnd.oma.dcd\n\nRequired parameters : None\n\nOptional parameters :\nNone\n\nEncoding considerations : binary\nThis media type may require encoding on transports not capable of handling binary.\n\nSecurity considerations :\nThe information contained in the media type may need privacy and integrity\nservices but these are provided by an underling security protocol (e.g. TLS) and\nnot by the media type itself.\n\nDCD - Dynamic content delivery - is a standard way to deliver content\nfrom server in the network to an application in the client base on\nmetadata rules and settings - the content delivery is managed by DCD\nserver on the network and DCD Client on the device - it can carry any\ntype of content, including executable files. The DCD is only delivery\nenabler, rendering the content is the responsibility of the Application.\nApplication can be any type of application that consume content - i.e.\nbrowser, ticker, music download, navigation and etc' - for the DCD\nenabler the content is opaque, the enabler know nothing about the\ncontent, it knows to which application it should be delivered base on\npredefine Application-ID.\nSo DCD is the container application/vnd.oma.dcd or\napplication/vnd.oma.dcdc is the packaging encoding of the format - the\ncontainer contain the DCD metadata and other type of content that has\nits own media-type.\nSo for summery the DCD is a sophisticated delivery pipe managed by\nmetadata - security consideration should be taken by the application\nthat runs the content and not by the enabler since the enabler, by\ndefinition, knows nothing about the content.\n\n\nInteroperability considerations :\nNo interoperabilty issues identified\n\nPublished specification :\nOMA DCD 1.0 Enabler Specification.\nAvailable from http://www.openmobilealliance.org\n\nApplications which use this media :\nOMA DCD Client and OMA DCD Server as part of OMA-DCD 1.0 specification (DCD -\nDynamic Content Delivery).\n\nAdditional information :\n\n1. Magic number(s) : none\n2. File extension(s) : none\n3. Macintosh file type code : none\n4. Object Identifiers: none\n\nNone\n\nPerson to contact for further information :\n\n1. Name : Avi Primo\n2. Email : aprimo&celltick.com\n\nIntended usage : Limited Use\nThis MIME media type is registered for use with the OMA DCD Enaler.\n\nAuthor/Change controller : OMNA - Open Mobile Naming Authority,\nOMA-OMNA&mail.openmobilealliance.org \n\n(file created 2008-04-28)"
+  },
+  "references": []
+}
