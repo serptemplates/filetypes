@@ -17,6 +17,7 @@
     "validate:dates": "node scripts/validate-dates.mjs",
     "validate:filetypes": "node scripts/validate-filetypes.mjs",
     "report:coverage": "node scripts/report-field-coverage.mjs",
+    "report:db-content": "node scripts/report-db-content.mjs",
     "validate": "pnpm run validate:categories && pnpm run validate:dates && pnpm run validate:filetypes",
     "fix:dates": "node scripts/fix-dates.mjs",
     "fix:dates:write": "node scripts/fix-dates.mjs --write",
